@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T03:14:32+00:00",
+ "updated_at": "2026-10-23T07:09:10+00:00",
  "source": "DART OpenAPI (정기보고서 주요재무·타법인출자현황, 공시목록)",
  "firms": {
   "미래에셋증권": {
@@ -2103,17 +2103,11 @@
    "date": "20260918",
    "title": "특수관계인에대한출자",
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000311"
-  },
-  {
-   "firm": "삼성증권",
-   "date": "20260831",
-   "title": "특수관계인에대한출자",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001223"
   }
  ],
  "errors": [],
  "diff": {
-  "prev_at": "2026-10-23T02:41:26+00:00",
+  "prev_at": "2026-10-23T03:14:32+00:00",
   "entities_added": [],
   "entities_removed": [],
   "candidates_added": [],

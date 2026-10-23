@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T07:03:08+00:00",
+ "updated": "2026-10-23T07:12:41+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
@@ -48,9 +48,9 @@
    },
    {
     "date": "2026-10-22",
-    "title": "\"스테이블코인 발행 은행 중심이어야 하나\" 질타에…이억원 \"혁신·안정 조화안 마련\"[2026국감]",
-    "src": "아시아경제",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1iUEVjbmlRa2h4b2dMeG0xcWxkamJ6c1BYQ2lIem8tUDdhclVWT1l1Y0FiVzQ2dGtvT0E3Y2U4Z2x3SGRmSDJiWkE1UUdheUlGWXdGUGQ2WTloeS02QlB3LVBn?oc=5",
+    "title": "가상자산거래소 통해 토큰증권 거래? 금융위원장 “검토할 것”",
+    "src": "이데일리",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTVl3VmFWWTg4QUl3V0NCRGlVR1ZvRUR6R2drRTBTV2I3SmhHQ2FITDRpVzJ3OUtVb2ZtdjNUX1BITEsyb29LcHhyUXhGeEFlcHFzQTBmQjhac2xmcWlCcklGcWRIS2NxVmdtX212NkJhbVA5MXI2TXh5ZTBpVWNsSg?oc=5",
     "code": "KR"
    },
    {
@@ -198,13 +198,6 @@
     "code": "VN"
    },
    {
-    "date": "2026-10-21",
-    "title": "Vietnam’s digital payments are mature; stablecoins may fit cross-border",
-    "src": "Blockchain News",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQV2x1ZXNLaGxXNnlhX3RMYWRTeXJhbkZxMGJOd255VW16em9kS0pPcHl1RTZCUHc5NDRRczhGN3Awa1NRNHNDdUJTTS1CbFVDeVR5VmZ3X2RtSVQ4WktqSUZ6UjNnYjFHQnNpd2ppNXJWb2hUbS1UVjhPeXJnV2x3OWYzWkxwbVJkREtuT1ZWTk01cjJPNkhxTUhkUGZOd2M?oc=5",
-    "code": "VN"
-   },
-   {
     "date": "2026-10-20",
     "title": "Vietnam Drafts 0.1% Levy on Crypto Transactions, According to The Hanoi Times",
     "src": "CoinMarketCap",
@@ -212,31 +205,31 @@
     "code": "VN"
    },
    {
-    "date": "2026-10-20",
-    "title": "Cryptocurrency Sandbox: Opening Opportunities for Digital Tourism",
-    "src": "Vietnam.vn",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1palg2ZHJFUnNBbGhJeHo3WFBpRk15UUc1b19EN0xpTEdxQ3YzcExWSl93V3Fvb1VHUUF5Y1FBUF9EQV9RbURuN1lpSVVVRVpVLWFmYmIyQTNXRGhlazBrMGV2cXFTVnZvNU9qSDkzQkJPUEo0djRhak5tb1RCUQ?oc=5",
-    "code": "VN"
-   },
-   {
-    "date": "2026-10-17",
-    "title": "Vietnam Plans Q3 Launch for Regulated Crypto Market",
+    "date": "2026-10-13",
+    "title": "OKX Ventures, HashKey Back CAEX for Vietnam Crypto Pilot",
     "src": "CoinMarketCap",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUFEteDN6RXhpckFPY1pZVGYzTDEwNkpxRHVxSFNPRjNhbkNJWmxmVV9lNkpvczVBTUlKQnAtaGFLbFpQOEh0djE3WnRFcW1tYjViR2haVEk5VlVzVS05OXJNQnJnZ18zM1I5ZmpWT3pydktyXzVCMHZMb2ZBMmlRWFp4RWxna1Rk?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdWZ4YVlHZ0plSzdaQTNlbFBmQlR1OHJ1Zm5vQTNoVFcxMTVDbG91Mm14YkE0cFJneVB5TWRLcE5sZ2ZaRXVZN0pzejJHM1lSUGZsU3N2c1JxTmpmMjhzNUNOdS1MWnh5U3l5aTZtdkctT05rOTBpb2Q5Mk8yeXRSWUpHTHFrNW5sMU1uUVJaQVo2WWU0aUhFd0VHMF8zQQ?oc=5",
     "code": "VN"
    },
    {
-    "date": "2026-10-16",
-    "title": "Crypto flows in Vietnam are shifting",
+    "date": "2026-10-05",
+    "title": "Vietnam records $122 bln in crypto activity, second in Southeast Asia: Chainalysis",
     "src": "Theinvestor",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Ka1JHWUVEUkUteXdCYkppajJGWF9HdS1yTHNMaTgzQVlsaTEyd2tjZnJQOG1CZlFXZTU1Vmo5V2E1ckdzREk5TXFTblljWmdUMS1IbUpzYmJSTTN5Z2l1Nk9mOXg1Y242MW5wLUtCdEFKbVE1cnUtc0s5TQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTGo0LU5FMWwxSjkzLUtZRkxEZmxkeWJaNTFiTDN3SDdoZmlIZEt4bnRhekFQRENITml5cDZERlYyNEtCMGwzR01fVmZaZkdXS0M3VkdwTnk4VTFwTl84QUZ3emZqZHdhSDhudmtVWnFyQ3lIUWRKRWZRVFpKYk1iZ0FVaWE5UmJEVEQ5SnFnRjhJdFF0MjVSbWlvTTZPNkoxR05NR1dZcUhyTFFkV1JONnpCa0I?oc=5",
     "code": "VN"
    },
    {
-    "date": "2026-10-16",
-    "title": "Cryptocurrency sandbox in Da Nang: Beyond experimentation, it must create real value.",
-    "src": "Vietnam.vn",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNzlNY0xMVmUzaThtT3M0RTRMLVZTSnhSSkpPUGlHVTVVdk9wUVlMYjBaazlxRkpYdXp1T2hjSHZ5QUg3bUNJUmRlVUF3a3g1a1g0TW5TRE1zRTJnbF8xNEdveU5qdEZtNENJMHkzWTV5VzRVMHgwdWVFWXFCVU9FUTkzb3dHeGlJMWctMXZSRXlKZUlTSXJpbnk0R2w4SXk5WEFSUVpaRQ?oc=5",
+    "date": "2026-10-03",
+    "title": "[이슈체크] 검은 돈 판치는 코인시장, 신뢰 더 망가뜨리나…정치권은 또 가상자산 과세유예",
+    "src": "조세금융신문",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5Xd1RoNUFPSVBRRFpESzl4QUpWVmJwY0JlZWUwWHVFMEVVSFFLYUtrSHRkLXhOd01uQ0Q3c3VSVHZMNHpRT0pZQWtJOTd5aDJxMkpNalkzRVVEUGdGbjlPVnh2Zw?oc=5",
+    "code": "VN"
+   },
+   {
+    "date": "2026-10-02",
+    "title": "Vietnam records $122.2bln in crypto asset activity, ranking fourth in CSAO",
+    "src": "VnEconomy",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQzQzM0hkLXdnUjhYN0w3M0tUM2RwQjdVbm5BYUJKU2dibG9LTndHODFuckh2R0xpNEpXQTZQNENScDZlN251OHM1VWE4NXgwaTBZYTJHMWx6elpxd1A0NFhfZmpZODdjbVRYVGZHNWFxX1l4TXRQNHN3cUFVWHZXb1VMTE5URVFaUnNqbXFIdWlBdVVmTHUwNmMxcTFYQXU4?oc=5",
     "code": "VN"
    }
   ],
