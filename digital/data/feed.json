@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T04:24:37+00:00",
+ "updated": "2026-10-23T07:03:08+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
@@ -16,13 +16,6 @@
     "title": "금융위 '안전장치' 검토…네이버·두나무 결합 변수는 디지털자산기본법",
     "src": "뉴스저널리즘",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLQ0JuTnQwWi1HT3NSMTRIenBpVDQ4Q2gyTmVMc0htTmN3S1MtalhMZEVndm9USUNQRWJqdTFSclJDXzQ1OFRsSEFXSXUxRW1PYVBRal9zUlhJVGdwXy0tM2NKMG1wRTFJLUgw?oc=5",
-    "code": "KR"
-   },
-   {
-    "date": "2026-10-22",
-    "title": "[2026 국감] 코인 과세 시계는 가는데…디지털자산기본법은 막바지 협의",
-    "src": "조세금융신문",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12am1FbjFXVGxkZ01XQlU4ZVZIWndwdG5xRUZCcXQtdDNPQ2l2ZmZiMkdTTlFzZEhwYkllWW4zaEtHdC1sc1hfTjhGWmplU3NNdFowR0J6R0huYWdTdTh3UUd2NnBzQQ?oc=5",
     "code": "KR"
    },
    {
@@ -59,9 +52,32 @@
     "src": "아시아경제",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1iUEVjbmlRa2h4b2dMeG0xcWxkamJ6c1BYQ2lIem8tUDdhclVWT1l1Y0FiVzQ2dGtvT0E3Y2U4Z2x3SGRmSDJiWkE1UUdheUlGWXdGUGQ2WTloeS02QlB3LVBn?oc=5",
     "code": "KR"
+   },
+   {
+    "date": "2026-10-22",
+    "title": "가상자산거래소 통해 토큰증권 거래? 금융위원장 “검토할 것”",
+    "src": "이데일리",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTVl3VmFWWTg4QUl3V0NCRGlVR1ZvRUR6R2drRTBTV2I3SmhHQ2FITDRpVzJ3OUtVb2ZtdjNUX1BITEsyb29LcHhyUXhGeEFlcHFzQTBmQjhac2xmcWlCcklGcWRIS2NxVmdtX212NkJhbVA5MXI2TXh5ZTBpVWNsSg?oc=5",
+    "code": "KR"
    }
   ],
   "US": [
+   {
+    "date": "2026-10-23",
+    "title": "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
+    "src": "Federal Register · Rule · Treasury Department, Comptroller of the Currency",
+    "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the",
+    "code": "US",
+    "official": true
+   },
+   {
+    "date": "2026-10-23",
+    "title": "Agency Information Collection Activities: Proposed Information Collection; Submission for OMB Review; Reporting Forms and Instructions for Permitted Payment Stablecoin Issuers Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
+    "src": "Federal Register · Notice · Treasury Department, Comptroller of the Currency",
+    "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21705/agency-information-collection-activities-proposed-information-collection-submission-for-omb-review",
+    "code": "US",
+    "official": true
+   },
    {
     "date": "2026-10-13",
     "title": "Regulation Crypto Asset Transactions and Regulation Crypto Asset Markets",
@@ -105,20 +121,6 @@
     "title": "Stablecoin yield rule revives crypto vs. banking industry fight",
     "src": "Roll Call",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdUxkOTREZjgxOFZCa28tekZ0Z2s1dE5yeWFlMWJHekxnVW1wYVVsdHMyYjVlSGZGWjdTN0ctcF9iNkF4U2tHaEVxdDE1N1YzRWFibEtTak5jNmxmUjhGb2lvenpSaGNwaUFmTjNXSXZjZjRQdUgxZlRrUk9iQVVjNkVKdXdzYVJPUlB4VUF5ekhlSzJBRFVqbGNTNA?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-10-22",
-    "title": "NASAA Urges SEC to Scrap Crypto Rule Plan",
-    "src": "Wealth Management",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY21LTFdScnFHb0d3R0sxMzBnaVZMbU9NNzFjWjE3c1NkMFZrMXpEYVhVeFRLVzlVc1ZJMWhoNEZhMmNfUlhwbWlpNmhJeUEzdklNQUIxZVVOcVNYS1lNcnJMX3FzTW5PaU53Z0k2cVNDb1pwLTVTOUlnZ0dXUGhGdHgwQVRfX1ZEMWFaOGlWd1BBVUxQXzRaM1BsUEFUMDNBc2RzNEhwa2ZpcF9jY0E?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-10-22",
-    "title": "Skadden Submits Comment Letter on SEC’s Proposed Regulation Crypto Assets",
-    "src": "JD Supra",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcDZzcm00SlMyTzg0ckV5cDliUjhkREI5cV9mT0k0eWVXSjFXWm5aZW9DMFRBXzYzU1ljMmNFTm1kV2lMNDVMT29yRW9ub3ZoQlRIYVJXNzl5LW5zUGlmMUZzamxodEpVV05yb2hURXpCTzBRMDhxcEduMlhtYzNrZHZXd1B5dWhoYlE?oc=5",
     "code": "US"
    }
   ],
@@ -305,20 +307,6 @@
     "code": "ID"
    },
    {
-    "date": "2026-10-14",
-    "title": "OJK Highlights Opportunities and Risks of Asset Tokenization",
-    "src": "RRI.co.id",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUVhaTUVLNWVXTXFkRkRJMDV5aXlybnM3bVBDcDA1eU41cEt1MUozdnhCQVJOZWJtNExkbWw2TXR2XzhZcURENThIdERZdEU4Qk5wSnZ2TzlrOVBCSXIydUdiUThISVFmbFg3bU4xb0N0ZVVSR2t3Y0ZTSThrQ2V3VFlrVEdHVlFxV3JhTUFla08ya3g3SkQ1WkJSS1N1UDkyNU1VWmhoZEJkY2JKU1V4cjVfZ2E?oc=5",
-    "code": "ID"
-   },
-   {
-    "date": "2026-10-12",
-    "title": "What Is Sandisk Stock (SNDK) and the SNDKon Tokenized Stock?",
-    "src": "Pintu",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdkZvWkY5cE95ajlSbXZMYXpBVDhNTVBnTHRXNHhDcElwRlVmM2U0azJINmhzR3dkVXNSQmhBY0xBb3BSM0t1Y01FV25PeEl5NXQxbVgtOFNUc1ZTT3dvSkJTaFNwa0FjVll1cjlQaThoTTRBcXV5M0tQaS1RaklCTDVpbUZNbTRSOHp2U09QT3JIR2JSOFNfWQ?oc=5",
-    "code": "ID"
-   },
-   {
     "date": "2026-10-12",
     "title": "What Is Nokia Stock (NOK) and the NOKon Tokenized Stock?",
     "src": "Pintu",
@@ -351,6 +339,20 @@
     "title": "Best Crypto Payment Gateways In Indonesia In 2026",
     "src": "MKAU Gaming",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNLUQtRlJIQk15Wl9MSnBLNG8tNWNaVkRiUlZPWjNXalZ0eGU2dW95OEJBd3VNSGtBS1JZc2p5dU9kVzdfcWszQ1JyeGRFUXJIRzMydldBakZzRDZ5dnA5QmlDS09DR0VIQzZ3bmJBbkhnUUdXZDRKQWVjWVdpVFd2cXhVYw?oc=5",
+    "code": "ID"
+   },
+   {
+    "date": "2026-10-06",
+    "title": "OJK: RPOJK penawaran aset ditokenisasi masa depan keuangan digital",
+    "src": "ANTARA News",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdGR3ZDJkaDVGSElDNTQ0X1JWS0dLZ0JkX1g3X3hKeUdNbWhLX3E3WmxJNG1DYWhuMWJSNDdRR3AxanRfZ0pLSTVFN2hfeWQ5aWx5M2lpX3EydjhLZEVaSWFlcTlkbnk4ZFBUZmhPX1RzalU5ZFRtTU56MkxRWnNDd3hWWWUwVFJoenRhMkl2NS0tQURqcUU0TFBHbGVrcE1YVUczLVdIOC12WFU?oc=5",
+    "code": "ID"
+   },
+   {
+    "date": "2026-10-05",
+    "title": "Indonesia's Crypto Transactions Rise 12.87 Percent to IDR 23.16 Trillion",
+    "src": "RRI.co.id",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZkU5R0wwQVJid0ctYWZEWHpzMnBnUTJYSTFvNmx3dGJRUVhPUVpCNHNybmZjSG1BeEVwOHBsUi1Md0xvNWQ2bXdIUWUxWTJadWJfTXZwUEVmLWFmbG0tT0dEVks4ZHozNlZWYk9qSHZVRjVxZ1RRMG1jSGphOGd1aURJV2RaSTZvT1FZVGFkSUZhWTFldTBjNHlUbXdsdVBIMFhOWVkxRzlYVUpsTlZXMVJESDJNNGRmeXR5dC14WQ?oc=5",
     "code": "ID"
    }
   ],

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T00:22:35+00:00",
+ "updated": "2026-10-23T07:03:05+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -163,6 +163,24 @@
   "US": {
    "auto_checked": "2026-10-23",
    "items": [
+    {
+     "date": "2026-10-23",
+     "title": "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
+     "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the",
+     "src": "Federal Register · Rule · Treasury Department, Comptroller of the Currency",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
+     "date": "2026-10-23",
+     "title": "Agency Information Collection Activities: Proposed Information Collection; Submission for OMB Review; Reporting Forms and Instructions for Permitted Payment Stablecoin Issuers Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
+     "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21705/agency-information-collection-activities-proposed-information-collection-submission-for-omb-review",
+     "src": "Federal Register · Notice · Treasury Department, Comptroller of the Currency",
+     "topics": [
+      "stable"
+     ]
+    },
     {
      "date": "2026-10-21",
      "title": "OCC Advances U.S. Digital Asset Leadership with Final Rule to Implement GENIUS Act",
