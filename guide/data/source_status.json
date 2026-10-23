@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-23",
- "law_api": false,
+ "law_api": true,
  "sources": {
   "https://dazpro.com/decree-155-2020-vietnam-on-securities/": {
    "kind": "링크",
@@ -237,10 +237,9 @@
    "v": 2
   },
   "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12179": {
-   "kind": "원문",
+   "kind": "가변",
    "checked": "2026-10-23",
    "changed_at": "2026-10-21",
-   "sig": "bb2cc78ec807d9a4",
    "v": 2
   },
   "https://thelegalschool.in/blog/section-149-3-companies-act-2013": {
@@ -399,49 +398,56 @@
    "id": "288615",
    "effective": "20261002",
    "promulgated": "20260804",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "자본시장과 금융투자업에 관한 법률 시행령": {
    "sig": "20261013|20261013",
    "id": "291081",
    "effective": "20261013",
    "promulgated": "20261013",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "외국환거래법": {
    "sig": "20260102|20251001",
    "id": "276137",
    "effective": "20260102",
    "promulgated": "20251001",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "국제조세조정에 관한 법률": {
    "sig": "20260102|20251223",
    "id": "280389",
    "effective": "20260102",
    "promulgated": "20251223",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "외국환거래규정": {
    "sig": "20260916|20260916",
    "id": "2100000285140",
    "effective": "20260916",
    "promulgated": "20260916",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "금융회사등의 해외진출에 관한 규정": {
    "sig": "20260102|20260102",
    "id": "2100000272480",
    "effective": "20260102",
    "promulgated": "20260102",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "금융투자업규정": {
    "sig": "20260915|20260909",
    "id": "2100000285020",
    "effective": "20260915",
    "promulgated": "20260909",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   }
  },
  "rows": {
