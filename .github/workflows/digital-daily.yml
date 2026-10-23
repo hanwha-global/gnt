@@ -1,0 +1,52 @@
+name: Digital-asset regulation daily check (no LLM)
+
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 매일 07:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: digital-daily
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 당국 공식 발표 자동 감지 (시장·주제별)
+        continue-on-error: true
+        run: python digital/scripts/detect_updates.py
+      - name: 최근 발표·기사 수집
+        continue-on-error: true
+        run: python digital/scripts/fetch_feed.py
+      - name: 한눈에 보기 카드 갱신
+        run: python digital/scripts/build_summary.py
+      - name: Tests
+        run: python -m unittest discover -s tests
+      - name: Commit data
+        id: commit
+        run: |
+          git config user.name "gnd-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add digital/data
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "data: digital regulation check $(date -u +%F)"
+            git pull --rebase origin main
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Redeploy Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

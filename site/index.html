@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>글로벌네트워크팀 Weekly Dashboard</title>
+<meta name="description" content="국내 증권사 글로벌 네트워크와 권역별 증권사 순위를 공시 기준으로 매주 자동 갱신하는 대시보드">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/theme.css">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23F37321'/><path d='M4 16h24M16 2c5 5 5 23 0 28M16 2c-5 5-5 23 0 28' stroke='white' stroke-width='2' fill='none'/></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="top__inner">
+    <div class="brand">
+      <a class="brand__home" href="#overview" title="한눈에 보기로 이동" aria-label="한눈에 보기로 이동"><img class="brand__logo" src="assets/hanwha-ci.svg" alt="Hanwha" width="122" height="34"></a>
+      <span class="brand__sep" aria-hidden="true"></span>
+      <div>
+        <h1>글로벌네트워크팀 Weekly Dashboard</h1>
+        <p class="brand__sub">한화투자증권 미래전략실 · 공시 기준 · <span id="updated">불러오는 중</span></p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="섹션">
+      <a role="tab" href="#overview" data-section="overview">한눈에 보기</a>
+      <a role="tab" href="#global" data-section="global">글로벌</a>
+      <a role="tab" href="#domestic" data-section="domestic">국내</a>
+      <a role="tab" href="#hanwha" data-section="hanwha">한화투자증권</a>
+      <a role="tab" href="#digital" data-section="digital">디지털자산 규제</a>
+      <a role="tab" href="#guide" data-section="guide">해외진출 유의사항</a>
+      <a role="tab" href="#workflow" data-section="workflow">해외지분투자 Workflow</a>
+    </nav>
+  </div>
+</header>
+
+<div class="guide" role="note"><div class="guide__inner">
+  <b>한눈에 보기</b>에 모든 영역의 핵심을 모았습니다. 카드 제목을 누르면 해당 탭의 상세 화면으로 갑니다. 점선 밑줄 용어에 마우스를 올리면 설명이 나옵니다.
+</div></div>
+<main id="app">
+  <section id="section-overview" class="section" hidden>
+    <div class="kpis kpis--wide" id="ov-kpis"></div>
+    <div id="overview-view"></div>
+  </section>
+
+  <section id="section-global" class="section" hidden>
+    <div class="section__head">
+      <h2>권역별 증권사 순위</h2>
+      <p>시장마다 공개된 가장 신뢰할 만한 지표로 순위를 매겼습니다. 한국·미국은 공시 API로 매주 자동 갱신됩니다.</p>
+    </div>
+    <div class="pills" id="market-pills" role="tablist" aria-label="시장"></div>
+    <div id="market-view"></div>
+  </section>
+
+  <section id="section-domestic" class="section" hidden>
+    <div class="section__head">
+      <h2>국내 증권사 글로벌 네트워크</h2>
+      <p>정기보고서의 종속·관계회사 기준입니다. 펀드·신탁·투자기구(Vehicle)는 제외했습니다.</p>
+    </div>
+    <div class="kpis" id="kpis"></div>
+    <div class="pills" aria-label="바로 가기">
+      <a class="pill" href="#domestic/matrix" data-view="matrix">국가별 진출 현황</a>
+      <a class="pill" href="#domestic/detail" data-view="detail">해외법인 상세</a>
+      <a class="pill" href="#domestic/trend" data-view="trend">5개년 손익 추이</a>
+      <a class="pill" href="#domestic/feed" data-view="feed">최근 공시·변동 감지</a>
+    </div>
+    <div id="domestic-view"></div>
+  </section>
+
+  <section id="section-hanwha" class="section" hidden>
+    <div id="hanwha-view"></div>
+  </section>
+
+  <section id="section-digital" class="section" hidden>
+    <div id="digital-view"></div>
+  </section>
+
+  <section id="section-guide" class="section" hidden>
+    <div id="guide-view"></div>
+  </section>
+
+  <section id="section-workflow" class="section" hidden>
+    <div id="workflow-view"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>데이터: DART 전자공시, SEC EDGAR, 각 거래소·언론 발표. 매주 월요일 GitHub Actions가 LLM 없이 Python으로 갱신합니다.
+  · <a href="https://github.com/jeongpilchoi1992-hash/global-network-dashboard">GitHub</a></p>
+</footer>
+<script src="assets/app.js" defer></script>
+<script src="assets/fireworks.js" defer></script>
+</body>
+</html>

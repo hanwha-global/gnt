@@ -1,0 +1,466 @@
+{
+ "updated": "2026-10-23",
+ "note": "중앙은행 공식 일정 페이지를 매일 자동으로 읽는다. '보조'는 공식 페이지를 읽지 못해 공표 일정을 옮겨 적은 목록. 결과는 정책금리 월말 값 변화로 자동 표시.",
+ "banks": {
+  "US": {
+   "source": "공식",
+   "count": 9,
+   "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  "EU": {
+   "source": "공식",
+   "count": 9,
+   "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+  },
+  "UK": {
+   "source": "공식",
+   "count": 9,
+   "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+  },
+  "JP": {
+   "source": "공식",
+   "count": 8,
+   "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+  },
+  "CA": {
+   "source": "공식",
+   "count": 2,
+   "url": "https://www.bankofcanada.ca/press/upcoming-events/"
+  },
+  "KR": {
+   "source": "보조",
+   "count": 2,
+   "url": "https://www.bok.or.kr/eng/main/contents.do?menuNo=400069"
+  },
+  "ID": {
+   "source": "보조",
+   "count": 3,
+   "url": "https://www.bi.go.id/en/fungsi-utama/moneter/rapat-dewan-gubernur/default.aspx"
+  },
+  "IN": {
+   "source": "공식",
+   "count": 3,
+   "url": "https://www.rbi.org.in/Scripts/Annualpolicy.aspx"
+  },
+  "CN": {
+   "source": "규칙",
+   "count": 14,
+   "url": null
+  }
+ },
+ "events": [
+  {
+   "date": "2026-10-10",
+   "bank": "IN",
+   "name": "인도 RBI",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2026-10-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2026-10-21",
+   "bank": "ID",
+   "name": "인니 BI",
+   "note": "10/20~21 이사회",
+   "source": "보조"
+  },
+  {
+   "date": "2026-10-21",
+   "bank": "IN",
+   "name": "인도 RBI",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2026-10-22",
+   "bank": "KR",
+   "name": "한국 금통위",
+   "note": "통화정책방향 결정",
+   "source": "보조"
+  },
+  {
+   "date": "2026-10-28",
+   "bank": "CA",
+   "name": "캐나다 BoC",
+   "note": "MPR 발표",
+   "source": "공식"
+  },
+  {
+   "date": "2026-10-29",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "10/28~29",
+   "source": "공식"
+  },
+  {
+   "date": "2026-10-29",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "10/27~28",
+   "source": "공식"
+  },
+  {
+   "date": "2026-10-30",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "10/29~30",
+   "source": "공식"
+  },
+  {
+   "date": "2026-11-05",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "MPR 발표",
+   "source": "공식"
+  },
+  {
+   "date": "2026-11-18",
+   "bank": "ID",
+   "name": "인니 BI",
+   "note": "",
+   "source": "보조"
+  },
+  {
+   "date": "2026-11-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2026-11-26",
+   "bank": "KR",
+   "name": "한국 금통위",
+   "note": "연내 마지막 결정회의",
+   "source": "보조"
+  },
+  {
+   "date": "2026-12-04",
+   "bank": "IN",
+   "name": "인도 RBI",
+   "note": "",
+   "source": "보조"
+  },
+  {
+   "date": "2026-12-09",
+   "bank": "CA",
+   "name": "캐나다 BoC",
+   "note": "",
+   "source": "보조"
+  },
+  {
+   "date": "2026-12-10",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "12/8~9 · 경제전망(SEP)",
+   "source": "공식"
+  },
+  {
+   "date": "2026-12-17",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "12/16~17 · 경제전망",
+   "source": "공식"
+  },
+  {
+   "date": "2026-12-17",
+   "bank": "ID",
+   "name": "인니 BI",
+   "note": "",
+   "source": "보조"
+  },
+  {
+   "date": "2026-12-17",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2026-12-18",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "12/17~18",
+   "source": "공식"
+  },
+  {
+   "date": "2026-12-21",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-01-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-01-22",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "1/21~22",
+   "source": "공식"
+  },
+  {
+   "date": "2027-01-28",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "1/26~27",
+   "source": "공식"
+  },
+  {
+   "date": "2027-02-04",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-02-04",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-02-22",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-03-18",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-03-18",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "3/17~18",
+   "source": "공식"
+  },
+  {
+   "date": "2027-03-18",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-03-18",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "3/16~17 · 경제전망(SEP)",
+   "source": "공식"
+  },
+  {
+   "date": "2027-03-22",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-04-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-04-28",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "4/27~28",
+   "source": "공식"
+  },
+  {
+   "date": "2027-04-29",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-04-29",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-04-29",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "4/27~28",
+   "source": "공식"
+  },
+  {
+   "date": "2027-05-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-06-10",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-06-10",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "6/8~9 · 경제전망(SEP)",
+   "source": "공식"
+  },
+  {
+   "date": "2027-06-11",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "6/10~11",
+   "source": "공식"
+  },
+  {
+   "date": "2027-06-17",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-06-21",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-07-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-07-22",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-07-22",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "7/21~22",
+   "source": "공식"
+  },
+  {
+   "date": "2027-07-29",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-07-29",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "7/27~28",
+   "source": "공식"
+  },
+  {
+   "date": "2027-08-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-09-09",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-09-16",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-09-16",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "9/14~15 · 경제전망(SEP)",
+   "source": "공식"
+  },
+  {
+   "date": "2027-09-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-10-20",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  },
+  {
+   "date": "2027-10-28",
+   "bank": "EU",
+   "name": "ECB",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-10-28",
+   "bank": "US",
+   "name": "미국 FOMC",
+   "note": "10/26~27",
+   "source": "공식"
+  },
+  {
+   "date": "2027-10-29",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "10/28~29",
+   "source": "공식"
+  },
+  {
+   "date": "2027-11-04",
+   "bank": "UK",
+   "name": "영국 BoE",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-11-22",
+   "bank": "CN",
+   "name": "중국 LPR",
+   "note": "매월 20일(휴일이면 다음 영업일)",
+   "source": "규칙"
+  }
+ ]
+}

@@ -1,0 +1,3805 @@
+{
+"firms": {
+"미래에셋증권": {
+"FY2021": {
+"rcept_no": "20220316001023",
+"label": "2021 사업보고서",
+"rcept_dt": "20220316",
+"first_dt": "20220316",
+"subs": {
+"MAPS HOTELS AND RESORTS ONE, LLC.": {
+"rev": 64609.0,
+"ni": 94563.0,
+"equity": 832900.0,
+"parent": "미래에셋맵스미국전문투자형사모부동산모투자신탁15호",
+"own": 100.0
+},
+"Mirae Asset Securities (UK) Ltd.": {
+"rev": 7987.0,
+"ni": -1232.0,
+"equity": 360232.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities Holdings (USA) Inc.": {
+"rev": 46.0,
+"ni": -34.0,
+"equity": 675837.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (USA) Inc.": {
+"rev": 166351.0,
+"ni": 23975.0,
+"equity": 331509.0,
+"parent": "Mirae Assert Securities &cr;Holdings (USA) Inc.",
+"own": 100.0
+},
+"Mirae Asset Wealth Management (USA) Inc.": {
+"rev": 1763.0,
+"ni": 3910.0,
+"equity": 15266.0,
+"parent": "Mirae Assert Securities &cr;Holdings (USA) Inc.",
+"own": 100.0
+},
+"Mirae Asset Securities & Investments (USA), LLC": {
+"rev": 33048.0,
+"ni": 19752.0,
+"equity": 393176.0,
+"parent": "Mirae Assert Securities &cr;Holdings (USA) Inc.",
+"own": 100.0
+},
+"HGX (USA), LLC": {
+"rev": 1549.0,
+"ni": 1534.0,
+"equity": 40.0,
+"parent": "Mirae Asset Securities & Investments (USA), LLC",
+"own": 100.0
+},
+"MAS Cityfront Place Property Company LLC": {
+"rev": 13617.0,
+"ni": -168.0,
+"equity": 71563.0,
+"parent": "Cityfront Place Trust LLC",
+"own": 100.0
+},
+"Mirae Asset Securities (HK) Limited": {
+"rev": 345152.0,
+"ni": 66054.0,
+"equity": 2878415.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (Vietnam) JSC": {
+"rev": 127415.0,
+"ni": 42008.0,
+"equity": 447198.0,
+"parent": "Mirae Asset &cr;Securities (HK) Limited",
+"own": 99.9
+},
+"Mirae Asset Wealth Management (Brazil) CCTVM": {
+"rev": 16479.0,
+"ni": 696.0,
+"equity": 58553.0,
+"parent": "Mirae Asset &cr;Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Securities (Singapore) Pte. Ltd.": {
+"rev": 3433.0,
+"ni": -3038.0,
+"equity": 38938.0,
+"parent": "Mirae Asset &cr;Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Securities Mongolia UTsK LLC": {
+"rev": 283.0,
+"ni": 5.0,
+"equity": 1884.0,
+"parent": "Mirae Asset &cr;Securities (HK) Limited",
+"own": 83.16
+},
+"PT. Mirae Asset Sekuritas Indonesia": {
+"rev": 86260.0,
+"ni": 30756.0,
+"equity": 166943.0,
+"parent": "Mirae Asset &cr;Securities (HK) Limited",
+"own": 99.0
+},
+"Mirae Asset Capital Markets (India) Private Limited": {
+"rev": 47436.0,
+"ni": 23405.0,
+"equity": 374644.0,
+"parent": "Mirae Asset &cr;Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Global Growth ETF Investment Limited": {
+"rev": 366.0,
+"ni": -1467.0,
+"equity": 45902.0,
+"parent": "Mirae Asset &cr;Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Realty (Singapore) PTE.": {
+"ni": -9.0,
+"equity": 137.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"MAPS HAWAII TWO, LLC.": {
+"ni": -9491.0,
+"equity": 468502.0,
+"parent": "미래에셋맵스프런티어미국전문투자형사모부동산투자신탁7호",
+"own": 100.0
+},
+"MAPS WAIKIKI HOTEL, LLC.": {
+"rev": 17959.0,
+"ni": -54572.0,
+"equity": 340800.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"MAPS HOTELS AND RESORTS HAWAII 2, LLC.": {
+"rev": 57152.0,
+"ni": 3392.0,
+"equity": 3771.0,
+"parent": "MAPS WAIKIKI HOTEL, LLC.",
+"own": 100.0
+},
+"MAPS ROYAL GROVE, LLC.": {
+"rev": 61.0,
+"ni": -62.0,
+"equity": -184.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"Super Delta Pte. Ltd.": {
+"rev": 940.0,
+"ni": 896.0,
+"equity": 50715.0,
+"parent": "LK GHC 전문투자형사모투자신탁제1호",
+"own": 99.12
+},
+"MAC Global Unicorn Investment Limited": {
+"ni": -158992.0,
+"equity": 116743.0,
+"parent": "미래에셋글로벌유니콘사모&cr;투자합자회사",
+"own": 100.0
+},
+"Mirae Asset Daewoo Global Ⅰ, LLC": {
+"rev": 11444.0,
+"ni": 11406.0,
+"equity": 142362.0,
+"parent": "미래에셋증권글로벌제일호 &cr;사모투자합자회사",
+"own": 100.0
+},
+"OPPCI Mahajunga Holding": {
+"rev": 32553.0,
+"ni": 27402.0,
+"equity": 333688.0,
+"parent": "멀티에셋해외부동산전문투자형&cr;사모투자신탁제6호",
+"own": 97.46
+},
+"SCI Mahajunga": {
+"rev": 60698.0,
+"ni": -34268.0,
+"equity": 127193.0,
+"parent": "OPPCI Mahajunga Holding",
+"own": 85.0
+},
+"Mirae Asset Investment Advisory (BEIJING) Co., Ltd.": {
+"rev": 306.0,
+"ni": -58.0,
+"equity": 4205.0,
+"parent": "Mirae Asset &cr;Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Securities Holdings (USA) Inc": {
+"rev": 46.0,
+"ni": -34.0,
+"equity": 675837.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+}
+},
+"assoc": {
+"SMC RMB Investors II Limited": {
+"rev": 1674.0,
+"ni": 1362.0,
+"equity": 24167.0
+},
+"Transwestern Corporate Properties I LLC": {
+"rev": 54202.0,
+"ni": 15378.0,
+"equity": 371979.0
+},
+"Traphaco Joint Stock Company": {
+"rev": 107826.0,
+"ni": 13197.0,
+"equity": 66038.0
+},
+"Asia Cinema Group Ltd.": {
+"rev": 13092.0,
+"ni": 658.0,
+"equity": 138473.0
+},
+"Mirae Asset Venture Investments (India) Private Limited": {
+"rev": 2506.0,
+"ni": 1510.0,
+"equity": 12705.0
+},
+"ASIA CINEMA GROUP LTD.": {
+"rev": 13092.0,
+"ni": 658.0,
+"equity": 138473.0
+}
+}
+},
+"FY2022": {
+"rcept_no": "20230315001134",
+"label": "2022 사업보고서",
+"rcept_dt": "20230315",
+"first_dt": "20230315",
+"subs": {
+"Mirae Asset Securities (UK) Ltd.": {
+"rev": 32926.0,
+"ni": 13043.0,
+"equity": 397882.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities Holdings (USA) Inc.": {
+"rev": 457.0,
+"ni": -14620.0,
+"equity": 708128.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (USA) Inc.": {
+"rev": 708386.0,
+"ni": 23866.0,
+"equity": 663570.0,
+"parent": "Mirae Assert Securities Holdings (USA) Inc.",
+"own": 100.0
+},
+"Mirae Asset Securities & Investments (USA), LLC": {
+"rev": 16870.0,
+"ni": 4011.0,
+"equity": 146080.0,
+"parent": "Mirae Assert Securities Holdings (USA) Inc.",
+"own": 100.0
+},
+"MAS Cityfront Place Property Company LLC": {
+"rev": 17365.0,
+"ni": 1357.0,
+"equity": 72726.0,
+"parent": "Cityfront Place Trust LLC",
+"own": 100.0
+},
+"Mirae Asset Securities (HK) Limited": {
+"rev": 319556.0,
+"ni": 20272.0,
+"equity": 2739865.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (Vietnam) JSC": {
+"rev": 146428.0,
+"ni": 37284.0,
+"equity": 492934.0,
+"parent": "Mirae Asset Securities (HK) Limited",
+"own": 99.9
+},
+"Mirae Asset Wealth Management (Brazil) CCTVM": {
+"rev": 31677.0,
+"ni": 6856.0,
+"equity": 72673.0,
+"parent": "Mirae Asset Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Securities (Singapore) Pte. Ltd.": {
+"rev": 3869.0,
+"ni": -3019.0,
+"equity": 38664.0,
+"parent": "Mirae Asset Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Securities Mongolia UTsK LLC": {
+"rev": 1198.0,
+"ni": 618.0,
+"equity": 2226.0,
+"parent": "Mirae Asset Securities (HK) Limited",
+"own": 83.16
+},
+"PT. Mirae Asset Sekuritas Indonesia": {
+"rev": 93291.0,
+"ni": 6797.0,
+"equity": 169758.0,
+"parent": "Mirae Asset Securities (HK) Limited",
+"own": 99.0
+},
+"Mirae Asset Capital Markets (India) Private Limited": {
+"rev": 26509.0,
+"ni": -3796.0,
+"equity": 356306.0,
+"parent": "Mirae Asset Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Global Growth ETF Investment Limited": {
+"rev": 1724.0,
+"ni": -13964.0,
+"equity": 60717.0,
+"parent": "Mirae Asset Securities (HK) Limited",
+"own": 100.0
+},
+"Mirae Asset Realty (Singapore) PTE.": {
+"ni": -10.0,
+"equity": 146.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Innovation X One, LLC": {
+"ni": -33430.0,
+"equity": 253560.0,
+"parent": "미래에셋파트너스제11호사모투자합자회사",
+"own": 100.0
+},
+"MAPS HAWAII TWO, LLC.": {
+"ni": -21.0,
+"equity": 500715.0,
+"parent": "미래에셋맵스프런티어미국전문투자형사모부동산투자신탁7호",
+"own": 100.0
+},
+"MAPS WAIKIKI HOTEL, LLC.": {
+"rev": 69653.0,
+"ni": -16034.0,
+"equity": 347452.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"MAPS HOTELS AND RESORTS HAWAII 2, LLC.": {
+"rev": 151002.0,
+"ni": 1223.0,
+"equity": 5334.0,
+"parent": "MAPS WAIKIKI HOTEL, LLC.",
+"own": 100.0
+},
+"MAPS ROYAL GROVE, LLC.": {
+"rev": 222.0,
+"ni": 40.0,
+"equity": -158.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"Super Delta Pte. Ltd.": {
+"rev": 1062.0,
+"ni": 847.0,
+"equity": 55044.0,
+"parent": "LK GHC 전문투자형사모투자신탁제1호",
+"own": 99.12
+},
+"MAC Global Unicorn Investment Limited": {
+"ni": -40405.0,
+"equity": 85167.0,
+"parent": "미래에셋글로벌유니콘사모투자합자회사",
+"own": 100.0
+},
+"Mirae Asset Daewoo Global Ⅰ, LLC": {
+"rev": 64598.0,
+"ni": 64554.0,
+"equity": 215508.0,
+"parent": "미래에셋증권글로벌제일호 사모투자합자회사",
+"own": 100.0
+},
+"OPPCI Mahajunga Holding": {
+"rev": 9896.0,
+"ni": 4847.0,
+"equity": 325910.0,
+"parent": "멀티에셋해외부동산전문투자형사모투자신탁제6호",
+"own": 97.46
+},
+"SCI Mahajunga": {
+"rev": 78379.0,
+"ni": -72378.0,
+"equity": 55984.0,
+"parent": "OPPCI Mahajunga Holding",
+"own": 85.0
+},
+"MAPS HOTELS AND RESORTS ONE, LLC.": {
+"rev": 64609.0,
+"ni": 94563.0,
+"equity": 832900.0,
+"parent": "미래에셋맵스미국전문투자형사모부동산모투자신탁15호",
+"own": 100.0
+},
+"Mirae Asset Wealth Management (USA) Inc.": {
+"rev": 1763.0,
+"ni": 3910.0,
+"equity": 15266.0,
+"parent": "Mirae Assert Securities Holdings (USA) Inc.",
+"own": 100.0
+},
+"HGX (USA), LLC": {
+"rev": 1549.0,
+"ni": 1534.0,
+"equity": 40.0,
+"parent": "Mirae Asset Securities & Investments (USA), LLC",
+"own": 100.0
+},
+"Mirae Asset Securities Holdings (USA) Inc": {
+"rev": 457.0,
+"ni": -14620.0,
+"equity": 708128.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+}
+},
+"assoc": {
+"SMC RMB Investors II Limited": {
+"rev": 1.0,
+"ni": -14183.0,
+"equity": 11062.0
+},
+"Transwestern Corporate Properties I LLC": {
+"rev": 43250.0,
+"ni": 20466.0,
+"equity": 375445.0
+},
+"Traphaco Joint Stock Company": {
+"rev": 132057.0,
+"ni": 16677.0,
+"equity": 77373.0
+},
+"Asia Cinema Group Ltd.": {
+"rev": 51792.0,
+"ni": 37637.0,
+"equity": 184947.0
+},
+"Mirae Asset Venture Investments (India) Private Limited": {
+"rev": 5729.0,
+"ni": 3765.0,
+"equity": 15996.0
+},
+"ASIA CINEMA GROUP LTD.": {
+"rev": 51792.0,
+"ni": 37637.0,
+"equity": 184947.0
+}
+}
+},
+"FY2023": {
+"rcept_no": "20240318000604",
+"label": "2023 사업보고서",
+"rcept_dt": "20240318",
+"first_dt": "20240318",
+"subs": {
+"Mirae Asset Securities (UK) Ltd.": {
+"rev": 17106.0,
+"ni": -25403.0,
+"equity": 379729.0,
+"parent": "미래에셋증권",
+"own": 100.0
+},
+"Mirae Asset Securities Holdings (USA) Inc.": {
+"rev": 518.0,
+"ni": -962.0,
+"equity": 719526.0,
+"parent": "미래에셋증권",
+"own": 100.0
+},
+"Mirae Asset Securities (HK) Limited": {
+"rev": 357195.0,
+"ni": -20184.0,
+"equity": 2415188.0,
+"parent": "미래에셋증권",
+"own": 100.0
+},
+"Mirae Asset Capital Markets (India) Private Limited": {
+"rev": 59182.0,
+"ni": 6160.0,
+"equity": 558662.0,
+"parent": "미래에셋증권",
+"own": 100.0
+},
+"Mirae Asset Realty (Singapore) PTE.": {
+"ni": -10.0,
+"equity": 149.0,
+"parent": "미래에셋증권",
+"own": 100.0
+},
+"Mirae Asset Securities Holdings (USA) Inc": {
+"rev": 457.0,
+"ni": -14620.0,
+"equity": 708128.0,
+"parent": "미래에셋증권",
+"own": 100.0
+},
+"Mirae Asset Securities (Vietnam) JSC": {
+"rev": 139735.0,
+"ni": 32381.0,
+"equity": 515584.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 99.9
+},
+"Mirae Asset (Brasil) CCTVM LTDA.": {
+"rev": 35754.0,
+"ni": 7092.0,
+"equity": 87586.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities (Singapore) Pte. Ltd.": {
+"rev": 7634.0,
+"ni": 2367.0,
+"equity": 41677.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities Mongolia UTsK LLC": {
+"rev": 996.0,
+"ni": 353.0,
+"equity": 2560.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 83.16
+},
+"PT. Mirae Asset Sekuritas Indonesia": {
+"rev": 54652.0,
+"ni": -12596.0,
+"equity": 162316.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 99.0
+},
+"Mirae Asset Global Growth ETF Investment Limited": {
+"rev": 15432.0,
+"ni": 643.0,
+"equity": 62412.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities (USA) Inc.": {
+"rev": 2220383.0,
+"ni": 23370.0,
+"equity": 698225.0,
+"parent": "Mirae Assert SecuritiesHoldings (USA) Inc.",
+"own": 100.0
+},
+"Mirae Asset Securities & Investments (USA), LLC": {
+"rev": 5673.0,
+"ni": -24664.0,
+"equity": 124265.0,
+"parent": "Mirae Assert SecuritiesHoldings (USA) Inc.",
+"own": 100.0
+},
+"Goldenberg Hehmeyer LLP": {
+"rev": 10411.0,
+"ni": -15422.0,
+"equity": 14675.0,
+"parent": "Mirae Asset Securities (UK) Ltd.",
+"own": 100.0
+},
+"GHCO Europe Investment Services S.A.": {
+"rev": 4251.0,
+"ni": 824.0,
+"equity": 2026.0,
+"parent": "Mirae Asset Securities (UK) Ltd.",
+"own": 100.0
+},
+"MAPS HAWAII TWO, LLC.": {
+"ni": -77.0,
+"equity": 509351.0,
+"parent": "미래에셋맵스프런티어미국전문투자형사모부동산투자신탁7호",
+"own": 100.0
+},
+"MAPS WAIKIKI HOTEL, LLC.": {
+"rev": 74376.0,
+"ni": -26733.0,
+"equity": 309086.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"MAPS ROYAL GROVE, LLC.": {
+"rev": 240.0,
+"ni": 75.0,
+"equity": -87.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"MAPS HOTELS AND RESORTS HAWAII 2, LLC.": {
+"rev": 183103.0,
+"ni": 120.0,
+"equity": -7001.0,
+"parent": "MAPS WAIKIKI HOTEL, LLC.",
+"own": 100.0
+},
+"Super Delta Pte. Ltd.": {
+"rev": 1012.0,
+"ni": 884.0,
+"equity": 56878.0,
+"parent": "LK GHC 전문투자형 사모투자신탁제1호",
+"own": 99.12
+},
+"MAC Global Unicorn Investment Limited": {
+"rev": 11228.0,
+"ni": 10562.0,
+"equity": 97086.0,
+"parent": "미래에셋글로벌유니콘사모투자합자회사",
+"own": 100.0
+},
+"Mirae Asset Daewoo Global Ⅰ, LLC": {
+"rev": 26108.0,
+"ni": 26064.0,
+"equity": 257905.0,
+"parent": "미래에셋대우글로벌제일호 사모투자합자회사",
+"own": 100.0
+},
+"Mirae Asset Innovation X One, LLC": {
+"ni": -27390.0,
+"equity": 226170.0,
+"parent": "미래에셋파트너스제11호사모투자합자회사",
+"own": 100.0
+},
+"OPPCI Mahajunga Holding": {
+"rev": 10462.0,
+"ni": 6523.0,
+"equity": 393481.0,
+"parent": "멀티에셋해외부동산전문투자형사모투자신탁제6호",
+"own": 97.46
+},
+"SCI Mahajunga": {
+"rev": 56072.0,
+"ni": -177384.0,
+"equity": 72526.0,
+"parent": "OPPCI Mahajunga Holding",
+"own": 85.0
+},
+"MAS Cityfront Place Property Company LLC": {
+"rev": 19084.0,
+"ni": 2733.0,
+"equity": 71043.0,
+"parent": "Cityfront Place Trust LLC",
+"own": 100.0
+}
+},
+"assoc": {
+"SMC RMB Investors II Limited": {
+"rev": -8166.0,
+"ni": -7659.0,
+"equity": 3759.0
+},
+"ASIA CINEMA GROUP LTD.": {
+"rev": 35024.0,
+"ni": -19885.0,
+"equity": 168530.0
+},
+"Transwestern Corporate Properties I LLC": {
+"rev": 44217.0,
+"ni": -149268.0,
+"equity": 14807.0
+},
+"Traphaco Joint Stock Company": {
+"rev": 32389.0,
+"ni": 3955.0,
+"equity": 82163.0
+},
+"Asia Cinema Group Ltd.": {
+"rev": 35024.0,
+"ni": -19885.0,
+"equity": 168530.0
+},
+"Mirae Asset Venture Investments (India) Private Limited": {
+"rev": 5657.0,
+"ni": 2758.0,
+"equity": 18888.0
+}
+}
+},
+"FY2024": {
+"rcept_no": "20250814004060",
+"label": "2024 사업보고서",
+"rcept_dt": "20250814",
+"first_dt": "20250319",
+"subs": {
+"MAPS HAWAII TWO, LLC.": {
+"ni": 545.0,
+"equity": 581257.0,
+"parent": "미래에셋맵스프런티어미국전문투자형사모부동산투자신탁7호",
+"own": 100.0
+},
+"MAPS WAIKIKI HOTEL, LLC.": {
+"rev": 80018.0,
+"ni": -41456.0,
+"equity": 306587.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"MAPS ROYAL GROVE, LLC.": {
+"rev": 251.0,
+"ni": 65.0,
+"equity": -29.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"MAPS HOTELS AND RESORTS HAWAII 2, LLC.": {
+"rev": 198935.0,
+"ni": -1063.0,
+"equity": -9116.0,
+"parent": "MAPS WAIKIKI HOTEL, LLC.",
+"own": 100.0
+},
+"Super Delta Pte. Ltd.": {
+"rev": 695.0,
+"ni": 358.0,
+"equity": 58559.0,
+"parent": "LK GHC 전문투자형 사모투자신탁제1호",
+"own": 99.12
+},
+"OPPCI Mahajunga Holding": {
+"rev": 5220.0,
+"ni": 4962.0,
+"equity": 543970.0,
+"parent": "미래에셋해외부동산전문투자형사모투자신탁제6호",
+"own": 97.46
+},
+"SCI Mahajunga": {
+"rev": 66086.0,
+"ni": -69130.0,
+"equity": 6074.0,
+"parent": "OPPCI Mahajunga Holding",
+"own": 85.0
+},
+"MAC Global Unicorn Investment Limited": {
+"rev": 24553.0,
+"ni": 23819.0,
+"equity": 136404.0,
+"parent": "미래에셋글로벌유니콘사모투자합자회사",
+"own": 100.0
+},
+"Mirae Asset Realty (Singapore) PTE.": {
+"ni": -11.0,
+"equity": 134.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (UK) Ltd.": {
+"rev": 20342.0,
+"ni": 3728.0,
+"equity": 436934.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities & Investments (UK) Ltd": {
+"rev": 8450.0,
+"ni": -16887.0,
+"equity": 237041.0,
+"parent": "Mirae Asset Securities (UK) Ltd.",
+"own": 100.0
+},
+"Mirae Asset Securities Holdings (USA) Inc.": {
+"rev": 658.0,
+"ni": -59.0,
+"equity": 820243.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (USA) Inc.": {
+"rev": 3571358.0,
+"ni": 79119.0,
+"equity": 810333.0,
+"parent": "Mirae Assert SecuritiesHoldings (USA) Inc.",
+"own": 100.0
+},
+"Mirae Asset Securities & Investments (USA), LLC": {
+"rev": 4849.0,
+"ni": -6508.0,
+"equity": 208743.0,
+"parent": "Mirae Assert SecuritiesHoldings (USA) Inc.",
+"own": 100.0
+},
+"Goldenberg Hehmeyer LLP": {
+"rev": 9451.0,
+"ni": -4452.0,
+"equity": 56034.0,
+"parent": "Mirae Asset Securities (UK) Ltd.",
+"own": 100.0
+},
+"GHCO Europe Investment Services S.A.": {
+"rev": 3830.0,
+"ni": -522.0,
+"equity": 1650.0,
+"parent": "Mirae Asset Securities (UK) Ltd.",
+"own": 100.0
+},
+"MAS Cityfront Place Property Company LLC": {
+"rev": 155182.0,
+"ni": 25658.0,
+"equity": 75186.0,
+"parent": "Cityfront Place Trust LLC",
+"own": 100.0
+},
+"Mirae Asset Securities (HK) Limited": {
+"rev": 677256.0,
+"ni": 67175.0,
+"equity": 2303479.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (Vietnam) JSC": {
+"rev": 140727.0,
+"ni": 37164.0,
+"equity": 550582.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 99.9
+},
+"Mirae Asset (Brasil) CCTVM LTDA.": {
+"rev": 38394.0,
+"ni": 4808.0,
+"equity": 83036.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities (Singapore) Pte. Ltd.": {
+"rev": 6008.0,
+"ni": -1855.0,
+"equity": 45515.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities Mongolia UTsK LLC": {
+"rev": 651.0,
+"ni": 73.0,
+"equity": 2810.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 83.16
+},
+"PT. Mirae Asset Sekuritas Indonesia": {
+"rev": 48902.0,
+"ni": -11683.0,
+"equity": 164562.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 99.0
+},
+"Mirae Asset Securities Financial Products Limited": {
+"rev": 48.0,
+"ni": 10.0,
+"equity": 11.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Capital Markets(India) Private Limited": {
+"rev": 99725.0,
+"ni": 16268.0,
+"equity": 851611.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Human Value Developers Private Limited": {
+"rev": 2.0,
+"ni": -101.0,
+"equity": 139789.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Sharekhan Limited": {
+"rev": 22608.0,
+"ni": -17626.0,
+"equity": 262092.0,
+"parent": "Mirae Asset Capital Markets (India) Private Limited",
+"own": 100.0
+},
+"Espresso Financial Services Private Limited": {
+"rev": 217.0,
+"ni": -5290.0,
+"equity": 3027.0,
+"parent": "Mirae Asset Capital Markets (India) Private Limited",
+"own": 100.0
+},
+"Mirae Asset Sharekhan Financial Services Limited": {
+"rev": 832.0,
+"ni": 515.0,
+"equity": 103624.0,
+"parent": "Human Value Developers Private Limited",
+"own": 100.0
+},
+"Sharekhan.com India private Limited": {
+"rev": 197.0,
+"ni": -178.0,
+"equity": 362.0,
+"parent": "Human Value Developers Private Limited",
+"own": 100.0
+},
+"Sharekhan Commodities Private Limited": {
+"rev": 4.0,
+"ni": 2.0,
+"equity": 529.0,
+"parent": "Mirae Asset Capital Markets (India) Private Limited",
+"own": 100.0
+},
+"Sharekhan Consultants Private Limited": {
+"rev": 1.0,
+"ni": 2.0,
+"equity": 284.0,
+"parent": "Human Value Developers Private Limited",
+"own": 100.0
+},
+"Mirae Asset Capital Markets (India) Private Limited": {
+"rev": 59182.0,
+"ni": 6160.0,
+"equity": 558662.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Global Growth ETF Investment Limited": {
+"rev": 15432.0,
+"ni": 643.0,
+"equity": 62412.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Daewoo Global I, LLC": {
+"rev": 26108.0,
+"ni": 26064.0,
+"equity": 257905.0,
+"parent": "미래에셋대우글로벌제일호 사모투자합자회사",
+"own": 100.0
+},
+"Mirae Asset Innovation X One, LLC": {
+"ni": -27390.0,
+"equity": 226170.0
+}
+},
+"assoc": {
+"SMC RMB Investors II Limited": {
+"rev": 11.0,
+"ni": -2952.0,
+"equity": 1176.0
+},
+"Traphaco Joint Stock Company": {
+"rev": 30478.0,
+"ni": 2363.0,
+"equity": 83819.0
+},
+"Asia Cinema Group Ltd.": {
+"rev": 10639.0,
+"ni": -86728.0,
+"equity": 100865.0
+},
+"Mirae Asset Venture Investments (India) Private Limited": {
+"rev": 7559.0,
+"ni": 4267.0,
+"equity": 25424.0
+},
+"Transwestern Corporate Properties I LLC": {
+"rev": 44217.0,
+"ni": -149268.0,
+"equity": 14807.0
+},
+"ASIA CINEMA GROUP LTD.": {
+"rev": 10639.0,
+"ni": -86728.0,
+"equity": 100865.0
+}
+}
+},
+"FY2025": {
+"rcept_no": "20260515002972",
+"label": "2025 사업보고서",
+"rcept_dt": "20260515",
+"first_dt": "20260316",
+"subs": {
+"MAPS HAWAII TWO, LLC.": {
+"ni": -85.0,
+"equity": 593107.0,
+"parent": "미래에셋맵스프런티어미국전문투자형사모부동산투자신탁7호",
+"own": 100.0
+},
+"MAPS WAIKIKI HOTEL, LLC.": {
+"rev": 74641.0,
+"ni": -271499.0,
+"equity": 20364.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"MAPS ROYAL GROVE, LLC.": {
+"rev": 270.0,
+"ni": -8.0,
+"equity": -37.0,
+"parent": "MAPS HAWAII TWO, LLC.",
+"own": 100.0
+},
+"MAPS HOTELS AND RESORTS HAWAII 2, LLC.": {
+"rev": 214581.0,
+"ni": -1872.0,
+"equity": -10699.0,
+"parent": "MAPS WAIKIKI HOTEL, LLC.",
+"own": 100.0
+},
+"Super Delta Pte. Ltd.": {
+"rev": 1165.0,
+"ni": 539.0,
+"equity": 65180.0,
+"parent": "LK GHC 전문투자형 사모투자신탁제1호",
+"own": 99.12
+},
+"OPPCI Mahajunga Holding": {
+"rev": 6027.0,
+"ni": 5709.0,
+"equity": 605819.0,
+"parent": "미래에셋해외부동산전문투자형사모투자신탁제6호",
+"own": 97.46
+},
+"SCI Mahajunga": {
+"rev": 43765.0,
+"ni": -19720.0,
+"equity": -13983.0,
+"parent": "OPPCI Mahajunga Holding",
+"own": 85.0
+},
+"MAC Global Unicorn Investment Limited": {
+"rev": 13085.0,
+"ni": 12294.0,
+"equity": 145483.0,
+"parent": "미래에셋글로벌유니콘사모투자합자회사",
+"own": 100.0
+},
+"Mirae Asset Realty (Singapore) PTE.": {
+"ni": -19.0,
+"equity": 112.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (UK) Ltd.": {
+"rev": 80677.0,
+"ni": -4743.0,
+"equity": 421716.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities & Investments (UK) Ltd": {
+"rev": 66634.0,
+"ni": 31072.0,
+"equity": 263447.0,
+"parent": "Mirae Asset Securities (UK) Ltd.",
+"own": 100.0
+},
+"Mirae Asset Securities Holdings (USA) Inc.": {
+"rev": 2506.0,
+"ni": 1627.0,
+"equity": 802300.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Securities (USA) Inc.": {
+"rev": 4067673.0,
+"ni": 187136.0,
+"equity": 978353.0,
+"parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+"own": 100.0
+},
+"Mirae Asset Securities & Investments (USA), LLC": {
+"rev": 10952.0,
+"ni": -15947.0,
+"equity": 187670.0,
+"parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+"own": 100.0
+},
+"Global Trading X LLC": {
+"rev": 5.0,
+"ni": -324.0,
+"equity": 1467.0,
+"parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+"own": 100.0
+},
+"GTX UK LLP": {
+"rev": 18884.0,
+"ni": 598.0,
+"equity": 55298.0,
+"parent": "Mirae Asset Securities (UK) Ltd.",
+"own": 100.0
+},
+"GTX EU Investment Services S.A.": {
+"rev": 4793.0,
+"ni": 749.0,
+"equity": 2583.0,
+"parent": "Mirae Asset Securities (UK) Ltd.",
+"own": 100.0
+},
+"MAS Cityfront Place Property Company LLC": {
+"rev": 22986.0,
+"ni": -512.0,
+"equity": 66855.0,
+"parent": "Cityfront Place Trust LLC",
+"own": 100.0
+},
+"Mirae Asset Securities (HK) Limited": {
+"rev": 1202014.0,
+"ni": 117394.0,
+"equity": 2380925.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Mirae Asset Technology Innovation Center (Shenzhen) Co., Ltd": {
+"ni": -49.0,
+"equity": -51.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities (Vietnam) JSC": {
+"rev": 168178.0,
+"ni": 41425.0,
+"equity": 529445.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 99.9
+},
+"Mirae Asset (Brasil) CCTVM LTDA.": {
+"rev": 61354.0,
+"ni": 6673.0,
+"equity": 98321.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities (Singapore) Pte. Ltd.": {
+"rev": 10337.0,
+"ni": 4052.0,
+"equity": 48516.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities Mongolia UTsK LLC": {
+"rev": 1368.0,
+"ni": 435.0,
+"equity": 3080.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 83.16
+},
+"PT. Mirae Asset Sekuritas Indonesia": {
+"rev": 76537.0,
+"ni": 22321.0,
+"equity": 177193.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 99.0
+},
+"Mirae Asset Securities Financial Products Limited": {
+"rev": 10870.0,
+"ni": 904.0,
+"equity": 922.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities Finance (HK) Limited": {
+"rev": 814.0,
+"ni": -103.0,
+"equity": -73.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Securities Investment (HK) Limited": {
+"rev": 2130.0,
+"ni": 1220.0,
+"equity": 1233.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Digital X (HK) Limited": {
+"rev": 1.0,
+"ni": -424.0,
+"equity": 6946.0,
+"parent": "Mirae Asset Securities (HK)Limited",
+"own": 100.0
+},
+"Mirae Asset Capital Markets(India) Private Limited": {
+"rev": 113615.0,
+"ni": 15092.0,
+"equity": 1085486.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Human Value Developers Private Limited": {
+"rev": 845.0,
+"ni": 627.0,
+"equity": 130585.0,
+"parent": "미래에셋증권 주식회사",
+"own": 100.0
+},
+"Sharekhan Limited": {
+"rev": 237095.0,
+"ni": 38813.0,
+"equity": 281282.0,
+"parent": "Mirae Asset Capital Markets (India) Private Limited",
+"own": 100.0
+},
+"Espresso Financial Services Private Limited": {
+"rev": 429.0,
+"ni": -133.0,
+"equity": 2680.0,
+"parent": "Sharekhan Limited",
+"own": 100.0
+},
+"Mirae Asset Sharekhan Financial Services Limited": {
+"rev": 10343.0,
+"ni": 5745.0,
+"equity": 101137.0,
+"parent": "Human Value Developers Private Limited",
+"own": 100.0
+},
+"Sharekhan.com India private Limited": {
+"rev": 1123.0,
+"ni": -96.0,
+"equity": 234.0,
+"parent": "Human Value Developers Private Limited",
+"own": 100.0
+},
+"Sharekhan Commodities Private Limited": {
+"rev": 45.0,
+"ni": 29.0,
+"equity": 520.0,
+"parent": "Sharekhan Limited",
+"own": 100.0
+},
+"Sharekhan Consultants Private Limited": {
+"rev": 15.0,
+"ni": 8.0,
+"equity": 271.0,
+"parent": "Human Value Developers Private Limited",
+"own": 100.0
+},
+"Goldenberg Hehmeyer LLP": {
+"rev": 9451.0,
+"ni": -4452.0,
+"equity": 56034.0
+},
+"GHCO Europe Investment Services S.A.": {
+"rev": 3830.0,
+"ni": -522.0,
+"equity": 1650.0
+}
+},
+"assoc": {
+"SMC RMB Investors II Limited": {
+"rev": 2.0,
+"ni": -1240.0,
+"equity": -83.0
+},
+"Traphaco Joint Stock Company": {
+"rev": 135496.0,
+"ni": 13714.0,
+"equity": 86424.0
+},
+"Asia Cinema Group Ltd.": {
+"rev": 10639.0,
+"ni": -50682.0,
+"equity": 17249.0
+},
+"Mirae Asset Venture Investments (India) Private Limited": {
+"rev": 16503.0,
+"ni": 10593.0,
+"equity": 34584.0
+},
+"ASIA CINEMA GROUP LTD.": {
+"rev": 10639.0,
+"ni": -50682.0,
+"equity": 17249.0
+}
+}
+},
+"1H2026": {
+"rcept_no": "20260814004118",
+"label": "2026 반기보고서",
+"rcept_dt": "20260814",
+"first_dt": "20260814",
+"subs": {},
+"assoc": {}
+}
+},
+"한국투자증권": {
+"FY2021": {
+"rcept_no": "20250321000825",
+"label": "2021 사업보고서",
+"rcept_dt": "20250321",
+"first_dt": "20220324",
+"subs": {
+"Korea Investment & Securities Asia, Ltd.": {
+"rev": 52348.4,
+"ni": -1703.4,
+"equity": 571771.0,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities Europe, Ltd.": {
+"rev": 1667.0,
+"ni": 722.3,
+"equity": 3665.0,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities America, Inc.": {
+"rev": 5224.1,
+"ni": 1878.4,
+"equity": 8525.2,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities Singapore Pte. Ltd.": {
+"rev": 2626.9,
+"ni": 1042.5,
+"equity": 9674.7,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"KIS Vietnam Securities Corporation": {
+"rev": 153204.2,
+"ni": 28123.9,
+"equity": 246146.5,
+"parent": "한국투자증권㈜",
+"own": 99.81
+},
+"Korea Investment& Securities US, Inc.": {
+"rev": 556.8,
+"ni": -1168.2,
+"equity": 295165.8,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT Korea Investment & Sekuritas Indonesia": {
+"rev": 11582.7,
+"ni": -6048.0,
+"equity": 37401.1,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT KISI Asset management": {
+"rev": 848.6,
+"ni": -582.8,
+"equity": 2611.6,
+"parent": "PT Korea Investment & Sekuritas Indonesia",
+"own": 99.0
+},
+"KIP Bright II(Chengdu) Equity Investment Partnership": {
+"rev": 7928.6,
+"ni": 4136.8,
+"equity": 93657.3,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 50.98
+},
+"KIP (ZhangJiaGang) Venture Capital LLP": {
+"rev": 20214.9,
+"ni": 17918.6,
+"equity": 106191.3,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 54.95
+},
+"상해방정한투주식투자파트너쉽기업(유한파트너쉽)": {
+"rev": 68932.3,
+"ni": 20476.9,
+"equity": 163330.1
+}
+},
+"assoc": {
+"진우(북경)투자자문유한공사": {
+"ni": -38.1,
+"equity": 3044.7
+}
+}
+},
+"FY2022": {
+"rcept_no": "20250321000833",
+"label": "2022 사업보고서",
+"rcept_dt": "20250321",
+"first_dt": "20230323",
+"subs": {
+"Korea Investment & Securities Asia, Ltd.": {
+"rev": 112507.3,
+"ni": 2322.2,
+"equity": 613501.3,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities Europe, Ltd.": {
+"rev": 842.7,
+"ni": -360.1,
+"equity": 3564.6,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities America, Inc.": {
+"rev": 2080.1,
+"ni": -1529.4,
+"equity": 7613.2,
+"parent": "Korea Investment & Securities US, Inc.",
+"own": 100.0
+},
+"Korea Investment & Securities Singapore Pte. Ltd.": {
+"rev": 2047.8,
+"ni": 409.5,
+"equity": 10744.0,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"KIS Vietnam Securities Corporation": {
+"rev": 162320.2,
+"ni": 6667.4,
+"equity": 259193.7,
+"parent": "한국투자증권㈜",
+"own": 99.81
+},
+"Korea Investment& Securities US, Inc.": {
+"rev": 5664.6,
+"ni": -1534.0,
+"equity": 314642.0,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT Korea Investment & Sekuritas Indonesia": {
+"rev": 15705.9,
+"ni": -968.9,
+"equity": 76218.5,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT KISI Asset management": {
+"rev": 1207.2,
+"ni": -315.9,
+"equity": 2266.2,
+"parent": "PT Korea Investment & Sekuritas Indonesia",
+"own": 99.0
+},
+"KIM GROWTH VNFINSELECT ETF": {
+"rev": 70.2,
+"ni": -475.7,
+"equity": 3470.6,
+"parent": "한국투자신탁운용㈜",
+"own": 72.47
+},
+"KIP Bright II(Chengdu) Equity Investment Partnership": {
+"rev": 206.6,
+"ni": -7040.5,
+"equity": 84388.4,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 50.98
+},
+"KIP (ZhangJiaGang) Venture Capital LLP": {
+"rev": 327.7,
+"ni": -19932.7,
+"equity": 84082.6,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 54.95
+},
+"상해방정한투주식투자파트너쉽기업(유한파트너쉽)": {
+"rev": 12574.8,
+"ni": -77643.3,
+"equity": 83930.2
+}
+},
+"assoc": {
+"진우(북경)투자자문유한공사": {
+"ni": -25.2,
+"equity": 2994.3
+}
+}
+},
+"FY2023": {
+"rcept_no": "20250321000842",
+"label": "2023 사업보고서",
+"rcept_dt": "20250321",
+"first_dt": "20240322",
+"subs": {
+"Korea Investment & Securities Asia, Ltd.": {
+"rev": 117009.1,
+"ni": 36973.4,
+"equity": 660719.9,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities Europe, Ltd.": {
+"rev": 1319.5,
+"ni": 262.8,
+"equity": 3886.4,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities America, Inc.": {
+"rev": 6968.3,
+"ni": 1726.7,
+"equity": 9451.5,
+"parent": "Korea Investment & Securities US, Inc.",
+"own": 100.0
+},
+"Korea Investment & Securities Singapore Pte. Ltd.": {
+"rev": 2755.4,
+"ni": 924.5,
+"equity": 11777.9,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"KIS Vietnam Securities Corporation": {
+"rev": 133236.5,
+"ni": 26118.8,
+"equity": 282136.6,
+"parent": "한국투자증권㈜",
+"own": 99.81
+},
+"Korea Investment& Securities US, Inc.": {
+"rev": 25839.7,
+"ni": 9289.8,
+"equity": 329304.7,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT Korea Investment & Sekuritas Indonesia": {
+"rev": 15172.7,
+"ni": -9.6,
+"equity": 78754.9,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT KISI Asset management": {
+"rev": 1043.0,
+"ni": -829.6,
+"equity": 1538.9,
+"parent": "PT Korea Investment & Sekuritas Indonesia",
+"own": 99.0
+},
+"SF Credit Partners, LLC": {
+"rev": 6637.4,
+"ni": -778.4,
+"equity": 126849.4,
+"parent": "한국투자증권㈜",
+"own": 65.12
+},
+"KIP Bright II(Chengdu) Equity Investment Partnership": {
+"rev": 14423.5,
+"ni": 8983.9,
+"equity": 93041.2,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 50.98
+},
+"KIP (ZhangJiaGang) Venture Capital LLP": {
+"rev": 11269.6,
+"ni": 7233.1,
+"equity": 91053.4,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 54.95
+},
+"KIM GROWTH VNFINSELECT ETF": {
+"rev": 70.2,
+"ni": -475.7,
+"equity": 3470.6,
+"parent": "한국투자신탁운용㈜",
+"own": 72.47
+},
+"상해방정한투주식투자파트너쉽기업(유한파트너쉽)": {
+"rev": 8545.8,
+"ni": -4016.0,
+"equity": 67025.9
+}
+},
+"assoc": {
+"진우(북경)투자자문유한공사": {
+"ni": -35.0,
+"equity": 2950.0
+}
+}
+},
+"FY2024": {
+"rcept_no": "20250321000977",
+"label": "2024 사업보고서",
+"rcept_dt": "20250321",
+"first_dt": "20250321",
+"subs": {
+"Korea Investment & Securities Asia, Ltd.": {
+"rev": 172462.5,
+"ni": 15625.3,
+"equity": 770103.6,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities Europe, Ltd.": {
+"rev": 1556.7,
+"ni": 220.3,
+"equity": 4668.2,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities America, Inc.": {
+"rev": 16072.5,
+"ni": 4155.5,
+"equity": 15253.8,
+"parent": "Korea Investment & Securities US, Inc.",
+"own": 100.0
+},
+"Korea Investment & Securities Singapore Pte. Ltd.": {
+"rev": 3070.7,
+"ni": 417.2,
+"equity": 13715.1,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"KIS Vietnam Securities Corporation": {
+"rev": 131613.8,
+"ni": 24126.3,
+"equity": 331591.4,
+"parent": "한국투자증권㈜",
+"own": 99.81
+},
+"Korea Investment& Securities US, Inc.": {
+"rev": 35727.6,
+"ni": 16924.0,
+"equity": 393668.3,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT Korea Investment & Sekuritas Indonesia": {
+"rev": 10534.6,
+"ni": 500.0,
+"equity": 86196.8,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT KISI Asset management": {
+"rev": 1842.8,
+"ni": -858.9,
+"equity": 3804.5,
+"parent": "한국투자신탁운용㈜",
+"own": 99.0
+},
+"SF Credit Partners, LLC": {
+"rev": 23184.6,
+"ni": 4508.8,
+"equity": 149475.9,
+"parent": "한국투자증권㈜",
+"own": 65.12
+},
+"Principal Alternative Credit SMA": {
+"rev": 2811.4,
+"ni": 2381.3,
+"equity": 77541.1,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"REKSA DANA INDEKS KISI IDX30 ETF": {
+"rev": 16.8,
+"ni": -110.8,
+"equity": 908.2,
+"parent": "Indonesia SMA Fund",
+"own": 50.0
+},
+"REKSA DANA INDEKS KISI IDX VALUE30 ETF": {
+"rev": 55.5,
+"ni": -58.0,
+"equity": 969.5,
+"parent": "Indonesia SMA Fund",
+"own": 73.71
+},
+"KIM Growth VN DIAMOND ETF": {
+"rev": 823.4,
+"ni": 765.3,
+"equity": 5776.5,
+"parent": "한국투자신탁운용㈜",
+"own": 48.82
+},
+"KIP Bright II(Chengdu) Equity Investment Partnership": {
+"rev": 5634.5,
+"ni": 3042.5,
+"equity": 105761.7,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 50.98
+},
+"KIP (ZhangJiaGang) Venture Capital LLP": {
+"rev": 2198.9,
+"ni": -4053.5,
+"equity": 95962.2,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 54.95
+},
+"ACE 인도네시아 MSCI ETF": {
+"rev": 1231.8,
+"ni": 1231.8,
+"equity": 77327.7
+},
+"상해방정한투주식투자파트너쉽기업(유한파트너쉽)": {
+"rev": 9853.4,
+"ni": 7179.5,
+"equity": 81057.3
+},
+"KIS European Loan SMA": {
+"ni": 2637.9,
+"equity": 114319.9
+}
+},
+"assoc": {
+"진우(북경)투자자문유한공사": {
+"ni": 11.5,
+"equity": 3303.9
+},
+"KIM GROWTH VNFINSELECT ETF": {
+"rev": 3976.2,
+"ni": 3791.4,
+"equity": 18391.1
+}
+}
+},
+"FY2025": {
+"rcept_no": "20260515000880",
+"label": "2025 사업보고서",
+"rcept_dt": "20260515",
+"first_dt": "20260320",
+"subs": {
+"Korea Investment & Securities Asia, Ltd.": {
+"rev": 74684.8,
+"ni": 10412.7,
+"equity": 697650.5,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities Europe, Ltd.": {
+"rev": 1657.4,
+"ni": 154.5,
+"equity": 4712.6,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities America, Inc.": {
+"rev": 18127.0,
+"ni": 6052.5,
+"equity": 20996.1,
+"parent": "Korea Investment & Securities US, Inc.",
+"own": 100.0
+},
+"Korea Investment & Securities Singapore Pte. Ltd.": {
+"rev": 3265.5,
+"ni": 763.2,
+"equity": 14157.5,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"KIS Vietnam Securities Corporation": {
+"rev": 155851.1,
+"ni": 31653.6,
+"equity": 388403.0,
+"parent": "한국투자증권㈜",
+"own": 99.84
+},
+"Korea Investment& Securities US, Inc.": {
+"rev": 59411.2,
+"ni": 26813.8,
+"equity": 411321.3,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT Korea Investment & Sekuritas Indonesia": {
+"rev": 18554.9,
+"ni": 4478.9,
+"equity": 85430.3,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT KISI Asset management": {
+"rev": 4862.8,
+"ni": 94.9,
+"equity": 3646.3,
+"parent": "한국투자신탁운용(주)",
+"own": 99.0
+},
+"SF Credit Partners, LLC": {
+"rev": 13996.8,
+"ni": -417.2,
+"equity": 169915.0,
+"parent": "한국투자증권㈜",
+"own": 65.1
+},
+"Principal Alternative Credit SMA": {
+"rev": 6758.2,
+"ni": 6000.3,
+"equity": 59304.9,
+"parent": "한국투자증권㈜",
+"own": 99.31
+},
+"REKSA DANA INDEKS KISI IDX30 ETF": {
+"rev": 106.5,
+"ni": 66.0,
+"equity": 1003.7,
+"parent": "Indonesia SMA Fund",
+"own": 75.42
+},
+"REKSA DANA INDEKS KISI IDX VALUE30 ETF": {
+"rev": 165.9,
+"ni": 125.9,
+"equity": 858.9,
+"parent": "Indonesia SMA Fund",
+"own": 97.52
+},
+"Reksa Dana Syariah KISI Money Market Sharia": {
+"rev": 78.1,
+"ni": 56.5,
+"equity": 3908.5,
+"parent": "Indonesia SMA Fund",
+"own": 45.23
+},
+"Reksa Dana Syariah KISI Fixed Income Sharia": {
+"rev": 674.8,
+"ni": 518.0,
+"equity": 37332.1,
+"parent": "Indonesia SMA Fund",
+"own": 29.99
+},
+"KIM Growth VN DIAMOND ETF": {
+"rev": 744.9,
+"ni": 644.6,
+"equity": 4208.4,
+"parent": "한국투자신탁운용(주)",
+"own": 76.85
+},
+"KIP Bright II(Chengdu) Equity Investment Partnership": {
+"rev": 39291.6,
+"ni": 31942.6,
+"equity": 127438.7,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 50.98
+},
+"KIP (ZhangJiaGang) Venture Capital LLP": {
+"rev": 40898.5,
+"ni": 37259.9,
+"equity": 129085.5,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 54.95
+},
+"상해방정한투주식투자파트너쉽기업(유한파트너쉽)": {
+"rev": 35355.2,
+"ni": 34983.0,
+"equity": 86073.6
+},
+"KIS European Loan SMA": {
+"rev": 7055.1,
+"ni": 1743.8,
+"equity": 72653.6
+},
+"ACE 인도네시아 MSCI ETF": {
+"rev": 1231.8,
+"ni": 1231.8,
+"equity": 77327.7
+}
+},
+"assoc": {
+"진우(북경)투자자문유한공사": {
+"ni": -0.6,
+"equity": 3360.6
+},
+"KIM GROWTH VNFINSELECT ETF": {
+"rev": 5124.0,
+"ni": 4945.1,
+"equity": 15392.7
+}
+}
+},
+"1H2026": {
+"rcept_no": "20260930000623",
+"label": "2026 반기보고서",
+"rcept_dt": "20260930",
+"first_dt": "20260814",
+"subs": {
+"Korea Investment & Securities Asia, Ltd.": {
+"rev": 31916.7,
+"ni": 10467.2,
+"equity": 521420.9,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities Europe, Ltd.": {
+"rev": 1705.4,
+"ni": 730.1,
+"equity": 5821.1,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"Korea Investment & Securities America, Inc.": {
+"rev": 12417.8,
+"ni": 3629.9,
+"equity": 26326.8,
+"parent": "Korea Investment & Securities US, Inc.",
+"own": 100.0
+},
+"Korea Investment & Securities Singapore Pte. Ltd.": {
+"rev": 2890.9,
+"ni": 1409.8,
+"equity": 16673.9,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"KIS Vietnam Securities Corporation": {
+"rev": 96804.7,
+"ni": 19489.7,
+"equity": 437071.5,
+"parent": "한국투자증권㈜",
+"own": 99.84
+},
+"Korea Investment& Securities US, Inc.": {
+"rev": 26715.1,
+"ni": 11264.6,
+"equity": 788086.4,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT Korea Investment & Sekuritas Indonesia": {
+"rev": 2269.8,
+"ni": -3787.5,
+"equity": 82441.2,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"PT KISI Asset management": {
+"rev": 4511.9,
+"ni": 558.5,
+"equity": 4236.8,
+"parent": "한국투자신탁운용㈜",
+"own": 99.0
+},
+"SF Credit Partners, LLC": {
+"rev": 6319.6,
+"ni": 4465.9,
+"equity": 187063.7,
+"parent": "한국투자증권㈜",
+"own": 65.1
+},
+"Principal Alternative Credit SMA": {
+"rev": 2617.2,
+"ni": 2274.3,
+"equity": 52035.5,
+"parent": "한국투자증권㈜",
+"own": 100.0
+},
+"REKSA DANA INDEKS KISI IDX30 ETF": {
+"rev": 46.3,
+"ni": -242.8,
+"equity": 770.3,
+"parent": "Indonesia SMA Fund",
+"own": 75.42
+},
+"REKSA DANA INDEKS KISI IDX VALUE30 ETF": {
+"rev": 47.5,
+"ni": -175.7,
+"equity": 691.2,
+"parent": "Indonesia SMA Fund",
+"own": 97.52
+},
+"Reksa Dana Syariah KISI Fixed Income Sharia": {
+"rev": 920.9,
+"ni": 539.9,
+"equity": 49388.7,
+"parent": "Indonesia SMA Fund",
+"own": 46.24
+},
+"KIM Growth VN DIAMOND ETF": {
+"rev": 80.2,
+"ni": -299.0,
+"equity": 4206.6,
+"parent": "한국투자신탁운용㈜",
+"own": 76.85
+},
+"KIP Bright II(Chengdu) Equity Investment Partnership": {
+"rev": 20.1,
+"ni": -34132.1,
+"equity": 102310.4,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 50.98
+},
+"KIP (ZhangJiaGang) Venture Capital LLP": {
+"rev": 15738.4,
+"ni": 13995.2,
+"equity": 147082.0,
+"parent": "한국투자 SEA-CHINA Fund",
+"own": 54.95
+},
+"Reksa Dana Syariah KISI Money Market Sharia": {
+"rev": 21.9,
+"ni": 16.2,
+"equity": 3908.5,
+"parent": "Indonesia SMA Fund",
+"own": 45.23
+},
+"상해방정한투주식투자파트너쉽기업(유한파트너쉽)": {
+"rev": 32044.5,
+"ni": 12537.8,
+"equity": 67719.1
+},
+"KIS European Loan SMA": {
+"rev": 1665.1,
+"ni": 2365.3,
+"equity": 42814.2
+}
+},
+"assoc": {
+"진우(북경)투자자문유한공사": {
+"ni": 2.6,
+"equity": 3727.9
+},
+"KIM GROWTH VNFINSELECT ETF": {
+"rev": 620.4,
+"ni": 530.6,
+"equity": 15906.9
+}
+}
+}
+},
+"삼성증권": {
+"FY2021": {
+"rcept_no": "20220310000784",
+"label": "2021 사업보고서",
+"rcept_dt": "20220310",
+"first_dt": "20220310",
+"subs": {
+"Samsung Securities (America) Inc.": {
+"rev": 2614.1,
+"rev_net": true,
+"ni": 569.7,
+"equity": 42680.2
+},
+"Samsung Securities (Europe) Ltd.": {
+"rev": 2302.6,
+"rev_net": true,
+"ni": 329.6,
+"equity": 36350.2
+},
+"Samsung Securities (Asia) Ltd.": {
+"rev": 3622.1,
+"rev_net": true,
+"ni": 707.9,
+"equity": 42393.4
+}
+},
+"assoc": {
+"Dragon Capital Group Limited": {
+"rev": 115506.2,
+"rev_net": true,
+"ni": 82064.5,
+"equity": 448120.8
+}
+}
+},
+"FY2022": {
+"rcept_no": "20230309000572",
+"label": "2022 사업보고서",
+"rcept_dt": "20230309",
+"first_dt": "20230309",
+"subs": {
+"Samsung Securities (America) Inc.": {
+"rev": 3888.2,
+"rev_net": true,
+"ni": 613.3,
+"equity": 46226.8
+},
+"Samsung Securities (Europe) Ltd.": {
+"rev": 2792.9,
+"rev_net": true,
+"ni": 687.9,
+"equity": 39533.1
+},
+"Samsung Securities (Asia) Ltd.": {
+"rev": 4039.5,
+"rev_net": true,
+"ni": 862.9,
+"equity": 46177.2
+}
+},
+"assoc": {
+"Dragon Capital Group Limited": {
+"rev": 23634.4,
+"rev_net": true,
+"ni": 8620.2,
+"equity": 466718.0
+}
+}
+},
+"FY2023": {
+"rcept_no": "20240313001446",
+"label": "2023 사업보고서",
+"rcept_dt": "20240313",
+"first_dt": "20240313",
+"subs": {
+"Samsung Securities (America) Inc.": {
+"rev": 6007.3,
+"rev_net": true,
+"ni": 1862.7,
+"equity": 48872.8
+},
+"Samsung Securities (Europe) Ltd.": {
+"rev": 4329.9,
+"rev_net": true,
+"ni": 1635.0,
+"equity": 41837.4
+},
+"Samsung Securities (Asia) Ltd.": {
+"rev": 6510.1,
+"rev_net": true,
+"ni": 2479.0,
+"equity": 49344.1
+}
+},
+"assoc": {
+"Dragon Capital Group Limited": {
+"rev": 62179.6,
+"rev_net": true,
+"ni": 42358.7,
+"equity": 519130.9
+}
+}
+},
+"FY2024": {
+"rcept_no": "20250306000628",
+"label": "2024 사업보고서",
+"rcept_dt": "20250306",
+"first_dt": "20250306",
+"subs": {
+"Samsung Securities (America) Inc.": {
+"rev": 6684.3,
+"rev_net": true,
+"ni": 1982.7,
+"equity": 57858.1
+},
+"Samsung Securities (Europe) Ltd.": {
+"rev": 5414.6,
+"rev_net": true,
+"ni": 2176.4,
+"equity": 50046.5
+},
+"Samsung Securities (Asia) Ltd.": {
+"rev": 6585.2,
+"rev_net": true,
+"ni": 3210.0,
+"equity": 60071.4
+}
+},
+"assoc": {
+"Dragon Capital Group Limited": {
+"rev": 51137.7,
+"rev_net": true,
+"ni": 36595.3,
+"equity": 608866.5
+}
+}
+},
+"FY2025": {
+"rcept_no": "20260312001379",
+"label": "2025 사업보고서",
+"rcept_dt": "20260312",
+"first_dt": "20260312",
+"subs": {
+"Samsung Securities (America) Inc.": {
+"rev": 7278.0,
+"rev_net": true,
+"ni": 1888.1,
+"equity": 58327.6
+},
+"Samsung Securities (Europe) Ltd.": {
+"rev": 5219.7,
+"rev_net": true,
+"ni": 1980.3,
+"equity": 50849.5
+},
+"Samsung Securities (Asia) Ltd.": {
+"rev": 7146.0,
+"rev_net": true,
+"ni": 3155.5,
+"equity": 61709.2
+}
+},
+"assoc": {
+"Dragon Capital Group Limited": {
+"rev": 74513.1,
+"rev_net": true,
+"ni": 59185.5,
+"equity": 628576.0
+}
+}
+},
+"1H2026": {
+"rcept_no": "20260814002836",
+"label": "2026 반기보고서",
+"rcept_dt": "20260814",
+"first_dt": "20260814",
+"subs": {
+"Samsung Securities (America) Inc.": {
+"rev": 3596.9,
+"rev_net": true,
+"ni": 1377.8,
+"equity": 64035.8
+},
+"Samsung Securities (Europe) Ltd.": {
+"rev": 2889.0,
+"rev_net": true,
+"ni": 953.7,
+"equity": 55617.8
+},
+"Samsung Securities (Asia) Ltd.": {
+"rev": 3961.5,
+"rev_net": true,
+"ni": 1962.5,
+"equity": 67822.8
+},
+"Dragon Capital Group Limited": {
+"rev": 74513.1,
+"rev_net": true,
+"ni": 59185.5,
+"equity": 628576.0
+}
+},
+"assoc": {}
+}
+},
+"키움증권": {
+"FY2021": {
+"rcept_no": "20220324000600",
+"label": "2021 사업보고서",
+"rcept_dt": "20220324",
+"first_dt": "20220318",
+"subs": {
+"PT Kiwoom sekuritas Indonesia": {
+"rev": 5220.1,
+"ni": 2313.4,
+"equity": 32350.1,
+"parent": "종속&cr;기업&cr;",
+"own": 99.0
+},
+"Kiwoom Hong Kong Limited": {
+"rev": 3707.0,
+"ni": 3377.1,
+"equity": 23230.3,
+"parent": "종속&cr;기업&cr;",
+"own": 100.0
+},
+"다우홍콩유한공사": {
+"rev": 6237.9,
+"ni": 1283.0,
+"equity": 39693.5,
+"parent": "관계&cr;기업",
+"own": 43.0
+}
+},
+"assoc": {}
+},
+"FY2022": {
+"rcept_no": "20230320001037",
+"label": "2022 사업보고서",
+"rcept_dt": "20230320",
+"first_dt": "20230320",
+"subs": {
+"PT Kiwoom sekuritas Indonesia": {
+"rev": 4137.0,
+"ni": -985.0,
+"equity": 30562.8
+},
+"Kiwoom Hong Kong Limited": {
+"rev": 380.6,
+"ni": -1286.7,
+"equity": 23571.1
+},
+"다우홍콩유한공사": {
+"rev": 7829.9,
+"ni": 2078.2,
+"equity": 40000.4
+}
+},
+"assoc": {}
+},
+"FY2023": {
+"rcept_no": "20240320001275",
+"label": "2023 사업보고서",
+"rcept_dt": "20240320",
+"first_dt": "20240320",
+"subs": {
+"PT Kiwoom sekuritas Indonesia": {
+"rev": 2676.9,
+"ni": -1293.4,
+"equity": 30321.2
+},
+"Kiwoom Hong Kong Limited": {
+"rev": 2452.1,
+"ni": 2060.5,
+"equity": 26017.4
+},
+"다우홍콩유한공사": {
+"rev": 7960.0,
+"ni": 1366.2,
+"equity": 42338.3
+},
+"PT Kiwoom Investment Management": {
+"rev": 598.0,
+"ni": 53.4,
+"equity": 1571.4,
+"parent": "PT Kiwoom sekuritas Indonesia"
+},
+"Kiwoom Singapore Pte. Ltd": {
+"rev": 153.8,
+"ni": 96.2,
+"equity": 12299.4,
+"parent": "KIWOOM HONGKONG LIMITED"
+},
+"Kiwoom BVI One Limited": {
+"rev": 0.0,
+"ni": -1.8,
+"equity": 1324.7,
+"parent": "Kiwoom Singapore Pte. Ltd"
+},
+"Kiwoom BVI Two Limited": {
+"rev": 308.1,
+"ni": 306.2,
+"equity": 5908.7,
+"parent": "Kiwoom Singapore Pte. Ltd"
+}
+},
+"assoc": {}
+},
+"FY2024": {
+"rcept_no": "20250317000785",
+"label": "2024 사업보고서",
+"rcept_dt": "20250317",
+"first_dt": "20250317",
+"subs": {
+"PT Kiwoom sekuritas Indonesia": {
+"rev": 2125.3,
+"ni": -6369.6,
+"equity": 26977.7
+},
+"Kiwoom Hong Kong Limited": {
+"rev": 1600.0,
+"ni": 1039.1,
+"equity": 22484.6
+},
+"Kiwoom Asset Management Asia Pte. Ltd.": {
+"rev": 228.7,
+"ni": -1327.7,
+"equity": 9404.0
+},
+"다우홍콩유한공사": {
+"rev": 8643.2,
+"ni": 1655.4,
+"equity": 48643.6
+},
+"PT Kiwoom Investment Management": {
+"rev": 572.8,
+"ni": -104.4,
+"equity": 1599.9,
+"parent": "PT Kiwoom sekuritas Indonesia"
+},
+"Kiwoom Singapore Pte. Ltd": {
+"rev": 645.2,
+"ni": 522.3,
+"equity": 14585.0,
+"parent": "Kiwoom Hong Kong Limited"
+},
+"Kiwoom BVI One Limited": {
+"ni": -31.1,
+"equity": 1476.8,
+"parent": "Kiwoom Singapore Pte. Ltd"
+},
+"Kiwoom BVI Two Limited": {
+"rev": 604.4,
+"ni": 184.3,
+"equity": 6934.9,
+"parent": "Kiwoom Singapore Pte. Ltd"
+},
+"KIWOOM ASSET MANAGEMENT ASIA PTE. LTD.": {
+"rev": 228.7,
+"ni": -1327.7,
+"equity": 9404.0
+}
+},
+"assoc": {}
+},
+"FY2025": {
+"rcept_no": "20260317000838",
+"label": "2025 사업보고서",
+"rcept_dt": "20260317",
+"first_dt": "20260317",
+"subs": {
+"PT Kiwoom securities Indonesia": {
+"rev": 1976.1,
+"ni": -3487.7,
+"equity": 21893.6
+},
+"Kiwoom Hong Kong Limited": {
+"rev": 228.6,
+"ni": 221.3,
+"equity": 22171.0
+},
+"KIWOOM ASSET MANAGEMENT ASIA PTE. LTD.": {
+"rev": 4441.8,
+"ni": 996.3,
+"equity": 10744.0
+},
+"Kiwoom Securities Holdings USA Inc.": {
+"ni": -0.5,
+"equity": 28697.5
+},
+"다우홍콩유한공사": {
+"rev": 9165.9,
+"ni": 2599.1,
+"equity": 51346.4
+},
+"PT Kiwoom sekuritas Indonesia": {
+"rev": 1976.1,
+"ni": -3487.7,
+"equity": 21893.6
+},
+"PT Kiwoom Investment Management": {
+"rev": 326.9,
+"ni": -337.9,
+"equity": 1164.9,
+"parent": "PT Kiwoom sekuritas Indonesia"
+},
+"Kiwoom Singapore Pte. Ltd": {
+"rev": 556.7,
+"ni": 580.4,
+"equity": 14822.4,
+"parent": "Kiwoom Hong Kong Limited"
+},
+"Kiwoom BVI One Limited": {
+"ni": -2.2,
+"equity": 1439.3,
+"parent": "Kiwoom Singapore Pte. Ltd"
+},
+"Kiwoom BVI Two Limited": {
+"ni": -293.8,
+"equity": 6472.9,
+"parent": "Kiwoom Singapore Pte. Ltd"
+},
+"Kiwoom Securities USA Inc.": {
+"ni": -540.8,
+"equity": 19399.5,
+"parent": "Kiwoom Securities Holdings USA Inc."
+}
+},
+"assoc": {}
+},
+"1H2026": {
+"rcept_no": "20260813001767",
+"label": "2026 반기보고서",
+"rcept_dt": "20260813",
+"first_dt": "20260813",
+"subs": {},
+"assoc": {}
+}
+},
+"토스증권": {
+"FY2022": {
+"rcept_no": "20230404002113",
+"label": "2022 감사보고서",
+"rcept_dt": "20230404",
+"first_dt": "20230404",
+"subs": {},
+"assoc": {}
+},
+"FY2023": {
+"rcept_no": "20240404002306",
+"label": "2023 감사보고서",
+"rcept_dt": "20240404",
+"first_dt": "20240404",
+"subs": {},
+"assoc": {}
+},
+"FY2024": {
+"rcept_no": "20250404002153",
+"label": "2024 감사보고서",
+"rcept_dt": "20250404",
+"first_dt": "20250404",
+"subs": {},
+"assoc": {}
+},
+"FY2025": {
+"rcept_no": "20260401004244",
+"label": "2025 감사보고서",
+"rcept_dt": "20260401",
+"first_dt": "20260401",
+"subs": {
+"Toss Securities Holdings US Inc.(*)": {
+"rev": 0.8,
+"ni": -6220.3,
+"equity": 1910.4,
+"consolidated": true
+},
+"Toss Securities Global Pte. Ltd.": {
+"rev": 0.0,
+"ni": -7.2,
+"equity": 136.3
+},
+"TS Information&Technology Japan Co., Ltd.": {
+"ni": -0.4,
+"equity": 8.7
+}
+},
+"assoc": {}
+}
+},
+"NH투자증권": {
+"FY2021": {
+"rcept_no": "20220315000644",
+"label": "2021 사업보고서",
+"rcept_dt": "20220315",
+"first_dt": "20220315",
+"subs": {
+"NH Investment & Securities(H.K.) Ltd.": {
+"rev": 108610.0,
+"ni": 55665.0,
+"equity": 697108.0
+},
+"NH Securities Vietnam Co., Ltd.": {
+"rev": 11778.0,
+"ni": 2803.0,
+"equity": 66551.0
+},
+"NH Investment & Securities America, Inc.": {
+"rev": 27845.0,
+"ni": 9948.0,
+"equity": 19628.0
+},
+"NH Absolute Return Partners Pte. Ltd.": {
+"rev": 1640.0,
+"ni": 631.0,
+"equity": 3580.0
+},
+"PT. NH Korindo Securities Indonesia": {
+"rev": 8681.0,
+"ni": -19075.0,
+"equity": 12128.0
+},
+"북경NH투자자문유한공사": {
+"rev": 1006.0,
+"ni": -578.0,
+"equity": 1011.0
+}
+},
+"assoc": {}
+},
+"FY2022": {
+"rcept_no": "20230315000964",
+"label": "2022 사업보고서",
+"rcept_dt": "20230315",
+"first_dt": "20230315",
+"subs": {
+"NH Investment & Securities(H.K.) Ltd.": {
+"rev": 111918.0,
+"ni": -13369.0,
+"equity": 732088.0
+},
+"NH Securities Vietnam Co., Ltd.": {
+"rev": 10885.0,
+"ni": 1617.0,
+"equity": 70154.0
+},
+"NH Investment & Securities America, Inc.": {
+"rev": 27825.0,
+"ni": 14558.0,
+"equity": 35272.0
+},
+"NH Absolute Return Partners Pte. Ltd.": {
+"rev": 1132.0,
+"ni": 187.0,
+"equity": 4011.0
+},
+"PT. NH Korindo Securities Indonesia": {
+"rev": 9214.0,
+"ni": -6697.0,
+"equity": 5462.0
+},
+"북경NH투자자문유한공사": {
+"rev": 2058.0,
+"ni": 255.0,
+"equity": 9288.0
+},
+"NH Investment & Securities Europe Ltd": {
+"rev": 1720.0,
+"ni": -503.0,
+"equity": 37525.0
+}
+},
+"assoc": {}
+},
+"FY2023": {
+"rcept_no": "20240514000627",
+"label": "2023 사업보고서",
+"rcept_dt": "20240514",
+"first_dt": "20240315",
+"subs": {
+"NH Investment & Securities(H.K.) Ltd.": {
+"rev": 133513.0,
+"ni": 49191.0,
+"equity": 793415.0
+},
+"NH Securities Vietnam Co., Ltd.": {
+"rev": 14099.0,
+"ni": 2246.0,
+"equity": 71667.0
+},
+"NH Investment & Securities America, Inc.": {
+"rev": 26424.0,
+"ni": 12693.0,
+"equity": 48417.0
+},
+"NH Absolute Return Partners Pte. Ltd.": {
+"rev": 1420.0,
+"ni": 209.0,
+"equity": 4287.0
+},
+"PT. NH Korindo Securities Indonesia": {
+"rev": 10337.0,
+"ni": -1997.0,
+"equity": 41578.0
+},
+"북경NH투자자문유한공사": {
+"rev": 721.0,
+"ni": -517.0,
+"equity": 8782.0
+},
+"NH Investment & Securities Europe Ltd": {
+"rev": 1863.0,
+"ni": -1456.0,
+"equity": 36743.0
+},
+"FIP Acquisition GK": {
+"ni": -223.0,
+"equity": -261.0
+},
+"TAI TCI DIME JV LLC": {
+"rev": 4213.0,
+"ni": 3901.0,
+"equity": 79782.0
+},
+"TAI TCI DIME Owner LLC": {
+"ni": 925.0,
+"equity": 75937.0
+}
+},
+"assoc": {}
+},
+"FY2024": {
+"rcept_no": "20250313000770",
+"label": "2024 사업보고서",
+"rcept_dt": "20250313",
+"first_dt": "20250313",
+"subs": {
+"NH Investment & Securities(H.K.) Ltd.": {
+"rev": 139020.0,
+"ni": 58783.0,
+"equity": 967939.0
+},
+"NH Securities Vietnam Co., Ltd.": {
+"rev": 12366.0,
+"ni": 550.0,
+"equity": 78360.0
+},
+"NH Investment & Securities America, Inc.": {
+"rev": 32609.0,
+"ni": 18650.0,
+"equity": 75311.0
+},
+"NH Absolute Return Partners Pte. Ltd.": {
+"rev": 2185.0,
+"ni": 204.0,
+"equity": 5108.0
+},
+"PT. NH Korindo Sekuritas Indonesia": {
+"rev": 13147.0,
+"ni": -1512.0,
+"equity": 46962.0
+},
+"북경NH투자자문유한공사": {
+"rev": 679.0,
+"ni": -463.0,
+"equity": 9366.0
+},
+"NH Investment & Securities Europe Ltd": {
+"rev": 3453.0,
+"ni": -1499.0,
+"equity": 40272.0
+},
+"NH Absolute Return I": {
+"rev": 66.0,
+"ni": -6455.0,
+"equity": 106449.0
+},
+"FIP Acquisition GK": {
+"ni": -1109.0,
+"equity": -1422.0
+},
+"TAI TCI DIME JV LLC": {
+"rev": 2967.0,
+"ni": 2614.0,
+"equity": 90446.0
+},
+"TAI TCI DIME Owner LLC": {
+"rev": 12119.0,
+"ni": 496.0,
+"equity": 83909.0
+}
+},
+"assoc": {}
+},
+"FY2025": {
+"rcept_no": "20260313000771",
+"label": "2025 사업보고서",
+"rcept_dt": "20260313",
+"first_dt": "20260313",
+"subs": {
+"NH Investment & Securities(H.K.) Ltd.": {
+"rev": 160920.0,
+"ni": 43220.0,
+"equity": 988442.0
+},
+"NH Securities Vietnam Co., Ltd.": {
+"rev": 15104.0,
+"ni": 689.0,
+"equity": 146397.0
+},
+"NH Investment & Securities America, Inc.": {
+"rev": 68830.0,
+"ni": 43946.0,
+"equity": 117861.0
+},
+"NH Absolute Return Partners Pte. Ltd.": {
+"rev": 2411.0,
+"ni": -104.0,
+"equity": 4881.0
+},
+"PT. NH Korindo Sekuritas Indonesia": {
+"rev": 14155.0,
+"ni": -1512.0,
+"equity": 42549.0
+},
+"북경NH투자자문유한공사": {
+"rev": 999.0,
+"ni": -300.0,
+"equity": 9020.0
+},
+"NH Investment & Securities Europe Ltd": {
+"rev": 5814.0,
+"ni": 762.0,
+"equity": 40080.0
+},
+"NH Absolute Return I": {
+"rev": 11772.0,
+"ni": 6917.0,
+"equity": 99008.0
+},
+"TAI TCI DIME JV LLC": {
+"rev": 4405.0,
+"ni": 4151.0,
+"equity": 88382.0
+},
+"TAI TCI DIME Owner LLC": {
+"rev": 13552.0,
+"ni": 1113.0,
+"equity": 78583.0
+},
+"FIP Acquisition GK": {
+"ni": -1109.0,
+"equity": -1422.0
+}
+},
+"assoc": {}
+},
+"1H2026": {
+"rcept_no": "20260814002484",
+"label": "2026 반기보고서",
+"rcept_dt": "20260814",
+"first_dt": "20260814",
+"subs": {
+"NH Investment & Securities(H.K.) Ltd.": {
+"rev": 119694.0,
+"ni": 14365.0,
+"equity": 1076819.0
+},
+"NH Securities Vietnam Co., Ltd.": {
+"rev": 13679.0,
+"ni": 2331.0,
+"equity": 159581.0
+},
+"NH Investment & Securities America, Inc.": {
+"rev": 53264.0,
+"ni": 36558.0,
+"equity": 164649.0
+},
+"NH Absolute Return Partners Pte. Ltd.": {
+"rev": 1160.0,
+"ni": -175.0,
+"equity": 5061.0
+},
+"PT. NH Korindo Sekuritas Indonesia": {
+"rev": 6782.0,
+"ni": -1695.0,
+"equity": 41434.0
+},
+"북경NH투자자문유한공사": {
+"rev": 365.0,
+"ni": -477.0,
+"equity": 9504.0
+},
+"NH Investment & Securities Europe Ltd": {
+"rev": 2595.0,
+"ni": -1212.0,
+"equity": 41796.0
+},
+"NH Absolute Return I": {
+"rev": 37865.0,
+"ni": 35279.0,
+"equity": 143065.0
+},
+"TAI TCI DIME JV LLC": {
+"rev": 3263.0,
+"ni": 2969.0,
+"equity": 94505.0
+},
+"TAI TCI DIME Owner LLC": {
+"rev": 7485.0,
+"ni": 952.0,
+"equity": 82017.0
+},
+"NH CBH Lux Co SARL": {
+"rev": 583.0,
+"ni": -1018.0,
+"equity": -1008.0
+}
+},
+"assoc": {}
+}
+},
+"KB증권": {
+"FY2021": {
+"rcept_no": "20220324000538",
+"label": "2021 사업보고서",
+"rcept_dt": "20220324",
+"first_dt": "20220324",
+"subs": {
+"KBFG Securities America Inc.": {
+"rev": 2764.2,
+"ni": -346.7,
+"equity": 17374.7
+},
+"KB Securities Hong Kong Ltd.": {
+"rev": 12809.3,
+"ni": 952.8,
+"equity": 226462.1
+},
+"KB SECURITIES VIETNAM JOINT STOCK COMPANY": {
+"rev": 48674.2,
+"ni": 11562.7,
+"equity": 194696.6
+},
+"KB FINA Joint Stock Company": {
+"rev": 132.4,
+"ni": -791.7,
+"equity": 14663.8
+},
+"BECKETT ACQUISITION LIMITED": {
+"rev": 6225.6,
+"ni": -1598.6,
+"equity": 8109.9,
+"parent": "LB아일랜드전문투자형사모부동산투자신탁제8호",
+"own": 100.0
+},
+"ABLE NJ DSM, LLC": {
+"rev": 3366.6,
+"ni": 368.3,
+"equity": 1298.9,
+"parent": "ABLE NJ DSM INVESTMENT REIT",
+"own": 100.0
+},
+"Lumen International Developments": {
+"ni": -3092.9,
+"equity": 18510.1,
+"parent": "베스타스전문투자형사모부동산투자신탁 38호",
+"own": 100.0
+},
+"VREF Shaftesbury ScSp": {
+"rev": 15588.2,
+"ni": -932.6,
+"equity": 160645.2,
+"parent": "Lumen International Developments",
+"own": 100.0
+},
+"Hillswood Finco Ltd.": {
+"rev": 1172.9,
+"ni": 1115.6,
+"equity": 14572.5,
+"parent": "LB영국전문투자형사모부동산투자신탁 제18호 등",
+"own": 100.0
+},
+"Hillswood Holdings Ltd.": {
+"ni": 46.4,
+"equity": 748.7,
+"parent": "LB영국전문투자형사모부동산투자신탁 제18호 등",
+"own": 100.0
+}
+},
+"assoc": {}
+},
+"FY2022": {
+"rcept_no": "20230323000628",
+"label": "2022 사업보고서",
+"rcept_dt": "20230323",
+"first_dt": "20230323",
+"subs": {
+"KBFG Securities America Inc.": {
+"rev": 3376.1,
+"ni": -542.0,
+"equity": 18041.9
+},
+"KB Securities Hong Kong Ltd.": {
+"rev": 20468.3,
+"ni": -2268.1,
+"equity": 239897.9
+},
+"KB SECURITIES VIETNAM JOINT STOCK COMPANY": {
+"rev": 67884.4,
+"ni": 12933.1,
+"equity": 213280.3
+},
+"KB FINA Joint Stock Company": {
+"rev": 275.8,
+"ni": -2614.8,
+"equity": 12565.8
+},
+"PT. KB Valbury Sekuritas": {
+"rev": 20385.9,
+"ni": 5827.0,
+"equity": 74490.0
+},
+"BECKETT ACQUISITION LIMITED": {
+"rev": 6217.8,
+"ni": -1688.6,
+"equity": 6482.6,
+"parent": "LB아일랜드일반사모부동산투자신탁제8호",
+"own": 100.0
+},
+"ABLE NJ DSM, LLC": {
+"rev": 3800.6,
+"ni": 415.7,
+"equity": 1656.9,
+"parent": "ABLE NJ DSM INVESTMENT REIT",
+"own": 100.0
+},
+"Lumen International Developments": {
+"rev": 0.1,
+"ni": 3038.5,
+"equity": 20585.6,
+"parent": "베스타스일반사모부동산투자신탁 38호",
+"own": 100.0
+},
+"VREF Shaftesbury ScSp": {
+"rev": 18142.9,
+"ni": 3035.3,
+"equity": 142063.9,
+"parent": "Lumen International Developments",
+"own": 100.0
+},
+"PT. Valbury Capital Management": {
+"rev": 186.8,
+"ni": -727.5,
+"equity": 846.5,
+"parent": "PT. KB Valbury Sekuritas",
+"own": 79.0
+}
+},
+"assoc": {
+"G payment Joint Stock Company": {
+"rev": 3400.7,
+"ni": -831.3,
+"equity": 6653.5
+}
+}
+},
+"FY2023": {
+"rcept_no": "20240321001123",
+"label": "2023 사업보고서",
+"rcept_dt": "20240321",
+"first_dt": "20240321",
+"subs": {
+"KBFG Securities America Inc.": {
+"rev": 3370.5,
+"ni": -1033.0,
+"equity": 17336.1
+},
+"KB Securities Hong Kong Ltd.": {
+"rev": 19808.2,
+"ni": 8546.5,
+"equity": 252062.2
+},
+"KB SECURITIES VIETNAM JOINT STOCK COMPANY": {
+"rev": 72721.5,
+"ni": 7384.8,
+"equity": 218463.7
+},
+"KB FINA Joint Stock Company": {
+"rev": 57.9,
+"ni": -1740.2,
+"equity": 10759.4
+},
+"PT. KB Valbury Sekuritas": {
+"rev": 20193.9,
+"ni": 3459.9,
+"equity": 80350.8
+},
+"ABLE NJ DSM, LLC": {
+"rev": 3840.2,
+"ni": 420.0,
+"equity": 1795.0,
+"parent": "ABLE NJ DSM INVESTMENT REIT",
+"own": 100.0
+},
+"PT. Valbury Capital Management": {
+"rev": 68.0,
+"ni": -1042.1,
+"equity": -141.8,
+"parent": "PT. KB Valbury Sekuritas",
+"own": 79.0
+}
+},
+"assoc": {
+"G payment Joint Stock Company": {
+"rev": 11434.3,
+"ni": -539.0,
+"equity": 7631.5
+}
+}
+},
+"FY2024": {
+"rcept_no": "20250321001148",
+"label": "2024 사업보고서",
+"rcept_dt": "20250321",
+"first_dt": "20250321",
+"subs": {
+"KBFG Securities America Inc.": {
+"rev": 15942.4,
+"ni": 5349.3,
+"equity": 25529.5
+},
+"KB Securities Hong Kong Ltd.": {
+"rev": 34975.9,
+"ni": 5010.6,
+"equity": 294504.9
+},
+"KB SECURITIES VIETNAM JOINT STOCK COMPANY": {
+"rev": 62760.6,
+"ni": 12931.0,
+"equity": 250658.2
+},
+"KB FINA Joint Stock Company": {
+"rev": 135.0,
+"ni": -7100.0,
+"equity": 2634.4
+},
+"PT. KB Valbury Sekuritas": {
+"rev": 24673.0,
+"ni": 4592.3,
+"equity": 89769.5
+}
+},
+"assoc": {
+"G payment Joint Stock Company": {
+"rev": 1410.5,
+"ni": -944.2,
+"equity": 7259.6
+}
+}
+},
+"FY2025": {
+"rcept_no": "20260324000784",
+"label": "2025 사업보고서",
+"rcept_dt": "20260324",
+"first_dt": "20260324",
+"subs": {
+"KBFG Securities America Inc.": {
+"rev": 24127.8,
+"ni": 11800.4,
+"equity": 36825.5
+},
+"KB Securities Hong Kong Ltd.": {
+"rev": 32834.1,
+"ni": 15138.3,
+"equity": 302199.0
+},
+"KB SECURITIES VIETNAM JOINT STOCK COMPANY": {
+"rev": 61871.8,
+"ni": 11349.5,
+"equity": 248520.1
+},
+"KB FINA COMPANY LIMITED(구, KB FINA Joint Stock Company)": {
+"rev": 6.6,
+"ni": -170.6,
+"equity": 2322.7
+},
+"PT. KB Valbury Sekuritas": {
+"rev": 34158.1,
+"ni": 7516.7,
+"equity": 92505.7
+}
+},
+"assoc": {
+"G payment Joint Stock Company": {
+"rev": 5072.4,
+"ni": 0.9,
+"equity": 6874.6
+}
+}
+},
+"1H2026": {
+"rcept_no": "20260814003716",
+"label": "2026 반기보고서",
+"rcept_dt": "20260814",
+"first_dt": "20260814",
+"subs": {
+"KBFG Securities America Inc.": {
+"rev": 11342.5,
+"ni": 6597.5,
+"equity": 46415.1
+},
+"KB Securities Hong Kong Ltd.": {
+"rev": 19346.5,
+"ni": 5970.5,
+"equity": 328364.2
+},
+"KB SECURITIES VIETNAM JOINT STOCK COMPANY": {
+"rev": 39786.4,
+"ni": 5623.2,
+"equity": 272558.9
+},
+"KB FINA COMPANY LIMITED": {
+"rev": 3.3,
+"ni": 609.2,
+"equity": 3124.7
+},
+"PT. KB Valbury Sekuritas": {
+"rev": 20917.0,
+"ni": 5746.7,
+"equity": 98277.1
+}
+},
+"assoc": {
+"G payment Joint Stock Company": {
+"rev": 8808.1,
+"ni": 3276.2,
+"equity": 10816.7
+}
+}
+}
+},
+"신한투자증권": {
+"FY2021": {
+"rcept_no": "20220322001003",
+"label": "2021 사업보고서",
+"rcept_dt": "20220322",
+"first_dt": "20220322",
+"subs": {
+"Shinhan Investment America Inc.": {
+"rev": 3265.0,
+"ni": 1663.0,
+"equity": 6646.0,
+"parent": "신한금융투자",
+"own": 100.0
+},
+"Shinhan Investment Asia Ltd.": {
+"rev": 8154.0,
+"ni": 5440.0,
+"equity": 127465.0,
+"parent": "신한금융투자",
+"own": 100.0
+},
+"SHINHAN SECURITIES VIETNAM CO., LTD": {
+"rev": 7305.0,
+"ni": 2040.0,
+"equity": 107355.0,
+"parent": "신한금융투자",
+"own": 100.0
+},
+"PT Shinhan Sekuritas Indonesia(주1)": {
+"rev": 4903.0,
+"ni": 282.0,
+"equity": 22387.0,
+"parent": "신한금융투자",
+"own": 99.0
+}
+},
+"assoc": {}
+},
+"FY2022": {
+"rcept_no": "20230323000692",
+"label": "2022 사업보고서",
+"rcept_dt": "20230323",
+"first_dt": "20230323",
+"subs": {
+"Shinhan Securities America Inc.(주4)": {
+"rev": 1667.0,
+"ni": -179.0,
+"equity": 6929.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"SHINHAN SECURITIES VIETNAM CO., LTD": {
+"rev": 17693.0,
+"ni": 4499.0,
+"equity": 115262.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"PT Shinhan Sekuritas Indonesia(주1)": {
+"rev": 5277.0,
+"ni": -2698.0,
+"equity": 19337.0,
+"parent": "신한투자증권",
+"own": 99.0
+}
+},
+"assoc": {}
+},
+"FY2023": {
+"rcept_no": "20240516000067",
+"label": "2023 사업보고서",
+"rcept_dt": "20240516",
+"first_dt": "20240326",
+"subs": {
+"Shinhan Securities America Inc.": {
+"rev": 823.0,
+"ni": -1783.0,
+"equity": 5289.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"Shinhan Securities Asia Ltd.": {
+"rev": 12592.0,
+"ni": 7859.0,
+"equity": 150643.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"SHINHAN SECURITIES VIETNAM CO., LTD": {
+"rev": 28596.0,
+"ni": 6133.0,
+"equity": 120509.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"PT Shinhan Sekuritas Indonesia(주1)": {
+"rev": 5316.0,
+"ni": -493.0,
+"equity": 19434.0,
+"parent": "신한투자증권",
+"own": 99.0
+}
+},
+"assoc": {}
+},
+"FY2024": {
+"rcept_no": "20250326000635",
+"label": "2024 사업보고서",
+"rcept_dt": "20250326",
+"first_dt": "20250326",
+"subs": {
+"Shinhan Securities America Inc.": {
+"rev": 1091.0,
+"ni": -1133.0,
+"equity": 4809.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"Shinhan Securities Asia Ltd.": {
+"rev": 14683.0,
+"ni": 4202.0,
+"equity": 177316.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"SHINHAN SECURITIES VIETNAM CO., LTD": {
+"rev": 34584.0,
+"ni": 7036.0,
+"equity": 136930.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"PT Shinhan Sekuritas Indonesia(주1)": {
+"rev": 4275.0,
+"ni": -778.0,
+"equity": 20118.0,
+"parent": "신한투자증권",
+"own": 99.0
+}
+},
+"assoc": {
+"Planeta PTE LTD": {
+"ni": 1677.0,
+"equity": 34027.0
+}
+}
+},
+"FY2025": {
+"rcept_no": "20260325000632",
+"label": "2025 사업보고서",
+"rcept_dt": "20260325",
+"first_dt": "20260325",
+"subs": {
+"Shinhan Securities America Inc.": {
+"rev": 993.0,
+"ni": -1480.0,
+"equity": 3200.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"Shinhan Securities Asia Ltd.": {
+"rev": 11647.0,
+"ni": 3563.0,
+"equity": 176297.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"SHINHAN SECURITIES VIETNAM CO., LTD": {
+"rev": 38030.0,
+"ni": 6247.0,
+"equity": 135809.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"PT Shinhan Sekuritas Indonesia": {
+"rev": 3062.0,
+"ni": -1261.0,
+"equity": 17654.0,
+"parent": "신한투자증권",
+"own": 99.0
+},
+"ST EIP Holdings Inc.": {
+"rev": 26161.0,
+"ni": 2581.0,
+"equity": 108445.0
+}
+},
+"assoc": {}
+},
+"1H2026": {
+"rcept_no": "20260814001157",
+"label": "2026 반기보고서",
+"rcept_dt": "20260814",
+"first_dt": "20260814",
+"subs": {
+"Shinhan Securities Asia Ltd.": {
+"rev": 6492.0,
+"ni": 3069.0,
+"equity": 191153.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"SHINHAN SECURITIES VIETNAM CO., LTD": {
+"rev": 20601.0,
+"ni": 3632.0,
+"equity": 149525.0,
+"parent": "신한투자증권",
+"own": 100.0
+},
+"PT Shinhan Sekuritas Indonesia": {
+"rev": 1652.0,
+"ni": -540.0,
+"equity": 17328.0,
+"parent": "신한투자증권",
+"own": 99.0
+}
+},
+"assoc": {}
+}
+},
+"하나증권": {
+"FY2021": {
+"rcept_no": "20220317000821",
+"label": "2021 사업보고서",
+"rcept_dt": "20220317",
+"first_dt": "20220317",
+"subs": {
+"하나지분투자관리(심천)유한공사(구,하나세계(북경)투자자문유한공사)(주1)": {
+"rev": 1260.7,
+"ni": 76.9,
+"equity": 37709.4,
+"parent": "하나금융투자 &cr;주식회사",
+"own": 100.0
+},
+"하나지분투자관리(심천)유한공사(구. 하나세계(북경)투자자문유한공사)(주1)": {
+"rev": 1260.7,
+"ni": 76.9,
+"equity": 37709.4,
+"parent": "하나금융투자 &cr;주식회사",
+"own": 100.0
+}
+},
+"assoc": {}
+},
+"FY2022": {
+"rcept_no": "20230316000693",
+"label": "2022 사업보고서",
+"rcept_dt": "20230316",
+"first_dt": "20230316",
+"subs": {
+"하나지분투자관리(심천)유한공사(주1)": {
+"rev": 13472.6,
+"ni": 10871.5,
+"equity": 47546.5,
+"parent": "하나증권 주식회사",
+"own": 50.1
+},
+"Hana Asset Management Asia Pte. Ltd.(주1)": {
+"ni": -638.9,
+"equity": 7309.3,
+"parent": "하나증권 주식회사",
+"own": 100.0
+},
+"하나지분투자관리(심천)유한공사(구. 하나세계(북경)투자자문유한공사)(주1)": {
+"rev": 1260.7,
+"ni": 76.9,
+"equity": 37709.4,
+"parent": "하나증권 주식회사",
+"own": 50.1
+},
+"하나지분투자관리(심천)유한공사(구,하나세계(북경)투자자문유한공사)(주1)": {
+"rev": 1260.7,
+"ni": 76.9,
+"equity": 37709.4,
+"parent": "하나증권 주식회사",
+"own": 50.1
+}
+},
+"assoc": {}
+},
+"FY2023": {
+"rcept_no": "20240314001208",
+"label": "2023 사업보고서",
+"rcept_dt": "20240314",
+"first_dt": "20240314",
+"subs": {
+"하나지분투자관리(심천)유한공사(주1)": {
+"rev": 7943.4,
+"ni": 5162.0,
+"equity": 52597.2,
+"parent": "하나증권 주식회사",
+"own": 50.1
+},
+"Hana Asset Management Asia Pte. Ltd.(주1)": {
+"rev": 257.9,
+"ni": -1630.7,
+"equity": 18632.0,
+"parent": "하나증권 주식회사",
+"own": 100.0
+}
+},
+"assoc": {
+"푸산하나(하이난)과기유한공사(주1)": {
+"ni": -774.7,
+"equity": 6683.5
+},
+"심천하나미래능원투자합화기업(유한합화)(주1)": {
+"ni": -48.5,
+"equity": 5558.0
+},
+"왕런패밀리오피스(광저우)유한공사(주1)": {
+"ni": -151.7,
+"equity": 10783.7
+}
+}
+},
+"FY2024": {
+"rcept_no": "20250515000733",
+"label": "2024 사업보고서",
+"rcept_dt": "20250515",
+"first_dt": "20250317",
+"subs": {
+"하나지분투자관리(심천)유한공사(주1)": {
+"rev": 3379.1,
+"ni": 468.7,
+"equity": 59998.0,
+"parent": "하나증권",
+"own": 50.1
+},
+"Hana Asset Management Asia Pte. Ltd.(주1)": {
+"rev": 327.9,
+"ni": -1240.6,
+"equity": 19302.8,
+"parent": "하나증권",
+"own": 100.0
+}
+},
+"assoc": {
+"심천하나미래능원투자합화기업(유한합화)(주1)": {
+"ni": -57.6,
+"equity": 6124.6
+}
+}
+},
+"FY2025": {
+"rcept_no": "20260316001131",
+"label": "2025 사업보고서",
+"rcept_dt": "20260316",
+"first_dt": "20260316",
+"subs": {
+"Hana Asset Management Asia Pte. Ltd.(주1)": {
+"rev": 1285.3,
+"ni": -630.9,
+"equity": 19306.6,
+"parent": "하나증권",
+"own": 100.0
+},
+"하나지분투자관리(심천)유한공사(주1)": {
+"rev": 361.8,
+"ni": -11699.2,
+"equity": 48532.4,
+"parent": "하나증권",
+"own": 50.1
+}
+},
+"assoc": {
+"심천하나미래능원투자합화기업(유한합화)(주1)": {
+"ni": -63.9,
+"equity": 6164.5
+}
+}
+},
+"1H2026": {
+"rcept_no": "20260814002599",
+"label": "2026 반기보고서",
+"rcept_dt": "20260814",
+"first_dt": "20260814",
+"subs": {
+"Hana Asset Management Asia Pte. Ltd.(주1)": {
+"rev": 1021.1,
+"ni": 37.9,
+"equity": 20646.4,
+"parent": "하나증권",
+"own": 100.0
+},
+"하나지분투자관리(심천)유한공사(주1)": {
+"rev": 169.1,
+"ni": -1462.4,
+"equity": 52232.3,
+"parent": "하나증권",
+"own": 50.1
+}
+},
+"assoc": {
+"심천하나미래능원투자합화기업(유한합화)(주1)": {
+"ni": -2.9,
+"equity": 6830.1
+}
+}
+}
+},
+"한화투자증권": {
+"FY2021": {
+"rcept_no": "20220315001273",
+"label": "2021 사업보고서",
+"rcept_dt": "20220315",
+"first_dt": "20220315",
+"subs": {
+"ZHARYK ZHOL COMPANY 2007.LLP": {
+"rev": 5.9,
+"ni": -0.1,
+"equity": 74.5
+},
+"Pinetree Securities Pte.Ltd.": {
+"rev": 79.4,
+"ni": -1091.9,
+"equity": 8940.7
+},
+"Pinetree Securities Corporation": {
+"rev": 7315.2,
+"ni": 1318.0,
+"equity": 76342.8
+},
+"Tech in Asia Pte.Ltd.": {
+"ni": 1281.3,
+"equity": 6269.1
+},
+"Capbridge Financial Pte. Ltd": {
+"ni": -3552.4,
+"equity": 2982.7
+}
+},
+"assoc": {
+"CapBridge Financial Pte.Ltd.": {
+"ni": -3552.4,
+"equity": 2982.7
+}
+}
+},
+"FY2022": {
+"rcept_no": "20230314000604",
+"label": "2022 사업보고서",
+"rcept_dt": "20230314",
+"first_dt": "20230314",
+"subs": {
+"ZHARYK ZHOL COMPANY 2007.LLP": {
+"rev": 2.7,
+"ni": -0.1,
+"equity": 75.5
+},
+"Pinetree Securities Pte.Ltd.": {
+"rev": 134.5,
+"ni": -1511.6,
+"equity": 8090.9
+},
+"Pinetree Securities Corporation": {
+"rev": 12186.2,
+"ni": 677.0,
+"equity": 79347.1
+},
+"Tech in Asia Pte.Ltd.": {
+"ni": -219.6,
+"equity": 3103.1
+},
+"Capbridge Financial Pte. Ltd": {
+"ni": -3594.7,
+"equity": -528.0
+}
+},
+"assoc": {
+"CapBridge Financial Pte.Ltd.": {
+"ni": -3594.7,
+"equity": -528.0
+}
+}
+},
+"FY2023": {
+"rcept_no": "20240312000990",
+"label": "2023 사업보고서",
+"rcept_dt": "20240312",
+"first_dt": "20240312",
+"subs": {
+"ZHARYK ZHOL COMPANY 2007.LLP": {
+"rev": 3.2,
+"ni": -0.1,
+"equity": 77.9
+},
+"Pinetree Securities Pte.Ltd.": {
+"rev": 195.8,
+"ni": -1537.8,
+"equity": 6835.1
+},
+"Pinetree Securities Corporation": {
+"rev": 13756.1,
+"ni": 1198.3,
+"equity": 79771.6
+},
+"Capbridge Financial Pte. Ltd": {
+"rev": 294.0,
+"ni": -2146.2,
+"equity": -2119.3
+}
+},
+"assoc": {
+"CapBridge Financial Pte.Ltd.": {
+"rev": 294.0,
+"ni": -2146.2,
+"equity": -2119.3
+}
+}
+},
+"FY2024": {
+"rcept_no": "20250311001013",
+"label": "2024 사업보고서",
+"rcept_dt": "20250311",
+"first_dt": "20250311",
+"subs": {
+"ZHARYK ZHOL COMPANY 2007.LLP": {
+"rev": 3.9,
+"ni": 0.0,
+"equity": 76.8
+},
+"Pinetree Securities Pte.Ltd.": {
+"rev": 298.7,
+"ni": -1380.9,
+"equity": 6101.2
+},
+"Pinetree Securities Corporation": {
+"rev": 17113.7,
+"ni": 2811.2,
+"equity": 89500.9
+},
+"PT Ciptadana Sekuritas Asia": {
+"rev": 2438.3,
+"ni": -152.8,
+"equity": 41989.3
+},
+"Capbridge Financial Pte. Ltd": {
+"rev": 250.0,
+"ni": 13101.8,
+"equity": 9758.3
+}
+},
+"assoc": {}
+},
+"FY2025": {
+"rcept_no": "20260310002967",
+"label": "2025 사업보고서",
+"rcept_dt": "20260310",
+"first_dt": "20260310",
+"subs": {
+"Pinetree Securities Pte.Ltd.": {
+"rev": 666.0,
+"ni": -1534.0,
+"equity": 4732.0
+},
+"Pinetree Securities Corporation": {
+"rev": 21621.0,
+"ni": 3442.0,
+"equity": 88135.0
+},
+"PT Ciptadana Sekuritas Asia": {
+"rev": 14749.0,
+"ni": 2718.0,
+"equity": 42110.0
+},
+"CapBridge Financial Pte.Ltd.": {
+"rev": 9.0,
+"ni": -28.0,
+"equity": 10344.0
+},
+"PT Ciptadana Sekuritas Asia(주1)": {
+"rev": 14749.0,
+"ni": 2718.0,
+"equity": 42110.0
+}
+},
+"assoc": {}
+},
+"1H2026": {
+"rcept_no": "20260813001503",
+"label": "2026 반기보고서",
+"rcept_dt": "20260813",
+"first_dt": "20260813",
+"subs": {
+"Pinetree Securities Pte. Ltd.": {
+"rev": 268.0,
+"ni": -1175.0,
+"equity": 14577.0
+},
+"Pinetree Securities Corporation": {
+"rev": 12054.0,
+"ni": 1285.0,
+"equity": 95917.0
+},
+"PT Ciptadana Sekuritas Asia(주1)": {
+"rev": 6362.0,
+"ni": -671.0,
+"equity": 41831.0
+},
+"PT Ciptadana Asset Management(주1)": {
+"rev": 943.0,
+"ni": -546.0,
+"equity": 4116.0
+},
+"Pinetree Securities Pte.Ltd.": {
+"rev": 268.0,
+"ni": -1175.0,
+"equity": 14577.0
+},
+"PT Ciptadana Sekuritas Asia": {
+"rev": 6362.0,
+"ni": -671.0,
+"equity": 41831.0
+},
+"PT Ciptadana Asset Management": {
+"rev": 943.0,
+"ni": -546.0,
+"equity": 4116.0
+},
+"CapBridge Financial Pte. Ltd.": {
+"rev": 1.0,
+"ni": -668.0,
+"equity": 11137.0
+},
+"CrossAngle Pte. Ltd. RCPS": {
+"rev": 2309.0,
+"ni": 123.0,
+"equity": 36170.0
+}
+},
+"assoc": {
+"Capbridge Financial Pte. Ltd.": {
+"rev": 1.0,
+"ni": -668.0,
+"equity": 11137.0
+}
+}
+}
+}
+},
+"checked_at": "2026-10-23T04:22:47+00:00",
+"parser": 2
+}

@@ -1,0 +1,1898 @@
+{
+ "meta": {
+  "title": "디지털자산 규제 요약",
+  "verified_at": "2026-10-20",
+  "base": "2026-10-16 Weekly Dashboard 트래커 검증본 + 2026-10-20 추가 확인(KR·US·VN·AE)",
+  "primary": [
+   "KR",
+   "US",
+   "JP",
+   "VN",
+   "SG",
+   "ID",
+   "AE"
+  ],
+  "reference": [
+   "EU",
+   "UK",
+   "HK"
+  ],
+  "legend": {
+   "ok": "시행 중",
+   "prog": "추진·입법 중",
+   "no": "불허·제한",
+   "tbd": "확인 필요"
+  },
+  "glossary": {
+   "vasp": "VASP 인가: 가상자산사업자(Virtual Asset Service Provider; 거래소·수탁·지갑 등)의 영업 신고·인가 제도",
+   "sto": "STO: 분산원장 기반으로 발행·유통하는 토큰증권(Security Token Offering)",
+   "aml": "트래블룰: 가상자산 이전 시 송·수신인 정보를 함께 전달하도록 한 FATF 권고",
+   "broker": "증권사 겸영: 증권사의 가상자산 거래·수탁 업무 영위 또는 거래소 지분 보유 허용 여부"
+  },
+  "note": "현황 문구와 판정(시행/입법 중 등)은 사람이 출처를 확인해 쓴 것이고(검증일 표시), 매일 07시 GitHub Actions가 시장별 감독당국 공식 도메인의 발표를 자동으로 확인해 검증일 이후 새 발표가 있으면 해당 칸에 표시한다(LLM 미사용, 판정은 자동으로 바꾸지 않음)."
+ },
+ "topics": [
+  {
+   "k": "vasp",
+   "n": "VASP 인가"
+  },
+  {
+   "k": "stable",
+   "n": "스테이블코인"
+  },
+  {
+   "k": "sto",
+   "n": "토큰증권(STO)"
+  },
+  {
+   "k": "etf",
+   "n": "현물 ETF"
+  },
+  {
+   "k": "tax",
+   "n": "과세"
+  },
+  {
+   "k": "aml",
+   "n": "AML·트래블룰"
+  },
+  {
+   "k": "broker",
+   "n": "증권사 겸영"
+  }
+ ],
+ "takeaways": [
+  {
+   "h": "한국: 원화 스테이블코인은 은행 51% 컨소시엄으로 가닥, 법안은 11월 소위로",
+   "t": "정부·한은이 은행 50%+1 구조에 합의했지만(한은 총재 10/12) 정부안은 아직 국회 미제출. 거래소 지분 상한·준비자산 범위가 11월 정무위 법안소위 쟁점이다. 토큰증권은 2027.2.4 시행, 기존 증권사는 추가 인가 없이 취급한다."
+  },
+  {
+   "h": "미국: 스테이블코인만 먼저 간다",
+   "t": "OCC가 GENIUS법 최종 규칙을 10월 말까지 확정하겠다고 밝혔고(10/15), 시행은 늦어도 2027.1.18. 시장구조법(CLARITY)은 9.15 상원에서 막혀 SEC·CFTC 규칙과 면제가 공백을 메우는 중이다."
+  },
+  {
+   "h": "아부다비(ADGM): 디지털자산 인가를 한 곳에서",
+   "t": "FSRA가 스테이블코인(FRT)·스테이킹·토큰화에 이어 DeFi 가이던스(의견 ~11/30)까지 정비했다. 인가가 FSRA 한 곳에서 끝나 중동에서 가장 먼저 볼 시장이다."
+  },
+  {
+   "h": "동남아 법인 시장은 진입 장벽부터 확인",
+   "t": "베트남 시범 거래소는 자본금 10조동·기관 65%·외국인 49% 요건에 인가 0건이라 Pinetree 단독 진입은 어렵다. 인도네시아는 Law 4/2026로 가상자산사업자를 금융기관으로 편입하고 토큰화 공모 제도를 만든다. 싱가포르는 역외 전용 사업을 막는다."
+  },
+  {
+   "h": "증권사 기회는 토큰증권·ETF·수탁",
+   "t": "한국 STO, 일본의 금융상품거래법 편입, 미국 토큰화 주식 혁신면제, ADGM 토큰화 증권 수탁 인가까지 각국이 증권사 영역으로 디지털자산을 끌어오는 중이다. 해외법인 전략은 거래소보다 토큰화·수탁·중개 쪽이 현실적이다."
+  }
+ ],
+ "upcoming": [
+  {
+   "date": "2026-10-22",
+   "code": "KR",
+   "text": "국회 정무위 금융위·금감원 종합국정감사 (기본법·법인 투자 지연 쟁점)",
+   "url": "https://www.fnnews.com/news/202610140620473261"
+  },
+  {
+   "date": "2026-10-26",
+   "code": "KR",
+   "text": "외국환거래법 시행령(가상자산이전업 보고) 입법예고 의견 마감",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148877637"
+  },
+  {
+   "date": "2026-10-31",
+   "code": "US",
+   "text": "OCC GENIUS법 최종 규칙 확정 목표",
+   "url": "https://www.pymnts.com/legal/2026/occ-races-the-clock-to-finish-genius-act-stablecoin-rules/"
+  },
+  {
+   "date": "2026-11-11",
+   "code": "KR",
+   "text": "토큰증권 하위법규 입법예고 마감",
+   "url": "https://m.inews24.com/v/2010814"
+  },
+  {
+   "date": "2026-11-12",
+   "code": "EU",
+   "text": "EBA, USDC(첫 중요 EMT) 직접 감독 개시",
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-classifies-usdc-first-significant-e-money-token-european-union"
+  },
+  {
+   "date": "2026-11-15",
+   "code": "KR",
+   "approx": true,
+   "text": "11월 정무위 법안소위: 디지털자산기본법(2단계)·원화 스테이블코인(51%룰·준비자산)",
+   "url": "https://www.dataeconomy.co.kr/news/articleView.html?idxno=43152"
+  },
+  {
+   "date": "2026-11-30",
+   "code": "AE",
+   "text": "ADGM FSRA DeFi 가이던스(CP 5/2026) 의견 마감",
+   "url": "https://www.adgm.com/legal-framework/public-consultations"
+  },
+  {
+   "date": "2026-12-03",
+   "code": "KR",
+   "text": "개정 외국환거래법·시행령 시행: 해외·개인지갑 이전 한은 보고",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148877637"
+  },
+  {
+   "date": "2026-12-14",
+   "code": "US",
+   "text": "CFTC Regulation CTX·CAM ANPRM 의견 마감",
+   "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20888/regulation-crypto-asset-transactions-and-regulation-crypto-asset-markets"
+  },
+  {
+   "date": "2027-01-01",
+   "code": "KR",
+   "text": "가상자산 소득 과세 시행(250만원 공제 후 22%)",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=669414"
+  },
+  {
+   "date": "2027-01-18",
+   "code": "US",
+   "text": "GENIUS Act 시행(늦어도)",
+   "url": "https://home.treasury.gov/news/press-releases/sb0605"
+  },
+  {
+   "date": "2027-02-04",
+   "code": "KR",
+   "text": "토큰증권(STO) 제도 시행",
+   "url": "https://www.theblock.co/news/regulation/2026-09-04-south-korea-to-start-tokenizing-all-types-of-securities-in-three-stages-from-2027-413523"
+  },
+  {
+   "date": "2027-02-28",
+   "code": "UK",
+   "text": "FCA 경과조치 적용 신청 마감",
+   "url": "https://paymentexpert.com/2026/09/17/fca-crypto-regime-guidance-firms/"
+  },
+  {
+   "date": "2027-10-25",
+   "code": "UK",
+   "text": "FCA 가상자산 제도 시행",
+   "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
+  }
+ ],
+ "markets": [
+  {
+   "code": "KR",
+   "name": "한국",
+   "en": "Korea",
+   "regulators": "금융위원회(FSC) · 금융감독원(FSS) · 금융정보분석원(FIU)",
+   "headline": "원화 스테이블코인은 '은행 50%+1 컨소시엄'으로 정부·한은 합의(한은 총재 10/12)했으나 정부안은 아직 미제출 — 51%룰·거래소 지분 상한·준비자산 범위(MBS 포함론)가 11월 정무위 소위 쟁점. 토큰증권 하위법규 입법예고 중(~11/11), 법인 투자 허용은 1년째 지연.",
+   "reference_only": false,
+   "checked": "2026-10-20",
+   "status": {
+    "vasp": {
+     "lv": "ok",
+     "short": "신고제·이용자보호법",
+     "text": "특금법 신고제('21.3) + 가상자산이용자보호법('24.7.19) 시행",
+     "url": "https://www.fsc.go.kr/no010101/82682"
+    },
+    "stable": {
+     "lv": "prog",
+     "short": "은행 50%+1 합의, 11월 소위",
+     "text": "은행 50%+1 컨소시엄 발행으로 정부·한은 합의(한은 총재 10/12 국감), 법안 미확정·11월 소위 전 제출 예정",
+     "url": "https://www.techm.kr/news/articleView.html?idxno=156004"
+    },
+    "sto": {
+     "lv": "prog",
+     "short": "'27.2.4 시행, 하위법규 예고",
+     "text": "전자증권법·자본시장법 개정 공포('26.2.3), 하위법규 입법예고(10/2~11/11), '27.2.4 시행",
+     "url": "https://m.inews24.com/v/2010814"
+    },
+    "etf": {
+     "lv": "prog",
+     "short": "불허→도입 추진",
+     "text": "현재 불허. 자본시장법 기초자산 확대 개정 추진('26 하반기)",
+     "url": "https://www.hankyung.com/article/2026071450031"
+    },
+    "tax": {
+     "lv": "prog",
+     "short": "'27.1 시행(22%)",
+     "text": "'27.1.1 시행 예정: 250만원 공제 후 22% 분리과세",
+     "url": "https://www.dailian.co.kr/news/view/1694149/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%EA%B3%BC%EC%84%B8-%EA%B5%AD%ED%9A%8C-%EC%88%99%EC%9D%98-%EC%8B%9C%EA%B0%84-%EB%93%A4%EC%96%B4%EA%B0%84-2026"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "트래블룰 100만원↑",
+     "text": "트래블룰('22.3.25, 100만원 이상)·실명확인 입출금계정 / 해외·개인지갑 이전 한은 외환전산망 보고 입법예고('26.12.3 시행 예정)",
+     "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148877637"
+    },
+    "broker": {
+     "lv": "no",
+     "short": "금가분리→완화 검토",
+     "text": "금가분리('17~) 유지. 디지털자산법 연계 완화 검토",
+     "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05684246645451216"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-10-15",
+     "title": "원화 스테이블코인 '은행 51%룰'·준비자산 범위, 11월 법안소위로 공 넘어가…민병덕 \"주금공 MBS도 준비자산 검토\"",
+     "summary": "정부안은 여전히 미제출(9/30 공청회 무산). 발행주체(은행 50%+1)·거래소 지분 상한·준비자산 범위가 11월 정무위 소위의 핵심 쟁점으로 정리되는 흐름.",
+     "points": [
+      {
+       "text": "이억원 위원장 국감(10/8) \"막바지 협의\" 발언에도 [[정부안 국회 미제출]], 9/30로 거론된 공청회도 무산. 논의 무게중심은 [[11월 법안소위]]로 이동.",
+       "url": "https://www.dataeconomy.co.kr/news/articleView.html?idxno=43152",
+       "src": "한국데이터경제신문"
+      },
+      {
+       "text": "은행 [[50%+1주 이상 보유(51%룰)]]를 두고 은행권·핀테크 대립. 거래소 대주주 지분은 [[20% 기준, 예외적으로 최대 34%]] 허용안이 논의돼 옴. 발의 5개 법안의 발행업 자본금 요건은 20억~50억원.",
+       "url": "https://www.dataeconomy.co.kr/news/articleView.html?idxno=43152",
+       "src": "한국데이터경제신문"
+      },
+      {
+       "text": "이강일 의원 집계: 달러 스테이블코인 국내 누적 거래액 7월까지 [[약 80조원]], 1~9월 약 63조원 해외 이동(순유출과는 구분 필요).",
+       "url": "https://www.dataeconomy.co.kr/news/articleView.html?idxno=43152",
+       "src": "한국데이터경제신문"
+      },
+      {
+       "text": "민병덕 의원(10/15 페이스북), 준비자산을 국채로 한정할 필요 없다며 [[주택금융공사 MBS 활용을 진지하게 검토]]하겠다고 밝힘. 바젤III Level 1 자산이라 안전성·환금성 충분하다는 논리.",
+       "url": "https://www.newspim.com/news/view/20261016000148",
+       "src": "뉴스핌"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-14",
+     "title": "법인 가상자산 투자 허용 1년째 표류…상장사·전문투자자 가이드라인 미공개",
+     "summary": "2025.2 로드맵상 '25 하반기 허용 예정이던 상장사·전문투자자(약 3,500곳) 매매가 아직 가이드라인조차 미공개. 기본법과 달리 당국 재량 사안이라 국감 후속 점검 요구.",
+     "points": [
+      {
+       "text": "금융위 2025.2 '법인 시장참여 로드맵': 상반기 비영리법인·거래소 매도 허용 후 하반기 [[금융사 제외 상장사·전문투자자 약 3,500곳 매매 허용]] 계획이었으나 [[후속 가이드라인 미공개]].",
+       "url": "https://www.fnnews.com/news/202610140620473261",
+       "src": "파이낸셜뉴스(뉴스1)"
+      },
+      {
+       "text": "업계는 법인투자는 [[법 개정 없이 당국이 추진 가능]]한 사안이라며 지연 사유·일정 공개 요구. 과세 논의와 맞물린 지연이라는 해석도.",
+       "url": "https://www.fnnews.com/news/202610140620473261",
+       "src": "파이낸셜뉴스(뉴스1)"
+      },
+      {
+       "text": "정무위는 [[10/19 금감원 국감, 10/22 금융위·금감원 종합감사]] 예정. 조각투자 장외거래소 인가 공정성 논란도 제기.",
+       "url": "https://www.fnnews.com/news/202610140620473261",
+       "src": "파이낸셜뉴스(뉴스1)"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-12",
+     "title": "한은 국감: 신현송 총재 \"원화 스테이블코인, 은행 50%+1 컨소시엄으로 정부와 합의…민간 주도, 통화 질서엔 의견\"",
+     "summary": "발행주체 쟁점이 은행 과반 지분(50%+1) 컨소시엄으로 정부·한은 간 정리. 법률·하위규정 반영 전이라 최종 확정은 아님. 범용 CBDC는 2023년 이후 검토 중단.",
+     "points": [
+      {
+       "text": "신현송 총재, 발행 구조는 [[\"일단 합의된 대로 은행 주도형 컨소시엄\"]], 은행 지분은 [[\"50%+1\"]]이며 정부와 합의한 정부안이라고 답변(임이자 의원 질의). 핀테크·IT기업은 나머지 지분으로 참여.",
+       "url": "https://www.techm.kr/news/articleView.html?idxno=156004",
+       "src": "테크M"
+      },
+      {
+       "text": "발행 자체엔 찬성하나 은행 주도라도 [[환율·자본유출·대량 환매 위험은 완전히 막기 어렵다]]는 지적에 동의. 한은은 발행 단계부터 [[처음부터 협의에 참여]]하겠다고 밝힘.",
+       "url": "https://www.digitalasset.works/news/articleView.html?idxno=43527",
+       "src": "디지털애셋"
+      },
+      {
+       "text": "신현송 한국은행 총재(10/12 국감), 스테이블코인은 [[민간 기업이 진행하는 것이 맞다]]면서도 통화 생태계 전반의 질서에 대해서는 한은이 의견을 내겠다고 답변.",
+       "url": "https://dailian.co.kr/news/view/1700311/2026-%EA%B5%AD%EA%B0%90-%EC%8B%A0%ED%98%84%EC%86%A1-%E2%80%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B8%94%EC%BD%94%EC%9D%B8-2026",
+       "src": "데일리안"
+      },
+      {
+       "text": "범용 CBDC는 [[2023년 이후 검토하지 않음]]. 프로젝트 한강은 기관용 디지털화폐 중심으로 기존 2단계 금융·통화 제도를 토큰화하는 작업이라고 설명.",
+       "url": "https://dailian.co.kr/news/view/1700311/2026-%EA%B5%AD%EA%B0%90-%EC%8B%A0%ED%98%84%EC%86%A1-%E2%80%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B8%94%EC%BD%94%EC%9D%B8-2026",
+       "src": "데일리안"
+      },
+      {
+       "text": "예금토큰 거래정보·개인정보는 [[개별 상업은행이 관리, 한은은 지급준비금을 통한 정산만 담당]]. 이준석 의원은 거래소 원장 관리 사고 사례를 들어 우려 제기.",
+       "url": "https://dailian.co.kr/news/view/1700311/2026-%EA%B5%AD%EA%B0%90-%EC%8B%A0%ED%98%84%EC%86%A1-%E2%80%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B8%94%EC%BD%94%EC%9D%B8-2026",
+       "src": "데일리안"
+      },
+      {
+       "text": "남은 쟁점: 은행 과반 요건의 최종 법안 반영 여부, 비은행 독자 발행 허용 범위, 준비자산·상환·감독권 배분. 정부안은 [[11월 정무위 소위 전 제출]] 목표.",
+       "url": "https://www.techm.kr/news/articleView.html?idxno=156004",
+       "src": "테크M"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-08",
+     "title": "금융위 국감: 이억원 위원장 \"디지털자산기본법 막바지 협의…세계 흐름 뒤처지지 않겠다\"",
+     "summary": "법안 내용은 준비 완료, 관계부처 막바지 협의. 발행주체·인가(라이선스) 체계는 여전히 결론 없음.",
+     "points": [
+      {
+       "text": "이억원 금융위원장(정무위 국감, 10/8), 스테이블코인 제도화 법안은 [[\"내용은 다 준비해 놓았고 막바지 협의 중\"]]이라고 답변. 글로벌 흐름에 뒤처지지 않도록 하겠다고 언급.",
+       "url": "https://www.news1.kr/finance/general-finance/6314300",
+       "src": "뉴스1"
+      },
+      {
+       "text": "발행주체·라이선스 체계는 [[시장 상황과 글로벌 제도 변화를 고려해 정책적으로 판단]]하겠다며 확답 회피. 은행 중심 컨소시엄·은행 지분 요건 등은 미확정 상태 유지.",
+       "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855962",
+       "src": "뉴스웍스"
+      },
+      {
+       "text": "이강일 의원, 입법 지연으로 [[해외 유출 63조원]]·시장 주도권 상실 우려 제기. 거래소 라이선스와 중개업 분리, 토큰화 주식·RWA, 가상자산 파생상품 허용 여부에 대한 당국 입장 요구.",
+       "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855962",
+       "src": "뉴스웍스"
+      },
+      {
+       "text": "정부안 쟁점: 원화 스테이블코인 발행법인 [[은행 과반 지분]] 방안 검토, 거래소 [[대주주 지분 15~20% 제한]] 포함 여부 논란. 위원장은 거래소가 신고제→인가제로 바뀌는 만큼 공공성·책임성이 필요하다며 외부 지시설 부인. 금융위 종합국감은 10/22.",
+       "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01102086645611280",
+       "src": "이데일리"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-07",
+     "title": "외국환거래법 시행령 입법예고: 해외 거래소·개인지갑 가상자산 이전, 한은 외환전산망 보고",
+     "summary": "'가상자산이전업자' 등록·보고 의무 신설. 12/3 개정법과 함께 시행 목표, 의견 10/26 마감.",
+     "points": [
+      {
+       "text": "재정경제부 입법예고. 국내 사업자와 [[해외 가상자산사업자·개인지갑 간 이전 내역]]을 가상자산이전업자가 [[한국은행 외환전산망]]에 보고.",
+       "url": "https://www.newspim.com/news/view/20261006001394",
+       "src": "뉴스핌"
+      },
+      {
+       "text": "보고 자료는 [[국세청·관세청·금감원·FIU]]와 공유해 환치기·외환규제 회피 감시. 등록 요건은 전산설비와 외환 전문인력 2인 이상.",
+       "url": "https://www.newspim.com/news/view/20261006001394",
+       "src": "뉴스핌"
+      },
+      {
+       "text": "근거는 6월 개정 외국환거래법(가상자산이전업무 신설). [[의견 마감 10/26, 12/3 시행 예정]]. 보고 기준금액은 미공개.",
+       "url": "https://www.newspim.com/news/view/20261006001394",
+       "src": "뉴스핌"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-06",
+     "title": "국정감사 개막: 부총리 \"디지털자산기본법 최대한 빨리\", 기본법 표류·과세 준비 도마",
+     "summary": "정부안은 관계부처 최종 협의 단계. 11월 정무위 소위 전 제출 목표. 과세(2027.1)는 예정대로지만 인프라 공백 지적.",
+     "points": [
+      {
+       "text": "이형일 부총리(재경부 국감, 10/6), 스테이블코인은 신산업의 씨앗이라며 [[2단계 입법을 최대한 빨리 통과]]시키겠다고 밝힘. 관계부처 마지막 협의 진행 중. GENIUS Act 시행(2027.1.18) 후 달러 스테이블코인 유입에 대비한 통화주권 방어 필요성 언급.",
+       "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01105366645610624",
+       "src": "이데일리"
+      },
+      {
+       "text": "안도걸 의원, [[부총리 직속 TF·전자금융거래법·외국환거래법 개정 로드맵]] 요구. 금융위는 11월 법안소위 전 정부안 제출 예정, 관련 법안 10건 계류.",
+       "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01105366645610624",
+       "src": "이데일리"
+      },
+      {
+       "text": "금융위 국감(10/8) 쟁점: 9월 공청회 무산 등 [[기본법 지연]], 거래소 대주주 지분 제한(단계적 매각·의결권 제한 논의), 상장·공시의 DAXA 자율규제 의존, 상장사 법인투자 시범사업 지연.",
+       "url": "https://www.etoday.co.kr/news/view/2632741",
+       "src": "이투데이"
+      },
+      {
+       "text": "과세는 2027.1.1 시행(250만원 공제, 22%) 유지되나 [[2030년 유예안·폐지론]]도 제기. 해외거래 취득가액 파악 등 인프라 공백이 쟁점.",
+       "url": "https://www.etoday.co.kr/news/view/2632741",
+       "src": "이투데이"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2017-09-29",
+     "text": "정부, ICO(가상통화공개) 전면 금지 방침 발표",
+     "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03660486616065040",
+     "src": "이데일리"
+    },
+    {
+     "date": "2020-03-24",
+     "text": "특정금융정보법 개정 공포 (Act on Reporting and Using Specified Financial Transaction Information)",
+     "url": "https://www.law.go.kr/LSW/lsRvsRsnListP.do?lsId=009256&chrClsCd=010102",
+     "src": "국가법령정보센터"
+    },
+    {
+     "date": "2021-03-25",
+     "text": "개정 특금법 시행: 가상자산사업자 신고제·AML 의무",
+     "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02168086628983976",
+     "src": "이데일리"
+    },
+    {
+     "date": "2021-09-24",
+     "text": "VASP 신고 유예기간 종료(미신고 거래소 영업 중단)",
+     "url": "https://www.fsc.go.kr/no010101/75560",
+     "src": "금융위원회"
+    },
+    {
+     "date": "2022-03-25",
+     "text": "트래블룰 시행(100만원 이상 이전 시 정보 제공)",
+     "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148877637",
+     "src": "정책브리핑"
+    },
+    {
+     "date": "2023-02-06",
+     "text": "토큰증권 발행·유통 규율체계 정비방안 발표",
+     "url": "https://www.fsc.go.kr/no010101/79386",
+     "src": "금융위원회"
+    },
+    {
+     "date": "2023-07-18",
+     "text": "가상자산이용자보호법 공포 (Virtual Asset User Protection Act)",
+     "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=261099",
+     "src": "국가법령정보센터"
+    },
+    {
+     "date": "2024-07-19",
+     "text": "가상자산이용자보호법 시행(예치금·불공정거래 규율)",
+     "url": "https://www.fsc.go.kr/no010101/82682",
+     "src": "금융위원회"
+    },
+    {
+     "date": "2024-12-10",
+     "text": "소득세법 개정: 가상자산 과세 2027.1.1로 2년 유예",
+     "url": "https://www.seoul.co.kr/news/politics/congress/2024/12/10/20241210500154",
+     "src": "서울신문"
+    },
+    {
+     "date": "2025-02-13",
+     "text": "법인의 가상자산시장 참여 로드맵 발표",
+     "url": "https://www.fsc.go.kr/no010101/84000",
+     "src": "금융위원회"
+    },
+    {
+     "date": "2026-02-03",
+     "text": "개정 전자증권법·자본시장법 공포(토큰증권)",
+     "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=34390",
+     "src": "김·장"
+    },
+    {
+     "date": "2026-07-14",
+     "text": "하반기 경제성장전략: 비트코인 현물 ETF 도입 추진",
+     "url": "https://www.hankyung.com/article/2026071450031",
+     "src": "한국경제"
+    },
+    {
+     "date": "2026-10-02",
+     "text": "토큰증권 하위법규 개정안 입법예고(~11/11)",
+     "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/01/2026100100192.html",
+     "src": "뉴데일리"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "국정감사 개막: 부총리 \"디지털자산기본법 최대한 빨리 통과\", 정부안 관계부처 최종 협의",
+     "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01105366645610624",
+     "src": "이데일리"
+    },
+    {
+     "date": "2026-10-07",
+     "text": "외국환거래법 시행령 입법예고: 가상자산 해외 이전 한은 외환전산망 보고",
+     "url": "https://www.newspim.com/news/view/20261006001394",
+     "src": "뉴스핌"
+    },
+    {
+     "date": "2026-10-08",
+     "text": "금융위 국감: 위원장 \"디지털자산기본법 막바지 협의\"",
+     "url": "https://www.news1.kr/finance/general-finance/6314300",
+     "src": "뉴스1"
+    },
+    {
+     "date": "2026-10-12",
+     "text": "한은 국감: 총재 \"원화 스테이블코인 은행 50%+1 컨소시엄, 정부와 합의\"·\"민간 주도\"",
+     "url": "https://dailian.co.kr/news/view/1700311/2026-%EA%B5%AD%EA%B0%90-%EC%8B%A0%ED%98%84%EC%86%A1-%E2%80%9C%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B8%94%EC%BD%94%EC%9D%B8-2026",
+     "src": "데일리안"
+    },
+    {
+     "date": "2026-10-19",
+     "text": "국회 정무위 금융감독원 국정감사",
+     "url": "https://www.fnnews.com/news/202610140620473261",
+     "src": "파이낸셜뉴스"
+    },
+    {
+     "date": "2026-10-22",
+     "text": "국회 정무위 금융위 종합국정감사(예정)",
+     "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01102086645611280",
+     "src": "이데일리"
+    },
+    {
+     "date": "2026-12-03",
+     "text": "개정 외국환거래법·시행령 시행: 가상자산이전업 등록·보고(예정)",
+     "url": "https://www.newspim.com/news/view/20261006001394",
+     "src": "뉴스핌"
+    },
+    {
+     "date": "2027-01-01",
+     "text": "가상자산 소득 과세 시행(예정)",
+     "url": "https://www.dailian.co.kr/news/view/1694149/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%EA%B3%BC%EC%84%B8-%EA%B5%AD%ED%9A%8C-%EC%88%99%EC%9D%98-%EC%8B%9C%EA%B0%84-%EB%93%A4%EC%96%B4%EA%B0%84-2026",
+     "src": "데일리안"
+    },
+    {
+     "date": "2027-02-04",
+     "text": "토큰증권 제도 시행(예정)",
+     "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=34390",
+     "src": "김·장"
+    }
+   ]
+  },
+  {
+   "code": "US",
+   "name": "미국",
+   "en": "United States",
+   "regulators": "SEC · CFTC · OCC · 재무부(FinCEN)",
+   "headline": "시장구조법(CLARITY) 상원 부결로 SEC 규칙·면제와 CFTC ANPRM(의견 ~12/14)이 공백 보완. 스테이블코인은 OCC가 GENIUS법 최종 규칙을 10월 말 전 확정 예상.",
+   "reference_only": false,
+   "checked": "2026-10-20",
+   "status": {
+    "vasp": {
+     "lv": "prog",
+     "short": "연방 인가 부재, CFTC CAM 제안",
+     "text": "연방 단일 인가제 부재(주 송금업·NY BitLicense). CLARITY Act 부결 후 CFTC 선택적 등록(CAM) 규칙안(10/5)",
+     "url": "https://www.coindesk.com/policy/2026/10/05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers"
+    },
+    "stable": {
+     "lv": "prog",
+     "short": "GENIUS법, OCC 규칙 10월 말",
+     "text": "GENIUS Act 서명('25.7.18). OCC 청장(10/15) 최종 규칙 '10월 말까지' 확정 목표(기존 11월에서 앞당김). 재무부 규칙안 의견 10/19 마감. 시행은 '27.1.18(또는 최종 규칙 후 120일 중 이른 날)",
+     "url": "https://www.pymnts.com/legal/2026/occ-races-the-clock-to-finish-genius-act-stablecoin-rules/"
+    },
+    "sto": {
+     "lv": "ok",
+     "short": "SEC 혁신면제(9/17)",
+     "text": "SEC Innovation Exemption: 토큰화 NMS 주식 거래 허용('26.9.17)",
+     "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
+    },
+    "etf": {
+     "lv": "ok",
+     "short": "BTC·ETH 허용",
+     "text": "현물 BTC ETP 승인('24.1.10), ETH('24.5 승인)",
+     "url": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023"
+    },
+    "tax": {
+     "lv": "ok",
+     "short": "1099-DA 보고",
+     "text": "자산(property) 과세, 브로커 보고(Form 1099-DA) 도입",
+     "url": "https://www.irs.gov/businesses/small-businesses-self-employed/digital-assets"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "BSA 적용",
+     "text": "BSA·FinCEN 규정 적용, GENIUS법상 발행인 AML 의무",
+     "url": "https://www.cov.com/news-and-insights/insights/2025/07/the-genius-act-becomes-law-key-provisions-from-the-federal-stablecoin-regulatory-framework"
+    },
+    "broker": {
+     "lv": "ok",
+     "short": "참여 확대",
+     "text": "브로커딜러·은행의 가상자산 수탁·거래 참여 확대(규제기관 지침 정비)",
+     "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-10-15",
+     "title": "OCC 청장 \"GENIUS법 최종 규칙 10월 말까지\"…11월 목표에서 앞당겨",
+     "summary": "DC Fintech Week에서 Gould 청장이 최종 규칙을 \"아주 가까운 시일 내\" 공개하겠다고 밝힘. 최종 규칙이 나오면 발행사 인가 신청 처리가 시작된다.",
+     "points": [
+      {
+       "text": "OCC는 2026.2 규칙안(준비자산·자본·감사·감독, 376쪽)을 냈고, 최종 확정 목표를 [[10월 말]]로 제시.",
+       "url": "https://www.pymnts.com/legal/2026/occ-races-the-clock-to-finish-genius-act-stablecoin-rules/",
+       "src": "PYMNTS"
+      },
+      {
+       "text": "법정 시행일은 [[2027.1.18 또는 최종 규칙 후 120일 중 이른 날]]. 재무부 규칙안 의견은 10/19 마감.",
+       "url": "https://decrypt.co/376048/banking-regulator-occ-genius-act-stablecoin-rules-november",
+       "src": "Decrypt"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "title": "OCC 청장 \"GENIUS법 최종 규칙 10월 말 전 확정\"…OCC 디뱅킹 최종 보고서(10/14), CFTC ANPRM 관보 게재(10/13)",
+     "summary": "GENIUS법 하위규정의 핵심인 OCC 발행사 규칙이 당초 11월 목표보다 앞당겨질 전망. 최종 규칙 후 120일과 2027.1.18 중 이른 날 시행.",
+     "points": [
+      {
+       "text": "Jonathan Gould 통화감독청장(10/15, DC Fintech Week), GENIUS법 시행 OCC 최종 규칙을 [[10월 말 전 \"매우 가까운 시일\" 내]] 확정 예상. 2월 제안된 376쪽 규칙안(준비자산·자본·감사·감독).",
+       "url": "https://coinedition.com/crypto-live-news/occ-chief-expects-genius-act-stablecoin-rules-by-octobers/",
+       "src": "Coin Edition"
+      },
+      {
+       "text": "OCC 디뱅킹 최종 보고서(10/14): 9대 은행의 [['평판 리스크' 정책에 객관적 기준 결여]], 디지털자산을 제한 업종으로 취급한 사례 확인.",
+       "url": "https://occ.gov/news-issuances/news-releases/2026/nr-occ-2026-90.html",
+       "src": "OCC"
+      },
+      {
+       "text": "CFTC Regulation CTX·CAM은 규칙안이 아닌 [[사전 규칙제정 공고(ANPRM)]]로 10/13 관보 게재, [[의견 마감 12/14]].",
+       "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20888/regulation-crypto-asset-transactions-and-regulation-crypto-asset-markets",
+       "src": "Federal Register"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-05",
+     "title": "CFTC, 레버리지 암호자산 거래 규칙안(Regulation CTX·CAM) 제안",
+     "summary": "CLARITY Act 부결 공백을 CFTC도 규칙으로 보완. 현물(spot) 거래는 여전히 주 송금업 규제에 남음.",
+     "points": [
+      {
+       "text": "레버리지·마진·금융 제공 암호자산 거래를 대상으로 [[Regulation CTX(거래)·Regulation CAM(시장)]] 제안. 거래소용 선택적 등록 범주 CAM 신설.",
+       "url": "https://www.coindesk.com/policy/2026/10/05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers",
+       "src": "CoinDesk"
+      },
+      {
+       "text": "옴니버스 계정 보관 거래소의 [[준비금 증명(proof-of-reserves)]], FCM 중개를 통한 BSA·AML 적용, 조작 취약 상품 상장 금지. 28일 내 실물인도 거래는 면제.",
+       "url": "https://www.coindesk.com/policy/2026/10/05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers",
+       "src": "CoinDesk"
+      },
+      {
+       "text": "CFTC는 [[현물 거래 직접 관할권이 없어]] BTC·ETH 등 주요 토큰 현물시장 공백은 남음. 의견수렴 60일.",
+       "url": "https://www.coindesk.com/policy/2026/10/05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers",
+       "src": "CoinDesk"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-01",
+     "title": "SEC, 투자자문사·펀드 암호자산 자기수탁 규칙안 제안",
+     "summary": "주 신탁회사를 적격 수탁기관으로 인정. 입법 교착 속 SEC 규칙 제정으로 제도화 진행.",
+     "points": [
+      {
+       "text": "투자자문사와 펀드가 [[암호자산을 자체 보관(self-custody)]]할 수 있도록 하는 프레임워크 제안.",
+       "url": "https://theblock.co/news/regulation/2026-10-01-sec-proposes-crypto-custody-rule-investment-advisers-funds-417498",
+       "src": "The Block"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-30",
+     "title": "GENIUS법 하위규정 속도: 연준 발행사 규칙안·재무부 주(州) 체계 인증 잠정규칙",
+     "summary": "2027.1.18 시행을 앞두고 은행 감독당국·재무부 규칙 제정이 병행 진행.",
+     "points": [
+      {
+       "text": "연준(9/24): 발행사에 [[허용 준비자산(단기 국채 등)으로 100% 담보]] 요구하는 규칙안 공개.",
+       "url": "https://www.bloomberg.com/news/articles/2026-09-24/fed-unveils-more-stablecoin-plans-as-regulators-embrace-crypto",
+       "src": "Bloomberg"
+      },
+      {
+       "text": "재무부(9/30): 주(州) 규제체계 인증을 [[미완성·조건부로도 신청 허용]]. 완결 신청만 30일 심사 개시, 기한 2028.1.18.",
+       "url": "https://cryptoslate.com/treasury-will-let-states-file-for-stablecoin-approval-before-finishing-their-rules/",
+       "src": "CryptoSlate"
+      },
+      {
+       "text": "CLARITY Act 교착 속 [[SEC·CFTC 등 기관 주도 규칙 제정]]이 입법 공백을 메우는 흐름.",
+       "url": "https://www.digitaltoday.co.kr/en/view/109396/fed-releases-stablecoin-rules-as-debate-flares-over-digital-asset-taxation",
+       "src": "Digital Today"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-17",
+     "title": "SEC, 토큰화 상장주식 거래 'Innovation Exemption' 발령",
+     "summary": "토큰화 증권 거래소(TSV)가 AMM·유동성풀로 토큰화 NMS 주식을 거래하도록 5년 한시 면제.",
+     "points": [
+      {
+       "text": "[[토큰화 주식은 기초주식과 동일 권리]] 보장, 제3자 토큰화 시 발행사 이의 기회, 거래정지 연동, 스마트컨트랙트 공개·감사 가능 요건.",
+       "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+       "src": "SEC"
+      },
+      {
+       "text": "로펌 해설: [[온체인 주식 거래의 첫 규제 경로]]로 평가.",
+       "url": "https://www.sullcrom.com/insights/memo/2026/September/SEC-Issues-Innovation-Exemption-for-Tokenized-Securities",
+       "src": "Sullivan & Cromwell"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-15",
+     "title": "CLARITY Act 상원 절차표결 49-50 부결",
+     "summary": "60표 필요. 공직자 가상자산 이해상충(윤리) 조항을 두고 민주당 전원 반대. 레임덕 회기로 이월.",
+     "points": [
+      {
+       "text": "상원 [[cloture 표결 실패]]로 시장구조법이 교착. 스테이블코인 보상(이자성 리워드) 문제도 은행권과 대립.",
+       "url": "https://www.cnbc.com/2026/09/15/senate-cloture-vote-on-clarity-act-fails-dealing-regulatory-setback-to-crypto-industry.html",
+       "src": "CNBC"
+      },
+      {
+       "text": "하원 통과 이후 상원 경과와 쟁점은 [[Latham & Watkins 정책 트래커]]에서 추적.",
+       "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments",
+       "src": "Latham & Watkins"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2017-07-25",
+     "text": "SEC DAO Report: 토큰의 투자계약(증권) 해당 가능성 제시",
+     "url": "https://www.sec.gov/litigation/investreport/34-81207.pdf",
+     "src": "SEC"
+    },
+    {
+     "date": "2019-04-03",
+     "text": "SEC 'Framework for Investment Contract Analysis of Digital Assets'",
+     "url": "https://www.sec.gov/corpfin/framework-investment-contract-analysis-digital-assets",
+     "src": "SEC"
+    },
+    {
+     "date": "2024-01-10",
+     "text": "현물 비트코인 ETP 11종 상장 승인",
+     "url": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023",
+     "src": "SEC"
+    },
+    {
+     "date": "2024-05-23",
+     "text": "현물 이더리움 ETP 상장규칙 승인(7월 거래 개시)",
+     "url": "https://www.congress.gov/crs-product/IF12573",
+     "src": "Congress.gov(CRS)"
+    },
+    {
+     "date": "2025-07-18",
+     "text": "GENIUS Act 서명 (Guiding and Establishing National Innovation for U.S. Stablecoins Act)",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/",
+     "src": "White House"
+    },
+    {
+     "date": "2026-03-02",
+     "text": "OCC, GENIUS Act 이행 제안 규칙 공표",
+     "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04089/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the",
+     "src": "Federal Register"
+    },
+    {
+     "date": "2026-08-18",
+     "text": "SEC 'Regulation Crypto Assets' 제안",
+     "url": "https://www.sullcrom.com/insights/memo/2026/August/SEC-Proposes-Regulation-Crypto-Assets",
+     "src": "S&C"
+    },
+    {
+     "date": "2026-09-15",
+     "text": "CLARITY Act (Digital Asset Market Clarity Act) 상원 절차표결 부결",
+     "url": "https://www.cnbc.com/2026/09/15/senate-cloture-vote-on-clarity-act-fails-dealing-regulatory-setback-to-crypto-industry.html",
+     "src": "CNBC"
+    },
+    {
+     "date": "2026-09-17",
+     "text": "SEC 토큰화 NMS 주식 Innovation Exemption",
+     "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+     "src": "SEC"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "연준, 스테이블코인 발행사 규칙안 공개",
+     "url": "https://www.bloomberg.com/news/articles/2026-09-24/fed-unveils-more-stablecoin-plans-as-regulators-embrace-crypto",
+     "src": "Bloomberg"
+    },
+    {
+     "date": "2026-09-30",
+     "text": "재무부, GENIUS법 주(州) 체계 인증 잠정규칙",
+     "url": "https://cryptoslate.com/treasury-will-let-states-file-for-stablecoin-approval-before-finishing-their-rules/",
+     "src": "CryptoSlate"
+    },
+    {
+     "date": "2026-10-01",
+     "text": "SEC 투자자문사·펀드 암호자산 자기수탁 규칙안",
+     "url": "https://theblock.co/news/regulation/2026-10-01-sec-proposes-crypto-custody-rule-investment-advisers-funds-417498",
+     "src": "The Block"
+    },
+    {
+     "date": "2026-10-05",
+     "text": "CFTC, Regulation CTX·CAM(레버리지 암호자산 거래) 규칙안 제안",
+     "url": "https://www.coindesk.com/policy/2026/10/05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers",
+     "src": "CoinDesk"
+    },
+    {
+     "date": "2026-10-13",
+     "text": "CFTC CTX·CAM ANPRM 관보 게재(의견 마감 12/14)",
+     "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20888/regulation-crypto-asset-transactions-and-regulation-crypto-asset-markets",
+     "src": "Federal Register"
+    },
+    {
+     "date": "2027-01-18",
+     "text": "GENIUS Act 시행(최종 규칙 후 120일 중 이른 날)",
+     "url": "https://www.pymnts.com/legal/2026/occ-races-the-clock-to-finish-genius-act-stablecoin-rules/",
+     "src": "PYMNTS"
+    }
+   ]
+  },
+  {
+   "code": "JP",
+   "name": "일본",
+   "en": "Japan",
+   "regulators": "금융청(FSA) · JVCEA",
+   "headline": "가상자산을 금융상품거래법(FIEA)으로 이관하는 개정안 통과(7/15). 2027년 시행, 20% 분리과세는 2028년 전망.",
+   "reference_only": false,
+   "checked": "2026-10-16",
+   "status": {
+    "vasp": {
+     "lv": "ok",
+     "short": "등록제→FIEA 이관",
+     "text": "자금결제법 등록제('17.4) → FIEA 이관 개정 통과('26.7.15)",
+     "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts"
+    },
+    "stable": {
+     "lv": "ok",
+     "short": "'23.6 시행",
+     "text": "개정 자금결제법 '23.6.1 시행(전자결제수단)",
+     "url": "https://www.tkilaw.com/en/7053"
+    },
+    "sto": {
+     "lv": "ok",
+     "short": "전자기록이전증권",
+     "text": "FIEA상 전자기록이전유가증권('20.5 시행)",
+     "url": "https://www.klgates.com/Japans-New-Crypto-Regulation-2019-Amendments-to-Payment-Services-Act-and-Financial-Instruments-and-Exchange-Act-of-Japan-11-26-2019"
+    },
+    "etf": {
+     "lv": "prog",
+     "short": "도입 준비",
+     "text": "FIEA 개정으로 현물 ETF 법적 장애 제거, 상품 규정 마련 예정",
+     "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts"
+    },
+    "tax": {
+     "lv": "prog",
+     "short": "20% 분리('28)",
+     "text": "최대 55% 종합과세 → 20% 분리과세('28 시행 전망)",
+     "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "'23.6 시행",
+     "text": "트래블룰 '23.6.1 시행",
+     "url": "https://cryptoforinnovation.org/policy-brief-summary-of-japanese-fsa-crypto-asset-and-stablecoins-framework/"
+    },
+    "broker": {
+     "lv": "prog",
+     "short": "FIEA 일원화",
+     "text": "FIEA 편입으로 금융상품거래업 체계 일원화, 내부자거래 규제 도입",
+     "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-07-15",
+     "title": "국회, 가상자산 FIEA 편입 개정안 통과",
+     "summary": "결제수단에서 투자상품으로 재분류. 내부자거래 규제·공시 강화, 무등록 영업 최대 10년형.",
+     "points": [
+      {
+       "text": "[[FIEA·자금결제법 개정]] 2027년 시행 예정, 현물 ETF 법적 장애 해소.",
+       "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts",
+       "src": "CoinDesk"
+      },
+      {
+       "text": "세율 [[최대 55% → 20%(국세 15%+지방세 5%)]], 2028년 시행 전망.",
+       "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts",
+       "src": "CoinDesk"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2017-04-01",
+     "text": "개정 자금결제법(Payment Services Act) 시행: 가상통화 교환업 등록제",
+     "url": "https://www.sygna.io/blog/japan-crypto-regulation-history-2014-2020/",
+     "src": "Sygna"
+    },
+    {
+     "date": "2018-01-26",
+     "text": "코인체크 해킹 → 감독 강화",
+     "url": "https://www.sygna.io/blog/japan-crypto-regulation-history-2014-2020/",
+     "src": "Sygna"
+    },
+    {
+     "date": "2019-05-31",
+     "text": "PSA·FIEA 개정: '암호자산' 명칭, STO 규율('20.5.1 시행)",
+     "url": "https://www.klgates.com/Japans-New-Crypto-Regulation-2019-Amendments-to-Payment-Services-Act-and-Financial-Instruments-and-Exchange-Act-of-Japan-11-26-2019",
+     "src": "K&L Gates"
+    },
+    {
+     "date": "2023-06-01",
+     "text": "스테이블코인 법제(개정 PSA)·트래블룰 시행",
+     "url": "https://www.tkilaw.com/en/7053",
+     "src": "TKI"
+    },
+    {
+     "date": "2026-07-15",
+     "text": "FIEA 편입 개정안 국회 통과",
+     "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts",
+     "src": "CoinDesk"
+    },
+    {
+     "date": "2027",
+     "text": "개정 FIEA 시행(예정)",
+     "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts",
+     "src": "CoinDesk"
+    }
+   ]
+  },
+  {
+   "code": "VN",
+   "name": "베트남",
+   "en": "Vietnam",
+   "regulators": "재무부(MoF) · 국가증권위원회(SSC) · 중앙은행(SBV) · 공안부",
+   "headline": "5년 시범시장(Resolution 05/2025) 인가 절차 진행 중이나 인가 0건. 자본금 10조동, 외국인 49% 한도.",
+   "reference_only": false,
+   "checked": "2026-10-20",
+   "status": {
+    "vasp": {
+     "lv": "prog",
+     "short": "시범 인가 0건",
+     "text": "결의 05/2025 5년 시범: 자본금 10조동, 기관 65% 이상, 외국인 49% 상한, 최대 5개사. 7개사 신청·5개사 1차 통과, 인가 0건(10/20 확인)",
+     "url": "https://cryptorank.io/news/feed/b7225-nine-months-seven-applicants-zero-licences-vietnams-crypto-waiting-game"
+    },
+    "stable": {
+     "lv": "no",
+     "short": "발행 금지",
+     "text": "법정화폐 담보 스테이블코인 발행 금지, VND 결제",
+     "url": "https://cryptorank.io/news/feed/b7225-nine-months-seven-applicants-zero-licences-vietnams-crypto-waiting-game"
+    },
+    "sto": {
+     "lv": "tbd",
+     "short": "확인 필요",
+     "text": "시범 제도상 토큰화 자산 범위 확인 필요",
+     "url": "https://www.dfdl.com/insights/legal-and-tax-updates/vietnam-government-sets-legal-framework-and-launches-pilot-program-for-tokenized-assets/"
+    },
+    "etf": {
+     "lv": "no",
+     "short": "없음",
+     "text": "관련 제도 없음",
+     "url": "https://english.luatvietnam.vn/resolution-no-05-2025-nq-cp-dated-september-09-2025-of-the-government-on-piloting-the-crypto-asset-market-in-vietnam-410830-doc1.html"
+    },
+    "tax": {
+     "lv": "ok",
+     "short": "거래대금 0.1%",
+     "text": "Circular 32/2026(3.27)·41/2026(4.6): 개인·외국법인 거래대금 0.1% 원천징수, 국내법인 차익 20% 법인세",
+     "url": "https://www.bakermckenzie.com/en/insight/publications/2026/05/vietnam-launches-pilot-tax-framework-for-crypto-asset-transactions"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "디지털기술법",
+     "text": "디지털기술산업법('26.1.1 시행)으로 가상자산 법적 인정·AML 적용",
+     "url": "https://www.dfdl.com/insights/legal-and-tax-updates/vietnam-government-sets-legal-framework-and-launches-pilot-program-for-tokenized-assets/"
+    },
+    "broker": {
+     "lv": "prog",
+     "short": "증권·은행 주도",
+     "text": "증권사·은행 중심 거래소 설립 추진(SSI, VIX, 테크콤뱅크 등)",
+     "url": "https://www.blockmedia.co.kr/archives/1034864"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-09-19",
+     "title": "거래소 인가 지연: 2분기 목표 경과, 인가 0건",
+     "summary": "Decision 96(1/20)에 따라 7개사 신청, 8/30 기준 5개사 1차 심사 통과. 9/1 무허가 영업 제재 시행령.",
+     "points": [
+      {
+       "text": "[[자본금 10조동, 정보보안 4등급, 공안부 승인]] 필요. 첫 인가 후 6개월 전환기간으로 역외 거래소 이용자 이동 전망.",
+       "url": "https://cryptorank.io/news/feed/b7225-nine-months-seven-applicants-zero-licences-vietnams-crypto-waiting-game",
+       "src": "CryptoRank"
+      },
+      {
+       "text": "신청 의향 기관: [[SSI증권, VIX증권, 군인상업은행, 테크콤뱅크, VP뱅크]] 등. 외국인 지분 49% 한도.",
+       "url": "https://www.blockmedia.co.kr/archives/1034864",
+       "src": "블록미디어"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2025-06-14",
+     "text": "디지털기술산업법 (Law on Digital Technology Industry) 통과, '26.1.1 시행",
+     "url": "https://www.dfdl.com/insights/legal-and-tax-updates/vietnam-government-sets-legal-framework-and-launches-pilot-program-for-tokenized-assets/",
+     "src": "DFDL"
+    },
+    {
+     "date": "2025-09-09",
+     "text": "Resolution 05/2025/NQ-CP: 가상자산 시범시장(5년)",
+     "url": "https://english.luatvietnam.vn/resolution-no-05-2025-nq-cp-dated-september-09-2025-of-the-government-on-piloting-the-crypto-asset-market-in-vietnam-410830-doc1.html",
+     "src": "LuatVietnam"
+    },
+    {
+     "date": "2026-01-20",
+     "text": "Decision 96: 인가 신청 절차 개시",
+     "url": "https://cryptorank.io/news/feed/b7225-nine-months-seven-applicants-zero-licences-vietnams-crypto-waiting-game",
+     "src": "CryptoRank"
+    },
+    {
+     "date": "2026-03-27",
+     "text": "Circular 32/2026: 거래대금 0.1% 과세",
+     "url": "https://www.bakermckenzie.com/en/insight/publications/2026/05/vietnam-launches-pilot-tax-framework-for-crypto-asset-transactions",
+     "src": "Baker McKenzie"
+    },
+    {
+     "date": "2026-09-01",
+     "text": "무허가 가상자산 영업 제재 시행령",
+     "url": "https://cryptorank.io/news/feed/b7225-nine-months-seven-applicants-zero-licences-vietnams-crypto-waiting-game",
+     "src": "CryptoRank"
+    }
+   ]
+  },
+  {
+   "code": "SG",
+   "name": "싱가포르",
+   "en": "Singapore",
+   "regulators": "통화청(MAS)",
+   "headline": "스테이블코인 규제 법제화 협의(9/1~10/16). 역외 영업 DTSP 규제는 2025.6.30 시행.",
+   "reference_only": false,
+   "checked": "2026-10-16",
+   "status": {
+    "vasp": {
+     "lv": "ok",
+     "short": "DPT·DTSP 인가",
+     "text": "PS Act DPT 라이선스('20.1) + FSMA Part 9 DTSP('25.6.30)",
+     "url": "https://www.mas.gov.sg/news/media-releases/2025/mas-clarifies-regulatory-regime-for-digital-token-service-providers"
+    },
+    "stable": {
+     "lv": "prog",
+     "short": "법제화 협의(~10/16)",
+     "text": "SCS 프레임워크('23.8) 법제화 협의 중(10/16 마감)",
+     "url": "https://www.trmlabs.com/resources/blog/singapores-proposed-stablecoin-rules-what-the-mas-consultation-means-for-issuers-exchanges-and-banks"
+    },
+    "sto": {
+     "lv": "ok",
+     "short": "SFA·Guardian",
+     "text": "증권선물법(SFA) 적용 + Project Guardian 토큰화 실험",
+     "url": "https://www.mas.gov.sg/schemes-and-initiatives/project-guardian"
+    },
+    "etf": {
+     "lv": "tbd",
+     "short": "확인 필요",
+     "text": "역내 현물 가상자산 ETF 허용 여부 확인 필요",
+     "url": "https://www.globallegalpost.com/lawoverborders/cryptoassets-law-guide-1030040461/singapore-566667599"
+    },
+    "tax": {
+     "lv": "tbd",
+     "short": "CGT 없음",
+     "text": "자본이득세 없음(영업성 거래는 과세). 세부 확인 필요",
+     "url": "https://www.globallegalpost.com/lawoverborders/cryptoassets-law-guide-1030040461/singapore-566667599"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "S$1,500↑",
+     "text": "MAS Notice PSN02 트래블룰(S$1,500 이상)",
+     "url": "https://notabene.id/world/singapore"
+    },
+    "broker": {
+     "lv": "tbd",
+     "short": "확인 필요",
+     "text": "CMS 인가사의 DPT 서비스는 별도 라이선스 요건 확인 필요",
+     "url": "https://www.mas.gov.sg/news/media-releases/2025/mas-clarifies-regulatory-regime-for-digital-token-service-providers"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-10-09",
+     "title": "MAS 청장 \"스테이블코인, 대규모 도매 결제에는 한계…CBDC가 통화 안정의 닻\"",
+     "summary": "Chia Der Jiun MAS 청장 INSEAD 기조연설. 스테이블코인 법제화 협의는 10/16 마감.",
+     "points": [
+      {
+       "text": "Chia Der Jiun 청장, 스테이블코인의 액면가 유지는 [[\"당연한 것이 아니다\"]]며 신뢰는 준비자산 적정성과 투명성에서 나온다고 강조.",
+       "url": "https://blockhead.co/2026/10/12/mas-chief-says-stablecoins-may-not-be-fit-for-large-wholesale-settlement",
+       "src": "Blockhead"
+      },
+      {
+       "text": "[[대규모 도매 거래 결제에는 적합성 한계]], 은행 업무는 예금토큰이 담당할 가능성. 스테이블코인은 거래소·핀테크 결제에서 확산 예상. CBDC가 궁극적으로 통화 안정의 닻 역할.",
+       "url": "https://blockhead.co/2026/10/12/mas-chief-says-stablecoins-may-not-be-fit-for-large-wholesale-settlement",
+       "src": "Blockhead"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-01",
+     "title": "MAS, 스테이블코인 규제 법제화 협의 개시",
+     "summary": "지급결제서비스법에 준비자산 100%·상환 기한·이자 지급 금지 명문화 제안. 10/16 의견 마감.",
+     "points": [
+      {
+       "text": "[[준비자산 액면 100% 이상 상시 유지, 보유자 이자·수익 지급 금지]], 불법 사용 시 동결·소각 기술 요건.",
+       "url": "https://www.trmlabs.com/resources/blog/singapores-proposed-stablecoin-rules-what-the-mas-consultation-means-for-issuers-exchanges-and-banks",
+       "src": "TRM Labs"
+      },
+      {
+       "text": "은행은 [[별도 비은행 법인]]을 통해 발행. MAS 원문 보도자료는 [[MAS 웹사이트]].",
+       "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework",
+       "src": "MAS"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2020-01-28",
+     "text": "Payment Services Act 시행: DPT 서비스 라이선스",
+     "url": "https://www.globallegalpost.com/lawoverborders/cryptoassets-law-guide-1030040461/singapore-566667599",
+     "src": "Global Legal Post"
+    },
+    {
+     "date": "2023-08-15",
+     "text": "MAS 단일통화 스테이블코인(SCS) 규제 프레임워크 발표",
+     "url": "https://www.trmlabs.com/resources/blog/singapores-proposed-stablecoin-rules-what-the-mas-consultation-means-for-issuers-exchanges-and-banks",
+     "src": "TRM Labs"
+    },
+    {
+     "date": "2025-06-30",
+     "text": "FSMA Part 9 DTSP 규제 시행(역외 고객 대상 영업 규율)",
+     "url": "https://www.mas.gov.sg/news/media-releases/2025/mas-clarifies-regulatory-regime-for-digital-token-service-providers",
+     "src": "MAS"
+    },
+    {
+     "date": "2026-09-01",
+     "text": "스테이블코인 법제화 협의(~10/16)",
+     "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework",
+     "src": "MAS"
+    }
+   ]
+  },
+  {
+   "code": "ID",
+   "name": "인도네시아",
+   "en": "Indonesia",
+   "regulators": "금융감독청(OJK) · 중앙은행(BI) · 재무부(DJP)",
+   "headline": "Law 4/2026(P2SK 개정) 6/17 시행으로 가상자산사업자를 금융기관(LJK AKD)으로 편입. 스테이블코인은 지급수단 불가.",
+   "reference_only": false,
+   "checked": "2026-10-16",
+   "status": {
+    "vasp": {
+     "lv": "ok",
+     "short": "OJK·Law 4/2026",
+     "text": "OJK 감독 이관('25.1.10), Law 4/2026 시행('26.6.17)",
+     "url": "https://www.abnrlaw.com/news/indonesias-p2sk-law-amendment-what-law-42026-changes-for-crypto-and-digital-financial-assets"
+    },
+    "stable": {
+     "lv": "prog",
+     "short": "지급수단 불가",
+     "text": "거래 수단은 허용(OJK 승인), 지급수단 불가 명문화",
+     "url": "https://www.abnrlaw.com/news/indonesias-p2sk-law-amendment-what-law-42026-changes-for-crypto-and-digital-financial-assets"
+    },
+    "sto": {
+     "lv": "prog",
+     "short": "오퍼링 규정",
+     "text": "토큰화·공모(오퍼링) 규정 도입: IDR 10억 이상 OJK 승인",
+     "url": "https://www.abnrlaw.com/news/at-long-last-indonesia-is-set-to-issue-a-landmark-crypto-offering-regime"
+    },
+    "etf": {
+     "lv": "tbd",
+     "short": "확인 필요",
+     "text": "현물 가상자산 ETF 제도 확인 필요",
+     "url": "https://www.abnrlaw.com/news/indonesia-greenlights-crypto-derivatives-a-look-at-the-new-ojk-framework"
+    },
+    "tax": {
+     "lv": "ok",
+     "short": "PPh 0.21%",
+     "text": "PMK 50/2025('25.8.1): 국내 거래 PPh 0.21%, VAT 면제",
+     "url": "https://kpmg.com/us/en/taxnewsflash/news/2025/11/tnf-indonesia-updated-tax-rates-for-cryptoasset-transactions.html"
+    },
+    "aml": {
+     "lv": "tbd",
+     "short": "확인 필요",
+     "text": "OJK·PPATK AML 적용. 트래블룰 세부 확인 필요",
+     "url": "https://ssek.com/blog/from-bappebti-to-ojk-indonesias-crypto-regulation-just-changed/"
+    },
+    "broker": {
+     "lv": "prog",
+     "short": "금융기관 편입",
+     "text": "가상자산사업자 = 금융기관(LJK AKD) 분류, 파생·대출·담보 활동 명시",
+     "url": "https://www.abnrlaw.com/news/indonesias-p2sk-law-amendment-what-law-42026-changes-for-crypto-and-digital-financial-assets"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-06-17",
+     "title": "Law 4/2026(P2SK 개정) 시행",
+     "summary": "토큰화·공모·스테이블코인·스테이킹·대차·담보·현물·파생을 법적 활동으로 인정.",
+     "points": [
+      {
+       "text": "스테이블코인은 [[거래 수단은 가능하나 지급수단으로 표시 불가]].",
+       "url": "https://www.abnrlaw.com/news/indonesias-p2sk-law-amendment-what-law-42026-changes-for-crypto-and-digital-financial-assets",
+       "src": "ABNR"
+      },
+      {
+       "text": "상품 분류·토큰화·오퍼링 세부는 [[OJK 시행규정 대기]], 기존 규정 존속.",
+       "url": "https://www.abnrlaw.com/news/indonesias-p2sk-law-amendment-what-law-42026-changes-for-crypto-and-digital-financial-assets",
+       "src": "ABNR"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2023-01-12",
+     "text": "금융부문 개발·강화법(P2SK, Law 4/2023): 가상자산 감독 OJK 이관 근거",
+     "url": "https://www.hsfkramer.com/notes/fintech/2025-posts/ojk-assumes-regulatory-oversight-of-digital-financial-assets",
+     "src": "HSF Kramer"
+    },
+    {
+     "date": "2025-01-10",
+     "text": "Bappebti → OJK 감독 이관(POJK 27/2024)",
+     "url": "https://ssek.com/blog/from-bappebti-to-ojk-indonesias-crypto-regulation-just-changed/",
+     "src": "SSEK"
+    },
+    {
+     "date": "2025-08-01",
+     "text": "PMK 50/2025 가상자산 과세 개편",
+     "url": "https://kpmg.com/us/en/taxnewsflash/news/2025/11/tnf-indonesia-updated-tax-rates-for-cryptoasset-transactions.html",
+     "src": "KPMG"
+    },
+    {
+     "date": "2026-06-17",
+     "text": "Law 4/2026 (P2SK 개정) 시행",
+     "url": "https://www.abnrlaw.com/news/indonesias-p2sk-law-amendment-what-law-42026-changes-for-crypto-and-digital-financial-assets",
+     "src": "ABNR"
+    }
+   ]
+  },
+  {
+   "code": "AE",
+   "name": "UAE·아부다비",
+   "en": "UAE (ADGM · FSRA)",
+   "regulators": "ADGM FSRA · 두바이 VARA · UAE 중앙은행(CBUAE) · SCA",
+   "headline": "ADGM FSRA가 스테이블코인(FRT)·스테이킹·토큰화에 이어 DeFi 가이던스(협의 ~11/30)까지 정비. 토큰화 증권 수탁 인가(10/12)도 늘며 글로벌 허브 유치 경쟁.",
+   "reference_only": false,
+   "checked": "2026-10-20",
+   "status": {
+    "vasp": {
+     "lv": "ok",
+     "short": "FSRA·VARA 인가",
+     "text": "ADGM FSRA VA 체계('18~), 두바이 VARA(Law No.4 of 2022)",
+     "url": "https://www.adgm.com/media/announcements/adgm-fsra-implements-amendments-to-its-digital-asset-regulatory-framework"
+    },
+    "stable": {
+     "lv": "ok",
+     "short": "FRT 규정 '26.1 시행",
+     "text": "FSRA 법정화폐 연동 토큰(FRT) 규정 '26.1.1 시행",
+     "url": "https://www.adgm.com/media/announcements/adgm-fsra-finalises-regulatory-framework-for-regulated-activities-involving-fiat-referenced-tokens"
+    },
+    "sto": {
+     "lv": "ok",
+     "short": "토큰화 허브(Coinbase)",
+     "text": "토큰화 증권 허용: Coinbase 토큰화 허브 FSP('26.8.11)",
+     "url": "https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority"
+    },
+    "etf": {
+     "lv": "tbd",
+     "short": "확인 필요",
+     "text": "공모형 현물 ETF 상장 여부 확인 필요",
+     "url": "https://www.adgm.com/business-areas/digital-assets"
+    },
+    "tax": {
+     "lv": "ok",
+     "short": "VAT 면제",
+     "text": "VA 이전·전환 VAT 면제(Cabinet Decision 100/2024), 개인소득세 없음",
+     "url": "https://insightplus.bakermckenzie.com/bm/tax/united-arab-emirates-introduced-key-provisions-relating-to-virtual-assets-exempting-the-trading-and-conversion-of-virtual-assets-from-value-added-taxes"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "AML 개정 협의",
+     "text": "FSRA AML 체계 개정 협의(CP No.1 of 2026, '26.5 마감)",
+     "url": "https://www.adgm.com/legal-framework/public-consultations"
+    },
+    "broker": {
+     "lv": "ok",
+     "short": "FSRA 인가로 가능",
+     "text": "FSRA 인가로 브로커딜러·수탁·거래소·운용 등 VA 활동 가능(20여 개사)",
+     "url": "https://www.adgm.com/media/announcements/adgm-fsra-presents-key-enhancements-to-its-digital-assets-framework-at-abu-dhabi-finance-week-2025"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-10-12",
+     "title": "FSRA, Zodia Custody ADGM 법인에 토큰화 증권 수탁 허가",
+     "summary": "ADGM 내 토큰화 증권(디지털 증권) 수탁 인가 사례 추가. 토큰화 허브 경쟁이 수탁 인프라로 확장.",
+     "points": [
+      {
+       "text": "FSRA가 Tungsten Custody Solutions(Zodia ADGM 자회사)의 [[인가 범위 변경(VoP)]]을 승인, [[디지털 증권 수탁]] 가능.",
+       "url": "https://zodia-custody.com/zodia-custody-secures-fsra-approval-to-custody-digital-securities-in-adgm/",
+       "src": "Zodia Custody"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-06",
+     "title": "FSRA, DeFi 리스크관리 가이던스 협의(CP No.5 of 2026, ~11/30)",
+     "summary": "인가사가 DeFi 프로토콜을 이용·연계할 때의 리스크관리 기대수준을 제시하는 가이던스 초안.",
+     "points": [
+      {
+       "text": "협의문 [[CP No.5 of 2026]] 공개, 의견 마감 [[2026.11.30]].",
+       "url": "https://www.adgm.com/legal-framework/public-consultations",
+       "src": "ADGM"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-16",
+     "title": "한화금융, 아부다비 ADIO·ADGM과 디지털금융·스테이블코인 협약",
+     "summary": "서울 아부다비투자포럼에서 한화생명-ADIO, 한화자산운용-ADGM-하나금융 3자 협약 체결.",
+     "points": [
+      {
+       "text": "한화자산운용·ADGM·하나금융, [[스테이블코인·국경 간 결제 인프라]] 협력.",
+       "url": "https://www.sedaily.com/article/20092657",
+       "src": "서울경제"
+      },
+      {
+       "text": "한화생명-ADIO: [[디지털금융 생태계, 자본시장 연결, 디지털뱅킹]] 3개 분야. 한화투자증권·한화손보도 포럼 참여.",
+       "url": "https://www.ajunews.com/view/20260918105240251",
+       "src": "아주경제"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-16",
+     "title": "UAE 중앙은행 신법(Federal Decree-Law No.6 of 2025) 전환기한 도래",
+     "summary": "VA 결제서비스·기술제공자를 CBUAE 감독 범위에 포함. 1년 전환기한 9/16(중앙은행 연장 재량).",
+     "points": [
+      {
+       "text": "[[가상자산 결제서비스 및 관련 기술제공자]]가 CBUAE 인가 대상인지 확인 필요.",
+       "url": "https://www.almaazmilawyers.com/insights/banking/2026-05-18-federal-decree-on-central-bank-financial-institutions-and-in",
+       "src": "Al Maazmi Lawyers"
+      }
+     ]
+    },
+    {
+     "date": "2026-08-11",
+     "title": "Coinbase, ADGM에 토큰화 허브 설립(FSRA FSP 취득)",
+     "summary": "기초주식 완전 담보 토큰화 증권, 의결권·배당 포함. 지갑만으로 투자 가능.",
+     "points": [
+      {
+       "text": "[[FSRA 감독 하 토큰화 증권 발행·온체인 자본시장]] 허브. 두바이에는 파생 허브 별도 설립.",
+       "url": "https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority",
+       "src": "ADGM"
+      }
+     ]
+    },
+    {
+     "date": "2026-04-29",
+     "title": "FSRA, 가상자산 스테이킹 규정 확정·시행",
+     "summary": "PoS 및 유사 모델 포함. 고객 보상은 Accepted VA·Accepted FRT로 한정.",
+     "points": [
+      {
+       "text": "[[스테이킹 가능 인가자 범주와 공시·보고 요건]] 규정, 즉시 시행.",
+       "url": "https://www.adgm.com/media/announcements/adgm-fsra-finalises-regulatory-framework-for-the-staking-of-virtual-assets",
+       "src": "ADGM"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2018-06",
+     "text": "ADGM FSRA, 가상자산 규제체계 도입(역내 최초)",
+     "url": "https://www.adgm.com/business-areas/digital-assets",
+     "src": "ADGM"
+    },
+    {
+     "date": "2022-03",
+     "text": "두바이 Law No.(4) of 2022, VARA 설립",
+     "url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2022/Law%20No.%20(4)%20of%202022%20Regulating%20Virtual%20Assets.html",
+     "src": "Dubai Legislation Portal"
+    },
+    {
+     "date": "2023-02",
+     "text": "VARA 'Virtual Assets and Related Activities Regulations 2023'",
+     "url": "https://www.mayerbrown.com/en/insights/publications/2023/03/varas-new-regulations-for-virtual-assets",
+     "src": "Mayer Brown"
+    },
+    {
+     "date": "2024-11-15",
+     "text": "VAT 시행령 개정: VA 이전·전환 VAT 면제(2018년 소급)",
+     "url": "https://insightplus.bakermckenzie.com/bm/tax/united-arab-emirates-introduced-key-provisions-relating-to-virtual-assets-exempting-the-trading-and-conversion-of-virtual-assets-from-value-added-taxes",
+     "src": "Baker McKenzie"
+    },
+    {
+     "date": "2025-06-10",
+     "text": "FSRA 규정 개정 시행: AVA 절차, 자본요건, 프라이버시 토큰·알고리즘 스테이블 금지",
+     "url": "https://www.adgm.com/media/announcements/adgm-fsra-implements-amendments-to-its-digital-asset-regulatory-framework",
+     "src": "ADGM"
+    },
+    {
+     "date": "2025-09-15",
+     "text": "Federal Decree-Law No.6 of 2025(중앙은행법) 공포",
+     "url": "https://www.almaazmilawyers.com/insights/banking/2026-05-18-federal-decree-on-central-bank-financial-institutions-and-in",
+     "src": "Al Maazmi"
+    },
+    {
+     "date": "2026-01-01",
+     "text": "FSRA 법정화폐 연동 토큰(FRT) 규정 시행",
+     "url": "https://www.adgm.com/media/announcements/adgm-fsra-presents-key-enhancements-to-its-digital-assets-framework-at-abu-dhabi-finance-week-2025",
+     "src": "ADGM"
+    },
+    {
+     "date": "2026-04-29",
+     "text": "FSRA 스테이킹 규정 시행",
+     "url": "https://www.adgm.com/media/announcements/adgm-fsra-finalises-regulatory-framework-for-the-staking-of-virtual-assets",
+     "src": "ADGM"
+    },
+    {
+     "date": "2026-08-11",
+     "text": "Coinbase 토큰화 허브 FSP 취득",
+     "url": "https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority",
+     "src": "ADGM"
+    },
+    {
+     "date": "2026-09-16",
+     "text": "CBUAE 신법 전환기한 만료",
+     "url": "https://www.almaazmilawyers.com/insights/banking/2026-05-18-federal-decree-on-central-bank-financial-institutions-and-in",
+     "src": "Al Maazmi"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "FSRA DeFi 리스크관리 가이던스 협의(CP 5/2026, ~11/30)",
+     "url": "https://www.adgm.com/legal-framework/public-consultations",
+     "src": "ADGM"
+    },
+    {
+     "date": "2026-10-12",
+     "text": "Zodia ADGM 법인, 디지털 증권 수탁 인가",
+     "url": "https://zodia-custody.com/zodia-custody-secures-fsra-approval-to-custody-digital-securities-in-adgm/",
+     "src": "Zodia Custody"
+    }
+   ]
+  },
+  {
+   "code": "EU",
+   "name": "EU",
+   "en": "European Union",
+   "regulators": "ESMA · EBA · 회원국 감독당국(NCA) · ECB",
+   "headline": "MiCA 전환기간 7/1 종료로 무인가 영업 불가. ESMA 10/8 의견서로 미준수 스테이블코인 서비스 중단(3개월 내) 요구, EBA는 10/14 USDC를 첫 '중요 EMT'로 지정(11/12 EBA 직접 감독).",
+   "reference_only": true,
+   "checked": "2026-10-16",
+   "status": {
+    "vasp": {
+     "lv": "ok",
+     "short": "MiCA(전환 종료 7/1)",
+     "text": "MiCA CASP 인가, 전환기간 '26.7.1 종료",
+     "url": "https://www.esma.europa.eu/sites/default/files/2026-04/ESMA75-113276571-1679_Statement_on_the_end_of_transitional_periods_under_MiCA.pdf"
+    },
+    "stable": {
+     "lv": "ok",
+     "short": "EMT·ART '24.6, USDC 중요 EMT",
+     "text": "MiCA EMT·ART 규정 '24.6.30 적용, USDC 첫 significant EMT 지정('26.10.14)",
+     "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-classifies-usdc-first-significant-e-money-token-european-union"
+    },
+    "sto": {
+     "lv": "ok",
+     "short": "DLT Pilot",
+     "text": "DLT Pilot Regime(Regulation (EU) 2022/858) '23.3 적용",
+     "url": "https://eur-lex.europa.eu/eli/reg/2022/858/oj"
+    },
+    "etf": {
+     "lv": "tbd",
+     "short": "ETP 형태",
+     "text": "UCITS 편입 제한, ETP(ETN) 형태 유통. 세부 확인 필요",
+     "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
+    },
+    "tax": {
+     "lv": "ok",
+     "short": "DAC8 '26.1",
+     "text": "DAC8(Directive (EU) 2023/2226) '26.1.1 CASP 보고 개시",
+     "url": "https://eur-lex.europa.eu/eli/dir/2023/2226/oj"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "TFR '24.12",
+     "text": "자금이전규정(TFR, Regulation (EU) 2023/1113) '24.12.30, 금액 기준 없음",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj"
+    },
+    "broker": {
+     "lv": "ok",
+     "short": "통지로 가능",
+     "text": "MiFID 투자회사는 통지(notification)로 CASP 서비스 가능(MiCA 제60조)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-10-14",
+     "title": "EBA, USDC를 MiCA 첫 '중요 e머니토큰(significant EMT)'으로 지정",
+     "summary": "EU 통보 EMT 45개 중 첫 지정. 11/12부터 EBA가 건전성(자기자본·준비자산·유동성·회복/상환계획)을 직접 감독하는 이중 감독 체제.",
+     "points": [
+      {
+       "text": "EBA, Circle Internet Financial Europe 발행 USDC를 [[MiCA상 첫 significant EMT]]로 지정. 45개 통보 EMT 중 최초.",
+       "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-classifies-usdc-first-significant-e-money-token-european-union",
+       "src": "EBA"
+      },
+      {
+       "text": "[[2026.11.12부터]] EBA가 자기자본·준비자산·유동성·회복/상환계획 감독을 프랑스 ACPR로부터 이관. ACPR은 지배구조·적격성·외주·이해상충 유지.",
+       "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-classifies-usdc-first-significant-e-money-token-european-union",
+       "src": "EBA"
+      },
+      {
+       "text": "EBA는 [[뉴욕주 금융서비스국(NYDFS)과 MoU]] 체결 — 미·EU 동시 발행 스테이블코인의 국경 간 감독 공조.",
+       "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-classifies-usdc-first-significant-e-money-token-european-union",
+       "src": "EBA"
+      }
+     ]
+    },
+    {
+     "date": "2026-10-08",
+     "title": "ESMA 의견서: MiCA 미준수 스테이블코인 관련 CASP 서비스 중단 요구",
+     "summary": "9/30 권고에서 한 걸음 나아가 감독 기대치를 공식화. 기존 익스포저는 3개월(~2027.1) 내 정리.",
+     "points": [
+      {
+       "text": "MiCA 인가 CASP는 EU 고객에게 [[미준수 ART·EMT 관련 서비스(거래·교환·수탁·이전·자문·일임) 중단]]. 고객의 신규 취득·익스포저 확대를 막는 통제 필요.",
+       "url": "https://www.esma.europa.eu/node/235756",
+       "src": "ESMA"
+      },
+      {
+       "text": "각국 감독당국(NCA)은 잔여 익스포저를 [[공표 후 3개월 내]] 정리하도록 요구. 그 사이엔 청산·전환·출금·이전·보관 등 [[한시적 정리 목적 서비스만]] 허용.",
+       "url": "https://www.esma.europa.eu/node/235756",
+       "src": "ESMA"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-30",
+     "title": "ESMA, MiCA 개정 권고안 제출(EU 집행위 리뷰 대응)",
+     "summary": "DeFi 접근 서비스 신설, 미준수 스테이블코인 취급 금지, 감독권 강화 등 권고. 법적 구속력은 아직 없음.",
+     "points": [
+      {
+       "text": "CASP가 고객에게 DeFi 프로토콜 접근을 제공하는 [[신규 규제 서비스]] 신설과 탈중앙 판단 기준 명확화.",
+       "url": "https://www.thetradenews.com/?p=107434",
+       "src": "The TRADE"
+      },
+      {
+       "text": "규제 대상 회사의 [[MiCA 미준수 스테이블코인 취급 금지]], 무인가 역외업체 제재·자산동결 권한 등 감독 강화.",
+       "url": "https://www.thetradenews.com/?p=107434",
+       "src": "The TRADE"
+      },
+      {
+       "text": "토큰화 증권·온체인 결제 프레임워크 마련도 권고(MiCA 범위 밖).",
+       "url": "https://www.thetradenews.com/?p=107434",
+       "src": "The TRADE"
+      }
+     ]
+    },
+    {
+     "date": "2026-07-01",
+     "title": "MiCA 전환기간 종료",
+     "summary": "이후 무인가 CASP의 EU 고객 대상 서비스는 위법. 역외 사업자도 제한.",
+     "points": [
+      {
+       "text": "ESMA: [[무인가 사업자는 질서 있는 철수 계획]] 이행, 인가 CASP로 고객 자산 이전.",
+       "url": "https://www.esma.europa.eu/sites/default/files/2026-04/ESMA75-113276571-1679_Statement_on_the_end_of_transitional_periods_under_MiCA.pdf",
+       "src": "ESMA"
+      }
+     ]
+    },
+    {
+     "date": "2026-04-11",
+     "title": "ECB, 대형 CASP의 ESMA 직접감독 방안 지지",
+     "summary": "집행위 '시장통합·감독 패키지' 일부. 아일랜드·룩셈부르크·몰타 반대로 협상 수개월 예상.",
+     "points": [
+      {
+       "text": "ECB는 [[대형 CASP의 시스템 리스크]]를 근거로 지지, ESMA 인력·자원 확충 전제.",
+       "url": "https://www.theblock.co/news/regulation/2026-04-11-ecb-backs-eu-plan-to-centralize-crypto-supervision-under-paris-based-esma-watchdog-reuters-397121",
+       "src": "The Block(Reuters 인용)"
+      },
+      {
+       "text": "패키지 개요는 [[Bird & Bird 해설]] 참고.",
+       "url": "https://www.twobirds.com/en/insights/2026/belgium/european-commission-introduces-market-integration-and-supervision-package",
+       "src": "Bird & Bird"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2022-05-30",
+     "text": "DLT Pilot Regime 채택 (Regulation (EU) 2022/858), '23.3.23 적용",
+     "url": "https://eur-lex.europa.eu/eli/reg/2022/858/oj",
+     "src": "EUR-Lex"
+    },
+    {
+     "date": "2023-06-09",
+     "text": "MiCA 관보 게재 (Markets in Crypto-Assets Regulation, (EU) 2023/1114)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj",
+     "src": "EUR-Lex"
+    },
+    {
+     "date": "2024-06-30",
+     "text": "MiCA 스테이블코인(EMT·ART) 조항 적용",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj",
+     "src": "EUR-Lex"
+    },
+    {
+     "date": "2024-12-30",
+     "text": "MiCA 전면 적용 + TFR(트래블룰) 적용",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj",
+     "src": "EUR-Lex"
+    },
+    {
+     "date": "2026-01-01",
+     "text": "DAC8 적용(가상자산 거래 세무 보고)",
+     "url": "https://eur-lex.europa.eu/eli/dir/2023/2226/oj",
+     "src": "EUR-Lex"
+    },
+    {
+     "date": "2026-07-01",
+     "text": "MiCA CASP 전환기간 종료",
+     "url": "https://www.esma.europa.eu/sites/default/files/2026-04/ESMA75-113276571-1679_Statement_on_the_end_of_transitional_periods_under_MiCA.pdf",
+     "src": "ESMA"
+    },
+    {
+     "date": "2026-09-30",
+     "text": "ESMA, MiCA 리뷰 권고안 발표(DeFi·스테이블코인·감독 강화)",
+     "url": "https://www.thetradenews.com/?p=107434",
+     "src": "The TRADE"
+    },
+    {
+     "date": "2026-10-08",
+     "text": "ESMA, MiCA 미준수 스테이블코인 서비스 중단 의견서 발표(3개월 내 정리)",
+     "url": "https://www.esma.europa.eu/node/235756",
+     "src": "ESMA"
+    },
+    {
+     "date": "2026-10-14",
+     "text": "EBA, USDC 첫 significant EMT 지정(11/12 EBA 감독 개시)",
+     "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-classifies-usdc-first-significant-e-money-token-european-union",
+     "src": "EBA"
+    },
+    {
+     "date": "2027-07-10",
+     "text": "AMLR (Regulation (EU) 2024/1624) 적용: 익명계정·프라이버시코인 취급 금지",
+     "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj",
+     "src": "EUR-Lex"
+    }
+   ]
+  },
+  {
+   "code": "UK",
+   "name": "영국",
+   "en": "United Kingdom",
+   "regulators": "FCA · HM Treasury · Bank of England",
+   "headline": "신규 암호자산 인가 창구 9/30 개시, 본 체제 2027.10.25 시행. 개인 대상 crypto ETN은 2025.10 허용.",
+   "reference_only": true,
+   "checked": "2026-10-16",
+   "status": {
+    "vasp": {
+     "lv": "prog",
+     "short": "신청 9/30~, '27.10 시행",
+     "text": "현 AML 등록제 → 신규 인가제 신청 '26.9.30 개시, '27.10.25 시행",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation"
+    },
+    "stable": {
+     "lv": "prog",
+     "short": "규정 확정, '27.10",
+     "text": "스테이블코인 발행 규정 확정('26.6.30), 신규 체제와 함께 시행",
+     "url": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub"
+    },
+    "sto": {
+     "lv": "tbd",
+     "short": "DSS 샌드박스",
+     "text": "디지털증권 샌드박스(DSS) 운영. 세부 확인 필요",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation"
+    },
+    "etf": {
+     "lv": "ok",
+     "short": "개인 ETN 허용",
+     "text": "개인 투자자 crypto ETN 허용('25.10.8)",
+     "url": "https://www.fca.org.uk/news/press-releases/fca-opens-retail-access-crypto-etns"
+    },
+    "tax": {
+     "lv": "tbd",
+     "short": "CGT",
+     "text": "양도소득세(CGT) 과세. CARF 보고 세부 확인 필요",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "트래블룰 적용",
+     "text": "MLRs 등록·트래블룰 적용, 신규 체제 AML 지침 발표",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation"
+    },
+    "broker": {
+     "lv": "prog",
+     "short": "권한변경 신청",
+     "text": "기존 인가사는 permission 변경 신청으로 겸영(9/30~)",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-09-30",
+     "title": "FCA 암호자산 인가 신청 창구(gateway) 개시",
+     "summary": "9/30 07시부터 신규 인가·permission 변경 신청 접수. 본 체제는 2027.10.25 시행.",
+     "points": [
+      {
+       "text": "[[FSMA 2000 (Cryptoassets) Regulations 2026]](2026.2.4 제정)에 따라 영국 내·영국 고객 대상 사업자는 FCA 인가 필요.",
+       "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation",
+       "src": "FCA"
+      },
+      {
+       "text": "6/30 [[최종 규정·지침 발표]]: 건전성, SM&CR, 운영복원력, 시장남용(MARC), 스테이블코인 발행.",
+       "url": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub",
+       "src": "FCA"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2020-01-10",
+     "text": "FCA 암호자산 사업자 AML 등록제 시행",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation",
+     "src": "FCA"
+    },
+    {
+     "date": "2021-01-06",
+     "text": "개인 대상 crypto 파생상품·ETN 판매 금지",
+     "url": "https://www.charlesrussellspeechlys.com/en/insights/expert-insights/financial-services/2025/fca-reopens-retail-access-to-crypto-etns-a-strategic-turning-point-for-regulated-crypto-exposure/",
+     "src": "Charles Russell Speechlys"
+    },
+    {
+     "date": "2023-06-29",
+     "text": "Financial Services and Markets Act 2023 제정(암호자산 규제 근거)",
+     "url": "https://www.legislation.gov.uk/ukpga/2023/29/contents",
+     "src": "legislation.gov.uk"
+    },
+    {
+     "date": "2025-10-08",
+     "text": "개인 투자자 crypto ETN 허용",
+     "url": "https://www.fca.org.uk/news/press-releases/fca-opens-retail-access-crypto-etns",
+     "src": "FCA"
+    },
+    {
+     "date": "2026-02-04",
+     "text": "FSMA 2000 (Cryptoassets) Regulations 2026 제정",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation",
+     "src": "FCA"
+    },
+    {
+     "date": "2026-06-30",
+     "text": "FCA 최종 규정 발표",
+     "url": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub",
+     "src": "FCA"
+    },
+    {
+     "date": "2026-09-30",
+     "text": "인가 신청 창구 개시",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation",
+     "src": "FCA"
+    },
+    {
+     "date": "2027-10-25",
+     "text": "신규 암호자산 체제 시행(예정)",
+     "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation",
+     "src": "FCA"
+    }
+   ]
+  },
+  {
+   "code": "HK",
+   "name": "홍콩",
+   "en": "Hong Kong",
+   "regulators": "증권선물위원회(SFC) · 금융관리국(HKMA) · FSTB",
+   "headline": "첫 스테이블코인 발행인 인가(4/10, HSBC·Anchorpoint). VA 딜러·수탁 인가제 2026년 입법 추진.",
+   "reference_only": true,
+   "checked": "2026-10-16",
+   "status": {
+    "vasp": {
+     "lv": "ok",
+     "short": "VATP 인가",
+     "text": "SFC VATP 인가제('23.6.1), ASPIRe 로드맵('25.2)",
+     "url": "https://www.sfc.hk/en/News-and-announcements/Policy-statements-and-announcements/A-S-P-I-Re-for-a-brighter-future-SFCs-regulatory-roadmap-for-Hong-Kongs-virtual-asset-market"
+    },
+    "stable": {
+     "lv": "ok",
+     "short": "첫 인가 4/10",
+     "text": "Stablecoins Ordinance '25.8.1 시행, 첫 인가 '26.4.10",
+     "url": "https://www.charltonslaw.com/hkma-issues-first-stablecoin-issuer-licences/"
+    },
+    "sto": {
+     "lv": "tbd",
+     "short": "SFC 지침",
+     "text": "토큰화 증권 SFC 지침·Project Ensemble. 세부 확인 필요",
+     "url": "https://www.sfc.hk/en/News-and-announcements/Policy-statements-and-announcements/A-S-P-I-Re-for-a-brighter-future-SFCs-regulatory-roadmap-for-Hong-Kongs-virtual-asset-market"
+    },
+    "etf": {
+     "lv": "ok",
+     "short": "BTC·ETH 상장",
+     "text": "현물 BTC·ETH ETF '24.4.30 상장(아시아 최초)",
+     "url": "https://www.cnbc.com/2024/04/30/asias-first-spot-bitcoin-and-ether-etfs-debut-in-hong-kong.html"
+    },
+    "tax": {
+     "lv": "tbd",
+     "short": "CGT 없음",
+     "text": "자본이득세 없음(영업성 이익은 이익세). 세부 확인 필요",
+     "url": "https://www.ird.gov.hk/eng/welcome.htm"
+    },
+    "aml": {
+     "lv": "ok",
+     "short": "AMLO 적용",
+     "text": "AMLO상 VASP AML·트래블룰 적용",
+     "url": "https://www.gibsondunn.com/hong-kong-concludes-consultations-on-regulation-of-virtual-asset-dealing-and-custodian-services-with-yet-more-to-come/"
+    },
+    "broker": {
+     "lv": "ok",
+     "short": "옴니버스 허용",
+     "text": "1종 증권사의 VA 거래 서비스(옴니버스) 허용, 딜러·수탁 입법 추진",
+     "url": "https://www.coindesk.com/policy/2025/12/25/hong-kong-regulators-target-2026-legislation-for-virtual-asset-dealer-and-custodian-rules"
+    }
+   },
+   "issues": [
+    {
+     "date": "2026-10-05",
+     "title": "홍콩 정부, 가상자산 거래·수탁·자문·운용 인가 법안 연내 제출 재확인",
+     "summary": "재무장관 Christopher Hui, 4개 디지털자산 활동 인가제 개정안을 \"올해 안\" 입법회 제출 방침.",
+     "points": [
+      {
+       "text": "Christopher Hui 재경국장(10/5 정책 브리핑), [[거래·수탁·자문·운용 4개 활동]] 인가 체계를 담은 개정안을 연내 제출하겠다고 재확인.",
+       "url": "https://cointelegraph.com/news/hong-kong-govt-end-2026-deadline-crypto-licensing-bill",
+       "src": "Cointelegraph"
+      },
+      {
+       "text": "HKMA는 4월 첫 스테이블코인 발행인(Anchorpoint·HSBC) 인가 이후 [[VA 딜러·수탁 입법]]으로 규제 범위 확대 중. 1종 증권사의 VA 서비스 범위 확대 여부가 관전 포인트.",
+       "url": "https://cointelegraph.com/news/hong-kong-govt-end-2026-deadline-crypto-licensing-bill",
+       "src": "Cointelegraph"
+      }
+     ]
+    },
+    {
+     "date": "2026-04-10",
+     "title": "HKMA, 첫 스테이블코인 발행인 인가",
+     "summary": "Anchorpoint(스탠다드차타드·HKT·Animoca JV)와 HSBC. 하반기 HKD 스테이블코인 출시 계획.",
+     "points": [
+      {
+       "text": "[[고품질 유동자산 100% 준비, 1영업일 내 상환]] 등 요건. HSBC는 PayMe·모바일뱅킹 연동 계획.",
+       "url": "https://www.charltonslaw.com/hkma-issues-first-stablecoin-issuer-licences/",
+       "src": "Charltons"
+      }
+     ]
+    },
+    {
+     "date": "2025-12-25",
+     "title": "VA 딜러·수탁 인가제 2026년 입법 목표",
+     "summary": "FSTB·SFC 협의 결과 발표. 자문·운용 신규 체제 추가 협의.",
+     "points": [
+      {
+       "text": "[[VA 딜러·수탁 규제 2026년 입법]] 추진.",
+       "url": "https://www.coindesk.com/policy/2025/12/25/hong-kong-regulators-target-2026-legislation-for-virtual-asset-dealer-and-custodian-rules",
+       "src": "CoinDesk"
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "date": "2023-06-01",
+     "text": "VATP 인가제 시행(AMLO 개정)",
+     "url": "https://www.gibsondunn.com/hong-kong-concludes-consultations-on-regulation-of-virtual-asset-dealing-and-custodian-services-with-yet-more-to-come/",
+     "src": "Gibson Dunn"
+    },
+    {
+     "date": "2024-04-30",
+     "text": "현물 BTC·ETH ETF 상장",
+     "url": "https://www.cnbc.com/2024/04/30/asias-first-spot-bitcoin-and-ether-etfs-debut-in-hong-kong.html",
+     "src": "CNBC"
+    },
+    {
+     "date": "2025-02-19",
+     "text": "SFC 'ASPIRe' 규제 로드맵 발표",
+     "url": "https://www.sfc.hk/en/News-and-announcements/Policy-statements-and-announcements/A-S-P-I-Re-for-a-brighter-future-SFCs-regulatory-roadmap-for-Hong-Kongs-virtual-asset-market",
+     "src": "SFC"
+    },
+    {
+     "date": "2025-08-01",
+     "text": "Stablecoins Ordinance 시행",
+     "url": "https://www.info.gov.hk/gia/general/202506/06/P2025060600275.htm",
+     "src": "HKSAR 정부"
+    },
+    {
+     "date": "2026-04-10",
+     "text": "첫 스테이블코인 발행인 인가",
+     "url": "https://www.charltonslaw.com/hkma-issues-first-stablecoin-issuer-licences/",
+     "src": "Charltons"
+    },
+    {
+     "date": "2026-10-05",
+     "text": "VA 거래·수탁·자문·운용 인가 법안 연내 제출 재확인",
+     "url": "https://cointelegraph.com/news/hong-kong-govt-end-2026-deadline-crypto-licensing-bill",
+     "src": "Cointelegraph"
+    }
+   ]
+  }
+ ]
+}

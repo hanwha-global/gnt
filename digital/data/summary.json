@@ -1,0 +1,70 @@
+{
+ "updated": "2026-10-23",
+ "headline": "한국: 원화 스테이블코인은 은행 51% 컨소시엄으로 가닥, 법안은 11월 소위로",
+ "items": [
+  {
+   "jurisdiction": "한국",
+   "flag": "🇰🇷",
+   "title": "외국환거래법 시행령(가상자산이전업 보고) 입법예고 의견 마감",
+   "status": "예정",
+   "date": "2026-10-26",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148877637"
+  },
+  {
+   "jurisdiction": "미국",
+   "flag": "🇺🇸",
+   "title": "OCC GENIUS법 최종 규칙 확정 목표",
+   "status": "예정",
+   "date": "2026-10-31",
+   "url": "https://www.pymnts.com/legal/2026/occ-races-the-clock-to-finish-genius-act-stablecoin-rules/"
+  },
+  {
+   "jurisdiction": "한국",
+   "flag": "🇰🇷",
+   "title": "토큰증권 하위법규 입법예고 마감",
+   "status": "예정",
+   "date": "2026-11-11",
+   "url": "https://m.inews24.com/v/2010814"
+  },
+  {
+   "jurisdiction": "한국",
+   "flag": "🇰🇷",
+   "title": "11월 정무위 법안소위: 디지털자산기본법(2단계)·원화 스테이블코인(51%룰·준비자산)",
+   "status": "예정",
+   "date": "2026-11",
+   "url": "https://www.dataeconomy.co.kr/news/articleView.html?idxno=43152"
+  },
+  {
+   "jurisdiction": "UAE·아부다비",
+   "flag": "🇦🇪",
+   "title": "ADGM FSRA DeFi 가이던스(CP 5/2026) 의견 마감",
+   "status": "예정",
+   "date": "2026-11-30",
+   "url": "https://www.adgm.com/legal-framework/public-consultations"
+  },
+  {
+   "jurisdiction": "한국",
+   "flag": "🇰🇷",
+   "title": "개정 외국환거래법·시행령 시행: 해외·개인지갑 이전 한은 보고",
+   "status": "예정",
+   "date": "2026-12-03",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148877637"
+  },
+  {
+   "jurisdiction": "미국",
+   "flag": "🇺🇸",
+   "title": "CFTC Regulation CTX·CAM ANPRM 의견 마감",
+   "status": "예정",
+   "date": "2026-12-14",
+   "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20888/regulation-crypto-asset-transactions-and-regulation-crypto-asset-markets"
+  },
+  {
+   "jurisdiction": "한국",
+   "flag": "🇰🇷",
+   "title": "가상자산 소득 과세 시행(250만원 공제 후 22%)",
+   "status": "예정",
+   "date": "2027-01-01",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=669414"
+  }
+ ]
+}

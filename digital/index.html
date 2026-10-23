@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디지털자산 규제 요약</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+/* 대시보드 공용 테마(site/assets/theme.css, 남색 바탕 + 한화 주황)와 같은 값 */
+:root{--bg:#111d38;--card:#172647;--card2:#1f3158;--ink:#f1f4fb;--ink2:#bcc7dd;--muted:#8494b5;--line:#2a3d66;--line2:#223459;
+  --accent:#f37321;--accent-soft:rgba(243,115,33,.16);--accent-ink:#ff9a52;
+  --ok:#4fd18b;--ok-bg:rgba(79,209,139,.14);--prog:#f2c14e;--prog-bg:rgba(242,193,78,.14);--no:#ff7b6b;--no-bg:rgba(255,123,107,.14);--tbd:#a9b5cf;--tbd-bg:rgba(132,148,181,.18);
+  --late:#ff7b6b;--soon:#f2c14e;--mark:rgba(242,193,78,.28);--mark-ink:#ffe7a3;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:13.5px/1.5 "Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-feature-settings:"tnum"}
+a{color:inherit}
+.wrap{max-width:1400px;margin:0 auto;padding:12px 14px 28px;display:grid;gap:10px}
+.top{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.top h1{margin:0;font-size:19px;letter-spacing:-.01em}
+.top .meta{color:var(--muted);font-size:12px}
+.top .meta b{color:var(--ink2);font-weight:600}
+.btns{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:focus-visible,.pill:focus-visible,.mx tbody tr:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.legend{display:flex;gap:6px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);align-items:center}
+.grid{display:grid;gap:10px}
+.g3{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+.g2{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)}
+/* 옆 칸 높이에 맞춰 늘고, 넘치면 안에서 스크롤: 두 칸 높이가 달라 생기는 빈 공간을 없앤다 */
+.fit{height:0;min-height:100%;display:flex;flex-direction:column;gap:10px}
+.fit > .card{display:flex;flex-direction:column;min-height:0}
+.fit .scroll{flex:1 1 0;min-height:0;overflow:auto}
+.fit > .card.half{flex:1 1 0}
+#detail > .card:first-child{min-height:560px}
+@media (max-width:1100px){.g3,.g2{grid-template-columns:minmax(0,1fr)}.fit{height:auto;min-height:0}.fit .scroll{max-height:420px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.card h2{margin:0 0 6px;font-size:13.5px;display:flex;gap:8px;align-items:baseline;justify-content:space-between}
+.card h2 small{font-weight:400;color:var(--muted);font-size:11.5px}
+.kt{margin:0;padding:0;list-style:none;display:grid;gap:6px;counter-reset:k}
+.kt li{counter-increment:k;display:grid;grid-template-columns:18px minmax(0,1fr);gap:6px;font-size:12.5px;color:var(--ink2);line-height:1.45}
+.kt li::before{content:counter(k);font-weight:700;color:var(--accent-ink)}
+.kt b{display:block;color:var(--ink);font-size:13px}
+.lv{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;white-space:nowrap;line-height:1.6}
+.lv::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.lv.ok{color:var(--ok);background:var(--ok-bg)}.lv.prog{color:var(--prog);background:var(--prog-bg)}
+.lv.no{color:var(--no);background:var(--no-bg)}.lv.tbd{color:var(--tbd);background:var(--tbd-bg)}
+.lv.prog::before{background:transparent;border:1.5px solid currentColor;width:4px;height:4px}
+.lv.no::before{border-radius:1px}
+.lv.tbd::before{transform:rotate(45deg);border-radius:0;width:5px;height:5px}
+.code{font-weight:700;font-size:11px;color:var(--accent-ink);letter-spacing:.03em}
+.list{margin:0;padding:0;list-style:none;display:grid;align-content:start}
+.list li{display:grid;grid-template-columns:52px 30px minmax(0,1fr);gap:6px;padding:5px 0;border-top:1px solid var(--line2);font-size:12.5px;align-items:start}
+.list li:first-child{border-top:0}
+.dd{font-weight:700;font-size:12px;text-align:right;white-space:nowrap}
+.dd small{display:block;font-weight:400;color:var(--muted);font-size:10.5px}
+.dd.late{color:var(--late)}.dd.soon{color:var(--soon)}
+.list .x b{font-weight:600}
+.list .x span{display:block;color:var(--muted);font-size:11.5px}
+.list li.done{opacity:.55}
+.list li.done .x b{text-decoration:line-through}
+.list a{text-decoration:none}.list a:hover{text-decoration:underline}
+.chk{display:flex;gap:6px;align-items:flex-start}
+.chk input{margin:2px 0 0;accent-color:var(--accent)}
+.tblwrap{overflow-x:auto}
+table.mx{border-collapse:collapse;width:100%;font-size:12px}
+.mx th{font-size:11px;color:var(--muted);font-weight:600;text-align:left;padding:4px 6px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--card2)}
+.mx td{padding:4px 6px;border-bottom:1px solid var(--line2);vertical-align:top}
+.mx td.c{min-width:118px}
+.mx td.c .s{display:block;font-size:11.5px;color:var(--ink2);margin-top:2px;line-height:1.35}
+.mx td.nm{white-space:nowrap;font-weight:700}
+.mx td.nm small{display:block;font-weight:400;color:var(--muted);font-size:10.5px}
+.mx tbody tr{cursor:pointer}
+.mx tbody tr:hover td{background:var(--card2)}
+.mx tbody tr.sel td{background:var(--accent-soft)}
+.mx tr.ref td{opacity:.8}
+.stale{color:var(--late);font-weight:600}
+/* 표·목록 오른쪽 위 작은 표기: 기준 시점(대시보드 다른 탭의 .tmeta와 같은 모양) */
+.tmeta{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:0 8px;font-size:10.5px;line-height:1.4;color:var(--muted);margin:-2px 0 3px}
+.tmeta span + span::before{content:"·";margin-right:8px}
+.mx td.ck{white-space:nowrap}.mx td.ck small{display:block;color:var(--muted);font-size:10.5px}
+.mx td.ck.stale small{color:var(--late)}
+.new{display:block;margin-top:2px;font-size:10.5px;font-weight:700;color:var(--accent-ink)}
+.st .it.has-new{border-color:var(--accent)}
+.auto{border:1px dashed var(--line);border-radius:8px;padding:6px 8px;margin:0 0 8px}
+.auto .list li{grid-template-columns:44px 30px minmax(0,1fr)}
+.pills{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+.pill{border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;cursor:pointer}
+.pill[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pill .pnew{color:var(--accent-ink);font-size:11px}
+.pill.ref{font-weight:500;color:var(--muted)}
+.mhead{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.mhead h3{margin:0;font-size:17px}
+.mhead .reg{font-size:12px;color:var(--muted)}
+.mhead + p{margin:4px 0 8px;font-size:13px}
+.hw{background:var(--accent-soft);border-radius:8px;padding:8px 10px;margin:0 0 8px}
+.hw b{font-size:12px;color:var(--accent-ink)}
+.hw ul{margin:4px 0 0;padding-left:16px;font-size:12.5px;display:grid;gap:2px}
+.st{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:8px}
+.st .it:last-child:nth-child(3n+1){grid-column:1/-1}
+.st .it:last-child:nth-child(3n+2){grid-column:span 2}
+@media (max-width:700px){.st{grid-template-columns:minmax(0,1fr)}.st .it{grid-column:auto!important}}
+.st .it{border:1px solid var(--line2);border-radius:8px;padding:6px 8px;font-size:12px}
+.st .it .t{display:flex;justify-content:space-between;gap:6px;font-weight:600;margin-bottom:2px}
+.st .it a{color:var(--muted);font-size:11px;text-decoration:none}
+.st .it a:hover{text-decoration:underline}
+details.iss{border-top:1px solid var(--line2);padding:5px 0}
+details.iss summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:72px minmax(0,1fr);gap:8px;font-size:12.5px}
+details.iss summary::-webkit-details-marker{display:none}
+details.iss summary .d{color:var(--muted);font-size:11.5px}
+details.iss summary b{font-weight:600}
+details.iss summary span.o{display:block;color:var(--ink2);font-size:12px}
+details.iss ul{margin:4px 0 2px 80px;padding-left:14px;font-size:12px;display:grid;gap:3px}
+details.iss ul a{color:var(--muted);font-size:11px}
+mark{background:var(--mark);color:var(--mark-ink);padding:0 2px;border-radius:2px}
+.feed li{grid-template-columns:44px minmax(0,1fr)}
+.feed .off{font-size:10px;font-weight:700;color:var(--ok);margin-right:4px}
+.tl{margin:0;padding:0;list-style:none;border-left:2px solid var(--line);margin-left:4px}
+.tl li{position:relative;padding:3px 0 3px 12px;font-size:12px;display:grid;grid-template-columns:70px minmax(0,1fr);gap:6px}
+.tl li::before{content:"";position:absolute;left:-5px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--card);border:2px solid var(--ink2)}
+.tl li.fut::before{border-style:dashed;border-color:var(--accent)}
+.tl li .d{color:var(--muted)}
+.tl a{text-decoration:none}.tl a:hover{text-decoration:underline}
+.empty{color:var(--muted);font-size:12px;padding:6px 0}
+.foot{font-size:11.5px;color:var(--muted)}
+.printonly{display:none}
+@media print{
+  @page{size:A4 landscape;margin:10mm}
+  :root{--bg:#fff;--card:#fff;--card2:#f1f3f6;--ink:#111;--ink2:#333;--muted:#666;--line:#bbb;--line2:#ddd;--accent-ink:#b8500c;
+    --ok:#17804a;--ok-bg:#e3f4ea;--prog:#9a6200;--prog-bg:#fbf0d9;--no:#b8322a;--no-bg:#fbe5e3;--tbd:#5f6b7a;--tbd-bg:#eceff3;--late:#b8322a;--soon:#9a6200;color-scheme:light}
+  body{background:#fff;color:#111;font-size:10.5px}
+  .noprint,#detail{display:none!important}
+  .printonly{display:block}
+  .card{border:1px solid #bbb;break-inside:avoid}
+  .g3{grid-template-columns:1.5fr 1fr}
+  .fit{height:auto}.fit .scroll{overflow:visible}
+  .wrap{max-width:none;padding:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>디지털자산 규제 요약 <span class="printonly" id="pAsof"></span></h1>
+      <div class="meta" id="meta">불러오는 중</div>
+    </div>
+    <div class="btns noprint">
+      <div class="legend" id="legend"></div>
+      <button class="btn pri" type="button" id="printBtn">1장 요약 인쇄·PDF</button>
+      <a class="btn" href="data/regulation.json" target="_blank" rel="noopener">원자료(JSON)</a>
+    </div>
+  </div>
+
+  <div class="grid g3">
+    <section class="card" aria-labelledby="h-kt"><h2 id="h-kt">Key takeaways</h2><div class="tmeta" id="tm-kt"></div><ol class="kt" id="kt"></ol></section>
+    <div class="fit"><section class="card half" aria-labelledby="h-up"><h2 id="h-up">다가오는 규제 일정</h2><div class="tmeta" id="tm-up"></div><ul class="list scroll" id="up"></ul></section></div>
+  </div>
+
+  <section class="card" aria-labelledby="h-mx">
+    <h2 id="h-mx">시장별 현황표 <small class="noprint">행을 누르면 아래에 상세가 열립니다 · <label><input type="checkbox" id="showRef"> 참고 시장(EU·영국·홍콩) 보기</label></small></h2><div class="tmeta" id="tm-mx"></div>
+    <div class="tblwrap"><table class="mx" id="mx"></table></div>
+  </section>
+
+  <section class="grid g2" id="detail">
+    <div class="card">
+      <div class="pills" role="tablist" aria-label="시장" id="pills"></div>
+      <div id="mbody"></div>
+    </div>
+    <div class="fit">
+      <section class="card half"><h2>최근 발표·기사</h2><div class="tmeta" id="tm-feed"></div><ul class="list feed scroll" id="feed"></ul></section>
+      <section class="card half"><h2>연혁</h2><div class="tmeta" id="tm-tl"></div><ul class="tl scroll" id="tl"></ul></section>
+    </div>
+  </section>
+
+  <p class="foot" id="foot"></p>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>

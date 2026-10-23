@@ -1,0 +1,51 @@
+{
+ "as_of": "2026-10-23",
+ "note": "사무소는 지분이 없어 DART에 잡히지 않는다(기계가 읽을 출처 없음 → 수동). 원자료 이후 회사 공개 자료·보도로 확인한 변동을 출처와 함께 여기서 더하거나(추가) 고친다(정정). entity_events는 사업보고서 기준일 이후 법인 매각·이전(보도 확인분, 화면에 태그로만 표시, 법인 수는 FY2025 공시 기준 유지).",
+ "industry": {
+  "label": "금감원 2025년 국내 증권회사 해외점포 영업실적",
+  "date": "2026-05",
+  "offices": 10,
+  "corps": 83,
+  "firms": 16,
+  "url": "https://www.newspim.com/news/view/20260517000171"
+ },
+ "items": [
+  {
+   "firm": "신한투자증권",
+   "country": "미국",
+   "city": "팔로알토",
+   "count": 1,
+   "change": "추가",
+   "name": "실리콘밸리 사무소(2022.10 개소, 철수 검토 보도)",
+   "source": "뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1275227"
+  },
+  {
+   "firm": "KB증권",
+   "country": "인도",
+   "from": "인도네시아",
+   "city": "뭄바이",
+   "count": 1,
+   "change": "정정",
+   "name": "뭄바이 사무소(원자료 '인도네시아' → KB금융그룹 글로벌 네트워크 기준 인도)",
+   "source": "KB금융그룹 글로벌 네트워크",
+   "url": "https://kbfg.com/kor/about/network/global/asia-pacific/list.jsp"
+  }
+ ],
+ "entity_events": [
+  {
+   "firm": "신한투자증권",
+   "name": "Shinhan Securities America Inc.",
+   "tag": "2026.5 키움 인수",
+   "text": "2025년 말 매각예정자산 분류 → 2026년 5월 FINRA 승인 후 키움증권이 인수(보도)",
+   "url": "https://www.ddaily.co.kr/page/view/2026052015510358006"
+  },
+  {
+   "firm": "신한투자증권",
+   "name": "PT Shinhan Sekuritas Indonesia",
+   "tag": "2026.9 지분 50%+1 이전",
+   "text": "신한인도네시아은행이 50%+1주 인수, 2026-09-16 완료(보도)",
+   "url": "https://news.mtn.co.kr/article/2026101315593087441"
+  }
+ ]
+}

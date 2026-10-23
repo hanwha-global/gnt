@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>해외지분투자 Workflow</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+/* 색은 대시보드 공용 테마(../assets/theme.css)의 변수만 쓴다 */
+:root{--in:#8fb1ff;--in-bg:rgba(143,177,255,.13);--deal:#c9b6ff;--deal-bg:rgba(201,182,255,.12);--ext:var(--accent-ink);--ext-bg:var(--accent-soft);--prog:#f2c14e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:13px/1.5 "Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-feature-settings:"tnum"}
+a{color:inherit}
+.wrap{max-width:1500px;margin:0 auto;padding:10px 12px 24px;display:grid;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between}
+.top h1{margin:0;font-size:18px}
+.meta{color:var(--muted);font-size:12px}.meta b{color:var(--text-2);font-weight:600}
+.btns{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.card h2{margin:0 0 8px;font-size:13px;display:flex;gap:8px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.card h2 small{font-weight:400;color:var(--muted);font-size:11px}
+.key{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--text-2);margin-left:8px}
+.key i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.key .in{background:var(--in)}.key .deal{background:var(--deal)}.key .ext{background:var(--ext)}
+
+/* 흐름도: 단계(열) × 주체(행) */
+.flow{display:grid;grid-template-columns:86px repeat(6,minmax(0,1fr));gap:4px 6px;overflow-x:auto}
+.ph{position:relative;background:var(--surface-2);color:var(--text);font-size:11.5px;font-weight:700;text-align:center;padding:5px 10px 5px 14px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,0 100%,10px 50%)}
+.ph small{display:block;font-weight:400;color:var(--muted);font-size:10px}
+.ph:first-of-type{clip-path:polygon(0 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,0 100%)}
+.lane{font-size:11px;font-weight:700;display:flex;align-items:center;padding:0 6px;border-radius:6px}
+.lane.in{color:var(--in);background:var(--in-bg)}.lane.deal{color:var(--deal);background:var(--deal-bg)}.lane.ext{color:var(--ext);background:var(--ext-bg)}
+.cell{display:flex;flex-direction:column;gap:4px;padding:4px 0;border-top:1px dashed var(--line);min-height:44px}
+.node{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:20px minmax(0,1fr);gap:2px 6px;align-items:start;padding:5px 7px;border-radius:7px;border:1px solid var(--line);background:var(--bg);font-size:11.5px;line-height:1.35;transition:transform .12s,border-color .12s,background .12s}
+.node b{grid-row:span 2;font-size:11px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;color:var(--bg)}
+.node.in b{background:var(--in)}.node.deal b{background:var(--deal)}.node.ext b{background:var(--ext)}
+.node span{font-weight:600;color:var(--text)}
+.node small{color:var(--muted);font-size:10.5px}
+.node.ext small{color:var(--ext)}
+.node:hover,.node:focus-visible{transform:translateY(-1px);border-color:var(--accent);background:var(--surface-2)}
+.node:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+@media (max-width:900px){.flow{grid-template-columns:70px repeat(6,150px)}}
+
+/* 기한 한눈에 */
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px}
+.dl a{display:block;text-decoration:none;border:1px solid var(--line);border-left:3px solid var(--ext);border-radius:6px;padding:5px 8px;background:var(--bg)}
+.dl a:hover{border-color:var(--accent)}
+.dl b{display:block;font-size:14px;color:var(--ext)}
+.dl span{font-size:11.5px;color:var(--text-2)}
+
+/* 단계 상세 */
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:1000px){.steps{grid-template-columns:minmax(0,1fr)}}
+.st{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--line);border-radius:10px;padding:8px 12px;scroll-margin-top:12px;transition:box-shadow .4s,border-color .4s}
+.st.in{border-left-color:var(--in)}.st.deal{border-left-color:var(--deal)}.st.ext{border-left-color:var(--ext)}
+.st.flash{box-shadow:0 0 0 2px var(--accent);border-color:var(--accent)}
+.st header{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.st header .n{font-weight:800;color:var(--muted);font-size:12px}
+.st header h3{margin:0;font-size:14px}
+.st header .who{font-size:10.5px;font-weight:700;padding:0 6px;border-radius:999px}
+.st.in .who{color:var(--in);background:var(--in-bg)}.st.deal .who{color:var(--deal);background:var(--deal-bg)}.st.ext .who{color:var(--ext);background:var(--ext-bg)}
+.st header .when{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--text-2)}
+.st.ext header .when{color:var(--ext)}
+.st ul{margin:0;padding-left:16px;display:grid;gap:2px;font-size:12.5px;color:var(--text-2)}
+.st .ft{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:5px;font-size:11px;color:var(--muted)}
+.st .ft a{color:var(--muted)}
+.st .ft .out{color:var(--text-2)}
+.chk{font-size:10px;font-weight:700;color:var(--prog);cursor:help}
+/* 표 오른쪽 위 작은 표기: 기준 시점 · 단위(대시보드 다른 탭과 같은 형식) */
+.tmeta{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:0 8px;font-size:10.5px;line-height:1.4;color:var(--muted);margin:0 0 2px}
+.tmeta span+span::before{content:"·";margin-right:8px}
+.foot{font-size:11px;color:var(--muted);margin:0}
+.cad{font-size:11px;color:var(--muted);display:grid;gap:2px;margin:0;padding-left:16px}.cad b{color:var(--text-2);font-weight:600}
+.st .why{margin:4px 0 0;font-size:11px;color:var(--prog)}
+.st .auto{margin:4px 0 0;font-size:11px;color:var(--muted)}
+.st .rev{margin:0 0 4px;font-size:11.5px;font-weight:700;color:var(--neg)}.st .rev a{color:inherit}
+@media print{
+  @page{size:A4 landscape;margin:8mm}
+  :root{--bg:#fff;--surface:#fff;--surface-2:#f1f3f6;--text:#111;--text-2:#333;--muted:#666;--line:#ccc;--in:#2f5fd0;--in-bg:#e8eefb;--deal:#6a4fc2;--deal-bg:#efeafb;--ext:#b8500c;--ext-bg:#fdeee3;--accent-ink:#b8500c;color-scheme:light}
+  body{background:#fff;font-size:9.5px}.noprint{display:none!important}
+  .st,.card{break-inside:avoid}.wrap{max-width:none;padding:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>해외지분투자 Workflow</h1>
+      <div class="meta" id="meta">불러오는 중</div>
+    </div>
+    <div class="btns noprint">
+      <button class="btn pri" type="button" id="printBtn">인쇄·PDF</button>
+      <a class="btn" href="data/steps.json" target="_blank" rel="noopener">원자료(JSON)</a>
+    </div>
+  </div>
+
+  <section class="card" aria-labelledby="h-flow">
+    <h2 id="h-flow"><span>절차 흐름도 <span class="key"><i class="in"></i>내부</span><span class="key"><i class="deal"></i>거래 상대방·자문사</span><span class="key"><i class="ext"></i>대외 신고·보고</span></span><small class="noprint">단계를 누르면 아래 설명으로 이동합니다</small></h2>
+    <div class="tmeta" id="tm-flow"></div><div class="flow" id="flow"></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-dl">
+    <h2 id="h-dl">신고·보고 기한 한눈에 <small>기산점은 각 단계 설명 참고 · 당사 진행 건의 실제 마감일은 <a href="../#hanwha" target="_top">한화투자증권 탭</a></small></h2>
+    <div class="tmeta" id="tm-dl"></div><div class="dl" id="dl"></div>
+  </section>
+
+  <div class="steps" id="steps"></div>
+  <p class="foot" id="foot"></p>
+  <ul class="cad" aria-label="갱신 주기">
+    <li><b>갱신 주기</b> · 금융위·금감원 공식 발표 자동 감지 <b>매일 07:10</b>(해외진출 유의사항 탭과 공유) · 법령·규정 원문 변경 점검 <b>반기 1회(1월·7월 2일)</b>: 국가법령정보센터 Open API로 자본시장법·시행령, 외국환거래법·규정, 해외진출규정, 금융투자업규정, 국조법의 시행일·공포일을 비교합니다.</li>
+    <li><b>바뀐 게 없으면</b> 원문 점검일만 자동 갱신, <b>바뀌면</b> 해당 단계에 '개정 감지·검토 필요'와 GitHub 이슈가 뜹니다. 단계 설명은 자동으로 고치지 않으며 사람이 원문을 읽고 고칩니다.</li>
+    <li><b>날짜 뜻</b> · 규정 검증 = 사람이 원문을 읽고 단계 설명을 확인한 날 · 원문 점검 = 반기 점검에서 원문이 그대로임을 확인한 날 · 각 출처 옆 날짜 = 그 문서의 공포·시행·게시일.</li>
+  </ul>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>

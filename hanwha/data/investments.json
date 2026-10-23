@@ -1,0 +1,152 @@
+{
+ "source": "해외자회사 출자내역(내부 관리대장)",
+ "manual": true,
+ "updated": "2026-10-23",
+ "unit": "현지통화 원 단위 · 원화 백만원 · 지분율 비율",
+ "rows": [
+  {
+   "key": "VN",
+   "type": "최초인수",
+   "method": "보통주 인수",
+   "report_date": "2019-03-27",
+   "post_report": false,
+   "remit_date": "2019-04-22",
+   "ccy": "VND",
+   "local_amt": 119982620000,
+   "krw_mn": 5919.2,
+   "stake_after": 0.9005
+  },
+  {
+   "key": "VN",
+   "type": "1차증자",
+   "method": "보통주 발행",
+   "report_date": "2019-07-01",
+   "post_report": false,
+   "remit_date": "2019-08-29",
+   "ccy": "VND",
+   "local_amt": 515000000000,
+   "krw_mn": 26980.8,
+   "stake_after": 0.9838
+  },
+  {
+   "key": "VN",
+   "type": "2차증자",
+   "method": "보통주 발행",
+   "report_date": "2021-02-04",
+   "post_report": true,
+   "remit_date": "2021-01-07",
+   "ccy": "VND",
+   "local_amt": 400000000000,
+   "krw_mn": 18901.7,
+   "stake_after": 0.9878
+  },
+  {
+   "key": "VN",
+   "type": "3차증자",
+   "method": "보통주 발행",
+   "report_date": "2021-09-17",
+   "post_report": false,
+   "remit_date": "2021-11-16",
+   "ccy": "VND",
+   "local_amt": 465000000000,
+   "krw_mn": 24204.8,
+   "stake_after": 0.9897
+  },
+  {
+   "key": "VN",
+   "type": "대주주지분인수",
+   "method": "보통주 인수",
+   "report_date": "2022-10-25",
+   "post_report": true,
+   "remit_date": "2022-10-12",
+   "ccy": "VND",
+   "local_amt": 17111415900,
+   "krw_mn": 1027.2,
+   "stake_after": 0.9999268
+  },
+  {
+   "key": "VN",
+   "type": "무상증자",
+   "method": "보통주 발행",
+   "report_date": null,
+   "post_report": false,
+   "remit_date": null,
+   "ccy": "VND",
+   "local_amt": 0,
+   "krw_mn": 0.0,
+   "stake_after": 0.9999268
+  },
+  {
+   "key": "SG",
+   "type": "1차출자",
+   "method": "보통주 발행",
+   "report_date": "2019-10-15",
+   "post_report": false,
+   "remit_date": "2020-04-01",
+   "ccy": "SGD",
+   "local_amt": 2000000,
+   "krw_mn": 1715.2,
+   "stake_after": 1
+  },
+  {
+   "key": "SG",
+   "type": "2차증자",
+   "method": "보통주 발행",
+   "report_date": "2019-10-15",
+   "post_report": false,
+   "remit_date": "2020-08-18",
+   "ccy": "SGD",
+   "local_amt": 10000000,
+   "krw_mn": 8681.0,
+   "stake_after": 1
+  },
+  {
+   "key": "SG",
+   "type": "3차증자",
+   "method": "보통주 발행",
+   "report_date": "2026-03-25",
+   "post_report": false,
+   "remit_date": "2026-02-27",
+   "ccy": "SGD",
+   "local_amt": 9000000,
+   "krw_mn": 10142.0,
+   "stake_after": 1
+  },
+  {
+   "key": "CSA",
+   "type": "최초인수",
+   "method": "보통주 인수",
+   "report_date": "2023-07-25",
+   "post_report": false,
+   "remit_date": "2024-08-06",
+   "ccy": "IDR",
+   "local_amt": 300000000000,
+   "krw_mn": 25670.5,
+   "stake_after": 0.75
+  },
+  {
+   "key": "CSA",
+   "type": "1차증자",
+   "method": "보통주 발행",
+   "report_date": "2023-07-25",
+   "post_report": false,
+   "remit_date": "2024-10-14",
+   "ccy": "IDR",
+   "local_amt": 260000000000,
+   "krw_mn": 22854.0,
+   "stake_after": 0.8
+  },
+  {
+   "key": "CAM",
+   "type": "최초인수",
+   "method": "보통주 인수",
+   "report_date": "2025-12-15",
+   "post_report": false,
+   "remit_date": "2025-12-15",
+   "ccy": "IDR",
+   "local_amt": 188000000000,
+   "krw_mn": 16882.4,
+   "stake_after": 0.8
+  }
+ ]
+}

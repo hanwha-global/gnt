@@ -1,0 +1,1210 @@
+{
+ "updated_at": "2026-10-23T03:27:28+00:00",
+ "source": "DART 사업보고서 연결재무제표 주석 '종속기업 요약재무정보'",
+ "firms": {
+  "미래에셋증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260515002972",
+   "n": 22,
+   "ni": 453680.0,
+   "equity": 5188898.0,
+   "roe": 8.74,
+   "overlap": 2363695.0,
+   "holdcos": [
+    "Human Value Developers Private Limited",
+    "Mirae Asset Capital Markets (India) Private Limited",
+    "Mirae Asset Securities (HK) Limited",
+    "Mirae Asset Securities (UK) Ltd.",
+    "Mirae Asset Securities Holdings (USA) Inc.",
+    "Sharekhan Limited"
+   ],
+   "subs": {
+    "MAPS HAWAII TWO, LLC.": {
+     "assets": 594141.0,
+     "liab": 1034.0,
+     "equity": 593107.0,
+     "rev": null,
+     "ni": -85.0,
+     "country": "미국",
+     "parent": "미래에셋맵스프런티어미국전문투자형사모부동산투자신탁7호",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "MAPS WAIKIKI HOTEL, LLC.": {
+     "assets": 923293.0,
+     "liab": 902929.0,
+     "equity": 20364.0,
+     "rev": 74641.0,
+     "ni": -271499.0,
+     "country": "미국",
+     "parent": "MAPS HAWAII TWO, LLC.",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "MAPS ROYAL GROVE, LLC.": {
+     "assets": 248.0,
+     "liab": 285.0,
+     "equity": -37.0,
+     "rev": 270.0,
+     "ni": -8.0,
+     "country": "미국",
+     "parent": "MAPS HAWAII TWO, LLC.",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "MAPS HOTELS AND RESORTS HAWAII 2, LLC.": {
+     "assets": 81932.0,
+     "liab": 92631.0,
+     "equity": -10699.0,
+     "rev": 214581.0,
+     "ni": -1872.0,
+     "country": "미국",
+     "parent": "MAPS WAIKIKI HOTEL, LLC.",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Super Delta Pte. Ltd.": {
+     "assets": 65193.0,
+     "liab": 13.0,
+     "equity": 65180.0,
+     "rev": 1165.0,
+     "ni": 539.0,
+     "country": "싱가포르",
+     "parent": "LK GHC 전문투자형 사모투자신탁제1호",
+     "own": 99.12,
+     "seed_name": null
+    },
+    "OPPCI Mahajunga Holding": {
+     "assets": 606756.0,
+     "liab": 937.0,
+     "equity": 605819.0,
+     "rev": 6027.0,
+     "ni": 5709.0,
+     "country": null,
+     "parent": "미래에셋해외부동산전문투자형사모투자신탁제6호",
+     "own": 97.46,
+     "seed_name": null
+    },
+    "SCI Mahajunga": {
+     "assets": 860241.0,
+     "liab": 874224.0,
+     "equity": -13983.0,
+     "rev": 43765.0,
+     "ni": -19720.0,
+     "country": null,
+     "parent": "OPPCI Mahajunga Holding",
+     "own": 85.0,
+     "seed_name": null
+    },
+    "MAC Global Unicorn Investment Limited": {
+     "assets": 150818.0,
+     "liab": 5335.0,
+     "equity": 145483.0,
+     "rev": 13085.0,
+     "ni": 12294.0,
+     "country": null,
+     "parent": "미래에셋글로벌유니콘사모투자합자회사",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Mirae Asset Realty (Singapore) PTE.": {
+     "assets": 256.0,
+     "liab": 144.0,
+     "equity": 112.0,
+     "rev": null,
+     "ni": -19.0,
+     "country": "싱가포르",
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Mirae Asset Securities (UK) Ltd.": {
+     "assets": 1156957.0,
+     "liab": 735241.0,
+     "equity": 421716.0,
+     "rev": 80677.0,
+     "ni": -4743.0,
+     "country": "영국",
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities (UK) Ltd."
+    },
+    "Mirae Asset Securities & Investments (UK) Ltd": {
+     "assets": 263530.0,
+     "liab": 83.0,
+     "equity": 263447.0,
+     "rev": 66634.0,
+     "ni": 31072.0,
+     "country": "영국",
+     "parent": "Mirae Asset Securities (UK) Ltd.",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities & Investments (UK) Ltd"
+    },
+    "Mirae Asset Securities Holdings (USA) Inc.": {
+     "assets": 802790.0,
+     "liab": 490.0,
+     "equity": 802300.0,
+     "rev": 2506.0,
+     "ni": 1627.0,
+     "country": "미국",
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities Holdings (USA) Inc."
+    },
+    "Mirae Asset Securities (USA) Inc.": {
+     "assets": 29659255.0,
+     "liab": 28680902.0,
+     "equity": 978353.0,
+     "rev": 4067673.0,
+     "ni": 187136.0,
+     "country": "미국",
+     "parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities (USA) Inc."
+    },
+    "Mirae Asset Securities & Investments (USA), LLC": {
+     "assets": 187721.0,
+     "liab": 51.0,
+     "equity": 187670.0,
+     "rev": 10952.0,
+     "ni": -15947.0,
+     "country": "미국",
+     "parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities & Investments (USA), LLC"
+    },
+    "Global Trading X LLC": {
+     "assets": 1518.0,
+     "liab": 51.0,
+     "equity": 1467.0,
+     "rev": 5.0,
+     "ni": -324.0,
+     "country": "미국",
+     "parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+     "own": 100.0,
+     "seed_name": "Global Trading X LLC"
+    },
+    "GTX UK LLP": {
+     "assets": 272963.0,
+     "liab": 217665.0,
+     "equity": 55298.0,
+     "rev": 18884.0,
+     "ni": 598.0,
+     "country": null,
+     "parent": "Mirae Asset Securities (UK) Ltd.",
+     "own": 100.0,
+     "seed_name": "Goldenberg Hehmeyer LLP"
+    },
+    "GTX EU Investment Services S.A.": {
+     "assets": 5264.0,
+     "liab": 2681.0,
+     "equity": 2583.0,
+     "rev": 4793.0,
+     "ni": 749.0,
+     "country": null,
+     "parent": "Mirae Asset Securities (UK) Ltd.",
+     "own": 100.0,
+     "seed_name": "GHCO Europe Investment Services S.A."
+    },
+    "MAS Cityfront Place Property Company LLC": {
+     "assets": 226802.0,
+     "liab": 159947.0,
+     "equity": 66855.0,
+     "rev": 22986.0,
+     "ni": -512.0,
+     "country": "미국",
+     "parent": "Cityfront Place Trust LLC",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Mirae Asset Securities (HK) Limited": {
+     "assets": 4403710.0,
+     "liab": 2022785.0,
+     "equity": 2380925.0,
+     "rev": 1202014.0,
+     "ni": 117394.0,
+     "country": "홍콩",
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities (HK) Limited"
+    },
+    "Mirae Asset Technology Innovation Center (Shenzhen) Co., Ltd": {
+     "assets": 1611.0,
+     "liab": 1662.0,
+     "equity": -51.0,
+     "rev": null,
+     "ni": -49.0,
+     "country": "중국",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Technology Innovation Center (Shenzhen) Co., Ltd"
+    },
+    "Mirae Asset Securities (Vietnam) JSC": {
+     "assets": 1415347.0,
+     "liab": 885902.0,
+     "equity": 529445.0,
+     "rev": 168178.0,
+     "ni": 41425.0,
+     "country": "베트남",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 99.9,
+     "seed_name": "Mirae Asset Securities (Vietnam) JSC"
+    },
+    "Mirae Asset (Brasil) CCTVM LTDA.": {
+     "assets": 238660.0,
+     "liab": 140339.0,
+     "equity": 98321.0,
+     "rev": 61354.0,
+     "ni": 6673.0,
+     "country": "브라질",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "seed_name": "Mirae Asset (Brasil) CCTVM LTDA."
+    },
+    "Mirae Asset Securities (Singapore) Pte. Ltd.": {
+     "assets": 51062.0,
+     "liab": 2546.0,
+     "equity": 48516.0,
+     "rev": 10337.0,
+     "ni": 4052.0,
+     "country": "싱가포르",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities (Singapore) Pte. Ltd."
+    },
+    "Mirae Asset Securities Mongolia UTsK LLC": {
+     "assets": 3098.0,
+     "liab": 18.0,
+     "equity": 3080.0,
+     "rev": 1368.0,
+     "ni": 435.0,
+     "country": "몽골",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 83.16,
+     "seed_name": "Mirae Asset Securities Mongolia UTsK LLC"
+    },
+    "PT. Mirae Asset Sekuritas Indonesia": {
+     "assets": 400378.0,
+     "liab": 223185.0,
+     "equity": 177193.0,
+     "rev": 76537.0,
+     "ni": 22321.0,
+     "country": "인도네시아",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 99.0,
+     "seed_name": "PT. Mirae Asset Sekuritas Indonesia"
+    },
+    "Mirae Asset Securities Financial Products Limited": {
+     "assets": 483252.0,
+     "liab": 482330.0,
+     "equity": 922.0,
+     "rev": 10870.0,
+     "ni": 904.0,
+     "country": null,
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Mirae Asset Securities Finance (HK) Limited": {
+     "assets": 54518.0,
+     "liab": 54591.0,
+     "equity": -73.0,
+     "rev": 814.0,
+     "ni": -103.0,
+     "country": "홍콩",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities Finance (HK) Limited"
+    },
+    "Mirae Asset Securities Investment (HK) Limited": {
+     "assets": 80627.0,
+     "liab": 79394.0,
+     "equity": 1233.0,
+     "rev": 2130.0,
+     "ni": 1220.0,
+     "country": "홍콩",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Securities Investment (HK) Limited"
+    },
+    "Digital X (HK) Limited": {
+     "assets": 7373.0,
+     "liab": 427.0,
+     "equity": 6946.0,
+     "rev": 1.0,
+     "ni": -424.0,
+     "country": "홍콩",
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Mirae Asset Capital Markets(India) Private Limited": {
+     "assets": 1271804.0,
+     "liab": 186318.0,
+     "equity": 1085486.0,
+     "rev": 113615.0,
+     "ni": 15092.0,
+     "country": "인도",
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Capital Markets (India) Private Limited"
+    },
+    "Human Value Developers Private Limited": {
+     "assets": 130589.0,
+     "liab": 4.0,
+     "equity": 130585.0,
+     "rev": 845.0,
+     "ni": 627.0,
+     "country": "인도",
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "seed_name": "Human Value Developers Private Limited"
+    },
+    "Sharekhan Limited": {
+     "assets": 1247188.0,
+     "liab": 965906.0,
+     "equity": 281282.0,
+     "rev": 237095.0,
+     "ni": 38813.0,
+     "country": null,
+     "parent": "Mirae Asset Capital Markets (India) Private Limited",
+     "own": 100.0,
+     "seed_name": "Sharekhan Limited"
+    },
+    "Espresso Financial Services Private Limited": {
+     "assets": 4489.0,
+     "liab": 1809.0,
+     "equity": 2680.0,
+     "rev": 429.0,
+     "ni": -133.0,
+     "country": "인도",
+     "parent": "Sharekhan Limited",
+     "own": 100.0,
+     "seed_name": "Espresso Financial Services Private Limited"
+    },
+    "Mirae Asset Sharekhan Financial Services Limited": {
+     "assets": 117664.0,
+     "liab": 16527.0,
+     "equity": 101137.0,
+     "rev": 10343.0,
+     "ni": 5745.0,
+     "country": null,
+     "parent": "Human Value Developers Private Limited",
+     "own": 100.0,
+     "seed_name": "Mirae Asset Sharekhan Financial Services Limited"
+    },
+    "Sharekhan.com India private Limited": {
+     "assets": 1353.0,
+     "liab": 1119.0,
+     "equity": 234.0,
+     "rev": 1123.0,
+     "ni": -96.0,
+     "country": "인도",
+     "parent": "Human Value Developers Private Limited",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Sharekhan Commodities Private Limited": {
+     "assets": 790.0,
+     "liab": 270.0,
+     "equity": 520.0,
+     "rev": 45.0,
+     "ni": 29.0,
+     "country": "인도",
+     "parent": "Sharekhan Limited",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Sharekhan Consultants Private Limited": {
+     "assets": 273.0,
+     "liab": 2.0,
+     "equity": 271.0,
+     "rev": 15.0,
+     "ni": 8.0,
+     "country": "인도",
+     "parent": "Human Value Developers Private Limited",
+     "own": 100.0,
+     "seed_name": null
+    },
+    "Goldenberg Hehmeyer LLP": {
+     "assets": 330651.0,
+     "liab": 274617.0,
+     "equity": 56034.0,
+     "rev": 9451.0,
+     "ni": -4452.0,
+     "country": null,
+     "seed_name": null
+    },
+    "GHCO Europe Investment Services S.A.": {
+     "assets": 4696.0,
+     "liab": 3046.0,
+     "equity": 1650.0,
+     "rev": 3830.0,
+     "ni": -522.0,
+     "country": "영국",
+     "seed_name": null
+    }
+   }
+  },
+  "한국투자증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260515000880",
+   "n": 9,
+   "ni": 80006.9,
+   "equity": 1775236.5,
+   "roe": 4.51,
+   "overlap": 20996.1,
+   "holdcos": [
+    "Korea Investment& Securities US, Inc."
+   ],
+   "subs": {
+    "Korea Investment & Securities Asia, Ltd.": {
+     "assets": 765450.6,
+     "liab": 67800.2,
+     "equity": 697650.5,
+     "rev": 74684.8,
+     "ni": 10412.7,
+     "country": null,
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "seed_name": "Korea Investment & Securities Asia, Ltd."
+    },
+    "Korea Investment & Securities Europe, Ltd.": {
+     "assets": 4765.1,
+     "liab": 52.5,
+     "equity": 4712.6,
+     "rev": 1657.4,
+     "ni": 154.5,
+     "country": "영국",
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "seed_name": "Korea Investment & Securities Europe, Ltd."
+    },
+    "Korea Investment & Securities America, Inc.": {
+     "assets": 25051.3,
+     "liab": 4055.2,
+     "equity": 20996.1,
+     "rev": 18127.0,
+     "ni": 6052.5,
+     "country": "미국",
+     "parent": "Korea Investment & Securities US, Inc.",
+     "own": 100.0,
+     "seed_name": "Korea Investment & Securities America, Inc."
+    },
+    "Korea Investment & Securities Singapore Pte. Ltd.": {
+     "assets": 15964.5,
+     "liab": 1807.0,
+     "equity": 14157.5,
+     "rev": 3265.5,
+     "ni": 763.2,
+     "country": "싱가포르",
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "seed_name": "Korea Investment & Securities Singapore Pte. Ltd."
+    },
+    "KIS Vietnam Securities Corporation": {
+     "assets": 897525.1,
+     "liab": 509122.2,
+     "equity": 388403.0,
+     "rev": 155851.1,
+     "ni": 31653.6,
+     "country": "베트남",
+     "parent": "한국투자증권㈜",
+     "own": 99.84,
+     "seed_name": "KIS Vietnam Securities Corporation"
+    },
+    "Korea Investment& Securities US, Inc.": {
+     "assets": 416738.3,
+     "liab": 5417.0,
+     "equity": 411321.3,
+     "rev": 59411.2,
+     "ni": 26813.8,
+     "country": "미국",
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "seed_name": "Korea Investment& Securities US, Inc."
+    },
+    "PT Korea Investment & Sekuritas Indonesia": {
+     "assets": 150468.9,
+     "liab": 65038.6,
+     "equity": 85430.3,
+     "rev": 18554.9,
+     "ni": 4478.9,
+     "country": "인도네시아",
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "seed_name": "PT Korea Investment & Sekuritas Indonesia"
+    },
+    "PT KISI Asset management": {
+     "assets": 4505.0,
+     "liab": 858.8,
+     "equity": 3646.3,
+     "rev": 4862.8,
+     "ni": 94.9,
+     "country": "인도네시아",
+     "parent": "한국투자신탁운용(주)",
+     "own": 99.0,
+     "seed_name": "PT KISI Asset management"
+    },
+    "SF Credit Partners, LLC": {
+     "assets": 218822.1,
+     "liab": 48907.1,
+     "equity": 169915.0,
+     "rev": 13996.8,
+     "ni": -417.2,
+     "country": "미국",
+     "parent": "한국투자증권㈜",
+     "own": 65.1,
+     "seed_name": "SF Credit Partners, LLC"
+    },
+    "Principal Alternative Credit SMA": {
+     "assets": 59440.0,
+     "liab": 135.1,
+     "equity": 59304.9,
+     "rev": 6758.2,
+     "ni": 6000.3,
+     "country": null,
+     "parent": "한국투자증권㈜",
+     "own": 99.31,
+     "seed_name": null
+    },
+    "REKSA DANA INDEKS KISI IDX30 ETF": {
+     "assets": 1007.0,
+     "liab": 3.2,
+     "equity": 1003.7,
+     "rev": 106.5,
+     "ni": 66.0,
+     "country": null,
+     "parent": "Indonesia SMA Fund",
+     "own": 75.42,
+     "seed_name": null
+    },
+    "REKSA DANA INDEKS KISI IDX VALUE30 ETF": {
+     "assets": 859.9,
+     "liab": 1.0,
+     "equity": 858.9,
+     "rev": 165.9,
+     "ni": 125.9,
+     "country": null,
+     "parent": "Indonesia SMA Fund",
+     "own": 97.52,
+     "seed_name": null
+    },
+    "Reksa Dana Syariah KISI Money Market Sharia": {
+     "assets": 3910.8,
+     "liab": 2.3,
+     "equity": 3908.5,
+     "rev": 78.1,
+     "ni": 56.5,
+     "country": null,
+     "parent": "Indonesia SMA Fund",
+     "own": 45.23,
+     "seed_name": null
+    },
+    "Reksa Dana Syariah KISI Fixed Income Sharia": {
+     "assets": 38564.9,
+     "liab": 1232.8,
+     "equity": 37332.1,
+     "rev": 674.8,
+     "ni": 518.0,
+     "country": null,
+     "parent": "Indonesia SMA Fund",
+     "own": 29.99,
+     "seed_name": null
+    },
+    "KIM Growth VN DIAMOND ETF": {
+     "assets": 4240.5,
+     "liab": 32.1,
+     "equity": 4208.4,
+     "rev": 744.9,
+     "ni": 644.6,
+     "country": null,
+     "parent": "한국투자신탁운용(주)",
+     "own": 76.85,
+     "seed_name": null
+    },
+    "KIP Bright II(Chengdu) Equity Investment Partnership": {
+     "assets": 127643.5,
+     "liab": 204.8,
+     "equity": 127438.7,
+     "rev": 39291.6,
+     "ni": 31942.6,
+     "country": null,
+     "parent": "한국투자 SEA-CHINA Fund",
+     "own": 50.98,
+     "seed_name": null
+    },
+    "KIP (ZhangJiaGang) Venture Capital LLP": {
+     "assets": 129290.2,
+     "liab": 204.8,
+     "equity": 129085.5,
+     "rev": 40898.5,
+     "ni": 37259.9,
+     "country": null,
+     "parent": "한국투자 SEA-CHINA Fund",
+     "own": 54.95,
+     "seed_name": null
+    },
+    "상해방정한투주식투자파트너쉽기업(유한파트너쉽)": {
+     "assets": 86133.9,
+     "liab": 60.3,
+     "equity": 86073.6,
+     "rev": 35355.2,
+     "ni": 34983.0,
+     "country": "중국",
+     "seed_name": null
+    },
+    "KIS European Loan SMA": {
+     "assets": 73718.2,
+     "liab": 1064.6,
+     "equity": 72653.6,
+     "rev": 7055.1,
+     "ni": 1743.8,
+     "country": "영국",
+     "seed_name": null
+    },
+    "ACE 인도네시아 MSCI ETF": {
+     "assets": 77327.7,
+     "liab": null,
+     "equity": 77327.7,
+     "rev": 1231.8,
+     "ni": 1231.8,
+     "country": "인도네시아",
+     "seed_name": null
+    }
+   }
+  },
+  "삼성증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260312001379",
+   "n": 3,
+   "ni": 7023.9,
+   "equity": 170886.3,
+   "roe": 4.11,
+   "overlap": 0,
+   "holdcos": [],
+   "subs": {
+    "Samsung Securities (America) Inc.": {
+     "assets": 59934.3,
+     "liab": 1606.7,
+     "equity": 58327.6,
+     "rev": 7278.0,
+     "ni": 1888.1,
+     "rev_net": true,
+     "country": "미국",
+     "seed_name": "Samsung Securities (America) Inc."
+    },
+    "Samsung Securities (Europe) Ltd.": {
+     "assets": 52048.1,
+     "liab": 1198.6,
+     "equity": 50849.5,
+     "rev": 5219.7,
+     "ni": 1980.3,
+     "rev_net": true,
+     "country": "영국",
+     "seed_name": "Samsung Securities (Europe) Ltd."
+    },
+    "Samsung Securities (Asia) Ltd.": {
+     "assets": 63952.5,
+     "liab": 2243.3,
+     "equity": 61709.2,
+     "rev": 7146.0,
+     "ni": 3155.5,
+     "rev_net": true,
+     "country": null,
+     "seed_name": "Samsung Securities (Asia) Ltd."
+    }
+   }
+  },
+  "키움증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260317000838",
+   "n": 7,
+   "ni": -2568.9,
+   "equity": 83506.1,
+   "roe": -3.08,
+   "overlap": 35386.8,
+   "holdcos": [
+    "Kiwoom Hong Kong Limited",
+    "Kiwoom Securities Holdings USA Inc.",
+    "PT Kiwoom Sekuritas Indonesia"
+   ],
+   "subs": {
+    "PT Kiwoom securities Indonesia": {
+     "assets": 55565.0,
+     "liab": 33671.4,
+     "equity": 21893.6,
+     "rev": 1976.1,
+     "ni": -3487.7,
+     "country": "인도네시아",
+     "seed_name": null
+    },
+    "Kiwoom Hong Kong Limited": {
+     "assets": 22172.0,
+     "liab": 1.0,
+     "equity": 22171.0,
+     "rev": 228.6,
+     "ni": 221.3,
+     "country": "홍콩",
+     "seed_name": "Kiwoom Hong Kong Limited"
+    },
+    "KIWOOM ASSET MANAGEMENT ASIA PTE. LTD.": {
+     "assets": 12463.5,
+     "liab": 1719.4,
+     "equity": 10744.0,
+     "rev": 4441.8,
+     "ni": 996.3,
+     "country": "싱가포르",
+     "seed_name": "KIWOOM ASSET MANAGEMENT ASIA PTE. LTD."
+    },
+    "Kiwoom Securities Holdings USA Inc.": {
+     "assets": 28697.5,
+     "liab": null,
+     "equity": 28697.5,
+     "rev": null,
+     "ni": -0.5,
+     "country": "미국",
+     "seed_name": "Kiwoom Securities Holdings USA Inc."
+    },
+    "다우홍콩유한공사": {
+     "assets": 55971.1,
+     "liab": 4624.7,
+     "equity": 51346.4,
+     "rev": 9165.9,
+     "ni": 2599.1,
+     "country": "중국",
+     "seed_name": null
+    },
+    "PT Kiwoom sekuritas Indonesia": {
+     "assets": 55565.0,
+     "liab": 33671.4,
+     "equity": 21893.6,
+     "rev": 1976.1,
+     "ni": -3487.7,
+     "country": "인도네시아",
+     "seed_name": "PT Kiwoom Sekuritas Indonesia"
+    },
+    "PT Kiwoom Investment Management": {
+     "assets": 1616.9,
+     "liab": 452.0,
+     "equity": 1164.9,
+     "rev": 326.9,
+     "ni": -337.9,
+     "country": "인도네시아",
+     "parent": "PT Kiwoom sekuritas Indonesia",
+     "own": null,
+     "seed_name": "PT Kiwoom Investment Management Indonesia"
+    },
+    "Kiwoom Singapore Pte. Ltd": {
+     "assets": 16286.5,
+     "liab": 1464.1,
+     "equity": 14822.4,
+     "rev": 556.7,
+     "ni": 580.4,
+     "country": "싱가포르",
+     "parent": "Kiwoom Hong Kong Limited",
+     "own": null,
+     "seed_name": "Kiwoom Singapore Pte. Ltd"
+    },
+    "Kiwoom BVI One Limited": {
+     "assets": 1439.3,
+     "liab": null,
+     "equity": 1439.3,
+     "rev": null,
+     "ni": -2.2,
+     "country": null,
+     "parent": "Kiwoom Singapore Pte. Ltd",
+     "own": null,
+     "seed_name": null
+    },
+    "Kiwoom BVI Two Limited": {
+     "assets": 9102.5,
+     "liab": 2629.6,
+     "equity": 6472.9,
+     "rev": null,
+     "ni": -293.8,
+     "country": null,
+     "parent": "Kiwoom Singapore Pte. Ltd",
+     "own": null,
+     "seed_name": null
+    },
+    "Kiwoom Securities USA Inc.": {
+     "assets": 19505.3,
+     "liab": 105.8,
+     "equity": 19399.5,
+     "rev": null,
+     "ni": -540.8,
+     "country": "미국",
+     "parent": "Kiwoom Securities Holdings USA Inc.",
+     "own": null,
+     "seed_name": "Kiwoom Securities USA Inc."
+    }
+   }
+  },
+  "토스증권": {
+   "report": "2025 감사보고서",
+   "rcept_no": "20260401004244",
+   "n": 3,
+   "ni": -6227.9,
+   "equity": 2055.4,
+   "roe": -303.0,
+   "overlap": 0,
+   "holdcos": [],
+   "subs": {
+    "Toss Securities Holdings US Inc.(*)": {
+     "assets": 9987.7,
+     "liab": 8077.3,
+     "equity": 1910.4,
+     "rev": 0.8,
+     "ni": -6220.3,
+     "country": "미국",
+     "consolidated": true,
+     "seed_name": "Toss Securities Holdings US Inc."
+    },
+    "Toss Securities Global Pte. Ltd.": {
+     "assets": 147.6,
+     "liab": 11.3,
+     "equity": 136.3,
+     "rev": 0.0,
+     "ni": -7.2,
+     "country": "싱가포르",
+     "seed_name": "Toss Securities Global Pte. Ltd."
+    },
+    "TS Information&Technology Japan Co., Ltd.": {
+     "assets": 9.2,
+     "liab": 0.4,
+     "equity": 8.7,
+     "rev": null,
+     "ni": -0.4,
+     "country": "일본",
+     "seed_name": "TS Information&Technology Japan Co., Ltd."
+    }
+   }
+  },
+  "NH투자증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260313000771",
+   "n": 7,
+   "ni": 86701.0,
+   "equity": 1349230.0,
+   "roe": 6.43,
+   "overlap": 0,
+   "holdcos": [],
+   "subs": {
+    "NH Investment & Securities(H.K.) Ltd.": {
+     "assets": 1266386.0,
+     "liab": 277944.0,
+     "equity": 988442.0,
+     "rev": 160920.0,
+     "ni": 43220.0,
+     "country": "홍콩",
+     "seed_name": "NH Investment & Securities(H.K.) Ltd."
+    },
+    "NH Securities Vietnam Co., Ltd.": {
+     "assets": 332670.0,
+     "liab": 186273.0,
+     "equity": 146397.0,
+     "rev": 15104.0,
+     "ni": 689.0,
+     "country": "베트남",
+     "seed_name": "NH Securities Vietnam Co., Ltd."
+    },
+    "NH Investment & Securities America, Inc.": {
+     "assets": 122175.0,
+     "liab": 4314.0,
+     "equity": 117861.0,
+     "rev": 68830.0,
+     "ni": 43946.0,
+     "country": "미국",
+     "seed_name": "NH Investment & Securities America, Inc."
+    },
+    "NH Absolute Return Partners Pte. Ltd.": {
+     "assets": 5363.0,
+     "liab": 482.0,
+     "equity": 4881.0,
+     "rev": 2411.0,
+     "ni": -104.0,
+     "country": "싱가포르",
+     "seed_name": "NH Absolute Return Partners Pte. Ltd."
+    },
+    "PT. NH Korindo Sekuritas Indonesia": {
+     "assets": 112265.0,
+     "liab": 69716.0,
+     "equity": 42549.0,
+     "rev": 14155.0,
+     "ni": -1512.0,
+     "country": "인도네시아",
+     "seed_name": "PT. NH Korindo Sekuritas Indonesia"
+    },
+    "북경NH투자자문유한공사": {
+     "assets": 9214.0,
+     "liab": 194.0,
+     "equity": 9020.0,
+     "rev": 999.0,
+     "ni": -300.0,
+     "country": "중국",
+     "seed_name": "북경NH투자자문유한공사"
+    },
+    "NH Investment & Securities Europe Ltd": {
+     "assets": 40954.0,
+     "liab": 874.0,
+     "equity": 40080.0,
+     "rev": 5814.0,
+     "ni": 762.0,
+     "country": "영국",
+     "seed_name": "NH Investment & Securities Europe Ltd."
+    },
+    "NH Absolute Return I": {
+     "assets": 110949.0,
+     "liab": 11941.0,
+     "equity": 99008.0,
+     "rev": 11772.0,
+     "ni": 6917.0,
+     "country": null,
+     "seed_name": null
+    },
+    "TAI TCI DIME JV LLC": {
+     "assets": 88423.0,
+     "liab": 41.0,
+     "equity": 88382.0,
+     "rev": 4405.0,
+     "ni": 4151.0,
+     "country": "미국",
+     "seed_name": null
+    },
+    "TAI TCI DIME Owner LLC": {
+     "assets": 225638.0,
+     "liab": 147055.0,
+     "equity": 78583.0,
+     "rev": 13552.0,
+     "ni": 1113.0,
+     "country": "미국",
+     "seed_name": null
+    },
+    "FIP Acquisition GK": {
+     "assets": 66155.0,
+     "liab": 67577.0,
+     "equity": -1422.0,
+     "rev": null,
+     "ni": -1109.0,
+     "country": null,
+     "seed_name": null
+    }
+   }
+  },
+  "KB증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260324000784",
+   "n": 5,
+   "ni": 45634.3,
+   "equity": 682373.0,
+   "roe": 6.69,
+   "overlap": 0,
+   "holdcos": [],
+   "subs": {
+    "KBFG Securities America Inc.": {
+     "assets": 40232.7,
+     "liab": 3407.2,
+     "equity": 36825.5,
+     "rev": 24127.8,
+     "ni": 11800.4,
+     "country": "미국",
+     "seed_name": "KBFG Securities America Inc."
+    },
+    "KB Securities Hong Kong Ltd.": {
+     "assets": 329258.2,
+     "liab": 27059.2,
+     "equity": 302199.0,
+     "rev": 32834.1,
+     "ni": 15138.3,
+     "country": "홍콩",
+     "seed_name": "KB Securities Hong Kong Ltd."
+    },
+    "KB SECURITIES VIETNAM JOINT STOCK COMPANY": {
+     "assets": 692931.2,
+     "liab": 444411.1,
+     "equity": 248520.1,
+     "rev": 61871.8,
+     "ni": 11349.5,
+     "country": "베트남",
+     "seed_name": "KB SECURITIES VIETNAM JOINT STOCK COMPANY"
+    },
+    "KB FINA COMPANY LIMITED(구, KB FINA Joint Stock Company)": {
+     "assets": 2327.6,
+     "liab": 4.9,
+     "equity": 2322.7,
+     "rev": 6.6,
+     "ni": -170.6,
+     "country": "베트남",
+     "seed_name": "KB FINA Joint Stock Company"
+    },
+    "PT. KB Valbury Sekuritas": {
+     "assets": 242695.8,
+     "liab": 150190.1,
+     "equity": 92505.7,
+     "rev": 34158.1,
+     "ni": 7516.7,
+     "country": "인도네시아",
+     "seed_name": "PT. KB Valbury Sekuritas"
+    }
+   }
+  },
+  "신한투자증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260325000632",
+   "n": 4,
+   "ni": 7069.0,
+   "equity": 332960.0,
+   "roe": 2.12,
+   "overlap": 0,
+   "holdcos": [],
+   "subs": {
+    "Shinhan Securities America Inc.": {
+     "assets": 4462.0,
+     "liab": 1261.0,
+     "equity": 3200.0,
+     "rev": 993.0,
+     "ni": -1480.0,
+     "country": "미국",
+     "parent": "신한투자증권",
+     "own": 100.0,
+     "seed_name": "Shinhan Securities America Inc."
+    },
+    "Shinhan Securities Asia Ltd.": {
+     "assets": 177081.0,
+     "liab": 784.0,
+     "equity": 176297.0,
+     "rev": 11647.0,
+     "ni": 3563.0,
+     "country": null,
+     "parent": "신한투자증권",
+     "own": 100.0,
+     "seed_name": "Shinhan Securities Asia Ltd."
+    },
+    "SHINHAN SECURITIES VIETNAM CO., LTD": {
+     "assets": 429427.0,
+     "liab": 293619.0,
+     "equity": 135809.0,
+     "rev": 38030.0,
+     "ni": 6247.0,
+     "country": "베트남",
+     "parent": "신한투자증권",
+     "own": 100.0,
+     "seed_name": "SHINHAN SECURITIES VIETNAM CO., LTD"
+    },
+    "PT Shinhan Sekuritas Indonesia": {
+     "assets": 24878.0,
+     "liab": 7224.0,
+     "equity": 17654.0,
+     "rev": 3062.0,
+     "ni": -1261.0,
+     "country": "인도네시아",
+     "parent": "신한투자증권",
+     "own": 99.0,
+     "seed_name": "PT Shinhan Sekuritas Indonesia"
+    },
+    "ST EIP Holdings Inc.": {
+     "assets": 614640.0,
+     "liab": 506195.0,
+     "equity": 108445.0,
+     "rev": 26161.0,
+     "ni": 2581.0,
+     "country": "미국",
+     "seed_name": null
+    }
+   }
+  },
+  "하나증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260316001131",
+   "n": 2,
+   "ni": -12330.1,
+   "equity": 67839.0,
+   "roe": -18.18,
+   "overlap": 0,
+   "holdcos": [],
+   "subs": {
+    "Hana Asset Management Asia Pte. Ltd.(주1)": {
+     "assets": 19506.8,
+     "liab": 200.2,
+     "equity": 19306.6,
+     "rev": 1285.3,
+     "ni": -630.9,
+     "country": "싱가포르",
+     "parent": "하나증권",
+     "own": 100.0,
+     "seed_name": "Hana Asset Management Asia Pte. Ltd."
+    },
+    "하나지분투자관리(심천)유한공사(주1)": {
+     "assets": 55399.0,
+     "liab": 6866.6,
+     "equity": 48532.4,
+     "rev": 361.8,
+     "ni": -11699.2,
+     "country": "중국",
+     "parent": "하나증권",
+     "own": 50.1,
+     "seed_name": "하나지분투자관리(심천)유한공사"
+    }
+   }
+  },
+  "한화투자증권": {
+   "report": "2025 사업보고서",
+   "rcept_no": "20260310002967",
+   "n": 3,
+   "ni": 4626.0,
+   "equity": 134977.0,
+   "roe": 3.43,
+   "overlap": 0,
+   "holdcos": [],
+   "subs": {
+    "Pinetree Securities Pte.Ltd.": {
+     "assets": 5078.0,
+     "liab": 346.0,
+     "equity": 4732.0,
+     "rev": 666.0,
+     "ni": -1534.0,
+     "country": "싱가포르",
+     "seed_name": "Pinetree Securities Pte. Ltd."
+    },
+    "Pinetree Securities Corporation": {
+     "assets": 261638.0,
+     "liab": 173503.0,
+     "equity": 88135.0,
+     "rev": 21621.0,
+     "ni": 3442.0,
+     "country": null,
+     "seed_name": "Pinetree Securities Corporation"
+    },
+    "PT Ciptadana Sekuritas Asia": {
+     "assets": 65229.0,
+     "liab": 23119.0,
+     "equity": 42110.0,
+     "rev": 14749.0,
+     "ni": 2718.0,
+     "country": "인도네시아",
+     "seed_name": "PT Ciptadana Sekuritas Asia"
+    },
+    "CapBridge Financial Pte.Ltd.": {
+     "assets": 10375.0,
+     "liab": 31.0,
+     "equity": 10344.0,
+     "rev": 9.0,
+     "ni": -28.0,
+     "country": "싱가포르",
+     "seed_name": null
+    },
+    "PT Ciptadana Sekuritas Asia(주1)": {
+     "assets": 65229.0,
+     "liab": 23119.0,
+     "equity": 42110.0,
+     "rev": 14749.0,
+     "ni": 2718.0,
+     "country": "인도네시아",
+     "seed_name": null
+    }
+   }
+  }
+ },
+ "errors": []
+}

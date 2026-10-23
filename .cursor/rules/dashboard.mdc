@@ -1,0 +1,12 @@
+---
+description: 글로벌네트워크팀 Weekly Dashboard 작업 규칙
+globs: ["site/**", "scripts/**", "hanwha/**"]
+alwaysApply: true
+---
+
+- 정적 웹(빌드 도구 없음): site/index.html, site/assets/app.js, site/assets/styles.css. 프레임워크를 추가하지 않는다.
+- 데이터는 site/data/**.json 만 고친다. 국내 해외법인 원천은 data/domestic/seed.json, 최신 공시는 dart_latest.json(자동 생성, 손으로 수정 금지).
+- 펀드·신탁·투자기구(Vehicle)는 국내 네트워크에서 제외한다. 규칙은 scripts/gnd.py 의 FUND_NAME/FUND_BIZ.
+- API 키는 코드·커밋에 넣지 않는다. GitHub Secrets(DART_API_KEY, ECOS_API_KEY)로만 읽는다.
+- 한화투자증권 탭은 hanwha/index.html 이 채운다(대시보드는 iframe으로 띄움).
+- 변경 후 `python -m unittest discover -s tests` 와 `python scripts/build_site.py` 를 통과시킨다.

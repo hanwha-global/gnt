@@ -1,0 +1,52 @@
+name: Hanwha regulatory reminders (no LLM)
+
+on:
+  schedule:
+    - cron: "30 23 * * 0"   # 매주 월요일 08:30 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: hanwha-reminders
+  cancel-in-progress: false
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 대외보고 기한 재계산 (todo·일정 파일)
+        run: python hanwha/scripts/build_deadlines.py
+      - name: 변경분 커밋
+        run: |
+          git config user.name "gnd-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hanwha/data/regulatory.json hanwha/downloads/hanwha_regulatory.ics
+          if ! git diff --cached --quiet; then
+            git commit -m "data: hanwha regulatory deadlines $(date -u +%F)"
+            git pull --rebase origin main && git push
+          fi
+      - name: 알림 이슈 만들기·갱신
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          body="$(python hanwha/scripts/reminder_issue.py)"
+          gh label create "대외보고-알림" --color D93F0B --description "해외법인 대외보고 기한 알림" 2>/dev/null || true
+          num=$(gh issue list --label "대외보고-알림" --state open --json number --jq '.[0].number')
+          if [ -z "$body" ]; then
+            [ -n "$num" ] && gh issue close "$num" --comment "30일 안에 돌아오는 항목이 없어 닫습니다."
+            exit 0
+          fi
+          title="[대외보고 알림] $(date -u -d '+9 hours' +%F) 기준 30일 이내·기한 경과 항목"
+          if [ -n "$num" ]; then
+            gh issue edit "$num" --title "$title" --body "$body"
+            gh issue comment "$num" --body "이번 주 목록을 갱신했습니다."
+          else
+            gh issue create --title "$title" --body "$body" --label "대외보고-알림" --assignee "${{ github.repository_owner }}"
+          fi

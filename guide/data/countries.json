@@ -1,0 +1,1233 @@
+{
+ "meta": {
+  "verified_at": "2026-10-21",
+  "title": "국가별 해외진출 유의사항",
+  "note": "국내 증권사가 해외 자회사·관계사 설립이나 지분투자를 할 때 나라별로 확인할 점입니다. 법령 원문을 줄인 요약이므로 실제 진행 전 현지 법률자문으로 다시 확인하세요.",
+  "legend": {
+   "open": "제한 없음",
+   "cond": "조건부 100%",
+   "cap": "상한 있음"
+  }
+ },
+ "countries": [
+  {
+   "code": "VN",
+   "name": "베트남",
+   "seed": "베트남",
+   "lv": "cond",
+   "regulator": "SSC(국가증권위원회, 재무부 산하)",
+   "headline": "외국인 49% 상한, 100%는 요건 갖춘 외국 금융기관만 · 이익송금 전 누적결손 해소 필수",
+   "own": {
+    "v": "외국 개인·일반 법인은 특수관계인 포함 49% 상한. 100%는 본국에서 은행·증권·보험업 인가 후 2년 이상 영업, 본국 감독당국과 SSC 간 협력약정, 직전 2년 흑자·감사 적정의견을 갖춘 외국 금융기관만 가능. 49% 초과 취득은 SSC 승인(완결 서류 접수 후 15일, 승인 후 6개월 내 거래 완료).",
+    "src": [
+     4
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "설립·영업인가(Establishment & Operation License) 하나로 업무 추가: 중개 · 자기매매 · 인수 · 투자자문. 업무 추가·증자·정관변경 모두 SSC 인가 변경.",
+    "src": [
+     0,
+     1
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "정관자본(charter capital) 최소: 중개 250억동 · 자기매매 500억동 · 인수 1,650억동 · 투자자문 100억동(업무 합산, 시행령 155/2020 제175조). 담보 증권발행(CW) 발행사는 자기자본 1조동 이상(시행령 245/2025).",
+    "src": [
+     5,
+     1
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "사장(General Director): 증권업 2년 이상 경력, 금융분석 또는 펀드운용 자격증, 최근 6개월 증권 관련 행정제재 없음. 기업법상 법적대표 1인 이상 베트남 거주.",
+    "src": [
+     4
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "출자·송금은 직접투자자본계좌(DICA) 경유 의무. 이익송금은 감사 재무제표·법인세 확정 신고 후, 누적결손이 남아 있으면 불가, 송금 7영업일 전 세무서 통지. 외국법인 배당 원천세 없음.",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "교차 보유 제한: 한 증권사 지분 10% 이상 주주(특수관계인 포함)는 다른 증권사 지분을 5% 넘게 가질 수 없음",
+     "src": [
+      4
+     ],
+     "ok": true
+    },
+    {
+     "v": "외국 기관 무예치 매수(non-prefunding) 허용(Circular 68/2024, 2024.11 시행) → 외국인 기관 브로커리지 기회",
+     "src": [
+      3
+     ],
+     "ok": true
+    },
+    {
+     "v": "시행령 245/2025(2025.9.11)로 155/2020 대폭 개정: CCP 청산(2027년 말까지) 등 시장 인프라 변경 진행 중",
+     "src": [
+      1,
+      3
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": "Pinetree Securities(PTSV, 지분 99.99%, DART 타법인출자현황): 배당 회수 시 누적결손 여부 먼저 확인.",
+   "sources": [
+    {
+     "t": "SSC 증권법 시행령 155/2020 개요(DAZPRO)",
+     "u": "https://dazpro.com/decree-155-2020-vietnam-on-securities/",
+     "d": "2020"
+    },
+    {
+     "t": "시행령 245/2025 영문본(SSC)",
+     "u": "https://ssc.gov.vn/cs/idcplg?IdcService=GET_FILE&allowInterrupt=1&dID=166306&dDocName=APPSSCGOVVN1620159819&filename=Eng+-+Decree+245+amending+Decree+155+in+English+translation+final.pdf",
+     "d": "2025-09-11"
+    },
+    {
+     "t": "Profit Repatriation in Vietnam 2026(Vietnam Briefing)",
+     "u": "https://www.vietnam-briefing.com/news/profit-repatriation-vietnam-brief-guide-2026.html/",
+     "d": "2026"
+    },
+    {
+     "t": "Vietnam overhauls securities market rules(The Investor)",
+     "u": "https://theinvestor.vn/vietnam-overhauls-securities-market-rules-to-boost-foreign-investment-d17003.html",
+     "d": "2025-09-14"
+    },
+    {
+     "t": "Điều kiện để nhà đầu tư nước ngoài thành lập công ty chứng khoán(Luật Việt An: 증권법 2019·시행령 155/2020 제75·77·175조)",
+     "u": "https://luatvietan.vn/dieu-kien-de-nha-dau-tu-nuoc-ngoai-thanh-lap-cong-ty-chung-khoan.html",
+     "d": "현행(2026-10 확인)"
+    },
+    {
+     "t": "시행령 155/2020 제175조(최소 정관자본) 원문",
+     "u": "https://hethongphapluat.com/nghi-dinh-155-2020-nd-cp-huong-dan-luat-chung-khoan/dieu-175",
+     "d": "현행"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "ID",
+   "name": "인도네시아",
+   "seed": "인도네시아",
+   "lv": "cap",
+   "regulator": "OJK(금융감독청)",
+   "headline": "외국인 최대 99%(현지 지분 1% 이상 필수) · 2026년 자본금 체계 PEKU 1~3으로 개편",
+   "own": {
+    "v": "증권회사(Perusahaan Efek: 브로커·인수·운용) 외국인 지분 최대 99%(PP 31/2022, 2022.9.13). 99%는 본국 자본시장 감독기관의 인가·감독을 받는 외국 금융회사만 가능. 지배주주 변경은 OJK 승인.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "PPE(브로커·딜러) · PEE(인수) · MI(운용) 업무별 OJK 인가. 투자등록은 OSS(BKPM) 별도.",
+    "src": [
+     1
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "POJK 3/2026(2026.5): PEKU 1 납입자본 10억루피아(MKBD 5억) · PEKU 2 550억(MKBD 500억) · PEKU 3 1,100억(MKBD 1,000억). 경과기간·업무 매핑은 원문 확인 필요.",
+    "src": [
+     1
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "인수·중개 담당 이사는 OJK 대표자(Wakil) 인가 필요(POJK 27/2014 제3조), 외국인은 인도네시아 금융기관 근무자여야 인가 가능(제4조). 이사 거주 요건은 규정에 없음. 이사·커미셔너 OJK 적격성 심사.",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "배당 원천세 20%, 한-인니 조세조약 15%(25% 이상 보유 10%). 거주자증명(CoD)을 내지 않으면 20% 적용.",
+    "src": [
+     3,
+     4
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "100% 단독 소유 불가 → 현지 파트너(최소 1%) 구조와 주주간계약(풋옵션·의결권) 설계가 핵심",
+     "src": [
+      0
+     ],
+     "ok": true
+    },
+    {
+     "v": "자본금 체계 개편(PEKU) → 기존 법인도 등급별 자본 확충 필요 여부 점검",
+     "src": [
+      1
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": "Ciptadana Sekuritas Asia(CSA)·Ciptadana Asset Management(CAM) 모두 지분 80%: 현지 20% 지분 구조. 증자·지분 추가 취득 시 99% 상한과 OJK 지배주주 승인 동시 점검.",
+   "sources": [
+    {
+     "t": "PP 31/2022 외국인 증권사 지분(CNN Indonesia)",
+     "u": "https://www.cnnindonesia.com/ekonomi/20220915173722-532-848425/jokowi-rilis-aturan-pembatasan-kepemilikan-asing-di-perusahaan-efek-ri",
+     "d": "2022-09-15"
+    },
+    {
+     "t": "POJK 3/2026 증권사 자본 요건(detik)",
+     "u": "https://finance.detik.com/bursa-dan-valas/d-8497028/ojk-rilis-aturan-permodalan-perusahaan-efek-dan-mi-ini-rinciannya",
+     "d": "2026-05-20"
+    },
+    {
+     "t": "POJK 27/POJK.04/2014 증권회사 대표자(Wakil) 인가",
+     "u": "https://peraturan.bpk.go.id/Download/120729/pojk%2027-2014.pdf",
+     "d": "2014-11-19"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: Indonesia withholding taxes",
+     "u": "https://taxsummaries.pwc.com/indonesia/corporate/withholding-taxes",
+     "d": "2026-06-11 검토"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: 한국 조세조약 배당 원천세율표",
+     "u": "https://taxsummaries.pwc.com/republic-of-korea/corporate/withholding-taxes",
+     "d": "2026-06-04 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "SG",
+   "name": "싱가포르",
+   "seed": "싱가포르",
+   "lv": "open",
+   "regulator": "MAS(싱가포르 통화청)",
+   "headline": "지분 제한 없음 · 실질지배 취득은 MAS 사전승인 · CEO와 핵심인력 현지 상주",
+   "own": {
+    "v": "외국인 지분 제한 없음. CMS 인가 회사의 실질지배(effective control)를 취득하려면 사전에 MAS 승인(SFA s97A(2)).",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "CMS 라이선스(SFA): 증권 중개(dealing in CMP), 기업금융 자문, 펀드운용 등 업무별. 자문·판매는 FAA 별도.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "기본자본(base capital): 증권 중개(dealing in CMP) S$5만~S$500만(상품·고객·업무에 따라), 기업금융 자문 S$25만. 여러 업무면 가장 높은 기준.",
+    "src": [
+     0,
+     1
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "CEO는 관련 경력 10년 이상·싱가포르 거주, 이사 2명 이상 중 1명 이상 싱가포르 거주, 업무별 싱가포르 상주 전업 대표인력 2명 이상.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "외환 통제 없음. 배당 원천세 없음(법인세 외 추가 과세 없음).",
+    "src": [
+     3
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "MAS 심사: 완결 신청 후 최대 6개월, 예비인가(IPA) 후 6개월(3개월 연장 가능) 안에 인가 조건 충족",
+     "src": [
+      0
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": "Pinetree Securities Pte.(지분 100%, DART 타법인출자현황): 투자자문·IB. 업무 범위 추가 시 CMS 변경 → 국내 해외진출규정 변경보고(사업범위) 대상.",
+   "sources": [
+    {
+     "t": "MAS CMS Licence 인가 기준(admission criteria)",
+     "u": "https://www.mas.gov.sg/regulation/capital-markets/apply-for-licensing-or-registration-of-capital-market-entities/cms-licence",
+     "d": "2026-03-19 갱신"
+    },
+    {
+     "t": "SF(Financial and Margin Requirements) Regulations",
+     "u": "https://sso.agc.gov.sg/SL/SFA2001-RG13",
+     "d": "상시"
+    },
+    {
+     "t": "MAS 실질지배(effective control) 취득 승인 신청서(SFA s97A(2))",
+     "u": "https://www.mas.gov.sg/regulation/forms-and-templates/application-for-approval-to-obtain-effective-control-of-holder-of-cms-licence-under-the-sfa",
+     "d": "2025-01-24 개정"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: Singapore withholding taxes",
+     "u": "https://taxsummaries.pwc.com/singapore/corporate/withholding-taxes",
+     "d": "2026-07-02 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "AE",
+   "name": "아부다비(ADGM)",
+   "seed": "아랍에미리트",
+   "lv": "open",
+   "regulator": "FSRA(ADGM 금융서비스규제청)",
+   "headline": "지분 제한 없음 · 범주별 기본자본 · SEO·준법·MLRO는 UAE 거주자",
+   "own": {
+    "v": "ADGM(금융자유구역)은 외국인 100% 소유 가능. 10% 이상 보유자는 지배주주(controller): 지배주주가 되거나 20%·30%·50%를 넘길 때 FSRA 사전 승인(CIC 서식), 승인 전 거래 종결 불가.",
+    "src": [
+     0,
+     2
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "FSP(Financial Services Permission). 건전성 범주: 1 수신 · 2 자기매매·신용 · 3A 중개(대리·matched principal) · 3B 수탁 · 3C 자산운용 · 4 주선·자문.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "기본자본(USD): 3A 50만(리테일 OTC 파생 200만) · 3B 400만 · 3C 25만 · 4 5만 · 2 200만 · 1 1,000만.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "SEO·컴플라이언스 오피서·MLRO는 UAE 거주자(준법·MLRO는 외주 가능, SEO와 겸직 불가). ADGM 설립법인은 Licensed Director 필요.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "외환 통제 없음(AED 달러 페그). UAE 연방 법인세 9%(과세소득 AED 37.5만 초과분), 적격 자유구역 법인(QFZP)의 적격소득은 0%.",
+    "src": [
+     0,
+     3
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "인가 순서: 사전 미팅 → 신청 → 인터뷰 → 조건부 승인(IPA) → 조건 충족 후 FSP 발급",
+     "src": [
+      0
+     ],
+     "ok": true
+    },
+    {
+     "v": "FSRA는 2025년 PRU 개정 협의(범주 4 상향 등) 진행 → 신청 시점 최신 PRU 재확인",
+     "src": [
+      1
+     ],
+     "ok": true
+    }
+   ],
+   "sources": [
+    {
+     "t": "ADGM Getting Started Guide with FSRA",
+     "u": "https://assets.adgm.com/download/assets/Getting+Started+Guide+with+FSRA.pdf/a8c5b07a589a11efa1111ed8b674bcd6",
+     "d": "2025-05"
+    },
+    {
+     "t": "FSRA lower-risk firms consultation(Pinsent Masons)",
+     "u": "https://www.pinsentmasons.com/out-law/news/adgm-fsra-reduces-regulatory-burden-lower-risk-firms",
+     "d": "2025-05-21"
+    },
+    {
+     "t": "DIFC and ADGM rules on change of control(Mondaq)",
+     "u": "https://webiis08.mondaq.com/financial-services/1701148/difc-and-adgm-rules-on-change-of-control-in-financial-regulated-business",
+     "d": "2025-11-07"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: UAE taxes on corporate income",
+     "u": "https://taxsummaries.pwc.com/united-arab-emirates/corporate/taxes-on-corporate-income",
+     "d": "2026-09-09 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "US",
+   "name": "미국",
+   "seed": "미국",
+   "lv": "open",
+   "regulator": "SEC · FINRA(+ 주 증권당국)",
+   "headline": "지분 제한 없음 · FINRA 25% 이상 지분변경 사전승인 · 신규 BD 통상 3~6개월",
+   "own": {
+    "v": "외국인 지분 제한 없음. 기존 브로커딜러 지분 25% 이상 취득 등 지배구조 변경은 FINRA Rule 1017 사전 승인(CMA). 민감정보 사업은 CFIUS 심사 가능.",
+    "src": [
+     1
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "SEC 브로커딜러 등록(Form BD) + FINRA 회원 가입(NMA) + 영업 주별 등록. 자산운용은 SEC 투자자문업자(RIA) 등록.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "순자본(Rule 15c3-1) 최소 US$5천~25만(고객자산 보관 시 25만), 업무에 따라 상향.",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "거주 요건 없음. 등록 Principal 2명(일반 감독 Series 24, 재무 FINOP Series 27/28), AML 책임자 지정·FINRA 통보(Rule 3310), CCO 지정.",
+    "src": [
+     3,
+     4
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "외환 통제 없음. 배당 원천세 30%, 한미 조세조약 15%(요건 충족 모회사 10%).",
+    "src": [
+     5
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "FINRA 신규 회원 심사는 단순한 경우 통상 3~6개월, 사업 모델이 복잡하면 더 김",
+     "src": [
+      3
+     ],
+     "ok": true
+    }
+   ],
+   "sources": [
+    {
+     "t": "FINRA 신규 회원 가입(NMA)",
+     "u": "https://www.finra.org/rules-guidance/guidance/new-member-application",
+     "d": "상시"
+    },
+    {
+     "t": "FINRA Rule 1017",
+     "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1017",
+     "d": "상시"
+    },
+    {
+     "t": "SEC Rule 15c3-1(eCFR)",
+     "u": "https://www.ecfr.gov/current/title-17/section-240.15c3-1",
+     "d": "상시"
+    },
+    {
+     "t": "How to register with FINRA(InnReg)",
+     "u": "https://www.innreg.com/blog/how-to-register-with-finra",
+     "d": "2025-09-10"
+    },
+    {
+     "t": "FINRA AML FAQ(Rule 3310)",
+     "u": "https://www.finra.org/industry/faq-anti-money-laundering-faq",
+     "d": "상시"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: United States withholding taxes",
+     "u": "https://taxsummaries.pwc.com/united-states/corporate/withholding-taxes",
+     "d": "2026-09-04 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "JP",
+   "name": "일본",
+   "seed": "일본",
+   "lv": "open",
+   "regulator": "금융청(FSA)·관할 재무국",
+   "headline": "지분 제한 없음 · 제1종 최저자본 5천만엔(인수 최대 30억엔) · 자기자본규제비율 120%",
+   "own": {
+    "v": "외국인 지분 제한 없음. 등록 심사에서 주요주주 적격성 확인: 외국 법인은 본국 감독당국이 주요주주의 건전성을 확인해야 함(금상법 제29조의4).",
+    "src": [
+     1
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "금융상품거래업 등록: 제1종(유가증권 중개·인수) · 제2종 · 투자운용업 · 투자조언·대리업.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "제1종 최저자본금 5천만엔(원수 인수 등은 최대 30억엔), 순재산도 같은 수준, 자기자본규제비율 120% 이상(금상법 제29조의4). 2025.5부터 간이 제1종은 1천만엔·비율 요건 면제.",
+    "src": [
+     1,
+     2
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "법정 국내 거주 요건은 규정에 없음. 임원 결격사유·인적 구성 심사(금상법 제29조의4). 실무상 일본 상주 책임자·준법 인력 필요.",
+    "src": [
+     1
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "외환법상 대내직접투자 사후보고(원칙 취득 후 45일). 배당 원천세 20.42%, 한일 조세조약 15%(25% 이상 보유 5%), 부흥특별소득세 2.1% 가산.",
+    "src": [
+     3,
+     4
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "제1종은 일본투자자보호기금 가입 필수(간이 제1종은 면제)",
+     "src": [
+      2
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "sources": [
+    {
+     "t": "금융청 금융상품거래업 등록 안내",
+     "u": "https://www.fsa.go.jp/en/regulated/licensed/index.html",
+     "d": "상시"
+    },
+    {
+     "t": "금융청 FIEA FAQ(등록 요건, 제29조의4)",
+     "u": "https://www.fsa.go.jp/en/laws_regulations/faq_on_fiea/section06.html",
+     "d": "상시"
+    },
+    {
+     "t": "Japan simplified Type I licence(Mondaq)",
+     "u": "https://www.mondaq.com/pdf/1611132.pdf",
+     "d": "2025-04-11"
+    },
+    {
+     "t": "Overview of the FEFTA regulation(Mondaq)",
+     "u": "https://www.mondaq.com/inward-foreign-investment/1383780/overview-of-the-fefta-regulation",
+     "d": "2023-10-31"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: Japan withholding taxes",
+     "u": "https://taxsummaries.pwc.com/japan/corporate/withholding-taxes",
+     "d": "2026-08-07 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "HK",
+   "name": "홍콩",
+   "seed": "홍콩",
+   "lv": "open",
+   "regulator": "SFC(증권선물위원회)",
+   "headline": "지분 제한 없음 · 10% 초과 주요주주 SFC 사전승인 · RO 2명",
+   "own": {
+    "v": "외국인 지분 제한 없음. 의결권·지분 10% 초과 주요주주(간접: 35% 이상 지배 법인 경유 포함)가 되려면 SFC 사전 승인(SFO s132, 무승인 시 형사처벌).",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "Licensed corporation: Type 1 증권 중개 · Type 4 증권 자문 · Type 6 기업금융 · Type 9 자산운용 등 업무별.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "재무자원규칙(FRR) Type 1: 납입자본 HK$500만(증권 신용공여 시 HK$1,000만)·유동자본 HK$300만, 소개 브로커는 유동자본 HK$50만. Type 4·9(고객자산 보관 시) 납입 HK$500만.",
+    "src": [
+     1,
+     3
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "업무별 책임자(RO) 2명 이상, 그중 1명 이상은 집행이사. 업무별로 RO 1명은 항상 감독 가능해야 함(사실상 현지 상주).",
+    "src": [
+     4
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "외환 통제 없음. 배당·이자 원천세 없음.",
+    "src": [
+     5
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "SFC 법인 인가 처리 서약 15주, 실무는 서류 완결도에 따라 4~6개월",
+     "src": [
+      3
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "sources": [
+    {
+     "t": "SFC Licensing",
+     "u": "https://www.sfc.hk/en/Regulatory-functions/Intermediaries/Licensing",
+     "d": "상시"
+    },
+    {
+     "t": "Securities and Futures (Financial Resources) Rules Cap.571N",
+     "u": "https://www.elegislation.gov.hk/hk/cap571N",
+     "d": "상시"
+    },
+    {
+     "t": "Approvals required for transfers of shares of a licensed corporation(Charltons)",
+     "u": "https://www.charltonslaw.com/hong-kong-law/approvals-and-notifications-required-in-relation-to-transfers-of-shares-of-a-licensed-corporation-in-hong-kong/",
+     "d": "2026-04-29 갱신"
+    },
+    {
+     "t": "SFC licensing: financial resources and timeline(Ocorian)",
+     "u": "https://www.ocorian.com/knowledge-hub/insights/sfc-licensing-hong-kong-how-successfully-navigate-application-process",
+     "d": "2025-06-23"
+    },
+    {
+     "t": "SFC Types of intermediary and licensed individual(RO 요건)",
+     "u": "https://sfc.hk/en/Regulatory-functions/Intermediaries/Licensing/Types-of-intermediary-and-licensed-individual",
+     "d": "2025-12-30"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: Hong Kong withholding taxes",
+     "u": "https://taxsummaries.pwc.com/hong-kong-sar/corporate/withholding-taxes",
+     "d": "2026-07-22 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "CN",
+   "name": "중국",
+   "seed": "중국",
+   "lv": "cond",
+   "regulator": "CSRC(증권감독관리위원회) · SAFE(외환관리국)",
+   "headline": "2020.4부터 외국인 지분 한도 폐지 · 업무 수에 따라 등록자본 5천만~5억위안 · 대표처는 영업 불가",
+   "own": {
+    "v": "2020.4.1부터 증권사 외국인 지분 한도 폐지(100% 가능). 외국 지배주주는 본국 금융업 경영·재무 요건(외자 증권사 규칙) 충족 필요.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "CSRC 증권업 인가(중개·자문·인수·자기매매·자산관리 등). 대표처(사무소)는 연락·조사만 가능하며 CSRC 관리 대상.",
+    "src": [
+     0,
+     1
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "증권법 제121조 최저 등록자본(납입): 중개·투자자문·재무자문 5천만위안 · 인수·신용·시장조성·자기매매 중 1개 1억위안 · 2개 이상 5억위안. CSRC가 상향 가능.",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "주요주주·실제 지배자는 재무·신용 건전, 최근 3년 중대 위법 없음. 이사·감사·고위관리자 자격 요건(증권법 제118조).",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "배당 원천세 10%, 한중 조세조약 5%(25% 이상 보유). 외국인투자 자본·이익 송금은 외환등록 후 은행 경유.",
+    "src": [
+     3,
+     0
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "CSRC 심사 기한: 설립 신청 접수 후 6개월, 업무 추가 3개월. 인가 후 15일 내 증권업 허가증 신청(증권법 제119·120조)",
+     "src": [
+      2
+     ],
+     "ok": true
+    },
+    {
+     "v": "국내사 거점 상당수가 대표처(사무소): 영업 행위 시 제재 위험",
+     "src": [
+      1
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "sources": [
+    {
+     "t": "China to scrap limit on foreign ownership of securities firms(China Daily)",
+     "u": "https://investinchina.chinadaily.com.cn/s/202003/16/WS5e6f02df498ea01b9aea1a16/china-to-scrap-limit-on-foreign-ownership-of-securities-firms.html",
+     "d": "2020-03-16"
+    },
+    {
+     "t": "CSRC(영문)",
+     "u": "http://www.csrc.gov.cn/csrc_en/",
+     "d": "상시"
+    },
+    {
+     "t": "중국 증권법(2019 개정) 제118~121조",
+     "u": "https://www.chinajusticeobserver.com/law/x/securities-law-of-china-20191229",
+     "d": "2020-03-01 시행"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: 한국 조세조약 배당 원천세율표",
+     "u": "https://taxsummaries.pwc.com/republic-of-korea/corporate/withholding-taxes",
+     "d": "2026-06-04 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "GB",
+   "name": "영국",
+   "seed": "영국",
+   "lv": "open",
+   "regulator": "FCA(금융행위감독청)",
+   "headline": "지분 제한 없음 · 지배권 취득은 FCA 사전승인(최대 60영업일) · 최저자본 £7.5만~£75만",
+   "own": {
+    "v": "외국인 지분 제한 없음. 인가 회사의 지배권을 취득·증가하려면 사전에 FCA 통지·승인(무승인 취득은 형사처벌), 심사는 완결 통지 후 최대 60영업일. 지분 감소는 통지만.",
+    "src": [
+     1
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "FCA Part 4A 인가(투자회사). 업무별 허가 범위(permission) 지정.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "MIFIDPRU 영구 최저자본: 주문 전달·집행·자문·운용 £7.5만 · 고객자산 보유·MTF £15만 · 자기매매·인수 £75만(여러 업무면 가장 높은 금액).",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "SM&CR: 고위경영자(SMF)는 FCA 사전 승인. FCA가 실효적으로 감독할 수 있는 구조여야 함(그룹 구조·정보 제공, COND 2.3).",
+    "src": [
+     3,
+     4
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "외환 통제 없음. 일반 배당 원천세 없음(REIT 배당 등 예외).",
+    "src": [
+     5
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "인가 심사: 완결 신청은 통상 6개월 내, 불완전 신청은 최대 12개월",
+     "src": [
+      6
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "sources": [
+    {
+     "t": "FCA Authorisation",
+     "u": "https://www.fca.org.uk/firms/authorisation",
+     "d": "상시"
+    },
+    {
+     "t": "FCA Change in control",
+     "u": "https://www.fca.org.uk/firms/change-control",
+     "d": "2026-06-30 갱신"
+    },
+    {
+     "t": "FCA Handbook MIFIDPRU 4.4(영구 최저자본)",
+     "u": "https://www.handbook.fca.org.uk/handbook/MIFIDPRU/4/4.html",
+     "d": "2026-04-06 갱신"
+    },
+    {
+     "t": "FCA Handbook SUP 10C(SM&CR 승인 대상 SMF)",
+     "u": "https://www.handbook.fca.org.uk/handbook/SUP/10C/1.html",
+     "d": "2026-04-24 갱신"
+    },
+    {
+     "t": "FCA Handbook COND 2.3(effective supervision)",
+     "u": "https://www.handbook.fca.org.uk/handbook/COND/2/3.html",
+     "d": "2021-01-01"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: United Kingdom withholding taxes",
+     "u": "https://taxsummaries.pwc.com/united-kingdom/corporate/withholding-taxes",
+     "d": "2026-07-23 검토"
+    },
+    {
+     "t": "FCA How to apply for authorisation",
+     "u": "https://www.fca.org.uk/firms/authorisation/apply",
+     "d": "2026-03-03 갱신"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "IN",
+   "name": "인도",
+   "seed": "인도",
+   "lv": "open",
+   "regulator": "SEBI(증권거래위원회) · RBI(NBFC)",
+   "headline": "금융당국 규제 업종 자동승인 100% · FEMA 신고(FC-GPR) · 거주이사 1명",
+   "own": {
+    "v": "금융당국이 규제하는 금융업은 FDI 자동승인 100%(2016~). 다운스트림 투자·가격 규정(공정가치) 준수.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "SEBI 증권브로커 등록(거래소 회원 경유), 투자자문·PMS·운용사 별도 SEBI 등록. 여신업은 RBI NBFC 등록.",
+    "src": [
+     0,
+     1
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "브로커 순자산 요건은 SEBI·거래소가 업무별로 정함. 여신업(NBFC-ICC) 순자기자금(NOF) ₹2crore → 2025.3 ₹5crore → 2027.3 ₹10crore.",
+    "src": [
+     1,
+     2
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "회사법 제149조(3): 직전 역년에 182일 이상 인도에 체류한 이사 1명 이상.",
+    "src": [
+     3
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "FEMA: 신주 배정 후 30일 내 FC-GPR 신고(FIRMS 포털, 지연 시 FEMA 제15조 조정). 배당 원천세 20%(부가세 별도), 한-인도 조세조약 15%.",
+    "src": [
+     4,
+     5
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "FC-GPR에 SEBI 등록 머천트뱅커 또는 공인회계사의 가치평가서 첨부(가격 규정 준수 입증)",
+     "src": [
+      4
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "sources": [
+    {
+     "t": "DPIIT FDI Policy",
+     "u": "https://dpiit.gov.in/policies-rules-and-acts/policies/foreign-direct-investment-policy",
+     "d": "상시"
+    },
+    {
+     "t": "SEBI",
+     "u": "https://www.sebi.gov.in/",
+     "d": "상시"
+    },
+    {
+     "t": "RBI Scale Based Regulation(NBFC 순자기자금 단계 상향)",
+     "u": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12179",
+     "d": "2021-10-22"
+    },
+    {
+     "t": "Section 149(3) Companies Act 2013(The Legal School)",
+     "u": "https://thelegalschool.in/blog/section-149-3-companies-act-2013",
+     "d": "현행"
+    },
+    {
+     "t": "How to set up a WOS in India(Sansa Legal)",
+     "u": "https://www.sansalegal.com/post/how-to-set-up-a-wholly-owned-subsidiary-in-india-as-a-foreign-company",
+     "d": "2026-08-21"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: India withholding taxes",
+     "u": "https://taxsummaries.pwc.com/india/corporate/withholding-taxes",
+     "d": "2026-05-11 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "MN",
+   "name": "몽골",
+   "seed": "몽골",
+   "lv": "open",
+   "regulator": "FRC(금융규제위원회)",
+   "headline": "일반 지분 제한 없음(외국 국영기업 33% 초과 시 승인) · 외국인투자기업 최소 투자 US$10만",
+   "own": {
+    "v": "일반 제한 없음. 외국 국영기업이 금융업 법인 33% 초과 보유 시 정부 승인. 외국인투자기업은 외국인 1인당 US$10만 이상 출자.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "증권시장법상 FRC 특별허가(중개·딜러·인수·자문 등), 자율규제기구(SRO) 가입 필수.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "업무별 최소자본은 FRC가 결의로 정함(거래소 회원규정도 'FRC가 정한 금액'으로만 규정).",
+    "src": [
+     2
+    ],
+    "ok": false,
+    "why": "금액을 정한 FRC 결의 원문이 공개 웹에 없음(frc.mn 법령 목록·거래소 규정·ADB 가이드 확인). 진출 검토 시 FRC에 직접 확인."
+   },
+   "local": {
+    "v": "임원 적격성(fit & proper) 심사. 3년 사업·리스크 계획 제출.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "배당 원천세 20%, 한-몽 조세조약 5%(단일).",
+    "src": [
+     3,
+     4
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "증권시장 서비스를 하는 인수·감사·평가·법률회사도 FRC 인가 대상, 인가 목록은 FRC 공개. 외국인투자기업은 외국인 지분 25% 이상·1인당 US$10만 이상",
+     "src": [
+      5
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "sources": [
+    {
+     "t": "Overview of the Capital Market Regulation of Mongolia(Legal 500)",
+     "u": "https://www.legal500.com/developments/thought-leadership/overview-of-the-capital-market-regulation-of-mongolia/",
+     "d": "2025-05-20"
+    },
+    {
+     "t": "FRC",
+     "u": "https://www.frc.mn/",
+     "d": "상시"
+    },
+    {
+     "t": "몽골증권거래소 회원규정(2018/07 결의) 2.1.4",
+     "u": "https://mse.mn/uploads/images/laws/memberhip_rules.pdf",
+     "d": "2018-05-18"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: Mongolia withholding taxes",
+     "u": "https://taxsummaries.pwc.com/mongolia/corporate/withholding-taxes",
+     "d": "2026-06-08 검토"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: 한국 조세조약 배당 원천세율표",
+     "u": "https://taxsummaries.pwc.com/republic-of-korea/corporate/withholding-taxes",
+     "d": "2026-06-04 검토"
+    },
+    {
+     "t": "ADB Bond Market Guide for Mongolia",
+     "u": "https://www.adb.org/sites/default/files/publication/681326/bond-market-guide-mongolia.pdf",
+     "d": "2021-02"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "BR",
+   "name": "브라질",
+   "seed": "브라질",
+   "lv": "cond",
+   "regulator": "BCB(중앙은행) · CVM(증권위원회)",
+   "headline": "외국인 지분은 BCB 승인(2019 대통령령 위임) · 임원 브라질 거주 · 비거주자 배당 원천세 10%",
+   "own": {
+    "v": "외국인의 금융기관 지분 참여·증액은 사안별 승인 필요. 시행령 10.029/2019로 대통령령 대신 BCB가 승인.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "증권사(CTVM)·유통사(DTVM)는 BCB 인가(CMN 4.970, 2022.7.1~) + CVM 등록, 설립·운영은 CMN 5.008(2022.5.2 시행). B3 거래소 참가자 자격은 별도.",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "최소 납입자본·순자산 한도는 CMN 2.099 기준(CMN 5.008이 준용), 바젤 자본비율 적용.",
+    "src": [
+     2
+    ],
+    "ok": true
+   },
+   "local": {
+    "v": "CTVM·DTVM 임원(diretores)은 브라질 거주자여야 함(CMN 4.970). 일반 회사는 2021년부터 비거주 임원 허용(법 14.195/21)이지만 금융기관은 예외.",
+    "src": [
+     2,
+     3
+    ],
+    "ok": true
+   },
+   "fx": {
+    "v": "외국인 직접투자는 BCB 외국자본 등록. 비거주자 배당 원천세(IRRF) 10%, 한-브 조세조약 10/15%(국내세율 10%가 상한).",
+    "src": [
+     4
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "지배주주·임원 요건 심사와 법인의 주요 행위(정관 변경 등)는 BCB 사전 승인(CMN 4.970)",
+     "src": [
+      2
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "sources": [
+    {
+     "t": "Decree 10.029/2019 해설(Machado Meyer)",
+     "u": "https://www.machadomeyer.com.br/en/recent-publications/publications/banking-insurance-and-finance/decree-facilitates-the-participation-of-foreigners-in-the-national-financial-system",
+     "d": "2019-10-11"
+    },
+    {
+     "t": "BCB",
+     "u": "https://www.bcb.gov.br/en",
+     "d": "상시"
+    },
+    {
+     "t": "CMN 결의 5.008·5.009(CTVM·DTVM 규정 통합), 4.970(인가 절차) 해설(Cepeda)",
+     "u": "https://cepeda.law/resolucoes-cmn-no-5-008-e-5-009-bacen-atualiza-as-normas-aplicaveis-aos-intermediarios-de-valores-mobiliarios/?lang=en",
+     "d": "2022-03-24"
+    },
+    {
+     "t": "Brazilian companies and non-resident officers(Baptista Luz)",
+     "u": "https://www.baptista.com.br/brazilian-companies-and-the-election-of-non-resident-officers/?lang=en",
+     "d": "2022-02-25"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: Brazil withholding taxes",
+     "u": "https://taxsummaries.pwc.com/brazil/corporate/withholding-taxes",
+     "d": "2026-09-23 검토"
+    }
+   ],
+   "checked": "2026-10-21",
+   "ref": false
+  },
+  {
+   "code": "TH",
+   "name": "태국",
+   "seed": "태국",
+   "lv": "cap",
+   "regulator": "Thai SEC · 재무부",
+   "headline": "증권사 외국인 지분 49% 상한 · 과반은 예외적 승인 · 2024.9 진입 절차 간소화",
+   "own": {
+    "v": "증권사 외국인 지분 일반 49% 상한(SEC 규정, 외국인사업법 면허 면제 개정 후에도 유지). 과반 외국인 보유는 전략적 파트너 등 예외적 승인.",
+    "src": [
+     1,
+     2
+    ],
+    "ok": true
+   },
+   "lic": {
+    "v": "증권업 라이선스(중개·딜러·인수·자문·운용). 2024.9 SEC 지침으로 외국 증권사 진입 절차 간소화.",
+    "src": [
+     0
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "업무 범위별 납입자본 요건(SEC 고시).",
+    "src": [
+     0
+    ],
+    "ok": false,
+    "why": "참고 시장(국내사 현지법인 없음): 업무별 기준을 정한 Thai SEC 고시의 영문 원문을 이번에 찾지 못함. 진출 검토 시 SEC 원문 확인."
+   },
+   "local": {
+    "v": "임원 적격성 SEC 심사, 외국인 임직원 취업허가.",
+    "src": [
+     0
+    ],
+    "ok": false,
+    "why": "참고 시장(국내사 현지법인 없음): 업무별 기준을 정한 Thai SEC 고시의 영문 원문을 이번에 찾지 못함. 진출 검토 시 SEC 원문 확인."
+   },
+   "fx": {
+    "v": "배당 원천세 10%, 한-태 조세조약 10%.",
+    "src": [
+     3
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "국내사 현지법인이 없는 시장: 참고용",
+     "src": [
+      0
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "ref": true,
+   "sources": [
+    {
+     "t": "New Thai SEC Guidelines Simplify Market Entry(Tilleke & Gibbins)",
+     "u": "https://conventuslaw.com/report/thailand-new-thai-sec-guidelines-simplify-market-entry-for-foreign-securities-businesses/",
+     "d": "2024-11-04"
+    },
+    {
+     "t": "Thailand removes foreign business licensing requirement(DFDL)",
+     "u": "https://www.dfdl.com/insights/legal-and-tax-updates/thailand-removes-foreign-business-licensing-requirement/",
+     "d": "2026-05-18"
+    },
+    {
+     "t": "Clearstream: Investment regulation Thailand",
+     "u": "https://www.clearstream.com/clearstream-en/res-library/market-coverage/investment-regulation-thailand-1280826",
+     "d": "2021-03-25"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: Thailand withholding taxes",
+     "u": "https://taxsummaries.pwc.com/thailand/corporate/withholding-taxes",
+     "d": "2026-08-24 검토"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "code": "KH",
+   "name": "캄보디아",
+   "seed": "캄보디아",
+   "lv": "open",
+   "regulator": "SERC(증권거래규제청)",
+   "headline": "업무별 자본·보증예치금 요건 · 순자본비율 150% 이상",
+   "own": {
+    "v": "외국인 지분 제한 없는 것으로 알려짐.",
+    "src": [
+     0
+    ],
+    "ok": false,
+    "why": "SERC 현행 Prakas 원문이 웹에 공개돼 있지 않음(serc.gov.kh 법령 목록만 확인, 최신 수치는 2012 보도). 진출 검토 시 SERC에 직접 확인."
+   },
+   "lic": {
+    "v": "증권사 라이선스: 인수 · 딜러 · 브로커 · 투자자문, 파생상품 브로커 별도.",
+    "src": [
+     0,
+     1
+    ],
+    "ok": true
+   },
+   "cap": {
+    "v": "2012 SECC 기준: 인수 자기자본 400억리엘+예치 40억 · 딜러 250억+25억 · 브로커 60억+10억. 순자본비율 150% 이상.",
+    "src": [
+     0
+    ],
+    "ok": false,
+    "why": "SERC 현행 Prakas 원문이 웹에 공개돼 있지 않음(serc.gov.kh 법령 목록만 확인, 최신 수치는 2012 보도). 진출 검토 시 SERC에 직접 확인."
+   },
+   "local": {
+    "v": "임원 SERC 승인.",
+    "src": [
+     1
+    ],
+    "ok": false,
+    "why": "SERC 현행 Prakas 원문이 웹에 공개돼 있지 않음(serc.gov.kh 법령 목록만 확인, 최신 수치는 2012 보도). 진출 검토 시 SERC에 직접 확인."
+   },
+   "fx": {
+    "v": "비거주자 배당 원천세 14%(CSX 상장주식 투자자 3년간 50% 감면). CSX 호가는 리엘화.",
+    "src": [
+     2,
+     3
+    ],
+    "ok": true
+   },
+   "quirks": [
+    {
+     "v": "자료가 오래됨(2012). 진출 검토 시 SERC 현행 Prakas 원문 필수",
+     "src": [
+      0
+     ],
+     "ok": true
+    }
+   ],
+   "hanwha": null,
+   "ref": true,
+   "sources": [
+    {
+     "t": "SECC sets minimum capital requirement(Vietstock, 2012)",
+     "u": "https://en.vietstock.vn/2012/05/secc-sets-minimum-capital-requirement-981-126604.htm",
+     "d": "2012-05"
+    },
+    {
+     "t": "SERC Prakas 001/21 해설(Rajah & Tann)",
+     "u": "https://www.rajahtannasia.com/media/4330/rtsh_serc-issues-prakas.pdf",
+     "d": "2021-01-18"
+    },
+    {
+     "t": "KPMG Investing in Cambodia 2023",
+     "u": "https://assets.kpmg.com/content/dam/kpmg/kh/pdf/publication/2023/kpmg-investing-in-cambodia-2023-and-beyond.pdf",
+     "d": "2023"
+    },
+    {
+     "t": "PwC Worldwide Tax Summaries: Cambodia withholding taxes",
+     "u": "https://taxsummaries.pwc.com/cambodia/corporate/withholding-taxes",
+     "d": "2026-04-02 검토"
+    }
+   ],
+   "checked": "2026-10-21"
+  }
+ ]
+}

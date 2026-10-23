@@ -1,0 +1,54 @@
+name: Daily news (국내 증권사 해외진출, no LLM)
+
+on:
+  schedule:
+    - cron: "30 21 * * *"   # 매일 06:30 KST
+    - cron: "30 3 * * 1-5"  # 평일 12:30 KST
+    - cron: "30 8 * * 1-5"  # 평일 17:30 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 뉴스 수집 (Google News RSS · 매체 화이트리스트)
+        run: python scripts/fetch_news.py
+      - name: 국가별 매크로 뉴스 (핵심 포인트용)
+        continue-on-error: true
+        run: python scripts/fetch_macro_news.py
+      - name: 해외 거점(증권사 × 나라)별 뉴스 (5개년 손익 추이 표, 하루 한 번)
+        if: github.event_name != 'schedule' || github.event.schedule == '30 21 * * *'
+        continue-on-error: true
+        run: python scripts/fetch_hub_news.py
+      - name: Commit
+        id: commit
+        run: |
+          git config user.name "gnd-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/domestic/news.json
+          for f in site/data/global/macro_news.json site/data/domestic/hub_news.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "data: news $(date -u +%FT%H:%M)"
+            git pull --rebase --autostash -X theirs origin "${GITHUB_REF_NAME}"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Redeploy Pages
+        if: steps.commit.outputs.changed == 'true' && github.ref_name == 'main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

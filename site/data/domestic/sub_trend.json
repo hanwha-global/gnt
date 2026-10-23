@@ -1,0 +1,2545 @@
+{
+ "updated_at": "2026-10-23T04:26:34+00:00",
+ "source": "DART 사업보고서(토스 감사보고서)·반기보고서 연결재무제표 주석 '종속기업·관계기업 요약재무정보'",
+ "unit": "백만원",
+ "periods": [
+  "FY2021",
+  "FY2022",
+  "FY2023",
+  "FY2024",
+  "FY2025",
+  "1H2026"
+ ],
+ "filing": {
+  "FY2021": {
+   "label": "2021 사업보고서",
+   "first": "20220310",
+   "last": "20220324",
+   "n": 9
+  },
+  "FY2022": {
+   "label": "2022 사업보고서",
+   "first": "20230309",
+   "last": "20230404",
+   "n": 10
+  },
+  "FY2023": {
+   "label": "2023 사업보고서",
+   "first": "20240312",
+   "last": "20240404",
+   "n": 10
+  },
+  "FY2024": {
+   "label": "2024 사업보고서",
+   "first": "20250306",
+   "last": "20250404",
+   "n": 10
+  },
+  "FY2025": {
+   "label": "2025 사업보고서",
+   "first": "20260310",
+   "last": "20260401",
+   "n": 10
+  },
+  "1H2026": {
+   "label": "2026 반기보고서",
+   "first": "20260813",
+   "last": "20260814",
+   "n": 9
+  }
+ },
+ "firms": {
+  "미래에셋증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20220316001023",
+     "rcept_dt": "20220316",
+     "first_dt": "20220316",
+     "rows": 28
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20230315001134",
+     "rcept_dt": "20230315",
+     "first_dt": "20230315",
+     "rows": 28
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20240318000604",
+     "rcept_dt": "20240318",
+     "first_dt": "20240318",
+     "rows": 27
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250814004060",
+     "rcept_dt": "20250814",
+     "first_dt": "20250319",
+     "rows": 36
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260515002972",
+     "rcept_dt": "20260515",
+     "first_dt": "20260316",
+     "rows": 39
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260814004118",
+     "rcept_dt": "20260814",
+     "first_dt": "20260814",
+     "rows": 0
+    }
+   },
+   "entities": [
+    {
+     "name": "Mirae Asset Securities (UK) Ltd.",
+     "country": "영국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 7987.0,
+       "ni": -1232.0
+      },
+      "FY2022": {
+       "rev": 32926.0,
+       "ni": 13043.0
+      },
+      "FY2023": {
+       "rev": 17106.0,
+       "ni": -25403.0
+      },
+      "FY2024": {
+       "rev": 20342.0,
+       "ni": 3728.0
+      },
+      "FY2025": {
+       "rev": 80677.0,
+       "ni": -4743.0
+      }
+     },
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "consolidated": false,
+     "children": 3,
+     "business": "증권중개, 투자업 및 투자자문업",
+     "established": "1991.05.03",
+     "holding": true
+    },
+    {
+     "name": "Mirae Asset Securities Holdings (USA) Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 46.0,
+       "ni": -34.0
+      },
+      "FY2022": {
+       "rev": 457.0,
+       "ni": -14620.0
+      },
+      "FY2023": {
+       "rev": 518.0,
+       "ni": -962.0
+      },
+      "FY2024": {
+       "rev": 658.0,
+       "ni": -59.0
+      },
+      "FY2025": {
+       "rev": 2506.0,
+       "ni": 1627.0
+      }
+     },
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "consolidated": false,
+     "children": 3,
+     "business": "기타금융업",
+     "established": "2018.03.27",
+     "holding": true
+    },
+    {
+     "name": "Mirae Asset Securities (USA) Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 166351.0,
+       "ni": 23975.0
+      },
+      "FY2022": {
+       "rev": 708386.0,
+       "ni": 23866.0
+      },
+      "FY2023": {
+       "rev": 2220383.0,
+       "ni": 23370.0
+      },
+      "FY2024": {
+       "rev": 3571358.0,
+       "ni": 79119.0
+      },
+      "FY2025": {
+       "rev": 4067673.0,
+       "ni": 187136.0
+      }
+     },
+     "parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities Holdings (USA) Inc.",
+     "business": "증권중개 및 투자업",
+     "established": "1992.07.07",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Securities & Investments (USA), LLC",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 33048.0,
+       "ni": 19752.0
+      },
+      "FY2022": {
+       "rev": 16870.0,
+       "ni": 4011.0
+      },
+      "FY2023": {
+       "rev": 5673.0,
+       "ni": -24664.0
+      },
+      "FY2024": {
+       "rev": 4849.0,
+       "ni": -6508.0
+      },
+      "FY2025": {
+       "rev": 10952.0,
+       "ni": -15947.0
+      }
+     },
+     "parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities Holdings (USA) Inc.",
+     "business": "유가증권의 고유재산매매",
+     "established": "2018.04.25",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Securities (HK) Limited",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 345152.0,
+       "ni": 66054.0
+      },
+      "FY2022": {
+       "rev": 319556.0,
+       "ni": 20272.0
+      },
+      "FY2023": {
+       "rev": 357195.0,
+       "ni": -20184.0
+      },
+      "FY2024": {
+       "rev": 677256.0,
+       "ni": 67175.0
+      },
+      "FY2025": {
+       "rev": 1202014.0,
+       "ni": 117394.0
+      }
+     },
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "consolidated": false,
+     "children": 8,
+     "business": "증권중개 및 투자업",
+     "established": "2007.01.11",
+     "holding": true
+    },
+    {
+     "name": "Mirae Asset Securities (Vietnam) JSC",
+     "country": "베트남",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 127415.0,
+       "ni": 42008.0
+      },
+      "FY2022": {
+       "rev": 146428.0,
+       "ni": 37284.0
+      },
+      "FY2023": {
+       "rev": 139735.0,
+       "ni": 32381.0
+      },
+      "FY2024": {
+       "rev": 140727.0,
+       "ni": 37164.0
+      },
+      "FY2025": {
+       "rev": 168178.0,
+       "ni": 41425.0
+      }
+     },
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 99.9,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (HK) Limited",
+     "business": "증권중개 및 투자업",
+     "established": "2007.12.18",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Securities (Singapore) Pte. Ltd.",
+     "country": "싱가포르",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 3433.0,
+       "ni": -3038.0
+      },
+      "FY2022": {
+       "rev": 3869.0,
+       "ni": -3019.0
+      },
+      "FY2023": {
+       "rev": 7634.0,
+       "ni": 2367.0
+      },
+      "FY2024": {
+       "rev": 6008.0,
+       "ni": -1855.0
+      },
+      "FY2025": {
+       "rev": 10337.0,
+       "ni": 4052.0
+      }
+     },
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (HK) Limited",
+     "business": "유가증권의 위탁매매 및 고유재산매매",
+     "established": "2012.07.12",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Securities Mongolia UTsK LLC",
+     "country": "몽골",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 283.0,
+       "ni": 5.0
+      },
+      "FY2022": {
+       "rev": 1198.0,
+       "ni": 618.0
+      },
+      "FY2023": {
+       "rev": 996.0,
+       "ni": 353.0
+      },
+      "FY2024": {
+       "rev": 651.0,
+       "ni": 73.0
+      },
+      "FY2025": {
+       "rev": 1368.0,
+       "ni": 435.0
+      }
+     },
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 83.16,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (HK) Limited",
+     "business": "유가증권의 위탁매매 및 고유재산매매",
+     "established": "2013.06.24",
+     "holding": false
+    },
+    {
+     "name": "PT. Mirae Asset Sekuritas Indonesia",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 86260.0,
+       "ni": 30756.0
+      },
+      "FY2022": {
+       "rev": 93291.0,
+       "ni": 6797.0
+      },
+      "FY2023": {
+       "rev": 54652.0,
+       "ni": -12596.0
+      },
+      "FY2024": {
+       "rev": 48902.0,
+       "ni": -11683.0
+      },
+      "FY2025": {
+       "rev": 76537.0,
+       "ni": 22321.0
+      }
+     },
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 99.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (HK) Limited",
+     "business": "유가증권의 위탁매매 및 고유재산매매",
+     "established": "2013.08.01",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Capital Markets (India) Private Limited",
+     "country": "인도",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 47436.0,
+       "ni": 23405.0
+      },
+      "FY2022": {
+       "rev": 26509.0,
+       "ni": -3796.0
+      },
+      "FY2023": {
+       "rev": 59182.0,
+       "ni": 6160.0
+      },
+      "FY2024": {
+       "rev": 99725.0,
+       "ni": 16268.0
+      },
+      "FY2025": {
+       "rev": 113615.0,
+       "ni": 15092.0
+      }
+     },
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "consolidated": false,
+     "children": 1,
+     "business": "유가증권의 위탁매매 및 고유재산매매",
+     "established": "2017.10.06",
+     "holding": true
+    },
+    {
+     "name": "Mirae Asset (Brasil) CCTVM LTDA.",
+     "country": "브라질",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 16479.0,
+       "ni": 696.0
+      },
+      "FY2022": {
+       "rev": 31677.0,
+       "ni": 6856.0
+      },
+      "FY2023": {
+       "rev": 35754.0,
+       "ni": 7092.0
+      },
+      "FY2024": {
+       "rev": 38394.0,
+       "ni": 4808.0
+      },
+      "FY2025": {
+       "rev": 61354.0,
+       "ni": 6673.0
+      }
+     },
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (HK) Limited",
+     "business": "유가증권의 위탁매매 및 고유재산매매",
+     "established": "2010.08.17",
+     "holding": false
+    },
+    {
+     "name": "Goldenberg Hehmeyer LLP",
+     "country": "영국",
+     "ref": false,
+     "values": {
+      "FY2023": {
+       "rev": 10411.0,
+       "ni": -15422.0
+      },
+      "FY2024": {
+       "rev": 9451.0,
+       "ni": -4452.0
+      },
+      "FY2025": {
+       "rev": 18884.0,
+       "ni": 598.0
+      }
+     },
+     "parent": "Mirae Asset Securities (UK) Ltd.",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (UK) Ltd.",
+     "business": "증권중개",
+     "established": "2023.05.15",
+     "holding": false
+    },
+    {
+     "name": "GHCO Europe Investment Services S.A.",
+     "country": "그리스",
+     "ref": false,
+     "values": {
+      "FY2023": {
+       "rev": 4251.0,
+       "ni": 824.0
+      },
+      "FY2024": {
+       "rev": 3830.0,
+       "ni": -522.0
+      },
+      "FY2025": {
+       "rev": 4793.0,
+       "ni": 749.0
+      }
+     },
+     "parent": "Mirae Asset Securities (UK) Ltd.",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (UK) Ltd.",
+     "business": "유가증권의 고유재산매매",
+     "established": "2023.05.15",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Securities & Investments (UK) Ltd",
+     "country": "영국",
+     "ref": false,
+     "values": {
+      "FY2024": {
+       "rev": 8450.0,
+       "ni": -16887.0
+      },
+      "FY2025": {
+       "rev": 66634.0,
+       "ni": 31072.0
+      }
+     },
+     "parent": "Mirae Asset Securities (UK) Ltd.",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (UK) Ltd.",
+     "business": "유가증권의 고유재산매매",
+     "established": "2024.04.30",
+     "holding": false
+    },
+    {
+     "name": "Human Value Developers Private Limited",
+     "country": "인도",
+     "ref": false,
+     "values": {
+      "FY2024": {
+       "rev": 2.0,
+       "ni": -101.0
+      },
+      "FY2025": {
+       "rev": 845.0,
+       "ni": 627.0
+      }
+     },
+     "parent": "미래에셋증권 주식회사",
+     "own": 100.0,
+     "consolidated": false,
+     "children": 1,
+     "business": "기타금융업",
+     "established": "2024.11.27",
+     "holding": true
+    },
+    {
+     "name": "Sharekhan Limited",
+     "country": "인도",
+     "ref": false,
+     "values": {
+      "FY2024": {
+       "rev": 22608.0,
+       "ni": -17626.0
+      },
+      "FY2025": {
+       "rev": 237095.0,
+       "ni": 38813.0
+      }
+     },
+     "parent": "Mirae Asset Capital Markets (India) Private Limited",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Capital Markets (India) Private Limited",
+     "children": 1,
+     "business": "유가증권의 위탁매매 등",
+     "established": "2024.11.27",
+     "holding": true
+    },
+    {
+     "name": "Espresso Financial Services Private Limited",
+     "country": "인도",
+     "ref": false,
+     "values": {
+      "FY2024": {
+       "rev": 217.0,
+       "ni": -5290.0
+      },
+      "FY2025": {
+       "rev": 429.0,
+       "ni": -133.0
+      }
+     },
+     "parent": "Sharekhan Limited",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Sharekhan Limited",
+     "business": "-",
+     "established": null,
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Sharekhan Financial Services Limited",
+     "country": "인도",
+     "ref": false,
+     "values": {
+      "FY2024": {
+       "rev": 832.0,
+       "ni": 515.0
+      },
+      "FY2025": {
+       "rev": 10343.0,
+       "ni": 5745.0
+      }
+     },
+     "parent": "Human Value Developers Private Limited",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Human Value Developers Private Limited",
+     "business": "여신금융업",
+     "established": "2024.11.27",
+     "holding": false
+    },
+    {
+     "name": "Global Trading X LLC",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": 5.0,
+       "ni": -324.0
+      }
+     },
+     "parent": "Mirae Asset SecuritiesHoldings (USA) Inc.",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities Holdings (USA) Inc.",
+     "business": "유가증권의 고유재산 매매",
+     "established": "2025.04.30",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Technology Innovation Center (Shenzhen) Co., Ltd",
+     "country": "중국",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": null,
+       "ni": -49.0
+      }
+     },
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (HK) Limited",
+     "business": "기타",
+     "established": "2025.12.09",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Securities Finance (HK) Limited",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": 814.0,
+       "ni": -103.0
+      }
+     },
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (HK) Limited",
+     "business": "기타금융",
+     "established": "2025.04.28",
+     "holding": false
+    },
+    {
+     "name": "Mirae Asset Securities Investment (HK) Limited",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": 2130.0,
+       "ni": 1220.0
+      }
+     },
+     "parent": "Mirae Asset Securities (HK)Limited",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Mirae Asset Securities (HK) Limited",
+     "business": "유가증권의 고유재산 매매",
+     "established": "2025.04.28",
+     "holding": false
+    }
+   ]
+  },
+  "한국투자증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20250321000825",
+     "rcept_dt": "20250321",
+     "first_dt": "20220324",
+     "rows": 11
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20250321000833",
+     "rcept_dt": "20250321",
+     "first_dt": "20230323",
+     "rows": 12
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20250321000842",
+     "rcept_dt": "20250321",
+     "first_dt": "20240322",
+     "rows": 13
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250321000977",
+     "rcept_dt": "20250321",
+     "first_dt": "20250321",
+     "rows": 18
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260515000880",
+     "rcept_dt": "20260515",
+     "first_dt": "20260320",
+     "rows": 20
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260930000623",
+     "rcept_dt": "20260930",
+     "first_dt": "20260814",
+     "rows": 19
+    }
+   },
+   "entities": [
+    {
+     "name": "Korea Investment & Securities Asia, Ltd.",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 52348.4,
+       "ni": -1703.4
+      },
+      "FY2022": {
+       "rev": 112507.3,
+       "ni": 2322.2
+      },
+      "FY2023": {
+       "rev": 117009.1,
+       "ni": 36973.4
+      },
+      "FY2024": {
+       "rev": 172462.5,
+       "ni": 15625.3
+      },
+      "FY2025": {
+       "rev": 74684.8,
+       "ni": 10412.7
+      },
+      "1H2026": {
+       "rev": 31916.7,
+       "ni": 10467.2
+      }
+     },
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "1997.12.02",
+     "holding": false
+    },
+    {
+     "name": "Korea Investment & Securities Europe, Ltd.",
+     "country": "영국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 1667.0,
+       "ni": 722.3
+      },
+      "FY2022": {
+       "rev": 842.7,
+       "ni": -360.1
+      },
+      "FY2023": {
+       "rev": 1319.5,
+       "ni": 262.8
+      },
+      "FY2024": {
+       "rev": 1556.7,
+       "ni": 220.3
+      },
+      "FY2025": {
+       "rev": 1657.4,
+       "ni": 154.5
+      },
+      "1H2026": {
+       "rev": 1705.4,
+       "ni": 730.1
+      }
+     },
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "1995.04.24",
+     "holding": false
+    },
+    {
+     "name": "Korea Investment & Securities America, Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 5224.1,
+       "ni": 1878.4
+      },
+      "FY2022": {
+       "rev": 2080.1,
+       "ni": -1529.4
+      },
+      "FY2023": {
+       "rev": 6968.3,
+       "ni": 1726.7
+      },
+      "FY2024": {
+       "rev": 16072.5,
+       "ni": 4155.5
+      },
+      "FY2025": {
+       "rev": 18127.0,
+       "ni": 6052.5
+      },
+      "1H2026": {
+       "rev": 12417.8,
+       "ni": 3629.9
+      }
+     },
+     "parent": "Korea Investment & Securities US, Inc.",
+     "own": 100.0,
+     "consolidated": false,
+     "parent_entity": "Korea Investment& Securities US, Inc.",
+     "business": "금융투자업",
+     "established": "2000.04.18",
+     "holding": false
+    },
+    {
+     "name": "Korea Investment & Securities Singapore Pte. Ltd.",
+     "country": "싱가포르",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 2626.9,
+       "ni": 1042.5
+      },
+      "FY2022": {
+       "rev": 2047.8,
+       "ni": 409.5
+      },
+      "FY2023": {
+       "rev": 2755.4,
+       "ni": 924.5
+      },
+      "FY2024": {
+       "rev": 3070.7,
+       "ni": 417.2
+      },
+      "FY2025": {
+       "rev": 3265.5,
+       "ni": 763.2
+      },
+      "1H2026": {
+       "rev": 2890.9,
+       "ni": 1409.8
+      }
+     },
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "2008.02.22",
+     "holding": false
+    },
+    {
+     "name": "KIS Vietnam Securities Corporation",
+     "country": "베트남",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 153204.2,
+       "ni": 28123.9
+      },
+      "FY2022": {
+       "rev": 162320.2,
+       "ni": 6667.4
+      },
+      "FY2023": {
+       "rev": 133236.5,
+       "ni": 26118.8
+      },
+      "FY2024": {
+       "rev": 131613.8,
+       "ni": 24126.3
+      },
+      "FY2025": {
+       "rev": 155851.1,
+       "ni": 31653.6
+      },
+      "1H2026": {
+       "rev": 96804.7,
+       "ni": 19489.7
+      }
+     },
+     "parent": "한국투자증권㈜",
+     "own": 99.84,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "2010.11.29",
+     "holding": false
+    },
+    {
+     "name": "Korea Investment& Securities US, Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 556.8,
+       "ni": -1168.2
+      },
+      "FY2022": {
+       "rev": 5664.6,
+       "ni": -1534.0
+      },
+      "FY2023": {
+       "rev": 25839.7,
+       "ni": 9289.8
+      },
+      "FY2024": {
+       "rev": 35727.6,
+       "ni": 16924.0
+      },
+      "FY2025": {
+       "rev": 59411.2,
+       "ni": 26813.8
+      },
+      "1H2026": {
+       "rev": 26715.1,
+       "ni": 11264.6
+      }
+     },
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "consolidated": false,
+     "children": 1,
+     "business": "금융투자업",
+     "established": "2021.01.08",
+     "holding": true
+    },
+    {
+     "name": "PT Korea Investment & Sekuritas Indonesia",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 11582.7,
+       "ni": -6048.0
+      },
+      "FY2022": {
+       "rev": 15705.9,
+       "ni": -968.9
+      },
+      "FY2023": {
+       "rev": 15172.7,
+       "ni": -9.6
+      },
+      "FY2024": {
+       "rev": 10534.6,
+       "ni": 500.0
+      },
+      "FY2025": {
+       "rev": 18554.9,
+       "ni": 4478.9
+      },
+      "1H2026": {
+       "rev": 2269.8,
+       "ni": -3787.5
+      }
+     },
+     "parent": "한국투자증권㈜",
+     "own": 100.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "2018.06.26",
+     "holding": false
+    },
+    {
+     "name": "PT KISI Asset management",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 848.6,
+       "ni": -582.8
+      },
+      "FY2022": {
+       "rev": 1207.2,
+       "ni": -315.9
+      },
+      "FY2023": {
+       "rev": 1043.0,
+       "ni": -829.6
+      },
+      "FY2024": {
+       "rev": 1842.8,
+       "ni": -858.9
+      },
+      "FY2025": {
+       "rev": 4862.8,
+       "ni": 94.9
+      },
+      "1H2026": {
+       "rev": 4511.9,
+       "ni": 558.5
+      }
+     },
+     "parent": "한국투자신탁운용(주)",
+     "own": 99.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "2019.04.18",
+     "holding": false
+    },
+    {
+     "name": "SF Credit Partners, LLC",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2023": {
+       "rev": 6637.4,
+       "ni": -778.4
+      },
+      "FY2024": {
+       "rev": 23184.6,
+       "ni": 4508.8
+      },
+      "FY2025": {
+       "rev": 13996.8,
+       "ni": -417.2
+      },
+      "1H2026": {
+       "rev": 6319.6,
+       "ni": 4465.9
+      }
+     },
+     "parent": "한국투자증권㈜",
+     "own": 65.1,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "2023.01.17",
+     "holding": false
+    }
+   ]
+  },
+  "삼성증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20220310000784",
+     "rcept_dt": "20220310",
+     "first_dt": "20220310",
+     "rows": 3
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20230309000572",
+     "rcept_dt": "20230309",
+     "first_dt": "20230309",
+     "rows": 3
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20240313001446",
+     "rcept_dt": "20240313",
+     "first_dt": "20240313",
+     "rows": 3
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250306000628",
+     "rcept_dt": "20250306",
+     "first_dt": "20250306",
+     "rows": 3
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260312001379",
+     "rcept_dt": "20260312",
+     "first_dt": "20260312",
+     "rows": 3
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260814002836",
+     "rcept_dt": "20260814",
+     "first_dt": "20260814",
+     "rows": 4
+    }
+   },
+   "entities": [
+    {
+     "name": "Samsung Securities (America) Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 2614.1,
+       "ni": 569.7
+      },
+      "FY2022": {
+       "rev": 3888.2,
+       "ni": 613.3
+      },
+      "FY2023": {
+       "rev": 6007.3,
+       "ni": 1862.7
+      },
+      "FY2024": {
+       "rev": 6684.3,
+       "ni": 1982.7
+      },
+      "FY2025": {
+       "rev": 7278.0,
+       "ni": 1888.1
+      },
+      "1H2026": {
+       "rev": 3596.9,
+       "ni": 1377.8
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "증권중개",
+     "established": "1998.10.01",
+     "holding": false
+    },
+    {
+     "name": "Samsung Securities (Europe) Ltd.",
+     "country": "영국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 2302.6,
+       "ni": 329.6
+      },
+      "FY2022": {
+       "rev": 2792.9,
+       "ni": 687.9
+      },
+      "FY2023": {
+       "rev": 4329.9,
+       "ni": 1635.0
+      },
+      "FY2024": {
+       "rev": 5414.6,
+       "ni": 2176.4
+      },
+      "FY2025": {
+       "rev": 5219.7,
+       "ni": 1980.3
+      },
+      "1H2026": {
+       "rev": 2889.0,
+       "ni": 953.7
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "증권중개",
+     "established": "1995.12.04",
+     "holding": false
+    },
+    {
+     "name": "Samsung Securities (Asia) Ltd.",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 3622.1,
+       "ni": 707.9
+      },
+      "FY2022": {
+       "rev": 4039.5,
+       "ni": 862.9
+      },
+      "FY2023": {
+       "rev": 6510.1,
+       "ni": 2479.0
+      },
+      "FY2024": {
+       "rev": 6585.2,
+       "ni": 3210.0
+      },
+      "FY2025": {
+       "rev": 7146.0,
+       "ni": 3155.5
+      },
+      "1H2026": {
+       "rev": 3961.5,
+       "ni": 1962.5
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "증권중개",
+     "established": "2001.04.01",
+     "holding": false
+    }
+   ],
+   "rev_net": true
+  },
+  "키움증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20220324000600",
+     "rcept_dt": "20220324",
+     "first_dt": "20220318",
+     "rows": 3
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20230320001037",
+     "rcept_dt": "20230320",
+     "first_dt": "20230320",
+     "rows": 3
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20240320001275",
+     "rcept_dt": "20240320",
+     "first_dt": "20240320",
+     "rows": 7
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250317000785",
+     "rcept_dt": "20250317",
+     "first_dt": "20250317",
+     "rows": 9
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260317000838",
+     "rcept_dt": "20260317",
+     "first_dt": "20260317",
+     "rows": 11
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260813001767",
+     "rcept_dt": "20260813",
+     "first_dt": "20260813",
+     "rows": 0
+    }
+   },
+   "entities": [
+    {
+     "name": "PT Kiwoom Sekuritas Indonesia",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 5220.1,
+       "ni": 2313.4
+      },
+      "FY2022": {
+       "rev": 4137.0,
+       "ni": -985.0
+      },
+      "FY2023": {
+       "rev": 2676.9,
+       "ni": -1293.4
+      },
+      "FY2024": {
+       "rev": 2125.3,
+       "ni": -6369.6
+      },
+      "FY2025": {
+       "rev": 1976.1,
+       "ni": -3487.7
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "children": 1,
+     "business": "증권업",
+     "established": "1995.10.08",
+     "holding": true
+    },
+    {
+     "name": "Kiwoom Hong Kong Limited",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 3707.0,
+       "ni": 3377.1
+      },
+      "FY2022": {
+       "rev": 380.6,
+       "ni": -1286.7
+      },
+      "FY2023": {
+       "rev": 2452.1,
+       "ni": 2060.5
+      },
+      "FY2024": {
+       "rev": 1600.0,
+       "ni": 1039.1
+      },
+      "FY2025": {
+       "rev": 228.6,
+       "ni": 221.3
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "children": 1,
+     "business": "기타금융",
+     "established": "2018.07.11",
+     "holding": true
+    },
+    {
+     "name": "PT Kiwoom Investment Management Indonesia",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2023": {
+       "rev": 598.0,
+       "ni": 53.4
+      },
+      "FY2024": {
+       "rev": 572.8,
+       "ni": -104.4
+      },
+      "FY2025": {
+       "rev": 326.9,
+       "ni": -337.9
+      }
+     },
+     "parent": "PT Kiwoom sekuritas Indonesia",
+     "own": null,
+     "consolidated": false,
+     "parent_entity": "PT Kiwoom Sekuritas Indonesia",
+     "business": "집합투자업",
+     "established": "1999.12.30",
+     "holding": false
+    },
+    {
+     "name": "Kiwoom Singapore Pte. Ltd",
+     "country": "싱가포르",
+     "ref": false,
+     "values": {
+      "FY2023": {
+       "rev": 153.8,
+       "ni": 96.2
+      },
+      "FY2024": {
+       "rev": 645.2,
+       "ni": 522.3
+      },
+      "FY2025": {
+       "rev": 556.7,
+       "ni": 580.4
+      }
+     },
+     "parent": "Kiwoom Hong Kong Limited",
+     "own": null,
+     "consolidated": false,
+     "parent_entity": "Kiwoom Hong Kong Limited",
+     "business": "기타금융",
+     "established": "2018.07.26",
+     "holding": false
+    },
+    {
+     "name": "KIWOOM ASSET MANAGEMENT ASIA PTE. LTD.",
+     "country": "싱가포르",
+     "ref": false,
+     "values": {
+      "FY2024": {
+       "rev": 228.7,
+       "ni": -1327.7
+      },
+      "FY2025": {
+       "rev": 4441.8,
+       "ni": 996.3
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "기타금융",
+     "established": "2023.06.28",
+     "holding": false
+    },
+    {
+     "name": "Kiwoom Securities Holdings USA Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": null,
+       "ni": -0.5
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "children": 1,
+     "business": "기타금융",
+     "established": "2025.05.05",
+     "holding": true
+    },
+    {
+     "name": "Kiwoom Securities USA Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": null,
+       "ni": -540.8
+      }
+     },
+     "parent": "Kiwoom Securities Holdings USA Inc.",
+     "own": null,
+     "consolidated": false,
+     "parent_entity": "Kiwoom Securities Holdings USA Inc.",
+     "business": "기타금융",
+     "established": "2025.05.05",
+     "holding": false
+    }
+   ]
+  },
+  "토스증권": {
+   "reports": {
+    "FY2022": {
+     "label": "2022 감사보고서",
+     "rcept_no": "20230404002113",
+     "rcept_dt": "20230404",
+     "first_dt": "20230404",
+     "rows": 0
+    },
+    "FY2023": {
+     "label": "2023 감사보고서",
+     "rcept_no": "20240404002306",
+     "rcept_dt": "20240404",
+     "first_dt": "20240404",
+     "rows": 0
+    },
+    "FY2024": {
+     "label": "2024 감사보고서",
+     "rcept_no": "20250404002153",
+     "rcept_dt": "20250404",
+     "first_dt": "20250404",
+     "rows": 0
+    },
+    "FY2025": {
+     "label": "2025 감사보고서",
+     "rcept_no": "20260401004244",
+     "rcept_dt": "20260401",
+     "first_dt": "20260401",
+     "rows": 3
+    }
+   },
+   "entities": [
+    {
+     "name": "Toss Securities Holdings US Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": 0.8,
+       "ni": -6220.3
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": true,
+     "business": "투자업",
+     "established": null,
+     "holding": true
+    },
+    {
+     "name": "Toss Securities Global Pte. Ltd.",
+     "country": "싱가포르",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": 0.0,
+       "ni": -7.2
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자업",
+     "established": null,
+     "holding": false
+    },
+    {
+     "name": "TS Information&Technology Japan Co., Ltd.",
+     "country": "일본",
+     "ref": false,
+     "values": {
+      "FY2025": {
+       "rev": null,
+       "ni": -0.4
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "정보제공업",
+     "established": null,
+     "holding": false
+    }
+   ],
+   "audit": true
+  },
+  "NH투자증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20220315000644",
+     "rcept_dt": "20220315",
+     "first_dt": "20220315",
+     "rows": 6
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20230315000964",
+     "rcept_dt": "20230315",
+     "first_dt": "20230315",
+     "rows": 7
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20240514000627",
+     "rcept_dt": "20240514",
+     "first_dt": "20240315",
+     "rows": 10
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250313000770",
+     "rcept_dt": "20250313",
+     "first_dt": "20250313",
+     "rows": 11
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260313000771",
+     "rcept_dt": "20260313",
+     "first_dt": "20260313",
+     "rows": 11
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260814002484",
+     "rcept_dt": "20260814",
+     "first_dt": "20260814",
+     "rows": 11
+    }
+   },
+   "entities": [
+    {
+     "name": "NH Investment & Securities(H.K.) Ltd.",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 108610.0,
+       "ni": 55665.0
+      },
+      "FY2022": {
+       "rev": 111918.0,
+       "ni": -13369.0
+      },
+      "FY2023": {
+       "rev": 133513.0,
+       "ni": 49191.0
+      },
+      "FY2024": {
+       "rev": 139020.0,
+       "ni": 58783.0
+      },
+      "FY2025": {
+       "rev": 160920.0,
+       "ni": 43220.0
+      },
+      "1H2026": {
+       "rev": 119694.0,
+       "ni": 14365.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "증권업",
+     "established": "1994.09.29",
+     "holding": false
+    },
+    {
+     "name": "NH Securities Vietnam Co., Ltd.",
+     "country": "베트남",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 11778.0,
+       "ni": 2803.0
+      },
+      "FY2022": {
+       "rev": 10885.0,
+       "ni": 1617.0
+      },
+      "FY2023": {
+       "rev": 14099.0,
+       "ni": 2246.0
+      },
+      "FY2024": {
+       "rev": 12366.0,
+       "ni": 550.0
+      },
+      "FY2025": {
+       "rev": 15104.0,
+       "ni": 689.0
+      },
+      "1H2026": {
+       "rev": 13679.0,
+       "ni": 2331.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "증권업",
+     "established": "2006.12.28",
+     "holding": false
+    },
+    {
+     "name": "NH Investment & Securities America, Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 27845.0,
+       "ni": 9948.0
+      },
+      "FY2022": {
+       "rev": 27825.0,
+       "ni": 14558.0
+      },
+      "FY2023": {
+       "rev": 26424.0,
+       "ni": 12693.0
+      },
+      "FY2024": {
+       "rev": 32609.0,
+       "ni": 18650.0
+      },
+      "FY2025": {
+       "rev": 68830.0,
+       "ni": 43946.0
+      },
+      "1H2026": {
+       "rev": 53264.0,
+       "ni": 36558.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자업",
+     "established": "1992.12.02",
+     "holding": false
+    },
+    {
+     "name": "NH Absolute Return Partners Pte. Ltd.",
+     "country": "싱가포르",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 1640.0,
+       "ni": 631.0
+      },
+      "FY2022": {
+       "rev": 1132.0,
+       "ni": 187.0
+      },
+      "FY2023": {
+       "rev": 1420.0,
+       "ni": 209.0
+      },
+      "FY2024": {
+       "rev": 2185.0,
+       "ni": 204.0
+      },
+      "FY2025": {
+       "rev": 2411.0,
+       "ni": -104.0
+      },
+      "1H2026": {
+       "rev": 1160.0,
+       "ni": -175.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자업",
+     "established": "2008.03.25",
+     "holding": false
+    },
+    {
+     "name": "북경NH투자자문유한공사",
+     "country": "중국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 1006.0,
+       "ni": -578.0
+      },
+      "FY2022": {
+       "rev": 2058.0,
+       "ni": 255.0
+      },
+      "FY2023": {
+       "rev": 721.0,
+       "ni": -517.0
+      },
+      "FY2024": {
+       "rev": 679.0,
+       "ni": -463.0
+      },
+      "FY2025": {
+       "rev": 999.0,
+       "ni": -300.0
+      },
+      "1H2026": {
+       "rev": 365.0,
+       "ni": -477.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자업",
+     "established": "2010.12.06",
+     "holding": false
+    },
+    {
+     "name": "NH Investment & Securities Europe Ltd.",
+     "country": "영국",
+     "ref": false,
+     "values": {
+      "FY2022": {
+       "rev": 1720.0,
+       "ni": -503.0
+      },
+      "FY2023": {
+       "rev": 1863.0,
+       "ni": -1456.0
+      },
+      "FY2024": {
+       "rev": 3453.0,
+       "ni": -1499.0
+      },
+      "FY2025": {
+       "rev": 5814.0,
+       "ni": 762.0
+      },
+      "1H2026": {
+       "rev": 2595.0,
+       "ni": -1212.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자업",
+     "established": "2021.04.07",
+     "holding": false
+    },
+    {
+     "name": "PT. NH Korindo Sekuritas Indonesia",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2024": {
+       "rev": 13147.0,
+       "ni": -1512.0
+      },
+      "FY2025": {
+       "rev": 14155.0,
+       "ni": -1512.0
+      },
+      "1H2026": {
+       "rev": 6782.0,
+       "ni": -1695.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자업",
+     "established": "1990.03.26",
+     "holding": false
+    }
+   ]
+  },
+  "KB증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20220324000538",
+     "rcept_dt": "20220324",
+     "first_dt": "20220324",
+     "rows": 10
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20230323000628",
+     "rcept_dt": "20230323",
+     "first_dt": "20230323",
+     "rows": 10
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20240321001123",
+     "rcept_dt": "20240321",
+     "first_dt": "20240321",
+     "rows": 7
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250321001148",
+     "rcept_dt": "20250321",
+     "first_dt": "20250321",
+     "rows": 5
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260324000784",
+     "rcept_dt": "20260324",
+     "first_dt": "20260324",
+     "rows": 5
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260814003716",
+     "rcept_dt": "20260814",
+     "first_dt": "20260814",
+     "rows": 5
+    }
+   },
+   "entities": [
+    {
+     "name": "KBFG Securities America Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 2764.2,
+       "ni": -346.7
+      },
+      "FY2022": {
+       "rev": 3376.1,
+       "ni": -542.0
+      },
+      "FY2023": {
+       "rev": 3370.5,
+       "ni": -1033.0
+      },
+      "FY2024": {
+       "rev": 15942.4,
+       "ni": 5349.3
+      },
+      "FY2025": {
+       "rev": 24127.8,
+       "ni": 11800.4
+      },
+      "1H2026": {
+       "rev": 11342.5,
+       "ni": 6597.5
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자자문,증권매매",
+     "established": "1996.03.26",
+     "holding": false
+    },
+    {
+     "name": "KB Securities Hong Kong Ltd.",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 12809.3,
+       "ni": 952.8
+      },
+      "FY2022": {
+       "rev": 20468.3,
+       "ni": -2268.1
+      },
+      "FY2023": {
+       "rev": 19808.2,
+       "ni": 8546.5
+      },
+      "FY2024": {
+       "rev": 34975.9,
+       "ni": 5010.6
+      },
+      "FY2025": {
+       "rev": 32834.1,
+       "ni": 15138.3
+      },
+      "1H2026": {
+       "rev": 19346.5,
+       "ni": 5970.5
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자자문,증권매매",
+     "established": "1997.01.22",
+     "holding": false
+    },
+    {
+     "name": "KB SECURITIES VIETNAM JOINT STOCK COMPANY",
+     "country": "베트남",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 48674.2,
+       "ni": 11562.7
+      },
+      "FY2022": {
+       "rev": 67884.4,
+       "ni": 12933.1
+      },
+      "FY2023": {
+       "rev": 72721.5,
+       "ni": 7384.8
+      },
+      "FY2024": {
+       "rev": 62760.6,
+       "ni": 12931.0
+      },
+      "FY2025": {
+       "rev": 61871.8,
+       "ni": 11349.5
+      },
+      "1H2026": {
+       "rev": 39786.4,
+       "ni": 5623.2
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자자문,증권매매",
+     "established": "2008.06.11",
+     "holding": false
+    },
+    {
+     "name": "KB FINA Joint Stock Company",
+     "country": "베트남",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 132.4,
+       "ni": -791.7
+      },
+      "FY2022": {
+       "rev": 275.8,
+       "ni": -2614.8
+      },
+      "FY2023": {
+       "rev": 57.9,
+       "ni": -1740.2
+      },
+      "FY2024": {
+       "rev": 135.0,
+       "ni": -7100.0
+      },
+      "FY2025": {
+       "rev": 6.6,
+       "ni": -170.6
+      },
+      "1H2026": {
+       "rev": 3.3,
+       "ni": 609.2
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "IT(핀테크)",
+     "established": "2020.12.16",
+     "holding": false
+    },
+    {
+     "name": "PT. KB Valbury Sekuritas",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2022": {
+       "rev": 20385.9,
+       "ni": 5827.0
+      },
+      "FY2023": {
+       "rev": 20193.9,
+       "ni": 3459.9
+      },
+      "FY2024": {
+       "rev": 24673.0,
+       "ni": 4592.3
+      },
+      "FY2025": {
+       "rev": 34158.1,
+       "ni": 7516.7
+      },
+      "1H2026": {
+       "rev": 20917.0,
+       "ni": 5746.7
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "투자자문,증권매매",
+     "established": "2000.02.22",
+     "holding": false
+    }
+   ]
+  },
+  "신한투자증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20220322001003",
+     "rcept_dt": "20220322",
+     "first_dt": "20220322",
+     "rows": 4
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20230323000692",
+     "rcept_dt": "20230323",
+     "first_dt": "20230323",
+     "rows": 3
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20240516000067",
+     "rcept_dt": "20240516",
+     "first_dt": "20240326",
+     "rows": 4
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250326000635",
+     "rcept_dt": "20250326",
+     "first_dt": "20250326",
+     "rows": 4
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260325000632",
+     "rcept_dt": "20260325",
+     "first_dt": "20260325",
+     "rows": 5
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260814001157",
+     "rcept_dt": "20260814",
+     "first_dt": "20260814",
+     "rows": 3
+    }
+   },
+   "entities": [
+    {
+     "name": "SHINHAN SECURITIES VIETNAM CO., LTD",
+     "country": "베트남",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 7305.0,
+       "ni": 2040.0
+      },
+      "FY2022": {
+       "rev": 17693.0,
+       "ni": 4499.0
+      },
+      "FY2023": {
+       "rev": 28596.0,
+       "ni": 6133.0
+      },
+      "FY2024": {
+       "rev": 34584.0,
+       "ni": 7036.0
+      },
+      "FY2025": {
+       "rev": 38030.0,
+       "ni": 6247.0
+      },
+      "1H2026": {
+       "rev": 20601.0,
+       "ni": 3632.0
+      }
+     },
+     "parent": "신한투자증권",
+     "own": 100.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "2015.07.16",
+     "holding": false
+    },
+    {
+     "name": "PT Shinhan Sekuritas Indonesia",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 4903.0,
+       "ni": 282.0
+      },
+      "FY2022": {
+       "rev": 5277.0,
+       "ni": -2698.0
+      },
+      "FY2023": {
+       "rev": 5316.0,
+       "ni": -493.0
+      },
+      "FY2024": {
+       "rev": 4275.0,
+       "ni": -778.0
+      },
+      "FY2025": {
+       "rev": 3062.0,
+       "ni": -1261.0
+      },
+      "1H2026": {
+       "rev": 1652.0,
+       "ni": -540.0
+      }
+     },
+     "parent": "신한투자증권",
+     "own": 99.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "2016.07.21",
+     "holding": false
+    },
+    {
+     "name": "Shinhan Securities America Inc.",
+     "country": "미국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 3265.0,
+       "ni": 1663.0
+      },
+      "FY2022": {
+       "rev": 1667.0,
+       "ni": -179.0
+      },
+      "FY2023": {
+       "rev": 823.0,
+       "ni": -1783.0
+      },
+      "FY2024": {
+       "rev": 1091.0,
+       "ni": -1133.0
+      },
+      "FY2025": {
+       "rev": 993.0,
+       "ni": -1480.0
+      }
+     },
+     "parent": "신한투자증권",
+     "own": 100.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "1993.06.15",
+     "holding": false
+    },
+    {
+     "name": "Shinhan Securities Asia Ltd.",
+     "country": "홍콩",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 8154.0,
+       "ni": 5440.0
+      },
+      "FY2023": {
+       "rev": 12592.0,
+       "ni": 7859.0
+      },
+      "FY2024": {
+       "rev": 14683.0,
+       "ni": 4202.0
+      },
+      "FY2025": {
+       "rev": 11647.0,
+       "ni": 3563.0
+      },
+      "1H2026": {
+       "rev": 6492.0,
+       "ni": 3069.0
+      }
+     },
+     "parent": "신한투자증권",
+     "own": 100.0,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": "2007.06.30",
+     "holding": false
+    }
+   ]
+  },
+  "하나증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20220317000821",
+     "rcept_dt": "20220317",
+     "first_dt": "20220317",
+     "rows": 2
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20230316000693",
+     "rcept_dt": "20230316",
+     "first_dt": "20230316",
+     "rows": 4
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20240314001208",
+     "rcept_dt": "20240314",
+     "first_dt": "20240314",
+     "rows": 2
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250515000733",
+     "rcept_dt": "20250515",
+     "first_dt": "20250317",
+     "rows": 2
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260316001131",
+     "rcept_dt": "20260316",
+     "first_dt": "20260316",
+     "rows": 2
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260814002599",
+     "rcept_dt": "20260814",
+     "first_dt": "20260814",
+     "rows": 2
+    }
+   },
+   "entities": [
+    {
+     "name": "하나지분투자관리(심천)유한공사",
+     "country": "중국",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 1260.7,
+       "ni": 76.9
+      },
+      "FY2022": {
+       "rev": 13472.6,
+       "ni": 10871.5
+      },
+      "FY2023": {
+       "rev": 7943.4,
+       "ni": 5162.0
+      },
+      "FY2024": {
+       "rev": 3379.1,
+       "ni": 468.7
+      },
+      "FY2025": {
+       "rev": 361.8,
+       "ni": -11699.2
+      },
+      "1H2026": {
+       "rev": 169.1,
+       "ni": -1462.4
+      }
+     },
+     "parent": "하나증권",
+     "own": 50.1,
+     "consolidated": false,
+     "business": "자산운용업",
+     "established": "2011.10.14",
+     "holding": false
+    },
+    {
+     "name": "Hana Asset Management Asia Pte. Ltd.",
+     "country": "싱가포르",
+     "ref": false,
+     "values": {
+      "FY2022": {
+       "rev": null,
+       "ni": -638.9
+      },
+      "FY2023": {
+       "rev": 257.9,
+       "ni": -1630.7
+      },
+      "FY2024": {
+       "rev": 327.9,
+       "ni": -1240.6
+      },
+      "FY2025": {
+       "rev": 1285.3,
+       "ni": -630.9
+      },
+      "1H2026": {
+       "rev": 1021.1,
+       "ni": 37.9
+      }
+     },
+     "parent": "하나증권",
+     "own": 100.0,
+     "consolidated": false,
+     "business": "자산운용업",
+     "established": "2020.09.04",
+     "holding": false
+    }
+   ]
+  },
+  "한화투자증권": {
+   "reports": {
+    "FY2021": {
+     "label": "2021 사업보고서",
+     "rcept_no": "20220315001273",
+     "rcept_dt": "20220315",
+     "first_dt": "20220315",
+     "rows": 5
+    },
+    "FY2022": {
+     "label": "2022 사업보고서",
+     "rcept_no": "20230314000604",
+     "rcept_dt": "20230314",
+     "first_dt": "20230314",
+     "rows": 5
+    },
+    "FY2023": {
+     "label": "2023 사업보고서",
+     "rcept_no": "20240312000990",
+     "rcept_dt": "20240312",
+     "first_dt": "20240312",
+     "rows": 4
+    },
+    "FY2024": {
+     "label": "2024 사업보고서",
+     "rcept_no": "20250311001013",
+     "rcept_dt": "20250311",
+     "first_dt": "20250311",
+     "rows": 5
+    },
+    "FY2025": {
+     "label": "2025 사업보고서",
+     "rcept_no": "20260310002967",
+     "rcept_dt": "20260310",
+     "first_dt": "20260310",
+     "rows": 5
+    },
+    "1H2026": {
+     "label": "2026 반기보고서",
+     "rcept_no": "20260813001503",
+     "rcept_dt": "20260813",
+     "first_dt": "20260813",
+     "rows": 9
+    }
+   },
+   "entities": [
+    {
+     "name": "Pinetree Securities Pte. Ltd.",
+     "country": "싱가포르",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 79.4,
+       "ni": -1091.9
+      },
+      "FY2022": {
+       "rev": 134.5,
+       "ni": -1511.6
+      },
+      "FY2023": {
+       "rev": 195.8,
+       "ni": -1537.8
+      },
+      "FY2024": {
+       "rev": 298.7,
+       "ni": -1380.9
+      },
+      "FY2025": {
+       "rev": 666.0,
+       "ni": -1534.0
+      },
+      "1H2026": {
+       "rev": 268.0,
+       "ni": -1175.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "증권업",
+     "established": "2019.11.01",
+     "holding": false
+    },
+    {
+     "name": "Pinetree Securities Corporation",
+     "country": "베트남",
+     "ref": false,
+     "values": {
+      "FY2021": {
+       "rev": 7315.2,
+       "ni": 1318.0
+      },
+      "FY2022": {
+       "rev": 12186.2,
+       "ni": 677.0
+      },
+      "FY2023": {
+       "rev": 13756.1,
+       "ni": 1198.3
+      },
+      "FY2024": {
+       "rev": 17113.7,
+       "ni": 2811.2
+      },
+      "FY2025": {
+       "rev": 21621.0,
+       "ni": 3442.0
+      },
+      "1H2026": {
+       "rev": 12054.0,
+       "ni": 1285.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "증권업",
+     "established": "2003.02.18",
+     "holding": false
+    },
+    {
+     "name": "PT Ciptadana Sekuritas Asia",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "FY2024": {
+       "rev": 2438.3,
+       "ni": -152.8
+      },
+      "FY2025": {
+       "rev": 14749.0,
+       "ni": 2718.0
+      },
+      "1H2026": {
+       "rev": 6362.0,
+       "ni": -671.0
+      }
+     },
+     "parent": null,
+     "own": null,
+     "consolidated": false,
+     "business": "금융투자업",
+     "established": null,
+     "holding": false
+    },
+    {
+     "name": "PT Ciptadana Asset Management",
+     "country": "인도네시아",
+     "ref": false,
+     "values": {
+      "1H2026": {
+       "rev": 943.0,
+       "ni": -546.0
+      }
+     },
+     "business": "자산운용업",
+     "established": null,
+     "holding": false
+    }
+   ]
+  }
+ },
+ "checked_at": "2026-10-23T04:22:47+00:00",
+ "errors": []
+}

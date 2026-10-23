@@ -1,0 +1,233 @@
+{
+ "updated": "2026-10-23",
+ "source": "DART 정기보고서: 연결재무제표 주석 '종속기업 요약재무정보', '타법인 출자현황'",
+ "periods": [
+  {
+   "label": "FY2025",
+   "period": "FY",
+   "year": "2025",
+   "months": 12,
+   "report": {
+    "name": "사업보고서 (2025.12)",
+    "rcept_no": "20260310002967",
+    "rcept_dt": "20260310",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002967",
+    "year": "2025",
+    "period": "FY"
+   },
+   "subs": {
+    "CAM": {
+     "unit": "백만원",
+     "assets": 5115.0,
+     "liab": 496.0,
+     "rev": null,
+     "ni": null,
+     "name": "PT Ciptadana Asset Management"
+    },
+    "CSA": {
+     "unit": "백만원",
+     "assets": 65229.0,
+     "liab": 23119.0,
+     "rev": 14749.0,
+     "ni": 2718.0,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "백만원",
+     "assets": 5078.0,
+     "liab": 346.0,
+     "rev": 666.0,
+     "ni": -1534.0,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "백만원",
+     "assets": 261638.0,
+     "liab": 173503.0,
+     "rev": 21621.0,
+     "ni": 3442.0,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "1H26",
+   "period": "1H",
+   "year": "2026",
+   "months": 6,
+   "report": {
+    "name": "반기보고서 (2026.06)",
+    "rcept_no": "20260813001503",
+    "rcept_dt": "20260813",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001503",
+    "year": "2026",
+    "period": "1H"
+   },
+   "subs": {
+    "CAM": {
+     "unit": "백만원",
+     "assets": 4570.0,
+     "liab": 454.0,
+     "rev": 943.0,
+     "ni": -546.0,
+     "name": "PT Ciptadana Asset Management"
+    },
+    "CSA": {
+     "unit": "백만원",
+     "assets": 63855.0,
+     "liab": 22024.0,
+     "rev": 6362.0,
+     "ni": -671.0,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "백만원",
+     "assets": 14822.0,
+     "liab": 245.0,
+     "rev": 268.0,
+     "ni": -1175.0,
+     "name": "Pinetree Securities Pte. Ltd."
+    },
+    "VN": {
+     "unit": "백만원",
+     "assets": 258728.0,
+     "liab": 162811.0,
+     "rev": 12054.0,
+     "ni": 1285.0,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  }
+ ],
+ "stakes": {
+  "SG": 100.0,
+  "VN": 99.99,
+  "CSA": 80.0,
+  "CAM": 80.0
+ },
+ "stake_source": {
+  "SG": "타법인 출자현황",
+  "VN": "타법인 출자현황",
+  "CSA": "타법인 출자현황",
+  "CAM": "타법인 출자현황"
+ },
+ "invest": {
+  "report": {
+   "name": "반기보고서 (2026.06)",
+   "rcept_no": "20260813001503",
+   "rcept_dt": "20260813",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001503",
+   "year": "2026",
+   "period": "1H"
+  },
+  "unit": "백만원, 주, %",
+  "rows": {
+   "SG": {
+    "name": "Pinetree Securities Pte.Ltd.",
+    "first_date": "2020.04.01",
+    "purpose": "경영참여",
+    "first_amount": 1725.0,
+    "begin_qty": 12000000.0,
+    "begin_stake": 100.0,
+    "begin_book": 4815.0,
+    "chg_qty": 9000000.0,
+    "chg_amount": 10142.0,
+    "chg_valuation": null,
+    "end_qty": 21000000.0,
+    "end_stake": 100.0,
+    "end_book": 14958.0,
+    "recent_assets": 5078.0,
+    "recent_ni": -1534.0
+   },
+   "VN": {
+    "name": "Pinetree Securities Corporation",
+    "first_date": "2019.04.24",
+    "purpose": "경영참여",
+    "first_amount": 32900.0,
+    "begin_qty": 100872616.0,
+    "begin_stake": 99.99,
+    "begin_book": 77034.0,
+    "chg_qty": null,
+    "chg_amount": null,
+    "chg_valuation": null,
+    "end_qty": 100872616.0,
+    "end_stake": 99.99,
+    "end_book": 77034.0,
+    "recent_assets": 261638.0,
+    "recent_ni": 3442.0
+   },
+   "CSA": {
+    "name": "PT Ciptadana Sekuritas Asia",
+    "first_date": "2024.10.15",
+    "purpose": "경영참여",
+    "first_amount": 48646.0,
+    "begin_qty": 280000000.0,
+    "begin_stake": 80.0,
+    "begin_book": 48646.0,
+    "chg_qty": null,
+    "chg_amount": null,
+    "chg_valuation": null,
+    "end_qty": 280000000.0,
+    "end_stake": 80.0,
+    "end_book": 48646.0,
+    "recent_assets": 65229.0,
+    "recent_ni": 2718.0
+   },
+   "CAM": {
+    "name": "PT Ciptadana Asset Management",
+    "first_date": "2025.12.19",
+    "purpose": "경영참여",
+    "first_amount": 16638.0,
+    "begin_qty": 40000000.0,
+    "begin_stake": 80.0,
+    "begin_book": 16638.0,
+    "chg_qty": null,
+    "chg_amount": null,
+    "chg_valuation": null,
+    "end_qty": 40000000.0,
+    "end_stake": 80.0,
+    "end_book": 16638.0,
+    "recent_assets": 5115.0,
+    "recent_ni": null
+   }
+  }
+ },
+ "filed": [
+  {
+   "year": "2026",
+   "period": "1H",
+   "name": "반기보고서 (2026.06)",
+   "rcept_dt": "20260813"
+  },
+  {
+   "year": "2026",
+   "period": "1Q",
+   "name": "분기보고서 (2026.03)",
+   "rcept_dt": "20260514"
+  },
+  {
+   "year": "2025",
+   "period": "FY",
+   "name": "사업보고서 (2025.12)",
+   "rcept_dt": "20260310"
+  },
+  {
+   "year": "2025",
+   "period": "9M",
+   "name": "[기재정정]분기보고서 (2025.09)",
+   "rcept_dt": "20251113"
+  },
+  {
+   "year": "2025",
+   "period": "1H",
+   "name": "반기보고서 (2025.06)",
+   "rcept_dt": "20250813"
+  },
+  {
+   "year": "2025",
+   "period": "1Q",
+   "name": "분기보고서 (2025.03)",
+   "rcept_dt": "20250514"
+  }
+ ]
+}

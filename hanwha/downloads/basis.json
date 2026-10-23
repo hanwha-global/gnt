@@ -1,0 +1,13 @@
+{
+ "periods": [
+  "20260310002967",
+  "20260813001503"
+ ],
+ "label": "1H26",
+ "invest": "20260813001503",
+ "data": "72f97f48ca3562d0",
+ "next": "periodic-2026-3Q",
+ "investments": "f349bfdf8d39a35e",
+ "entities": "f4b0625cddf1f477",
+ "script": "d382afdc2dcd6b45"
+}

@@ -1,0 +1,224 @@
+{
+ "updated_at": "2026-10-23T04:23:41+00:00",
+ "source": "SEC EDGAR XBRL companyfacts (10-K/10-Q)",
+ "unit": "USD",
+ "rows": [
+  {
+   "name": "Goldman Sachs",
+   "cik": "0000886982",
+   "model": "IB·트레이딩",
+   "equity": {
+    "value": 122742000000,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "tag": "StockholdersEquity"
+   },
+   "net_income_fy": {
+    "value": 17176000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "NetIncomeLoss"
+   },
+   "revenue_fy": {
+    "value": 58283000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "RevenuesNetOfInterestExpense"
+   },
+   "ok": true
+  },
+  {
+   "name": "Morgan Stanley",
+   "cik": "0000895421",
+   "model": "IB·WM",
+   "equity": {
+    "value": 117440000000,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+   },
+   "net_income_fy": {
+    "value": 16861000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "NetIncomeLoss"
+   },
+   "revenue_fy": {
+    "value": 70645000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "RevenuesNetOfInterestExpense"
+   },
+   "ok": true
+  },
+  {
+   "name": "Charles Schwab",
+   "cik": "0000316709",
+   "model": "리테일 브로커리지",
+   "equity": {
+    "value": 50147000000,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "tag": "StockholdersEquity"
+   },
+   "net_income_fy": {
+    "value": 8852000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "NetIncomeLoss"
+   },
+   "revenue_fy": {
+    "value": 23921000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "Revenues"
+   },
+   "ok": true
+  },
+  {
+   "name": "Interactive Brokers",
+   "cik": "0001381197",
+   "model": "온라인 브로커리지",
+   "equity": {
+    "value": 22250000000,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+   },
+   "net_income_fy": {
+    "value": 4357000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "ProfitLoss"
+   },
+   "revenue_fy": {
+    "value": 6205000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "RevenuesNetOfInterestExpense"
+   },
+   "ok": true
+  },
+  {
+   "name": "Raymond James",
+   "cik": "0000720005",
+   "model": "WM·IB",
+   "equity": {
+    "value": 12783000000,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+   },
+   "net_income_fy": {
+    "value": 2135000000,
+    "end": "2025-09-30",
+    "form": "10-K",
+    "tag": "NetIncomeLoss"
+   },
+   "revenue_fy": {
+    "value": 14065000000,
+    "end": "2025-09-30",
+    "form": "10-K",
+    "tag": "RevenuesNetOfInterestExpense"
+   },
+   "ok": true
+  },
+  {
+   "name": "Jefferies",
+   "cik": "0000096223",
+   "model": "IB",
+   "equity": {
+    "value": 10752444000,
+    "end": "2026-08-31",
+    "form": "10-Q",
+    "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+   },
+   "net_income_fy": {
+    "value": 682045000,
+    "end": "2025-11-30",
+    "form": "10-K",
+    "tag": "ProfitLoss"
+   },
+   "revenue_fy": {
+    "value": 7343751000,
+    "end": "2025-11-30",
+    "form": "10-K",
+    "tag": "RevenuesNetOfInterestExpense"
+   },
+   "ok": true
+  },
+  {
+   "name": "Robinhood",
+   "cik": "0001783879",
+   "model": "모바일 브로커리지",
+   "equity": {
+    "value": 9541000000,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+   },
+   "net_income_fy": {
+    "value": 1883000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "NetIncomeLoss"
+   },
+   "revenue_fy": {
+    "value": 4473000000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "Revenues"
+   },
+   "ok": true
+  },
+  {
+   "name": "Stifel",
+   "cik": "0000720672",
+   "model": "WM·IB",
+   "equity": {
+    "value": 6013241000,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+   },
+   "net_income_fy": {
+    "value": 683779000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "NetIncomeLoss"
+   },
+   "revenue_fy": {
+    "value": 5529730000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "RevenuesNetOfInterestExpense"
+   },
+   "ok": true
+  },
+  {
+   "name": "LPL Financial",
+   "cik": "0001397911",
+   "model": "독립 어드바이저 플랫폼",
+   "equity": {
+    "value": 5756840000,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "tag": "StockholdersEquity"
+   },
+   "net_income_fy": {
+    "value": 863024000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "NetIncomeLoss"
+   },
+   "revenue_fy": {
+    "value": 16989479000,
+    "end": "2025-12-31",
+    "form": "10-K",
+    "tag": "Revenues"
+   },
+   "ok": true
+  }
+ ],
+ "errors": []
+}

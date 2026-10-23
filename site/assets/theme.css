@@ -1,0 +1,30 @@
+/* 공용 테마: 짙은 남색 바탕 + 한화 주황 강조.
+   대시보드와 iframe 탭(hanwha/, digital/)이 함께 쓴다. 탭 페이지에서는
+   <link rel="stylesheet" href="../assets/theme.css"> 로 불러와 var(--...)를 쓰면 된다. */
+:root {
+  --bg: #111d38;
+  --surface: #172647;
+  --surface-2: #1f3158;
+  --line: #2a3d66;
+  --text: #f1f4fb;
+  --text-2: #bcc7dd;
+  --muted: #8494b5;
+  --accent: #f37321;
+  --accent-soft: rgba(243, 115, 33, .16);
+  --accent-ink: #ff9a52;
+  --pos: #4fd18b;
+  --neg: #ff7b6b;
+  --kr: #8fb1ff;
+  --kr-soft: rgba(143, 177, 255, .16);
+  --heat-0: #1c2d52;
+  --heat-1: rgba(243, 115, 33, .22);
+  --heat-2: rgba(243, 115, 33, .45);
+  --heat-3: rgba(243, 115, 33, .72);
+  --heat-4: #f37321;
+  --bar: #50648f;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .25);
+  --radius: 12px;
+  color-scheme: dark;
+}
+
+body { background: var(--bg); color: var(--text); }

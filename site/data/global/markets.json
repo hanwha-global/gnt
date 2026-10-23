@@ -1,0 +1,274 @@
+{
+ "updated_at": "2026-10-20",
+ "markets": [
+  {
+   "id": "kr",
+   "label": "한국",
+   "flag": "🇰🇷",
+   "auto": "dart",
+   "headline": "자기자본 기준 국내 증권사 순위(연결). DART 최신 정기보고서로 매주 자동 갱신됩니다.",
+   "country": "대한민국"
+  },
+  {
+   "id": "us",
+   "label": "미국",
+   "flag": "🇺🇸",
+   "auto": "sec",
+   "headline": "SEC 공시(10-K/10-Q) 기준 상장 증권·IB 그룹의 자본 순위입니다. 매주 자동 갱신됩니다.",
+   "country": "미국"
+  },
+  {
+   "id": "jp",
+   "label": "일본",
+   "flag": "🇯🇵",
+   "headline": "상장 증권사 자기자본 순위(최근 연간 결산)를 매주 자동 수집합니다. 아래 5대사 분기 순이익은 참고용 수동 자료입니다.",
+   "country": "일본",
+   "tables": [
+    {
+     "title": "5대 증권사 순이익 (2026.4~6, 십억엔)",
+     "metric": "순이익",
+     "unit": "십억엔",
+     "basis": "2026-08-03 발표",
+     "source": {
+      "label": "Jiji Press (nippon.com)",
+      "url": "https://www.nippon.com/en/news/yjj2026080300754/"
+     },
+     "rows": [
+      {
+       "name": "Nomura Holdings",
+       "value": 145.5,
+       "note": "+39.2% YoY, 자산운용 성장"
+      },
+      {
+       "name": "Daiwa Securities Group",
+       "value": 56.4,
+       "note": "+80.6% YoY"
+      },
+      {
+       "name": "Mizuho Securities",
+       "value": 31.5,
+       "note": "+72.6% YoY"
+      },
+      {
+       "name": "SMBC Nikko Securities",
+       "value": 26.7,
+       "note": "약 2.5배"
+      },
+      {
+       "name": "Mitsubishi UFJ Securities HD",
+       "value": 24.8,
+       "note": "약 3배"
+      }
+     ]
+    }
+   ],
+   "players": [
+    "SBI증권(계좌 수 1위권, 온라인)",
+    "라쿠텐증권(온라인)",
+    "마넥스증권",
+    "마쓰이증권"
+   ],
+   "players_title": "온라인 증권사(순이익 순위 별도 미산정)"
+  },
+  {
+   "id": "vn",
+   "label": "베트남",
+   "flag": "🇻🇳",
+   "headline": "HOSE·HNX 상장 증권사 자기자본 순위(2025년 말)를 매주 자동 수집합니다. 한국계(KIS·미래에셋)는 비상장이라 아래 HOSE 점유율(수동)로 봅니다.",
+   "country": "베트남",
+   "tables": [
+    {
+     "title": "HOSE 브로커리지 시장점유율 (2Q26)",
+     "metric": "점유율",
+     "unit": "%",
+     "basis": "2026-07 HOSE 발표",
+     "source": {
+      "label": "HOSE 발표, Vietstock·Tuoi Tre 보도",
+      "url": "https://en.vietstock.vn/2026/07/competition-heats-up-as-securities-brokerages-battle-for-hose-market-share-36-638227.htm"
+     },
+     "rows": [
+      {
+       "name": "VPS",
+       "value": 12.61,
+       "note": "1Q 15.32%에서 하락(22분기 최저)"
+      },
+      {
+       "name": "SSI",
+       "value": 11.17
+      },
+      {
+       "name": "TCBS (Techcom Securities)",
+       "value": 9.36,
+       "note": "사상 최고"
+      },
+      {
+       "name": "Vietcap",
+       "value": 7.0
+      },
+      {
+       "name": "HSC",
+       "value": 6.8
+      },
+      {
+       "name": "MBS",
+       "value": 4.79
+      },
+      {
+       "name": "VNDIRECT",
+       "value": 3.96
+      },
+      {
+       "name": "VPBankS",
+       "value": 3.57,
+       "note": "설립 이후 최고"
+      },
+      {
+       "name": "KIS Vietnam",
+       "value": 2.99,
+       "korean": "한국투자증권"
+      },
+      {
+       "name": "Mirae Asset Vietnam",
+       "value": 2.94,
+       "korean": "미래에셋증권",
+       "note": "Top 10 재진입"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sg",
+   "label": "싱가포르",
+   "flag": "🇸🇬",
+   "headline": "SGX 상장 증권사는 2곳뿐이라 자동 순위는 2개사입니다. 나머지 주요 증권사는 은행·해외 그룹 계열 비상장이라 공시가 없습니다.",
+   "country": "싱가포르",
+   "players_title": "주요 증권사(공식 순위 미공표)",
+   "players": [
+    "DBS(은행계 브로커리지)",
+    "OCBC Securities(은행계)",
+    "UOB Kay Hian(SGX 상장 독립계)",
+    "Phillip Securities(독립계)",
+    "CGS International(중국 은하증권 계열)",
+    "Maybank Securities(말레이시아계)",
+    "Tiger Brokers·moomoo(디지털)"
+   ]
+  },
+  {
+   "id": "id",
+   "label": "인도네시아",
+   "flag": "🇮🇩",
+   "headline": "IDX 상장 증권사 자기자본 순위를 매주 자동 수집합니다. 대형사 대부분은 비상장이라 아래 거래대금 순위(수동)를 함께 봅니다.",
+   "country": "인도네시아",
+   "tables": [
+    {
+     "title": "IDX 거래대금 Top 3 (1H26, 조 루피아)",
+     "metric": "거래대금",
+     "unit": "조 IDR",
+     "basis": "2026.1~6, IDX 집계",
+     "source": {
+      "label": "IDNFinancials",
+      "url": "https://www.idnfinancials.com/news/67334/profits-at-three-largest-stockbrokers-surge-as-jci-plunges"
+     },
+     "rows": [
+      {
+       "name": "Stockbit Sekuritas Digital (XL)",
+       "value": 580.7
+      },
+      {
+       "name": "Mandiri Sekuritas (CC)",
+       "value": 534.46
+      },
+      {
+       "name": "UBS Sekuritas Indonesia (AK)",
+       "value": 527.34
+      }
+     ]
+    },
+    {
+     "title": "IDX 거래대금 Top 10 (1H25, 조 루피아, 참고)",
+     "metric": "거래대금",
+     "unit": "조 IDR",
+     "basis": "2025.1~6, 1H26 전체 순위 미공표로 참고",
+     "source": {
+      "label": "IDNFinancials",
+      "url": "https://www.idnfinancials.com/news/55676/these-ten-brokerages-dominated-stock-trading-in-h1-2025"
+     },
+     "rows": [
+      {
+       "name": "UBS Sekuritas Indonesia (AK)",
+       "value": 289.54
+      },
+      {
+       "name": "Mandiri Sekuritas (CC)",
+       "value": 281.62
+      },
+      {
+       "name": "Maybank Sekuritas Indonesia (ZP)",
+       "value": 223.57
+      },
+      {
+       "name": "CGS International Sekuritas (YU)",
+       "value": 188.96
+      },
+      {
+       "name": "Mirae Asset Sekuritas Indonesia (YP)",
+       "value": 165.38,
+       "korean": "미래에셋증권"
+      },
+      {
+       "name": "J.P. Morgan Sekuritas Indonesia (BK)",
+       "value": 151.0
+      },
+      {
+       "name": "Stockbit Sekuritas Digital (XL)",
+       "value": 114.24
+      },
+      {
+       "name": "Indo Premier Sekuritas (PD)",
+       "value": 108.04
+      },
+      {
+       "name": "Semesta Indovest Sekuritas (MG)",
+       "value": 80.41
+      },
+      {
+       "name": "KB Valbury Sekuritas (CP)",
+       "value": 79.89,
+       "korean": "KB증권"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ad",
+   "label": "아부다비",
+   "flag": "🇦🇪",
+   "headline": "ADGM(아부다비 국제금융센터)은 증권사 순위를 공표하지 않습니다. FSRA 인가 체계와 한국계 동향을 정리합니다.",
+   "country": "아랍에미리트",
+   "players_title": "FSRA 인가 카테고리(증권업 관련)",
+   "players": [
+    "Category 2: 자기매매(Dealing as Principal)·신용공여",
+    "Category 3A: 매칭 자기매매·위탁매매(Dealing as Agent)",
+    "Category 4: 주선·자문·커스터디"
+   ],
+   "news": [
+    {
+     "date": "2026-04",
+     "text": "Hashed(한국 크립토 VC), ADGM FSP 인가 취득",
+     "url": "https://cryptonews.net/news/legal/32787798/"
+    },
+    {
+     "date": "2026",
+     "text": "한화금융, Abu Dhabi Finance Week 2026 Premier Partner 참여(9/16 서울 Abu Dhabi Investment Forum 연계)",
+     "url": "https://www.adgm.com/media/announcements/hanwha-finance-announced-as-premier-partner-for-abu-dhabi-finance-week-2026"
+    }
+   ],
+   "source": {
+    "label": "ADGM, Al Tamimi(‘K-Capital Meets the Gulf’)",
+    "url": "https://turtl.tamimi.com/story/law-update-issue-379-africa-and-asia/page/15"
+   }
+  }
+ ]
+}

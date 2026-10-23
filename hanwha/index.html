@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한화투자증권 글로벌네트워크 현황</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#111d38;--card:#172647;--ink:#f1f4fb;--sub:#bcc7dd;--line:#2a3d66;--accent:#f37321;--accent-soft:rgba(243,115,33,.16);
+  --pos:#4fd18b;--neg:#ff7b6b;--warn:#ff9a52;--chip:#1f3158;color-scheme:dark}
+a{color:#ff9a52}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 "Noto Sans KR",system-ui,sans-serif}
+header{padding:20px 16px 0;max-width:1180px;margin:auto}
+h1{font-size:22px;margin:0}
+.sub{color:var(--sub);font-size:12.5px}
+.tmeta{color:var(--sub);font-size:11.5px;text-align:right;margin:0 0 4px;white-space:normal}
+nav{display:flex;gap:6px;margin:14px 0 0;border-bottom:1px solid var(--line);overflow-x:auto}
+nav button{border:0;background:none;color:var(--sub);font:inherit;font-weight:500;padding:10px 14px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
+nav button.on{color:var(--ink);border-color:var(--accent)}
+main{max-width:1180px;margin:auto;padding:16px}
+section{display:none}section.on{display:block}
+.grid{display:grid;gap:12px}
+.kpis{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi .v{font-size:22px;font-weight:700}.kpi .l{color:var(--sub);font-size:12px}
+h2{font-size:16px;margin:22px 0 10px}h3{font-size:15px;margin:0 0 2px}
+.biz{color:var(--sub);font-size:12px;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th.l,td.l{text-align:left}
+th{color:var(--sub);font-weight:500;font-size:12px}
+.wrap{overflow-x:auto}
+.neg{color:var(--neg)}.pos{color:var(--pos)}
+.dv{position:relative;height:10px;border-radius:3px;background:var(--chip);min-width:130px}
+.dv i{position:absolute;top:0;bottom:0}.dv i.p{left:50%;background:var(--pos);border-radius:0 3px 3px 0}.dv i.n{right:50%;background:var(--neg);border-radius:3px 0 0 3px}
+.dv b{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--ink)}
+.chip{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;background:var(--chip);color:var(--sub)}
+.chip.warn{background:var(--accent-soft);color:var(--accent)}.chip.bad{background:var(--neg);color:#fff}.chip.ok{color:var(--pos)}
+ul.notes{margin:8px 0 0;padding-left:0;list-style:none;font-size:12.5px}
+ul.notes li{margin:3px 0}ul.notes b{color:var(--accent);font-weight:500}
+.dl a{display:inline-block;margin:4px 8px 0 0;padding:6px 12px;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none;font-size:13px}
+.banner{background:var(--accent-soft);border-radius:8px;padding:10px 12px;font-size:12.5px;margin-bottom:12px}
+.todo td:nth-child(n+2){white-space:normal;text-align:left}
+.reg td,.reg th,.todo th{white-space:normal;text-align:left;vertical-align:top}
+.filters button{border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:14px;padding:3px 10px;font:inherit;font-size:12px;cursor:pointer;margin:0 4px 6px 0}
+.filters button.on{border-color:var(--accent);color:var(--accent)}
+.guide{margin-top:6px;font-size:13px}
+.health{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));align-items:start}
+.tl{padding:6px 14px}.mon{font-weight:700;font-size:12px;color:var(--sub);margin:10px 0 2px;border-bottom:1px solid var(--line);padding-bottom:2px}
+.ev{display:grid;grid-template-columns:96px 1fr;gap:8px;padding:5px 0;font-size:13px}.ev.done{opacity:.55}
+.tag{font-size:10.5px;padding:0 6px;border-radius:8px;border:1px solid var(--line);color:var(--sub)}.tag.ext{border-color:var(--accent);color:var(--accent)}
+.alerts p{margin:4px 0 8px;font-size:13px}
+.pb{padding:8px 14px;margin-bottom:8px}.pb summary{cursor:pointer}.pb ol{margin:8px 0 2px;padding-left:20px;font-size:13px}.pb li{margin:4px 0}
+.when{display:inline-block;min-width:84px;font-size:11.5px;color:var(--accent);font-weight:500}
+button.ghost{border:1px solid var(--accent);background:none;color:var(--accent);border-radius:6px;padding:5px 10px;font:inherit;font-size:13px;cursor:pointer}
+.kpi .v.neg{color:var(--neg)}.kpi .v.pos{color:var(--pos)}
+.mac1{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);align-items:stretch}@media(max-width:900px){.mac1{grid-template-columns:1fr}}
+.fxg{grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);align-items:start}@media(max-width:900px){.fxg{grid-template-columns:1fr}}
+.chart{width:100%;height:auto;display:block}.chart .ax{fill:var(--sub);font-size:11px}
+.filters button i{display:inline-block;width:12px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.filters button:not(.on) i{opacity:.35}
+.cal{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:4px 18px}
+.cev{display:grid;grid-template-columns:44px 1fr;gap:6px;padding:4px 0;border-bottom:1px solid var(--line);font-size:12.5px}.cev .d{color:var(--sub);font-variant-numeric:tabular-nums}.cev.past{opacity:.75}.res{color:var(--warn);font-size:12px}
+table.mt td,table.mt th{padding:4px 7px;font-variant-numeric:tabular-nums}table.mt th.c{text-align:center}
+tr.grp td{background:var(--chip);color:var(--sub);font-size:11.5px;padding:3px 7px}tr.tot td{border-top:2px solid var(--line)}
+.blu{color:#6e96ff}
+footer{max-width:1180px;margin:auto;padding:8px 16px 28px;color:var(--sub);font-size:11.5px}
+</style>
+</head>
+<body>
+<header>
+  <h1>한화투자증권 글로벌네트워크 현황</h1>
+  <div class="sub" id="asof">미래전략실 글로벌네트워크팀 · 해외자회사 4사</div>
+  <div class="guide" id="guide">탭을 눌러 보세요: 해외자회사 실적(DART 공시) → 해외법인·출자 현황 → 12개월 대외보고 마감 일정과 사건별 체크리스트 → 금리·지수·환율. 모두 평일 하루 2회 자동 갱신됩니다.</div>
+  <div class="health" id="health"></div>
+  <nav>
+    <button data-tab="pl" class="on">해외자회사 실적 (DART 공시)</button>
+    <button data-tab="ent">해외법인·출자 현황</button>
+    <button data-tab="reg">필수 대외보고 일정·체크리스트</button>
+    <button data-tab="mac">YTD Macro (금리·지수·환율)</button>
+  </nav>
+</header>
+<main>
+  <section id="pl" class="on"></section>
+  <section id="ent"></section>
+  <section id="reg"></section>
+  <section id="mac"></section>
+</main>
+<footer id="foot">출처: DART 정기보고서(연결재무제표 주석 「종속기업 요약재무정보」, 「타법인 출자현황」), 한국은행 ECOS, Yahoo Finance·BIS, 중앙은행 공식 일정, 금융위 고시 「금융회사등의 해외진출에 관한 규정」. 출자 이력 표만 내부 출자내역을 손으로 옮긴 값입니다. 갱신은 GitHub Actions가 스크립트로 수행하며 LLM을 쓰지 않습니다.</footer>
+<script src="app.js"></script>
+</body>
+</html>

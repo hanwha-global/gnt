@@ -1,0 +1,330 @@
+{
+ "updated": "2026-10-23T00:22:35+00:00",
+ "keep_days": 120,
+ "official_domains": {
+  "KR": [
+   "fsc.go.kr",
+   "fss.or.kr",
+   "korea.kr",
+   "bok.or.kr",
+   "moef.go.kr",
+   "kofiu.go.kr"
+  ],
+  "US": [
+   "sec.gov",
+   "occ.gov",
+   "treasury.gov",
+   "home.treasury.gov",
+   "cftc.gov",
+   "federalreserve.gov",
+   "fdic.gov",
+   "federalregister.gov",
+   "whitehouse.gov"
+  ],
+  "JP": [
+   "fsa.go.jp",
+   "boj.or.jp"
+  ],
+  "VN": [
+   "mof.gov.vn",
+   "ssc.gov.vn",
+   "sbv.gov.vn",
+   "chinhphu.vn",
+   "baochinhphu.vn"
+  ],
+  "SG": [
+   "mas.gov.sg"
+  ],
+  "ID": [
+   "ojk.go.id",
+   "bi.go.id",
+   "kemenkeu.go.id"
+  ],
+  "AE": [
+   "adgm.com",
+   "vara.ae",
+   "centralbank.ae",
+   "sca.gov.ae"
+  ],
+  "EU": [
+   "esma.europa.eu",
+   "eba.europa.eu",
+   "ecb.europa.eu",
+   "finance.ec.europa.eu"
+  ],
+  "UK": [
+   "fca.org.uk",
+   "gov.uk",
+   "bankofengland.co.uk"
+  ],
+  "HK": [
+   "hkma.gov.hk",
+   "sfc.hk",
+   "info.gov.hk"
+  ]
+ },
+ "errors": [],
+ "markets": {
+  "KR": {
+   "auto_checked": "2026-10-23",
+   "items": [
+    {
+     "date": "2026-10-21",
+     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVg5VWRhcElqbnBWV2cxUFNja2l3Y2VHVlhBZHU2N0FaN3dpZkxjcE5vYVhGTDNxRnJOTVdVYmE3WGJjdHQ2UzgwYlJEblc4YUJ1c1ZOd21qbDBPT1BNalh2Y1RVay10OWJBZ2Y3LXI2aldpeVlOYTRmUjFKYUdVV2FZd1JFc2lWQkhUaVFqdzF3eFFESUJHLUEwVHA1d0p6MFNZ?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-16",
+     "title": "참고 3. 스테이블코인 동향 및 금융안정 관련 잠재리스크74)",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQnc1MERDV1ZFSGhIQjZDdFZhSFN4OUZRMlFtV25KbmFOdkRDelZKWWxPSWFPa0VHOEpyN3pVVlI2WVBIRVdkamg5SndtTTJnSjR6YTc3V1hvV1BSeGhNQldvbXVGMmlzQW1ZQWRwR0NkbUt5b2xITHVPdUx3V2pHSGdNLU9NU2lRcFQ4OUw2VXZ5N3QxOHcxa3Z5bjVtbGdFSHFZWHFn?oc=5",
+     "src": "bok.or.kr",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "title": "'무기한 선물' 이용자 유의사항 안내 - 최근 글로벌 가상자산플랫폼 등에서 거래되는 '무기한 선물'은 국내법의 투자자 보호가 적용되지 않아 각별한 주의 필요",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wRmd1MFpGOFVzTlFOMlNIT2xxa29zS0VYMUFwU2o0NzV1UDZVdFhZeXNNWmx4eFVEbS11d2pmU2hYZ3VqWG5EeDdnemtHUTRFaVV5U1FET1dOWnhfRC15cmpacVRYWWlXVGR6ZHdLVk5OR2lm?oc=5",
+     "src": "정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속 차단 - 카드/한컷 | 멀티미디어",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52dlVxdTBWMklmQnhsc25VcHVkZGtKdE8zUUlvYmFWWW1VZ2RUeWs4aUVOV2dDclVndkl1bGtBNmxldUlLbEtSYWNPbHVHU3c1UlJCY3J1SmUtdTN3eTFZVkVyYjJGSEZYVXJ6V3ZR?oc=5",
+     "src": "정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-13",
+     "title": "미신고 불법 가상자산 취급 웹사이트 27곳 접속 차단…피해 예방",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IWU1VU1luUWhSVXdnWXdOUnNhZmhwd3lqWlVBc2NZSU5MZ1hyNDd3MVY1VWlNVTlCZ2FaR2NjNVBnbUtBdmN0d1ZGeFh2WEk3NnJ6QV84UkVGZzFWRkxkTTVoUXBzLUlWUF9Ccw?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
+     "date": "2026-10-13",
+     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속이 차단됩니다.",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQi00a05qeG1lRjhiZ0xMOE5GdXdxOEc2REQ4QjZUNzIxNTM3LWlhd1R6WE82MnZjQlludExyanVqZTlReWRzMmxLaWVaRDVHWld1aEZ3ZmxTTGZDQ0FObDlQTGdMZDZfbzNvTFkydEl0Y09JMDdQWDhxVkZPNXdZY2pGVERwYXBsaE1kY1BB?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-12",
+     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01OV9mbVhza3d6SXVwd2dNNVFRVGNhWGRSUVlvS0hINFI5dzdfcW15VXlyanY2aElDNDNDQjdXM3N3dGFmbDEtR3E3cHpySTRYYmtEZldUWFYyRWN6aHpRdmxGXzVjem1VQ2IwQ0MtXzNHT0ty?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
+     "date": "2026-10-12",
+     "title": "가상자산으로 빠져나간 피싱 피해금, 이제는 돌려받을 수 있습니다",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBycG05UTNFNnhpQ3FIaHVydzNTeHlZMW5feDBZaVl2WE5oVmRGcXEtU0l0b1dIWlB4cXVvUWJCVU9oeElyaEotM3R2cjRsV1drZVBiNktjX0R6WEIzeXN4ZHFKY3VLU1kyX0RVYg?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-12",
+     "title": "가상자산으로 빠져나간 피싱 피해금, 이제는 돌려받을 수 있습니다 - 카드/한컷 | 멀티미디어",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9KbVdWcjB3emRaQ3JadERhcVZFeUhia2R1cGdMTG1nbEdMVGNZbUJlS2w0THRBdV8xNW9DY0NhWHR5TGhSSFZ5bGU3Q3RnS2hLTEtWdFcwMXF5RUliT0hiMjhzU20yTjRhRXpyZVlR?oc=5",
+     "src": "정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-08",
+     "title": "IMF GFSR 「토큰화의 확대: 새로운 효율성과 취약성」 발표 행사 개최",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWkVhSmZtYTlwUlBtQUFaWWprMDl3RFRSeXdDR05iZC15ZmtqRTctN1pjRWRXWUZ4OXctbXB6RzBEOWtfQkNHbDBEMzZFenR4TkgzZVZrUVNxTl92ZTlmY2l1Snp2STh6U1c3TXhrQnNFREE5UDlhbHpoQU5NeUlwaWZJQW41NklPSFVmNml6Qk0wN1JPNzRkR21xRlpudmtfVFZBUUVseklZRHZoUTdyWVk1UHFHQmc5d2xOMkJn?oc=5",
+     "src": "bok.or.kr",
+     "topics": [
+      "general"
+     ]
+    }
+   ]
+  },
+  "US": {
+   "auto_checked": "2026-10-23",
+   "items": [
+    {
+     "date": "2026-10-21",
+     "title": "OCC Advances U.S. Digital Asset Leadership with Final Rule to Implement GENIUS Act",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5BdXRDSTRIaUM0TzI5N1NPZ083OTlwU3Q0cFZYWV9EbGVUbzBPdXJWNnRQZ2t5TTE1SG0zLTlpd2cwamNMWWFZYUVkcGFva29lMXBSQjg4a3V6cjZvY2RuSmNyS2dJa21Sb1ZzV3Vremx6WDNuWjlEZDBvWUprdw?oc=5",
+     "src": "Office of the Comptroller of the Currency (OCC) (.gov)",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "title": "GENIUS Act: Revised Reporting Forms and Instructions for Permitted Payment Stablecoin Issuers Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE44QlhWeWVpRHZwZ1hZOUE1VVZHVTNXYUhnOW9BN1o0di10cDNnMVRfSjBmaHZiclFwWFd4ZGJwVGs0eXlCdHItS2dTeldZVmM0bjV6ckxiOXRGTzNVREpqc1IyNjZaY1VEX09qREtXT3BUMW5sa1pOekZNRQ?oc=5",
+     "src": "Office of the Comptroller of the Currency (OCC) (.gov)",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "title": "Crypto Task Force Written Input",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVzROOFg3WUVONGFiOEtqZGVyd19tYm96eXZLTk9xVFZETzBLLWNIQUt6VWV5R2J0YnhpMXpwZ0lXVzJKblV6U29lbXNVdkZCN0NscHlRQ3FwRXhMaEpZRDlIekZTNDBQUjJkekNxYTB4ajZfcXRkTUZfcjNVbjFYdHJRd3F1bG1JWGNrVENsQzdrS3Z2UHo5TjY5NC1IdDB1UzlsbjJfZk40aEdPbURITlhveE1WODd6Zm5uMmVBVG44TVZiY1FqLTFKZkhaaHZxSmdn?oc=5",
+     "src": "SEC.gov",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-13",
+     "title": "Regulation Crypto Asset Transactions and Regulation Crypto Asset Markets",
+     "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20888/regulation-crypto-asset-transactions-and-regulation-crypto-asset-markets",
+     "src": "Federal Register · Proposed Rule · Commodity Futures Trading Commission",
+     "topics": [
+      "general"
+     ]
+    }
+   ]
+  },
+  "JP": {
+   "auto_checked": "2026-10-23",
+   "items": []
+  },
+  "VN": {
+   "auto_checked": "2026-10-23",
+   "items": []
+  },
+  "SG": {
+   "auto_checked": "2026-10-23",
+   "items": []
+  },
+  "ID": {
+   "auto_checked": "2026-10-23",
+   "items": []
+  },
+  "AE": {
+   "auto_checked": "2026-10-23",
+   "items": []
+  },
+  "EU": {
+   "auto_checked": "2026-10-23",
+   "items": [
+    {
+     "date": "2026-10-14",
+     "title": "​The EBA classifies USDC as the first significant e-money token in the European Union",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWGJib3VuMVdkZ2hHeGFBb3hwUWVxc2JCbmJhN3NJYVEyUnRHRGUtT3pzZ000emVIMG9OaWNib2U3OEgwSkM2eWVSZHQzU2VCOTd4VWlybWRYZHVZMXFjUnZESEVEYUtRajZUbTRXbWZHUG5CTjNYQTR0NlBhRVdmQTRfeWFkdm9LZThUR29QZ1VsaGE0S3cxWkswZ1d5VWlHR1N4WHFMRFJJNGgxMThjREFKeC1qVjhBV21mQmZuSnVnRlptbEQ1SmN3?oc=5",
+     "src": "European Banking Authority",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
+     "date": "2026-10-12",
+     "title": "Article 11 Rights of offerors and persons seeking admission to trading of crypto-assets other than asset-referenced tokens or e-money tokens | European Securities and Markets Authority",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUUo5SlhMUlhVTndNVlZ1ZUVnMzZnOGgwbS1hcWoyalllN1RVWXpiZmpYVzFUN2M1VExPYnhKQ0IzLUQ3SXFjZ01fLUdyMV9XcEN1dlZzdHJGRGgwSE10djAtbW9tcWtqN2FGNzJDUUhXaVZwelFQTTBaTW4zQ3R1bWFFMFlCVUJTS1o2R2V3b1NrM0hqdEFDLXQ2ZU5WdHNEY3Fxd0hrc3I0RnBpejAwZUFqdlBFaThQeFdoSw?oc=5",
+     "src": "| European Securities and Markets Authority",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
+     "date": "2026-10-11",
+     "title": "Article 78 Execution of orders for crypto-assets on behalf of clients",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeVZCY0lXT2NBSEFhRGdueTRINjBuMmRVdE5jQXZaWGNQdHVZaVZMcTlEVlp1VnRXNFFKWVl5SVVvOUViUEdTcll2SXVETGFCWUJmVmxMNGpnUFlBd2lxdUJKMmpGYWVMclRia0kxTkRLNDR0QmdfQWhReFd1ODd6NHVzTHhJdFo2aUFFR2tRVC12YWVSLTdwQWl6cXlLS0dTaDZZeFdDX3RVdkJlRWlqcDZwZktMbzMzMWRuaGhNU2c?oc=5",
+     "src": "| European Securities and Markets Authority",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-09",
+     "title": "ESMA seeks evidence on the use of tokenised collateral in central clearing",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOelV4YnI1T0p5TU5DYmdRaU1PcG5rX0RVQU40Z0VGeFM0U2syRDJWYUktTTNKWThqTnZCS2VuaWpDUWNJSEFQcS13eFFHaFJJODNRdmVrVGFMdUxHV1NudzVyM1BLWEVMYlo2RC1tdmppd0E5NUVYUktMM0RXRWhvU3ZvWGx5cmlydTNwZUNmbjJWdXV6VWg5M2lxVWg4aWlfTlFadWJ1ek5qQkFjbmc?oc=5",
+     "src": "| European Securities and Markets Authority",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-10-08",
+     "title": "Opinion on the provision of crypto asset services in relation to non-MiCA-compliant asset-referenced tokens and e-money tokens",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbk13U2F5Mkk3WllBVmVVRjZESVMtUUVnd1JpZEdQd0xyRllOTWpZNUJmZ3FENHFrTjdLb2htTnFkdms2NGVwMlBrbHJYd0ZIZkRodC1pQVBXZzMxVzB4Z1ZSLUh3OC05amlzQTBkd2MwSlZlMmJadEVZRlBhRjNhQXlKNXUtUTFwdWc3bzQzV3k0UHdwbVdmVlBkaWhNY2NxTW5ZdXY4QkdITEstS0lYbDR4aklMM1BMWDNyNw?oc=5",
+     "src": "| European Securities and Markets Authority",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
+     "date": "2026-10-08",
+     "title": "ESMA75-113276571-1742 Opinion on the provision of crypto asset services in relation to non-MiCA-compliant asset-referenced token",
+     "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPcEgyNVo2cnJzbklfVlRwWTVvYzdudWlCU1BieFUyMXFLeHRZRVhBUWN6dkRYc2tJZGtwb0dwQ00wN0FWT0V2dktWclotX1VaNTdWUG40WG81WnNMcE1LRmRSNk5mazJKaXVoTjE0ZzJJel9mTV9ET0RUTFZzczg0NUc5YnJ0MUVJOW0xUW9hX3BoQnI1UXBpX2hEOFRTclpOLXdKV0JmU0dlbUY4UmlqZXNHM0lGQjZPRFJkTjZUQllTQzI2ZU52M3IyODhMZ0pxbjdMcHI3UTRocWtvX1ZpbmlwSUl2clAycGotSU9OR2gzUUhFMk5TNjBLWE5oSDhGTnhDSHpoNUFNMGFCNHJkb3FRSk5NLTFVV1BXWDg5Z01qZTdQZ1hfVWFDM3VBTTJo?oc=5",
+     "src": "| European Securities and Markets Authority",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-08",
+     "title": "ESMA sets out supervisory expectations on services related to unauthorised stablecoins",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQal9RQ3dodWs4cURBRW4wVU9HTEhwSE5GcHFYZ1M1R1BRYmNkUTdIV3N3MTQ0MlpjV3lyVVBweDM5alJKLTRZSnNZRDdmYWx2RV9mMjloT1hTclhyRTNFRFpvaGhGMXhBeFVLR3ktN3UyRTkwancyTGFMaENjN2VZZi1tUEV6RDBhajMybkZSb0NPSWZwUGkzY0lVSlFxaVB2RDJzLVdVNlpXaXVTSEw0UHE4UENGOVE?oc=5",
+     "src": "| European Securities and Markets Authority",
+     "topics": [
+      "stable"
+     ]
+    }
+   ]
+  },
+  "UK": {
+   "auto_checked": "2026-10-23",
+   "items": [
+    {
+     "date": "2026-10-21",
+     "title": "CP26/36: Cryptoasset perimeter guidance",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd1pla3FPd0VJYUNoRTg4cUxwS2gtU2gwdE9WWnNtUjFLX0VYMVoyOERiZG8tU1J1ai1hendxU2RYY3VYS2s3WV8tYzhhcVo2QkttSVVOMnNoYWx4ekN5Znc1SDMxV0k0UGIySTJmdUJuSkNCa0hrNmRsMUozWWNOSlU0Y0lQTjVTZ253dkh1TC0zWnl6YTktODRn?oc=5",
+     "src": "Financial Conduct Authority | FCA",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "title": "Help with VAT treatment of cryptoassets — GfC21",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWnpJMnMtNnV5NWZkZUJ4Z3d2UDRNVjZ1R3p6d1NJU3F0ZEVwdjhZSmp3dzNUSUpGcl94d3NIMHA4WV9ySEZUTUFLZDBJY1FXengyMExFTlVuTjJlZDc3Tld4MEFiUzdJNE8wY2psMVRhVHFBVi1rektMeG1meXJoeXZfU1BFQ0kxQk1UWElBc0djalBqalJuUk9QbzRTMHBYTU1WenpNS1B3M1JQU21hTmVLYUJBbi1oZjBpdkEwNlB2dw?oc=5",
+     "src": "GOV.UK",
+     "topics": [
+      "general"
+     ]
+    }
+   ]
+  },
+  "HK": {
+   "auto_checked": "2026-10-23",
+   "items": [
+    {
+     "date": "2026-10-09",
+     "title": "Associate Fintech Director (Fintech Facilitation Office) – Tokenisation and CBDC Projects",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOLU54MG00UlJzQUpsaWN1Rk5XVlZIdDhyZTM5elpneEkwb1ZzR2wtbUZxMUxBNWhObi13Skg1VEZ0YldRRGdKdTdoeTdCVklRa0FPTXNRX2YwUmpSOEQ0YlZodGJuUEpWbS12NXZpU0hiVUtKdUtzaWRsMUdOQkFSRHVuY1RSdFZCa3c?oc=5",
+     "src": "Hong Kong Monetary Authority",
+     "topics": [
+      "sto"
+     ]
+    }
+   ]
+  }
+ }
+}

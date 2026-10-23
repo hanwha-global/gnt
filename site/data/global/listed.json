@@ -1,0 +1,379 @@
+{
+ "updated_at": "2026-10-23T04:23:41+00:00",
+ "source": "Yahoo Finance 재무 시계열 · stockanalysis.com(각 사 공시 기반)",
+ "markets": {
+  "jp": {
+   "unit": "십억엔",
+   "rows": [
+    {
+     "name": "Nomura Holdings",
+     "ticker": "8604",
+     "note": "",
+     "equity": 3707.87,
+     "ni": 362.13,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8604.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "SBI Holdings",
+     "ticker": "8473",
+     "note": "",
+     "equity": 1794.94,
+     "ni": 427.58,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8473.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Daiwa Securities Group",
+     "ticker": "8601",
+     "note": "",
+     "equity": 1769.39,
+     "ni": 175.28,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8601.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Okasan Securities Group",
+     "ticker": "8609",
+     "note": "",
+     "equity": 230.97,
+     "ni": 21.36,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8609.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Tokai Tokyo Financial",
+     "ticker": "8616",
+     "note": "",
+     "equity": 195.77,
+     "ni": 16.57,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8616.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Monex Group",
+     "ticker": "8698",
+     "note": "온라인",
+     "equity": 126.4,
+     "ni": 10.91,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8698.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Matsui Securities",
+     "ticker": "8628",
+     "note": "온라인",
+     "equity": 82.35,
+     "ni": 15.48,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8628.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "IwaiCosmo Holdings",
+     "ticker": "8707",
+     "note": "",
+     "equity": 74.3,
+     "ni": 10.44,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8707.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "GMO Financial Holdings",
+     "ticker": "7177",
+     "note": "온라인",
+     "equity": 52.84,
+     "ni": 10.45,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/7177.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Marusan Securities",
+     "ticker": "8613",
+     "note": "",
+     "equity": 51.44,
+     "ni": 5.01,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8613.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Aizawa Securities Group",
+     "ticker": "8708",
+     "note": "",
+     "equity": 47.48,
+     "ni": 2.75,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8708.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Ichiyoshi Securities",
+     "ticker": "8624",
+     "note": "",
+     "equity": 31.0,
+     "ni": 4.39,
+     "asof": "2026-03-31",
+     "url": "https://finance.yahoo.com/quote/8624.T/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    }
+   ]
+  },
+  "vn": {
+   "unit": "조동",
+   "rows": [
+    {
+     "name": "Techcombank Securities (TCBS)",
+     "ticker": "TCX",
+     "note": "",
+     "equity": 44.1,
+     "ni": 5.68,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/TCX.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "VPBank Securities",
+     "ticker": "VPX",
+     "note": "",
+     "equity": 33.83,
+     "ni": 3.57,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/VPX.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "SSI Securities",
+     "ticker": "SSI",
+     "note": "",
+     "equity": 31.94,
+     "ni": 4.11,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/SSI.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "VPS Securities",
+     "ticker": "VCK",
+     "note": "",
+     "equity": 28.84,
+     "ni": 3.58,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/VCK.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "VIX Securities",
+     "ticker": "VIX",
+     "note": "",
+     "equity": 21.45,
+     "ni": 5.41,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/VIX.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "VNDirect",
+     "ticker": "VND",
+     "note": "",
+     "equity": 20.9,
+     "ni": 2.02,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/VND.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Vietcap Securities",
+     "ticker": "VCI",
+     "note": "",
+     "equity": 18.01,
+     "ni": 1.34,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/VCI.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "HSC Securities",
+     "ticker": "HCM",
+     "note": "",
+     "equity": 14.54,
+     "ni": 1.18,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/HCM.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "BIDV Securities",
+     "ticker": "BSI",
+     "note": "",
+     "equity": 5.53,
+     "ni": 0.49,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/BSI.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "FPT Securities",
+     "ticker": "FTS",
+     "note": "",
+     "equity": 4.42,
+     "ni": 0.4,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/FTS.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "VietinBank Securities",
+     "ticker": "CTS",
+     "note": "",
+     "equity": 2.86,
+     "ni": 0.58,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/CTS.VN/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    }
+   ]
+  },
+  "sg": {
+   "unit": "백만 S$",
+   "rows": [
+    {
+     "name": "UOB-Kay Hian Holdings",
+     "ticker": "U10",
+     "note": "",
+     "equity": 2269.8,
+     "ni": 239.37,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/U10.SI/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "iFAST Corporation",
+     "ticker": "AIY",
+     "note": "온라인 플랫폼",
+     "equity": 397.99,
+     "ni": 100.01,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/AIY.SI/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    }
+   ]
+  },
+  "id": {
+   "unit": "십억 루피아",
+   "rows": [
+    {
+     "name": "Trimegah Sekuritas",
+     "ticker": "TRIM",
+     "note": "",
+     "equity": 2074.56,
+     "ni": 593.46,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/TRIM.JK/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Panin Sekuritas",
+     "ticker": "PANS",
+     "note": "",
+     "equity": 1592.25,
+     "ni": 191.05,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/PANS.JK/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Yulie Sekuritas",
+     "ticker": "YULE",
+     "note": "",
+     "equity": 698.02,
+     "ni": 132.14,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/YULE.JK/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    },
+    {
+     "name": "Minna Padi Investama Sekuritas",
+     "ticker": "PADI",
+     "note": "",
+     "equity": 157.77,
+     "ni": 1.81,
+     "asof": "2025-12-31",
+     "url": "https://finance.yahoo.com/quote/PADI.JK/balance-sheet",
+     "via": "yahoo",
+     "checked": "2026-10-23",
+     "stale": false
+    }
+   ]
+  }
+ },
+ "errors": [
+  "vn SHS: yahoo: Yahoo: 자본총계 없음; sa: stockanalysis: 자본 행 없음",
+  "vn MBS: yahoo: Yahoo: 자본총계 없음; sa: stockanalysis: 자본 행 없음",
+  "id RELI: yahoo: Yahoo: 자본총계 없음; sa: stockanalysis: 자본 행 없음"
+ ]
+}

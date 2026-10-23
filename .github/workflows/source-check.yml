@@ -1,0 +1,61 @@
+name: Overseas-entry sources semiannual check (no LLM)
+
+# 해외진출 유의사항·해외지분투자 Workflow 탭이 인용한 법령·규정 원문이 바뀌었는지 반기 1회 점검한다.
+# 바뀐 게 없으면 원문 점검일만 갱신, 바뀌면 해당 행에 '개정 감지·검토 필요' + GitHub 이슈.
+on:
+  schedule:
+    - cron: "0 0 2 1,7 *"   # 매년 1월·7월 2일 09:00 KST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [guide/scripts/check_sources.py]   # 점검 스크립트가 바뀌면 기준값을 다시 잡는다
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: source-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 법령·규정 원문 변경 점검
+        env:
+          LAW_OC: ${{ secrets.LAW_OC }}   # 국가법령정보센터 Open API 아이디(없으면 국내 법령 시행일 비교만 건너뜀)
+        run: python guide/scripts/check_sources.py --issue "$RUNNER_TEMP/issue.md"
+      - name: Tests
+        run: python -m unittest discover -s tests
+      - name: Commit data
+        id: commit
+        run: |
+          git config user.name "gnd-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guide/data/source_status.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "data: semiannual source check $(date -u +%F)"
+            git pull --rebase origin main
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Open issue for changed sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f "$RUNNER_TEMP/issue.md" ]; then
+            gh issue create --title "법령·규정 원문 개정 감지 $(date -u +%F): 유의사항·Workflow 탭 검토 필요" --body-file "$RUNNER_TEMP/issue.md"
+          fi
+      - name: Redeploy Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

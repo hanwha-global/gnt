@@ -1,0 +1,2124 @@
+{
+ "updated_at": "2026-10-23T03:14:32+00:00",
+ "source": "DART OpenAPI (정기보고서 주요재무·타법인출자현황, 공시목록)",
+ "firms": {
+  "미래에셋증권": {
+   "corp_code": "00111722",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 195605130,
+    "liabilities": 179355277,
+    "equity": 16249853,
+    "net_income": 2907159,
+    "op_income": 3864913
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260814004118",
+    "rcept_dt": "20260814"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 150283930,
+    "liabilities": 136805727,
+    "equity": 13478203,
+    "net_income": 1582916,
+    "op_income": 1915104
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260515002972",
+    "rcept_dt": "20260515"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260515002972",
+    "rcept_dt": "20260515"
+   },
+   "overseas_direct": [
+    {
+     "name": "Asia Cinema Group Ltd.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2019.12.19",
+     "share_pct": 30.0,
+     "book_value": 5175,
+     "total_assets": 375583,
+     "net_income": -3134,
+     "seed_name": null
+    },
+    {
+     "name": "New Frontera Holdings,LLC",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2021.07.28",
+     "share_pct": 4.68,
+     "book_value": 6623,
+     "total_assets": 330915,
+     "net_income": -41711,
+     "seed_name": null
+    },
+    {
+     "name": "MiraeAssetSecurities(UK)",
+     "country_guess": "영국",
+     "purpose": "경영참가",
+     "first_acquired": "1991.05.03",
+     "share_pct": 100.0,
+     "book_value": 302457,
+     "total_assets": 752799,
+     "net_income": 3728,
+     "seed_name": "Mirae Asset Securities (UK) Ltd."
+    },
+    {
+     "name": "MiraeAssetSecuritiesHoldings(USA)Inc.",
+     "country_guess": "미국",
+     "purpose": "경영참가",
+     "first_acquired": "2018.03.27",
+     "share_pct": 100.0,
+     "book_value": 680831,
+     "total_assets": 821186,
+     "net_income": -59,
+     "seed_name": "Mirae Asset Securities Holdings (USA) Inc."
+    },
+    {
+     "name": "MiraeAssetSecurities(HK)",
+     "country_guess": "홍콩",
+     "purpose": "경영참가",
+     "first_acquired": "2006.06.12",
+     "share_pct": 100.0,
+     "book_value": 1639704,
+     "total_assets": 4078708,
+     "net_income": 67175,
+     "seed_name": "Mirae Asset Securities (HK) Limited"
+    },
+    {
+     "name": "MiraeAssetRealtySingapore",
+     "country_guess": "싱가포르",
+     "purpose": "경영참가",
+     "first_acquired": "2009.05.11",
+     "share_pct": 100.0,
+     "book_value": 221,
+     "total_assets": 262,
+     "net_income": -11,
+     "seed_name": "Mirae Asset Realty (Singapore) PTE."
+    },
+    {
+     "name": "MiraeAssetCapitalMarkets(India)PrivateLimited",
+     "country_guess": "인도",
+     "purpose": "경영참가",
+     "first_acquired": "2023.05.31",
+     "share_pct": 100.0,
+     "book_value": 1061400,
+     "total_assets": 1092311,
+     "net_income": 16268,
+     "seed_name": "Mirae Asset Capital Markets (India) Private Limited"
+    },
+    {
+     "name": "Human Value Developers Private Limited",
+     "country_guess": "인도",
+     "purpose": "경영참가",
+     "first_acquired": "2024.11.27",
+     "share_pct": 100.0,
+     "book_value": 233069,
+     "total_assets": 139792,
+     "net_income": -101,
+     "seed_name": "Human Value Developers Private Limited"
+    },
+    {
+     "name": "GENOSCO,INC",
+     "country_guess": "미국",
+     "purpose": "일반투자",
+     "first_acquired": "2023.08.25",
+     "share_pct": 0.42,
+     "book_value": 1465,
+     "total_assets": 11760,
+     "net_income": -9647,
+     "seed_name": null
+    }
+   ],
+   "excluded": [
+    {
+     "name": "The baring Asia Private Equity VII",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2019.05.13",
+     "share_pct": 0.36,
+     "book_value": 18960,
+     "total_assets": 7350823,
+     "net_income": 163084,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Blackstone Capital Partners Asia II",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2022.11.18",
+     "share_pct": 0.16,
+     "book_value": 7845,
+     "total_assets": 7572609,
+     "net_income": 2620021,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "MBK Partners Special Situations Ⅰ, L.P.",
+     "country_guess": null,
+     "purpose": "일반투자",
+     "first_acquired": "2018.06.04",
+     "share_pct": 5.88,
+     "book_value": 46657,
+     "total_assets": 1118164,
+     "net_income": 98990,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "MBK Partners Special Situations Ⅱ, L.P.",
+     "country_guess": null,
+     "purpose": "일반투자",
+     "first_acquired": "2021.12.17",
+     "share_pct": 0.56,
+     "book_value": 8405,
+     "total_assets": 2197110,
+     "net_income": 70000,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "TPG Asia VIII, L.P.",
+     "country_guess": null,
+     "purpose": "일반투자",
+     "first_acquired": "2023.08.31",
+     "share_pct": 0.19,
+     "book_value": 7241,
+     "total_assets": 4915143,
+     "net_income": 157741,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "KKR European Fund V",
+     "country_guess": "영국",
+     "purpose": "단순투자",
+     "first_acquired": "2020.01.15",
+     "share_pct": 0.93,
+     "book_value": 33556,
+     "total_assets": 3573462,
+     "net_income": 148058,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Refactor Capital, L.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2016.09.09",
+     "share_pct": 5.69,
+     "book_value": 13602,
+     "total_assets": 282481,
+     "net_income": -15255,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "North Haven India Infrastructure Partners L.P.",
+     "country_guess": "인도",
+     "purpose": "단순투자",
+     "first_acquired": "2018.08.10",
+     "share_pct": 10.66,
+     "book_value": 17025,
+     "total_assets": 180081,
+     "net_income": 20760,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "K2 Partners Fund",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2015.08.03",
+     "share_pct": 6.98,
+     "book_value": 21093,
+     "total_assets": 329880,
+     "net_income": 48660,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [],
+   "new_entities": [],
+   "candidate_reasons": {}
+  },
+  "한국투자증권": {
+   "corp_code": "00160144",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 147163336,
+    "liabilities": 133263163,
+    "equity": 13900173,
+    "net_income": 1731071,
+    "op_income": 2170107
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260930000623",
+    "rcept_dt": "20260930"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 116564181,
+    "liabilities": 105363555,
+    "equity": 11200626,
+    "net_income": 2013488,
+    "op_income": 2342692
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260515000880",
+    "rcept_dt": "20260515"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260515000880",
+    "rcept_dt": "20260515"
+   },
+   "overseas_direct": [
+    {
+     "name": "진우(북경)투자자문유한공사",
+     "country_guess": "중국",
+     "purpose": "경영참가",
+     "first_acquired": "2010.11.12",
+     "share_pct": 100.0,
+     "book_value": 3323,
+     "total_assets": 3508,
+     "net_income": 3,
+     "seed_name": null
+    },
+    {
+     "name": "팬텀AI Inc.",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.06.16",
+     "share_pct": 0.5,
+     "book_value": 622,
+     "total_assets": 17143,
+     "net_income": -2626,
+     "seed_name": null
+    },
+    {
+     "name": "KI&S Asia, Ltd. (홍콩현지법인)",
+     "country_guess": "홍콩",
+     "purpose": "경영참가",
+     "first_acquired": "1997.07.11",
+     "share_pct": 100.0,
+     "book_value": 541983,
+     "total_assets": 765451,
+     "net_income": 12004,
+     "seed_name": "Korea Investment & Securities Asia, Ltd."
+    },
+    {
+     "name": "KI&S Europe, Ltd. (런던현지법인)",
+     "country_guess": "영국",
+     "purpose": "경영참가",
+     "first_acquired": "1994.11.14",
+     "share_pct": 100.0,
+     "book_value": 2195,
+     "total_assets": 4765,
+     "net_income": 273,
+     "seed_name": "Korea Investment & Securities Europe, Ltd."
+    },
+    {
+     "name": "KI&S Singapore, Pte. Inc. (싱가폴현지법인)",
+     "country_guess": "싱가포르",
+     "purpose": "경영참가",
+     "first_acquired": "2008.03.24",
+     "share_pct": 100.0,
+     "book_value": 7677,
+     "total_assets": 12431,
+     "net_income": 821,
+     "seed_name": "Korea Investment & Securities Singapore Pte. Ltd."
+    },
+    {
+     "name": "KID",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2007.03.06",
+     "share_pct": 0.0,
+     "book_value": 0,
+     "total_assets": 51958,
+     "net_income": -101,
+     "seed_name": null
+    },
+    {
+     "name": "KIS COV DLP, LLC",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.10.12",
+     "share_pct": 19.0,
+     "book_value": 3,
+     "total_assets": 21976,
+     "net_income": 318,
+     "seed_name": null
+    },
+    {
+     "name": "KIS Indonesia. (인도네시아현지법인)",
+     "country_guess": "인도네시아",
+     "purpose": "경영참가",
+     "first_acquired": "2018.06.26",
+     "share_pct": 99.0,
+     "book_value": 91101,
+     "total_assets": 1324126,
+     "net_income": 39451,
+     "seed_name": "PT Korea Investment & Sekuritas Indonesia"
+    },
+    {
+     "name": "KIS US",
+     "country_guess": null,
+     "purpose": "경영참가",
+     "first_acquired": "2021.01.29",
+     "share_pct": 100.0,
+     "book_value": 292602,
+     "total_assets": 413191,
+     "net_income": 25391,
+     "seed_name": "Korea Investment& Securities US, Inc."
+    },
+    {
+     "name": "KIS Vietnam, Co. (베트남현지법인)",
+     "country_guess": "베트남",
+     "purpose": "경영참가",
+     "first_acquired": "2010.11.29",
+     "share_pct": 99.8,
+     "book_value": 231496,
+     "total_assets": 775290,
+     "net_income": 26378,
+     "seed_name": "KIS Vietnam Securities Corporation"
+    },
+    {
+     "name": "NICE",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2018.03.02",
+     "share_pct": 0.0,
+     "book_value": 0,
+     "total_assets": 3484623,
+     "net_income": 110211,
+     "seed_name": null
+    },
+    {
+     "name": "PGC-KIS DLP I,LLC",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2021.05.24",
+     "share_pct": 19.0,
+     "book_value": 3,
+     "total_assets": 23850,
+     "net_income": 763,
+     "seed_name": null
+    },
+    {
+     "name": "Point2Technology",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2024.05.29",
+     "share_pct": 1.2,
+     "book_value": 2602,
+     "total_assets": 27610,
+     "net_income": -19442,
+     "seed_name": null
+    },
+    {
+     "name": "PT Lotte Chemical Indonesia",
+     "country_guess": "인도네시아",
+     "purpose": "단순투자",
+     "first_acquired": "2025.03.20",
+     "share_pct": 1.9,
+     "book_value": 50000,
+     "total_assets": 5127899,
+     "net_income": -18869,
+     "seed_name": null
+    },
+    {
+     "name": "SF Credit Partners, LLC",
+     "country_guess": "미국",
+     "purpose": "경영참가",
+     "first_acquired": "2023.01.17",
+     "share_pct": 65.1,
+     "book_value": 99583,
+     "total_assets": 218822,
+     "net_income": 11168,
+     "seed_name": "SF Credit Partners, LLC"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "BPEA Fund VII LP",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2019.05.13",
+     "share_pct": 0.5,
+     "book_value": 20122,
+     "total_assets": 6683317,
+     "net_income": 77954,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "BPEA Fund VIII, L.P",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2023.04.25",
+     "share_pct": 0.1,
+     "book_value": 33582,
+     "total_assets": 13152785,
+     "net_income": 120622,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Carlyle Asia Partners Ⅴ L.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2018.12.26",
+     "share_pct": 0.5,
+     "book_value": 29331,
+     "total_assets": 9691009,
+     "net_income": -125228,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "한국투자 SEA-CHINA 펀드",
+     "country_guess": "중국",
+     "purpose": "일반투자",
+     "first_acquired": "2018.10.25",
+     "share_pct": 83.6,
+     "book_value": 207606,
+     "total_assets": 352870,
+     "net_income": -2745,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "KIARA Asia Pacific Hedge Fund",
+     "country_guess": null,
+     "purpose": "일반투자",
+     "first_acquired": "2014.09.11",
+     "share_pct": 0.0,
+     "book_value": 0,
+     "total_assets": 251087,
+     "net_income": 4599,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "KIM Investment Funds",
+     "country_guess": null,
+     "purpose": "일반투자",
+     "first_acquired": "2013.11.22",
+     "share_pct": 26.5,
+     "book_value": 6544,
+     "total_assets": 72751,
+     "net_income": 98,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "MBK Partners Special Situation Ⅰ L.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2018.12.17",
+     "share_pct": 3.6,
+     "book_value": 27754,
+     "total_assets": 993055,
+     "net_income": -6300,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "TPG Asia Ⅶ (B), L.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2018.07.26",
+     "share_pct": 0.3,
+     "book_value": 17428,
+     "total_assets": 7114308,
+     "net_income": -12999,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "WSCP Ⅷ, LP",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2021.09.17",
+     "share_pct": 0.2,
+     "book_value": 25779,
+     "total_assets": 5884805,
+     "net_income": 532930,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Yuanbio Venture Capital L.P.",
+     "country_guess": null,
+     "purpose": "일반투자",
+     "first_acquired": "2018.04.25",
+     "share_pct": 8.6,
+     "book_value": 10050,
+     "total_assets": 232636,
+     "net_income": 94815,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [
+    "진우(북경)투자자문유한공사"
+   ],
+   "new_entities": [
+    "진우(북경)투자자문유한공사"
+   ],
+   "candidate_reasons": {}
+  },
+  "삼성증권": {
+   "corp_code": "00104856",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 106173840,
+    "liabilities": 97517609,
+    "equity": 8656232,
+    "net_income": 939080,
+    "op_income": 1285327
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260814002836",
+    "rcept_dt": "20260814"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 79683213,
+    "liabilities": 71615157,
+    "equity": 8068056,
+    "net_income": 1007227,
+    "op_income": 1375673
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260312001379",
+    "rcept_dt": "20260312"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260312001379",
+    "rcept_dt": "20260312"
+   },
+   "overseas_direct": [
+    {
+     "name": "Point2 Technology Inc.",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.03.04",
+     "share_pct": 1.1,
+     "book_value": 2397,
+     "total_assets": 15937,
+     "net_income": -12906,
+     "seed_name": null
+    },
+    {
+     "name": "List Biotherapeutics, Inc.",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.04.11",
+     "share_pct": 0.0,
+     "book_value": null,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "Mantra Bio, Inc.",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.11.21",
+     "share_pct": 2.6,
+     "book_value": null,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "Five Arrows Investments Ⅱ",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2015.04.21",
+     "share_pct": 2.9,
+     "book_value": 351,
+     "total_assets": 16573,
+     "net_income": -60322,
+     "seed_name": null
+    },
+    {
+     "name": "Samsung Securities (Europe) Limited.",
+     "country_guess": "영국",
+     "purpose": "경영참여",
+     "first_acquired": "1996.07.01",
+     "share_pct": 100.0,
+     "book_value": 27636,
+     "total_assets": 52048,
+     "net_income": 1980,
+     "seed_name": "Samsung Securities (Europe) Ltd."
+    },
+    {
+     "name": "Samsung Securities (America) Inc.",
+     "country_guess": "미국",
+     "purpose": "경영참여",
+     "first_acquired": "1998.10.01",
+     "share_pct": 100.0,
+     "book_value": 32128,
+     "total_assets": 59934,
+     "net_income": 1888,
+     "seed_name": "Samsung Securities (America) Inc."
+    },
+    {
+     "name": "Samsung Securities (Asia) Limited.",
+     "country_guess": null,
+     "purpose": "경영참여",
+     "first_acquired": "2000.09.04",
+     "share_pct": 100.0,
+     "book_value": 40024,
+     "total_assets": 63953,
+     "net_income": 3156,
+     "seed_name": "Samsung Securities (Asia) Ltd."
+    }
+   ],
+   "excluded": [
+    {
+     "name": "AMP Capital Infrastructure Debt Fund IV, LP",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2019.09.03",
+     "share_pct": 0.8,
+     "book_value": 7473,
+     "total_assets": 1256563,
+     "net_income": -635,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Lexington Capital Partners VIII L.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2015.01.08",
+     "share_pct": 0.4,
+     "book_value": 10276,
+     "total_assets": 3594155,
+     "net_income": -581,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Oaktree Opportunities Fund X Feeder, L.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2015.07.14",
+     "share_pct": 0.3,
+     "book_value": 5204,
+     "total_assets": 1998355,
+     "net_income": -406,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "INCLINE B AVIATION(CAYMAN) LP",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2017.03.28",
+     "share_pct": 2.3,
+     "book_value": 12280,
+     "total_assets": 1593356,
+     "net_income": 101443,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "KKR Asian Fund III",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2018.02.09",
+     "share_pct": 0.2,
+     "book_value": 23232,
+     "total_assets": 12552309,
+     "net_income": 877779,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Dyal IV Offshore",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2018.06.08",
+     "share_pct": 0.2,
+     "book_value": 10371,
+     "total_assets": 7480223,
+     "net_income": 652,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Ardian Co-Investment V",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2018.08.07",
+     "share_pct": 0.4,
+     "book_value": 17243,
+     "total_assets": 2467947,
+     "net_income": 2303,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Lexington Capital Partners IX L.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2019.12.19",
+     "share_pct": 0.3,
+     "book_value": 25697,
+     "total_assets": 2432929,
+     "net_income": 745,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Oaktree Mezzanine Fund V",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2020.10.08",
+     "share_pct": 0.9,
+     "book_value": 23635,
+     "total_assets": 9231040,
+     "net_income": 1808,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Blackstone Real Estate Debt Strategies IV",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2020.11.11",
+     "share_pct": 0.3,
+     "book_value": 7433,
+     "total_assets": 4005017,
+     "net_income": 498497,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Blackstone Capital Opportunities Fund IV",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2021.07.22",
+     "share_pct": 0.3,
+     "book_value": 6021,
+     "total_assets": 232270,
+     "net_income": 495,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "SLG SPAC Fund LLC",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.04.14",
+     "share_pct": 5.6,
+     "book_value": 717,
+     "total_assets": null,
+     "net_income": null,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Ares Global Structured Solutions Fund",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2025.07.30",
+     "share_pct": 2.0,
+     "book_value": 4897,
+     "total_assets": 1931778,
+     "net_income": 2114,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "GEN2 KS Korea Credit Fund 1 IC",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2018.08.03",
+     "share_pct": 100.0,
+     "book_value": 43917,
+     "total_assets": 62217,
+     "net_income": 1784,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Caldera Pacific Haku II,L.P.",
+     "country_guess": null,
+     "purpose": "경영참여",
+     "first_acquired": "2017.11.08",
+     "share_pct": 96.2,
+     "book_value": 78597,
+     "total_assets": 148961,
+     "net_income": 8505,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [],
+   "new_entities": [],
+   "candidate_reasons": {}
+  },
+  "키움증권": {
+   "corp_code": "00296290",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 108341293,
+    "liabilities": 100760493,
+    "equity": 7580800,
+    "net_income": 1157966,
+    "op_income": 1410170
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260813001767",
+    "rcept_dt": "20260813"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 81173768,
+    "liabilities": 74451363,
+    "equity": 6722405,
+    "net_income": 1114974,
+    "op_income": 1488240
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260317000838",
+    "rcept_dt": "20260317"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260317000838",
+    "rcept_dt": "20260317"
+   },
+   "overseas_direct": [
+    {
+     "name": "KIWOOM ASSET MANAGEMENT ASIA PTE. LTD.",
+     "country_guess": "싱가포르",
+     "purpose": "경영참여",
+     "first_acquired": "2023.11.16",
+     "share_pct": 100.0,
+     "book_value": 10332,
+     "total_assets": 12463,
+     "net_income": 996,
+     "seed_name": "KIWOOM ASSET MANAGEMENT ASIA PTE. LTD."
+    },
+    {
+     "name": "Kiwoom Securities Holdings USA Inc.",
+     "country_guess": "미국",
+     "purpose": "경영참여",
+     "first_acquired": "2025.05.15",
+     "share_pct": 100.0,
+     "book_value": 29122,
+     "total_assets": 28258,
+     "net_income": -541,
+     "seed_name": null
+    },
+    {
+     "name": "다우홍콩유한공사",
+     "country_guess": "중국",
+     "purpose": "단순투자",
+     "first_acquired": "2008.05.02",
+     "share_pct": 43.0,
+     "book_value": 11170,
+     "total_assets": 55971,
+     "net_income": 2599,
+     "seed_name": null
+    },
+    {
+     "name": "PT Kiwoom sekuritas Indonesia",
+     "country_guess": "인도네시아",
+     "purpose": "경영참여",
+     "first_acquired": "2010.10.29",
+     "share_pct": 99.0,
+     "book_value": 13243,
+     "total_assets": 55044,
+     "net_income": -3829,
+     "seed_name": "PT Kiwoom Sekuritas Indonesia"
+    },
+    {
+     "name": "키움홍콩(주5)",
+     "country_guess": "홍콩",
+     "purpose": "경영참여",
+     "first_acquired": "2018.09.18",
+     "share_pct": 100.0,
+     "book_value": 16893,
+     "total_assets": 30437,
+     "net_income": 356,
+     "seed_name": "Kiwoom Hong Kong Limited"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "Kiwoom Asia Feeder Fund",
+     "country_guess": null,
+     "purpose": "경영참여",
+     "first_acquired": "2024.11.15",
+     "share_pct": 100.0,
+     "book_value": 84384,
+     "total_assets": 94122,
+     "net_income": 6321,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Kiwoom Asia Growth Fund I",
+     "country_guess": null,
+     "purpose": "경영참여",
+     "first_acquired": "2025.03.12",
+     "share_pct": 100.0,
+     "book_value": 729,
+     "total_assets": 639,
+     "net_income": -595,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Kiwoom Asia Growth Fund Ⅱ",
+     "country_guess": null,
+     "purpose": "경영참여",
+     "first_acquired": "2025.03.12",
+     "share_pct": 100.0,
+     "book_value": 13796,
+     "total_assets": 14634,
+     "net_income": 167,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Kiwoom Daou Japan Venture Fund 1",
+     "country_guess": "일본",
+     "purpose": "단순투자",
+     "first_acquired": "2025.05.27",
+     "share_pct": 33.0,
+     "book_value": 3789,
+     "total_assets": 10601,
+     "net_income": -747,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [
+    "Kiwoom Securities Holdings USA Inc."
+   ],
+   "new_entities": [
+    "Kiwoom Securities Holdings USA Inc."
+   ],
+   "candidate_reasons": {}
+  },
+  "토스증권": {
+   "corp_code": "01527984",
+   "financials": null,
+   "financials_report": null,
+   "financials_annual": null,
+   "financials_annual_report": null,
+   "holdings_report": null,
+   "overseas_direct": [],
+   "excluded": [],
+   "new_candidates": [],
+   "new_entities": [],
+   "candidate_reasons": {}
+  },
+  "NH투자증권": {
+   "corp_code": "00120182",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 114676559,
+    "liabilities": 103810537,
+    "equity": 10866022,
+    "net_income": 965124,
+    "op_income": 1317932
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260814002484",
+    "rcept_dt": "20260814"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 83385398,
+    "liabilities": 73947294,
+    "equity": 9438104,
+    "net_income": 1031501,
+    "op_income": 1420580
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260313000771",
+    "rcept_dt": "20260313"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260313000771",
+    "rcept_dt": "20260313"
+   },
+   "overseas_direct": [
+    {
+     "name": "NH nvestment & Securities Europe Ltd",
+     "country_guess": "영국",
+     "purpose": "경영참가",
+     "first_acquired": "2022.02.23",
+     "share_pct": 100.0,
+     "book_value": 35841,
+     "total_assets": 40954,
+     "net_income": 762,
+     "seed_name": "NH Investment & Securities Europe Ltd."
+    },
+    {
+     "name": "서울성보치업유한공사",
+     "country_guess": "중국",
+     "purpose": "일반투자",
+     "first_acquired": "2014.12.30",
+     "share_pct": 9.77,
+     "book_value": null,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "영구대광방지산개발유한공사",
+     "country_guess": "중국",
+     "purpose": "일반투자",
+     "first_acquired": "2014.12.30",
+     "share_pct": 41.56,
+     "book_value": null,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "산동한상치업유한공사",
+     "country_guess": "중국",
+     "purpose": "일반투자",
+     "first_acquired": "2014.12.30",
+     "share_pct": 40.0,
+     "book_value": null,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "EdupalaceINC",
+     "country_guess": null,
+     "purpose": "일반투자",
+     "first_acquired": "2014.12.30",
+     "share_pct": 79.89,
+     "book_value": null,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "Y22PFI( )",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2020.12.18",
+     "share_pct": 5.43,
+     "book_value": 833,
+     "total_assets": 2060972,
+     "net_income": -219091,
+     "seed_name": null
+    },
+    {
+     "name": "NHI nvestment & Securities America, INC",
+     "country_guess": "미국",
+     "purpose": "경영참가",
+     "first_acquired": "1992.06.18",
+     "share_pct": 100.0,
+     "book_value": 4989,
+     "total_assets": 122175,
+     "net_income": 43946,
+     "seed_name": "NH Investment & Securities America, Inc."
+    },
+    {
+     "name": "NH Investment & Securities (H.K)Ltd.",
+     "country_guess": "홍콩",
+     "purpose": "경영참가",
+     "first_acquired": "1994.09.29",
+     "share_pct": 100.0,
+     "book_value": 496517,
+     "total_assets": 1266386,
+     "net_income": 43220,
+     "seed_name": "NH Investment & Securities(H.K.) Ltd."
+    },
+    {
+     "name": "NH Absolute Return Partners Pte.Ltd",
+     "country_guess": "싱가포르",
+     "purpose": "경영참가",
+     "first_acquired": "2008.05.29",
+     "share_pct": 100.0,
+     "book_value": 3535,
+     "total_assets": 5363,
+     "net_income": -104,
+     "seed_name": "NH Absolute Return Partners Pte. Ltd."
+    },
+    {
+     "name": "PT.NH Korindo Securitas Indonesia",
+     "country_guess": "인도네시아",
+     "purpose": "경영참가",
+     "first_acquired": "2009.03.03",
+     "share_pct": 92.68,
+     "book_value": 45128,
+     "total_assets": 112265,
+     "net_income": -1512,
+     "seed_name": "PT. NH Korindo Sekuritas Indonesia"
+    },
+    {
+     "name": "NH Securities Vietnam Co.,Ltd.",
+     "country_guess": "베트남",
+     "purpose": "경영참가",
+     "first_acquired": "2009.02.17",
+     "share_pct": 100.0,
+     "book_value": 129357,
+     "total_assets": 332670,
+     "net_income": 689,
+     "seed_name": "NH Securities Vietnam Co., Ltd."
+    },
+    {
+     "name": "북경NH투자자문유한공사",
+     "country_guess": "중국",
+     "purpose": "경영참가",
+     "first_acquired": "2010.12.06",
+     "share_pct": 100.0,
+     "book_value": 9752,
+     "total_assets": 9214,
+     "net_income": -300,
+     "seed_name": "북경NH투자자문유한공사"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "스마일게이트베트남카이로스1호사모투자합자회사",
+     "country_guess": "베트남",
+     "purpose": "일반투자",
+     "first_acquired": "2019.09.18",
+     "share_pct": 20.0,
+     "book_value": 2000,
+     "total_assets": 5970,
+     "net_income": -1892,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "BlackstoneCapitalPartnersVIL.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2011.08.01",
+     "share_pct": 1.91,
+     "book_value": 14586,
+     "total_assets": null,
+     "net_income": null,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Hydrogen Energy Industry Fund",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2025.05.31",
+     "share_pct": 9.98,
+     "book_value": 3124,
+     "total_assets": 33463,
+     "net_income": null,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "InterVest Star SEA Growth Fund",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2025.05.31",
+     "share_pct": 7.93,
+     "book_value": 7442,
+     "total_assets": 108917,
+     "net_income": -19540,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "NH Absolute Global Opportunity Fund",
+     "country_guess": null,
+     "purpose": "경영참가",
+     "first_acquired": "2008.07.21",
+     "share_pct": 100.0,
+     "book_value": 9164,
+     "total_assets": 10925,
+     "net_income": 509,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "NH Absolute Return Investment Strategies Fund",
+     "country_guess": null,
+     "purpose": "경영참가",
+     "first_acquired": "2010.05.20",
+     "share_pct": 100.0,
+     "book_value": 34953,
+     "total_assets": 53323,
+     "net_income": -912,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [],
+   "new_entities": [],
+   "candidate_reasons": {}
+  },
+  "KB증권": {
+   "corp_code": "00164876",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 102806124,
+    "liabilities": 94585757,
+    "equity": 8220367,
+    "net_income": 801004,
+    "op_income": 1053723
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260814003716",
+    "rcept_dt": "20260814"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 76474890,
+    "liabilities": 69578155,
+    "equity": 6896735,
+    "net_income": 682385,
+    "op_income": 911571
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260324000784",
+    "rcept_dt": "20260324"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260324000784",
+    "rcept_dt": "20260324"
+   },
+   "overseas_direct": [
+    {
+     "name": "KBFG Securities America Inc.",
+     "country_guess": "미국",
+     "purpose": "자회사법인",
+     "first_acquired": "1996.03.31",
+     "share_pct": 100.0,
+     "book_value": 0,
+     "total_assets": 0,
+     "net_income": 0,
+     "seed_name": "KBFG Securities America Inc."
+    },
+    {
+     "name": "HK Plus Joint Stock Company",
+     "country_guess": "베트남",
+     "purpose": "투자",
+     "first_acquired": "2019.12.10",
+     "share_pct": 10.0,
+     "book_value": null,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "FriendliAI Corp.",
+     "country_guess": null,
+     "purpose": "투자",
+     "first_acquired": "2021.12.10",
+     "share_pct": 2.64,
+     "book_value": 0,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "ICHX TECH PTE.LTD.",
+     "country_guess": "싱가포르",
+     "purpose": "투자",
+     "first_acquired": "2022.10.20",
+     "share_pct": 3.88,
+     "book_value": 0,
+     "total_assets": 0,
+     "net_income": 0,
+     "seed_name": null
+    },
+    {
+     "name": "VSI",
+     "country_guess": null,
+     "purpose": "투자",
+     "first_acquired": "2000.06.16",
+     "share_pct": 7.67,
+     "book_value": null,
+     "total_assets": 0,
+     "net_income": 0,
+     "seed_name": null
+    },
+    {
+     "name": "KB Securities Hong Kong Ltd.",
+     "country_guess": "홍콩",
+     "purpose": "자회사법인",
+     "first_acquired": "1997.03.31",
+     "share_pct": 100.0,
+     "book_value": 0,
+     "total_assets": 0,
+     "net_income": 0,
+     "seed_name": "KB Securities Hong Kong Ltd."
+    },
+    {
+     "name": "KB SECURITIES VIETNAM JOINT STOCK COMPANY (구, MARITIME SECURITIES INCORPORATION)",
+     "country_guess": "베트남",
+     "purpose": "자회사법인",
+     "first_acquired": "2017.10.10",
+     "share_pct": 99.81,
+     "book_value": 0,
+     "total_assets": 1,
+     "net_income": 0,
+     "seed_name": "KB SECURITIES VIETNAM JOINT STOCK COMPANY"
+    },
+    {
+     "name": "웨딩북베트남홀딩스RCPS",
+     "country_guess": "베트남",
+     "purpose": "투자",
+     "first_acquired": "2024.06.25",
+     "share_pct": 0.97,
+     "book_value": null,
+     "total_assets": null,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "KB FINA COMPANY LIMITED",
+     "country_guess": null,
+     "purpose": "자회사법인",
+     "first_acquired": "2020.12.24",
+     "share_pct": 100.0,
+     "book_value": 0,
+     "total_assets": 0,
+     "net_income": 0,
+     "seed_name": "KB FINA Joint Stock Company"
+    },
+    {
+     "name": "PT.KB Valbury Sekuritas",
+     "country_guess": "인도네시아",
+     "purpose": "자회사법인",
+     "first_acquired": "2022.02.14",
+     "share_pct": 65.0,
+     "book_value": 0,
+     "total_assets": 0,
+     "net_income": 0,
+     "seed_name": "PT. KB Valbury Sekuritas"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "MBKP SPECIAL SITUATIONSⅠ, L.P.",
+     "country_guess": null,
+     "purpose": "출자",
+     "first_acquired": "2018.06.25",
+     "share_pct": 3.39,
+     "book_value": 0,
+     "total_assets": 1,
+     "net_income": 0,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Golub Capital Partners International 14,",
+     "country_guess": null,
+     "purpose": "출자",
+     "first_acquired": "2022.10.05",
+     "share_pct": 0.35,
+     "book_value": 0,
+     "total_assets": 0,
+     "net_income": 0,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Mangrove Feeder Fund",
+     "country_guess": null,
+     "purpose": "종속회사",
+     "first_acquired": "2018.02.28",
+     "share_pct": 71.63,
+     "book_value": 0,
+     "total_assets": 0,
+     "net_income": 0,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "GH Real Estate I LP",
+     "country_guess": null,
+     "purpose": "종속회사",
+     "first_acquired": "2018.01.30",
+     "share_pct": 81.0,
+     "book_value": 0,
+     "total_assets": 0,
+     "net_income": 0,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [],
+   "new_entities": [],
+   "candidate_reasons": {}
+  },
+  "신한투자증권": {
+   "corp_code": "00138321",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 72169041,
+    "liabilities": 66124602,
+    "equity": 6044439,
+    "net_income": 577649,
+    "op_income": 748372
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260814001157",
+    "rcept_dt": "20260814"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 54077820,
+    "liabilities": 48280415,
+    "equity": 5797405,
+    "net_income": 381605,
+    "op_income": 488478
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260325000632",
+    "rcept_dt": "20260325"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260325000632",
+    "rcept_dt": "20260325"
+   },
+   "overseas_direct": [
+    {
+     "name": "HMC",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2021.08.12",
+     "share_pct": 0.0,
+     "book_value": 1209,
+     "total_assets": 14007,
+     "net_income": -1763,
+     "seed_name": null
+    },
+    {
+     "name": "Shinhan Investment America Inc.",
+     "country_guess": "미국",
+     "purpose": "경영참여",
+     "first_acquired": "1993.06.15",
+     "share_pct": 100.0,
+     "book_value": 5085,
+     "total_assets": 4462,
+     "net_income": -1480,
+     "seed_name": "Shinhan Securities America Inc."
+    },
+    {
+     "name": "PT Shinhan Sekuritas Indonesia",
+     "country_guess": "인도네시아",
+     "purpose": "경영참여",
+     "first_acquired": "2016.07.21",
+     "share_pct": 99.0,
+     "book_value": 19103,
+     "total_assets": 24878,
+     "net_income": -1261,
+     "seed_name": "PT Shinhan Sekuritas Indonesia"
+    },
+    {
+     "name": "Shinhan Investment Asia Ltd.",
+     "country_guess": null,
+     "purpose": "경영참여",
+     "first_acquired": "2007.06.30",
+     "share_pct": 100.0,
+     "book_value": 107194,
+     "total_assets": 177081,
+     "net_income": 3563,
+     "seed_name": "Shinhan Securities Asia Ltd."
+    },
+    {
+     "name": "SHINHAN SECURITIES VIETNAM CO., LTD",
+     "country_guess": "베트남",
+     "purpose": "경영참여",
+     "first_acquired": "2015.07.16",
+     "share_pct": 100.0,
+     "book_value": 98281,
+     "total_assets": 429427,
+     "net_income": 6247,
+     "seed_name": "SHINHAN SECURITIES VIETNAM CO., LTD"
+    },
+    {
+     "name": "Planeta PTE LTD",
+     "country_guess": "싱가포르",
+     "purpose": "단순투자",
+     "first_acquired": "2024.02.07",
+     "share_pct": 33.0,
+     "book_value": 11341,
+     "total_assets": 35171,
+     "net_income": -1043,
+     "seed_name": null
+    },
+    {
+     "name": "Falcon Strategic Partners V",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2017.04.25",
+     "share_pct": 7.0,
+     "book_value": 6473,
+     "total_assets": 726529,
+     "net_income": 104923,
+     "seed_name": null
+    },
+    {
+     "name": "TGC SQUARE PTE. LTD.",
+     "country_guess": "싱가포르",
+     "purpose": "단순투자",
+     "first_acquired": "2023.06.30",
+     "share_pct": 5.0,
+     "book_value": 1834,
+     "total_assets": 34276,
+     "net_income": -93,
+     "seed_name": null
+    },
+    {
+     "name": "카자흐스탄 증권거래소",
+     "country_guess": "카자흐스탄",
+     "purpose": "단순투자",
+     "first_acquired": "2008.03.26",
+     "share_pct": 1.0,
+     "book_value": 363,
+     "total_assets": 11795371,
+     "net_income": 10532,
+     "seed_name": null
+    }
+   ],
+   "excluded": [
+    {
+     "name": "[심천중한산업기금]",
+     "country_guess": "중국",
+     "purpose": "단순투자",
+     "first_acquired": "2016.04.12",
+     "share_pct": 3.0,
+     "book_value": 3128,
+     "total_assets": 424,
+     "net_income": -19,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [],
+   "new_entities": [],
+   "candidate_reasons": {}
+  },
+  "하나증권": {
+   "corp_code": "00113465",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 75545493,
+    "liabilities": 68742012,
+    "equity": 6803481,
+    "net_income": 271585,
+    "op_income": 345323
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260814002599",
+    "rcept_dt": "20260814"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 67498670,
+    "liabilities": 61386548,
+    "equity": 6112122,
+    "net_income": 205956,
+    "op_income": 166480
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260316001131",
+    "rcept_dt": "20260316"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260316001131",
+    "rcept_dt": "20260316"
+   },
+   "overseas_direct": [
+    {
+     "name": "GTI Statia Holdings N.V.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2019.07.29",
+     "share_pct": 23.6,
+     "book_value": 17362,
+     "total_assets": 329408,
+     "net_income": -57241,
+     "seed_name": null
+    },
+    {
+     "name": "알란홀딩스리미티드(구, 북경랑자하나자산관리유한공사)",
+     "country_guess": "중국",
+     "purpose": "단순투자",
+     "first_acquired": "2019.12.31",
+     "share_pct": 9.0,
+     "book_value": 47461,
+     "total_assets": 482650,
+     "net_income": 245,
+     "seed_name": "북경랑자하나자산관리유한공사"
+    },
+    {
+     "name": "HIAN",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2024.01.19",
+     "share_pct": 6.4,
+     "book_value": 510,
+     "total_assets": 0,
+     "net_income": 0,
+     "seed_name": null
+    },
+    {
+     "name": "Cerecin Inc",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2025.06.30",
+     "share_pct": 4.3,
+     "book_value": 12656,
+     "total_assets": 0,
+     "net_income": 0,
+     "seed_name": null
+    },
+    {
+     "name": "IMMGlobalBatteryIILPF",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2022.08.25",
+     "share_pct": 19.1,
+     "book_value": 9382,
+     "total_assets": 51749,
+     "net_income": -100,
+     "seed_name": null
+    },
+    {
+     "name": "IndiesSpecialOpportunitiesIII",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2022.08.29",
+     "share_pct": 1.0,
+     "book_value": 1274,
+     "total_assets": 161522,
+     "net_income": 17692,
+     "seed_name": null
+    },
+    {
+     "name": "하나지분투자관리(심천)유한공사(구, 하나세계(북경)투자자문유한공사)",
+     "country_guess": "중국",
+     "purpose": "경영참여",
+     "first_acquired": "2011.12.14",
+     "share_pct": 50.1,
+     "book_value": 19447,
+     "total_assets": 55399,
+     "net_income": -11699,
+     "seed_name": "하나지분투자관리(심천)유한공사"
+    },
+    {
+     "name": "Hana Asset Management Asia Pte. Ltd.",
+     "country_guess": "싱가포르",
+     "purpose": "경영참여",
+     "first_acquired": "2022.06.24",
+     "share_pct": 100.0,
+     "book_value": 21498,
+     "total_assets": 19507,
+     "net_income": -631,
+     "seed_name": "Hana Asset Management Asia Pte. Ltd."
+    },
+    {
+     "name": "BIDV Securities Joint Stock Company (BSC)",
+     "country_guess": "베트남",
+     "purpose": "경영참여",
+     "first_acquired": "2022.09.30",
+     "share_pct": 35.0,
+     "book_value": 118708,
+     "total_assets": 915203,
+     "net_income": 23705,
+     "seed_name": "BIDV Securities Joint Stock Company (BSC)"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "Octave Tech Investment L25 LLC",
+     "country_guess": "미국",
+     "purpose": "경영참여",
+     "first_acquired": "2022.02.28",
+     "share_pct": 23.8,
+     "book_value": 1841,
+     "total_assets": 5801,
+     "net_income": -13162,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "IMM Global Battery IV Limited SPV",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2024.03.08",
+     "share_pct": 19.4,
+     "book_value": 1391,
+     "total_assets": 7175,
+     "net_income": -1,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "IMM Global Hydrogen LPF",
+     "country_guess": null,
+     "purpose": "경영참여",
+     "first_acquired": "2024.04.25",
+     "share_pct": 27.7,
+     "book_value": 2740,
+     "total_assets": 9948,
+     "net_income": -89,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "스마일게이트베트남카이로스1호사모투자합자회사",
+     "country_guess": "베트남",
+     "purpose": "단순투자",
+     "first_acquired": "2019.09.18",
+     "share_pct": 10.0,
+     "book_value": 571,
+     "total_assets": 5970,
+     "net_income": 0,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "OctaveLifeSciences,L.P.",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2019.05.07",
+     "share_pct": 0.0,
+     "book_value": 0,
+     "total_assets": 25998,
+     "net_income": -72873,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "BRVLotusFundIII(PEF)",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2021.02.05",
+     "share_pct": 4.9,
+     "book_value": 78814,
+     "total_assets": 1592683,
+     "net_income": -11525,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "OctaveTechInvestmentC23LLC",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2022.02.16",
+     "share_pct": 11.0,
+     "book_value": 3383,
+     "total_assets": 18039,
+     "net_income": -32042,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "SVSoutheastAsiaGrowthFundI",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2022.02.21",
+     "share_pct": 4.1,
+     "book_value": 1725,
+     "total_assets": 40430,
+     "net_income": 493,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "IndiesStrategicTechnologyFundll",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2022.02.21",
+     "share_pct": 1.3,
+     "book_value": 1803,
+     "total_assets": 98564,
+     "net_income": -21394,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "Indies Special Opportunities IV",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2023.12.15",
+     "share_pct": 9.8,
+     "book_value": 17404,
+     "total_assets": 85249,
+     "net_income": 5286,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [],
+   "new_entities": [],
+   "candidate_reasons": {}
+  },
+  "한화투자증권": {
+   "corp_code": "00148610",
+   "financials": {
+    "fs_div": "연결",
+    "assets": 21628347,
+    "liabilities": 19364942,
+    "equity": 2263405,
+    "net_income": 46153,
+    "op_income": 85253
+   },
+   "financials_report": {
+    "bsns_year": "2026",
+    "reprt_code": "11012",
+    "label": "2026 반기보고서",
+    "rcept_no": "20260813001503",
+    "rcept_dt": "20260813"
+   },
+   "financials_annual": {
+    "fs_div": "연결",
+    "assets": 17357936,
+    "liabilities": 15289727,
+    "equity": 2068209,
+    "net_income": 102010,
+    "op_income": 147701
+   },
+   "financials_annual_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260310002967",
+    "rcept_dt": "20260310"
+   },
+   "holdings_report": {
+    "bsns_year": "2025",
+    "reprt_code": "11011",
+    "label": "2025 사업보고서",
+    "rcept_no": "20260310002967",
+    "rcept_dt": "20260310"
+   },
+   "overseas_direct": [
+    {
+     "name": "Zharyk Zhol Company 2007. LLP",
+     "country_guess": "카자흐스탄",
+     "purpose": "경영참여",
+     "first_acquired": "2010.12.23",
+     "share_pct": 100.0,
+     "book_value": 70,
+     "total_assets": 85,
+     "net_income": null,
+     "seed_name": null
+    },
+    {
+     "name": "Pinetree Securities Pte.Ltd.",
+     "country_guess": "싱가포르",
+     "purpose": "경영참여",
+     "first_acquired": "2020.04.01",
+     "share_pct": 100.0,
+     "book_value": 4815,
+     "total_assets": 6584,
+     "net_income": -1381,
+     "seed_name": "Pinetree Securities Pte. Ltd."
+    },
+    {
+     "name": "Pinetree Securities Corporation",
+     "country_guess": null,
+     "purpose": "경영참여",
+     "first_acquired": "2019.04.24",
+     "share_pct": 99.99,
+     "book_value": 77034,
+     "total_assets": 195279,
+     "net_income": 2811,
+     "seed_name": "Pinetree Securities Corporation"
+    },
+    {
+     "name": "PT Ciptadana Sekuritas Asia",
+     "country_guess": "인도네시아",
+     "purpose": "경영참여",
+     "first_acquired": "2024.10.15",
+     "share_pct": 80.0,
+     "book_value": 48646,
+     "total_assets": 68624,
+     "net_income": -153,
+     "seed_name": "PT Ciptadana Sekuritas Asia"
+    },
+    {
+     "name": "PT Ciptadana Asset Management",
+     "country_guess": "인도네시아",
+     "purpose": "경영참여",
+     "first_acquired": "2025.12.19",
+     "share_pct": 80.0,
+     "book_value": 16638,
+     "total_assets": 5468,
+     "net_income": 679,
+     "seed_name": "PT Ciptadana Asset Management"
+    },
+    {
+     "name": "CapBridgeHoldings Pte.Ltd.",
+     "country_guess": "싱가포르",
+     "purpose": "일반투자",
+     "first_acquired": "2019.09.06",
+     "share_pct": 9.74,
+     "book_value": 951,
+     "total_assets": 9793,
+     "net_income": 13102,
+     "seed_name": null
+    },
+    {
+     "name": "LightNet",
+     "country_guess": null,
+     "purpose": "단순투자",
+     "first_acquired": "2020.02.11",
+     "share_pct": 4.39,
+     "book_value": 1945,
+     "total_assets": 158460,
+     "net_income": 15675,
+     "seed_name": null
+    },
+    {
+     "name": "COGNI Inc.",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.04.13",
+     "share_pct": 9.39,
+     "book_value": 0,
+     "total_assets": 2628,
+     "net_income": -3976,
+     "seed_name": null
+    },
+    {
+     "name": "Theori Inc.",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.07.29",
+     "share_pct": 3.4,
+     "book_value": 4305,
+     "total_assets": 35449,
+     "net_income": 868,
+     "seed_name": null
+    },
+    {
+     "name": "Neurosity Inc.",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2022.06.28",
+     "share_pct": 9.95,
+     "book_value": 0,
+     "total_assets": 330,
+     "net_income": -84,
+     "seed_name": null
+    },
+    {
+     "name": "Need Inc.",
+     "country_guess": "미국",
+     "purpose": "단순투자",
+     "first_acquired": "2024.01.31",
+     "share_pct": 0.73,
+     "book_value": 3587,
+     "total_assets": 33384,
+     "net_income": -8047,
+     "seed_name": null
+    }
+   ],
+   "excluded": [
+    {
+     "name": "한화-NP CHINA 1호",
+     "country_guess": "중국",
+     "purpose": "단순투자",
+     "first_acquired": "2017.11.14",
+     "share_pct": 9.62,
+     "book_value": null,
+     "total_assets": 7,
+     "net_income": null,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    },
+    {
+     "name": "플랫폼파트너스영국공항인프라일반사모투자신탁 제1호",
+     "country_guess": "영국",
+     "purpose": "단순투자",
+     "first_acquired": "2024.12.20",
+     "share_pct": 23.2,
+     "book_value": null,
+     "total_assets": 87264,
+     "net_income": -30,
+     "exclude_reason": "펀드·신탁·투자기구(법인명)"
+    }
+   ],
+   "new_candidates": [
+    "Zharyk Zhol Company 2007. LLP"
+   ],
+   "new_entities": [],
+   "candidate_reasons": {
+    "Zharyk Zhol Company 2007. LLP": "업종 확인 필요"
+   }
+  }
+ },
+ "feed": [
+  {
+   "firm": "미래에셋증권",
+   "date": "20261022",
+   "title": "특수관계인에대한출자",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000501"
+  },
+  {
+   "firm": "키움증권",
+   "date": "20261016",
+   "title": "타법인주식및출자증권취득결정",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800887"
+  },
+  {
+   "firm": "한화투자증권",
+   "date": "20261008",
+   "title": "유상증자또는주식관련사채등의발행결과(자율공시)",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008800538"
+  },
+  {
+   "firm": "삼성증권",
+   "date": "20260918",
+   "title": "특수관계인에대한출자",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000311"
+  },
+  {
+   "firm": "삼성증권",
+   "date": "20260831",
+   "title": "특수관계인에대한출자",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001223"
+  }
+ ],
+ "errors": [],
+ "diff": {
+  "prev_at": "2026-10-23T02:41:26+00:00",
+  "entities_added": [],
+  "entities_removed": [],
+  "candidates_added": [],
+  "rank_moves": [],
+  "new_reports": [],
+  "new_filings": []
+ }
+}
