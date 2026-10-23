@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T16:11+09:00",
+ "updated_at": "2026-10-23T22:40+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "sources": [
   "연합뉴스",
@@ -258,20 +258,20 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
+   "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5",
+   "firms": []
+  },
+  {
+   "date": "2026-09-10",
+   "time": "16:00",
    "title": "Korea Investment & Securities expands global ties with Fidelity, PIMCO, Carlyle",
    "src": "The Korea Times",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSGRpbjF3c01RbEptWFFVSWVfTDRvSWM2eXMwR2JjRm9vcG9nZFBYckVmQVJTb3VGTnpGSTlwcXlfOGVXNDduVXdDWWtCeFF2NTBaeEtjQzgxM1VMV1VvQWxObER5ZE5fZlRSLUE2YnVRUVlCQlF2TEtkYy1LMHQwRWpFYmJJa00wdzE1OXoxVE9rVmNVMmp3TFoxMUJRa05aSjVqaG41eUMwRERWR01QUFI1X3hSeGFtd1RMWVdacmNDcVI4bUYxMlF5UngzSjVfSHl6cNIB2gFBVV95cUxPX0VBN2FqeVVrSzFNcUUyVUl4TmljUjZucnF5SUNwbEdfWlhFN0ZxdnBRZUUwQmtKY3FkNEV3Vm1tbkZ4WUgzb3E0TzVMRlBTRmZzRGZOSjBVQzJDRkY0QkpyNUI0WGVfblpkWVVuMVd0WHRHdFo2d2N0Tk04aGh1R2tzTnQ2ZVk1T016bVRCRmFSQjU4Rk1lNnl4Wl9tcmQzc0NDMk5rR2p0WGJBS0xYaFdVcGg2dTNOUnotaE9SNnVNUHNNTnRkUndPQWtxSmlyNUl0TVVtMGFQQQ?oc=5",
    "firms": [
     "한국투자증권"
    ]
-  },
-  {
-   "date": "2026-09-10",
-   "time": "16:00",
-   "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5",
-   "firms": []
   },
   {
    "date": "2026-09-10",

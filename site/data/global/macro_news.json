@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T16:11+09:00",
+ "updated_at": "2026-10-23T22:40+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-10-23",
-     "time": "11:21",
-     "title": "\"美 국채금리 박스권 이탈 임박 가능성…FOMC가 촉매될 것\" |",
-     "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5fZlVNU2ZMdjRfTUgyV0R6cDNwcFdfeEhSbXlpdzNHR3pyc2gycV84RkxtN0RVVTVRajJ6bTF6bTJic1I0Y0R2eTlQOTRVTFN4Q2lYQXVOUmRXVWs5a0haM01ueU16Z2lnWVV3SUtVX05rdjVr?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "08:20",
-     "title": "Long-End US Yield Hits One-Month Low as AI Fears Fuel Haven Bid",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPS2QtcWhJRzBXeWNiMnFqOXhfNHd4WDhjb1RqUk0xa3NNbUdyYl8xTE5aRDdCVy01WDRPMGstSjJ1SndrZlFDdllTNEdveGJwVjE4YlpJNlpQQjJNQnVJWFBqNkpCOEhaNzFvTW1yNXRhU2NWdnZ3MUhua0RPaUxhVS0zdkxQZEYxTndHU1k2Sl9kYzVsMmU2a1AwODZZS2hoQndjRHIyel9nYy1OQllYaEhFQ1I?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "07:07",
+     "time": "20:01",
      "title": "Treasury yields log biggest drop since the 2023 banking crisis. Here’s what’s going on.",
      "src": "MarketWatch",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdDNHQlIxQkRfeVl2bWtrX2lzYTZsX0JYazZRaGdkclU5aHAwWlppV05YSTdvS0kwQXNVa0p6N0tseXVpcDZPRFBhdV9fbTExaXZZSTJJT1RXQmVXR3ZpTE5aZXp5cXFHRnB0WGxJNjVubU14LUs0eFV0SDVHWnJpYVkwYlNxZEhvZDVPa1U1MXlsYi15a2czRGJiOER5RjQ5M0toakZZbWV5S245WkM3QVNhZw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-23",
+     "time": "18:19",
+     "title": "기술주 던지고 국채로 자금 이동…美 10년물 금리 한달만에 5% 아래로",
+     "src": "서울경제",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxdzhfZWxwZk5UQ3lkWFBpcUJXaEVxTWlnb1U0WnFlajlqcTNsUEZrQnEtQ2UtVnJ1SGtmVU1yd3hLd2dHLXg5TTNKSWFOY3BvNlBv0gFTQVVfeXFMUDF3OF9lbHBmTlRDeWRYUGlxQldoRXFNaWdvVTRacWVqOWpxM2xQRmtCcS1DZS1WcnVIa2ZVTXJ3eEt3Z0cteDlNM0pJYU5jcG82UG8?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-23",
+     "time": "18:11",
+     "title": "10-year Treasury yield drops back to 5% this week as investors seek cover from AI worries",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9fUFhkR0R0cmxYeWNRb2Y2LXEyNUlGQnozcWxNUW1jaWRDcUdpYnBTWVZGR3p4OWwydEdicWRMMEozdXpxUl9td1V6SVVZM2JOT25hOWU3TUFLU1h4aHk0VC1VcjQ2bkhyMGJSVzduZ9IBdEFVX3lxTE1KUjZzM3JxQnUxN2Y0LVlocU52STl2ZUIwSlNOMFNnY3hyUlJ5TGJpZjJlc3VRaS1LdDh1ZlNvSDNCYWlmdnpIMHk4ZWFTT1E3UmplVjAwRm5MNnM5V2FsSWVpZ0Z3aWVhMjNVeWhrX1lRWWtk?oc=5",
      "priority": false
     }
    ]
@@ -65,7 +65,15 @@
    "items": [
     {
      "date": "2026-10-23",
-     "time": "12:50",
+     "time": "16:02",
+     "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?",
+     "src": "CNA",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-10-23",
+     "time": "14:52",
      "title": "Indonesian Corporate Bond Premia Hit Six-Year High on MSCI Angst",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbDQ4MVNMVjRyWlNDQWdoRjhiZ2RCdGJqX0xpa2ZiSGZucGN6UkNMNWNwaXFZOWJUbWdLY08zQ1VKOWRZTXR2VnRQYkowXy1uOW1vUkdXSEo2czVBbmZNNjZ0c2xFUDBUeVg3M3Q4VG9jMDF4TzhTbXZ0cGdIV3hPVWNwTVZESkU5cnM1dk5jU2NOaTIwMGZxVHV5eDRTbEhFYkdaN2M1Q19oWS1vazc1dl9EMWxWZw?oc=5",
@@ -77,14 +85,6 @@
      "title": "Live Q&A: MSCI’s Double Downgrade Warning Whipsaws Indonesian Markets. What’s Next?",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbHRwd2trdnJveXppQWxybEZ1N3hHb2NpdGdKYzdUQUNxRVctUlRxS2s2bXZfVWhTVzl1SF9JTXZlV3Y4aVdtUG96YkkwejNhVDRqbjRqUDlmWkFpeE1tdF92M3RZUTJvZk1Xbl9ELTVqZEZOQzlIRHZjVmwxMnBxVTdmTG9QdVpJX2xQWW5ZbVVodm1WeDBYOV95NXhORUw5UkkzV0FZWXRWekpRVG1jUUxCdmhlenpNdnF6UkxsVEZ0MjV1bEpfa3pR?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-23",
-     "time": "01:23",
-     "title": "Indonesian leader rejects market downgrade warning after stock market sell-off",
-     "src": "AP News",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU3pFckhZdnEyaFVjRkk0dVZDWDFoSjduRmpCQ21TMFZ2dDMxdlFGTXhnN21PWmpueFpTVjdwRU5zeTlHNllhbmxuaUxxTDNUYzNKRmMxbHZjNllheTZEZkdEZWNSS01peTZxVEZvZkdPb1hHalFtODNBQnhNcnBJS0NNQUd6bWIxd3p5QXlvOGFhUzFObjEtdTllcw?oc=5",
      "priority": true
     }
    ]
@@ -123,26 +123,26 @@
    "items": [
     {
      "date": "2026-10-23",
+     "time": "21:43",
+     "title": "Japanese Flock to 2% Deposits Amid Rate Hike Hopes",
+     "src": "조선일보",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQzJGdFZVcktjU3BkclV4X3JjN0VzTWpPYTU1QXlxalBPWkMwZUhmaXQ0eFV6VTlhOWVFTExxRXRyZ2FRMmF1bW0zSlBVd3dReHUtc3FTRTJzbWxfSHYzLUNsSkRzNVFoNGZFenZTR1oxY2YtZFA4S1VScjRDT2ZDNmE0Zjg?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-23",
+     "time": "17:10",
+     "title": "BOJ Is Said to Keep Rate Hikes on Fast Track, December in Focus",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUC1MeFh4cnNRYzIzVVk0Rm53RVVmWUNSeFptalA3WGhKVllraTRaSkptWGgyOUt2N1pxS2hzYTZ2QVNWR0xKaTNjQ3pOSFJWYjRrYjFxVk9xTTJiRmoyczdoZ0pvTzQtVFZoVzJMdjFmcFVCSjNXYUpySUZXUUpOM01aYTMzVlpRM3VkTFJ0eGpFYUhIZTJEaDl1LTRpQW9WUmdqQlBwZ3Q0UmRQSGl5VFAtVQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-23",
      "time": "12:21",
      "title": "Japanese Bonds Rally as Global Tech Rout Fuels Haven Demand",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb1J1X09MVHdyQXBxb21ZR045OUU2MTlIYTJYOHdlVGVqQlhyazMzaWZmd0RDZTJydHhwLU10ZU1aWlFBQjdRN095UzZVMG1kUkhzLXJwY3UwNWM0R0VLTTR0aWxVU3FlNk9hMjZVMUNTaUVGUk40MVQyaTBBNGVXdGpUdzNTTHhOTkgyYm4xcGJEUE9nWEg0NllUTnZ3VVNQSDBXQlV0M3NQcUNOd2t6Tw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "10:57",
-     "title": "Japan’s core inflation tops BOJ target, bolstering case for December rate hike",
-     "src": "CNBC TV18",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUUhOVEEtOVY1SnVEd2JsdENpY3BzZXFpcU1KdEJhRzdma0hUWENNVm12U0FPdENtVjJPeGlFYVQ1M0NLV1RPdFhCTFB1T0pZdnZPMFN1TUtkYjY0c21oUmVmX1Y0RDJsbXpUemRLLTVhMzhjakZySFFrVlFRMDFLSFFqWC0yNC1JanowUHM4VnNQVzE3bWxXUTJHSTJDWHhjc1hoRUI1M2VFWkhiMkZTU2U0ei0yazFnaktoSWx0Y9IBxAFBVV95cUxNZ3F5bkNoS0E1NXNlY3l3VmlaeW5BUk9vdDZNai1laDlyVEI0ZU9zSnZnX0VlN0xsVXNSSE1mTGtnY0x2Rnh6aTRzeTNhZFFBLWRDY3FTVllVSTVtVHJQeVF0UnNJMzFYWlQtNWQ0a2JCWVBfamdkaWszekYzREF1NkdvM0VYVU5RRmFsSVFGUWxyV0c3dEI0WXMzbURGdHFDdFd0Qm1KN0wxLU1mclJCYTJCZnV3SjVfZVFzMlltNXdjQ3Vi?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "09:57",
-     "title": "Japan Inflation Rises Above BOJ Target, Backing Rate Hikes",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeFdHdzVxZmc2cnRIRlVtcWNkZ1c5cUlsWFZEQkU3YnA3bVh5b3R6bXRsNzI3bTltUnJyUmdOYUdEekZxT0VkMF9kdGxKUFN5UUdxMU9saG5Kb05pTXo4QnFOU0dmdzlVWEdoaFVSRVI0ZVhCOHplSTN2RXJ3aEsxSjlxdU1jR1F3QURzeE4zNnpGSGFocUVzRkZMbXhBaXdzWHM2LWdrb2owN0xQbkJrZ251YlE?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-10-23",
+     "time": "18:37",
+     "title": "China Barely Eased Austerity Just Before Shift to Stimulus Mode",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMzNVNE5TMkFBWS1ReFFlbEgwZGJTMmY2YmJibmZpWE9EVmI0R2dMV0hkZkNBcVJNMnU0Mml5R055bkE3emxEb01SbTYyMjYxdFA2S0tjcEhEdkxLVjlMQl9ELXFQa3l6Skx3U3dZMmxXMGswc0NJYTQ2QzlWXzNHNjhwV0xTNHBzN1VaeGpXRUZ2WGpiT1NHYndhUW1vTEx2MzFLVXJtQkM5OU5oV1lQZHM2RzE?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-10-22",
      "time": "18:37",
@@ -164,14 +172,6 @@
      "title": "Alibaba Shares Post Steepest Drop in Two Months on China Curbs",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcjNQYUdPNm9tWmRpR3A3Y1FfaTI4NGg5OEFKTXlHNmVWNjNzMTd0bkQ4QWh3V3NiT3lQYTNBY0JlbTFkRFZUbjVxdFFVblgyWnZ0Q3JLYnV5bUotMjBEQ2RpZUx4R0dSVk1rNTJUUUc5REI3R25mNmM4cEpUVjdLZTlRdTA2WUp4eFpLVXM3V3N0YkZCVGJrcGlhRlZpVHk0SkZxT2VydzNCMElPX1BkZUNhcw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-22",
-     "time": "14:58",
-     "title": "Global Market: Hong Kong stocks slump to four-month low as China stimulus hopes fade",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWjctZUdIVE11clFid3NYa2NEUkdVLXNJbmpFRnpoSzNqM191aWgtZ1gycC1IS3hKSFd2TnVxZ0xsamJmejU3TmJ3MTd6dTlQVDNfSVp5dDBuZlpmWGNYZjNZT29GWUF1M01MUjRMV01Qa2pjQUNUQXBFWS12Rno4VkFWd1Nod0xXdm1JTHJMbHloVjFmdkx6V2Zrb2w3SktsSGxkSzREdTR3Q3RuZHM4X2IxbHZPaHFkbHB4RDVOMXdrVWkwV0t0T1dWYU5MMjQxLTBqNC1Eek5DOXhLS2hMNG1rTWtuRklPbHhXeEtlM01oQdIB9wFBVV95cUxQVDgwMlZ5bTBsSXlkVWo4RFFJYmYyUmd5Q2xTM0dJeWhsLUdqYkxuWVJ5MmliQTVQdldSbTJET3cyMmQ4bXhaQjhXZWdiNXcwV0RmWnJFMnc0aDZKOXRSbUNIQnV0WkJ2MEhBQ0tzSmtNNmp2b05venpqT2VJNHJsU2pwSUdzRXllWC1yR3dvOWNHTm9BX2pkV0syT294ekMxUl8xTWVoXzJNNlJpOEI4UjgxZ3UyOXlZdkpHYlkya3M2aENCUjN2MlRFMlY2WjRwQUVaX3VPVlk2UElFNXRXLWM0a05VY2NmckpMckI2RzhPOTZfeTNn?oc=5",
      "priority": false
     }
    ]
@@ -188,19 +188,19 @@
      "priority": true
     },
     {
-     "date": "2026-10-22",
-     "time": "19:14",
-     "title": "Singapore shares end lower as local banks decline; STI down 0.4%",
+     "date": "2026-10-23",
+     "time": "19:02",
+     "title": "Singapore shares edge higher despite losses in local banks; STI up 0.1%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcWQ2MzJ3eUZocl9FT1JiUWIwN2s1VGhXRldzWUJDdlNyWUptcTI2Y2RiQ1ZMczBPTmxPYkY4TV9yZk9ndE5MTEhxZXRpTk1vek5CenBfYjhsdFllTzZtcTJLLWxGZTlWUHp3S0VCeTVXZ2Z1aE05YkRFZnJsREw3MDZteERxUHV2bzJNUzlTZ0ktaFhpLVo2bzE2aFhWQU5KUzZzVFBPNjU0aXEyQ1FKeXVFNXprblJvUF8yV2wyQklrdExWd1YwSlNPQXN1eTF1RDI0?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNHZZc0tPSEpaaGpYaEozcDluQngwOGpZaWFucEwwQmJPdVJUcG1pcmgzLXJJSmF5aHluQXdBa0JyVXRsc1lnOE5iaW5ZNmJvVXFhYlBNT1laRHp4cXdyeW91aElrNXZSREJobHBreVpUc293OXcyVDRyMWh5cFRvTUtBVTViay1DTUlBQ3UycGtXMmFTaUQtWHZJMmVxVUUtdzlVYUY0REMtTTQ3V1VCNm1HR1pINzZaSTQwYmlpal9EaEFwMVhHTTZISmZNTW5kdGVXS0VRZ2w?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-22",
-     "time": "17:45",
-     "title": "Singapore plotting to crash Indonesia's stock market? Ex-official rejects claim",
-     "src": "CNA",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWGNhcElRUjRsakVPTTJTVVJQWjU3Sno1MHJNU0RLYjdhczF1NHZ2NDZoSmxRZlBLVGwxTjhzZTBHQk9pVHZvYl9KSDk3VTl5OTVJOTg4T08ybVFpOExLTzlteWxpb2ZkUW56bVpaYktiSnY2dEx6Z19fbHk5eFBwdUVodTRxdVZfeXdWQ3Y4SEF6MEZ0UUxPZTEzTXBpOUUxRjUxeUdfOS1DRW9Cc09ValdZVXhyU0FxUU1WTWRB?oc=5",
+     "date": "2026-10-23",
+     "time": "14:00",
+     "title": "Economists mixed on near-term MAS policy tightening after core, headline inflation ease in September",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWGJZRXZadjFUeEdiWGQwcl9qVHpjRlNfQTN1bVFJOTllNklZejAyRWZtVE5hd0J2dGxiUWo1UUVPaG9WM2FzVzh6VWgyLWxIY25VRkZzV3VmNWVoTzZ1TV93WjdsNDV2em4zcGtEaHBPRnYzQ3luZy1IQjFIdWtGb3ItNkNqVzBONVBzR1Q2OEh4RXlVWlNZTG9jNlgxM3NFUU13VEVLM1hTRnpWbnZDZkQzSUtpVkJQYmRGZE1kR1pXZGdtZUpCMWZQa19WalRtSUE?oc=5",
      "priority": false
     }
    ]
@@ -210,26 +210,26 @@
    "items": [
     {
      "date": "2026-10-23",
-     "time": "11:17",
-     "title": "Indian shares subdued as rising crude prices eclipse IT gains",
+     "time": "17:04",
+     "title": "MSCI India rejig: JM Financial sees 3 inclusions, 2 exits & $1.4 bn inflows",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZ1JyVDk0ZWNfMlhuRk8zQnBEa0c0NTIxWHBiOGUwMUowRkJINUlfSVpxWFV6NVZnRE53UnJRTXhEMWZ1MHdHdlFISnhMb1V1LVp2UVM4NWtQSDd6cGJnN1ZHaU9QaTJlNExZUU1BVzZiRkFNM0VVWlFHejd3b01reGxhS1FZX0cxTEdEWFRsWFJlcWs5YXhKczlEM0lhaWdOdWVjRnI5NDBSU3o0NHdpUW5CZVIycmZtcU9iQm9RZTV6TzNBVUk0RFA4SjQyVHdPd2lj0gHYAUFVX3lxTFB3Q1NIMVJUek92c0JQTTRXc0lpcjMtQUVwdmlRTGdDeHZlLUNySkR5MUF5ak9faXYtVGtRUEpfLVhET1prMWxHRHk1Ri1PODF0N21hOTVXaU5tUVQ0MGc0bXhXaVE1NFdnVk94Vi1WeG5ZUkJsNFlTLW1GZ1JoOFVyM0wyem12Q2lxbWFTTGdJcnJoZ0YtWkdsV3RVMjhETzd4cW4wWVlzdHJDS2s3aV9IbWFVTVJKQWlPSnJDakdidHFBQmRTdTBQS0JTUEVObWgtcm04Tmdaag?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-10-23",
+     "time": "19:24",
+     "title": "Surging oil prices drag Indian shares to weekly losses",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeVk5bXN2THRVWVBubnpudHpPQ2dreFhuVUxXSUFqZWJLa2psTU1rbjl3UktXTlVabEpvVEM0YUpuZVBUWkJQSjB4X1o1QlI5OEZYNE1fNE5QREZ1RjZqeURTcEFZSm5DbkFGYkFCLVNVYkpRNXRCQ3RMTDExMGVJdS1lUjUtdlBFVkJQY1VXdVBZTF9qVklpbU1YRXp6dHpXNWhqcHVFVFNsZUtQeXV6SGNBTnJYaHBzWlE5SF9EeFpiYllha3c?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-22",
-     "time": "17:49",
-     "title": "India's interest rate gap with G7 in focus as RBI weighs inflation risks: Report",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxObThZSWZpdEcySlhDYVdkeEVzOElQYkItb1Y0R3loZmxQRlpTTUFGWUVJa1B3bW1pNFhzaWdYS2dwSW5YdVpRRGxRTENXNGpJcGRIYndzUjVVNTdqV1pkaGFpWWswY1dNV1FQUzdYWW9uMURvay0xTW83QkVwTFlqaTE5UWhtLXdSMjNweWNhWjRvdkFlczBTSmcwQ25HR0N4TUpnQ0tyb0ZpWXd2T3ZjYzBPZGpoMFNhMTFIT015Unk4TmVjVHZyaGcwTDVBXzRMV3RuTXdod01CS0JxZkVsVnlKYzlDMHFzNnpwOdIB8gFBVV95cUxQYl9RaVAzTW54Wlo5a0RlT2VqQTBJSlBId2dtZEZmd3dEUUFZUUtVbG5RUHFIQjRuMlF6WS1sNmR0M05ad1c2Z3VBVHhiS190MXF2Zm5sQm0wa1dpcjdoUXJOTlowaDBuU2pUaTVTQmZsSFdsOVVwSHNZUW1vaXo4b2ZzVGhZX0FvMVlmQW01MG1fcEtLc0Q5Yk9ObEhWYTIycUluWGt2MjB4QXhhWFgwTHFKMEtjZmd1UTg3UE1HSVpoMVF4bW5adDg2T1lJaVVSaFZTVGxpSThCV1ZpdVNNNlZIaldwOXdwbzlFUU9NaURtUQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-22",
-     "time": "13:59",
-     "title": "Inflation, Weak Rupee Keep RBI Rate Hikes in Play, Minutes Show",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMWhpMHYwZldralI3U3JBRXFBLVVuNjdwaE1GY1Vpbk9DWldZaTFicGhLbXRBVjZCYUFZZWVsVk9jaWhqalYyZXdTRktDNUpEaUFyYjNKUmhOdHpUS1hfRXVSSUZOaDc4ZGJSWGRXc2VkZEJvbWEzMWpHY2pyLWNWcWwwNm0zOGNYWUtRb1ZFUTFGWDRGVVNTYVJXTGdFc2FyR0JPZEx5Um5JejFOU08tenhB?oc=5",
+     "date": "2026-10-23",
+     "time": "15:17",
+     "title": "Freaky Friday in stock market today: Sensex, Nifty reverse morning gains and crash for 3rd session — what led to blood?",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQbXBZSnR4TUhRaHlTNXd6RXB3VmJfQzBkc3hKdlhDVWFPSVY4NzZicHlfeUprLWlieDFfZjl3SjFjQkgxM0lEZnF4V21Bd0ZEaWExeWl5OHF3bnFQZjRQVTVwYkZWcUU0NjJVLWFGdV9GSDZWSUhzTXhwZlNqXzhvQTJqSklNSzhRNFFhYk5BTkx4NjFQODB6TzlzRFFZb2VjS3RPYXZNLW15UTJCWGphTFBoazNiSUVVblVjbUwzbG1IbE1EdGJYOG5IMEJXMFhEdWNyLW5zZUVaRnIwV25YZEQ0UjV6VUtKcHc0Y0JMX083cTJpaDN4T1lKQjNvUEJlaXU4U25BbVZqSFQwdkVBT9IBlgJBVV95cUxNVXRBT3ZFOHlHVDI2cXNOM2ZfQTZnVTVXWF9tT0lTbEtVMmJYbmpkcXlCVVFEeFgwaWpIU2U3QjR3dEFyR05EMTJWX0FMUEp0Q09BaWQ0bVpuVFNqdDNlYUdoMTM5SFhvLWVGczByUGJ4emdPWXdyeXB3RHFnTklhbW1hWlh2a3hHOFE2LVFPNktRbmFYYk5oQ3RkdG1MMXppeW1hVDhYTmJ2SlZyVld0SkdtSl9UNnpCYlJsUjdlaGtoNTlQa2s5dlg1dGtjbG9vekZNVXBnSUZwUldUYkJBejhEREN2SzJmUWctZHA2ZHpIazlQSlYtYWZoeWUyNnI0ZlpqNTM1LVhmakw1V3VsejBoZXFVZw?oc=5",
      "priority": false
     }
    ]
@@ -237,6 +237,14 @@
   "GL": {
    "label": "글로벌",
    "items": [
+    {
+     "date": "2026-10-23",
+     "time": "16:02",
+     "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?",
+     "src": "CNA",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-10-21",
      "time": "17:35",
@@ -251,14 +259,6 @@
      "title": "GIC, Temasek deny allegations of pressuring MSCI to downgrade Indonesia",
      "src": "The Straits Times",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU2VEV01yRWE3bU9VbXpPeFlaNVo3eTU4R1lBQ3EyNjhwakY4ZzJCQUlab285V202UG5JNGdpRTBVXzFYRlROdGZQRUQwek5GYXhDWmJGSUdUak5OOTAxdnZ3Nk9jNDZhd3hWYkpGazR1S0gydjJPN1lObkI2dTZ0UGJ0eFhWQTNmRzdSMlp4VG1uUGk3VkFLeFVRbW5vOUdsRXNMNTZLU0tLcEE4?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-18",
-     "time": "16:00",
-     "title": "Indonesia gets 'wake-up call' as MSCI prepares to expel it from global indexes",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONlg4UjV3N2U0ZUVvYWhOTF9YNEI5c1VCaVd3ZTdCcUl2dFBGUklnZngtVlNhaS1BSFJWUkVqcGluT05jLVNqNll0RWRJQWZOdVRZWnM4TUR2UHJTVGNYbnNOVmgtVWVqcjJWOHdDWTVVME9BVHBiLXBiclQyN3ljTDlfaTdnWDdzcmZTZk1wX2p6b3NXVjJNVE04QU82aGVTQW5xdWEzcm5tNU9OT2JMVVlINA?oc=5",
      "priority": true
     }
    ]
