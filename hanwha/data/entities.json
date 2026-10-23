@@ -1,9 +1,97 @@
 {
  "note": "해외자회사 4사 기준 정보(공개 정보만). 숫자는 dart_subs.json(DART 공시), 출자 이력은 investments.json(수동)에서 읽는다. 법인이 늘면 여기에 한 줄 추가.",
  "entities": [
-  {"key": "VN", "label": "베트남 법인(PTSV)", "short": "PTSV", "name": "Pinetree Securities Corporation", "country": "베트남", "city": "하노이", "ccy": "VND", "biz": "증권 (브로커리지·신용공여·IB)"},
-  {"key": "CSA", "label": "인도네시아 증권(CSA)", "short": "CSA", "name": "PT Ciptadana Sekuritas Asia", "country": "인도네시아", "city": "자카르타", "ccy": "IDR", "biz": "증권 (브로커리지·IB)"},
-  {"key": "SG", "label": "싱가포르 법인(PTSS)", "short": "PTSS", "name": "Pinetree Securities Pte. Ltd.", "country": "싱가포르", "city": "싱가포르", "ccy": "SGD", "biz": "투자자문·IB"},
-  {"key": "CAM", "label": "인도네시아 운용(CAM)", "short": "CAM", "name": "PT Ciptadana Asset Management", "country": "인도네시아", "city": "자카르타", "ccy": "IDR", "biz": "자산운용"}
+  {
+   "key": "VN",
+   "label": "베트남 법인(PTSV)",
+   "short": "PTSV",
+   "name": "Pinetree Securities Corporation",
+   "country": "베트남",
+   "city": "하노이",
+   "ccy": "VND",
+   "biz": "증권 (브로커리지·신용공여·IB)",
+   "focus": "리테일 브로커리지(무료 수수료 모델), 신용공여(마진론), IB·인수주선",
+   "notes": [
+    [
+     "수익 구조",
+     "위탁수수료를 받지 않는 무료 수수료 모델이라 신용공여 이자수익이 손익의 중심이고, 조달금리와 마진 스프레드가 실적을 좌우합니다."
+    ],
+    [
+     "IB",
+     "인수·주선 등 IB 수수료를 키워 이자수익 의존도를 낮추는 중입니다."
+    ],
+    [
+     "시장",
+     "FTSE Russell 신흥시장(Secondary EM) 편입이 2026-09-21 발효됐고 2027년 9월까지 단계 편입돼 외국인 수급과 거래대금 회복을 점검합니다."
+    ]
+   ]
+  },
+  {
+   "key": "CSA",
+   "label": "인도네시아 증권(CSA)",
+   "short": "CSA",
+   "name": "PT Ciptadana Sekuritas Asia",
+   "country": "인도네시아",
+   "city": "자카르타",
+   "ccy": "IDR",
+   "biz": "증권 (브로커리지·IB)",
+   "focus": "브로커리지(주력), 신용공여, IB·인수",
+   "notes": [
+    [
+     "수익 구조",
+     "위탁매매 수수료가 영업수익의 가장 큰 비중을 차지하는 주력 사업입니다."
+    ],
+    [
+     "상품운용",
+     "유가증권 평가·처분손익이 지수 흐름에 따라 분기 실적을 크게 흔듭니다."
+    ],
+    [
+     "시장",
+     "인도네시아 중앙은행(BI) 기준금리 5.75% 동결(2026-09-23). MSCI가 인도네시아를 EM에서 Standalone으로 내리는 안을 의견수렴 중(2026-10-16)이라 외국인 수급 변화를 점검합니다."
+    ]
+   ]
+  },
+  {
+   "key": "SG",
+   "label": "싱가포르 법인(PTSS)",
+   "short": "PTSS",
+   "name": "Pinetree Securities Pte. Ltd.",
+   "country": "싱가포르",
+   "city": "싱가포르",
+   "ccy": "SGD",
+   "biz": "투자자문·IB",
+   "focus": "투자자문, IB·VC, 구조화상품(ST) 판매",
+   "notes": [
+    [
+     "수익 구조",
+     "자문·IB 수수료 기반을 넓히는 초기 단계라 고정비 대비 수익이 작아 공시 기준 순손실이 이어지고 있습니다."
+    ],
+    [
+     "점검",
+     "자문 고객과 VC·구조화상품 확대 일정이 손익분기의 관건입니다."
+    ]
+   ]
+  },
+  {
+   "key": "CAM",
+   "label": "인도네시아 운용(CAM)",
+   "short": "CAM",
+   "name": "PT Ciptadana Asset Management",
+   "country": "인도네시아",
+   "city": "자카르타",
+   "ccy": "IDR",
+   "biz": "자산운용",
+   "focus": "자산운용, 일임 운용(AUM 기반 보수)",
+   "notes": [
+    [
+     "인수",
+     "2025-12-19 지분 80%를 취득해 연결에 편입했습니다(사업보고서에는 재무상태만, 손익은 2026년부터)."
+    ],
+    [
+     "수익 구조",
+     "운용보수가 AUM에 비례하므로 AUM 확대가 고정비 회수와 흑자 전환의 관건입니다."
+    ]
+   ]
+  }
  ]
 }
