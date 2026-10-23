@@ -128,6 +128,12 @@ function renderPL(D, ents, reg) {
   const dd = both((e) => e.l?.eq, (e) => e.f?.eq), dT = dd ? dd[0] - dd[1] : null;
   h += `<tr class="tot"><td><b>4사 합산</b></td>${F ? tot("f") : ""}${tot("l")}${F ? `<td class="${cls(dT)}">${dT == null ? "–" : `${dT > 0 ? "+" : ""}${fmt(dT)}`}</td>` : ""}</tr></tbody></table></div>`;
 
+  // 법인별 주력 사업과 특이사항: entities.json의 문장(공개 정보)만 쓴다
+  if (E.some((e) => e.focus || e.notes?.length)) {
+    h += `<h2>법인별 주력 사업과 특이사항</h2><div class="grid cards">${E.map((e) => `<div class="card"><h3>${esc(e.label)}</h3><div class="biz">${esc(e.focus || e.biz || "")}</div>
+      ${e.notes?.length ? `<ul class="notes">${e.notes.map(([t, x]) => `<li><b>[${esc(t)}]</b> ${esc(x)}</li>`).join("")}</ul>` : ""}</div>`).join("")}</div>`;
+  }
+
   // 출처와 자동 갱신
   const next = (reg?.todo || []).filter((t) => t.id.startsWith("periodic-") && t.status !== "done" && t.due).sort((a, b) => a.due.localeCompare(b.due))[0];
   const nextName = next ? next.item.replace(" 해외자회사·타법인출자현황 반영", "") : "";
