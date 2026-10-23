@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T13:23+09:00",
+ "updated_at": "2026-10-23T16:05+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "keep_days": 365,
  "hubs": {
@@ -9,6 +9,14 @@
     "title": "KB증권, 베트남서 교육 인프라 개선·현지 인재 장학금 전달",
     "src": "뉴스1",
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QRUw1NXlEWU1ZaExPMlFqQTRLRWdOSS0zYkM0dUVIMU9EMGI5NzA3ZTVseXotNElpWVRUcHlFUWpTU1dKT2k2VjNISmZIcTktVzRTYTlTM2cwTXluT2RZ?oc=5"
+   }
+  ],
+  "NH투자증권|미국": [
+   {
+    "date": "2026-06-17",
+    "title": "NH투자증권 \"오로라, 팜팔스·美법인 성장에 사상 최대 실적…판교 사옥 매각도 주목\"",
+    "src": "이투데이",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91WG5rc25GcFNzamIyNHI4VTlSUDhscUZwclViTTR2eWdRYVVDbldMamc5TEowQ2hKbURzTVJwazBIOWduaDNZNy0tMm5tTS1hMEc0MQ?oc=5"
    }
   ],
   "NH투자증권|싱가포르": [
@@ -95,6 +103,20 @@
     "title": "Mirae Asset Securities wins Hong Kong license to offer retail digital asset trading",
     "src": "The Korea Times",
     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdExoLUhNd0NJbUpSLTBZY1dOS0dxZ3puRXR2bUVtQ2twVXNxbjVJWXd1VXlUZFRqRkZLY2ljYWJXWHpKaE51Vk1YN2tfcnJiY2FfRWR1UDJZaGNlME13LVVvSDNoRldwckNvb2JLVjM5V2ROOG5tNXZ0NXRBQmpORWF1NTBVNU95dnFHY0dCcWx4VGZhVlVDSzQxRnBtZ1AtMzJZdGFEd0ZFX3h3VTNIU0FrMm5JR0M2Rm5BTDJhSHpGYXJIaEFHeFNaYXhfcEY3QlVtRFF3YmNEc2FsbHRj0gHkAUFVX3lxTE9PWHIyNldZNkluZ2dZNE9YM2xxSzg0MjNZVEg3X3dOa1FxdlQ5b003RVFvVDNLemxHMWxTYzZ4U19UM3IzMlRhRV9iWU1Vbi10em5SVXdsR3lLS0dheG91ZjdVU1RhZ0NVaXhtYXhRWWpVNlpZdllYNXlieDhVX1Y2WkJNWmFqcDZyZkRqdndyWlNOVm5mVTFRdzhEc0tvdU5Md3EwQXFydVJvMElnaHBLcncxWjl5eERyS2NFdTJFaFFxbmNSbDBMR2l1ZEtHMy1nQ2U0MFlqbTFlSG5FX2gtanlTMQ?oc=5"
+   }
+  ],
+  "신한투자증권|미국": [
+   {
+    "date": "2026-05-21",
+    "title": "신한투자증권, 美 정규거래소 24X 지분 확보",
+    "src": "연합뉴스TV",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9yMm9qblk0clgwcEJyUWFnRFBoTjdRTnlPdWdIWHdiWE5nU3J4SkY2cExRX3dUaVRQQ1hzaEJyMlVmZjl6YTg1NkxkRFVTZUJQdmdROHpIZzlZYnFQaDduTEZGRmJZZDQ?oc=5"
+   },
+   {
+    "date": "2026-04-17",
+    "title": "신한증권 뉴욕법인, 키움증권 품으로…현지당국 인가만 남았다",
+    "src": "연합인포맥스",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oWGVVWHRYTy1tQ2JaQ3ZiNWk5Ul9OOXJ4OVV3ZXdSYWV5blhwX3FhWm9KWWM0VURrTlNnZFRRREp0ZzdjX0FEZXNZcU9jWDRYU3RCVXh2NlhCVkc5d3pFS3ZINzhCWUpRcWFEVDdndkY?oc=5"
    }
   ],
   "키움증권|미국": [

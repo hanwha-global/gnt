@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T13:22+09:00",
+ "updated_at": "2026-10-23T16:04+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -65,6 +65,14 @@
    "items": [
     {
      "date": "2026-10-23",
+     "time": "12:50",
+     "title": "Indonesian Corporate Bond Premia Hit Six-Year High on MSCI Angst",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbDQ4MVNMVjRyWlNDQWdoRjhiZ2RCdGJqX0xpa2ZiSGZucGN6UkNMNWNwaXFZOWJUbWdLY08zQ1VKOWRZTXR2VnRQYkowXy1uOW1vUkdXSEo2czVBbmZNNjZ0c2xFUDBUeVg3M3Q4VG9jMDF4TzhTbXZ0cGdIV3hPVWNwTVZESkU5cnM1dk5jU2NOaTIwMGZxVHV5eDRTbEhFYkdaN2M1Q19oWS1vazc1dl9EMWxWZw?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-10-23",
      "time": "06:28",
      "title": "Live Q&A: MSCI’s Double Downgrade Warning Whipsaws Indonesian Markets. What’s Next?",
      "src": "Bloomberg.com",
@@ -77,14 +85,6 @@
      "title": "Indonesian leader rejects market downgrade warning after stock market sell-off",
      "src": "AP News",
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU3pFckhZdnEyaFVjRkk0dVZDWDFoSjduRmpCQ21TMFZ2dDMxdlFGTXhnN21PWmpueFpTVjdwRU5zeTlHNllhbmxuaUxxTDNUYzNKRmMxbHZjNllheTZEZkdEZWNSS01peTZxVEZvZkdPb1hHalFtODNBQnhNcnBJS0NNQUd6bWIxd3p5QXlvOGFhUzFObjEtdTllcw?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-22",
-     "time": "18:52",
-     "title": "Indonesia Eyes Panda Bond as It Confronts MSCI Risk",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPX3ltRDRBanN4c3dUTURiT3RZM0lFWmRpYURpQU1ZWGV3RE10VXc3RXZnTEUzblB1SkViRWtnYzBHMlBYV1BzWDlOMkVZb3ZWblpObXlZNjB2aFpWMEtuLWlQbnZxWWRsZDNpV2NYMFN4OHVpQ1pxUzJPY25rM1pwTXNpSU1Tb0tHWS1ocE5UbkoyN0tBNWVGcFFZa1NwUjRSODRPRWFxOUE1d0hod3NnVGYyMEo?oc=5",
      "priority": true
     }
    ]
@@ -123,6 +123,14 @@
    "items": [
     {
      "date": "2026-10-23",
+     "time": "12:21",
+     "title": "Japanese Bonds Rally as Global Tech Rout Fuels Haven Demand",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb1J1X09MVHdyQXBxb21ZR045OUU2MTlIYTJYOHdlVGVqQlhyazMzaWZmd0RDZTJydHhwLU10ZU1aWlFBQjdRN095UzZVMG1kUkhzLXJwY3UwNWM0R0VLTTR0aWxVU3FlNk9hMjZVMUNTaUVGUk40MVQyaTBBNGVXdGpUdzNTTHhOTkgyYm4xcGJEUE9nWEg0NllUTnZ3VVNQSDBXQlV0M3NQcUNOd2t6Tw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-23",
      "time": "10:57",
      "title": "Japan’s core inflation tops BOJ target, bolstering case for December rate hike",
      "src": "CNBC TV18",
@@ -135,14 +143,6 @@
      "title": "Japan Inflation Rises Above BOJ Target, Backing Rate Hikes",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeFdHdzVxZmc2cnRIRlVtcWNkZ1c5cUlsWFZEQkU3YnA3bVh5b3R6bXRsNzI3bTltUnJyUmdOYUdEekZxT0VkMF9kdGxKUFN5UUdxMU9saG5Kb05pTXo4QnFOU0dmdzlVWEdoaFVSRVI0ZVhCOHplSTN2RXJ3aEsxSjlxdU1jR1F3QURzeE4zNnpGSGFocUVzRkZMbXhBaXdzWHM2LWdrb2owN0xQbkJrZ251YlE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "08:54",
-     "title": "Japan core inflation exceeds BOJ target, cements near-term rate hike chance",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOTJqdzA2UHpkbmExTlVYbWgxX2VuMGQ3ck9XcUpfUEgxQURja19JdmlfLURneW9HUWpZbzNPMFJ3bS15Zk5DYlNTWU1teWprbW1hOHlJNXdDNWxYbExYRUU0bTIyVzFPLVlRZjY2cFk0THZTb094X2FrM3lPZ005THBHczdTdEl4WEhIUXVCdnA2TE9qTEtFWHh4aHloeWZFU0RuQmhlR0VRSDRCTURWZDB2eTNnWDloNWJIWktsNG5Pak5NSEdtSQ?oc=5",
      "priority": false
     }
    ]
@@ -209,6 +209,14 @@
    "label": "인도",
    "items": [
     {
+     "date": "2026-10-23",
+     "time": "11:17",
+     "title": "Indian shares subdued as rising crude prices eclipse IT gains",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeVk5bXN2THRVWVBubnpudHpPQ2dreFhuVUxXSUFqZWJLa2psTU1rbjl3UktXTlVabEpvVEM0YUpuZVBUWkJQSjB4X1o1QlI5OEZYNE1fNE5QREZ1RjZqeURTcEFZSm5DbkFGYkFCLVNVYkpRNXRCQ3RMTDExMGVJdS1lUjUtdlBFVkJQY1VXdVBZTF9qVklpbU1YRXp6dHpXNWhqcHVFVFNsZUtQeXV6SGNBTnJYaHBzWlE5SF9EeFpiYllha3c?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-22",
      "time": "17:49",
      "title": "India's interest rate gap with G7 in focus as RBI weighs inflation risks: Report",
@@ -222,14 +230,6 @@
      "title": "Inflation, Weak Rupee Keep RBI Rate Hikes in Play, Minutes Show",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMWhpMHYwZldralI3U3JBRXFBLVVuNjdwaE1GY1Vpbk9DWldZaTFicGhLbXRBVjZCYUFZZWVsVk9jaWhqalYyZXdTRktDNUpEaUFyYjNKUmhOdHpUS1hfRXVSSUZOaDc4ZGJSWGRXc2VkZEJvbWEzMWpHY2pyLWNWcWwwNm0zOGNYWUtRb1ZFUTFGWDRGVVNTYVJXTGdFc2FyR0JPZEx5Um5JejFOU08tenhB?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-22",
-     "time": "11:33",
-     "title": "Indian shares extend losses as high oil prices heighten inflation worries",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZDhVMWdGc0J2bURPNnV2YnBaRXlMSkVqcXRGX1FBZ2lUOXQ4eVJyd3RsTE1CckJ4cjRuVEdPQVJLaGVXaVA5clJIZ0lQSTBsMm1iQ0xfeTZkNXhqWUtoX2ExQkNlRFVfSVhKckRtenZfWW41bDlxWWc0WVFuRTVTTHlIdEtPcEI2Z2hWR2pyd2NGOGRiNXNMUkM3OE5qcFV5VUxQUkVDem1HdXN4X0pKY3RrejhKeHcxRjdV?oc=5",
      "priority": false
     }
    ]
