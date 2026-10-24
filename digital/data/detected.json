@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T07:03:05+00:00",
+ "updated": "2026-10-24T00:11:43+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": [
     {
      "date": "2026-10-21",
@@ -88,6 +88,15 @@
     },
     {
      "date": "2026-10-15",
+     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속 차단 - 카드/한컷 | 멀티미디어",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52dlVxdTBWMklmQnhsc25VcHVkZGtKdE8zUUlvYmFWWW1VZ2RUeWs4aUVOV2dDclVndkl1bGtBNmxldUlLbEtSYWNPbHVHU3c1UlJCY3J1SmUtdTN3eTFZVkVyYjJGSEZYVXJ6V3ZR?oc=5",
+     "src": "정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-15",
      "title": "'무기한 선물' 이용자 유의사항 안내 - 최근 글로벌 가상자산플랫폼 등에서 거래되는 '무기한 선물'은 국내법의 투자자 보호가 적용되지 않아 각별한 주의 필요",
      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wRmd1MFpGOFVzTlFOMlNIT2xxa29zS0VYMUFwU2o0NzV1UDZVdFhZeXNNWmx4eFVEbS11d2pmU2hYZ3VqWG5EeDdnemtHUTRFaVV5U1FET1dOWnhfRC15cmpacVRYWWlXVGR6ZHdLVk5OR2lm?oc=5",
      "src": "정책브리핑",
@@ -96,12 +105,12 @@
      ]
     },
     {
-     "date": "2026-10-15",
-     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속 차단 - 카드/한컷 | 멀티미디어",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52dlVxdTBWMklmQnhsc25VcHVkZGtKdE8zUUlvYmFWWW1VZ2RUeWs4aUVOV2dDclVndkl1bGtBNmxldUlLbEtSYWNPbHVHU3c1UlJCY3J1SmUtdTN3eTFZVkVyYjJGSEZYVXJ6V3ZR?oc=5",
-     "src": "정책브리핑",
+     "date": "2026-10-13",
+     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01OV9mbVhza3d6SXVwd2dNNVFRVGNhWGRSUVlvS0hINFI5dzdfcW15VXlyanY2aElDNDNDQjdXM3N3dGFmbDEtR3E3cHpySTRYYmtEZldUWFYyRWN6aHpRdmxGXzVjem1VQ2IwQ0MtXzNHT0ty?oc=5",
+     "src": "대한민국 정책브리핑",
      "topics": [
-      "general"
+      "vasp"
      ]
     },
     {
@@ -120,15 +129,6 @@
      "src": "금융위원회",
      "topics": [
       "general"
-     ]
-    },
-    {
-     "date": "2026-10-12",
-     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01OV9mbVhza3d6SXVwd2dNNVFRVGNhWGRSUVlvS0hINFI5dzdfcW15VXlyanY2aElDNDNDQjdXM3N3dGFmbDEtR3E3cHpySTRYYmtEZldUWFYyRWN6aHpRdmxGXzVjem1VQ2IwQ0MtXzNHT0ty?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp"
      ]
     },
     {
@@ -161,7 +161,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": [
     {
      "date": "2026-10-23",
@@ -220,27 +220,27 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": []
   },
   "EU": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": [
     {
      "date": "2026-10-14",
@@ -308,7 +308,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": [
     {
      "date": "2026-10-21",
@@ -320,7 +320,7 @@
      ]
     },
     {
-     "date": "2026-10-15",
+     "date": "2026-10-21",
      "title": "Help with VAT treatment of cryptoassets — GfC21",
      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWnpJMnMtNnV5NWZkZUJ4Z3d2UDRNVjZ1R3p6d1NJU3F0ZEVwdjhZSmp3dzNUSUpGcl94d3NIMHA4WV9ySEZUTUFLZDBJY1FXengyMExFTlVuTjJlZDc3Tld4MEFiUzdJNE8wY2psMVRhVHFBVi1rektMeG1meXJoeXZfU1BFQ0kxQk1UWElBc0djalBqalJuUk9QbzRTMHBYTU1WenpNS1B3M1JQU21hTmVLYUJBbi1oZjBpdkEwNlB2dw?oc=5",
      "src": "GOV.UK",
@@ -331,7 +331,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-24",
    "items": [
     {
      "date": "2026-10-09",
