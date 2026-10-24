@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T00:11:43+00:00",
+ "updated": "2026-10-24T23:56:40+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -75,6 +75,15 @@
      "src": "금융위원회",
      "topics": [
       "general"
+     ]
+    },
+    {
+     "date": "2026-10-19",
+     "title": "가상자산 과세 관련 현장 간담회 개최",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oeUZQdHFrM21rSG1GVE1wYnQ2aHZFdUMwVFZqZ1VPd3dlYWlFV1VLTWFFMmdYMGdSSENndmhrQkt0N05WcjVPN3NqM240SE1zWVJhRmxGUzYtbmdKSjNuVUJtY3FJeWtkVWVsM0E5WXc4VE1V?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "tax"
      ]
     },
     {
