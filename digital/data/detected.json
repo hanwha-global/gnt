@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T23:56:40+00:00",
+ "updated": "2026-10-25T23:43:35+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": [
     {
      "date": "2026-10-21",
@@ -97,9 +97,9 @@
     },
     {
      "date": "2026-10-15",
-     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속 차단 - 카드/한컷 | 멀티미디어",
+     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속 차단 - 전체 | 카드/한컷",
      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52dlVxdTBWMklmQnhsc25VcHVkZGtKdE8zUUlvYmFWWW1VZ2RUeWs4aUVOV2dDclVndkl1bGtBNmxldUlLbEtSYWNPbHVHU3c1UlJCY3J1SmUtdTN3eTFZVkVyYjJGSEZYVXJ6V3ZR?oc=5",
-     "src": "정책브리핑",
+     "src": "대한민국 정책브리핑",
      "topics": [
       "general"
      ]
@@ -108,6 +108,15 @@
      "date": "2026-10-15",
      "title": "'무기한 선물' 이용자 유의사항 안내 - 최근 글로벌 가상자산플랫폼 등에서 거래되는 '무기한 선물'은 국내법의 투자자 보호가 적용되지 않아 각별한 주의 필요",
      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wRmd1MFpGOFVzTlFOMlNIT2xxa29zS0VYMUFwU2o0NzV1UDZVdFhZeXNNWmx4eFVEbS11d2pmU2hYZ3VqWG5EeDdnemtHUTRFaVV5U1FET1dOWnhfRC15cmpacVRYWWlXVGR6ZHdLVk5OR2lm?oc=5",
+     "src": "정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속 차단 - 카드/한컷 | 멀티미디어",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52dlVxdTBWMklmQnhsc25VcHVkZGtKdE8zUUlvYmFWWW1VZ2RUeWs4aUVOV2dDclVndkl1bGtBNmxldUlLbEtSYWNPbHVHU3c1UlJCY3J1SmUtdTN3eTFZVkVyYjJGSEZYVXJ6V3ZR?oc=5",
      "src": "정책브리핑",
      "topics": [
       "general"
@@ -151,6 +160,15 @@
     },
     {
      "date": "2026-10-12",
+     "title": "가상자산으로 빠져나간 피싱 피해금, 이제는 돌려받을 수 있습니다 - 전체 | 카드/한컷 | 멀티미디어",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9KbVdWcjB3emRaQ3JadERhcVZFeUhia2R1cGdMTG1nbEdMVGNZbUJlS2w0THRBdV8xNW9DY0NhWHR5TGhSSFZ5bGU3Q3RnS2hLTEtWdFcwMXF5RUliT0hiMjhzU20yTjRhRXpyZVlR?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-12",
      "title": "가상자산으로 빠져나간 피싱 피해금, 이제는 돌려받을 수 있습니다 - 카드/한컷 | 멀티미디어",
      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9KbVdWcjB3emRaQ3JadERhcVZFeUhia2R1cGdMTG1nbEdMVGNZbUJlS2w0THRBdV8xNW9DY0NhWHR5TGhSSFZ5bGU3Q3RnS2hLTEtWdFcwMXF5RUliT0hiMjhzU20yTjRhRXpyZVlR?oc=5",
      "src": "정책브리핑",
@@ -170,7 +188,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": [
     {
      "date": "2026-10-23",
@@ -229,27 +247,27 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": []
   },
   "EU": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": [
     {
      "date": "2026-10-14",
@@ -317,7 +335,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": [
     {
      "date": "2026-10-21",
@@ -340,7 +358,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-10-24",
+   "auto_checked": "2026-10-25",
    "items": [
     {
      "date": "2026-10-09",
