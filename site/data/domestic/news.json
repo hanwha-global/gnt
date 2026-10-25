@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-25T08:33+09:00",
+ "updated_at": "2026-10-26T08:28+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "sources": [
   "연합뉴스",
@@ -117,20 +117,20 @@
   {
    "date": "2026-10-01",
    "time": "16:00",
+   "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
+   "src": "머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
+   "firms": []
+  },
+  {
+   "date": "2026-10-01",
+   "time": "16:00",
    "title": "신한證, 베트남 뿌리내린 10년…IB·리테일 수익 성장 '주목'",
    "src": "머니투데이",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmSnVZNFJIWVllZkR3elQxSG1DcXdvSHlBaVo0TWREbFF3cG14dWlpYTh6OG1RZEYxTnM5WWJ6U044aVVkMzNIczVGTVVIU1QxTlJNZ1VuQjR1RjE4b19oNkpoV1BSMGc10gFuQVVfeXFMTlMtSjhLazFEQ3lOVlgxZ1ZWYmhSMEFXWFNfY2Y5RUdSX1R4NmFpNExEUTg4eGNaTngzQko2Mm1JRDNlVm9YQ0JXVksweWtjSElRd3N5aFEyZFRMbGtWQUhXeE5xUS1GdHd4YUhPNmc?oc=5",
    "firms": [
     "신한투자증권"
    ]
-  },
-  {
-   "date": "2026-10-01",
-   "time": "16:00",
-   "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
-   "firms": []
   },
   {
    "date": "2026-09-30",
@@ -198,21 +198,21 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
-   "title": "하나증권, 업비트 글로벌과 디지털자산 금융사업 협력 MOU",
-   "src": "글로벌이코노믹",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUC1EdnN5Um85S0VNYTM1TFFRSGtlNnBtZ2xnR0hQa2tnTWRwMEtwZEx5Q1BNWkFiTHlCYWUyMWYtRzF4dFZEVVI2N1ZMM0h4SXpzWWkzejJzRDVOTmtEekxpVGU3bWNHNktLejBlUXlSd1c2Nkp4UlY1Zk5jU3VKdUFJUzZhWlNC?oc=5",
-   "firms": [
-    "하나증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
    "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
    "src": "전자신문",
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
    "firms": [
     "토스증권"
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": "16:00",
+   "title": "하나증권, 업비트 글로벌과 디지털자산 금융사업 협력 MOU",
+   "src": "글로벌이코노믹",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUC1EdnN5Um85S0VNYTM1TFFRSGtlNnBtZ2xnR0hQa2tnTWRwMEtwZEx5Q1BNWkFiTHlCYWUyMWYtRzF4dFZEVVI2N1ZMM0h4SXpzWWkzejJzRDVOTmtEekxpVGU3bWNHNktLejBlUXlSd1c2Nkp4UlY1Zk5jU3VKdUFJUzZhWlNC?oc=5",
+   "firms": [
+    "하나증권"
    ]
   },
   {
