@@ -10,6 +10,7 @@
 | 글로벌 | 권역별 증권사 순위(한국·미국·일본·베트남·싱가포르·인도네시아·아부다비) + 시장별 한국계 현지법인 | DART, SEC EDGAR, 거래소·언론 발표 | 한국·미국 매주 자동 / 그 외 출처·기준일 표기 |
 | 국내 | 국가별 진출 현황(법인/사무소 매트릭스), 해외법인 상세(검색·필터·CSV), 최근 공시·변동 감지 | 정기보고서 종속·관계회사, DART 타법인출자현황 | 매주 자동 |
 | 한화투자증권 | 해외자회사 공시 실적(DART), 해외법인·출자 현황, 필수 대외보고 To-do | `hanwha/` 폴더 | 별도 작업 |
+| 전략 인사이트 | 진출국 스코어카드, 현지 경쟁 구도(상장 증권사 + 한국계 현지법인 자본·ROE·시가총액·P/B), 밸류에이션 비교, 인도네시아·베트남 점유율 | IMF WEO·세계은행, Yahoo Finance, DART, IDX, HOSE(수동) | 평일 매일 자동(`insight.yml`) |
 
 펀드·신탁·투자기구(Vehicle)·SPC는 법인명·업종 규칙(`scripts/gnd.py`)으로 자동 제외합니다.
 
@@ -24,6 +25,7 @@ site/                 정적 웹(빌드 도구 없음)
   data/global/markets.json       권역별 순위(출처·기준일 포함)
   data/global/us_sec.json        SEC 자동 수집 결과(자동 생성)
 hanwha/               한화투자증권 탭(있으면 함께 배포)
+insight/              전략 인사이트 탭(insight/scripts/fetch_insight.py 가 평일 08:10 KST 데이터 갱신)
 digital/              디지털자산 규제 탭(있으면 함께 배포, digital/data/summary.json 은 한눈에 보기 카드로)
 workflow/            해외지분투자 Workflow 탭(절차 흐름도·단계별 신고·보고 기한, 정적 참고 자료)
 guide/               국가별 해외진출 유의사항 탭(있으면 함께 배포, 감독당국 공식 발표는 guide-daily.yml 이 매일 감지)
