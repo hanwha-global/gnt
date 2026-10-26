@@ -1181,14 +1181,14 @@
     const hp = hwPublic(hw);
     const ht = hp ? hp.total(hp.latest) : null;
     const next = (hw.reg?.todo || []).filter((t) => t.status !== "done" && t.due && t.law !== "내부").sort((a, b) => a.due.localeCompare(b.due))[0];
-    const kpi = (l, v, n, cls = "", unit = "") => `<div class="kpi ${cls}"><div class="kpi__label">${l}</div><div class="kpi__value">${v}${unit ? `<small>${unit}</small>` : ""}</div><div class="kpi__note">${esc(n)}</div></div>`;
+    const kpi = (l, v, n, cls = "", unit = "") => `<div class="kpi ${cls}"><div class="kpi__label">${l}</div><div class="kpi__value">${v}${unit ? `<small>${unit}</small>` : ""}</div><div class="kpi__note" title="${esc(n)}">${esc(n)}</div></div>`;
     $("#ov-kpis").innerHTML = [
       kpi('<abbr title="' + esc(TIPS["해외 현지법인"]) + '">국내사 해외 현지법인</abbr>', fmt(corps.length), `${new Set(corps.map((e) => e.firm)).size}개 증권사`, "", "개"),
       kpi("진출 국가", fmt(countries.size), `사무소 ${offices}개 포함`, "", "개국"),
       kpi('<abbr title="' + esc(TIPS["변동 감지"]) + '">DART 신규 해외법인</abbr>', fmt(d.changes.length), d.changes.length ? `${changeNote(d.changes)} · ${[...new Set(d.changes.map((c) => SHORT[c.firm]))].join("·")}` : "변동 없음", "", "건"),
       kpi("최근 해외·출자 공시", fmt(state.data.dart?.feed?.length ?? 0), "최근 120일 DART", "", "건"),
       br ? kpi(`<abbr title="${esc(`DART 정기보고서를 낸 국내 증권사 ${br.rows.length}곳의 별도 자본총계 순위(연결 기준 ${br.cfs}위). 매주 월요일 자동 계산, 전체 표는 글로벌 › 한국`)}">당사 자기자본 순위</abbr>`, fmt(br.rank),
-          `증권사 ${br.rows.length}곳 중 · ${br.short} 별도 · 대형 ${eqRank.length}곳 중 ${myRank}위`, "kpi--hw", "위")
+          `${br.rows.length}곳 중 · 대형사 ${eqRank.length}곳 중 ${myRank}위 · ${br.short} 별도`, "kpi--hw", "위")
         : kpi("당사 자기자본 순위", myRank ? fmt(myRank) : "–", `${eqRank.length}개사 중 · ${eqRank[myRank - 1]?.basis || ""}`, "kpi--hw", "위"),
       kpi("당사 해외 현지법인", fmt(mine.length), `${new Set(mine.map((e) => e.country)).size}개국 · 사무소 ${d.offices.filter((o) => o.firm === HANWHA).reduce((s, o) => s + o.count, 0)}`, "kpi--hw", "개"),
       kpi(`당사 해외자회사 ${hp ? esc(hp.latest.label) : ""} 순이익${ht?.own != null ? "(지배지분)" : ""}`, ht ? eok(ht.own ?? ht.ni) : "–",
