@@ -176,11 +176,8 @@
    "checked": "2026-10-23"
   },
   "http://www.csrc.gov.cn/csrc_en/": {
-   "kind": "원문",
-   "sig": "56f24dc7c33ea113",
-   "checked": "2026-10-23",
-   "v": 2,
-   "changed_at": "2026-10-23"
+   "kind": "링크",
+   "checked": "2026-10-23"
   },
   "https://www.chinajusticeobserver.com/law/x/securities-law-of-china-20191229": {
    "kind": "링크",
@@ -492,14 +489,7 @@
    "checked": "2026-10-23"
   },
   "CN": {
-   "checked": "2026-10-23",
-   "changed": [
-    {
-     "t": "CSRC(영문)",
-     "u": "http://www.csrc.gov.cn/csrc_en/",
-     "at": "2026-10-23"
-    }
-   ]
+   "checked": "2026-10-23"
   },
   "GB": {
    "checked": "2026-10-23"
