@@ -1202,5 +1202,44 @@ class TakeawaysTest(unittest.TestCase):
         self.assertTrue(bt.reg_hit("HOSE suspends trading of three securities companies for violations"))
         self.assertFalse(bt.reg_hit("Indonesia's IDX suspends trading of firms tied to Prajogo Pangestu"))
 
+    def test_completed_relief_negated_and_question_headlines(self):
+        # 이미 난 안도('모면에·면해 반등·해소됐지만·해소로 이어졌다·will not reclassify·avoid reclassification·while MSCI keeps')는 안도다
+        for t in ("MSCI 강등 모면에 인니 증시 급등", "인니 증시, MSCI 강등 면해 반등", "인니 MSCI 강등 우려 해소됐지만 외국인 복귀는 불투명",
+                  "MSCI 인니 강등 무산됐지만 외국인 복귀는 불투명", "인니 개혁, MSCI 강등 우려 해소로 이어졌다", "MSCI 강등 우려 해소에 인니 증시 반등할까",
+                  "MSCI will not reclassify Indonesia in 2026 review", "Indonesia isn't reclassified in MSCI annual review", "Indonesian stocks avoid MSCI reclassification",
+                  "Jakarta stocks set record high while MSCI keeps Indonesia in emerging markets"):
+            self.assertTrue(bt.relief(t), t)
+            self.assertEqual(bt.news_label(t), "MSCI 강등 우려 해소", t)
+        for t in ("인니, MSCI 강등 모면책 마련", "MSCI, 인니 강등 면해줄까", "MSCI 강등 우려 해소됐다고 보기 어려워", "Indonesia must avoid MSCI reclassification, minister says",
+                  "Indonesia lobbies MSCI, hoping that when it reviews it won't downgrade"):
+            self.assertFalse(bt.relief(t), t)
+        # 물음·부정 수동형은 아직 결정이 아니고, 막지 못한 기사·'— what does it mean?'은 이미 난 결정
+        for t in ("Will MSCI cut Indonesia to frontier status?", "Has MSCI downgraded Indonesia?", "Indonesian Stocks Are Cheap. Will They Be Cut to Frontier by MSCI?",
+                  "Indonesia shouldn't be downgraded by MSCI, minister says", "MSCI has not yet downgraded Indonesia", "Indonesia is not being downgraded by MSCI, OJK says",
+                  "MSCI has not reclassified Indonesia"):
+            self.assertFalse(bt.confirmed(t), t)
+            self.assertNotEqual(bt.news_label(t), "MSCI 강등 결정", t)
+        for t in ("Indonesia fails to avoid being downgraded by MSCI", "MSCI downgrades Indonesia to frontier – what does it mean?",
+                  "Will stocks recover after MSCI downgraded Indonesia to frontier?"):
+            self.assertTrue(bt.confirmed(t), t)
+        # 다른 기관·애널리스트의 재경고는 그 지수 회사의 새 단계가 아니다 · 증권사 주식 거래정지는 제재가 아니다
+        for t in ("OJK warns Indonesian brokers again as MSCI downgrade weighs", "Indonesia's OJK warns of new measures as MSCI downgrade bites"):
+            self.assertIsNone(bt.NEW_STEP_RE.search(t), t)
+        self.assertFalse(bt.reg_hit("IDX suspends trading of brokerage firm shares after unusual price movement"))
+
+    def test_indonesia_reclassification_story_does_not_hit_vietnam(self):
+        # 'MSCI keeps Vietnam on watch list, opens consultation on Indonesia reclassification'은 인니 악재일 뿐 베트남 호재 줄을 빼지 않는다
+        first = self.run_at(TODAY, {})
+        self.assertIn("R07", self.rules(first, "VN"))
+        day = TODAY + timedelta(days=1)
+        mn = copy.deepcopy(self.files["site/data/global/macro_news.json"])
+        mn["countries"]["VN"]["items"].insert(0, {"date": day.isoformat(), "src": "Reuters", "url": "u-vn-id", "priority": True,
+                                                  "title": "MSCI keeps Vietnam on watch list, opens consultation on Indonesia reclassification"})
+        write(self.root, {"site/data/global/macro_news.json": mn})
+        res = self.run_at(day, json.loads(json.dumps(first)))
+        self.assertIn("R07", self.rules(res, "VN"))
+        self.assertEqual(res["countries"]["VN"]["last_check"], "큰 변화 없음", res["countries"]["VN"].get("reason"))
+        self.assertEqual(self.rules(res, "ID")["R08"]["variant"], "NEG")
+
 if __name__ == "__main__":
     unittest.main()
