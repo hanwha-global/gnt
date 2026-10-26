@@ -1,26 +1,11 @@
 name: Weekly data update (DART · SEC, no LLM)
 
+# 임시: PR 브랜치에서 전체 증권사 순위 파일만 한 번 만든다(다음 커밋에서 원래대로 되돌림)
 on:
-  schedule:
-    - cron: "0 0 * * 1"   # 매주 월요일 09:00 KST
   workflow_dispatch:
-    inputs:
-      quick:
-        description: "DART 단계를 건너뛰고 뉴스·해외 순위만 수집"
-        type: boolean
-        default: false
-      subfin_debug:
-        description: "종속기업 요약재무 표 구조를 로그로 볼 증권사(쉼표 구분, all 가능)"
-        type: string
-        default: ""
 
 permissions:
   contents: write
-  actions: write
-
-concurrency:
-  group: data-commit
-  cancel-in-progress: false
 
 jobs:
   update:
@@ -30,92 +15,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: DART 수집 (해외법인·재무·공시)
-        if: ${{ !inputs.quick }}
-        env:
-          DART_API_KEY: ${{ secrets.DART_API_KEY }}
-        run: python scripts/update_dart.py
-      - name: 해외 종속회사 전수 목록 (연결대상 종속회사 현황·주석)
-        if: ${{ !inputs.quick }}
-        continue-on-error: true
-        env:
-          DART_API_KEY: ${{ secrets.DART_API_KEY }}
-        run: python scripts/fetch_consolidated.py
-      - name: 해외 종속기업 요약재무 (ROE용, DART 사업보고서 원문)
-        if: ${{ !inputs.quick }}
-        continue-on-error: true
-        env:
-          DART_API_KEY: ${{ secrets.DART_API_KEY }}
-          SUBFIN_DEBUG: ${{ inputs.subfin_debug }}
-        run: python scripts/fetch_sub_fin.py
-      - name: 해외법인 5개년 손익 추이 (사업·반기보고서 원문, 새 보고서만 받음)
-        if: ${{ !inputs.quick }}
-        continue-on-error: true
-        env:
-          DART_API_KEY: ${{ secrets.DART_API_KEY }}
-        run: python scripts/fetch_sub_trend.py
-      - name: 국내 전체 증권사 자기자본 순위 (DART 주요계정, 제출 기한 지난 최근 기간)
-        if: ${{ !inputs.quick }}
-        continue-on-error: true
+      - name: 국내 전체 증권사 자기자본 순위
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python scripts/broker_rank.py
-      - name: 해외진출 뉴스 (매일은 news.yml, 여기서도 한 번)
-        continue-on-error: true
-        run: |
-          python scripts/fetch_news.py
-          python scripts/fetch_macro_news.py
-          python scripts/fetch_hub_news.py
-      - name: SEC 수집 (미국 순위)
-        continue-on-error: true
-        env:
-          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || vars.SEC_USER_AGENT }}
-        run: python scripts/update_sec.py
-      - name: 해외 상장 증권사 순위 (일본·베트남·싱가포르·인니)
-        continue-on-error: true
-        run: python scripts/update_listed.py
-      - name: 한화 탭 해외자회사 공시 요약 (DART)
-        if: hashFiles('hanwha/scripts/fetch_dart_subs.py') != ''
-        continue-on-error: true
-        env:
-          DART_API_KEY: ${{ secrets.DART_API_KEY }}
-        run: python hanwha/scripts/fetch_dart_subs.py
-      - name: 한화 탭 대외보고 기한 계산
-        if: hashFiles('hanwha/scripts/build_deadlines.py') != ''
-        continue-on-error: true
-        run: python hanwha/scripts/build_deadlines.py
-      - name: 한화 탭 매크로 수집 (ECOS)
-        if: hashFiles('hanwha/scripts/fetch_macro.py') != ''
-        continue-on-error: true
-        env:
-          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
-        run: python hanwha/scripts/fetch_macro.py
-      - name: 디지털자산 규제 탭 (최근 발표 수집 · 요약 카드)
-        if: hashFiles('digital/scripts/fetch_feed.py') != ''
-        continue-on-error: true
-        run: |
-          python digital/scripts/fetch_feed.py
-          python digital/scripts/build_summary.py
-      - name: Tests
-        run: python -m unittest discover -s tests
-      - name: Commit data
-        id: commit
+      - name: Commit
         run: |
           git config user.name "gnd-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data
-          if [ -d hanwha/data ]; then git add hanwha/data; fi
-          if [ -d digital/data ]; then git add digital/data; fi
-          if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            git commit -m "data: weekly update $(date -u +%F)"
-            git pull --rebase --autostash -X theirs origin "${GITHUB_REF_NAME}"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-      - name: Redeploy Pages
-        if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run pages.yml --ref main
+          git add site/data/domestic/broker_rank.json
+          git diff --cached --quiet || { git commit -m "data: 국내 전체 증권사 자기자본 순위 첫 수집"; git push; }
