@@ -202,6 +202,75 @@ def valuation(symbol):
             "a_asof": s.get("annualStockholdersEquity", (None, None))[1]}
 
 
+# 베트남 상장 증권사(HOSE·HNX·UPCoM) 전체: VNDirect finfo 공개 API(키 불필요). 업종 8777(투자서비스) 회원 중
+# 상장 상태이고 최근 연간 재무가 있는 회사만 쓴다. 비상장 증권사는 이 API에 최근 재무가 없어(2020년 무렵에서 끊김) 빠진다.
+VND = "https://api-finfo.vndirect.com.vn/v4"
+# 증권사 재무 양식(재무상태표 89, 손익 90)의 항목 코드
+VND_ITEMS = {"equity": 14000, "paid_in": 14110, "assets": 12700, "loans": 700001,
+             "ni": 23000, "ni_all": 23003, "rev": 21001, "brokerage": 621110}
+
+
+def vnd(path, q=None, **params):
+    if q:
+        params["q"] = q
+    return net.get_json(f"{VND}/{path}", params).get("data", [])
+
+
+def vnd_fs(code, report_type):
+    """기간별 {fiscalDate: {항목: 값}} (원 단위 동)."""
+    rows = vnd("financial_statements", f"code:{code}~reportType:{report_type}~modelType:89,90",
+               sort="fiscalDate:desc", size=800)
+    want = {v: k for k, v in VND_ITEMS.items()}
+    out = {}
+    for r in rows:
+        k = want.get(int(r.get("itemCode") or 0))
+        if k and r.get("numericValue") is not None:
+            out.setdefault(r["fiscalDate"], {})[k] = r["numericValue"]
+    return out
+
+
+def vn_universe():
+    """상장 증권사 전체의 최근 연간·분기 재무와 시가총액·P/B. (rows, errors)"""
+    errors = []
+    ind = vnd("industry_classification", "codeList:SSI")
+    codes = next((x["codeList"].split(",") for x in ind if str(x.get("industryCode")) == "8777"), [])
+    if not codes:
+        raise RuntimeError("VNDirect: 업종 8777 목록 없음")
+    info = {}
+    for i in range(0, len(codes), 40):
+        for r in vnd("stocks", f"code:{','.join(codes[i:i + 40])}", size=100,
+                     fields="code,companyName,companyNameEng,floor,status,type"):
+            info[r["code"]] = r
+    listed = [c for c in codes if info.get(c, {}).get("floor") in ("HOSE", "HNX", "UPCOM")
+              and str(info[c].get("status", "")).lower() == "listed" and info[c].get("type") == "STOCK"]
+    rows = []
+    for c in listed:
+        try:
+            ann = vnd_fs(c, "ANNUAL")
+            years = sorted((d for d in ann if ann[d].get("equity")), reverse=True)
+            if not years or years[0] < f"{NOW.year - 1}-12-31":  # 최근 사업연도 재무가 없으면(휴면·상장폐지 예정) 뺀다
+                errors.append(f"vn {c}: 최근 연간 재무 없음({years[0] if years else '-'})")
+                continue
+            cur, prv = ann[years[0]], ann.get(f"{int(years[0][:4]) - 1}{years[0][4:]}", {})
+            qtr = vnd_fs(c, "QUARTER")
+            qd = max((d for d in qtr if qtr[d].get("equity")), default=None)
+            ratio = {r["ratioCode"]: r for r in vnd("ratios/latest", None, filter="ratioCode:MARKETCAP,PRICE_TO_BOOK",
+                                                     where=f"code:{c}", order="reportDate", fields="ratioCode,value,reportDate")}
+            ni = cur.get("ni") if cur.get("ni") is not None else cur.get("ni_all")
+            rows.append({"code": c, "name": info[c].get("companyNameEng") or info[c].get("companyName"), "name_vn": info[c].get("companyName"),
+                         "floor": info[c]["floor"], "asof": years[0], "equity": cur["equity"], "equity_prev": prv.get("equity"),
+                         "paid_in": cur.get("paid_in"), "assets": cur.get("assets"), "loans": cur.get("loans"), "ni": ni,
+                         "rev": cur.get("rev"), "brokerage": cur.get("brokerage"),
+                         "q_date": qd, "q_equity": qtr[qd]["equity"] if qd else None, "q_loans": qtr[qd].get("loans") if qd else None,
+                         "mcap": ratio.get("MARKETCAP", {}).get("value"), "pb": ratio.get("PRICE_TO_BOOK", {}).get("value"),
+                         "price_date": ratio.get("MARKETCAP", {}).get("reportDate")})
+        except Exception as e:
+            errors.append(f"vn {c}: {short(e, 80)}")
+        time.sleep(0.15)
+    print(f"vn universe: 업종 {len(codes)}곳 중 상장 {len(listed)}곳, 재무 확보 {len(rows)}곳")
+    return rows, errors
+
+
 def norm(n):
     return re.sub(r"[^0-9a-z가-힣]", "", str(n or "").lower())
 
@@ -227,6 +296,23 @@ def korean_subs():
     return by
 
 
+def vn_row(d, fx, ccy, div):
+    """VNDirect 원자료(동) → 화면 행(현지 표시 단위 = 조동, 원화 억원)."""
+    rate, now = fx[ccy].get(d["asof"]) or fx[ccy]["now"], fx[ccy]["now"]
+    u = lambda v: None if v is None else round(v / div, 2)
+    return {"kind": "local", "name": d["name"], "ticker": d["code"], "note": d["floor"], "asof": d["asof"],
+            "equity": u(d["equity"]), "ni": u(d["ni"]), "equity_krw": d["equity"] * rate / 1e8,
+            "roe": round(d["ni"] / d["equity"] * 100, 1) if d["ni"] is not None and d["equity"] else None,
+            "equity_prev": u(d["equity_prev"]),
+            "growth": round((d["equity"] / d["equity_prev"] - 1) * 100, 1) if d["equity_prev"] else None,
+            "paid_in": u(d["paid_in"]), "loans": u(d["loans"]), "loans_krw": d["loans"] * rate / 1e8 if d["loans"] else None,
+            "brokerage": u(d["brokerage"]), "brokerage_krw": d["brokerage"] * rate / 1e8 if d["brokerage"] else None, "rev": u(d["rev"]),
+            "q_date": d["q_date"], "q_equity": u(d["q_equity"]), "q_equity_krw": d["q_equity"] * now / 1e8 if d["q_equity"] else None,
+            "mcap": u(d["mcap"]), "mcap_krw": d["mcap"] * now / 1e8 if d["mcap"] else None,
+            "pb": round(d["pb"], 2) if d["pb"] else None, "pb_book": "분기", "pb_asof": d["q_date"], "price_date": d["price_date"],
+            "via": "vndirect", "url": f"https://dstock.vndirect.com.vn/tong-quan/{d['code']}", "stale": False}
+
+
 def landscape():
     prev = load("landscape.json", {"markets": {}})
     listed = json.loads((ROOT / "site/data/global/listed.json").read_text(encoding="utf-8"))
@@ -242,8 +328,15 @@ def landscape():
             errors.append(f"{mid} {ticker}: {e}{' (이전 값 유지)' if o and o.get('mcap') else ''}"[:160])
             return ({k: o.get(k) for k in ("price", "price_date", "mcap", "q_equity", "q_asof", "ccy")} if o and o.get("mcap") else None), True
 
+    try:
+        vn_rows, vn_err = vn_universe()
+        errors += vn_err
+    except Exception as e:
+        vn_rows = []
+        errors.append(f"vn 전체 목록: {short(e)} (Yahoo 상장사 목록으로 대체)")
     # 결산일 환율(상장사 자본·한국계 법인 원화 환산)과 최근 환율(시가총액)
-    days = sorted({r["asof"] for m in listed.get("markets", {}).values() for r in m.get("rows", []) if r.get("asof")} | {"2025-12-31"})
+    days = sorted({r["asof"] for m in listed.get("markets", {}).values() for r in m.get("rows", []) if r.get("asof")}
+                  | {d["asof"] for d in vn_rows} | {"2025-12-31"})
     try:
         fx = fx_table(days)
     except Exception as e:
@@ -257,7 +350,9 @@ def landscape():
     for mid, (cname, ccy) in MKT.items():
         unit, div, ysfx = MARKETS[mid][0], MARKETS[mid][1], MARKETS[mid][2]
         rows = []
-        for r in listed.get("markets", {}).get(mid, {}).get("rows", []):
+        if mid == "vn" and vn_rows:
+            rows = [vn_row(d, fx, ccy, div) for d in vn_rows]
+        for r in ([] if rows else listed.get("markets", {}).get(mid, {}).get("rows", [])):
             sym = r["ticker"] + (".HN" if r.get("note") == "HNX" else ysfx)
             v, stale = val(mid, r["ticker"], sym)
             rate = fx[ccy].get(r["asof"]) or fx[ccy]["now"]
@@ -316,6 +411,7 @@ def landscape():
     out = {"updated_at": NOW.isoformat(timespec="seconds"), "listed_updated_at": listed.get("updated_at"),
            "fx": fx, "fx_source": "Yahoo Finance 종가(USD 교차)",
            "sources": [{"label": "상장사 자본·순이익: Yahoo Finance·stockanalysis.com(각 사 공시 기반)", "url": "https://finance.yahoo.com/"},
+                       *([{"label": "베트남 상장 증권사 전체: VNDirect 공개 재무(각 사 감사 재무제표)", "url": "https://dstock.vndirect.com.vn/"}] if vn_rows else []),
                        {"label": "한국계 법인: DART 2025 사업보고서 '종속기업 요약재무정보'", "url": "https://dart.fss.or.kr/"}],
            "markets": markets, "errors": errors}
     save("landscape.json", out)

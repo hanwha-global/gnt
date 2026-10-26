@@ -30,7 +30,7 @@ jobs:
           python-version: "3.12"
       - name: 진출국 스코어카드 (IMF WEO · 세계은행)
         run: python insight/scripts/fetch_insight.py country
-      - name: 현지 경쟁 구도 (상장 증권사 시가총액·P/B + 한국계 법인)
+      - name: 현지 경쟁 구도 (상장 증권사 자본·시가총액·P/B + 한국계 법인, 베트남은 VNDirect 전체 상장사)
         run: python insight/scripts/fetch_insight.py landscape
       - name: 인도네시아 거래대금 점유율 (IDX)
         run: python insight/scripts/fetch_insight.py idx
@@ -49,7 +49,7 @@ jobs:
               if f == "landscape":
                   for m, v in d["markets"].items():
                       print(" ", m, v.get("median_pb"), v.get("median_roe"))
-                      for r in v["rows"][:30]: print("   ", r["kind"], r["name"], r.get("equity_krw") and round(r["equity_krw"]), r.get("roe"), r.get("pb"), r.get("mcap_krw") and round(r["mcap_krw"]))
+                      for r in sorted(v["rows"], key=lambda r: -(r.get("equity_krw") or 0))[:80]: print("   ", r["kind"], r.get("ticker"), r["name"][:40], r.get("asof"), r.get("equity_krw") and round(r["equity_krw"]), r.get("roe"), r.get("growth"), r.get("pb"), r.get("loans_krw") and round(r["loans_krw"]), r.get("brokerage"), r.get("mcap_krw") and round(r["mcap_krw"]))
               if f == "idx_share":
                   for r in (d.get("month") or {}).get("rows", [])[:30]: print("   ", r)
           PY
