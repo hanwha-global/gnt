@@ -28,6 +28,11 @@ BROWSER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
            "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9"}
 
 
+def short(e, n=120):
+    """오류 문구에서 HTML을 걷어 짧게."""
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(e))).strip()[:n]
+
+
 def load(name, default):
     p = DATA / name
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else default
@@ -41,9 +46,12 @@ def save(name, obj):
 # ---------- 1) 진출국 스코어카드 ----------
 COUNTRIES = [("KOR", "한국"), ("VNM", "베트남"), ("IDN", "인도네시아"), ("SGP", "싱가포르"),
              ("USA", "미국"), ("JPN", "일본"), ("ARE", "아랍에미리트")]
-# (키, IMF 지표, 표시명, 단위)
-IMF = [("gdp_growth", "NGDP_RPCH", "실질 GDP 성장률", "%"), ("cpi", "PCPIPCH", "소비자물가 상승률", "%"),
-       ("gdp_pc", "NGDPDPC", "1인당 GDP", "USD"), ("pop", "LP", "인구", "백만 명"), ("gdp", "NGDPD", "GDP", "십억 USD")]
+# (키, IMF 지표, 세계은행 대체 지표, 배수, 표시명, 단위). IMF가 막히면 세계은행 실적치(최신 연도)로 채운다.
+IMF = [("gdp_growth", "NGDP_RPCH", "NY.GDP.MKTP.KD.ZG", 1, "실질 GDP 성장률", "%"),
+       ("cpi", "PCPIPCH", "FP.CPI.TOTL.ZG", 1, "소비자물가 상승률", "%"),
+       ("gdp_pc", "NGDPDPC", "NY.GDP.PCAP.CD", 1, "1인당 GDP", "USD"),
+       ("pop", "LP", "SP.POP.TOTL", 1e-6, "인구", "백만 명"),
+       ("gdp", "NGDPD", "NY.GDP.MKTP.CD", 1e-9, "GDP", "십억 USD")]
 # (키, 세계은행 지표, 표시명, 단위)
 WB = [("mcap_gdp", "CM.MKT.LCAP.GD.ZS", "상장주식 시가총액/GDP", "%"), ("turnover", "CM.MKT.TRNR", "주식 회전율", "%"),
       ("listed", "CM.MKT.LDOM.NO", "상장 국내기업 수", "개"), ("account", "FX.OWN.TOTL.ZS", "금융계좌 보유율(15세+)", "%")]
@@ -51,8 +59,14 @@ WB = [("mcap_gdp", "CM.MKT.LCAP.GD.ZS", "상장주식 시가총액/GDP", "%"), (
 
 def imf(indicator, isos, years):
     url = f"https://www.imf.org/external/datamapper/api/v1/{indicator}/{'/'.join(isos)}"
-    d = net.get_json(url, {"periods": ",".join(map(str, years))}, headers=BROWSER)
-    return d.get("values", {}).get(indicator, {})
+    last = None
+    for hdr in (None, BROWSER):  # IMF 앞단(Akamai)이 일부 요청을 막아 두 방식으로 시도
+        try:
+            d = net.get_json(url, {"periods": ",".join(map(str, years))}, headers=hdr)
+            return d.get("values", {}).get(indicator, {})
+        except Exception as e:
+            last = e
+    raise RuntimeError(str(last))
 
 
 def worldbank(indicator, isos):
@@ -68,31 +82,41 @@ def country():
     isos = [c for c, _ in COUNTRIES]
     yr = NOW.year
     rows = {c: dict(prev.get("rows", {}).get(c, {}), iso=c, name=n) for c, n in COUNTRIES}
-    errors, ok = [], 0
-    for key, ind, _, _ in IMF:
+    errors, ok, fields = [], 0, {}
+    for key, ind, wb, mult, lab, unit in IMF:
         try:
-            vals = imf(ind, isos, [yr - 1, yr, yr + 1])
+            vals = imf(ind, isos, [yr, yr + 1])
             for c in isos:
                 v = vals.get(c, {})
-                if key == "gdp_growth":
-                    rows[c][key] = {str(y): v.get(str(y)) for y in (yr - 1, yr, yr + 1)}
-                elif v.get(str(yr)) is not None:
-                    rows[c][key] = {"v": v[str(yr)], "y": str(yr)}
+                if v.get(str(yr)) is not None:
+                    rows[c][key] = {"v": v[str(yr)], "y": str(yr), "src": "IMF"}
+                if key == "gdp_growth" and v.get(str(yr + 1)) is not None:
+                    rows[c]["gdp_growth_next"] = {"v": v[str(yr + 1)], "y": str(yr + 1), "src": "IMF"}
+            fields[key] = {"label": lab, "unit": unit, "src": "IMF WEO 전망"}
+            ok += 1
+            continue
+        except Exception as e:
+            errors.append(f"IMF {ind}: {short(e)}")
+        try:
+            got = worldbank(wb, isos)
+            for c, (v, y) in got.items():
+                if c in rows:
+                    rows[c][key] = {"v": v * mult, "y": y, "src": "WB"}
+            fields[key] = {"label": lab, "unit": unit, "src": "세계은행 실적"}
             ok += 1
         except Exception as e:
-            errors.append(f"IMF {ind}: {e}"[:160])
-    for key, ind, _, _ in WB:
+            errors.append(f"세계은행 {wb}: {e}"[:120])
+    for key, ind, lab, unit in WB:
         try:
             for c, (v, y) in worldbank(ind, isos).items():
                 if c in rows:
-                    rows[c][key] = {"v": v, "y": y}
+                    rows[c][key] = {"v": v, "y": y, "src": "WB"}
+            fields[key] = {"label": lab, "unit": unit, "src": "세계은행"}
             ok += 1
         except Exception as e:
-            errors.append(f"세계은행 {ind}: {e}"[:160])
+            errors.append(f"세계은행 {ind}: {e}"[:120])
     out = {"updated_at": NOW.isoformat(timespec="seconds") if ok else prev.get("updated_at"),
-           "checked_at": NOW.isoformat(timespec="seconds"), "weo_year": yr,
-           "fields": {k: {"label": lab, "unit": u, "src": "IMF WEO"} for k, _, lab, u in IMF}
-           | {k: {"label": lab, "unit": u, "src": "세계은행 WDI"} for k, _, lab, u in WB},
+           "checked_at": NOW.isoformat(timespec="seconds"), "weo_year": yr, "fields": fields,
            "sources": [{"label": "IMF World Economic Outlook (DataMapper)", "url": "https://www.imf.org/external/datamapper"},
                        {"label": "World Bank WDI", "url": "https://data.worldbank.org/"}],
            "rows": rows, "errors": errors}
@@ -105,7 +129,7 @@ def country():
 KR = [("미래에셋증권", "006800"), ("한국금융지주", "071050"), ("NH투자증권", "005940"), ("삼성증권", "016360"),
       ("키움증권", "039490"), ("대신증권", "003540"), ("한화투자증권", "003530"), ("유안타증권", "003470"),
       ("교보증권", "030610"), ("현대차증권", "001500"), ("SK증권", "001510"), ("다올투자증권", "030210"),
-      ("부국증권", "001270"), ("유진투자증권", "001200"), ("LS증권", "078020")]
+      ("부국증권", "001270"), ("유진투자증권", "001200"), ("LS증권", "078020.KQ")]
 MKT = {"vn": ("베트남", "VND"), "id": ("인도네시아", "IDR"), "sg": ("싱가포르", "SGD"), "jp": ("일본", "JPY")}
 # 증권사끼리 비교: 이름에 Securities·Sekuritas 가 있는 법인만 순위에 넣고, 운용·IT 법인은 '기타'로 따로 둔다
 BROKER = re.compile(r"securit|sekuritas", re.I)
@@ -266,7 +290,9 @@ def landscape():
     # 국내 상장 증권사(밸류에이션 비교)
     krrows = []
     for name, code in KR:
-        v, stale = val("kr", code, f"{code}.KS")
+        sym = code if "." in code else f"{code}.KS"
+        code = code.split(".")[0]
+        v, stale = val("kr", code, sym)
         if not v:
             continue
         o = oldval.get(f"kr:{code}", {})
@@ -277,7 +303,7 @@ def landscape():
                        "pb": round(v["mcap"] / eq, 2) if eq else None, "pb_asof": v.get("q_asof") or v.get("a_asof") or o.get("pb_asof"),
                        "a_equity": a_eq, "a_ni": a_ni, "a_asof": v.get("a_asof") or o.get("a_asof"),
                        "roe": round(a_ni / a_eq * 100, 1) if a_eq and a_ni is not None else None, "val_stale": stale,
-                       "url": f"https://finance.yahoo.com/quote/{code}.KS/"})
+                       "url": f"https://finance.yahoo.com/quote/{sym}/"})
     krrows.sort(key=lambda x: -(x["mcap_krw"] or 0))
     pbs = [x["pb"] for x in krrows if x.get("pb")]
     roes = [x["roe"] for x in krrows if x.get("roe") is not None]
@@ -300,7 +326,7 @@ def landscape():
 
 
 # ---------- 3) 인도네시아 거래대금 점유율 ----------
-IDX_HOSTS = ["https://www.idx.co.id", "https://idx.co.id"]
+IDX_HOSTS = ["https://www.idx.co.id", "https://www.idx.id", "https://idx.id"]
 # 한국계·당사 표시(회원사명 일부). 회원사 코드는 IDX 응답에서 그대로 쓴다.
 IDX_TAGS = [("Ciptadana", "한화투자증권"), ("Mirae", "미래에셋증권"), ("Korea Investment", "한국투자증권"),
             ("NH Korindo", "NH투자증권"), ("KB Valbury", "KB증권"), ("Shinhan", "신한투자증권"), ("Kiwoom", "키움증권"),
@@ -345,7 +371,7 @@ def idx_share():
                     cache["names"][c] = v["name"]
                 fetched += 1
             except Exception as e:
-                errors.append(f"{key}: {e}")
+                errors.append(f"{key}: {short(e)}")
                 if len(errors) >= 3 and fetched == 0:
                     break  # 막혔으면 오래 두드리지 않는다
             time.sleep(0.3)

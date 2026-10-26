@@ -1,4 +1,4 @@
-"""site/ 와 hanwha/·digital/·guide/·workflow/(있으면)를 _site/ 로 모으고 데이터 파일을 검증한다."""
+"""site/ 와 hanwha/·insight/·digital/·guide/·workflow/(있으면)를 _site/ 로 모으고 데이터 파일을 검증한다."""
 import json
 import shutil
 import subprocess
@@ -15,7 +15,7 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "site", OUT)
-    for part in ("hanwha", "digital", "guide", "workflow"):  # 다른 스레드가 채우는 탭 폴더
+    for part in ("hanwha", "insight", "digital", "guide", "workflow"):  # 다른 스레드가 채우는 탭 폴더
         if (ROOT / part).is_dir():
             shutil.copytree(ROOT / part, OUT / part)
     missing = [p for p in REQUIRED if not (OUT / p).exists()]

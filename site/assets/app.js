@@ -183,7 +183,7 @@
   // ---------- 라우팅 ----------
   function route() {
     const [section = "overview", sub = ""] = location.hash.replace(/^#/, "").split("/");
-    const valid = ["overview", "global", "domestic", "hanwha", "digital", "guide", "workflow"].includes(section) ? section : "overview";
+    const valid = ["overview", "global", "domestic", "hanwha", "insight", "digital", "guide", "workflow"].includes(section) ? section : "overview";
     document.querySelectorAll(".tabs a").forEach((a) => a.setAttribute("aria-selected", String(a.dataset.section === valid)));
     // 브라우저 탭 제목에 현재 화면 이름(북마크·탭 구분용)
     const tabName = document.querySelector(`.tabs a[data-section="${valid}"]`)?.textContent.trim();
@@ -193,6 +193,7 @@
     if (valid === "global") renderGlobal(sub || "all");
     if (valid === "domestic") renderDomestic(sub);
     if (valid === "hanwha") renderFrame("hanwha");
+    if (valid === "insight") renderFrame("insight");
     if (valid === "digital") renderFrame("digital");
     if (valid === "guide") renderFrame("guide");
     if (valid === "workflow") renderFrame("workflow");
@@ -1249,6 +1250,7 @@
   // ---------- 한화투자증권(hanwha/), 디지털자산 규제(digital/): 각 폴더의 index.html 을 끼워 넣는다 ----------
   const FRAMES = {
     hanwha: { title: "한화투자증권 글로벌네트워크 현황", desc: "해외자회사 4곳 공시 실적(DART), 해외법인·출자 현황, 필수 대외보고 To-do가 이 탭에 들어옵니다." },
+    insight: { title: "전략 인사이트", desc: "진출국 스코어카드, 현지 경쟁사 자본·P/B, 시장점유율이 이 탭에 들어옵니다." },
     digital: { title: "디지털자산 규제 요약", desc: "주요국 디지털자산(가상자산·STO·스테이블코인) 규제 현황과 해외법인 전략 시사점이 이 탭에 들어옵니다." },
     workflow: { title: "해외지분투자 Workflow", desc: "국내 증권사의 해외 지분투자 절차 흐름도와 단계별 신고·보고 기한이 이 탭에 들어옵니다." },
     guide: { title: "국가별 해외진출 유의사항", desc: "국가별 외국인 지분 한도·인가·자본금·현지 임원·송금 규제와 한국 측 공통 절차가 이 탭에 들어옵니다." },
