@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26T18:11+09:00",
+ "updated_at": "2026-10-27T00:20+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "sources": [
   "연합뉴스",
@@ -59,6 +59,16 @@
  ],
  "items": [
   {
+   "date": "2026-10-25",
+   "time": "09:00",
+   "title": "삼성증권 PB 출신 창업가…국내 증권사 6곳 뚫고, 美 진출한 비결",
+   "src": "머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4yT01ST0J0ajg2V09kNW5oTVRQWkdQUTZNekFCVTZHQ25SVUduRm0yaWROVllYSnNIbFRWb05iU2VhdEkzZEJENjZ3M2laWjFYNS1UalJDeTA4a0Z5dFNxajZITlUwUzBYcXdnLU1sMGJwTS1zSXJz0gF8QVVfeXFMTXBjVmlNLWNRdmtQcEczU1FhQVZCVzlrcU5oekg0djdyTG8wcHpzaGNBYzJ0Tl8yM2NhVVlubm1weDFBV0xRNmxNaGdCNTd1eDYwUVZmcXJfN3NsZEtvMGY2TzZiSHl1R3VVMmJJUzllUjhGOG1rak5RSmZnZg?oc=5",
+   "firms": [
+    "삼성증권"
+   ]
+  },
+  {
    "date": "2026-10-22",
    "time": "15:34",
    "title": "한국투자AC, 일본 VC와 맞손 한·일 스타트업 해외 진출 지원",
@@ -117,20 +127,20 @@
   {
    "date": "2026-10-01",
    "time": "16:00",
-   "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
-   "firms": []
-  },
-  {
-   "date": "2026-10-01",
-   "time": "16:00",
    "title": "신한證, 베트남 뿌리내린 10년…IB·리테일 수익 성장 '주목'",
    "src": "머니투데이",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmSnVZNFJIWVllZkR3elQxSG1DcXdvSHlBaVo0TWREbFF3cG14dWlpYTh6OG1RZEYxTnM5WWJ6U044aVVkMzNIczVGTVVIU1QxTlJNZ1VuQjR1RjE4b19oNkpoV1BSMGc10gFuQVVfeXFMTlMtSjhLazFEQ3lOVlgxZ1ZWYmhSMEFXWFNfY2Y5RUdSX1R4NmFpNExEUTg4eGNaTngzQko2Mm1JRDNlVm9YQ0JXVksweWtjSElRd3N5aFEyZFRMbGtWQUhXeE5xUS1GdHd4YUhPNmc?oc=5",
    "firms": [
     "신한투자증권"
    ]
+  },
+  {
+   "date": "2026-10-01",
+   "time": "16:00",
+   "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
+   "src": "머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
+   "firms": []
   },
   {
    "date": "2026-09-30",
