@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26T11:23+09:00",
+ "updated_at": "2026-10-26T18:11+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "sources": [
   "연합뉴스",
@@ -306,21 +306,21 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
-   "src": "연합인포맥스",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
-   "firms": [
-    "한국투자증권"
-   ]
-  },
-  {
-   "date": "2026-09-10",
-   "time": "16:00",
    "title": "삼성증권, 9년만에 발행어음 사업 진출",
    "src": "동아일보",
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9kSjFCcF9YMzdHNW9SYVZrZTYwSnZkWTBqWHJmNUFsQ0JSU1B0Y1Y5aGhxSDZkdUxJQ3JyZTVMa0lTT3l5WmJyTGZHcU9CenhVMlY2ektTSE9wUnhfUFhZNjFRakczbk1aWExWaWJtSVJXR0dZWlHSAWZBVV95cUxOYUhmVmFCbm0zWkdQRzVuVXppNm9WRThtWWdyV1N2VEdFZGNpdEc0WEFiSFlVNUdJYWNhTTV4ejByQW4xVHQ0LTAwUjFONHFoMVFTVGU3MGM2bzVmTGtkVGNHNjZTenc?oc=5",
    "firms": [
     "삼성증권"
+   ]
+  },
+  {
+   "date": "2026-09-10",
+   "time": "16:00",
+   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
+   "src": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
+   "firms": [
+    "한국투자증권"
    ]
   },
   {
