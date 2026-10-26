@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T01:50:53+00:00",
+ "updated": "2026-10-26T02:24:38+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
@@ -41,13 +41,6 @@
    },
    {
     "date": "2026-10-22",
-    "title": "이억원 \"거래소 STO 참여 검토\"⋯스테이블코인엔 \"혁신ㆍ안정 조화\" [국감]",
-    "src": "이투데이",
-    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBwc0RmcXNSYUFhS1RtVzBrcmFxX25UYkhFVWlIQTZxLVBITXN2YXpXeEpXVEpqdm9OS2VFT3hXdERtNGF4ckhkNWY2YXJKU2ZiVnZQdA?oc=5",
-    "code": "KR"
-   },
-   {
-    "date": "2026-10-22",
     "title": "이강일 \"가상자산 거래소도 토큰증권 시장 참여해야\"…이억원 \"검토\"",
     "src": "뉴스1",
     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9YY0g4YWZpLWk3SUFZSEUzblBIeHFfOU1tNlpDaDdMbVNhbWJkQXFsYW5Od1BMRmNscDBLRFZkZ3Z1T2VPb2l3bUZmVVhwdjNfdVI0amNPMkE1SFdUUmpiYnRDektZUQ?oc=5",
@@ -58,6 +51,13 @@
     "title": "\"스테이블코인 발행 은행 중심이어야 하나\" 질타에…이억원 \"혁신·안정 조화안 마련\"[2026국감]",
     "src": "아시아경제",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1iUEVjbmlRa2h4b2dMeG0xcWxkamJ6c1BYQ2lIem8tUDdhclVWT1l1Y0FiVzQ2dGtvT0E3Y2U4Z2x3SGRmSDJiWkE1UUdheUlGWXdGUGQ2WTloeS02QlB3LVBn?oc=5",
+    "code": "KR"
+   },
+   {
+    "date": "2026-10-22",
+    "title": "가상자산거래소 통해 토큰증권 거래? 금융위원장 “검토할 것”",
+    "src": "이데일리",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTVl3VmFWWTg4QUl3V0NCRGlVR1ZvRUR6R2drRTBTV2I3SmhHQ2FITDRpVzJ3OUtVb2ZtdjNUX1BITEsyb29LcHhyUXhGeEFlcHFzQTBmQjhac2xmcWlCcklGcWRIS2NxVmdtX212NkJhbVA5MXI2TXh5ZTBpVWNsSg?oc=5",
     "code": "KR"
    }
   ],
@@ -161,13 +161,6 @@
     "code": "JP"
    },
    {
-    "date": "2026-10-19",
-    "title": "Crypto With Faisal(@Square-Creator-6081246fb8a9)'s insights",
-    "src": "Binance",
-    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42MWw5cl9pcW1LWHl5aHoxS3FRSmplRHo5SFQ2cHpaOTFUNndieWZNQWxTcEh0YkE2VlRIUXVwenk2XzZpbnY2UzFnS2ZvdENLQjhDRTJod1RpNlVDWDF6cnZzWTc?oc=5",
-    "code": "JP"
-   },
-   {
     "date": "2026-10-17",
     "title": "Japan’s megabanks complete first joint yen stablecoin payment test",
     "src": "Forex Crunch",
@@ -179,6 +172,13 @@
     "title": "Japan’s Three Megabanks Confirm Their Shared Yen Stablecoin Works in Pilot",
     "src": "BlockchainReporter",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUFpvbTdGTW5YaVpvVlJqMG9wZVZvX09Ed09JR1c0Sy1WNUlial90VFhNWXJmcHhGQVE5OWxfcklscFIzU2lELVdNVkpraDNuQ0o5WG4wbWRIUVNuT0Vud291d2xTZ0kxTUZMVldsbzNuU1NWeEozXzhtRDdhVjZweg?oc=5",
+    "code": "JP"
+   },
+   {
+    "date": "2026-10-16",
+    "title": "Japan Megabanks Test First Joint Yen Stablecoin: Where Does XRP Fit?",
+    "src": "TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQa21KcXNYems2bl94RDdXTjBjdG1XWENKUUtyNW9YU243MGduMGd4NmpUczJIZExfdFV6U1hsdVpWbzN1WkVwZnFxYmhDV21Va091Zjg3MS1CSHVsc0FnOGNFODNDV3NqekNXWlduYlY5dnVGdWpoSWdVSVl2MEt4MGRyX000bHowQjRCZUlJNE1ZYmNGaXpqWml2dERrUmI0WUM5UXR0a29TQzlzcGVWVzFHT0tNcURCRzRSSkpIUkc?oc=5",
     "code": "JP"
    }
   ],

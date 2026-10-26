@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26T10:47+09:00",
+ "updated_at": "2026-10-26T11:23+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "sources": [
   "연합뉴스",
@@ -198,6 +198,16 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
+   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
+   "firms": [
+    "토스증권"
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": "16:00",
    "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5",
@@ -223,16 +233,6 @@
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5nOVBIN0dueFdBYnJIQWpzM2FwNnRma3V5Uk1EdVowWnRpOTEyT29tQlY3MWxXNUxsbzR6VmZMMUtNRG9qMkhUYWdLcmdnQQ?oc=5",
    "firms": [
     "하나증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
-   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
-   "firms": [
-    "토스증권"
    ]
   },
   {
@@ -296,9 +296,9 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
-   "src": "연합인포맥스",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
+   "title": "Korea Investment & Securities expands global ties with Fidelity, PIMCO, Carlyle",
+   "src": "The Korea Times",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSGRpbjF3c01RbEptWFFVSWVfTDRvSWM2eXMwR2JjRm9vcG9nZFBYckVmQVJTb3VGTnpGSTlwcXlfOGVXNDduVXdDWWtCeFF2NTBaeEtjQzgxM1VMV1VvQWxObER5ZE5fZlRSLUE2YnVRUVlCQlF2TEtkYy1LMHQwRWpFYmJJa00wdzE1OXoxVE9rVmNVMmp3TFoxMUJRa05aSjVqaG41eUMwRERWR01QUFI1X3hSeGFtd1RMWVdacmNDcVI4bUYxMlF5UngzSjVfSHl6cNIB2gFBVV95cUxPX0VBN2FqeVVrSzFNcUUyVUl4TmljUjZucnF5SUNwbEdfWlhFN0ZxdnBRZUUwQmtKY3FkNEV3Vm1tbkZ4WUgzb3E0TzVMRlBTRmZzRGZOSjBVQzJDRkY0QkpyNUI0WGVfblpkWVVuMVd0WHRHdFo2d2N0Tk04aGh1R2tzTnQ2ZVk1T016bVRCRmFSQjU4Rk1lNnl4Wl9tcmQzc0NDMk5rR2p0WGJBS0xYaFdVcGg2dTNOUnotaE9SNnVNUHNNTnRkUndPQWtxSmlyNUl0TVVtMGFQQQ?oc=5",
    "firms": [
     "한국투자증권"
    ]
@@ -306,9 +306,9 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "Korea Investment & Securities expands global ties with Fidelity, PIMCO, Carlyle",
-   "src": "The Korea Times",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSGRpbjF3c01RbEptWFFVSWVfTDRvSWM2eXMwR2JjRm9vcG9nZFBYckVmQVJTb3VGTnpGSTlwcXlfOGVXNDduVXdDWWtCeFF2NTBaeEtjQzgxM1VMV1VvQWxObER5ZE5fZlRSLUE2YnVRUVlCQlF2TEtkYy1LMHQwRWpFYmJJa00wdzE1OXoxVE9rVmNVMmp3TFoxMUJRa05aSjVqaG41eUMwRERWR01QUFI1X3hSeGFtd1RMWVdacmNDcVI4bUYxMlF5UngzSjVfSHl6cNIB2gFBVV95cUxPX0VBN2FqeVVrSzFNcUUyVUl4TmljUjZucnF5SUNwbEdfWlhFN0ZxdnBRZUUwQmtKY3FkNEV3Vm1tbkZ4WUgzb3E0TzVMRlBTRmZzRGZOSjBVQzJDRkY0QkpyNUI0WGVfblpkWVVuMVd0WHRHdFo2d2N0Tk04aGh1R2tzTnQ2ZVk1T016bVRCRmFSQjU4Rk1lNnl4Wl9tcmQzc0NDMk5rR2p0WGJBS0xYaFdVcGg2dTNOUnotaE9SNnVNUHNNTnRkUndPQWtxSmlyNUl0TVVtMGFQQQ?oc=5",
+   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
+   "src": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
    "firms": [
     "한국투자증권"
    ]
