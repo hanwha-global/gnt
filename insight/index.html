@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>전략 인사이트</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+/* 색은 대시보드 공용 테마(../assets/theme.css)의 변수만 쓴다 */
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:13px/1.45 "Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-feature-settings:"tnum"}
+a{color:inherit}
+.wrap{max-width:1500px;margin:0 auto;padding:10px 12px 24px;display:grid;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between}
+.top h1{margin:0;font-size:18px}
+.meta{color:var(--muted);font-size:12px}
+.btns{display:flex;gap:6px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:8px}
+.s12{grid-column:span 12}.s7{grid-column:span 7}.s5{grid-column:span 5}.s6{grid-column:span 6}
+@media (max-width:1100px){.s7,.s5,.s6{grid-column:span 12}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 12px;min-width:0}
+.card h2{margin:0 0 6px;font-size:13.5px;display:flex;gap:8px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.card h2 small{font-weight:400;color:var(--muted);font-size:11px}
+.why{margin:0 0 6px;font-size:11.5px;color:var(--text-2)}
+.why b{color:var(--accent-ink)}
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:6px 10px}
+.kpi span{display:block;font-size:11px;color:var(--muted)}
+.kpi b{font-size:18px;line-height:1.3}
+.kpi b small{font-size:11px;font-weight:500;color:var(--text-2);margin-left:3px}
+.kpi em{display:block;font-style:normal;font-size:10.5px;color:var(--text-2)}
+/* 표 */
+.tmeta{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:0 8px;font-size:10.5px;line-height:1.4;color:var(--muted);margin:0 0 2px}
+.tmeta span+span::before{content:"·";margin-right:8px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:3px 6px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{font-size:11px;color:var(--muted);font-weight:600;background:var(--surface-2);position:sticky;top:0}
+th:first-child,td:first-child{text-align:left}
+td.l,th.l{text-align:left}
+th small{display:block;font-weight:400;font-size:10px}
+tr.hw td{background:var(--accent-soft)}tr.hw td:first-child{color:var(--accent-ink);font-weight:700}
+tr.kr td:first-child{color:var(--kr)}
+tr.ref td{color:var(--muted)}
+.pos{color:var(--pos)}.neg{color:var(--neg)}.mut{color:var(--muted)}
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:0 5px;border-radius:999px;margin-left:4px;vertical-align:1px}
+.tag.kr{color:var(--kr);background:var(--kr-soft)}.tag.hw{color:#fff;background:var(--accent)}.tag.man{color:var(--accent-ink);background:var(--accent-soft)}.tag.old{color:var(--muted);border:1px solid var(--line)}
+.heat{border-radius:4px;padding:1px 5px}
+/* 시장 선택 */
+.pills{display:flex;gap:4px;flex-wrap:wrap;margin:0 0 6px}
+.pill{border:1px solid var(--line);background:var(--bg);color:var(--text-2);font:inherit;font-size:12px;font-weight:600;padding:2px 10px;border-radius:999px;cursor:pointer}
+.pill[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+/* 막대 */
+.bars{display:grid;gap:2px}
+.bar{display:grid;grid-template-columns:minmax(120px,190px) minmax(0,1fr) 70px;gap:6px;align-items:center;font-size:11.5px}
+.bar .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .tr{height:11px;background:var(--heat-0);border-radius:3px;overflow:hidden}
+.bar .tr i{display:block;height:100%;background:var(--bar)}
+.bar.kr .tr i{background:var(--kr)}.bar.kr .nm{color:var(--kr)}
+.bar.hw .tr i{background:var(--accent)}.bar.hw .nm{color:var(--accent-ink);font-weight:700}
+.bar .v{text-align:right;color:var(--text-2)}
+.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:10.5px;color:var(--muted);margin:2px 0 4px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:10px}
+@media (max-width:1000px){.split{grid-template-columns:minmax(0,1fr)}}
+svg text{fill:var(--muted);font-size:10px}
+.note{font-size:11px;color:var(--muted);margin:4px 0 0}
+.note b{color:var(--text-2);font-weight:600}
+.empty{padding:14px;text-align:center;color:var(--muted);font-size:12px;border:1px dashed var(--line);border-radius:8px}
+.cad{font-size:11px;color:var(--muted);display:grid;gap:2px;margin:0;padding-left:16px}.cad b{color:var(--text-2);font-weight:600}
+@media print{
+  @page{size:A4 landscape;margin:8mm}
+  :root{--bg:#fff;--surface:#fff;--surface-2:#f1f3f6;--text:#111;--text-2:#333;--muted:#666;--line:#ccc;--accent-ink:#b8500c;--kr:#2f5fd0;--kr-soft:#e8eefb;--heat-0:#eef1f5;--bar:#9aa7bf;color-scheme:light}
+  body{background:#fff;font-size:9.5px}.noprint{display:none!important}.card{break-inside:avoid}.wrap{max-width:none;padding:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>전략 인사이트 <small class="meta">진출국 매력도 · 현지 경쟁 구도 · 밸류에이션 · 시장점유율</small></h1>
+      <div class="meta" id="meta">불러오는 중</div>
+    </div>
+    <div class="btns noprint">
+      <button class="btn pri" type="button" onclick="print()">인쇄·PDF</button>
+      <a class="btn" href="data/landscape.json" target="_blank" rel="noopener">원자료(JSON)</a>
+    </div>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid">
+    <section class="card s12" aria-labelledby="h-cty">
+      <h2 id="h-cty">진출국 스코어카드 <small>성장성·자본시장 깊이·리테일 저변을 한 줄로 · 칸 색이 진할수록 7개국 중 높음</small></h2>
+      <div class="tmeta" id="tm-cty"></div><div class="tw" id="cty"></div>
+      <p class="note" id="cty-note"></p>
+    </section>
+
+    <section class="card s12" aria-labelledby="h-land">
+      <h2 id="h-land">현지 경쟁 구도 <small>현지 상장 증권사와 한국계 현지법인을 같은 잣대(자기자본, 원화 환산)로 줄 세움</small></h2>
+      <div class="pills noprint" id="land-pills" role="group" aria-label="시장"></div>
+      <div id="land"></div>
+    </section>
+
+    <section class="card s6" aria-labelledby="h-idx">
+      <h2 id="h-idx">인도네시아 증권사 거래대금 점유율 <small>IDX 회원사 거래 요약, 매일 자동 누적</small></h2>
+      <div class="pills noprint" id="idx-pills" role="group" aria-label="기간"></div>
+      <div id="idx"></div>
+    </section>
+
+    <section class="card s6" aria-labelledby="h-vn">
+      <h2 id="h-vn">베트남 HOSE 브로커리지 점유율 <small>거래소 분기 발표</small></h2>
+      <div id="vn"></div>
+    </section>
+
+    <section class="card s12" aria-labelledby="h-val">
+      <h2 id="h-val">밸류에이션 비교 <small>시장이 증권사에 매기는 값(P/B)과 수익성(ROE): 국내 vs 진출국</small></h2>
+      <div class="split"><div id="val-mkt"></div><div id="val-kr"></div></div>
+    </section>
+  </div>
+
+  <ul class="cad" aria-label="갱신 주기·산식">
+    <li><b>갱신 주기</b> · 평일 08:10(KST) GitHub Actions가 LLM 없이 수집: 주가·시가총액·환율·IDX 거래 요약 매일, IMF 전망(4·10월 개정)·세계은행 지표(연 1회 개정)는 바뀌면 반영, 상장사 자본·순이익은 글로벌 탭과 같은 수집(매주 월), 한국계 법인은 국내 탭과 같은 DART 사업보고서.</li>
+    <li><b>산식</b> · ROE = 최근 연간 순이익 ÷ 연말 자기자본 · P/B = 시가총액(최근 종가 × 발행주식 수) ÷ 최근 분기 자기자본(없으면 연말) · 원화 환산 = 자본은 결산일 환율, 시가총액은 최근 환율(Yahoo Finance 종가, USD 교차).</li>
+    <li><b>한계</b> · 비상장 증권사(대부분의 한국계·은행계 현지법인)는 시가총액·P/B가 없습니다. 한국계 법인 자본은 모회사 사업보고서 원화 금액을 연말 환율로 현지 통화로 되돌린 값입니다.</li>
+  </ul>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
