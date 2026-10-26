@@ -306,7 +306,7 @@ def vn_row(d, fx, ccy, div):
             "equity_prev": u(d["equity_prev"]),
             "growth": round((d["equity"] / d["equity_prev"] - 1) * 100, 1) if d["equity_prev"] else None,
             "paid_in": u(d["paid_in"]), "loans": u(d["loans"]), "loans_krw": d["loans"] * rate / 1e8 if d["loans"] else None,
-            "brokerage": u(d["brokerage"]), "rev": u(d["rev"]),
+            "brokerage": u(d["brokerage"]), "brokerage_krw": d["brokerage"] * rate / 1e8 if d["brokerage"] else None, "rev": u(d["rev"]),
             "q_date": d["q_date"], "q_equity": u(d["q_equity"]), "q_equity_krw": d["q_equity"] * now / 1e8 if d["q_equity"] else None,
             "mcap": u(d["mcap"]), "mcap_krw": d["mcap"] * now / 1e8 if d["mcap"] else None,
             "pb": round(d["pb"], 2) if d["pb"] else None, "pb_book": "분기", "pb_asof": d["q_date"], "price_date": d["price_date"],
@@ -411,6 +411,7 @@ def landscape():
     out = {"updated_at": NOW.isoformat(timespec="seconds"), "listed_updated_at": listed.get("updated_at"),
            "fx": fx, "fx_source": "Yahoo Finance 종가(USD 교차)",
            "sources": [{"label": "상장사 자본·순이익: Yahoo Finance·stockanalysis.com(각 사 공시 기반)", "url": "https://finance.yahoo.com/"},
+                       *([{"label": "베트남 상장 증권사 전체: VNDirect 공개 재무(각 사 감사 재무제표)", "url": "https://dstock.vndirect.com.vn/"}] if vn_rows else []),
                        {"label": "한국계 법인: DART 2025 사업보고서 '종속기업 요약재무정보'", "url": "https://dart.fss.or.kr/"}],
            "markets": markets, "errors": errors}
     save("landscape.json", out)

@@ -70,11 +70,11 @@ tr.ref td{color:var(--muted)}
 svg text{fill:var(--muted);font-size:10px}
 .note{font-size:11px;color:var(--muted);margin:4px 0 0}
 .scope{margin:0 0 6px;font-size:11.5px;color:var(--text-2);background:var(--surface-2);border-radius:6px;padding:4px 8px}.scope b{color:var(--text)}
-.posn{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px;margin:0 0 6px}
+.posn{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px;margin:0 0 6px}
 .posn div{border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:6px;padding:4px 8px;background:var(--bg)}
 .posn span{display:block;font-size:10.5px;color:var(--muted)}.posn b{font-size:16px;color:var(--accent-ink)}.posn b small{font-size:10.5px;color:var(--text-2);font-weight:500;margin-left:3px}
 .posn em{display:block;font-style:normal;font-size:10.5px;color:var(--text-2)}
-td.ib{position:relative;min-width:120px}td.ib i{position:absolute;left:2px;top:4px;bottom:4px;background:var(--bar);opacity:.45;border-radius:2px}
+td.ib{position:relative;min-width:110px}td.ib i{position:absolute;left:2px;top:4px;bottom:4px;background:var(--bar);opacity:.45;border-radius:2px}
 tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacity:.7}td.ib span{position:relative}
 .tw.tall{max-height:560px;overflow:auto}
 .note b{color:var(--text-2);font-weight:600}
@@ -133,9 +133,9 @@ tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacit
   </div>
 
   <ul class="cad" aria-label="갱신 주기·산식">
-    <li><b>갱신 주기</b> · 평일 08:10(KST) GitHub Actions가 LLM 없이 수집: 주가·시가총액·환율·IDX 거래 요약 매일, IMF 전망(4·10월 개정)·세계은행 지표(연 1회 개정)는 바뀌면 반영, 상장사 자본·순이익은 글로벌 탭과 같은 수집(매주 월), 한국계 법인은 국내 탭과 같은 DART 사업보고서.</li>
+    <li><b>갱신 주기</b> · 평일 08:10(KST) GitHub Actions가 LLM 없이 수집: 주가·시가총액·환율·IDX 거래 요약 매일, IMF 전망(4·10월 개정)·세계은행 지표(연 1회 개정)는 바뀌면 반영, 상장사 자본·순이익은 글로벌 탭과 같은 수집(매주 월)이고 베트남은 거래소 상장 증권사 전체를 VNDirect 공개 재무(자본·순이익·마진 잔고·중개수익, 각 사 감사 재무제표)로 매일 확인, 한국계 법인은 국내 탭과 같은 DART 사업보고서.</li>
     <li><b>산식</b> · ROE = 최근 연간 순이익 ÷ 연말 자기자본 · P/B = 시가총액(최근 종가 × 발행주식 수) ÷ 최근 분기 자기자본(없으면 연말) · 원화 환산 = 자본은 결산일 환율, 시가총액은 최근 환율(Yahoo Finance 종가, USD 교차).</li>
-    <li><b>한계</b> · 비상장 증권사(대부분의 한국계·은행계 현지법인)는 시가총액·P/B가 없습니다. 한국계 법인 자본은 모회사 사업보고서 원화 금액을 연말 환율로 현지 통화로 되돌린 값입니다.</li>
+    <li><b>한계</b> · 비상장 증권사는 최근 재무를 기계로 받을 공개 출처가 없어 현지사는 순위에서 빠지고(한국계는 DART로 포함), 시가총액·P/B도 없습니다. 한국계 법인 자본은 모회사 사업보고서 원화 금액을 연말 환율로 현지 통화로 되돌린 값입니다.</li>
   </ul>
 </div>
 <script src="app.js" defer></script>

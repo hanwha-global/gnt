@@ -12,8 +12,17 @@
   const tm = (basis, unit) => `<div class="tmeta">${tmeta(basis, unit)}</div>`;
   const HW = "한화투자증권";
   const HWNAME = { "Pinetree Securities Corporation": "베트남 법인(PTSV)", "Pinetree Securities Pte.Ltd.": "싱가포르 법인(PTSS)", "PT Ciptadana Sekuritas Asia": "인도네시아 증권(CSA)" };
-  const label = (r) => (r.firm === HW ? `${HWNAME[r.name] || r.name}` : r.name);
+  // 법인 형태 꼬리(JSC·Corporation·Co., Ltd 등)를 떼고, 대문자 이름은 단어 첫 글자만 크게(3자 이하 약어는 그대로)
+  const ACR = { Vpbank: "VPBank", Lpbank: "LPBank", Vndirect: "VNDirect", Mbs: "MBS" };
+  const shortName = (n) => {
+    let x = String(n || "").replace(/\s+/g, " ").trim().replace(/\s*[–-]\s*[^–-]*branch$/i, "").replace(/^PT\.?\s+/i, "")
+      .replace(/[\s,.-]*(joint[\s-]*stock|join stock)?\s*(company|corporation|corporatio|corp|incorporated|jsc|co\.?,?\s*ltd)\.?$/i, "").trim();
+    if (x === x.toUpperCase()) x = x.split(" ").map((w) => (w.length <= 3 ? w : ACR[w[0] + w.slice(1).toLowerCase()] || w[0] + w.slice(1).toLowerCase())).join(" ");
+    return x;
+  };
+  const label = (r) => (r.firm === HW ? `${HWNAME[r.name] || r.name}` : shortName(r.name));
   const getJSON = async (u) => { try { const r = await fetch(u, { cache: "no-cache" }); return r.ok ? r.json() : null; } catch (_) { return null; } };
+  const median = (a) => { const v = a.filter((x) => x != null && !isNaN(x)).sort((p, q) => p - q), n = v.length; return n ? (n % 2 ? v[(n - 1) / 2] : (v[n / 2 - 1] + v[n / 2]) / 2) : null; };
   let C, L, X, G;
 
   // ---------- 진출국 스코어카드 ----------
@@ -66,8 +75,7 @@
     const y0 = Math.min(0, Math.floor(Math.min(...ys) / 5) * 5), y1 = Math.ceil(Math.max(...ys) / 5) * 5 || 5;
     const X = (v) => L0 + ((Math.log10(v) - x0) / (x1 - x0 || 1)) * (W - L0 - 10);
     const Y = (v) => H - B0 - ((Math.max(-30, Math.min(40, v)) - y0) / (y1 - y0 || 1)) * (H - B0 - 10);
-    const med = (a) => { const s = [...a].sort((p, q) => p - q); return s.length ? s[Math.floor((s.length - 1) / 2)] : null; };
-    const mx = med(pts.map((p) => p.equity_krw)), my = med(pts.map((p) => p.roe));
+    const mx = median(pts.map((p) => p.equity_krw)), my = median(pts.map((p) => p.roe));
     const xt = [];
     for (let e = Math.ceil(x0); e <= x1; e += 1) xt.push(10 ** e);
     const grid = xt.map((v) => `<line x1="${X(v)}" x2="${X(v)}" y1="8" y2="${H - B0}" stroke="var(--line)" stroke-dasharray="2 3"/><text x="${X(v)}" y="${H - 6}" text-anchor="middle">${v >= 1e4 ? `${v / 1e4}조` : `${num(v)}억`}</text>`).join("")
@@ -76,15 +84,28 @@
     const col = (r) => (r.firm === HW ? "var(--accent)" : r.kind === "korean" ? "var(--kr)" : "var(--bar)");
     const order = [...pts].sort((p, q) => (p.firm === HW) - (q.firm === HW) || (p.kind === "korean") - (q.kind === "korean"));
     const topN = new Set(b.slice(0, 4));
-    const dots = order.map((p) => {
-      const lab = p.firm === HW ? label(p) : p.kind === "korean" ? (p.firm || "").replace(/증권|투자증권/g, "") : topN.has(p) ? p.ticker : "";
-      return `<circle cx="${X(p.equity_krw).toFixed(1)}" cy="${Y(p.roe).toFixed(1)}" r="${p.firm === HW ? 6 : 4}" fill="${col(p)}" fill-opacity="${p.kind === "local" ? .75 : .95}" stroke="var(--bg)" stroke-width="1"><title>${esc(label(p))}: 자기자본 ${num(p.equity_krw)}억원 · ROE ${p.roe}%</title></circle>`
-        + (lab ? `<text x="${(X(p.equity_krw) + 7).toFixed(1)}" y="${(Y(p.roe) + 3).toFixed(1)}"${p.firm === HW ? ' style="fill:var(--accent-ink);font-weight:700"' : p.kind === "korean" ? ' style="fill:var(--kr)"' : ""}>${esc(lab)}</text>` : "");
+    const dots = order.map((p) => `<circle cx="${X(p.equity_krw).toFixed(1)}" cy="${Y(p.roe).toFixed(1)}" r="${p.firm === HW ? 6 : 4}" fill="${col(p)}" fill-opacity="${p.kind === "local" ? .75 : .95}" stroke="var(--bg)" stroke-width="1"><title>${esc(label(p))}: 자기자본 ${num(p.equity_krw)}억원 · ROE ${p.roe}%</title></circle>`).join("");
+    // 라벨: 당사 → 한국계 → 상위 4곳 순으로 놓고, 겹치면 위아래로 비켜 놓는다(점 옆 글자가 서로 덮지 않게)
+    const placed = [];
+    const labs = [...order].reverse().map((p) => {
+      const t = p.firm === HW ? label(p) : p.kind === "korean" ? (p.firm || "").replace(/투자증권|증권/g, "") : topN.has(p) ? p.ticker : "";
+      if (!t) return "";
+      const w = [...t].reduce((a, c) => a + (c.charCodeAt(0) > 255 ? 10 : 6), 0), x = X(p.equity_krw) + 7, cy = Y(p.roe) + 3;
+      const flip = x + w > W - 4;
+      const bx = flip ? X(p.equity_krw) - 7 - w : x;
+      for (const dy of [0, -11, 11, -22, 22, -33, 33]) {
+        const y = cy + dy;
+        if (!placed.some((q) => bx < q.x + q.w && q.x < bx + w && Math.abs(y - q.y) < 10.5)) {
+          placed.push({ x: bx, y, w });
+          const lead = dy ? `<line x1="${X(p.equity_krw).toFixed(1)}" y1="${Y(p.roe).toFixed(1)}" x2="${(flip ? bx + w : bx).toFixed(1)}" y2="${(y - 3).toFixed(1)}" stroke="var(--line)"/>` : "";
+          return `${lead}<text x="${(flip ? bx + w : bx).toFixed(1)}" y="${y.toFixed(1)}"${flip ? ' text-anchor="end"' : ""}${p.firm === HW ? ' style="fill:var(--accent-ink);font-weight:700"' : p.kind === "korean" ? ' style="fill:var(--kr)"' : ""}>${esc(t)}</text>`;
+        }
+      }
+      return "";
     }).join("");
     return `${tm("자기자본·ROE 최근 연간 결산", "가로 억원(로그 눈금), 세로 ROE %")}
-      <svg viewBox="0 0 ${W} ${H}" width="100%" style="display:block" role="img" aria-label="규모와 수익성 지도">${grid}${medl}${dots}
-      <text x="${W - 10}" y="18" text-anchor="end" style="fill:var(--accent-ink)">크고 잘 버는 곳 ↗</text></svg>
-      <p class="note">점 하나가 증권사 하나입니다. 주황 옅은 선은 비교 대상의 자본·ROE 중앙값(${num(mx)}억원 · ${num(my, 1)}%). ROE는 −30~40% 밖이면 끝에 붙였습니다.</p>`;
+      <svg viewBox="0 0 ${W} ${H}" width="100%" style="display:block" role="img" aria-label="규모와 수익성 지도">${grid}${medl}${dots}${labs}</svg>
+      <p class="note">점 하나가 증권사 하나이고, 오른쪽 위로 갈수록 크고 잘 버는 곳입니다. 주황 옅은 선은 비교 대상의 자본·ROE 중앙값(${num(mx)}억원 · ${num(my, 1)}%). ROE는 −30~40% 밖이면 끝에 붙였습니다.</p>`;
   }
 
   // 당사 법인 포지션: 순위 하나가 아니라 여러 각도로
@@ -98,52 +119,96 @@
     const total = b.reduce((a, r) => a + (r.equity_krw || 0), 0);
     const tgt = (k) => (b[k - 1] && rank > k ? Math.max(0, b[k - 1].equity_krw - me.equity_krw) : null);
     const grow = b.filter((r) => r.growth != null).map((r) => r.growth).sort((p, q) => p - q);
-    const gmed = grow.length ? grow[Math.floor((grow.length - 1) / 2)] : null;
+    const gmed = median(grow), emed = median(b.map((r) => r.equity_krw));
     const cells = [
-      ["자기자본 순위", `${rank}위<small>/ ${n}곳</small>`, `상위 ${num((rank / n) * 100)}% · 비교 대상 자본 합계의 ${num((me.equity_krw / total) * 100, 2)}%`],
-      ["수익성(ROE) 순위", roeRank ? `${roeRank}위<small>/ ${roeRows.length}곳</small>` : "–", `ROE ${num(me.roe, 1)}% · 중앙값 ${num(roeRows[Math.floor((roeRows.length - 1) / 2)]?.roe, 1)}%`],
+      ["자기자본 순위", `${rank}위<small>/ ${n}곳</small>`, `중앙값(${num(emed)}억원)의 ${num(me.equity_krw / emed, 2)}배 · 자본 합계의 ${num((me.equity_krw / total) * 100, 2)}%`],
+      ["수익성(ROE) 순위", roeRank ? `${roeRank}위<small>/ ${roeRows.length}곳</small>` : "–", `ROE ${num(me.roe, 1)}% · ${roeRows.length}곳 중앙값 ${num(median(roeRows.map((r) => r.roe)), 1)}%`],
       ["상위 10곳 평균 자본", `${num(avg10 / me.equity_krw, 1)}배<small>당사 대비</small>`, `평균 ${num(avg10)}억원 vs 당사 ${num(me.equity_krw)}억원`],
       ...[20, 10].filter((k) => tgt(k) != null).slice(0, 1).map((k) => [`${k}위 진입까지 자본`, `+${num(tgt(k))}억<small>원</small>`, `${k}위 ${esc(label(b[k - 1]))} ${num(b[k - 1].equity_krw)}억원 수준${k === 20 && tgt(10) != null ? ` · 10위까지 +${num(tgt(10))}억원` : ""}`]),
     ];
-    if (gmed != null) cells.push(["상장사 자본 증가율(1년)", `${num(gmed, 1)}%<small>중앙값</small>`, `최대 ${esc(b.filter((r) => r.growth != null).sort((p, q) => q.growth - p.growth)[0].name)} ${num(grow.at(-1), 1)}% · 증자 경쟁 강도`]);
+    if (gmed != null) cells.push(["상장사 자본 증가율(1년)", `${num(gmed, 1)}%<small>중앙값</small>`, `최대 ${esc(label(b.filter((r) => r.growth != null).sort((p, q) => q.growth - p.growth)[0]))} ${num(grow.at(-1), 1)}% · 증자 경쟁 강도`]);
+    // 올해 들어서도 자본을 늘리는지: 최근 분기 자본 ÷ 연말 자본(현지 통화, 같은 분기를 낸 상장사만)
+    const qd = b.map((r) => r.q_date).filter(Boolean).sort().pop();
+    const qs = b.filter((r) => r.q_date === qd && r.q_equity && r.equity && r.q_date > r.asof);
+    if (qs.length >= 5) {
+      const g = (qs.reduce((a, r) => a + r.q_equity, 0) / qs.reduce((a, r) => a + r.equity, 0) - 1) * 100;
+      cells.push([`올해 상장사 자본 증가(${ym(qd)}까지)`, `${g >= 0 ? "+" : ""}${num(g, 1)}%<small>합계</small>`, `${qs.length}곳 연말 대비 · 당사 법인은 연간 공시만 있어 비교 제외`]);
+    }
     return `<div class="posn">${cells.map(([a, v, c]) => `<div><span>${esc(a)}</span><b>${v}</b><em>${c}</em></div>`).join("")}</div>`;
   }
 
+  // 시장 구조: 자본·마진 잔고·중개수익이 상위 5곳에 얼마나 몰렸나(베트남은 상장사 공시 항목까지)
+  function structure(b) {
+    const share = (rows, k) => {
+      const v = rows.map((r) => r[k]).filter((x) => x > 0).sort((p, q) => q - p), t = v.reduce((a, x) => a + x, 0);
+      return v.length > 5 ? { top: (v.slice(0, 5).reduce((a, x) => a + x, 0) / t) * 100, n: v.length, t } : null;
+    };
+    const loc = b.filter((r) => r.kind === "local");
+    const items = [["자기자본", share(b, "equity_krw"), "상장사+한국계"], ["마진·대출 잔고", share(loc, "loans_krw"), "상장사"], ["중개수수료 수익", share(loc, "brokerage_krw"), "상장사"]].filter(([, v]) => v);
+    if (!items.length) return "";
+    const lev = loc.filter((r) => r.loans_krw && r.equity_krw > 0).map((r) => r.loans_krw / r.equity_krw).sort((p, q) => p - q);
+    const asof = [...new Set(loc.map((r) => r.asof).filter(Boolean))].sort().pop();
+    return `${tm(`${dot(asof)} 연간 결산`, "%, 억원")}
+      <div class="bars">${items.map(([t, v, who]) => `<div class="bar"><span class="nm">${t} <span class="mut">상위 5곳</span></span><span class="tr"><i style="width:${v.top.toFixed(1)}%"></i></span><span class="v">${num(v.top, 1)}%</span></div>
+        <div class="note" style="margin:0 0 3px">${who} ${v.n}곳 합계 ${num(v.t)}억원 중 상위 5곳 몫</div>`).join("")}</div>
+      ${lev.length ? `<p class="note">마진·대출 잔고 ÷ 자기자본 중앙값 <b>${num(median(lev), 2)}배</b>(최대 ${num(lev.at(-1), 2)}배): 자본을 신용공여에 얼마나 쓰는지. 베트남은 마진 대출 합계를 자기자본의 2배 이내로 묶습니다(재무부 Circular 121/2020).</p>` : ""}`;
+  }
+
+  const SORTS = [["equity_krw", "자기자본"], ["roe", "ROE"], ["growth", "자본 증가율"], ["loans_krw", "마진·대출 잔고"], ["brokerage_krw", "중개수익"], ["pb", "P/B"]];
+  let sk = "equity_krw";
   function renderLand() {
     $("#land-pills").innerHTML = MK.filter(([k]) => L?.markets?.[k]).map(([k, t]) => `<button class="pill" type="button" data-k="${k}" aria-pressed="${k === mk}">${t}</button>`).join("");
-    $("#land-pills").onclick = (e) => { const b = e.target.closest(".pill"); if (b) { mk = b.dataset.k; renderLand(); } };
+    $("#land-pills").onclick = (e) => { const b = e.target.closest(".pill"); if (b) { mk = b.dataset.k; sk = "equity_krw"; renderLand(); } };
     const m = L?.markets?.[mk];
     if (!m) { $("#land").innerHTML = `<div class="empty">첫 자동 수집 후 표시됩니다.</div>`; return; }
     const b = brokers(m), others = m.rows.filter((r) => r.kind === "korean" && !r.broker);
     const nLocal = b.filter((r) => r.kind === "local").length, kr = b.filter((r) => r.kind === "korean");
+    const vnd = m.rows.some((r) => r.via === "vndirect");
     const max = Math.max(...b.map((r) => r.equity_krw || 0), 1);
     const asof = [...new Set(m.rows.map((r) => r.asof).filter(Boolean))].sort().map(dot).join("·");
     const pdate = [...new Set(m.rows.map((r) => r.price_date).filter(Boolean))].sort().pop();
-    const hasG = b.some((r) => r.growth != null);
-    const rows = b.map((r, i) => `<tr class="${r.firm === HW ? "hw" : r.kind === "korean" ? "kr" : ""}"><td>${i + 1}</td>
-      <td class="l">${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(label(r))}</a>` : esc(label(r))}${r.kind === "korean" ? `<span class="tag ${r.firm === HW ? "hw" : "kr"}">${esc(r.firm)}</span>` : ""}${r.stale ? '<span class="tag old">이전 값</span>' : ""}</td>
-      <td class="ib"><i style="width:${Math.max(1, (r.equity_krw / max) * 100).toFixed(1)}%"></i><span>${num(r.equity_krw)}</span></td><td>${num(r.equity, 2)}</td>
-      ${hasG ? `<td>${r.growth != null ? sgn(r.growth) : '<span class="mut">–</span>'}</td>` : ""}<td>${sgn(r.ni, 2)}</td><td>${sgn(r.roe)}</td>
+    const has = (k) => b.some((r) => r[k] != null);
+    const hasG = has("growth"), hasL = has("loans_krw"), hasB = has("brokerage_krw");
+    const bsum = b.reduce((a, r) => a + (r.brokerage_krw || 0), 0);
+    const sorts = SORTS.filter(([k]) => has(k));
+    if (!sorts.some(([k]) => k === sk)) sk = "equity_krw";
+    const list = [...b].sort((p, q) => (q[sk] ?? -Infinity) - (p[sk] ?? -Infinity));
+    const loc = (r, k) => (r[k] != null ? `${num(r[k], 2)} ${m.unit}` : "–");
+    const rows = list.map((r) => `<tr class="${r.firm === HW ? "hw" : r.kind === "korean" ? "kr" : ""}" title="자기자본 ${loc(r, "equity")} · 순이익 ${loc(r, "ni")}${r.note ? ` · ${r.note}` : ""}"><td>${r[sk] != null ? list.indexOf(r) + 1 : "–"}</td>
+      <td class="l">${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(label(r))}</a>` : esc(label(r))}${r.kind === "korean" ? `<span class="tag ${r.firm === HW ? "hw" : "kr"}">${esc(r.firm)}</span>` : r.ticker ? `<span class="mut"> ${esc(r.ticker)}</span>` : ""}${r.stale ? '<span class="tag old">이전 값</span>' : ""}</td>
+      <td class="ib"><i style="width:${Math.max(1, (r.equity_krw / max) * 100).toFixed(1)}%"></i><span>${num(r.equity_krw)}</span></td>
+      ${hasG ? `<td>${r.growth != null ? sgn(r.growth) : '<span class="mut">–</span>'}</td>` : ""}<td>${sgn(r.roe)}</td>
+      ${hasL ? `<td${r.loans_krw && r.equity_krw > 0 ? ` title="잔고 ÷ 자기자본 ${num(r.loans_krw / r.equity_krw, 2)}배"` : ""}>${num(r.loans_krw)}</td>` : ""}
+      ${hasB ? `<td>${r.brokerage_krw ? num((r.brokerage_krw / bsum) * 100, 2) : "–"}</td>` : ""}
       <td>${r.mcap_krw != null ? num(r.mcap_krw) : r.kind === "korean" ? '<span class="mut">비상장</span>' : "–"}</td><td>${r.pb != null ? num(r.pb, 2) : "–"}</td></tr>`).join("");
     const top = kr[0];
     const lines = [];
     if (top && kr.length > 1) lines.push(`한국계 ${kr.length}곳 중 최대: ${esc(label(top))}(${esc(top.firm)}) ${num(top.equity_krw)}억원, ${b.indexOf(top) + 1}위`);
     if (m.median_pb != null) lines.push(`상장사 P/B 중앙값 <b>${num(m.median_pb, 2)}배</b>, ROE 중앙값 ${num(m.median_roe, 1)}%`);
-    $("#land").innerHTML = `<p class="scope"><b>비교 대상</b> 현지 상장 증권사 ${nLocal}곳 + 한국계 현지법인 ${kr.length}곳 = ${b.length}곳.
-        비상장 현지사(은행 계열 등)는 공시 재무를 자동으로 받을 수 없어 빠지므로, 여기 순위는 <b>시장 전체 순위보다 앞에</b> 나옵니다${mk === "vn" ? " (베트남은 은행 계열 등 비상장 증권사가 많아 전체 기준 순위는 이보다 뒤)" : ""}.</p>
+    const scope = vnd
+      ? `<b>비교 대상</b> 베트남 거래소(HOSE·HNX·UPCoM)에 상장된 증권사 전체 ${nLocal}곳(VNDirect 공개 재무, 매일 자동) + 한국계 현지법인 ${kr.length}곳(DART) = ${b.length}곳.
+        비상장 증권사(은행·외국계 자회사 다수)는 최근 재무를 기계로 받을 출처가 없어 빠지므로, 비상장사까지 넣은 시장 전체 순위는 여기보다 뒤입니다.`
+      : `<b>비교 대상</b> 현지 상장 증권사 ${nLocal}곳 + 한국계 현지법인 ${kr.length}곳 = ${b.length}곳. 비상장 현지사는 공시 재무를 자동으로 받을 수 없어 빠지므로, 여기 순위는 시장 전체 순위보다 앞에 나옵니다.`;
+    $("#land").innerHTML = `<p class="scope">${scope}</p>
       ${position(m, b)}
-      ${lines.length ? `<p class="why">${lines.join(" · ")}</p>` : ""}
       <div class="split"><div>
         <div class="legend"><span><i style="background:var(--bar)"></i>현지 상장 증권사</span><span><i style="background:var(--kr)"></i>한국계 현지법인</span><span><i style="background:var(--accent)"></i>당사</span></div>
         ${mapChart(m, b)}
+        ${structure(b)}
+        ${lines.length ? `<p class="why" style="margin-top:6px">${lines.join(" · ")}</p>` : ""}
       </div><div>
-        ${tm(`자본·순이익 ${asof} 결산${pdate ? ` · 시가총액 ${dot(pdate)} 종가` : ""}`, `원화 억원·현지 ${m.unit}, 증가율·ROE %, P/B 배`)}
-        <div class="tw tall"><table><thead><tr><th>#</th><th class="l">회사</th><th>자기자본<small>억원</small></th><th>자기자본<small>${esc(m.unit)}</small></th>${hasG ? "<th>자본 증가율<small>1년, %</small></th>" : ""}<th>순이익<small>${esc(m.unit)}</small></th><th>ROE<small>%</small></th><th>시가총액<small>억원</small></th><th>P/B<small>배</small></th></tr></thead>
+        <div class="pills noprint" id="land-sort" role="group" aria-label="정렬"><span class="mut" style="font-size:11px;align-self:center">정렬</span>${sorts.map(([k, t]) => `<button class="pill" type="button" data-s="${k}" aria-pressed="${k === sk}">${t}</button>`).join("")}</div>
+        ${tm(`자본·순이익·잔고·수익 ${asof} 결산${pdate ? ` · 시가총액 ${dot(pdate)} 종가` : ""}`, "억원(원화 환산), %, 배")}
+        <div class="tw tall"><table><thead><tr><th>#</th><th class="l">회사</th><th>자기자본<small>억원</small></th>${hasG ? "<th>자본 증가율<small>1년, %</small></th>" : ""}<th>ROE<small>%</small></th>
+          ${hasL ? "<th>마진·대출 잔고<small>억원</small></th>" : ""}${hasB ? "<th>중개수익 비중<small>상장사 합계 대비 %</small></th>" : ""}<th>시가총액<small>억원</small></th><th>P/B<small>배</small></th></tr></thead>
         <tbody>${rows}</tbody></table></div>
-        <p class="note">상장사 재무: 글로벌 탭과 같은 Yahoo Finance 수집${mk === "vn" ? " + 나머지 HOSE·HNX·UPCoM 증권사는 TCBS 공개 재무(각 사 공시 기반)" : ""}. 한국계는 모회사 DART 2025 사업보고서 종속기업 요약재무정보(원화)를 연말 환율 ${num(m.fx_ye, m.fx_ye < 1 ? 4 : 2)}원/${esc(m.ccy)}로 되돌린 값.
+        <p class="note">${vnd ? "베트남 상장사: VNDirect 공개 재무(각 사 감사 재무제표, 증권사 양식의 자기자본·지배주주 순이익·마진 대출·중개수수료 수익)와 시가총액·P/B." : "상장사 재무: 글로벌 탭과 같은 Yahoo Finance 수집."}
+        한국계는 모회사 DART 2025 사업보고서 종속기업 요약재무정보(원화)${hasL || hasB ? "라 잔고·중개수익 칸이 비고" : "이고"}, 현지 통화 값은 연말 환율 ${num(m.fx_ye, m.fx_ye < 1 ? 4 : 2)}원/${esc(m.ccy)}로 되돌렸습니다. 행에 마우스를 올리면 현지 통화(${esc(m.unit)}) 값이 보입니다.
+        ${hasB ? "중개수익 비중은 거래대금 점유율이 아니라 상장사 중개수수료 수익 합계 대비 몫입니다(점유율 대용)." : ""}
         ${others.length ? `<br>순위 제외 한국계(운용·기타): ${others.map((r) => `${esc(r.name)}(${esc(r.firm)}, ${num(r.equity_krw)}억원)`).join(", ")}` : ""}
         ${mk === "jp" && !kr.length ? "<br>일본에는 DART 요약재무정보가 있는 한국계 증권 현지법인이 없습니다." : ""}</p>
       </div></div>`;
+    $("#land-sort").onclick = (e) => { const x = e.target.closest(".pill"); if (x) { sk = x.dataset.s; renderLand(); } };
   }
 
   // ---------- 인도네시아 점유율 ----------
