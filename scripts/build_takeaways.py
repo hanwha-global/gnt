@@ -8,12 +8,14 @@
 - 현지 점유율·상장 증권사: site/data/global/markets.json, listed.json, (있으면) insight/data/landscape.json, idx_share.json
 
 규칙마다 '언제 발동하는지'와 '근거 한 줄(숫자마다 기준 시점)'을 정해 두고, 나라마다 점수가 높은 순으로
-카테고리가 겹치지 않게 3~4개를 고른다. 문구는 '…검토할 만합니다/점검합니다'로 끝나는 자동 의견이며
-회사의 공식 입장이 아니다.
+카테고리가 겹치지 않게 3~4개를 고른다. 문구는 '…검토할 만합니다/점검할 만합니다'로 끝나는 자동 의견이며
+회사의 공식 입장이 아니다. 회사 내부 계획·목표가 있다고 전제하는 표현은 쓰지 않는다(공개 자료만).
 
 매일 아침(news.yml) 돈다. 그 나라에 큰 변화가 있을 때만 문구를 바꾸고, 없으면 이전 문구를 그대로 두고
 확인 시각만 남긴다. 큰 변화: 새 DART 보고서, 고른 규칙·구간의 변화, 3일 안의 새 구조·경쟁사·당사 뉴스,
-정책금리 변경, 지수·환율 급변, 마지막 갱신 후 14일 경과.
+정책금리 변경, 지수·환율 급변, 마지막 갱신 후 14일 경과. 규칙이 하루 안 잡히면(자료 공백) 하루는 이전 줄을
+그대로 두고 이틀째 빠진다(같은 날 다시 돌려도 하루로 센다). 판단 상태(본 기사·직전 공시·금리 등)는
+takeaways_state.json 에 따로 두어 화면이 읽는 파일을 가볍게 한다.
 
     python scripts/build_takeaways.py            # 갱신
     python scripts/build_takeaways.py --print    # 파일은 쓰지 않고 결과만 출력
@@ -29,10 +31,12 @@ from statistics import median
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_REL = "site/data/domestic/takeaways.json"
-SPEC_VERSION = 1
+STATE_REL = "site/data/domestic/takeaways_state.json"
+SPEC_VERSION = 2
 KST = timezone(timedelta(hours=9))
 MAX_STALE_DAYS = 14
 NEWS_FRESH_DAYS = 3
+ARCHIVE_DAYS = 61    # 규칙이 보관함을 읽는 가장 긴 창(제재·사기 60일)보다 하루 길게
 HOME = "한화투자증권"
 
 COUNTRIES = ["VN", "ID", "SG"]
@@ -57,26 +61,29 @@ C_RE = {
 }
 MAS_RE = re.compile(r"\bMAS\b")
 OFF_WATCH = re.compile(r"off (the )?watch ?list|keeps .{0,30} off", re.I)
+OFF_WATCH_UPGRADE = re.compile(r"off (the )?watch ?list.{0,40}upgrad|keeps .{0,30} off.{0,40}upgrad", re.I)  # 승격 관찰대상에서 빠짐 = 호재 아님
 NEUTRAL = re.compile(r"\brebut|\bdefends?\b|\bdenies\b|반박", re.I)
 NEG_RE = re.compile(r"downgrad|standalone|\brout\b|manipulat|outflow|sell-?off|plunge|angst|turmoil|강등|급락|이탈|폭락|sanction|delist", re.I)
 POS_RE = re.compile(r"upgrad|inclusion|편입|승격|상향|reclassif|index options?|derivativ|옵션|파생", re.I)
-DERIV_RE = re.compile(r"option|derivativ|옵션|파생", re.I)
+# 호재는 시장 분류·상품 제도 기사만(성장률 전망·신용등급 상향은 '시장 지위'가 아님)
+STRUCT_POS_RE = re.compile(r"MSCI|FTSE|S&P Dow Jones|reclassif|market (status|upgrade|classification)|emerging market|frontier|"
+                           r"index options?|derivativ|신흥시장|편입|승격|옵션|파생", re.I)
+DERIV_RE = re.compile(r"index options?|derivativ|옵션|파생", re.I)
 CAPITAL_RE = re.compile(r"증자|자본금|자본 ?확충|곳간|인수|지분|합병|M&A|점유율 ?전쟁|stake|acquir", re.I)
 CAPITAL_HEAD_RE = re.compile(r"자본금|증자|자본 ?확충")
-REG_RE = re.compile(r"manipulat|sanction|\bfine[ds]?\b|penalt|fraud|scam|과징금|과태료|제재|경영유의|적발|위반|사기|보안", re.I)
+REG_RE = re.compile(r"manipulat|sanction|\bfine[ds]?\b|penalt|fraud|scam|과징금|과태료|제재|경영유의|적발|위반|사기", re.I)
 RWA_RE = re.compile(r"RWA|토큰|STO|디지털자산|가상자산|tokeni", re.I)
 BANK_RE = re.compile(r"BIDV|VietinBank|Vietcombank|Agribank|Mandiri|\bBRI\b|\bBNI\b|\bBCA\b|Danareksa", re.I)
 BROKER_NAME_RE = re.compile(r"securities|sekuritas|증권", re.I)
 NOT_BROKER_RE = re.compile(r"\(주1\)|asset management|investment management|fund|reksa|realty|ETF|capbridge", re.I)
-# 영문 구조 뉴스 제목 → 짧은 한글 라벨(없으면 '{매체} 보도')
+# 영문 구조 뉴스 제목 → 짧은 한글 라벨(없으면 빈 문자열: 근거에는 '{매체} 보도'로 적는다)
 LABELS = [
     (re.compile(r"index options?", re.I), "지수옵션 도입 계획"),
     (re.compile(r"(R&I|rating).*upgrad|upgrad.*(R&I|BBB)", re.I), "신용등급 상향"),
     (re.compile(r"market upgrade", re.I), "시장 승격 이후 과제"),
     (re.compile(r"MSCI.*downgrad|downgrad.*MSCI", re.I), "MSCI 강등 검토"),
     (re.compile(r"manipulat", re.I), "시세조종 대책 강화"),
-    (re.compile(r"bond premia", re.I), "회사채 가산금리 6년 최고"),
-    (re.compile(r"off (the )?watch ?list", re.I), "FTSE 관찰대상 제외 유지"),
+    (re.compile(r"bond premia.{0,40}(high|widen|jump|surge|soar)", re.I), "회사채 가산금리 확대"),
     (re.compile(r"FTSE.*(upgrad|inclusion)|(upgrad|inclusion).*FTSE", re.I), "FTSE 승격"),
 ]
 
@@ -123,24 +130,41 @@ def rep_name(period):
     return f"{m.group(2)} {m.group(1)}" if m else name
 
 
-def news_label(title, src):
+def news_label(title, src=""):
+    if OFF_WATCH.search(title):
+        prov = next((p for p in ("MSCI", "FTSE") if p in title), "")
+        return f"{prov} 관찰대상 제외".strip() + (" 유지" if re.search(r"keeps?", title, re.I) else "")
     for rx, label in LABELS:
         if rx.search(title):
             return label
     if re.search(r"[가-힣]", title):
         q = re.search(r"[‘'\"“]([^’'\"”]{4,30})[’'\"”]", title)
         return q.group(1) if q else (title[:22] + "…" if len(title) > 22 else title)
-    return f"{src} 보도"
+    return ""
+
+
+def cite(it, lead=""):
+    """근거 인용: "Reuters 10/25 '라벨'" · 라벨이 없으면 "Reuters 10/25 보도"."""
+    lab = news_label(it["title"], it.get("src", ""))
+    return f"{lead}{it.get('src', '')} {md(it.get('date'))} " + (f"'{lab}'" if lab else "보도")
+
+
+def josa(word, batchim, plain):
+    """앞말 끝 글자 받침에 따라 조사 고르기(과/와, 은/는 등). '법인(PTSV)'처럼 괄호가 붙으면 괄호 앞 말을 본다."""
+    ch = (re.sub(r"\([^)]*\)\s*$", "", word or "").strip() or " ")[-1]
+    if "가" <= ch <= "힣":
+        return batchim if (ord(ch) - 0xAC00) % 28 else plain
+    return batchim
 
 
 def polarity(title):
     if OFF_WATCH.search(title):
-        return 1
+        return 0 if OFF_WATCH_UPGRADE.search(title) else 1
     if NEUTRAL.search(title):
         return 0
     if NEG_RE.search(title):
         return -1
-    if POS_RE.search(title):
+    if POS_RE.search(title) and STRUCT_POS_RE.search(title):
         return 1
     return 0
 
@@ -210,14 +234,14 @@ class Data:
                 pool.setdefault(it["url"], {**it, "kind": "macro"})
         for url, it in self.archive.items():
             if it.get("kind") == "macro":
-                pool.setdefault(url, it)
+                pool.setdefault(url, {**it, "url": url})
         return list(pool.values())
 
     def news_items(self):
         pool = {it["url"]: {**it, "kind": "news"} for it in self.news if it.get("url")}
         for url, it in self.archive.items():
             if it.get("kind") == "news":
-                pool.setdefault(url, it)
+                pool.setdefault(url, {**it, "url": url})
         return list(pool.values())
 
     def hub_items(self, c, home=None):
@@ -238,7 +262,13 @@ def cand(rule, category, weight, text, evidence, keys, variant="", bucket=(), dr
 
 
 def link(it, label=None):
-    return {"label": label or news_label(it["title"], it.get("src", "")), "url": it["url"], "title": it["title"]}
+    return {"label": label or news_label(it["title"], it.get("src", "")) or it.get("src") or "기사", "url": it["url"], "title": it["title"]}
+
+
+def chg(ix, k):
+    """지수 등락률(%) — 기준 종가가 없으면 수집기가 None 을 쓴다."""
+    v = ((ix or {}).get("chg") or {}).get(k)
+    return v if isinstance(v, (int, float)) else None
 
 
 # ---------- 규칙 ----------
@@ -250,7 +280,7 @@ def struct(D, c):
     pos = sorted([i for i in items if i["pol"] > 0], key=lambda i: i["date"], reverse=True)
     neg = sorted([i for i in items if i["pol"] < 0], key=lambda i: i["date"], reverse=True)
     ix = D.ix(c)
-    m1 = (ix or {}).get("chg", {}).get("1M")
+    m1 = chg(ix, "1M")
     dd = drawdown(ix, 13)
     if neg and (len(pos) - len(neg) <= -2 or (m1 is not None and m1 <= -10) or (dd is not None and dd <= -0.20)):
         return "NEG", pos, neg
@@ -260,21 +290,22 @@ def struct(D, c):
 
 
 def drawdown(ix, months):
-    if not ix or not ix.get("monthly"):
+    vals = [v for _, v in (ix or {}).get("monthly", [])[-months:] if isinstance(v, (int, float))]
+    if not vals or not isinstance((ix or {}).get("close"), (int, float)):
         return None
-    peak = max(v for _, v in ix["monthly"][-months:])
+    peak = max(vals)
     return ix["close"] / peak - 1 if peak else None
 
 
 def peak_month(ix, months):
-    return max(ix["monthly"][-months:], key=lambda kv: kv[1])[0]
+    return max((kv for kv in ix["monthly"][-months:] if isinstance(kv[1], (int, float))), key=lambda kv: kv[1])[0]
 
 
 def own_and_peers(D, c):
     """(당사 행, 한국계 동종 행들, 현지 상장사 ROE 목록, 출처 라벨). 현지통화 자본, FY 기준."""
     key = BROKER[c]
     if D.land and LAND[c] in D.land:
-        rows = D.land[LAND[c]]["rows"]
+        rows = D.land[LAND[c]].get("rows", [])
         own = next((r for r in rows if r.get("kind") == "korean" and r.get("firm") == HOME and r.get("broker")), None)
         peers = [r for r in rows if r.get("kind") == "korean" and r.get("broker") and r.get("firm") != HOME and r.get("equity")]
         if peers:
@@ -304,14 +335,20 @@ def own_and_peers(D, c):
 
 
 def injection(D, key):
-    """최근 출자(DART 타법인출자현황 기중 취득). 이후 보고서가 비워도 365일 기억한다."""
+    """최근 출자(DART 타법인출자현황 기중 취득). 처음 공시된 보고서부터 365일 기억한다.
+
+    기중 취득은 연초 이후 누적이라 3분기·사업보고서가 같은 출자를 다시 싣는다 → 같은 해·같은 금액이면
+    처음 공시 날짜를 그대로 둔다."""
     inv = D.subs.get("invest") or {}
     row = (inv.get("rows") or {}).get(key) or {}
     rep = inv.get("report") or {}
-    if (row.get("chg_amount") or 0) > 0:
-        return {"amount": row["chg_amount"], "rcept_no": rep.get("rcept_no"), "rcept_dt": rep.get("rcept_dt"),
-                "report": rep_name({"report": rep}), "period": (D.L or {}).get("label")}
     old = (D.state.get("injection") or {}).get(key)
+    if (row.get("chg_amount") or 0) > 0:
+        year = (D.L or {}).get("year")
+        if old and old.get("amount") == row["chg_amount"] and (old.get("year") or str(old.get("rcept_dt", ""))[:4]) == str(year):
+            return old if D.age(old.get("rcept_dt")) <= 365 else None
+        return {"amount": row["chg_amount"], "rcept_no": rep.get("rcept_no"), "rcept_dt": rep.get("rcept_dt"),
+                "report": rep_name({"report": rep}), "period": (D.L or {}).get("label"), "year": year}
     if old and D.age(old.get("rcept_dt")) <= 365:
         return old
     return None
@@ -394,8 +431,8 @@ def r02_peer_capital(D, c):
 def r03_partner(D, c, fired):
     if not D.land or LAND[c] not in D.land or (fired.get("R01") or {}).get("variant") == "acquire":
         return None
-    nb = [r for r in D.land[LAND[c]]["rows"] if r.get("kind") == "local" and r.get("mcap_krw") and r.get("val_stale") is not True
-          and not BANK_RE.search(r.get("name", ""))]
+    # 가격 수집이 하루 실패해도(val_stale) 마지막 가격을 그대로 쓴다: 종목 수가 흔들려 문구가 바뀌지 않게
+    nb = [r for r in D.land[LAND[c]].get("rows", []) if r.get("kind") == "local" and r.get("mcap_krw") and not BANK_RE.search(r.get("name", ""))]
     fin = (D.dl.get("firms") or {}).get(HOME, {})
     hw = (fin.get("financials") or {}).get("equity")
     if not nb or not hw:
@@ -410,22 +447,22 @@ def r03_partner(D, c, fired):
     ev = f"{EXCHANGE[c]} 상장 증권사 {len(nb)}곳 시가총액 {span}({md(pdate)} 주가) vs 당사 자기자본 {hw_eok / 1e4:.2f}조원({hw_label} 연결, DART)"
     key = BROKER[c]
     text = f"{D.label(key)}은 현지 상장사 인수 부담이 커, 지분 인수보다 제휴·JV형 확장을 우선 검토할 만합니다."
-    return cand("R03", "M&A·지분", 7, text, [ev], [key], bucket=(len(nb),))
+    return cand("R03", "M&A·지분", 7, text, [ev], [key])
 
 
 def r04_entry(D, c):
     ix = D.ix(c)
     fx = (D.macro.get("fx") or {}).get(CCY[c]) or {}
     dd = drawdown(ix, 13)
-    if dd is None or fx.get("ytd_pct") is None or ix["chg"].get("YTD") is None:
+    if dd is None or fx.get("ytd_pct") is None or chg(ix, "YTD") is None:
         return None
-    krw = (1 + ix["chg"]["YTD"] / 100) * (1 + fx["ytd_pct"] / 100) - 1
+    krw = (1 + chg(ix, "YTD") / 100) * (1 + fx["ytd_pct"] / 100) - 1
     if not (dd <= -0.20 and krw <= -0.25):
         return None
     ev = (f"{IX_SHORT[c]} {ix['close']:,.0f}({md(ix['date'])}), 최근 1년 고점({peak_month(ix, 13)} 월말) 대비 {sgn(dd * 100)} · "
           f"{CCY_NAME[CCY[c]]} 원화 대비 연초 이후 {sgn(fx['ytd_pct'])}(ECOS {md(fx['last'][0])}) · 원화 환산 지수 연초 대비 {sgn(krw * 100)}")
-    text = f"{KOR[c]} 원화 기준 인수 비용이 크게 낮아진 구간으로, 현지 증권사 인수 후보 실사와 가격 협상 준비를 검토할 만합니다."
-    return cand("R04", "M&A·지분", 8, text, [ev], KEYS[c], "open", (math.floor(dd * 10), math.floor(krw * 10)), dd=dd, krw=krw)
+    text = f"{KOR[c]} 원화 기준 인수 비용이 크게 낮아진 구간이라, 현지 증권사 인수 후보 검토를 시작할 만합니다."
+    return cand("R04", "M&A·지분", 8, text, [ev], KEYS[c], "open", dd=dd, krw=krw)
 
 
 def r05_post_injection(D, c):
@@ -442,7 +479,7 @@ def r05_post_injection(D, c):
             continue
         ev = (f"{inj.get('period') or D.L['label']} 중 출자 {eok(inj['amount'])}(DART {inj.get('report') or rep_name(D.L)} 타법인출자현황) 후 "
               f"자본 대비 매출 {ry_L * 100:.1f}%({D.L['label']} 연환산) vs FY{D.B['year']} {ry_B * 100:.1f}%")
-        text = f"{D.label(key)} 증자 자금은 매출 목표 달성에 맞춰 단계적으로 집행하고 분기마다 성과를 점검합니다."
+        text = f"{D.label(key)} 증자 자금은 한 번에 쓰기보다 단계별로 나눠 집행하고, 분기마다 매출 성과를 점검할 만합니다."
         out.append(cand("R05", "자본", 7, text, [ev], [key], bucket=(inj["amount"],), driver=d(inj["rcept_dt"]), injection=inj))
     return out
 
@@ -485,9 +522,10 @@ def r07_r08_struct(D, c):
         nd = re.search(r"\d{4}-\d{2}-\d{2}", note)
         note_short = f"FTSE 신흥시장 편입 {nd.group(0)} 발효" if nd and "FTSE" in note else ""
         head = pos[0]
-        ev = [note_short, f"{head.get('src', '')} {md(head['date'])} '{news_label(head['title'], head.get('src', ''))}' 등 구조 뉴스 {len(pos)}건(최근 30일)"]
+        ev = [note_short, f"{cite(head)} 등 구조 뉴스 {len(pos)}건(최근 30일)"]
         if deriv:
-            text = f"FTSE 편입에 맞춰 {D.label(key)}의 외국인 기관 영업과 지수옵션 등 파생상품 준비를 검토할 만합니다."
+            lead = "FTSE 편입" if note_short else f"{KOR[c]} 파생상품 시장 확대"
+            text = f"{lead}에 맞춰 {D.label(key)}의 외국인 기관 영업과 지수옵션 등 파생상품 준비를 검토할 만합니다."
         else:
             text = f"{KOR[c]} 시장 지위 상향에 맞춰 {D.label(key)}의 외국인 기관 영업·영문 리서치 강화를 검토할 만합니다."
         return cand("R07", "상품·제휴", 8, text, ev, [key], "deriv" if deriv else "base", ("POS",), driver=d(head["date"]),
@@ -496,13 +534,15 @@ def r07_r08_struct(D, c):
     titles = " ".join(i["title"] for i in neg)
     event = "MSCI 결정" if "MSCI" in titles else "FTSE 재분류" if "FTSE" in titles else "시장 불안 진정"
     credit = [k for k in KEYS[c] if "신용공여" in D.ents.get(k, {}).get("focus", "")]
-    tail = f" {D.labels(credit)} 신용공여 한도를 점검합니다." if credit else " 리스크 한도를 점검합니다."
-    text = f"{event} 전까지 {KOR[c]} 신규 출자·인수 속도를 조절하고{tail}"
-    ev = [f"{head.get('src', '')} {md(head['date'])} '{news_label(head['title'], head.get('src', ''))}' 등 부정 구조 뉴스 {len(neg)}건(최근 30일)"]
-    if ix:
-        ev.append(f"{IX_SHORT[c]} 1개월 {sgn(ix['chg']['1M'])}, 연초 대비 {sgn(ix['chg']['YTD'])}({md(ix['date'])})")
+    limit = f"{D.labels(credit)} 신용공여 한도" if credit else "리스크 한도"
+    text = f"{event} 전까지 {KOR[c]} 신규 출자·인수는 속도를 조절하고, {limit}를 점검할 만합니다."
+    ev = [f"{cite(head)} 등 부정 구조 뉴스 {len(neg)}건(최근 30일)"]
+    if ix and chg(ix, "1M") is not None and chg(ix, "YTD") is not None:
+        ev.append(f"{IX_SHORT[c]} 1개월 {sgn(chg(ix, '1M'))}, 연초 대비 {sgn(chg(ix, 'YTD'))}({md(ix['date'])})")
+    # 같은 나라에 '인수는 미루고 후보 검토만' 줄이 함께 뽑히면 evaluate()가 이 짧은 문구로 바꾼다(같은 말 반복 방지)
+    short = f"{event} 전까지 {limit}와 담보 비율을 보수적으로 점검할 만합니다." if credit else f"{event} 전까지 {limit}를 보수적으로 점검할 만합니다."
     return cand("R08", RISK, 9, text, ev, KEYS[c], "NEG", ("NEG", event), driver=d(head["date"]),
-                links=[link(i) for i in neg[:2]], urls=[i["url"] for i in neg], event=event)
+                links=[link(i) for i in neg[:2]], urls=[i["url"] for i in neg], event=event, short=short)
 
 
 def fx_pair(D, c):
@@ -520,13 +560,18 @@ def r09_fx(D, c, ctx):
     if y is None or vs_usd is None:
         return None
     exit_ok = ctx["published"].get("R09") and vs_usd <= -3
-    if not ((y <= -10 and vs_usd <= -5) or (w_usd is not None and w_usd <= -1.5) or exit_ok):
+    trend = (y <= -10 and vs_usd <= -5) or exit_ok
+    week = w_usd is not None and w_usd <= -1.5
+    if not (trend or week):
         return None
     fx = D.macro["fx"][CCY[c]]
     unit = re.search(r"\((\d+)\D*\)", fx.get("name", ""))
     ev = f"원/{CCY_NAME[CCY[c]]} {fx['last'][1]:,}원({unit.group(1) + CCY_NAME[CCY[c]] + ' 기준, ' if unit else ''}ECOS {md(fx['last'][0])}), 연초 대비 {sgn(y)}·달러 대비 {sgn(vs_usd)}"
-    text = f"{CCY_NAME[CCY[c]]} 약세에 대비해 {D.labels(KEYS[c])} 원화 환산 손익 관리와 환헤지 방안을 점검합니다."
-    return cand("R09", RISK, 6, text, [ev], KEYS[c], bucket=(math.floor(y / 5), vs_usd <= -5))
+    if week:
+        ev += f" · 최근 1주 달러 대비 {sgn(w_usd)}"
+    name = CCY_NAME[CCY[c]]
+    text = f"{name} {'' if trend else '단기 '}약세에 대비해 {D.labels(KEYS[c])} 원화 환산 손익 관리와 환헤지 방안을 점검할 만합니다."
+    return cand("R09", RISK, 6, text, [ev], KEYS[c], "trend" if trend else "week")
 
 
 def r10_reg(D, c, struct_urls):
@@ -548,10 +593,11 @@ def r10_reg(D, c, struct_urls):
     head = next((i for i in pool if i["url"] not in struct_urls), pool[0])
     t = head["title"]
     variant = "시세조종 단속 강화" if re.search(r"manipulat|시세조종", t, re.I) else \
-        "고객 대상 사기 증가" if re.search(r"fraud|scam|사기|보안", t, re.I) else "감독당국 제재 사례"
+        "고객 대상 사기 증가" if re.search(r"fraud|scam|사기", t, re.I) else "감독당국 제재 사례"
     who = f"{head['firm']} {KOR[c]} 법인 " if head.get("firm") else ""
-    ev = f"{who}{head.get('src', '')} {md(head['date'])} '{news_label(t, head.get('src', ''))}' 등 {len(pool)}건"
-    text = f"{variant}에 맞춰 {D.labels([k for k in KEYS[c] if 'IB' in D.ents.get(k, {}).get('focus', '') or k == BROKER[c]])} 이상거래 모니터링과 고객 사기 방지 체계를 점검합니다."
+    ev = f"{cite(head, who)} 등 {len(pool)}건"
+    what = {"시세조종 단속 강화": "이상거래 모니터링과 주문 감시 체계", "고객 대상 사기 증가": "고객 사기 방지와 이상거래 모니터링 체계"}.get(variant, "내부통제·준법 점검 범위")
+    text = f"{variant}에 맞춰 {D.labels([k for k in KEYS[c] if 'IB' in D.ents.get(k, {}).get('focus', '') or k == BROKER[c]])} {what}를 점검할 만합니다."
     return cand("R10", RISK, 6, text, [ev], [BROKER[c]], variant, (variant,), driver=d(head["date"]), links=[link(head)], urls=[i["url"] for i in pool])
 
 
@@ -571,15 +617,17 @@ def r11_loss(D, c):
         lab = D.label(key)
         b_txt = f"순이익 {eok(B['ni'])}" if B["ni"] >= 0 else f"순손실 {eok(-B['ni'])}"
         ev = [f"{D.L['label']} 순손실 {eok(-L['ni'])}(FY{D.B['year']} {b_txt}), 매출 {eok(L['rev'])}(DART {rep_name(D.L)})"]
-        if fl and ix and ix["chg"].get("YTD", 0) >= 5 and ix["chg"].get("6M", 0) >= 0 and fl[0] <= -0.10:
-            ev.append(f"{IX_SHORT[c]} 연초 대비 {sgn(ix['chg']['YTD'])}({md(ix['date'])})에도 매출은 FY{D.B['year']} 반기 환산 대비 {sgn(fl[0] * 100)}")
+        if fl and (chg(ix, "YTD") or 0) >= 5 and (chg(ix, "6M") or 0) >= 0 and fl[0] <= -0.10:
+            ev.append(f"{IX_SHORT[c]} 연초 대비 {sgn(chg(ix, 'YTD'))}({md(ix['date'])})에도 {D.L['label']} 매출은 FY{D.B['year']} 반기 환산 대비 {sgn(fl[0] * 100)}")
         if flip:
             text = f"{lab} 적자 전환에 따라 고정비 중심의 인력·조직 효율화를 검토할 만합니다."
             out.append(cand("R11", "구조조정·비용", 9, text, ev, [key], "flip", ("flip",), driver=d(D.L["report"].get("rcept_dt")), cir=cir, rev_g=fl and fl[0]))
         else:
-            focus = D.ents.get(key, {}).get("focus", "").split(",")[0].strip() or "핵심"
+            focus = [x.strip() for x in D.ents.get(key, {}).get("focus", "").split(",") if x.strip()]
             mult = f"비용이 매출의 {cir:.1f}배라" if cir is not None and cir >= 3 else "적자 폭이 커져"
-            text = f"{lab}은 {mult}, 성과가 나는 {focus} 중심으로 조직 축소·재편을 검토할 만합니다."
+            # 사업이 하나뿐이면 '핵심 사업' 구분이 없으니, 고정비를 매출 규모에 맞추는 쪽으로만 말한다
+            how = f"핵심인 {focus[0]} 중심으로 고정비를 줄이는" if len(focus) > 1 else "고정비를 매출 규모에 맞추는"
+            text = f"{lab}{josa(lab, '은', '는')} {mult}, {how} 조직 축소·재편을 검토할 만합니다."
             out.append(cand("R11", "구조조정·비용", 9, text, ev, [key], "widen", ("widen",), driver=d(D.L["report"].get("rcept_dt")), cir=cir, rev_g=fl and fl[0]))
     return out
 
@@ -609,8 +657,11 @@ def r12_jaws(D, c, ctx):
             continue
         ev = [f"{D.L['label']} 비용 {sgn(cost_g * 100)} vs 매출 {sgn(rev_g * 100)}(FY{D.B['year']} 반기 환산 대비, DART)"]
         m_p, n = peer_margin(D, c)
-        if m_p is not None:
-            ev.append(f"순이익률 {L['ni'] / L['rev'] * 100:.1f}% vs 한국계 흑자 {n}사 중간값 {m_p * 100:.1f}%(FY{D.B['year']})")
+        B = D.sub(D.B, key)
+        if m_p is not None and B.get("rev") and B.get("ni") is not None and B["ni"] / B["rev"] < m_p:
+            # 같은 시점끼리(FY) 비교하고, 최신 반기 값은 시점을 붙여 덧붙인다
+            ev.append(f"순이익률 FY{D.B['year']} {B['ni'] / B['rev'] * 100:.1f}%·{D.L['label']} {L['ni'] / L['rev'] * 100:.1f}% "
+                      f"vs 한국계 흑자 {n}사 FY{D.B['year']} 중간값 {m_p * 100:.1f}%")
         text = f"{D.label(key)} 비용 증가율을 매출 증가율 이하로 묶는 비용 상한 관리를 검토할 만합니다."
         out.append(cand("R12", "구조조정·비용", 8, text, ev, [key], bucket=(math.floor(jaws / 5),), driver=d(D.L["report"].get("rcept_dt")), jaws=jaws))
     return out
@@ -643,7 +694,7 @@ def r14_volume(D, c):
         mo, yt = D.idx["month"], D.idx["ytd"]
         if mo.get("days") and yt.get("days"):
             adtv = (mo["total"] / mo["days"]) / (yt["total"] / yt["days"]) - 1
-    ytd = (ix or {}).get("chg", {}).get("YTD")
+    ytd = chg(ix, "YTD")
     if not ((adtv is not None and adtv <= -0.15) or (ytd is not None and ytd <= -20)) or not fl or fl[0] >= 0:
         return None
     if adtv is not None:
@@ -660,13 +711,15 @@ def r15_momentum(D, c, regime):
     ix = D.ix(c)
     if not ix:
         return None
-    ch = ix["chg"]
+    ch = {k: chg(ix, k) for k in ("1W", "1M", "3M")}
+    if None in ch.values():
+        return None
     dd = drawdown(ix, 12)
-    tier = "A" if ch.get("3M", -99) >= 5 and ch.get("1M", -99) >= 0 else \
-        "B" if ch.get("1W", -99) >= 3 and ch.get("3M", -99) >= 0 and dd is not None and dd >= -0.08 else None
+    tier = "A" if ch["3M"] >= 5 and ch["1M"] >= 0 else \
+        "B" if ch["1W"] >= 3 and ch["3M"] >= 0 and dd is not None and dd >= -0.08 else None
     if not tier:
         return None
-    fact = f"{IX_SHORT[c]} 1주 {sgn(ch['1W'])}·3개월 {sgn(ch['3M'])}({md(ix['date'])}), {peak_month(ix, 12)} 고점 대비 {sgn(dd * 100)}"
+    fact = f"{IX_SHORT[c]} 1주 {sgn(ch['1W'])}·3개월 {sgn(ch['3M'])}({md(ix['date'])})" + (f", {peak_month(ix, 12)} 고점 대비 {sgn(dd * 100)}" if dd is not None else "")
     return cand("R15", "마케팅·고객", 5, "", [fact], [BROKER[c]], tier, (tier,), fact=fact)
 
 
@@ -763,8 +816,9 @@ def r18_rwa(D, c):
     ev = [f"{head.get('src', '')} {d(head['date']).isoformat()} '{head['title']}'"]
     if sto:
         ev.append(f"{KOR[c]} 토큰증권 제도 {sto.get('short', '')} 시행 중(디지털자산 규제 탭)")
-    biz = D.ents.get(key, {}).get("focus", "")
-    text = f"보도된 RWA 협력을 {D.label(key)} {biz or '자문·IB'} 상품으로 잇는 저비용 사업화를 검토할 만합니다."
+    focus = [x.strip() for x in D.ents.get(key, {}).get("focus", "").split(",") if x.strip()]
+    biz = next((x for x in focus if "IB" in x), focus[0] if focus else "자문·IB")
+    text = f"보도된 RWA 협력을 {D.label(key)} {biz} 상품으로 잇는 저비용 사업화를 검토할 만합니다."
     return cand("R18", "상품·제휴", 5, text, ev, [key], bucket=(head["url"],), driver=d(head["date"]), links=[link(head, "보도")], urls=[head["url"]])
 
 
@@ -779,7 +833,7 @@ def fallbacks(D, c):
         rank = allr.index(eq_now) + 1
         med = median(p["equity_krw"] for p in peers if p.get("equity_krw") is not None)
         ev = f"{D.L['label']} 자기자본 {eq_now:,.0f}억원(DART) vs 한국계 동종 중간값 {med:,.0f}억원(FY{own['asof'][:4]})"
-        text = f"{D.label(key)} 자기자본은 한국계 {len(allr)}사 중 {rank}위로, 분기 공시마다 격차 추이를 점검합니다."
+        text = f"{D.label(key)} 자기자본은 한국계 {len(allr)}사 중 {rank}위로, 분기 공시마다 격차 추이를 점검할 만합니다."
         out.append(cand("F1", "자본", 2, text, [ev], [key], bucket=(rank,)))
     if L.get("assets") and L.get("ni") is not None:
         roe = L["ni"] * (12 / D.L["months"]) / (L["assets"] - L["liab"]) * 100
@@ -801,13 +855,17 @@ def fallbacks(D, c):
         name = re.sub(r"^한화투자증권\s*", "", t.get("item") or t.get("title") or "정기보고서").split(" 해외")[0]
         extra = f"와 {nxt['name']} 결정({md(nxt['date'])})" if nxt else ""
         text = f"다음 판단 시점은 {name}(기한 {md(t['due'])}){extra} 반영 후입니다."
-        out.append(cand("F3", "일정", 1, text, ["대외보고 기한(한화투자증권 탭)" + (" · 중앙은행 결정 일정" if nxt else "")], [key]))
+        out.append(cand("F3", "일정", 1, text, ["대외보고 기한(한화투자증권 탭)" + (" · 중앙은행 결정 일정" if nxt else "")], [key],
+                        bucket=(t["due"], nxt["date"] if nxt else None)))
     return out
 
 
 # ---------- 조합·선택 ----------
-def evaluate(D, c, published):
-    """나라 c의 발동 규칙 → 병합·조정 → 선택. (고른 bullet, 탈락 후보, 국면, 감시 url)"""
+def evaluate(D, c, published, pinned=()):
+    """나라 c의 발동 규칙 → 병합·조정 → 선택. (고른 bullet, 탈락 후보, 발동 규칙, 국면)
+
+    pinned: 자료 공백으로 오늘 하루 안 잡힌 게시 중 bullet. 자리를 먼저 차지해 다른 규칙이 그 자리를
+    메우며 문구가 바뀌는 일을 막는다(이틀째 안 잡히면 run()이 더는 넘기지 않는다)."""
     ctx = {"published": published}
     fired, extra = {}, []
 
@@ -852,20 +910,21 @@ def evaluate(D, c, published):
             dropped.append(("R02", "당사 법인 적자·증자 직후"))
     gated = regime == "NEG" or loss_rules
     event = (st or {}).get("event") or "시장 불안 진정"
-    cond = " ".join(filter(None, [event if regime == "NEG" else "", "손익 회복" if loss_rules else ""])).replace(" 손익", "과 손익") or event
+    parts = [x for x in (event if regime == "NEG" else "", "손익 회복" if loss_rules else "") if x]
+    cond = f"{parts[0]}{josa(parts[0], '과', '와')} {parts[1]}" if len(parts) == 2 else (parts[0] if parts else event)
     # M2·M8 R04: R01 acquire 에 합치거나, 게이트면 '실사만' 문구
     if r04:
         if (fired.get("R01") or {}).get("variant") == "acquire":
             fired["R01"]["evidence"].append(r04["evidence"][0])
         else:
             if gated:
-                r04["text"] = f"{KOR[c]} 추가 인수는 원화 비용이 낮아졌어도 {cond} 뒤 집행하고, 후보 실사만 먼저 준비할 만합니다."
+                r04["text"] = f"{KOR[c]} 현지 증권사 인수는 원화 비용이 낮아졌어도 {cond} 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다."
                 r04["variant"] = "gated"
                 r04["bucket"][0:0] = ["gated"]
             fired["R04"] = r04
     if (fired.get("R01") or {}).get("variant") == "acquire" and gated:
         r = fired["R01"]
-        r["text"] = f"{D.label(BROKER[c])} 지분 인수 후보는 {cond} 뒤 집행을 전제로 실사만 먼저 준비할 만합니다."
+        r["text"] = f"{D.label(BROKER[c])}의 현지 증권사 지분 인수는 {cond} 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다."
         r["variant"] = "acquire-gated"
     # M3·M4 R11 → R13, R14 → R13 > R11 > 단독
     if r13:
@@ -913,10 +972,11 @@ def evaluate(D, c, published):
             top = mkt[0]["rule"]
             text = {"R16": f"모바일 온보딩·디지털 채널 제휴로 {lab} 신규 고객 유입 확대를 검토할 만합니다.",
                     "R17": f"{lab}은 한국계 경쟁사와 겹치지 않는 고객군을 겨냥한 타깃 프로모션을 검토할 만합니다.",
-                    "R15": f"반등 구간에 맞춰 {lab} 신규 계좌 유치 이벤트를 재개하는 방안을 검토할 만합니다."}[top]
+                    "R15": f"반등 구간에 맞춰 {lab} 신규 계좌 유치 이벤트를 진행하는 방안을 검토할 만합니다."}[top]
         if mode:
+            # 구간은 문구를 정하는 것만: 모드와(기본형이면) 맨 위 근거 규칙. 지수 1주 등락처럼 근거에만 쓰이는 값은 넣지 않는다
             fired["MKT"] = cand("MKT", "마케팅·고객", mkt[0]["weight"], text, [x["fact"] for x in mkt][:3], [key], mode,
-                                tuple(f"{x['rule']}:{x['variant']}:{x['bucket']}" for x in mkt),
+                                (mkt[0]["rule"],) if mode == "base" else (),
                                 driver=max(filter(None, (x["driver"] for x in mkt)), default=None), components=comps)
 
     # 점수와 선택
@@ -930,6 +990,9 @@ def evaluate(D, c, published):
         x["score"] = score(x)
     pool.sort(key=lambda x: (-x["score"], -x["weight"], -(d(x["driver"]).toordinal() if x.get("driver") else 0), x["rule"]))
     chosen, cats = [], {}
+    for p in pinned:
+        chosen.append(dict(p))
+        cats[p["category"]] = 1
     for x in pool:
         if len(chosen) >= 4:
             x["why_not"] = "4개 마감"
@@ -940,13 +1003,6 @@ def evaluate(D, c, published):
         chosen.append(x)
         cats[x["category"]] = 1
     if len(chosen) < 3:
-        for x in pool:
-            if len(chosen) >= 3:
-                break
-            if x not in chosen and x["category"] != RISK:
-                chosen.append(x)
-                x.pop("why_not", None)
-    if len(chosen) < 3:
         fb = fallbacks(D, c)
         have = {x["category"] for x in chosen}
         fb.sort(key=lambda x: (x["rule"] == "F3", x["category"] in have, x["rule"]))
@@ -956,9 +1012,22 @@ def evaluate(D, c, published):
             if x["rule"] == "F3" or x["category"] not in have or len([y for y in chosen if y["rule"] != "F3"]) < 2:
                 chosen.append(x)
                 have.add(x["category"])
+    if len(chosen) < 3:
+        # 대체 줄로도 3개가 안 되면 같은 분야 두 번째 줄까지 허용(리스크·지분 인수는 서로 엇갈릴 수 있어 제외)
+        for x in pool:
+            if len(chosen) >= 3:
+                break
+            if x not in chosen and x["category"] not in (RISK, "M&A·지분"):
+                chosen.append(x)
+                x.pop("why_not", None)
+    # 인수를 미루라는 줄이 있으면 리스크 줄은 같은 말을 반복하지 않고 한도 점검만 말한다
+    r08 = next((x for x in chosen if x["rule"] == "R08" and x.get("short")), None)
+    if r08 and any(x["variant"] in ("gated", "acquire-gated") for x in chosen):
+        r08["text"] = r08["short"]
     losers = [{"rule": x["rule"], "variant": x["variant"], "why_not": x.get("why_not", "")} for x in pool if x not in chosen]
     losers += [{"rule": r, "variant": "", "why_not": why} for r, why in dropped]
-    fired_ids = {x["rule"] for x in pool}
+    # 다른 줄에 합쳐졌거나 조정으로 빠진 규칙도 '발동'으로 본다(하루 안 잡힘으로 세지 않음)
+    fired_ids = {x["rule"] for x in pool} | {r for r, _ in dropped}
     return chosen, losers, fired_ids, regime
 
 
@@ -978,106 +1047,128 @@ def watch_urls(D, c):
 
 
 def fingerprint(bullets):
-    key = sorted((b["rule"], b["variant"], json.dumps(b["bucket"], ensure_ascii=False)) for b in bullets if b["rule"] != "F3")
+    key = sorted((b["rule"], b["variant"], json.dumps(b["bucket"], ensure_ascii=False)) for b in bullets)
     return hashlib.sha1(json.dumps(key, ensure_ascii=False).encode()).hexdigest()[:12]
 
 
 RULE_NAME = {"R01": "규모 격차", "R02": "경쟁사 자본 확충", "R03": "현지 인수 부담", "R04": "인수 비용", "R05": "증자 후 매출",
              "R06": "교차판매", "R07": "시장 지위 상향", "R08": "구조적 악재", "R09": "환율", "R10": "제재·사기", "R11": "적자",
              "R12": "비용 증가", "R13": "중복 고정비", "R14": "거래대금 감소", "MKT": "점유율·마케팅", "R18": "디지털자산 협력",
-             "F1": "자본 격차", "F2": "ROE"}
+             "F1": "자본 격차", "F2": "ROE", "F3": "다음 판단 시점"}
+
+
+def archive_worthy(it):
+    """보관할 기사: 세 나라 중 하나에 귀속되는 것만(다른 나라 기사는 어느 규칙도 읽지 않는다)."""
+    t = it.get("title", "")
+    return it.get("kind") == "hub" or bool(countries_of(t)) or any(KOR[c] in t for c in COUNTRIES) or "인니" in t
+
+
+def check_country(D, c, pc, cs, seen, dart_key, now, prev_spec=None):
+    """한 나라 판정. (화면 블록, 다음 상태). 예외는 run()이 잡아 이전 블록·상태를 그대로 둔다."""
+    today = now.date()
+    published = {b["rule"]: b for b in pc.get("bullets", [])}
+    chosen, losers, fired, regime = evaluate(D, c, published)
+    # 하루 안 잡힘 세기: 같은 날 다시 돌려도 하루로 센다(그날 첫 실행 전 값에서 다시 셈)
+    base = cs.get("miss_base", {}) if cs.get("miss_date") == today.isoformat() else cs.get("miss", {})
+    miss = {r: n for r, n in base.items() if r in published and r not in fired}
+    for r in published:
+        if r not in fired:
+            miss[r] = miss.get(r, 0) + 1
+    reasons = []
+    if not pc.get("bullets"):
+        reasons.append("첫 생성")
+    if cs.get("spec", prev_spec if pc.get("bullets") else None) not in (None, SPEC_VERSION):
+        reasons.append("규칙 개정")
+    if cs.get("dart") is not None and cs["dart"] != dart_key:
+        reasons.append(f"DART {(D.L or {}).get('report', {}).get('name', '새 보고서')} 반영")
+    hard = bool(reasons)
+    # 새 공시·규칙 개정이 아니면, 하루만 안 잡힌 게시 줄은 자리를 지킨다(다른 규칙이 그 자리를 메워 문구가 바뀌지 않게)
+    grace = [r for r in published if r not in fired and miss[r] < 2]
+    if grace and not hard:
+        chosen, losers, fired, regime = evaluate(D, c, published, pinned=[published[r] for r in grace])
+    new_map = {b["rule"]: b for b in chosen}
+    added = [r for r in new_map if r not in published or new_map[r]["variant"] != published[r]["variant"]]
+    gone = [r for r in published if r not in new_map and r not in fired]
+    if (added or gone) and pc.get("bullets"):
+        reasons.append("판단 변화: " + ", ".join([f"+{RULE_NAME.get(r, r)}" for r in added] + [f"−{RULE_NAME.get(r, r)}" for r in gone]))
+    moved = [r for r in new_map if r in published and new_map[r]["variant"] == published[r]["variant"]
+             and new_map[r]["bucket"] != published[r].get("bucket")]
+    if moved and pc.get("bullets"):
+        reasons.append("구간 변화: " + ", ".join(RULE_NAME.get(r, r) for r in moved))
+    # 새 뉴스: 이 나라가 마지막으로 제대로 확인된 날 뒤에 처음 본 기사(실패한 날 본 기사도 다음 확인 때 잡힌다)
+    if cs.get("ok"):
+        fresh = [it for it in watch_urls(D, c) if D.age(it.get("date")) <= NEWS_FRESH_DAYS
+                 and (it["url"] not in seen or (seen[it["url"]].get("first_seen") or "") > cs["ok"])]
+        if fresh:
+            it = sorted(fresh, key=lambda i: i.get("date", ""), reverse=True)[0]
+            reasons.append(f"새 뉴스: {news_label(it['title']) or it.get('src', '') + ' 보도'}")
+    pol = D.policy(c)
+    pol_now = pol["now"] if pol else cs.get("policy")
+    if pol and cs.get("policy") is not None and cs["policy"] != pol["now"]:
+        reasons.append(f"정책금리 {cs['policy']:.2f}% → {pol['now']:.2f}%")
+    ix = D.ix(c)
+    _, _, w_usd = fx_pair(D, c)
+    shock = abs(chg(ix, "1W") or 0) >= 7 or (chg(ix, "1D") or 0) <= -4 or (w_usd is not None and w_usd <= -2)
+    if shock and not cs.get("shock") and cs.get("ok"):
+        reasons.append("지수·환율 급변")
+    if pc.get("changed_at") and (today - d(pc["changed_at"])).days >= MAX_STALE_DAYS:
+        reasons.append(f"정기 갱신({MAX_STALE_DAYS}일)")
+    block = {"country": KOR[c], "entities": [D.label(k) for k in KEYS[c]]}
+    if reasons:
+        bullets = [{k: b[k] for k in ("rule", "variant", "category", "text", "evidence", "links", "bucket")} for b in chosen]
+        hist = (pc.get("history") or [])[-59:] + [{"date": today.isoformat(), "fp": fingerprint(chosen), "rules": [b["rule"] for b in chosen], "reason": reasons}]
+        block.update(regime=regime, bullets=bullets, changed_at=today.isoformat(), reason=reasons[:3], last_check="갱신", candidates=losers, history=hist)
+    else:
+        # 문구를 그대로 두는 날은 국면 표시도 그대로(줄과 표시가 엇갈리지 않게)
+        block.update({k: pc.get(k) for k in ("regime", "bullets", "changed_at", "reason", "candidates", "history")}, last_check="큰 변화 없음")
+    shown = {b["rule"] for b in block["bullets"] or []}
+    ncs = {"ok": today.isoformat(), "dart": dart_key, "spec": SPEC_VERSION, "policy": pol_now, "shock": shock,
+           "miss": {r: n for r, n in miss.items() if r in shown}, "miss_base": base, "miss_date": today.isoformat()}
+    return block, ncs
 
 
 def run(root=ROOT, now=None, prev=None):
+    """prev: 직전 결과(state 포함). 없으면 takeaways.json + takeaways_state.json 을 읽는다."""
     now = now or datetime.now(KST)
     today = now.date()
-    prev = prev if prev is not None else (load(root, OUT_REL) or {})
+    if prev is None:
+        prev = load(root, OUT_REL) or {}
+        st = load(root, STATE_REL)
+        if st is not None:
+            prev = {**prev, "state": st}
     state = prev.get("state") or {}
     D = Data(root, today, state)
     out = {"spec_version": SPEC_VERSION, "checked_at": now.isoformat(timespec="minutes"), "countries": {}, "errors": []}
     dart_key = [((D.L or {}).get("report") or {}).get("rcept_no"), ((D.subs.get("invest") or {}).get("report") or {}).get("rcept_no")]
-    dart_changed = state.get("dart") is not None and state.get("dart") != dart_key
-    new_state = {"dart": dart_key, "spec": SPEC_VERSION, "policy": {}, "miss": {}, "shock": {}, "injection": dict(state.get("injection") or {})}
+    seen = state.get("seen") or {}
+    new_state = {"countries": {}, "injection": dict(state.get("injection") or {})}
     for c in COUNTRIES:
         pc = (prev.get("countries") or {}).get(c) or {}
-        published = {b["rule"]: b for b in pc.get("bullets", [])}
+        cs = (state.get("countries") or {}).get(c) or {}
         try:
-            chosen, losers, fired, regime = evaluate(D, c, published)
-        except Exception as e:  # 한 나라 실패가 다른 나라를 막지 않게: 이전 블록 유지
+            block, ncs = check_country(D, c, pc, cs, seen, dart_key, now, prev.get("spec_version"))
+            for k in KEYS[c]:
+                inj = injection(D, k)
+                if inj:
+                    new_state["injection"][k] = inj
+        except Exception as e:  # 한 나라 실패가 다른 나라를 막지 않게: 이전 블록·판단 상태를 그대로 둔다
             out["errors"].append(f"{c}: {type(e).__name__}: {e}")
             if pc:
-                out["countries"][c] = pc
-            new_state["miss"][c] = (state.get("miss") or {}).get(c, {})
+                out["countries"][c] = {**pc, "last_check": "확인 실패"}
+            if cs:
+                new_state["countries"][c] = cs
             continue
-        for k in KEYS[c]:
-            inj = injection(D, k)
-            if inj:
-                new_state["injection"][k] = inj
-        reasons = []
-        if not pc.get("bullets"):
-            reasons.append("첫 생성")
-        if state.get("spec") not in (None, SPEC_VERSION):
-            reasons.append("규칙 개정")
-        if dart_changed:
-            reasons.append(f"DART {(D.L or {}).get('report', {}).get('name', '새 보고서')} 반영")
-        new_map = {b["rule"]: b for b in chosen if b["rule"] != "F3"}
-        pub = {r: b for r, b in published.items() if r != "F3"}
-        miss = dict((state.get("miss") or {}).get(c, {}))
-        for r in list(miss):
-            if r in fired:
-                del miss[r]
-        added = [r for r in new_map if r not in pub or new_map[r]["variant"] != pub[r]["variant"]]
-        gone = []
-        for r in pub:
-            if r in new_map:
-                continue
-            if r in fired:
-                continue  # 아직 발동하지만 더 센 규칙에 밀림: 새 규칙이 들어온 것으로 이미 잡힘
-            miss[r] = miss.get(r, 0) + 1
-            if miss[r] >= 2:
-                gone.append(r)
-        if (added or gone) and pc.get("bullets"):
-            reasons.append("판단 변화: " + ", ".join([f"+{RULE_NAME.get(r, r)}" for r in added] + [f"−{RULE_NAME.get(r, r)}" for r in gone]))
-        moved = [r for r in new_map if r in pub and new_map[r]["variant"] == pub[r]["variant"] and new_map[r]["bucket"] != pub[r].get("bucket")]
-        if moved and pc.get("bullets"):
-            reasons.append("구간 변화: " + ", ".join(RULE_NAME.get(r, r) for r in moved))
-        seen = state.get("seen") or {}
-        fresh = [it for it in watch_urls(D, c) if it["url"] not in seen and D.age(it.get("date")) <= NEWS_FRESH_DAYS]
-        if fresh and state.get("seen") is not None:
-            it = sorted(fresh, key=lambda i: i["date"], reverse=True)[0]
-            reasons.append(f"새 뉴스: {news_label(it['title'], it.get('src', ''))}")
-        pol = D.policy(c)
-        if pol:
-            new_state["policy"][c] = pol["now"]
-            old = (state.get("policy") or {}).get(c)
-            if old is not None and old != pol["now"]:
-                reasons.append(f"정책금리 {old:.2f}% → {pol['now']:.2f}%")
-        ix = D.ix(c)
-        _, _, w_usd = fx_pair(D, c)
-        shock = bool(ix and (abs(ix["chg"].get("1W", 0)) >= 7 or ix["chg"].get("1D", 0) <= -4)) or (w_usd is not None and w_usd <= -2)
-        new_state["shock"][c] = shock
-        if shock and not (state.get("shock") or {}).get(c):
-            reasons.append("지수·환율 급변")
-        if pc.get("changed_at") and (today - d(pc["changed_at"])).days >= MAX_STALE_DAYS:
-            reasons.append(f"정기 갱신({MAX_STALE_DAYS}일)")
-        new_state["miss"][c] = {r: n for r, n in miss.items() if r not in new_map}
-        block = {"country": KOR[c], "entities": [D.label(k) for k in KEYS[c]], "regime": regime}
-        if reasons:
-            bullets = [{k: b[k] for k in ("rule", "variant", "category", "text", "evidence", "links", "bucket")} for b in chosen]
-            hist = (pc.get("history") or [])[-59:] + [{"date": today.isoformat(), "fp": fingerprint(chosen), "rules": [b["rule"] for b in chosen], "reason": reasons}]
-            block.update(bullets=bullets, changed_at=today.isoformat(), reason=reasons[:3], last_check="갱신", candidates=losers, history=hist)
-        else:
-            block.update({k: pc.get(k) for k in ("bullets", "changed_at", "reason", "candidates", "history")}, last_check="큰 변화 없음")
         out["countries"][c] = block
+        new_state["countries"][c] = ncs
     out["updated_at"] = max((b.get("changed_at") or "" for b in out["countries"].values()), default="")
-    # 본 기사 보관(최근 200일): 다음 실행의 '새 뉴스' 판정과 구조 뉴스 국면 유지용
-    seen = dict(state.get("seen") or {})
+    # 본 기사 보관(최근 61일, 세 나라 기사만): 다음 실행의 '새 뉴스' 판정과 구조 뉴스 국면 유지용
+    seen = dict(seen)
     first = today.isoformat()
     for it in D.macro_items() + D.news_items() + [i for c in COUNTRIES for i in D.hub_items(c)]:
-        if it.get("url") and it["url"] not in seen:
+        if it.get("url") and it["url"] not in seen and archive_worthy(it):
             keep = {k: it.get(k) for k in ("date", "title", "src", "priority", "kind", "firms") if it.get(k) is not None}
             seen[it["url"]] = {**keep, "first_seen": first}
-    new_state["seen"] = {u: v for u, v in seen.items() if D.age(v.get("date")) <= 200}
+    new_state["seen"] = {u: v for u, v in seen.items() if D.age(v.get("date")) <= ARCHIVE_DAYS}
     out["state"] = new_state
     return out
 
@@ -1093,11 +1184,13 @@ def main():
                 print(f"    (탈락 {x['rule']} {x['variant']}: {x['why_not']})")
         print("errors:", res["errors"])
         return
-    p = ROOT / OUT_REL
-    tmp = p.with_suffix(".tmp")
-    tmp.write_text(json.dumps(res, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    tmp.replace(p)
-    print(f"저장: {p} · " + " / ".join(f"{b['country']} {b.get('last_check')}" for b in res["countries"].values()))
+    state = res.pop("state")
+    for rel, obj, indent in ((OUT_REL, res, 1), (STATE_REL, state, None)):
+        p = ROOT / rel
+        tmp = p.with_suffix(".tmp")
+        tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=indent) + "\n", encoding="utf-8")
+        tmp.replace(p)
+    print(f"저장: {ROOT / OUT_REL} · " + " / ".join(f"{b['country']} {b.get('last_check')}" for b in res["countries"].values()))
 
 
 if __name__ == "__main__":

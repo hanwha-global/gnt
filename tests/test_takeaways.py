@@ -246,19 +246,135 @@ class TakeawaysTest(unittest.TestCase):
         for c in ("VN", "ID", "SG"):
             self.assertGreaterEqual(len(res["countries"][c]["bullets"]), 3, c)
 
-    def test_one_country_failure_keeps_previous_block(self):
+    def test_one_country_failure_keeps_previous_block_and_pending_triggers(self):
         first = self.run_at(TODAY, {})
-        broken = copy.deepcopy(self.files["hanwha/data/markets.json"])
-        broken["indices"][1]["monthly"] = [["2026-10", "x"]]  # 인니 지수 깨짐
-        write(self.root, {"hanwha/data/markets.json": broken})
-        res = self.run_at(TODAY + timedelta(days=1), first)
+        day1, day2 = TODAY + timedelta(days=1), TODAY + timedelta(days=2)
+        # 실패한 날: 새 공시·인니 금리 인하·새 인니 기사가 함께 들어옴
+        self.files["hanwha/data/dart_subs.json"]["periods"][-1]["report"]["rcept_no"] = "Q3"
+        self.files["hanwha/data/markets.json"]["policy"]["table"][0]["now"] = 5.5
+        self.files["site/data/global/macro_news.json"]["countries"]["ID"]["items"].insert(
+            0, {"date": day1.isoformat(), "title": "Indonesia stocks plunge as MSCI downgrade looms", "src": "Reuters", "url": "u-id-new", "priority": True})
+        write(self.root, self.files)
+        real = bt.evaluate
+
+        def broken(D, c, *a, **k):
+            if c == "ID":
+                raise ValueError("가상 오류")
+            return real(D, c, *a, **k)
+        bt.evaluate = broken
+        try:
+            res = self.run_at(day1, first)
+        finally:
+            bt.evaluate = real
         self.assertTrue(res["errors"] and res["errors"][0].startswith("ID"))
         self.assertEqual(res["countries"]["ID"]["bullets"], first["countries"]["ID"]["bullets"])
+        self.assertEqual(res["countries"]["ID"]["last_check"], "확인 실패")
+        self.assertEqual(res["state"]["countries"]["ID"], first["state"]["countries"]["ID"])
+        self.assertTrue(any(r.startswith("DART") for r in res["countries"]["VN"]["reason"]))
+        # 다음 날 복구되면 실패한 날 놓친 공시·금리·기사가 그대로 잡힌다
+        again = self.run_at(day2, res)
+        reasons = " ".join(again["countries"]["ID"]["reason"] or [])
+        self.assertEqual(again["countries"]["ID"]["last_check"], "갱신")
+        self.assertIn("DART", reasons)
+        self.assertIn("정책금리 5.75% → 5.50%", again["countries"]["ID"]["reason"] + [reasons])
+
+    def test_one_day_gap_does_not_let_another_rule_take_the_slot(self):
+        # 인니는 4줄이 꽉 차 있고 교차판매(R06) 등이 밀려 있다. 루피아 환율이 하루 빠져 R04가 안 잡혀도 문구는 그대로
+        first = self.run_at(TODAY, {})
+        self.assertIn("R06", [x["rule"] for x in first["countries"]["ID"]["candidates"]])
+        good = copy.deepcopy(self.files["hanwha/data/macro.json"])
+        gap = copy.deepcopy(good)
+        del gap["fx"]["IDR"]
+        write(self.root, {"hanwha/data/macro.json": gap})
+        d1 = self.run_at(TODAY + timedelta(days=1), first)
+        self.assertEqual(d1["countries"]["ID"]["last_check"], "큰 변화 없음", d1["countries"]["ID"].get("reason"))
+        self.assertIn("R04", self.rules(d1, "ID"))
+        write(self.root, {"hanwha/data/macro.json": good})
+        d2 = self.run_at(TODAY + timedelta(days=2), d1)
+        self.assertEqual(d2["countries"]["ID"]["last_check"], "큰 변화 없음", d2["countries"]["ID"].get("reason"))
+        self.assertEqual(d2["countries"]["ID"]["bullets"], first["countries"]["ID"]["bullets"])
+
+    def test_same_day_rerun_counts_one_miss(self):
+        first = self.run_at(TODAY, {})
+        del self.files["site/data/domestic/hub_news.json"]["hubs"]["한화투자증권|싱가포르"]
+        write(self.root, self.files)
+        day = TODAY + timedelta(days=1)
+        morning = bt.run(root=self.root, now=at(day, 6), prev=first)
+        noon = bt.run(root=self.root, now=at(day, 12), prev=morning)  # 수동 실행
+        self.assertEqual(noon["countries"]["SG"]["last_check"], "큰 변화 없음")
+        self.assertIn("R18", self.rules(noon, "SG"))
+        nxt = self.run_at(day + timedelta(days=1), noon)
+        self.assertNotIn("R18", self.rules(nxt, "SG"))
+
+    def test_evidence_only_values_do_not_rewrite(self):
+        # 베트남 지수 1주 등락이 3%선을 오가도(마케팅 근거에만 쓰임) 문구를 바꾸지 않는다
+        first = self.run_at(TODAY, {})
+        prev = first
+        for i, w in enumerate((2.9, 3.1, 2.9), start=1):
+            self.files["hanwha/data/markets.json"]["indices"][0]["chg"]["1W"] = w
+            write(self.root, self.files)
+            prev = self.run_at(TODAY + timedelta(days=i), prev)
+            self.assertEqual(prev["countries"]["VN"]["last_check"], "큰 변화 없음", (w, prev["countries"]["VN"].get("reason")))
+
+    def test_quiet_day_keeps_regime_with_bullets(self):
+        # 베트남 호재 기사가 30일을 넘겨 국면이 풀린 첫날: 줄(R07)은 하루 유예로 남으니 '시장 지위 상향' 표시도 남는다
+        for it, n in zip(self.files["site/data/global/macro_news.json"]["countries"]["VN"]["items"], (28, 27)):
+            it["date"] = ds(n)
+        write(self.root, self.files)
+        first = self.run_at(TODAY, {})
+        self.assertEqual(first["countries"]["VN"]["regime"], "POS")
+        res = self.run_at(TODAY + timedelta(days=3), first)
+        self.assertEqual(res["countries"]["VN"]["last_check"], "큰 변화 없음", res["countries"]["VN"].get("reason"))
+        self.assertIn("R07", self.rules(res, "VN"))
+        self.assertEqual(res["countries"]["VN"]["regime"], "POS")
+
+    def test_archived_news_keeps_working(self):
+        # 피드에서 빠진 구조 기사는 보관함에서 다시 읽는다(url 포함)
+        first = self.run_at(TODAY, {})
+        self.assertTrue(all("url" not in v for v in first["state"]["seen"].values()))
+        self.files["site/data/global/macro_news.json"]["countries"]["ID"]["items"] = []
+        write(self.root, self.files)
+        res = self.run_at(TODAY + timedelta(days=1), first)
+        self.assertEqual(res["errors"], [])
+        r08 = self.rules(res, "ID").get("R08")
+        self.assertIsNotNone(r08)
+        self.assertTrue(all(l["url"].startswith("u-id") for l in r08["links"]))
+        # 다른 나라 기사는 보관하지 않는다
+        self.assertNotIn("u-hub-in", first["state"]["seen"])
+
+    def test_repeated_year_to_date_injection_keeps_first_date(self):
+        first = self.run_at(TODAY, {})
+        self.assertEqual(first["state"]["injection"]["SG"]["rcept_dt"], "20260813")
+        later = date(2026, 11, 20)
+        inv = self.files["hanwha/data/dart_subs.json"]["invest"]
+        inv["report"] = {"name": "분기보고서 (2026.09)", "rcept_no": "Q3", "rcept_dt": "20261116"}  # 3분기에도 같은 누적 출자
+        write(self.root, self.files)
+        res = self.run_at(later, first)
+        self.assertEqual(res["state"]["injection"]["SG"]["rcept_dt"], "20260813")
+
+    def test_null_index_change_does_not_crash(self):
+        self.files["hanwha/data/markets.json"]["indices"][2]["chg"]["1W"] = None
+        self.files["hanwha/data/markets.json"]["indices"][0]["chg"]["1W"] = None
+        write(self.root, self.files)
+        res = self.run_at(TODAY, {})
+        self.assertEqual(res["errors"], [])
+        for c in ("VN", "ID", "SG"):
+            self.assertGreaterEqual(len(res["countries"][c]["bullets"]), 3, c)
 
     def test_report_name_and_polarity_helpers(self):
         self.assertEqual(bt.rep_name({"report": {"name": "반기보고서 (2026.06)"}}), "2026.06 반기보고서")
         self.assertEqual(bt.rep_name({"report": {"name": "[기재정정]분기보고서 (2025.09)"}}), "2025.09 분기보고서")
         self.assertEqual(bt.polarity("FTSE Russell Keeps Indonesia Off Watchlist"), 1)
+        self.assertEqual(bt.news_label("FTSE Russell Keeps Indonesia Off Watchlist"), "FTSE 관찰대상 제외 유지")
+        # 승격 관찰대상에서 빠진 것·성장률 전망·신용등급 상향은 '시장 지위 상향'이 아니다
+        self.assertEqual(bt.polarity("MSCI keeps Vietnam off watch list for potential upgrade"), 0)
+        self.assertEqual(bt.polarity("Singapore upgrades 2026 GDP growth forecast"), 0)
+        self.assertEqual(bt.polarity("Vietnam strengthens global credit standing with R&I upgrade to BBB"), 0)
+        self.assertEqual(bt.polarity("Vietnam Plans Index Options for Next Year After FTSE Upgrade"), 1)
+        self.assertEqual(bt.josa("FTSE 재분류", "과", "와"), "와")
+        self.assertEqual(bt.josa("MSCI 결정", "과", "와"), "과")
+        self.assertEqual(bt.josa("싱가포르 법인(PTSS)", "은", "는"), "은")
+        self.assertEqual(bt.cite({"title": "Indonesian stocks slide", "src": "Reuters", "date": "2026-10-25"}), "Reuters 10/25 보도")
         self.assertEqual(bt.polarity("GIC, Temasek rebut allegations of pressuring MSCI to downgrade Indonesia"), 0)
         self.assertEqual(bt.polarity("Why is Indonesia facing a rare MSCI downgrade"), -1)
         self.assertEqual(bt.countries_of("Indonesia stock exchange chief defends MSCI after ex-minister alleges Singapore interference"), ["ID"])

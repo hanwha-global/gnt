@@ -934,12 +934,14 @@
       const b = t.countries[c];
       const regime = b.regime === "NEG" ? '<span class="status status--soon">구조적 악재</span>' : b.regime === "POS" ? '<span class="status status--up">시장 지위 상향</span>' : "";
       const items = b.bullets.map((x) => `<li><span class="tk__cat ${TK_CAT[x.category] || ""}">${esc(x.category)}</span>${esc(x.text)}
-        <div class="tk__ev">${esc(x.evidence.join(" · "))}${(x.links || []).slice(0, 1).map((l) => ` <a href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.title || l.label)}">기사</a>`).join("")}</div></li>`).join("");
-      const quiet = b.last_check === "큰 변화 없음" && checked ? ` · ${checked} 확인, 큰 변화 없음` : "";
+        <div class="tk__ev">${esc(x.evidence.join(" · "))}${(x.links || []).filter((l) => /^https?:\/\//.test(l.url || "")).slice(0, 1).map((l) => ` <a href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.title || l.label)}">기사</a>`).join("")}</div></li>`).join("");
+      // 그날 확인에 실패한 나라는 '큰 변화 없음'이라 하지 않고 이전 문구를 유지한다고만 적는다
+      const quiet = !checked ? "" : b.last_check === "큰 변화 없음" ? ` · ${checked} 확인, 큰 변화 없음`
+        : b.last_check === "확인 실패" ? ` · ${checked} 확인 실패(이전 문구 유지)` : "";
       return `<section class="tk__col"><h4><span aria-hidden="true">${flag(c)}</span>${esc(b.country)}<span class="sub">${esc(b.entities.join(" · "))}</span>${regime}</h4>
         <ol class="tk__list">${items}</ol><p class="tk__foot">${md(b.changed_at)} 갱신(${esc((b.reason || []).join(", "))})${quiet}</p></section>`;
     }).join("");
-    return `<div class="card span12 tk"><h3>나라별 실행 방향</h3>
+    return `<div class="card span12 tk"><h3>나라별 자동 전략 의견</h3>
       <p class="card__meta">당사 현지법인이 있는 나라마다 공시·시장 지표·뉴스를 규칙으로 읽어 만든 자동 의견입니다(LLM 없음, 회사 공식 입장 아님). 매일 아침 확인하고 큰 변화가 있을 때만 바꿉니다.</p>
       ${tmeta(`줄마다 근거의 시점${checked ? ` · 마지막 확인 ${checked} KST` : ""}`, "")}<div class="tk__grid">${cols}</div></div>`;
   }
