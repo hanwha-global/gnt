@@ -5,7 +5,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-UA = "HanwhaGlobalNetworkDashboard/1.0 (github.com/jeongpilchoi1992-hash/global-network-dashboard)"
+UA = "HanwhaGlobalNetworkDashboard/1.0 (github.com/hanwha-global/gnt)"
 
 
 def get(url, params=None, headers=None, retries=3, timeout=30):

@@ -3,6 +3,8 @@
 한화투자증권 미래전략실 글로벌네트워크팀용 대시보드입니다. 공시자료를 기준으로
 **글로벌 · 국내 · 한화투자증권** 세 영역의 해외 네트워크를 한 화면에서 봅니다.
 
+사이트: https://hanwha-global.github.io/gnt/
+
 | 영역 | 내용 | 데이터 | 갱신 |
 |---|---|---|---|
 | 글로벌 | 권역별 증권사 순위(한국·미국·일본·베트남·싱가포르·인도네시아·아부다비) + 시장별 한국계 현지법인 | DART, SEC EDGAR, 거래소·언론 발표 | 한국·미국 매주 자동 / 그 외 출처·기준일 표기 |
@@ -43,6 +45,7 @@ scripts/              수집·빌드 스크립트(Python 표준 라이브러리�
 
 ### 처음 한 번 설정
 
+- (선택) Settings → Secrets and variables → Actions → Variables: `REMINDER_ASSIGNEE` = 대외보고 알림 이슈를 배정할 GitHub 계정(비우면 jeongpilchoi1992-hash)
 - Settings → Secrets and variables → Actions: `DART_API_KEY`(필수), `ECOS_API_KEY`(한화 탭 매크로용)
 - Settings → Pages → Source: **GitHub Actions**
 - Settings → Secrets and variables → Actions → `SEC_USER_AGENT` = `이름 이메일주소` (SEC가 연락처 없는 요청을 403으로 막음. Secrets에 두면 로그에서 가려짐, Variables도 동작)
