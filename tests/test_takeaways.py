@@ -1227,6 +1227,29 @@ class TakeawaysTest(unittest.TestCase):
             self.assertIsNone(bt.NEW_STEP_RE.search(t), t)
         self.assertFalse(bt.reg_hit("IDX suspends trading of brokerage firm shares after unusual price movement"))
 
+    def test_ambiguous_headlines_keep_the_decision_pending(self):
+        # 애매한 제목은 안도·결정으로 세지 않는다: 모면 '여부·유력·사활·면해달라', 해소에 '나섰지만 역부족·충분할까', '해소로 이어지면',
+        # 'asks MSCI not to reclassify', 'will avoid', 'eye … once', 'Did … avoid …?'
+        for t in ("인니 증시, MSCI 강등 모면 여부 주목", "인니 당국, MSCI 강등 모면 사활", '인니 "MSCI, 강등 면해달라"', "인니 정부, MSCI 강등 우려 해소에 나섰지만 역부족",
+                  "인니 자유유통주식 확대, MSCI 강등 우려 해소에 충분할까", "인니 증시 개혁, MSCI 강등 우려 해소로 이어지면 외국인 복귀", "MSCI 인니 강등 철회 이뤄질까",
+                  "Indonesia asks MSCI not to reclassify its stock market", "Indonesia will avoid MSCI reclassification, OJK chief says",
+                  "Fund managers eye Indonesia return once MSCI downgrade fears ease", "Did Indonesian stocks avoid MSCI reclassification?"):
+            self.assertFalse(bt.relief(t), t)
+        for t in ("인도네시아 MSCI 강등 모면 외국인 순매수 전환", "Indonesian stocks set to rally as MSCI once again rules out downgrade", "Why wasn't Indonesia downgraded by MSCI?"):
+            self.assertTrue(bt.relief(t), t)
+        # 물음은 조동사로 시작해 결정 자체를 물을 때만 아직('now MSCI has cut …?·stocks downgraded by MSCI?·MSCI-demoted'는 지난 결정)
+        for t in ("Can Indonesian stocks recover now MSCI has cut them to frontier?", "What next for Indonesia, demoted to frontier by MSCI?",
+                  "Is it time to buy Indonesian stocks downgraded to frontier by MSCI?", "Is MSCI-demoted Indonesia a buy?",
+                  "Vietnam not reclassified as MSCI downgrades Indonesia to frontier"):
+            self.assertTrue(bt.confirmed(t), t)
+        self.assertFalse(bt.confirmed("Indonesia will be downgraded to frontier by MSCI, analysts say"))
+        # MSCI·FTSE의 재경고는 새 단계(사이 낱말·수동형 포함), 다른 기관의 경고는 아님 · 증권사 거래정지는 뒤에 'stock'이 나와도 제재
+        for t in ("MSCI once again warns Indonesia of possible downgrade", "FTSE Russell warns Indonesia again over possible reclassification",
+                  "Indonesia warned again by MSCI of possible downgrade", "MSCI, 인니 증시 강등 가능성 또다시 경고"):
+            self.assertIsNotNone(bt.NEW_STEP_RE.search(t), t)
+        self.assertIsNone(bt.NEW_STEP_RE.search("MSCI 강등 여파에 OJK 또다시 경고"))
+        self.assertTrue(bt.reg_hit("SGX RegCo suspends trading of brokerage firm for breaching stock exchange rules"))
+
     def test_indonesia_reclassification_story_does_not_hit_vietnam(self):
         # 'MSCI keeps Vietnam on watch list, opens consultation on Indonesia reclassification'은 인니 악재일 뿐 베트남 호재 줄을 빼지 않는다
         first = self.run_at(TODAY, {})

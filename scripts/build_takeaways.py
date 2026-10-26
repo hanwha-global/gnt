@@ -74,15 +74,19 @@ _K = r"[^…;,.:·]"   # 한글 제목의 한 절(… , · 로 끊음)
 _KT = r"(?:(?!지만|으나|는데|면서도)[^…;,.:·])"
 # 신흥시장 유지(keep·retain·maintain)는 나라·시장이 바로 목적어일 때만('keeps rates steady as EM …'·'retain gains as … upgrade'는 아님)
 _OBJ = r"(?:Indonesia|Vietnam|Viet Nam|Singapore|(?:Indonesian|Vietnamese|Singaporean|Jakarta)\s+(?:stocks|equities|shares|market|bourse)|the (?:country|market|bourse)|it)(?:['’]s)?"
-# 한글 안도 표현은 끝난 말(해소됐·해소에·피했다)만: '해소 위해·나서·기대·될까·진정 안 돼'는 아직 걸린 일
-_KNOT = r"위해|위한|나서|역부족|기대|될까|총력|안간힘|안\s*돼|못|과제|촉구|요구|요청|가능|\?|지\s*주목|실패|어려|쉽지|불투명|대책|방안|노력"
-# 물음 끝(…까)은 안도 말에 바로 붙을 때만('면해줄까·해소됐을까'). '해소에 인니 증시 반등할까'는 해소가 이미 난 일
-_NOTYET = rf"(?!{_KT}*?(?:{_KNOT}))(?!\S{{0,4}}까(?=\s|$))"
-RELIEF_RE = re.compile(rf"\bnot (to )?(be )?downgrad|\bno downgrade|\b(won|doesn|didn|isn|wasn|weren)['’]t (be )?downgrad|\bavoid(s|ed)\b{_C}{{0,20}}downgrad|\bspar(es|ed)\b{_C}{{0,30}}downgrad|"
+# 한글 안도 표현은 끝난 말(해소됐·해소에·피했다)만: '해소 위해·나서·기대·될까·진정 안 돼·여부·전망·사활'은 아직 걸린 일.
+# 애매하면 안도로 세지 않는다('MSCI 결정 전까지'가 남는 쪽이 더 조심스러운 문구). 물음 끝 '…까'도 아직(시장 반응을 묻는 '반등할까'는 예외)
+_KNOT = (r"위해|위한|나서|나섰|나선|나설|힘쓰|힘썼|주력|시도|역부족|기대|될까|총력|안간힘|안\s*돼|못|과제|촉구|요구|요청|가능|\?|지\s*주목|실패|어려|쉽지|불투명|대책|방안|노력|"
+         r"여부|전망|유력|관측|예상|촉각|시험대|갈림길|사활|고심|달라|해\s*달|(?<!반등할)(?<!급등할)(?<!상승할)(?<!회복할)(?<!오를)까(?=\s|$)")
+_NOTYET = rf"(?!{_K}*?(?:{_KNOT}))"
+# 이미 끝난 말(해소됐·무산됐) 뒤에서는 대조 접속 뒤의 다른 이야기('…지만 외국인 복귀는 불투명')를 보지 않는다
+_NOTYET_DONE = rf"(?!{_KT}*?(?:{_KNOT}))"
+RELIEF_RE = re.compile(rf"\bnot (to )?(be )?downgrad|\bno downgrade|\b(won|doesn|didn|isn|wasn|weren)['’]t (be )?downgrad|\b(wasn|weren)['’]t\s+(\w+\s+){{1,2}}downgraded|\bavoid(s|ed)\b{_C}{{0,20}}downgrad|\bspar(es|ed)\b{_C}{{0,30}}downgrad|"
                        rf"\bescap(es|ed)\b{_C}{{0,20}}downgrad|\b(dodge[sd]|averts|averted|sidestep(s|ped)|stave[sd])\b{_C}{{0,20}}downgrad|"
                        rf"\bdecid(es|ed) against\b{_C}{{0,20}}downgrad|"
-                       rf"\b(avoid(s|ed)?|escap(es|ed)|spar(es|ed)|dodge[sd]|averts|averted)\b{_C}{{0,20}}reclassif|\bdecid(es|ed) (against|not to)\s+reclassif|"
-                       rf"(\b(won|doesn|didn|isn)['’]t|\bnot)\s+(to\s+)?(be\s+)?reclassif(?!{_C}*\b(yet|until|before)\b)|\bno reclassification\b(?!\s+(decision|yet|before|until)\b)|"
+                       rf"\b(avoid(s|ed)|escap(es|ed)|spar(es|ed)|dodge[sd]|averts|averted)\b{_C}{{0,20}}reclassif|\b(stocks|equities|shares|markets?|bourses?)\s+avoid\s+(\w+\s+){{0,2}}reclassif|\bdecid(es|ed) (against|not to)\s+reclassif|"
+                       rf"(\b(won|doesn|didn|isn)['’]t|\b(will|does|did|is)\s+not)\s+(be\s+)?reclassif(?!{_C}*\b(yet|until|before)\b)|\bnot\s+(be\s+)?reclassified\b(?!{_C}*\b(yet|until|before)\b)|"
+                       rf"\bno reclassification\b(?!\s+(decision|yet|before|until)\b)|"
                        r"\b(drops|dropped|abandons|abandoned|withdraws|withdrew|scraps|scrapped)\s+(its\s+|the\s+)?(plans?|proposals?|bid)\s+(to|for)\s+(\w+\s+){0,3}(downgrad|demot|cut|move|reclassif)|"
                        r"\b(drops|dropped|abandons|abandoned|withdraws|withdrew)\s+(\w+\s+){0,2}downgrade (plan|proposal)|"
                        r"\b(scrap|shelv)\w* (\w+ ){0,2}downgrad|\brules? out (\w+ ){0,3}downgrad|"
@@ -90,18 +94,20 @@ RELIEF_RE = re.compile(rf"\bnot (to )?(be )?downgrad|\bno downgrade|\b(won|doesn
                        r"(fears?|concerns?|worr\w*) (of|over|about) (an? )?(MSCI |FTSE )?downgrade (eas|fad|reced|subsid)\w*|"
                        rf"\b(keep|retain|maintain)(s|ed)?\s+{_OBJ}\s+(as (an? )?|in (the |its )?)(emerging[- ]markets?|EM)\b(?!{_C}{{0,15}}upgrad)|"
                        r"\b(keep|retain|maintain)(s|ed)?\s+(\w+['’]s\s+|its\s+|the\s+)?((MSCI|FTSE)\s+)?emerging[- ]markets?\s+(status|classification|tag|label)|"
-                       rf"remains? (in (the )?|an? )emerging[- ]market|강등\s*(결정\s*)?(철회|무산){_NOTYET}|"
+                       rf"remains? (in (the )?|an? )emerging[- ]market|강등\s*(결정\s*)?(철회|무산){_NOTYET_DONE}|"
                        # 이미 피한 말(피했·피한·모면했)은 뒤의 '반등 기대·과제 남아'가 뒤집지 않는다. 맨 '모면·면해·피해가'는 애쓰는 말이 뒤에 없을 때만
                        rf"강등\s*(은|는)?\s*(위기\s*)?(을\s*|를\s*)?(\S+\s+)?(피해\s*(갔|간)|피했(?!나|을까|는지)|피한(?!다)|모면했|모면한(?!다)|면했|넘겼)(?!{_KT}*?(?:아니|아냐|못|\?))|"
-                       rf"강등\s*(은|는)?\s*(위기\s*)?(을\s*|를\s*)?(\S+\s+)?(피해\s*가(?=\s*$)|피한다|모면한다|모면(?!하려|할|하기|하자|하나|해야|책)|면해(?!야)){_NOTYET}|"
-                       rf"강등\s*(우려|공포|위기|리스크)\S*\s*(해소|완화|진정|일단락)(?=됐|되며|된|되자|돼(?!야)|했|하며|하자|에\s|로\s(?!\s*(이어질|이어지길|이어져야|이어지나|이어지려|이어지기|연결될|연결되길|연결되나))|\s*$|\s*[…;,.:·'\"’”]){_NOTYET}", re.I)
+                       rf"강등\s*(은|는)?\s*(위기\s*)?(을\s*|를\s*)?(\S+\s+)?(피해\s*가(?=\s*$)|피한다|모면한다|(?:모면|면해)(?=\s*(?:$|[…;,.:·'\"’”])|에\s|으로\s|\s*소식|\s*성공(?![할하을이])|\s+(?:\S+\s+){{0,2}}\S*(?:반등|급등|안도|상승|강세|환호|순매수|랠리))){_NOTYET}|"
+                       rf"강등\s*(우려|공포|위기|리스크)\S*\s*(해소|완화|진정|일단락)(?=됐|되며|된|되자|돼(?!야)|했|하며|하자){_NOTYET_DONE}|"
+                       rf"강등\s*(우려|공포|위기|리스크)\S*\s*(해소|완화|진정|일단락)(?=에\s|로\s(?!\s*(이어지|이어질|이어져야|이어진다|연결되|연결될|연결된다))|\s*$|\s*[…;,.:·'\"’”]){_NOTYET}", re.I)
 # 'fights to keep·reforms to retain·likely to remain·hopes MSCI won't'처럼 애쓰거나 바라거나 내다보는 말이 같은 절 앞에 있으면
 # 아직 안도가 아니다(기사 제목의 'Indonesia to remain in EM'은 '남는다'는 뜻이라 안도로 본다)
 HEDGE_RE = re.compile(r"\b(hop(e|es|ed|ing)|bets?|betting|confiden\w*|expect\w*|likely|probably|seen|set|poised|could|may(?!\s+(review|rebalanc\w*|index|reshuffle|decision|announcement|\d))|might|would|should|can|must|"
-                      r"why|whether|if|urg\w*|argu\w*|calls?|wants?|seeks?|aims?|fight\w*|scrambl\w*|rac(e|es|ing)|bids?|push\w*|tr(y|ies|ying)|"
+                      r"why|whether|if|urg\w*|argu\w*|calls?|wants?|seeks?|aims?|ask\w*|request\w*|lobb\w*|appeal\w*|plead\w*|petition\w*|fight\w*|scrambl\w*|rac(e|es|ing)|bids?|push\w*|tr(y|ies|ying)|"
                       r"struggl\w*|reforms?|plans?|moves?|steps?|measures?|efforts?|vows?|pledg\w*|works?|looks?|rush\w*|battl\w*|eye(s|ing)?|need\w*)\b", re.I)
 # when·once·while 앞 절의 전망 말('could rally when MSCI …')
-FORECAST_RE = re.compile(r"\b(could|would|may|might|can|will|should|must|set to|likely|poised|expect\w*|seen|hop(e|es|ed|ing)|bets?|betting|wants?|urg\w*|lobb\w*|aims?|seeks?|need\w*)\b", re.I)
+FORECAST_RE = re.compile(r"\b(could|would|may|might|can|will|should|must|set to|likely|poised|expect\w*|seen|hop(e|es|ed|ing)|bets?|betting|wants?|urg\w*|lobb\w*|aims?|seeks?|need\w*|"
+                         r"eye(s|ing)?|plans?|planning|looks?|looking|confiden\w*|probabl\w*|whether|if|vows?|pledg\w*|tr(y|ies|ying)|wait\w*|await\w*|prepar\w*|ready)\b", re.I)
 # 'won't rule out downgrade'처럼 부정한 안도 표현은 여전히 위협이다
 NOT_RELIEF_RE = re.compile(r"(\bnot|n't|\brefus\w* to|\bdeclin\w* to|\bcannot|\bunable to)\s+(\w+\s+){0,2}(rule|ruling)s? out", re.I)
 # 다른 계획이 철회·보류된 기사는 호재·악재 어느 쪽도 아니다
@@ -135,18 +141,21 @@ CONFIRMED_RE = re.compile(rf"(MSCI|FTSE){_C}{{0,25}}\b(downgrades|downgraded|rec
                           rf"(?:강등\s*(확정(?!\s*(전|이전|직전)(?:\s|$|[…;,.:·]))|했|됐|단행)(?!적|되면|될|돼야)|결국\s*(\S+\s*)?강등(?=\s*(?:$|[…;,.:·])))(?!{_K}*?(?:{_KWAIT_DONE}))|"
                           rf"강등\s*결정(?=\s*(?:내려|내렸|했|발표|에\s|으로|$|[…;,.:·'\"’”]))(?!{_K}*?(?:{_KWAIT_DONE}))", re.I)
 # 확정 표현과 같은 절에 붙은 조동사·위협·계획 표현(could be downgraded·moves to downgrade 등)은 아직 걸린 결정이다
-MODAL_RE = re.compile(r"\b(could|may|might|would|to be|set to|likely to|fac(es|ing)|risks?|threat\w*|warn\w*|propos\w*|consider\w*|weigh\w*)\s+(\w+\s+){0,2}(downgrad|cut|reclassif|mov|demot)|"
+MODAL_RE = re.compile(r"\b(could|may|might|would|will|to be|set to|likely to|fac(es|ing)|risks?|threat\w*|warn\w*|propos\w*|consider\w*|weigh\w*)\s+(\w+\s+){0,2}(downgrad|cut|reclassif|mov|demot)|"
                       r"\bmov\w* (closer|nearer|toward)|\bstep closer|\b(mov(es|ed|ing)?|plans?|propos\w*|seeks?|aims?|bid) to (\w+ ){0,2}(downgrad|cut|reclassif|demot|relegat|move)", re.I)
 # 부정한 수동형('hasn't (yet) been·shouldn't be·is not being downgraded')은 일어나지 않은 일. 'should not have been downgraded'는 지난 결정
 _NEG_PASSIVE = r"(downgraded|demoted|relegated|reclassified|cut|moved)"
-HYPO_RE = re.compile(rf"\b(if|whether|unless|in case)\b|what happens|\bdanger\b|\brisk(s|ing)? (of )?being\b|"
-                     rf"\b(wasn|weren|isn|aren|won|hasn|haven|shouldn|wouldn|couldn|can|mustn|needn)['’]t\s+(yet\s+)?(be\s+|been\s+|being\s+)?{_NEG_PASSIVE}|"
-                     rf"\bnot\s+(yet\s+)?((be|been|being)\s+)?{_NEG_PASSIVE}|\bnever\s+(been\s+)?(downgraded|demoted)", re.I)
+HYPO_RE = re.compile(r"\b(if|whether|unless|in case)\b|what happens|\bdanger\b|\brisk(s|ing)? (of )?being\b|\bnever\s+(been\s+)?(downgraded|demoted)", re.I)
+# 부정 수동형은 결정 표현과 같은 주어일 때만(앞 절 'Vietnam not reclassified as MSCI downgrades …'는 다른 이야기)
+NEG_PASSIVE_RE = re.compile(rf"\b(wasn|weren|isn|aren|won|hasn|haven|shouldn|wouldn|couldn|can|mustn|needn)['’]t\s+(yet\s+)?(be\s+|been\s+|being\s+)?{_NEG_PASSIVE}|"
+                            rf"\b(wasn|weren|isn|aren|hasn|haven)['’]t\s+(\w+\s+){{1,2}}(been\s+|being\s+)?{_NEG_PASSIVE}|"
+                            rf"\bnot\s+(yet\s+)?((be|been|being)\s+)?{_NEG_PASSIVE}", re.I)
 # 'moves to prevent … being downgraded'는 막으려는 일(아직). 'fails to avoid being downgraded'는 이미 난 일
 BEING_RE = re.compile(rf"\b(prevent|avoid|stop|keep|spare|shield|save)\w*\b{_C}{{0,40}}\bbeing\b", re.I)
 FAILED_RE = re.compile(r"\b(fail\w*\s+to|couldn['’]t|could\s+not|unable\s+to|did\s+not|didn['’]t)\s+$", re.I)
 # 물음 제목('Will MSCI cut Indonesia to frontier?')은 아직 일어나지 않은 일. 'now that·after·since …'로 지난 결정을 받거나 'Why·How'로 묻는 것은 지난 일
-QUESTION_PAST_RE = re.compile(r"\b(now that|after|since|following|because|when|as|once)\b", re.I)
+QUESTION_PAST_RE = re.compile(r"\b(now|after|since|following|because|when|as|once)\b", re.I)
+AUX_Q_RE = re.compile(r"\s*(will|would|could|should|shall|is|are|was|were|has|have|had|can|may|might|does|do|did)\b", re.I)
 CLAUSE_RE = re.compile(r"[;:…·]|,\s|\.\s|\s[-–—|]\s")
 # 내려진 강등의 후속 기사('… after MSCI downgrade', '강등 충격에', '… downgrade takes effect'): 결정은 이미 난 것으로 본다
 # (경고·검토·우려·가능성 기사는 아님. 'on MSCI downgrade …'는 위협 기사에도 쓰여 넣지 않는다)
@@ -161,8 +170,9 @@ _MONTH = r"(January|February|March|April|May|June|July|August|September|October|
 _STEP = r"(review|consultation|downgrade|cut|demotion|reclassification|step|warning)"
 NEW_STEP_RE = re.compile(rf"review|consult|watch ?list|\bnext\b|\b(further|additional|another|fresh|new)\s+{_STEP}|"
                          rf"\b(cut|cuts|downgrad\w*|demot\w*|reclassif\w*)\s+((Indonesia|Vietnam|Singapore|it|the market|the country|Indonesian stocks)\s+)?(further|again)\b|"
-                         rf"(MSCI|FTSE)\S*\s+(again\s+)?warn\w*\s+(\w+\s+){{0,3}}again\b|(MSCI|FTSE)\S*\s+again\s+warn|(MSCI|FTSE)\S*\s+warn\w*\s+(\w+\s+)?(of\s+)?(further|additional|fresh|new)\s+(action|steps?|measures?)|"
-                         rf"(MSCI|FTSE)\S*\s*(\S+\s+){{0,2}}(추가|재차)\s*조치\s*경고|(MSCI|FTSE)\S*\s*(\S+\s+){{0,2}}또다시\s*경고|또다시\s*강등|"
+                         rf"(MSCI|FTSE)\S*(\s+Russell)?\s+(\w+\s+){{0,2}}warn\w*\s+(\w+\s+){{0,3}}again\b|(MSCI|FTSE)\S*(\s+Russell)?\s+((once|yet)\s+)?again\s+warn|"
+                         rf"(MSCI|FTSE)\S*(\s+Russell)?\s+(\w+\s+){{0,2}}warn\w*\s+(\w+\s+)?(of\s+)?(further|additional|fresh|new)\s+(action|steps?|measures?)|\bwarn\w*\s+again\s+by\s+(MSCI|FTSE)|"
+                         rf"(MSCI|FTSE)\S*?(\s*Russell)?\s*(?:(?:,|가|는|측|도)\s*{_K}{{0,25}}?|\s*)(또다시|재차|추가)\s*(조치\s*)?경고|또다시\s*강등|"
                          rf"\bdecision (is )?(due|expected|scheduled|slated)\b|\b(due|expected|scheduled|slated) (in|by) {_MONTH}|검토|의견 ?수렴|관찰|"
                          rf"(추가|재차)\s*(강등|검토|의견|경고)|강등\s*(추가|재차)|결정\s*(은|는)?\s*(내년|다음|\d+월|\d{{4}}년)|결정\s*예정", re.I)
 UPGRADE_CTX_RE = re.compile(r"upgrad|inclusion|승격|편입|reclassif|watch ?list", re.I)
@@ -184,7 +194,7 @@ REG_RE = re.compile(r"manipulat|fraud|scam|과징금|과태료|경영유의|적�
 # ban·suspend 는 처분 대상(증권사·임직원·인가)이 있을 때만('short-selling ban'·'suspends trading of shares'는 시장 조치)
 _PARTY = r"(broker\w*|brokerage|securities (firm|company|companies|broker\w*)|firms?|individuals?|former|directors?|traders?|employees?|representatives?|licen[cs]es?)"
 REG_FINE_RE = re.compile(rf"sanction|\bfine[ds]?\b(?!-)|penal(t|is|iz)|revok\w*\s+(\w+\s+){{0,2}}licen[cs]e|licen[cs]e\s+(revoc|revok|suspen)|"
-                         rf"suspend\w*\s+(?!(\w+\s+)?(trading|shares|stocks|listing|securities)\s+(of|in)\s+(?!(\w+\s+){{0,2}}(broker\w*|securities (firm|compan))(?!{_C}*\b(shares|stocks?)\b)))(\w+\s+){{0,3}}{_PARTY}|(broker\w*|securities firm)\s+(\w+\s+){{0,3}}suspen|"
+                         rf"suspend\w*\s+(?!(\w+\s+)?(trading|shares|stocks|listing|securities)\s+(of|in)\s+(?!(\w+\s+){{0,2}}(broker\w*\b|securities (firm|compan)\w*\b)(?!['’]s\s+(shares|stocks?)\b|\s+(firm\s+|company\s+)?(shares|stocks?)\b)))(\w+\s+){{0,3}}{_PARTY}|(broker\w*|securities firm)\s+(\w+\s+){{0,3}}suspen|"
                          rf"\bbann?(ed|s)?\s+(\w+\s+){{0,3}}{_PARTY}|\bbanned from|reprimand|censur|insider trading", re.I)
 # 한글 '제재·위반·벌금'은 감독기관 이름이 빠진 제목이 많아 외교·통상 제재만 아니면 센다
 REG_KO_RE = re.compile(r"제재|위반|벌금")
@@ -357,7 +367,7 @@ def relief_match(title):
         lead = title[clause_start(title, m.start()):m.start()]
         # 'stocks set to rally after MSCI decides against …'처럼 앞 절의 전망은 안도를 바라는 말이 아니다: 마지막 접속어 뒤만 본다.
         # 다만 'could rally when·once MSCI …'처럼 when·once·while 앞이 전망이면 그 안도도 아직 오지 않은 일
-        parts = re.split(r"\b(as|after|when|while|since|because|once|following)\b", lead, flags=re.I)
+        parts = re.split(r"\b(as|after|when|while|since|because|once(?!\s+(?:again|more)\b)|following)\b", lead, flags=re.I)
         own = parts[-1]
         ahead = len(parts) > 1 and parts[-2].lower() in ("when", "while", "once") and FORECAST_RE.search("".join(parts[:-2]))
         # 이미 지난 일('wasn't downgraded')은 'Why …'로 시작해도 안도다
@@ -366,6 +376,9 @@ def relief_match(title):
             continue
         # 재분류를 피한 기사는 인도네시아(강등 쪽)만 안도다(베트남은 승격이 미뤄진 것)
         if RECLASS_RE.search(m.group(0)) and (not (countries_of(title) == ["ID"] or ID_RECLASS_RE.search(title)) or UP_WORD_RE.search(title)):
+            continue
+        # 'Will MSCI keep Indonesia in EM?·Did stocks avoid reclassification?'는 아직 모르는 일
+        if yes_no_ask(title, clause_start(title, m.start()), m):
             continue
         return m
     return None
@@ -388,10 +401,26 @@ def confirm_match(title):
         b = BEING_RE.search(lead)
         if b and FAILED_RE.search(title[a:b.start()]):
             b = None
-        ask = clause.rstrip().endswith("?") and not QUESTION_PAST_RE.search(title[a:m.start()]) and not re.match(r"\s*(why|how)\b", clause, re.I)
-        if not MODAL_RE.search(clause) and not HYPO_RE.search(lead) and not b and not ask:
+        own = re.split(r"\b(?:as|after|when|while|since|because|once|following)\b", title[a:m.start()], flags=re.I)[-1] + m.group(0)
+        if not MODAL_RE.search(clause) and not HYPO_RE.search(lead) and not NEG_PASSIVE_RE.search(own) and not b and not yes_no_ask(title, a, m):
             return m
     return None
+
+
+def yes_no_ask(title, a, m):
+    """m 이 '?'로 끝나는 예/아니오 물음의 본뜻인가('Will MSCI cut …?·Has MSCI downgraded …?·MSCI to cut …?').
+    'now·after·since …'로 지난 결정을 받거나, 조동사에서 멀리 떨어진 꾸밈말('Is it time to buy stocks downgraded by MSCI?')·
+    'MSCI-demoted'는 지난 일."""
+    nxt = CLAUSE_RE.search(title, m.end())
+    if not title[a:nxt.start() if nxt else len(title)].rstrip().endswith("?") or re.match(r"(MSCI|FTSE)-", m.group(0), re.I):
+        return False
+    head = title[max([0] + [x.end() for x in re.finditer(r"[.?!]\s", title[:m.start()])]):m.start()]
+    if QUESTION_PAST_RE.search(head):
+        return False
+    if re.search(r"\bto\s+$", head, re.I):
+        return True
+    q = AUX_Q_RE.match(head)
+    return bool(q) and len(head[q.end():].split()) <= 4
 
 
 def confirmed(title):
