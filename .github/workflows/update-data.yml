@@ -54,6 +54,12 @@ jobs:
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python scripts/fetch_sub_trend.py
+      - name: 국내 전체 증권사 자기자본 순위 (DART 주요계정, 제출 기한 지난 최근 기간)
+        if: ${{ !inputs.quick }}
+        continue-on-error: true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python scripts/broker_rank.py
       - name: 해외진출 뉴스 (매일은 news.yml, 여기서도 한 번)
         continue-on-error: true
         run: |

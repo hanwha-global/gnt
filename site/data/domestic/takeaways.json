@@ -1,0 +1,370 @@
+{
+ "spec_version": 2,
+ "checked_at": "2026-10-27T03:32+09:00",
+ "countries": {
+  "VN": {
+   "country": "베트남",
+   "entities": [
+    "베트남 법인(PTSV)"
+   ],
+   "regime": "POS",
+   "bullets": [
+    {
+     "rule": "R01",
+     "variant": "acquire",
+     "category": "M&A·지분",
+     "text": "베트남 법인(PTSV)은 증자만으로는 격차가 커, 현지 증권사 지분 인수로 규모·수익을 함께 키우는 방안을 검토할 만합니다.",
+     "evidence": [
+      "FY2025 자기자본 881억원, 한국계 6사 중 6위(당사 제외 중간값 2,485억원, DART)",
+      "ROE 3.9% vs 현지 상장사 11곳 중간값 10.6%",
+      "국내 보도 '자본금 확대' 등 3건(10/1~10/2, 최근 45일)"
+     ],
+     "links": [
+      {
+       "label": "자본금 확대",
+       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qZDVRZ2cyQkozMlJyWTc2eDNnLUZQMGlnanlVTUhxMkxXVjZkZHREM3hNUXFQY0xCTkIzOUhzdVlub0FoNWtvaGlYS3FBQzY5RWhNVXpVemlhb0ZvNFdjeFBHTkFBenpU0gFuQVVfeXFMUG5YaXJwZ01sdndHektINGhHMnZac1lhdHZrcDBLWnJnbXRmbGVydUdTWmUySUJmRjRjV01pcC1MR1lWSHd1YjNJZmpoN1FwNjZuVU5DYVF0eHFURmRONHhMMmU0aEhEeXE0UVRpSHc?oc=5",
+       "title": "베트남 진출 국내 증권사의 숙제 '자본금 확대'"
+      }
+     ],
+     "bucket": [
+      "acquire",
+      6,
+      6
+     ],
+     "keys": [
+      "VN"
+     ]
+    },
+    {
+     "rule": "R07",
+     "variant": "deriv",
+     "category": "상품·제휴",
+     "text": "FTSE 편입에 맞춰 베트남 법인(PTSV)의 외국인 기관 영업과 지수옵션 등 파생상품 준비를 검토할 만합니다.",
+     "evidence": [
+      "FTSE 신흥시장 편입 2026-09-21 발효",
+      "Vietnam Investment Review - VIR 10/20 '시장 승격 이후 과제' 등 구조 뉴스 2건(최근 30일)"
+     ],
+     "links": [
+      {
+       "label": "시장 승격 이후 과제",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSk9mNHkyaFNudkZpZDZfQjZpUk5wTzhOT3NlNUN0cVlmcjR0VTJtbEhoTXI3RDJUV0RZM2gyajNFN1RiU2Mwa3V5NWpNeVNzekdWTjk1OGhkZFQ4Zm9CMUJabzF4d2xmNGVXVXRYQWV5empuWmNLQkF5akFpaHlPdEtSTTh5VkJjMUkyWEQ5TXZtWm4zcWNnTndTV2lyOEVyRndxX3RCbGd6VWpOSEppMl9mekxSTE5EampUR3FvZTNmblU?oc=5",
+       "title": "Market upgrade is just the beginning: Vietnamese companies face tougher test to attract capital"
+      },
+      {
+       "label": "지수옵션 도입 계획",
+       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWFlJTU1wa3VHeUtFcmtqRGllWngwYzFwSDlMLVVmUEMzaE5EUGR4TU03Q0FHeWc0LUhIVmJUSFhtdUJqWm12SVN1SDF3dFZrUW1fUEhsSHJ1aW1RcGxMUVR2TC1ZazkzQklfTXQwYWtLaEZ4UXI4Z05yeHphbl84VkJxbmF1YmlVYS1qMmI1V0k1bWZlQUIwVmlUZlhCc240LXlJOG9yRjlWNmxGV0hMcA?oc=5",
+       "title": "Vietnam Plans Index Options for Next Year After FTSE Upgrade"
+      }
+     ],
+     "bucket": [
+      "POS"
+     ],
+     "keys": [
+      "VN"
+     ]
+    },
+    {
+     "rule": "R12",
+     "variant": "",
+     "category": "구조조정·비용",
+     "text": "베트남 법인(PTSV) 비용 증가율을 매출 증가율 이하로 묶는 비용 상한 관리를 검토할 만합니다.",
+     "evidence": [
+      "1H26 비용 +18.5% vs 매출 +11.5%(FY2025 반기 환산 대비, DART)",
+      "순이익률 FY2025 15.9%·1H26 10.7% vs 한국계 흑자 5사 FY2025 중간값 18.3%"
+     ],
+     "links": [],
+     "bucket": [
+      -2
+     ],
+     "keys": [
+      "VN"
+     ]
+    },
+    {
+     "rule": "MKT",
+     "variant": "targeted",
+     "category": "마케팅·고객",
+     "text": "베트남 법인(PTSV)은 전면 수수료 인하 대신 은행·핀테크 제휴와 타깃 프로모션으로 신규 고객 유입을 늘리는 방안을 검토할 만합니다.",
+     "evidence": [
+      "HOSE 2Q26 점유율 TCBS 9.36%·VPBankS 3.57%로 최고치(2026-07 HOSE 발표)",
+      "HOSE 2Q26 10위 진입선 2.94%에 한국계 2곳, 베트남 법인(PTSV)은 10위 밖(2026-07 HOSE 발표)",
+      "VN-Index 1주 +4.4%·3개월 +4.6%(10/26), 2026-02 고점 대비 -6.2%"
+     ],
+     "links": [],
+     "bucket": [],
+     "keys": [
+      "VN"
+     ]
+    }
+   ],
+   "changed_at": "2026-10-27",
+   "reason": [
+    "첫 생성"
+   ],
+   "last_check": "갱신",
+   "candidates": [
+    {
+     "rule": "R02",
+     "variant": "",
+     "why_not": "R01에 합침"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-27",
+     "fp": "f54921dd7f2a",
+     "rules": [
+      "R01",
+      "R07",
+      "R12",
+      "MKT"
+     ],
+     "reason": [
+      "첫 생성"
+     ]
+    }
+   ]
+  },
+  "ID": {
+   "country": "인도네시아",
+   "entities": [
+    "인도네시아 증권(CSA)",
+    "인도네시아 운용(CAM)"
+   ],
+   "regime": "NEG",
+   "bullets": [
+    {
+     "rule": "R08",
+     "variant": "NEG",
+     "category": "리스크·규제",
+     "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도와 담보 비율을 보수적으로 점검할 만합니다.",
+     "evidence": [
+      "CNA 10/26 '시세조종 대책 강화' 등 부정 구조 뉴스 3건(최근 30일)",
+      "IDX 1개월 -13.9%, 연초 대비 -37.9%(10/26)"
+     ],
+     "links": [
+      {
+       "label": "시세조종 대책 강화",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMlBGd2pJTXdBQm84MEhpTzRDaFRzSHZBcXF5RlROWHhXNG5FeC16dEdyMnRqRU4xcmlpUjdIcnIxVUdmUTZsN3ZPNjEwcm5kaDBoUlp6c25jdHYtUzJ1MC1pQ0ZJM0c5ekQ1LWdZOHRMYmpSNF9BTE5HTTVNcHFHUl9VNUZlV1J1QTdIcXIyempPc3pkV2R0SDN3?oc=5",
+       "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI"
+      },
+      {
+       "label": "MSCI 강등 검토",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5",
+       "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?"
+      }
+     ],
+     "bucket": [
+      "NEG",
+      "MSCI 결정"
+     ],
+     "keys": [
+      "CSA",
+      "CAM"
+     ]
+    },
+    {
+     "rule": "R13",
+     "variant": "",
+     "category": "구조조정·비용",
+     "text": "인도네시아 증권(CSA)·인도네시아 운용(CAM) 백오피스·IT·준법 통합으로 중복 고정비 축소를 검토할 만합니다.",
+     "evidence": [
+      "1H26 두 법인 순손실 12.2억원, 비용 85.2억원 vs 매출 73.0억원(DART 2026.06 반기보고서)",
+      "인도네시아 증권(CSA) FY2025 순이익 27.2억원에서 적자 전환",
+      "IDX 2026-09 일평균 거래대금 연초 이후 평균 대비 -27%(IDX 회원사 집계)"
+     ],
+     "links": [],
+     "bucket": [
+      2,
+      -2
+     ],
+     "keys": [
+      "CSA",
+      "CAM"
+     ]
+    },
+    {
+     "rule": "R04",
+     "variant": "gated",
+     "category": "M&A·지분",
+     "text": "인도네시아 현지 증권사 인수는 원화 비용이 낮아졌어도 MSCI 결정과 손익 회복 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다.",
+     "evidence": [
+      "IDX 5,373(10/26), 최근 1년 고점(2025-12 월말) 대비 -37.9% · 루피아 원화 대비 연초 이후 -14.8%(ECOS 10/26) · 원화 환산 지수 연초 대비 -47.0%"
+     ],
+     "links": [],
+     "bucket": [
+      "gated"
+     ],
+     "keys": [
+      "CSA",
+      "CAM"
+     ]
+    },
+    {
+     "rule": "MKT",
+     "variant": "reallocate",
+     "category": "마케팅·고객",
+     "text": "인도네시아 증권(CSA) 고정비 절감분을 모바일 온보딩·디지털 수수료 프로모션에 재배분해 점유율 회복을 검토할 만합니다.",
+     "evidence": [
+      "IDX 2026-09 거래대금 점유율 디지털 3사 19.3%(Stockbit 1위 12.6%) vs 인도네시아 증권(CSA) 0.83%(26위)",
+      "인도네시아 증권(CSA) IDX 점유율 7~9월 평균 0.78%, 1~6월 0.57%(3월 일회성 제외, IDX 회원사 집계)"
+     ],
+     "links": [],
+     "bucket": [],
+     "keys": [
+      "CSA"
+     ]
+    }
+   ],
+   "changed_at": "2026-10-27",
+   "reason": [
+    "첫 생성"
+   ],
+   "last_check": "갱신",
+   "candidates": [
+    {
+     "rule": "R06",
+     "variant": "rate-up",
+     "why_not": "4개 마감"
+    },
+    {
+     "rule": "R10",
+     "variant": "고객 대상 사기 증가",
+     "why_not": "4개 마감"
+    },
+    {
+     "rule": "R09",
+     "variant": "trend",
+     "why_not": "4개 마감"
+    },
+    {
+     "rule": "R11",
+     "variant": "",
+     "why_not": "R13에 합침"
+    },
+    {
+     "rule": "R14",
+     "variant": "",
+     "why_not": "R13에 합침"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-27",
+     "fp": "d6c0f46b85fe",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "MKT"
+     ],
+     "reason": [
+      "첫 생성"
+     ]
+    }
+   ]
+  },
+  "SG": {
+   "country": "싱가포르",
+   "entities": [
+    "싱가포르 법인(PTSS)"
+   ],
+   "regime": null,
+   "bullets": [
+    {
+     "rule": "R11",
+     "variant": "widen",
+     "category": "구조조정·비용",
+     "text": "싱가포르 법인(PTSS)은 비용이 매출의 5.4배라, 고정비를 매출 규모에 맞추는 조직 축소·재편을 검토할 만합니다.",
+     "evidence": [
+      "1H26 순손실 11.8억원(FY2025 순손실 15.3억원), 매출 2.7억원(DART 2026.06 반기보고서)",
+      "STI 1H26 +11.3%에도 같은 기간 매출은 FY2025 반기 환산 대비 -19.5%"
+     ],
+     "links": [],
+     "bucket": [
+      "widen"
+     ],
+     "keys": [
+      "SG"
+     ]
+    },
+    {
+     "rule": "R05",
+     "variant": "",
+     "category": "자본",
+     "text": "싱가포르 법인(PTSS) 증자 자금은 한 번에 쓰기보다 단계별로 나눠 집행하고, 분기마다 매출 성과를 점검할 만합니다.",
+     "evidence": [
+      "1H26 중 출자 101.4억원(DART 2026.06 반기보고서 타법인출자현황) 후 자본 대비 매출 3.7%(1H26 연환산) vs FY2025 14.1%"
+     ],
+     "links": [],
+     "bucket": [
+      10142.0
+     ],
+     "keys": [
+      "SG"
+     ]
+    },
+    {
+     "rule": "R03",
+     "variant": "",
+     "category": "M&A·지분",
+     "text": "싱가포르 법인(PTSS)은 현지 상장사 인수 부담이 커, 지분 인수보다 제휴·JV형 확장을 우선 검토할 만합니다.",
+     "evidence": [
+      "SGX 상장 증권사 2곳 시가총액 2.5~3.0조원(10/26 주가) vs 당사 자기자본 2.26조원(2026 반기보고서 연결, DART)"
+     ],
+     "links": [],
+     "bucket": [],
+     "keys": [
+      "SG"
+     ]
+    },
+    {
+     "rule": "R18",
+     "variant": "",
+     "category": "상품·제휴",
+     "text": "보도된 RWA 협력을 싱가포르 법인(PTSS) 투자자문·IB 상품으로 잇는 저비용 사업화를 검토할 만합니다.",
+     "evidence": [
+      "이투데이 2026-07-10 '카이아, 한화투자증권 싱가포르 법인ㆍ갈락티카와 RWA 협력'",
+      "싱가포르 토큰증권 제도 SFA·Guardian 시행 중(디지털자산 규제 탭)"
+     ],
+     "links": [
+      {
+       "label": "보도",
+       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRHlqUFRIcngzaUtJek93Z0VZMXBCUkNDWHhFMFpuSER3QlM2NUhlTkIyN182QnJ6NDYxeUNFa0ZaWDhpSC16TnRUT19hazhJSjdKQQ?oc=5",
+       "title": "카이아, 한화투자증권 싱가포르 법인ㆍ갈락티카와 RWA 협력"
+      }
+     ],
+     "bucket": [
+      "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRHlqUFRIcngzaUtJek93Z0VZMXBCUkNDWHhFMFpuSER3QlM2NUhlTkIyN182QnJ6NDYxeUNFa0ZaWDhpSC16TnRUT19hazhJSjdKQQ?oc=5"
+     ],
+     "keys": [
+      "SG"
+     ]
+    }
+   ],
+   "changed_at": "2026-10-27",
+   "reason": [
+    "첫 생성"
+   ],
+   "last_check": "갱신",
+   "candidates": [],
+   "history": [
+    {
+     "date": "2026-10-27",
+     "fp": "a1ea8857f88f",
+     "rules": [
+      "R11",
+      "R05",
+      "R03",
+      "R18"
+     ],
+     "reason": [
+      "첫 생성"
+     ]
+    }
+   ]
+  }
+ },
+ "errors": [],
+ "updated_at": "2026-10-27"
+}
