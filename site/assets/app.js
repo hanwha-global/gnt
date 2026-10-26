@@ -1310,9 +1310,15 @@
         if (e) Object.assign(e, { event: ev, note: `${e.note ? `${e.note} · ` : ""}${ev.text}` });
       }
       state.data = { officesUpdate: offUpd, news, subFin, subTrend, hubNews, listed, worldmap, macroNews, macro, rateCal, domestic, cons, dart, markets, us, hanwha: { subs: hwSubs, entities: hwEnts, reg }, digital };
-      const stamp = [dart?.updated_at, us?.rows?.some((r) => r.ok) ? us.updated_at : null].filter(Boolean).sort().pop();
-      $("#updated").textContent = [stamp ? `최근 자동 수집 ${stamp.slice(0, 10)}` : "기준 데이터 FY2024 공시",
-        meta?.built_at ? `페이지 갱신 ${meta.built_at.slice(0, 10)}` : ""].filter(Boolean).join(" · ");
+      // 머리글 시각(KST): 매일 수집(뉴스·한화 시장 지표)과 매주 월요일 DART 수집을 나눠 보인다.
+      // SEC 순위는 배포 때마다 다시 받으므로 '공시 수집' 시각에 넣지 않는다.
+      const when = (s) => { const t = s ? new Date(String(s).replace(" KST", "+09:00").replace(/^(\d{4}-\d\d-\d\d) /, "$1T")) : null; return t && !isNaN(t) ? t : null; };
+      const latest = (...xs) => xs.map(when).filter(Boolean).sort((a, b) => b - a)[0];
+      const kst = (t) => { const k = new Date(t.getTime() + 9 * 36e5), p = (n) => String(n).padStart(2, "0"); return `${k.getUTCMonth() + 1}.${p(k.getUTCDate())} ${p(k.getUTCHours())}:${p(k.getUTCMinutes())}`; };
+      const daily = latest(news?.updated_at, hubNews?.updated_at, macroNews?.updated_at, macro?.updated);
+      const weekly = latest(dart?.updated_at), built = latest(meta?.built_at);
+      $("#updated").textContent = [daily && `매일 수집 ${kst(daily)}`, weekly ? `DART 공시 ${kst(weekly)}(매주 월)` : "DART 공시 수집 전",
+        built && `페이지 갱신 ${kst(built)}`].filter(Boolean).join(" · ");
     } catch (e) {
       $("#app").innerHTML = `<div class="empty-state">데이터를 불러오지 못했습니다: ${esc(e.message)}</div>`;
       return;
