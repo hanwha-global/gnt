@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T23:43:39+00:00",
+ "updated": "2026-10-26T01:50:53+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
@@ -161,6 +161,13 @@
     "code": "JP"
    },
    {
+    "date": "2026-10-19",
+    "title": "Crypto With Faisal(@Square-Creator-6081246fb8a9)'s insights",
+    "src": "Binance",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42MWw5cl9pcW1LWHl5aHoxS3FRSmplRHo5SFQ2cHpaOTFUNndieWZNQWxTcEh0YkE2VlRIUXVwenk2XzZpbnY2UzFnS2ZvdENLQjhDRTJod1RpNlVDWDF6cnZzWTc?oc=5",
+    "code": "JP"
+   },
+   {
     "date": "2026-10-17",
     "title": "Japan’s megabanks complete first joint yen stablecoin payment test",
     "src": "Forex Crunch",
@@ -172,13 +179,6 @@
     "title": "Japan’s Three Megabanks Confirm Their Shared Yen Stablecoin Works in Pilot",
     "src": "BlockchainReporter",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUFpvbTdGTW5YaVpvVlJqMG9wZVZvX09Ed09JR1c0Sy1WNUlial90VFhNWXJmcHhGQVE5OWxfcklscFIzU2lELVdNVkpraDNuQ0o5WG4wbWRIUVNuT0Vud291d2xTZ0kxTUZMVldsbzNuU1NWeEozXzhtRDdhVjZweg?oc=5",
-    "code": "JP"
-   },
-   {
-    "date": "2026-10-16",
-    "title": "Japan Megabanks Test First Joint Yen Stablecoin: Where Does XRP Fit?",
-    "src": "TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQa21KcXNYems2bl94RDdXTjBjdG1XWENKUUtyNW9YU243MGduMGd4NmpUczJIZExfdFV6U1hsdVpWbzN1WkVwZnFxYmhDV21Va091Zjg3MS1CSHVsc0FnOGNFODNDV3NqekNXWlduYlY5dnVGdWpoSWdVSVl2MEt4MGRyX000bHowQjRCZUlJNE1ZYmNGaXpqWml2dERrUmI0WUM5UXR0a29TQzlzcGVWVzFHT0tNcURCRzRSSkpIUkc?oc=5",
     "code": "JP"
    }
   ],
@@ -242,6 +242,13 @@
   ],
   "SG": [
    {
+    "date": "2026-10-26",
+    "title": "Stablecoin Regulation Goes Cross-Border: Oct 2026 Update",
+    "src": "OneSafe.io",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XN3BrUlpYamYybVI4c0NTOU5PZ1Zka1BUR2xRX3I2YU5UTnA1SjMwblBYMjRyQktVLXlQVUJpb292Q3luX2M3ME1TYjMyNmgxcm5USWFOX3o3MTBXVWVWd0xuZHlXRHBLMExpOUptUGxzSENBWFRxcmRlRmVNcjQ?oc=5",
+    "code": "SG"
+   },
+   {
     "date": "2026-10-25",
     "title": "Stablecoin News: Singapore MAS Adds Malaysia and Thailand to BLOOM Initiative",
     "src": "CryptoRank",
@@ -288,13 +295,6 @@
     "title": "Web3 Payments Hit the Mainstream: Stablecoin Cards Go Global",
     "src": "OneSafe.io",
     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9IOXFFZDc4bFgyZmhtcHVyZC1VbFg3V2k3SnlaUDE4OUtxdThBZEpiTlBlR0NubHhaSlg4S3lhVTRDTV9jYlQ0ZnNsX3BXZGdzMGtHYk9tZXljekhuRjFLVWdiQ2RNdkdPNjlDOEluZmhhTlU2Zmdv?oc=5",
-    "code": "SG"
-   },
-   {
-    "date": "2026-10-14",
-    "title": "Regulators widen oversight of digital assets across APAC",
-    "src": "Lexology",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTjBydHNCS094ZThRN1ZoT2I2dWdWM083cmJlb3dBQm8yU3lXWUs2VXBuUlh3Znladk42RWFHRjFVUlRDei1UcXBILXdESVJYVUM1b1ZETkowRUhxX0xKbFg0TS1PY2c2U0wzTnQ3T1ByLVc4ZHVzT3VCOHZJVEt6cVhKcksxMXFOenZQVUQtZmdGblNkV1FjbA?oc=5",
     "code": "SG"
    }
   ],
@@ -358,6 +358,48 @@
   ],
   "AE": [
    {
+    "date": "2026-10-17",
+    "title": "Ondo Tokenized Stocks Win Abu Dhabi Approval on Binance",
+    "src": "CoinMarketCap",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWHNhRzVSZmYwU3FlaGw5aDJlaHVZd0l3RnJVVDNySHVxSFJUWGl0dFpqbG8zNWpyZUROcmxmUUtKT2IyU2JhLXFyN251ci1USEJhMUl3OVEzMVllR3VMSjV3bzZzTXBUbnFjazRZejNwR01NblNkakNtVHZWTzRKbmFNZ2NDOHFsUDdPWHFrM2JzaEV5eDg3ZmJMU0Z0Zw?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-15",
+    "title": "ADGM says its digital assets regulatory approach is paying off",
+    "src": "CNBC",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON1k3SkxDTm85S0g5N0kyRU1iaXdtbFF6T25CMk9xTkItVHdaTUVEVUgyY0wwdGpfOXJ0VXpaWlJXanlxMThBOEl1M2M0b0YxVDQzU2FYQzZlMEUwR21XOTlNeUJQOVZ1bGNZSmVrZThpWkUxdVgwbkpyTm9KMG5zck81dTY5YmZxRGc1R0MwckRKWkpoelNGMC0wQkI1bEhEM1Y5X2NrWWE?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-14",
+    "title": "EMEA Digital Assets Market Quarterly",
+    "src": "White & Case LLP",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb04tbHpadUZXQ0wyb0RnbFRMVk9DMGt6TzZvZVBHX1pHeVJIbzhscjlnRGYwVi1pS3g5d1RrZXdxVjhoY3pEeEdRVUcwTmtmQjFIZDJJLTVwTXo4emRvc2JEMFBFSkwxZVYtV1A4MndpZks3akVhR2UxYUpHdzdTLWt3?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-13",
+    "title": "Universal Brings USDU Stablecoin to Solana, Aquanow to Distribute",
+    "src": "Altcoin Buzz",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWVNyUEdrVW9LNncxVHVMSjNieUs4eVZZWDRwckRua1E4ckMwWktnaTNDdE9SN3Nod3FMTGlNZThLQWdaRXlGQm1LNXdXU1QwOG9WS0luRXhNWktidHFhWWFvWW9oVE1Hb1J6Q2RJN0tlVFpycENxWnZ1eFdmMXFYZGlWUnRrdlFZb2gxeDhFSlFwbkxoTy1pakxR?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-09",
+    "title": "How to Buy, Sell & Track Crypto in UAE: Beginner’s Guide",
+    "src": "www.sc.com",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55Uk9aVHNzY05KdkY5bmRtbGZpVHJaUVRKQTBjbjU4OWI0VVV3MXNveWVxc3lQanVFRXkxb2NtTVVrNDIxVHpHMmpELXotakNKQ1NMdzNuYTlMbTYyVGRWVkZRSThmNkdTVGszamJn?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-09",
+    "title": "UAE Sees Growing Interest In Regulated Crypto Funds As Institutional Investment Landscape Evolves",
+    "src": "Menafn",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeXN2bkYzUDJMb2RRVU9GbWpXRWlLZ0IzR0VZams3TXdTWGpDZ3JkdmZOM2ZwZGpkMktzazNtZEdSRWJiYzdhY2tVLV9oQ3JkNFM4SHN2QzdDc0ozZTdWRzlaVGVrYjBMWk9JM0lVeWF2TTV1VzdLbEx0OVVhOG5YamFrYlM5NzdZYWdqdTE1S3pCQkRSNlFNS3JBQm1ZbnFueGtWQ1oyMm9wR1dka21FQ09pTzBVZXYteWVsY0RJbTRNcVF2TlE?oc=5",
+    "code": "AE"
+   },
+   {
     "date": "2026-10-09",
     "title": "‘비트코인 보유국’ 부탄, 아부다비 거점으로 자본 유치 추진",
     "src": "블록미디어",
@@ -369,20 +411,6 @@
     "title": "한화금융, 아부다비와 '디지털금융 동맹'…스테이블코인·국경간 결제 협력",
     "src": "웹이코노미",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE04Z0p4TXRyM3hXc3E5VU44UGo3OEZ0Rk1saFRhTXRhclA1eHBWQnZseDE2M3BwMy1maHdHRzFvSW5fb3VyTFJXdUU2MWMtZC0xbG9ITldoR3YwemxqWGk1NWNpSmVweGFZeXRWbXJEMnJwdw?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-10-03",
-    "title": "Coinbase Wins ADGM Licence to Build Tokenised Securities Hub",
-    "src": "The Fintech Times",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUi1oS3hKTlRiSXpEMS13MXgxNmxKbm1jc1pVZnFmNGlHTjB6b2k0bUl2NkdwQm9oRFpxZDFIS19mblNmVllVNC12R0ZReTlKdEw2b2Y2NWtBdHNHTGxBa01CLVZ3T1BQcGhnbDFsQmpweDViZjF1VnU4SGNxd2l1QzFDYjNzdmM2UGJJaXQxX1FkS1U?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-09-28",
-    "title": "\"모든 기업이 디지털자산 사용하게 될 것\" [이스트포인트 : 서울 2026]",
-    "src": "한국경제",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFWkxWTGx6aXpxZERweURkSDhaOC1LRjVZLUpEclNpejVFZ1llTFlKQUtUb0U4cFd0a3BaMG5wWjBPS0QzRzhsNDNwT2c3NC1fYXU0RUJEZDF1dw?oc=5",
     "code": "AE"
    }
   ]

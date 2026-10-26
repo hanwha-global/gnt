@@ -1,32 +1,32 @@
 {
- "updated_at": "2026-10-26T08:29+09:00",
+ "updated_at": "2026-10-26T10:48+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
     {
+     "date": "2026-10-26",
+     "time": "09:55",
+     "title": "외국인 '팔자'…코스피 1%대 약세에 5500선 내줘",
+     "src": "아시아경제",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FSFhTakIxV203ajZKRGx3SjRyQnA4R2htbUg1VzhYNXVjYng4RjVsNG83YV85T0ZwVFRYTy01S3RMUm8xdDl0TUYtbDcxRnhVSExFUkVkdG16R0FwWFprQw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-26",
+     "time": "09:27",
+     "title": "코스피, 장 초반 5400선 후퇴 후 낙폭 축소…외국인·기관 '매수'",
+     "src": "한국경제",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE81bkxfTmppZTZmVTNNRmR0S1VHb0Q0YzNocTlyMHB6YjdfMGNlOHNXTDRCdjNOMnpzYndBVjVSZTFvSkhHNE1EeXE4QmcwdzNvbER3d3YwN1JJdw?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-25",
      "time": "11:40",
      "title": "'팔자' 외국인 받아낼 '사자' 개인 힘빠지나…코스피 대기자금 51조 급감",
      "src": "전자신문",
      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9JdklicWlqZlVhUHNVX1E0TWtjdy1fS3dnNGs5VFhXSWJFVXJpOEdSaUNibEEwZG82R2tlcFoyaVFaZDVQS0VLRjhZemE3UQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "11:53",
-     "title": "한은, 기준금리 3% 만장일치 동결…“불확실성 높아져”",
-     "src": "한겨레",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1mTERRVUE3NnJCSkNiQktGNGhBVV9jTUFZbFZEa3ItaWRlZUl0NGFnSlEyZW1iQWJoNXdGZzJqVGRLelllUVlOOWZ5Mkw2Y2czZ1JTN1o4RTR2NllkbDhlQXFuSElodnAtMDFYc1N5X2plZw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "11:50",
-     "title": "외국인 매도에 코스피 흔들림과 신세계 임원인사까지 이시각 주요뉴스",
-     "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBoWlpwUVo5X1hOTFoySmRNV1dsMnpRcXl5TFI1dFV1emxoV285TkpqdmgyNkRoT2ZfVDdWcGg0WlBMMFpXck9mMmZid3VSQzNlZzZXX3lhTjNYdnpwOXlOYnVLUjhxbzBReVJkNFNXT3UtT1d00gF0QVVfeXFMUGhaWnBRWjlfWE5MWjJKZE1XV2wyelFxeXlMUjV0VXV6bGhXbzlOSmp2aDI2RGhPZl9UN1ZwaDRaUEwwWldyT2YyZmJ3dVJDM2VnNldfeWFOM1h2enA5eU5idUtSOHFvMFF5UmQ0U1dPdS1PV3Q?oc=5",
      "priority": false
     }
    ]
@@ -36,10 +36,18 @@
    "items": [
     {
      "date": "2026-10-26",
+     "time": "10:31",
+     "title": "Oil prices, Fed policy decision to steer rupee, bonds this week",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPelJyN3JpclF1bWk1YzFhM1prRER2SmsyZ0tLbEYyVnZxb0JhbV9sVEplUzhvbnFydkUtdURhektCU2Z1a3VNVk8xaGRBZXZSanpsYWkzMkh1RDBpQktlR25CeEZabmZLWTdfN0QwYUZWQjQ2VmVGdENPSm04Z1BwUF83am40bVlTYjVjV0REZWdUS3E3cUNLaFZCaEFoQzhBemhoRkFxa3hSUQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-26",
      "time": "07:00",
      "title": "美 FOMC·반도체 실적 ‘슈퍼위크’…코스피, 반등 실마리 찾을까 [주간 증시 전망]",
      "src": "서울경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE11U2JNNUlwVFBCdHpEZERYOWhYMlNyLXNVeTUxWXEzNGNiNnpMWlBXZ01TYlFvTmhvTkFxZTkwRmlLd0VVZWpMS2ZReVRBa01mMVHSAVNBVV95cUxOR3liZ0N0aFhIYVRMRmxreEp5ZXpPTWhNMWZfenhJRWQyUVVTeWlWMkRzWFA5VlV5MmJHalJtY0prZmp6bFpzYmZPX0k2bTI0VVVUQQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5HeWJnQ3RoWEhhVExGbGt4Snllek9NaE0xZl96eElFZDJRVVN5aVYyRHNYUDlWVXkyYkdqUm1jSmtmanpsWnNiZk9fSTZtMjRVVVRB0gFTQVVfeXFMTkd5YmdDdGhYSGFUTEZsa3hKeWV6T01oTTFmX3p4SUVkMlFVU3lpVjJEc1hQOVZVeTJiR2pSbWNKa2Zqemxac2JmT19JNm0yNFVVVEE?oc=5",
      "priority": false
     },
     {
@@ -47,15 +55,7 @@
      "time": "05:58",
      "title": "[주간경제일정] FOMC 금리 결정·한미 반도체 실적·빅테크 어닝 주목",
      "src": "SBS Biz",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1tLVVhWC1JQVkzdVJLQURnT2JWd3N1VWpsend6aDEtWWkyTnQ1bjlJbl9VSUVkaUxFSGdub2p0QjFVblVjcHVMdzh1N3RwalhoTXFabi0xc2vSAVhBVV95cUxNbS1VYVgtSUFZM3VSS0FEZ09iVndzdVVqbHp3emgxLVlpMk50NW45SW5fVUlFZGlMRUhnbm9qdEIxVW5VY3B1THc4dTd0cGpYaE1xWm4tMXNr?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "05:35",
-     "title": "AI주 줄줄이 실적, 반등 기회 잡을까…FOMC, 금리 동결 예상되지만[이번주 美 증시는]",
-     "src": "머니투데이",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5NVDdNY0c4cmZpWHlXZmtpRWprYzluTG9RRmEwS1ZJN3RQOXNrMXZBeTNoM28zVXVVRU9QdEZIYkhoa2didTVpbXBwWTRZU0Y3T01lMmNJcDg3MWFkNGdKMFFfaFhZV2dT0gFuQVVfeXFMT29Ga3pZMDBGcHlmenV6WTZwMXlMemFEdF9sdm5nRnRqY0JzYzl6cEI4Ymd6SHNoOTRsWnIxZzZEdjBocFBUN3ZtRkw2eFNFQS15QlJxSEQ2cnEwZUljcTBTTXJTcm5uT1ZDbkdhWVE?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9LWkVUVVFkZExZLUJYT3phX2Z3RWFCR25sSmtyeUU2cWpPc2U5QlZmcFMwN1JMRFF0SGxTUDhGSlZxRkN2amYzVUltbkt5YzdXLTJz0gFYQVVfeXFMTW0tVWFYLUlBWTN1UktBRGdPYlZ3c3VVamx6d3poMS1ZaTJOdDVuOUluX1VJRWRpTEVIZ25vanRCMVVuVWNwdUx3OHU3dHBqWGhNcVpuLTFzaw?oc=5",
      "priority": false
     }
    ]
@@ -122,27 +122,27 @@
    "label": "일본",
    "items": [
     {
+     "date": "2026-10-26",
+     "time": "10:27",
+     "title": "Japan's Nikkei edges lower as tech sector weighs, energy shares rise",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUG42aUpCNmlxUXpHUzRPWFpWWVZZclY2anZvbUZ2cld4eEVRaUtPeHNkMDBCcG9SN0JJY2FaZ3RfMnNzNkZQcUNzc1JWZjhsWUVPSTZaX0Z0UmJ1SWdFQlNFMkx0dEZ3enFJMjZ6TFNCNHhwV19MYldONE44a2lTdERfLXYzMU1xR0ZNTmdURnhNUDFnc3VIOEV4ZWhHTGhxYTBmWUtuOEdyTHRJenR6cTIzajB4SGFxenc?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-26",
+     "time": "07:43",
+     "title": "Rate 'Superweek' Begins... U.S., EU, and Japan Expected to Hold Rates",
+     "src": "아시아경제",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HamtBelBFM2NnNm5TWFlHc1VFN2RKYTluRWtzSE9wVUt6dTR2VmdaLWpMNUlFbHRPWGhvU0xVY1RGUW4tdjFuVXBmUjlDNVlYbUFKYlEwLXRsS1NaV19weFdiOWI?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-24",
      "time": "01:48",
      "title": "Japan banks prepared to weather AI crash, global rate spike: BOJ stress test",
      "src": "Nikkei Asia",
      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOOV90aHpsdzh1dXR6amFtMHRYeU9mdjVOTlFXbVEwcWV2dTRMdERpNFM4SUprQnFBOHNueDJNVzc5MGp6LXVEWG1lTV9aNHAySUJteC1lNkt6eS0xMUZ6M25OZGdHT1lGV2dIa2lkM2FoZU92WVdsWkNjWmEyR2lja2o2WURnSVotS3BTWmdtWWdvcTNTTEIybVp5NmVTb2dZdEtNVS1IQUZZRU5QR2NmWW42ZnIxdw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "23:24",
-     "title": "Japanese Flock to 2% Short-Term Deposits Amid Rate Hike Hopes",
-     "src": "조선일보",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQzJGdFZVcktjU3BkclV4X3JjN0VzTWpPYTU1QXlxalBPWkMwZUhmaXQ0eFV6VTlhOWVFTExxRXRyZ2FRMmF1bW0zSlBVd3dReHUtc3FTRTJzbWxfSHYzLUNsSkRzNVFoNGZFenZTR1oxY2YtZFA4S1VScjRDT2ZDNmE0Zjg?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "21:43",
-     "title": "Japanese Flock to 2% Deposits Amid Rate Hike Hopes",
-     "src": "조선일보",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQzJGdFZVcktjU3BkclV4X3JjN0VzTWpPYTU1QXlxalBPWkMwZUhmaXQ0eFV6VTlhOWVFTExxRXRyZ2FRMmF1bW0zSlBVd3dReHUtc3FTRTJzbWxfSHYzLUNsSkRzNVFoNGZFenZTR1oxY2YtZFA4S1VScjRDT2ZDNmE0Zjg?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
+     "date": "2026-10-26",
+     "time": "10:00",
+     "title": "RBI rate hikes: How short-duration funds and high-quality corporate bonds can protect your debt portfolio",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQSmUxTnF5Uko5YXl4a0t3MXQ3ekFWTHdKdkdNX0hsVy15d3VFQjBlZ1JrNUxSOHZ6ZnZweXJ1Smp5cklCd1BpUS02TzRkc2hHVXdMMW5sOWxudlp6NVpMNnpqcXB6dFNNNXU2TmFNU2V3bjg0T0lpS2pUODFhalRqbUl3NVZjSjZoOGh0Rm11S2Q0b0txQ1pYREhTd1ZkVHFDT1Y5UEJ2SWlkLTFMRlJrRnREYXhlcDY3MFdrQkd2ZnlJVzVEaGVGY2dtbTIwQWwxRml0TFEtMW1VakQzZkI2NFpTbUw0ODJEekpzNHFMVG9OTGhZcDFwVWNFMXJCVHdqQVHSAYcCQVVfeXFMUDN3Sk1qV2NHWmUxTm1rMEdHVkxPdjBBZ205dGRPZkJseUk2Tmd6SFVOMk8tVmJ6UFZnQ0ZzSWpVZ2NOa3RxbU1FQWlJcjEyVFFCVE1Fay1TUW9TUWVxTTFOQWNnSU9WSnpaajlnV19GQ1hXQWJzNWFjTzVCa2piR2RDazBORXRiZHhKaDVFWHhvOGZYZDgyOG9Oa29iTUE5V3BKczdXeEYwdndxOWdQYTlrcGlBWm4zUW5hWlF1UTJzMGswUjN4bUVjN05fUXRhcjhQNlB2NHFPZkVRdTJSZU1UMDB3TVBzVDBfUkRxdElhU0NKeVptTW5ENkNBMk5oaGdVTHlrQ2M?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-25",
      "time": "23:59",
      "title": "Indian Bank hikes interest rates on special-tenure fixed deposits — check how much 555-day and 777-day FDs are offering",
      "src": "Livemint",
      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPZC11NDNNNlBfbDZDbzYwU3Nma0pSZWViSk96TVJfVTZBRk9oSElKdHdBTUtvSlhjc290Y3ZhVHJGN20yRTllMjlWZWg0bW84NTJycUhScTJRb056ZUtQdHFDSkprZ3J3VHBxQzU1NDZ2NjV0TUQ3dlhTYXpuUkYwUGFZUEtHZ1RoUkxvZWhwcDlyeTJEUnI2U1RkUFRhZEJWbXdTOC15cjFMTGRPOElxR3YtbnBLN1RKWTJrVzJNV3lBMHo1eHExVW1hX3cxM3lISGlOSzc5Ukg2RUdjZXR1UWF0SXBDZ3pGRV9XYjFNVTNoYmJJenZGQWtsem40Q2ZkaGZLYVFrN3BGb1Q1U0lRb3U5SdIBmAJBVV95cUxPQ2hKYVhrMGZpS2hiNkhuNFo1NmdCTE9QbVBWTVJqbWZySWNwNk0tUGtUM2FSZHRNcjFVMmZDWi1pUmZCQXR3Ri1hc0hQYkdoOHlrV0pfMlVDX1VzMENYM2NnSjJvMlg4VW1hTmtNa293UnpfN1d2VmxDbDg3eG5fOGtHRnpYMW92MjdIUDNiajNSZERuRkN0cnJyRzlfVHJHVmQzcEJFUVo3YTAwWDJnOXZpOW5KRldsclVKNHlTUXdjV2ZnSm0za2lIT0xrRXRtQnlSdXotaktFd0ZyamU5TmpkTFFZRzFGclBJS1RYMEpqSmxFcHZseDBraUJTaXFQelM3Z2JrbE9LeEpocUhkcDZHeGY1cmFp?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-24",
-     "time": "00:24",
-     "title": "India’s RBI Governor Open to Rate Use to Curb Financial Risks",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcldxdmVNX3BPWUJxLTUyazlLdTh5aTFLemFQbHdBdlF5WjZ2UWNNYVlCZUtRS0pjOUNOLXl4QzVkTWZrUlRaV3dhc3B4YkV4ZGNUdV9HUGpkRkRJMV9VNjhhc1pDRy1BWWZiY1lrRlNHOFJhalZpeUphaHlLQ043NFZIS1IxMVlFeWI4bjZqVG1wTGQybnZnUG5vMmo5SlFqRHRSOG9uWW1rcXNwSTdwQ1NR?oc=5",
      "priority": false
     }
    ]
