@@ -581,3 +581,37 @@ class HubNewsTest(unittest.TestCase):
                           a("2026-04-15", "미래에셋증권, 국내 최초 홍콩 디지털자산 리테일 진출"),
                           a("2025-12-04", "미래에셋, 홍콩법인 증자")])
         self.assertEqual([x["date"] for x in got], ["2026-04-16", "2025-12-04"])
+
+
+class BrokerRankTest(unittest.TestCase):
+    def test_periods_wait_for_filing_deadline(self):
+        import broker_rank as b
+        self.assertEqual([p[:2] for p in b.periods(date(2026, 10, 26))], [("2026", "11012"), ("2026", "11013")])
+        self.assertEqual(b.periods(date(2026, 11, 16))[0][:2], ("2026", "11014"))  # 3분기 기한(11/14) 뒤 첫 월요일
+        self.assertEqual(b.periods(date(2027, 3, 29))[0][:2], ("2026", "11014"))  # 사업보고서 기한 전
+        self.assertEqual(b.periods(date(2027, 4, 5))[0][:2], ("2026", "11011"))
+
+    def test_collect_keeps_one_balance_date_and_display_names(self):
+        import broker_rank as b
+        row = lambda acc, div, amt, dt="2026.06.30 현재": {"account_nm": acc, "fs_div": div, "thstrm_amount": amt, "thstrm_dt": dt}
+        data = {
+            "A": [row("자본총계", "CFS", "2,263,405,000,000"), row("자본총계", "OFS", "2,267,400,000,000"), row("자본금", "OFS", "1,100,000,000,000")],
+            "B": [row("자본총계", "OFS", "8,220,000,000,000")],
+            "C": [row("자본총계", "OFS", "1,700,000,000,000", "2026.09.30 현재")],  # 3월 결산사의 '반기'
+            "D": [],
+        }
+        cands = {"A": ("한화투자증권", "003530"), "B": ("케이비증권", ""), "C": ("신영증권", "001720"), "D": ("감사보고서만증권", "")}
+        with mock.patch.object(b, "brokers", return_value=cands), mock.patch.object(b, "MIN_ROWS", 2), \
+                mock.patch.object(b, "api", side_effect=lambda path, key, corp_code, **k: data[corp_code]):
+            res = b.collect("dummy", today=date(2026, 10, 26))
+        self.assertEqual((res["period"], res["as_of"]), ("2026 반기보고서", "2026-06-30"))
+        self.assertEqual([r["name"] for r in b.ranked(res["rows"], lambda r: r.get("equity_ofs"))], ["KB증권", "한화투자증권"])
+        a = next(r for r in res["rows"] if r["corp_code"] == "A")
+        self.assertEqual((a["equity_cfs"], a["equity_ofs"], a["capital_ofs"]), (2263405, 2267400, 1100000))
+        self.assertEqual(res["other_fiscal"], ["신영증권(2026-09-30)"])
+        self.assertNotIn("as_of", a)
+
+    def test_no_key_is_a_noop(self):
+        import broker_rank as b
+        with mock.patch.dict("os.environ", {"DART_API_KEY": ""}), mock.patch.object(b, "OUT", Path(os.devnull)):
+            b.main()

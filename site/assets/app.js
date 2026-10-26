@@ -206,6 +206,16 @@
   // 네트워크 집계 기준(종속회사 목록 보고서)과 재무 잔액 기준 시점
   const netBasis = () => [...new Set(state.data.domestic.firms.map((f) => f.list_basis).filter(Boolean).map((b) => b.slice(0, 6)))].map((b) => `${b} 사업보고서`).join("·") || "공시";
   const bsBasis = () => [...new Set(state.data.domestic.firms.map((f) => f.bs_basis).filter(Boolean))].join("·");
+  // 국내 전체 증권사 자기자본(별도) 순위: broker_rank.py 가 매주 DART 주요계정으로 만든다(정기보고서 제출사)
+  function brokerRank() {
+    const b = state.data.brokerRank;
+    const rows = (b?.rows || []).filter((r) => r.equity_ofs != null).sort((x, y) => y.equity_ofs - x.equity_ofs);
+    const rank = rows.findIndex((r) => r.name === HANWHA) + 1;
+    if (!rank) return null;
+    const by = (k) => [...rows].filter((r) => r[k] != null).sort((x, y) => y[k] - x[k]);
+    const cfs = by("equity_cfs").findIndex((r) => r.name === HANWHA) + 1;
+    return { b, rows, rank, cfs, short: b.period.replace("보고서", ""), basis: `${b.as_of} · ${b.period} 별도` };
+  }
 
   // ---------- 글로벌 ----------
   function rankTable(rows, { unit, digits = 1, hw = () => false, limit = 0, mini = false, basis = "" }) {
@@ -316,6 +326,13 @@
         ${rankTable(firms.map((f) => ({ name: f.firm, value: f.equity == null ? null : f.equity / 1e6,
           note: f.net_income == null ? "" : `자본 ${f.bs_basis || f.basis} · 순이익 ${eok(f.net_income)}억(${f.pl_basis || ""}) · 해외법인 ${state.data.domestic.entities.filter((e) => e.firm === f.firm && counted(e)).length}개` })),
           { unit: "조원", digits: 2, basis: bsBasis(), hw: (r) => r.name === HANWHA })}</div>`;
+      const br = brokerRank();
+      if (br) {
+        const jo = (v) => (v == null ? "–" : `${fmt(v / 1e6, 2)}조`);
+        main += `<div class="card"><h3>국내 전체 증권사 자기자본 순위 (조원)</h3><p class="card__meta">DART ${esc(br.b.period)}를 낸 증권사 ${br.rows.length}곳 · 별도 자본총계 · 당사 ${br.rank}위(연결 ${br.cfs}위) · 매주 월요일 자동 계산 · 정기보고서가 없는 회사·외국계 지점은 빠짐</p>
+          ${rankTable(br.rows.map((r) => ({ name: r.name, value: r.equity_ofs / 1e6, note: `연결 ${jo(r.equity_cfs)} · 자본금 ${jo(r.capital_ofs ?? r.capital_cfs)}` })),
+            { unit: "조원", digits: 2, basis: br.basis, hw: (r) => r.name === HANWHA })}</div>`;
+      }
     } else if (m.auto === "sec") {
       const us = state.data.us;
       const rows = (us?.rows || []).map((r) => ({
@@ -1159,6 +1176,7 @@
     const countries = new Set([...corps.map((e) => e.country), ...d.offices.map((o) => o.country)]);
     const eqRank = [...d.firms].filter((f) => f.equity != null).sort((a, b) => b.equity - a.equity);
     const myRank = eqRank.findIndex((f) => f.firm === HANWHA) + 1;
+    const br = brokerRank();
     const mine = corps.filter((e) => e.firm === HANWHA);
     const hp = hwPublic(hw);
     const ht = hp ? hp.total(hp.latest) : null;
@@ -1169,7 +1187,9 @@
       kpi("진출 국가", fmt(countries.size), `사무소 ${offices}개 포함`, "", "개국"),
       kpi('<abbr title="' + esc(TIPS["변동 감지"]) + '">DART 신규 해외법인</abbr>', fmt(d.changes.length), d.changes.length ? `${changeNote(d.changes)} · ${[...new Set(d.changes.map((c) => SHORT[c.firm]))].join("·")}` : "변동 없음", "", "건"),
       kpi("최근 해외·출자 공시", fmt(state.data.dart?.feed?.length ?? 0), "최근 120일 DART", "", "건"),
-      kpi("당사 자기자본 순위", myRank ? fmt(myRank) : "–", `${eqRank.length}개사 중 · ${eqRank[myRank - 1]?.basis || ""}`, "kpi--hw", "위"),
+      br ? kpi(`<abbr title="${esc(`DART 정기보고서를 낸 국내 증권사 ${br.rows.length}곳의 별도 자본총계 순위(연결 기준 ${br.cfs}위). 매주 월요일 자동 계산, 전체 표는 글로벌 › 한국`)}">당사 자기자본 순위</abbr>`, fmt(br.rank),
+          `증권사 ${br.rows.length}곳 중 · ${br.short} 별도 · 대형 ${eqRank.length}곳 중 ${myRank}위`, "kpi--hw", "위")
+        : kpi("당사 자기자본 순위", myRank ? fmt(myRank) : "–", `${eqRank.length}개사 중 · ${eqRank[myRank - 1]?.basis || ""}`, "kpi--hw", "위"),
       kpi("당사 해외 현지법인", fmt(mine.length), `${new Set(mine.map((e) => e.country)).size}개국 · 사무소 ${d.offices.filter((o) => o.firm === HANWHA).reduce((s, o) => s + o.count, 0)}`, "kpi--hw", "개"),
       kpi(`당사 해외자회사 ${hp ? esc(hp.latest.label) : ""} 순이익${ht?.own != null ? "(지배지분)" : ""}`, ht ? eok(ht.own ?? ht.ni) : "–",
         hp ? `${hp.ents.length}사 · DART ${hp.latest.report?.name || hp.latest.label}${ht.own != null ? ` · 100% 기준 ${eok(ht.ni)}억` : ""}` : "준비 중", "kpi--hw", "억원"),
@@ -1281,7 +1301,7 @@
   // ---------- 시작 ----------
   async function init() {
     try {
-      const [config, seed, dart, markets, us, meta, hwSubs, hwEnts, reg, digital, offUpd, news, subFin, listed, worldmap, macroNews, macro, rateCal, cons, subTrend, hubNews] = await Promise.all([
+      const [config, seed, dart, markets, us, meta, hwSubs, hwEnts, reg, digital, offUpd, news, subFin, listed, worldmap, macroNews, macro, rateCal, cons, subTrend, hubNews, brokerRank] = await Promise.all([
         getJSON("data/config.json"), getJSON("data/domestic/seed.json"), getJSON("data/domestic/dart_latest.json", true),
         getJSON("data/global/markets.json"), getJSON("data/global/us_sec.json", true), getJSON("data/meta.json", true),
         // 한눈에 보기용: 다른 탭 폴더의 데이터(없으면 빈칸)
@@ -1291,6 +1311,7 @@
         getJSON("data/global/worldmap.json", true), getJSON("data/global/macro_news.json", true),
         getJSON("hanwha/data/markets.json", true), getJSON("hanwha/data/rate_calendar.json", true),
         getJSON("data/domestic/consolidated.json", true), getJSON("data/domestic/sub_trend.json", true), getJSON("data/domestic/hub_news.json", true),
+        getJSON("data/domestic/broker_rank.json", true),
       ]);
       HANWHA = config.home;
       FIRM_ORDER = config.firms.map((f) => f.name);
@@ -1309,7 +1330,7 @@
         const e = domestic.entities.find((y) => y.firm === ev.firm && keyName(y.name) === keyName(ev.name));
         if (e) Object.assign(e, { event: ev, note: `${e.note ? `${e.note} · ` : ""}${ev.text}` });
       }
-      state.data = { officesUpdate: offUpd, news, subFin, subTrend, hubNews, listed, worldmap, macroNews, macro, rateCal, domestic, cons, dart, markets, us, hanwha: { subs: hwSubs, entities: hwEnts, reg }, digital };
+      state.data = { officesUpdate: offUpd, news, subFin, subTrend, hubNews, brokerRank, listed, worldmap, macroNews, macro, rateCal, domestic, cons, dart, markets, us, hanwha: { subs: hwSubs, entities: hwEnts, reg }, digital };
       // 머리글 시각(KST): 매일 수집(뉴스·한화 시장 지표)과 매주 월요일 DART 수집을 나눠 보인다.
       // SEC 순위는 배포 때마다 다시 받으므로 '공시 수집' 시각에 넣지 않는다.
       const when = (s) => { const t = s ? new Date(String(s).replace(" KST", "+09:00").replace(/^(\d{4}-\d\d-\d\d) /, "$1T")) : null; return t && !isNaN(t) ? t : null; };
