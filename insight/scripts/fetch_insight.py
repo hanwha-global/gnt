@@ -202,6 +202,45 @@ def valuation(symbol):
             "a_asof": s.get("annualStockholdersEquity", (None, None))[1]}
 
 
+# 베트남 상장 증권사(HOSE·HNX·UPCoM) 전체. 자본·순이익은 TCBS 공개 재무 API(키 불필요, 단위 십억동)로 받는다.
+# 글로벌 탭 listed.json(Yahoo)에 있는 회사는 그 값을 쓰고 전년 자본(증가율)만 더한다. 업종이 증권이 아니면 버린다.
+VN_ALL = [("SSI", "SSI Securities"), ("VND", "VNDirect"), ("HCM", "HSC Securities"), ("VCI", "Vietcap Securities"),
+          ("VIX", "VIX Securities"), ("FTS", "FPT Securities"), ("BSI", "BIDV Securities"), ("CTS", "VietinBank Securities"),
+          ("TCX", "Techcombank Securities (TCBS)"), ("VPX", "VPBank Securities"), ("VCK", "VPS Securities"),
+          ("SHS", "SaiGon-Hanoi Securities"), ("MBS", "MB Securities"), ("AGR", "Agribank Securities"), ("ORS", "TPBank Securities (TPS)"),
+          ("TVS", "Thien Viet Securities"), ("APG", "APG Securities"), ("DSE", "DNSE Securities"), ("VDS", "Rong Viet Securities"),
+          ("DSC", "DSC Securities"), ("TVB", "Tri Viet Securities"), ("BVS", "Bao Viet Securities"), ("PSI", "PetroVietnam Securities"),
+          ("EVS", "Everest Securities"), ("IVS", "Guotai Junan Securities (Vietnam)"), ("WSS", "Wall Street Securities"),
+          ("APS", "Asia-Pacific Securities"), ("HBS", "Hoa Binh Securities"), ("VFS", "Nhat Viet Securities"), ("VIG", "Vietnam Investment Securities"),
+          ("CSI", "Kien Thiet Securities"), ("PHS", "Phu Hung Securities"), ("AAS", "SmartInvest Securities"), ("SBS", "Sacombank Securities"),
+          ("ART", "BOS Securities"), ("HAC", "Hai Phong Securities"), ("GBS", "Golden Bridge Securities"), ("ABW", "An Binh Securities"),
+          ("VUA", "Stanley Brothers Securities"), ("BMS", "Bao Minh Securities")]
+TCBS = "https://apipubaws.tcbs.com.vn/tcanalysis/v1"
+
+
+def tcbs(ticker):
+    """연간 자본(최근·전년)·순이익(지배)·업종·P/B. 금액 단위 십억동."""
+    ov = net.get_json(f"{TCBS}/ticker/{ticker}/overview", headers=BROWSER)
+    ind = f"{ov.get('industry') or ''} {ov.get('industryEn') or ''}"
+    bs = net.get_json(f"{TCBS}/finance/{ticker}/balancesheet", {"yearly": 1, "isAll": "true"}, headers=BROWSER)
+    inc = net.get_json(f"{TCBS}/finance/{ticker}/incomestatement", {"yearly": 1, "isAll": "true"}, headers=BROWSER)
+    bs = sorted([r for r in bs if r.get("equity") is not None], key=lambda r: -int(r.get("year") or 0))
+    inc = {int(r.get("year") or 0): r for r in inc}
+    if not bs:
+        raise RuntimeError("TCBS: 자본 없음")
+    y = int(bs[0]["year"])
+    ni_row = inc.get(y, {})
+    ni = ni_row.get("shareHolderIncome") if ni_row.get("shareHolderIncome") is not None else ni_row.get("postTax")
+    pb = None
+    try:
+        rt = net.get_json(f"{TCBS}/finance/{ticker}/financialratio", {"yearly": 0, "isAll": "false"}, headers=BROWSER)
+        pb = next((r.get("priceToBook") for r in rt if r.get("priceToBook")), None)
+    except Exception:
+        pass
+    return {"year": y, "equity": bs[0]["equity"], "equity_prev": bs[1]["equity"] if len(bs) > 1 and int(bs[1]["year"]) == y - 1 else None,
+            "ni": ni, "pb": pb, "industry": ind.strip(), "name": ov.get("shortName") or ov.get("companyName")}
+
+
 def norm(n):
     return re.sub(r"[^0-9a-z가-힣]", "", str(n or "").lower())
 
@@ -274,6 +313,40 @@ def landscape():
                             "val_stale": stale})
             rows.append(row)
         ye = fx[ccy].get("2025-12-31") or fx[ccy]["now"]
+        if mid == "vn":
+            have = {r["ticker"]: r for r in rows}
+            oldvn = {r["ticker"]: r for r in prev.get("markets", {}).get("vn", {}).get("rows", []) if r.get("ticker")}
+            ok_n = 0
+            for t, nm in VN_ALL:
+                try:
+                    d = tcbs(t)
+                    if not re.search(r"chứng khoán|securit|financial serv|dịch vụ tài chính|tài chính", d["industry"], re.I):
+                        errors.append(f"vn {t}: 업종 '{d['industry']}' 제외")
+                        continue
+                    ok_n += 1
+                except Exception as e:
+                    o = oldvn.get(t)
+                    errors.append(f"vn {t}: TCBS {short(e, 80)}{' (이전 값 유지)' if o else ''}")
+                    if o and t not in have:
+                        rows.append({**o, "stale": True})
+                    continue
+                if t in have:  # Yahoo 값 유지, 전년 자본만 더함
+                    r = have[t]
+                    if d["equity_prev"] and str(d["year"]) == r["asof"][:4]:
+                        r["equity_prev"] = round(d["equity_prev"] / 1000, 2)
+                        r["growth"] = round((d["equity"] / d["equity_prev"] - 1) * 100, 1)
+                    continue
+                asof = f"{d['year']}-12-31"
+                rate = fx[ccy].get(asof) or ye
+                eq = d["equity"] / 1000  # 십억동 → 조동
+                rows.append({"kind": "local", "name": nm, "ticker": t, "note": "", "asof": asof, "equity": round(eq, 2),
+                             "ni": None if d["ni"] is None else round(d["ni"] / 1000, 2), "equity_krw": d["equity"] * 1e9 * rate / 1e8,
+                             "roe": round(d["ni"] / d["equity"] * 100, 1) if d["ni"] is not None and d["equity"] else None,
+                             "pb": round(d["pb"], 2) if d.get("pb") else None, "pb_book": "분기", "via": "tcbs",
+                             "equity_prev": round(d["equity_prev"] / 1000, 2) if d["equity_prev"] else None,
+                             "growth": round((d["equity"] / d["equity_prev"] - 1) * 100, 1) if d["equity_prev"] else None,
+                             "url": f"https://tcinvest.tcbs.com.vn/tc-price/stock-detail/{t}", "stale": False})
+            print(f"landscape vn: TCBS {ok_n}/{len(VN_ALL)}")
         for s in subs.get(cname, []):
             eq_l = s["equity_mkrw"] * 1e6 / ye
             rows.append({"kind": "korean", "name": s["name"], "firm": s["firm"], "broker": s["broker"], "business": s["business"],
