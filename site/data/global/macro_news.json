@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26T18:11+09:00",
+ "updated_at": "2026-10-27T00:20+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-10-26",
+     "time": "19:22",
+     "title": "Fed to hit pause on rate hikes, but maybe not for long",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFBxcEVKT0RxYVJKYWZGOUlGd0VJTE5vN2lNTnozcm92NTV5Vzg3aVdhT2p3eGpoVlZlZ19aaGtPa0s2VzBsS2xuamdkTnU4X2dhNGRzYjlaVTFpVzdLSkg4TDRlQThPdnZOandxOE1wV0o0WDFCcDgtbEZIQmR0a3BFOWdIM1dPZGdmQQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-26",
+     "time": "18:23",
+     "title": "물가 재상승 직면한 美연준, 금리 '매파적 동결' 유력",
+     "src": "파이낸셜뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5GTW5CQzk2Y2tLWDJ4V0dveF8xdGtkX2pWMUJVOVZmbld2V25FaWV2Y3RrR2VXWV84SmZBOF9fSHIzdjYyeXhVRkRCbjZHeHMzVm1PUnRhcjNEQQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-26",
      "time": "16:49",
-     "title": "U.S. Treasury yields inch lower as investors look ahead to the Fed's rate decision",
+     "title": "U.S. Treasury yields are little changed as investors look ahead to the Fed's rate decision",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdnVMeHR0cjdhVXpVQk9hZWdUUkVoMjAwX3g5OG5iWWprMW5XeEJoaC1CaTlDUVZSZ1ZjZnE4SFpsLWlCMXFXWE1lNnRoNzBKU1NqM2J1QmNUSVNhRzB4MUJxdXpMR0dQRUpNeGFOdDJ6Z25fcjA2QmVvczUxQko5RHc0d0tycDdIZGxIaGlqM3Z3OWhKeEhGMUxB0gGfAUFVX3lxTFA4SUxwS3ZmSEZwWmtRM0VkOUtZQUlSN0djS0JYRkxhMnF1VFhpVzdRWU91b1BoTjBhUm5HVkt4OHhMNElOR0JHYXpGTm5Md0NRa0lmTC1MRzNmWlAwb1lzX2hYbWgzSExzS0pZRXNfd01LNktjbVZBYTJwa2t2d0M5NUxqd2ZMVXJIam9lRHJrN09hcmlyVEpUYVptZzM0VQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "15:57",
-     "title": "미국·유럽·일본 금리 수퍼위크…동결 전망 속 누가 '매의 날개' 펼까",
-     "src": "머니투데이",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrMnlaVjlPVkVfMEpRWmJUdWttR1RWV0RnZGJsZGlxbGE1NmVOc0Y2Y1Z0dmRVV2pOX0E5TGtjS3JZclV3QTBMMUh1TXcyWkFEV2drQVlLZENOaERhQjNyVEEybVpNSk43MlN5eE5B0gFuQVVfeXFMUGsyeVpWOU9WRV8wSlFaYlR1a21HVFZXRGdkYmxkaXFsYTU2ZU5zRjZjVnR2ZFVXak5fQTlMa2NLcllyVXdBMEwxSHVNdzJaQURXZ2tBWUtkQ05oRGFCM3JUQTJtWk1KTjcyU3l4TkE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "12:30",
-     "title": "S&P500 선물, FOMC 앞두고 약보합…美 국채금리↓",
-     "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ob2t4MjhhX1l5VGZWUTFOMUdScXprSUZaNUNwVTRUTVJoOTl2R0JfTmswU2RaX21fTjdlX0hrYnlwcFJldFJLOWZKVWFWVkY4bzgzWnc5bTFRZy1zd1I0VDROanBTdHVKVmlLNjRhbmw?oc=5",
      "priority": false
     }
    ]
@@ -65,10 +65,10 @@
    "items": [
     {
      "date": "2026-10-26",
-     "time": "13:16",
+     "time": "13:56",
      "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUE9yTXpNTi04M0d2WkhjaGJGMHN2amxERHk0TVpPWjY4S2xGN2tIOU05eGxudUcyWW5iSXFIUUJWOUlYZlZFVmlBcGNibk5XQ29XR09lNW15LUZhenNKejJ0TlowVE9zMS1HWW5tQUJMcnNzNWtiVFc3LUZVcThyXzJ2RU4weGdVU3dJbTRXVHBzMmRZT1B3TERGNjBTU3Q3WThOZldPcG9CTFcyblF6WE81LVZ6UWdmeFQ1Y1pnTTR0TmUwaTIyWm5R?oc=5",
+     "src": "CNA",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMlBGd2pJTXdBQm84MEhpTzRDaFRzSHZBcXF5RlROWHhXNG5FeC16dEdyMnRqRU4xcmlpUjdIcnIxVUdmUTZsN3ZPNjEwcm5kaDBoUlp6c25jdHYtUzJ1MC1pQ0ZJM0c5ekQ1LWdZOHRMYmpSNF9BTE5HTTVNcHFHUl9VNUZlV1J1QTdIcXIyempPc3pkV2R0SDN3?oc=5",
      "priority": true
     },
     {
@@ -188,19 +188,19 @@
      "priority": true
     },
     {
+     "date": "2026-10-26",
+     "time": "21:07",
+     "title": "Singapore stocks close lower amid mixed regional showing; STI down 0.1%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMmFGLV9CSW14dTZ6UlV6MGxIZWxfZDRQVmdjRk15R292THJMLTBEVnlPR2hDcWVGX3U0VzNHV2tOcEg2RUhxNjhoU21BRU9kbHYxZEFQT0t4TlM4RDBWMW13YVJwWVcxeXhJYml5NjBYTEdzUVBUMGJTVDJwZXB0ODZpU0NiYUcwbFRjc1d6cmRRWGI4d0pLZFNLZDMtM0FyWktZbTVNeDU4bm1NWjk5RklEVE4wQlRKcGtDcHQzTXFEN0NPOEJJa1RJUVRtR2FXMU9NU2dkY1B3QTNwYklnUQ?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-23",
      "time": "19:02",
      "title": "Singapore shares edge higher despite losses in local banks; STI up 0.1%",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNHZZc0tPSEpaaGpYaEozcDluQngwOGpZaWFucEwwQmJPdVJUcG1pcmgzLXJJSmF5aHluQXdBa0JyVXRsc1lnOE5iaW5ZNmJvVXFhYlBNT1laRHp4cXdyeW91aElrNXZSREJobHBreVpUc293OXcyVDRyMWh5cFRvTUtBVTViay1DTUlBQ3UycGtXMmFTaUQtWHZJMmVxVUUtdzlVYUY0REMtTTQ3V1VCNm1HR1pINzZaSTQwYmlpal9EaEFwMVhHTTZISmZNTW5kdGVXS0VRZ2w?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "14:00",
-     "title": "Economists mixed on near-term MAS policy tightening after core, headline inflation ease in September",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWGJZRXZadjFUeEdiWGQwcl9qVHpjRlNfQTN1bVFJOTllNklZejAyRWZtVE5hd0J2dGxiUWo1UUVPaG9WM2FzVzh6VWgyLWxIY25VRkZzV3VmNWVoTzZ1TV93WjdsNDV2em4zcGtEaHBPRnYzQ3luZy1IQjFIdWtGb3ItNkNqVzBONVBzR1Q2OEh4RXlVWlNZTG9jNlgxM3NFUU13VEVLM1hTRnpWbnZDZkQzSUtpVkJQYmRGZE1kR1pXZGdtZUpCMWZQa19WalRtSUE?oc=5",
      "priority": false
     }
    ]
@@ -219,17 +219,17 @@
     {
      "date": "2026-10-26",
      "time": "11:24",
-     "title": "Indian shares fall as oil concerns persist",
+     "title": "Indian shares snap losing run as investors assess earnings",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMGYzcFZiRkE2TE1hWGJhSDY1UldIcGcyQlBJSmttbjVOSmNPcUNhWG5LWjdMcEZkRzVfSnd6MGVCc3RlZmpXLUI1Sm03REFQeEtCYVRUNTNHampNX21PQXl3YlZLNkgtWVhjX2dxOGwwZVF0WUhUMHh0TDJoQ0RKUHk4dFdlMnVleVo1UnJTcUNIWkxxdnhxYnAxbVZZMU5hZ18yQ1NBdDlvLXhKRjdNWUkwcw?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-26",
-     "time": "10:00",
-     "title": "RBI rate hikes: How short-duration funds and high-quality corporate bonds can protect your debt portfolio",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQSmUxTnF5Uko5YXl4a0t3MXQ3ekFWTHdKdkdNX0hsVy15d3VFQjBlZ1JrNUxSOHZ6ZnZweXJ1Smp5cklCd1BpUS02TzRkc2hHVXdMMW5sOWxudlp6NVpMNnpqcXB6dFNNNXU2TmFNU2V3bjg0T0lpS2pUODFhalRqbUl3NVZjSjZoOGh0Rm11S2Q0b0txQ1pYREhTd1ZkVHFDT1Y5UEJ2SWlkLTFMRlJrRnREYXhlcDY3MFdrQkd2ZnlJVzVEaGVGY2dtbTIwQWwxRml0TFEtMW1VakQzZkI2NFpTbUw0ODJEekpzNHFMVG9OTGhZcDFwVWNFMXJCVHdqQVHSAYcCQVVfeXFMUDN3Sk1qV2NHWmUxTm1rMEdHVkxPdjBBZ205dGRPZkJseUk2Tmd6SFVOMk8tVmJ6UFZnQ0ZzSWpVZ2NOa3RxbU1FQWlJcjEyVFFCVE1Fay1TUW9TUWVxTTFOQWNnSU9WSnpaajlnV19GQ1hXQWJzNWFjTzVCa2piR2RDazBORXRiZHhKaDVFWHhvOGZYZDgyOG9Oa29iTUE5V3BKczdXeEYwdndxOWdQYTlrcGlBWm4zUW5hWlF1UTJzMGswUjN4bUVjN05fUXRhcjhQNlB2NHFPZkVRdTJSZU1UMDB3TVBzVDBfUkRxdElhU0NKeVptTW5ENkNBMk5oaGdVTHlrQ2M?oc=5",
+     "time": "11:24",
+     "title": "Indian shares fall as oil concerns persist",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMGYzcFZiRkE2TE1hWGJhSDY1UldIcGcyQlBJSmttbjVOSmNPcUNhWG5LWjdMcEZkRzVfSnd6MGVCc3RlZmpXLUI1Sm03REFQeEtCYVRUNTNHampNX21PQXl3YlZLNkgtWVhjX2dxOGwwZVF0WUhUMHh0TDJoQ0RKUHk4dFdlMnVleVo1UnJTcUNIWkxxdnhxYnAxbVZZMU5hZ18yQ1NBdDlvLXhKRjdNWUkwcw?oc=5",
      "priority": false
     }
    ]
