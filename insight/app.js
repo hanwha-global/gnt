@@ -103,7 +103,7 @@
       ["자기자본 순위", `${rank}위<small>/ ${n}곳</small>`, `상위 ${num((rank / n) * 100)}% · 비교 대상 자본 합계의 ${num((me.equity_krw / total) * 100, 2)}%`],
       ["수익성(ROE) 순위", roeRank ? `${roeRank}위<small>/ ${roeRows.length}곳</small>` : "–", `ROE ${num(me.roe, 1)}% · 중앙값 ${num(roeRows[Math.floor((roeRows.length - 1) / 2)]?.roe, 1)}%`],
       ["상위 10곳 평균 자본", `${num(avg10 / me.equity_krw, 1)}배<small>당사 대비</small>`, `평균 ${num(avg10)}억원 vs 당사 ${num(me.equity_krw)}억원`],
-      ["20위권 진입까지", tgt(20) != null ? `+${num(tgt(20))}억<small>원</small>` : "–", tgt(20) != null ? `20위 ${esc(label(b[19]))} 수준 · 10위까지 +${num(tgt(10))}억원` : "이미 20위 안"],
+      ...[20, 10].filter((k) => tgt(k) != null).slice(0, 1).map((k) => [`${k}위 진입까지 자본`, `+${num(tgt(k))}억<small>원</small>`, `${k}위 ${esc(label(b[k - 1]))} ${num(b[k - 1].equity_krw)}억원 수준${k === 20 && tgt(10) != null ? ` · 10위까지 +${num(tgt(10))}억원` : ""}`]),
     ];
     if (gmed != null) cells.push(["상장사 자본 증가율(1년)", `${num(gmed, 1)}%<small>중앙값</small>`, `최대 ${esc(b.filter((r) => r.growth != null).sort((p, q) => q.growth - p.growth)[0].name)} ${num(grow.at(-1), 1)}% · 증자 경쟁 강도`]);
     return `<div class="posn">${cells.map(([a, v, c]) => `<div><span>${esc(a)}</span><b>${v}</b><em>${c}</em></div>`).join("")}</div>`;
@@ -129,7 +129,7 @@
     const lines = [];
     if (top && kr.length > 1) lines.push(`한국계 ${kr.length}곳 중 최대: ${esc(label(top))}(${esc(top.firm)}) ${num(top.equity_krw)}억원, ${b.indexOf(top) + 1}위`);
     if (m.median_pb != null) lines.push(`상장사 P/B 중앙값 <b>${num(m.median_pb, 2)}배</b>, ROE 중앙값 ${num(m.median_roe, 1)}%`);
-    $("#land").innerHTML = `<p class="scope"><b>비교 대상</b> 현지 상장 증권사 ${nLocal}곳${mk === "vn" ? "(HOSE·HNX·UPCoM)" : ""} + 한국계 현지법인 ${kr.length}곳 = ${b.length}곳.
+    $("#land").innerHTML = `<p class="scope"><b>비교 대상</b> 현지 상장 증권사 ${nLocal}곳 + 한국계 현지법인 ${kr.length}곳 = ${b.length}곳.
         비상장 현지사(은행 계열 등)는 공시 재무를 자동으로 받을 수 없어 빠지므로, 여기 순위는 <b>시장 전체 순위보다 앞에</b> 나옵니다${mk === "vn" ? " (베트남은 은행 계열 등 비상장 증권사가 많아 전체 기준 순위는 이보다 뒤)" : ""}.</p>
       ${position(m, b)}
       ${lines.length ? `<p class="why">${lines.join(" · ")}</p>` : ""}
