@@ -28,6 +28,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: (임시) 베트남 재무 API 점검
+        if: github.event_name == 'pull_request' && hashFiles('insight/scripts/probe_vn.py') != ''
+        continue-on-error: true
+        run: python insight/scripts/probe_vn.py
       - name: 진출국 스코어카드 (IMF WEO · 세계은행)
         run: python insight/scripts/fetch_insight.py country
       - name: 현지 경쟁 구도 (상장 증권사 시가총액·P/B + 한국계 법인)
