@@ -15,7 +15,8 @@
 확인 시각만 남긴다. 큰 변화: 새 DART 보고서, 고른 규칙·구간의 변화, 3일 안의 새 구조·경쟁사·당사 뉴스,
 정책금리 변경, 지수·환율 급변, 마지막 갱신 후 14일 경과. 규칙이 하루 안 잡히면(자료 공백) 하루는 이전 줄을
 그대로 두고 이틀째 빠진다(같은 날 다시 돌려도 하루로 센다. 새 공시 날이나 그 줄을 직접 건드린 사건이 있는
-날은 바로 뺀다). 판단 상태(본 기사·직전 공시·금리 등)는
+날은 바로 뺀다. 유예 줄도 그날의 국면·보류 조건에 맞춰 문구를 고쳐 쓴다). 해외자회사 공시 파일이 비거나 깨진 날은
+판단하지 않고 이전 문구를 유지한다. 판단 상태(본 기사·직전 공시·금리 등)는
 takeaways_state.json 에 따로 두어 화면이 읽는 파일을 가볍게 한다.
 
     python scripts/build_takeaways.py            # 갱신
@@ -65,25 +66,35 @@ OFF_WATCH = re.compile(r"off (the )?watch ?list|keeps .{0,30} off", re.I)
 OFF_WATCH_UPGRADE = re.compile(r"off (the )?watch ?list.{0,40}upgrad|keeps .{0,30} off.{0,40}upgrad", re.I)  # 승격 관찰대상에서 빠짐 = 호재 아님
 NEUTRAL = re.compile(r"\brebut|\bdefend(s|ed)?\b|\bden(y|ies|ied)\b|반박|부인", re.I)
 # 강등 우려가 걷힌 기사(강등 안 함·철회·신흥시장 유지·우려 완화)는 '관찰대상 제외 유지'처럼 안도(+1)로 본다.
-# 'to avoid'처럼 피하려 애쓰는 기사는 아직 악재다
-RELIEF_RE = re.compile(r"\bnot (to )?(be )?downgrad|\bno downgrade|\bavoid(s|ed)\b.{0,20}(downgrad|reclassif)|\bspar(es|ed)\b.{0,30}downgrad|"
-                       r"\bescap(es|ed)\b.{0,20}downgrad|\b(scrap|shelv)\w* (\w+ ){0,2}(downgrad|reclassif)|\brules? out (\w+ ){0,3}(downgrad|reclassif)|"
-                       r"downgrade (fears?|concerns?|worr\w*) (ease|fade|recede|subside)|keeps? .{0,30}\bin (the )?emerging|"
-                       r"retain(s|ed)? .{0,40}emerging|remains? (in (the )?|an? )emerging|강등 (철회|무산|피해|면해)", re.I)
+# 'to avoid'처럼 피하려 애쓰는 기사는 아직 악재다. 사이는 한 절 안([^;,.:])에서만 본다('FTSE spares X; MSCI downgrade looms'는 안도 아님)
+_C = r"[^;,.:]"
+RELIEF_RE = re.compile(rf"\bnot (to )?(be )?downgrad|\bno downgrade|\bavoid(s|ed)\b{_C}{{0,20}}downgrad|\bspar(es|ed)\b{_C}{{0,30}}downgrad|"
+                       rf"\bescap(es|ed)\b{_C}{{0,20}}downgrad|\b(scrap|shelv)\w* (\w+ ){{0,2}}downgrad|\brules? out (\w+ ){{0,3}}downgrad|"
+                       r"downgrade (fears?|concerns?|worr\w*) (eas|fad|reced|subsid)\w*|"
+                       r"(fears?|concerns?|worr\w*) (of|over|about) (an? )?(MSCI |FTSE )?downgrade (eas|fad|reced|subsid)\w*|"
+                       rf"keeps? {_C}{{0,30}}\bin (the )?emerging|retain(s|ed)? (its )?emerging[- ]market (status|classification)|"
+                       r"remains? (in (the )?|an? )emerging[- ]market|강등\s*(결정\s*)?(철회|무산)|강등\s*(위기\s*)?(을\s*|를\s*)?(피해\s*(가|갔|간)|피했|모면|면했|면해|넘겼)", re.I)
+# 'won't rule out downgrade'처럼 부정한 안도 표현은 여전히 위협이다
+NOT_RELIEF_RE = re.compile(r"(\bnot|n't|\brefus\w* to|\bdeclin\w* to|\bcannot|\bunable to)\s+(\w+\s+){0,2}(rule|ruling)s? out", re.I)
 # 다른 계획이 철회·보류된 기사는 호재·악재 어느 쪽도 아니다
 RESOLVED = re.compile(r"\bscrap|\bshelv|rules? out", re.I)
 # 승격이 미뤄지거나 무산된 기사는 호재가 아니다
 DELAY_RE = re.compile(r"miss(es|ed)? out|\bdelay|postpon|\bstall|\bfades?\b|setback|\bfail|remains? on .{0,15}watch|keeps? .{0,30}\bon (the )?watch ?list|연기|불발|무산|보류", re.I)
-NEG_RE = re.compile(r"downgrad|standalone|\brout\b|manipulat|outflow|sell-?off|plunge|tumble|slump|angst|turmoil|강등|급락|이탈|폭락|delist", re.I)
-# '급락 뒤 반등' 기사는 악재가 아니다: 반등 앞뒤의 하락 표현은 악재로 세지 않는다
-REBOUND_RE = re.compile(r"(rebound|recover|rall(y|ies|ied)|bounce)\w*\s+(from|after)\s+[\w\s'-]{0,25}?(slump|plunge|tumble|sell-?off|rout)\w*|"
+NEG_RE = re.compile(r"downgrad|standalone|\bto frontier|\brout\b|manipulat|outflow|sell-?off|plunge|tumble|slump|angst|turmoil|강등|급락|이탈|폭락|delist", re.I)
+# '급락 뒤 반등' 기사는 악재가 아니다: 반등 앞뒤의 하락 표현은 악재로 세지 않는다(그 사이의 강등 같은 구조 표현은 남긴다)
+REBOUND_RE = re.compile(r"(rebound|recover|rall(y|ies|ied)|bounce)\w*\s+(from|after)\s+(?:(?!downgrad|standalone|frontier)[\w\s'-]){0,25}?(slump|plunge|tumble|sell-?off|rout)\w*|"
                         r"(급락|폭락)\S*\s*(딛고|뒤|후|끝)\s*\S*\s*반등", re.I)
 # 걸려 있는 결정(강등 검토·의견수렴·경고 등 앞으로의 일)을 가리키는 말: '○○ 결정 전까지'라고 쓸 때만
 PENDING_RE = re.compile(r"review|consult|propos|warn|\bfac(es?|ing)\b|\bcould\b|\bmay\b|\bmight\b|watch ?list|weigh|consider|threat|\brisks?\b|"
-                        r"fears?|concern|worr|\bloom|\bdelay|postpon|\bdefer|\bto (be )?(downgrad|reclassif)|\bto avoid\b|scrambl|\brac(es|ing)\b|ahead of|pending|await|"
-                        r"decision (due|in|on|next)|검토|의견 ?수렴|경고|우려|가능성|관찰", re.I)
-# 이미 내려진 결정(강등 확정)
-CONFIRMED_RE = re.compile(r"\bdowngrades \w+ (to|from)|\bdowngraded\b|\b(cuts?|moves?|reclassifi(es|ed)) .{0,30}\bto (frontier|standalone)|강등 (확정|결정)|강등했", re.I)
+                        r"fears?|concern|worr|\bloom|\bdelay|postpon|\bdefer|rules? out|\bto (be )?(downgrad|reclassif)|\bto avoid\b|scrambl|\brac(es|ing)\b|ahead of|pending|await|"
+                        r"decision (due|in|on|next)|검토|의견 ?수렴|경고|우려|가능성|관찰|앞두|임박|연기|유보|여부|촉각|전망", re.I)
+# 이미 내려진 강등: 지수 회사가 주어이거나 프런티어·독립시장으로 옮긴 기사(증권사의 투자의견 하향 'downgrades X to neutral'은 아님)
+CONFIRMED_RE = re.compile(rf"(MSCI|FTSE){_C}{{0,25}}\b(downgrades|downgraded|cuts|moves|reclassifies|reclassified)\b|"
+                          rf"\b(downgraded|reclassified|moved|cut)\b{_C}{{0,25}}\bto (frontier|standalone)|"
+                          r"(프런티어|프론티어|독립시장|스탠드얼론)\S*\s*강등|강등\s*(확정|결정|했)(?!\s*\S{0,3}\s*(앞두|임박|연기|유보|미뤄|여부|촉각|철회|전망|가능))", re.I)
+# 확정 표현 앞에 붙은 조동사·위협 표현(could be downgraded 등)은 아직 걸린 결정이다
+MODAL_RE = re.compile(r"\b(could|may|might|would|to be|set to|likely to|fac(es|ing)|risks?|threat\w*|warn\w*|propos\w*|consider\w*|weigh\w*)\s+(\w+\s+){0,2}(downgrad|cut|reclassif)|"
+                      r"앞두|임박|여부|가능성|검토|전망", re.I)
 UPGRADE_CTX_RE = re.compile(r"upgrad|inclusion|승격|편입|reclassif|watch ?list", re.I)
 DOWN_CTX_RE = re.compile(r"downgrad|강등|standalone", re.I)
 POS_RE = re.compile(r"upgrad|inclusion|편입|승격|상향|reclassif|index options?|derivativ|옵션|파생", re.I)
@@ -94,11 +105,14 @@ DERIV_RE = re.compile(r"index options?|derivativ|옵션|파생", re.I)
 CAPITAL_RE = re.compile(r"증자|자본금|자본 ?확충|곳간|인수|지분|합병|M&A|점유율 ?전쟁|stake|acquir", re.I)
 CAPITAL_HEAD_RE = re.compile(r"자본금|증자|자본 ?확충")
 REG_RE = re.compile(r"manipulat|fraud|scam|과징금|과태료|경영유의|적발|시세조종|사기", re.I)
-# '제재·위반·sanction·fine·penalty'는 외교 제재 기사와 섞이므로 감독기관 이름이 같이 있고 외교 제재가 아닐 때만
-REG_FINE_RE = re.compile(r"sanction|\bfine[ds]?\b(?!-)|penalt|제재|위반", re.I)
+# 'sanction·fine·penalty'는 외교 제재 기사와 섞이므로 감독기관 이름이 같이 있고 외교 제재가 아닐 때만
+REG_FINE_RE = re.compile(r"sanction|\bfine[ds]?\b(?!-)|penalt", re.I)
+# 한글 '제재·위반·벌금'은 감독기관 이름이 빠진 제목이 많아 외교 제재만 아니면 센다
+REG_KO_RE = re.compile(r"제재|위반|벌금")
 REGULATOR_RE = re.compile(r"\bSSC\b|\bSBV\b|\bOJK\b|\bMAS\b|\b(IDX|HOSE|SGX)\b(?![- ]listed)|regulator|watchdog|securities commission|"
                           r"감독|당국|금감원|금융위|증권위|거래소", re.I)
-DIPLO_RE = re.compile(r"\biran|north korea|russia|\bOFAC\b|\bU\.?S\.? (imposes|sanction)|treasury|이란|대북|북한|러시아|美|미국", re.I)
+DIPLO_RE = re.compile(r"\biran|north korea|russia|\bOFAC\b|\bU\.?S\.? (imposes|sanction)|\bU\.?S\.? Treasury|Treasury Department|"
+                      r"이란|대북|북한|러시아|美\s*(재무부|정부)|대미 제재", re.I)
 RWA_RE = re.compile(r"RWA|토큰|STO|디지털자산|가상자산|tokeni", re.I)
 BANK_RE = re.compile(r"BIDV|VietinBank|Vietcombank|Agribank|Mandiri|\bBRI\b|\bBNI\b|\bBCA\b|Danareksa", re.I)
 BROKER_NAME_RE = re.compile(r"securities|sekuritas|증권", re.I)
@@ -109,7 +123,7 @@ LABELS = [
     (re.compile(r"index options?", re.I), "지수옵션 도입 계획", None),
     (re.compile(r"(R&I|rating).*upgrad|upgrad.*(R&I|BBB)", re.I), "신용등급 상향", None),
     (re.compile(r"market upgrade (is|was) (just|only)|(beyond|after) (the )?market upgrade|post-?upgrade", re.I), "시장 승격 이후 과제", 1),
-    (re.compile(r"MSCI.*downgrad|downgrad.*MSCI", re.I), "MSCI 강등 검토", -1),
+    (re.compile(r"MSCI.*(downgrad|강등)|(downgrad|강등).*MSCI", re.I), "MSCI 강등 검토", -1),
     (re.compile(r"manipulat", re.I), "시세조종 대책 강화", None),
     (re.compile(r"bond premia.{0,40}(high|widen|jump|surge|soar)", re.I), "회사채 가산금리 확대", None),
     (re.compile(r"FTSE.*(upgrad|inclusion)|(upgrad|inclusion).*FTSE", re.I), "FTSE 승격", 1),
@@ -167,8 +181,11 @@ def news_label(title, src=""):
         return f"{prov} 관찰대상 제외".strip() + (" 유지" if re.search(r"keeps?", title, re.I) else "")
     pol = polarity(title)
     prov = next((p for p in ("FTSE", "MSCI") if p in title), "")
-    if pol > 0 and RELIEF_RE.search(title):
-        return f"{prov} 강등 우려 해소".strip()
+    m = RELIEF_RE.search(title) if pol > 0 else None
+    if m:
+        # 기관이 둘 나오면 안도 표현에 가장 가까운 쪽('MSCI spares …; FTSE review next' → MSCI)
+        near = sorted((abs(i - m.start()), p) for p in ("MSCI", "FTSE") for i in [title.find(p)] if i >= 0)
+        return f"{near[0][1] if near else ''} 강등 우려 해소".strip()
     if pol == 0 and prov and DELAY_RE.search(title) and UPGRADE_CTX_RE.search(title) and not DOWN_CTX_RE.search(title):
         return f"{prov} 승격 지연"
     if pol < 0 and prov and confirmed(title):
@@ -220,6 +237,8 @@ def polarity(title):
         return 0 if OFF_WATCH_UPGRADE.search(title) else 1
     if NEUTRAL.search(title):
         return 0
+    if NOT_RELIEF_RE.search(title) and DOWN_CTX_RE.search(title):
+        return -1
     if RELIEF_RE.search(title):
         return 1
     if RESOLVED.search(title):
@@ -235,17 +254,21 @@ def polarity(title):
 
 def relief(title):
     """악재가 걷혔다는 안도 기사(호재로 세되 '시장 지위 상향'은 아님)."""
-    return bool(OFF_WATCH.search(title) or RELIEF_RE.search(title))
+    return polarity(title) > 0 and bool(OFF_WATCH.search(title) or RELIEF_RE.search(title))
 
 
 def confirmed(title):
-    """이미 내려진 강등(검토·경고 등 앞으로의 일을 말하면 아님)."""
-    return bool(CONFIRMED_RE.search(title)) and not PENDING_RE.search(title)
+    """이미 내려진 강등(could be downgraded·앞두고 등 앞으로의 일을 말하면 아님)."""
+    return bool(CONFIRMED_RE.search(title)) and not MODAL_RE.search(title)
 
 
 def reg_hit(title):
     """제재·사기·시세조종 기사인가(외교 제재·'fine-tune'·'SGX-listed' 제외)."""
-    return bool(REG_RE.search(title) or (REG_FINE_RE.search(title) and REGULATOR_RE.search(title) and not DIPLO_RE.search(title)))
+    if REG_RE.search(title):
+        return True
+    if DIPLO_RE.search(title):
+        return False
+    return bool(REG_KO_RE.search(title) or (REG_FINE_RE.search(title) and REGULATOR_RE.search(title)))
 
 
 def countries_of(title):
@@ -482,6 +505,29 @@ def flows(D, key):
     return rev_g, cost_g, cir
 
 
+def r01_text(D, c, variant, cond=""):
+    lab = D.label(BROKER[c])
+    if variant == "acquire-gated":
+        return f"{lab}의 현지 증권사 지분 인수는 {cond} 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다."
+    return f"{lab}은 증자만으로는 격차가 커, 현지 증권사 지분 인수로 규모·수익을 함께 키우는 방안을 검토할 만합니다."
+
+
+def r04_text(c, variant, cond=""):
+    if variant == "gated":
+        return f"{KOR[c]} 현지 증권사 인수는 원화 비용이 낮아졌어도 {cond} 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다."
+    return f"{KOR[c]} 원화 기준 인수 비용이 크게 낮아진 구간이라, 현지 증권사 인수 후보 검토를 시작할 만합니다."
+
+
+def mkt_text(D, c, mode, top=None):
+    lab = D.label(BROKER[c])
+    return {"reallocate": f"{lab} 고정비 절감분을 모바일 온보딩·디지털 수수료 프로모션에 재배분해 점유율 회복을 검토할 만합니다.",
+            "targeted": f"{lab}은 전면 수수료 인하 대신 은행·핀테크 제휴와 타깃 프로모션으로 신규 고객 유입을 늘리는 방안을 검토할 만합니다.",
+            "aggressive": f"{lab} 신규 계좌 유치 이벤트·수수료 프로모션을 공격적으로 확대하는 방안을 검토할 만합니다."}.get(mode) or \
+        {"R16": f"모바일 온보딩·디지털 채널 제휴로 {lab} 신규 고객 유입 확대를 검토할 만합니다.",
+         "R17": f"{lab}은 한국계 경쟁사와 겹치지 않는 고객군을 겨냥한 타깃 프로모션을 검토할 만합니다.",
+         "R15": f"반등 구간에 맞춰 {lab} 신규 계좌 유치 이벤트를 진행하는 방안을 검토할 만합니다."}[top]
+
+
 def r01_scale(D, c, ctx):
     key = BROKER[c]
     if injection(D, key) or loss(D, key):
@@ -504,8 +550,7 @@ def r01_scale(D, c, ctx):
     ev = [f"FY{own['asof'][:4]} 자기자본 {own['equity_krw']:,.0f}억원, 한국계 {n_all}사 중 {rank}위(당사 제외 중간값 {med_krw:,.0f}억원, DART)"]
     if acquire:
         ev.append(f"ROE {own['roe']:.1f}% vs 현지 상장사 {len(loc)}곳 중간값 {lroe:.1f}%")
-        text = f"{lab}은 증자만으로는 격차가 커, 현지 증권사 지분 인수로 규모·수익을 함께 키우는 방안을 검토할 만합니다."
-        return cand("R01", "M&A·지분", 9, text, ev, [key], "acquire", ("acquire", rank, n_all), ratio=ratio)
+        return cand("R01", "M&A·지분", 9, r01_text(D, c, "acquire"), ev, [key], "acquire", ("acquire", rank, n_all), ratio=ratio)
     text = f"{lab} 자기자본이 한국계 {n_all}사 중 {rank}위라, 증자 규모와 시점을 검토할 만합니다."
     return cand("R01", "자본", 8, text, ev, [key], "inject", ("inject", rank, n_all), ratio=ratio)
 
@@ -576,8 +621,7 @@ def r04_entry(D, c):
         return None
     ev = (f"{IX_SHORT[c]} {ix['close']:,.0f}({md(ix['date'])}), 최근 1년 고점({peak_month(ix, 13)} 월말) 대비 {sgn(dd * 100)} · "
           f"{CCY_NAME[CCY[c]]} 원화 대비 연초 이후 {sgn(fx['ytd_pct'])}(ECOS {md(fx['last'][0])}) · 원화 환산 지수 연초 대비 {sgn(krw * 100)}")
-    text = f"{KOR[c]} 원화 기준 인수 비용이 크게 낮아진 구간이라, 현지 증권사 인수 후보 검토를 시작할 만합니다."
-    return cand("R04", "M&A·지분", 8, text, [ev], KEYS[c], "open", dd=dd, krw=krw)
+    return cand("R04", "M&A·지분", 8, r04_text(c, "open"), [ev], KEYS[c], "open", dd=dd, krw=krw)
 
 
 def r05_post_injection(D, c):
@@ -662,7 +706,8 @@ def r07_r08_struct(D, c):
 def pending(pos, neg, prov):
     """prov(MSCI·FTSE)의 결정이 아직 걸려 있나: 강등 검토·경고 등 앞으로의 일을 말하는 악재 기사가 있고,
     그 기관의 가장 최근 기사가 강등 확정·우려 해소가 아닐 때만."""
-    latest = max((i for i in pos + neg if prov in i["title"]), key=lambda i: i.get("date", ""), default=None)
+    # 같은 날짜면 결정·해소 기사를 최신으로 본다(피드·보관함 순서에 따라 결과가 바뀌지 않게)
+    latest = max((i for i in pos + neg if prov in i["title"]), key=lambda i: (i.get("date", ""), i in pos or confirmed(i["title"])), default=None)
     if not latest or latest in pos or confirmed(latest["title"]):
         return False
     return any(prov in t and PENDING_RE.search(t) for i in neg for t in [i["title"]] + i.get("same", []))
@@ -1000,11 +1045,13 @@ def fallbacks(D, c):
 
 
 # ---------- 조합·선택 ----------
-def evaluate(D, c, published, pinned=()):
+def evaluate(D, c, published, pinned=(), first=()):
     """나라 c의 발동 규칙 → 병합·조정 → 선택. (고른 bullet, 탈락 후보, 발동 규칙, 국면)
 
     pinned: 자료 공백으로 오늘 하루 안 잡힌 게시 중 bullet. 자리를 먼저 차지해 다른 규칙이 그 자리를
-    메우며 문구가 바뀌는 일을 막는다(이틀째 안 잡히면 run()이 더는 넘기지 않는다)."""
+    메우며 문구가 바뀌는 일을 막는다(이틀째 안 잡히면 run()이 더는 넘기지 않는다). 오늘의 국면·보류 조건과
+    어긋나는 줄은 지키지 않는다.
+    first: 오늘 사건이 직접 건드린 규칙. 유예 줄보다 먼저 자리를 잡는다(사건의 핵심 줄이 하루 늦지 않게)."""
     ctx = {"published": published}
     fired, extra = {}, []
 
@@ -1038,8 +1085,22 @@ def evaluate(D, c, published, pinned=()):
     r14 = r14_volume(D, c)
     mkt = [x for x in (r15_momentum(D, c, regime), r16_digital(D, c), r17_share_gap(D, c)) if x]
     put(r18_rwa(D, c))
-    dropped = []
+    dropped, suppressed = [], set()   # suppressed: 합친 것이 아니라 조정으로 뺀 규칙(안 잡힘으로 센다)
     loss_rules = bool(fired.get("R11")) or bool(r13) or any(x["rule"] == "R11" for x in extra) or "R11" in pin or "R13" in pin
+    gated = regime == "NEG" or loss_rules
+    pb = (pin.get("R08") or {}).get("bucket") or []
+    event = (st or {}).get("event") or (pb[1] if len(pb) > 1 and pb[1] else "시장 불안 진정")
+    parts = [x for x in (event if regime == "NEG" else "", "손익 회복" if loss_rules else "") if x]
+    cond = f"{parts[0]}{josa(parts[0], '과', '와')} {parts[1]}" if len(parts) == 2 else (parts[0] if parts else event)
+    key = BROKER[c]
+    own = lambda x: (x.get("keys") or [key])[0] == key   # 옛 게시 줄에 keys 가 없으면 증권 법인으로 본다
+    # 유예 중인 인수 줄은 오늘의 보류 조건에 맞춰 문구를 고쳐 쓴다(보류 없는 인수 줄 옆의 악재 줄, 보류 줄 옆의 호재 줄이 생기지 않게)
+    if (pin.get("R01") or {}).get("variant", "").startswith("acquire"):
+        v = "acquire-gated" if gated else "acquire"
+        pin["R01"] = {**pin["R01"], "variant": v, "text": r01_text(D, c, v, cond)}
+    if "R04" in pin:
+        v = "gated" if gated else "open"
+        pin["R04"] = {**pin["R04"], "variant": v, "text": r04_text(c, v, cond), "bucket": ["gated"] if gated else []}
 
     # M1 R02 → R01, 단독은 R01 없고 흑자·쿨다운 아닐 때만
     if r02:
@@ -1054,11 +1115,7 @@ def evaluate(D, c, published, pinned=()):
             fired["R02"] = r02
         else:
             dropped.append(("R02", "당사 법인 적자·증자 직후"))
-    gated = regime == "NEG" or loss_rules
-    pb = (pin.get("R08") or {}).get("bucket") or []
-    event = (st or {}).get("event") or (pb[1] if len(pb) > 1 and pb[1] else "시장 불안 진정")
-    parts = [x for x in (event if regime == "NEG" else "", "손익 회복" if loss_rules else "") if x]
-    cond = f"{parts[0]}{josa(parts[0], '과', '와')} {parts[1]}" if len(parts) == 2 else (parts[0] if parts else event)
+            suppressed.add("R02")
     # M2·M8 R04: R01 acquire 에 합치거나, 게이트면 '실사만' 문구
     if r04:
         if (fired.get("R01") or {}).get("variant") == "acquire":
@@ -1068,13 +1125,13 @@ def evaluate(D, c, published, pinned=()):
             dropped.append(("R04", "R01에 합침"))
         else:
             if gated:
-                r04["text"] = f"{KOR[c]} 현지 증권사 인수는 원화 비용이 낮아졌어도 {cond} 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다."
+                r04["text"] = r04_text(c, "gated", cond)
                 r04["variant"] = "gated"
                 r04["bucket"][0:0] = ["gated"]
             fired["R04"] = r04
     if (fired.get("R01") or {}).get("variant") == "acquire" and gated:
         r = fired["R01"]
-        r["text"] = f"{D.label(BROKER[c])}의 현지 증권사 지분 인수는 {cond} 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다."
+        r["text"] = r01_text(D, c, "acquire-gated", cond)
         r["variant"] = "acquire-gated"
     # M3·M4 R11 → R13, R14 → R13 > R11 > 단독
     if r13:
@@ -1099,42 +1156,44 @@ def evaluate(D, c, published, pinned=()):
             dropped.append(("R14", "R13·R11에 합침"))
         else:
             fired["R14"] = r14
-    # M5·M7 마케팅 한 줄
-    if mkt:
-        key = BROKER[c]
-        # 비용 규칙은 유예 중인 게시 줄도 본다(공시 파일이 하루 빠져도 마케팅 강도가 뒤집히지 않게). 옛 게시 줄에 keys 가 없으면 증권 법인으로 본다
+    # M5·M7 마케팅 한 줄. 오늘 근거가 안 잡혀 유예 중인 마케팅 줄도 같은 판단으로 모드를 다시 정한다(근거 규칙은 상태에 남긴 것)
+    mp = pin.get("MKT")
+    if mkt or mp:
+        # 비용 규칙은 유예 중인 게시 줄도 본다(공시 파일이 하루 빠져도 마케팅 강도가 뒤집히지 않게)
         eff = lambda r: fired.get(r) or pin.get(r)
-        own = lambda x: (x.get("keys") or [key])[0] == key
         r11k = next((x for x in [fired.get("R11")] + extra + [pin.get("R11")] if x and x["rule"] == "R11" and own(x)), None)
         r12k = eff("R12") if eff("R12") and own(eff("R12")) else None
         cost_rule = bool(r11k) or bool(eff("R13")) or bool(r12k) or bool(eff("R14"))
         mkt.sort(key=lambda x: -x["weight"])
-        lab = D.label(key)
-        comps = [x["rule"] for x in mkt]
-        tierA = any(x["rule"] == "R15" and x["variant"] == "A" for x in mkt)
+        if mkt:
+            comps = [x["rule"] for x in mkt]
+            tierA = any(x["rule"] == "R15" and x["variant"] == "A" for x in mkt)
+        else:
+            # 반등 마케팅(R15)은 악재 국면에는 쓰지 않는다
+            comps = [r for r in (mp.get("components") or []) if not (r == "R15" and regime == "NEG")]
+            tierA = bool(mp.get("tierA")) and "R15" in comps
         if (r11k and r11k["variant"] == "widen") or (r11k and (r11k.get("cir") or 0) >= 3):
             mode = None
             dropped.append(("MKT", "적자 확대 법인이라 마케팅 지출 제안 안 함"))
+            suppressed.add("MKT")
         elif (r11k and r11k["variant"] == "flip") or eff("R13"):
             mode = "reallocate"
-            text = f"{lab} 고정비 절감분을 모바일 온보딩·디지털 수수료 프로모션에 재배분해 점유율 회복을 검토할 만합니다."
         elif r12k:
             mode = "targeted"
-            text = f"{lab}은 전면 수수료 인하 대신 은행·핀테크 제휴와 타깃 프로모션으로 신규 고객 유입을 늘리는 방안을 검토할 만합니다."
         elif not cost_rule and (tierA or regime == "POS"):
             mode = "aggressive"
-            text = f"{lab} 신규 계좌 유치 이벤트·수수료 프로모션을 공격적으로 확대하는 방안을 검토할 만합니다."
         else:
-            mode = "base"
-            top = mkt[0]["rule"]
-            text = {"R16": f"모바일 온보딩·디지털 채널 제휴로 {lab} 신규 고객 유입 확대를 검토할 만합니다.",
-                    "R17": f"{lab}은 한국계 경쟁사와 겹치지 않는 고객군을 겨냥한 타깃 프로모션을 검토할 만합니다.",
-                    "R15": f"반등 구간에 맞춰 {lab} 신규 계좌 유치 이벤트를 진행하는 방안을 검토할 만합니다."}[top]
-        if mode:
+            mode = "base" if comps else None
+        if mkt and mode:
             # 구간은 문구를 정하는 것만: 모드와(기본형이면) 맨 위 근거 규칙. 지수 1주 등락처럼 근거에만 쓰이는 값은 넣지 않는다
-            fired["MKT"] = cand("MKT", "마케팅·고객", mkt[0]["weight"], text, [x["fact"] for x in mkt][:3], [key], mode,
-                                (mkt[0]["rule"],) if mode == "base" else (),
-                                driver=max(filter(None, (x["driver"] for x in mkt)), default=None), components=comps)
+            fired["MKT"] = cand("MKT", "마케팅·고객", mkt[0]["weight"], mkt_text(D, c, mode, comps[0]), [x["fact"] for x in mkt][:3], [key], mode,
+                                (comps[0],) if mode == "base" else (),
+                                driver=max(filter(None, (x["driver"] for x in mkt)), default=None), components=comps, tierA=tierA)
+        elif mp and not mode:
+            del pin["MKT"]
+        elif mp:
+            pin["MKT"] = {**mp, "variant": mode, "text": mkt_text(D, c, mode, comps[0] if comps else None),
+                          "bucket": [comps[0]] if mode == "base" else [], "components": comps, "tierA": tierA}
 
     # 점수와 선택
     def score(x):
@@ -1147,10 +1206,19 @@ def evaluate(D, c, published, pinned=()):
         x["score"] = score(x)
     pool.sort(key=lambda x: (-x["score"], -x["weight"], -(d(x["driver"]).toordinal() if x.get("driver") else 0), x["rule"]))
     chosen, cats = [], {}
+    for x in pool:   # 오늘 사건이 직접 건드린 줄이 먼저(유예 줄이 그 자리를 막지 않게)
+        if x["rule"] in first and not cats.get(x["category"]) and len(chosen) < 4:
+            chosen.append(x)
+            cats[x["category"]] = 1
+    first_cats = set(cats)
     for p in pinned:
-        chosen.append(dict(p))
-        cats[p["category"]] = 1
+        q = pin.get(p["rule"])   # 오늘 조건에 맞춰 고쳐 쓴 유예 줄(어긋나 뺀 줄은 없음)
+        if q is not None and q["category"] not in first_cats and len(chosen) < 4:
+            chosen.append(dict(q))
+            cats[q["category"]] = 1
     for x in pool:
+        if x in chosen:
+            continue
         if len(chosen) >= 4:
             x["why_not"] = "4개 마감"
             continue
@@ -1186,7 +1254,7 @@ def evaluate(D, c, published, pinned=()):
     losers = [{"rule": x["rule"], "variant": x["variant"], "why_not": x.get("why_not", "")} for x in pool if x not in chosen]
     losers += [{"rule": r, "variant": "", "why_not": why} for r, why in dropped]
     # 다른 줄에 합쳐졌거나 조정으로 빠진 규칙도 '발동'으로 본다(하루 안 잡힘으로 세지 않음)
-    fired_ids = {x["rule"] for x in pool} | {r for r, _ in dropped} | {x["rule"] for x in fb}
+    fired_ids = {x["rule"] for x in pool} | {r for r, _ in dropped if r not in suppressed} | {x["rule"] for x in fb}
     return chosen, losers, fired_ids, regime
 
 
@@ -1220,6 +1288,10 @@ def archive_worthy(it):
     """보관할 기사: 세 나라 중 하나에 귀속되는 것만(다른 나라 기사는 어느 규칙도 읽지 않는다)."""
     t = it.get("title", "")
     return it.get("kind") == "hub" or bool(countries_of(t)) or any(KOR[c] in t for c in COUNTRIES) or "인니" in t
+
+
+# 게시 줄에 없지만 유예 중인 줄을 다시 판단할 때 필요한 값(적자 법인의 비용/매출 배수, 마케팅 근거 규칙)
+META_KEYS = ("cir", "components", "tierA")
 
 
 def check_country(D, c, pc, cs, seen, dart_key, now, prev_spec=None):
@@ -1287,7 +1359,9 @@ def check_country(D, c, pc, cs, seen, dart_key, now, prev_spec=None):
     grace = [r for r in published if r not in fired and miss[r] < 2 and r not in ev_rules
              and not (r == "R07" and regime == "NEG") and not (r == "R08" and regime == "POS")]
     if grace and not hard:
-        chosen, losers, fired, regime = evaluate(D, c, published, pinned=[published[r] for r in grace])
+        # 게시 줄에 없는 판단 값(적자 법인의 비용/매출 배수 등)은 상태에서 되살린다
+        meta = cs.get("meta") or {}
+        chosen, losers, fired, regime = evaluate(D, c, published, pinned=[{**published[r], **meta.get(r, {})} for r in grace], first=ev_rules)
     new_map = {b["rule"]: b for b in chosen}
     added = [r for r in new_map if r not in published or new_map[r]["variant"] != published[r]["variant"]]
     gone = [r for r in published if r not in new_map and r not in fired]
@@ -1308,8 +1382,13 @@ def check_country(D, c, pc, cs, seen, dart_key, now, prev_spec=None):
         # 문구를 그대로 두는 날은 국면 표시도 그대로(줄과 표시가 엇갈리지 않게)
         block.update({k: pc.get(k) for k in ("regime", "bullets", "changed_at", "reason", "candidates", "history")}, last_check="큰 변화 없음")
     shown = {b["rule"] for b in block["bullets"] or []}
+    meta = {r: v for r, v in (cs.get("meta") or {}).items() if r in shown}
+    for b in chosen:
+        m = {k: b[k] for k in META_KEYS if b.get(k) is not None}
+        if b["rule"] in shown and m:
+            meta[b["rule"]] = m
     ncs = {"ok": stamp, "dart": dart_now, "spec": SPEC_VERSION, "policy": pol_now, "shock": shock, "shock_ix": shock_ix, "shock_fx": shock_fx,
-           "miss": {r: n for r, n in miss.items() if r in shown}, "miss_base": base, "miss_date": today.isoformat()}
+           "miss": {r: n for r, n in miss.items() if r in shown}, "miss_base": base, "miss_date": today.isoformat(), "meta": meta}
     return block, ncs
 
 
@@ -1328,9 +1407,19 @@ def run(root=ROOT, now=None, prev=None):
     dart_key = [((D.L or {}).get("report") or {}).get("rcept_no"), ((D.subs.get("invest") or {}).get("report") or {}).get("rcept_no")]
     seen = state.get("seen") or {}
     new_state = {"countries": {}, "injection": dict(state.get("injection") or {})}
+    # 공시 파일이 비거나 깨진 날: 손익·출자를 읽는 규칙이 모두 흔들리므로 판단하지 않고 이전 문구·상태를 그대로 둔다
+    dart_gap = D.L is None and any(((state.get("countries") or {}).get(c) or {}).get("dart") for c in COUNTRIES)
+    if dart_gap:
+        out["errors"].append("DART 해외자회사 자료 없음: 이전 문구 유지")
     for c in COUNTRIES:
         pc = (prev.get("countries") or {}).get(c) or {}
         cs = (state.get("countries") or {}).get(c) or {}
+        if dart_gap:
+            if pc:
+                out["countries"][c] = {**pc, "last_check": "확인 실패"}
+            if cs:
+                new_state["countries"][c] = cs
+            continue
         try:
             block, ncs = check_country(D, c, pc, cs, seen, dart_key, now, prev.get("spec_version"))
             for k in KEYS[c]:

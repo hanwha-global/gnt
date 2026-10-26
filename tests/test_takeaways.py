@@ -583,20 +583,21 @@ class TakeawaysTest(unittest.TestCase):
         self.assertEqual(res["countries"]["VN"]["last_check"], "큰 변화 없음", res["countries"]["VN"].get("reason"))
 
     def test_missing_dart_file_is_a_gap_not_a_new_report(self):
+        # 공시 파일이 빠지거나 깨진 날은 판단하지 않고(확인 실패, 이전 문구 유지), 돌아온 날도 새 보고서로 보지 않는다
         first = self.run_at(TODAY, {})
         keep = (self.root / "hanwha/data/dart_subs.json").read_bytes()
-        (self.root / "hanwha/data/dart_subs.json").unlink()
-        d1 = self.run_at(TODAY + timedelta(days=1), first)
-        (self.root / "hanwha/data/dart_subs.json").write_bytes(keep)
-        d2 = self.run_at(TODAY + timedelta(days=2), d1)
-        for res in (d1, d2):
+        for broken in (None, "{"):
+            if broken is None:
+                (self.root / "hanwha/data/dart_subs.json").unlink()
+            else:
+                (self.root / "hanwha/data/dart_subs.json").write_text(broken, encoding="utf-8")
+            d1 = self.run_at(TODAY + timedelta(days=1), first)
+            (self.root / "hanwha/data/dart_subs.json").write_bytes(keep)
+            d2 = self.run_at(TODAY + timedelta(days=2), d1)
             for c in ("VN", "ID", "SG"):
-                self.assertEqual(res["countries"][c]["last_check"], "큰 변화 없음", (c, res["countries"][c].get("reason")))
-        # 깨진 파일(읽기 실패)도 같다
-        (self.root / "hanwha/data/dart_subs.json").write_text("{", encoding="utf-8")
-        d3 = self.run_at(TODAY + timedelta(days=3), d2)
-        self.assertFalse(any(r.startswith("DART") for c in ("VN", "ID", "SG") for r in d3["countries"][c].get("reason") or []
-                             if d3["countries"][c]["last_check"] == "갱신"))
+                self.assertEqual(d1["countries"][c]["last_check"], "확인 실패")
+                self.assertEqual(d1["countries"][c]["bullets"], first["countries"][c]["bullets"])
+                self.assertEqual(d2["countries"][c]["last_check"], "큰 변화 없음", (c, d2["countries"][c].get("reason")))
 
     def test_resolved_or_decided_downgrade_ends_pending_wording(self):
         first = self.run_at(TODAY, {})
@@ -628,6 +629,102 @@ class TakeawaysTest(unittest.TestCase):
         ev = " ".join(self.rules(res, "VN")["R12"]["evidence"])
         self.assertIn("순이익률 FY2026 4.1% vs 한국계 흑자 3사 FY2026 중간값 15.0%", ev)
         self.assertNotIn("FY2025 중간값", ev)
+
+    def two_days(self, first, day_files, gaps=(), restore=None):
+        """하루째: day_files 반영 + gaps 파일 삭제, 이틀째: 지운 파일 복구. (하루째, 이틀째) 결과."""
+        day = TODAY + timedelta(days=1)
+        write(self.root, day_files)
+        for rel in gaps:
+            (self.root / rel).unlink()
+        d1 = self.run_at(day, first)
+        write(self.root, {rel: self.files[rel] for rel in gaps})
+        return d1, self.run_at(day + timedelta(days=1), d1)
+
+    def test_pinned_lines_follow_todays_regime(self):
+        # 악재가 새로 뜬 날 경쟁사 자료가 빠져 인수 줄이 유예돼도 '보류' 문구로, 다음 날은 그대로
+        first = self.run_at(TODAY, {})
+        self.assertEqual(self.rules(first, "VN")["R01"]["variant"], "acquire")
+        mn = self.files["site/data/global/macro_news.json"]
+        mn["countries"]["VN"]["items"].insert(0, {"date": (TODAY + timedelta(days=1)).isoformat(), "title": "Vietnam stocks plunge as foreign outflow deepens",
+                                                  "src": "Reuters", "url": "u-vn-neg", "priority": True})
+        self.files["hanwha/data/markets.json"]["indices"][0]["chg"]["1M"] = -11
+        d1, d2 = self.two_days(first, {"site/data/global/macro_news.json": mn, "hanwha/data/markets.json": self.files["hanwha/data/markets.json"]},
+                               gaps=("site/data/domestic/sub_fin.json",))
+        vn = self.rules(d1, "VN")
+        self.assertIn("R08", vn)
+        self.assertEqual(vn["R01"]["variant"], "acquire-gated")
+        self.assertIn("이후로 미루고", vn["R01"]["text"])
+        self.assertEqual(d2["countries"]["VN"]["last_check"], "큰 변화 없음", d2["countries"]["VN"].get("reason"))
+
+    def test_pinned_marketing_is_not_aggressive_under_bad_news(self):
+        self.files["hanwha/data/dart_subs.json"]["periods"][-1]["subs"]["VN"]["ni"] = 15
+        write(self.root, self.files)
+        first = self.run_at(TODAY, {})
+        self.assertEqual(self.rules(first, "VN")["MKT"]["variant"], "aggressive")
+        mn = self.files["site/data/global/macro_news.json"]
+        mn["countries"]["VN"]["items"].insert(0, {"date": (TODAY + timedelta(days=1)).isoformat(), "title": "Vietnam stocks plunge as foreign outflow deepens",
+                                                  "src": "Reuters", "url": "u-vn-neg", "priority": True})
+        self.files["hanwha/data/markets.json"]["indices"][0]["chg"]["1M"] = -11
+        d1, d2 = self.two_days(first, {"site/data/global/macro_news.json": mn, "hanwha/data/markets.json": self.files["hanwha/data/markets.json"]},
+                               gaps=("site/data/global/markets.json",))
+        vn = self.rules(d1, "VN")
+        self.assertIn("R08", vn)
+        self.assertNotEqual(vn["MKT"]["variant"], "aggressive")
+        self.assertNotIn("공격적", vn["MKT"]["text"])
+        self.assertEqual(d2["countries"]["VN"]["last_check"], "큰 변화 없음", d2["countries"]["VN"].get("reason"))
+
+    def test_event_line_is_not_blocked_by_a_pinned_line(self):
+        # 동 약세 줄(리스크)이 환율 공백으로 유예 중이어도, 새 악재 기사의 리스크 줄이 그날 바로 나온다
+        self.files["hanwha/data/macro.json"]["fx"]["VND"]["ytd_pct"] = -15
+        self.files["site/data/global/markets.json"]["markets"][0]["tables"] = []
+        write(self.root, self.files)
+        first = self.run_at(TODAY, {})
+        self.assertIn("R09", self.rules(first, "VN"))
+        mn = self.files["site/data/global/macro_news.json"]
+        mn["countries"]["VN"]["items"].insert(0, {"date": (TODAY + timedelta(days=1)).isoformat(), "title": "Vietnam stocks plunge as foreign outflow deepens",
+                                                  "src": "Reuters", "url": "u-vn-neg", "priority": True})
+        self.files["hanwha/data/markets.json"]["indices"][0]["chg"]["1M"] = -11
+        gap = copy.deepcopy(self.files["hanwha/data/macro.json"])
+        del gap["fx"]["VND"]
+        d1, d2 = self.two_days(first, {"site/data/global/macro_news.json": mn, "hanwha/data/markets.json": self.files["hanwha/data/markets.json"],
+                                       "hanwha/data/macro.json": gap})
+        self.assertIn("R08", self.rules(d1, "VN"))
+        self.assertNotIn("R09", self.rules(d1, "VN"))
+        write(self.root, {"hanwha/data/macro.json": self.files["hanwha/data/macro.json"]})
+        d3 = self.run_at(TODAY + timedelta(days=3), d2)
+        for res in (d2, d3):
+            self.assertEqual(res["countries"]["VN"]["last_check"], "큰 변화 없음", res["countries"]["VN"].get("reason"))
+
+    def test_pinned_loss_line_keeps_its_cost_ratio(self):
+        # 적자 법인의 비용/매출 배수는 상태에 남아, 유예 중인 적자 줄로도 마케팅 지출 제안을 막는다
+        self.files["hanwha/data/dart_subs.json"]["periods"][-1]["subs"]["VN"]["ni"] = -400
+        write(self.root, self.files)
+        first = self.run_at(TODAY, {})
+        meta = first["state"]["countries"]["VN"]["meta"]
+        self.assertGreaterEqual(meta["R11"]["cir"], 3)
+        self.assertNotIn("MKT", self.rules(first, "VN"))
+        # 다음 날 같은 법인이 흑자로 보이는 자료(가상)로 적자 줄이 안 잡혀도, 유예 줄의 배수로 판단
+        self.files["hanwha/data/dart_subs.json"]["periods"][-1]["subs"]["VN"]["ni"] = 5
+        write(self.root, self.files)
+        D = bt.Data(self.root, TODAY + timedelta(days=1), first["state"])
+        pub = {b["rule"]: b for b in first["countries"]["VN"]["bullets"]}
+        chosen, _, fired, _ = bt.evaluate(D, "VN", pub, pinned=[{**pub["R11"], **meta["R11"]}])
+        self.assertNotIn("MKT", [b["rule"] for b in chosen])
+        self.assertNotIn("MKT", fired)   # 조정으로 뺀 줄은 '발동'으로 세지 않는다(게시 중이면 유예 뒤 빠진다)
+
+    def test_same_day_decision_beats_pending_article(self):
+        first = self.run_at(TODAY, {})
+        day = (TODAY + timedelta(days=1)).isoformat()
+        items = self.files["site/data/global/macro_news.json"]["countries"]["ID"]["items"]
+        C = {"date": day, "title": "MSCI downgrades Indonesia to frontier market status", "src": "Reuters", "url": "u-C", "priority": True}
+        P = {"date": day, "title": "Indonesia stocks tumble as MSCI downgrade risk weighs on banks", "src": "Bloomberg", "url": "u-P", "priority": True}
+        write(self.root, {"site/data/global/macro_news.json": {"countries": {"ID": {"items": [C, P] + items}}}})
+        d1 = self.run_at(TODAY + timedelta(days=1), first)
+        self.assertTrue(self.rules(d1, "ID")["R08"]["text"].startswith("시장 불안 진정"))
+        # 이튿날 피드에서 결정 기사가 빠지고 보관함에만 남아도 같은 판단
+        write(self.root, {"site/data/global/macro_news.json": {"countries": {"ID": {"items": [P] + items}}}})
+        d2 = self.run_at(TODAY + timedelta(days=2), d1)
+        self.assertEqual(d2["countries"]["ID"]["last_check"], "큰 변화 없음", d2["countries"]["ID"].get("reason"))
 
     def test_report_name_and_polarity_helpers(self):
         self.assertEqual(bt.rep_name({"report": {"name": "반기보고서 (2026.06)"}}), "2026.06 반기보고서")
@@ -682,6 +779,32 @@ class TakeawaysTest(unittest.TestCase):
         for t in ("MAS fines Singapore brokerage firm for AML lapses", "SGX RegCo fines broker for lapses", "금감원, 베트남 법인 내부통제 제재",
                   "OJK sanctions Indonesian brokerage over margin breaches", "베트남 증권위원회, 한국계 증권사에 과징금"):
             self.assertTrue(bt.reg_hit(t), t)
+        # 부정한 안도('won't rule out')는 위협, 한 절을 넘는 안도·업그레이드 재분류 보류·상승 유지는 강등 우려 해소가 아니다
+        for t in ("MSCI won't rule out downgrading Indonesia", "MSCI does not rule out Indonesia downgrade",
+                  "MSCI refuses to rule out downgrade of Indonesian stocks", "MSCI 강등 피해 우려에 인도네시아 증시 급락"):
+            self.assertEqual(bt.polarity(t), -1, t)
+        self.assertEqual(bt.news_label("FTSE Russell spares Indonesia; MSCI downgrade decision looms"), "MSCI 강등 검토")
+        self.assertNotIn("해소", bt.news_label("MSCI shelves Vietnam reclassification review"))
+        self.assertNotIn("해소", bt.news_label("Vietnam stocks retain gains as emerging market upgrade takes effect"))
+        self.assertEqual(bt.news_label("MSCI spares Indonesia from downgrade; FTSE review next"), "MSCI 강등 우려 해소")
+        for t in ("인도네시아, MSCI 강등 피했다", "인도네시아 증시, MSCI 강등 면했다", "MSCI, 인니 강등 결정 철회",
+                  "Indonesia downgrade fears easing as MSCI signals patience", "Fears of MSCI downgrade ease as Indonesia unveils reforms"):
+            self.assertEqual(bt.news_label(t), "MSCI 강등 우려 해소", t)
+        # 강등 확정: 지수 회사가 주어이거나 프런티어·독립시장 이동. 앞두고·연기·임박·증권사 투자의견 하향은 아님
+        for t in ("MSCI downgrades Indonesia to frontier after annual market classification review", "MSCI downgrades Indonesia to standalone in May",
+                  "MSCI downgrades Indonesian stocks to frontier market", "MSCI cuts Indonesia to frontier in annual review", "MSCI, 인도네시아 프런티어로 강등",
+                  "MSCI downgrades Indonesia to frontier; outflows could top $2 billion"):
+            self.assertTrue(bt.confirmed(t), t)
+            self.assertEqual(bt.news_label(t), "MSCI 강등 결정", t)
+        for t in ("MSCI 강등 결정 앞두고 인니 증시 급락", "MSCI, 인니 강등 결정 연기", "MSCI, 인도네시아 강등 결정 임박",
+                  "MSCI 강등 결정 여부에 인도네시아 증시 출렁", "Goldman downgrades Indonesia to neutral amid MSCI turmoil"):
+            self.assertFalse(bt.confirmed(t), t)
+        self.assertEqual(bt.polarity("Jakarta stocks rebound from MSCI downgrade rout"), -1)
+        # 한글 제재·위반·벌금은 외교 제재만 아니면, 'treasury'·'미국' 언급은 외교 제재로 보지 않는다
+        for t in ("NH투자증권 싱가포르법인, 공시 위반으로 제재", "KB증권 베트남법인, 증권법 위반으로 벌금 부과",
+                  "SSC fines securities firm over treasury bond disclosure", "금감원, 미래에셋 베트남법인 제재…미국 법인도 검사"):
+            self.assertTrue(bt.reg_hit(t), t)
+        self.assertFalse(bt.reg_hit("US Treasury sanctions Singapore firms over Iran"))
         # 인용구가 여럿이면 자본·제재 관련 말, 없으면 가장 긴 것
         self.assertEqual(bt.news_label("오랜 준비 끝 '기지개'...베트남서 본격 '곳간 전쟁' 나선 증권사들"), "곳간 전쟁")
         self.assertEqual(bt.more(1, "구조 뉴스", "최근 30일"), "(구조 뉴스, 최근 30일)")
