@@ -28,6 +28,7 @@ STEPS = [
     ("news 해외진출 뉴스", "scripts/fetch_news.py", []),
     ("news 국가별 매크로 뉴스", "scripts/fetch_macro_news.py", []),
     ("news 해외 거점별 뉴스", "scripts/fetch_hub_news.py", []),
+    ("news 진출국 전략 Takeaways", "scripts/build_takeaways.py", []),
     ("sec 미국 순위", "scripts/update_sec.py", ["SEC_USER_AGENT"]),
     ("listed 해외 상장 증권사 순위", "scripts/update_listed.py", []),
     ("hanwha dart 해외자회사 공시", "hanwha/scripts/fetch_dart_subs.py", ["DART_API_KEY"]),

@@ -919,6 +919,30 @@
     return out.concat(macroPoints());
   }
 
+  // 진출국 전략 Takeaways: build_takeaways.py 가 매일 아침 공시·시장 지표·뉴스에서 규칙으로 만든 자동 의견(LLM 없음).
+  // 나라마다 큰 변화가 있을 때만 문구가 바뀌고, 없으면 이전 문구에 '아침 확인' 표시만 붙는다.
+  const TK_CAT = { "M&A·지분": "tk--ma", "자본": "tk--cap", "구조조정·비용": "tk--cost", "마케팅·고객": "tk--mkt", "상품·제휴": "tk--prod", "리스크·규제": "tk--risk" };
+  function takeawaysCard() {
+    const t = state.data.takeaways;
+    const order = ["VN", "ID", "SG"].filter((c) => t?.countries?.[c]?.bullets?.length);
+    if (!order.length) return "";
+    const md = (s) => (s ? `${+s.slice(5, 7)}/${+s.slice(8, 10)}` : "");
+    const flag = (c) => state.data.markets.markets.find((m) => m.id === c.toLowerCase())?.flag || "";
+    const checked = t.checked_at ? `${md(t.checked_at)} ${t.checked_at.slice(11, 16)}` : "";
+    const cols = order.map((c) => {
+      const b = t.countries[c];
+      const regime = b.regime === "NEG" ? '<span class="status status--soon">구조적 악재</span>' : b.regime === "POS" ? '<span class="status status--up">시장 지위 상향</span>' : "";
+      const items = b.bullets.map((x) => `<li><span class="tk__cat ${TK_CAT[x.category] || ""}">${esc(x.category)}</span>${esc(x.text)}
+        <div class="tk__ev">${esc(x.evidence.join(" · "))}${(x.links || []).slice(0, 1).map((l) => ` <a href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.title || l.label)}">기사</a>`).join("")}</div></li>`).join("");
+      const quiet = b.last_check === "큰 변화 없음" && checked ? ` · ${checked} 확인, 큰 변화 없음` : "";
+      return `<section class="tk__col"><h4><span aria-hidden="true">${flag(c)}</span>${esc(b.country)}<span class="sub">${esc(b.entities.join(" · "))}</span>${regime}</h4>
+        <ol class="tk__list">${items}</ol><p class="tk__foot">${md(b.changed_at)} 갱신(${esc((b.reason || []).join(", "))})${quiet}</p></section>`;
+    }).join("");
+    return `<div class="card span12 tk"><h3>나라별 실행 방향</h3>
+      <p class="card__meta">당사 현지법인이 있는 나라마다 공시·시장 지표·뉴스를 규칙으로 읽어 만든 자동 의견입니다(LLM 없음, 회사 공식 입장 아님). 매일 아침 확인하고 큰 변화가 있을 때만 바꿉니다.</p>
+      ${tmeta(`줄마다 근거의 시점${checked ? ` · 마지막 확인 ${checked} KST` : ""}`, "")}<div class="tk__grid">${cols}</div></div>`;
+  }
+
   // 국가별 매크로 줄: 한화 탭 YTD Macro가 모으는 정책금리(BIS)·지수(Yahoo)·환율(ECOS)과 금리 결정 일정,
   // 국가별 주요 헤드라인(macro_news.json, 주요 매체 RSS)을 규칙으로 엮는다(LLM 없음)
   const MACRO_ROWS = [
@@ -1199,9 +1223,12 @@
 
     const markets = state.data.markets.markets.filter((m) => m.auto !== "dart");
     const pts = insights(hw, corps);
+    const tk = takeawaysCard();
+    const printBtn = '<button type="button" class="print-btn" id="ov-print" title="한눈에 보기를 A4 가로로 인쇄(2~3쪽)">인쇄</button>';
     $("#overview-view").innerHTML = `<div class="ov">
-      <div class="ov__label ov__label--first"><h2>국내 증권사 글로벌 네트워크</h2><span>FY2025 사업보고서 종속회사 목록 · 금융업 영업법인(손자회사 포함) · 지주·펀드·SPV 제외</span>
-        <button type="button" class="print-btn" id="ov-print" title="한눈에 보기를 A4 가로로 인쇄(1~2쪽)">인쇄</button></div>
+      ${tk ? `<div class="ov__label"><h2>진출국 전략 Takeaways</h2><span>당사 현지법인 3개국 · 매일 아침 확인, 큰 변화가 있을 때만 갱신</span>${printBtn}</div>${tk}` : ""}
+      <div class="ov__label"><h2>국내 증권사 글로벌 네트워크</h2><span>FY2025 사업보고서 종속회사 목록 · 금융업 영업법인(손자회사 포함) · 지주·펀드·SPV 제외</span>
+        ${tk ? "" : printBtn}</div>
       ${firmFinCard()}
       <div class="card span6"><h3><a href="#domestic/matrix">국가별 진출 현황 (현지법인 · 사무소)</a></h3><p class="card__meta">칸을 누르면 해당 법인 목록으로 이동</p><div id="ov-matrix"></div>${roeBlock()}</div>
       ${arenaCard(hw, corps)}
@@ -1224,7 +1251,7 @@
     renderMatrix($("#ov-matrix"), { mini: true, limit: 12 });
     renderWorldMap($("#ov-map"), $("#ov-matrix"));
     $("#ov-print")?.addEventListener("click", () => window.print());
-    // 인쇄 대상 표시: 1쪽 = 지표·네트워크(재무·지도·진출 현황), 2쪽 = 뉴스·핵심 포인트·한화
+    // 인쇄 대상 표시: (1쪽 = 지표·Takeaways) → 지표·네트워크(재무·지도·진출 현황) → 뉴스·핵심 포인트·한화
     const labels = [...document.querySelectorAll("#overview-view .ov__label")];
     const mark = (label, n, page, withLabel) => {
       if (!label) return;
@@ -1232,12 +1259,15 @@
       let el = label.nextElementSibling;
       for (let i = 0; i < n && el; i++, el = el.nextElementSibling) el.dataset.pp = page;
     };
-    mark(labels[0], 2, "1", true);
-    mark(labels[1], 2, "2", false);
-    mark(labels[2], 2, "2", true);
+    // Takeaways가 있으면 1쪽 = 지표·Takeaways로 따로 두고 뒤 쪽을 하나씩 민다(한 쪽에 몰면 글자가 너무 작아짐)
+    const sh = tk ? 1 : 0;
+    if (tk) mark(labels.shift(), 1, "1", true);
+    mark(labels[0], 2, String(1 + sh), true);
+    mark(labels[1], 2, String(2 + sh), false);
+    mark(labels[2], 2, String(2 + sh), true);
   }
 
-  // ---------- 인쇄: 한눈에 보기를 A4 가로 2쪽으로. 쪽마다 내용을 복제해 한 쪽에 맞게 축소한다 ----------
+  // ---------- 인쇄: 한눈에 보기를 A4 가로 2~3쪽으로. 쪽마다 내용을 복제해 한 쪽에 맞게 축소한다 ----------
   const PAGE_W = 1062, PAGE_H = 718; // A4 가로(297×210mm)에서 여백 8mm를 뺀 CSS px(96dpi), 머리글 몫 약간 제외
   function buildPrint() {
     document.getElementById("print-root")?.remove();
@@ -1245,11 +1275,12 @@
     const root = document.createElement("div");
     root.id = "print-root";
     const stamp = $("#updated")?.textContent || "";
-    const pages = [["1", [$("#ov-kpis")]], ["2", []]];
+    const total = document.querySelector('#overview-view [data-pp="3"]') ? 3 : 2;
+    const pages = [["1", [$("#ov-kpis")]], ["2", []], ["3", []]].slice(0, total);
     pages.forEach(([n, extra]) => {
       const pg = document.createElement("section");
       pg.className = "pp";
-      pg.innerHTML = `<div class="pp__head"><b>글로벌네트워크팀 Weekly Dashboard · 한눈에 보기</b><span>${esc(stamp)} · ${n}/2</span></div><div class="pp__body"><div class="ov"></div></div>`;
+      pg.innerHTML = `<div class="pp__head"><b>글로벌네트워크팀 Weekly Dashboard · 한눈에 보기</b><span>${esc(stamp)} · ${n}/${total}</span></div><div class="pp__body"><div class="ov"></div></div>`;
       const grid = $(".ov", pg);
       extra.forEach((el) => el && $(".pp__body", pg).insertBefore(el.cloneNode(true), grid));
       document.querySelectorAll(`#overview-view [data-pp="${n}"]`).forEach((el) => grid.appendChild(el.cloneNode(true)));
@@ -1301,7 +1332,7 @@
   // ---------- 시작 ----------
   async function init() {
     try {
-      const [config, seed, dart, markets, us, meta, hwSubs, hwEnts, reg, digital, offUpd, news, subFin, listed, worldmap, macroNews, macro, rateCal, cons, subTrend, hubNews, brokerRank] = await Promise.all([
+      const [config, seed, dart, markets, us, meta, hwSubs, hwEnts, reg, digital, offUpd, news, subFin, listed, worldmap, macroNews, macro, rateCal, cons, subTrend, hubNews, brokerRank, takeaways] = await Promise.all([
         getJSON("data/config.json"), getJSON("data/domestic/seed.json"), getJSON("data/domestic/dart_latest.json", true),
         getJSON("data/global/markets.json"), getJSON("data/global/us_sec.json", true), getJSON("data/meta.json", true),
         // 한눈에 보기용: 다른 탭 폴더의 데이터(없으면 빈칸)
@@ -1311,7 +1342,7 @@
         getJSON("data/global/worldmap.json", true), getJSON("data/global/macro_news.json", true),
         getJSON("hanwha/data/markets.json", true), getJSON("hanwha/data/rate_calendar.json", true),
         getJSON("data/domestic/consolidated.json", true), getJSON("data/domestic/sub_trend.json", true), getJSON("data/domestic/hub_news.json", true),
-        getJSON("data/domestic/broker_rank.json", true),
+        getJSON("data/domestic/broker_rank.json", true), getJSON("data/domestic/takeaways.json", true),
       ]);
       HANWHA = config.home;
       FIRM_ORDER = config.firms.map((f) => f.name);
@@ -1330,7 +1361,7 @@
         const e = domestic.entities.find((y) => y.firm === ev.firm && keyName(y.name) === keyName(ev.name));
         if (e) Object.assign(e, { event: ev, note: `${e.note ? `${e.note} · ` : ""}${ev.text}` });
       }
-      state.data = { officesUpdate: offUpd, news, subFin, subTrend, hubNews, brokerRank, listed, worldmap, macroNews, macro, rateCal, domestic, cons, dart, markets, us, hanwha: { subs: hwSubs, entities: hwEnts, reg }, digital };
+      state.data = { officesUpdate: offUpd, news, subFin, subTrend, hubNews, brokerRank, takeaways, listed, worldmap, macroNews, macro, rateCal, domestic, cons, dart, markets, us, hanwha: { subs: hwSubs, entities: hwEnts, reg }, digital };
       // 머리글 시각(KST): 매일 수집(뉴스·한화 시장 지표)과 매주 월요일 DART 수집을 나눠 보인다.
       // SEC 순위는 배포 때마다 다시 받으므로 '공시 수집' 시각에 넣지 않는다.
       const when = (s) => { const t = s ? new Date(String(s).replace(" KST", "+09:00").replace(/^(\d{4}-\d\d-\d\d) /, "$1T")) : null; return t && !isNaN(t) ? t : null; };

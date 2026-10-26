@@ -32,13 +32,17 @@ jobs:
         if: github.event_name != 'schedule' || github.event.schedule == '30 21 * * *'
         continue-on-error: true
         run: python scripts/fetch_hub_news.py
+      - name: 진출국 전략 Takeaways (아침 한 번, 큰 변화가 있을 때만 문구 갱신)
+        if: github.event_name != 'schedule' || github.event.schedule == '30 21 * * *'
+        continue-on-error: true
+        run: python scripts/build_takeaways.py
       - name: Commit
         id: commit
         run: |
           git config user.name "gnd-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/data/domestic/news.json
-          for f in site/data/global/macro_news.json site/data/domestic/hub_news.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          for f in site/data/global/macro_news.json site/data/domestic/hub_news.json site/data/domestic/takeaways.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else

@@ -1,0 +1,956 @@
+{
+ "spec_version": 1,
+ "checked_at": "2026-10-26T22:04+09:00",
+ "countries": {
+  "VN": {
+   "country": "베트남",
+   "entities": [
+    "베트남 법인(PTSV)"
+   ],
+   "regime": "POS",
+   "bullets": [
+    {
+     "rule": "R01",
+     "variant": "acquire",
+     "category": "M&A·지분",
+     "text": "베트남 법인(PTSV)은 증자만으로는 격차가 커, 현지 증권사 지분 인수로 규모·수익을 함께 키우는 방안을 검토할 만합니다.",
+     "evidence": [
+      "FY2025 자기자본 881억원, 한국계 6사 중 6위(당사 제외 중간값 2,485억원, DART)",
+      "ROE 3.9% vs 현지 상장사 11곳 중간값 10.6%",
+      "국내 보도 '자본금 확대' 등 3건(10/1~10/2, 최근 45일)"
+     ],
+     "links": [
+      {
+       "label": "자본금 확대",
+       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qZDVRZ2cyQkozMlJyWTc2eDNnLUZQMGlnanlVTUhxMkxXVjZkZHREM3hNUXFQY0xCTkIzOUhzdVlub0FoNWtvaGlYS3FBQzY5RWhNVXpVemlhb0ZvNFdjeFBHTkFBenpU0gFuQVVfeXFMUG5YaXJwZ01sdndHektINGhHMnZac1lhdHZrcDBLWnJnbXRmbGVydUdTWmUySUJmRjRjV01pcC1MR1lWSHd1YjNJZmpoN1FwNjZuVU5DYVF0eHFURmRONHhMMmU0aEhEeXE0UVRpSHc?oc=5",
+       "title": "베트남 진출 국내 증권사의 숙제 '자본금 확대'"
+      }
+     ],
+     "bucket": [
+      "acquire",
+      6,
+      6
+     ]
+    },
+    {
+     "rule": "R07",
+     "variant": "deriv",
+     "category": "상품·제휴",
+     "text": "FTSE 편입에 맞춰 베트남 법인(PTSV)의 외국인 기관 영업과 지수옵션 등 파생상품 준비를 검토할 만합니다.",
+     "evidence": [
+      "FTSE 신흥시장 편입 2026-09-21 발효",
+      "Vietnam Investment Review - VIR 10/20 '시장 승격 이후 과제' 등 구조 뉴스 3건(최근 30일)"
+     ],
+     "links": [
+      {
+       "label": "시장 승격 이후 과제",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSk9mNHkyaFNudkZpZDZfQjZpUk5wTzhOT3NlNUN0cVlmcjR0VTJtbEhoTXI3RDJUV0RZM2gyajNFN1RiU2Mwa3V5NWpNeVNzekdWTjk1OGhkZFQ4Zm9CMUJabzF4d2xmNGVXVXRYQWV5empuWmNLQkF5akFpaHlPdEtSTTh5VkJjMUkyWEQ5TXZtWm4zcWNnTndTV2lyOEVyRndxX3RCbGd6VWpOSEppMl9mekxSTE5EampUR3FvZTNmblU?oc=5",
+       "title": "Market upgrade is just the beginning: Vietnamese companies face tougher test to attract capital"
+      },
+      {
+       "label": "지수옵션 도입 계획",
+       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWFlJTU1wa3VHeUtFcmtqRGllWngwYzFwSDlMLVVmUEMzaE5EUGR4TU03Q0FHeWc0LUhIVmJUSFhtdUJqWm12SVN1SDF3dFZrUW1fUEhsSHJ1aW1RcGxMUVR2TC1ZazkzQklfTXQwYWtLaEZ4UXI4Z05yeHphbl84VkJxbmF1YmlVYS1qMmI1V0k1bWZlQUIwVmlUZlhCc240LXlJOG9yRjlWNmxGV0hMcA?oc=5",
+       "title": "Vietnam Plans Index Options for Next Year After FTSE Upgrade"
+      }
+     ],
+     "bucket": [
+      "POS"
+     ]
+    },
+    {
+     "rule": "R12",
+     "variant": "",
+     "category": "구조조정·비용",
+     "text": "베트남 법인(PTSV) 비용 증가율을 매출 증가율 이하로 묶는 비용 상한 관리를 검토할 만합니다.",
+     "evidence": [
+      "1H26 비용 +18.5% vs 매출 +11.5%(FY2025 반기 환산 대비, DART)",
+      "순이익률 10.7% vs 한국계 흑자 5사 중간값 18.3%(FY2025)"
+     ],
+     "links": [],
+     "bucket": [
+      -2
+     ]
+    },
+    {
+     "rule": "MKT",
+     "variant": "targeted",
+     "category": "마케팅·고객",
+     "text": "베트남 법인(PTSV)은 전면 수수료 인하 대신 은행·핀테크 제휴와 타깃 프로모션으로 신규 고객 유입을 늘리는 방안을 검토할 만합니다.",
+     "evidence": [
+      "HOSE 2Q26 점유율 TCBS 9.36%·VPBankS 3.57%로 최고치(2026-07 HOSE 발표)",
+      "HOSE 2Q26 10위 진입선 2.94%에 한국계 2곳, 베트남 법인(PTSV)은 10위 밖(2026-07 HOSE 발표)",
+      "VN-Index 1주 +4.0%·3개월 +4.4%(10/23), 2026-02 고점 대비 -5.6%"
+     ],
+     "links": [],
+     "bucket": [
+      "R16::['2026-07 HOSE 발표']",
+      "R17:vn:['2026-07 HOSE 발표']",
+      "R15:B:['B']"
+     ]
+    }
+   ],
+   "changed_at": "2026-10-26",
+   "reason": [
+    "첫 생성"
+   ],
+   "last_check": "갱신",
+   "candidates": [],
+   "history": [
+    {
+     "date": "2026-10-26",
+     "fp": "37d1a6446344",
+     "rules": [
+      "R01",
+      "R07",
+      "R12",
+      "MKT"
+     ],
+     "reason": [
+      "첫 생성"
+     ]
+    }
+   ]
+  },
+  "ID": {
+   "country": "인도네시아",
+   "entities": [
+    "인도네시아 증권(CSA)",
+    "인도네시아 운용(CAM)"
+   ],
+   "regime": "NEG",
+   "bullets": [
+    {
+     "rule": "R08",
+     "variant": "NEG",
+     "category": "리스크·규제",
+     "text": "MSCI 결정 전까지 인도네시아 신규 출자·인수 속도를 조절하고 인도네시아 증권(CSA) 신용공여 한도를 점검합니다.",
+     "evidence": [
+      "Reuters 10/26 '시세조종 대책 강화' 등 부정 구조 뉴스 3건(최근 30일)",
+      "IDX 1개월 -14.7%, 연초 대비 -37.1%(10/23)"
+     ],
+     "links": [
+      {
+       "label": "시세조종 대책 강화",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUE9yTXpNTi04M0d2WkhjaGJGMHN2amxERHk0TVpPWjY4S2xGN2tIOU05eGxudUcyWW5iSXFIUUJWOUlYZlZFVmlBcGNibk5XQ29XR09lNW15LUZhenNKejJ0TlowVE9zMS1HWW5tQUJMcnNzNWtiVFc3LUZVcThyXzJ2RU4weGdVU3dJbTRXVHBzMmRZT1B3TERGNjBTU3Q3WThOZldPcG9CTFcyblF6WE81LVZ6UWdmeFQ1Y1pnTTR0TmUwaTIyWm5R?oc=5",
+       "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI"
+      },
+      {
+       "label": "MSCI 강등 검토",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5",
+       "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?"
+      }
+     ],
+     "bucket": [
+      "NEG",
+      "MSCI 결정"
+     ]
+    },
+    {
+     "rule": "R13",
+     "variant": "",
+     "category": "구조조정·비용",
+     "text": "인도네시아 증권(CSA)·인도네시아 운용(CAM) 백오피스·IT·준법 통합으로 중복 고정비 축소를 검토할 만합니다.",
+     "evidence": [
+      "1H26 두 법인 순손실 12.2억원, 비용 85.2억원 vs 매출 73.0억원(DART 2026.06 반기보고서)",
+      "인도네시아 증권(CSA) FY2025 순이익 27.2억원에서 적자 전환",
+      "IDX 연초 대비 -37.1%(10/23)"
+     ],
+     "links": [],
+     "bucket": [
+      2,
+      -2
+     ]
+    },
+    {
+     "rule": "R04",
+     "variant": "gated",
+     "category": "M&A·지분",
+     "text": "인도네시아 추가 인수는 원화 비용이 낮아졌어도 MSCI 결정과 손익 회복 뒤 집행하고, 후보 실사만 먼저 준비할 만합니다.",
+     "evidence": [
+      "IDX 5,439(10/23), 최근 1년 고점(2025-12 월말) 대비 -37.1% · 루피아 원화 대비 연초 이후 -14.8%(ECOS 10/26) · 원화 환산 지수 연초 대비 -46.4%"
+     ],
+     "links": [],
+     "bucket": [
+      "gated",
+      -4,
+      -5
+     ]
+    },
+    {
+     "rule": "MKT",
+     "variant": "reallocate",
+     "category": "마케팅·고객",
+     "text": "인도네시아 증권(CSA) 고정비 절감분을 모바일 온보딩·디지털 수수료 프로모션에 재배분해 점유율 회복을 검토할 만합니다.",
+     "evidence": [
+      "IDX 거래대금 1위는 디지털 증권사 Stockbit Sekuritas Digital(580.7조 루피아, 2026.1~6, IDX 집계)"
+     ],
+     "links": [],
+     "bucket": [
+      "R16::['Stockbit Sekuritas Digital (XL)']"
+     ]
+    }
+   ],
+   "changed_at": "2026-10-26",
+   "reason": [
+    "첫 생성"
+   ],
+   "last_check": "갱신",
+   "candidates": [
+    {
+     "rule": "R06",
+     "variant": "rate-up",
+     "why_not": "4개 마감"
+    },
+    {
+     "rule": "R10",
+     "variant": "고객 대상 사기 증가",
+     "why_not": "4개 마감"
+    },
+    {
+     "rule": "R09",
+     "variant": "",
+     "why_not": "4개 마감"
+    },
+    {
+     "rule": "R11",
+     "variant": "",
+     "why_not": "R13에 합침"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-26",
+     "fp": "464744af2317",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "MKT"
+     ],
+     "reason": [
+      "첫 생성"
+     ]
+    }
+   ]
+  },
+  "SG": {
+   "country": "싱가포르",
+   "entities": [
+    "싱가포르 법인(PTSS)"
+   ],
+   "regime": null,
+   "bullets": [
+    {
+     "rule": "R11",
+     "variant": "widen",
+     "category": "구조조정·비용",
+     "text": "싱가포르 법인(PTSS)은 비용이 매출의 5.4배라, 성과가 나는 투자자문·IB 중심으로 조직 축소·재편을 검토할 만합니다.",
+     "evidence": [
+      "1H26 순손실 11.8억원(FY2025 순손실 15.3억원), 매출 2.7억원(DART 2026.06 반기보고서)",
+      "STI 연초 대비 +16.7%(10/23)에도 매출은 FY2025 반기 환산 대비 -19.5%"
+     ],
+     "links": [],
+     "bucket": [
+      "widen"
+     ]
+    },
+    {
+     "rule": "R05",
+     "variant": "",
+     "category": "자본",
+     "text": "싱가포르 법인(PTSS) 증자 자금은 매출 목표 달성에 맞춰 단계적으로 집행하고 분기마다 성과를 점검합니다.",
+     "evidence": [
+      "1H26 중 출자 101.4억원(DART 2026.06 반기보고서 타법인출자현황) 후 자본 대비 매출 3.7%(1H26 연환산) vs FY2025 14.1%"
+     ],
+     "links": [],
+     "bucket": [
+      10142.0
+     ]
+    },
+    {
+     "rule": "R18",
+     "variant": "",
+     "category": "상품·제휴",
+     "text": "보도된 RWA 협력을 싱가포르 법인(PTSS) 투자자문·IB 상품으로 잇는 저비용 사업화를 검토할 만합니다.",
+     "evidence": [
+      "이투데이 2026-07-10 '카이아, 한화투자증권 싱가포르 법인ㆍ갈락티카와 RWA 협력'",
+      "싱가포르 토큰증권 제도 SFA·Guardian 시행 중(디지털자산 규제 탭)"
+     ],
+     "links": [
+      {
+       "label": "보도",
+       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRHlqUFRIcngzaUtJek93Z0VZMXBCUkNDWHhFMFpuSER3QlM2NUhlTkIyN182QnJ6NDYxeUNFa0ZaWDhpSC16TnRUT19hazhJSjdKQQ?oc=5",
+       "title": "카이아, 한화투자증권 싱가포르 법인ㆍ갈락티카와 RWA 협력"
+      }
+     ],
+     "bucket": [
+      "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRHlqUFRIcngzaUtJek93Z0VZMXBCUkNDWHhFMFpuSER3QlM2NUhlTkIyN182QnJ6NDYxeUNFa0ZaWDhpSC16TnRUT19hazhJSjdKQQ?oc=5"
+     ]
+    }
+   ],
+   "changed_at": "2026-10-26",
+   "reason": [
+    "첫 생성"
+   ],
+   "last_check": "갱신",
+   "candidates": [],
+   "history": [
+    {
+     "date": "2026-10-26",
+     "fp": "ee1879a4a778",
+     "rules": [
+      "R11",
+      "R05",
+      "R18"
+     ],
+     "reason": [
+      "첫 생성"
+     ]
+    }
+   ]
+  }
+ },
+ "errors": [],
+ "updated_at": "2026-10-26",
+ "state": {
+  "dart": [
+   "20260813001503",
+   "20260813001503"
+  ],
+  "spec": 1,
+  "policy": {
+   "VN": 4.5,
+   "ID": 5.75
+  },
+  "miss": {
+   "VN": {},
+   "ID": {},
+   "SG": {}
+  },
+  "shock": {
+   "VN": false,
+   "ID": false,
+   "SG": false
+  },
+  "injection": {
+   "SG": {
+    "amount": 10142.0,
+    "rcept_no": "20260813001503",
+    "rcept_dt": "20260813",
+    "report": "2026.06 반기보고서",
+    "period": "1H26"
+   }
+  },
+  "seen": {
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94U2g3Qm5RN002QXR6YmVvSjNzT1lpTGgxcnhvOUQzcWk1bzVzSjVkR3prUWJDdG85RkRCb3E4YUNPd3hlaWJ4NEhfNUtWaHVPbGZrRV9yRTZzYk9aR3JtaGo3TmFHUml10gFuQVVfeXFMTXk3OUJhZEV4ZDdDZDllTUFITDRqR0ZQSVZyTC0zM1VKVENHYWRvLUIwTm5zOWgzdjRFajRZSldwM2pnSm5FV3Q4cmhoS2Z6dFU3TDZSRDBCUUxmTkpsYlhncHVvTzNuRTV4TlQ2X3c?oc=5": {
+    "date": "2026-10-26",
+    "title": "'7개월래 최저' 코스피, 대형 이벤트 앞두고 외국인 이탈",
+    "src": "머니투데이",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ub2R4Ty1LcFdXdDlUR21WWFA5bjl0QlY1dnNVV2x2NmI3MVpYT05samVRWGhXTS1xeVc0T0V4dHdvamE5ellZanR6RUtCdmptVEpqUi1mdnVRNENyZ001LWtzMXo?oc=5": {
+    "date": "2026-10-26",
+    "title": "코스피, 외국인 '팔자'에 5460선 후퇴…코스닥은 3% 하락",
+    "src": "서울경제TV",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DcnBocURKZ1BsSWU5UXlGTzIxMk5Ca1pVb3VXYVJOei14WDR3UFl6dTZPSnVseEo5RWJWM1lESnZUeGNnRWxuU2hIOTRodGlob1MyS1lxYm1paXc0Smp6YnVNbFQ1SGYtUkZZcE9fc2Y5UDEwelHSAWZBVV95cUxOclZ3bTBab1gtSE8wRm8tcUJsbVdmTmRDQm5qOWZRQXFLc1lRUkJrZHA3YzMzdEdQTUhKeTdHV19KdEsxV0Ffekt1bm9hVGNpUExZcWZoYVVnLXpLTElHQ1VJcmI0SlE?oc=5": {
+    "date": "2026-10-26",
+    "title": "코스피, 외국인 매도에 약보합…빅테크 실적 앞두고 숨 고르기",
+    "src": "동아일보",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdnVMeHR0cjdhVXpVQk9hZWdUUkVoMjAwX3g5OG5iWWprMW5XeEJoaC1CaTlDUVZSZ1ZjZnE4SFpsLWlCMXFXWE1lNnRoNzBKU1NqM2J1QmNUSVNhRzB4MUJxdXpMR0dQRUpNeGFOdDJ6Z25fcjA2QmVvczUxQko5RHc0d0tycDdIZGxIaGlqM3Z3OWhKeEhGMUxB0gGfAUFVX3lxTFA4SUxwS3ZmSEZwWmtRM0VkOUtZQUlSN0djS0JYRkxhMnF1VFhpVzdRWU91b1BoTjBhUm5HVkt4OHhMNElOR0JHYXpGTm5Md0NRa0lmTC1MRzNmWlAwb1lzX2hYbWgzSExzS0pZRXNfd01LNktjbVZBYTJwa2t2d0M5NUxqd2ZMVXJIam9lRHJrN09hcmlyVEpUYVptZzM0VQ?oc=5": {
+    "date": "2026-10-26",
+    "title": "U.S. Treasury yields inch lower as investors look ahead to the Fed's rate decision",
+    "src": "CNBC",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrMnlaVjlPVkVfMEpRWmJUdWttR1RWV0RnZGJsZGlxbGE1NmVOc0Y2Y1Z0dmRVV2pOX0E5TGtjS3JZclV3QTBMMUh1TXcyWkFEV2drQVlLZENOaERhQjNyVEEybVpNSk43MlN5eE5B0gFuQVVfeXFMUGsyeVpWOU9WRV8wSlFaYlR1a21HVFZXRGdkYmxkaXFsYTU2ZU5zRjZjVnR2ZFVXak5fQTlMa2NLcllyVXdBMEwxSHVNdzJaQURXZ2tBWUtkQ05oRGFCM3JUQTJtWk1KTjcyU3l4TkE?oc=5": {
+    "date": "2026-10-26",
+    "title": "미국·유럽·일본 금리 수퍼위크…동결 전망 속 누가 '매의 날개' 펼까",
+    "src": "머니투데이",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ob2t4MjhhX1l5VGZWUTFOMUdScXprSUZaNUNwVTRUTVJoOTl2R0JfTmswU2RaX21fTjdlX0hrYnlwcFJldFJLOWZKVWFWVkY4bzgzWnc5bTFRZy1zd1I0VDROanBTdHVKVmlLNjRhbmw?oc=5": {
+    "date": "2026-10-26",
+    "title": "S&P500 선물, FOMC 앞두고 약보합…美 국채금리↓",
+    "src": "연합인포맥스",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUE9yTXpNTi04M0d2WkhjaGJGMHN2amxERHk0TVpPWjY4S2xGN2tIOU05eGxudUcyWW5iSXFIUUJWOUlYZlZFVmlBcGNibk5XQ29XR09lNW15LUZhenNKejJ0TlowVE9zMS1HWW5tQUJMcnNzNWtiVFc3LUZVcThyXzJ2RU4weGdVU3dJbTRXVHBzMmRZT1B3TERGNjBTU3Q3WThOZldPcG9CTFcyblF6WE81LVZ6UWdmeFQ1Y1pnTTR0TmUwaTIyWm5R?oc=5": {
+    "date": "2026-10-26",
+    "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI",
+    "src": "Reuters",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5": {
+    "date": "2026-10-23",
+    "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?",
+    "src": "CNA",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbDQ4MVNMVjRyWlNDQWdoRjhiZ2RCdGJqX0xpa2ZiSGZucGN6UkNMNWNwaXFZOWJUbWdLY08zQ1VKOWRZTXR2VnRQYkowXy1uOW1vUkdXSEo2czVBbmZNNjZ0c2xFUDBUeVg3M3Q4VG9jMDF4TzhTbXZ0cGdIV3hPVWNwTVZESkU5cnM1dk5jU2NOaTIwMGZxVHV5eDRTbEhFYkdaN2M1Q19oWS1vazc1dl9EMWxWZw?oc=5": {
+    "date": "2026-10-23",
+    "title": "Indonesian Corporate Bond Premia Hit Six-Year High on MSCI Angst",
+    "src": "Bloomberg.com",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSk9mNHkyaFNudkZpZDZfQjZpUk5wTzhOT3NlNUN0cVlmcjR0VTJtbEhoTXI3RDJUV0RZM2gyajNFN1RiU2Mwa3V5NWpNeVNzekdWTjk1OGhkZFQ4Zm9CMUJabzF4d2xmNGVXVXRYQWV5empuWmNLQkF5akFpaHlPdEtSTTh5VkJjMUkyWEQ5TXZtWm4zcWNnTndTV2lyOEVyRndxX3RCbGd6VWpOSEppMl9mekxSTE5EampUR3FvZTNmblU?oc=5": {
+    "date": "2026-10-20",
+    "title": "Market upgrade is just the beginning: Vietnamese companies face tougher test to attract capital",
+    "src": "Vietnam Investment Review - VIR",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWFlJTU1wa3VHeUtFcmtqRGllWngwYzFwSDlMLVVmUEMzaE5EUGR4TU03Q0FHeWc0LUhIVmJUSFhtdUJqWm12SVN1SDF3dFZrUW1fUEhsSHJ1aW1RcGxMUVR2TC1ZazkzQklfTXQwYWtLaEZ4UXI4Z05yeHphbl84VkJxbmF1YmlVYS1qMmI1V0k1bWZlQUIwVmlUZlhCc240LXlJOG9yRjlWNmxGV0hMcA?oc=5": {
+    "date": "2026-10-19",
+    "title": "Vietnam Plans Index Options for Next Year After FTSE Upgrade",
+    "src": "Bloomberg.com",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZGgtTlRNQ0wtSmJXNFF5TEtjWEl6YVBiWWMxS21odFJGYVdzeG1VdUNUUFRxcUNCbE9STnY5LTU3SmlvQ0lydUJ1TkJBTFRJa2pGeEpONEgwUDI0V0kzMzA4YXF3VEZya1M3ZVo0Z1Q4RGVTNzFVX2lGODdkWk1nYmVjeDBhcmdXQnc1S0ZuVk02QVplcTl6cUloVW0?oc=5": {
+    "date": "2026-10-09",
+    "title": "Vietnam strengthens global credit standing with R&I upgrade to BBB",
+    "src": "Vietnam Investment Review - VIR",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQY2dmN2QxWFRKdGx1UHVDbnVpWlhLOTdpbXVFZjd4d2EtTE10THdYUF83c2ZNRlJydWprT0xGVXFvMklDMFcyMGtJOXdGQS10MDRBcmF0VTJWVDVRZzFVbkFST2NHRlVoTEkwSExxbGNfWVI0eWFrdWFMZzlnSnhwOXE1WE9oWEJId1ZhcF9wZVhiSEwxaUM3WF9mVWVhTXBRbnBTTDN6WlpNLUFWQy04WVcyVkxkOWdONm5Ec0RtMTdxYVFhMzdCTmJkb1dOb2U0V21feVpWZFRDajE0SXhPaHhaZ0FZNldsMXM4OEphQVJfUmwyamQ4ZEdkc9IB9AFBVV95cUxPX01IRVRpeGFsYk0wVzVLbU1vWFdZWjduSnFkSHRyYkt0emYtSmRLUmpqbXJHUk83bVM5S21Fc2RQYnk4YTZDVTBYQTEzQzhkNVVTQi1lVGQ5Z21ySzdFV0VZUWtwV0RzM3FacE13RUVpVk1OU29kT2EtZTBUSVo3RUlKNDdrMmxtZDB5aWw5WWtwaWM0Rm12dlBsYkVEQmY4LUZyRUpBLXFKQ1lKY0xPS2lPMUFoSk9ZQi1VZ21wSVpFeFg4UllGTmpyb0tUNU5YQTBvYVpDM2QyTml1YVVkZWZvd2hUYmJ3MXJhSVRWWHQ3NnJ5?oc=5": {
+    "date": "2026-10-26",
+    "title": "Global Market: Japan's Nikkei falls for third straight session as chip stocks slide",
+    "src": "The Economic Times",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVzY3MzVIRE1CU2psSXJ1RnMycEx0LTdza2dQY2paN0xTNnZYSHNEeTlOdW9pRkVYaXNCOGRhQURzSDZuaFRUTTNhRFR5Zm9WN2JpWnBBVFpOWVJwWGY3c2xic2lVLTJOQ3NDMjhucGZDUmRxQnY1aWN0ZE1QM01HQ1FQNHNnVnBrYWFxUzZkOFc5OERYejRlOVhxOVYwYzJ4Nl9FY3dyS0F0cUpzTHFNQ0M4Zno2bm9wZkdBMFh3VzRZY0c2S0hETVpPaUwxZDdydHd4cnpTeE1aZjkwdExGczJ1ZnR5SFNBaFhV?oc=5": {
+    "date": "2026-10-26",
+    "title": "Japan, South Korea stocks fall as Asian shares make cautious start ahead of earnings",
+    "src": "The Business Times",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUG42aUpCNmlxUXpHUzRPWFpWWVZZclY2anZvbUZ2cld4eEVRaUtPeHNkMDBCcG9SN0JJY2FaZ3RfMnNzNkZQcUNzc1JWZjhsWUVPSTZaX0Z0UmJ1SWdFQlNFMkx0dEZ3enFJMjZ6TFNCNHhwV19MYldONE44a2lTdERfLXYzMU1xR0ZNTmdURnhNUDFnc3VIOEV4ZWhHTGhxYTBmWUtuOEdyTHRJenR6cTIzajB4SGFxenc?oc=5": {
+    "date": "2026-10-26",
+    "title": "Japan's Nikkei falls for a 3rd day as tech sector weighs, energy shares rise",
+    "src": "Reuters",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMixwFBVV95cUxOazJDSjk5eWVKMWY5eFVycmx2U3ZWUDRxRUhuVDVaNUlkcGNQN18tREhKOU1DWDE2d3puS0kwZHBGRU40NGk5YVZTZFBqVER2R2NhdEtYOGZNY19xVE02QVk1bXYtUDVWOWNmTVFzTG0yZmcxZVQyXzJNTndaOU1rTDc4NkllWmlkMldBUEdLNjJBTVN1T3RSVXJjSkE5RVlaUGlxSldVWWl3OWVYZkJvVV82MHY4bTJSZHZjWk8yQXFJeEdDam1n?oc=5": {
+    "date": "2026-10-26",
+    "title": "COMMENTARY: Why China’s stimulus keeps missing the mark",
+    "src": "Reuters",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcmZLN0JtOXFkZVphX1I1cVItLUJreExqSTZHaE9vUVlYTFFlYVBKUnZjRktDVHhVZzU2dlUyRW51ck51Q2x5bXNIdlc4OXhNMnhJSElwZlVFaVB1VWtLSnhiWjE2VkR1VmVUbWxPTzYwNkJ4Yk9Ha01hZ3JpZ3BlV0JEaUZTOUJ3MTJEMzBEQzFLcW1ZWUM5eHVoTXk1ejI1TFktejBCVVMzNVM1YWZWSGhJT0RKYS1LNE4zSzRicUlmVjNRZmxOdFJXM1JJY2dDTmc?oc=5": {
+    "date": "2026-10-25",
+    "title": "China’s US$3.5 trillion stock rout deepens as profits sink, major stimulus stays elusive",
+    "src": "The Business Times",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMzNVNE5TMkFBWS1ReFFlbEgwZGJTMmY2YmJibmZpWE9EVmI0R2dMV0hkZkNBcVJNMnU0Mml5R055bkE3emxEb01SbTYyMjYxdFA2S0tjcEhEdkxLVjlMQl9ELXFQa3l6Skx3U3dZMmxXMGswc0NJYTQ2QzlWXzNHNjhwV0xTNHBzN1VaeGpXRUZ2WGpiT1NHYndhUW1vTEx2MzFLVXJtQkM5OU5oV1lQZHM2RzE?oc=5": {
+    "date": "2026-10-24",
+    "title": "China Barely Eased Austerity Before Shift Into Stimulus Mode",
+    "src": "Bloomberg.com",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQjRBQ1NXX2xOUzVIQmNTOHZtVllkbXZNamI4RVRIeUhhMmhIQ1BhUDZ4eDdwVXU3YlRrRlEzaDg5aGs1X3F0UGkxZUJiWWdvbnZFNWoyTXIxT3V6Q1dJQTVLMVVtdUNKWHJBZUxGaWxZeTkybHBnM1RSWks1N3pzR0RiOWcxWlYyMHZfaG1wd0VpMTd4Ni16ZW1hakxvb2FwYkF0dk9sM2NYak8wR2tidmZTT1MzZWZsRUpYcFhQVXQxSG1wZUNMUXBmUmtIRlk?oc=5": {
+    "date": "2026-10-21",
+    "title": "Indonesia stock exchange chief defends MSCI after ex-minister alleges Singapore interference",
+    "src": "The Straits Times",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNHZZc0tPSEpaaGpYaEozcDluQngwOGpZaWFucEwwQmJPdVJUcG1pcmgzLXJJSmF5aHluQXdBa0JyVXRsc1lnOE5iaW5ZNmJvVXFhYlBNT1laRHp4cXdyeW91aElrNXZSREJobHBreVpUc293OXcyVDRyMWh5cFRvTUtBVTViay1DTUlBQ3UycGtXMmFTaUQtWHZJMmVxVUUtdzlVYUY0REMtTTQ3V1VCNm1HR1pINzZaSTQwYmlpal9EaEFwMVhHTTZISmZNTW5kdGVXS0VRZ2w?oc=5": {
+    "date": "2026-10-23",
+    "title": "Singapore shares edge higher despite losses in local banks; STI up 0.1%",
+    "src": "The Business Times",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWGJZRXZadjFUeEdiWGQwcl9qVHpjRlNfQTN1bVFJOTllNklZejAyRWZtVE5hd0J2dGxiUWo1UUVPaG9WM2FzVzh6VWgyLWxIY25VRkZzV3VmNWVoTzZ1TV93WjdsNDV2em4zcGtEaHBPRnYzQ3luZy1IQjFIdWtGb3ItNkNqVzBONVBzR1Q2OEh4RXlVWlNZTG9jNlgxM3NFUU13VEVLM1hTRnpWbnZDZkQzSUtpVkJQYmRGZE1kR1pXZGdtZUpCMWZQa19WalRtSUE?oc=5": {
+    "date": "2026-10-23",
+    "title": "Economists mixed on near-term MAS policy tightening after core, headline inflation ease in September",
+    "src": "The Business Times",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZ1JyVDk0ZWNfMlhuRk8zQnBEa0c0NTIxWHBiOGUwMUowRkJINUlfSVpxWFV6NVZnRE53UnJRTXhEMWZ1MHdHdlFISnhMb1V1LVp2UVM4NWtQSDd6cGJnN1ZHaU9QaTJlNExZUU1BVzZiRkFNM0VVWlFHejd3b01reGxhS1FZX0cxTEdEWFRsWFJlcWs5YXhKczlEM0lhaWdOdWVjRnI5NDBSU3o0NHdpUW5CZVIycmZtcU9iQm9RZTV6TzNBVUk0RFA4SjQyVHdPd2lj0gHYAUFVX3lxTFB3Q1NIMVJUek92c0JQTTRXc0lpcjMtQUVwdmlRTGdDeHZlLUNySkR5MUF5ak9faXYtVGtRUEpfLVhET1prMWxHRHk1Ri1PODF0N21hOTVXaU5tUVQ0MGc0bXhXaVE1NFdnVk94Vi1WeG5ZUkJsNFlTLW1GZ1JoOFVyM0wyem12Q2lxbWFTTGdJcnJoZ0YtWkdsV3RVMjhETzd4cW4wWVlzdHJDS2s3aV9IbWFVTVJKQWlPSnJDakdidHFBQmRTdTBQS0JTUEVObWgtcm04Tmdaag?oc=5": {
+    "date": "2026-10-23",
+    "title": "MSCI India rejig: JM Financial sees 3 inclusions, 2 exits & $1.4 bn inflows",
+    "src": "Business Standard",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMGYzcFZiRkE2TE1hWGJhSDY1UldIcGcyQlBJSmttbjVOSmNPcUNhWG5LWjdMcEZkRzVfSnd6MGVCc3RlZmpXLUI1Sm03REFQeEtCYVRUNTNHampNX21PQXl3YlZLNkgtWVhjX2dxOGwwZVF0WUhUMHh0TDJoQ0RKUHk4dFdlMnVleVo1UnJTcUNIWkxxdnhxYnAxbVZZMU5hZ18yQ1NBdDlvLXhKRjdNWUkwcw?oc=5": {
+    "date": "2026-10-26",
+    "title": "Indian shares fall as oil concerns persist",
+    "src": "Reuters",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiggJBVV95cUxQSmUxTnF5Uko5YXl4a0t3MXQ3ekFWTHdKdkdNX0hsVy15d3VFQjBlZ1JrNUxSOHZ6ZnZweXJ1Smp5cklCd1BpUS02TzRkc2hHVXdMMW5sOWxudlp6NVpMNnpqcXB6dFNNNXU2TmFNU2V3bjg0T0lpS2pUODFhalRqbUl3NVZjSjZoOGh0Rm11S2Q0b0txQ1pYREhTd1ZkVHFDT1Y5UEJ2SWlkLTFMRlJrRnREYXhlcDY3MFdrQkd2ZnlJVzVEaGVGY2dtbTIwQWwxRml0TFEtMW1VakQzZkI2NFpTbUw0ODJEekpzNHFMVG9OTGhZcDFwVWNFMXJCVHdqQVHSAYcCQVVfeXFMUDN3Sk1qV2NHWmUxTm1rMEdHVkxPdjBBZ205dGRPZkJseUk2Tmd6SFVOMk8tVmJ6UFZnQ0ZzSWpVZ2NOa3RxbU1FQWlJcjEyVFFCVE1Fay1TUW9TUWVxTTFOQWNnSU9WSnpaajlnV19GQ1hXQWJzNWFjTzVCa2piR2RDazBORXRiZHhKaDVFWHhvOGZYZDgyOG9Oa29iTUE5V3BKczdXeEYwdndxOWdQYTlrcGlBWm4zUW5hWlF1UTJzMGswUjN4bUVjN05fUXRhcjhQNlB2NHFPZkVRdTJSZU1UMDB3TVBzVDBfUkRxdElhU0NKeVptTW5ENkNBMk5oaGdVTHlrQ2M?oc=5": {
+    "date": "2026-10-26",
+    "title": "RBI rate hikes: How short-duration funds and high-quality corporate bonds can protect your debt portfolio",
+    "src": "The Economic Times",
+    "priority": false,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMXBablczeVZFNDhGc243VTg0LXdjamQyZmpObHZkS2NrNDJ4elc5bWl6cWFCR3NMSG5vMEFrY2xjcDFrOHRjbkhwWE1xdko5VnIwa3NEWEpCMVVpek5aeXkxeGdVNFE0NVlPMGx1bU5pbnlTZlQxYjNLVEdUbi1yRg?oc=5": {
+    "date": "2026-10-26",
+    "title": "FTSE Russell Keeps Indonesia Off Watchlist",
+    "src": "Jakarta Globe",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU2VEV01yRWE3bU9VbXpPeFlaNVo3eTU4R1lBQ3EyNjhwakY4ZzJCQUlab285V202UG5JNGdpRTBVXzFYRlROdGZQRUQwek5GYXhDWmJGSUdUak5OOTAxdnZ3Nk9jNDZhd3hWYkpGazR1S0gydjJPN1lObkI2dTZ0UGJ0eFhWQTNmRzdSMlp4VG1uUGk3VkFLeFVRbW5vOUdsRXNMNTZLU0tLcEE4?oc=5": {
+    "date": "2026-10-21",
+    "title": "GIC, Temasek rebut allegations of pressuring MSCI to downgrade Indonesia",
+    "src": "The Straits Times",
+    "priority": true,
+    "kind": "macro",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTSHZJX05ERm4zZzgwd3lGR2hBTHhzVzM1SnFtSTJ6bkQ4cjZJTXBsRWpHMldITWRUajVleXBjUWI0ZlU1bVJiZ0xXMlpzVk91c01zdkVSWmMxQQ?oc=5": {
+    "date": "2026-10-22",
+    "title": "한국투자AC, 일본 VC와 맞손 한·일 스타트업 해외 진출 지원",
+    "src": "파이낸셜뉴스",
+    "kind": "news",
+    "firms": [
+     "한국투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMic0FVX3lxTE5sMExNQVhNR2hlXzJjd28ySnZMWHpvVHNnUXRxenlmbzl4Qk9WdmZSYlVXaUhPNXAyNGZSWkYySm1WRS1rUjFDNnpuVGd4ckNPZUxmMjNibEgyT1pGNERiZ21jQUI1SWJnanBZMnU4WmJxalk?oc=5": {
+    "date": "2026-10-19",
+    "title": "KB증권 베트남 청소년 교육 환경 개선 지원, \"글로벌 ESG경영 적극 실천\"",
+    "src": "비즈니스포스트",
+    "kind": "news",
+    "firms": [
+     "KB증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5rSVRsX1RDMXBtYUdWMTVGaUtpVmtXNXdsaU9QN0lJUmdhbEppbExRLUdwbWpmQlpyWnNaazhpRXo2MkdEczAzYzlCbWxwZw?oc=5": {
+    "date": "2026-10-19",
+    "title": "KB증권, 베트남 중학교에 '무지개교실' 조성…하노이국립대 장학금 지원도",
+    "src": "전자신문",
+    "kind": "news",
+    "firms": [
+     "KB증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vTFBYZ2dna0NCYzVFaTJLLWlvYXJoODB2Q1puclNHQ1NwLWVCLUhaMHd0b3F3aUNOaHladktyalM0aGVXMU80elB5TFdaY0hwWUE?oc=5": {
+    "date": "2026-10-12",
+    "title": "한화證, 日GI캐피털 지분인수 계약",
+    "src": "매일경제",
+    "kind": "news",
+    "firms": [
+     "한화투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9pR09TN2w1MjNfY1F0SWFlWWVUSE9DZ0hweHcwbFJ3Sms1ZVVmNUJ3RG9GdENKTVVTd0pxQTBfdnhzN2ZaWmVXWndXaUlaZV9aZXI5blZUN3lVLXVFUS1ZZ3F0RFFTa1R20gFuQVVfeXFMTXhhSzBFMnJQU3M3VXhMazdzNFNUd1JZS05IdFZ4YlFieFVOaFRjVWxTamFWS3ZFT2EtVElTZXZGSmhnTC1WY1VaUEVTZnp4ZzRmbEdqQmVlb1JMb0lKM21yNVlxdzhoLUZBQ000UHc?oc=5": {
+    "date": "2026-10-02",
+    "title": "오랜 준비 끝 '기지개'...베트남서 본격 '곳간 전쟁' 나선 증권사들",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qZDVRZ2cyQkozMlJyWTc2eDNnLUZQMGlnanlVTUhxMkxXVjZkZHREM3hNUXFQY0xCTkIzOUhzdVlub0FoNWtvaGlYS3FBQzY5RWhNVXpVemlhb0ZvNFdjeFBHTkFBenpU0gFuQVVfeXFMUG5YaXJwZ01sdndHektINGhHMnZac1lhdHZrcDBLWnJnbXRmbGVydUdTWmUySUJmRjRjV01pcC1MR1lWSHd1YjNJZmpoN1FwNjZuVU5DYVF0eHFURmRONHhMMmU0aEhEeXE0UVRpSHc?oc=5": {
+    "date": "2026-10-01",
+    "title": "베트남 진출 국내 증권사의 숙제 '자본금 확대'",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5": {
+    "date": "2026-10-01",
+    "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmSnVZNFJIWVllZkR3elQxSG1DcXdvSHlBaVo0TWREbFF3cG14dWlpYTh6OG1RZEYxTnM5WWJ6U044aVVkMzNIczVGTVVIU1QxTlJNZ1VuQjR1RjE4b19oNkpoV1BSMGc10gFuQVVfeXFMTlMtSjhLazFEQ3lOVlgxZ1ZWYmhSMEFXWFNfY2Y5RUdSX1R4NmFpNExEUTg4eGNaTngzQko2Mm1JRDNlVm9YQ0JXVksweWtjSElRd3N5aFEyZFRMbGtWQUhXeE5xUS1GdHd4YUhPNmc?oc=5": {
+    "date": "2026-10-01",
+    "title": "신한證, 베트남 뿌리내린 10년…IB·리테일 수익 성장 '주목'",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [
+     "신한투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE80d2xBUVRFRnhoSjNRZHNmR1Bmd3F3Q0U4M3FXbld6ck9Lc2EwSWFWTUUzbnRqSEFIeU5XY1FpU3BRQzQ2SXZNQlFXbzNtbkp4ZkVqTEFEekVzd2xFdFc2NTcxamRnemxW0gFuQVVfeXFMTUEzTmtwcEhoR3ZHYWZ3X2tZUHI3aS11N292T1J0X2ZRNUhNTlNRSUtLamlpSzBRc2hKRktmOTJRWS1NSDEydmJvemhYal9ZT19QbVY4SlU1cG5wekhJV0J2bFIxMHFnUl9meDBodkE?oc=5": {
+    "date": "2026-09-30",
+    "title": "\"한국 회사 알려줘\" 큰손 몰린다...월가에 깃발 꽂은 K증권사들 전략은",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MQWt5clBGTTlFcWZydEprUlVtd2lRSGVVMHRzY2VPY1d1TTRwOXZ1VVUzLTd4Zlk5ekg4Qm9Ic0VBT0pPcG5ZN0p1SGF2NjNHbEtPQ0NIZ2dycWNzNFBIS1h6UWh1MFhP0gFuQVVfeXFMTUNxc212SWg4WWVQNWFPYTZKZTh1T3lzMko2N1RuTTR1cWdlZ3FaXzZPTjJRZGZrWGloU09QMkNuN2JBekJIa1pHMzlwbFpvM3huZ1JsWDJvY183YWttakNGRXVKOTBaZWNoeWVWLVE?oc=5": {
+    "date": "2026-09-29",
+    "title": "개인투자자 1위 키움, 월가서 미국 주식 직접 중개…\"지금이 적기\"",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [
+     "키움증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hNVdyd3dldEt1X1BnUHBkeFFqelRyM09VNzFUeUt0SHZvcVZRN3FTeXZyY2VHaThDQ3dOOWNFMmFTOFdVRGpoc21MY1F4QnB1VlRCeEVKQkFScTlYazFwVmRfRFFrSlpa0gFuQVVfeXFMTVJZbUxSNXA3OThoeXc4OXhRRlVRaXMwSE5xdXlkU1g3RURhenNYUWppT0xpU3o0SlQ1Q1BsQjNJQ3lqNWtzd1JlV1A2Y1lHc1kzNTg2MmxDdnpqc2F1S2h4Qm9HMmtvREF3THlNSEE?oc=5": {
+    "date": "2026-09-29",
+    "title": "한투 뉴욕 IB법인장 \"은행 규제가 기회…ABF로 영토 넓힌다\"",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [
+     "한국투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjMGdrbXJ4amhCTGo5ZHdqeDBQaUd0eVNiYjBaQV9NOTBnMmtIRzFBcXdvOWpOdWg2UjFGMTNrQ0xsaXJKc19hWWQ5aUdGYkZiUU92YU42djNNel9LY2h1dmtiZk5VZXJa0gFuQVVfeXFMT1JHZkg0dW5FNC1Mcjc3WGxKajZQUFZod1RQRTlBaERyOXBjVTBOSWJLR2xGUm5PV29yWFZiNFRiUzFadDAwdmxKODRsZ3FfR2xMNmZDU1o5M2ZOM014NUtEQ0ZJN1RDZW9mcU4zSnc?oc=5": {
+    "date": "2026-09-28",
+    "title": "'지분투자·해외기관 협력' 해외사업 속도내는 증권업계",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qbWpSa3ZlMmhUM3JZejVfMy1INnVtdVJibXpCVE1VVVhhVGpnNlp4cW11ZHVyVEp5azVudTVKN1ZCU0I0RVgtWndUNkFxLU1iOF9sc2pxYmdHc0MtdmZGZXRCUTNYSEkx0gFuQVVfeXFMTlBHRTdQVHZPRE1vc2tyQ1Z3T0EyWmZ1b1NjNEZzeVc4c2VYXzBhNGhuSVo4aEJZVjhaZldQZHhaUzNJY0NxTEZSYXhNNmV5YUlBRU04Slp2Z2Z1US1RSVUweTIwTHVnbVJmeWdHckE?oc=5": {
+    "date": "2026-09-28",
+    "title": "\"서학개미 안 부러워\"...증권사, 해외 투자 순익 '1조원'",
+    "src": "머니투데이",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Zd0ItQXVXVm5XX2FYUUVrMjNrRjVRbUN2a0g4VXVkamptNk9SaU1Ubk15NEJfZWZtdlE2UkRSM093Y2dtSGNZb1IybmJSbl9wQnc?oc=5": {
+    "date": "2026-09-16",
+    "title": "일본시장 눈독 들이는 한국 톱 증권사…‘3000만 절세계좌’에 담긴 기회[한중일 톺아보기]",
+    "src": "매일경제 마켓",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBrYVZaR0tqeXlMNWF0Ukw1MVJyWkE1cVAwWWwyR2tOUGQ4S3ZqRFZvWUk2bVlGMlNFMmc0a1IwZ2J6NlNMRzdlUGF1WWx0dw?oc=5": {
+    "date": "2026-09-15",
+    "title": "신한투자증권, 일본·홍콩·베트남 방문…투자자 한국 유치 나서",
+    "src": "전자신문",
+    "kind": "news",
+    "firms": [
+     "한국투자증권",
+     "신한투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5": {
+    "date": "2026-09-14",
+    "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
+    "src": "전자신문",
+    "kind": "news",
+    "firms": [
+     "토스증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5": {
+    "date": "2026-09-14",
+    "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
+    "src": "연합뉴스",
+    "kind": "news",
+    "firms": [
+     "하나증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QNjluWVc3TGhWaFJYZ21NTlFFUWFuc2I1ellQOVNfYTIzaFBYejRRd05lMHJuTzhjc0RiSjdUYU1NelY5VHhNa3VrOWJ4M1l2NlpSRTUxdjZVZw?oc=5": {
+    "date": "2026-09-14",
+    "title": "하나증권, 업비트 글로벌과 디지털자산 사업 협력 업무협약 체결",
+    "src": "한국경제",
+    "kind": "news",
+    "firms": [
+     "하나증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5nOVBIN0dueFdBYnJIQWpzM2FwNnRma3V5Uk1EdVowWnRpOTEyT29tQlY3MWxXNUxsbzR6VmZMMUtNRG9qMkhUYWdLcmdnQQ?oc=5": {
+    "date": "2026-09-14",
+    "title": "하나증권, 업비트 글로벌과 맞손…디지털자산 금융사업 협력",
+    "src": "전자신문",
+    "kind": "news",
+    "firms": [
+     "하나증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUC1EdnN5Um85S0VNYTM1TFFRSGtlNnBtZ2xnR0hQa2tnTWRwMEtwZEx5Q1BNWkFiTHlCYWUyMWYtRzF4dFZEVVI2N1ZMM0h4SXpzWWkzejJzRDVOTmtEekxpVGU3bWNHNktLejBlUXlSd1c2Nkp4UlY1Zk5jU3VKdUFJUzZhWlNC?oc=5": {
+    "date": "2026-09-14",
+    "title": "하나증권, 업비트 글로벌과 디지털자산 금융사업 협력 MOU",
+    "src": "글로벌이코노믹",
+    "kind": "news",
+    "firms": [
+     "하나증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pT0hjWWpYejVQR0Z6c2RneVR5Nm1tSHFHWGI4dFBDY2xqTjBLUnlfSWd4eWN1STdWRnhIemxHa2ZRbWFTS1NUejhIZEhYa3A1Q1lFLXB3MFJSUQ?oc=5": {
+    "date": "2026-09-13",
+    "title": "한국투자증권, 美 뉴욕서 'KIS 나이트' \"K금융 존재감 높였다\"",
+    "src": "파이낸셜뉴스",
+    "kind": "news",
+    "firms": [
+     "한국투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKMGlwQjBDb3NrZ0VHVG1SVkxLclJSejlXdEI0T3NjY0JDSjBUS04wS1BIYUE3ZG5yZkVyR21jbGM3ZlRRNG4tcGNqNWZaczg5YWxhcXZjTlp0MXZ6NGFqQdIBeEFVX3lxTE92TjFpc0owRG5IdVdqQXpkR2FEV3ZuWENzSWJLNFo4YnNIdkRQUEMtUVBlMFdTTDRMUG9JbFlxUEVwQkhwVTVFdUkwaUNDNE5UcTVVNmRNT3B2bFMzYTFpMWV5Sm1UVG5ib2gtNEpRRmpMQmNBd0EweA?oc=5": {
+    "date": "2026-09-11",
+    "title": "금감원, 해외주식 매매 관련 토스·메리츠·미래에셋증권 '경영유의'",
+    "src": "뉴시스",
+    "kind": "news",
+    "firms": [
+     "미래에셋증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zbE1LSG5kempPWGtoc1Y2Q0JBcWdpbWtiQUh0SC1EM2tNYnpSOWxVdmMtMHZpR2dfaE5KRGd4RjE5SnZmdDRZc05DS25YNkg5MlBSdlM3WGpLUQ?oc=5": {
+    "date": "2026-09-11",
+    "title": "\"해외주식 매매 관련 제재\"…금감원, 토스·메리츠·미래에셋증권에 '경영유의'",
+    "src": "파이낸셜뉴스",
+    "kind": "news",
+    "firms": [
+     "미래에셋증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92eWtrX2pMU1RRZ3JqWkNaUkpIVklfWlNfOGhSc3VNUnJoVVlnZURlN0I2UllkR1FfTVZ4XzNHTFc5dEROY3J6RE4xemIxb0R3aWhMTHh0VGF6WmfSAWBBVV95cUxQSGhKTXA4amQyUTQzMTM0TFZ2Y0pTQVBCUDQ3WXJfSmM1dW80U3FfcUJWaEFmX1lGUEhQcElqb1Nlb0FmcThJb3FfclZkTnNKaXltTC1Eb2h0RUtGc05ZR1o?oc=5": {
+    "date": "2026-09-11",
+    "title": "삼성증권 \"HD현대중, 엔진 증설 예상↑·SMR 진출 예상외\"",
+    "src": "연합뉴스",
+    "kind": "news",
+    "firms": [
+     "삼성증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5": {
+    "date": "2026-09-10",
+    "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
+    "src": "매일경제",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSGRpbjF3c01RbEptWFFVSWVfTDRvSWM2eXMwR2JjRm9vcG9nZFBYckVmQVJTb3VGTnpGSTlwcXlfOGVXNDduVXdDWWtCeFF2NTBaeEtjQzgxM1VMV1VvQWxObER5ZE5fZlRSLUE2YnVRUVlCQlF2TEtkYy1LMHQwRWpFYmJJa00wdzE1OXoxVE9rVmNVMmp3TFoxMUJRa05aSjVqaG41eUMwRERWR01QUFI1X3hSeGFtd1RMWVdacmNDcVI4bUYxMlF5UngzSjVfSHl6cNIB2gFBVV95cUxPX0VBN2FqeVVrSzFNcUUyVUl4TmljUjZucnF5SUNwbEdfWlhFN0ZxdnBRZUUwQmtKY3FkNEV3Vm1tbkZ4WUgzb3E0TzVMRlBTRmZzRGZOSjBVQzJDRkY0QkpyNUI0WGVfblpkWVVuMVd0WHRHdFo2d2N0Tk04aGh1R2tzTnQ2ZVk1T016bVRCRmFSQjU4Rk1lNnl4Wl9tcmQzc0NDMk5rR2p0WGJBS0xYaFdVcGg2dTNOUnotaE9SNnVNUHNNTnRkUndPQWtxSmlyNUl0TVVtMGFQQQ?oc=5": {
+    "date": "2026-09-10",
+    "title": "Korea Investment & Securities expands global ties with Fidelity, PIMCO, Carlyle",
+    "src": "The Korea Times",
+    "kind": "news",
+    "firms": [
+     "한국투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMidkFVX3lxTE9kSjFCcF9YMzdHNW9SYVZrZTYwSnZkWTBqWHJmNUFsQ0JSU1B0Y1Y5aGhxSDZkdUxJQ3JyZTVMa0lTT3l5WmJyTGZHcU9CenhVMlY2ektTSE9wUnhfUFhZNjFRakczbk1aWExWaWJtSVJXR0dZWlHSAWZBVV95cUxOYUhmVmFCbm0zWkdQRzVuVXppNm9WRThtWWdyV1N2VEdFZGNpdEc0WEFiSFlVNUdJYWNhTTV4ejByQW4xVHQ0LTAwUjFONHFoMVFTVGU3MGM2bzVmTGtkVGNHNjZTenc?oc=5": {
+    "date": "2026-09-10",
+    "title": "삼성증권, 9년만에 발행어음 사업 진출",
+    "src": "동아일보",
+    "kind": "news",
+    "firms": [
+     "삼성증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5": {
+    "date": "2026-09-10",
+    "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
+    "src": "연합인포맥스",
+    "kind": "news",
+    "firms": [
+     "한국투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WS1VyajFsdzAweEswbUJUbnUtYWZZNGlQWlMyV1gwU0FRREJvTG5sdU5QVzNEemptalNDMjZaeHMza0Y0OFkxd09QeWU3QW5Ib201MjZ2SnpCbnJfdkx5Z05XXzlaRVZjcF81MTViLW1EV3YzZWfSAWZBVV95cUxNUllhbXF3alJ3WDJDVWNVUjM3VElEOTg5ekt6OHEtcVpUTDhFSFFlMmxXUVFJUnVFVVpoVlh0bXRGa0h4QlFlVlVtQnkyVGY4a0tBMEFSamQwN1RJYlZFMlQ4QU9GSUE?oc=5": {
+    "date": "2026-09-09",
+    "title": "삼성증권, 9년만에 발행어음 사업 진출…국내 8번째 사업자",
+    "src": "동아일보",
+    "kind": "news",
+    "firms": [
+     "삼성증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZMUlTT3BYTlVGVEZ2MlB5ZjloY05EVGctRDNQN0JkSzRqOFVvOHRFbm40Q3Q0Z3RDci1qQWNCYXZmeV9XaEJCU0NqcThKZ3V2a3QtX3A4OGxWaU5QbmUwSUw4cF8?oc=5": {
+    "date": "2026-09-09",
+    "title": "삼성증권, 단기금융업 인가...발행어음 진출",
+    "src": "서울경제TV",
+    "kind": "news",
+    "firms": [
+     "삼성증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PTEl0WnFJVW96VXg0YXZUQ0xCVWk5NmdZRUVyV3ktZ040LTZma1plclB6akU1WDVZZnBiMDRQdjlWdU1KcHB0cU9qYVFpM2JHR002eHVRQWVNZw?oc=5": {
+    "date": "2026-09-07",
+    "title": "금투협·증권사 CEO, 유럽서 AI·디지털금융·우주 투자처 발굴",
+    "src": "한국경제",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiUkFVX3lxTE11ejhKXy1PbDZjOUdTeG9TOHBaRVowSkxoWEtFLU5TcEJfSmlnVm5iUFFlWHFwM2prTU9ia3pBTUc2TWczckFfamRaOTE5alQzcnc?oc=5": {
+    "date": "2026-09-06",
+    "title": "하나證, 해외서 자본 끌어온다…키움 제치고 ‘자기자본 7조’ 겨냥 [시그널]",
+    "src": "서울경제",
+    "kind": "news",
+    "firms": [
+     "키움증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeXNwN3hLRzZJU3h3d2FCQl9VU004RE5vZnVpbEVlc0FZZEZhVWVkSzVvajF6ckpvZ3pFVGg4ai1xZ1pjTG85Um0zbXZiS2xfdl92dVluSXUzQnk5TnJOUHhWT2luVFNDSWc3WVlRMk14WWliV1R2TEVoOG04QWJaVkpoQ08ybXPSAXtBVV95cUxOb19UMnljejdIcUVJX3pXOFY2TGxidU4yYW8yZHg3Y3RjNk1NTEwweHBEdmp6YXZpdWotOV9KcjlJVUVvem5BbWoxVUFEVFJfRXBGcmZvWmZOc0tDYjBUMlBuU3doSm5kd0JoWGpvMkxhTlpHeUdlT0VQYVk?oc=5": {
+    "date": "2026-09-02",
+    "title": "신한투자증권, 일본 UMI벤처스와 맞손… 한일 딥테크 공동투자 추진",
+    "src": "디지틀조선일보",
+    "kind": "news",
+    "firms": [
+     "한국투자증권",
+     "신한투자증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fVWNTcWljZEM1Y3hOYmVyZzVHRGdmRkZIMUxXSl9fWnJlcTBNZXhkZGg4bEZRVU45UkpONjVkMVMzZldmX2ppUDJxcDBfbmdCSjBqVEpab054MDNaZkE0dnFBM24?oc=5": {
+    "date": "2026-08-30",
+    "title": "증권사 해외 확장 박차…메리츠는 홍콩, 미래·토스는 일본",
+    "src": "서울경제TV",
+    "kind": "news",
+    "firms": [],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMirgJBVV95cUxPNjQzX0dpZzAyRV9rYkhPaGw2bXZRREZPdVhJUDA4YldIVThRR3FFUGZ1LWxPc3pHRl9qTFJIdDRvdzlTSXhtMnNOc0luRVQxdXNfc28yR1VsNG1rOEpCX2xWbUVMcnlucVZWc1ZNdF96ek0wWGlGYWs2YnlOd1NYblgtRG43VkFLOFhvUmNpMVlsdHJxdWFSVTdIdkJudmpydnVWTHlULUtCNTJ3ME5FWVV2VHNuMHNLM3p5TUV3T0VpSVZYUlVpTGN5a2xkYUZneXFxZ184S3MxaEh1ODB5LXpuZkxDdlhpekFGRVdiTC15N09NRFlneThKU3QzbGFKWE9XMmZVbWs2RllWWk1vVnpNV3N2YzZ0MkFDc0ZZdURYOE54cWcyRFVyTWZOQQ?oc=5": {
+    "date": "2026-08-28",
+    "title": "미래에셋·토스증권, 日증권사 인수 검토?…해외 시장 공략",
+    "src": "데일리안",
+    "kind": "news",
+    "firms": [
+     "미래에셋증권",
+     "토스증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91WGx6SFJXNkczYU9CeUlXYzY1bzJvRXVsYUhvQ1ZqMXdlNFd3bk5MQmw4X29BNDBpMDYzTk9JcC1yX0dibHl3Rm5LWm5GNzRFaHdURg?oc=5": {
+    "date": "2026-08-28",
+    "title": "미래에셋증권, 퍼블릭닷컴 인수 중단…美 현지 새 매물 검토",
+    "src": "이투데이",
+    "kind": "news",
+    "firms": [
+     "미래에셋증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPTFRSaE1GQ2U0eDgydl81WDVTdU8xNnlGUUxWeTBON2p6NE9zSHNVWkNfMkVxRDNpck5qZkFucmkzTlRlZ09EZWl6NlAzYW9fZFM5UmRFcF9IMnR3djZBWW5NNmE3SXFnUjN2S2xBaV8xX0E?oc=5": {
+    "date": "2026-08-28",
+    "title": "박현주 '미래에셋 3.0' 혁신 속도전, 최종목표 '글로벌 투자 플랫폼' 향한다",
+    "src": "비즈니스포스트",
+    "kind": "news",
+    "firms": [
+     "미래에셋증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hR2Vpc3h2TjItZHAxR0prOVZTRkR2b2ZHekVQUmZWdEd5c2VYMGdaa3BGZW0teDdnaUoxNXFrZTNFUWc3U0dpemJwVjZqVDI3M3BvcGF2OGpDUQ?oc=5": {
+    "date": "2026-08-26",
+    "title": "[단독] 미래에셋·토스, 日 증권사 인수한다",
+    "src": "한국경제",
+    "kind": "news",
+    "firms": [
+     "미래에셋증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ybFRmdkdPRzRhUVptQ29ES0pUaXVWdVZHMHplM2ozeTJnYlNKZ1ZwNGFCbVFQUVk5V1ItVFJkY3VRaHRYM2RfZ0NwdUFRbEswcENGSg?oc=5": {
+    "date": "2026-08-23",
+    "title": "“어차피 안보잖아?”…토스증권, 해외옵션 교육영상 ‘숨김재생’ 논란",
+    "src": "매일경제",
+    "kind": "news",
+    "firms": [
+     "토스증권"
+    ],
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QRUw1NXlEWU1ZaExPMlFqQTRLRWdOSS0zYkM0dUVIMU9EMGI5NzA3ZTVseXotNElpWVRUcHlFUWpTU1dKT2k2VjNISmZIcTktVzRTYTlTM2cwTXluT2RZ?oc=5": {
+    "date": "2026-10-19",
+    "title": "KB증권, 베트남서 교육 인프라 개선·현지 인재 장학금 전달",
+    "src": "뉴스1",
+    "kind": "hub",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSU9CYmRtVnNsbkxYR0xHUEJvQWNpcDZxSHl4dFdVTUlJYjZaMGphTExCc0MxbjdCQS1GT0MxMXVWQ2JWcEY5X0VETC1YRmdvRFhWZ3BlNHlxQWFSUGt3VkFzLWh2Z19mMTh0YUszalVibzFmV1l3ejVhUEVURzd2aDVJTW5GaGJp?oc=5": {
+    "date": "2026-10-12",
+    "title": "현지 사기 범죄 70만 건 덮치자 미래에셋 인니법인, 7억 원대 보안 방패 올렸다",
+    "src": "글로벌이코노믹",
+    "kind": "hub",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMic0FVX3lxTE1HdVhla0tMOWxnMlpfWUxfcmZIQTFxWmpuR19QaTJ0RlZIVWZuYS04Y1l0N3NvbnR0ZXEyODNCcVpUUXcxVzdlNnlZR1AtU0UwTE5QanV2eEJVSmdUV2NYUXZaUzJ4VzdjcjN1cVhiR3ZMdEU?oc=5": {
+    "date": "2026-06-17",
+    "title": "[K생산적금융을 묻다 자본시장②] NH투자증권 싱가포르 법인장 권기정 \"무한경쟁에서 생존 방정식, '농협' 정체성 담은 기후펀드에서 길 찾는다\"",
+    "src": "비즈니스포스트",
+    "kind": "hub",
+    "first_seen": "2026-10-26"
+   },
+   "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRHlqUFRIcngzaUtJek93Z0VZMXBCUkNDWHhFMFpuSER3QlM2NUhlTkIyN182QnJ6NDYxeUNFa0ZaWDhpSC16TnRUT19hazhJSjdKQQ?oc=5": {
+    "date": "2026-07-10",
+    "title": "카이아, 한화투자증권 싱가포르 법인ㆍ갈락티카와 RWA 협력",
+    "src": "이투데이",
+    "kind": "hub",
+    "first_seen": "2026-10-26"
+   }
+  }
+ }
+}
