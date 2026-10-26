@@ -1,52 +1,52 @@
 {
- "updated_at": "2026-10-26T11:55:18+00:00",
- "checked_at": "2026-10-26T11:55:18+00:00",
+ "updated_at": "2026-10-26T11:59:30+00:00",
+ "checked_at": "2026-10-26T11:59:30+00:00",
  "weo_year": 2026,
  "fields": {
   "gdp_growth": {
    "label": "실질 GDP 성장률",
    "unit": "%",
-   "src": "IMF WEO"
+   "src": "IMF WEO 전망"
   },
   "cpi": {
    "label": "소비자물가 상승률",
    "unit": "%",
-   "src": "IMF WEO"
+   "src": "IMF WEO 전망"
   },
   "gdp_pc": {
    "label": "1인당 GDP",
    "unit": "USD",
-   "src": "IMF WEO"
+   "src": "IMF WEO 전망"
   },
   "pop": {
    "label": "인구",
    "unit": "백만 명",
-   "src": "IMF WEO"
+   "src": "IMF WEO 전망"
   },
   "gdp": {
    "label": "GDP",
    "unit": "십억 USD",
-   "src": "IMF WEO"
+   "src": "IMF WEO 전망"
   },
   "mcap_gdp": {
    "label": "상장주식 시가총액/GDP",
    "unit": "%",
-   "src": "세계은행 WDI"
+   "src": "세계은행"
   },
   "turnover": {
    "label": "주식 회전율",
    "unit": "%",
-   "src": "세계은행 WDI"
+   "src": "세계은행"
   },
   "listed": {
    "label": "상장 국내기업 수",
    "unit": "개",
-   "src": "세계은행 WDI"
+   "src": "세계은행"
   },
   "account": {
    "label": "금융계좌 보유율(15세+)",
    "unit": "%",
-   "src": "세계은행 WDI"
+   "src": "세계은행"
   }
  },
  "sources": [
@@ -65,19 +65,53 @@
    "name": "한국",
    "mcap_gdp": {
     "v": 147.228388896705,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "turnover": {
     "v": 200.7592,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
    },
    "listed": {
     "v": 2653,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "account": {
     "v": 96.8949448884961,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
+   },
+   "gdp_growth": {
+    "v": 3.3,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_growth_next": {
+    "v": 2.8,
+    "y": "2027",
+    "src": "IMF"
+   },
+   "cpi": {
+    "v": 2.7,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_pc": {
+    "v": 43511.885,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "pop": {
+    "v": 51.615,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp": {
+    "v": 2245.847,
+    "y": "2026",
+    "src": "IMF"
    }
   },
   "VNM": {
@@ -85,19 +119,53 @@
    "name": "베트남",
    "mcap_gdp": {
     "v": 61.3951505252769,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "turnover": {
     "v": 78.3941305,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
    },
    "listed": {
     "v": 400,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "account": {
     "v": 70.5507533567583,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
+   },
+   "gdp_growth": {
+    "v": 8.4,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_growth_next": {
+    "v": 7.5,
+    "y": "2027",
+    "src": "IMF"
+   },
+   "cpi": {
+    "v": 4.7,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_pc": {
+    "v": 5259.446,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "pop": {
+    "v": 103.077,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp": {
+    "v": 542.13,
+    "y": "2026",
+    "src": "IMF"
    }
   },
   "IDN": {
@@ -105,19 +173,53 @@
    "name": "인도네시아",
    "mcap_gdp": {
     "v": 65.6860990677901,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "turnover": {
     "v": 18.5357,
-    "y": "2023"
+    "y": "2023",
+    "src": "WB"
    },
    "listed": {
     "v": 956,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "account": {
     "v": 56.3278493718021,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
+   },
+   "gdp_growth": {
+    "v": 5.1,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_growth_next": {
+    "v": 5.1,
+    "y": "2027",
+    "src": "IMF"
+   },
+   "cpi": {
+    "v": 3.3,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_pc": {
+    "v": 5153.073,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "pop": {
+    "v": 287.198,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp": {
+    "v": 1479.954,
+    "y": "2026",
+    "src": "IMF"
    }
   },
   "SGP": {
@@ -125,19 +227,53 @@
    "name": "싱가포르",
    "mcap_gdp": {
     "v": 136.50899189232,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "turnover": {
     "v": 16.3787,
-    "y": "2019"
+    "y": "2019",
+    "src": "WB"
    },
    "listed": {
     "v": 394,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "account": {
     "v": 97.9718288419762,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
+   },
+   "gdp_growth": {
+    "v": 5,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_growth_next": {
+    "v": 3,
+    "y": "2027",
+    "src": "IMF"
+   },
+   "cpi": {
+    "v": 2.3,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_pc": {
+    "v": 109116.828,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "pop": {
+    "v": 6.121,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp": {
+    "v": 667.889,
+    "y": "2026",
+    "src": "IMF"
    }
   },
   "USA": {
@@ -145,19 +281,53 @@
    "name": "미국",
    "mcap_gdp": {
     "v": 224.04464850161,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "turnover": {
     "v": 68.5048446,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
    },
    "listed": {
     "v": 3908,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "account": {
     "v": 97.0230983290589,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
+   },
+   "gdp_growth": {
+    "v": 2.3,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_growth_next": {
+    "v": 2.3,
+    "y": "2027",
+    "src": "IMF"
+   },
+   "cpi": {
+    "v": 3.6,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_pc": {
+    "v": 95212.135,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "pop": {
+    "v": 342.838,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp": {
+    "v": 32642.373,
+    "y": "2026",
+    "src": "IMF"
    }
   },
   "JPN": {
@@ -165,19 +335,53 @@
    "name": "일본",
    "mcap_gdp": {
     "v": 171.595579915317,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "turnover": {
     "v": 117.0171,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
    },
    "listed": {
     "v": 3942,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "account": {
     "v": 98.5235592091779,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
+   },
+   "gdp_growth": {
+    "v": 0.7,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_growth_next": {
+    "v": 0.7,
+    "y": "2027",
+    "src": "IMF"
+   },
+   "cpi": {
+    "v": 2,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_pc": {
+    "v": 35399.602,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "pop": {
+    "v": 122.656,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp": {
+    "v": 4341.986,
+    "y": "2026",
+    "src": "IMF"
    }
   },
   "ARE": {
@@ -185,27 +389,55 @@
    "name": "아랍에미리트",
    "mcap_gdp": {
     "v": 190.859092819062,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
    },
    "turnover": {
     "v": 11.4331651,
-    "y": "2024"
+    "y": "2024",
+    "src": "WB"
    },
    "listed": {
     "v": 153,
-    "y": "2025"
+    "y": "2025",
+    "src": "WB"
    },
    "account": {
     "v": 85.7421930087712,
-    "y": "2021"
+    "y": "2021",
+    "src": "WB"
+   },
+   "gdp_growth": {
+    "v": -3.9,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_growth_next": {
+    "v": 7.7,
+    "y": "2027",
+    "src": "IMF"
+   },
+   "cpi": {
+    "v": 4.5,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp_pc": {
+    "v": 57108.985,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "pop": {
+    "v": 11.575,
+    "y": "2026",
+    "src": "IMF"
+   },
+   "gdp": {
+    "v": 661.018,
+    "y": "2026",
+    "src": "IMF"
    }
   }
  },
- "errors": [
-  "IMF NGDP_RPCH: HTTP 403: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access \"http&#58;&#47;&#4",
-  "IMF PCPIPCH: HTTP 403: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access \"http&#58;&#47;&#47;",
-  "IMF NGDPDPC: HTTP 403: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access \"http&#58;&#47;&#47;",
-  "IMF LP: HTTP 403: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access \"http&#58;&#47;&#47;www&#",
-  "IMF NGDPD: HTTP 403: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access \"http&#58;&#47;&#47;ww"
- ]
+ "errors": []
 }
