@@ -15,7 +15,7 @@
 확인 시각만 남긴다. 큰 변화: 새 DART 보고서, 고른 규칙·구간의 변화, 3일 안의 새 구조·경쟁사·당사 뉴스,
 정책금리 변경, 지수·환율 급변, 마지막 갱신 후 14일 경과. 규칙이 하루 안 잡히면(자료 공백) 하루는 이전 줄을
 그대로 두고 이틀째 빠진다(같은 날 다시 돌려도 하루로 센다. 새 공시 날이나 그 줄을 직접 건드린 사건이 있는
-날은 바로 뺀다. 유예 줄도 그날의 국면·보류 조건에 맞춰 문구를 고쳐 쓰고, 게시 때 순서 자리에 둔다). 해외자회사 공시
+날은 바로 뺀다. 유예 줄도 그날의 국면·보류 조건에 맞춰 문구를 고쳐 쓰고, 어제 점수로 다른 줄과 겨룬다). 해외자회사 공시
 파일이 비거나 깨진 날은 판단하지 않고 이전 문구를 유지한다. 'MSCI 결정 전까지'는 그 기관의 마지막 결정(강등 확정·
 후속 기사·우려 해소) 뒤에 나온 기사가 분류·강등 결정을 앞으로의 일로 말할 때만 쓴다. 판단 상태(본 기사·직전 공시·금리 등)는
 takeaways_state.json 에 따로 두어 화면이 읽는 파일을 가볍게 한다.
@@ -69,33 +69,36 @@ NEUTRAL = re.compile(r"\brebut|\bdefend(s|ed)?\b|\bden(y|ies|ied)\b|반박|부�
 # 강등 우려가 걷힌 기사(강등 안 함·철회·신흥시장 유지·우려 완화)는 '관찰대상 제외 유지'처럼 안도(+1)로 본다.
 # 'to avoid'처럼 피하려 애쓰는 기사는 아직 악재다. 사이는 한 절 안([^;,.:])에서만 본다('FTSE spares X; MSCI downgrade looms'는 안도 아님)
 _C = r"[^;,.:]"
-# 신흥시장 유지(keep·retain·maintain)는 사이에 관찰대상·검토·강등·승격 말이 끼면 안도가 아니다('retain gains as … upgrade')
-_KEEP = r"(?:(?!watch|review|downgrad|upgrad|\boff\b)[^;,.:]){0,30}?"
-RELIEF_RE = re.compile(rf"\bnot (to )?(be )?downgrad|\bno downgrade|n['’]t (be )?downgrad|\bavoid(s|ed)\b{_C}{{0,20}}downgrad|\bspar(es|ed)\b{_C}{{0,30}}downgrad|"
+_K = r"[^…;,.:·]"   # 한글 제목의 한 절(… , · 로 끊음)
+# 신흥시장 유지(keep·retain·maintain)는 나라·시장이 바로 목적어일 때만('keeps rates steady as EM …'·'retain gains as … upgrade'는 아님)
+_OBJ = r"(?:Indonesia|Vietnam|Viet Nam|Singapore|(?:Indonesian|Vietnamese|Singaporean|Jakarta)\s+(?:stocks|equities|shares|market|bourse)|the (?:country|market|bourse)|it)(?:['’]s)?"
+# 한글 안도 표현은 끝난 말(해소됐·해소에·피했다)만: '해소 위해·나서·기대·될까·진정 안 돼'는 아직 걸린 일
+_KNOT = r"위해|나서|역부족|기대|될까|총력|안간힘|안\s*돼|못|과제|촉구|요구|요청|가능|\?"
+RELIEF_RE = re.compile(rf"\bnot (to )?(be )?downgrad|\bno downgrade|\b(won|doesn|didn|isn)['’]t (be )?downgrad|\bavoid(s|ed)\b{_C}{{0,20}}downgrad|\bspar(es|ed)\b{_C}{{0,30}}downgrad|"
                        rf"\bescap(es|ed)\b{_C}{{0,20}}downgrad|\b(dodge[sd]|averts|averted|sidestep(s|ped)|stave[sd])\b{_C}{{0,20}}downgrad|"
                        rf"\bdecid(es|ed) against\b{_C}{{0,20}}downgrad|"
-                       r"\b(drops|dropped|abandons|abandoned|withdraws|withdrew|scraps|scrapped)\s+(its\s+|the\s+)?(plans?|proposals?|bid)\s+(to|for)\s+(\w+\s+){0,2}downgrad|"
+                       r"\b(drops|dropped|abandons|abandoned|withdraws|withdrew|scraps|scrapped)\s+(its\s+|the\s+)?(plans?|proposals?|bid)\s+(to|for)\s+(\w+\s+){0,3}(downgrad|demot|cut|move|reclassif)|"
                        r"\b(drops|dropped|abandons|abandoned|withdraws|withdrew)\s+(\w+\s+){0,2}downgrade (plan|proposal)|"
                        r"\b(scrap|shelv)\w* (\w+ ){0,2}downgrad|\brules? out (\w+ ){0,3}downgrad|"
                        r"downgrade (fears?|concerns?|worr\w*) (eas|fad|reced|subsid)\w*|"
                        r"(fears?|concerns?|worr\w*) (of|over|about) (an? )?(MSCI |FTSE )?downgrade (eas|fad|reced|subsid)\w*|"
-                       rf"\b(keep|retain|maintain)(s|ed)?\s{_KEEP}\b(in|as) (an? |its |the )?(emerging|EM)\b(?!{_C}{{0,15}}upgrad)|"
-                       rf"\b(keep|retain|maintain)(s|ed)?\s{_KEEP}\bemerging[- ]markets?\s+(status|classification|index|tag|label)|"
-                       r"remains? (in (the )?|an? )emerging[- ]market|강등\s*(결정\s*)?(철회|무산)|"
-                       r"강등\s*(은|는)?\s*(위기\s*)?(을\s*|를\s*)?(\S+\s+)?(피해\s*(가|갔|간)|피했|피한|모면|면했|면해|넘겼)|"
-                       r"강등\s*(우려|공포|위기|리스크)\S*\s*(해소|완화|진정|일단락|덜)", re.I)
-# 'fights to keep·moves to avert·could avoid'처럼 애쓰거나 가정하는 말 뒤의 안도 표현은 아직 안도가 아니다
-# (기사 제목의 'Indonesia to remain in EM'은 '남는다'는 뜻이라 안도로 본다)
-RELIEF_LEAD_RE = re.compile(r"\b(could|may|might|would|can)\s+$|"
-                            r"\b(fight\w*|scrambl\w*|rac(e|es|ing)|bids?|seek\w*|aim\w*|tr(y|ies|ying)|push\w*|struggl\w*|hop(e|es|ing)|"
-                            r"wants?|needs?|efforts?|moves?|plans?|steps?|measures?|striv\w*|works?|vows?|pledg\w*|looks?|races?|rush\w*|battl\w*)\s+to\s+$", re.I)
+                       rf"\b(keep|retain|maintain)(s|ed)?\s+{_OBJ}\s+(as (an? )?|in (the |its )?)(emerging[- ]markets?|EM)\b(?!{_C}{{0,15}}upgrad)|"
+                       r"\b(keep|retain|maintain)(s|ed)?\s+(\w+['’]s\s+|its\s+|the\s+)?((MSCI|FTSE)\s+)?emerging[- ]markets?\s+(status|classification|tag|label)|"
+                       rf"remains? (in (the )?|an? )emerging[- ]market|강등\s*(결정\s*)?(철회|무산)(?!{_K}*?(?:{_KNOT}))|"
+                       rf"강등\s*(은|는)?\s*(위기\s*)?(을\s*|를\s*)?(\S+\s+)?(피해\s*(갔|간)|피했(?!나|을까|는지)|피한|모면했|모면한|면했|넘겼)(?!{_K}*?(?:{_KNOT}))|"
+                       rf"강등\s*(우려|공포|위기|리스크)\S*\s*(해소|완화|진정|일단락)(?=됐|되며|된|돼(?!야)|했|하며|에\s|\s*$|\s*[…;,.:·'\"’”])(?!{_K}*?(?:{_KNOT}))", re.I)
+# 'fights to keep·reforms to retain·likely to remain·hopes MSCI won't'처럼 애쓰거나 바라거나 내다보는 말이 같은 절 앞에 있으면
+# 아직 안도가 아니다(기사 제목의 'Indonesia to remain in EM'은 '남는다'는 뜻이라 안도로 본다)
+HEDGE_RE = re.compile(r"\b(hop(e|es|ed|ing)|bets?|betting|confiden\w*|expect\w*|likely|probably|seen|set|poised|could|may|might|would|should|can|"
+                      r"why|whether|if|urg\w*|argu\w*|calls?|wants?|seeks?|aims?|fight\w*|scrambl\w*|rac(e|es|ing)|bids?|push\w*|tr(y|ies|ying)|"
+                      r"struggl\w*|reforms?|plans?|moves?|steps?|measures?|efforts?|vows?|pledg\w*|works?|looks?|rush\w*|battl\w*|eye(s|ing)?|need\w*)\b", re.I)
 # 'won't rule out downgrade'처럼 부정한 안도 표현은 여전히 위협이다
 NOT_RELIEF_RE = re.compile(r"(\bnot|n't|\brefus\w* to|\bdeclin\w* to|\bcannot|\bunable to)\s+(\w+\s+){0,2}(rule|ruling)s? out", re.I)
 # 다른 계획이 철회·보류된 기사는 호재·악재 어느 쪽도 아니다
 RESOLVED = re.compile(r"\bscrap|\bshelv|rules? out", re.I)
 # 승격이 미뤄지거나 무산된 기사는 호재가 아니다
 DELAY_RE = re.compile(r"miss(es|ed)? out|\bdelay|postpon|\bstall|\bfades?\b|setback|\bfail|remains? on .{0,15}watch|keeps? .{0,30}\bon (the )?watch ?list|연기|불발|무산|보류", re.I)
-NEG_RE = re.compile(r"downgrad|standalone|\bto frontier|\brout\b|manipulat|outflow|sell-?off|plunge|tumble|slump|angst|turmoil|강등|급락|이탈|폭락|delist", re.I)
+NEG_RE = re.compile(r"downgrad|demot|standalone|\b(to|as|into) (an? |the )?frontier|\brout\b|manipulat|outflow|sell-?off|plunge|tumble|slump|angst|turmoil|강등|급락|이탈|폭락|delist", re.I)
 # '급락 뒤 반등' 기사는 악재가 아니다: 반등 앞뒤의 하락 표현은 악재로 세지 않는다(그 사이의 강등 같은 구조 표현은 남긴다)
 REBOUND_RE = re.compile(r"(rebound|recover|rall(y|ies|ied)|bounce)\w*\s+(from|after)\s+(?:(?!downgrad|standalone|frontier)[\w\s'-]){0,25}?(slump|plunge|tumble|sell-?off|rout)\w*|"
                         r"(급락|폭락)\S*\s*(딛고|뒤|후|끝)\s*\S*\s*반등", re.I)
@@ -108,22 +111,36 @@ DECISION_CTX_RE = re.compile(r"downgrad|강등|standalone|frontier|프런티어|
 AFTER_UP_RE = re.compile(r"\b(after|despite|following|post-?)\s*(the\s+|its\s+|an?\s+)?(\w+\s+){0,2}(upgrade|inclusion)|(승격|편입)\S*\s*(후|뒤|이후|에도)", re.I)
 # 이미 내려진 강등: 지수 회사가 주어이거나 프런티어·독립시장으로 옮긴 기사(증권사의 투자의견 하향 'downgrades X to neutral'은 아님).
 # 'MSCI moves closer to·cuts weight of'는 결정이 아니다. 한글은 같은 절(… , · 로 끊음) 안에 연기·검토·전망 같은 말이 없을 때만
-_K = r"[^…;,.:·]"
-_KWAIT = r"앞두|임박|연기|유예|보류|미뤄|미룬|연장|여부|촉각|철회|무산|전망|가능|검토|우려|경고|위기|위험|리스크|공포|대비|시나리오|D-|\?"
-CONFIRMED_RE = re.compile(rf"(MSCI|FTSE){_C}{{0,25}}\b(downgrades|downgraded|reclassifies|reclassified)\b|"
-                          rf"\b(downgraded|reclassified|moved|moves|cut|cuts)\b{_C}{{0,25}}\b(to|as|into) (an? |the )?(frontier|standalone)|"
-                          rf"(?:(프런티어|프론티어|독립시장|스탠드얼론){_K}{{0,8}}?강등|강등\s*(확정|했|됐|단행)|결국\s*(\S+\s*)?강등(?=\s*(?:$|[…;,.:·])))(?!{_K}*?(?:{_KWAIT}))|"
+_KWAIT = (r"앞두|임박|연기|유예|보류|미뤄|미룬|연장|여부|촉각|철회|무산|전망|가능|검토|우려|경고|위기|위험|리스크|공포|대비|시나리오|D-|\?|"
+          r"제안|의견\s*수렴|협의|착수|놓고|앞서|가닥|땐|\s시(?:\s|$)|되면|할\s*경우")
+CONFIRMED_RE = re.compile(rf"(MSCI|FTSE){_C}{{0,25}}\b(downgrades|downgraded|reclassifies|reclassified|demotes|demoted|relegates|relegated)\b|"
+                          rf"\b(downgraded|reclassified|demoted|relegated|moved|moves|cut|cuts)\b{_C}{{0,25}}\b(to|as|into) (an? |the )?(frontier|standalone)|"
+                          rf"\b(demoted|relegated|downgraded)\b{_C}{{0,25}}\bby (MSCI|FTSE)|"
+                          rf"(MSCI|FTSE){_C}{{0,25}}\b(confirms|confirmed|finali[sz]es|finali[sz]ed|announces|announced|completes|completed)\s+(\w+\s+){{0,2}}(downgrade|demotion|reclassification)|"
+                          r"\bdowngrade (becomes|became|is now|made) official|(MSCI|FTSE)(\s+Russell)?\s+follows\s+(MSCI|FTSE)\s+in\s+(downgrad|demot)|"
+                          rf"(?:(프런티어|프론티어|독립시장|스탠드얼론)(\s*시장)?\s*(으로|로)?\s*강등|강등\s*(확정|했|됐|단행)(?!적|되면|될|돼야)|결국\s*(\S+\s*)?강등(?=\s*(?:$|[…;,.:·])))(?!{_K}*?(?:{_KWAIT}))|"
                           rf"강등\s*결정(?=\s*(?:내려|내렸|했|발표|에\s|으로|$|[…;,.:·'\"’”]))(?!{_K}*?(?:{_KWAIT}))", re.I)
-# 확정 표현과 같은 절에 붙은 조동사·위협 표현(could be downgraded 등)은 아직 걸린 결정이다
-MODAL_RE = re.compile(r"\b(could|may|might|would|to be|set to|likely to|fac(es|ing)|risks?|threat\w*|warn\w*|propos\w*|consider\w*|weigh\w*)\s+(\w+\s+){0,2}(downgrad|cut|reclassif|mov)|"
-                      r"\bmov\w* (closer|nearer|toward)|\bstep closer", re.I)
+# 확정 표현과 같은 절에 붙은 조동사·위협·계획 표현(could be downgraded·moves to downgrade 등)은 아직 걸린 결정이다
+MODAL_RE = re.compile(r"\b(could|may|might|would|to be|set to|likely to|fac(es|ing)|risks?|threat\w*|warn\w*|propos\w*|consider\w*|weigh\w*)\s+(\w+\s+){0,2}(downgrad|cut|reclassif|mov|demot)|"
+                      r"\bmov\w* (closer|nearer|toward)|\bstep closer|\b(mov(es|ed|ing)?|plans?|propos\w*|seeks?|aims?|bid) to\b", re.I)
 CLAUSE_RE = re.compile(r"[;:…·]|,\s|\.\s|\s[-–—|]\s")
-# 내려진 강등의 후속 기사('… after MSCI downgrade', '강등 충격에'): 결정은 이미 난 것으로 본다(경고·검토·우려 기사는 아님)
-AFTERMATH_RE = re.compile(r"\b(after|following|on|post)\s+(the\s+)?(MSCI|FTSE)('s|’s)?\s+(\w+\s+)?downgrade\b"
-                          r"(?!\s*(fears?|concerns?|worr\w*|risks?|threats?|warnings?|review|decision|talks?|speculation|proposals?|plans?|consult\w*|watch|probe|scare|jitters|angst))|"
+# 내려진 강등의 후속 기사('… after MSCI downgrade', '강등 충격에', '… downgrade takes effect'): 결정은 이미 난 것으로 본다
+# (경고·검토·우려·가능성 기사는 아님. 'on MSCI downgrade …'는 위협 기사에도 쓰여 넣지 않는다)
+AFTERMATH_RE = re.compile(r"\b(after|following|post)\s+(the\s+)?(MSCI|FTSE)('s|’s)?\s+(\w+\s+)?downgrade\b"
+                          r"(?!\s*(fears?|concerns?|worr\w*|risks?|threats?|warnings?|review|decision|talks?|speculation|proposals?|plans?|consult\w*|watch|probe|"
+                          r"scare|jitters|angst|uncertaint\w*|prospects?|possibilit\w*|anxiety|bets?|odds|alert|spect(re|er)))|"
+                          r"(MSCI|FTSE)('s|’s)?\s+(\w+\s+)?downgrade\s+(takes|took|taking) effect|"
                           r"(MSCI|FTSE)\S*\s*(\S+\s*)?강등\s*(충격|여파|후폭풍)(?!\S*\s*(우려|가능|전망))", re.I)
+# 이미 결정이 난 뒤에는 새 결정 단계를 말하는 기사만 다시 '걸린 결정'으로 본다(이미 내려진 강등을 되짚는 기사는 아님)
+_MONTH = r"(January|February|March|April|May|June|July|August|September|October|November|December|20\d\d)"
+NEW_STEP_RE = re.compile(rf"review|consult|watch ?list|further|additional|another|\bnext\b|again|\bdecision (is )?(due|expected|scheduled|slated)\b|"
+                         rf"\b(due|expected|scheduled|slated) (in|by) {_MONTH}|검토|의견 ?수렴|관찰|추가|재차|결정\s*(은|는)?\s*(내년|다음|\d+월|\d{{4}}년)|결정\s*예정", re.I)
 UPGRADE_CTX_RE = re.compile(r"upgrad|inclusion|승격|편입|reclassif|watch ?list", re.I)
+UP_WORD_RE = re.compile(r"upgrad|inclusion|승격|편입|to (secondary )?emerging|to developed", re.I)
 DOWN_CTX_RE = re.compile(r"downgrad|강등|standalone", re.I)
+# 인도네시아(이미 신흥시장)의 '재분류'는 강등 쪽 이야기다(베트남은 승격). 프런티어·독립시장 이동도 강등 쪽
+RECLASS_RE = re.compile(r"reclassif|재분류", re.I)
+FRONTIER_RE = re.compile(r"(as|into|to) (an? |the )?frontier|standalone|프런티어|프론티어|독립시장", re.I)
 POS_RE = re.compile(r"upgrad|inclusion|편입|승격|상향|reclassif|index options?|derivativ|옵션|파생", re.I)
 # 호재는 시장 분류·상품 제도 기사만(성장률 전망·신용등급 상향은 '시장 지위'가 아님)
 STRUCT_POS_RE = re.compile(r"MSCI|FTSE|S&P Dow Jones|reclassif|market (status|upgrade|classification)|emerging market|frontier|"
@@ -133,9 +150,11 @@ CAPITAL_RE = re.compile(r"증자|자본금|자본 ?확충|곳간|인수|지분|�
 CAPITAL_HEAD_RE = re.compile(r"자본금|증자|자본 ?확충")
 REG_RE = re.compile(r"manipulat|fraud|scam|과징금|과태료|경영유의|적발|시세조종|사기", re.I)
 # 'sanction·fine·penalty'는 외교 제재 기사와 섞이므로 감독기관 이름이 같이 있고 외교 제재가 아닐 때만
-REG_FINE_RE = re.compile(r"sanction|\bfine[ds]?\b(?!-)|penal(t|is|iz)|revok\w*\s+(\w+\s+){0,2}licen[cs]e|licen[cs]e\s+(revoc|revok|suspen)|"
-                         r"suspend\w*\s+(\w+\s+){0,3}(broker|securities)|(broker\w*|securities firm)\s+(\w+\s+){0,3}suspen|\bbann?(ed|s)?\b|"
-                         r"reprimand|censur|insider trading", re.I)
+# ban·suspend 는 처분 대상(증권사·임직원·인가)이 있을 때만('short-selling ban'·'suspends trading of shares'는 시장 조치)
+_PARTY = r"(broker\w*|brokerage|securities (firm|company|companies|broker\w*)|firms?|individuals?|former|directors?|traders?|employees?|representatives?|licen[cs]es?)"
+REG_FINE_RE = re.compile(rf"sanction|\bfine[ds]?\b(?!-)|penal(t|is|iz)|revok\w*\s+(\w+\s+){{0,2}}licen[cs]e|licen[cs]e\s+(revoc|revok|suspen)|"
+                         rf"suspend\w*\s+(\w+\s+){{0,3}}{_PARTY}|(broker\w*|securities firm)\s+(\w+\s+){{0,3}}suspen|"
+                         rf"\bbann?(ed|s)?\s+(\w+\s+){{0,3}}{_PARTY}|\bbanned from|reprimand|censur|insider trading", re.I)
 # 한글 '제재·위반·벌금'은 감독기관 이름이 빠진 제목이 많아 외교·통상 제재만 아니면 센다
 REG_KO_RE = re.compile(r"제재|위반|벌금")
 # 영업정지·인가 취소·징계는 공장·체육 기사에도 나오므로 감독기관이나 증권사 말이 같이 있을 때만
@@ -158,7 +177,7 @@ LABELS = [
     (re.compile(r"(R&I|rating).*upgrad|upgrad.*(R&I|BBB)", re.I), "신용등급 상향", None),
     (re.compile(r"market upgrade (is|was) (just|only)|(beyond|after) (the )?market upgrade|post-?upgrade", re.I), "시장 승격 이후 과제", 1),
     # 한글 '강등'은 같은 절에 검토·경고·우려 같은 말이 있을 때만(결정·안도·경쟁사 증자 기사는 제목·인용구를 그대로 쓴다)
-    (re.compile(r"MSCI.*downgrad|downgrad.*MSCI|MSCI.*강등[^…;,.:·]{0,12}?(검토|경고|우려|가능성|위기|앞두|임박|촉각|공포|여부|전망|연기|유예|보류)|"
+    (re.compile(r"MSCI.*(downgrad|demot|reclassif|frontier)|(downgrad|demot|reclassif|frontier).*MSCI|MSCI.*강등[^…;,.:·]{0,12}?(검토|경고|우려|가능성|위기|앞두|임박|촉각|공포|여부|전망|연기|유예|보류)|"
                 r"강등[^…;,.:·]{0,12}?(검토|경고|우려|가능성|위기|앞두|임박|촉각|공포|여부|전망|연기|유예|보류).*MSCI", re.I), "MSCI 강등 검토", -1),
     (re.compile(r"manipulat", re.I), "시세조종 대책 강화", None),
     (re.compile(r"bond premia.{0,40}(high|widen|jump|surge|soar)", re.I), "회사채 가산금리 확대", None),
@@ -213,7 +232,7 @@ QUOTE_RE = re.compile(r"‘([^‘’]{2,30})’|“([^“”]{2,30})”|'([^']{2
 
 def news_label(title, src=""):
     if OFF_WATCH.search(title):
-        prov = next((p for p in ("MSCI", "FTSE") if p in title), "")
+        prov = near_prov(title, OFF_WATCH.search(title))   # 관찰대상에서 뺀 기관('FTSE keeps X off watch list despite MSCI …' → FTSE)
         return f"{prov} 관찰대상 제외".strip() + (" 유지" if re.search(r"keeps?", title, re.I) else "")
     ko = bool(re.search(r"[가-힣]", title))
     # 경쟁사 증자·자본 확충 기사는 강등 이야기가 곁들여져도 그 기사 자체(인용구·제목)로 적는다
@@ -222,7 +241,8 @@ def news_label(title, src=""):
         prov = next((p for p in ("FTSE", "MSCI") if p in title), "")
         if pol > 0 and relief_match(title):
             return f"{decided_by(title)} 강등 우려 해소".strip()
-        if pol == 0 and prov and DELAY_RE.search(title) and UPGRADE_CTX_RE.search(title) and not DOWN_CTX_RE.search(title):
+        if pol == 0 and prov and DELAY_RE.search(title) and UPGRADE_CTX_RE.search(title) and not DOWN_CTX_RE.search(title) \
+                and (UP_WORD_RE.search(title) or "ID" not in countries_of(title)):
             return f"{prov} 승격 지연"
         if pol < 0 and prov and confirmed(title):
             return f"{decided_by(title)} 강등 결정"
@@ -281,6 +301,8 @@ def polarity(title):
         return 1
     if RESOLVED.search(title):
         return 0
+    if RECLASS_RE.search(title) and not UP_WORD_RE.search(title) and (FRONTIER_RE.search(title) or "ID" in countries_of(title)):
+        return -1   # 인도네시아 재분류 의견수렴·연기 등은 강등 쪽 이야기
     if NEG_RE.search(REBOUND_RE.sub(" ", title)):
         return -1
     if DELAY_RE.search(title):
@@ -290,9 +312,19 @@ def polarity(title):
     return 0
 
 
+def clause_start(title, at):
+    return max([0] + [x.end() for x in CLAUSE_RE.finditer(title, 0, at)])
+
+
 def relief_match(title):
-    """안도 표현(강등 안 함·우려 해소 등)의 첫 위치. 'to keep·could avoid'처럼 애쓰는 말 뒤는 뺀다."""
-    return next((m for m in RELIEF_RE.finditer(title) if not RELIEF_LEAD_RE.search(title[:m.start()])), None)
+    """안도 표현(강등 안 함·우려 해소 등)의 첫 위치. 같은 절 앞에 애쓰거나 바라거나 내다보는 말이 있으면
+    ('fights to keep·hopes MSCI won't·likely to remain') 뺀다. 'X to remain in EM'(남는다)은 안도로 둔다."""
+    for m in RELIEF_RE.finditer(title):
+        lead = title[clause_start(title, m.start()):m.start()]
+        if HEDGE_RE.search(lead) or (re.search(r"\bto\s+$", lead, re.I) and not m.group(0).lower().startswith("remain")):
+            continue
+        return m
+    return None
 
 
 def relief(title):
@@ -304,7 +336,7 @@ def confirm_match(title):
     """이미 내려진 강등 표현의 위치. 같은 절에 could·faces 같은 말이 붙으면(could be downgraded) 아직 걸린 결정이다.
     다른 절의 전망('…; outflows could top $2bn')은 확정을 뒤집지 않는다."""
     for m in CONFIRMED_RE.finditer(title):
-        a = max([0] + [x.end() for x in CLAUSE_RE.finditer(title, 0, m.start())])
+        a = clause_start(title, m.start())
         nxt = CLAUSE_RE.search(title, m.end())
         if not MODAL_RE.search(title[a:nxt.start() if nxt else len(title)]):
             return m
@@ -767,15 +799,11 @@ def r07_r08_struct(D, c):
         return cand("R07", "상품·제휴", 8, text, ev, [key], "deriv" if deriv else "base", ("POS",), driver=d(head["date"]),
                     links=[link(i) for i in pos[:2]], urls=[i["url"] for i in pos])
     head = neg[0]
-    event = "MSCI 결정" if pending(pos, neg, "MSCI") else "FTSE 재분류" if pending(pos, neg, "FTSE") else "시장 불안 진정"
-    credit = [k for k in KEYS[c] if "신용공여" in D.ents.get(k, {}).get("focus", "")]
-    limit = f"{D.labels(credit)} 신용공여 한도" if credit else "리스크 한도"
-    text = f"{event} 전까지 {KOR[c]} 신규 출자·인수는 속도를 조절하고, {limit}를 점검할 만합니다."
+    event = neg_event(pos, neg)
+    text, short = r08_text(D, c, event)
     ev = [cite(head) + more(len(neg), "부정 구조 뉴스", "최근 30일")]
     if ix and chg(ix, "1M") is not None and chg(ix, "YTD") is not None:
         ev.append(f"{IX_SHORT[c]} 1개월 {sgn(chg(ix, '1M'))}, 연초 대비 {sgn(chg(ix, 'YTD'))}({md(ix['date'])})")
-    # 같은 나라에 '인수는 미루고 후보 검토만' 줄이 함께 뽑히면 evaluate()가 이 짧은 문구로 바꾼다(같은 말 반복 방지)
-    short = f"{event} 전까지 {limit}와 담보 비율을 보수적으로 점검할 만합니다." if credit else f"{event} 전까지 {limit}를 보수적으로 점검할 만합니다."
     return cand("R08", RISK, 9, text, ev, KEYS[c], "NEG", ("NEG", event), driver=d(head["date"]),
                 links=[link(i) for i in neg[:2]], urls=[i["url"] for i in neg], event=event, short=short)
 
@@ -785,14 +813,29 @@ def arts(i):
     return [(i["title"], i.get("date", ""))] + [(x["title"], x.get("date", "")) for x in i.get("same", [])]
 
 
+def neg_event(pos, neg):
+    """악재 국면 줄의 '○○ 전까지': 걸린 MSCI 결정 > 걸린 FTSE 재분류 > 시장 불안 진정."""
+    return "MSCI 결정" if pending(pos, neg, "MSCI") else "FTSE 재분류" if pending(pos, neg, "FTSE") else "시장 불안 진정"
+
+
+def r08_text(D, c, event):
+    """악재 국면 줄 문구와, 같은 나라에 '인수는 미루고 후보 검토만' 줄이 함께 뽑힐 때 쓰는 짧은 문구(같은 말 반복 방지)."""
+    credit = [k for k in KEYS[c] if "신용공여" in D.ents.get(k, {}).get("focus", "")]
+    limit = f"{D.labels(credit)} 신용공여 한도" if credit else "리스크 한도"
+    text = f"{event} 전까지 {KOR[c]} 신규 출자·인수는 속도를 조절하고, {limit}를 점검할 만합니다."
+    short = f"{event} 전까지 {limit}와 담보 비율을 보수적으로 점검할 만합니다." if credit else f"{event} 전까지 {limit}를 보수적으로 점검할 만합니다."
+    return text, short
+
+
 def pending(pos, neg, prov):
     """prov(MSCI·FTSE)의 결정이 아직 걸려 있나: 그 기관의 마지막 결정(강등 확정·우려 해소·호재) 뒤에 나온 악재 기사가
-    그 기관의 분류·강등 결정을 앞으로의 일로 말할 때만. 결정 뒤 후속 기사('… after MSCI downgrade')나 결정 전 경고 기사는 세지 않는다.
+    그 기관의 분류·강등 결정을 앞으로의 일로 말할 때만. 결정 뒤 후속 기사('… after MSCI downgrade', 'MSCI's downgrade could
+    trigger outflows')나 결정 전 경고 기사는 세지 않는다. 결정 뒤에는 추가 검토·의견수렴처럼 새 단계를 말하는 기사만 센다.
     같은 날짜면 결정 쪽을 따른다(피드·보관함 순서에 따라 결과가 바뀌지 않게)."""
     done = max([dt for i in pos for t, dt in arts(i) if prov in t and decided_by(t) in ("", prov)] +
                [dt for i in neg for t, dt in arts(i) if decided_by(t) == prov], default="")
     return any(dt > done and prov in t and decided_by(t) != prov and PENDING_RE.search(t) and DECISION_CTX_RE.search(t)
-               and not (AFTER_UP_RE.search(t) and not DOWN_CTX_RE.search(t))
+               and not (AFTER_UP_RE.search(t) and not DOWN_CTX_RE.search(t)) and (not done or NEW_STEP_RE.search(t))
                for i in neg for t, dt in arts(i))
 
 
@@ -1128,13 +1171,13 @@ def fallbacks(D, c):
 
 
 # ---------- 조합·선택 ----------
-def evaluate(D, c, published, pinned=(), first=()):
+def evaluate(D, c, published, pinned=(), floor=None):
     """나라 c의 발동 규칙 → 병합·조정 → 선택. (고른 bullet, 탈락 후보, 발동 규칙, 국면)
 
-    pinned: 자료 공백으로 오늘 하루 안 잡힌 게시 중 bullet. 자리를 먼저 차지해 다른 규칙이 그 자리를
-    메우며 문구가 바뀌는 일을 막는다(이틀째 안 잡히면 run()이 더는 넘기지 않는다). 오늘의 국면·보류 조건과
-    어긋나는 줄은 지키지 않는다.
-    first: 오늘 사건이 직접 건드린 규칙. 유예 줄보다 먼저 자리를 잡는다(사건의 핵심 줄이 하루 늦지 않게)."""
+    pinned: 자료 공백으로 오늘 하루 안 잡힌 게시 중 bullet(상태에 남긴 무게·근거 날짜 포함). 오늘 발동한 줄과
+    같은 점수로 겨룬다: 자료 공백이 없는 날과 같은 줄이 뽑히게(이틀째 안 잡히면 run()이 더는 넘기지 않는다).
+    오늘의 국면·보류 조건에 맞춰 문구를 고쳐 쓰고, 어긋나는 줄은 지키지 않는다.
+    floor: 게시 중 규칙의 어제 무게. 오늘 근거 일부가 빠져 무게가 내려가도 하루는 어제 무게로 겨룬다."""
     ctx = {"published": published}
     fired, extra = {}, []
 
@@ -1171,8 +1214,15 @@ def evaluate(D, c, published, pinned=(), first=()):
     dropped, suppressed = [], set()   # suppressed: 합친 것이 아니라 조정으로 뺀 규칙(안 잡힘으로 센다)
     loss_rules = bool(fired.get("R11")) or bool(r13) or any(x["rule"] == "R11" for x in extra) or "R11" in pin or "R13" in pin
     gated = regime == "NEG" or loss_rules
-    pb = (pin.get("R08") or {}).get("bucket") or []
-    event = (st or {}).get("event") or (pb[1] if len(pb) > 1 and pb[1] else "시장 불안 진정")
+    if st:
+        event = st.get("event") or "시장 불안 진정"
+    else:
+        _, spos, sneg = struct(D, c)
+        event = neg_event(spos, sneg)
+    if "R08" in pin:
+        # 유예 중인 악재 줄도 오늘 뉴스로 '○○ 전까지'를 다시 정한다(지수 자료가 빈 날 강등 우려 해소 기사가 와도 맞게)
+        t8, s8 = r08_text(D, c, event)
+        pin["R08"] = {**pin["R08"], "text": t8, "short": s8, "event": event, "bucket": ["NEG", event]}
     parts = [x for x in (event if regime == "NEG" else "", "손익 회복" if loss_rules else "") if x]
     cond = f"{parts[0]}{josa(parts[0], '과', '와')} {parts[1]}" if len(parts) == 2 else (parts[0] if parts else event)
     key = BROKER[c]
@@ -1278,33 +1328,24 @@ def evaluate(D, c, published, pinned=(), first=()):
             pin["MKT"] = {**mp, "variant": mode, "text": mkt_text(D, c, mode, comps[0] if comps else None),
                           "bucket": [comps[0]] if mode == "base" else [], "components": comps, "tierA": tierA}
 
-    # 점수와 선택
+    # 점수와 선택: 유예 줄도 상태에 남긴 무게·근거 날짜로 같은 점수를 매겨 겨룬다(무게가 없는 옛 상태면 먼저 자리를 준다)
+    floor = floor or {}
+
     def score(x):
-        s = x["weight"] + (1 if x["category"] in LEVERS else 0)
+        w = x.get("weight")
+        if w is None:
+            return 99
+        s = max(w, floor.get(x["rule"], 0)) + (1 if x["category"] in LEVERS else 0)
         if x.get("driver") and 0 <= (D.today - d(x["driver"])).days <= 7:
             s += 1
         return s
     pool = list(fired.values()) + extra
-    for x in pool:
+    held = [dict(pin[p["rule"]]) for p in pinned if p["rule"] in pin]   # 오늘 조건에 맞춰 고쳐 쓴 유예 줄(어긋나 뺀 줄은 없음)
+    for x in pool + held:
         x["score"] = score(x)
-    pool.sort(key=lambda x: (-x["score"], -x["weight"], -(d(x["driver"]).toordinal() if x.get("driver") else 0), x["rule"]))
-    # 오늘 사건이 직접 건드린 줄이 유예 줄 없이도 뽑히는 분야면, 그 분야의 유예 줄은 자리를 내준다
-    # (사건 줄을 앞세우지는 않는다: 유예 줄이 없는 날과 같은 순위로 겨룬다)
-    plain, pc = [], set()
-    for x in pool:
-        if len(plain) < 4 and x["category"] not in pc:
-            plain.append(x)
-            pc.add(x["category"])
-    first_cats = {x["category"] for x in plain if x["rule"] in first}
+    order = lambda x: (-x["score"], -(x.get("weight") or 0), -(d(x["driver"]).toordinal() if x.get("driver") else 0), x["rule"])
     chosen, cats = [], {}
-    for p in pinned:
-        q = pin.get(p["rule"])   # 오늘 조건에 맞춰 고쳐 쓴 유예 줄(어긋나 뺀 줄은 없음)
-        if q is not None and q["category"] not in first_cats and len(chosen) < 4:
-            chosen.append(dict(q))
-            cats[q["category"]] = 1
-    for x in pool:
-        if x in chosen:
-            continue
+    for x in sorted(pool + held, key=order):
         if len(chosen) >= 4:
             x["why_not"] = "4개 마감"
             continue
@@ -1313,13 +1354,7 @@ def evaluate(D, c, published, pinned=(), first=()):
             continue
         chosen.append(x)
         cats[x["category"]] = 1
-    # 유예 줄은 게시 때 순서 자리에 둔다(공백 날에 줄 순서가 뒤섞이지 않게). 새 줄은 점수 순서 그대로
-    held = {p["rule"] for p in pinned}
-    order = {r: i for i, r in enumerate(published)}
-    main = [x for x in chosen if x["rule"] not in held]
-    for q in [x for x in chosen if x["rule"] in held]:
-        main.insert(next((k for k, y in enumerate(main) if order.get(y["rule"], -1) > order.get(q["rule"], len(order))), len(main)), q)
-    chosen = main
+    pool.sort(key=order)
     fb = fallbacks(D, c)
     if len(chosen) < 3:
         have = {x["category"] for x in chosen}
@@ -1384,7 +1419,7 @@ def archive_worthy(it):
 
 
 # 게시 줄에 없지만 유예 중인 줄을 다시 판단할 때 필요한 값(적자 법인의 비용/매출 배수, 마케팅 근거 규칙)
-META_KEYS = ("cir", "components", "tierA")
+META_KEYS = ("cir", "components", "tierA", "weight", "driver")
 
 
 def check_country(D, c, pc, cs, seen, dart_key, now, prev_spec=None):
@@ -1392,13 +1427,6 @@ def check_country(D, c, pc, cs, seen, dart_key, now, prev_spec=None):
     today = now.date()
     stamp = now.isoformat(timespec="minutes")
     published = {b["rule"]: b for b in pc.get("bullets", [])}
-    chosen, losers, fired, regime = evaluate(D, c, published)
-    # 하루 안 잡힘 세기: 같은 날 다시 돌려도 하루로 센다(그날 첫 실행 전 값에서 다시 셈)
-    base = cs.get("miss_base", {}) if cs.get("miss_date") == today.isoformat() else cs.get("miss", {})
-    miss = {r: n for r, n in base.items() if r in published and r not in fired}
-    for r in published:
-        if r not in fired:
-            miss[r] = miss.get(r, 0) + 1
     hard = []
     if not pc.get("bullets"):
         hard.append("첫 생성")
@@ -1447,14 +1475,26 @@ def check_country(D, c, pc, cs, seen, dart_key, now, prev_spec=None):
         ev_rules |= {"R04", "R07", "R08", "R09", "R14", "MKT"}
     if pc.get("changed_at") and (today - d(pc["changed_at"])).days >= MAX_STALE_DAYS:
         events_.append(f"정기 갱신({MAX_STALE_DAYS}일)")
+    # 게시 중 규칙의 어제 무게(새 공시·규칙 개정 날, 그 규칙을 직접 건드린 사건이 있는 날은 쓰지 않는다)
+    meta = cs.get("meta") or {}
+    floor = {} if hard else {r: meta[r]["weight"] for r in published
+                             if r not in ev_rules and isinstance((meta.get(r) or {}).get("weight"), (int, float))}
+    chosen, losers, fired, regime = evaluate(D, c, published, floor=floor)
+    # 하루 안 잡힘 세기: 같은 날 다시 돌려도 하루로 센다(그날 첫 실행 전 값에서 다시 셈)
+    base = cs.get("miss_base", {}) if cs.get("miss_date") == today.isoformat() else cs.get("miss", {})
+    miss = {r: n for r, n in base.items() if r in published and r not in fired}
+    for r in published:
+        if r not in fired:
+            miss[r] = miss.get(r, 0) + 1
     # 하루만 안 잡힌 게시 줄은 자리를 지킨다(자료 공백에 다른 규칙이 그 자리를 메웠다가 다음 날 되돌아가지 않게).
     # 새 공시·규칙 개정 날, 그 줄을 직접 건드린 사건이 있는 날, 국면이 뒤집힌 날의 반대 국면 줄(R07↔R08)은 지키지 않는다
-    grace = [r for r in published if r not in fired and miss[r] < 2 and r not in ev_rules
+    # 지수 자료가 빈 날 국면 줄(R07·R08)이 빠진 것은 뉴스 사건 때문이 아니라 자료 공백 때문이다(유예하고 오늘 뉴스로 문구만 고친다)
+    ix_gap = ix is None or (chg(ix, "1M") is None and drawdown(ix, 13) is None)
+    grace = [r for r in published if r not in fired and miss[r] < 2 and (r not in ev_rules or (r in ("R07", "R08") and ix_gap))
              and not (r == "R07" and regime == "NEG") and not (r == "R08" and regime == "POS")]
     if grace and not hard:
-        # 게시 줄에 없는 판단 값(적자 법인의 비용/매출 배수 등)은 상태에서 되살린다
-        meta = cs.get("meta") or {}
-        chosen, losers, fired, regime = evaluate(D, c, published, pinned=[{**published[r], **meta.get(r, {})} for r in grace], first=ev_rules)
+        # 게시 줄에 없는 판단 값(적자 법인의 비용/매출 배수, 무게·근거 날짜 등)은 상태에서 되살린다
+        chosen, losers, fired, regime = evaluate(D, c, published, pinned=[{**published[r], **meta.get(r, {})} for r in grace], floor=floor)
     new_map = {b["rule"]: b for b in chosen}
     added = [r for r in new_map if r not in published or new_map[r]["variant"] != published[r]["variant"]]
     gone = [r for r in published if r not in new_map and r not in fired]
