@@ -131,7 +131,7 @@
       ${tm(`${ip === "month" ? ym(X.month.month) : `${dot(X.ytd.from)}~${dot(X.ytd.to)}`} · ${P.days}거래일 · 전체 ${num(P.total / 1e12, 1)}조 루피아`, "%(매수+매도 거래대금 비중)")}
       <div class="legend"><span><i style="background:var(--bar)"></i>현지·외국계</span><span><i style="background:var(--kr)"></i>한국계</span><span><i style="background:var(--accent)"></i>당사</span></div>
       <div class="bars">${top.map(bar).join("")}${kr.length ? `<div class="note">… 한국계</div>${kr.map(bar).join("")}` : ""}</div>
-      ${trend ? `<div class="tw" style="margin-top:6px">${tm(`월별 · 마지막 거래일 ${dot(X.last_day)}`, "%, 순위")}<table><thead><tr><th>한국계 회원사</th>${months.map((mm) => `<th>${ym(mm)}</th>`).join("")}</tr></thead><tbody>${trend}</tbody></table></div>` : ""}
+      ${trend ? `<div class="tw" style="margin-top:6px">${tm(`월별 · 마지막 거래일 ${dot(X.last_day)}`, "%, 순위")}<table><thead><tr><th>한국계 회원사</th>${months.map((mm) => `<th>${ym(mm)}${mm === X.last_day.slice(0, 7) && mm !== X.month.month ? `<small>~${X.last_day.slice(8)}일 진행 중</small>` : ""}</th>`).join("")}</tr></thead><tbody>${trend}</tbody></table></div>` : ""}
       <p class="note">출처: <a href="${esc(X.source.url)}" target="_blank" rel="noopener">${esc(X.source.label)}</a>. ${esc(X.method)}. 회원사 이름으로 한국계를 표시합니다.</p>`;
   }
 
