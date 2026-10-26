@@ -1,6 +1,6 @@
 {
  "spec_version": 2,
- "checked_at": "2026-10-26T23:23+09:00",
+ "checked_at": "2026-10-27T00:44+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -30,6 +30,9 @@
       "acquire",
       6,
       6
+     ],
+     "keys": [
+      "VN"
      ]
     },
     {
@@ -55,6 +58,9 @@
      ],
      "bucket": [
       "POS"
+     ],
+     "keys": [
+      "VN"
      ]
     },
     {
@@ -69,6 +75,9 @@
      "links": [],
      "bucket": [
       -2
+     ],
+     "keys": [
+      "VN"
      ]
     },
     {
@@ -79,13 +88,16 @@
      "evidence": [
       "HOSE 2Q26 점유율 TCBS 9.36%·VPBankS 3.57%로 최고치(2026-07 HOSE 발표)",
       "HOSE 2Q26 10위 진입선 2.94%에 한국계 2곳, 베트남 법인(PTSV)은 10위 밖(2026-07 HOSE 발표)",
-      "VN-Index 1주 +4.0%·3개월 +4.4%(10/23), 2026-02 고점 대비 -5.6%"
+      "VN-Index 1주 +4.4%·3개월 +4.6%(10/26), 2026-02 고점 대비 -6.2%"
      ],
      "links": [],
-     "bucket": []
+     "bucket": [],
+     "keys": [
+      "VN"
+     ]
     }
    ],
-   "changed_at": "2026-10-26",
+   "changed_at": "2026-10-27",
    "reason": [
     "첫 생성"
    ],
@@ -99,7 +111,7 @@
    ],
    "history": [
     {
-     "date": "2026-10-26",
+     "date": "2026-10-27",
      "fp": "f54921dd7f2a",
      "rules": [
       "R01",
@@ -127,13 +139,13 @@
      "category": "리스크·규제",
      "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도와 담보 비율을 보수적으로 점검할 만합니다.",
      "evidence": [
-      "Reuters 10/26 '시세조종 대책 강화' 등 부정 구조 뉴스 3건(최근 30일)",
-      "IDX 1개월 -14.7%, 연초 대비 -37.1%(10/23)"
+      "CNA 10/26 '시세조종 대책 강화' 등 부정 구조 뉴스 3건(최근 30일)",
+      "IDX 1개월 -13.9%, 연초 대비 -37.9%(10/26)"
      ],
      "links": [
       {
        "label": "시세조종 대책 강화",
-       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUE9yTXpNTi04M0d2WkhjaGJGMHN2amxERHk0TVpPWjY4S2xGN2tIOU05eGxudUcyWW5iSXFIUUJWOUlYZlZFVmlBcGNibk5XQ29XR09lNW15LUZhenNKejJ0TlowVE9zMS1HWW5tQUJMcnNzNWtiVFc3LUZVcThyXzJ2RU4weGdVU3dJbTRXVHBzMmRZT1B3TERGNjBTU3Q3WThOZldPcG9CTFcyblF6WE81LVZ6UWdmeFQ1Y1pnTTR0TmUwaTIyWm5R?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMlBGd2pJTXdBQm84MEhpTzRDaFRzSHZBcXF5RlROWHhXNG5FeC16dEdyMnRqRU4xcmlpUjdIcnIxVUdmUTZsN3ZPNjEwcm5kaDBoUlp6c25jdHYtUzJ1MC1pQ0ZJM0c5ekQ1LWdZOHRMYmpSNF9BTE5HTTVNcHFHUl9VNUZlV1J1QTdIcXIyempPc3pkV2R0SDN3?oc=5",
        "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI"
       },
       {
@@ -145,6 +157,10 @@
      "bucket": [
       "NEG",
       "MSCI 결정"
+     ],
+     "keys": [
+      "CSA",
+      "CAM"
      ]
     },
     {
@@ -161,6 +177,10 @@
      "bucket": [
       2,
       -2
+     ],
+     "keys": [
+      "CSA",
+      "CAM"
      ]
     },
     {
@@ -169,11 +189,15 @@
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용이 낮아졌어도 MSCI 결정과 손익 회복 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다.",
      "evidence": [
-      "IDX 5,439(10/23), 최근 1년 고점(2025-12 월말) 대비 -37.1% · 루피아 원화 대비 연초 이후 -14.8%(ECOS 10/26) · 원화 환산 지수 연초 대비 -46.4%"
+      "IDX 5,373(10/26), 최근 1년 고점(2025-12 월말) 대비 -37.9% · 루피아 원화 대비 연초 이후 -14.8%(ECOS 10/26) · 원화 환산 지수 연초 대비 -47.0%"
      ],
      "links": [],
      "bucket": [
       "gated"
+     ],
+     "keys": [
+      "CSA",
+      "CAM"
      ]
     },
     {
@@ -186,10 +210,13 @@
       "인도네시아 증권(CSA) IDX 점유율 7~9월 평균 0.78%, 1~6월 0.57%(3월 일회성 제외, IDX 회원사 집계)"
      ],
      "links": [],
-     "bucket": []
+     "bucket": [],
+     "keys": [
+      "CSA"
+     ]
     }
    ],
-   "changed_at": "2026-10-26",
+   "changed_at": "2026-10-27",
    "reason": [
     "첫 생성"
    ],
@@ -223,7 +250,7 @@
    ],
    "history": [
     {
-     "date": "2026-10-26",
+     "date": "2026-10-27",
      "fp": "d6c0f46b85fe",
      "rules": [
       "R08",
@@ -256,6 +283,9 @@
      "links": [],
      "bucket": [
       "widen"
+     ],
+     "keys": [
+      "SG"
      ]
     },
     {
@@ -269,6 +299,9 @@
      "links": [],
      "bucket": [
       10142.0
+     ],
+     "keys": [
+      "SG"
      ]
     },
     {
@@ -280,7 +313,10 @@
       "SGX 상장 증권사 2곳 시가총액 2.5~3.0조원(10/26 주가) vs 당사 자기자본 2.26조원(2026 반기보고서 연결, DART)"
      ],
      "links": [],
-     "bucket": []
+     "bucket": [],
+     "keys": [
+      "SG"
+     ]
     },
     {
      "rule": "R18",
@@ -300,10 +336,13 @@
      ],
      "bucket": [
       "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRHlqUFRIcngzaUtJek93Z0VZMXBCUkNDWHhFMFpuSER3QlM2NUhlTkIyN182QnJ6NDYxeUNFa0ZaWDhpSC16TnRUT19hazhJSjdKQQ?oc=5"
+     ],
+     "keys": [
+      "SG"
      ]
     }
    ],
-   "changed_at": "2026-10-26",
+   "changed_at": "2026-10-27",
    "reason": [
     "첫 생성"
    ],
@@ -311,7 +350,7 @@
    "candidates": [],
    "history": [
     {
-     "date": "2026-10-26",
+     "date": "2026-10-27",
      "fp": "a1ea8857f88f",
      "rules": [
       "R11",
@@ -327,5 +366,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-10-26"
+ "updated_at": "2026-10-27"
 }
