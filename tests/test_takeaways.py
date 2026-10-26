@@ -726,6 +726,80 @@ class TakeawaysTest(unittest.TestCase):
         d2 = self.run_at(TODAY + timedelta(days=2), d1)
         self.assertEqual(d2["countries"]["ID"]["last_check"], "큰 변화 없음", d2["countries"]["ID"].get("reason"))
 
+    def test_gap_day_event_does_not_reshuffle_lines(self):
+        # 환율 공백으로 인수 보류 줄이 유예된 날 금리 변경·감독 제재 기사가 와도, 평소 점수에서 지는 줄이 끼어들지 않는다
+        first = self.run_at(TODAY, {})
+        want = set(self.rules(first, "ID"))
+        day = (TODAY + timedelta(days=1)).isoformat()
+        gap = copy.deepcopy(self.files["hanwha/data/macro.json"])
+        del gap["fx"]["IDR"]
+        mk = copy.deepcopy(self.files["hanwha/data/markets.json"])
+        mk["policy"]["table"][0].update(now=6.0, month="2026-10")
+        mn = copy.deepcopy(self.files["site/data/global/macro_news.json"])
+        mn["countries"]["ID"]["items"].insert(0, {"date": day, "title": "Indonesia's OJK fines three brokers over client fraud",
+                                                  "src": "Reuters", "url": "u-ojk", "priority": True})
+        for event in ({"hanwha/data/markets.json": mk}, {"site/data/global/macro_news.json": mn}):
+            write(self.root, {**self.files, **event, "hanwha/data/macro.json": gap})
+            d1 = self.run_at(TODAY + timedelta(days=1), first)
+            self.assertEqual(set(self.rules(d1, "ID")), want, (list(event), d1["countries"]["ID"].get("reason")))
+            write(self.root, {"hanwha/data/macro.json": self.files["hanwha/data/macro.json"]})
+            d2 = self.run_at(TODAY + timedelta(days=2), d1)
+            self.assertEqual(set(self.rules(d2, "ID")), want, list(event))
+            self.assertEqual(d2["countries"]["ID"]["last_check"], "큰 변화 없음", d2["countries"]["ID"].get("reason"))
+
+    def test_follow_up_after_decided_downgrade_stays_decided(self):
+        # 강등이 결정된 뒤의 후속 기사('… after MSCI downgrade')로 'MSCI 결정 전까지'가 되살아나지 않는다
+        first = self.run_at(TODAY, {})
+        items = self.files["site/data/global/macro_news.json"]["countries"]["ID"]["items"]
+        day1, day2 = (TODAY + timedelta(days=1)).isoformat(), (TODAY + timedelta(days=2)).isoformat()
+        C = {"date": day1, "title": "MSCI downgrades Indonesia to frontier market status", "src": "Reuters", "url": "u-C", "priority": True}
+        write(self.root, {"site/data/global/macro_news.json": {"countries": {"ID": {"items": [C] + items}}}})
+        d1 = self.run_at(TODAY + timedelta(days=1), first)
+        self.assertTrue(self.rules(d1, "ID")["R08"]["text"].startswith("시장 불안 진정"))
+        for n, title in enumerate(("Indonesian stocks plunge after MSCI downgrade", "MSCI 강등 충격에 인니 증시 폭락")):
+            F = {"date": day2, "title": title, "src": "Bloomberg", "url": f"u-F{n}", "priority": True}
+            write(self.root, {"site/data/global/macro_news.json": {"countries": {"ID": {"items": [F, C] + items}}}})
+            d2 = self.run_at(TODAY + timedelta(days=2), d1)
+            text = " ".join(b["text"] for b in d2["countries"]["ID"]["bullets"])
+            self.assertNotIn("MSCI 결정", text, title)
+            self.assertNotIn("MSCI 강등 검토", " ".join(" ".join(b["evidence"]) for b in d2["countries"]["ID"]["bullets"]), title)
+
+    def test_decision_wording_from_headlines(self):
+        # 결정 전 기사는 'MSCI 결정 전까지', 우려 해소·확정 기사는 그날 바로 걷힌다(한글 제목 포함)
+        first = self.run_at(TODAY, {})
+        day = TODAY + timedelta(days=1)
+        items = self.files["site/data/global/macro_news.json"]["countries"]["ID"]["items"]
+        for title, label, still in (("MSCI Moves Closer to Downgrading Indonesia as Free-Float Fix Stalls", "MSCI 강등 검토", True),
+                                    ("MSCI, 인니 강등 결정 내년으로 연기", "MSCI 강등 검토", True),
+                                    ("MSCI retains Indonesia's emerging market status", "MSCI 강등 우려 해소", False),
+                                    ("Indonesia dodges MSCI downgrade", "MSCI 강등 우려 해소", False),
+                                    ("인도네시아 증시, MSCI 강등은 피했다", "MSCI 강등 우려 해소", False),
+                                    ("MSCI, 인도네시아 강등 확정…외국인 자금 대규모 이탈 전망", "MSCI 강등 결정", False)):
+            write(self.root, {"site/data/global/macro_news.json": {"countries": {"ID": {"items": [
+                {"date": day.isoformat(), "title": title, "src": "연합뉴스", "url": "u-" + title, "priority": True}] + items}}}})
+            id_ = self.run_at(day, first)["countries"]["ID"]
+            self.assertIn(f"새 뉴스: {label}", " ".join(id_.get("reason") or []), title)
+            text = " ".join(b["text"] for b in id_["bullets"])
+            self.assertEqual("MSCI 결정" in text, still, title)
+
+    def test_pending_needs_a_decision_story_after_the_last_decision(self):
+        neg = lambda t, dt: {"title": t, "date": dt, "same": []}
+        # 승격이 이미 발효된 뒤 '승격 후 외국인 매도가 커질 수 있다'는 걸린 재분류가 아니다
+        self.assertFalse(bt.pending([], [neg("Foreign selling could deepen as Vietnam stocks slump after FTSE upgrade", "2026-11-25"),
+                                         neg("베트남 증시, FTSE 승격 후 외국인 이탈 지속 전망", "2026-11-24")], "FTSE"))
+        self.assertTrue(bt.pending([], [neg("Why is Indonesia facing a rare MSCI downgrade", "2026-10-23")], "MSCI"))
+        for t in ("인도네시아 MSCI 강등 결정은 내년 6월", "MSCI 강등 결정 D-30…인도네시아 증시 긴장", "MSCI 인도네시아 강등 결정 6개월 유예"):
+            self.assertTrue(bt.pending([], [neg(t, "2026-10-28")], "MSCI"), t)
+        # 결정 뒤 후속 기사만 있으면 결정 전 경고 기사는 세지 않는다 · 결정 뒤 새 검토 기사는 다시 걸린 결정
+        old = neg("Why is Indonesia facing a rare MSCI downgrade", "2026-10-23")
+        done = neg("MSCI downgrades Indonesia to frontier market status", "2026-10-28")
+        self.assertFalse(bt.pending([], [neg("Indonesia vows reforms after MSCI downgrade", "2026-10-29"), done, old], "MSCI"))
+        self.assertTrue(bt.pending([], [neg("MSCI could cut Indonesia further in next review", "2026-11-20"), done, old], "MSCI"))
+        # MSCI 가 결정하고 FTSE 검토가 남은 기사는 FTSE 쪽이 걸린 결정
+        both = [neg("MSCI downgrades Indonesia to frontier; FTSE Russell to review in March", "2026-10-28")]
+        self.assertFalse(bt.pending([], both, "MSCI"))
+        self.assertTrue(bt.pending([], both, "FTSE"))
+
     def test_report_name_and_polarity_helpers(self):
         self.assertEqual(bt.rep_name({"report": {"name": "반기보고서 (2026.06)"}}), "2026.06 반기보고서")
         self.assertEqual(bt.rep_name({"report": {"name": "[기재정정]분기보고서 (2025.09)"}}), "2025.09 분기보고서")
@@ -812,6 +886,53 @@ class TakeawaysTest(unittest.TestCase):
         self.assertEqual(bt.polarity("GIC, Temasek rebut allegations of pressuring MSCI to downgrade Indonesia"), 0)
         self.assertEqual(bt.polarity("Why is Indonesia facing a rare MSCI downgrade"), -1)
         self.assertEqual(bt.countries_of("Indonesia stock exchange chief defends MSCI after ex-minister alleges Singapore interference"), ["ID"])
+
+    def test_decision_and_regulator_headlines(self):
+        # 'moves closer to·cuts weight of'는 결정이 아니다 · 한글은 같은 절의 연기·유예·보류만 결정을 뒤집는다
+        for t in ("MSCI Moves Closer to Downgrading Indonesia as Free-Float Fix Stalls", "MSCI moves to curb Indonesia exposure as downgrade risk grows",
+                  "Indonesian stocks slump after MSCI cuts weight of Barito, Amman", "MSCI, FTSE moves weigh on Indonesian stocks amid downgrade fears",
+                  "MSCI, 인니 강등 결정 내년으로 연기", "MSCI 인도네시아 강등 결정 6개월 유예", "MSCI, 인니 강등 결정 일단 보류",
+                  "인도네시아 MSCI 강등 결정은 내년 6월", "MSCI 강등 결정 D-30…인니 증시 긴장", "MSCI, 인니 프런티어 강등 가능성",
+                  "Indonesia fights to keep emerging market status as MSCI downgrade looms"):
+            self.assertFalse(bt.confirmed(t), t)
+            self.assertNotIn(bt.news_label(t),("MSCI 강등 결정", "FTSE 강등 결정", "MSCI 강등 우려 해소"), t)
+        for t in ("MSCI, 인도네시아 강등 확정…외국인 자금 대규모 이탈 전망", "MSCI, 인도네시아 프런티어 강등 확정…정부 대응책 검토",
+                  "MSCI 인니 강등 확정…FTSE도 강등 가능성", "MSCI, 인도네시아 프런티어 시장으로 강등", "인도네시아, 결국 MSCI 강등",
+                  "MSCI cuts Indonesia to frontier status; FTSE Russell decision due in March",
+                  "MSCI downgrades Indonesia to frontier; FTSE Russell to review in March",
+                  "Indonesia stocks tumble as MSCI downgrades market, FTSE review looms"):
+            self.assertTrue(bt.confirmed(t), t)
+            self.assertEqual(bt.news_label(t), "MSCI 강등 결정", t)   # 결정한 쪽(가장 가까운 앞쪽 기관)
+        # 결정 뒤 후속 기사는 '강등 여파'(경고·우려 기사는 아님)
+        for t in ("Indonesian stocks plunge after MSCI downgrade", "Indonesia vows reforms after MSCI downgrade", "MSCI 강등 충격에 인니 증시 폭락"):
+            self.assertEqual(bt.news_label(t), "MSCI 강등 여파", t)
+            self.assertEqual(bt.decided_by(t), "MSCI", t)
+        for t in ("Indonesian stocks plunge after MSCI downgrade warning", "Indonesia stocks drop on MSCI downgrade fears", "MSCI 강등 충격 우려에 인니 증시 급락"):
+            self.assertEqual(bt.news_label(t), "MSCI 강등 검토", t)
+            self.assertEqual(bt.decided_by(t), "", t)
+        # 신흥시장 유지·강등 회피 결정은 우려 해소('to keep·to avert'처럼 애쓰는 기사는 아님)
+        for t in ("MSCI retains Indonesia's emerging market status", "Indonesia retains MSCI emerging market status",
+                  "MSCI keeps Indonesia's emerging market status", "MSCI keeps Indonesia in its emerging markets index",
+                  "MSCI retains Indonesia as emerging market", "Indonesia dodges MSCI downgrade", "Indonesia averts MSCI downgrade",
+                  "MSCI decides against Indonesia downgrade", "MSCI drops plan to downgrade Indonesia", "MSCI Won't Downgrade Indonesia After Free-Float Reforms",
+                  "인도네시아 증시, MSCI 강등은 피했다", "MSCI 강등 일단 피했다", "MSCI 강등 우려 해소에 급등", "MSCI 강등 피한 인도네시아 증시 급등",
+                  "MSCI says Indonesia to remain in emerging markets"):
+            self.assertEqual(bt.polarity(t), 1, t)
+            self.assertEqual(bt.news_label(t), "MSCI 강등 우려 해소", t)
+        for t in ("Indonesia fights to keep emerging market status as MSCI downgrade looms", "Indonesia moves to avert MSCI downgrade"):
+            self.assertEqual(bt.polarity(t), -1, t)
+        # 경쟁사 증자 기사는 강등 이야기가 곁들여져도 그 기사로 적는다
+        self.assertEqual(bt.news_label("인니 MSCI 강등 경고 속 KB증권 현지법인 ‘자본 확충’"), "자본 확충")
+        self.assertNotEqual(bt.news_label("MSCI 강등 위기 인니서…미래에셋, 현지법인 1000억 증자"), "MSCI 강등 검토")
+        # 미국·통상 제재는 감독 제재가 아니다 · 감독기관의 과징금·인가 취소·영업정지·견책은 감독 제재
+        for t in ("美 ‘우회수출’ 제재 우려에 베트남 증시 급락", "미국 제재에 인도네시아 니켈주 급락", "베트남, 美 관세 제재 피하려 환적 단속 강화",
+                  "美, 北 IT 인력 자금세탁 도운 베트남 기업 제재", "트럼프 행정부, 베트남 우회수출 제재 착수",
+                  "IDX suspends trading of 5 stocks after unusual price moves", "베트남 공장 영업정지 처분", "Indonesia bans nickel ore exports"):
+            self.assertFalse(bt.reg_hit(t), t)
+        for t in ("Indonesia's financial regulator penalises brokers for insider trading", "Indonesia's OJK revokes licence of brokerage over client fund misuse",
+                  "Vietnam's securities watchdog suspends trading at brokerage after breaches", "Singapore's MAS reprimands brokerage over failures in AML controls",
+                  "SGX RegCo reprimands broker for lapses", "인니 OJK, 증권사 3곳 영업정지", "Vietnam's SSC penalizes brokerage for violations"):
+            self.assertTrue(bt.reg_hit(t), t)
 
 
 if __name__ == "__main__":
