@@ -40,6 +40,9 @@ LEGACY_FOREIGN = ["Bloomberg", "Reuters", "Financial Times", "Nikkei", "DealStre
 SOURCES = DOMESTIC + LEGACY_FOREIGN
 # 해외 공신력 있는 매체·기관(기사 주소의 도메인, 하위 도메인 포함): 글로벌 통신·경제지, 진출국 전국 단위 주요 언론,
 # 감독당국·거래소·지수 회사. 매체 이름은 같은 이름의 제휴판(Bloomberg Technoz 등)과 헷갈려 도메인으로 본다.
+# 인도네시아어 매체(제목 언어 판별에도 쓴다)
+ID_PRESS = ["kontan.co.id", "bisnis.com", "cnbcindonesia.com", "kompas.com", "kompas.id", "tempo.co", "antaranews.com", "investor.id",
+            "katadata.co.id", "idxchannel.com", "detik.com", "cnnindonesia.com", "bloombergtechnoz.com", "beritasatu.com", "liputan6.com"]
 FOREIGN_SITES = [
     # 글로벌 통신·경제지
     "reuters.com", "bloomberg.com", "ft.com", "wsj.com", "nikkei.com", "cnbc.com", "economist.com", "apnews.com",
@@ -54,10 +57,8 @@ FOREIGN_SITES = [
     "vnexpress.net", "vir.com.vn", "theinvestor.vn", "vietnamnews.vn", "vietnamplus.vn", "tuoitre.vn", "thanhnien.vn",
     "vneconomy.vn", "baodautu.vn", "tinnhanhchungkhoan.vn", "thoibaotaichinhvietnam.vn", "tapchitaichinh.vn", "cafef.vn",
     "nld.com.vn", "laodong.vn", "dantri.com.vn", "vietnamnet.vn", "vtv.vn", "sggp.org.vn", "bbw.vn", "vietstock.vn",
-    # 인도네시아
-    "kontan.co.id", "bisnis.com", "cnbcindonesia.com", "kompas.com", "kompas.id", "tempo.co", "antaranews.com", "investor.id",
-    "katadata.co.id", "idxchannel.com", "detik.com", "jakartaglobe.id", "thejakartapost.com", "cnnindonesia.com",
-    "bloombergtechnoz.com", "beritasatu.com", "liputan6.com",
+    # 인도네시아(영문 매체 jakartaglobe·thejakartapost 포함)
+    *ID_PRESS, "jakartaglobe.id", "thejakartapost.com",
     # 인도·몽골·브라질·그리스
     "economictimes.indiatimes.com", "livemint.com", "business-standard.com", "moneycontrol.com", "thehindubusinessline.com",
     "financialexpress.com", "cnbctv18.com", "ndtvprofit.com", "montsame.mn", "valor.globo.com", "exame.com", "ekathimerini.com",
@@ -149,21 +150,30 @@ VI_CHARS = re.compile(r"[ăđơưạảấầẩẫậắằẳẵặẹẻẽ�
 ID_STRONG = re.compile(r"\b(?:yang|dari|untuk|dengan|pada|ini|itu|usai|jadi|akan|tak|bisa|belum|sudah|masih|lebih|dalam|resmi|raih"
                        r"|sabet|tembus|naik|turun|oleh|bagi|lewat|atas|hingga|soal|kini|baru|kata|buka|suara|dorong|ungkap|catat|capai"
                        r"|bidik|incar|genjot|perkuat|jalin|gandeng|sepakat|kerja sama|kinerja|laba|izin|sanksi|denda|nasabah|kasus|dugaan"
-                       r"|kantor|tahun|juta|miliar|triliun|\w{4,}kan)\b", re.I)
+                       r"|kantor|tahun|juta|miliar|triliun|nama|ganti|akuisisi|milik|selatan|tumbuh|melonjak|nilai|kena|serangan|lumpuh"
+                       r"|intip|prospek|bisnis|profil|kronologi|begini|nasib|seremoni|aplikasi|pengguna|transaksi|paruh|pertama|\w{4,}kan)\b", re.I)
+# 인도네시아어 접사(perubahan·peluncuran, diretas·digeledah, …nya)
+ID_AFFIX = re.compile(r"\bpe[a-z]{3,}an\b|\bdi[a-z]{3,}(?:kan|i|as|ah)\b|\b[a-z]{3,}nya\b", re.I)
 ID_WEAK = re.compile(r"\b(?:dan|di|ke)\b", re.I)
 EN_STOP = re.compile(r"\b(?:the|of|for|and|to|in|on|with|as|at|by|from|after|its|is|are|new|over|amid)\b", re.I)
 
 
-def lang_of(title):
-    """제목 언어(ko·vi·id·en): 화면의 '번역' 링크를 베트남어·인도네시아어 제목에만 붙인다."""
+def lang_of(title, site=""):
+    """제목 언어(ko·vi·id·en): 화면의 '번역' 링크를 베트남어·인도네시아어 제목에만 붙인다.
+
+    인도네시아어 매체(ID_PRESS·.id 주소, 영문판 en.* 제외) 기사는 영어 낱말이 둘 이상이 아니면 인도네시아어 흔적 하나로 'id'로 본다.
+    """
     if re.search(r"[가-힣]", title):
         return "ko"
     if VI_CHARS.search(re.sub(r"Vi[eệ]t\s?Nam", " ", title, flags=re.I)):
         return "vi"
     strong = len({m.lower() for m in ID_STRONG.findall(title)})
     weak = len({m.lower() for m in ID_WEAK.findall(title)})
-    english = bool(EN_STOP.search(title))
-    return "id" if strong >= 2 or (not english and strong >= 1) or (not english and strong + weak >= 2) else "en"
+    en = len({m.lower() for m in EN_STOP.findall(title)})
+    if strong >= 2 or (not en and strong >= 1) or (not en and strong + weak >= 2):
+        return "id"
+    local = site and not re.match(r"en(?:glish)?\.", site) and (site.endswith(".id") or any(site == d or site.endswith("." + d) for d in ID_PRESS))
+    return "id" if local and en < 2 and (strong + weak or ID_AFFIX.search(title)) else "en"
 
 
 # 외국어 제목은 회사 소식(실적·출시·제휴·인수·증자·인허가·제재·수사·수상·경영진·확장·전략)만 남긴다
@@ -178,11 +188,11 @@ EVENT = re.compile(
     r"|goreng|klarifikasi|penghargaan|raih|sabet|ganti nama|perubahan nama|direktur (?:utama )?baru|direksi baru|(?:angkat|tunjuk|rombak)\w* direk"
     r"|\brups\b|ekspansi|cabang|kantor|mandat|penjamin|\baum\b|dana kelolaan|targetkan|resmi|konsolidasi|andalkan|fokus|strategi|genjot"
     r"|bidik|incar|perkuat|tumbuh"
-    r"|lãi(?! suất)|lợi nhuận|lỗ|doanh thu|kết quả kinh doanh|ra mắt|triển khai|hợp tác|ký kết|bắt tay|đối tác|tăng vốn|góp (?:vốn|thêm)"
+    r"|lãi(?! suất| vay| tiết kiệm| tiền gửi| margin)|lợi nhuận|lỗ|doanh thu|kết quả kinh doanh|ra mắt|triển khai|hợp tác|ký kết|bắt tay|đối tác|tăng vốn|góp (?:vốn|thêm)"
     r"|rót vốn|bơm vốn|phát hành"
     r"|vốn điều lệ|cổ phần|giấy phép|cấp phép|thu hồi|xử phạt|bị phạt|án phạt|đình chỉ|giải thưởng|nhận giải|vinh danh|đổi tên|chủ tịch"
     r"|tổng giám đốc|bổ nhiệm|kế hoạch|mở rộng|chi nhánh|cổ đông|mua lại|thâu tóm|sáp nhập|thành lập|khai trương|chiến lược|xếp hạng"
-    r"|phân phối", re.I)
+    r"|phân phối|(?:cổ phiếu|cp) ưu đãi", re.I)
 # 외국어 제목의 시황·종목 추천·애널리스트 코멘트·회사 소개 페이지·워런트 상장
 FOREIGN_NOISE = re.compile(
     r"\b(?:target price|price target|stocks? to buy|worth buying|buy rating|top picks?|recommend\w*|says|explains|answers|decodes|predicts"
@@ -192,14 +202,20 @@ FOREIGN_NOISE = re.compile(
     r"|khuyến nghị|nhận định|chuyên gia|gọi tên|điểm tên|cổ phiếu tiềm năng|vn-?index|chứng quyền|\((?:otc|hose|hnx|upcom)\)"
     r"|ban lãnh đạo|cổ đông lớn|lịch sử giá|^cw\.|\blive:"
     # 'Buy Abbott India; target of Rs …', '… Pertahankan Rating Buy BSDE' 같은 종목 의견
-    r"|^(?:buy|sell|hold|accumulate|reduce)\b|\brating (?:buy|hold|sell|trading buy)\b|\btarget of\b", re.I)
+    r"|^(?:buy|sell|hold|accumulate|reduce)\b|\brating (?:buy|hold|sell|trading buy)\b|\btarget of\b"
+    # 판촉·행사(수수료·이자 면제, 경품, 세미나·대회). '우선주(cổ phiếu ưu đãi)'는 자본 소식이라 남긴다
+    r"|miễn (?:phí|lãi)|hoàn (?:\d+% )?phí|khuyến mãi|\bcombo\b|gói vay|cuộc thi|hội thảo|quà tặng|happy monday|(?:chương trình|gói) ưu đãi"
+    r"|ưu đãi (?:cực|lớn)|\bpromo\w*|cashback|\bdiskon\b|\bgratis\b|coaching clinic|giveaway", re.I)
 # 'WOORICBV:Công ty…', 'BSI: Cổ đông lớn' 같은 종목 페이지(감독당국·거래소 이름으로 시작하는 제목은 뺀다)
 TICKER_HEAD = re.compile(r"^(?!OJK|BEI|IDX|SSC|MSCI|FTSE|SEC|MAS)[A-Z0-9]{3,10}\s?:\s?")
 
 
-def foreign_ok(title):
-    """외국어 제목이 회사 소식인지(시황·추천·종목 페이지가 아니고 사건 낱말이 있는지)."""
-    return bool(EVENT.search(title)) and not FOREIGN_NOISE.search(title) and not TICKER_HEAD.match(title)
+def foreign_ok(title, event=True):
+    """외국어 제목이 회사 소식인지(시황·추천·종목 페이지가 아니고 사건 낱말이 있는지).
+
+    event=False(국내 영문 매체: Korea Herald 등)는 사건 낱말 없이 잡음·종목 페이지만 거른다.
+    """
+    return (not event or bool(EVENT.search(title))) and not FOREIGN_NOISE.search(title) and not TICKER_HEAD.match(title)
 
 
 DATA = ROOT / "site" / "data" / "domestic"
@@ -329,9 +345,10 @@ def local_queries(firm, country, phrases, limit=3):
     """현지 법인 표기 검색어: 현지어 표기 먼저, 그다음 짧은 표기(긴 표기를 포함하는 짧은 표기가 있으면 긴 표기는 뺀다)."""
     ed = {"베트남": "vi", "인도네시아": "id", "싱가포르": "en-sg", "인도": "en-in", "영국": "en-gb"}.get(country, "en")
     # 한 낱말(Pinetree 등)은 검색어로 쓰지 않고 맞추기만 한다. 두 나라에 걸친 표기(나라 표기 필요)도 검색어로는 쓴다
-    pool = [p for p, _, one in phrases if not one and not brand_only(firm, p)]
+    # 현지어 표기(Mirae Asset Sekuritas 등)는 모회사 이름 + 일반 낱말이어도 그 나라 법인이라 검색하고, 나머지는 모회사 이름뿐이면 뺀다
+    pool = [p for p, _, one in phrases if not one]
     local = [p for p in pool if p.startswith("Chứng khoán") or re.search(r"sekuritas", p, re.I)]
-    rest = sorted((p for p in pool if p not in local), key=len)
+    rest = sorted((p for p in pool if p not in local and not brand_only(firm, p)), key=len)
     rest = [p for p in rest if not any(q != p and _norm(q) in _norm(p) for q in rest)]
     return [(f'"{p}"', ed) for p in (local + rest)[:limit]]
 
@@ -341,11 +358,11 @@ def mentions(title, aliases):
     return [firm for firm, names in aliases.items() if any(n.lower() in t for n in names)]
 
 
-def relevant(title, firms):
+def relevant(title, firms, foreign=True):
     t = title.lower()
     if any(n.lower() in t for n in NOISE):
         return False
-    if not re.search(r"[가-힣]", title) and not foreign_ok(title):
+    if not re.search(r"[가-힣]", title) and not foreign_ok(title, event=foreign):
         return False
     who = firms or re.search(r"증권사|증권업계|증권가|brokerage|securities firm", t)
     return bool(who) and any(k in t for k in OVERSEAS)
@@ -377,7 +394,7 @@ def parse(xml_bytes, aliases, since):
         if when < since or not trusted(src, site):
             continue
         firms = mentions(title, aliases)
-        if not relevant(title, firms):
+        if not relevant(title, firms, is_foreign(src, site)):
             continue
         items.append(mark({"date": when.strftime("%Y-%m-%d"), "time": when.strftime("%H:%M"), "title": title, "src": src,
                            "url": (it.findtext("link") or "").strip(), "site": site, "firms": firms}))
@@ -389,18 +406,32 @@ def mark(x):
     x = {k: v for k, v in x.items() if k not in ("foreign", "lang", "old")}
     if is_foreign(x.get("src"), x.get("site", "")):
         x["foreign"] = True
-    if lang_of(x["title"]) in ("vi", "id"):
-        x["lang"] = lang_of(x["title"])
+    lang = lang_of(x["title"], x.get("site", ""))
+    if lang in ("vi", "id"):
+        x["lang"] = lang
     return x
 
 
-def hub_foreign(since):
-    """거점 뉴스(fetch_hub_news.py, 아침 06:30)가 현지 법인 이름으로 찾은 해외 매체 기사: 이 피드에도 싣는다."""
+def hub_foreign(since, prev=()):
+    """거점 뉴스(fetch_hub_news.py, 아침 06:30)가 현지 법인 이름으로 찾은 해외 매체 기사: 이 피드에도 싣는다.
+
+    거점 파일은 칸마다 최근 몇 건만 두므로, 이 피드에 이미 실린 거점 기사(prev)도 기간 안이면 이어 둔다.
+    둘 다 지금 거점 규칙으로 다시 거른다(규칙이 바뀌었거나 거점 수집이 실패해 파일이 오래됐을 때).
+    """
+    import fetch_hub_news as hub  # 함수 안에서: fetch_hub_news가 이 모듈을 import한다
     path = DATA / "hub_news.json"
     hubs = json.loads(path.read_text(encoding="utf-8")).get("hubs", {}) if path.exists() else {}
     day = since.strftime("%Y-%m-%d")
-    return [{**x, "time": x.get("time", ""), "firms": [key.partition("|")[0]], "hub": key} for key, items in hubs.items()
-            for x in items if x.get("foreign") and not x.get("old") and x.get("date", "") >= day]
+    phrases = hub.hub_phrases()
+    out = []
+    for x in [{**x, "hub": key} for key, items in hubs.items() for x in items] + [x for x in prev if x.get("hub")]:
+        firm, _, country = x["hub"].partition("|")
+        src, site = x.get("src"), x.get("site", "")
+        if (x.get("old") or x.get("date", "") < day or not is_foreign(src, site) or not trusted(src, site)
+                or not hub.relevant(x["title"], firm, country, phrases.get((firm, country), ()))):
+            continue
+        out.append(mark({**x, "time": x.get("time", ""), "firms": [firm]}))
+    return out
 
 
 def main():
@@ -417,9 +448,9 @@ def main():
     # 이전 수집분도 기간 안이면 이어 붙인다(검색 결과에서 밀려난 기사 보존)
     # 필터 규칙이 바뀌어도 맞도록 이전 기사도 같은 규칙으로 다시 거른다. 거점 뉴스에서 온 기사는 거점 파일에서 다시 가져온다
     found += [mark(x) for x in prev.get("items", []) if not x.get("hub") and x.get("date", "") >= since.strftime("%Y-%m-%d")
-              and trusted(x.get("src"), x.get("site", "")) and relevant(x["title"], x.get("firms") or [])
+              and trusted(x.get("src"), x.get("site", "")) and relevant(x["title"], x.get("firms") or [], is_foreign(x.get("src"), x.get("site", "")))
               and not (re.search(r"[가-힣]", x.get("src", "")) and not re.search(r"[가-힣]", x["title"]))]
-    found += hub_foreign(since)
+    found += hub_foreign(since, prev.get("items", []))
     seen, items = set(), []
     for x in sorted(found, key=lambda x: (x["date"], x.get("time", "")), reverse=True):
         k = norm_title(x["title"])

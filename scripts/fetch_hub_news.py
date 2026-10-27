@@ -21,8 +21,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import net  # noqa: E402
-from fetch_news import (ALIASES, ENGLISH, NOISE, brand_ctx, foreign_ok, host, local_hit, local_phrases, local_queries, mark,  # noqa: E402
-                        norm_title, overseas_entities, rss_url, source_url, trusted)
+from fetch_news import (ALIASES, ENGLISH, NOISE, brand_ctx, foreign_ok, host, is_foreign, local_hit, local_phrases,  # noqa: E402
+                        local_queries, mark, norm_title, overseas_entities, rss_url, source_url, trusted)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "site" / "data" / "domestic"
@@ -109,12 +109,13 @@ def names_firm(title, ko, en):
     return any(n.lower() in t for n in en)
 
 
-def relevant(title, firm, country, phrases=()):
+def relevant(title, firm, country, phrases=(), foreign=True):
+    """거점 기사인지. foreign=False(국내 영문 매체)면 영문 제목에 사건 낱말을 요구하지 않는다."""
     ko, en = firm_names(firm)
     if any(n.lower() in title.lower() for n in HUB_NOISE):
         return False
     korean = bool(re.search(r"[가-힣]", title))
-    if not korean and not foreign_ok(title):
+    if not korean and not foreign_ok(title, event=foreign):
         return False
     if local_hit(title, phrases, PLACES.get(country), HUB_LANG.get(country), brand_ctx(firm)):
         return True
@@ -140,7 +141,7 @@ def parse(xml_bytes, firm, country, since, phrases=()):
         except Exception:
             continue
         site = host(source_url(it))
-        if when < since or not trusted(src, site) or not relevant(title, firm, country, phrases):
+        if when < since or not trusted(src, site) or not relevant(title, firm, country, phrases, is_foreign(src, site)):
             continue
         items.append(mark({"date": when.strftime("%Y-%m-%d"), "title": title, "src": src, "url": (it.findtext("link") or "").strip(),
                           "site": site}))
@@ -174,7 +175,7 @@ def kept(items, firm, country, phrases, since):
     """이전 수집분 중 기간 안이고 지금 규칙으로도 남는 기사(검색 결과에서 밀려난 기사 보존)."""
     day = since.strftime("%Y-%m-%d")
     return [mark(x) for x in items if x.get("date", "") >= day and trusted(x.get("src"), x.get("site", ""))
-            and relevant(x["title"], firm, country, phrases)]
+            and relevant(x["title"], firm, country, phrases, is_foreign(x.get("src"), x.get("site", "")))]
 
 
 def main():

@@ -62,10 +62,11 @@ jobs:
         run: python scripts/broker_rank.py
       - name: 해외진출 뉴스 (매일은 news.yml, 여기서도 한 번)
         continue-on-error: true
+        # 거점 뉴스를 먼저(해외진출 뉴스가 거점 뉴스의 해외 매체 기사도 싣는다). 거점이 실패해도 나머지는 돈다
         run: |
+          python scripts/fetch_hub_news.py || true
           python scripts/fetch_news.py
           python scripts/fetch_macro_news.py
-          python scripts/fetch_hub_news.py
       - name: SEC 수집 (미국 순위)
         continue-on-error: true
         env:

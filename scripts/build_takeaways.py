@@ -187,7 +187,8 @@ POS_RE = re.compile(r"upgrad|inclusion|편입|승격|상향|reclassif|index opti
 STRUCT_POS_RE = re.compile(r"MSCI|FTSE|S&P Dow Jones|reclassif|market (status|upgrade|classification)|emerging market|frontier|"
                            r"index options?|derivativ|신흥시장|편입|승격|옵션|파생", re.I)
 DERIV_RE = re.compile(r"index options?|derivativ|옵션|파생", re.I)
-CAPITAL_RE = re.compile(r"증자|자본금|자본 ?확충|곳간|인수|지분|합병|M&A|점유율 ?전쟁|stake|acquir", re.I)
+# 영문 낱말은 다른 낱말 속(Stakeholder 등)이면 아니다. 한글 바로 옆은 낱말 경계로 본다
+CAPITAL_RE = re.compile(r"증자|자본금|자본 ?확충|곳간|인수|지분|합병|M&A|점유율 ?전쟁|(?<![A-Za-z])stakes?(?![A-Za-z])|acquir", re.I)
 CAPITAL_HEAD_RE = re.compile(r"자본금|증자|자본 ?확충")
 REG_RE = re.compile(r"manipulat|fraud|scam|과징금|과태료|경영유의|적발|시세조종|사기", re.I)
 # 'sanction·fine·penalty'는 외교 제재 기사와 섞이므로 감독기관 이름이 같이 있고 외교 제재가 아닐 때만
@@ -207,7 +208,8 @@ REGULATOR_RE = re.compile(r"\bSSC\b|\bSBV\b|\bOJK\b|\bMAS\b|\b(IDX|HOSE|SGX)\b(?
                           r"감독|당국|금감원|금융위|증권위|거래소", re.I)
 DIPLO_RE = re.compile(r"\biran|north korea|russia|\bOFAC\b|\bU\.?S\.? (imposes|sanction)|\bU\.?S\.? Treasury|Treasury Department|"
                       r"이란|대북|북한|北|러시아|美\s*(재무부|정부)|대미 제재", re.I)
-RWA_RE = re.compile(r"RWA|토큰|STO|디지털자산|가상자산|tokeni", re.I)
+# RWA·STO는 대문자 약어만(stock·investor·customer 속 'sto'는 아님)
+RWA_RE = re.compile(r"(?<![A-Za-z])(?:RWA|STO)(?![A-Za-z])|토큰|디지털자산|가상자산|(?i:tokeni[sz])")
 BANK_RE = re.compile(r"BIDV|VietinBank|Vietcombank|Agribank|Mandiri|\bBRI\b|\bBNI\b|\bBCA\b|Danareksa", re.I)
 BROKER_NAME_RE = re.compile(r"securities|sekuritas|증권", re.I)
 NOT_BROKER_RE = re.compile(r"\(주1\)|asset management|investment management|fund|reksa|realty|ETF|capbridge", re.I)

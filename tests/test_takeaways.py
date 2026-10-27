@@ -1264,5 +1264,15 @@ class TakeawaysTest(unittest.TestCase):
         self.assertEqual(res["countries"]["VN"]["last_check"], "큰 변화 없음", res["countries"]["VN"].get("reason"))
         self.assertEqual(self.rules(res, "ID")["R08"]["variant"], "NEG")
 
+    def test_english_words_do_not_hit_inside_other_words(self):
+        # 거점 뉴스에 해외 매체 제목이 들어오면서: 'stock' 속 STO, 'Stakeholder' 속 stake는 RWA·자본 기사가 아니다
+        for t in ["Pinetree Securities launches Singapore stock trading app", "KISI targets 5,000 new investors and customers"]:
+            self.assertIsNone(bt.RWA_RE.search(t), t)
+        for t in ["가상코인, 한화투자증권 싱가포르 법인과 RWA 협력", "STO플랫폼 공동 구축", "Pinetree joins tokenisation pilot"]:
+            self.assertIsNotNone(bt.RWA_RE.search(t), t)
+        self.assertIsNone(bt.CAPITAL_RE.search("KB Valbury Sekuritas Perkuat Kolaborasi dengan Stakeholder Pasar Modal"))
+        self.assertIsNotNone(bt.CAPITAL_RE.search("Mirae Asset takes 10% stake in Vietnamese broker"))
+
+
 if __name__ == "__main__":
     unittest.main()
