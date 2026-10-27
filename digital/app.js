@@ -38,11 +38,17 @@
     const autoTxt = D ? ` · 당국 공식 발표 자동 확인 <b>${fmt(D.updated.slice(0, 10))}</b>` : "";
     $("#meta").innerHTML = `현황 문구 사람 검증 <b>${fmt(m.verified_at)}</b>${autoTxt} · 핵심 7개 시장(${m.primary.join("·")}) + 참고 ${m.reference.join("·")}`;
     $("#pAsof").textContent = `(${fmt(m.verified_at)} 기준)`;
-    $("#tm-kt").innerHTML = tm(`기준 ${fmt(m.verified_at)} 사람 검증`, "출처는 시장별 상세");
+    $("#tm-kt").innerHTML = tm(`기준 ${fmt(m.verified_at)} 사람 검증`, "제목·출처 클릭 시 원문");
     $("#tm-up").innerHTML = tm(`기준 오늘 ${fmt(todayStr)}(KST)`, "D-day 자동 계산");
     $("#tm-mx").innerHTML = tm("기준 판정·문구: 시장별 사람 검증일", D ? `공식 발표 자동 확인 ${fmt(D.updated.slice(0, 10))}` : "", "● 표시는 검증일 이후 감지");
     $("#tm-tl").innerHTML = tm(`기준 ${fmt(m.verified_at)} 사람 검증`, "점선은 예정");
-    $("#kt").innerHTML = R.takeaways.map((k) => `<li><div><b>${esc(k.h)}</b>${esc(k.t)}</div></li>`).join("");
+    const ktLink = (x, body) => `<a href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.s)}">${body}</a>`;
+    $("#kt").innerHTML = R.takeaways.map((k) => {
+      const src = k.src || [];
+      const h = src.length ? ktLink(src[0], `${esc(k.h)} ↗`) : esc(k.h);
+      const chips = src.map((x) => ktLink(x, `${esc(x.l)}<i>${esc(x.s)}</i>`)).join("");
+      return `<li><div><b>${h}</b>${esc(k.t)}${chips ? `<span class="ksrc">${chips}</span>` : ""}</div></li>`;
+    }).join("");
     $("#foot").textContent = `${m.note} 기준: ${m.base}.`;
   }
 
