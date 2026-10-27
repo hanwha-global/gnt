@@ -620,6 +620,14 @@ class ForeignNewsTest(unittest.TestCase):
         self.assertEqual([n.lang_of(t) for t in ["미래에셋 인니법인 증자", "Chứng khoán KB Việt Nam báo lãi",
                                                    "Ciptadana Luncurkan PinePick, Platform Trading Saham", "Mirae Asset wins license"]],
                          ["ko", "vi", "id", "en"])
+        # 영문 기사의 'Việt Nam'·사람 이름 Dan, 인도네시아어 낱말 하나만 섞인 영문 제목은 영어
+        self.assertEqual([n.lang_of(t) for t in ["KB Securities Việt Nam wins award", "Dan Kim joins Mirae Asset as CEO",
+                                                   "NH Korindo Sekuritas named best broker for the year", "NH Korindo Sekuritas raih penghargaan di Jakarta"]],
+                         ["en", "en", "en", "id"])
+        # 같은 기사 판별: 외국어 제목은 앞 28자가 같은 법인 이름이어도 다른 기사로 본다
+        self.assertNotEqual(n.norm_title("Mirae Asset Sekuritas Indonesia raih penghargaan"),
+                            n.norm_title("Mirae Asset Sekuritas Indonesia luncurkan aplikasi"))
+        self.assertEqual(n.norm_title("Chứng khoán KB Việt Nam báo lãi"), n.norm_title("Chứng khoán KB Việt Nam - báo lãi"))
 
     def test_local_phrases_from_legal_names(self):
         import fetch_news as n
@@ -632,7 +640,9 @@ class ForeignNewsTest(unittest.TestCase):
                          [("Hana Asset Management", True, False)])     # 국내 계열사와 헷갈려 나라 표기가 있어야
         self.assertIn(("BIDV Securities", False, False), n.local_phrases("하나증권", "베트남", ["BIDVSecuritiesJointStockCompany"]))
         self.assertEqual(n.local_queries("한화투자증권", "인도네시아", n.local_phrases("한화투자증권", "인도네시아", ["PT Ciptadana Sekuritas Asia"])),
-                         [('"Ciptadana Sekuritas"', "id"), ('"Ciptadana"', "id")])
+                         [('"Ciptadana Sekuritas"', "id"), ('"Ciptadana AM"', "id")])  # 한 낱말(Ciptadana)은 검색어로 쓰지 않는다
+        self.assertEqual(n.local_queries("하나증권", "싱가포르", n.local_phrases("하나증권", "싱가포르", ["Hana Asset Management Asia Pte. Ltd."])),
+                         [])                                                 # 모회사 이름 + 일반 낱말뿐이면 검색어로 쓰지 않는다
 
     def test_foreign_titles_need_company_news(self):
         import fetch_hub_news as h
@@ -651,6 +661,15 @@ class ForeignNewsTest(unittest.TestCase):
         self.assertFalse(rel("Silver selloff seems overdone, says Mirae Asset Sharekhan; here's why", "미래에셋증권", "인도"))
         self.assertFalse(rel("WOORICBV:Công ty TNHH Chứng khoán NH Việt Nam (OTC)", "NH투자증권", "베트남"))
         self.assertFalse(rel("Shinhan Pinetree forest walk opens", "한화투자증권", "베트남"))          # 금융 문맥 없음
+        self.assertFalse(rel("Pinetree Coffee plans IPO in Vietnam", "한화투자증권", "베트남"))        # IPO·stock은 금융 문맥으로 치지 않는다
+        self.assertTrue(rel("Hanwha's Pinetree expands in Vietnam", "한화투자증권", "베트남"))         # 모회사 이름이 같이 있으면 된다
+        # 시황 방송·애널리스트 의견은 빼고, 장애(technical outage) 같은 회사 소식은 남긴다
+        self.assertFalse(rel("LIVE: Mirae Asset Sharekhan launches new app", "미래에셋증권", "인도"))
+        self.assertFalse(rel("Sharekhan upgrades Infosys, raises target", "미래에셋증권", "인도"))
+        self.assertTrue(rel("Sharekhan NBFC faces technical outage", "미래에셋증권", "인도"))
+        # 'US$'는 미국 표기가 아니다
+        t = "Mirae Asset Securities Vietnam raises US$50 million in bonds"
+        self.assertEqual([c for c in ("미국", "베트남") if h.relevant(t, "미래에셋증권", c)], ["베트남"])
         # 두 나라 법인이 같은 이름(Pinetree)이면 나라 표기나 그 나라 말이어야 한다
         t = "Chiến lược khác biệt của Chứng khoán Pinetree"
         self.assertEqual([c for c in ("베트남", "싱가포르") if rel(t, "한화투자증권", c)], ["베트남"])

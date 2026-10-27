@@ -21,7 +21,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import net  # noqa: E402
-from fetch_news import (ALIASES, ENGLISH, NOISE, foreign_ok, host, local_hit, local_phrases, local_queries, mark,  # noqa: E402
+from fetch_news import (ALIASES, ENGLISH, NOISE, brand_ctx, foreign_ok, host, local_hit, local_phrases, local_queries, mark,  # noqa: E402
                         norm_title, overseas_entities, rss_url, source_url, trusted)
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,7 +35,7 @@ FALLBACK_KEEP = 2     # 가장 최근 2건만
 
 # 나라 → 제목에서 알아볼 표기(국문·한자 약칭·도시·영문). 인도는 인도네시아와 겹치지 않게 정규식으로 본다
 PLACES = {
-    "미국": r"미국|美|뉴욕|월가|미주|\bU\.?S\.?A?\b|America|New York", "홍콩": r"홍콩|Hong ?Kong", "영국": r"영국|英|런던|London|\bU\.?K\.?\b",
+    "미국": r"미국|美|뉴욕|월가|미주|\bU\.?S\.?A?\b(?!\s?\$)|America|New York", "홍콩": r"홍콩|Hong ?Kong", "영국": r"영국|英|런던|London|\bU\.?K\.?\b",
     "베트남": r"베트남|호찌민|호치민|하노이|Vietnam|Việt Nam|Viet Nam", "인도네시아": r"인도네시아|인니|印尼|자카르타|Indonesia|Jakarta",
     "인도": r"인도(?!네시아)|印(?!尼)|뭄바이|India|Mumbai",
     # '선전'은 '해외법인 선전(善戰)'과 겹쳐 지명으로 쓰일 때만, '中'은 '中企' 같은 낱말은 빼고
@@ -53,11 +53,12 @@ KO_ALIASES = {"미래에셋증권": ["미래에셋證"], "KB증권": ["KB證"], 
               "키움증권": ["키움證"], "한국투자증권": ["한국투자證", "한투證"], "신한투자증권": ["신한증권"], "NH투자증권": ["NH증권"],
               "한화투자증권": ["한화증권"]}
 # 기사에서 정식 이름보다 많이 쓰는 이름은 검색어로도 한 번 더 찾는다
-KO_QUERY = {"신한투자증권": "신한증권"}
-# 영문 제목에서 증권사를 알아보는 현지 법인 표기(fetch_news.ENGLISH에 더해)
+KO_QUERY = {"신한투자증권": "신한증권", "한화투자증권": "한화증권"}
+# 영문 제목에서 증권사를 알아보는 현지 법인 표기(fetch_news.ENGLISH에 더해). Pinetree·Ciptadana처럼 한 낱말인 현지 법인 이름은
+# 법인 정식 이름에서 만든 표기(fetch_news.local_phrases)가 금융 문맥·나라 표기를 따져 맞춘다
 EN_ALIASES = {"미래에셋증권": ["Mirae Asset Sekuritas", "Mirae Asset Securities"], "KB증권": ["KB Valbury", "KB Securities"],
               "NH투자증권": ["NH Korindo", "NH Securities"], "한국투자증권": ["KIS Vietnam", "KIS Indonesia"],
-              "신한투자증권": ["Shinhan Sekuritas", "Shinhan Securities"], "한화투자증권": ["Pinetree", "Ciptadana"],
+              "신한투자증권": ["Shinhan Sekuritas", "Shinhan Securities"], "한화투자증권": [],
               "키움증권": ["Kiwoom Sekuritas", "Kiwoom"], "삼성증권": ["Samsung Securities"], "하나증권": ["Hana Securities"],
               "토스증권": ["Toss Securities"]}
 # '미국·싱가포르 이어 일본 법인 설립'의 '미국·싱가포르 이어'(이미 진출한 나라 나열)는 그 나라 기사가 아니다
@@ -115,7 +116,7 @@ def relevant(title, firm, country, phrases=()):
     korean = bool(re.search(r"[가-힣]", title))
     if not korean and not foreign_ok(title):
         return False
-    if local_hit(title, phrases, PLACES.get(country), HUB_LANG.get(country)):
+    if local_hit(title, phrases, PLACES.get(country), HUB_LANG.get(country), brand_ctx(firm)):
         return True
     if not names_firm(title, ko, en):
         return False

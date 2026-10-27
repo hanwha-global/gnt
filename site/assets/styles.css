@@ -85,7 +85,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 14px 16px 32px; }
 .tag--muted { background: var(--surface-2); color: var(--text-2); }
 .tag--new { background: rgba(255, 209, 102, .16); color: #ffd166; }
 .tag--intl { background: rgba(94, 214, 196, .14); color: #7fe0d0; }
-.seg--sm button { padding: 2px 8px; font-size: 11.5px; }
+.seg.seg--sm button { padding: 2px 8px; font-size: 11.5px; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .chip { font-size: 13px; padding: 4px 10px; border-radius: 8px; background: var(--surface-2); }
@@ -331,7 +331,7 @@ small.asof { display: block; font-size: 9.5px; font-weight: 500; color: var(--mu
     -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   #print-root .card { box-shadow: none; }
   #print-root .tag--intl { color: #1f7f72; }
-  #print-root .print-btn { display: none; }
+  #print-root .print-btn, #print-root .news__seg { display: none; }
   /* 인쇄 쪽 폭(약 1060px)에서 좁은 화면 규칙이 걸리지 않도록 화면(1400px) 배치를 고정 */
   #print-root .ov { grid-template-columns: repeat(12, minmax(0, 1fr)); }
   #print-root .span3 { grid-column: span 3 !important; } #print-root .span4 { grid-column: span 4 !important; }

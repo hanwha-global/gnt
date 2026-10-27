@@ -143,27 +143,36 @@ def source_url(it):
     return el.get("url", "") if el is not None else ""
 
 
-VI_CHARS = re.compile(r"[ăâđêôơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ]", re.I)
-ID_WORDS = re.compile(r"\b(?:yang|dan|di|ke|dari|untuk|dengan|pada|ini|usai|jadi|akan|tak|bisa|resmi|raih|luncurkan|saham|sekuritas"
-                      r"|kinerja|laba|izin|sanksi|nasabah|tembus|naik|turun|oleh|baru|bagi|lewat|kerja sama|bekukan|digeledah)\b", re.I)
+# 베트남어에만 있는 글자(â·ê·ô는 포르투갈어·프랑스어에도 있어 뺀다). 'Việt Nam'은 영문 기사에도 써서 세지 않는다
+VI_CHARS = re.compile(r"[ăđơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ]", re.I)
+# 인도네시아어 낱말(회사 이름에 들어가는 sekuritas·saham 같은 낱말은 뺀다). dan·di·ke는 영문 이름(Dan 등)과 겹쳐 약한 신호로만 센다
+ID_STRONG = re.compile(r"\b(?:yang|dari|untuk|dengan|pada|ini|itu|usai|jadi|akan|tak|bisa|belum|sudah|masih|lebih|dalam|resmi|raih"
+                       r"|sabet|tembus|naik|turun|oleh|bagi|lewat|atas|hingga|soal|kini|baru|kata|buka|suara|dorong|ungkap|catat|capai"
+                       r"|bidik|incar|genjot|perkuat|jalin|gandeng|sepakat|kerja sama|kinerja|laba|izin|sanksi|denda|nasabah|kasus|dugaan"
+                       r"|kantor|tahun|juta|miliar|triliun|\w{4,}kan)\b", re.I)
+ID_WEAK = re.compile(r"\b(?:dan|di|ke)\b", re.I)
+EN_STOP = re.compile(r"\b(?:the|of|for|and|to|in|on|with|as|at|by|from|after|its|is|are|new|over|amid)\b", re.I)
 
 
 def lang_of(title):
     """제목 언어(ko·vi·id·en): 화면의 '번역' 링크를 베트남어·인도네시아어 제목에만 붙인다."""
     if re.search(r"[가-힣]", title):
         return "ko"
-    if VI_CHARS.search(title):
+    if VI_CHARS.search(re.sub(r"Vi[eệ]t\s?Nam", " ", title, flags=re.I)):
         return "vi"
-    return "id" if ID_WORDS.search(title) else "en"
+    strong = len({m.lower() for m in ID_STRONG.findall(title)})
+    weak = len({m.lower() for m in ID_WEAK.findall(title)})
+    english = bool(EN_STOP.search(title))
+    return "id" if strong >= 2 or (not english and strong >= 1) or (not english and strong + weak >= 2) else "en"
 
 
 # 외국어 제목은 회사 소식(실적·출시·제휴·인수·증자·인허가·제재·수사·수상·경영진·확장·전략)만 남긴다
 EVENT = re.compile(
-    r"\b(?:profit|earnings|net income|loss(?:es)?|revenue|launch\w*|unveil\w*|debut\w*|introduc\w*|rolls? out|enables?|partner\w*|mou"
-    r"|tie-?up|ties up|alliance|joins?|joined|acquir\w*|acquisition|merger|merges?|consolidat\w*|stake|capital|rights issue|raises?"
+    r"\b(?:profits?|earnings|net income|loss(?:es)?|revenues?|launch\w*|unveil\w*|debut\w*|introduc\w*|rolls? out|enables?|partner\w*|mou"
+    r"|tie-?up|ties up|alliance|joins?|joined|acquir\w*|acquisition|merger|merges?|consolidat\w*|stakes?|buys?|invests?|capital|rights issue|raises?"
     r"|funding|licen[cs]e\w*|nod|approv\w*|permit|fined?|sanction\w*|penalt\w*|probe\w*|raid\w*|suspen\w*|bans?|award\w*|wins?"
-    r"|renam\w*|rebrand\w*|appoint\w*|ceo|chief executive|expan\w*|enters?|entry|office|branch\w*|subsidiary|sets? up|establish\w*"
-    r"|underwrit\w*|mandate|cyber\w*|hack\w*|outage|strateg\w*|plans?|bets? on|focus(?:es)? on)\b"
+    r"|renam\w*|rebrand\w*|appoint\w*|ceo|chief executive|names? new|expan\w*|enters?|entry|offices?|branch\w*|subsidiar(?:y|ies)|sets? up|establish\w*"
+    r"|underwrit\w*|mandates?|cyber\w*|hack\w*|outage|strateg\w*|plans?|bets? on|focus(?:es)? on)\b"
     r"|laba|rugi|pendapatan|kinerja|luncur|rilis|kerja ?sama|kolaborasi|kemitraan|gandeng|sepakat|akuisisi|caplok|ambil alih|modal"
     r"|izin|lisensi|sanksi|denda|teguran|beku|geledah|gerebek|diretas|siber|\bojk\b|polri|bareskrim|dugaan|penyidikan|diusut|kasus"
     r"|goreng|klarifikasi|penghargaan|raih|sabet|ganti nama|perubahan nama|direktur (?:utama )?baru|direksi baru|(?:angkat|tunjuk|rombak)\w* direk"
@@ -177,10 +186,13 @@ EVENT = re.compile(
 # 외국어 제목의 시황·종목 추천·애널리스트 코멘트·회사 소개 페이지·워런트 상장
 FOREIGN_NOISE = re.compile(
     r"\b(?:target price|price target|stocks? to buy|worth buying|buy rating|top picks?|recommend\w*|says|explains|answers|decodes|predicts"
-    r"|sees|upside|downside|bullish|bearish|multibagger|analysts?|chart|technical|nifty|sensex|share price|live:|podcast|webinar"
+    r"|sees|upside|downside|bullish|bearish|multibagger|analysts?|chart|technical (?:analysis|view|chart)s?|technicals|nifty|sensex"
+    r"|share price|upgrades?|downgrades?|podcast|webinar"
     r"|rekomendasi\w*|saham pilihan|target harga|stop loss|ihsg|jci|proyeksi|prediksi|analis|jagokan|optimistis|soroti)\b"
     r"|khuyến nghị|nhận định|chuyên gia|gọi tên|điểm tên|cổ phiếu tiềm năng|vn-?index|chứng quyền|\((?:otc|hose|hnx|upcom)\)"
-    r"|ban lãnh đạo|cổ đông lớn|lịch sử giá|^cw\.", re.I)
+    r"|ban lãnh đạo|cổ đông lớn|lịch sử giá|^cw\.|\blive:"
+    # 'Buy Abbott India; target of Rs …', '… Pertahankan Rating Buy BSDE' 같은 종목 의견
+    r"|^(?:buy|sell|hold|accumulate|reduce)\b|\brating (?:buy|hold|sell|trading buy)\b|\btarget of\b", re.I)
 # 'WOORICBV:Công ty…', 'BSI: Cổ đông lớn' 같은 종목 페이지(감독당국·거래소 이름으로 시작하는 제목은 뺀다)
 TICKER_HEAD = re.compile(r"^(?!OJK|BEI|IDX|SSC|MSCI|FTSE|SEC|MAS)[A-Z0-9]{3,10}\s?:\s?")
 
@@ -219,10 +231,13 @@ INDUSTRY = re.compile(r"\b(?:investment\s*&\s*securities|investment\s*&\s*sekuri
 GENERIC = {"asset", "management", "investment", "investments", "securities", "sekuritas", "holdings", "finance", "financial", "capital",
            "markets", "services", "partners", "global", "group", "&"}
 # 정식 이름에서 나오지 않는 현지 약칭(대문자 그대로 맞춘다)
-LOCAL_SHORT = {("KB증권", "베트남"): ["KBSV"], ("NH투자증권", "베트남"): ["NHSV"], ("한국투자증권", "베트남"): ["KIS Việt Nam", "KIS Vietnam"]}
+LOCAL_SHORT = {("KB증권", "베트남"): ["KBSV"], ("NH투자증권", "베트남"): ["NHSV"], ("한국투자증권", "베트남"): ["KIS Việt Nam", "KIS Vietnam"],
+               ("한화투자증권", "인도네시아"): ["Ciptadana AM"]}
 # 단어 하나짜리 표기(Pinetree 등)는 금융 문맥 낱말이 같이 있어야 한다
-FIN_CTX = re.compile(r"securit|sekuritas|chứng khoán|ctck|broker|saham|pasar modal|reksa ?dana|cổ phiếu|stock|share|ipo|fund|quỹ|invest"
-                     r"|đầu tư|asset|aset|wealth|trading|giao dịch|margin|bursa|ojk|\bssc\b|ubck|exchange|tokeni", re.I)
+# 'stock·share·IPO·fund' 같은 낱말은 커피·기술주 기사에도 나와 넣지 않는다(증권사·운용사·시장 제도 낱말만)
+FIN_CTX = re.compile(r"\b(?:securities|sekuritas|chứng khoán|ctck|broker\w*|broking|saham|pasar modal|reksa ?dana|cổ phiếu|quỹ"
+                     r"|asset management|aset manajemen|manajer investasi|wealth management|trading (?:app|platform)|giao dịch|margin"
+                     r"|bursa|ojk|ssc|ubck|nbfc|demat|tokeni\w*)\b", re.I)
 
 
 def _squash(s):
@@ -237,6 +252,22 @@ def _plain(name):
     return _squash(LEGAL.sub(" ", n))
 
 
+def _brand(firm):
+    return _norm(INDUSTRY.sub(" ", ENGLISH.get(firm, "")))
+
+
+def brand_ctx(firm):
+    """한 낱말 표기의 금융 문맥으로 쳐 줄 모회사 이름(Mirae Asset … Sharekhan). 'Korea'처럼 흔한 낱말이면 영문 이름 앞 두 낱말을 쓴다."""
+    b = _brand(firm)
+    return " ".join(_norm(ENGLISH.get(firm, "")).split()[:2]) if b == "korea" else b
+
+
+def brand_only(firm, phrase):
+    """표기가 모회사 이름 + 일반 낱말뿐인지(Hana Asset Management 등: 국내 계열사와 헷갈린다)."""
+    btok = set(_brand(firm).split())
+    return not [w for w in _norm(phrase).split() if w not in GENERIC and w not in btok]
+
+
 def local_phrases(firm, country, names):
     """현지 법인 정식 이름에서 기사 제목에 쓰이는 표기를 만든다: [(표기, 나라 표기 필요, 금융 문맥 필요)].
 
@@ -244,9 +275,7 @@ def local_phrases(firm, country, names):
     - 모회사 이름 + 일반 낱말뿐인 표기(Hana Asset Management 등)는 국내 계열사와 헷갈리므로 제목에 그 나라 표기가 있어야 한다
     - 현지어 업종 표기(… Sekuritas, Chứng khoán …)는 그 나라 법인이다
     """
-    eng = _norm(ENGLISH.get(firm, ""))
-    brand = _norm(INDUSTRY.sub(" ", ENGLISH.get(firm, "")))
-    btok = set(brand.split())
+    eng, brand = _norm(ENGLISH.get(firm, "")), _brand(firm)
     out, local = {}, {}
     for name in names:
         if not name or re.search(r"[가-힣]", name):
@@ -259,8 +288,7 @@ def local_phrases(firm, country, names):
             toks = _norm(c).split()
             if len(toks) < 2 and len(c) < 5:
                 continue
-            ambiguous = not [w for w in toks if w not in GENERIC and w not in btok]
-            out.setdefault(_norm(c), (c, ambiguous, len(toks) == 1))
+            out.setdefault(_norm(c), (c, brand_only(firm, c), len(toks) == 1))
         if country == "인도네시아" and re.search(r"sekuritas", base, re.I):
             local[_norm(base)] = base
         if country == "베트남" and core and re.search(r"securities", base, re.I):
@@ -275,20 +303,22 @@ def _norm(s):
     return re.sub(r"\s+", " ", s.replace("&", " & ")).lower().strip()
 
 
-def local_hit(title, phrases, place=None, lang=None):
+def local_hit(title, phrases, place=None, lang=None, brand=""):
     """외국어 제목에 현지 법인 표기가 나오는지(국문 제목은 기존 규칙이 본다).
 
     나라 표기가 필요한 표기는 제목에 그 나라 이름(place 정규식)이 있거나 제목이 그 나라 말(lang)이면 된다.
+    금융 문맥이 필요한 한 낱말 표기는 금융 낱말이나 모회사 이름(brand)이 같이 있으면 된다.
     """
     if re.search(r"[가-힣]", title):
         return False
     t = _norm(title)
+    ctx = bool(FIN_CTX.search(title) or (brand and re.search(rf"(?<![\w]){re.escape(brand)}(?![\w])", t)))
     for ph, need_place, need_ctx in phrases:
         if ph.isupper() and len(ph) <= 7:
             hit = re.search(rf"(?<![\w]){re.escape(ph)}(?![\w])", title)
         else:
             hit = re.search(rf"(?<![\w]){re.escape(_norm(ph))}(?![\w])", t)
-        if not hit or (need_ctx and not FIN_CTX.search(title)):
+        if not hit or (need_ctx and not ctx):
             continue
         if not need_place or (place and re.search(place, title)) or (lang and lang_of(title) == lang):
             return True
@@ -298,7 +328,8 @@ def local_hit(title, phrases, place=None, lang=None):
 def local_queries(firm, country, phrases, limit=3):
     """현지 법인 표기 검색어: 현지어 표기 먼저, 그다음 짧은 표기(긴 표기를 포함하는 짧은 표기가 있으면 긴 표기는 뺀다)."""
     ed = {"베트남": "vi", "인도네시아": "id", "싱가포르": "en-sg", "인도": "en-in", "영국": "en-gb"}.get(country, "en")
-    pool = [p for p, amb, _ in phrases if not amb]
+    # 한 낱말(Pinetree 등)은 검색어로 쓰지 않고 맞추기만 한다. 두 나라에 걸친 표기(나라 표기 필요)도 검색어로는 쓴다
+    pool = [p for p, _, one in phrases if not one and not brand_only(firm, p)]
     local = [p for p in pool if p.startswith("Chứng khoán") or re.search(r"sekuritas", p, re.I)]
     rest = sorted((p for p in pool if p not in local), key=len)
     rest = [p for p in rest if not any(q != p and _norm(q) in _norm(p) for q in rest)]
@@ -321,7 +352,10 @@ def relevant(title, firms):
 
 
 def norm_title(t):
-    return re.sub(r"[^0-9a-z가-힣]", "", t.lower())[:28]
+    """같은 기사 판별 키. 외국어 제목은 앞부분이 긴 법인 이름(Mirae Asset Sekuritas Indonesia …)이라 더 길게, 악센트 글자도 살려 본다."""
+    if re.search(r"[가-힣]", t):
+        return re.sub(r"[^0-9a-z가-힣]", "", t.lower())[:28]
+    return re.sub(r"[\W_]", "", t.casefold())[:60]
 
 
 def parse(xml_bytes, aliases, since):

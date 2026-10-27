@@ -1005,9 +1005,9 @@
 
   // 국내 증권사 해외진출 뉴스(news.json: Google News RSS, 국내 주요 언론 + 해외 매체·기관, 매일 아침 자동 수집)
   let newsScope = "all";
-  function newsItems(limit) {
+  function newsItems(limit, scope = newsScope) {
     const all = state.data.news?.items || [];
-    const items = (newsScope === "intl" ? all.filter((x) => x.foreign) : all).slice(0, limit);
+    const items = (scope === "intl" ? all.filter((x) => x.foreign) : all).slice(0, limit);
     return items.map((x) => `<li><span class="news__d">${esc(x.date.slice(5).replace("-", "."))}</span>
         <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>
         <span class="news__m">${esc(x.src)}${intlTag(x)}${NEW_ENTITY_NEWS.test(x.title) ? ` <span class="tag tag--new" title="뉴스 보도만으로는 세지 않습니다. DART 공시나 확인 후 반영됩니다.">신규 진출 보도·미확인</span>` : ""}${(x.firms || []).map((f) => ` <span class="tag${f === HANWHA ? " tag--hw" : ""}">${esc(SHORT[f] || f)}</span>`).join("")}</span></li>`).join("");
@@ -1279,6 +1279,8 @@
       root.appendChild(pg);
     });
     root.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    // 뉴스는 화면에서 '해외 매체'만 골라 봤어도 인쇄에는 전체를 싣는다(전환 단추는 숨김)
+    root.querySelectorAll(".news__list").forEach((ul) => { ul.innerHTML = newsItems(Number(ul.dataset.limit) || 14, "all"); });
     document.body.appendChild(root);
     // 화면 폭 1400px 기준으로 배치한 뒤, 쪽 크기에 맞게 줄인다
     root.querySelectorAll(".pp__body").forEach((b) => {
