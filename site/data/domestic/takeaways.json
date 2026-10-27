@@ -1,6 +1,6 @@
 {
  "spec_version": 2,
- "checked_at": "2026-10-27T03:32+09:00",
+ "checked_at": "2026-10-27T09:43+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -101,7 +101,6 @@
    "reason": [
     "첫 생성"
    ],
-   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R02",
@@ -123,7 +122,8 @@
       "첫 생성"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   },
   "ID": {
    "country": "인도네시아",
@@ -220,7 +220,6 @@
    "reason": [
     "첫 생성"
    ],
-   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R06",
@@ -262,7 +261,8 @@
       "첫 생성"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   },
   "SG": {
    "country": "싱가포르",
@@ -346,7 +346,6 @@
    "reason": [
     "첫 생성"
    ],
-   "last_check": "갱신",
    "candidates": [],
    "history": [
     {
@@ -362,7 +361,8 @@
       "첫 생성"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   }
  },
  "errors": [],

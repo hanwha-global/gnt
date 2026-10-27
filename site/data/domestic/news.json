@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T00:20+09:00",
+ "updated_at": "2026-10-27T09:42+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "sources": [
   "연합뉴스",
@@ -63,7 +63,7 @@
    "time": "09:00",
    "title": "삼성증권 PB 출신 창업가…국내 증권사 6곳 뚫고, 美 진출한 비결",
    "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4yT01ST0J0ajg2V09kNW5oTVRQWkdQUTZNekFCVTZHQ25SVUduRm0yaWROVllYSnNIbFRWb05iU2VhdEkzZEJENjZ3M2laWjFYNS1UalJDeTA4a0Z5dFNxajZITlUwUzBYcXdnLU1sMGJwTS1zSXJz0gF8QVVfeXFMTXBjVmlNLWNRdmtQcEczU1FhQVZCVzlrcU5oekg0djdyTG8wcHpzaGNBYzJ0Tl8yM2NhVVlubm1weDFBV0xRNmxNaGdCNTd1eDYwUVZmcXJfN3NsZEtvMGY2TzZiSHl1R3VVMmJJUzllUjhGOG1rak5RSmZnZg?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tUUZXS0I1QUw4ZUc1N2VLU1VJRFdiS2p6Q3k0OE04dnVUbzRKUjJPMS1pVXRqRy1OWEZYSVlEakd6ZHRwM0pzMFhWSGFrb19tTEpUSmlyM3YwNVlBOG1nSVJ1ZmVmZGxxRkHSAW9BVV95cUxQR0tZRmdtLWhwQ0NfQVN1UElmUmE1ZWJzX1l5dHRZUUQ4cEJfenlQN0pnN0RobU4wb0g1N0FzSTFkcE5pREFRWXppbzdoSkRSekxpZjc1V25JMkdIN2Z0N1VPelByVjVsSlJlYkZBcWM?oc=5",
    "firms": [
     "삼성증권"
    ]
@@ -109,6 +109,16 @@
    ]
   },
   {
+   "date": "2026-10-08",
+   "time": "16:00",
+   "title": "키움증권 \"소프트웨어 업계 위기…글로벌 AI 업체와 협력해야\"",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhcnV3dzZQQ1hNZWxUZXU4Ty1yZHptbUZSV240cXgyT1djTXA4SFpwdFNHM1hEQ09WZEU5Yjdfemo3T09PcThabVhXVk04bVdsbkE?oc=5",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
    "date": "2026-10-02",
    "time": "16:00",
    "title": "오랜 준비 끝 '기지개'...베트남서 본격 '곳간 전쟁' 나선 증권사들",
@@ -127,20 +137,20 @@
   {
    "date": "2026-10-01",
    "time": "16:00",
+   "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
+   "src": "머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
+   "firms": []
+  },
+  {
+   "date": "2026-10-01",
+   "time": "16:00",
    "title": "신한證, 베트남 뿌리내린 10년…IB·리테일 수익 성장 '주목'",
    "src": "머니투데이",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmSnVZNFJIWVllZkR3elQxSG1DcXdvSHlBaVo0TWREbFF3cG14dWlpYTh6OG1RZEYxTnM5WWJ6U044aVVkMzNIczVGTVVIU1QxTlJNZ1VuQjR1RjE4b19oNkpoV1BSMGc10gFuQVVfeXFMTlMtSjhLazFEQ3lOVlgxZ1ZWYmhSMEFXWFNfY2Y5RUdSX1R4NmFpNExEUTg4eGNaTngzQko2Mm1JRDNlVm9YQ0JXVksweWtjSElRd3N5aFEyZFRMbGtWQUhXeE5xUS1GdHd4YUhPNmc?oc=5",
    "firms": [
     "신한투자증권"
    ]
-  },
-  {
-   "date": "2026-10-01",
-   "time": "16:00",
-   "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
-   "firms": []
   },
   {
    "date": "2026-09-30",
@@ -208,16 +218,6 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
-   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
-   "firms": [
-    "토스증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
    "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5",
@@ -248,6 +248,16 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
+   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
+   "firms": [
+    "토스증권"
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": "16:00",
    "title": "하나증권, 업비트 글로벌과 디지털자산 금융사업 협력 MOU",
    "src": "글로벌이코노믹",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUC1EdnN5Um85S0VNYTM1TFFRSGtlNnBtZ2xnR0hQa2tnTWRwMEtwZEx5Q1BNWkFiTHlCYWUyMWYtRzF4dFZEVVI2N1ZMM0h4SXpzWWkzejJzRDVOTmtEekxpVGU3bWNHNktLejBlUXlSd1c2Nkp4UlY1Zk5jU3VKdUFJUzZhWlNC?oc=5",
@@ -263,6 +273,16 @@
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pT0hjWWpYejVQR0Z6c2RneVR5Nm1tSHFHWGI4dFBDY2xqTjBLUnlfSWd4eWN1STdWRnhIemxHa2ZRbWFTS1NUejhIZEhYa3A1Q1lFLXB3MFJSUQ?oc=5",
    "firms": [
     "한국투자증권"
+   ]
+  },
+  {
+   "date": "2026-09-11",
+   "time": "16:00",
+   "title": "삼성증권 \"HD현대중, 엔진 증설 예상↑·SMR 진출 예상외\"",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92eWtrX2pMU1RRZ3JqWkNaUkpIVklfWlNfOGhSc3VNUnJoVVlnZURlN0I2UllkR1FfTVZ4XzNHTFc5dEROY3J6RE4xemIxb0R3aWhMTHh0VGF6WmfSAWBBVV95cUxQSGhKTXA4amQyUTQzMTM0TFZ2Y0pTQVBCUDQ3WXJfSmM1dW80U3FfcUJWaEFmX1lGUEhQcElqb1Nlb0FmcThJb3FfclZkTnNKaXltTC1Eb2h0RUtGc05ZR1o?oc=5",
+   "firms": [
+    "삼성증권"
    ]
   },
   {
@@ -286,22 +306,14 @@
    ]
   },
   {
-   "date": "2026-09-11",
-   "time": "16:00",
-   "title": "삼성증권 \"HD현대중, 엔진 증설 예상↑·SMR 진출 예상외\"",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92eWtrX2pMU1RRZ3JqWkNaUkpIVklfWlNfOGhSc3VNUnJoVVlnZURlN0I2UllkR1FfTVZ4XzNHTFc5dEROY3J6RE4xemIxb0R3aWhMTHh0VGF6WmfSAWBBVV95cUxQSGhKTXA4amQyUTQzMTM0TFZ2Y0pTQVBCUDQ3WXJfSmM1dW80U3FfcUJWaEFmX1lGUEhQcElqb1Nlb0FmcThJb3FfclZkTnNKaXltTC1Eb2h0RUtGc05ZR1o?oc=5",
-   "firms": [
-    "삼성증권"
-   ]
-  },
-  {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5",
-   "firms": []
+   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
+   "src": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
+   "firms": [
+    "한국투자증권"
+   ]
   },
   {
    "date": "2026-09-10",
@@ -326,12 +338,10 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
-   "src": "연합인포맥스",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
-   "firms": [
-    "한국투자증권"
-   ]
+   "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5",
+   "firms": []
   },
   {
    "date": "2026-09-09",
@@ -404,9 +414,9 @@
   {
    "date": "2026-08-28",
    "time": "16:00",
-   "title": "미래에셋증권, 퍼블릭닷컴 인수 중단…美 현지 새 매물 검토",
-   "src": "이투데이",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91WGx6SFJXNkczYU9CeUlXYzY1bzJvRXVsYUhvQ1ZqMXdlNFd3bk5MQmw4X29BNDBpMDYzTk9JcC1yX0dibHl3Rm5LWm5GNzRFaHdURg?oc=5",
+   "title": "박현주 '미래에셋 3.0' 혁신 속도전, 최종목표 '글로벌 투자 플랫폼' 향한다",
+   "src": "비즈니스포스트",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPTFRSaE1GQ2U0eDgydl81WDVTdU8xNnlGUUxWeTBON2p6NE9zSHNVWkNfMkVxRDNpck5qZkFucmkzTlRlZ09EZWl6NlAzYW9fZFM5UmRFcF9IMnR3djZBWW5NNmE3SXFnUjN2S2xBaV8xX0E?oc=5",
    "firms": [
     "미래에셋증권"
    ]
@@ -414,9 +424,9 @@
   {
    "date": "2026-08-28",
    "time": "16:00",
-   "title": "박현주 '미래에셋 3.0' 혁신 속도전, 최종목표 '글로벌 투자 플랫폼' 향한다",
-   "src": "비즈니스포스트",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPTFRSaE1GQ2U0eDgydl81WDVTdU8xNnlGUUxWeTBON2p6NE9zSHNVWkNfMkVxRDNpck5qZkFucmkzTlRlZ09EZWl6NlAzYW9fZFM5UmRFcF9IMnR3djZBWW5NNmE3SXFnUjN2S2xBaV8xX0E?oc=5",
+   "title": "미래에셋증권, 퍼블릭닷컴 인수 중단…美 현지 새 매물 검토",
+   "src": "이투데이",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91WGx6SFJXNkczYU9CeUlXYzY1bzJvRXVsYUhvQ1ZqMXdlNFd3bk5MQmw4X29BNDBpMDYzTk9JcC1yX0dibHl3Rm5LWm5GNzRFaHdURg?oc=5",
    "firms": [
     "미래에셋증권"
    ]

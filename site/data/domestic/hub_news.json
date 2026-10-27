@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26T11:23+09:00",
+ "updated_at": "2026-10-27T09:42+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "keep_days": 365,
  "hubs": {
@@ -48,6 +48,12 @@
    }
   ],
   "미래에셋증권|베트남": [
+   {
+    "date": "2026-10-26",
+    "title": "웹케시베트남, 미래에셋 현지 법인 자금관리 솔루션 공급",
+    "src": "헤럴드경제",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE00QXBkYzdpVkNFLUhEdm5ORGRPSWIxSDRaLWNaRHJMeXpOZV81dC1tMVdfVEI4bkFrYXlvRHo3cm1GaWNmT1pqN2lJVm9YN0pTb0d4WkRB?oc=5"
+   },
    {
     "date": "2026-01-29",
     "title": "미래에셋증권 베트남법인, 전방위 규정 위반 적발…과태료 7억 동 부과",
