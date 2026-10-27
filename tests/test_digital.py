@@ -40,6 +40,13 @@ class RegulationDataTest(unittest.TestCase):
             for i in m["issues"]:
                 self.assertTrue(all(p["url"].startswith("https://") for p in i["points"]), i["title"])
 
+    def test_takeaways_link_to_sources(self):
+        for k in REG["takeaways"]:
+            self.assertTrue(k["src"], k["h"])
+            for x in k["src"]:
+                self.assertTrue(x["l"] and x["s"], k["h"])
+                self.assertTrue(x["url"].startswith("https://"), k["h"])
+
     def test_summary_card_format(self):
         out = build_summary.build(REG, "2026-10-20")
         self.assertLessEqual(len(out["items"]), 8)
