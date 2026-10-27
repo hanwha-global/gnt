@@ -205,7 +205,8 @@ FOREIGN_NOISE = re.compile(
     r"|^(?:buy|sell|hold|accumulate|reduce)\b|\brating (?:buy|hold|sell|trading buy)\b|\btarget of\b"
     # 판촉·행사(수수료·이자 면제, 경품, 세미나·대회). '우선주(cổ phiếu ưu đãi)'는 자본 소식이라 남긴다
     r"|miễn (?:phí|lãi)|hoàn (?:\d+% )?phí|khuyến mãi|\bcombo\b|gói vay|cuộc thi|hội thảo|quà tặng|happy monday|(?:chương trình|gói) ưu đãi"
-    r"|ưu đãi (?:cực|lớn)|\bpromo\w*|cashback|\bdiskon\b|\bgratis\b|coaching clinic|giveaway", re.I)
+    r"|ưu đãi (?:cực|lớn)|vòng quay|bốc thăm|trúng thưởng|mini ?game|\bpromo\w*|cashback|\bdiskon\b|\bgratis\b|\bundian\b"
+    r"|coaching clinic|giveaway", re.I)
 # 'WOORICBV:Công ty…', 'BSI: Cổ đông lớn' 같은 종목 페이지(감독당국·거래소 이름으로 시작하는 제목은 뺀다)
 TICKER_HEAD = re.compile(r"^(?!OJK|BEI|IDX|SSC|MSCI|FTSE|SEC|MAS)[A-Z0-9]{3,10}\s?:\s?")
 

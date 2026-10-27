@@ -572,7 +572,9 @@ class HubNewsTest(unittest.TestCase):
         self.assertTrue(h.relevant("한국투자증권, 홍콩에 이어 베트남 법인 증자", "한국투자증권", "베트남"))
         self.assertFalse(h.relevant("한국투자증권, 홍콩에 이어 베트남 법인 증자", "한국투자증권", "홍콩"))
         self.assertIn(("신한증권 미국", "ko"), h.queries("신한투자증권", "미국"))
-        self.assertLessEqual({("한화증권 인니", "ko"), ("한화투자증권 인도네시아", "ko")}, set(h.queries("한화투자증권", "인도네시아")))
+        self.assertLessEqual({("한화증권 인니", "ko"), ("한화투자증권 인도네시아", "ko"), ("칩타다나", "ko")}, set(h.queries("한화투자증권", "인도네시아")))
+        self.assertTrue(h.relevant("칩타다나증권, 인니 IPO 주관 실적 1위", "한화투자증권", "인도네시아"))  # 증권사 이름 없이 현지 법인 한글 이름
+        self.assertFalse(h.relevant("칩타다나증권, 인니 IPO 주관 실적 1위", "한화투자증권", "베트남"))
 
     def test_same_event_from_several_outlets_kept_once(self):
         import fetch_hub_news as h
@@ -684,7 +686,7 @@ class ForeignNewsTest(unittest.TestCase):
         # 판촉(이자·수수료 면제, 세미나, 대학 행사)은 빼고 실적(báo lãi)은 남긴다. 우선주(cổ phiếu ưu đãi)는 자본 소식
         for t in ["Giữa làn sóng tăng lãi suất huy động, Chứng khoán Pinetree tung gói vay margin chỉ tương đương lãi tiết kiệm ngân hàng",
                   "Chứng khoán KB Việt Nam ra mắt chương trình miễn lãi suất margin cho khách hàng", "NHSV ra mắt Hội thảo: Cơ hội gia tăng tài sản",
-                  "Chứng khoán KIS triển khai Happy Monday, hoàn 100% phí giao dịch đầu tháng",
+                  "Chứng khoán KIS triển khai Happy Monday, hoàn 100% phí giao dịch đầu tháng", "KIS Việt Nam triển khai “Vòng quay Chứng sỹ” mùa 5",
                   "Internal Coaching Clinic KSPM Universitas Pancasila Bakal Gandeng KB Valbury Sekuritas"]:
             self.assertFalse(h.foreign_ok(t), t)
         self.assertTrue(h.foreign_ok("Dư nợ cho vay tăng lên gần 8.900 tỷ đồng, Chứng khoán KB Việt Nam báo lãi tăng hơn 15%"))
