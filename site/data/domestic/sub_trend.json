@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T04:26:34+00:00",
+ "updated_at": "2026-10-27T07:05:59+00:00",
  "source": "DART 사업보고서(토스 감사보고서)·반기보고서 연결재무제표 주석 '종속기업·관계기업 요약재무정보'",
  "unit": "백만원",
  "periods": [
@@ -704,7 +704,71 @@
      "established": "2025.04.28",
      "holding": false
     }
-   ]
+   ],
+   "roe": {
+    "FY2021": {
+     "n": 10,
+     "ni": 201651.0,
+     "equity": 5668776.0,
+     "roe": 3.56,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 10,
+     "ni": 84456.0,
+     "equity": 4658090.4,
+     "roe": 1.81,
+     "overlap": 1057322.6,
+     "holdcos": [
+      "Mirae Asset Securities (HK) Limited"
+     ],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 13,
+     "ni": -26684.0,
+     "equity": 4898164.8,
+     "roe": -0.54,
+     "overlap": 823854.2,
+     "holdcos": [
+      "Mirae Asset Securities (HK) Limited",
+      "Mirae Asset Securities (UK) Ltd."
+     ],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 18,
+     "ni": 143867.0,
+     "equity": 5573801.4,
+     "roe": 2.58,
+     "overlap": 1507303.6,
+     "holdcos": [
+      "Human Value Developers Private Limited",
+      "Mirae Asset Capital Markets (India) Private Limited",
+      "Mirae Asset Securities (HK) Limited",
+      "Mirae Asset Securities (UK) Ltd."
+     ],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 22,
+     "ni": 453680.0,
+     "equity": 5188898.0,
+     "roe": 8.74,
+     "overlap": 2363695.0,
+     "holdcos": [
+      "Human Value Developers Private Limited",
+      "Mirae Asset Capital Markets (India) Private Limited",
+      "Mirae Asset Securities (HK) Limited",
+      "Mirae Asset Securities (UK) Ltd.",
+      "Mirae Asset Securities Holdings (USA) Inc.",
+      "Sharekhan Limited"
+     ],
+     "months": 12
+    }
+   }
   },
   "한국투자증권": {
    "reports": {
@@ -1079,7 +1143,77 @@
      "established": "2023.01.17",
      "holding": false
     }
-   ]
+   ],
+   "roe": {
+    "FY2021": {
+     "n": 8,
+     "ni": 22264.7,
+     "equity": 1172375.4,
+     "roe": 1.9,
+     "overlap": 2585.5,
+     "holdcos": [
+      "PT Korea Investment & Sekuritas Indonesia"
+     ],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 8,
+     "ni": 4690.8,
+     "equity": 1277886.8,
+     "roe": 0.37,
+     "overlap": 9856.7,
+     "holdcos": [
+      "Korea Investment& Securities US, Inc.",
+      "PT Korea Investment & Sekuritas Indonesia"
+     ],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 9,
+     "ni": 73678.4,
+     "equity": 1493445.2,
+     "roe": 4.93,
+     "overlap": 10975.0,
+     "holdcos": [
+      "Korea Investment& Securities US, Inc.",
+      "PT Korea Investment & Sekuritas Indonesia"
+     ],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 9,
+     "ni": 65618.5,
+     "equity": 1753223.8,
+     "roe": 3.74,
+     "overlap": 15253.8,
+     "holdcos": [
+      "Korea Investment& Securities US, Inc."
+     ],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 9,
+     "ni": 80006.9,
+     "equity": 1775236.5,
+     "roe": 4.51,
+     "overlap": 20996.1,
+     "holdcos": [
+      "Korea Investment& Securities US, Inc."
+     ],
+     "months": 12
+    },
+    "1H2026": {
+     "n": 9,
+     "ni": 48228.2,
+     "equity": 2042815.5,
+     "roe": 4.72,
+     "overlap": 26326.8,
+     "holdcos": [
+      "Korea Investment& Securities US, Inc."
+     ],
+     "months": 6
+    }
+   }
   },
   "삼성증권": {
    "reports": {
@@ -1239,6 +1373,62 @@
      "holding": false
     }
    ],
+   "roe": {
+    "FY2021": {
+     "n": 3,
+     "ni": 1607.2,
+     "equity": 121423.8,
+     "roe": 1.32,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 3,
+     "ni": 2164.1,
+     "equity": 131937.1,
+     "roe": 1.64,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 3,
+     "ni": 5976.7,
+     "equity": 140054.3,
+     "roe": 4.27,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 3,
+     "ni": 7369.1,
+     "equity": 167976.0,
+     "roe": 4.39,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 3,
+     "ni": 7023.9,
+     "equity": 170886.3,
+     "roe": 4.11,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "1H2026": {
+     "n": 3,
+     "ni": 4294.0,
+     "equity": 187476.4,
+     "roe": 4.58,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 6
+    }
+   },
    "rev_net": true
   },
   "키움증권": {
@@ -1464,7 +1654,64 @@
      "established": "2025.05.05",
      "holding": false
     }
-   ]
+   ],
+   "roe": {
+    "FY2021": {
+     "n": 2,
+     "ni": 5690.5,
+     "equity": 55580.4,
+     "roe": 10.24,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 2,
+     "ni": -2271.7,
+     "equity": 54133.9,
+     "roe": -4.2,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 4,
+     "ni": 916.7,
+     "equity": 56338.6,
+     "roe": 1.63,
+     "overlap": 13870.8,
+     "holdcos": [
+      "Kiwoom Hong Kong Limited",
+      "PT Kiwoom Sekuritas Indonesia"
+     ],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 5,
+     "ni": -6240.3,
+     "equity": 58866.3,
+     "roe": -10.6,
+     "overlap": 16184.9,
+     "holdcos": [
+      "Kiwoom Hong Kong Limited",
+      "PT Kiwoom Sekuritas Indonesia"
+     ],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 7,
+     "ni": -2568.9,
+     "equity": 83506.1,
+     "roe": -3.08,
+     "overlap": 35386.8,
+     "holdcos": [
+      "Kiwoom Hong Kong Limited",
+      "Kiwoom Securities Holdings USA Inc.",
+      "PT Kiwoom Sekuritas Indonesia"
+     ],
+     "months": 12
+    }
+   }
   },
   "토스증권": {
    "reports": {
@@ -1550,6 +1797,17 @@
      "holding": false
     }
    ],
+   "roe": {
+    "FY2025": {
+     "n": 3,
+     "ni": -6227.9,
+     "equity": 2055.4,
+     "roe": -303.0,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    }
+   },
    "audit": true
   },
   "NH투자증권": {
@@ -1841,7 +2099,63 @@
      "established": "1990.03.26",
      "holding": false
     }
-   ]
+   ],
+   "roe": {
+    "FY2021": {
+     "n": 5,
+     "ni": 68469.0,
+     "equity": 787878.0,
+     "roe": 8.69,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 6,
+     "ni": 2745.0,
+     "equity": 888338.0,
+     "roe": 0.31,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 6,
+     "ni": 62366.0,
+     "equity": 963311.0,
+     "roe": 6.47,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 7,
+     "ni": 74713.0,
+     "equity": 1223318.0,
+     "roe": 6.11,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 7,
+     "ni": 86701.0,
+     "equity": 1349230.0,
+     "roe": 6.43,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "1H2026": {
+     "n": 7,
+     "ni": 49695.0,
+     "equity": 1498844.0,
+     "roe": 6.63,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 6
+    }
+   }
   },
   "KB증권": {
    "reports": {
@@ -2070,7 +2384,63 @@
      "established": "2000.02.22",
      "holding": false
     }
-   ]
+   ],
+   "roe": {
+    "FY2021": {
+     "n": 4,
+     "ni": 11377.1,
+     "equity": 453197.2,
+     "roe": 2.51,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 5,
+     "ni": 13335.2,
+     "equity": 558275.9,
+     "roe": 2.39,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 5,
+     "ni": 16618.0,
+     "equity": 578972.2,
+     "roe": 2.87,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 5,
+     "ni": 20783.2,
+     "equity": 663096.5,
+     "roe": 3.13,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 5,
+     "ni": 45634.3,
+     "equity": 682373.0,
+     "roe": 6.69,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "1H2026": {
+     "n": 5,
+     "ni": 24547.1,
+     "equity": 748740.0,
+     "roe": 6.56,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 6
+    }
+   }
   },
   "신한투자증권": {
    "reports": {
@@ -2258,7 +2628,63 @@
      "established": "2007.06.30",
      "holding": false
     }
-   ]
+   ],
+   "roe": {
+    "FY2021": {
+     "n": 2,
+     "ni": 2322.0,
+     "equity": 129742.0,
+     "roe": 1.79,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 3,
+     "ni": 1622.0,
+     "equity": 141528.0,
+     "roe": 1.15,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 4,
+     "ni": 11716.0,
+     "equity": 295875.0,
+     "roe": 3.96,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 4,
+     "ni": 9327.0,
+     "equity": 339173.0,
+     "roe": 2.75,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 4,
+     "ni": 7069.0,
+     "equity": 332960.0,
+     "roe": 2.12,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "1H2026": {
+     "n": 3,
+     "ni": 6161.0,
+     "equity": 358006.0,
+     "roe": 3.44,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 6
+    }
+   }
   },
   "하나증권": {
    "reports": {
@@ -2376,7 +2802,63 @@
      "established": "2020.09.04",
      "holding": false
     }
-   ]
+   ],
+   "roe": {
+    "FY2021": {
+     "n": 1,
+     "ni": 76.9,
+     "equity": 37709.4,
+     "roe": 0.2,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 2,
+     "ni": 10232.6,
+     "equity": 54855.8,
+     "roe": 18.65,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 2,
+     "ni": 3531.3,
+     "equity": 71229.2,
+     "roe": 4.96,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 2,
+     "ni": -771.9,
+     "equity": 79300.8,
+     "roe": -0.97,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 2,
+     "ni": -12330.1,
+     "equity": 67839.0,
+     "roe": -18.18,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "1H2026": {
+     "n": 2,
+     "ni": -1424.5,
+     "equity": 72878.7,
+     "roe": -3.91,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 6
+    }
+   }
   },
   "한화투자증권": {
    "reports": {
@@ -2537,7 +3019,63 @@
      "established": null,
      "holding": false
     }
-   ]
+   ],
+   "roe": {
+    "FY2021": {
+     "n": 2,
+     "ni": 226.1,
+     "equity": 85283.5,
+     "roe": 0.27,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2022": {
+     "n": 2,
+     "ni": -834.6,
+     "equity": 87438.0,
+     "roe": -0.95,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2023": {
+     "n": 2,
+     "ni": -339.5,
+     "equity": 86606.7,
+     "roe": -0.39,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2024": {
+     "n": 3,
+     "ni": 1277.5,
+     "equity": 137591.4,
+     "roe": 0.93,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "FY2025": {
+     "n": 3,
+     "ni": 4626.0,
+     "equity": 134977.0,
+     "roe": 3.43,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 12
+    },
+    "1H2026": {
+     "n": 4,
+     "ni": -1107.0,
+     "equity": 156441.0,
+     "roe": -1.42,
+     "overlap": 0,
+     "holdcos": [],
+     "months": 6
+    }
+   }
   }
  },
  "checked_at": "2026-10-23T04:22:47+00:00",

@@ -80,8 +80,22 @@ const dbar = (v, max) => {
   return `<div class="dv" title="${fmt(v)}"><i class="${v < 0 ? "n" : "p"}" style="width:${w}%"></i><b></b></div>`;
 };
 
-function renderPL(D, ents, reg) {
+// 기간 선택: dart_subs.json history(정기보고서마다 같은 요약재무정보)에서 고른 보고서까지만 남겨 model에 넘긴다.
+// 고른 기간이 L, 그 앞의 가장 최근 사업보고서가 F(비교 열)가 된다. 빈 값이면 기본(최신 공시 + 최근 사업보고서)
+let pick = "";
+function view(D) {
+  const H = D.history || [], at = pick ? H.findIndex((p) => p.label === pick) : -1;
+  return at >= 0 ? { ...D, periods: H.slice(0, at + 1) } : D;
+}
+const kindOf = (p) => (p.period === "FY" ? "사업" : p.period === "1H" ? "반기" : "분기");
+
+function renderPL(D0, ents, reg) {
+  const D = view(D0);
   const { L, F, E, sum, roe, both } = model(D, ents);
+  const H = D0.history || [];
+  const psel = H.length > 1 ? `<div class="tmeta">공시 기간 <select id="pl-per" class="psel" aria-label="공시 기간 선택">${[{ v: "", l: `최신 (${D0.periods.at(-1).label})` },
+    ...[...H].reverse().map((p) => ({ v: p.label, l: `${p.label} ${kindOf(p)}보고서` }))].map((o) => `<option value="${esc(o.v)}"${o.v === pick ? " selected" : ""}>${esc(o.l)}</option>`).join("")}</select>
+    ${pick ? " · 비교 열은 그 앞 사업보고서 · 지분율은 최신 공시값" : " · 기간을 고르면 아래 실적·재무상태 표가 그 보고서 기준으로 바뀝니다"}</div>` : "";
   const ctrlL = sum("l", "ni", true), ctrlF = sum("f", "ni", true);
   const prof = E.filter((e) => (e.l?.ni ?? 0) > 0);
   // FY 손익이 없는 법인: 재무상태만 있으면 그해 말 취득, 행 자체가 없으면 공시에서 빠진 것
@@ -95,7 +109,7 @@ function renderPL(D, ents, reg) {
     F && [`${F.label} 지배지분 순이익`, eok(ctrlF), noF.length ? noFtxt : `100% 기준 ${eok(sum("f", "ni"))}`, ctrlF],
     [`${L.label} 흑자 법인`, `${prof.length} / ${E.length}`, prof.map(lab).join(", ") || "없음"],
   ].filter(Boolean);
-  let h = `<div class="grid kpis">${kpis.map(([l, v, s, n]) => `<div class="card kpi"><div class="l">${l}</div><div class="v ${n == null ? "" : n < 0 ? "neg" : ""}">${v}</div><div class="sub">${s || ""}</div></div>`).join("")}</div>`;
+  let h = `${psel}<div class="grid kpis">${kpis.map(([l, v, s, n]) => `<div class="card kpi"><div class="l">${l}</div><div class="v ${n == null ? "" : n < 0 ? "neg" : ""}">${v}</div><div class="sub">${s || ""}</div></div>`).join("")}</div>`;
   h += `<div class="sub">DART 정기보고서 연결재무제표 주석 「종속기업 요약재무정보」(법인 단위, 연결 조정 전) · 지분율은 「타법인 출자현황」 · 내부 계획·현지 결산은 쓰지 않습니다.</div>`;
 
   // 법인별 실적
@@ -138,7 +152,7 @@ function renderPL(D, ents, reg) {
   const next = (reg?.todo || []).filter((t) => t.id.startsWith("periodic-") && t.status !== "done" && t.due).sort((a, b) => a.due.localeCompare(b.due))[0];
   const nextName = next ? next.item.replace(" 해외자회사·타법인출자현황 반영", "") : "";
   h += `<h2>출처와 자동 갱신</h2><div class="grid two">
-    <div class="card"><b>공시 원문</b><ul class="notes">${(D.periods || []).map((p) => `<li><b>${esc(p.label)}</b> <a href="${esc(p.report.url)}" target="_blank" rel="noopener">${esc(p.report.name)}</a> <span class="sub">접수 ${ymd(p.report.rcept_dt)}</span></li>`).join("")}
+    <div class="card"><b>공시 원문</b><ul class="notes">${(pick ? [F, L].filter(Boolean) : D0.periods || []).map((p) => `<li><b>${esc(p.label)}</b> <a href="${esc(p.report.url)}" target="_blank" rel="noopener">${esc(p.report.name)}</a> <span class="sub">접수 ${ymd(p.report.rcept_dt)}</span></li>`).join("")}
       ${D.invest ? `<li><b>출자</b> <a href="${esc(D.invest.report.url)}" target="_blank" rel="noopener">${esc(D.invest.report.name)}</a> 타법인 출자현황 <span class="sub">접수 ${ymd(D.invest.report.rcept_dt)}</span></li>` : ""}</ul></div>
     <div class="card"><b>자동 갱신 (평일 07:30·16:30, 토큰 없음)</b><ul class="notes">
       <li><b>다음 공시</b> ${next ? `${esc(nextName)} (제출 기한 ${esc(next.due)})가 DART에 올라오면 다음 확인 때 ${esc(L.label)} → 새 기간으로 바뀌고 ROE 연환산 배수도 따라 바뀝니다.` : "다음 정기보고서가 올라오면 자동으로 바뀝니다."}</li>
@@ -146,14 +160,15 @@ function renderPL(D, ents, reg) {
       <li><b>공개 범위</b> 공시 자료만 씁니다. 사업부문별 손익·계획 대비·현지 결산은 공시되지 않아 넣지 않습니다.</li></ul></div></div>`;
   h += `<h2>다운로드</h2><div class="dl" id="dl"></div>`;
   $("#pl").innerHTML = h;
+  $("#pl-per")?.addEventListener("change", (ev) => { pick = ev.target.value; renderPL(D0, ents, reg); fit(); });
   document.querySelector('nav button[data-tab="pl"]').textContent = `해외자회사 실적 (${L.label} 공시)`;
   // 다운로드 파일은 저장소에 있을 때만 버튼을 보여 주고, 기준 기간은 파일을 만든 기준(basis.json)에서 읽는다
   const files = [["downloads/해외자회사_공시실적.xlsx", "엑셀 (공시 실적)"], ["downloads/해외자회사_공시실적_1장보고서.docx", "1장 보고서 (Word)"], ["downloads/해외자회사_공시실적_1장보고서.pdf", "1장 보고서 (PDF)"]];
   const basis = fetch("downloads/basis.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
   Promise.all([basis, ...files.map(([f]) => fetch(f, { method: "HEAD" }).then((r) => r.ok).catch(() => false))]).then(([b, ...ok]) => {
     const shown = files.filter((_, i) => ok[i]);
-    const same = b && (b.periods || []).join() === (D.periods || []).map((p) => p.report.rcept_no).join();
-    const note = same ? `${esc(L.label)} 공시 기준` : `${esc(b?.label || "직전")} 공시 기준 · 새 공시는 다음 자동 갱신 때 반영`;
+    const same = b && (b.periods || []).join() === (D0.periods || []).map((p) => p.report.rcept_no).join();
+    const note = same ? `${esc(D0.periods.at(-1).label)} 공시 기준` : `${esc(b?.label || "직전")} 공시 기준 · 새 공시는 다음 자동 갱신 때 반영`;
     $("#dl").innerHTML = shown.length ? shown.map(([f, l]) => `<a href="${encodeURI(f)}" download>${l}</a>`).join("") + `<span class="sub"> ${note}</span>`
       : `<span class="sub">엑셀·1장 보고서는 다음 자동 갱신 때 만들어집니다.</span>`;
   });

@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from keys import get_key  # noqa: E402
 import net  # noqa: E402
 from fetch_sub_fin import (API, DATA, attach_parents, document_texts, find_entity, mark_consolidated, parse_doc,  # noqa: E402
-                           parse_parents, pick, seeds_by_firm)
+                           parse_parents, pick, seeds_by_firm, summarize)
 from gnd import tokens  # noqa: E402
 from update_dart import parse_report  # noqa: E402
 
@@ -191,6 +191,19 @@ def entity_meta():
     return meta
 
 
+def period_roe(rows, seeds, per):
+    """그 보고서의 가중평균 ROE(국내 탭 기간 선택용). sub_fin.json과 같은 규칙(fetch_sub_fin.summarize: 사이트 네트워크 법인만,
+    중간지주의 자회사 몫 제외)을 그 기간 표에 적용하고, 반기는 순이익을 연환산(× 2)한다. 법인 목록은 현재 네트워크 기준."""
+    rows = {n: dict(v) for n, v in rows.items() if v.get("equity") is not None and v.get("ni") is not None}
+    r = summarize(rows, seeds) if rows else None
+    if not r or not r["n"]:
+        return None
+    months = 6 if per.startswith("1H") else 12
+    r["months"] = months
+    r["roe"] = round(r["ni"] * 12 / months / r["equity"] * 100, 2) if r["equity"] > 0 else None
+    return r
+
+
 def build(raw):
     seeds, refs, meta = seeds_by_firm(), ref_seeds(), entity_meta()
     pers = page_periods(raw)
@@ -231,7 +244,9 @@ def build(raw):
             out.append(e)
         audit = bool(store) and all(r["label"].endswith("감사보고서") for r in store.values())  # 반기보고서를 내지 않는 회사(토스)
         firms[firm] = {"reports": {p: {k: store[p][k] for k in ("label", "rcept_no", "rcept_dt", "first_dt")} | {"rows": len(store[p]["subs"])}
-                                   for p in pers if p in store}, "entities": out} | ({"rev_net": True} if rev_net else {}) | ({"audit": True} if audit else {})
+                                   for p in pers if p in store}, "entities": out,
+                       "roe": {p: r for p in pers if p in store and (r := period_roe(store[p]["subs"], seeds.get(firm, []), p))}} \
+            | ({"rev_net": True} if rev_net else {}) | ({"audit": True} if audit else {})
     return {"updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "source": "DART 사업보고서(토스 감사보고서)·반기보고서 연결재무제표 주석 '종속기업·관계기업 요약재무정보'",
             "unit": "백만원", "periods": pers, "filing": filing, "firms": firms}
