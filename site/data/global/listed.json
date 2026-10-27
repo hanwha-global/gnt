@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26T02:24:18+00:00",
+ "updated_at": "2026-10-27T07:58:10+00:00",
  "source": "Yahoo Finance 재무 시계열 · stockanalysis.com(각 사 공시 기반)",
  "markets": {
   "jp": {
@@ -14,7 +14,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8604.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -26,7 +26,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8473.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -38,7 +38,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8601.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -50,7 +50,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8609.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -62,7 +62,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8616.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -74,7 +74,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8698.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -86,7 +86,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8628.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -98,7 +98,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8707.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -110,7 +110,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/7177.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -122,7 +122,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8613.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -134,7 +134,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8708.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -146,7 +146,7 @@
      "asof": "2026-03-31",
      "url": "https://finance.yahoo.com/quote/8624.T/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     }
    ]
@@ -163,7 +163,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/TCX.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -175,7 +175,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/VPX.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -187,7 +187,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/SSI.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -199,7 +199,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/VCK.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -211,7 +211,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/VIX.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -223,7 +223,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/VND.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -235,7 +235,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/VCI.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -247,7 +247,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/HCM.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -259,7 +259,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/BSI.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -271,7 +271,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/FTS.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -283,7 +283,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/CTS.VN/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     }
    ]
@@ -300,7 +300,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/U10.SI/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -312,7 +312,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/AIY.SI/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     }
    ]
@@ -329,7 +329,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/TRIM.JK/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -341,7 +341,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/PANS.JK/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -353,7 +353,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/YULE.JK/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     },
     {
@@ -365,7 +365,7 @@
      "asof": "2025-12-31",
      "url": "https://finance.yahoo.com/quote/PADI.JK/balance-sheet",
      "via": "yahoo",
-     "checked": "2026-10-26",
+     "checked": "2026-10-27",
      "stale": false
     }
    ]

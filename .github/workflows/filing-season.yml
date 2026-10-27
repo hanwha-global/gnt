@@ -48,6 +48,12 @@ jobs:
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python scripts/fetch_sub_fin.py
+      - name: 국내 증권사 재무 기간별 이력 (DART 주요계정)
+        if: steps.trend.outputs.new_reports == 'true'
+        continue-on-error: true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python scripts/fetch_fin_hist.py
       - name: 5개년 손익 추이 다시 만들기 (받은 원문으로, 새 법인 목록 반영)
         if: steps.trend.outputs.new_reports == 'true'
         continue-on-error: true

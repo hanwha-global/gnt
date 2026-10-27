@@ -229,5 +229,536 @@
    "name": "분기보고서 (2025.03)",
    "rcept_dt": "20250514"
   }
- ]
+ ],
+ "history": [
+  {
+   "label": "1Q23",
+   "period": "1Q",
+   "year": "2023",
+   "months": 3,
+   "report": {
+    "name": "분기보고서 (2023.03)",
+    "rcept_no": "20230512000870",
+    "rcept_dt": "20230512",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230512000870",
+    "year": "2023",
+    "period": "1Q"
+   },
+   "subs": {
+    "SG": {
+     "unit": "천원",
+     "assets": 8107.2,
+     "liab": 194.8,
+     "rev": 38.3,
+     "ni": -499.2,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 134531.4,
+     "liab": 52674.5,
+     "rev": 3237.1,
+     "ni": -146.1,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "1H23",
+   "period": "1H",
+   "year": "2023",
+   "months": 6,
+   "report": {
+    "name": "반기보고서 (2023.06)",
+    "rcept_no": "20230811001813",
+    "rcept_dt": "20230811",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230811001813",
+    "year": "2023",
+    "period": "1H"
+   },
+   "subs": {
+    "SG": {
+     "unit": "천원",
+     "assets": 8023.5,
+     "liab": 651.2,
+     "rev": 84.1,
+     "ni": -932.7,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 120677.5,
+     "liab": 38026.7,
+     "rev": 6593.9,
+     "ni": 344.2,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "9M23",
+   "period": "9M",
+   "year": "2023",
+   "months": 9,
+   "report": {
+    "name": "분기보고서 (2023.09)",
+    "rcept_no": "20231114001862",
+    "rcept_dt": "20231114",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114001862",
+    "year": "2023",
+    "period": "9M"
+   },
+   "subs": {
+    "SG": {
+     "unit": "천원",
+     "assets": 7759.6,
+     "liab": 621.3,
+     "rev": 139.1,
+     "ni": -1271.1,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 123482.4,
+     "liab": 41078.3,
+     "rev": 10479.3,
+     "ni": 986.6,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "FY2023",
+   "period": "FY",
+   "year": "2023",
+   "months": 12,
+   "report": {
+    "name": "사업보고서 (2023.12)",
+    "rcept_no": "20240312000990",
+    "rcept_dt": "20240312",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312000990",
+    "year": "2023",
+    "period": "FY"
+   },
+   "subs": {
+    "SG": {
+     "unit": "천원",
+     "assets": 7411.6,
+     "liab": 576.5,
+     "rev": 195.8,
+     "ni": -1537.8,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 135518.9,
+     "liab": 55747.3,
+     "rev": 13756.1,
+     "ni": 1198.3,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "1Q24",
+   "period": "1Q",
+   "year": "2024",
+   "months": 3,
+   "report": {
+    "name": "분기보고서 (2024.03)",
+    "rcept_no": "20240514000960",
+    "rcept_dt": "20240514",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240514000960",
+    "year": "2024",
+    "period": "1Q"
+   },
+   "subs": {
+    "SG": {
+     "unit": "천원",
+     "assets": 7256.6,
+     "liab": 557.3,
+     "rev": 52.7,
+     "ni": -279.6,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 166439.1,
+     "liab": 84467.3,
+     "rev": 3962.8,
+     "ni": 548.8,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "1H24",
+   "period": "1H",
+   "year": "2024",
+   "months": 6,
+   "report": {
+    "name": "반기보고서 (2024.06)",
+    "rcept_no": "20240814003427",
+    "rcept_dt": "20240814",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240814003427",
+    "year": "2024",
+    "period": "1H"
+   },
+   "subs": {
+    "SG": {
+     "unit": "천원",
+     "assets": 7016.6,
+     "liab": 528.4,
+     "rev": 105.0,
+     "ni": -654.6,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 191425.7,
+     "liab": 108465.6,
+     "rev": 8005.4,
+     "ni": 1079.3,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "9M24",
+   "period": "9M",
+   "year": "2024",
+   "months": 9,
+   "report": {
+    "name": "분기보고서 (2024.09)",
+    "rcept_no": "20241113000515",
+    "rcept_dt": "20241113",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241113000515",
+    "year": "2024",
+    "period": "9M"
+   },
+   "subs": {
+    "SG": {
+     "unit": "천원",
+     "assets": 6592.3,
+     "liab": 476.4,
+     "rev": 164.5,
+     "ni": -1073.1,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 159656.7,
+     "liab": 77253.5,
+     "rev": 12351.1,
+     "ni": 2050.9,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "FY2024",
+   "period": "FY",
+   "year": "2024",
+   "months": 12,
+   "report": {
+    "name": "사업보고서 (2024.12)",
+    "rcept_no": "20250311001013",
+    "rcept_dt": "20250311",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250311001013",
+    "year": "2024",
+    "period": "FY"
+   },
+   "subs": {
+    "CSA": {
+     "unit": "천원",
+     "assets": 68623.6,
+     "liab": 26634.3,
+     "rev": 2438.3,
+     "ni": -152.8,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "천원",
+     "assets": 6583.9,
+     "liab": 482.7,
+     "rev": 298.7,
+     "ni": -1380.9,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 195279.2,
+     "liab": 105778.3,
+     "rev": 17113.7,
+     "ni": 2811.2,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "1Q25",
+   "period": "1Q",
+   "year": "2025",
+   "months": 3,
+   "report": {
+    "name": "분기보고서 (2025.03)",
+    "rcept_no": "20250514000986",
+    "rcept_dt": "20250514",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250514000986",
+    "year": "2025",
+    "period": "1Q"
+   },
+   "subs": {
+    "CSA": {
+     "unit": "천원",
+     "assets": 62476.9,
+     "liab": 21835.0,
+     "rev": 2636.1,
+     "ni": -195.8,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "천원",
+     "assets": 6177.0,
+     "liab": 452.7,
+     "rev": 54.1,
+     "ni": -434.4,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "천원",
+     "assets": 211939.2,
+     "liab": 122555.1,
+     "rev": 4250.0,
+     "ni": 501.9,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "1H25",
+   "period": "1H",
+   "year": "2025",
+   "months": 6,
+   "report": {
+    "name": "반기보고서 (2025.06)",
+    "rcept_no": "20250813001276",
+    "rcept_dt": "20250813",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001276",
+    "year": "2025",
+    "period": "1H"
+   },
+   "subs": {
+    "CSA": {
+     "unit": "백만원",
+     "assets": 62123.0,
+     "liab": 23659.0,
+     "rev": 5312.0,
+     "ni": -119.0,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "백만원",
+     "assets": 5495.0,
+     "liab": 374.0,
+     "rev": 127.0,
+     "ni": -892.0,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "백만원",
+     "assets": 208890.0,
+     "liab": 126840.0,
+     "rev": 8918.0,
+     "ni": 1487.0,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "9M25",
+   "period": "9M",
+   "year": "2025",
+   "months": 9,
+   "report": {
+    "name": "[기재정정]분기보고서 (2025.09)",
+    "rcept_no": "20251113001038",
+    "rcept_dt": "20251113",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251113001038",
+    "year": "2025",
+    "period": "9M"
+   },
+   "subs": {
+    "CSA": {
+     "unit": "백만원",
+     "assets": 72265.0,
+     "liab": 31916.0,
+     "rev": 10051.0,
+     "ni": 1624.0,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "백만원",
+     "assets": 5150.0,
+     "liab": 335.0,
+     "rev": 205.0,
+     "ni": -1309.0,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "백만원",
+     "assets": 242563.0,
+     "liab": 157531.0,
+     "rev": 14949.0,
+     "ni": 2743.0,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "FY2025",
+   "period": "FY",
+   "year": "2025",
+   "months": 12,
+   "report": {
+    "name": "사업보고서 (2025.12)",
+    "rcept_no": "20260310002967",
+    "rcept_dt": "20260310",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002967",
+    "year": "2025",
+    "period": "FY"
+   },
+   "subs": {
+    "CAM": {
+     "unit": "백만원",
+     "assets": 5115.0,
+     "liab": 496.0,
+     "rev": null,
+     "ni": null,
+     "name": "PT Ciptadana Asset Management"
+    },
+    "CSA": {
+     "unit": "백만원",
+     "assets": 65229.0,
+     "liab": 23119.0,
+     "rev": 14749.0,
+     "ni": 2718.0,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "백만원",
+     "assets": 5078.0,
+     "liab": 346.0,
+     "rev": 666.0,
+     "ni": -1534.0,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "백만원",
+     "assets": 261638.0,
+     "liab": 173503.0,
+     "rev": 21621.0,
+     "ni": 3442.0,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "1Q26",
+   "period": "1Q",
+   "year": "2026",
+   "months": 3,
+   "report": {
+    "name": "분기보고서 (2026.03)",
+    "rcept_no": "20260514000990",
+    "rcept_dt": "20260514",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000990",
+    "year": "2026",
+    "period": "1Q"
+   },
+   "subs": {
+    "CAM": {
+     "unit": "백만원",
+     "assets": 5103.0,
+     "liab": 603.0,
+     "rev": 373.0,
+     "ni": -301.0,
+     "name": "PT Ciptadana Asset Management"
+    },
+    "CSA": {
+     "unit": "백만원",
+     "assets": 78649.0,
+     "liab": 35475.0,
+     "rev": 3393.0,
+     "ni": -640.0,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "백만원",
+     "assets": 15253.0,
+     "liab": 288.0,
+     "rev": 105.0,
+     "ni": -528.0,
+     "name": "Pinetree Securities Pte.Ltd."
+    },
+    "VN": {
+     "unit": "백만원",
+     "assets": 242984.0,
+     "liab": 149906.0,
+     "rev": 6186.0,
+     "ni": 419.0,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  },
+  {
+   "label": "1H26",
+   "period": "1H",
+   "year": "2026",
+   "months": 6,
+   "report": {
+    "name": "반기보고서 (2026.06)",
+    "rcept_no": "20260813001503",
+    "rcept_dt": "20260813",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001503",
+    "year": "2026",
+    "period": "1H"
+   },
+   "subs": {
+    "CAM": {
+     "unit": "백만원",
+     "assets": 4570.0,
+     "liab": 454.0,
+     "rev": 943.0,
+     "ni": -546.0,
+     "name": "PT Ciptadana Asset Management"
+    },
+    "CSA": {
+     "unit": "백만원",
+     "assets": 63855.0,
+     "liab": 22024.0,
+     "rev": 6362.0,
+     "ni": -671.0,
+     "name": "PT Ciptadana Sekuritas Asia"
+    },
+    "SG": {
+     "unit": "백만원",
+     "assets": 14822.0,
+     "liab": 245.0,
+     "rev": 268.0,
+     "ni": -1175.0,
+     "name": "Pinetree Securities Pte. Ltd."
+    },
+    "VN": {
+     "unit": "백만원",
+     "assets": 258728.0,
+     "liab": 162811.0,
+     "rev": 12054.0,
+     "ni": 1285.0,
+     "name": "Pinetree Securities Corporation"
+    }
+   }
+  }
+ ],
+ "history_skip": []
 }

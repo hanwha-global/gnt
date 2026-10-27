@@ -5,6 +5,8 @@
 - 지분율·출자: Open DART '타법인 출자현황'(최초취득일·최초취득금액·기초/증감/기말 장부가액·지분율, 백만원).
   타법인 출자현황에 없는 법인은 주석의 종속기업 지분율 표로 보완한다.
 - 대외보고 일정용: 최근 정기보고서 접수 목록(filed). build_deadlines.py가 공시 항목 완료 여부를 여기서 읽는다.
+- 기간 선택용 이력(history): 최근 HIST_YEARS개 사업연도의 정기보고서마다 같은 요약재무정보. 접수번호로 저장해 새 보고서·정정본만
+  원문을 받고, 표가 없는 보고서(분기보고서 등)는 history_skip에 적어 다시 받지 않는다.
 
 GitHub Actions에서 env DART_API_KEY(secrets)로 실행한다(hanwha-markets.yml 평일 2회, update-data.yml 주간).
 키가 없거나 표를 못 찾으면 기존 숫자를 그대로 두고 접수 목록(filed)만 고친다. 출자현황 호출이 모두 실패하면
@@ -46,6 +48,7 @@ def get(path, **params):
         return r.read()
 
 
+HIST_YEARS = 4  # 올해 포함
 MONTHS = {"1Q": 3, "1H": 6, "9M": 9, "FY": 12}
 REPRT_CODE = {"1Q": "11013", "1H": "11012", "9M": "11014", "FY": "11011"}  # Open DART 정기보고서 코드
 
@@ -260,6 +263,32 @@ def period_entry(rep, subs):
                      for k, v in sorted(subs.items())}}
 
 
+def build_history(key, reps, prev, docs, chosen, today):
+    """기간 선택용: 최근 HIST_YEARS개 사업연도 정기보고서마다 요약재무정보(오래된 것 → 최신). 받은 보고서는 다시 받지 않는다."""
+    old = {p["report"]["rcept_no"]: p for p in prev.get("history", [])}
+    for rep, subs in chosen:  # 이번에 받은 기본 기간은 그대로 쓴다
+        old[rep["rcept_no"]] = period_entry(rep, subs)
+    skip = set(prev.get("history_skip", []))
+    out = []
+    for r in reps:
+        if int(r["year"]) <= today.year - HIST_YEARS:
+            continue
+        if r["rcept_no"] not in old and r["rcept_no"] not in skip:
+            texts = docs.get(r["rcept_no"])
+            if texts is None:
+                texts = docs[r["rcept_no"]] = fetch_doc(key, r["rcept_no"])
+            subs = parse_summary(texts)
+            print(f"  이력 {r['report_nm'].strip()}: 요약재무정보 {', '.join(sorted(subs)) or '없음'}")
+            if subs:
+                old[r["rcept_no"]] = period_entry(r, subs)
+            elif texts:  # 원문은 받았는데 표가 없는 보고서만 건너뛴다(받기 실패는 다음에 다시)
+                skip.add(r["rcept_no"])
+        if r["rcept_no"] in old:
+            out.append(old[r["rcept_no"]])
+    out.sort(key=lambda p: (int(p["year"]), p["months"]))
+    return out, sorted(skip)
+
+
 def main():
     key = get_key("DART_API_KEY")
     if not key:
@@ -267,8 +296,10 @@ def main():
         return 0
     today = dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date()
     rows = json.loads(get("list.json", crtfc_key=key, corp_code=CORP_CODE, pblntf_ty="A", page_count=100,
-                          bgn_de=(today - dt.timedelta(days=550)).strftime("%Y%m%d"), end_de=today.strftime("%Y%m%d")))
-    reps = periodic_reports(rows.get("list", []))
+                          bgn_de=f"{today.year - HIST_YEARS}0101", end_de=today.strftime("%Y%m%d")))
+    all_reps = periodic_reports(rows.get("list", []))
+    since = (today - dt.timedelta(days=550)).strftime("%Y%m%d")
+    reps = [r for r in all_reps if r["rcept_dt"] >= since]
     filed = [{"year": r["year"], "period": r["period"], "name": r["report_nm"].strip(), "rcept_dt": r["rcept_dt"]} for r in reps]
     prev = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
     order = lambda r: (int(r["year"]), MONTHS[r["period"]])  # noqa: E731
@@ -289,10 +320,12 @@ def main():
         if subs:
             chosen.append((r, subs))
             break
+    history, skip = build_history(key, all_reps, prev, docs, chosen, today)
     if not chosen:
-        print("종속기업 요약재무정보 표를 찾지 못함 (숫자는 기존 파일 유지, 접수 목록만 갱신)")
-        if prev and prev.get("filed") != filed:
-            OUT.write_text(json.dumps({**prev, "filed": filed}, ensure_ascii=False, indent=1), encoding="utf-8")
+        print("종속기업 요약재무정보 표를 찾지 못함 (숫자는 기존 파일 유지, 접수 목록·이력만 갱신)")
+        upd = {**prev, "filed": filed, "history": history or prev.get("history", []), "history_skip": skip}
+        if prev and upd != prev:
+            OUT.write_text(json.dumps(upd, ensure_ascii=False, indent=1), encoding="utf-8")
         return 0
     chosen.sort(key=lambda x: order(x[0]))
     # 지분율·출자: 최신 보고서부터 이전 정기보고서로 내려가며 타법인 출자현황 → 주석 지분율 표 → 직전 파일 값
@@ -320,7 +353,7 @@ def main():
            "stakes": stakes, "stake_source": source,
            "invest": ({"report": report_info(invest_rep), "unit": "백만원, 주, %", "rows": invest} if invest_rep
                       else prev.get("invest") if invest else None),
-           "filed": filed}
+           "filed": filed, "history": history, "history_skip": skip}
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     for p in out["periods"]:
         print(f"{p['label']} {p['report']['name']}: " + " · ".join(f"{k} 자산 {v['assets']} 부채 {v['liab']} 수익 {v['rev']} 순이익 {v['ni']}" for k, v in p["subs"].items()))
