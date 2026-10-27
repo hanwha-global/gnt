@@ -241,17 +241,18 @@
     const b = (key && (state.data.brokerHist?.periods || []).find((p) => `${p.bsns_year}-${p.reprt_code}` === key)) || state.data.brokerRank;
     const rows = (b?.rows || []).filter((r) => r.equity_ofs != null).sort((x, y) => y.equity_ofs - x.equity_ofs);
     const rank = rows.findIndex((r) => r.name === HANWHA) + 1;
-    if (!rank) return null;
+    if (!rank && !key) return null; // 지난 기간에 당사 행이 없어도 표와 드롭다운은 남긴다(다른 기간으로 되돌릴 수 있게)
     const by = (k) => [...rows].filter((r) => r[k] != null).sort((x, y) => y[k] - x[k]);
     const cfs = by("equity_cfs").findIndex((r) => r.name === HANWHA) + 1;
     return { b, rows, rank, cfs, short: b.period.replace("보고서", ""), basis: `${b.as_of} · ${b.period} 별도` };
   }
 
   // ---------- 글로벌 ----------
-  function rankTable(rows, { unit, digits = 1, hw = () => false, limit = 0, mini = false, basis = "" }) {
+  // meta: 대신 붙일 기준·단위 줄(기간 드롭다운). 주면 기본 tmeta 줄을 쓰지 않는다(행의 단위 표기는 그대로)
+  function rankTable(rows, { unit, digits = 1, hw = () => false, limit = 0, mini = false, basis = "", meta = "" }) {
     const max = Math.max(...rows.map((r) => Math.abs(r.value ?? 0)), 1);
     const shown = limit ? rows.slice(0, limit) : rows;
-    return `${tmeta(basis, unit)}<table class="rank${mini ? " rank--mini" : ""}"><tbody>${shown.map((r, i) => {
+    return `${meta || tmeta(basis, unit)}<table class="rank${mini ? " rank--mini" : ""}"><tbody>${shown.map((r, i) => {
       const cls = hw(r) ? "is-hanwha" : r.korean ? "is-kr" : "";
       const tag = hw(r) ? '<span class="tag tag--hw">당사</span>' : r.korean ? `<span class="tag tag--kr">${mini ? "" : "한국계 · "}${esc(SHORT[r.korean] || r.korean)}</span>` : "";
       return `<tr class="${cls}"><td class="rank__no">${r.value == null ? "–" : i + 1}</td>
@@ -356,9 +357,9 @@
       // 기간 드롭다운은 rankTable의 기준 줄을 대신한다(같은 표 안은 전 사 같은 보고서)
       const finMeta = state.data.finHist?.periods?.length ? tmetaSel(perSel("fin", finOpts()), P ? `· 자본 ${P.bs}` : `· 자본 ${bsBasis()}`, "조원") : "";
       main = `<div class="card"><h3>자기자본 순위 (조원)</h3><p class="card__meta">${esc(bases.join(" · "))} · 출처 DART</p>
-        ${finMeta}${rankTable(firms.map((f) => ({ name: f.firm, value: f.equity == null ? null : f.equity / 1e6,
+        ${rankTable(firms.map((f) => ({ name: f.firm, value: f.equity == null ? null : f.equity / 1e6,
           note: f.net_income == null ? (P ? `${P.label} 보고서 없음` : "") : `자본 ${f.bs_basis || f.basis} · 순이익 ${eok(f.net_income)}억(${f.pl_basis || ""}) · 해외법인 ${state.data.domestic.entities.filter((e) => e.firm === f.firm && counted(e)).length}개` })),
-          { unit: finMeta ? "" : "조원", digits: 2, basis: finMeta ? "" : bsBasis(), hw: (r) => r.name === HANWHA })}</div>`;
+          { unit: "조원", digits: 2, basis: bsBasis(), meta: finMeta, hw: (r) => r.name === HANWHA })}</div>`;
       const br = brokerRank(state.per.rank);
       if (br) {
         const jo = (v) => (v == null ? "–" : `${fmt(v / 1e6, 2)}조`);
@@ -366,9 +367,9 @@
         const rankMeta = hist.length > 1 ? tmetaSel(perSel("rank", [{ v: "", l: `최신 (${state.data.brokerRank.period.replace("보고서", "")})` },
           ...hist.filter((p) => p.as_of !== state.data.brokerRank.as_of).map((p) => ({ v: `${p.bsns_year}-${p.reprt_code}`, l: `${p.as_of.slice(0, 7).replace("-", ".")} ${p.period.replace(/^\d{4} /, "").replace("보고서", "")}` }))]),
           `· ${br.b.as_of} 별도`, "조원") : "";
-        main += `<div class="card"><h3>국내 전체 증권사 자기자본 순위 (조원)</h3><p class="card__meta">DART ${esc(br.b.period)}를 낸 증권사 ${br.rows.length}곳 · 별도 자본총계 · 당사 ${br.rank}위(연결 ${br.cfs}위) · 매주 월요일 자동 계산 · 정기보고서가 없는 회사·외국계 지점은 빠짐${state.per.rank ? " · 지난 기간은 최신 순위에 든 회사 기준" : ""}</p>
-          ${rankMeta}${rankTable(br.rows.map((r) => ({ name: r.name, value: r.equity_ofs / 1e6, note: `연결 ${jo(r.equity_cfs)} · 자본금 ${jo(r.capital_ofs ?? r.capital_cfs)}` })),
-            { unit: rankMeta ? "" : "조원", digits: 2, basis: rankMeta ? "" : br.basis, hw: (r) => r.name === HANWHA })}</div>`;
+        main += `<div class="card"><h3>국내 전체 증권사 자기자본 순위 (조원)</h3><p class="card__meta">DART ${esc(br.b.period)}를 낸 증권사 ${br.rows.length}곳 · 별도 자본총계 · ${br.rank ? `당사 ${br.rank}위(연결 ${br.cfs}위)` : "당사 값 없음"} · 매주 월요일 자동 계산 · 정기보고서가 없는 회사·외국계 지점은 빠짐${state.per.rank ? " · 지난 기간은 최신 순위에 든 회사 기준" : ""}</p>
+          ${rankTable(br.rows.map((r) => ({ name: r.name, value: r.equity_ofs / 1e6, note: `연결 ${jo(r.equity_cfs)} · 자본금 ${jo(r.capital_ofs ?? r.capital_cfs)}` })),
+            { unit: "조원", digits: 2, basis: br.basis, meta: rankMeta, hw: (r) => r.name === HANWHA })}</div>`;
       }
     } else if (m.auto === "sec") {
       const us = state.data.us;
@@ -898,10 +899,10 @@
         return `<tr><td><b>${esc(e.label)}</b></td>${cols.map((per) => { const v = per.subs[e.key]?.ni; return `<td class="dcell">${divBar(v, max)}</td><td class="num ${signCls(v)}">${eok(v)}</td>`; }).join("")}
           <td class="num">${eok(hp.eq(s))}</td><td class="num ${signCls(roe(latest, s))}">${roe(latest, s) == null ? "–" : fmt(roe(latest, s), 1)}</td><td class="num">${e.stake == null ? "–" : fmt(e.stake, e.stake % 1 ? 2 : 0)}</td></tr>`;
       }).join("")}
-      <tr class="is-total"><td><b>4사 합계(100%)</b></td>${cols.map((per) => { const v = hp.total(per).ni; return `<td></td><td class="num ${signCls(v)}"><b>${eok(v)}</b></td>`; }).join("")}<td class="num"><b>${eok(tl.equity)}</b></td><td class="num ${signCls(tl.roe)}"><b>${tl.roe == null ? "–" : fmt(tl.roe, 1)}</b></td><td></td></tr>
+      <tr class="is-total"><td><b>${ents.length}사 합계(100%)</b></td>${cols.map((per) => { const v = hp.total(per).ni; return `<td></td><td class="num ${signCls(v)}"><b>${eok(v)}</b></td>`; }).join("")}<td class="num"><b>${eok(tl.equity)}</b></td><td class="num ${signCls(tl.roe)}"><b>${tl.roe == null ? "–" : fmt(tl.roe, 1)}</b></td><td></td></tr>
       ${tl.own != null ? `<tr class="is-total"><td><b>지배지분 합계</b></td>${cols.map((per) => { const v = hp.total(per).own; return `<td></td><td class="num ${signCls(v)}"><b>${eok(v)}</b></td>`; }).join("")}<td></td><td></td><td></td></tr>` : ""}
       </tbody></table></div>
-      <p class="src">자본 = 자산 − 부채(${esc(latest.label)} 말) · ROE = 순이익 × 12/${latest.months}개월 ÷ 기말 자본(4사 합계는 자본 가중) · 지배지분 = 순이익 × 당사 지분율(DART 타법인출자현황${state.per.hw ? ", 지분율은 최신 공시값" : ""})${tf?.roe != null ? ` · ${esc(fy.label)} 4사 ROE ${fmt(tf.roe, 1)}%` : ""} · 새 정기보고서가 공시되면 자동으로 바뀝니다</p></div>`;
+      <p class="src">자본 = 자산 − 부채(${esc(latest.label)} 말) · ROE = 순이익 × 12/${latest.months}개월 ÷ 기말 자본(${ents.length}사 합계는 자본 가중) · 지배지분 = 순이익 × 당사 지분율(DART 타법인출자현황${state.per.hw ? ", 지분율은 최신 공시값" : ""})${tf?.roe != null ? ` · ${esc(fy.label)} 합계 ROE ${fmt(tf.roe, 1)}%` : ""} · 새 정기보고서가 공시되면 자동으로 바뀝니다</p></div>`;
   }
 
   function todoCard(hw) {
@@ -1062,7 +1063,9 @@
       ...[...st.periods].reverse().filter((p) => p !== sfRep).map((p) => ({ v: p, l: p.startsWith("1H") ? `${p} 반기 (연환산)` : p }))] : null;
     // 자본이 아주 작은 법인(예: 토스 미국 중간지주)이 막대 눈금을 끌지 않도록 30%에서 자른다
     const max = Math.min(30, Math.max(...rows.map((r) => Math.abs(r.x.roe)), 1));
-    const dartFirms = new Set(state.data.domestic.firms.filter((f) => f.latest && (!per || st.firms?.[f.firm]?.reports?.[per])).map((f) => f.firm));
+    // 기간을 고르면 그 기간 보고서를 받은 회사(토스 감사보고서 포함) 중 ROE가 없는 회사를 '제외'로 적는다
+    const dartFirms = new Set(per ? FIRM_ORDER.filter((f) => st.firms?.[f]?.reports?.[per])
+      : state.data.domestic.firms.filter((f) => f.latest).map((f) => f.firm));
     const missing = FIRM_ORDER.filter((f) => dartFirms.has(f) && !rows.some((r) => r.f === f)).map((f) => SHORT[f] || f);
     // 네트워크 법인 중 요약재무 표에 없는 법인(예: 연말 직전 취득)
     const cnt = (f) => state.data.domestic.entities.filter((e) => e.firm === f && counted(e) && e.relation === "종속(자회사)").length;
@@ -1410,7 +1413,7 @@
       const y = window.scrollY;
       route();
       window.scrollTo(0, y);
-      document.querySelector(`select.psel[data-per="${sel.dataset.per}"]`)?.focus({ preventScroll: true });
+      document.querySelector(`.section:not([hidden]) select.psel[data-per="${sel.dataset.per}"]`)?.focus({ preventScroll: true });
     });
     window.addEventListener("hashchange", route);
     if (!location.hash) {

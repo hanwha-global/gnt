@@ -41,6 +41,7 @@ LABEL = {"11011": "사업보고서", "11012": "반기보고서", "11013": "1분�
 END = {"11011": (12, 31, 90), "11014": (9, 30, 45), "11012": (6, 30, 45), "11013": (3, 31, 45)}
 # DART 정식 한글 이름 → 화면 이름(대시보드 다른 표와 같게)
 DISPLAY = {"케이비증권": "KB증권", "아이비케이투자증권": "IBK투자증권", "아이엠증권": "iM증권"}
+HOME = "한화투자증권"
 MIN_ROWS = 20  # 대형사가 대부분 들어 있는 기간만 쓴다
 
 
@@ -148,11 +149,12 @@ def history(key, res, today=None):
         if (year, code) in have:
             continue
         got = collect(key, (year, code), cands=cands, min_rows=max(10, len(cands) // 2))
-        if got:
+        # 호출 오류가 있었거나 당사 행이 빠진 기간은 저장하지 않는다(저장한 기간은 다시 받지 않으므로 다음 실행에서 다시 받게)
+        if got and not got["errors"] and any(r["name"] == HOME for r in got["rows"]):
             have[(year, code)] = slim(got)
             print(f"지난 기간 {got['period']}: {len(got['rows'])}곳")
         else:
-            print(f"지난 기간 {year} {LABEL[code]}: 읽은 회사가 적어 건너뜀")
+            print(f"지난 기간 {year} {LABEL[code]}: " + (f"오류 {len(got['errors'])}건, 다음 실행에서 다시 받음" if got else "읽은 회사가 적어 건너뜀"))
     keep = {(y, c) for y, c, _ in periods(today, years=HIST_YEARS, limit=99)} | {(res["bsns_year"], res["reprt_code"])}
     rows = sorted((p for k, p in have.items() if k in keep), key=lambda p: p["as_of"], reverse=True)
     HIST.write_text(json.dumps({"updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -192,7 +194,7 @@ def main():
     if not res:
         print(f"주요계정을 읽은 증권사가 {MIN_ROWS}곳 미만: 저장하지 않음")
         return
-    home = "한화투자증권"
+    home = HOME
     rows = res["rows"]
     print(f"기준: {res['period']}({res['as_of']}) · 후보 {res['candidates']}곳 중 {len(rows)}곳 · 오류 {len(res['errors'])}건")
     print(table("자기자본(별도)", rows, lambda r: r.get("equity_ofs"), home))

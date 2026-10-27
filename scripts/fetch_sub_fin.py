@@ -303,9 +303,10 @@ def pick(subs, seeds):
     return picked
 
 
-def summarize(subs, seeds):
-    """해외 현지법인(기준 데이터의 운영 법인)과 맞는 행만 합산한다. 부동산·펀드 SPV, ETF 등은 표에 남기되 제외."""
-    picked = pick(subs, seeds)
+def summarize(subs, seeds, match=pick):
+    """해외 현지법인(기준 데이터의 운영 법인)과 맞는 행만 합산한다. 부동산·펀드 SPV, ETF 등은 표에 남기되 제외.
+    match: 행과 기준 법인을 짝짓는 함수(지난 보고서는 옛 이름까지 짝짓는 fetch_sub_trend의 matcher를 넘긴다)."""
+    picked = match(subs, seeds)
     # 중간지주 행(별도재무제표 기준) 자본에는 자회사 투자가 들어 있다. 자회사가 함께 합산되면 자회사 자본 × 지분율을
     # 중간지주 자본 한도에서 빼 한 번만 센다. 순이익 속 자회사 배당은 공시로 가를 수 없어 그대로 둔다
     rows = {name: s for name, s in subs.items() if s["seed_name"]}

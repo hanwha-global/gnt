@@ -193,9 +193,10 @@ def entity_meta():
 
 def period_roe(rows, seeds, per):
     """그 보고서의 가중평균 ROE(국내 탭 기간 선택용). sub_fin.json과 같은 규칙(fetch_sub_fin.summarize: 사이트 네트워크 법인만,
-    중간지주의 자회사 몫 제외)을 그 기간 표에 적용하고, 반기는 순이익을 연환산(× 2)한다. 법인 목록은 현재 네트워크 기준."""
+    중간지주의 자회사 몫 제외)을 그 기간 표에 적용하고, 반기는 순이익을 연환산(× 2)한다. 법인 목록은 현재 네트워크 기준이고,
+    옛 이름으로 실린 법인도 5개년 추이 표와 같게(renamed) 짝짓는다."""
     rows = {n: dict(v) for n, v in rows.items() if v.get("equity") is not None and v.get("ni") is not None}
-    r = summarize(rows, seeds) if rows else None
+    r = summarize(rows, seeds, match=lambda rs, sd: renamed(rs, pick(rs, sd), sd)) if rows else None
     if not r or not r["n"]:
         return None
     months = 6 if per.startswith("1H") else 12

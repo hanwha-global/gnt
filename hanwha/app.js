@@ -97,17 +97,19 @@ function renderPL(D0, ents, reg) {
     ...[...H].reverse().map((p) => ({ v: p.label, l: `${p.label} ${kindOf(p)}보고서` }))].map((o) => `<option value="${esc(o.v)}"${o.v === pick ? " selected" : ""}>${esc(o.l)}</option>`).join("")}</select>
     ${pick ? " · 비교 열은 그 앞 사업보고서 · 지분율은 최신 공시값" : " · 기간을 고르면 아래 실적·재무상태 표가 그 보고서 기준으로 바뀝니다"}</div>` : "";
   const ctrlL = sum("l", "ni", true), ctrlF = sum("f", "ni", true);
-  const prof = E.filter((e) => (e.l?.ni ?? 0) > 0);
+  // 고른 기간에 아직 없던 법인(취득 전)은 표·법인 수에서 뺀다. 기본(최신) 화면은 4사 모두 있다
+  const shown = E.filter((e) => e.l || e.f), nS = `${shown.length}사`, hidden = E.filter((e) => !e.l && !e.f);
+  const prof = shown.filter((e) => (e.l?.ni ?? 0) > 0);
   // FY 손익이 없는 법인: 재무상태만 있으면 그해 말 취득, 행 자체가 없으면 공시에서 빠진 것
   const acq = F ? E.filter((e) => e.f && e.f.ni == null) : [], gone = F ? E.filter((e) => !e.f) : [];
   const noF = [...acq, ...gone];
   const noFtxt = [acq.length ? `${acq.map(lab).join(", ")} 손익 미포함 (취득 시점)` : "", gone.length ? `${gone.map(lab).join(", ")} 공시에 없음` : ""].filter(Boolean).join(" · ");
   const kpis = [
-    [`${L.label} 영업수익 (4사 합산)`, eok(sum("l", "rev")), F ? `${F.label} ${eok(sum("f", "rev"))}` : ""],
+    [`${L.label} 영업수익 (${nS} 합산)`, eok(sum("l", "rev")), F ? `${F.label} ${eok(sum("f", "rev"))}` : ""],
     [`${L.label} 지배지분 순이익`, eok(ctrlL), `100% 기준 ${eok(sum("l", "ni"))}`, ctrlL],
-    [`${L.label} ${L.months === 12 ? "" : "연환산 "}ROE (4사)`, pct1(roe("l", L)), F ? `${F.label} ${pct1(roe("f", F))} · 기말 자본 기준` : "", roe("l", L)],
+    [`${L.label} ${L.months === 12 ? "" : "연환산 "}ROE (${nS})`, pct1(roe("l", L)), F ? `${F.label} ${pct1(roe("f", F))} · 기말 자본 기준` : "", roe("l", L)],
     F && [`${F.label} 지배지분 순이익`, eok(ctrlF), noF.length ? noFtxt : `100% 기준 ${eok(sum("f", "ni"))}`, ctrlF],
-    [`${L.label} 흑자 법인`, `${prof.length} / ${E.length}`, prof.map(lab).join(", ") || "없음"],
+    [`${L.label} 흑자 법인`, `${prof.length} / ${shown.length}`, prof.map(lab).join(", ") || "없음"],
   ].filter(Boolean);
   let h = `${psel}<div class="grid kpis">${kpis.map(([l, v, s, n]) => `<div class="card kpi"><div class="l">${l}</div><div class="v ${n == null ? "" : n < 0 ? "neg" : ""}">${v}</div><div class="sub">${s || ""}</div></div>`).join("")}</div>`;
   h += `<div class="sub">DART 정기보고서 연결재무제표 주석 「종속기업 요약재무정보」(법인 단위, 연결 조정 전) · 지분율은 「타법인 출자현황」 · 내부 계획·현지 결산은 쓰지 않습니다.</div>`;
@@ -118,7 +120,7 @@ function renderPL(D0, ents, reg) {
   h += `<h2>법인별 실적 (DART 공시)</h2><div class="card wrap">${tm(`${F ? `${F.label} ${F.report.name} · ` : ""}${L.label} ${L.report.name}`, "백만원, ROE %")}
     <table class="mt"><thead><tr><th rowspan="2">법인 (지분율)</th>${F ? `<th colspan="3" class="c">${F.label} (12개월)</th>` : ""}<th colspan="4" class="c">${L.label} (${lm} 누적)</th><th rowspan="2" style="min-width:150px">${L.label} 순이익 <span class="sub">(−　0　+)</span></th></tr>
     <tr>${F ? "<th>영업수익</th><th>순이익</th><th>ROE</th>" : ""}<th>영업수익</th><th>순이익</th><th>지배지분 순이익</th><th>ROE${L.months === 12 ? "" : " (연환산)"}</th></tr></thead><tbody>`;
-  for (const e of E) {
+  for (const e of shown) {
     const f = e.f || {}, l = e.l || {};
     const na = !e.f ? "공시 없음" : f.ni == null ? "취득 전·손익 미연결" : "";
     h += `<tr><td><b>${lab(e)}</b> <span class="sub">${(e.stake * 100).toFixed(e.stake < 1 && e.stake > 0.999 ? 2 : 0)}%</span></td>
@@ -126,21 +128,21 @@ function renderPL(D0, ents, reg) {
       <td>${fmt(l.rev)}</td><td class="${cls(l.ni)}">${fmt(l.ni)}</td><td class="${cls(l.ni)}">${l.ni == null ? "–" : fmt(l.ni * e.stake)}</td><td class="${cls(l.roe)}">${pct1(l.roe)}</td>
       <td>${dbar(l.ni, mx)}</td></tr>`;
   }
-  h += `<tr class="tot"><td><b>4사 합산 (100%)</b></td>${F ? `<td>${fmt(sum("f", "rev"))}</td><td class="${cls(sum("f", "ni"))}">${fmt(sum("f", "ni"))}</td><td>${pct1(roe("f", F))}</td>` : ""}
+  h += `<tr class="tot"><td><b>${nS} 합산 (100%)</b></td>${F ? `<td>${fmt(sum("f", "rev"))}</td><td class="${cls(sum("f", "ni"))}">${fmt(sum("f", "ni"))}</td><td>${pct1(roe("f", F))}</td>` : ""}
     <td>${fmt(sum("l", "rev"))}</td><td class="${cls(sum("l", "ni"))}">${fmt(sum("l", "ni"))}</td><td class="${cls(ctrlL)}"><b>${fmt(ctrlL)}</b></td><td>${pct1(roe("l", L))}</td><td></td></tr>`;
-  h += `</tbody></table></div><div class="sub">ROE = 누적 순이익 × (12 ÷ 개월 수) ÷ 기말 자본(자산 − 부채)${L.months !== 12 ? `, ${L.label}은 × ${Number.isInteger(12 / L.months) ? 12 / L.months : `12/${L.months}`}` : ""}. 지배지분 순이익 = 순이익 × 지분율. ${acq.length ? `${acq.map(lab).join(", ")}은 ${F.label} 말 취득이라 사업보고서에 재무상태만 있고 손익은 없습니다.` : ""}${gone.length ? ` ${gone.map(lab).join(", ")}은 ${F.label} 요약재무정보에 없습니다.` : ""}</div>`;
+  h += `</tbody></table></div><div class="sub">ROE = 누적 순이익 × (12 ÷ 개월 수) ÷ 기말 자본(자산 − 부채)${L.months !== 12 ? `, ${L.label}은 × ${Number.isInteger(12 / L.months) ? 12 / L.months : `12/${L.months}`}` : ""}. 지배지분 순이익 = 순이익 × 지분율. ${hidden.length ? `${hidden.map(lab).join(", ")}은 ${L.label} 요약재무정보에 없어(취득 전) 표에서 뺐습니다. ` : ""}${acq.length ? `${acq.map(lab).join(", ")}은 ${F.label} 말 취득이라 사업보고서에 재무상태만 있고 손익은 없습니다.` : ""}${gone.length ? ` ${gone.map(lab).join(", ")}은 ${F.label} 요약재무정보에 없습니다.` : ""}</div>`;
 
   // 재무상태
   h += `<h2>재무상태 (DART 공시)</h2><div class="card wrap">${tm(`${F ? `${F.label} 말 · ` : ""}${L.label} 말`, "백만원")}<table class="mt"><thead><tr><th rowspan="2">법인</th>${F ? `<th colspan="3" class="c">${F.label} 말</th>` : ""}<th colspan="3" class="c">${L.label} 말</th>${F ? "<th rowspan=\"2\">자본 증감</th>" : ""}</tr>
     <tr>${(F ? ["자산", "부채", "자본"] : []).concat(["자산", "부채", "자본"]).map((x) => `<th>${x}</th>`).join("")}</tr></thead><tbody>`;
   const bs = (r) => [r?.assets, r?.liab, r?.eq].map((v) => `<td class="${cls(v)}">${fmt(v)}</td>`).join("");
-  for (const e of E) {
+  for (const e of shown) {
     const d = e.l?.eq != null && e.f?.eq != null ? e.l.eq - e.f.eq : null;
     h += `<tr><td><b>${lab(e)}</b></td>${F ? bs(e.f) : ""}${bs(e.l)}${F ? `<td class="${cls(d)}">${d == null ? "–" : `${d > 0 ? "+" : ""}${fmt(d)}`}</td>` : ""}</tr>`;
   }
   const tot = (side) => ["assets", "liab", "eq"].map((m) => `<td>${fmt(sum(side, m))}</td>`).join("");
   const dd = both((e) => e.l?.eq, (e) => e.f?.eq), dT = dd ? dd[0] - dd[1] : null;
-  h += `<tr class="tot"><td><b>4사 합산</b></td>${F ? tot("f") : ""}${tot("l")}${F ? `<td class="${cls(dT)}">${dT == null ? "–" : `${dT > 0 ? "+" : ""}${fmt(dT)}`}</td>` : ""}</tr></tbody></table></div>`;
+  h += `<tr class="tot"><td><b>${nS} 합산</b></td>${F ? tot("f") : ""}${tot("l")}${F ? `<td class="${cls(dT)}">${dT == null ? "–" : `${dT > 0 ? "+" : ""}${fmt(dT)}`}</td>` : ""}</tr></tbody></table></div>`;
 
   // 법인별 주력 사업과 특이사항: entities.json의 공개 정보 문장만 쓴다(내부 재무·분석은 넣지 않는다)
   if (E.some((e) => e.focus || e.notes?.length)) {
@@ -155,12 +157,12 @@ function renderPL(D0, ents, reg) {
     <div class="card"><b>공시 원문</b><ul class="notes">${(pick ? [F, L].filter(Boolean) : D0.periods || []).map((p) => `<li><b>${esc(p.label)}</b> <a href="${esc(p.report.url)}" target="_blank" rel="noopener">${esc(p.report.name)}</a> <span class="sub">접수 ${ymd(p.report.rcept_dt)}</span></li>`).join("")}
       ${D.invest ? `<li><b>출자</b> <a href="${esc(D.invest.report.url)}" target="_blank" rel="noopener">${esc(D.invest.report.name)}</a> 타법인 출자현황 <span class="sub">접수 ${ymd(D.invest.report.rcept_dt)}</span></li>` : ""}</ul></div>
     <div class="card"><b>자동 갱신 (평일 07:30·16:30, 토큰 없음)</b><ul class="notes">
-      <li><b>다음 공시</b> ${next ? `${esc(nextName)} (제출 기한 ${esc(next.due)})가 DART에 올라오면 다음 확인 때 ${esc(L.label)} → 새 기간으로 바뀌고 ROE 연환산 배수도 따라 바뀝니다.` : "다음 정기보고서가 올라오면 자동으로 바뀝니다."}</li>
+      <li><b>다음 공시</b> ${next ? `${esc(nextName)} (제출 기한 ${esc(next.due)})가 DART에 올라오면 다음 확인 때 ${esc(D0.periods.at(-1).label)} → 새 기간으로 바뀌고 ROE 연환산 배수도 따라 바뀝니다.` : "다음 정기보고서가 올라오면 자동으로 바뀝니다."}</li>
       <li><b>사업보고서</b> FY 열은 가장 최근 사업보고서(매년 3월 공시)로 바뀝니다. 엑셀·1장 보고서도 공시 기준이 바뀐 날 다시 만듭니다.</li>
       <li><b>공개 범위</b> 공시 자료만 씁니다. 사업부문별 손익·계획 대비·현지 결산은 공시되지 않아 넣지 않습니다.</li></ul></div></div>`;
   h += `<h2>다운로드</h2><div class="dl" id="dl"></div>`;
   $("#pl").innerHTML = h;
-  $("#pl-per")?.addEventListener("change", (ev) => { pick = ev.target.value; renderPL(D0, ents, reg); fit(); });
+  $("#pl-per")?.addEventListener("change", (ev) => { pick = ev.target.value; renderPL(D0, ents, reg); $("#pl-per")?.focus(); fit(); });
   document.querySelector('nav button[data-tab="pl"]').textContent = `해외자회사 실적 (${L.label} 공시)`;
   // 다운로드 파일은 저장소에 있을 때만 버튼을 보여 주고, 기준 기간은 파일을 만든 기준(basis.json)에서 읽는다
   const files = [["downloads/해외자회사_공시실적.xlsx", "엑셀 (공시 실적)"], ["downloads/해외자회사_공시실적_1장보고서.docx", "1장 보고서 (Word)"], ["downloads/해외자회사_공시실적_1장보고서.pdf", "1장 보고서 (PDF)"]];
