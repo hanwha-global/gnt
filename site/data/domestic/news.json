@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T18:12+09:00",
+ "updated_at": "2026-10-27T23:46+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "sources": [
   "연합뉴스",
@@ -58,6 +58,16 @@
   "Jakarta Globe"
  ],
  "items": [
+  {
+   "date": "2026-10-27",
+   "time": "17:58",
+   "title": "[단독]빈그룹 아리랑본드에 2300억원 몰려…신한證베트남 단독 주관",
+   "src": "머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4yRXhvdGFuWnF5QkxVRUFmdUU3YnpKX2NsU0dFOTVGSnBmZksxLUF6ZUVzbVZad0FEOFdsOGY0VWtwSnhLcGp4cHpTYTMtNGdrY2Z2LUx3b1hUdlB6aGRwWkNXZndfYmZlbFo3VHBn0gFuQVVfeXFMTjJFeG90YW5acXlCTFVFQWZ1RTdiekpfY2xTR0U5NUZKcGZmSzEtQXplRXNtVlp3QUQ4V2w4ZjRVa3BKeEtwanhwelNhMy00Z2tjZnYtTHdvWFR2UHpoZHBaQ1dmd19iZmVsWjdUcGc?oc=5",
+   "firms": [
+    "신한투자증권"
+   ]
+  },
   {
    "date": "2026-10-27",
    "time": "17:38",
@@ -146,6 +156,16 @@
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhcnV3dzZQQ1hNZWxUZXU4Ty1yZHptbUZSV240cXgyT1djTXA4SFpwdFNHM1hEQ09WZEU5Yjdfemo3T09PcThabVhXVk04bVdsbkE?oc=5",
    "firms": [
     "키움증권"
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "time": "16:00",
+   "title": "한투, 글로벌 퀀트 운용사 ‘AQR’과 맞손… 해외 대체투자 공략",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1peEtEXzd3Y1FnbUV4cXlZaFBDb1Bwcm44a0ZTOXhnMTJnaUt3SUplMHJZVVhjLWhFQ21abmlsXzJ2aElQaU5wcG9aV2F3V3VUOFHSAVNBVV95cUxNbzRDYWJGYWhfTzUxUENyUEMtd1YwSXdpRVJPdGtjeUQ3ZjBIWVlnYkZlQmRxZGZCbjhSemd1Rmt1dHp1eXpNekRGYkQ1aTloMGdTdw?oc=5",
+   "firms": [
+    "한국투자증권"
    ]
   },
   {
@@ -308,16 +328,6 @@
   {
    "date": "2026-09-11",
    "time": "16:00",
-   "title": "삼성증권 \"HD현대중, 엔진 증설 예상↑·SMR 진출 예상외\"",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92eWtrX2pMU1RRZ3JqWkNaUkpIVklfWlNfOGhSc3VNUnJoVVlnZURlN0I2UllkR1FfTVZ4XzNHTFc5dEROY3J6RE4xemIxb0R3aWhMTHh0VGF6WmfSAWBBVV95cUxQSGhKTXA4amQyUTQzMTM0TFZ2Y0pTQVBCUDQ3WXJfSmM1dW80U3FfcUJWaEFmX1lGUEhQcElqb1Nlb0FmcThJb3FfclZkTnNKaXltTC1Eb2h0RUtGc05ZR1o?oc=5",
-   "firms": [
-    "삼성증권"
-   ]
-  },
-  {
-   "date": "2026-09-11",
-   "time": "16:00",
    "title": "금감원, 해외주식 매매 관련 토스·메리츠·미래에셋증권 '경영유의'",
    "src": "뉴시스",
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKMGlwQjBDb3NrZ0VHVG1SVkxLclJSejlXdEI0T3NjY0JDSjBUS04wS1BIYUE3ZG5yZkVyR21jbGM3ZlRRNG4tcGNqNWZaczg5YWxhcXZjTlp0MXZ6NGFqQdIBeEFVX3lxTE92TjFpc0owRG5IdVdqQXpkR2FEV3ZuWENzSWJLNFo4YnNIdkRQUEMtUVBlMFdTTDRMUG9JbFlxUEVwQkhwVTVFdUkwaUNDNE5UcTVVNmRNT3B2bFMzYTFpMWV5Sm1UVG5ib2gtNEpRRmpMQmNBd0EweA?oc=5",
@@ -334,6 +344,24 @@
    "firms": [
     "미래에셋증권"
    ]
+  },
+  {
+   "date": "2026-09-11",
+   "time": "16:00",
+   "title": "삼성증권 \"HD현대중, 엔진 증설 예상↑·SMR 진출 예상외\"",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92eWtrX2pMU1RRZ3JqWkNaUkpIVklfWlNfOGhSc3VNUnJoVVlnZURlN0I2UllkR1FfTVZ4XzNHTFc5dEROY3J6RE4xemIxb0R3aWhMTHh0VGF6WmfSAWBBVV95cUxQSGhKTXA4amQyUTQzMTM0TFZ2Y0pTQVBCUDQ3WXJfSmM1dW80U3FfcUJWaEFmX1lGUEhQcElqb1Nlb0FmcThJb3FfclZkTnNKaXltTC1Eb2h0RUtGc05ZR1o?oc=5",
+   "firms": [
+    "삼성증권"
+   ]
+  },
+  {
+   "date": "2026-09-10",
+   "time": "16:00",
+   "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5",
+   "firms": []
   },
   {
    "date": "2026-09-10",
@@ -364,14 +392,6 @@
    "firms": [
     "삼성증권"
    ]
-  },
-  {
-   "date": "2026-09-10",
-   "time": "16:00",
-   "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5",
-   "firms": []
   },
   {
    "date": "2026-09-09",

@@ -1,10 +1,18 @@
 {
- "updated_at": "2026-10-27T18:12+09:00",
+ "updated_at": "2026-10-27T23:46+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
+    {
+     "date": "2026-10-27",
+     "time": "18:56",
+     "title": "[시사플랫폼] “한국은행, 금리를 어느 정도 속도로 올릴 지 고민할 것”",
+     "src": "KBS 뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE95SXY0LUIweGt1TUVlUTBZRFV0TVAxNGNPZzhLWml6RHd5NjZLMUJtbDR6MFlJaDl3UFdCYUNnZGlsbHJ5QjRCdmV0SkZBZ3ZkSFlNYk1kMzdXb1U?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-10-27",
      "time": "15:51",
@@ -18,15 +26,7 @@
      "time": "11:12",
      "title": "코스피, 4%대 급등세 지속…외국인·기관 쌍끌이 순매수",
      "src": "연합뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOb2Y2bmU2WVFESjd3ZzFLSEJHNU9mSEFPMlRST1lrVEV5Q0djU0NNQzgwT2d3b19haFVxeFo0WkZPYVB6TVExSjBDT0RXWUVqWUpMc3JYZjJJcjdiRUI2TNIBYEFVX3lxTFBOb2Y2bmU2WVFESjd3ZzFLSEJHNU9mSEFPMlRST1lrVEV5Q0djU0NNQzgwT2d3b19haFVxeFo0WkZPYVB6TVExSjBDT0RXWUVqWUpMc3JYZjJJcjdiRUI2TA?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "16:23",
-     "title": "“코스피, 급락후 왜 반등 안 해?”…5500선 밑으로 ‘뚝’ 외국인 매도 영향",
-     "src": "매일경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HZWdNNDJoTzZjQzdZenNvUEVpRE5CQ0toNFQ0NEgtem10NWpYSU1fcTBnczE2MW1XbzJER1R0OGh6UXRSU1QtN19HZXpQSWhaSVE?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmMndqYm91UWo2dms1ZUhpRWFsVFJKYzFrMjE0SGRPNGltcGVEcUM1Ri1UZGd2bkdRZ0FzSFZjSHBxTGgzQ2ZiUmZ6RUZDRmpPckpDdElZb0lPOGfSAWBBVV95cUxQTm9mNm5lNllRREo3d2cxS0hCRzVPZkhBTzJUUk9Za1RFeUNHY1NDTUM4ME9nd29fYWhVcXhaNFpGT2FQek1RMUowQ09EV1lFallKTHNyWGYySXI3YkVCNkw?oc=5",
      "priority": false
     }
    ]
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-10-27",
-     "time": "17:13",
-     "title": "Global Market: JGB yields climb as investors await BOJ, Fed policy decisions",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQWdxZjJhd3lZWElnRGdybF90RUZNcGFsOGNJdjJTYl9Fc3lTNmZTS3V0eWMtZ3pkUktaX040endCVXBuZzJCUmZvajk3TG9Gbl9wa2JCOHFQZGFGZVk3dGhOX19EbGF4SnRsWm9ndGNBaDhTQmV0cUpucmRza2JGVGZiZU1IR05mVTExSEtVbVpQQWVURmZ3TVV1bVNrVGh4MjQ5ckNUOURYck84aVlEczlWMWRlQW9JMDB0cUlEcXdoVnA0cnFod1BDMUZsaGMwTktkbTd1U0w0WmFVZFhnVHJFWXB2Z9IB6wFBVV95cUxQMkViMUdOVlptY3ZQb3E4VlBQRDlvRVJ5bFV1dVF2VUJWWktWblktME84WmhBU1paS3dxRnExemxuLUNMRlkyVS14UDQ1ZTRmbDdoSVZlVW9Pc3o1LURUbUZQeTlYQ3JrV3pWZnJRZjdZc0JVb0JDeHE0RUpqMUJBWFB3d1VHZmk5cHh6Z0ZYaEllTld1Z0V3d241akpKenVDNUhWak1jYlk2aFBIaDBSZzBRRWNGbjJndXhYbkhILXF2MEw3X21QZTFZWUs0amUzYi1DZFlkOWtYZzFkaEZOdHI4WnVJV1BMdjZr?oc=5",
+     "time": "20:06",
+     "title": "Fed expected to hold rates steady, but Warsh may point way to more hikes",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9DeEN1Q0lOYXdvZ1RhMGVYWm5Fcm1jU3ZEWTR4M3lCdXBQdkJ3WkJRS0VKbGFOVkpfUG8tbHFNb05yenRtRnJfMUZLV3hQdFVxZGxmdUI1OWt2d2xfSWRXYWd2OGEzUFIxelJDRnliOVJ6MHNXTk50VDh30gF_QVVfeXFMUFhDd2V2SDNUb0F3OWpneFhXVk90eDlFY2dyNVVLVEVhU2c4Z3d5d211RFBiMWZrUk5ZXzdRc0w3MGEzVTFCV0tKYjFuTWN1aklNRkZJTmJFc0l2VHFMaklvTUFRQWlqUGp2RFhLVklrRGl5NjJGLVVuM0lfTDlaNA?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-27",
-     "time": "16:39",
-     "title": "Hike or hold: Fed chief Warsh faces another tough choice on rate decision",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYmdycXoxQUdmWUFNT01Yalk0SW41M1FTNzY5SU1zZWw4M3VjS2RodnBQYTdaSkUwNDdFdHo1SlFBbDB4SlhJY3d1QkpuTElubVhoUllSUVFOUHBPdVJiaUt6MzlRS3JaZzR4NXBSQVZ0TDhZVTk1SWIwWEVxLWxkNVhVLTctTjl3ajl3WFlPWTZSS1V4emJjeXpGakNhUFVwcHhrbzJtbFUtY0dYX1BVNzIzYWVta3B1M0tkdQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-27",
-     "time": "14:26",
+     "time": "19:28",
      "title": "Gold Steadies Above $4,000 With Fed Rate Decision in Focus",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLTRVUHViYXZZWTg4WHdFSXgxV1ZMS2FqdHgtUUxQSlJxN0JzbG5ZNXdOVTJFMUR2VmEtaU9MUGl5T2VXUHg0YmliUFdIOEIzVjhYdHNmUmo2aXVtMll3eGp6WkJCTVRtUl9SQmd0NmFTZXBma1VrVDNXZDVSc3V4M3hrVlFFeU9iV3VmNDhGM2FVQnRvZnA1bFBpSjRfZmRYeGJDX2ZWVEk4OXhE?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
+     "time": "19:14",
+     "title": "JPMorgan’s Michele Sees US Bonds Returning 7%-8% Over 12 Months",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSFJXdzFNS0FTUFFCd05KWHZOSS1WTkM0eENVendnM0pOTzJxM0JZTWNTdmwwdVVyNTQtNXFhcEZoSVA3SWdaM3dkVHdHZ2lCOWktc0kxanBkYWFGQXdTYWhLaGk5NUJjSjVuOE9WeFQ3THUwYm5iMTRvQ1hzMm5VbzN4WVlNLWE5d0c4NU44Xzh3b2xjX0hpNmFHOU9LaTNlWEJNSFUtWmZKSjlOanBB?oc=5",
      "priority": false
     }
    ]
@@ -65,16 +65,16 @@
    "items": [
     {
      "date": "2026-10-27",
-     "time": "16:57",
-     "title": "Indonesia Bond Yield Hits Four-Year High as MSCI Risk, Oil Weigh",
+     "time": "20:05",
+     "title": "IDR/USD: Indonesia 10-Year Yield at Four-Year High on MSCI Risk, Oil",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVo5OTQ4TUlrNnNheWQybnE2UkZ6ZHZtcEpYUDgzVTN0ZlBJSVFUbjliMUVfNi1OWlBRbE9aYnczeW11RzFIaHJIUFJZUHE1WlNIUnBiaTlGdGFjdmdTazRBS2tUdXNJcXVDcTEyUzQ5ajZZVHlBOTN5MVB1U281OUI3UzVweThKY24ycFozbmphY3RPNkoxMG80Qk5WQnhBQ2p2b1QxcG0yTjFzWGc?oc=5",
      "priority": true
     },
     {
      "date": "2026-10-27",
-     "time": "15:52",
-     "title": "IDR/USD: Indonesia 10-Year Yield at Four-Year High on MSCI Risk, Oil",
+     "time": "16:57",
+     "title": "Indonesia Bond Yield Hits Four-Year High as MSCI Risk, Oil Weigh",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVo5OTQ4TUlrNnNheWQybnE2UkZ6ZHZtcEpYUDgzVTN0ZlBJSVFUbjliMUVfNi1OWlBRbE9aYnczeW11RzFIaHJIUFJZUHE1WlNIUnBiaTlGdGFjdmdTazRBS2tUdXNJcXVDcTEyUzQ5ajZZVHlBOTN5MVB1U281OUI3UzVweThKY24ycFozbmphY3RPNkoxMG80Qk5WQnhBQ2p2b1QxcG0yTjFzWGc?oc=5",
      "priority": true
@@ -188,19 +188,19 @@
      "priority": true
     },
     {
+     "date": "2026-10-27",
+     "time": "19:32",
+     "title": "Singapore shares fall amid mixed regional showing; STI drops 0.3%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQV3Rabkg5eUxRV3kyMEdfUkNDNFRvT3gybG9hZzhQTmZuUUlMR0hlYm5NNzcxMXV2NmwxbEhpcVNyM1l0T3ZhYnk5dHRRMHRNZmhqYk80aU1JOWdMS0tuU3E2dDNWaG01SUN2VXNJdmdOWEZIQ3QyVHJ4cTBnNnpfLWJQbUVtMWo0cnVGY2FEU0FfS09LSUlvQjRoMHhVdFBleFhfZV9pYkxObmpHRzlrcTJVVVg?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-26",
      "time": "21:07",
      "title": "Singapore stocks close lower amid mixed regional showing; STI down 0.1%",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMmFGLV9CSW14dTZ6UlV6MGxIZWxfZDRQVmdjRk15R292THJMLTBEVnlPR2hDcWVGX3U0VzNHV2tOcEg2RUhxNjhoU21BRU9kbHYxZEFQT0t4TlM4RDBWMW13YVJwWVcxeXhJYml5NjBYTEdzUVBUMGJTVDJwZXB0ODZpU0NiYUcwbFRjc1d6cmRRWGI4d0pLZFNLZDMtM0FyWktZbTVNeDU4bm1NWjk5RklEVE4wQlRKcGtDcHQzTXFEN0NPOEJJa1RJUVRtR2FXMU9NU2dkY1B3QTNwYklnUQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-23",
-     "time": "19:02",
-     "title": "Singapore shares edge higher despite losses in local banks; STI up 0.1%",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNHZZc0tPSEpaaGpYaEozcDluQngwOGpZaWFucEwwQmJPdVJUcG1pcmgzLXJJSmF5aHluQXdBa0JyVXRsc1lnOE5iaW5ZNmJvVXFhYlBNT1laRHp4cXdyeW91aElrNXZSREJobHBreVpUc293OXcyVDRyMWh5cFRvTUtBVTViay1DTUlBQ3UycGtXMmFTaUQtWHZJMmVxVUUtdzlVYUY0REMtTTQ3V1VCNm1HR1pINzZaSTQwYmlpal9EaEFwMVhHTTZISmZNTW5kdGVXS0VRZ2w?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-10-27",
-     "time": "11:28",
-     "title": "Indian shares muted as oil stays near 6-month high, Fed rate decision in focus",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcms4SkRwSDBJVER3QkV1VmoyX1pvTUlrcjRpSk4xSmNLNFZYNjh3Vi1LMGNfUnZPYnVscDdQZl9Xa0d4SHhKM1lDLXItNWh0aWMxNThJeVpMOEsxWXYwNUVXSWMtVWZRZjRRQlFUYk9tRUZxRUR1MWo0QUdPVE9TdzFnWDk0Qzd3NDZfYml4cGdSenVORGpfUTB6RTMyRV9BRmowWERaeWdsSFVLUU0zdFl3?oc=5",
+     "time": "21:01",
+     "title": "RBI may hike repo rate to 6.25% by H1 2027, warns Deutsche Bank as inflation risks persist",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUFNvVV9ZcVdISk1qdm8tOWMyWWJwUFB1eVpfVEd4czFrSTlaS0h6TUQtX0d0S1BoY3hEUlAxM3Atb3JxXzVBTnBJdzBrb0pQOHBXY2k2M2NFaTN4UE5HVldBVEd4VDBlaGRFX0FXVF9ZTjBwMnhrcEpmeUV0N3EzdVpjNGI4LXhIdmkwV3NlbkJNeWliOHpIYnh4SjZvNHFWU1RteGpfSWxHYzRjYTNxdWRlVm9SREswVnZUYjd4ZFhpVUtLVDVDb1JsSGxxQ3l0RE0xOHZZNXnSAd4BQVVfeXFMTXlaV1hRTWJ4MjBfTWFqelFyOWpNNlNkOEloem5DenFuSEY0bHE2MGlScGw5bmE0Vlh6VG1HX19vQ0ZlNVF6elkyYTYtNlpFWFFiVG1hd0VpT0Q1MkVtb3NDZEl4SnZzV2xrNUY0VmJuZlNnd1dCTXpxTEt6T3Flc0FkbmswTVlQLU5Xc01ac01DVFQ5UGd4NHZuYmQyeXNOVGhqUlJueVIwNUcxQmVkSGstcEs4QlZTd181ZTBhV3BzVXl4aGxXUVZfX3hnWnRNWHhVbHFndlpOaV8xQ1Rn?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-26",
-     "time": "23:35",
-     "title": "Bankers hail RBI's FCNR(B) playbook as dollar inflows surge to $12.7 bn",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQenNUZFlzeWp3ZTd4Vno2elphTnE5QkRuazh1eUpRTFlsdjlFeWpBT3VhR09FWlo0NWR4NGZVd0c5clN0dXpmZi01Z3JuZ2lIMWpYQi1KYTluMVhZd0tweWIxdnM2TUprTWU5ZmVfbW1ITEdQUVg5Rkpra24tTFQ5MEpGdXhzY1FmVERacVpOcUJhbms0UHZseVgzeTFwUGFKUy1paU9QbXpkU3VybmxjclVubGw1M0pFZTA5eXhkQWtLOVNuWkRHQ1dMVUVmYWMyRGfSAdcBQVVfeXFMUDdDWWtrRnhFX1k3ZFFwRUE4dGNYd0FXang0VnQtVEVoeDFINFJxenl3SUpFZjVIblo0azlYSy1hRVg1anhUZ2dPc19sUXVTVTdaWjZaWUVGNDkwWFBKbzNHd2k0QUFhd3lGWDZkZHZsN3JFbG5qQWdFWlBXRWZkX0NwcEQyM1hZV1JubkhrdC1XTkhXaG5xRUtpblctYTd6am9sbzJFTGpRMkQ3elRjNmFrOXB6RXplcHdJajBfVVhIeTMtTTdfdlo4cHpZSlFYdk95VUFIREE?oc=5",
+     "date": "2026-10-27",
+     "time": "19:50",
+     "title": "Explainer: Has the RBI quietly delivered another 25 bps rate hike through liquidity tightening?",
+     "src": "CNBC TV18",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeF9YR3BIajZ1TWdUd0VmcFJJelY3QlU4ZWhBU0ExeERUTExkdWdfYzdOeFloZEdwajB2OWZGUlhnNHd3OHlZYmEyVDJBQ21STlM0SXFQVUNBTVFLQ3Exd2JuSGhaM1doN1JtNmJ1T3FyZVR5MHQ4Q2EzZk52ckpwYTNwWGFleF8wLWYzV3huNFpPMDY1NWxWX3JPakVvT0Q5YjV1TXRFSVZTNlJYQ3JTTkFVSlBqZG5mWE9ac3RWSdIBxAFBVV95cUxNUFVKQ2ItbE8zYmRHcFAwRDI3cmIxOUlvWFBjN1VTOW5Ec0Jsd09zWTA2akNhSWdDWnYtdXRtS1RrdjlPYzd6eXl3b1JJczBkaHFHck5GUmVwRS1MSWdXb2E5Q3JrSHhjS2FFY0tjWHJmbjFNOFNuMjlqc2VYU2FTcFVzMS1ENV9HRG5rdUhLMFNWRlV2WHZRSVNCV01tdGNIMzJCZDFQekdlejMwQnd2NGxhYzktSm5wdmhTZGYxVU5KWEZo?oc=5",
      "priority": false
     }
    ]
