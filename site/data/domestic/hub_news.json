@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T17:52+09:00",
+ "updated_at": "2026-10-27T17:55+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,10 +8,10 @@
   "KB증권|베트남": [
    {
     "date": "2026-10-23",
-    "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
-    "src": "Báo Tuổi Trẻ",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
-    "site": "tuoitre.vn",
+    "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
+    "src": "VnExpress",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
+    "site": "vnexpress.net",
     "foreign": true,
     "lang": "vi"
    },
@@ -281,11 +281,29 @@
     "lang": "id"
    },
    {
-    "date": "2026-03-04",
-    "title": "Video: OJK-Polri Geledah Mirae Asset Sekuritas Terkait Dugaan Pidana Pasar Modal",
-    "src": "20detik",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbV9XYl9pYWlTMVp3SXQ0Wl9YUkVGbzA0NzJGWVNaUGktMU5xQWRwQVkwRW9ha2E2WWhMUkRUV2dtb3JYcTZmejdRdlp1aU96djlLMHJfMFFBR2hFQU4tamZZUWpOS0ZmM3ZyOXlJZXBYMTBnb29PeDRnSDdnS2JEWWRLSnBqMlVLdzZ2YXNwYm44YkZpcEdpc2xRV3AxMmZDaUxZSW5jQVp6WjdMUG15WW9rZkIxM3g1QjA0VlNoclpHbUlZcjV6cFFLRQ?oc=5",
-    "site": "20.detik.com",
+    "date": "2026-08-18",
+    "title": "Pasar Makin Selektif, Mirae Asset Sekuritas Genjot Layanan Wealth Management",
+    "src": "kontan.co.id",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
+    "site": "investasi.kontan.co.id",
+    "foreign": true,
+    "lang": "id"
+   },
+   {
+    "date": "2026-03-05",
+    "title": "Kenapa Kantor Mirae Asset Sekuritas Digeledah OJK?",
+    "src": "Kompas.com",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMW9lYThXUFhVWU14YTBMWGx1U1lEZ29iQVpTZWQ3eUZpMlZvMDNMSUJHNlRWZzl4YjFmWUxWNEhUMzVtM3ZrTkhqVklDc2g4SnZvZ2U5WjVWQnFJYVd2cE94aW1LMnctYVp5OHZPaTEzMzBzMkN4SVNHVDMxUjBlVW5MWXo5QjlTblI3Sm54MDYwMjJDWjBkZUpCT2VLalBMaTE5NTZ2VHBYeDEzVmc?oc=5",
+    "site": "money.kompas.com",
+    "foreign": true,
+    "lang": "id"
+   },
+   {
+    "date": "2025-12-01",
+    "title": "Respons Mirae Asset Sekuritas Usai Dilaporkan Nasabah ke Bareskrim",
+    "src": "Kompas.com",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ2Rob25BTDRvMnZNQ2VFZzZnd0lTano2LUJMUU4yQ2NqQWY1ekNvTS1teHoyNmE4T2FJTWFLR0lUWUdmcy1QMmp6MG5IalkwQkVKRzRjb1FJSFFMamVyNlk0RkcxVWhGTGdQVXFLMnExc2syaXJnaUJpUWZRUVRIRVQxOENBb3BCZF9CMTMyR0dxNHllOUxDampvY2M5VHJrMEZLc1UyQTRWaG5CcXluSTlVdHUxeTJBWE93?oc=5",
+    "site": "nasional.kompas.com",
     "foreign": true,
     "lang": "id"
    }
@@ -507,15 +525,6 @@
   ],
   "한국투자증권|베트남": [
    {
-    "date": "2026-02-05",
-    "title": "KIS Việt Nam triển khai “Vòng quay Chứng sỹ” mùa 5",
-    "src": "VnEconomy",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5fdkdTUEFWMDY0SGNXd1JLS1VUOE9TVlpVaHJ6a1Ewdl9BNXhCREJJaVVsMWNXcVRMSUY0R1kyS2czckZwYk5PdnlwTjh4Q2ZhbzBNLUwyZ0RzWVFrSVJET1UwU2dXdDhKbWRmTjZYaE1za0N0X0twTDlaN1Qxdw?oc=5",
-    "site": "vneconomy.vn",
-    "foreign": true,
-    "lang": "vi"
-   },
-   {
     "date": "2025-12-26",
     "title": "KIS Việt Nam muốn mở rộng thị phần sau 15 năm hoạt động",
     "src": "VnExpress",
@@ -612,24 +621,11 @@
   ],
   "한화투자증권|인도네시아": [
    {
-    "date": "2025-05-11",
-    "title": "Andalkan PinePick, Ciptadana Dorong Inklusi Pasar Modal Lewat Teknologi Cerdas",
-    "src": "Kompas.com",
-    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQN3lHVVU2S1JfaW1BZlFVUzFQZ2tKemhHUmdsSHBwblZvZ1pYV1NfUnFlVGNEZkprUkRpbWxCZkxJQktWQzl1d25HWDgyVjFjM0FQWDY1UWtaZVM2OHFudDZmdzJSY2FDSFlNZjIyVWY2OUUxNXhtbXpBUnMxYUhxZGNMbUN3NFo0ZjFKOUducWlGM3JwTGp0NjVsRC01eWpMdVdCeGRzNVRaRmNzM0JiOGdwN3BTSHpVR2M2VHVYTE9nbzBwOHY0?oc=5",
-    "site": "money.kompas.com",
-    "foreign": true,
-    "lang": "id",
-    "old": true
-   },
-   {
-    "date": "2025-05-08",
-    "title": "Ciptadana Luncurkan PinePick, Platform Trading Saham dengan Fitur Ramah Pengguna",
-    "src": "Kompas.com",
-    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNc2NqSjc4bGdoT244cDd1TXdWTEhhNklldkgtenBrQ1BUQVJ4bFhMZ2NyYy1sX0phLUtDWUNvUWdib3NuMFVJWEtSMnFMS3h2djFsVlRhd3V0Q0ZaM1ZfYUZVajVleHYtTHNXSGU4UXFMZl9jOTZFbnNYNnpDQ2hZRkgxcU9VNU5Cb1N0SXdDeFhldkQ4dVBoYWk4VnUtNDJVX1hPSlpnaGFuRHI4d09KSWRWZTExNFU1WDdOX3VB?oc=5",
-    "site": "money.kompas.com",
-    "foreign": true,
-    "lang": "id",
-    "old": true
+    "date": "2025-12-16",
+    "title": "한화證, 칩타다나자산운용 인수 마무리…동남아 시장 공략 가속",
+    "src": "연합인포맥스",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3T3c4OVZHMDZTNVk5aEJuaWltaFBuOWZHR1JRZmFXVFJFN0ZaSzNDQ19ldU1kQ1hnOEtaVTdkd1gteG5BTGN5VHlYakFlOUowNUlGdy14a3plLXFiM2FCTXR0cGpBb1BVa2RsMzlHUm0?oc=5",
+    "site": "news.einfomax.co.kr"
    }
   ]
  },
