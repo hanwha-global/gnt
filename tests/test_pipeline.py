@@ -740,31 +740,71 @@ class ForeignNewsTest(unittest.TestCase):
         import translate as tr
         calls = []
 
+        def gtx(*lines):
+            return json.dumps([[[l + "\n", "a"] for l in lines[:-1]] + [[lines[-1], "b"]]]).encode()
+
         def get(url, params=None, retries=3, timeout=30):
-            calls.append((url, params["q"]))
+            q = params["q"]
+            calls.append(("google" if "googleapis" in url else "mm", q))
             if "googleapis" in url:
-                if "rusak" in params["q"]:
-                    raise RuntimeError("HTTP 429")                                     # Google 실패 → MyMemory
-                if "kosong" in params["q"]:
-                    return json.dumps([[["kosong", params["q"]]]]).encode()            # 한글 없는 결과는 실패로 본다
-                return json.dumps([[["키움증권 ", "a"], ["수상", "b"]]]).encode()
-            if "rusak" in params["q"]:
+                if "macet" in q:
+                    raise RuntimeError("HTTP 429: unusual traffic")                    # Google 막힘 → 이 실행은 MyMemory
+                if q == "Kiwoom Securities Raih Penghargaan\nJudul kosong":
+                    return gtx("키움증권 수상", "kosong")                               # 한글 없는 줄은 실패
+                if "\n" in q:
+                    return gtx("한 줄로 합친 번역")                                      # 줄 수가 안 맞으면 한 건씩
+                return gtx(f"번역 {q[:9]}")
+            if "rusak" in q:
                 return json.dumps({"responseStatus": 200, "responseData": {"translatedText": "고장 난 앱"}}).encode()
             return json.dumps({"responseStatus": 429, "responseData": {"translatedText": "MYMEMORY WARNING: YOU USED ALL"}}).encode()
+
         items = [{"title": "Kiwoom Sekuritas Raih Penghargaan", "lang": "id"},
                  {"title": "Chứng khoán KB Việt Nam báo lãi", "lang": "vi"},                 # 이전 파일에 번역이 있다
-                 {"title": "Aplikasi rusak", "lang": "id"}, {"title": "Judul kosong", "lang": "id"},
-                 {"title": "Mirae Asset wins license", "title_ko": "남은 번역"}]               # 영어 제목은 번역을 달지 않는다
+                 {"title": "Judul kosong", "lang": "id"},
+                 {"title": "Mirae Asset wins license", "title_ko": "남은 번역", "ko_by": tr.MM}]  # 영어 제목은 번역을 달지 않는다
         cache = tr.cache_from([{"title": "Chứng khoán KB Việt Nam báo lãi", "title_ko": "KB증권 베트남 흑자"}])
         with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
-            self.assertEqual(tr.add_ko(items, cache), 2)
-        self.assertEqual([x.get("title_ko") for x in items], ["키움증권 수상", "KB증권 베트남 흑자", "고장 난 앱", None, None])
-        self.assertNotIn("Chứng khoán KB Việt Nam báo lãi", [q for _, q in calls])            # 이미 번역한 제목은 다시 안 부른다
-        self.assertEqual(cache["Kiwoom Sekuritas Raih Penghargaan"], "키움증권 수상")
+            self.assertEqual(tr.add_ko(items, cache), 1)
+        self.assertEqual([x.get("title_ko") for x in items], ["키움증권 수상", "KB증권 베트남 흑자", None, None])
+        self.assertNotIn("ko_by", items[3])
+        self.assertEqual(calls[0], ("google", "Kiwoom Securities Raih Penghargaan\nJudul kosong"))  # 같은 말 제목은 묶어 한 번에
+        self.assertEqual([c for c in calls if c[0] == "mm"], [("mm", "Judul kosong")])          # Google이 못 한 제목만 MyMemory
+        self.assertFalse(any("KB Việt Nam" in q for _, q in calls))                             # 이미 번역한 제목은 다시 안 부른다
+        self.assertEqual(cache["Kiwoom Sekuritas Raih Penghargaan"], ("키움증권 수상", None))
+
+        # Google이 막히면 MyMemory로, 다음 실행에서 Google이 되면 Google 번역으로 바꾼다
+        calls.clear()
+        jam = [{"title": "Aplikasi macet", "lang": "id"}, {"title": "Aplikasi rusak", "lang": "id"}]
         with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
-            more = [{"title": f"Judul {i}", "lang": "id"} for i in range(5)]
-            self.assertEqual(tr.add_ko(more, {}, max_calls=2), 2)                           # 한 번에 새로 번역하는 수 상한
-        self.assertEqual(sum(1 for x in more if x.get("title_ko")), 2)
+            self.assertEqual(tr.add_ko(jam, {}), 1)
+        self.assertEqual([(x.get("title_ko"), x.get("ko_by")) for x in jam], [(None, None), ("고장 난 앱", tr.MM)])
+        self.assertEqual([c[0] for c in calls], ["google", "mm", "mm"])                         # 막힌 뒤로는 Google을 다시 안 부른다
+        calls.clear()
+        later = [{"title": "Aplikasi rusak", "lang": "id"}]
+        with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
+            self.assertEqual(tr.add_ko(later, tr.cache_from(jam)), 0)
+        self.assertEqual(later, [{"title": "Aplikasi rusak", "lang": "id", "title_ko": "번역 Aplikasi"}])
+        self.assertEqual(calls, [("google", "Aplikasi rusak")])
+
+        # 줄 수가 안 맞으면 한 건씩, 한 번에 새로 번역하는 수 상한
+        calls.clear()
+        more = [{"title": f"Judul {i}", "lang": "id"} for i in range(5)]
+        with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
+            self.assertEqual(tr.add_ko(more, {}, max_new=2), 2)
+        self.assertEqual([x.get("title_ko") for x in more], ["번역 Judul 0", "번역 Judul 1", None, None, None])
+        self.assertEqual([q for _, q in calls], ["Judul 0\nJudul 1", "Judul 0", "Judul 1"])
+
+    def test_firm_names_kept_in_translation(self):
+        import translate as tr
+        self.assertEqual(tr._prep("Chứng khoán NH Việt Nam ra mắt giao dịch Chứng khoán Phái sinh", "vi"),
+                         "NH Securities Việt Nam ra mắt giao dịch Chứng khoán Phái sinh")
+        self.assertEqual(tr._prep("Chứng khoán BIDV (BSC): Doanh thu quý III tăng 19%", "vi"), "BIDV Securities (BSC): Doanh thu quý III tăng 19%")
+        for t in ("Sở Giao dịch Chứng khoán TP.HCM ra mắt", "Chứng khoán Mirae Asset đạt doanh thu", "Ủy ban Chứng khoán Nhà nước (SSC)"):
+            self.assertEqual(tr._prep(t, "vi"), t)
+        self.assertEqual(tr._prep("Usai Mirae Asset, BEI Juga Sanksi PT KB Valbury Sekuritas", "id"),
+                         "Usai Mirae Asset, BEI Juga Sanksi PT KB Valbury Securities")
+        self.assertEqual(tr._prep("Kantor Mirae Asset Sekuritas Digeledah OJK", "id"), "Kantor Mirae Asset Securities Digeledah OJK")
+        self.assertEqual(tr._prep("saham sekuritas naik", "id"), "saham sekuritas naik")
 
     def test_main_feed_takes_foreign_hub_items(self):
         import tempfile

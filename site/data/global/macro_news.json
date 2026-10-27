@@ -1,26 +1,10 @@
 {
- "updated_at": "2026-10-28T08:32+09:00",
+ "updated_at": "2026-10-28T08:00+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
-    {
-     "date": "2026-10-28",
-     "time": "08:00",
-     "title": "[Good Morning Stock Market] Anthropic Tailwind Lifts U.S. Stocks; Will It Reach South Korea?",
-     "src": "아시아경제",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBJdEczV2txdDlKRTZaYkJYWXBZVzUtUTE4aHE0WEFLNWlxV0hDU2dRUmoxTnNvNmV3cmtZVWNvSEhreExtLU5IVVlIS2p6NjI0RUVvZzI0OXhrWFBnV3o0N1dQNzI?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-28",
-     "time": "06:30",
-     "title": "\"코스피 7500 간다는데\"…외국인이 '삼전닉스' 던지는 이유 [분석+]",
-     "src": "한국경제",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MM3hFMXB1Y0ZQX19ROHdBdWhPQVhCekxWWEplamU1VklTb1VJTjdHMjEtUWx4MXVFQVJMbDFQSUNQX1NxQWxGSks3UEstRUZ3SUZZZ0ZrMnY2UQ?oc=5",
-     "priority": false
-    },
     {
      "date": "2026-10-27",
      "time": "18:56",
@@ -28,20 +12,28 @@
      "src": "KBS 뉴스",
      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBFTXZ5OW1SaVBaaVNkZUJ1OURyRWRvSnNTUXFxVnM1OHVMVFRSekJGYVRUZjZUMVptellHTjhyZ1o4RjdHeUxJZkZFWC05dTEyM2s3Vmg0Wjk3LTVLTkxuN2ZoVEVwUk5CUFV6SlJn?oc=5",
      "priority": false
+    },
+    {
+     "date": "2026-10-27",
+     "time": "15:51",
+     "title": "노무라 \"4분기도 소비 부진 시, 한은 금리인상 조기 종료 가능성\"",
+     "src": "이데일리",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNzhSdVpNbEtRQVJPdldreGo3b2o2X3hwVGVFVmRoN3hJWG9UWXFuSVlsTW82Z24xZWRqVjJLcGs3TzRzYmlEdHotTVhDT0ZoWXpvZEVPaHpwWjlLZ2VxR3czTFpiU0MxdzBxbVN0enE1U19Objdsd01CVFdPYV9KRQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
+     "time": "11:12",
+     "title": "코스피, 4%대 급등세 지속…외국인·기관 쌍끌이 순매수",
+     "src": "연합뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmMndqYm91UWo2dms1ZUhpRWFsVFJKYzFrMjE0SGRPNGltcGVEcUM1Ri1UZGd2bkdRZ0FzSFZjSHBxTGgzQ2ZiUmZ6RUZDRmpPckpDdElZb0lPOGfSAWBBVV95cUxQTm9mNm5lNllRREo3d2cxS0hCRzVPZkhBTzJUUk9Za1RFeUNHY1NDTUM4ME9nd29fYWhVcXhaNFpGT2FQek1RMUowQ09EV1lFallKTHNyWGYySXI3YkVCNkw?oc=5",
+     "priority": false
     }
    ]
   },
   "US": {
    "label": "미국",
    "items": [
-    {
-     "date": "2026-10-28",
-     "time": "08:15",
-     "title": "[아주경제 코이너스 브리핑] 비트코인 8만808달러…美 금리 결정 앞두고 상승세",
-     "src": "아주경제",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1uNzliSFZxMmFpb1RJZGhHREJ6Q285NnBDQUVsOXd5UDlmaXNoaTZXUnFSUEdBUlNfQ0tiRUdJRUtFZXBKU1B5T3A1aDFjV1FZZFh3UFZuS3VtQdIBWEFVX3lxTFBNZmZMZzUxeGJZczlIM2VJdG8xLWRTUXNZTGtlZjhGX3phdUlGMVBLN2JrZGZRYmZ4M2VUVXIybG1lSGxudGVDUVZSUGVOejhMbjd5QUJyd2Q?oc=5",
-     "priority": false
-    },
     {
      "date": "2026-10-28",
      "time": "07:40",
@@ -56,6 +48,14 @@
      "title": "US Treasury predictions: Will 2-year, 10-year, 30-year bonds hit historic highs soon? Details here",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOR3lUbFVSeEpsNGJ5TzYzR3lRT3MyWVc2R3NOZnF3N2hZanZCbi1tZzlLNnN3dk5RV0E5YThmeTFqazNMQTdPaHBtNlI4OWxiYXQ1eGRlbmhGTXE1bnBtUWZYOFFfMWlYR1poVldWT1cxUmFPNGFLSVl6bWpnWmFrN0pUc1M5am1md3JCb29zUmNuMUx1bXc4bWVyUWFjT1B6UFA1OVVLNHVrUjRISjlyZG8zaEtRWlNneTJycU9RVWxuaWxFd2RQRS1EbjR4SzhHVWtyelY2SEdScTV2T0ZzcmJOc1FoNmJZc3RBY29HdWt6cWlKYzJKejA0TmN5UWM?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-28",
+     "time": "06:51",
+     "title": "[뉴욕채권] 국채가 약보합…유가 하락 vs 美 지표 호조·FOMC 경계감",
+     "src": "연합인포맥스",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1mcUFET0tXRDdfSFVDYTVER3JrTE1EYzduQTdabnBzNXRUQmptNUJrRmVEV0psSEV3bUh0TjdzQWk0WDZLZzV2SmJIRFRmMEgwZUZjNU9yUGZxQ0cybHdxMkRXenZ3Z250SDFJZmZlOEU?oc=5",
      "priority": false
     }
    ]
