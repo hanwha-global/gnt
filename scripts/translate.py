@@ -6,7 +6,10 @@
 - MyMemory 번역은 숫자 단위(tỷ = 10억 등)를 자주 틀려 예비로만 쓴다(ko_by). 다음 실행에서 Google·Microsoft로 다시 번역해 바꾼다
 - 이미 번역한 제목은 이전 파일에서 가져와 다시 부르지 않는다(실행마다 새 제목만 번역)
 - 모두 실패하면 번역 없이 둔다: 화면은 원문 제목과 '번역' 링크(Google 번역 페이지)를 보여 준다
-- 영문 약자 회사 이름이 일반 낱말로 번역되지 않게 업종 낱말을 영어로 바꿔 보낸다(Chứng khoán NH → NH Securities: NH를 은행 약자로 읽지 않게)
+- 번역기가 자주 틀리는 것은 보내기 전에 [[N0]] 같은 자리표로 바꾸고 번역 뒤에 한국어로 채운다
+  · 국내 증권사 이름(Chứng khoán Mirae Asset·Mirae Asset Sekuritas → 미래에셋증권: '미래 자산 증권'으로 옮기지 않게)
+  · 베트남어 금액(8.900 tỷ đồng → 8조 9,000억 동: 번역기가 tỷ(10억)를 억으로 읽어 10배 틀리는 일이 잦다)
+- 영문 약자 회사 이름은 업종 낱말을 영어로 바꿔 보낸다(Chứng khoán NH → NH Securities: NH를 은행 약자로 읽지 않게)
 """
 import html
 import json
@@ -30,6 +33,16 @@ MM = "MyMemory"   # ko_by: MyMemory로 번역한 제목(예비 번역: 다음 �
 VI_FIRM = re.compile(r"Chứng [Kk]hoán ([A-Z]{2,6})(?![\w.])")
 VI_NOT_FIRM = {"VN", "TP", "HCM", "TPHCM", "HN", "SSC", "HOSE", "HNX", "VSD", "VSDC", "IPO", "ETF", "UBCK", "UBCKNN", "MSCI", "FTSE"}
 ID_FIRM = re.compile(r"(\b[A-Z][\w&.-]*) Sekuritas\b")
+# 국내 증권사·현지 법인 영문 이름 → 한국어(fetch_news.ENGLISH의 회사, 현지 법인 이름 Pinetree·Ciptadana)
+BRANDS = {"Mirae Asset": "미래에셋", "Korea Investment": "한국투자", "Samsung": "삼성", "Kiwoom": "키움", "Shinhan": "신한",
+          "Hana": "하나", "Hanwha": "한화", "Toss": "토스", "Pinetree": "파인트리", "Ciptadana": "칩타다나"}
+_BRAND = "|".join(re.escape(b) for b in sorted(BRANDS, key=len, reverse=True))
+FIRM_KO = re.compile(rf"Chứng [Kk]hoán ({_BRAND})\b|\b({_BRAND}) (?:Sekuritas|Securities)\b|\b({_BRAND})\b")
+# 베트남어 금액: 점은 천 단위, 쉼표는 소수점(8.900 tỷ = 8,900 × 10억). 113.5 triệu처럼 점 뒤가 세 자리가 아니면 소수점
+VI_AMOUNT = re.compile(r"(?<![\d.,])(\d+(?:[.,]\d+)*)\s*(nghìn tỷ|ngàn tỷ|tỷ|tỉ|triệu)(?:\s*(đồng|VND|USD|đô la))?(?!\w)")
+VI_UNIT = {"triệu": 10 ** 6, "tỷ": 10 ** 9, "tỉ": 10 ** 9, "nghìn tỷ": 10 ** 12, "ngàn tỷ": 10 ** 12}
+VI_CCY = {"đồng": " 동", "vnd": " 동", "usd": " 달러", "đô la": " 달러"}
+SLOT = re.compile(r"\[\[\s*N\s*(\d+)\s*\]\]")
 
 
 def _prep(text, sl):
@@ -40,6 +53,56 @@ def _prep(text, sl):
     if sl == "id":
         return ID_FIRM.sub(r"\1 Securities", text)
     return text
+
+
+def _ko_amount(n):
+    """원 단위 정수를 한국식 단위로: 8_900_000_000_000 → '8조 9,000억', 113_500_000 → '1억 1,350만'."""
+    out = []
+    for unit, size in (("조", 10 ** 12), ("억", 10 ** 8), ("만", 10 ** 4)):
+        if n >= size:
+            out.append(f"{n // size:,}{unit}")
+            n %= size
+    return " ".join(out) or f"{n:,}"
+
+
+def _vi_amount(m):
+    num, unit, ccy = m.group(1), m.group(2).lower(), (m.group(3) or "").lower()
+    if re.fullmatch(r"\d{1,3}(?:\.\d{3})+(?:,\d+)?", num):
+        num = num.replace(".", "").replace(",", ".")
+    elif num.count(".") + num.count(",") > 1:
+        return None
+    else:
+        num = num.replace(",", ".")
+    return _ko_amount(round(float(num) * VI_UNIT[unit])) + VI_CCY.get(ccy, "")
+
+
+def _mask(text, sl):
+    """번역에 보낼 제목과 자리표 채울 말: 국내 증권사 이름·베트남어 금액은 [[N0]]로 바꿔 보낸다."""
+    slots = []
+
+    def slot(ko):
+        slots.append(ko)
+        return f"[[N{len(slots) - 1}]]"
+
+    def firm(m):
+        if m.group(3):
+            return slot(BRANDS[m.group(3)])
+        return slot(BRANDS[m.group(1) or m.group(2)] + "증권")
+
+    def amount(m):
+        ko = _vi_amount(m)
+        return slot(ko) if ko else m.group(0)
+    text = FIRM_KO.sub(firm, _prep(text, sl))
+    if sl == "vi":
+        text = VI_AMOUNT.sub(amount, text)
+    return text, slots
+
+
+def _unmask(ko, slots):
+    """자리표를 채운다. 번역기가 자리표를 빠뜨렸으면 번역이 안 된 것으로 본다("")."""
+    if sorted({int(i) for i in SLOT.findall(ko)}) != list(range(len(slots))):
+        return ""
+    return SLOT.sub(lambda m: slots[int(m.group(1))], ko)
 
 
 def _hangul(ko):
@@ -94,8 +157,9 @@ def _batch(name, fn, texts, sl, st):
     """묶음 번역 목록(안 된 줄은 ""). 묶음의 줄 수가 안 맞으면 한 건씩. 한 번 막히면 이 실행 동안은 다시 부르지 않는다."""
     if st["err"].get(name):
         return [""] * len(texts)
+    masked = [_mask(t, sl) for t in texts]
     try:
-        kos = fn([_prep(t, sl) for t in texts], sl, st)
+        kos = fn([m for m, _ in masked], sl, st)
     except Exception as e:
         st["err"][name] = str(e)[:120]
         return [""] * len(texts)
@@ -103,15 +167,16 @@ def _batch(name, fn, texts, sl, st):
         time.sleep(PAUSE)
     if kos is None:
         return [_batch(name, fn, [t], sl, st)[0] for t in texts] if len(texts) > 1 else [""]
-    return kos
+    return [_hangul(_unmask(ko, slots)) for ko, (_, slots) in zip(kos, masked)]
 
 
 def _mymemory_one(text, sl, st):
     """MyMemory 번역 한 건(안 되면 ""). 한 번 막히면(한도·오류) 이 실행 동안은 다시 부르지 않는다."""
     if st["err"].get(MM):
         return ""
+    masked, slots = _mask(text, sl)
     try:
-        return _mymemory(_prep(text, sl), sl)
+        return _hangul(_unmask(_mymemory(masked, sl), slots))
     except Exception as e:
         st["err"][MM] = str(e)[:120]
         return ""

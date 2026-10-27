@@ -718,8 +718,8 @@ class ForeignNewsTest(unittest.TestCase):
         fresh = [("KBSV báo lãi tăng 15%", "Thời báo Tài chính Việt Nam", "https://thoibaotaichinhvietnam.vn", "2026-07-21")]
 
         def get(url, params=None, timeout=25, **kw):
-            if "translate.googleapis.com" in url:                                        # 제목 번역
-                return json.dumps([[[f"번역: {params['q'][:12]}", params["q"]]]]).encode()
+            if "translate.googleapis.com" in url:                                        # 제목 번역(줄마다 '번역: ' + 보낸 글)
+                return json.dumps([[["\n".join(f"번역: {q}" for q in params["q"].split("\n")), params["q"]]]]).encode()
             five = "when%3A1825d" in url
             if "Pinetree" in url:
                 return _rss(*(old if five else []))
@@ -733,7 +733,7 @@ class ForeignNewsTest(unittest.TestCase):
         pine = got["한화투자증권|베트남"]
         self.assertEqual([x["date"] for x in pine], ["2024-12-05", "2023-03-18"])    # 5년 안 최근 2건만
         self.assertTrue(all(x["old"] and x["foreign"] and x["lang"] == "vi" for x in pine))
-        self.assertEqual(pine[0]["title_ko"], "번역: Chiến lược k")                     # 베트남어 제목은 한국어 번역도
+        self.assertEqual(pine[0]["title_ko"], "번역: Chiến lược khác biệt của 파인트리증권")  # 베트남어 제목은 한국어 번역도
         self.assertEqual([(x["date"], x.get("old")) for x in got["KB증권|베트남"]], [("2026-07-21", None)])
 
     def test_titles_translated_to_korean_once(self):
@@ -756,8 +756,8 @@ class ForeignNewsTest(unittest.TestCase):
             if "googleapis" in url:
                 if "macet" in q:
                     raise RuntimeError("HTTP 429: unusual traffic")                    # Google 막힘 → 이 실행은 다음 곳으로
-                if q == "Kiwoom Securities Raih Penghargaan\nJudul kosong":
-                    return gtx("키움증권 수상", "kosong")                               # 한글 없는 줄은 실패
+                if q == "[[N0]] Raih Penghargaan\nJudul kosong":                           # 회사 이름은 자리표로 보낸다
+                    return gtx("[[N0]] 수상", "kosong")                                 # 한글 없는 줄은 실패
                 if "\n" in q:
                     return gtx("한 줄로 합친 번역")                                      # 줄 수가 안 맞으면 한 건씩
                 return gtx(f"번역 {q[:9]}")
@@ -778,7 +778,7 @@ class ForeignNewsTest(unittest.TestCase):
         self.assertEqual(run(items, cache), 1)
         self.assertEqual([x.get("title_ko") for x in items], ["키움증권 수상", "KB증권 베트남 흑자", None, None])
         self.assertNotIn("ko_by", items[3])
-        self.assertEqual(calls, [("google", "Kiwoom Securities Raih Penghargaan\nJudul kosong"),  # 같은 말 제목은 묶어 한 번에
+        self.assertEqual(calls, [("google", "[[N0]] Raih Penghargaan\nJudul kosong"),            # 같은 말 제목은 묶어 한 번에
                                  ("ms", "Judul kosong"), ("mm", "Judul kosong")])             # 못 한 제목만 다음 곳으로
         self.assertEqual(cache["Kiwoom Sekuritas Raih Penghargaan"], ("키움증권 수상", None))
 
@@ -807,17 +807,25 @@ class ForeignNewsTest(unittest.TestCase):
         self.assertEqual([x.get("title_ko") for x in more], ["번역 Judul 0", "번역 Judul 1", None, None, None])
         self.assertEqual([q for _, q in calls], ["Judul 0\nJudul 1", "Judul 0", "Judul 1"])
 
-    def test_firm_names_kept_in_translation(self):
+    def test_firm_names_and_amounts_kept_in_translation(self):
         import translate as tr
-        self.assertEqual(tr._prep("Chứng khoán NH Việt Nam ra mắt giao dịch Chứng khoán Phái sinh", "vi"),
-                         "NH Securities Việt Nam ra mắt giao dịch Chứng khoán Phái sinh")
-        self.assertEqual(tr._prep("Chứng khoán BIDV (BSC): Doanh thu quý III tăng 19%", "vi"), "BIDV Securities (BSC): Doanh thu quý III tăng 19%")
-        for t in ("Sở Giao dịch Chứng khoán TP.HCM ra mắt", "Chứng khoán Mirae Asset đạt doanh thu", "Ủy ban Chứng khoán Nhà nước (SSC)"):
-            self.assertEqual(tr._prep(t, "vi"), t)
-        self.assertEqual(tr._prep("Usai Mirae Asset, BEI Juga Sanksi PT KB Valbury Sekuritas", "id"),
-                         "Usai Mirae Asset, BEI Juga Sanksi PT KB Valbury Securities")
-        self.assertEqual(tr._prep("Kantor Mirae Asset Sekuritas Digeledah OJK", "id"), "Kantor Mirae Asset Securities Digeledah OJK")
-        self.assertEqual(tr._prep("saham sekuritas naik", "id"), "saham sekuritas naik")
+        self.assertEqual(tr._mask("Chứng khoán NH Việt Nam ra mắt giao dịch Chứng khoán Phái sinh", "vi"),
+                         ("NH Securities Việt Nam ra mắt giao dịch Chứng khoán Phái sinh", []))   # NH를 은행으로 읽지 않게
+        self.assertEqual(tr._mask("Chứng khoán BIDV (BSC): Doanh thu quý III tăng 19%", "vi")[0], "BIDV Securities (BSC): Doanh thu quý III tăng 19%")
+        for t in ("Sở Giao dịch Chứng khoán TP.HCM ra mắt", "Ủy ban Chứng khoán Nhà nước (SSC)", "saham sekuritas naik"):
+            self.assertEqual(tr._mask(t, "vi" if "Chứng" in t else "id"), (t, []))
+        # 국내 증권사 이름과 베트남어 금액은 자리표로 보내고 한국어로 채운다
+        self.assertEqual(tr._mask("Dư nợ cho vay tăng lên gần 8.900 tỷ đồng, Chứng khoán Mirae Asset báo lãi", "vi"),
+                         ("Dư nợ cho vay tăng lên gần [[N1]], [[N0]] báo lãi", ["미래에셋증권", "8조 9,000억 동"]))
+        self.assertEqual(tr._mask("Chứng khoán Mirae Asset (Việt Nam) sắp chuyển 113.5 triệu cp", "vi"),
+                         ("[[N0]] (Việt Nam) sắp chuyển [[N1]] cp", ["미래에셋증권", "1억 1,350만"]))
+        self.assertEqual(tr._mask("Lợi nhuận 700 tỷ, vốn 11.000 tỷ đồng, lãi 1,5 tỷ USD", "vi")[1], ["7,000억", "11조 동", "15억 달러"])
+        self.assertEqual(tr._mask("Usai Mirae Asset, BEI Juga Sanksi PT KB Valbury Sekuritas", "id"),
+                         ("Usai [[N0]], BEI Juga Sanksi PT KB Valbury Securities", ["미래에셋"]))
+        self.assertEqual(tr._mask("Kantor Mirae Asset Sekuritas Digeledah OJK", "id"), ("Kantor [[N0]] Digeledah OJK", ["미래에셋증권"]))
+        self.assertEqual(tr._mask("Rp 2,7 M dan 8.900 tỷ", "id")[1], [])                       # 금액 자리표는 베트남어만
+        self.assertEqual(tr._unmask("[[N0]](베트남)이 [[ N1 ]] 우선주로", ["미래에셋증권", "1억 1,350만"]), "미래에셋증권(베트남)이 1억 1,350만 우선주로")
+        self.assertEqual(tr._unmask("미래 자산 증권이 [[N1]]", ["미래에셋증권", "1억"]), "")         # 자리표를 빠뜨리면 번역 실패
 
     def test_main_feed_takes_foreign_hub_items(self):
         import tempfile
