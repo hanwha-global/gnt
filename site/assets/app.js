@@ -248,11 +248,11 @@
   }
 
   // ---------- 글로벌 ----------
-  // meta: 대신 붙일 기준·단위 줄(기간 드롭다운). 주면 기본 tmeta 줄을 쓰지 않는다(행의 단위 표기는 그대로)
-  function rankTable(rows, { unit, digits = 1, hw = () => false, limit = 0, mini = false, basis = "", meta = "" }) {
+  // head: 대신 붙일 기준·단위 줄(기간 드롭다운). 주면 기본 tmeta 줄을 쓰지 않는다(행의 단위 표기는 그대로)
+  function rankTable(rows, { unit, digits = 1, hw = () => false, limit = 0, mini = false, basis = "", head = "" }) {
     const max = Math.max(...rows.map((r) => Math.abs(r.value ?? 0)), 1);
     const shown = limit ? rows.slice(0, limit) : rows;
-    return `${meta || tmeta(basis, unit)}<table class="rank${mini ? " rank--mini" : ""}"><tbody>${shown.map((r, i) => {
+    return `${head || tmeta(basis, unit)}<table class="rank${mini ? " rank--mini" : ""}"><tbody>${shown.map((r, i) => {
       const cls = hw(r) ? "is-hanwha" : r.korean ? "is-kr" : "";
       const tag = hw(r) ? '<span class="tag tag--hw">당사</span>' : r.korean ? `<span class="tag tag--kr">${mini ? "" : "한국계 · "}${esc(SHORT[r.korean] || r.korean)}</span>` : "";
       return `<tr class="${cls}"><td class="rank__no">${r.value == null ? "–" : i + 1}</td>
@@ -359,7 +359,7 @@
       main = `<div class="card"><h3>자기자본 순위 (조원)</h3><p class="card__meta">${esc(bases.join(" · "))} · 출처 DART</p>
         ${rankTable(firms.map((f) => ({ name: f.firm, value: f.equity == null ? null : f.equity / 1e6,
           note: f.net_income == null ? (P ? `${P.label} 보고서 없음` : "") : `자본 ${f.bs_basis || f.basis} · 순이익 ${eok(f.net_income)}억(${f.pl_basis || ""}) · 해외법인 ${state.data.domestic.entities.filter((e) => e.firm === f.firm && counted(e)).length}개` })),
-          { unit: "조원", digits: 2, basis: bsBasis(), meta: finMeta, hw: (r) => r.name === HANWHA })}</div>`;
+          { unit: "조원", digits: 2, basis: bsBasis(), head: finMeta, hw: (r) => r.name === HANWHA })}</div>`;
       const br = brokerRank(state.per.rank);
       if (br) {
         const jo = (v) => (v == null ? "–" : `${fmt(v / 1e6, 2)}조`);
@@ -369,7 +369,7 @@
           `· ${br.b.as_of} 별도`, "조원") : "";
         main += `<div class="card"><h3>국내 전체 증권사 자기자본 순위 (조원)</h3><p class="card__meta">DART ${esc(br.b.period)}를 낸 증권사 ${br.rows.length}곳 · 별도 자본총계 · ${br.rank ? `당사 ${br.rank}위(연결 ${br.cfs}위)` : "당사 값 없음"} · 매주 월요일 자동 계산 · 정기보고서가 없는 회사·외국계 지점은 빠짐${state.per.rank ? " · 지난 기간은 최신 순위에 든 회사 기준" : ""}</p>
           ${rankTable(br.rows.map((r) => ({ name: r.name, value: r.equity_ofs / 1e6, note: `연결 ${jo(r.equity_cfs)} · 자본금 ${jo(r.capital_ofs ?? r.capital_cfs)}` })),
-            { unit: "조원", digits: 2, basis: br.basis, meta: rankMeta, hw: (r) => r.name === HANWHA })}</div>`;
+            { unit: "조원", digits: 2, basis: br.basis, head: rankMeta, hw: (r) => r.name === HANWHA })}</div>`;
       }
     } else if (m.auto === "sec") {
       const us = state.data.us;

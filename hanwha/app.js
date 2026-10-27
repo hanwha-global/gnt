@@ -101,7 +101,7 @@ function renderPL(D0, ents, reg) {
   const shown = E.filter((e) => e.l || e.f), nS = `${shown.length}사`, hidden = E.filter((e) => !e.l && !e.f);
   const prof = shown.filter((e) => (e.l?.ni ?? 0) > 0);
   // FY 손익이 없는 법인: 재무상태만 있으면 그해 말 취득, 행 자체가 없으면 공시에서 빠진 것
-  const acq = F ? E.filter((e) => e.f && e.f.ni == null) : [], gone = F ? E.filter((e) => !e.f) : [];
+  const acq = F ? E.filter((e) => e.f && e.f.ni == null) : [], gone = F ? E.filter((e) => !e.f && e.l) : [];
   const noF = [...acq, ...gone];
   const noFtxt = [acq.length ? `${acq.map(lab).join(", ")} 손익 미포함 (취득 시점)` : "", gone.length ? `${gone.map(lab).join(", ")} 공시에 없음` : ""].filter(Boolean).join(" · ");
   const kpis = [
