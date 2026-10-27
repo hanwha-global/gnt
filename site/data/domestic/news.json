@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T17:21+09:00",
+ "updated_at": "2026-10-27T18:12+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "sources": [
   "연합뉴스",
@@ -58,6 +58,26 @@
   "Jakarta Globe"
  ],
  "items": [
+  {
+   "date": "2026-10-27",
+   "time": "17:38",
+   "title": "미래에셋, 이번주 日증권사 인수 발표",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MaE5aMXAxVlVINXd3WUpIVC1GUzFYMFlWdXQ3c2c4WERIZGh5TkMzdDVFS0F1TlUwOFNaQXBDMlRjbHZTUWRldXJvX2NfczNhVWc?oc=5",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "17:22",
+   "title": "박현주 미래에셋 회장 “28일 M&A 발표…글로벌 영토 확장”",
+   "src": "이투데이",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8xeDJQLW1jZVI1SkhxbDJ1ZVZqUUlRYUxXVnUtQWY0VnJCdUlyMnF4ZVc0cVFDMHp3elRtemx1cmhfZ2JwUTRjdWM2SnRyREMtR09YMw?oc=5",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
   {
    "date": "2026-10-25",
    "time": "09:00",
@@ -147,20 +167,20 @@
   {
    "date": "2026-10-01",
    "time": "16:00",
-   "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
-   "firms": []
-  },
-  {
-   "date": "2026-10-01",
-   "time": "16:00",
    "title": "신한證, 베트남 뿌리내린 10년…IB·리테일 수익 성장 '주목'",
    "src": "머니투데이",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmSnVZNFJIWVllZkR3elQxSG1DcXdvSHlBaVo0TWREbFF3cG14dWlpYTh6OG1RZEYxTnM5WWJ6U044aVVkMzNIczVGTVVIU1QxTlJNZ1VuQjR1RjE4b19oNkpoV1BSMGc10gFuQVVfeXFMTlMtSjhLazFEQ3lOVlgxZ1ZWYmhSMEFXWFNfY2Y5RUdSX1R4NmFpNExEUTg4eGNaTngzQko2Mm1JRDNlVm9YQ0JXVksweWtjSElRd3N5aFEyZFRMbGtWQUhXeE5xUS1GdHd4YUhPNmc?oc=5",
    "firms": [
     "신한투자증권"
    ]
+  },
+  {
+   "date": "2026-10-01",
+   "time": "16:00",
+   "title": "꿈틀거리는 베트남, 韓증권사 점유율 전쟁 시동",
+   "src": "머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
+   "firms": []
   },
   {
    "date": "2026-09-30",
@@ -228,16 +248,6 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
-   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
-   "firms": [
-    "토스증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
    "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5",
@@ -268,6 +278,16 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
+   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
+   "firms": [
+    "토스증권"
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": "16:00",
    "title": "하나증권, 업비트 글로벌과 디지털자산 금융사업 협력 MOU",
    "src": "글로벌이코노믹",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUC1EdnN5Um85S0VNYTM1TFFRSGtlNnBtZ2xnR0hQa2tnTWRwMEtwZEx5Q1BNWkFiTHlCYWUyMWYtRzF4dFZEVVI2N1ZMM0h4SXpzWWkzejJzRDVOTmtEekxpVGU3bWNHNktLejBlUXlSd1c2Nkp4UlY1Zk5jU3VKdUFJUzZhWlNC?oc=5",
@@ -283,6 +303,16 @@
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pT0hjWWpYejVQR0Z6c2RneVR5Nm1tSHFHWGI4dFBDY2xqTjBLUnlfSWd4eWN1STdWRnhIemxHa2ZRbWFTS1NUejhIZEhYa3A1Q1lFLXB3MFJSUQ?oc=5",
    "firms": [
     "한국투자증권"
+   ]
+  },
+  {
+   "date": "2026-09-11",
+   "time": "16:00",
+   "title": "삼성증권 \"HD현대중, 엔진 증설 예상↑·SMR 진출 예상외\"",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92eWtrX2pMU1RRZ3JqWkNaUkpIVklfWlNfOGhSc3VNUnJoVVlnZURlN0I2UllkR1FfTVZ4XzNHTFc5dEROY3J6RE4xemIxb0R3aWhMTHh0VGF6WmfSAWBBVV95cUxQSGhKTXA4amQyUTQzMTM0TFZ2Y0pTQVBCUDQ3WXJfSmM1dW80U3FfcUJWaEFmX1lGUEhQcElqb1Nlb0FmcThJb3FfclZkTnNKaXltTC1Eb2h0RUtGc05ZR1o?oc=5",
+   "firms": [
+    "삼성증권"
    ]
   },
   {
@@ -306,22 +336,14 @@
    ]
   },
   {
-   "date": "2026-09-11",
-   "time": "16:00",
-   "title": "삼성증권 \"HD현대중, 엔진 증설 예상↑·SMR 진출 예상외\"",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92eWtrX2pMU1RRZ3JqWkNaUkpIVklfWlNfOGhSc3VNUnJoVVlnZURlN0I2UllkR1FfTVZ4XzNHTFc5dEROY3J6RE4xemIxb0R3aWhMTHh0VGF6WmfSAWBBVV95cUxQSGhKTXA4amQyUTQzMTM0TFZ2Y0pTQVBCUDQ3WXJfSmM1dW80U3FfcUJWaEFmX1lGUEhQcElqb1Nlb0FmcThJb3FfclZkTnNKaXltTC1Eb2h0RUtGc05ZR1o?oc=5",
-   "firms": [
-    "삼성증권"
-   ]
-  },
-  {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5",
-   "firms": []
+   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
+   "src": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
+   "firms": [
+    "한국투자증권"
+   ]
   },
   {
    "date": "2026-09-10",
@@ -346,12 +368,10 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
-   "src": "연합인포맥스",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
-   "firms": [
-    "한국투자증권"
-   ]
+   "title": "“해외투자 관리 곳곳 허점”…금감원, 증권사 경영유의·개선 지적",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mVWRvRzF4Q1JiWlNMWFpOUlRXbHJtM2NQU3VMNWJrcWxxZDNjaUtJZFRfNTYwa2sxUFNnV2l6LTlRdjNQYjhnOXpCZGR4Y1RDOWc?oc=5",
+   "firms": []
   },
   {
    "date": "2026-09-09",
