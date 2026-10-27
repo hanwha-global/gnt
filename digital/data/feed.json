@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T08:06:23+00:00",
+ "updated": "2026-10-27T08:23:08+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
@@ -110,17 +110,17 @@
     "code": "US"
    },
    {
-    "date": "2026-10-26",
-    "title": "OCC aligns with CEI suggestions in new stablecoin rule",
-    "src": "Competitive Enterprise Institute",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbWRWbHQzTnVxVEc3em5scFpFNk5fUlFtV2JJUjZUOHNGdjV0YlFPd3V4MHFzWDBHOVBNTDE1VFdHZEJJWmFjOHhaNDJmY1dKd0UyLUV5aE5nZWFVQ3dCWUl2VmdGczdJR0ZBU2NCbU5fVDVxRldnSHhwNGpDOWdETDhR?oc=5",
+    "date": "2026-10-27",
+    "title": "OCC Stablecoin Move Rewrites Crypto Banking Rules",
+    "src": "OneSafe.io",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5UZzlLU0NsNHhFa09aNjlMMzZBcHE2N002azNDa081YzFLUVNieHZmaFNrMlpqeGk4dEVrdEkzN2oyYldhSDRvZlh1YUJ1aVZqQ09yRVllZWx3YTloeFBxMXRXWlNjWFpqT1JSNnA2eWV0b3Qx?oc=5",
     "code": "US"
    },
    {
-    "date": "2026-10-26",
-    "title": "SEC's crypto fundraising rules face consumer group pushback",
-    "src": "American Banker",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeFdzVlZLU2RwbHJKTjhhOUNYbjk1d0tkQ3BqQVMtSUlvTTdsTllMYXhSS2NSRlM4VFYxYkh6OE5qa2pWTGNueTg0U1pVOFY5bDhTWkhpbGtEX1BnOWlHU1JnMl95S1dXalVyYWotcjlWU2ZXS253b1d4T01iVWdjcHV6ODlobTlqMHY0UHhOWXhMRFRQdi1tZU1B?oc=5",
+    "date": "2026-10-27",
+    "title": "Stablecoin Regulation: OCC Pushes Community Banks",
+    "src": "OneSafe.io",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOT2VNb3hXNkpBejNPWHBrMGpnem1LOGxETzA1SGZsaE9uTVcxdzlCbnBWcjhHUXJwRS1uQzUtdzZBdWJ5OFJzeDN0OHNVZGwwYkw2Ny1EOF9YUnBEeDZNMWNxSUJqTmhScGxwVjNXUjczRGVqSVUtek1TblZKQzU5OWNjZDFjNVk?oc=5",
     "code": "US"
    }
   ],
@@ -344,45 +344,59 @@
   ],
   "AE": [
    {
+    "date": "2026-10-27",
+    "title": "StraitsX and Visa to Extend Stablecoin Card Issuing to 100+ Markets",
+    "src": "The Fintech Times",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeXNYUFhNLXVSZFp1bXppa2Y4OGFaTFctZGFjZWxGNFMwWlNCLUVJVHJpakVGRDRLTklETzhtd0pxTHVpcVJ6Y2YzWVZ1UHNtVXFHY1ptVUtvTFQyU0ozTzFkdWNvZWx0ZDlLWTRTVk9HTkxaaTltMDg2cmFrRkdwYWtybEdOcmNSWllZN0JCTl9rWEJwRkpXU29RNA?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-17",
+    "title": "Ondo Tokenized Stocks Win Abu Dhabi Approval on Binance",
+    "src": "CoinMarketCap",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWHNhRzVSZmYwU3FlaGw5aDJlaHVZd0l3RnJVVDNySHVxSFJUWGl0dFpqbG8zNWpyZUROcmxmUUtKT2IyU2JhLXFyN251ci1USEJhMUl3OVEzMVllR3VMSjV3bzZzTXBUbnFjazRZejNwR01NblNkakNtVHZWTzRKbmFNZ2NDOHFsUDdPWHFrM2JzaEV5eDg3ZmJMU0Z0Zw?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-15",
+    "title": "ADGM says its digital assets regulatory approach is paying off",
+    "src": "CNBC",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON1k3SkxDTm85S0g5N0kyRU1iaXdtbFF6T25CMk9xTkItVHdaTUVEVUgyY0wwdGpfOXJ0VXpaWlJXanlxMThBOEl1M2M0b0YxVDQzU2FYQzZlMEUwR21XOTlNeUJQOVZ1bGNZSmVrZThpWkUxdVgwbkpyTm9KMG5zck81dTY5YmZxRGc1R0MwckRKWkpoelNGMC0wQkI1bEhEM1Y5X2NrWWE?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-14",
+    "title": "EMEA Digital Assets Market Quarterly",
+    "src": "White & Case LLP",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb04tbHpadUZXQ0wyb0RnbFRMVk9DMGt6TzZvZVBHX1pHeVJIbzhscjlnRGYwVi1pS3g5d1RrZXdxVjhoY3pEeEdRVUcwTmtmQjFIZDJJLTVwTXo4emRvc2JEMFBFSkwxZVYtV1A4MndpZks3akVhR2UxYUpHdzdTLWt3?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-13",
+    "title": "Universal Brings USDU Stablecoin to Solana for Professional Clients",
+    "src": "Altcoin Buzz",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWVNyUEdrVW9LNncxVHVMSjNieUs4eVZZWDRwckRua1E4ckMwWktnaTNDdE9SN3Nod3FMTGlNZThLQWdaRXlGQm1LNXdXU1QwOG9WS0luRXhNWktidHFhWWFvWW9oVE1Hb1J6Q2RJN0tlVFpycENxWnZ1eFdmMXFYZGlWUnRrdlFZb2gxeDhFSlFwbkxoTy1pakxR?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-09",
+    "title": "How to Buy, Sell & Track Crypto in UAE: Beginner’s Guide",
+    "src": "www.sc.com",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55Uk9aVHNzY05KdkY5bmRtbGZpVHJaUVRKQTBjbjU4OWI0VVV3MXNveWVxc3lQanVFRXkxb2NtTVVrNDIxVHpHMmpELXotakNKQ1NMdzNuYTlMbTYyVGRWVkZRSThmNkdTVGszamJn?oc=5",
+    "code": "AE"
+   },
+   {
+    "date": "2026-10-09",
+    "title": "UAE Sees Growing Interest In Regulated Crypto Funds As Institutional Investment Landscape Evolves",
+    "src": "Menafn",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeXN2bkYzUDJMb2RRVU9GbWpXRWlLZ0IzR0VZams3TXdTWGpDZ3JkdmZOM2ZwZGpkMktzazNtZEdSRWJiYzdhY2tVLV9oQ3JkNFM4SHN2QzdDc0ozZTdWRzlaVGVrYjBMWk9JM0lVeWF2TTV1VzdLbEx0OVVhOG5YamFrYlM5NzdZYWdqdTE1S3pCQkRSNlFNS3JBQm1ZbnFueGtWQ1oyMm9wR1dka21FQ09pTzBVZXYteWVsY0RJbTRNcVF2TlE?oc=5",
+    "code": "AE"
+   },
+   {
     "date": "2026-10-09",
     "title": "‘비트코인 보유국’ 부탄, 아부다비 거점으로 자본 유치 추진",
     "src": "블록미디어",
     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9zYVVBamhHdEtYUmJNMDl6OTFldWp1YUQxMnF5VWJFMVZ4UEY1Y3JnWnY4b2JGMEhPTFpIMWR3ZTdDYXB5MHFUMWdnQnlaZnh0S1hlUGtzNF8?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-10-05",
-    "title": "한화금융, 아부다비와 '디지털금융 동맹'…스테이블코인·국경간 결제 협력",
-    "src": "웹이코노미",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE04Z0p4TXRyM3hXc3E5VU44UGo3OEZ0Rk1saFRhTXRhclA1eHBWQnZseDE2M3BwMy1maHdHRzFvSW5fb3VyTFJXdUU2MWMtZC0xbG9ITldoR3YwemxqWGk1NWNpSmVweGFZeXRWbXJEMnJwdw?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-09-30",
-    "title": "블록체인 컨퍼런스 ‘이스트포인트:서울 2026’ 성료",
-    "src": "경향게임스",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBFQlhSa2JJSlp1Z0U0R1YtazJ3LTYyUDBpT1VIV2lJSXpMcmdEcnlqdUg3bGJSNEFkZjVMQkx0cm5BVWhUb1U5OWlhcHJBNzJ6dXBNU0otMjNqTkhja3VUZTBkdWNZNVM4NWR4WA?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-09-29",
-    "title": "KB국민은행·카카오, 디지털자산 미래 논의",
-    "src": "스트레이트뉴스",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE10UktRNERjTEl1WHlwMzFyMjlhckRJbTU3cDFWSjJpaTZkMDZueDdjeU9YTENHbi1FbDhwdklrTnNzeFdNd0NIZ05nS1Z1WXoxcEVwRm5aX2hPRmVuS1BlVjljcE92X1VlRXN5LU9iUVhxaTjSAXdBVV95cUxQY1N6WGFmTkgyYTJEMVpVS1BCWTVQd3NzOGxKa2RrTFZCbUpoMzRhRVBxY3Bjc0hBLXFrNENkYmk1M2xKR3dKc2NwNHVJVGdtWDlLamdqcVo0Vk5SREFGWVkzV3JPMzNKMVBvYkJDTnVCLTBKWlZ6dw?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-09-28",
-    "title": "\"모든 기업이 디지털자산 사용하게 될 것\" [이스트포인트 : 서울 2026]",
-    "src": "한국경제",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFWkxWTGx6aXpxZERweURkSDhaOC1LRjVZLUpEclNpejVFZ1llTFlKQUtUb0U4cFd0a3BaMG5wWjBPS0QzRzhsNDNwT2c3NC1fYXU0RUJEZDF1dw?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-09-28",
-    "title": "글로벌 디지털자산 '기관의 시대'…이스트포인트 서울에 600명 집결",
-    "src": "전자신문",
-    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4xUUxVRkVuTElXc3FlMERDQnM4Sm5pbVE4N2xpckpzakQyYmN6QU5HdUdpSERaWnhRWlFETk81U1VadGs0bU5pUHdBX1VqUQ?oc=5",
     "code": "AE"
    }
   ]

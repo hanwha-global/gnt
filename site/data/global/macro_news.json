@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T16:57+09:00",
+ "updated_at": "2026-10-27T17:21+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -7,10 +7,18 @@
    "items": [
     {
      "date": "2026-10-27",
+     "time": "15:51",
+     "title": "노무라 \"4분기도 소비 부진 시, 한은 금리인상 조기 종료 가능성\"",
+     "src": "이데일리",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNzhSdVpNbEtRQVJPdldreGo3b2o2X3hwVGVFVmRoN3hJWG9UWXFuSVlsTW82Z24xZWRqVjJLcGs3TzRzYmlEdHotTVhDT0ZoWXpvZEVPaHpwWjlLZ2VxR3czTFpiU0MxdzBxbVN0enE1U19Objdsd01CVFdPYV9KRQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
      "time": "11:12",
      "title": "코스피, 4%대 급등세 지속…외국인·기관 쌍끌이 순매수",
      "src": "연합뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOb2Y2bmU2WVFESjd3ZzFLSEJHNU9mSEFPMlRST1lrVEV5Q0djU0NNQzgwT2d3b19haFVxeFo0WkZPYVB6TVExSjBDT0RXWUVqWUpMc3JYZjJJcjdiRUI2TNIBYEFVX3lxTFBOb2Y2bmU2WVFESjd3ZzFLSEJHNU9mSEFPMlRST1lrVEV5Q0djU0NNQzgwT2d3b19haFVxeFo0WkZPYVB6TVExSjBDT0RXWUVqWUpMc3JYZjJJcjdiRUI2TA?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmMndqYm91UWo2dms1ZUhpRWFsVFJKYzFrMjE0SGRPNGltcGVEcUM1Ri1UZGd2bkdRZ0FzSFZjSHBxTGgzQ2ZiUmZ6RUZDRmpPckpDdElZb0lPOGfSAWBBVV95cUxQTm9mNm5lNllRREo3d2cxS0hCRzVPZkhBTzJUUk9Za1RFeUNHY1NDTUM4ME9nd29fYWhVcXhaNFpGT2FQek1RMUowQ09EV1lFallKTHNyWGYySXI3YkVCNkw?oc=5",
      "priority": false
     },
     {
@@ -19,14 +27,6 @@
      "title": "“코스피, 급락후 왜 반등 안 해?”…5500선 밑으로 ‘뚝’ 외국인 매도 영향",
      "src": "매일경제",
      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HZWdNNDJoTzZjQzdZenNvUEVpRE5CQ0toNFQ0NEgtem10NWpYSU1fcTBnczE2MW1XbzJER1R0OGh6UXRSU1QtN19HZXpQSWhaSVE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "16:22",
-     "title": "'7개월래 최저' 코스피, 대형 이벤트 앞두고 외국인 이탈",
-     "src": "머니투데이",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94U2g3Qm5RN002QXR6YmVvSjNzT1lpTGgxcnhvOUQzcWk1bzVzSjVkR3prUWJDdG85RkRCb3E4YUNPd3hlaWJ4NEhfNUtWaHVPbGZrRV9yRTZzYk9aR3JtaGo3TmFHUml10gFuQVVfeXFMTXk3OUJhZEV4ZDdDZDllTUFITDRqR0ZQSVZyTC0zM1VKVENHYWRvLUIwTm5zOWgzdjRFajRZSldwM2pnSm5FV3Q4cmhoS2Z6dFU3TDZSRDBCUUxmTkpsYlhncHVvTzNuRTV4TlQ2X3c?oc=5",
      "priority": false
     }
    ]
@@ -123,10 +123,18 @@
    "items": [
     {
      "date": "2026-10-27",
-     "time": "15:41",
-     "title": "Japan's trend inflation index hits 3-year high, cements case for BOJ rate hike",
-     "src": "CNA",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQX0tZa3Z4a2VoTkNaaG44YWtPNFZ6RUVNS1EySDZGNWExYXFBTzYwNHkwTHIyUUYtd0V0U0dQVVl6dGREOUUwYUViODdCWGVJT0UwelJEOHRZMy15QmxWVGZrZmpsU2x1QlViaGVGamQ4MFVzbEI3VFJ3T0dZcWNzU0ZmZUlVcHFTS2Q1YVdkV3dsbkZoMmsxdFFjZk1tU2tjdnlJcExQLS16aW5mZF9BbElaQXVQaExzdEhIdzl3?oc=5",
+     "time": "17:13",
+     "title": "Global Market: JGB yields climb as investors await BOJ, Fed policy decisions",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQMkViMUdOVlptY3ZQb3E4VlBQRDlvRVJ5bFV1dVF2VUJWWktWblktME84WmhBU1paS3dxRnExemxuLUNMRlkyVS14UDQ1ZTRmbDdoSVZlVW9Pc3o1LURUbUZQeTlYQ3JrV3pWZnJRZjdZc0JVb0JDeHE0RUpqMUJBWFB3d1VHZmk5cHh6Z0ZYaEllTld1Z0V3d241akpKenVDNUhWak1jYlk2aFBIaDBSZzBRRWNGbjJndXhYbkhILXF2MEw3X21QZTFZWUs0amUzYi1DZFlkOWtYZzFkaEZOdHI4WnVJV1BMdjZr0gHrAUFVX3lxTFAyRWIxR05WWm1jdlBvcThWUFBEOW9FUnlsVXV1UXZVQlZaS1ZuWS0wTzhaaEFTWlpLd3FGcTF6bG4tQ0xGWTJVLXhQNDVlNGZsN2hJVmVVb09zejUtRFRtRlB5OVhDcmtXelZmclFmN1lzQlVvQkN4cTRFSmoxQkFYUHd3VUdmaTlweHpnRlhoSWVOV3VnRXd3bjVqSkp6dUM1SFZqTWNiWTZoUEhoMFJnMFFFY0ZuMmd1eFhuSEgtcXYwTDdfbVBlMVlZSzRqZTNiLUNkWWQ5a1hnMWRoRk50cjhadUlXUEx2Nms?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
+     "time": "16:25",
+     "title": "Japan’s trend inflation index hits 3-year high, cements case for BOJ rate hike",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWFp4YlJ6Y3BaQ3I1SU0tdTVQWW9KRXR1Um5yb3VrR2hTYTdOQURJYkhPSHNzeW9tZk9GUUlrMlp5UHd3elQwQXVfMk43X3RaRklEaThXUzRhWkwyOTE2bEY1UUQ3ejBpYXhReDlJQ2VfVnc5S3BNWXZkSVowdl9pckd0cVl2cHZBdVJ1U2dzbGNvRlQ0NHRqOXpwRU55T2ZudFB5M0dNZDBOSjJmbm5fRERTQVpudkRRTi1j?oc=5",
      "priority": false
     },
     {
@@ -136,20 +144,20 @@
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeENqdi0taGxhOTNQTjZMMm1zOGl6YXd3QnJEUjYzVF9aRlVPcC13bWFHUUwyVGh6MVJ6dzd4WTZJMGRhZDEzZlVuSERta3l1dUkzR1RhY0ZFTU8wSUhkaEQ2Q1ZlMTRZOU8yOHFxV1pFdmpCYzQ2R2ljMlFhd3BTelR2dHY5c2F4ZTF2RDh2RXZha0xRdkJ3R0NuZXh3cmhBUThvLUxnSXd1ZEZxQUlFQTV3eHhFZ2RYbktSUmZn?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-10-27",
-     "time": "11:50",
-     "title": "Ex-BOJ chief Kuroda backs more rate hikes, his former deputy urges caution",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORGd3OVRlcl82RE5aMnZNb3FSZzVVZUxxN1oxVmFIOFJZZGdJb0toUDBmWXJEbGZuWWtJOFF6X3hJeFRQT0k2VlFnTk5kWFpod0kwRS1VMjRpb21qYlV1NzZTd2padUZzWVlJal9xb01kRnRNLVYwWGo1aUhRYThpYV9hclNDUWo1VElHNGotWTk2a3VGdER5b0p4d0N6RkVtVGRfUXF0MzU4YndydEkxLXZfZnlLNVJwODM2ZWEwVE5ic2dk?oc=5",
-     "priority": false
     }
    ]
   },
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-10-27",
+     "time": "15:24",
+     "title": "Global Market: China, Hong Kong stocks slip as technology shares extend losses",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNR2lnaXdYZkRZdHFOQTdEX3dQU2FZMUFBV1p4SHA4aGtuc1U1NnR4UGVjenVmVWpNSWt5NGxsS3JKX1l0WlJqdGZRMFE0ZHIya2xCRkl2TmtHVW5QQkg5VG5xT19ybjlqNXh0Z2dLM3VnNWJFWG1jOUN0b09xQjFBLVJ0eFJ2RFRBNHdrazRvcUdoVkVYeEhFYW1JZUI3cWVOTUNkeFktemx2eUtZZms2M0tJc09GYkVBcjB2TTB2dC04QU0xcVpGdnZQLUlQWTlMcUhON0tSOHdraTJSQ0M4akJmbkp2WEVm0gHuAUFVX3lxTE83aVotSy1YYTZGSjIyb3FsblRLTWhEV214aDdTQXNDUmZBTG43ODdjUUpxTlVJczdQVnFCbFVldXFaV1M1SnZ3X1BLSzIyVHB3eUtCYTF5WU9mRUVFTDN6OS1Ick1rS0hneHBFY0VIZUZacktEZTZYSlFzeWpkd0JRVlVEdndqVFo2RjJpOTlTbWFmVXNXeER0ZU1PSGtpcm92QnBPeWpZYnAweEFrLU00Z1JIY012WVJzaUJURnZjZF8tNjhwdVRBc1dHZ2N5UFZrQktUckNXZEhFRHppLVJLamlWZHFoR201cU1rTUE?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-10-27",
      "time": "15:00",
@@ -164,14 +172,6 @@
      "title": "COMMENTARY: Why China’s stimulus keeps missing the mark",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOazJDSjk5eWVKMWY5eFVycmx2U3ZWUDRxRUhuVDVaNUlkcGNQN18tREhKOU1DWDE2d3puS0kwZHBGRU40NGk5YVZTZFBqVER2R2NhdEtYOGZNY19xVE02QVk1bXYtUDVWOWNmTVFzTG0yZmcxZVQyXzJNTndaOU1rTDc4NkllWmlkMldBUEdLNjJBTVN1T3RSVXJjSkE5RVlaUGlxSldVWWl3OWVYZkJvVV82MHY4bTJSZHZjWk8yQXFJeEdDam1n?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-25",
-     "time": "10:41",
-     "title": "China’s US$3.5 trillion stock rout deepens as profits sink, major stimulus stays elusive",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcmZLN0JtOXFkZVphX1I1cVItLUJreExqSTZHaE9vUVlYTFFlYVBKUnZjRktDVHhVZzU2dlUyRW51ck51Q2x5bXNIdlc4OXhNMnhJSElwZlVFaVB1VWtLSnhiWjE2VkR1VmVUbWxPTzYwNkJ4Yk9Ha01hZ3JpZ3BlV0JEaUZTOUJ3MTJEMzBEQzFLcW1ZWUM5eHVoTXk1ejI1TFktejBCVVMzNVM1YWZWSGhJT0RKYS1LNE4zSzRicUlmVjNRZmxOdFJXM1JJY2dDTmc?oc=5",
      "priority": false
     }
    ]
