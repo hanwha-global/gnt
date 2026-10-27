@@ -208,8 +208,10 @@ def main():
     if not total:
         print("수집된 기사 없음: 이전 파일 유지", errors[:3])
         return 0
-    # 베트남어·인도네시아어 제목은 한국어 번역(title_ko)도 단다. 이전 파일에 있는 번역은 다시 부르지 않는다
-    ko = translate.add_ko([x for items in out.values() for x in items], translate.cache_from(*prev.values()))
+    # 베트남어·인도네시아어 제목은 한국어 번역(title_ko)도 단다. 이전 파일·뉴스 피드(news.json)에 있는 번역은 다시 부르지 않는다
+    feed = OUT.with_name("news.json")
+    feed = json.loads(feed.read_text(encoding="utf-8")).get("items", []) if feed.exists() else []
+    ko = translate.add_ko([x for items in out.values() for x in items], translate.cache_from(*prev.values(), feed))
     OUT.write_text(json.dumps({"updated_at": now.isoformat(timespec="minutes"), "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
                                "keep_days": KEEP_DAYS, "fallback_days": FALLBACK_DAYS, "fallback_keep": FALLBACK_KEEP, "hubs": out,
                                "errors": errors[:10]}, ensure_ascii=False, indent=1), encoding="utf-8")

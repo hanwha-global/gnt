@@ -738,59 +738,74 @@ class ForeignNewsTest(unittest.TestCase):
 
     def test_titles_translated_to_korean_once(self):
         import translate as tr
-        calls = []
+        calls, ms = [], {"ok": False}
 
         def gtx(*lines):
             return json.dumps([[[l + "\n", "a"] for l in lines[:-1]] + [[lines[-1], "b"]]]).encode()
 
-        def get(url, params=None, retries=3, timeout=30):
+        def get(url, params=None, headers=None, retries=3, timeout=30, data=None):
+            if "edge.microsoft.com" in url:                                                 # Microsoft 임시 토큰
+                calls.append(("ms-auth", ""))
+                if not ms["ok"]:
+                    raise RuntimeError("HTTP 403: blocked")
+                return b"tok"
+            if "microsofttranslator" in url:
+                self.assertEqual(headers["Authorization"], "Bearer tok")
+                texts = [d["Text"] for d in json.loads(data)]
+                calls.append(("ms", "\n".join(texts)))
+                return json.dumps([{"translations": [{"text": f"마이크로 {t[:9]}", "to": "ko"}]} for t in texts]).encode()
             q = params["q"]
             calls.append(("google" if "googleapis" in url else "mm", q))
             if "googleapis" in url:
                 if "macet" in q:
-                    raise RuntimeError("HTTP 429: unusual traffic")                    # Google 막힘 → 이 실행은 MyMemory
+                    raise RuntimeError("HTTP 429: unusual traffic")                    # Google 막힘 → 이 실행은 다음 곳으로
                 if q == "Kiwoom Securities Raih Penghargaan\nJudul kosong":
                     return gtx("키움증권 수상", "kosong")                               # 한글 없는 줄은 실패
                 if "\n" in q:
                     return gtx("한 줄로 합친 번역")                                      # 줄 수가 안 맞으면 한 건씩
                 return gtx(f"번역 {q[:9]}")
             if "rusak" in q:
-                return json.dumps({"responseStatus": 200, "responseData": {"translatedText": "고장 난 앱"}}).encode()
+                return json.dumps({"responseStatus": 200, "responseData": {"translatedText": "&#39;고장&#39; 난 앱"}}).encode()
             return json.dumps({"responseStatus": 429, "responseData": {"translatedText": "MYMEMORY WARNING: YOU USED ALL"}}).encode()
+
+        def run(items, cache, **kw):
+            calls.clear()
+            with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
+                return tr.add_ko(items, cache, **kw)
 
         items = [{"title": "Kiwoom Sekuritas Raih Penghargaan", "lang": "id"},
                  {"title": "Chứng khoán KB Việt Nam báo lãi", "lang": "vi"},                 # 이전 파일에 번역이 있다
                  {"title": "Judul kosong", "lang": "id"},
                  {"title": "Mirae Asset wins license", "title_ko": "남은 번역", "ko_by": tr.MM}]  # 영어 제목은 번역을 달지 않는다
         cache = tr.cache_from([{"title": "Chứng khoán KB Việt Nam báo lãi", "title_ko": "KB증권 베트남 흑자"}])
-        with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
-            self.assertEqual(tr.add_ko(items, cache), 1)
+        self.assertEqual(run(items, cache), 1)
         self.assertEqual([x.get("title_ko") for x in items], ["키움증권 수상", "KB증권 베트남 흑자", None, None])
         self.assertNotIn("ko_by", items[3])
-        self.assertEqual(calls[0], ("google", "Kiwoom Securities Raih Penghargaan\nJudul kosong"))  # 같은 말 제목은 묶어 한 번에
-        self.assertEqual([c for c in calls if c[0] == "mm"], [("mm", "Judul kosong")])          # Google이 못 한 제목만 MyMemory
-        self.assertFalse(any("KB Việt Nam" in q for _, q in calls))                             # 이미 번역한 제목은 다시 안 부른다
+        self.assertEqual(calls, [("google", "Kiwoom Securities Raih Penghargaan\nJudul kosong"),  # 같은 말 제목은 묶어 한 번에
+                                 ("ms-auth", ""), ("mm", "Judul kosong")])                    # 못 한 제목만 다음 곳으로
         self.assertEqual(cache["Kiwoom Sekuritas Raih Penghargaan"], ("키움증권 수상", None))
 
-        # Google이 막히면 MyMemory로, 다음 실행에서 Google이 되면 Google 번역으로 바꾼다
-        calls.clear()
-        jam = [{"title": "Aplikasi macet", "lang": "id"}, {"title": "Aplikasi rusak", "lang": "id"}]
-        with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
-            self.assertEqual(tr.add_ko(jam, {}), 1)
-        self.assertEqual([(x.get("title_ko"), x.get("ko_by")) for x in jam], [(None, None), ("고장 난 앱", tr.MM)])
-        self.assertEqual([c[0] for c in calls], ["google", "mm", "mm"])                         # 막힌 뒤로는 Google을 다시 안 부른다
-        calls.clear()
+        # Google·Microsoft가 막히면 MyMemory로 예비 번역, MyMemory도 한도에 걸리면 멈춘다
+        jam = [{"title": "Aplikasi rusak", "lang": "id"}, {"title": "Aplikasi macet", "lang": "id"}, {"title": "Aplikasi baru", "lang": "id"}]
+        self.assertEqual(run(jam, {}), 1)
+        self.assertEqual([(x.get("title_ko"), x.get("ko_by")) for x in jam], [("'고장' 난 앱", tr.MM), (None, None), (None, None)])
+        self.assertEqual(calls, [("google", "Aplikasi rusak\nAplikasi macet\nAplikasi baru"), ("ms-auth", ""),
+                                 ("mm", "Aplikasi rusak"), ("mm", "Aplikasi macet")])
+        # 다음 실행에서 Google이 되면 예비 번역을 Google 번역으로 바꾼다
         later = [{"title": "Aplikasi rusak", "lang": "id"}]
-        with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
-            self.assertEqual(tr.add_ko(later, tr.cache_from(jam)), 0)
+        self.assertEqual(run(later, tr.cache_from(jam)), 0)
         self.assertEqual(later, [{"title": "Aplikasi rusak", "lang": "id", "title_ko": "번역 Aplikasi"}])
         self.assertEqual(calls, [("google", "Aplikasi rusak")])
+        # Google이 막히고 Microsoft가 되면 Microsoft로 묶어 번역한다
+        ms["ok"] = True
+        both = [{"title": "Aplikasi macet", "lang": "id"}, {"title": "Chứng khoán NH Việt Nam ra mắt", "lang": "vi"}]
+        self.assertEqual(run(both, {}), 2)
+        self.assertEqual([x["title_ko"] for x in both], ["마이크로 Aplikasi", "번역 NH Securi"])
+        self.assertEqual([c[0] for c in calls], ["google", "google", "ms-auth", "ms"])
 
         # 줄 수가 안 맞으면 한 건씩, 한 번에 새로 번역하는 수 상한
-        calls.clear()
         more = [{"title": f"Judul {i}", "lang": "id"} for i in range(5)]
-        with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
-            self.assertEqual(tr.add_ko(more, {}, max_new=2), 2)
+        self.assertEqual(run(more, {}, max_new=2), 2)
         self.assertEqual([x.get("title_ko") for x in more], ["번역 Judul 0", "번역 Judul 1", None, None, None])
         self.assertEqual([q for _, q in calls], ["Judul 0\nJudul 1", "Judul 0", "Judul 1"])
 
