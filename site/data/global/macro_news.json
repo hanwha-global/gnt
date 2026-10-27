@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T17:21+09:00",
+ "updated_at": "2026-10-27T17:50+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,6 +36,14 @@
    "items": [
     {
      "date": "2026-10-27",
+     "time": "17:13",
+     "title": "Global Market: JGB yields climb as investors await BOJ, Fed policy decisions",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQWdxZjJhd3lZWElnRGdybF90RUZNcGFsOGNJdjJTYl9Fc3lTNmZTS3V0eWMtZ3pkUktaX040endCVXBuZzJCUmZvajk3TG9Gbl9wa2JCOHFQZGFGZVk3dGhOX19EbGF4SnRsWm9ndGNBaDhTQmV0cUpucmRza2JGVGZiZU1IR05mVTExSEtVbVpQQWVURmZ3TVV1bVNrVGh4MjQ5ckNUOURYck84aVlEczlWMWRlQW9JMDB0cUlEcXdoVnA0cnFod1BDMUZsaGMwTktkbTd1U0w0WmFVZFhnVHJFWXB2Z9IB6wFBVV95cUxQMkViMUdOVlptY3ZQb3E4VlBQRDlvRVJ5bFV1dVF2VUJWWktWblktME84WmhBU1paS3dxRnExemxuLUNMRlkyVS14UDQ1ZTRmbDdoSVZlVW9Pc3o1LURUbUZQeTlYQ3JrV3pWZnJRZjdZc0JVb0JDeHE0RUpqMUJBWFB3d1VHZmk5cHh6Z0ZYaEllTld1Z0V3d241akpKenVDNUhWak1jYlk2aFBIaDBSZzBRRWNGbjJndXhYbkhILXF2MEw3X21QZTFZWUs0amUzYi1DZFlkOWtYZzFkaEZOdHI4WnVJV1BMdjZr?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
      "time": "16:39",
      "title": "Hike or hold: Fed chief Warsh faces another tough choice on rate decision",
      "src": "The Business Times",
@@ -49,14 +57,6 @@
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLTRVUHViYXZZWTg4WHdFSXgxV1ZMS2FqdHgtUUxQSlJxN0JzbG5ZNXdOVTJFMUR2VmEtaU9MUGl5T2VXUHg0YmliUFdIOEIzVjhYdHNmUmo2aXVtMll3eGp6WkJCTVRtUl9SQmd0NmFTZXBma1VrVDNXZDVSc3V4M3hrVlFFeU9iV3VmNDhGM2FVQnRvZnA1bFBpSjRfZmRYeGJDX2ZWVEk4OXhE?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-10-27",
-     "time": "12:45",
-     "title": "US bond market sell-off pressure to return, says Neeraj Seth of 3R Investment Management",
-     "src": "CNBC TV18",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdWhoaFZVdXpQMlNkcWIxUi1PbEVmRG5Bc3FRUjYzTnJOeVhkMko3dE5EZ0xLeG8yQ3phemtJVkpJaXowY01PUWxXaXNLLVZ2aHZoS00tU1RjdUVQTVFWSjRKaVo4LW9JUDlqMnBoSTdGbjRNMDRHaV91RzAxMkdVY0RLYWZYMFAteG5tVzZFT29uVGxaS2E3WlpRNzcyeHBXR3ZoVlpHTzgwc0xpWnhZNdIBtgFBVV95cUxOemRLX3k3clFuYU5hZS13ZFdDVHFkTUVnaEZVbWd2bDhIaXNselo2akt6Y1VjMVZHLWRldjJiSVBVNzBuZ1B4VHFPcFNjbUZseEY1S09UdjdBdDhGVUdFbTE0Z19lN3Z6QTRTM3hTa2QtU0VWTlR1S0JUdnRPSnUxSFRxWGlMdlNFT3dZWFNqaHFURGl2YndnR0tIeG5YRWppcW5UMUpjUDVLV2Y4OF9DZG9YT2ZPUQ?oc=5",
-     "priority": false
     }
    ]
   },
@@ -65,7 +65,7 @@
    "items": [
     {
      "date": "2026-10-27",
-     "time": "15:52",
+     "time": "16:57",
      "title": "IDR/USD: Indonesia 10-Year Yield at Four-Year High on MSCI Risk, Oil",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVo5OTQ4TUlrNnNheWQybnE2UkZ6ZHZtcEpYUDgzVTN0ZlBJSVFUbjliMUVfNi1OWlBRbE9aYnczeW11RzFIaHJIUFJZUHE1WlNIUnBiaTlGdGFjdmdTazRBS2tUdXNJcXVDcTEyUzQ5ajZZVHlBOTN5MVB1U281OUI3UzVweThKY24ycFozbmphY3RPNkoxMG80Qk5WQnhBQ2p2b1QxcG0yTjFzWGc?oc=5",
@@ -126,7 +126,7 @@
      "time": "17:13",
      "title": "Global Market: JGB yields climb as investors await BOJ, Fed policy decisions",
      "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQMkViMUdOVlptY3ZQb3E4VlBQRDlvRVJ5bFV1dVF2VUJWWktWblktME84WmhBU1paS3dxRnExemxuLUNMRlkyVS14UDQ1ZTRmbDdoSVZlVW9Pc3o1LURUbUZQeTlYQ3JrV3pWZnJRZjdZc0JVb0JDeHE0RUpqMUJBWFB3d1VHZmk5cHh6Z0ZYaEllTld1Z0V3d241akpKenVDNUhWak1jYlk2aFBIaDBSZzBRRWNGbjJndXhYbkhILXF2MEw3X21QZTFZWUs0amUzYi1DZFlkOWtYZzFkaEZOdHI4WnVJV1BMdjZr0gHrAUFVX3lxTFAyRWIxR05WWm1jdlBvcThWUFBEOW9FUnlsVXV1UXZVQlZaS1ZuWS0wTzhaaEFTWlpLd3FGcTF6bG4tQ0xGWTJVLXhQNDVlNGZsN2hJVmVVb09zejUtRFRtRlB5OVhDcmtXelZmclFmN1lzQlVvQkN4cTRFSmoxQkFYUHd3VUdmaTlweHpnRlhoSWVOV3VnRXd3bjVqSkp6dUM1SFZqTWNiWTZoUEhoMFJnMFFFY0ZuMmd1eFhuSEgtcXYwTDdfbVBlMVlZSzRqZTNiLUNkWWQ5a1hnMWRoRk50cjhadUlXUEx2Nms?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQWdxZjJhd3lZWElnRGdybF90RUZNcGFsOGNJdjJTYl9Fc3lTNmZTS3V0eWMtZ3pkUktaX040endCVXBuZzJCUmZvajk3TG9Gbl9wa2JCOHFQZGFGZVk3dGhOX19EbGF4SnRsWm9ndGNBaDhTQmV0cUpucmRza2JGVGZiZU1IR05mVTExSEtVbVpQQWVURmZ3TVV1bVNrVGh4MjQ5ckNUOURYck84aVlEczlWMWRlQW9JMDB0cUlEcXdoVnA0cnFod1BDMUZsaGMwTktkbTd1U0w0WmFVZFhnVHJFWXB2Z9IB6wFBVV95cUxQMkViMUdOVlptY3ZQb3E4VlBQRDlvRVJ5bFV1dVF2VUJWWktWblktME84WmhBU1paS3dxRnExemxuLUNMRlkyVS14UDQ1ZTRmbDdoSVZlVW9Pc3o1LURUbUZQeTlYQ3JrV3pWZnJRZjdZc0JVb0JDeHE0RUpqMUJBWFB3d1VHZmk5cHh6Z0ZYaEllTld1Z0V3d241akpKenVDNUhWak1jYlk2aFBIaDBSZzBRRWNGbjJndXhYbkhILXF2MEw3X21QZTFZWUs0amUzYi1DZFlkOWtYZzFkaEZOdHI4WnVJV1BMdjZr?oc=5",
      "priority": false
     },
     {
@@ -152,18 +152,18 @@
    "items": [
     {
      "date": "2026-10-27",
-     "time": "15:24",
-     "title": "Global Market: China, Hong Kong stocks slip as technology shares extend losses",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNR2lnaXdYZkRZdHFOQTdEX3dQU2FZMUFBV1p4SHA4aGtuc1U1NnR4UGVjenVmVWpNSWt5NGxsS3JKX1l0WlJqdGZRMFE0ZHIya2xCRkl2TmtHVW5QQkg5VG5xT19ybjlqNXh0Z2dLM3VnNWJFWG1jOUN0b09xQjFBLVJ0eFJ2RFRBNHdrazRvcUdoVkVYeEhFYW1JZUI3cWVOTUNkeFktemx2eUtZZms2M0tJc09GYkVBcjB2TTB2dC04QU0xcVpGdnZQLUlQWTlMcUhON0tSOHdraTJSQ0M4akJmbkp2WEVm0gHuAUFVX3lxTE83aVotSy1YYTZGSjIyb3FsblRLTWhEV214aDdTQXNDUmZBTG43ODdjUUpxTlVJczdQVnFCbFVldXFaV1M1SnZ3X1BLSzIyVHB3eUtCYTF5WU9mRUVFTDN6OS1Ick1rS0hneHBFY0VIZUZacktEZTZYSlFzeWpkd0JRVlVEdndqVFo2RjJpOTlTbWFmVXNXeER0ZU1PSGtpcm92QnBPeWpZYnAweEFrLU00Z1JIY012WVJzaUJURnZjZF8tNjhwdVRBc1dHZ2N5UFZrQktUckNXZEhFRHppLVJLamlWZHFoR201cU1rTUE?oc=5",
+     "time": "17:14",
+     "title": "China stocks could slide 15% before bottom, Morgan Stanley says",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRDZTdjhVTDhkOEJ3c0RJdkVNYWprVmFqcG9FSkIzUDJNUlNjdXRZYzBzMlF0Y0lJb283VjNRNk9QcUtKX0tHQnRnODhBMnlIMWpGdlBCcnFlYlpSZ0VUZ0hPT1ZfSGVrRFVpYURxX2F3MzdDejlYbmdFTElvM1A5QkJWZFM4UnRNeE52VFVlUkNJcWpRS2dzcFRzVE9RRFV1enZVWUtVdTIwc21sTVJYMjRhMGgtY0xEa2JKclYydDZiVEt30gHEAUFVX3lxTFBoU2QyOHN0TFRMS2RsSy1OUVpqbm5qa3NCNUVUNmJ5MHl1OGhCdTdONWVjQWZsdFdvZ1hRLTBSZ3BQZkhpandOOU9wN1lEV2xhdUJmMTluRmg2by1MMk1WenI4UTVhd1hxTTRLMHpSbEVpbFF3bm1COFV2cTJZZG1lbzhhLTcxQU16WE13OE9xa0lBRFhnbTZhNkFJUXNFaU9ialpBUUhXWEwyUWFQWDkyVWpQbUVjMm05WVZaQVB6UGFtVko?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-27",
-     "time": "15:00",
-     "title": "China stocks could slide 15% before bottom, Morgan Stanley says",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRDZTdjhVTDhkOEJ3c0RJdkVNYWprVmFqcG9FSkIzUDJNUlNjdXRZYzBzMlF0Y0lJb283VjNRNk9QcUtKX0tHQnRnODhBMnlIMWpGdlBCcnFlYlpSZ0VUZ0hPT1ZfSGVrRFVpYURxX2F3MzdDejlYbmdFTElvM1A5QkJWZFM4UnRNeE52VFVlUkNJcWpRS2dzcFRzVE9RRFV1enZVWUtVdTIwc21sTVJYMjRhMGgtY0xEa2JKclYydDZiVEt30gHEAUFVX3lxTFBoU2QyOHN0TFRMS2RsSy1OUVpqbm5qa3NCNUVUNmJ5MHl1OGhCdTdONWVjQWZsdFdvZ1hRLTBSZ3BQZkhpandOOU9wN1lEV2xhdUJmMTluRmg2by1MMk1WenI4UTVhd1hxTTRLMHpSbEVpbFF3bm1COFV2cTJZZG1lbzhhLTcxQU16WE13OE9xa0lBRFhnbTZhNkFJUXNFaU9ialpBUUhXWEwyUWFQWDkyVWpQbUVjMm05WVZaQVB6UGFtVko?oc=5",
+     "time": "15:24",
+     "title": "Global Market: China, Hong Kong stocks slip as technology shares extend losses",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNR2lnaXdYZkRZdHFOQTdEX3dQU2FZMUFBV1p4SHA4aGtuc1U1NnR4UGVjenVmVWpNSWt5NGxsS3JKX1l0WlJqdGZRMFE0ZHIya2xCRkl2TmtHVW5QQkg5VG5xT19ybjlqNXh0Z2dLM3VnNWJFWG1jOUN0b09xQjFBLVJ0eFJ2RFRBNHdrazRvcUdoVkVYeEhFYW1JZUI3cWVOTUNkeFktemx2eUtZZms2M0tJc09GYkVBcjB2TTB2dC04QU0xcVpGdnZQLUlQWTlMcUhON0tSOHdraTJSQ0M4akJmbkp2WEVm0gHuAUFVX3lxTE83aVotSy1YYTZGSjIyb3FsblRLTWhEV214aDdTQXNDUmZBTG43ODdjUUpxTlVJczdQVnFCbFVldXFaV1M1SnZ3X1BLSzIyVHB3eUtCYTF5WU9mRUVFTDN6OS1Ick1rS0hneHBFY0VIZUZacktEZTZYSlFzeWpkd0JRVlVEdndqVFo2RjJpOTlTbWFmVXNXeER0ZU1PSGtpcm92QnBPeWpZYnAweEFrLU00Z1JIY012WVJzaUJURnZjZF8tNjhwdVRBc1dHZ2N5UFZrQktUckNXZEhFRHppLVJLamlWZHFoR201cU1rTUE?oc=5",
      "priority": false
     },
     {
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-10-27",
+     "time": "11:43",
+     "title": "Indian shares seen lower as oil stays near six-month high, Fed in focus",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWHozS3Z0N2hBeTMwX0RVcWx0Sm5RSnZjV0JqakU4OFduUmcyYjRrbldkTzFJMFRraEJnSERsZ3dubkNYY0tkRmVNSlhXSnRZX2Rtc3hEa0tFdE1Hb0h3enhQMXIwSS1La1BvTjYzamlQbGh4bXZjb19ZRkU0V1RheFZIdkRtVFZ0Z013N29BVk9uR0JKWXo1dzJGdWU2X0syMmwxdDY1U1hLSTJEMU9sNVRyX2R3QlZNTHkyY1ZDNNIBxAFBVV95cUxPcnYxU282ZDlId2E5TGZVMjVSdnp0YVY3WE8xbHZvUUVaZjBaelF1VVhjM0xzUUN3bmxVSTlVVWJ5UUtHcS1QdHlBeklXZmFZbnZZa2Y4TGk5UG5Hc1lJcTdwR2JwWGtjd0xkaTZZVUJwNmVXcUhqYjRESTdDUE9UR2Q2M2tvMkM1VEEwUXQzRkZjLXhDQVlhM0VPWWIwcGZhM240c0hHdkNUc0loandnTEdwamFRN2tkWDlBM1BRVWRFN3hj?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
      "time": "11:28",
      "title": "Indian shares muted as oil stays near 6-month high, Fed rate decision in focus",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcms4SkRwSDBJVER3QkV1VmoyX1pvTUlrcjRpSk4xSmNLNFZYNjh3Vi1LMGNfUnZPYnVscDdQZl9Xa0d4SHhKM1lDLXItNWh0aWMxNThJeVpMOEsxWXYwNUVXSWMtVWZRZjRRQlFUYk9tRUZxRUR1MWo0QUdPVE9TdzFnWDk0Qzd3NDZfYml4cGdSenVORGpfUTB6RTMyRV9BRmowWERaeWdsSFVLUU0zdFl3?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "23:35",
-     "title": "Bankers hail RBI's FCNR(B) playbook as dollar inflows surge to $12.7 bn",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQenNUZFlzeWp3ZTd4Vno2elphTnE5QkRuazh1eUpRTFlsdjlFeWpBT3VhR09FWlo0NWR4NGZVd0c5clN0dXpmZi01Z3JuZ2lIMWpYQi1KYTluMVhZd0tweWIxdnM2TUprTWU5ZmVfbW1ITEdQUVg5Rkpra24tTFQ5MEpGdXhzY1FmVERacVpOcUJhbms0UHZseVgzeTFwUGFKUy1paU9QbXpkU3VybmxjclVubGw1M0pFZTA5eXhkQWtLOVNuWkRHQ1dMVUVmYWMyRGfSAdcBQVVfeXFMUDdDWWtrRnhFX1k3ZFFwRUE4dGNYd0FXang0VnQtVEVoeDFINFJxenl3SUpFZjVIblo0azlYSy1hRVg1anhUZ2dPc19sUXVTVTdaWjZaWUVGNDkwWFBKbzNHd2k0QUFhd3lGWDZkZHZsN3JFbG5qQWdFWlBXRWZkX0NwcEQyM1hZV1JubkhrdC1XTkhXaG5xRUtpblctYTd6am9sbzJFTGpRMkQ3elRjNmFrOXB6RXplcHdJajBfVVhIeTMtTTdfdlo4cHpZSlFYdk95VUFIREE?oc=5",
      "priority": false
     }
    ]
