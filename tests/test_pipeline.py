@@ -572,6 +572,7 @@ class HubNewsTest(unittest.TestCase):
         self.assertTrue(h.relevant("한국투자증권, 홍콩에 이어 베트남 법인 증자", "한국투자증권", "베트남"))
         self.assertFalse(h.relevant("한국투자증권, 홍콩에 이어 베트남 법인 증자", "한국투자증권", "홍콩"))
         self.assertIn(("신한증권 미국", "ko"), h.queries("신한투자증권", "미국"))
+        self.assertLessEqual({("한화증권 인니", "ko"), ("한화투자증권 인도네시아", "ko")}, set(h.queries("한화투자증권", "인도네시아")))
 
     def test_same_event_from_several_outlets_kept_once(self):
         import fetch_hub_news as h

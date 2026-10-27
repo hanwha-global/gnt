@@ -52,8 +52,9 @@ HUB_LANG = {"베트남": "vi", "인도네시아": "id"}
 KO_ALIASES = {"미래에셋증권": ["미래에셋證"], "KB증권": ["KB證"], "삼성증권": ["삼성證"], "하나증권": ["하나證"], "토스증권": ["토스證"],
               "키움증권": ["키움證"], "한국투자증권": ["한국투자證", "한투證"], "신한투자증권": ["신한증권"], "NH투자증권": ["NH증권"],
               "한화투자증권": ["한화증권"]}
-# 기사에서 정식 이름보다 많이 쓰는 이름은 검색어로도 한 번 더 찾는다
+# 기사에서 정식 이름보다 많이 쓰는 이름·나라 약칭(인니)은 검색어로도 한 번 더 찾는다
 KO_QUERY = {"신한투자증권": "신한증권", "한화투자증권": "한화증권"}
+KO_PLACE = {"인도네시아": ["인니"]}
 # 영문 제목에서 증권사를 알아보는 현지 법인 표기(fetch_news.ENGLISH에 더해). Pinetree·Ciptadana처럼 한 낱말인 현지 법인 이름은
 # 법인 정식 이름에서 만든 표기(fetch_news.local_phrases)가 금융 문맥·나라 표기를 따져 맞춘다
 EN_ALIASES = {"미래에셋증권": ["Mirae Asset Sekuritas", "Mirae Asset Securities"], "KB증권": ["KB Valbury", "KB Securities"],
@@ -93,7 +94,7 @@ def firm_names(firm):
 
 
 def queries(firm, country, phrases=()):
-    qs = [(f"{n} {country}", "ko") for n in (firm, *([KO_QUERY[firm]] if firm in KO_QUERY else []))]
+    qs = [(f"{n} {c}", "ko") for n in (firm, *([KO_QUERY[firm]] if firm in KO_QUERY else [])) for c in (country, *KO_PLACE.get(country, []))]
     if firm in ENGLISH and country in EN_PLACE:
         qs.append((f'"{ENGLISH[firm]}" {EN_PLACE[country]}', "en"))
     return qs + local_queries(firm, country, phrases)
