@@ -7,6 +7,7 @@
 - 현지 검색: 현지 법인 정식 이름에서 만든 표기(Pinetree, Ciptadana Sekuritas, Chứng khoán KIS …)를 그 나라 판(베트남어·인도네시아어 등)에서 찾는다
 - 외국어 제목은 회사 소식(실적·출시·제휴·인수·증자·인허가·제재·수상 등)만, 같은 그룹 다른 회사와 시황·추천·홍보성 기사는 뺀다
 - 최근 1년 기사가 없는 거점은 최근 5년 안에서 가장 최근 기사 2건을 보여 준다("old": true)
+- 베트남어·인도네시아어 제목은 한국어 기계 번역을 붙인다("title_ko", translate.py: 무료 Google 번역, 키·LLM 없음)
 
 결과: site/data/domestic/hub_news.json. 매일 06:30 news.yml이 돌린다. 수집이 비면 이전 파일을 유지한다.
 """
@@ -21,6 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import net  # noqa: E402
+import translate  # noqa: E402
 from fetch_news import (ALIASES, ENGLISH, NOISE, brand_ctx, foreign_ok, host, is_foreign, local_hit, local_phrases,  # noqa: E402
                         local_queries, mark, norm_title, overseas_entities, rss_url, source_url, trusted)
 
@@ -206,10 +208,12 @@ def main():
     if not total:
         print("수집된 기사 없음: 이전 파일 유지", errors[:3])
         return 0
+    # 베트남어·인도네시아어 제목은 한국어 번역(title_ko)도 단다. 이전 파일에 있는 번역은 다시 부르지 않는다
+    ko = translate.add_ko([x for items in out.values() for x in items], translate.cache_from(*prev.values()))
     OUT.write_text(json.dumps({"updated_at": now.isoformat(timespec="minutes"), "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
                                "keep_days": KEEP_DAYS, "fallback_days": FALLBACK_DAYS, "fallback_keep": FALLBACK_KEEP, "hubs": out,
                                "errors": errors[:10]}, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"saved {OUT.name}: 거점 {len(out)}곳(그중 5년 안 최근 기사 {old}곳) · 기사 {total}건 (오류 {len(errors)})")
+    print(f"saved {OUT.name}: 거점 {len(out)}곳(그중 5년 안 최근 기사 {old}곳) · 기사 {total}건 · 새 번역 {ko}건 (오류 {len(errors)})")
     return 0
 
 

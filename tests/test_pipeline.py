@@ -717,7 +717,9 @@ class ForeignNewsTest(unittest.TestCase):
                ("Chứng khoán Pinetree thành lập", "CafeF", "https://cafef.vn", "2019-01-10")]          # 5년 밖
         fresh = [("KBSV báo lãi tăng 15%", "Thời báo Tài chính Việt Nam", "https://thoibaotaichinhvietnam.vn", "2026-07-21")]
 
-        def get(url, timeout=25):
+        def get(url, params=None, timeout=25, **kw):
+            if "translate.googleapis.com" in url:                                        # 제목 번역
+                return json.dumps([[[f"번역: {params['q'][:12]}", params["q"]]]]).encode()
             five = "when%3A1825d" in url
             if "Pinetree" in url:
                 return _rss(*(old if five else []))
@@ -731,7 +733,38 @@ class ForeignNewsTest(unittest.TestCase):
         pine = got["한화투자증권|베트남"]
         self.assertEqual([x["date"] for x in pine], ["2024-12-05", "2023-03-18"])    # 5년 안 최근 2건만
         self.assertTrue(all(x["old"] and x["foreign"] and x["lang"] == "vi" for x in pine))
+        self.assertEqual(pine[0]["title_ko"], "번역: Chiến lược k")                     # 베트남어 제목은 한국어 번역도
         self.assertEqual([(x["date"], x.get("old")) for x in got["KB증권|베트남"]], [("2026-07-21", None)])
+
+    def test_titles_translated_to_korean_once(self):
+        import translate as tr
+        calls = []
+
+        def get(url, params=None, retries=3, timeout=30):
+            calls.append((url, params["q"]))
+            if "googleapis" in url:
+                if "rusak" in params["q"]:
+                    raise RuntimeError("HTTP 429")                                     # Google 실패 → MyMemory
+                if "kosong" in params["q"]:
+                    return json.dumps([[["kosong", params["q"]]]]).encode()            # 한글 없는 결과는 실패로 본다
+                return json.dumps([[["키움증권 ", "a"], ["수상", "b"]]]).encode()
+            if "rusak" in params["q"]:
+                return json.dumps({"responseStatus": 200, "responseData": {"translatedText": "고장 난 앱"}}).encode()
+            return json.dumps({"responseStatus": 429, "responseData": {"translatedText": "MYMEMORY WARNING: YOU USED ALL"}}).encode()
+        items = [{"title": "Kiwoom Sekuritas Raih Penghargaan", "lang": "id"},
+                 {"title": "Chứng khoán KB Việt Nam báo lãi", "lang": "vi"},                 # 이전 파일에 번역이 있다
+                 {"title": "Aplikasi rusak", "lang": "id"}, {"title": "Judul kosong", "lang": "id"},
+                 {"title": "Mirae Asset wins license", "title_ko": "남은 번역"}]               # 영어 제목은 번역을 달지 않는다
+        cache = tr.cache_from([{"title": "Chứng khoán KB Việt Nam báo lãi", "title_ko": "KB증권 베트남 흑자"}])
+        with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
+            self.assertEqual(tr.add_ko(items, cache), 2)
+        self.assertEqual([x.get("title_ko") for x in items], ["키움증권 수상", "KB증권 베트남 흑자", "고장 난 앱", None, None])
+        self.assertNotIn("Chứng khoán KB Việt Nam báo lãi", [q for _, q in calls])            # 이미 번역한 제목은 다시 안 부른다
+        self.assertEqual(cache["Kiwoom Sekuritas Raih Penghargaan"], "키움증권 수상")
+        with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
+            more = [{"title": f"Judul {i}", "lang": "id"} for i in range(5)]
+            self.assertEqual(tr.add_ko(more, {}, max_calls=2), 2)                           # 한 번에 새로 번역하는 수 상한
+        self.assertEqual(sum(1 for x in more if x.get("title_ko")), 2)
 
     def test_main_feed_takes_foreign_hub_items(self):
         import tempfile

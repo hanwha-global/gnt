@@ -677,7 +677,7 @@
     const news = hubNews(firm, country), old = news[0]?.old;
     if (!news.length) return `<span class="sub">최근 ${state.data.hubNews?.fallback_days ? "5년" : "1년"} 기사 없음</span>`;
     return `${old ? '<div class="sub trend__old" title="최근 1년 안 기사가 없어 5년 안에서 가장 최근 기사를 보여 줍니다">최근 1년 기사 없음 · 5년 안 최근</div>' : ""}<ul${old ? ' class="is-old"' : ""}>${news.map((x) =>
-      `<li><span class="news__d">${esc(x.date.slice(2).replaceAll("-", "."))}</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="sub">${esc(x.src)}</span>${intlTag(x)}</li>`).join("")}</ul>`;
+      `<li><span class="news__d">${esc(x.date.slice(2).replaceAll("-", "."))}</span> ${newsLink(x)} <span class="sub">${esc(x.src)}</span>${intlTag(x)}</li>`).join("")}</ul>`;
   }
 
   function renderTrend(el) {
@@ -763,7 +763,7 @@
     for (const e of rows) {
       const gov = e.parent_entity ? `모회사 ${e.parent_entity}` : e.ref ? "관계사·지분투자" : "직접 출자";
       const note = trendNote(e, fy).replace(/<br>/g, " / ").replace(/<[^>]+>/g, "");
-      const news = hubNews(e.firm, e.country).map((x) => `${x.old ? "[1년 기사 없음·5년 안 최근] " : ""}${x.date} ${x.title} (${x.src}) ${x.url}`).join("\n");
+      const news = hubNews(e.firm, e.country).map((x) => `${x.old ? "[1년 기사 없음·5년 안 최근] " : ""}${x.date} ${x.title_ko ? `(번역) ${x.title_ko} [원문: ${x.title}]` : x.title} (${x.src}) ${x.url}`).join("\n");
       for (const [k, label] of [["rev", "영업수익"], ["ni", "당기순이익"]]) {
         lines.push([e.firm, e.name, e.business, e.country, e.established, gov, label, ...pers.map((p) => e.values[p]?.[k]),
           k === "rev" ? note : "", k === "rev" ? news : ""].map(q).join(","));
@@ -1045,7 +1045,11 @@
   // 해외 매체 기사 표시와 번역 링크(베트남어·인도네시아어 제목만, Google 번역)
   const translateUrl = (t) => `https://translate.google.com/?sl=auto&tl=ko&op=translate&text=${encodeURIComponent(t)}`;
   const intlTag = (x) => (x.foreign ? ' <span class="tag tag--intl" title="해외 매체·감독당국 기사">해외</span>' : "")
-    + (x.lang ? ` <a class="news__tr" href="${esc(translateUrl(x.title))}" target="_blank" rel="noopener" title="제목을 한국어로 번역(Google 번역)">번역</a>` : "");
+    + (x.lang && !x.title_ko ? ` <a class="news__tr" href="${esc(translateUrl(x.title))}" target="_blank" rel="noopener" title="제목을 한국어로 번역(Google 번역)">번역</a>` : "");
+  // 기사 제목 링크: 베트남어·인도네시아어 제목은 자동 번역(title_ko)을 '(번역)'과 함께 보이고 원문은 마우스를 올리면 보인다
+  const newsLink = (x) => (x.title_ko
+    ? `<a href="${esc(x.url)}" target="_blank" rel="noopener" title="원문: ${esc(x.title)}"><span class="news__trl">(번역)</span> ${esc(x.title_ko)}</a>`
+    : `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`);
 
   // 국내 증권사 해외진출 뉴스(news.json: Google News RSS, 국내 주요 언론 + 해외 매체·기관, 매일 아침 자동 수집)
   let newsScope = "all";
@@ -1053,7 +1057,7 @@
     const all = state.data.news?.items || [];
     const items = (scope === "intl" ? all.filter((x) => x.foreign) : all).slice(0, limit);
     return items.map((x) => `<li><span class="news__d">${esc(x.date.slice(5).replace("-", "."))}</span>
-        <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>
+        ${newsLink(x)}
         <span class="news__m">${esc(x.src)}${intlTag(x)}${NEW_ENTITY_NEWS.test(x.title) ? ` <span class="tag tag--new" title="뉴스 보도만으로는 세지 않습니다. DART 공시나 확인 후 반영됩니다.">신규 진출 보도·미확인</span>` : ""}${(x.firms || []).map((f) => ` <span class="tag${f === HANWHA ? " tag--hw" : ""}">${esc(SHORT[f] || f)}</span>`).join("")}</span></li>`).join("");
   }
   function newsCard(limit = 14) {

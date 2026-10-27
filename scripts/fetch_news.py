@@ -5,6 +5,7 @@
   제목에 증권사(또는 증권업계)와 해외 관련 단어가 함께 있어야 한다. 외국어 제목은 회사 소식만(시황·종목 추천 제외)
 - 거점 뉴스(fetch_hub_news.py)가 진출국 현지 매체에서 현지 법인 이름으로 찾은 기사도 싣는다("foreign": true)
 - 제목이 거의 같은 기사(통신사 전재 등)는 하나만 남긴다
+- 베트남어·인도네시아어 제목은 한국어 기계 번역을 붙인다("title_ko", translate.py: 무료 Google 번역, 키·LLM 없음)
 
 결과는 site/data/domestic/news.json. 매일 아침 GitHub Actions(news.yml)가 돌린다. 수집이 비면 이전 파일을 유지한다.
 """
@@ -19,6 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import net  # noqa: E402
+import translate  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "site" / "data" / "domestic" / "news.json"
@@ -413,6 +415,11 @@ def mark(x):
     return x
 
 
+def hub_file():
+    path = DATA / "hub_news.json"
+    return json.loads(path.read_text(encoding="utf-8")).get("hubs", {}) if path.exists() else {}
+
+
 def hub_foreign(since, prev=()):
     """거점 뉴스(fetch_hub_news.py, 아침 06:30)가 현지 법인 이름으로 찾은 해외 매체 기사: 이 피드에도 싣는다.
 
@@ -420,8 +427,7 @@ def hub_foreign(since, prev=()):
     둘 다 지금 거점 규칙으로 다시 거른다(규칙이 바뀌었거나 거점 수집이 실패해 파일이 오래됐을 때).
     """
     import fetch_hub_news as hub  # 함수 안에서: fetch_hub_news가 이 모듈을 import한다
-    path = DATA / "hub_news.json"
-    hubs = json.loads(path.read_text(encoding="utf-8")).get("hubs", {}) if path.exists() else {}
+    hubs = hub_file()
     day = since.strftime("%Y-%m-%d")
     phrases = hub.hub_phrases()
     out = []
@@ -463,10 +469,12 @@ def main():
     if not items:
         print("수집된 기사 없음: 이전 파일 유지", errors[:3])
         return 0
+    # 베트남어·인도네시아어 제목은 한국어 번역(title_ko)도 단다. 이전 파일·거점 파일에 있는 번역은 다시 부르지 않는다
+    ko = translate.add_ko(items, translate.cache_from(prev.get("items", []), *hub_file().values()))
     OUT.write_text(json.dumps({"updated_at": now.isoformat(timespec="minutes"), "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
                                "sources": DOMESTIC, "foreign_sites": FOREIGN_SITES, "items": items, "errors": errors[:10]},
                               ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"saved {OUT.name}: {len(items)}건(해외 매체 {sum(1 for x in items if x.get('foreign'))}건) (오류 {len(errors)})")
+    print(f"saved {OUT.name}: {len(items)}건(해외 매체 {sum(1 for x in items if x.get('foreign'))}건, 새 번역 {ko}건) (오류 {len(errors)})")
     return 0
 
 
