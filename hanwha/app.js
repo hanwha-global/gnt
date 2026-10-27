@@ -88,13 +88,15 @@ function view(D) {
   return at >= 0 ? { ...D, periods: H.slice(0, at + 1) } : D;
 }
 const kindOf = (p) => (p.period === "FY" ? "사업" : p.period === "1H" ? "반기" : "분기");
+// 기간 이름은 메인 화면과 같게 1Q26 · 1H26 · 3Q26 · FY2025 (예전 수집분의 9M26 → 3Q26)
+const perLabel = (s) => String(s || "").replace(/^9M(\d\d)$/, "3Q$1");
 
 function renderPL(D0, ents, reg) {
   const D = view(D0);
   const { L, F, E, sum, roe, both } = model(D, ents);
   const H = D0.history || [];
-  const psel = H.length > 1 ? `<div class="tmeta">공시 기간 <select id="pl-per" class="psel" aria-label="공시 기간 선택">${[{ v: "", l: `최신 (${D0.periods.at(-1).label})` },
-    ...[...H].reverse().map((p) => ({ v: p.label, l: `${p.label} ${kindOf(p)}보고서` }))].map((o) => `<option value="${esc(o.v)}"${o.v === pick ? " selected" : ""}>${esc(o.l)}</option>`).join("")}</select>
+  const psel = H.length > 1 ? `<div class="tmeta">공시 기간 <select id="pl-per" class="psel" aria-label="공시 기간 선택">${[{ v: "", l: `최신 (${D0.periods.at(-1).label} ${kindOf(D0.periods.at(-1))}보고서)` },
+    ...[...H].reverse().filter((p) => p.label !== D0.periods.at(-1).label).map((p) => ({ v: p.label, l: `${p.label} ${kindOf(p)}보고서` }))].map((o) => `<option value="${esc(o.v)}"${o.v === pick ? " selected" : ""}>${esc(o.l)}</option>`).join("")}</select>
     ${pick ? " · 비교 열은 그 앞 사업보고서 · 지분율은 최신 공시값" : " · 기간을 고르면 아래 실적·재무상태 표가 그 보고서 기준으로 바뀝니다"}</div>` : "";
   const ctrlL = sum("l", "ni", true), ctrlF = sum("f", "ni", true);
   // 고른 기간에 아직 없던 법인(취득 전)은 표·법인 수에서 뺀다. 기본(최신) 화면은 4사 모두 있다
@@ -478,6 +480,7 @@ function health(dart, reg, macro, ents) {
   if (embedded) document.querySelectorAll("header h1, header #asof").forEach((x) => (x.style.display = "none"));
   tabs();
   const [dart, ents, inv, reg, markets, cal] = await Promise.all([load("dart_subs.json"), load("entities.json"), load("investments.json"), load("regulatory.json"), load("markets.json"), load("rate_calendar.json")]);
+  for (const p of [...(dart?.periods || []), ...(dart?.history || [])]) p.label = perLabel(p.label);
   if (dart?.periods?.length && ents?.entities) {
     const L = dart.periods.at(-1);
     $("#asof").textContent = `미래전략실 글로벌네트워크팀 · 해외자회사 4사 · DART ${L.label} ${L.report.name} 기준`;
