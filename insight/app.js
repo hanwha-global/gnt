@@ -22,7 +22,7 @@
     return x;
   };
   const label = (r) => (r.firm === HW ? `${HWNAME[r.name] || r.name}` : shortName(r.name));
-  const getJSON = async (u) => { try { const r = await fetch(u, { cache: "no-cache" }); return r.ok ? r.json() : null; } catch (_) { return null; } };
+  const getJSON = async (u) => { try { const r = await fetch(u, { cache: "no-cache" }); return r.ok ? await r.json() : null; } catch (_) { return null; } };
   const median = (a) => { const v = a.filter((x) => x != null && !isNaN(x)).sort((p, q) => p - q), n = v.length; return n ? (n % 2 ? v[(n - 1) / 2] : (v[n / 2 - 1] + v[n / 2]) / 2) : null; };
   let C, L, X, G, T;
 

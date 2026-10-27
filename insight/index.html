@@ -102,10 +102,10 @@ tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacit
 @media (max-width:1100px){.tk-grid{grid-template-columns:minmax(0,1fr)}.tk-col+.tk-col{border-left:0;padding-left:0;border-top:1px solid var(--line);margin-top:6px;padding-top:8px}}
 @media print{
   @page{size:A4 landscape;margin:8mm}
-  :root{--bg:#fff;--surface:#fff;--surface-2:#f1f3f6;--text:#111;--text-2:#333;--muted:#666;--line:#ccc;--accent-ink:#b8500c;--kr:#2f5fd0;--kr-soft:#e8eefb;--heat-0:#eef1f5;--bar:#9aa7bf;color-scheme:light}
+  :root{--bg:#fff;--surface:#fff;--surface-2:#f1f3f6;--text:#111;--text-2:#333;--muted:#666;--line:#ccc;--accent-ink:#b8500c;--kr:#2f5fd0;--kr-soft:#e8eefb;--heat-0:#eef1f5;--bar:#9aa7bf;--neg:#d23f2e;color-scheme:light}
   body{background:#fff;font-size:9.5px}.noprint{display:none!important}.card{break-inside:avoid}.wrap{max-width:none;padding:0}
   .tk-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tk-col+.tk-col{border-left:1px solid var(--line);border-top:0;margin-top:0;padding:0 0 0 16px}
-  .tk-col h3{font-size:11px}.tk-list li{font-size:10px;margin:0 0 4px}.tk-ev,.tk-foot{font-size:8.5px}.tk-cat,.st{font-size:8.5px}
+  .tk-col h3{font-size:11px}.tk-col h3 small{font-size:9.5px}.tk-list li{font-size:10px;margin:0 0 4px}.tk-ev,.tk-foot{font-size:8.5px}.tk-cat,.st{font-size:8.5px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 </style>
 </head>
@@ -160,7 +160,7 @@ tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacit
   </div>
 
   <ul class="cad" aria-label="갱신 주기·산식">
-    <li><b>진출국 전략 Takeaways</b> · 매일 06:30(KST, 평일 12:30·17:30 재확인) GitHub Actions가 LLM 없이 만듦: DART 해외자회사 손익·출자, 지수·환율·정책금리, MSCI·FTSE 등 구조 뉴스, 한국계 경쟁사 뉴스, 이 탭의 현지 경쟁 구도·점유율을 규칙으로 읽어 지분 인수·증자·구조조정·비용·마케팅·제휴·리스크 중 3~4줄. 새 공시·판단 변화·새 뉴스·금리 변경·지수/환율 급변·14일 경과가 없으면 문구를 그대로 두고 확인 시각만 남깁니다.</li>
+    <li><b>진출국 전략 Takeaways</b> · 매일 06:30(KST) GitHub Actions가 LLM 없이 만듦: DART 해외자회사 손익·출자, 지수·환율·정책금리, MSCI·FTSE 등 구조 뉴스, 한국계 경쟁사 뉴스, 이 탭의 현지 경쟁 구도·점유율을 규칙으로 읽어 지분 인수·증자·구조조정·비용·마케팅·제휴·리스크 중 3~4줄. 새 공시·판단 변화·새 뉴스·금리 변경·지수/환율 급변·14일 경과가 없으면 문구를 그대로 두고 확인 시각만 남깁니다.</li>
     <li><b>갱신 주기</b> · 평일 08:10(KST) GitHub Actions가 LLM 없이 수집: 주가·시가총액·환율·IDX 거래 요약 매일, IMF 전망(4·10월 개정)·세계은행 지표(연 1회 개정)는 바뀌면 반영, 상장사 자본·순이익은 글로벌 탭과 같은 수집(매주 월)이고 베트남은 거래소 상장 증권사 전체를 VNDirect 공개 재무(자본·순이익·마진 잔고·중개수익, 각 사 감사 재무제표)로 매일 확인, 한국계 법인은 국내 탭과 같은 DART 사업보고서.</li>
     <li><b>산식</b> · ROE = 최근 연간 순이익 ÷ 연말 자기자본 · P/B = 시가총액(최근 종가 × 발행주식 수) ÷ 최근 분기 자기자본(없으면 연말) · 원화 환산 = 자본은 결산일 환율, 시가총액은 최근 환율(Yahoo Finance 종가, USD 교차).</li>
     <li><b>한계</b> · 비상장 증권사는 최근 재무를 기계로 받을 공개 출처가 없어 현지사는 순위에서 빠지고(한국계는 DART로 포함), 시가총액·P/B도 없습니다. 한국계 법인 자본은 모회사 사업보고서 원화 금액을 연말 환율로 현지 통화로 되돌린 값입니다.</li>
