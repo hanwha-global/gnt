@@ -64,23 +64,113 @@
  "takeaways": [
   {
    "h": "한국: 원화 스테이블코인은 은행 51% 컨소시엄으로 가닥, 법안은 11월 소위로",
-   "t": "정부·한은이 은행 50%+1 구조에 합의했지만(한은 총재 10/12) 정부안은 아직 국회 미제출. 거래소 지분 상한·준비자산 범위가 11월 정무위 법안소위 쟁점이다. 토큰증권은 2027.2.4 시행, 기존 증권사는 추가 인가 없이 취급한다."
+   "t": "정부·한은이 은행 50%+1 구조에 합의했지만(한은 총재 10/12) 정부안은 아직 국회 미제출. 거래소 지분 상한·준비자산 범위가 11월 정무위 법안소위 쟁점이다. 토큰증권은 2027.2.4 시행, 기존 증권사는 추가 인가 없이 취급한다.",
+   "src": [
+    {
+     "l": "은행 50%+1 합의",
+     "s": "테크M",
+     "url": "https://www.techm.kr/news/articleView.html?idxno=156004"
+    },
+    {
+     "l": "11월 법안소위",
+     "s": "한국데이터경제신문",
+     "url": "https://www.dataeconomy.co.kr/news/articleView.html?idxno=43152"
+    },
+    {
+     "l": "토큰증권 '27.2.4 시행",
+     "s": "아이뉴스24",
+     "url": "https://m.inews24.com/v/2010814"
+    }
+   ]
   },
   {
    "h": "미국: 스테이블코인만 먼저 간다",
-   "t": "OCC가 GENIUS법 최종 규칙을 10월 말까지 확정하겠다고 밝혔고(10/15), 시행은 늦어도 2027.1.18. 시장구조법(CLARITY)은 9.15 상원에서 막혀 SEC·CFTC 규칙과 면제가 공백을 메우는 중이다."
+   "t": "OCC가 GENIUS법 최종 규칙을 10월 말까지 확정하겠다고 밝혔고(10/15), 시행은 늦어도 2027.1.18. 시장구조법(CLARITY)은 9.15 상원에서 막혀 SEC·CFTC 규칙과 면제가 공백을 메우는 중이다.",
+   "src": [
+    {
+     "l": "OCC GENIUS 규칙 10월 말",
+     "s": "PYMNTS",
+     "url": "https://www.pymnts.com/legal/2026/occ-races-the-clock-to-finish-genius-act-stablecoin-rules/"
+    },
+    {
+     "l": "시행 '27.1.18",
+     "s": "미 재무부",
+     "url": "https://home.treasury.gov/news/press-releases/sb0605"
+    },
+    {
+     "l": "CLARITY 상원 부결",
+     "s": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/15/senate-cloture-vote-on-clarity-act-fails-dealing-regulatory-setback-to-crypto-industry.html"
+    }
+   ]
   },
   {
    "h": "아부다비(ADGM): 디지털자산 인가를 한 곳에서",
-   "t": "FSRA가 스테이블코인(FRT)·스테이킹·토큰화에 이어 DeFi 가이던스(의견 ~11/30)까지 정비했다. 인가가 FSRA 한 곳에서 끝나 중동에서 가장 먼저 볼 시장이다."
+   "t": "FSRA가 스테이블코인(FRT)·스테이킹·토큰화에 이어 DeFi 가이던스(의견 ~11/30)까지 정비했다. 인가가 FSRA 한 곳에서 끝나 중동에서 가장 먼저 볼 시장이다.",
+   "src": [
+    {
+     "l": "FRT 규정",
+     "s": "ADGM",
+     "url": "https://www.adgm.com/media/announcements/adgm-fsra-finalises-regulatory-framework-for-regulated-activities-involving-fiat-referenced-tokens"
+    },
+    {
+     "l": "스테이킹 규정",
+     "s": "ADGM",
+     "url": "https://www.adgm.com/media/announcements/adgm-fsra-finalises-regulatory-framework-for-the-staking-of-virtual-assets"
+    },
+    {
+     "l": "DeFi 협의(~11/30)",
+     "s": "ADGM",
+     "url": "https://www.adgm.com/legal-framework/public-consultations"
+    }
+   ]
   },
   {
    "h": "동남아 법인 시장은 진입 장벽부터 확인",
-   "t": "베트남 시범 거래소는 자본금 10조동·기관 65%·외국인 49% 요건에 인가 0건이라 Pinetree 단독 진입은 어렵다. 인도네시아는 Law 4/2026로 가상자산사업자를 금융기관으로 편입하고 토큰화 공모 제도를 만든다. 싱가포르는 역외 전용 사업을 막는다."
+   "t": "베트남 시범 거래소는 자본금 10조동·기관 65%·외국인 49% 요건에 인가 0건이라 Pinetree 단독 진입은 어렵다. 인도네시아는 Law 4/2026로 가상자산사업자를 금융기관으로 편입하고 토큰화 공모 제도를 만든다. 싱가포르는 역외 전용 사업을 막는다.",
+   "src": [
+    {
+     "l": "베트남 인가 0건",
+     "s": "CryptoRank",
+     "url": "https://cryptorank.io/news/feed/b7225-nine-months-seven-applicants-zero-licences-vietnams-crypto-waiting-game"
+    },
+    {
+     "l": "인니 Law 4/2026",
+     "s": "ABNR",
+     "url": "https://www.abnrlaw.com/news/indonesias-p2sk-law-amendment-what-law-42026-changes-for-crypto-and-digital-financial-assets"
+    },
+    {
+     "l": "싱가포르 DTSP",
+     "s": "MAS",
+     "url": "https://www.mas.gov.sg/news/media-releases/2025/mas-clarifies-regulatory-regime-for-digital-token-service-providers"
+    }
+   ]
   },
   {
    "h": "증권사 기회는 토큰증권·ETF·수탁",
-   "t": "한국 STO, 일본의 금융상품거래법 편입, 미국 토큰화 주식 혁신면제, ADGM 토큰화 증권 수탁 인가까지 각국이 증권사 영역으로 디지털자산을 끌어오는 중이다. 해외법인 전략은 거래소보다 토큰화·수탁·중개 쪽이 현실적이다."
+   "t": "한국 STO, 일본의 금융상품거래법 편입, 미국 토큰화 주식 혁신면제, ADGM 토큰화 증권 수탁 인가까지 각국이 증권사 영역으로 디지털자산을 끌어오는 중이다. 해외법인 전략은 거래소보다 토큰화·수탁·중개 쪽이 현실적이다.",
+   "src": [
+    {
+     "l": "한국 STO",
+     "s": "The Block",
+     "url": "https://www.theblock.co/news/regulation/2026-09-04-south-korea-to-start-tokenizing-all-types-of-securities-in-three-stages-from-2027-413523"
+    },
+    {
+     "l": "미 SEC 혁신면제",
+     "s": "SEC",
+     "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
+    },
+    {
+     "l": "일본 FIEA 편입",
+     "s": "CoinDesk",
+     "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts"
+    },
+    {
+     "l": "ADGM 디지털증권 수탁",
+     "s": "Zodia",
+     "url": "https://zodia-custody.com/zodia-custody-secures-fsra-approval-to-custody-digital-securities-in-adgm/"
+    }
+   ]
   }
  ],
  "upcoming": [
