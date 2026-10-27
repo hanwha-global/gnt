@@ -1,32 +1,32 @@
 {
- "updated_at": "2026-10-27T09:42+09:00",
+ "updated_at": "2026-10-27T17:08+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
     {
+     "date": "2026-10-27",
+     "time": "15:51",
+     "title": "노무라 \"4분기도 소비 부진 시, 한은 금리인상 조기 종료 가능성\"",
+     "src": "이데일리",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNzhSdVpNbEtRQVJPdldreGo3b2o2X3hwVGVFVmRoN3hJWG9UWXFuSVlsTW82Z24xZWRqVjJLcGs3TzRzYmlEdHotTVhDT0ZoWXpvZEVPaHpwWjlLZ2VxR3czTFpiU0MxdzBxbVN0enE1U19Objdsd01CVFdPYV9KRQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
+     "time": "11:12",
+     "title": "코스피, 4%대 급등세 지속…외국인·기관 쌍끌이 순매수",
+     "src": "연합뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmMndqYm91UWo2dms1ZUhpRWFsVFJKYzFrMjE0SGRPNGltcGVEcUM1Ri1UZGd2bkdRZ0FzSFZjSHBxTGgzQ2ZiUmZ6RUZDRmpPckpDdElZb0lPOGfSAWBBVV95cUxQTm9mNm5lNllRREo3d2cxS0hCRzVPZkhBTzJUUk9Za1RFeUNHY1NDTUM4ME9nd29fYWhVcXhaNFpGT2FQek1RMUowQ09EV1lFallKTHNyWGYySXI3YkVCNkw?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-26",
      "time": "16:23",
      "title": "“코스피, 급락후 왜 반등 안 해?”…5500선 밑으로 ‘뚝’ 외국인 매도 영향",
      "src": "매일경제",
      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HZWdNNDJoTzZjQzdZenNvUEVpRE5CQ0toNFQ0NEgtem10NWpYSU1fcTBnczE2MW1XbzJER1R0OGh6UXRSU1QtN19HZXpQSWhaSVE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "16:22",
-     "title": "'7개월래 최저' 코스피, 대형 이벤트 앞두고 외국인 이탈",
-     "src": "머니투데이",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94U2g3Qm5RN002QXR6YmVvSjNzT1lpTGgxcnhvOUQzcWk1bzVzSjVkR3prUWJDdG85RkRCb3E4YUNPd3hlaWJ4NEhfNUtWaHVPbGZrRV9yRTZzYk9aR3JtaGo3TmFHUml10gFuQVVfeXFMTXk3OUJhZEV4ZDdDZDllTUFITDRqR0ZQSVZyTC0zM1VKVENHYWRvLUIwTm5zOWgzdjRFajRZSldwM2pnSm5FV3Q4cmhoS2Z6dFU3TDZSRDBCUUxmTkpsYlhncHVvTzNuRTV4TlQ2X3c?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "15:57",
-     "title": "코스피, 외국인 '팔자'에 5460선 후퇴…코스닥은 3% 하락",
-     "src": "서울경제TV",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ub2R4Ty1LcFdXdDlUR21WWFA5bjl0QlY1dnNVV2x2NmI3MVpYT05samVRWGhXTS1xeVc0T0V4dHdvamE5ellZanR6RUtCdmptVEpqUi1mdnVRNENyZ001LWtzMXo?oc=5",
      "priority": false
     }
    ]
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-10-27",
-     "time": "09:29",
-     "title": "비트코인 1억700만 원대 횡보, 미국 금리결정 앞두고 숨 고르기",
-     "src": "비즈니스포스트",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5VHRGRmlNeWFsSmtCY2FwTXdTZFpfN3lZaXNfdnF0dGctaXNRX3hjWjZpRExWQ0JtVUx6RDRMMGxCeXhuNk9DRVhFZEcxc1RXUnM5eFB0UHl0ZDJjNzBCNjJJYXYtUEJ3cDZvRHZ4aUY3NFE?oc=5",
+     "time": "16:39",
+     "title": "Hike or hold: Fed chief Warsh faces another tough choice on rate decision",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYmdycXoxQUdmWUFNT01Yalk0SW41M1FTNzY5SU1zZWw4M3VjS2RodnBQYTdaSkUwNDdFdHo1SlFBbDB4SlhJY3d1QkpuTElubVhoUllSUVFOUHBPdVJiaUt6MzlRS3JaZzR4NXBSQVZ0TDhZVTk1SWIwWEVxLWxkNVhVLTctTjl3ajl3WFlPWTZSS1V4emJjeXpGakNhUFVwcHhrbzJtbFUtY0dYX1BVNzIzYWVta3B1M0tkdQ?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-27",
-     "time": "09:07",
-     "title": "ING \"채권 금리 하락세, 10월 FOMC 온건하게 유도\"",
-     "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9SdVhJWlRIMlF1bnlXRGFaV3lSbElRMG0xT0F3Nk5YTGtoVTJDaHk5cl9VdktPUkRoajByM1oxUlgzd0hxdHJtNS1oNEtZMVI5TkE0blJPTjR3WWZJVlRTdXJ3dXIyN3FVbWpHYWtuT2Y?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-27",
-     "time": "08:20",
+     "time": "14:26",
      "title": "Gold Steadies Above $4,000 With Fed Rate Decision in Focus",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLTRVUHViYXZZWTg4WHdFSXgxV1ZMS2FqdHgtUUxQSlJxN0JzbG5ZNXdOVTJFMUR2VmEtaU9MUGl5T2VXUHg0YmliUFdIOEIzVjhYdHNmUmo2aXVtMll3eGp6WkJCTVRtUl9SQmd0NmFTZXBma1VrVDNXZDVSc3V4M3hrVlFFeU9iV3VmNDhGM2FVQnRvZnA1bFBpSjRfZmRYeGJDX2ZWVEk4OXhE?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
+     "time": "11:28",
+     "title": "Indian shares muted as oil stays near 6-month high, Fed rate decision in focus",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcms4SkRwSDBJVER3QkV1VmoyX1pvTUlrcjRpSk4xSmNLNFZYNjh3Vi1LMGNfUnZPYnVscDdQZl9Xa0d4SHhKM1lDLXItNWh0aWMxNThJeVpMOEsxWXYwNUVXSWMtVWZRZjRRQlFUYk9tRUZxRUR1MWo0QUdPVE9TdzFnWDk0Qzd3NDZfYml4cGdSenVORGpfUTB6RTMyRV9BRmowWERaeWdsSFVLUU0zdFl3?oc=5",
      "priority": false
     }
    ]
@@ -65,26 +65,26 @@
    "items": [
     {
      "date": "2026-10-27",
-     "time": "09:00",
-     "title": "Indonesia’s Richest Lose $57 Billion Since MSCI Warnings Began",
+     "time": "15:52",
+     "title": "IDR/USD: Indonesia 10-Year Yield at Four-Year High on MSCI Risk, Oil",
      "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUFNIWk1Bb1NtbFlvcWVRejB4Z3JSam12VnNQS0JZWUZfbGV1MlZBbXBXd1dja3RYVk5Rd0Fla01qb0NoSVdodnMxRHhIZ3dkd1lXM2lLcjdsQkZ6Z3NXUGVoZ3ZaRHZEakEzTWY1N1VTQ3ZHSE5ITXJvZUdGeW1jWG92MXdhc21JSGEza1pLd2hrNWZnVEVJTjZ4RmlHc1AzcUZkcmt2c0dRa1lTT1pITnAzb3B0alh1VWFiaA?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVo5OTQ4TUlrNnNheWQybnE2UkZ6ZHZtcEpYUDgzVTN0ZlBJSVFUbjliMUVfNi1OWlBRbE9aYnczeW11RzFIaHJIUFJZUHE1WlNIUnBiaTlGdGFjdmdTazRBS2tUdXNJcXVDcTEyUzQ5ajZZVHlBOTN5MVB1U281OUI3UzVweThKY24ycFozbmphY3RPNkoxMG80Qk5WQnhBQ2p2b1QxcG0yTjFzWGc?oc=5",
      "priority": true
     },
     {
-     "date": "2026-10-26",
-     "time": "13:56",
-     "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI",
-     "src": "CNA",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMlBGd2pJTXdBQm84MEhpTzRDaFRzSHZBcXF5RlROWHhXNG5FeC16dEdyMnRqRU4xcmlpUjdIcnIxVUdmUTZsN3ZPNjEwcm5kaDBoUlp6c25jdHYtUzJ1MC1pQ0ZJM0c5ekQ1LWdZOHRMYmpSNF9BTE5HTTVNcHFHUl9VNUZlV1J1QTdIcXIyempPc3pkV2R0SDN3?oc=5",
+     "date": "2026-10-27",
+     "time": "14:42",
+     "title": "Indonesia-Singapore spats escalate over haze, MSCI",
+     "src": "Nikkei Asia",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSUFzcGFja3pSV21yVzVzendBanZtWnZ0a281WkZOUjdRcFBzMEtkU2Zpd3BHYzdpWFJDR1pEczY4OTF3VTNHOUI3anFIYmRXVHM0dzRRZWlmemk3bFBkUF9NMXJrYW1NaHFZbnNvNWJPelozdFYwVVd1QmJaVnhBZGhKR3owQTNibnh6QXBKcFZYcUlNUFZnMzN5N1B3Vk5TVlRTNERJd1pCZw?oc=5",
      "priority": true
     },
     {
-     "date": "2026-10-23",
-     "time": "16:02",
-     "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?",
-     "src": "CNA",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5",
+     "date": "2026-10-27",
+     "time": "12:15",
+     "title": "MSCI Fallout Widens With Indonesian Corporate Bond Sale Shelved",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWlpXZ3lST1B0QWxyN05pSFdrZW82MlR4endfdzkyNzFzSEZpM1pNYjg5UFV0anhGWmhxNWRnWHROVGFBRjZiYmpFWm40eU9VUEV1QnpsVFlsSFlPTk5YX0ZVTzVjVzJsZkE1UFJFOXB5Q3NEMEFOYk9KRklzTjBRNURsck1kTm5DT1hnUFpjRXN6c0tQdWRnMHpmWDYxbU93Y3RLY0ZlRi1Kd3labHFqVnVneHpyeDJZVlQ5MFlkT0w?oc=5",
      "priority": true
     }
    ]
@@ -123,26 +123,26 @@
    "items": [
     {
      "date": "2026-10-27",
-     "time": "08:51",
+     "time": "16:25",
+     "title": "Japan’s trend inflation index hits 3-year high, cements case for BOJ rate hike",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWFp4YlJ6Y3BaQ3I1SU0tdTVQWW9KRXR1Um5yb3VrR2hTYTdOQURJYkhPSHNzeW9tZk9GUUlrMlp5UHd3elQwQXVfMk43X3RaRklEaThXUzRhWkwyOTE2bEY1UUQ3ejBpYXhReDlJQ2VfVnc5S3BNWXZkSVowdl9pckd0cVl2cHZBdVJ1U2dzbGNvRlQ0NHRqOXpwRU55T2ZudFB5M0dNZDBOSjJmbm5fRERTQVpudkRRTi1j?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
+     "time": "15:17",
      "title": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC survey",
      "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VUUdYT3Q2d2tjanR2Y3I3d3VsWDFmVzItU3IxVUhiR196a1hxVmhqQXBqYjB0WU92eEw4Nk9TN0hITXdZbERSUlZIb1lReXprTHhob2ZLMlQzTGp5NTZfQUFlclZhRjI4eGpDbDZkSU5TX202R3E2Sm53MFdad9IBgwFBVV95cUxQQ3NXMS1aeTdJQ01XbEZzNFRLcktKaDhuUDZQRVR4SXk3MUFZNGhWeE8zaVluT29Ua1NGa1VjbkxaWXhFU2prLXpkUjNqT0FKVEVXUExPcVJ1ajdKQ2o0RF9adEpkTFUtRjUtNi1RSWUtZ1NKb2JydFhiVFJVRlBkbHZPOA?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeENqdi0taGxhOTNQTjZMMm1zOGl6YXd3QnJEUjYzVF9aRlVPcC13bWFHUUwyVGh6MVJ6dzd4WTZJMGRhZDEzZlVuSERta3l1dUkzR1RhY0ZFTU8wSUhkaEQ2Q1ZlMTRZOU8yOHFxV1pFdmpCYzQ2R2ljMlFhd3BTelR2dHY5c2F4ZTF2RDh2RXZha0xRdkJ3R0NuZXh3cmhBUThvLUxnSXd1ZEZxQUlFQTV3eHhFZ2RYbktSUmZn?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-26",
-     "time": "16:07",
-     "title": "Nikkei Falls 0.8% for Third Straight Session as Advantest and Tokyo Electron Drag Tokyo Stocks Before Fed, BOJ",
-     "src": "International Business Times Australia",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPM2F4bUY0bkdBME1vSGpMS2NzT0YzTjhKRzZFVEJiMkVtemdDbzBHa1hHZGRLQ2EzbEVvUW9wYW1yYXRWb3hTbUthUEZvOFkxeFgxUllCWnYwZmRXM0NncHBJV3RFWDZxT3hmU251OWNIUHhzSkY5cVdqTXAxdldORGhR?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "13:59",
-     "title": "Global Market: Japan's Nikkei falls for third straight session as chip stocks slide",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPX01IRVRpeGFsYk0wVzVLbU1vWFdZWjduSnFkSHRyYkt0emYtSmRLUmpqbXJHUk83bVM5S21Fc2RQYnk4YTZDVTBYQTEzQzhkNVVTQi1lVGQ5Z21ySzdFV0VZUWtwV0RzM3FacE13RUVpVk1OU29kT2EtZTBUSVo3RUlKNDdrMmxtZDB5aWw5WWtwaWM0Rm12dlBsYkVEQmY4LUZyRUpBLXFKQ1lKY0xPS2lPMUFoSk9ZQi1VZ21wSVpFeFg4UllGTmpyb0tUNU5YQTBvYVpDM2QyTml1YVVkZWZvd2hUYmJ3MXJhSVRWWHQ3NnJ50gH0AUFVX3lxTE9fTUhFVGl4YWxiTTBXNUttTW9YV1laN25KcWRIdHJiS3R6Zi1KZEtSamptckdSTzdtUzlLbUVzZFBieThhNkNVMFhBMTNDOGQ1VVNCLWVUZDlnbXJLN0VXRVlRa3BXRHMzcVpwTXdFRWlWTU5Tb2RPYS1lMFRJWjdFSUo0N2sybG1kMHlpbDlZa3BpYzRGbXZ2UGxiRURCZjgtRnJFSkEtcUpDWUpjTE9LaU8xQWhKT1lCLVVnbXBJWkV4WDhSWUZOanJvS1Q1TlhBMG9hWkMzZDJOaXVhVWRlZm93aFRiYncxcmFJVFZYdDc2cnk?oc=5",
+     "date": "2026-10-27",
+     "time": "11:50",
+     "title": "Ex-BOJ chief Kuroda backs more rate hikes, his former deputy urges caution",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORGd3OVRlcl82RE5aMnZNb3FSZzVVZUxxN1oxVmFIOFJZZGdJb0toUDBmWXJEbGZuWWtJOFF6X3hJeFRQT0k2VlFnTk5kWFpod0kwRS1VMjRpb21qYlV1NzZTd2padUZzWVlJal9xb01kRnRNLVYwWGo1aUhRYThpYV9hclNDUWo1VElHNGotWTk2a3VGdER5b0p4d0N6RkVtVGRfUXF0MzU4YndydEkxLXZfZnlLNVJwODM2ZWEwVE5ic2dk?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-10-27",
+     "time": "15:00",
+     "title": "China stocks could slide 15% before bottom, Morgan Stanley says",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRDZTdjhVTDhkOEJ3c0RJdkVNYWprVmFqcG9FSkIzUDJNUlNjdXRZYzBzMlF0Y0lJb283VjNRNk9QcUtKX0tHQnRnODhBMnlIMWpGdlBCcnFlYlpSZ0VUZ0hPT1ZfSGVrRFVpYURxX2F3MzdDejlYbmdFTElvM1A5QkJWZFM4UnRNeE52VFVlUkNJcWpRS2dzcFRzVE9RRFV1enZVWUtVdTIwc21sTVJYMjRhMGgtY0xEa2JKclYydDZiVEt30gHEAUFVX3lxTFBoU2QyOHN0TFRMS2RsSy1OUVpqbm5qa3NCNUVUNmJ5MHl1OGhCdTdONWVjQWZsdFdvZ1hRLTBSZ3BQZkhpandOOU9wN1lEV2xhdUJmMTluRmg2by1MMk1WenI4UTVhd1hxTTRLMHpSbEVpbFF3bm1COFV2cTJZZG1lbzhhLTcxQU16WE13OE9xa0lBRFhnbTZhNkFJUXNFaU9ialpBUUhXWEwyUWFQWDkyVWpQbUVjMm05WVZaQVB6UGFtVko?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-10-26",
      "time": "08:08",
@@ -164,14 +172,6 @@
      "title": "China’s US$3.5 trillion stock rout deepens as profits sink, major stimulus stays elusive",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcmZLN0JtOXFkZVphX1I1cVItLUJreExqSTZHaE9vUVlYTFFlYVBKUnZjRktDVHhVZzU2dlUyRW51ck51Q2x5bXNIdlc4OXhNMnhJSElwZlVFaVB1VWtLSnhiWjE2VkR1VmVUbWxPTzYwNkJ4Yk9Ha01hZ3JpZ3BlV0JEaUZTOUJ3MTJEMzBEQzFLcW1ZWUM5eHVoTXk1ejI1TFktejBCVVMzNVM1YWZWSGhJT0RKYS1LNE4zSzRicUlmVjNRZmxOdFJXM1JJY2dDTmc?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-24",
-     "time": "10:30",
-     "title": "China Barely Eased Austerity Before Shift Into Stimulus Mode",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMzNVNE5TMkFBWS1ReFFlbEgwZGJTMmY2YmJibmZpWE9EVmI0R2dMV0hkZkNBcVJNMnU0Mml5R055bkE3emxEb01SbTYyMjYxdFA2S0tjcEhEdkxLVjlMQl9ELXFQa3l6Skx3U3dZMmxXMGswc0NJYTQ2QzlWXzNHNjhwV0xTNHBzN1VaeGpXRUZ2WGpiT1NHYndhUW1vTEx2MzFLVXJtQkM5OU5oV1lQZHM2RzE?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
+     "date": "2026-10-27",
+     "time": "11:28",
+     "title": "Indian shares muted as oil stays near 6-month high, Fed rate decision in focus",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcms4SkRwSDBJVER3QkV1VmoyX1pvTUlrcjRpSk4xSmNLNFZYNjh3Vi1LMGNfUnZPYnVscDdQZl9Xa0d4SHhKM1lDLXItNWh0aWMxNThJeVpMOEsxWXYwNUVXSWMtVWZRZjRRQlFUYk9tRUZxRUR1MWo0QUdPVE9TdzFnWDk0Qzd3NDZfYml4cGdSenVORGpfUTB6RTMyRV9BRmowWERaeWdsSFVLUU0zdFl3?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-26",
      "time": "23:35",
      "title": "Bankers hail RBI's FCNR(B) playbook as dollar inflows surge to $12.7 bn",
      "src": "Business Standard",
      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQenNUZFlzeWp3ZTd4Vno2elphTnE5QkRuazh1eUpRTFlsdjlFeWpBT3VhR09FWlo0NWR4NGZVd0c5clN0dXpmZi01Z3JuZ2lIMWpYQi1KYTluMVhZd0tweWIxdnM2TUprTWU5ZmVfbW1ITEdQUVg5Rkpra24tTFQ5MEpGdXhzY1FmVERacVpOcUJhbms0UHZseVgzeTFwUGFKUy1paU9QbXpkU3VybmxjclVubGw1M0pFZTA5eXhkQWtLOVNuWkRHQ1dMVUVmYWMyRGfSAdcBQVVfeXFMUDdDWWtrRnhFX1k3ZFFwRUE4dGNYd0FXang0VnQtVEVoeDFINFJxenl3SUpFZjVIblo0azlYSy1hRVg1anhUZ2dPc19sUXVTVTdaWjZaWUVGNDkwWFBKbzNHd2k0QUFhd3lGWDZkZHZsN3JFbG5qQWdFWlBXRWZkX0NwcEQyM1hZV1JubkhrdC1XTkhXaG5xRUtpblctYTd6am9sbzJFTGpRMkQ3elRjNmFrOXB6RXplcHdJajBfVVhIeTMtTTdfdlo4cHpZSlFYdk95VUFIREE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-26",
-     "time": "21:30",
-     "title": "Latest FD interest rates after recent rate changes: ICICI Bank, Indian Bank, SBI and HDFC Bank",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNY1JvbEc0NHZMV2NVdzBmN0hHTVdEOW4zNjMxYmJoOXhEMWtRZnl6a2dsRUFNVWNOZnF0d1p5bmR4OHlEdzE5c1BCWk40TXcwSkxIR1U4eGNWbjUyakZteG5FQjVvLVJoUDZsajRhRll5Rk4zODNYZkJjTXJYZy1VSnd2RUx1OWxSeWVldVBuY1VQN2huZ2t6c25RaTZiTkxWUHhLZkExS3pNaFZTekp2M2V5djJFUFItaUVOWHBIYzN4VjRMcjI3VndYS0NKWVBrVEpVaEczMFFfczhpQXVvNEM5THAzUlF3MU9jZ19FREvSAfYBQVVfeXFMTTVoZEVsWmE1clYzSXZ4aU1jdmpnUThJZWROQ1hTN0xNdWdNRkRZR1JXaFNMOFNjNnVtZXJnajBLWlZJcy0xaGUyNFV2X2NyeW56MDZ1MUx1WWpZV0tnWjFvVEtYY2swXzZtSmxmRVEzM3BSa3IyOHR6NHlUT0VvaG9DNUNyTXhSdTk4bTRRbnNybjBmb3hqbVh5LWRweTdvSFVYOW1qZDR6SDRNOEdOMUlCbG83TjdYeGlXUmhMalFUYlIybFFZV2JNZVp5dTJxQVJyYmVRVW4wSFV0bGFUVV9GWWJhX2Q5NXF4bURydjFxbzhTdEh3?oc=5",
      "priority": false
     }
    ]
