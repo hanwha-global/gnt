@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T08:00+09:00",
+ "updated_at": "2026-10-28T08:56+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -218,6 +218,7 @@
    "src": "VnExpress",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
    "site": "vnexpress.net",
+   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -243,6 +244,7 @@
    "src": "Thời báo Tài chính Việt Nam",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR29vMHZvUlNBR2RhTzJHaDJVbGt5anFVdnlNcTZOd2hpdEJBVWZGcnR2dHFiMjRYOTN4N3AyQ201MEJoMXc2UmhLcGxBR2RKZGQtM0JaNFZacVdBV3RFVVZ2Nkd0RzRnM3hISzBGQ18xX0tCazNYRG1rOXo3aGxtcTRSc19mR3J4ckNUMkd2dDltVGs3MnBPMUFfSTBMN1ZrOWxtQkZGZXluelZOOENwMlBwUQ?oc=5",
    "site": "thoibaotaichinhvietnam.vn",
+   "title_ko": "BIDV 증권(BSC): 3분기 매출은 19% 증가했으며, IB 부문이 크게 기여했습니다",
    "hub": "하나증권|베트남",
    "time": "",
    "firms": [
@@ -257,6 +259,7 @@
    "src": "Báo VietNamNet",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTldja0JLeXoyNTdTWEtKQk02RU1pOG5jMWd0bTZwOHN1ak95eG1FRHdrLWh4TTI2N09nX0ZVLXk1ODBWVkZLYjIyVDV4YWhpcFB4MDFzc3RsSmJraFpBTldWNlpFTUt4all0LVVucUJSTnJ3dmtKTWtNdm02U1RoNVEwM29SOUpNSDU0MTJUUHZya3dWdU9TZXQxWWJTVS0xQTJ5ckJPN0FfTXp6?oc=5",
    "site": "vietnamnet.vn",
+   "title_ko": "KBSV와 5년간의 '베트남과 함께 올라가기'의 여정이 APEA에서 기념되었습니다",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -305,6 +308,16 @@
    "firms": [
     "한화투자증권"
    ]
+  },
+  {
+   "date": "2026-10-12",
+   "time": "16:00",
+   "title": "Foreign securities firms lag behind in the race to expand capital in Vietnam",
+   "src": "Theinvestor",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWdIMmNhaFZyYXJfRkNockh3cHFjYTRmZExRRkRROTVaM3RPdlUzMXFzUUgteWhXcnh0VjMtbkRSZ1d5alVRTDdUSEtVSzJwNndWR1NFZnltVXdvVVhOR2d5RDJxdHJUME5iQk0weV9HQUpEd3NtNTFjdG1tcmJySDQwbWpoZzlSWDNfME5OaDVMY19CZDBwMGJvalZCblNiTXlWcDBSNEIyM3JHT1E1OA?oc=5",
+   "site": "theinvestor.vn",
+   "firms": [],
+   "foreign": true
   },
   {
    "date": "2026-10-09",
@@ -393,6 +406,7 @@
    "src": "CNBC Indonesia",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3fSAcsBQVVfeXFMTm9wUS01MEFVX1VUY2FKZm5oT3hFWXA2b1ZtRTZIejFNQVJXRURLbGIxZGFqUlJxOGRveGpQYTBoYVpmZGJDc3NUWGV6dXpvaElrNkFIUHJCRTZSVlVWOWRVMDJJaXhuTmgyamFUVEtTanNCXzJJUFNIWmdpRDFFVF9mYnBWRktjUnY2U2JfZGItVGdzWHNRT1RlT19oWTQ0TmlGQTNsUFFUT1A5VEp5NTBKT3JhRXg5TzJ0ZnhqbGNjXy14LUlOc1dvajQ?oc=5",
    "site": "www.cnbcindonesia.com",
+   "title_ko": "혁신 강화, 미래 자산 증권 인도네시아가 이 상을 수상했습니다!",
    "hub": "미래에셋증권|인도네시아",
    "time": "",
    "firms": [
@@ -463,30 +477,10 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
-   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
-   "site": "www.etnews.com",
-   "firms": [
-    "토스증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
    "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5",
-   "firms": [
-    "하나증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
-   "title": "하나증권, 업비트 글로벌과 디지털자산 사업 협력 업무협약 체결",
-   "src": "한국경제",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QNjluWVc3TGhWaFJYZ21NTlFFUWFuc2I1ellQOVNfYTIzaFBYejRRd05lMHJuTzhjc0RiSjdUYU1NelY5VHhNa3VrOWJ4M1l2NlpSRTUxdjZVZw?oc=5",
+   "site": "www.yna.co.kr",
    "firms": [
     "하나증권"
    ]
@@ -497,8 +491,31 @@
    "title": "하나증권, 업비트 글로벌과 맞손…디지털자산 금융사업 협력",
    "src": "전자신문",
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5nOVBIN0dueFdBYnJIQWpzM2FwNnRma3V5Uk1EdVowWnRpOTEyT29tQlY3MWxXNUxsbzR6VmZMMUtNRG9qMkhUYWdLcmdnQQ?oc=5",
+   "site": "www.etnews.com",
    "firms": [
     "하나증권"
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": "16:00",
+   "title": "하나증권, 업비트 글로벌과 디지털자산 사업 협력 업무협약 체결",
+   "src": "한국경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QNjluWVc3TGhWaFJYZ21NTlFFUWFuc2I1ellQOVNfYTIzaFBYejRRd05lMHJuTzhjc0RiSjdUYU1NelY5VHhNa3VrOWJ4M1l2NlpSRTUxdjZVZw?oc=5",
+   "site": "www.hankyung.com",
+   "firms": [
+    "하나증권"
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": "16:00",
+   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
+   "site": "www.etnews.com",
+   "firms": [
+    "토스증권"
    ]
   },
   {
@@ -567,10 +584,10 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "Korea Investment & Securities expands global ties with Fidelity, PIMCO, Carlyle",
-   "src": "The Korea Times",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSGRpbjF3c01RbEptWFFVSWVfTDRvSWM2eXMwR2JjRm9vcG9nZFBYckVmQVJTb3VGTnpGSTlwcXlfOGVXNDduVXdDWWtCeFF2NTBaeEtjQzgxM1VMV1VvQWxObER5ZE5fZlRSLUE2YnVRUVlCQlF2TEtkYy1LMHQwRWpFYmJJa00wdzE1OXoxVE9rVmNVMmp3TFoxMUJRa05aSjVqaG41eUMwRERWR01QUFI1X3hSeGFtd1RMWVdacmNDcVI4bUYxMlF5UngzSjVfSHl6cNIB2gFBVV95cUxPX0VBN2FqeVVrSzFNcUUyVUl4TmljUjZucnF5SUNwbEdfWlhFN0ZxdnBRZUUwQmtKY3FkNEV3Vm1tbkZ4WUgzb3E0TzVMRlBTRmZzRGZOSjBVQzJDRkY0QkpyNUI0WGVfblpkWVVuMVd0WHRHdFo2d2N0Tk04aGh1R2tzTnQ2ZVk1T016bVRCRmFSQjU4Rk1lNnl4Wl9tcmQzc0NDMk5rR2p0WGJBS0xYaFdVcGg2dTNOUnotaE9SNnVNUHNNTnRkUndPQWtxSmlyNUl0TVVtMGFQQQ?oc=5",
-   "site": "www.koreatimes.co.kr",
+   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
+   "src": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
+   "site": "news.einfomax.co.kr",
    "firms": [
     "한국투자증권"
    ]
@@ -578,9 +595,10 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
-   "src": "연합인포맥스",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
+   "title": "Korea Investment & Securities expands global ties with Fidelity, PIMCO, Carlyle",
+   "src": "The Korea Times",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSGRpbjF3c01RbEptWFFVSWVfTDRvSWM2eXMwR2JjRm9vcG9nZFBYckVmQVJTb3VGTnpGSTlwcXlfOGVXNDduVXdDWWtCeFF2NTBaeEtjQzgxM1VMV1VvQWxObER5ZE5fZlRSLUE2YnVRUVlCQlF2TEtkYy1LMHQwRWpFYmJJa00wdzE1OXoxVE9rVmNVMmp3TFoxMUJRa05aSjVqaG41eUMwRERWR01QUFI1X3hSeGFtd1RMWVdacmNDcVI4bUYxMlF5UngzSjVfSHl6cNIB2gFBVV95cUxPX0VBN2FqeVVrSzFNcUUyVUl4TmljUjZucnF5SUNwbEdfWlhFN0ZxdnBRZUUwQmtKY3FkNEV3Vm1tbkZ4WUgzb3E0TzVMRlBTRmZzRGZOSjBVQzJDRkY0QkpyNUI0WGVfblpkWVVuMVd0WHRHdFo2d2N0Tk04aGh1R2tzTnQ2ZVk1T016bVRCRmFSQjU4Rk1lNnl4Wl9tcmQzc0NDMk5rR2p0WGJBS0xYaFdVcGg2dTNOUnotaE9SNnVNUHNNTnRkUndPQWtxSmlyNUl0TVVtMGFQQQ?oc=5",
+   "site": "www.koreatimes.co.kr",
    "firms": [
     "한국투자증권"
    ]
@@ -621,6 +639,7 @@
    "src": "Vietstock",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLUFBRW5vcEhSQ0lxb0lZb21OVGZqZUhhc09ha1h3SjBTdTJDSDR4cm1XUW85MTVKSHRhdmxYR19fUTlJYzZpbjBnSXhYVjFZYm96ZUJWNk1UaVFRcERqV0h1dFRiT1MyeGhFYlhYTGo3U2p3NERjZElIZWhjazZxRFpKeDAyc2h4Uld5d0Ryc0ptSjRUdWduWUdWcDl6ejMwNHJLV0NkckFqX29fb3pPbWUyalVPczN5bnUtZGQ2LW1vdUU?oc=5",
    "site": "vietstock.vn",
+   "title_ko": "미래 자산 증권(베트남)이 1억 1,350만 주의 우선주를 보통주로 전환할 예정인가요?",
    "hub": "미래에셋증권|베트남",
    "time": "",
    "firms": [
@@ -646,6 +665,7 @@
    "src": "Vietstock",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSlNNcXNCOVZ5cWVMTjkyZTlNZHNWR0ZLcC1iYkJITW1qTFFSUVFQdm9CUVdMUkFJdlhzMnZoQWNLbHN6UFVYRGlLa2hUay04M0NxZDdNQVY2cWNBb1RTUFBBRDlhVjg5cGJ5TkxFTTVwRWtHZEc3Z1JfNWV6OWVBWUlrR0tDQkpHdTFVN2dkMnU0VUJQVFNtZnBpOENlcEZFbzlvU2hZMVgtLXh5V2VtYmdSRVpoc3VYdExMVzNoc3Fob3NaSlFGVm1EVHNlZw?oc=5",
    "site": "vietstock.vn",
+   "title_ko": "신한증권, VINASTALK - 올인원 증권 투자 및 정보 플랫폼 출시",
    "hub": "신한투자증권|베트남",
    "time": "",
    "firms": [
@@ -660,6 +680,7 @@
    "src": "kontan.co.id",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNLXJmbXFCSFJLcG9lMHZtalQ3a1RXNUZLRnNqRmZEdlhua1R5MXFhSHRaalN4VVRJTmZvZlp2TnRZRmZsSkY4b21QemxfN0lIa05hVnN6WHVyMVJiTXpjeWgyVTlMS0ZvX1VGczd2WUNKcXhEWURhSVYzYmppTFQ0LURqUXlaRm5KYkZsMHZQdWpBX19yOF82dUx2QjlSRnNN0gGYAUFVX3lxTE5IRVpQS3pQbWpEMjhFOFJRMW5QS0hadFpjU0VieEJ3OHltZVZjZ0N1V0RfR29zWm1YM3hjd21lb1ZiZ0lWZHB3UnlDMElNd2ZSZkRWbjFrT0hYUDdjRjN0TWxkZTZScjFBQVl4TGJKT1hfSGtJdGV2a0JtRDdZRUtSaURhQk9sVlNqNjF6ZGlyX1FEMkJfQloz?oc=5",
    "site": "investasi.kontan.co.id",
+   "title_ko": "IPO는 부진, 키움 증권은 채권과 비즈니스 자문에 의존하고 있다",
    "hub": "키움증권|인도네시아",
    "time": "",
    "firms": [
@@ -763,6 +784,7 @@
    "src": "CafeF",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMUNlVGpDd0doNFlYa1lkV0RnSERIME93WVhZb05tTDdoeVdLWVNaQXdTVFNXZ0otajZRNW5FTXZ4YnU0WGJMWkh5VzlTUzVqek1fNGh5Z1pfS2cxTmFOOUdIZ0o4TjNwM3JMa05jalkwVDBkUkFQM3BCMmRud0wtUkZ5bUsxUkFNcmpqX0tzaGZMbEl6WFN2OFhHRS1JeUJhME1ZaQ?oc=5",
    "site": "cafef.vn",
+   "title_ko": "NH 증권 베트남, 파생상품 거래 시작",
    "hub": "NH투자증권|베트남",
    "time": "",
    "firms": [
@@ -770,6 +792,21 @@
    ],
    "foreign": true,
    "lang": "vi"
+  },
+  {
+   "date": "2026-08-11",
+   "title": "Investor Ritel Kuasai 51,1% Transaksi Saham, Kiwoom Sekuritas Fokus ke Nasabah Aktif",
+   "src": "kontan.co.id",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
+   "site": "keuangan.kontan.co.id",
+   "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 기움 증권은 활성 고객에게 집중합니다",
+   "hub": "키움증권|인도네시아",
+   "time": "",
+   "firms": [
+    "키움증권"
+   ],
+   "foreign": true,
+   "lang": "id"
   }
  ],
  "errors": []
