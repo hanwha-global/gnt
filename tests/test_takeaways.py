@@ -653,7 +653,7 @@ class TakeawaysTest(unittest.TestCase):
         vn = self.rules(d1, "VN")
         self.assertIn("R08", vn)
         self.assertEqual(vn["R01"]["variant"], "acquire-gated")
-        self.assertIn("이후로 미루고", vn["R01"]["text"])
+        self.assertIn("이후로 보류", vn["R01"]["text"])
         self.assertEqual(d2["countries"]["VN"]["last_check"], "큰 변화 없음", d2["countries"]["VN"].get("reason"))
 
     def test_pinned_marketing_is_not_aggressive_under_bad_news(self):

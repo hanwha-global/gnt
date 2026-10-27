@@ -8,7 +8,7 @@
 - 현지 점유율·상장 증권사: site/data/global/markets.json, listed.json, (있으면) insight/data/landscape.json, idx_share.json
 
 규칙마다 '언제 발동하는지'와 '근거 한 줄(숫자마다 기준 시점)'을 정해 두고, 나라마다 점수가 높은 순으로
-카테고리가 겹치지 않게 3~4개를 고른다. 문구는 '…검토할 만합니다/점검할 만합니다'로 끝나는 자동 의견이며
+카테고리가 겹치지 않게 3~4개를 고른다. 문구는 '…검토/…점검'으로 끝나는 개조식 자동 의견이며
 회사의 공식 입장이 아니다. 회사 내부 계획·목표가 있다고 전제하는 표현은 쓰지 않는다(공개 자료만).
 
 매일 아침(news.yml) 돈다. 그 나라에 큰 변화가 있을 때만 문구를 바꾸고, 없으면 이전 문구를 그대로 두고
@@ -35,7 +35,7 @@ from statistics import median
 ROOT = Path(__file__).resolve().parents[1]
 OUT_REL = "site/data/domestic/takeaways.json"
 STATE_REL = "site/data/domestic/takeaways_state.json"
-SPEC_VERSION = 2
+SPEC_VERSION = 3
 KST = timezone(timedelta(hours=9))
 MAX_STALE_DAYS = 14
 NEWS_FRESH_DAYS = 3
@@ -697,24 +697,24 @@ def flows(D, key):
 def r01_text(D, c, variant, cond=""):
     lab = D.label(BROKER[c])
     if variant == "acquire-gated":
-        return f"{lab}의 현지 증권사 지분 인수는 {cond} 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다."
-    return f"{lab}은 증자만으로는 격차가 커, 현지 증권사 지분 인수로 규모·수익을 함께 키우는 방안을 검토할 만합니다."
+        return f"{lab} 현지 증권사 지분 인수는 {cond} 이후로 보류, 후보 검토만 선행"
+    return f"{lab} 증자만으로는 격차 축소 한계, 현지 증권사 지분 인수로 규모·수익 동반 확대 검토"
 
 
 def r04_text(c, variant, cond=""):
     if variant == "gated":
-        return f"{KOR[c]} 현지 증권사 인수는 원화 비용이 낮아졌어도 {cond} 이후로 미루고, 후보 검토만 먼저 해 둘 만합니다."
-    return f"{KOR[c]} 원화 기준 인수 비용이 크게 낮아진 구간이라, 현지 증권사 인수 후보 검토를 시작할 만합니다."
+        return f"{KOR[c]} 현지 증권사 인수는 원화 비용 하락에도 {cond} 이후로 보류, 후보 검토만 선행"
+    return f"{KOR[c]} 원화 기준 인수 비용 크게 하락, 현지 증권사 인수 후보 검토 착수"
 
 
 def mkt_text(D, c, mode, top=None):
     lab = D.label(BROKER[c])
-    return {"reallocate": f"{lab} 고정비 절감분을 모바일 온보딩·디지털 수수료 프로모션에 재배분해 점유율 회복을 검토할 만합니다.",
-            "targeted": f"{lab}은 전면 수수료 인하 대신 은행·핀테크 제휴와 타깃 프로모션으로 신규 고객 유입을 늘리는 방안을 검토할 만합니다.",
-            "aggressive": f"{lab} 신규 계좌 유치 이벤트·수수료 프로모션을 공격적으로 확대하는 방안을 검토할 만합니다."}.get(mode) or \
-        {"R16": f"모바일 온보딩·디지털 채널 제휴로 {lab} 신규 고객 유입 확대를 검토할 만합니다.",
-         "R17": f"{lab}은 한국계 경쟁사와 겹치지 않는 고객군을 겨냥한 타깃 프로모션을 검토할 만합니다.",
-         "R15": f"반등 구간에 맞춰 {lab} 신규 계좌 유치 이벤트를 진행하는 방안을 검토할 만합니다."}[top]
+    return {"reallocate": f"{lab} 고정비 절감분을 모바일 온보딩·디지털 수수료 프로모션에 재배분, 점유율 회복 검토",
+            "targeted": f"{lab} 전면 수수료 인하 대신 은행·핀테크 제휴와 타깃 프로모션으로 신규 고객 유입 확대 검토",
+            "aggressive": f"{lab} 신규 계좌 유치 이벤트·수수료 프로모션 공격적 확대 검토"}.get(mode) or \
+        {"R16": f"모바일 온보딩·디지털 채널 제휴로 {lab} 신규 고객 유입 확대 검토",
+         "R17": f"{lab} 한국계 경쟁사와 겹치지 않는 고객군 대상 타깃 프로모션 검토",
+         "R15": f"반등 구간에 맞춰 {lab} 신규 계좌 유치 이벤트 검토"}[top]
 
 
 def r01_scale(D, c, ctx):
@@ -740,7 +740,7 @@ def r01_scale(D, c, ctx):
     if acquire:
         ev.append(f"ROE {own['roe']:.1f}% vs 현지 상장사 {len(loc)}곳 중간값 {lroe:.1f}%")
         return cand("R01", "M&A·지분", 9, r01_text(D, c, "acquire"), ev, [key], "acquire", ("acquire", rank, n_all), ratio=ratio)
-    text = f"{lab} 자기자본이 한국계 {n_all}사 중 {rank}위라, 증자 규모와 시점을 검토할 만합니다."
+    text = f"{lab} 자기자본 한국계 {n_all}사 중 {rank}위, 증자 규모·시점 검토"
     return cand("R01", "자본", 8, text, ev, [key], "inject", ("inject", rank, n_all), ratio=ratio)
 
 
@@ -771,7 +771,7 @@ def r02_peer_capital(D, c):
     # 라벨이 없으면 앞말에 이미 날짜가 있으니 한 건일 때 괄호에 다시 쓰지 않는다
     ev = lead + (f" 등 {len(hits)}건({span}, 최근 45일)" if len(hits) > 1 else f"({span}, 최근 45일)" if lab else "(최근 45일)")
     key = BROKER[c]
-    text = f"한국계 경쟁사의 {KOR[c]} 자본 확충·점유율 경쟁에 맞서 {D.label(key)} 증자 규모와 시점을 검토할 만합니다."
+    text = f"한국계 경쟁사의 {KOR[c]} 자본 확충·점유율 경쟁 대응, {D.label(key)} 증자 규모·시점 검토"
     return cand("R02", "자본", 6, text, [ev], [key], driver=d(dates[-1]), links=[link(head)], urls=[i["url"] for i in hits], hits=hits)
 
 
@@ -795,7 +795,7 @@ def r03_partner(D, c, fired):
     ev = f"{EXCHANGE[c]} 상장 증권사 {len(nb)}곳 시가총액 {span}" + (f"({pdate} 주가)" if pdate else "") + \
         f" vs 당사 자기자본 {hw_eok / 1e4:.2f}조원({hw_label} 연결, DART)"
     key = BROKER[c]
-    text = f"{D.label(key)}은 현지 상장사 인수 부담이 커, 지분 인수보다 제휴·JV형 확장을 우선 검토할 만합니다."
+    text = f"{D.label(key)} 현지 상장사 인수 부담 과중, 지분 인수보다 제휴·JV형 확장 우선 검토"
     return cand("R03", "M&A·지분", 7, text, [ev], [key])
 
 
@@ -827,7 +827,7 @@ def r05_post_injection(D, c):
             continue
         ev = (f"{inj.get('period') or D.L['label']} 중 출자 {eok(inj['amount'])}(DART {inj.get('report') or rep_name(D.L)} 타법인출자현황) 후 "
               f"자본 대비 매출 {ry_L * 100:.1f}%({D.L['label']} 연환산) vs FY{D.B['year']} {ry_B * 100:.1f}%")
-        text = f"{D.label(key)} 증자 자금은 한 번에 쓰기보다 단계별로 나눠 집행하고, 분기마다 매출 성과를 점검할 만합니다."
+        text = f"{D.label(key)} 증자 자금 단계별 분할 집행, 분기마다 매출 성과 점검"
         out.append(cand("R05", "자본", 7, text, [ev], [key], bucket=(inj["amount"],), driver=d(inj["rcept_dt"]), injection=inj))
     return out
 
@@ -852,9 +852,9 @@ def r06_cross_sell(D, c):
         ev.append(f"{D.label('CAM')} {D.L['label']} 매출 {eok(L['rev'])}·순{'손실' if L['ni'] < 0 else '이익'} {eok(abs(L['ni']))}(DART)")
     a, b = D.label("CAM"), D.label("CSA")
     if rate_up:
-        text = f"BI 고금리 국면에 맞춰 {a} 채권형·MMF를 {b} 고객에게 교차판매하는 방안을 검토할 만합니다."
+        text = f"BI 고금리 국면에 맞춰 {a} 채권형·MMF의 {b} 고객 교차판매 검토"
     else:
-        text = f"{a} 펀드를 {b} 고객에게 교차판매하는 목표 설정을 검토할 만합니다."
+        text = f"{a} 펀드의 {b} 고객 교차판매 목표 설정 검토"
     return cand("R06", "상품·제휴", 7, text, ev, ["CAM", "CSA"], "rate-up" if rate_up else "base", (pol and pol.get("now"),))
 
 
@@ -873,9 +873,9 @@ def r07_r08_struct(D, c):
         ev = [note_short, cite(head) + more(len(pos), "구조 뉴스", "최근 30일")]
         if deriv:
             lead = "FTSE 편입" if note_short else f"{KOR[c]} 파생상품 시장 확대"
-            text = f"{lead}에 맞춰 {D.label(key)}의 외국인 기관 영업과 지수옵션 등 파생상품 준비를 검토할 만합니다."
+            text = f"{lead}에 맞춰 {D.label(key)} 외국인 기관 영업과 지수옵션 등 파생상품 준비 검토"
         else:
-            text = f"{KOR[c]} 시장 지위 상향에 맞춰 {D.label(key)}의 외국인 기관 영업·영문 리서치 강화를 검토할 만합니다."
+            text = f"{KOR[c]} 시장 지위 상향에 맞춰 {D.label(key)} 외국인 기관 영업·영문 리서치 강화 검토"
         return cand("R07", "상품·제휴", 8, text, ev, [key], "deriv" if deriv else "base", ("POS",), driver=d(head["date"]),
                     links=[link(i) for i in pos[:2]], urls=[i["url"] for i in pos])
     head = neg[0]
@@ -902,8 +902,8 @@ def r08_text(D, c, event):
     """악재 국면 줄 문구와, 같은 나라에 '인수는 미루고 후보 검토만' 줄이 함께 뽑힐 때 쓰는 짧은 문구(같은 말 반복 방지)."""
     credit = [k for k in KEYS[c] if "신용공여" in D.ents.get(k, {}).get("focus", "")]
     limit = f"{D.labels(credit)} 신용공여 한도" if credit else "리스크 한도"
-    text = f"{event} 전까지 {KOR[c]} 신규 출자·인수는 속도를 조절하고, {limit}를 점검할 만합니다."
-    short = f"{event} 전까지 {limit}와 담보 비율을 보수적으로 점검할 만합니다." if credit else f"{event} 전까지 {limit}를 보수적으로 점검할 만합니다."
+    text = f"{event} 전까지 {KOR[c]} 신규 출자·인수 속도 조절, {limit} 점검"
+    short = f"{event} 전까지 {limit}·담보 비율 보수적 점검" if credit else f"{event} 전까지 {limit} 보수적 점검"
     return text, short
 
 
@@ -944,8 +944,8 @@ def r09_fx(D, c, ctx):
     ev = f"원/{CCY_NAME[CCY[c]]} {fx['last'][1]:,}원({unit.group(1) + CCY_NAME[CCY[c]] + ' 기준, ' if unit else ''}ECOS {md(fx['last'][0])}), 연초 대비 {sgn(y)}·달러 대비 {sgn(vs_usd)}"
     if week:
         ev += f" · 최근 1주 달러 대비 {sgn(w_usd)}"
-    name = CCY_NAME[CCY[c]]
-    text = f"{name} {'' if trend else '단기 '}약세에 대비해 {D.labels(KEYS[c])} 원화 환산 손익 관리와 환헤지 방안을 점검할 만합니다."
+    name = {"VND": "베트남 동화"}.get(CCY[c], CCY_NAME[CCY[c]])  # 개조식 첫머리의 '동'은 '같은'으로 읽혀 나라 이름을 붙인다
+    text = f"{name} {'' if trend else '단기 '}약세 대비, {D.labels(KEYS[c])} 원화 환산 손익 관리·환헤지 점검"
     return cand("R09", RISK, 6, text, [ev], KEYS[c], "trend" if trend else "week")
 
 
@@ -972,7 +972,7 @@ def r10_reg(D, c, struct_urls):
     who = f"{head['firm']} {KOR[c]} 법인 " if head.get("firm") else ""
     ev = cite(head, who) + (f" 등 {len(pool)}건" if len(pool) > 1 else "")
     what = {"시세조종 단속 강화": "이상거래 모니터링과 주문 감시 체계", "고객 대상 사기 증가": "고객 사기 방지와 이상거래 모니터링 체계"}.get(variant, "내부통제·준법 체계")
-    text = f"{variant}에 맞춰 {D.labels([k for k in KEYS[c] if 'IB' in D.ents.get(k, {}).get('focus', '') or k == BROKER[c]])} {what}를 점검할 만합니다."
+    text = f"{variant}에 맞춰 {D.labels([k for k in KEYS[c] if 'IB' in D.ents.get(k, {}).get('focus', '') or k == BROKER[c]])} {what} 점검"
     return cand("R10", RISK, 6, text, [ev], [BROKER[c]], variant, (variant,), driver=d(head["date"]), links=[link(head)], urls=[i["url"] for i in pool])
 
 
@@ -1006,14 +1006,14 @@ def r11_loss(D, c):
         if fl and iw is not None and iw >= 5 and fl[0] <= -0.10:
             ev.append(f"{IX_SHORT[c]} {D.L['label']} {sgn(iw)}에도 같은 기간 매출은 {base_label(D)} {sgn(fl[0] * 100)}")
         if flip:
-            text = f"{lab} 적자 전환에 따라 고정비 중심의 인력·조직 효율화를 검토할 만합니다."
+            text = f"{lab} 적자 전환, 고정비 중심 인력·조직 효율화 검토"
             out.append(cand("R11", "구조조정·비용", 9, text, ev, [key], "flip", ("flip",), driver=d(D.L["report"].get("rcept_dt")), cir=cir, rev_g=fl and fl[0]))
         else:
             focus = [x.strip() for x in D.ents.get(key, {}).get("focus", "").split(",") if x.strip()]
-            mult = f"비용이 매출의 {cir:.1f}배라" if cir is not None and cir >= 3 else "적자 폭이 커져"
+            mult = f"비용이 매출의 {cir:.1f}배" if cir is not None and cir >= 3 else "적자 폭 확대"
             # 사업이 하나뿐이면 '핵심 사업' 구분이 없으니, 고정비를 매출 규모에 맞추는 쪽으로만 말한다
             how = f"핵심인 {focus[0]} 중심으로 고정비를 줄이는" if len(focus) > 1 else "고정비를 매출 규모에 맞추는"
-            text = f"{lab}{josa(lab, '은', '는')} {mult}, {how} 조직 축소·재편을 검토할 만합니다."
+            text = f"{lab} {mult}, {how} 조직 축소·재편 검토"
             out.append(cand("R11", "구조조정·비용", 9, text, ev, [key], "widen", ("widen",), driver=d(D.L["report"].get("rcept_dt")), cir=cir, rev_g=fl and fl[0]))
     return out
 
@@ -1051,7 +1051,7 @@ def r12_jaws(D, c, ctx):
         if m_p is not None and B.get("rev") and B.get("ni") is not None and B["ni"] / B["rev"] < m_p:
             latest = "" if P is D.L else f"·{D.L['label']} {L['ni'] / L['rev'] * 100:.1f}%"
             ev.append(f"순이익률 FY{py} {B['ni'] / B['rev'] * 100:.1f}%{latest} vs 한국계 흑자 {n}사 FY{py} 중간값 {m_p * 100:.1f}%")
-        text = f"{D.label(key)} 비용 증가율을 매출 증가율 이하로 묶는 비용 상한 관리를 검토할 만합니다."
+        text = f"{D.label(key)} 비용 증가율을 매출 증가율 이하로 묶는 비용 상한 관리 검토"
         out.append(cand("R12", "구조조정·비용", 8, text, ev, [key], bucket=(math.floor(jaws / 5),), driver=d(D.L["report"].get("rcept_dt")), jaws=jaws))
     return out
 
@@ -1069,7 +1069,7 @@ def r13_shared(D, c):
         B = D.sub(D.B, k)
         if B.get("ni") is not None and B["ni"] > 0:
             ev.append(f"{D.label(k)} FY{D.B['year']} 순이익 {eok(B['ni'])}에서 적자 전환")
-    text = f"{D.labels(keys)} 백오피스·IT·준법 통합으로 중복 고정비 축소를 검토할 만합니다."
+    text = f"{D.labels(keys)} 백오피스·IT·준법 통합으로 중복 고정비 축소 검토"
     return cand("R13", "구조조정·비용", 9, text, ev, keys, bucket=(len(keys), round(sum_ni / 500)), driver=d(D.L["report"].get("rcept_dt")))
 
 
@@ -1090,7 +1090,7 @@ def r14_volume(D, c):
         fact = f"IDX {D.idx['month']['month']} 일평균 거래대금 연초 이후 평균 대비 {sgn(adtv * 100, 0)}(IDX 회원사 집계)"
     else:
         fact = f"{IX_SHORT[c]} 연초 대비 {sgn(ytd)}({md(ix['date'])})"
-    text = f"{D.label(BROKER[c])} 영업망은 유지하되 성과연동 보상 등 변동비 전환을 검토할 만합니다."
+    text = f"{D.label(BROKER[c])} 영업망은 유지, 성과연동 보상 등 변동비 전환 검토"
     return cand("R14", "구조조정·비용", 6, text, [fact], [BROKER[c]], bucket=(adtv is not None and adtv <= -0.15,), fact=fact)
 
 
@@ -1208,7 +1208,7 @@ def r18_rwa(D, c):
         ev.append(f"{KOR[c]} 토큰증권 제도 {sto.get('short', '')} 시행 중(디지털자산 규제 탭)")
     focus = [x.strip() for x in D.ents.get(key, {}).get("focus", "").split(",") if x.strip()]
     biz = next((x for x in focus if "IB" in x), focus[0] if focus else "자문·IB")
-    text = f"보도된 RWA 협력을 {D.label(key)} {biz} 상품으로 잇는 저비용 사업화를 검토할 만합니다."
+    text = f"보도된 RWA 협력을 {D.label(key)} {biz} 상품으로 잇는 저비용 사업화 검토"
     return cand("R18", "상품·제휴", 5, text, ev, [key], bucket=(head["url"],), driver=d(head["date"]), links=[link(head, "보도")], urls=[head["url"]])
 
 
@@ -1223,7 +1223,7 @@ def fallbacks(D, c):
         rank = allr.index(eq_now) + 1
         med = median(p["equity_krw"] for p in peers if p.get("equity_krw") is not None)
         ev = f"{D.L['label']} 자기자본 {eq_now:,.0f}억원(DART) vs 한국계 동종 중간값 {med:,.0f}억원(FY{own['asof'][:4]})"
-        text = f"{D.label(key)} 자기자본은 한국계 {len(allr)}사 중 {rank}위로, 분기 공시마다 격차 추이를 점검할 만합니다."
+        text = f"{D.label(key)} 자기자본 한국계 {len(allr)}사 중 {rank}위, 분기 공시마다 격차 추이 점검"
         out.append(cand("F1", "자본", 2, text, [ev], [key], bucket=(rank,)))
     if L.get("assets") and L.get("ni") is not None:
         roe = L["ni"] * (12 / D.L["months"]) / (L["assets"] - L["liab"]) * 100
@@ -1235,7 +1235,7 @@ def fallbacks(D, c):
             bank, rate, mon = pol and pol["name"], pol and pol["now"], pol and pol["month"]
         if rate is not None and roe < rate:
             ev = f"{D.L['label']} 연환산 ROE {roe:.1f}%(기말 자본 기준, DART) vs {bank} {rate:.2f}%({mon} 기준)"
-            text = f"{D.label(key)} 연환산 ROE가 기준금리에 못 미쳐, 자본 효율 목표 설정을 검토할 만합니다."
+            text = f"{D.label(key)} 연환산 ROE 기준금리 하회, 자본 효율 목표 설정 검토"
             out.append(cand("F2", "구조조정·비용", 2, text, [ev], [key], bucket=(roe < 0,)))
     due = sorted((t for t in D.reg.get("todo", []) if t.get("status") != "done" and str(t.get("id", "")).startswith("periodic-") and t.get("due")),
                  key=lambda t: t["due"])
@@ -1244,7 +1244,7 @@ def fallbacks(D, c):
         t = due[0]
         name = re.sub(r"^한화투자증권\s*", "", t.get("item") or t.get("title") or "정기보고서").split(" 해외")[0]
         extra = f"와 {nxt['name']} 결정({md(nxt['date'])})" if nxt else ""
-        text = f"다음 판단 시점은 {name}(기한 {md(t['due'])}){extra} 반영 후입니다."
+        text = f"다음 판단 시점: {name}(기한 {md(t['due'])}){extra} 반영 후"
         out.append(cand("F3", "일정", 1, text, ["대외보고 기한(한화투자증권 탭)" + (" · 중앙은행 결정 일정" if nxt else "")], [key],
                         bucket=(t["due"], nxt["date"] if nxt else None)))
     return out
