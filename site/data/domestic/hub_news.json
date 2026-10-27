@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T07:58+09:00",
+ "updated_at": "2026-10-28T08:39+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,12 +8,14 @@
   "KB증권|베트남": [
    {
     "date": "2026-10-23",
-    "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
-    "src": "VnExpress",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
-    "site": "vnexpress.net",
+    "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
+    "src": "Tuổi Trẻ",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
+    "site": "tuoitre.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "KBSV와 MB은행, 디지털 금융서비스 개발 협력 체결",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-10-21",
@@ -22,7 +24,9 @@
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTldja0JLeXoyNTdTWEtKQk02RU1pOG5jMWd0bTZwOHN1ak95eG1FRHdrLWh4TTI2N09nX0ZVLXk1ODBWVkZLYjIyVDV4YWhpcFB4MDFzc3RsSmJraFpBTldWNlpFTUt4all0LVVucUJSTnJ3dmtKTWtNdm02U1RoNVEwM29SOUpNSDU0MTJUUHZya3dWdU9TZXQxWWJTVS0xQTJ5ckJPN0FfTXp6?oc=5",
     "site": "vietnamnet.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "KBSV와 APEA에서 5년간 수상의 영예를 안은 '베트남 진출' 의 여정",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-10-19",
@@ -38,7 +42,9 @@
     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUDczWl9KdldYaHl1WjZ1MElTTjFVbm1xVVZud01fX0RSeF9LLUtGXzZlUDFVMHlZTllZcXVVekdhQnd6MFdBbWpiRnJTM1JZUkNvc0htSzlEQ3RZNmNuWHlJRG9IMFItTjU2T1BwXzh0dVpFMmdQR3pyY0k4RWRSeklnVjF1NHZUTVdNMEpJZllXVUlROGx5cUtISkZyaG92UG1PcW9TUUhnNXFXXzlqQjkyMUJZTUlrQTlfVHZOUm9CWGV1dXpKeW1B?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "KB증권 베트남은 미결제 대출이 거의 8,900억 동 (VND) 로 증가했으며, 15% 이상 증가했다고 보고했다.",
+    "ko_by": "MyMemory"
    }
   ],
   "KB증권|인도네시아": [
@@ -50,7 +56,9 @@
     "site": "finance.detik.com",
     "foreign": true,
     "lang": "id",
-    "old": true
+    "old": true,
+    "title_ko": "미래에셋에 이어 IDX도 제재 PT KB밸버리증권",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2022-07-07",
@@ -60,7 +68,9 @@
     "site": "www.cnbcindonesia.com",
     "foreign": true,
     "lang": "id",
-    "old": true
+    "old": true,
+    "title_ko": "KB Bukopin - KB Valbury 증권 협업으로 서비스 개선",
+    "ko_by": "MyMemory"
    }
   ],
   "NH투자증권|미국": [
@@ -80,7 +90,9 @@
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMUNlVGpDd0doNFlYa1lkV0RnSERIME93WVhZb05tTDdoeVdLWVNaQXdTVFNXZ0otajZRNW5FTXZ4YnU0WGJMWkh5VzlTUzVqek1fNGh5Z1pfS2cxTmFOOUdIZ0o4TjNwM3JMa05jalkwVDBkUkFQM3BCMmRud0wtUkZ5bUsxUkFNcmpqX0tzaGZMbEl6WFN2OFhHRS1JeUJhME1ZaQ?oc=5",
     "site": "cafef.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "베트남 증권은행, 파생상품 증권 거래 개시",
+    "ko_by": "MyMemory"
    }
   ],
   "NH투자증권|싱가포르": [
@@ -118,7 +130,9 @@
     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZ0NCc0t2LXJiakpRY0hYRVhvNGNNbDFEMlpQZEQ1MzRyd3dQaUJZOXZObE1xZG9HYUc5SzBPRWY1cFJ6aXBnWkdkbWxzZGotMlByUGh2MjJmYjZ3bXpkclFzeE9mWno3UXh2RnIxRm1iQWFCRE1zTEI3Nk5uYUxYcDRleHhFOG9uQzF5OTZDMW9iOWlMMDlNUWYybU9IVjdxQmJlVGFLVGVjQ3dpM1VpUm1Ca3RJdFNSWnQzT0ZyQ0FSbGJxMVN3?oc=5",
     "site": "www.cnbcindonesia.com",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "동영상: OJK의 NH코린도 증권, BLISS IPO 펀드 사례에 대한 제재",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-03-14",
@@ -127,7 +141,9 @@
     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVENSU3hBQk0ya1BmbkdhekJWRDBJcDRVd1RMcnBQanA3WXp3WVF5ZWNpQ1d2TFJSVFRIMFhVcEJLeVg5RnFJdzBFR01nSk5ScW9JMU9jOGJSU0hmQ0hkLWl0N2NpdG5EVTZsM2x5YWk5VHVuSFVwWEZEeTdoX1EtaG94MVRESHo5SUM0ZVM1aTVPRXE5dDR0WmZFRS1CMzlyd3VWTHFvVlY0dXRZZmIzXzhRS3gtWEg3RUYzaW1FUnhNd9IBxwFBVV95cUxPV092eFEyX01LUXdmNTJVN0ZyZE9zeDNJZEpBZklrclB6X3gxUG1kOFk2M2JLaHAxTHRLZ1JHSHdBTk5FMy0tTUpuNmVxTTdFVDYxOTR4MmZFWXhLRnNSa2dtTHF0Ym90MEZoNl8zMFdYM0Y0MVR4UGFPU1lHQjVKY05RdlhYRGtaaDVfNE8wS2JWRlpORU5STEtUR2Q1RzdRanNYVjZsX3FqTmlfSElMS0dmdXcyVmNDYTJTWlJ2dU51eVVKY2t3?oc=5",
     "site": "finance.detik.com",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "OJK 벌금 발행인 Benny Tjokro Rp 2.7 M, NH코린도 증권 허가 동결!",
+    "ko_by": "MyMemory"
    }
   ],
   "NH투자증권|중국": [
@@ -188,7 +204,9 @@
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLUFBRW5vcEhSQ0lxb0lZb21OVGZqZUhhc09ha1h3SjBTdTJDSDR4cm1XUW85MTVKSHRhdmxYR19fUTlJYzZpbjBnSXhYVjFZYm96ZUJWNk1UaVFRcERqV0h1dFRiT1MyeGhFYlhYTGo3U2p3NERjZElIZWhjazZxRFpKeDAyc2h4Uld5d0Ryc0ptSjRUdWduWUdWcDl6ejMwNHJLV0NkckFqX29fb3pPbWUyalVPczN5bnUtZGQ2LW1vdUU?oc=5",
     "site": "vietstock.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "미래에셋증권 (베트남) 이 1억 1,350만 우대주식을 보통주로 전환하려고 합니다.",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-02-04",
@@ -197,7 +215,9 @@
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdExoNnNWeEJlcEpXc3hndWhGOV9oSjFwa3p6M2FXRk8teE1vR0paNURkZG4yOExqb3BTZVNJMTI5ZURuQ2lhQmdVZGJHQUU1ZzFLUm0yWmZmeWdrYzhvbHVjOUl2SGNDVGUzY2dldm51XzV2X0pqZlZreVRLMHR6Rk1pNVNDTXJYenBBUUc0cURFeU1JQkZXZzVvT0FzdVVIZ0xublJiSDVodw?oc=5",
     "site": "laodong.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "미래에셋의 현지화 전략 이후 사업 방식",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-01-29",
@@ -213,7 +233,9 @@
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSDFTdHFKNnRTV2xMU1BBaXBMQlN2SWtfUFVlYWVOLWd4ZWZnVFd1Z2JGTDVucG1wN3JKbnpDQmVhSVZtcTlOblFkd01reFh1UVFtbDViZEpMM0FiWk1BOFBWakxsSnliZW90WWJDRHI5RkJGOWJ4aDNYWnJudEhtNklkdThwdDc1cTFQbnp3UEtfZ1o4b3h1RzRmSVhvUFk?oc=5",
     "site": "thanhnien.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "미래에셋증권은 약 3,000억 VND의 매출을 달성했습니다.",
+    "ko_by": "MyMemory"
    }
   ],
   "미래에셋증권|영국": [
@@ -278,16 +300,42 @@
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3fSAcsBQVVfeXFMTm9wUS01MEFVX1VUY2FKZm5oT3hFWXA2b1ZtRTZIejFNQVJXRURLbGIxZGFqUlJxOGRveGpQYTBoYVpmZGJDc3NUWGV6dXpvaElrNkFIUHJCRTZSVlVWOWRVMDJJaXhuTmgyamFUVEtTanNCXzJJUFNIWmdpRDFFVF9mYnBWRktjUnY2U2JfZGItVGdzWHNRT1RlT19oWTQ0TmlGQTNsUFFUT1A5VEp5NTBKT3JhRXg5TzJ0ZnhqbGNjXy14LUlOc1dvajQ?oc=5",
     "site": "www.cnbcindonesia.com",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "혁신을 강화하는 미래에셋증권 인도네시아가 이 상을 받습니다!",
+    "ko_by": "MyMemory"
    },
    {
-    "date": "2026-03-04",
-    "title": "Video: OJK-Polri Geledah Mirae Asset Sekuritas Terkait Dugaan Pidana Pasar Modal",
-    "src": "20detik",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbV9XYl9pYWlTMVp3SXQ0Wl9YUkVGbzA0NzJGWVNaUGktMU5xQWRwQVkwRW9ha2E2WWhMUkRUV2dtb3JYcTZmejdRdlp1aU96djlLMHJfMFFBR2hFQU4tamZZUWpOS0ZmM3ZyOXlJZXBYMTBnb29PeDRnSDdnS2JEWWRLSnBqMlVLdzZ2YXNwYm44YkZpcEdpc2xRV3AxMmZDaUxZSW5jQVp6WjdMUG15WW9rZkIxM3g1QjA0VlNoclpHbUlZcjV6cFFLRQ?oc=5",
-    "site": "20.detik.com",
+    "date": "2026-08-18",
+    "title": "Pasar Makin Selektif, Mirae Asset Sekuritas Genjot Layanan Wealth Management",
+    "src": "kontan.co.id",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
+    "site": "investasi.kontan.co.id",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "보다 선택적인 시장일수록 미래에셋증권은 자산관리 서비스를 얻습니다.",
+    "ko_by": "MyMemory"
+   },
+   {
+    "date": "2026-03-05",
+    "title": "Kantor Mirae Asset Sekuritas Digeledah OJK, Ini Profil Perusahaannya",
+    "src": "Kompas.com",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUGNnTENjNnA0QURkUTNhYndIcFRLeHJOTXBfTThSTlRaYnM1S1pfLXhaV0M2T2ZWUUJ1TmtfcTJQYms3MUYwSkk5RDY5V3huTVJhc3ZjdGxKU2JxVUJ4LWxoTXF5MmFmTzJpOFIyTlVueGtwQ2ExWC1XbGllZElGaUFHV3RKUW1URUhxcHI1S3lYYTZIdEt5Y0lBbXFjaXV3QlUycklkYmlzZE05dTdQeE9mVmJjQlBhQVlfSjc2clBGbl82Wnc?oc=5",
+    "site": "money.kompas.com",
+    "foreign": true,
+    "lang": "id",
+    "title_ko": "미래에셋증권 오피스가 검색한 OJK, 회사 프로필입니다.",
+    "ko_by": "MyMemory"
+   },
+   {
+    "date": "2025-12-01",
+    "title": "Respons Mirae Asset Sekuritas Usai Dilaporkan Nasabah ke Bareskrim",
+    "src": "Kompas.com",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ2Rob25BTDRvMnZNQ2VFZzZnd0lTano2LUJMUU4yQ2NqQWY1ekNvTS1teHoyNmE4T2FJTWFLR0lUWUdmcy1QMmp6MG5IalkwQkVKRzRjb1FJSFFMamVyNlk0RkcxVWhGTGdQVXFLMnExc2syaXJnaUJpUWZRUVRIRVQxOENBb3BCZF9CMTMyR0dxNHllOUxDampvY2M5VHJrMEZLc1UyQTRWaG5CcXluSTlVdHUxeTJBWE93?oc=5",
+    "site": "nasional.kompas.com",
+    "foreign": true,
+    "lang": "id",
+    "title_ko": "미래에셋증권, 바레스크림에 고객신고 후 대응",
+    "ko_by": "MyMemory"
    }
   ],
   "미래에셋증권|홍콩": [
@@ -304,7 +352,8 @@
     "date": "2026-10-25",
     "title": "삼성증권 PB 출신 창업가…국내 증권사 6곳 뚫고, 美 진출한 비결",
     "src": "머니투데이",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBHS1lGZ20taHBDQ19BU3VQSWZSYTVlYnNfWXl0dFlRRDhwQl96eVA3Smc3RGhtTjBvSDU3QXNJMWRwTmlEQVFZemlvN2hKRFJ6TGlmNzVXbkkyR0g3ZnQ3VU96UHJWNWxKUmViRkFxY9IBb0FVX3lxTFBHS1lGZ20taHBDQ19BU3VQSWZSYTVlYnNfWXl0dFlRRDhwQl96eVA3Smc3RGhtTjBvSDU3QXNJMWRwTmlEQVFZemlvN2hKRFJ6TGlmNzVXbkkyR0g3ZnQ3VU96UHJWNWxKUmViRkFxYw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tUUZXS0I1QUw4ZUc1N2VLU1VJRFdiS2p6Q3k0OE04dnVUbzRKUjJPMS1pVXRqRy1OWEZYSVlEakd6ZHRwM0pzMFhWSGFrb19tTEpUSmlyM3YwNVlBOG1nSVJ1ZmVmZGxxRkHSAW9BVV95cUxQR0tZRmdtLWhwQ0NfQVN1UElmUmE1ZWJzX1l5dHRZUUQ4cEJfenlQN0pnN0RobU4wb0g1N0FzSTFkcE5pREFRWXppbzdoSkRSekxpZjc1V25JMkdIN2Z0N1VPelByVjVsSlJlYkZBcWM?oc=5",
+    "site": "www.mt.co.kr"
    }
   ],
   "신한투자증권|미국": [
@@ -331,7 +380,9 @@
     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSlNNcXNCOVZ5cWVMTjkyZTlNZHNWR0ZLcC1iYkJITW1qTFFSUVFQdm9CUVdMUkFJdlhzMnZoQWNLbHN6UFVYRGlLa2hUay04M0NxZDdNQVY2cWNBb1RTUFBBRDlhVjg5cGJ5TkxFTTVwRWtHZEc3Z1JfNWV6OWVBWUlrR0tDQkpHdTFVN2dkMnU0VUJQVFNtZnBpOENlcEZFbzlvU2hZMVgtLXh5V2VtYmdSRVpoc3VYdExMVzNoc3Fob3NaSlFGVm1EVHNlZw?oc=5",
     "site": "vietstock.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "신한증권, VINASTALK 출시 - 올인원 증권 투자 및 정보 플랫폼",
+    "ko_by": "MyMemory"
    }
   ],
   "신한투자증권|인도네시아": [
@@ -342,7 +393,9 @@
     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ2M3OUpvUEJTcnFrS2FaU1JBenNHd0wwM1l4RDVubjY4ZHE2eEpVZ1ctNHpnUURaY3NWeDZmUnFxVGdlc2pkMDJleS1LQV9ySGVvTVdPUzU2TFE2ZVBWRmRLaTA1Mm82TWVjUmZvajVqbGJMaDJtR0hsU1oyRFQ2bkxDUTM4MmxvUktWVFVRMThpTmFLeVVyYXQ4aUZpYlozUHZxaWlCRHhHamN5d2dKMm9n?oc=5",
     "site": "www.cnbcindonesia.com",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "동영상: 바레스크림을 검색한 신한증권사무소",
+    "ko_by": "MyMemory"
    }
   ],
   "키움증권|미국": [
@@ -395,7 +448,20 @@
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNLXJmbXFCSFJLcG9lMHZtalQ3a1RXNUZLRnNqRmZEdlhua1R5MXFhSHRaalN4VVRJTmZvZlp2TnRZRmZsSkY4b21QemxfN0lIa05hVnN6WHVyMVJiTXpjeWgyVTlMS0ZvX1VGczd2WUNKcXhEWURhSVYzYmppTFQ0LURqUXlaRm5KYkZsMHZQdWpBX19yOF82dUx2QjlSRnNN0gGYAUFVX3lxTE5IRVpQS3pQbWpEMjhFOFJRMW5QS0hadFpjU0VieEJ3OHltZVZjZ0N1V0RfR29zWm1YM3hjd21lb1ZiZ0lWZHB3UnlDMElNd2ZSZkRWbjFrT0hYUDdjRjN0TWxkZTZScjFBQVl4TGJKT1hfSGtJdGV2a0JtRDdZRUtSaURhQk9sVlNqNjF6ZGlyX1FEMkJfQloz?oc=5",
     "site": "investasi.kontan.co.id",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "부진한 IPO, 키움증권, 채권 및 경영자문에 의존",
+    "ko_by": "MyMemory"
+   },
+   {
+    "date": "2026-08-11",
+    "title": "Investor Ritel Kuasai 51,1% Transaksi Saham, Kiwoom Sekuritas Fokus ke Nasabah Aktif",
+    "src": "kontan.co.id",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
+    "site": "keuangan.kontan.co.id",
+    "foreign": true,
+    "lang": "id",
+    "title_ko": "소매 투자자는 주식 거래의 51.1% 를 통제하고, 키움증권은 적극적인 고객을 중시합니다.",
+    "ko_by": "MyMemory"
    }
   ],
   "토스증권|미국": [
@@ -449,7 +515,9 @@
     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR29vMHZvUlNBR2RhTzJHaDJVbGt5anFVdnlNcTZOd2hpdEJBVWZGcnR2dHFiMjRYOTN4N3AyQ201MEJoMXc2UmhLcGxBR2RKZGQtM0JaNFZacVdBV3RFVVZ2Nkd0RzRnM3hISzBGQ18xX0tCazNYRG1rOXo3aGxtcTRSc19mR3J4ckNUMkd2dDltVGs3MnBPMUFfSTBMN1ZrOWxtQkZGZXluelZOOENwMlBwUQ?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "BIDV 증권 (BSC): 3분기 매출은 19% 증가했고, IB 부문은 큰 기여를 했습니다.",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-07-21",
@@ -458,7 +526,9 @@
     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORGlRR2dKSnF2V29KdHVSWkpkcUZQZFRabWp5WUlRWXk4MEwyUk5BTVBaTHdERWZBaWl1dnV3bkRvaTJIOTZCS3JDYXhQZUN5TFNtR2w2b0JZUElQMTZIUWI2NDVtZGVfQlpHUmZYdjhZTWFQMlB1a3I4ODJHVTBDRlNEakhRdndiOUx5WjVYVnhKZTlCWENVSU1rdjlkZGkwSmNPYy1LV2YwdE9oMGtNSnF5cHUzd2toTzBsUWtn?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "2분기 BIDV 증권 이익은 15% 증가했으며, 마진 잔액은 9,470억 동 (VND) 이상으로 최고치를 기록했습니다.",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-04-22",
@@ -467,7 +537,9 @@
     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQW8xeDFQUW10d1pvcWpXVERBdzdrTi1rOTQ3NHJnazZ2elRPRjU2Z1RxQWoxUW55RHdGc2VOZDJLX2FaUUhINU1NNnBtdFhsUHM2eVpIOUFPN0JtNHFLOE9yM0pSZHFZR0hmTWxrZW40Z20zZTlLTkpjZnRQdGMxYzE1VW5ROE9mTG1HblVCWWpBWl84NkJWUHJqVjVSVS10a0ZISlplRmhKd2RzVExEejVqMXdfSmNnbTVNeXpfOUV5X1hqQnlYc2R6QzNIUmJIZ2NQdXJ6d2pfR2QwTHlUeVRSX0cyc2Fn?oc=5",
     "site": "cafef.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "BIDV 증권 (BSC) 주주총회: 2026년까지 7,000억의 이익 목표, 자본 규모를 11,000억 VND로 두 배로 결정",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-04-01",
@@ -476,7 +548,9 @@
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORmhsVlIzVzlsUHBRTVZHS0ItUnlvcjVKSVZNQUJ2a2pUVjhrN2cxbjA0YzhLenJ0aUtjVjN1bS1kanR0dUl0MVYtSHdLQ1dHWjVyWVR2OGtJWHVIQVdGUEFGbXJjODFBZnJUOVVST2hmTzJ3Z2dpY2JOVEtoTmtRbk9Pa0FYWXdFa0psZTdKQmNPWHRja1QyZkp3N0pRbGNDakxSazIyVXBHTXd0Vlh5N0JfNFFDV29D0gG0AUFVX3lxTE5Ocm5kamxMN3NrQTQ4MlU4cE1pTjNTVV9tRzc0Z1p0cGszdW9iZnlHU2ZjbGVqTnNrbmo4ejNmZjVmaXRkeDNVTG43dVhMemFtUTJZTHZVWDhqaXc2QlliWVg2aFBRUnFvTlhmMXVDX1lrdzh0NXdFZjkzcmlpaVNTNnlqT3hhQ3U5S1E0dS01anRTVmdremFBbEJBNWp4a3pCZ0RNOUMzS0JxQll2eU1QODRxUQ?oc=5",
     "site": "www.tinnhanhchungkhoan.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "BIDV 증권 (BSI) 은 7,000억 VND의 세전 사상 최대 이익을 계획하고 있습니다.",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2026-03-12",
@@ -485,7 +559,9 @@
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQlh4cnd5akxpRkVRMkRjV3NEbTN6NnlWdDE0ZmowZ1ZHVzMtSnRiQklpMU1pRG5WVkVIM002c3pUbFpuMzFmeFZSZDJJVzFFRjRaVUFQRVpVRG5FVkJ6dkxwb29NbjlmNFp1aEJYdkR1WjhYSWpKMi1uLXVlTXh2cy1vUjNHR0tiVGFFUXln?oc=5",
     "site": "cafef.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "BIDV증권, 부총괄이사 2명 선임",
+    "ko_by": "MyMemory"
    }
   ],
   "한국투자증권|미국": [
@@ -504,7 +580,20 @@
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVVF3ZWpoTUZ0UHpKbTJjUnYyNGRlUzVRbm9qYTRLalA4SDFMd0ZjQ2tINVJjM0c0MUR0SDdtdDJqdE1ydS1sLTc3eENKQnFvbVBOckktSnE3UjV0T2hTMHBtR3VNREJwUl8ySU0yaWtualhFbWNGbDEwd2s4bmE3T0lxNDVWMU85VGhLYTRUaEVLdm1B?oc=5",
     "site": "vnexpress.net",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "KIS 베트남은 15년간의 운영 끝에 시장 점유율을 확대하고자 합니다.",
+    "ko_by": "MyMemory"
+   },
+   {
+    "date": "2025-11-19",
+    "title": "KIS Việt Nam chốt phương án chào bán cổ phiếu để tăng vốn vượt 4.500 tỷ đồng",
+    "src": "CafeF",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSzBZVDI1RVY3ME1Ldkl0NjJQdGFiZElKSHRDQ2R2YWlENVBmdmpub2lJSU1nd3hvZDZTTk42YlFqd1d0NEFZeWxRckQzQU5kV3FyaDRPZnhsQjJ4d3hpYURHZmFnR0tMNUpwZ05zd0lYNUZpY0lFaGxseXlsT1VPTkJ1MGtOS2s2cEZDaFVaVjE3Nk93TkdxRjZWUXNXYkZZczR5Wkg5YjNWUGh0b20wcWkxczBDQQ?oc=5",
+    "site": "cafef.vn",
+    "foreign": true,
+    "lang": "vi",
+    "title_ko": "KIS Vietnam, 4,500억 VND를 초과하는 자본을 증자하기 위한 주식 공모 계획 확정",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2025-11-03",
@@ -513,7 +602,9 @@
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORnFPeElOVldQRVgwNTdFc0h6YlpCY2ZwQ3lKVVJCWXdra2FUZ0s4TEVNRFdoZVptLU1ReXJxSHp3Mk81QVN6d3drTEltZjlqRHpEYl92RVA1WHlLS2RYUkZEWjl2SkkwYzBRUUNCVTBfcjZqNXRzaTVWWDk5WE1CenBIZ2g5V2lYbU93SFBqRExyRFJiN2pNVHAwbnE?oc=5",
     "site": "cafef.vn",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "KIS Securities는 VPS IPO 주식의 유통업체입니다.",
+    "ko_by": "MyMemory"
    }
   ],
   "한국투자증권|인도네시아": [
@@ -530,7 +621,9 @@
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbkxxNWNpeHlDU3NCSklLNWhvSV9YX3M4S2dna21SeHQ2UTRJcy1QeWZOY1hHdXBqMDNzTnoxUXEwSWo3SXdTQ2pSRDZ1LW5zc2o5SldZTGJGRWhwMjhpYk9DN3JrN1ZwdUkxMVJwWFpMcVRScEJyS1lTYnBfOWdVMA?oc=5",
     "site": "www.idx.co.id",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "PT KISI자산운용 명의변경식",
+    "ko_by": "MyMemory"
    }
   ],
   "한국투자증권|중국": [
@@ -560,7 +653,9 @@
     "site": "vnexpress.net",
     "foreign": true,
     "lang": "vi",
-    "old": true
+    "old": true,
+    "title_ko": "파인트리증권 차별화 전략",
+    "ko_by": "MyMemory"
    },
    {
     "date": "2021-12-30",
@@ -570,7 +665,9 @@
     "site": "cafef.vn",
     "foreign": true,
     "lang": "vi",
-    "old": true
+    "old": true,
+    "title_ko": "Pinetree, PineX- 차세대 스마트 주식 투자 앱 출시",
+    "ko_by": "MyMemory"
    }
   ],
   "한화투자증권|싱가포르": [
