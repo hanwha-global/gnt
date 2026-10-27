@@ -631,8 +631,16 @@
       && (!q || [e.name, e.country, e.business, SHORT[e.firm]].some((v) => String(v || "").toLowerCase().includes(q))));
   }
 
+  // 거점 뉴스: 최근 1년 최대 3건, 1년 기사가 없으면 5년 안 가장 최근 2건(old)
   function hubNews(firm, country) {
-    return state.data.hubNews?.hubs?.[`${firm}|${country}`] || [];
+    const items = state.data.hubNews?.hubs?.[`${firm}|${country}`] || [];
+    return items.slice(0, items[0]?.old ? 2 : 3);
+  }
+  function hubNewsCell(firm, country) {
+    const news = hubNews(firm, country), old = news[0]?.old;
+    if (!news.length) return `<span class="sub">최근 ${state.data.hubNews?.fallback_days ? "5년" : "1년"} 기사 없음</span>`;
+    return `${old ? '<div class="sub trend__old" title="최근 1년 안 기사가 없어 5년 안에서 가장 최근 기사를 보여 줍니다">최근 1년 기사 없음 · 5년 안 최근</div>' : ""}<ul${old ? ' class="is-old"' : ""}>${news.map((x) =>
+      `<li><span class="news__d">${esc(x.date.slice(2).replaceAll("-", "."))}</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="sub">${esc(x.src)}</span>${intlTag(x)}</li>`).join("")}</ul>`;
   }
 
   function renderTrend(el) {
@@ -662,11 +670,11 @@
         <input id="t-q" type="search" placeholder="법인명·국가·업종 검색" value="${esc(trendState.q)}" aria-label="검색">
         <button class="btn btn--accent" id="t-csv" type="button" title="엑셀 양식처럼 법인마다 영업수익·순이익 두 줄, 백만원">CSV 다운로드</button>
       </div>
-      <div style="display:flex;align-items:baseline;gap:8px"><p class="count" id="t-count"></p><div style="margin-left:auto">${tmeta(`${fy[0]}~${fy[fy.length - 1]} 사업보고서${h1 ? ` · ${perShort(h1)} 반기 누적` : ""} · 뉴스 최근 1년`, "억원")}</div></div>
+      <div style="display:flex;align-items:baseline;gap:8px"><p class="count" id="t-count"></p><div style="margin-left:auto">${tmeta(`${fy[0]}~${fy[fy.length - 1]} 사업보고서${h1 ? ` · ${perShort(h1)} 반기 누적` : ""} · 뉴스 최근 1년(없으면 5년 안 최근 2건)`, "억원")}</div></div>
       <div class="scroll tall" style="max-height:78vh"><table class="data trend"><thead><tr><th>증권사</th><th>해외법인 · 업종 · 설립 · 지배 구조</th><th>소재지</th><th>지표</th>
         ${pers.map((p) => `<th class="num${p === h1 ? " h1" : ""}">${esc(perShort(p))}</th>`).join("")}<th>추이</th><th>추이 요약(자동)</th><th>거점 뉴스(자동)</th></tr></thead><tbody id="t-body"></tbody></table></div>
       <p class="src">영업수익은 공시 표의 영업수익(매출)입니다${revNet.length ? `(${esc(topic(revNet))} 표에 영업수익 칸이 없어 순영업손익)` : ""}. 중간지주(예: 미래에셋 홍콩법인)의 값은 별도재무제표라 자회사 배당이 섞일 수 있고, 토스 미국 지주는 자회사 포함 연결 값입니다.${h1Missing.length ? ` ${esc(topic(h1Missing))} 반기보고서에서 법인별 손익 표를 찾지 못해 ${esc(perShort(h1))} 칸이 비어 있습니다.` : ""}${h1None.length ? ` ${esc(topic(h1None))} DART에 반기보고서가 없습니다(감사보고서만 공시).` : ""} 이름이 바뀐 법인은 예전 연도가 비어 보일 수 있습니다.
-        거점 뉴스는 주요 언론 기사 중 제목에 증권사와 그 나라가 함께 나온 것만 매일 자동으로 모읍니다(같은 그룹 운용사·은행 기사, 시황·홍보 기사 제외). 추이 요약은 숫자로만 만듭니다.</p>
+        거점 뉴스는 국내 주요 언론과 해외 매체·감독당국(Reuters·Bloomberg·현지 주요 언론 등) 기사 중 제목에 증권사와 그 나라, 또는 현지 법인 이름(Pinetree·Ciptadana Sekuritas 등)이 나온 회사 소식만 매일 자동으로 모읍니다(같은 그룹 운용사·은행 기사, 시황·종목 추천·홍보 기사 제외). 최근 1년 기사가 없으면 5년 안에서 가장 최근 2건을 흐리게 보여 주고, 베트남어·인도네시아어 제목에는 번역 링크를 붙입니다. 추이 요약은 숫자로만 만듭니다.</p>
     </div>`;
     const draw = () => {
       const rows = trendRows();
@@ -691,7 +699,6 @@
         const gov = e.parent_entity ? `모회사 ${e.parent_entity}${e.own != null && e.own < 100 ? ` ${fmt(e.own, 1)}%` : ""}`
           : e.ref ? "관계사·지분투자" : `${SHORT[e.firm] || e.firm} 직접 출자${e.own != null && e.own < 100 ? ` ${fmt(e.own, 1)}%` : ""}`;
         const sub = [e.business, e.established ? `설립 ${e.established}` : "", gov].filter(Boolean).map(esc).join(" · ");
-        const news = hubNews(e.firm, e.country).slice(0, 3);
         const cells = pers.map((p) => {
           const v = e.values[p];
           return `<td class="num${p === h1 ? " h1" : ""}">${v ? two(eok(v.rev), eok(v.ni), signCls(v.ni)) : two("–", "–")}</td>`;
@@ -701,7 +708,7 @@
           <td class="trend__name"><div class="name">${esc(e.name)}${tags}</div><div class="sub">${sub}</div></td>
           <td>${esc(e.country || "–")}</td><td class="sub">${two("영업수익", "순이익")}</td>${cells}
           <td>${spark(e, fy)}</td><td class="sub trend__note">${trendNote(e, fy) || "–"}</td>
-          ${i in hubSpan ? `<td rowspan="${hubSpan[i]}" class="trend__news">${news.length ? `<ul>${news.map((x) => `<li><span class="news__d">${esc(x.date.slice(2).replaceAll("-", "."))}</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="sub">${esc(x.src)}</span></li>`).join("")}</ul>` : '<span class="sub">최근 1년 기사 없음</span>'}</td>` : ""}</tr>`;
+          ${i in hubSpan ? `<td rowspan="${hubSpan[i]}" class="trend__news">${hubNewsCell(e.firm, e.country)}</td>` : ""}</tr>`;
       }).join("") || `<tr><td colspan="${pers.length + 7}"><div class="empty-state">조건에 맞는 법인이 없습니다.</div></td></tr>`;
     };
     $("#t-firm", el).addEventListener("change", (ev) => { trendState.firm = ev.target.value; draw(); });
@@ -719,7 +726,7 @@
     for (const e of rows) {
       const gov = e.parent_entity ? `모회사 ${e.parent_entity}` : e.ref ? "관계사·지분투자" : "직접 출자";
       const note = trendNote(e, fy).replace(/<br>/g, " / ").replace(/<[^>]+>/g, "");
-      const news = hubNews(e.firm, e.country).slice(0, 3).map((x) => `${x.date} ${x.title} (${x.src}) ${x.url}`).join("\n");
+      const news = hubNews(e.firm, e.country).map((x) => `${x.old ? "[1년 기사 없음·5년 안 최근] " : ""}${x.date} ${x.title} (${x.src}) ${x.url}`).join("\n");
       for (const [k, label] of [["rev", "영업수익"], ["ni", "당기순이익"]]) {
         lines.push([e.firm, e.name, e.business, e.country, e.established, gov, label, ...pers.map((p) => e.values[p]?.[k]),
           k === "rev" ? note : "", k === "rev" ? news : ""].map(q).join(","));
@@ -991,16 +998,31 @@
   // 법인·사무소 신설·인수 보도(뉴스만으로는 세지 않고 표시만 한다)
   const NEW_ENTITY_NEWS = /지분.{0,3}인수|인수 계약|(법인|사무소|지점|자회사|증권사).{0,14}(설립|개설|출범|인가|인수|신설|오픈)|(설립|개설|출범|신설|인수).{0,10}(법인|사무소|지점)|acquir|subsidiary|opens? .{0,20}office/i;
 
-  // 국내 증권사 해외진출 뉴스(news.json: Google News RSS, 매체 화이트리스트, 매일 아침 자동 수집)
+  // 해외 매체 기사 표시와 번역 링크(베트남어·인도네시아어 제목만, Google 번역)
+  const translateUrl = (t) => `https://translate.google.com/?sl=auto&tl=ko&op=translate&text=${encodeURIComponent(t)}`;
+  const intlTag = (x) => (x.foreign ? ' <span class="tag tag--intl" title="해외 매체·감독당국 기사">해외</span>' : "")
+    + (x.lang ? ` <a class="news__tr" href="${esc(translateUrl(x.title))}" target="_blank" rel="noopener" title="제목을 한국어로 번역(Google 번역)">번역</a>` : "");
+
+  // 국내 증권사 해외진출 뉴스(news.json: Google News RSS, 국내 주요 언론 + 해외 매체·기관, 매일 아침 자동 수집)
+  let newsScope = "all";
+  function newsItems(limit) {
+    const all = state.data.news?.items || [];
+    const items = (newsScope === "intl" ? all.filter((x) => x.foreign) : all).slice(0, limit);
+    return items.map((x) => `<li><span class="news__d">${esc(x.date.slice(5).replace("-", "."))}</span>
+        <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>
+        <span class="news__m">${esc(x.src)}${intlTag(x)}${NEW_ENTITY_NEWS.test(x.title) ? ` <span class="tag tag--new" title="뉴스 보도만으로는 세지 않습니다. DART 공시나 확인 후 반영됩니다.">신규 진출 보도·미확인</span>` : ""}${(x.firms || []).map((f) => ` <span class="tag${f === HANWHA ? " tag--hw" : ""}">${esc(SHORT[f] || f)}</span>`).join("")}</span></li>`).join("");
+  }
   function newsCard(limit = 14) {
     const n = state.data.news;
-    const items = (n?.items || []).slice(0, limit);
+    const items = n?.items || [];
+    const intl = items.filter((x) => x.foreign).length;
     const at = n?.updated_at ? `${n.updated_at.slice(5, 10).replace("-", ".")} ${n.updated_at.slice(11, 16)}` : "";
-    return `<div class="card span4 news"><h3>국내 증권사 해외진출 뉴스</h3>
-      <p class="card__meta">주요 언론 ${n?.sources?.length || ""}곳만 · 매일 06:30(평일 12:30·17:30 추가) 자동 수집${at ? ` · 최근 ${esc(at)}` : ""}</p>
-      ${items.length ? `<ul class="news__list">${items.map((x) => `<li><span class="news__d">${esc(x.date.slice(5).replace("-", "."))}</span>
-        <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>
-        <span class="news__m">${esc(x.src)}${NEW_ENTITY_NEWS.test(x.title) ? ` <span class="tag tag--new" title="뉴스 보도만으로는 세지 않습니다. DART 공시나 확인 후 반영됩니다.">신규 진출 보도·미확인</span>` : ""}${(x.firms || []).map((f) => ` <span class="tag${f === HANWHA ? " tag--hw" : ""}">${esc(SHORT[f] || f)}</span>`).join("")}</span></li>`).join("")}</ul>`
+    const seg = intl ? `<div class="seg seg--sm news__seg" role="group" aria-label="매체">${[["all", "전체"], ["intl", `해외 매체 ${intl}`]].map(([k, l]) =>
+      `<button type="button" data-news-scope="${k}" aria-pressed="${newsScope === k}">${l}</button>`).join("")}</div>` : "";
+    const srcs = [n?.sources?.length && `국내 주요 언론 ${n.sources.length}곳`, n?.foreign_sites?.length && `해외 매체·감독당국 ${n.foreign_sites.length}곳`].filter(Boolean).join(" + ");
+    return `<div class="card span4 news"><div class="news__head"><h3>국내 증권사 해외진출 뉴스</h3>${seg}</div>
+      <p class="card__meta">${esc(srcs || "주요 언론")}만 · 매일 06:30(평일 12:30·17:30 추가) 자동 수집${at ? ` · 최근 ${esc(at)}` : ""}</p>
+      ${items.length ? `<ul class="news__list" data-limit="${limit}">${newsItems(limit)}</ul>`
         : '<div class="empty-state">첫 자동 수집 후 표시됩니다.</div>'}</div>`;
   }
 
@@ -1349,6 +1371,15 @@
     document.addEventListener("click", (ev) => {
       const a = ev.target.closest("a.jump");
       if (a) Object.assign(state.filters, { firm: "", country: a.dataset.country, relation: "", q: "" });
+      // 뉴스 카드: 전체 / 해외 매체
+      const b = ev.target.closest("[data-news-scope]");
+      if (b) {
+        newsScope = b.dataset.newsScope;
+        const card = b.closest(".news");
+        card.querySelectorAll("[data-news-scope]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+        const ul = card.querySelector(".news__list");
+        if (ul) ul.innerHTML = newsItems(Number(ul.dataset.limit) || 14);
+      }
     });
     window.addEventListener("hashchange", route);
     if (!location.hash) {
