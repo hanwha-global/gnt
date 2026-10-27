@@ -1,4 +1,5 @@
-// 전략 인사이트 탭. data/country.json(진출국 스코어카드), data/landscape.json(현지 경쟁 구도·밸류에이션),
+// 전략 인사이트 탭. 진출국 전략 Takeaways(../data/domestic/takeaways.json, scripts/build_takeaways.py 가 매일 아침 생성),
+// data/country.json(진출국 스코어카드), data/landscape.json(현지 경쟁 구도·밸류에이션),
 // data/idx_share.json(인도네시아 거래대금 점유율)과 글로벌 탭의 HOSE 점유율(../data/global/markets.json, 수동)을 그린다.
 (() => {
   "use strict";
@@ -23,7 +24,31 @@
   const label = (r) => (r.firm === HW ? `${HWNAME[r.name] || r.name}` : shortName(r.name));
   const getJSON = async (u) => { try { const r = await fetch(u, { cache: "no-cache" }); return r.ok ? r.json() : null; } catch (_) { return null; } };
   const median = (a) => { const v = a.filter((x) => x != null && !isNaN(x)).sort((p, q) => p - q), n = v.length; return n ? (n % 2 ? v[(n - 1) / 2] : (v[n / 2 - 1] + v[n / 2]) / 2) : null; };
-  let C, L, X, G;
+  let C, L, X, G, T;
+
+  // ---------- 진출국 전략 Takeaways ----------
+  // 나라마다 큰 변화가 있을 때만 문구가 바뀌고, 없으면 이전 문구에 '아침 확인' 표시만 붙는다.
+  const TK_CAT = { "M&A·지분": "ma", "자본": "cap", "구조조정·비용": "cost", "마케팅·고객": "mkt", "상품·제휴": "prod", "리스크·규제": "risk" };
+  function renderTk() {
+    const order = ["VN", "ID", "SG"].filter((c) => T?.countries?.[c]?.bullets?.length);
+    if (!order.length) return;
+    const md = (s) => (s ? `${+s.slice(5, 7)}/${+s.slice(8, 10)}` : "");
+    const flag = (c) => G?.markets?.find((m) => m.id === c.toLowerCase())?.flag || "";
+    const checked = T.checked_at ? `${md(T.checked_at)} ${T.checked_at.slice(11, 16)}` : "";
+    $("#tk").innerHTML = order.map((c) => {
+      const b = T.countries[c];
+      const regime = b.regime === "NEG" ? '<span class="st neg">구조적 악재</span>' : b.regime === "POS" ? '<span class="st pos">시장 지위 상향</span>' : "";
+      const items = b.bullets.map((x) => `<li><span class="tk-cat ${TK_CAT[x.category] || ""}">${esc(x.category)}</span>${esc(x.text)}
+        <div class="tk-ev">${esc(x.evidence.join(" · "))}${(x.links || []).filter((l) => /^https?:\/\//.test(l.url || "")).slice(0, 1).map((l) => ` <a href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.title || l.label)}">기사</a>`).join("")}</div></li>`).join("");
+      // 그날 확인에 실패한 나라는 '큰 변화 없음'이라 하지 않고 이전 문구를 유지한다고만 적는다
+      const quiet = !checked ? "" : b.last_check === "큰 변화 없음" ? ` · ${checked} 확인, 큰 변화 없음`
+        : b.last_check === "확인 실패" ? ` · ${checked} 확인 실패(이전 문구 유지)` : "";
+      return `<section class="tk-col"><h3><span aria-hidden="true">${flag(c)}</span>${esc(b.country)}<small>${esc(b.entities.join(" · "))}</small>${regime}</h3>
+        <ol class="tk-list">${items}</ol><p class="tk-foot">${md(b.changed_at)} 갱신(${esc((b.reason || []).join(", "))})${quiet}</p></section>`;
+    }).join("");
+    $("#tm-tk").innerHTML = tmeta(`줄마다 근거의 시점${checked ? ` · 마지막 확인 ${checked} KST` : ""}`, "");
+    $("#tk-card").hidden = false;
+  }
 
   // ---------- 진출국 스코어카드 ----------
   const COLS = [
@@ -294,10 +319,11 @@
   }
 
   async function init() {
-    [C, L, X, G] = await Promise.all([getJSON("data/country.json"), getJSON("data/landscape.json"), getJSON("data/idx_share.json"), getJSON("../data/global/markets.json")]);
+    [C, L, X, G, T] = await Promise.all([getJSON("data/country.json"), getJSON("data/landscape.json"), getJSON("data/idx_share.json"), getJSON("../data/global/markets.json"),
+      getJSON("../data/domestic/takeaways.json")]);
     const t = [L?.updated_at, C?.checked_at, X?.checked_at].filter(Boolean).sort().pop();
     $("#meta").textContent = t ? `자동 수집 ${new Date(t).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })} KST · 공시·공개자료만 사용` : "자동 수집 전";
-    renderKpis(); renderCountry(); renderLand(); renderIdx(); renderVn(); renderVal();
+    renderTk(); renderKpis(); renderCountry(); renderLand(); renderIdx(); renderVn(); renderVal();
   }
   init();
 })();

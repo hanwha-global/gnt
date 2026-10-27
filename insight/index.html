@@ -80,10 +80,32 @@ tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacit
 .note b{color:var(--text-2);font-weight:600}
 .empty{padding:14px;text-align:center;color:var(--muted);font-size:12px;border:1px dashed var(--line);border-radius:8px}
 .cad{font-size:11px;color:var(--muted);display:grid;gap:2px;margin:0;padding-left:16px}.cad b{color:var(--text-2);font-weight:600}
+/* 진출국 전략 Takeaways(나라별 자동 전략 의견, 탭 맨 위) */
+.tk{border-left:4px solid var(--accent)}
+.tk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 16px}
+.tk-col+.tk-col{border-left:1px solid var(--line);padding-left:16px}
+.tk-col h3{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 6px;margin:2px 0 5px;font-size:13.5px;font-weight:750}
+.tk-col h3 small{font-size:11.5px;font-weight:500;color:var(--muted)}
+.tk-col h3 .st{margin-left:auto}
+.st{display:inline-block;font-size:11px;font-weight:650;padding:0 6px;border-radius:999px;white-space:nowrap}
+.st.neg{background:var(--accent-soft);color:var(--accent-ink)}.st.pos{background:var(--kr-soft);color:var(--kr)}
+.tk-list{margin:0;padding-left:18px}
+.tk-list li{margin:0 0 7px;font-size:13px;line-height:1.5;break-inside:avoid}
+.tk-list li::marker{color:var(--accent-ink);font-weight:700}
+.tk-cat{display:inline-block;margin-right:5px;padding:0 6px;border-radius:999px;font-size:10.5px;font-weight:700;vertical-align:1px;background:var(--surface-2);color:var(--text-2)}
+.tk-cat.ma,.tk-cat.cap{background:var(--accent-soft);color:var(--accent-ink)}
+.tk-cat.mkt{background:var(--kr-soft);color:var(--kr)}
+.tk-cat.cost{background:color-mix(in srgb,var(--neg) 16%,transparent);color:var(--neg)}
+.tk-ev{margin-top:1px;font-size:11.5px;line-height:1.45;color:var(--muted)}
+.tk-ev a{color:var(--muted);text-decoration:underline dotted;text-underline-offset:2px}.tk-ev a:hover{color:var(--accent-ink)}
+.tk-foot{margin:0;font-size:11px;color:var(--muted)}
+@media (max-width:1100px){.tk-grid{grid-template-columns:minmax(0,1fr)}.tk-col+.tk-col{border-left:0;padding-left:0;border-top:1px solid var(--line);margin-top:6px;padding-top:8px}}
 @media print{
   @page{size:A4 landscape;margin:8mm}
   :root{--bg:#fff;--surface:#fff;--surface-2:#f1f3f6;--text:#111;--text-2:#333;--muted:#666;--line:#ccc;--accent-ink:#b8500c;--kr:#2f5fd0;--kr-soft:#e8eefb;--heat-0:#eef1f5;--bar:#9aa7bf;color-scheme:light}
   body{background:#fff;font-size:9.5px}.noprint{display:none!important}.card{break-inside:avoid}.wrap{max-width:none;padding:0}
+  .tk-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tk-col+.tk-col{border-left:1px solid var(--line);border-top:0;margin-top:0;padding:0 0 0 16px}
+  .tk-col h3{font-size:11px}.tk-list li{font-size:10px;margin:0 0 4px}.tk-ev,.tk-foot{font-size:8.5px}.tk-cat,.st{font-size:8.5px}
 }
 </style>
 </head>
@@ -91,7 +113,7 @@ tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacit
 <div class="wrap">
   <div class="top">
     <div>
-      <h1>전략 인사이트 <small class="meta">진출국 매력도 · 현지 경쟁 구도 · 밸류에이션 · 시장점유율</small></h1>
+      <h1>전략 인사이트 <small class="meta">진출국 전략 Takeaways · 진출국 매력도 · 현지 경쟁 구도 · 밸류에이션 · 시장점유율</small></h1>
       <div class="meta" id="meta">불러오는 중</div>
     </div>
     <div class="btns noprint">
@@ -103,6 +125,11 @@ tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacit
   <div class="kpis" id="kpis"></div>
 
   <div class="grid">
+    <section class="card s12 tk" aria-labelledby="h-tk" id="tk-card" hidden>
+      <h2 id="h-tk">진출국 전략 Takeaways <small>나라별 자동 전략 의견 · 당사 현지법인이 있는 나라마다 공시·시장 지표·뉴스를 규칙으로 읽어 만든 의견(LLM 없음, 회사 공식 입장 아님) · 매일 아침 확인, 큰 변화가 있을 때만 갱신</small></h2>
+      <div class="tmeta" id="tm-tk"></div><div class="tk-grid" id="tk"></div>
+    </section>
+
     <section class="card s12" aria-labelledby="h-cty">
       <h2 id="h-cty">진출국 스코어카드 <small>성장성·자본시장 깊이·리테일 저변을 한 줄로 · 칸 색이 진할수록 7개국 중 높음</small></h2>
       <div class="tmeta" id="tm-cty"></div><div class="tw" id="cty"></div>
@@ -133,6 +160,7 @@ tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacit
   </div>
 
   <ul class="cad" aria-label="갱신 주기·산식">
+    <li><b>진출국 전략 Takeaways</b> · 매일 06:30(KST, 평일 12:30·17:30 재확인) GitHub Actions가 LLM 없이 만듦: DART 해외자회사 손익·출자, 지수·환율·정책금리, MSCI·FTSE 등 구조 뉴스, 한국계 경쟁사 뉴스, 이 탭의 현지 경쟁 구도·점유율을 규칙으로 읽어 지분 인수·증자·구조조정·비용·마케팅·제휴·리스크 중 3~4줄. 새 공시·판단 변화·새 뉴스·금리 변경·지수/환율 급변·14일 경과가 없으면 문구를 그대로 두고 확인 시각만 남깁니다.</li>
     <li><b>갱신 주기</b> · 평일 08:10(KST) GitHub Actions가 LLM 없이 수집: 주가·시가총액·환율·IDX 거래 요약 매일, IMF 전망(4·10월 개정)·세계은행 지표(연 1회 개정)는 바뀌면 반영, 상장사 자본·순이익은 글로벌 탭과 같은 수집(매주 월)이고 베트남은 거래소 상장 증권사 전체를 VNDirect 공개 재무(자본·순이익·마진 잔고·중개수익, 각 사 감사 재무제표)로 매일 확인, 한국계 법인은 국내 탭과 같은 DART 사업보고서.</li>
     <li><b>산식</b> · ROE = 최근 연간 순이익 ÷ 연말 자기자본 · P/B = 시가총액(최근 종가 × 발행주식 수) ÷ 최근 분기 자기자본(없으면 연말) · 원화 환산 = 자본은 결산일 환율, 시가총액은 최근 환율(Yahoo Finance 종가, USD 교차).</li>
     <li><b>한계</b> · 비상장 증권사는 최근 재무를 기계로 받을 공개 출처가 없어 현지사는 순위에서 빠지고(한국계는 DART로 포함), 시가총액·P/B도 없습니다. 한국계 법인 자본은 모회사 사업보고서 원화 금액을 연말 환율로 현지 통화로 되돌린 값입니다.</li>
