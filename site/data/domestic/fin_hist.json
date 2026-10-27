@@ -1,0 +1,392 @@
+{
+ "updated_at": "2026-10-27T07:40:09+00:00",
+ "source": "DART 정기보고서 주요계정(fnlttSinglAcnt), 연결 우선",
+ "unit": "백만원",
+ "periods": [
+  {
+   "key": "2026-11012",
+   "year": "2026",
+   "reprt_code": "11012",
+   "label": "1H26",
+   "bs": "26.6말",
+   "months": 6,
+   "end": "2026-06-30",
+   "n": 9
+  },
+  {
+   "key": "2026-11013",
+   "year": "2026",
+   "reprt_code": "11013",
+   "label": "1Q26",
+   "bs": "26.3말",
+   "months": 3,
+   "end": "2026-03-31",
+   "n": 9
+  },
+  {
+   "key": "2025-11011",
+   "year": "2025",
+   "reprt_code": "11011",
+   "label": "FY2025",
+   "bs": "25.12말",
+   "months": 12,
+   "end": "2025-12-31",
+   "n": 9
+  },
+  {
+   "key": "2025-11014",
+   "year": "2025",
+   "reprt_code": "11014",
+   "label": "3Q25",
+   "bs": "25.9말",
+   "months": 9,
+   "end": "2025-09-30",
+   "n": 9
+  }
+ ],
+ "firms": {
+  "미래에셋증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 195605130,
+    "liabilities": 179355277,
+    "equity": 16249853,
+    "net_income": 2907159,
+    "op_income": 3864913,
+    "rcept_no": "20260814004118"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 169869436,
+    "liabilities": 155519975,
+    "equity": 14349461,
+    "net_income": 1001943,
+    "op_income": 1375040,
+    "rcept_no": "20260814004062"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 150283930,
+    "liabilities": 136805727,
+    "equity": 13478203,
+    "net_income": 1582916,
+    "op_income": 1915104,
+    "rcept_no": "20260515002972"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 144733928,
+    "liabilities": 131832160,
+    "equity": 12901768,
+    "net_income": 1007855,
+    "op_income": 1069425,
+    "rcept_no": "20251114003006"
+   }
+  },
+  "한국투자증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 147163336,
+    "liabilities": 133263163,
+    "equity": 13900173,
+    "net_income": 1731071,
+    "op_income": 2170107,
+    "rcept_no": "20260930000623"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 128780889,
+    "liabilities": 115777079,
+    "equity": 13003810,
+    "net_income": 784658,
+    "op_income": 959868,
+    "rcept_no": "20260515002152"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 116564181,
+    "liabilities": 105363555,
+    "equity": 11200626,
+    "net_income": 2013488,
+    "op_income": 2342692,
+    "rcept_no": "20260515000880"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 103974571,
+    "liabilities": 91975716,
+    "equity": 11998854,
+    "net_income": 1676124,
+    "op_income": 1983226,
+    "rcept_no": "20251114002031"
+   }
+  },
+  "삼성증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 106173840,
+    "liabilities": 97517609,
+    "equity": 8656232,
+    "net_income": 939080,
+    "op_income": 1285327,
+    "rcept_no": "20260814002836"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 93107694,
+    "liabilities": 84939872,
+    "equity": 8167821,
+    "net_income": 450856,
+    "op_income": 609532,
+    "rcept_no": "20260515002158"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 79683213,
+    "liabilities": 71615157,
+    "equity": 8068056,
+    "net_income": 1007227,
+    "op_income": 1375673,
+    "rcept_no": "20260312001379"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 75765098,
+    "liabilities": 67929584,
+    "equity": 7835515,
+    "net_income": 792232,
+    "op_income": 1045107,
+    "rcept_no": "20251114002053"
+   }
+  },
+  "키움증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 108341293,
+    "liabilities": 100760493,
+    "equity": 7580800,
+    "net_income": 1157966,
+    "op_income": 1410170,
+    "rcept_no": "20260813001767"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 94045170,
+    "liabilities": 87064569,
+    "equity": 6980601,
+    "net_income": 477399,
+    "op_income": 621221,
+    "rcept_no": "20260513000684"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 81173768,
+    "liabilities": 74451363,
+    "equity": 6722405,
+    "net_income": 1114974,
+    "op_income": 1488240,
+    "rcept_no": "20260317000838"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 72326097,
+    "liabilities": 65894073,
+    "equity": 6432024,
+    "net_income": 868115,
+    "op_income": 1142634,
+    "rcept_no": "20251112000408"
+   }
+  },
+  "NH투자증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 114676559,
+    "liabilities": 103810537,
+    "equity": 10866022,
+    "net_income": 965124,
+    "op_income": 1317932,
+    "rcept_no": "20260814002484"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 99074835,
+    "liabilities": 89109853,
+    "equity": 9964982,
+    "net_income": 475686,
+    "op_income": 636689,
+    "rcept_no": "20260514000887"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 83385398,
+    "liabilities": 73947294,
+    "equity": 9438104,
+    "net_income": 1031501,
+    "op_income": 1420580,
+    "rcept_no": "20260313000771"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 81669125,
+    "liabilities": 72542978,
+    "equity": 9126147,
+    "net_income": 748144,
+    "op_income": 1002315,
+    "rcept_no": "20251114001592"
+   }
+  },
+  "KB증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 102806124,
+    "liabilities": 94585757,
+    "equity": 8220367,
+    "net_income": 801004,
+    "op_income": 1053723,
+    "rcept_no": "20260814003716"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 88659002,
+    "liabilities": 80783012,
+    "equity": 7875989,
+    "net_income": 350235,
+    "op_income": 453114,
+    "rcept_no": "20260515002268"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 76474890,
+    "liabilities": 69578155,
+    "equity": 6896735,
+    "net_income": 682385,
+    "op_income": 911571,
+    "rcept_no": "20260324000784"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 75795565,
+    "liabilities": 68773478,
+    "equity": 7022087,
+    "net_income": 502428,
+    "op_income": 667919,
+    "rcept_no": "20251114002364"
+   }
+  },
+  "신한투자증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 72169041,
+    "liabilities": 66124602,
+    "equity": 6044439,
+    "net_income": 577649,
+    "op_income": 748372,
+    "rcept_no": "20260814001157"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 64744138,
+    "liabilities": 58844814,
+    "equity": 5899324,
+    "net_income": 288360,
+    "op_income": 386407,
+    "rcept_no": "20260515001534"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 54077820,
+    "liabilities": 48280415,
+    "equity": 5797405,
+    "net_income": 381605,
+    "op_income": 488478,
+    "rcept_no": "20260325000632"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 51773770,
+    "liabilities": 46038162,
+    "equity": 5735608,
+    "net_income": 359357,
+    "op_income": 462624,
+    "rcept_no": "20251114001011"
+   }
+  },
+  "하나증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 75545493,
+    "liabilities": 68742012,
+    "equity": 6803481,
+    "net_income": 271585,
+    "op_income": 345323,
+    "rcept_no": "20260814002599"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 70824898,
+    "liabilities": 64693333,
+    "equity": 6131565,
+    "net_income": 102839,
+    "op_income": 141650,
+    "rcept_no": "20260515001924"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 67498670,
+    "liabilities": 61386548,
+    "equity": 6112122,
+    "net_income": 205956,
+    "op_income": 166480,
+    "rcept_no": "20260316001131"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 65332053,
+    "liabilities": 59246607,
+    "equity": 6085446,
+    "net_income": 168242,
+    "op_income": 184248,
+    "rcept_no": "20251114001497"
+   }
+  },
+  "한화투자증권": {
+   "2026-11012": {
+    "fs_div": "연결",
+    "assets": 21628347,
+    "liabilities": 19364942,
+    "equity": 2263405,
+    "net_income": 46153,
+    "op_income": 85253,
+    "rcept_no": "20260813001503"
+   },
+   "2026-11013": {
+    "fs_div": "연결",
+    "assets": 19050551,
+    "liabilities": 17011541,
+    "equity": 2039010,
+    "net_income": 19127,
+    "op_income": 29649,
+    "rcept_no": "20260514000990"
+   },
+   "2025-11011": {
+    "fs_div": "연결",
+    "assets": 17357936,
+    "liabilities": 15289727,
+    "equity": 2068209,
+    "net_income": 102010,
+    "op_income": 147701,
+    "rcept_no": "20260310002967"
+   },
+   "2025-11014": {
+    "fs_div": "연결",
+    "assets": 16084944,
+    "liabilities": 14190779,
+    "equity": 1894165,
+    "net_income": 87932,
+    "op_income": 122526,
+    "rcept_no": "20251113001038"
+   }
+  }
+ },
+ "errors": []
+}
