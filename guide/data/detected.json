@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T00:09:02+00:00",
+ "updated": "2026-10-27T01:25:01+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,19 +66,19 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": [
     {
      "date": "2026-10-20",
@@ -95,18 +95,18 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": [
+    {
+     "date": "2026-10-26",
+     "title": "Licensed Companies | Open Data | Capital Market Authority",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
+     "src": "sca.gov.ae"
+    },
     {
      "date": "2026-10-25",
      "title": "Financial activity licenses | Service Details | Services | Capital...",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
-     "src": "sca.gov.ae"
-    },
-    {
-     "date": "2026-10-24",
-     "title": "Licensed Companies | Open Data | Capital Market Authority",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
     },
     {
@@ -118,20 +118,20 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "JP": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": [
     {
      "date": "2026-10-22",
      "title": "Liquor Licensing Board to meet on Tuesday",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9OOUtEQVRld2ZvMncxZ0ZVWEpHQ1NHRkF4NWJKVGlrXzZpdWI0eHRPSmQ3aDNfNXJ2aWR1YkRwUnFIWUkzM2NURm1HcHRWS29jUFhiR3hNYWpKV3F4aWRadUZ0U2txdXNtVTJaTG56MkNoWEE?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHZEdjdmVNMmpET1J1ZThOcll6OVpkb1AxNHRvWW5sVVduUGk5dG9NamxSMWNhRHZYb3JsLXVSOGJQWXBpRExMZzdLM2VHb2dQSVlkTHk1eHdZQVRjQ3JQYnR2S1F1WnRmQWI1cnFORGFEQQ?oc=5",
      "src": "www.info.gov.hk"
     },
     {
@@ -173,23 +173,23 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": [
     {
      "date": "2026-10-14",
@@ -200,11 +200,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-10-26",
+   "auto_checked": "2026-10-27",
    "items": []
   }
  }
