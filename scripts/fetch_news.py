@@ -26,14 +26,35 @@ MAX_ITEMS = 60
 KST = timezone(timedelta(hours=9))
 
 # 공신력 있는 매체(Google News 표기 기준, 부분 일치). 여기 없는 매체 기사는 버린다.
-SOURCES = [
+# 국내 매체(국내 언론사의 영문판 포함)
+DOMESTIC = [
     "연합뉴스", "연합인포맥스", "뉴스1", "뉴시스", "한국경제", "한경", "매일경제", "머니투데이", "서울경제", "이데일리",
     "파이낸셜뉴스", "헤럴드경제", "아시아경제", "조선비즈", "조선일보", "중앙일보", "동아일보", "한겨레", "경향신문",
     "한국일보", "서울신문", "국민일보", "문화일보", "세계일보", "아주경제", "이투데이", "더벨", "비즈니스포스트", "뉴데일리",
     "글로벌이코노믹", "데일리안", "머니S", "디지털타임스", "전자신문", "KBS", "MBC", "SBS", "YTN", "SBS Biz", "한국경제TV",
-    "MBN", "Korea Times", "Korea Herald", "Korea JoongAng Daily", "Yonhap", "Bloomberg", "Reuters", "Financial Times",
-    "Nikkei", "DealStreetAsia", "Business Times", "The Straits Times", "VnExpress", "Jakarta Globe",
+    "MBN", "Korea Times", "Korea Herald", "Korea JoongAng Daily", "Yonhap", "KED Global", "Korea Economic Daily", "BusinessKorea",
+    "Pulse by Maeil Business",
 ]
+# 해외 매체·기관: 글로벌 통신·경제지, 진출국의 전국 단위 주요 언론, 감독당국·지수 회사
+FOREIGN = [
+    "Bloomberg", "Reuters", "Financial Times", "Wall Street Journal", "Nikkei", "CNBC", "The Economist", "Associated Press",
+    "AP News", "Barron's", "MarketWatch", "DealStreetAsia", "FinanceAsia", "The Asset", "Euromoney", "The Banker",
+    "Asia Asset Management", "Institutional Investor", "Business Times", "The Straits Times", "CNA", "Channel NewsAsia",
+    "The Edge Singapore", "South China Morning Post", "Caixin", "Japan Times", "Kyodo",
+    # 베트남
+    "VnExpress", "Vietnam Investment Review", "Vietnam News", "VietnamPlus", "Tuoi Tre", "Tuổi Trẻ", "Thanh Niên", "Thanh Nien",
+    "VnEconomy", "Báo Đầu tư", "Đầu tư Chứng khoán", "Thời báo Tài chính", "Tạp chí Tài chính", "CafeF", "Người Lao Động",
+    # 인도네시아
+    "Jakarta Globe", "Jakarta Post", "Kontan", "Bisnis", "CNBC Indonesia", "Kompas", "Tempo", "ANTARA", "Investor.id",
+    "Katadata", "IDX Channel", "detik",
+    # 인도·몽골·브라질·그리스
+    "Economic Times", "Mint", "Business Standard", "Moneycontrol", "BusinessLine", "Financial Express", "Montsame", "UB Post",
+    "Valor Econômico", "Exame", "Kathimerini",
+    # 감독당국·지수 회사(보도자료가 뉴스 검색에 잡히는 경우)
+    "MSCI", "FTSE Russell", "Otoritas Jasa Keuangan", "OJK", "Monetary Authority of Singapore", "Securities and Futures Commission",
+    "Ủy ban Chứng khoán", "State Securities Commission",
+]
+SOURCES = DOMESTIC + FOREIGN
 # 제목에 있어야 하는 해외 관련 단어
 OVERSEAS = ["해외", "현지법인", "현지 법인", "글로벌", "진출", "인수", "법인 설립", "지분 투자", "지분투자", "뉴욕", "홍콩", "런던",
             "싱가포르", "베트남", "인도네시아", "인도", "미국", "일본", "중동", "아부다비", "두바이", "사우디", "몽골", "브라질",
@@ -79,6 +100,12 @@ def rss_url(q, lang, days=60):
 def trusted(src):
     s = (src or "").lower()
     return any(t.lower() in s for t in SOURCES)
+
+
+def foreign(src):
+    """해외 매체·기관 기사인지(국내 언론사의 영문판은 국내로 본다)."""
+    s = (src or "").lower()
+    return not re.search(r"[가-힣]", s) and not any(t.lower() in s for t in DOMESTIC) and any(t.lower() in s for t in FOREIGN)
 
 
 def mentions(title, aliases):
