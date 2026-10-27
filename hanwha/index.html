@@ -16,6 +16,8 @@ header{padding:20px 16px 0;max-width:1180px;margin:auto}
 h1{font-size:22px;margin:0}
 .sub{color:var(--sub);font-size:12.5px}
 .tmeta{color:var(--sub);font-size:11.5px;text-align:right;margin:0 0 4px;white-space:normal}
+.psel{font:inherit;font-size:11.5px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:4px;padding:0 2px;cursor:pointer}
+@media print{.psel{border:0;appearance:none;-webkit-appearance:none}}
 nav{display:flex;gap:6px;margin:14px 0 0;border-bottom:1px solid var(--line);overflow-x:auto}
 nav button{border:0;background:none;color:var(--sub);font:inherit;font-weight:500;padding:10px 14px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
 nav button.on{color:var(--ink);border-color:var(--accent)}

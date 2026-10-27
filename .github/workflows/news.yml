@@ -23,22 +23,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: 뉴스 수집 (Google News RSS · 매체 화이트리스트)
+      # 거점 뉴스를 먼저 모은다: 뉴스 피드가 거점 뉴스의 해외 현지 매체 기사도 싣는다
+      - name: 해외 거점(증권사 × 나라)별 뉴스 (5개년 손익 추이 표, 국내·해외 매체, 하루 한 번)
+        if: github.event_name != 'schedule' || github.event.schedule == '30 21 * * *'
+        continue-on-error: true
+        run: python scripts/fetch_hub_news.py
+      - name: 뉴스 수집 (Google News RSS · 국내 주요 언론 + 해외 매체·기관)
         run: python scripts/fetch_news.py
       - name: 국가별 매크로 뉴스 (핵심 포인트용)
         continue-on-error: true
         run: python scripts/fetch_macro_news.py
-      - name: 해외 거점(증권사 × 나라)별 뉴스 (5개년 손익 추이 표, 하루 한 번)
+      - name: 진출국 전략 Takeaways (아침 한 번, 큰 변화가 있을 때만 문구 갱신)
         if: github.event_name != 'schedule' || github.event.schedule == '30 21 * * *'
         continue-on-error: true
-        run: python scripts/fetch_hub_news.py
+        run: python scripts/build_takeaways.py
       - name: Commit
         id: commit
         run: |
           git config user.name "gnd-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/data/domestic/news.json
-          for f in site/data/global/macro_news.json site/data/domestic/hub_news.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          for f in site/data/global/macro_news.json site/data/domestic/hub_news.json site/data/domestic/takeaways.json site/data/domestic/takeaways_state.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else

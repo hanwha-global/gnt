@@ -1,9 +1,73 @@
 {
  "note": "해외자회사 4사 기준 정보(공개 정보만). 숫자는 dart_subs.json(DART 공시), 출자 이력은 investments.json(수동)에서 읽는다. 법인이 늘면 여기에 한 줄 추가.",
  "entities": [
-  {"key": "VN", "label": "베트남 법인(PTSV)", "short": "PTSV", "name": "Pinetree Securities Corporation", "country": "베트남", "city": "하노이", "ccy": "VND", "biz": "증권 (브로커리지·신용공여·IB)"},
-  {"key": "CSA", "label": "인도네시아 증권(CSA)", "short": "CSA", "name": "PT Ciptadana Sekuritas Asia", "country": "인도네시아", "city": "자카르타", "ccy": "IDR", "biz": "증권 (브로커리지·IB)"},
-  {"key": "SG", "label": "싱가포르 법인(PTSS)", "short": "PTSS", "name": "Pinetree Securities Pte. Ltd.", "country": "싱가포르", "city": "싱가포르", "ccy": "SGD", "biz": "투자자문·IB"},
-  {"key": "CAM", "label": "인도네시아 운용(CAM)", "short": "CAM", "name": "PT Ciptadana Asset Management", "country": "인도네시아", "city": "자카르타", "ccy": "IDR", "biz": "자산운용"}
+  {
+   "key": "VN",
+   "label": "베트남 법인(PTSV)",
+   "short": "PTSV",
+   "name": "Pinetree Securities Corporation",
+   "country": "베트남",
+   "city": "하노이",
+   "ccy": "VND",
+   "biz": "증권 (브로커리지·신용공여·IB)",
+   "focus": "리테일 브로커리지, 신용공여(마진론), IB",
+   "notes": [
+    [
+     "시장",
+     "FTSE Russell 신흥시장(Secondary EM) 편입이 2026-09-21 발효됐고 2027년 9월까지 단계 편입됩니다."
+    ]
+   ]
+  },
+  {
+   "key": "CSA",
+   "label": "인도네시아 증권(CSA)",
+   "short": "CSA",
+   "name": "PT Ciptadana Sekuritas Asia",
+   "country": "인도네시아",
+   "city": "자카르타",
+   "ccy": "IDR",
+   "biz": "증권 (브로커리지·IB)",
+   "focus": "브로커리지, 신용공여, IB·인수",
+   "notes": [
+    [
+     "시장",
+     "인도네시아 중앙은행(BI) 기준금리 5.75% 동결(2026-09-23). MSCI가 인도네시아를 EM에서 Standalone으로 내리는 안을 의견수렴 중입니다(2026-10-16)."
+    ]
+   ]
+  },
+  {
+   "key": "SG",
+   "label": "싱가포르 법인(PTSS)",
+   "short": "PTSS",
+   "name": "Pinetree Securities Pte. Ltd.",
+   "country": "싱가포르",
+   "city": "싱가포르",
+   "ccy": "SGD",
+   "biz": "투자자문·IB",
+   "focus": "투자자문·IB",
+   "notes": [
+    [
+     "실적",
+     "DART 공시 기준 FY2025와 1H26 모두 순손실입니다."
+    ]
+   ]
+  },
+  {
+   "key": "CAM",
+   "label": "인도네시아 운용(CAM)",
+   "short": "CAM",
+   "name": "PT Ciptadana Asset Management",
+   "country": "인도네시아",
+   "city": "자카르타",
+   "ccy": "IDR",
+   "biz": "자산운용",
+   "focus": "자산운용",
+   "notes": [
+    [
+     "인수",
+     "2025-12-19 지분 80%를 취득해 연결에 편입했습니다(사업보고서에는 재무상태만, 손익은 2026년부터)."
+    ]
+   ]
+  }
  ]
 }

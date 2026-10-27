@@ -1,0 +1,276 @@
+{
+ "period": "2026 반기보고서",
+ "as_of": "2026-06-30",
+ "bsns_year": "2026",
+ "reprt_code": "11012",
+ "candidates": 123,
+ "rows": [
+  {
+   "name": "BNK투자증권",
+   "dart_name": "BNK투자증권",
+   "corp_code": "00251400",
+   "listed": false,
+   "capital_cfs": 183000,
+   "equity_cfs": 1199823,
+   "capital_ofs": 183000,
+   "equity_ofs": 1212301
+  },
+  {
+   "name": "DB증권",
+   "dart_name": "DB증권",
+   "corp_code": "00115694",
+   "listed": true,
+   "capital_cfs": 212232,
+   "equity_cfs": 1450002,
+   "capital_ofs": 212232,
+   "equity_ofs": 1156692
+  },
+  {
+   "name": "LS증권",
+   "dart_name": "LS증권",
+   "corp_code": "00330424",
+   "listed": true,
+   "capital_cfs": 363969,
+   "equity_cfs": 918020,
+   "capital_ofs": 363969,
+   "equity_ofs": 921023
+  },
+  {
+   "name": "NH투자증권",
+   "dart_name": "NH투자증권",
+   "corp_code": "00120182",
+   "listed": true,
+   "capital_cfs": 2008159,
+   "equity_cfs": 10866022,
+   "capital_ofs": 2008159,
+   "equity_ofs": 9818105
+  },
+  {
+   "name": "SK증권",
+   "dart_name": "SK증권",
+   "corp_code": "00131850",
+   "listed": true,
+   "capital_cfs": 238251,
+   "equity_cfs": 664276,
+   "capital_ofs": 238251,
+   "equity_ofs": 641002
+  },
+  {
+   "name": "교보증권",
+   "dart_name": "교보증권",
+   "corp_code": "00113359",
+   "listed": true,
+   "capital_cfs": 569815,
+   "equity_cfs": 2274458,
+   "capital_ofs": 569815,
+   "equity_ofs": 2240634
+  },
+  {
+   "name": "다올투자증권",
+   "dart_name": "다올투자증권",
+   "corp_code": "00156859",
+   "listed": true,
+   "capital_cfs": 400745,
+   "equity_cfs": 825718,
+   "capital_ofs": 400745,
+   "equity_ofs": 689227
+  },
+  {
+   "name": "대신증권",
+   "dart_name": "대신증권",
+   "corp_code": "00110893",
+   "listed": true,
+   "capital_cfs": 480382,
+   "equity_cfs": 4557020,
+   "capital_ofs": 480382,
+   "equity_ofs": 4593725
+  },
+  {
+   "name": "메리츠증권",
+   "dart_name": "메리츠증권",
+   "corp_code": "00163682",
+   "listed": true,
+   "capital_cfs": 818929,
+   "equity_cfs": 9053108,
+   "capital_ofs": 818929,
+   "equity_ofs": 8349543
+  },
+  {
+   "name": "미래에셋증권",
+   "dart_name": "미래에셋증권",
+   "corp_code": "00111722",
+   "listed": true,
+   "capital_cfs": 4123213,
+   "equity_cfs": 16249853,
+   "capital_ofs": 4123213,
+   "equity_ofs": 10565327
+  },
+  {
+   "name": "부국증권",
+   "dart_name": "부국증권",
+   "corp_code": "00123772",
+   "listed": true,
+   "capital_cfs": 66849,
+   "equity_cfs": 892364,
+   "capital_ofs": 66849,
+   "equity_ofs": 805473
+  },
+  {
+   "name": "삼성증권",
+   "dart_name": "삼성증권",
+   "corp_code": "00104856",
+   "listed": true,
+   "capital_cfs": 458478,
+   "equity_cfs": 8656232,
+   "capital_ofs": 458478,
+   "equity_ofs": 8156627
+  },
+  {
+   "name": "상상인증권",
+   "dart_name": "상상인증권",
+   "corp_code": "00112059",
+   "listed": true,
+   "capital_cfs": 109641,
+   "equity_cfs": 205191,
+   "capital_ofs": 109641,
+   "equity_ofs": 205211
+  },
+  {
+   "name": "신한투자증권",
+   "dart_name": "신한투자증권",
+   "corp_code": "00138321",
+   "listed": true,
+   "capital_cfs": 1786998,
+   "equity_cfs": 6044439,
+   "capital_ofs": 1786998,
+   "equity_ofs": 5884458
+  },
+  {
+   "name": "IBK투자증권",
+   "dart_name": "아이비케이투자증권",
+   "corp_code": "00684918",
+   "listed": false,
+   "capital_cfs": 630937,
+   "equity_cfs": 1384009,
+   "capital_ofs": 630937,
+   "equity_ofs": 1377275
+  },
+  {
+   "name": "iM증권",
+   "dart_name": "아이엠증권",
+   "corp_code": "00148665",
+   "listed": false,
+   "capital_cfs": 274620,
+   "equity_cfs": 1164205,
+   "capital_ofs": 274620,
+   "equity_ofs": 1165744
+  },
+  {
+   "name": "유안타증권",
+   "dart_name": "유안타증권",
+   "corp_code": "00117601",
+   "listed": true,
+   "capital_cfs": 1062544,
+   "equity_cfs": 1988945,
+   "capital_ofs": 1062544,
+   "equity_ofs": 1949797
+  },
+  {
+   "name": "유진증권",
+   "dart_name": "유진증권",
+   "corp_code": "00131054",
+   "listed": true,
+   "capital_cfs": 537592,
+   "equity_cfs": 1238029,
+   "capital_ofs": 537592,
+   "equity_ofs": 1133281
+  },
+  {
+   "name": "유화증권",
+   "dart_name": "유화증권",
+   "corp_code": "00145190",
+   "listed": true,
+   "capital_ofs": 74179,
+   "equity_ofs": 534917
+  },
+  {
+   "name": "KB증권",
+   "dart_name": "케이비증권",
+   "corp_code": "00164876",
+   "listed": true,
+   "capital_cfs": 1659769,
+   "equity_cfs": 8220367,
+   "capital_ofs": 1659769,
+   "equity_ofs": 7978384
+  },
+  {
+   "name": "케이알투자증권",
+   "dart_name": "케이알투자증권",
+   "corp_code": "00537559",
+   "listed": false,
+   "capital_ofs": 24200,
+   "equity_ofs": 46293
+  },
+  {
+   "name": "키움증권",
+   "dart_name": "키움증권",
+   "corp_code": "00296290",
+   "listed": true,
+   "capital_cfs": 145225,
+   "equity_cfs": 7580800,
+   "capital_ofs": 145225,
+   "equity_ofs": 6890929
+  },
+  {
+   "name": "하나증권",
+   "dart_name": "하나증권",
+   "corp_code": "00113465",
+   "listed": false,
+   "capital_cfs": 402162,
+   "equity_cfs": 6803481,
+   "capital_ofs": 402162,
+   "equity_ofs": 6717206
+  },
+  {
+   "name": "한국투자증권",
+   "dart_name": "한국투자증권",
+   "corp_code": "00160144",
+   "listed": false,
+   "capital_cfs": 176157,
+   "equity_cfs": 13900173,
+   "capital_ofs": 176157,
+   "equity_ofs": 13192195
+  },
+  {
+   "name": "한양증권",
+   "dart_name": "한양증권",
+   "corp_code": "00162416",
+   "listed": true,
+   "capital_ofs": 66268,
+   "equity_ofs": 669460
+  },
+  {
+   "name": "한화투자증권",
+   "dart_name": "한화투자증권",
+   "corp_code": "00148610",
+   "listed": true,
+   "capital_cfs": 1096739,
+   "equity_cfs": 2263405,
+   "capital_ofs": 1096739,
+   "equity_ofs": 2267366
+  },
+  {
+   "name": "현대차증권",
+   "dart_name": "현대차증권",
+   "corp_code": "00137997",
+   "listed": true,
+   "capital_cfs": 344379,
+   "equity_cfs": 1470696,
+   "capital_ofs": 344379,
+   "equity_ofs": 1458503
+  }
+ ],
+ "other_fiscal": [],
+ "errors": [],
+ "updated_at": "2026-10-27T08:21:14+00:00"
+}

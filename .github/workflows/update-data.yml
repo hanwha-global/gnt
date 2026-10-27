@@ -48,18 +48,31 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           SUBFIN_DEBUG: ${{ inputs.subfin_debug }}
         run: python scripts/fetch_sub_fin.py
+      - name: 국내 증권사 재무 기간별 이력 (DART 주요계정, 기간 선택용, 받은 기간은 다시 안 받음)
+        if: ${{ !inputs.quick }}
+        continue-on-error: true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python scripts/fetch_fin_hist.py
       - name: 해외법인 5개년 손익 추이 (사업·반기보고서 원문, 새 보고서만 받음)
         if: ${{ !inputs.quick }}
         continue-on-error: true
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python scripts/fetch_sub_trend.py
+      - name: 국내 전체 증권사 자기자본 순위 (DART 주요계정, 제출 기한 지난 최근 기간)
+        if: ${{ !inputs.quick }}
+        continue-on-error: true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python scripts/broker_rank.py
       - name: 해외진출 뉴스 (매일은 news.yml, 여기서도 한 번)
         continue-on-error: true
+        # 거점 뉴스를 먼저(해외진출 뉴스가 거점 뉴스의 해외 매체 기사도 싣는다). 거점이 실패해도 나머지는 돈다
         run: |
+          python scripts/fetch_hub_news.py || true
           python scripts/fetch_news.py
           python scripts/fetch_macro_news.py
-          python scripts/fetch_hub_news.py
       - name: SEC 수집 (미국 순위)
         continue-on-error: true
         env:

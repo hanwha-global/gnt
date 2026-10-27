@@ -57,8 +57,11 @@ def host(u):
 
 
 def is_official(u):
+    """공식 원문 페이지인지. 감독당국 첫 화면(경로 1단 이하, 예: csrc.gov.cn/csrc_en/)은 새 소식마다 바뀌므로 링크만 본다."""
     h = host(u)
-    return any(h == d or h.endswith("." + d) for d in OFFICIAL_HOSTS)
+    parts = urllib.parse.urlsplit(u)
+    home = not parts.query and len([x for x in parts.path.split("/") if x]) <= 1
+    return not home and any(h == d or h.endswith("." + d) for d in OFFICIAL_HOSTS)
 
 
 def normalize(raw):

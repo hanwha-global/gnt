@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T00:37:03+00:00",
+ "updated": "2026-10-27T01:25:01+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,19 +66,19 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": [
     {
      "date": "2026-10-20",
@@ -95,43 +95,43 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": [
     {
-     "date": "2026-10-22",
+     "date": "2026-10-26",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
     },
     {
-     "date": "2026-10-19",
+     "date": "2026-10-25",
      "title": "Financial activity licenses | Service Details | Services | Capital...",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
      "src": "sca.gov.ae"
     },
     {
-     "date": "2026-10-14",
+     "date": "2026-10-22",
      "title": "Accreditation of Staff at Companies Licensed by the Authority",
-     "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9taVV6TEZZNWVhbnNDQ05MWkNqdGQtbkVick1fbVZOY0dQRDJfVXhnZGJPaU1TM2FfUlJvUU5acHh5TnJJRDh0VXpfNA?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE1hM2RKSEJuWk4tYlZZTTdBWmhWT2VxYmxLS0tKc1ZWaG9ESEMxSEFnNGFTdkd1REl1SWJPcWNB?oc=5",
      "src": "sca.gov.ae"
     }
    ]
   },
   "US": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "JP": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": [
     {
-     "date": "2026-10-15",
+     "date": "2026-10-22",
      "title": "Liquor Licensing Board to meet on Tuesday",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5BUDRWUUJwZ0Qzelh0dzQ2V2xMQkptX05yZXEzV1RLdTRUZnR2U1ZQeWs4bGNkYzZUWlBUbGc2RmNXTGJ5bkg4Skw4MEgtUWRsckc4MnBZcjJDRUgySEs4Qnk0UGF4S1R4SDQtRHFFWjloUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHZEdjdmVNMmpET1J1ZThOcll6OVpkb1AxNHRvWW5sVVduUGk5dG9NamxSMWNhRHZYb3JsLXVSOGJQWXBpRExMZzdLM2VHb2dQSVlkTHk1eHdZQVRjQ3JQYnR2S1F1WnRmQWI1cnFORGFEQQ?oc=5",
      "src": "www.info.gov.hk"
     },
     {
@@ -161,7 +161,7 @@
     {
      "date": "2026-10-12",
      "title": "Hong Kong comic art showcased at Brand Licensing Europe in London (with photos)",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9FRGZ6UXVBelBnVVk5MmZaSnZpdmloWWp3YmFXU0tZOVp2VHZSRkYyRHYwbHFpamFHS0xqc21qaTVEMDBPeGtSbDhfRVdhOUE3NzZlVjFWWDZHVmlaTUE1Tjg0Z1Z0T0hRbW02a0NiWGRWOU0?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE50N2MtX25JWTdNRXFjblN4NENZSGJxdG5taHVCTElucFVJeWdqNVpFU291d1RwZjlhMXNhU3hDQ1VGbGNJazVGcjJncG02YnRwM29nZmdsYVZnRVRCNmRnME1GRExiMnNRME5PZ0ZmMWtYZw?oc=5",
      "src": "www.info.gov.hk"
     },
     {
@@ -173,23 +173,23 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": [
     {
      "date": "2026-10-14",
@@ -200,11 +200,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-10-23",
+   "auto_checked": "2026-10-27",
    "items": []
   }
  }

@@ -48,5 +48,10 @@ jobs:
             gh issue edit "$num" --title "$title" --body "$body"
             gh issue comment "$num" --body "이번 주 목록을 갱신했습니다."
           else
-            gh issue create --title "$title" --body "$body" --label "대외보고-알림" --assignee "${{ github.repository_owner }}"
+            # 조직(hanwha-global) 저장소는 소유자에게 배정할 수 없다: 배정 가능한 첫 계정에게, 없으면 배정 없이 만든다
+            assignee=""
+            for a in "${{ vars.REMINDER_ASSIGNEE }}" "${{ github.repository_owner }}" "jeongpilchoi1992-hash"; do
+              if [ -n "$a" ] && gh api "repos/${{ github.repository }}/assignees/$a" --silent 2>/dev/null; then assignee="$a"; break; fi
+            done
+            gh issue create --title "$title" --body "$body" --label "대외보고-알림" ${assignee:+--assignee "$assignee"}
           fi

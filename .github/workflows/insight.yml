@@ -1,0 +1,70 @@
+name: Strategy insight (country scorecard · local competitors · IDX share, no LLM)
+
+on:
+  schedule:
+    - cron: "10 23 * * 0-4"   # 평일 08:10 KST (전일 아시아 마감 주가·IDX 거래 요약 반영)
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - insight/scripts/**
+      - .github/workflows/insight.yml
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: insight-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  insight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # PR에서는 PR 브랜치에 첫 데이터를 넣어 화면을 바로 확인할 수 있게 한다
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || '' }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 진출국 스코어카드 (IMF WEO · 세계은행)
+        run: python insight/scripts/fetch_insight.py country
+      - name: 현지 경쟁 구도 (상장 증권사 자본·시가총액·P/B + 한국계 법인, 베트남은 VNDirect 전체 상장사)
+        run: python insight/scripts/fetch_insight.py landscape
+      - name: 인도네시아 거래대금 점유율 (IDX)
+        run: python insight/scripts/fetch_insight.py idx
+      - name: 결과 요약
+        run: |
+          python - <<'PY'
+          import json, os
+          for f in ("country", "landscape", "idx_share"):
+              p = f"insight/data/{f}.json"
+              if not os.path.exists(p):
+                  print("MISSING", p); continue
+              d = json.load(open(p, encoding="utf-8"))
+              print(f"== {f}", d.get("updated_at"), "errors:", d.get("errors"))
+              if f == "country":
+                  for k, r in d["rows"].items(): print(" ", k, json.dumps(r, ensure_ascii=False)[:400])
+              if f == "landscape":
+                  for m, v in d["markets"].items():
+                      print(" ", m, v.get("median_pb"), v.get("median_roe"))
+                      for r in sorted(v["rows"], key=lambda r: -(r.get("equity_krw") or 0))[:80]: print("   ", r["kind"], r.get("ticker"), r["name"][:40], r.get("asof"), r.get("equity_krw") and round(r["equity_krw"]), r.get("roe"), r.get("growth"), r.get("pb"), r.get("loans_krw") and round(r["loans_krw"]), r.get("brokerage"), r.get("mcap_krw") and round(r["mcap_krw"]))
+              if f == "idx_share":
+                  for r in (d.get("month") or {}).get("rows", [])[:30]: print("   ", r)
+          PY
+      - name: 변경분 커밋 (예약 실행은 main 재배포, PR은 PR 브랜치에)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "gnd-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add insight/data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "data: insight $(TZ=Asia/Seoul date +'%F %H:%M')"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git push origin "HEAD:${{ github.head_ref }}"
+          else
+            git pull --rebase origin main && git push
+            gh workflow run pages.yml --ref main
+          fi

@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "feed.json"
-UA = "HanwhaGlobalNetworkDashboard/1.0 (github.com/jeongpilchoi1992-hash/global-network-dashboard)"
+UA = "HanwhaGlobalNetworkDashboard/1.0 (github.com/hanwha-global/gnt)"
 KEEP_DAYS = 30
 PER_MARKET = 8
 

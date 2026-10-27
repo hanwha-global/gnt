@@ -21,6 +21,9 @@ h1, h2, h3 { margin: 0; letter-spacing: -.01em; }
 /* 표마다 기준 시점·단위(오른쪽 위, 작게) */
 .tmeta { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 0 8px; font-size: 10.5px; line-height: 1.4; color: var(--muted); margin: 0 0 2px; }
 .tmeta span + span::before { content: "·"; margin-right: 8px; }
+/* 표 기간 선택 드롭다운(기준 자리) */
+.psel { font: inherit; font-size: 10.5px; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 0 2px; margin: 0 2px; cursor: pointer; max-width: 220px; }
+.psel:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .brand__sep { width: 1px; height: 30px; background: var(--line); flex: none; }
 @media (max-width: 600px) { .brand__logo { height: 26px; } }
 .brand h1 { font-size: 17px; font-weight: 750; }
@@ -84,6 +87,8 @@ main { max-width: 1480px; margin: 0 auto; padding: 14px 16px 32px; }
 .tag--hw { background: var(--accent-soft); color: var(--accent-ink); }
 .tag--muted { background: var(--surface-2); color: var(--text-2); }
 .tag--new { background: rgba(255, 209, 102, .16); color: #ffd166; }
+.tag--intl { background: rgba(94, 214, 196, .14); color: #7fe0d0; }
+.seg.seg--sm button { padding: 2px 8px; font-size: 11.5px; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .chip { font-size: 13px; padding: 4px 10px; border-radius: 8px; background: var(--surface-2); }
@@ -264,6 +269,10 @@ small.asof { display: block; font-size: 9.5px; font-weight: 500; color: var(--mu
 .news__list a:hover { color: var(--accent-ink); text-decoration: underline; }
 .news__m { color: var(--muted); font-size: 11px; }
 .news__m .tag { font-size: 10px; padding: 0 4px; }
+.news__head { display: flex; align-items: center; gap: 8px; }
+.news__head h3 { flex: 1; }
+/* 베트남어·인도네시아어 제목 옆 번역 링크(Google 번역) */
+.news__list a.news__tr, .trend__news a.news__tr { margin-left: 6px; font-size: 10.5px; font-weight: 500; color: var(--text-2); text-decoration: underline dotted; }
 
 /* 진출 지도(한눈에 보기 재무 카드 아래) */
 .wmap svg { display: block; width: 100%; height: auto; }
@@ -307,6 +316,7 @@ small.asof { display: block; font-size: 9.5px; font-weight: 500; color: var(--mu
 .pp__head { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); border-bottom: 2px solid var(--accent); padding-bottom: 3px; margin-bottom: 6px; }
 @page { size: A4 landscape; margin: 8mm; }
 @media print {
+  .psel { border: 0; appearance: none; -webkit-appearance: none; padding: 0; color: inherit; }
   body > *:not(#print-root) { display: none !important; }
   .fireworks { display: none !important; }
   #print-root { position: static; left: auto; }
@@ -324,7 +334,8 @@ small.asof { display: block; font-size: 9.5px; font-weight: 500; color: var(--mu
     --heat-0: #eef1f7; --bar: #9aa7c2; --shadow: none; color: var(--text); background: #fff;
     -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   #print-root .card { box-shadow: none; }
-  #print-root .print-btn { display: none; }
+  #print-root .tag--intl { color: #1f7f72; }
+  #print-root .print-btn, #print-root .news__seg { display: none; }
   /* 인쇄 쪽 폭(약 1060px)에서 좁은 화면 규칙이 걸리지 않도록 화면(1400px) 배치를 고정 */
   #print-root .ov { grid-template-columns: repeat(12, minmax(0, 1fr)); }
   #print-root .span3 { grid-column: span 3 !important; } #print-root .span4 { grid-column: span 4 !important; }
@@ -350,3 +361,7 @@ table.trend td.trend__name .sub { font-size: 11.5px; line-height: 1.35; }
 .trend__news li + li { margin-top: 3px; padding-top: 3px; border-top: 1px dashed var(--line); }
 .trend__news a { color: var(--text); text-decoration: none; font-weight: 600; }
 .trend__news a:hover { color: var(--accent-ink); text-decoration: underline; }
+.trend__news .tag { font-size: 10px; padding: 0 4px; }
+/* 최근 1년 기사가 없어 5년 안 최근 기사로 채운 칸은 흐리게 */
+.trend__old { margin-bottom: 3px; font-size: 10.5px; }
+.trend__news ul.is-old a:not(.news__tr) { color: var(--text-2); font-weight: 500; }

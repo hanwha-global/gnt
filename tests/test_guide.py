@@ -113,6 +113,11 @@ class SourceCheckTest(unittest.TestCase):
         self.assertEqual(a, b)
         self.assertIn("5,000", a)
 
+    def test_regulator_home_pages_are_link_only(self):
+        self.assertFalse(check_sources.is_official("http://www.csrc.gov.cn/csrc_en/"))
+        self.assertFalse(check_sources.is_official("https://www.sebi.gov.in/"))
+        self.assertTrue(check_sources.is_official("https://www.handbook.fca.org.uk/handbook/MIFIDPRU/4/4.html"))
+
     def test_secondary_links_are_not_hashed(self):
         st, _ = self._run({}, {})
         kinds = {p["kind"] for u, p in st["sources"].items() if "pwc.com" in u}

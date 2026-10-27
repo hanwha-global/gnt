@@ -572,6 +572,9 @@ class HubNewsTest(unittest.TestCase):
         self.assertTrue(h.relevant("한국투자증권, 홍콩에 이어 베트남 법인 증자", "한국투자증권", "베트남"))
         self.assertFalse(h.relevant("한국투자증권, 홍콩에 이어 베트남 법인 증자", "한국투자증권", "홍콩"))
         self.assertIn(("신한증권 미국", "ko"), h.queries("신한투자증권", "미국"))
+        self.assertLessEqual({("한화증권 인니", "ko"), ("한화투자증권 인도네시아", "ko"), ("칩타다나", "ko")}, set(h.queries("한화투자증권", "인도네시아")))
+        self.assertTrue(h.relevant("칩타다나증권, 인니 IPO 주관 실적 1위", "한화투자증권", "인도네시아"))  # 증권사 이름 없이 현지 법인 한글 이름
+        self.assertFalse(h.relevant("칩타다나증권, 인니 IPO 주관 실적 1위", "한화투자증권", "베트남"))
 
     def test_same_event_from_several_outlets_kept_once(self):
         import fetch_hub_news as h
@@ -581,3 +584,209 @@ class HubNewsTest(unittest.TestCase):
                           a("2026-04-15", "미래에셋증권, 국내 최초 홍콩 디지털자산 리테일 진출"),
                           a("2025-12-04", "미래에셋, 홍콩법인 증자")])
         self.assertEqual([x["date"] for x in got], ["2026-04-16", "2025-12-04"])
+
+
+    def test_energy_stocks_are_not_holding_company(self):
+        import fetch_hub_news as h
+        t = '하나증권 "미국 이란 종전협상 기대감에 국제유가 하락, 항공·에너지주 투심 개선 전망"'
+        self.assertFalse(h.relevant(t, "하나증권", "미국"))       # '에너지주'의 '지주'
+        self.assertTrue(h.relevant("하나증권, 미국 지주사 지분 인수", "하나증권", "미국"))
+
+
+def _rss(*items):
+    """(제목, 매체, 매체 주소, 날짜) → Google News RSS 모양 바이트."""
+    from email.utils import format_datetime
+    from datetime import datetime, timezone
+    from xml.sax.saxutils import escape, quoteattr
+    body = "".join(
+        f"<item><title>{escape(t)} - {escape(s)}</title><link>https://news.google.com/a/{i}</link>"
+        f"<pubDate>{format_datetime(datetime.fromisoformat(d).replace(tzinfo=timezone.utc))}</pubDate>"
+        f"<source url={quoteattr(u)}>{escape(s)}</source></item>" for i, (t, s, u, d) in enumerate(items))
+    return f"<rss><channel>{body}</channel></rss>".encode()
+
+
+class ForeignNewsTest(unittest.TestCase):
+    """해외 공신력 있는 매체(도메인)·현지 법인 이름 검색·외국어 제목 규칙·최근 5년 대체."""
+
+    def test_foreign_sites_by_domain(self):
+        import fetch_news as n
+        self.assertTrue(n.foreign_site("https://www.reuters.com") and n.foreign_site("investasi.kontan.co.id"))
+        self.assertFalse(n.foreign_site("finance.biggo.com") or n.foreign_site("pinetree.vn") or n.foreign_site("notreuters.com"))
+        self.assertTrue(n.trusted("Reuters") and n.trusted("CafeF", "cafef.vn") and n.trusted("연합뉴스"))
+        self.assertFalse(n.trusted("BigGo Finance", "finance.biggo.com"))                       # 모음 사이트
+        self.assertFalse(n.trusted("Chứng khoán Pinetree", "pinetree.vn"))                       # 회사 자체 사이트
+        self.assertTrue(n.is_foreign("CafeF", "cafef.vn") and n.is_foreign("Bloomberg.com", ""))
+        self.assertFalse(n.is_foreign("The Korea Herald", "www.koreaherald.com") or n.is_foreign("연합뉴스", ""))
+
+    def test_language_of_title(self):
+        import fetch_news as n
+        self.assertEqual([n.lang_of(t) for t in ["미래에셋 인니법인 증자", "Chứng khoán KB Việt Nam báo lãi",
+                                                   "Ciptadana Luncurkan PinePick, Platform Trading Saham", "Mirae Asset wins license"]],
+                         ["ko", "vi", "id", "en"])
+        # 영문 기사의 'Việt Nam'·사람 이름 Dan, 인도네시아어 낱말 하나만 섞인 영문 제목은 영어
+        self.assertEqual([n.lang_of(t) for t in ["KB Securities Việt Nam wins award", "Dan Kim joins Mirae Asset as CEO",
+                                                   "NH Korindo Sekuritas named best broker for the year", "NH Korindo Sekuritas raih penghargaan di Jakarta"]],
+                         ["en", "en", "en", "id"])
+        # 인도네시아어 매체 기사는 인도네시아어 흔적 하나로도(영문판·영어 낱말 둘 이상은 영어)
+        self.assertEqual([n.lang_of(t, s) for t, s in [("Seremoni Perubahan Nama PT KISI Asset Management", "www.idx.co.id"),
+                                                         ("Seremoni Perubahan Nama PT KISI Asset Management", "investor.id"),
+                                                         ("Video: Intip Prospek & Ekspansi Bisnis Sekuritas NH Korindo di RI", "www.cnbcindonesia.com"),
+                                                         ("Customer Reports Mirae Asset Sekuritas for Alleged Rp71 billion Loss", "en.tempo.co"),
+                                                         ("OJK Reveals Alleged Capital Market Crimes Involving Mirae Asset Sekuritas Indonesia", "www.kompas.id"),
+                                                         ("Peluncuran Aplikasi NEW HERO - Kiwoom Sekuritas Indonesia", "www.idx.co.id"),
+                                                         ("The Rebranding Ceremony of PT KISI Asset Management", "www.idx.co.id")]],
+                         ["id", "id", "id", "en", "en", "id", "en"])
+        # 같은 기사 판별: 외국어 제목은 앞 28자가 같은 법인 이름이어도 다른 기사로 본다
+        self.assertNotEqual(n.norm_title("Mirae Asset Sekuritas Indonesia raih penghargaan"),
+                            n.norm_title("Mirae Asset Sekuritas Indonesia luncurkan aplikasi"))
+        self.assertEqual(n.norm_title("Chứng khoán KB Việt Nam báo lãi"), n.norm_title("Chứng khoán KB Việt Nam - báo lãi"))
+
+    def test_local_phrases_from_legal_names(self):
+        import fetch_news as n
+        ph = {p: (amb, ctx) for p, amb, ctx in n.local_phrases("한화투자증권", "인도네시아", ["PT Ciptadana Sekuritas Asia", "PT Ciptadana Asset Management"])}
+        self.assertEqual(ph["Ciptadana"], (False, True))              # 한 낱말은 금융 문맥이 있어야
+        self.assertEqual(ph["Ciptadana Sekuritas"], (False, False))
+        self.assertEqual([p for p, _, _ in n.local_phrases("미래에셋증권", "베트남", ["Mirae Asset Securities (Vietnam) JSC"])],
+                         ["Chứng khoán Mirae Asset"])                  # 모회사 영문명은 기존 검색이 맡는다
+        self.assertEqual(n.local_phrases("하나증권", "싱가포르", ["Hana Asset Management Asia Pte. Ltd."]),
+                         [("Hana Asset Management", True, False)])     # 국내 계열사와 헷갈려 나라 표기가 있어야
+        self.assertIn(("BIDV Securities", False, False), n.local_phrases("하나증권", "베트남", ["BIDVSecuritiesJointStockCompany"]))
+        self.assertEqual(n.local_queries("한화투자증권", "인도네시아", n.local_phrases("한화투자증권", "인도네시아", ["PT Ciptadana Sekuritas Asia"])),
+                         [('"Ciptadana Sekuritas"', "id"), ('"Ciptadana AM"', "id")])  # 한 낱말(Ciptadana)은 검색어로 쓰지 않는다
+        self.assertEqual(n.local_queries("하나증권", "싱가포르", n.local_phrases("하나증권", "싱가포르", ["Hana Asset Management Asia Pte. Ltd."])),
+                         [])                                                 # 모회사 이름 + 일반 낱말뿐이면 검색어로 쓰지 않는다
+        # 현지어 표기(… Sekuritas)는 모회사 이름 + 일반 낱말이어도 그 나라 법인이라 그 나라 판에서 찾는다
+        for firm, name, q in [("미래에셋증권", "PT. Mirae Asset Sekuritas Indonesia", "Mirae Asset Sekuritas"),
+                              ("신한투자증권", "PT Shinhan Sekuritas Indonesia", "Shinhan Sekuritas"), ("키움증권", "PT Kiwoom sekuritas Indonesia", "Kiwoom sekuritas")]:
+            self.assertEqual(n.local_queries(firm, "인도네시아", n.local_phrases(firm, "인도네시아", [name])), [(f'"{q}"', "id")])
+
+    def test_foreign_titles_need_company_news(self):
+        import fetch_hub_news as h
+        ents = {("NH투자증권", "베트남"): ["NH Securities Vietnam Co., Ltd."], ("NH투자증권", "인도네시아"): ["PT. NH Korindo Sekuritas Indonesia"],
+                ("미래에셋증권", "인도"): ["Sharekhan Limited"], ("키움증권", "인도네시아"): ["PT Kiwoom sekuritas Indonesia"],
+                ("한화투자증권", "베트남"): ["Pinetree Securities Corporation"], ("한화투자증권", "싱가포르"): ["Pinetree Securities Pte.Ltd"],
+                ("하나증권", "싱가포르"): ["Hana Asset Management Asia Pte. Ltd."]}
+        ph = h.hub_phrases(ents)
+        rel = lambda t, f, c: h.relevant(t, f, c, ph[(f, c)])  # noqa: E731
+        self.assertTrue(rel("Chứng khoán NH Việt Nam ra mắt giao dịch Chứng khoán Phái sinh", "NH투자증권", "베트남"))
+        self.assertTrue(rel("Chủ Hàn Quốc chốt góp thêm hơn 1,300 tỷ đồng cho NHSV", "NH투자증권", "베트남"))
+        self.assertTrue(rel("OJK Bekukan Izin Penjamin Efek NH Korindo Imbas Kasus Bentjok", "NH투자증권", "인도네시아"))
+        self.assertTrue(rel("Mirae Asset completes acquisition of Sharekhan, expanding footprint in India", "미래에셋증권", "인도"))
+        # 시황·종목 추천·애널리스트 코멘트·종목 페이지
+        self.assertFalse(rel("Kiwoom Sekuritas Pertahankan Rekomendasi Buy BBCA, Segini Target Harganya", "키움증권", "인도네시아"))
+        self.assertFalse(rel("Silver selloff seems overdone, says Mirae Asset Sharekhan; here's why", "미래에셋증권", "인도"))
+        self.assertFalse(rel("WOORICBV:Công ty TNHH Chứng khoán NH Việt Nam (OTC)", "NH투자증권", "베트남"))
+        self.assertFalse(rel("Shinhan Pinetree forest walk opens", "한화투자증권", "베트남"))          # 금융 문맥 없음
+        self.assertFalse(rel("Pinetree Coffee plans IPO in Vietnam", "한화투자증권", "베트남"))        # IPO·stock은 금융 문맥으로 치지 않는다
+        self.assertTrue(rel("Hanwha's Pinetree expands in Vietnam", "한화투자증권", "베트남"))         # 모회사 이름이 같이 있으면 된다
+        # 시황 방송·애널리스트 의견은 빼고, 장애(technical outage) 같은 회사 소식은 남긴다
+        self.assertFalse(rel("LIVE: Mirae Asset Sharekhan launches new app", "미래에셋증권", "인도"))
+        self.assertFalse(rel("Sharekhan upgrades Infosys, raises target", "미래에셋증권", "인도"))
+        self.assertTrue(rel("Sharekhan NBFC faces technical outage", "미래에셋증권", "인도"))
+        # 판촉(이자·수수료 면제, 세미나, 대학 행사)은 빼고 실적(báo lãi)은 남긴다. 우선주(cổ phiếu ưu đãi)는 자본 소식
+        for t in ["Giữa làn sóng tăng lãi suất huy động, Chứng khoán Pinetree tung gói vay margin chỉ tương đương lãi tiết kiệm ngân hàng",
+                  "Chứng khoán KB Việt Nam ra mắt chương trình miễn lãi suất margin cho khách hàng", "NHSV ra mắt Hội thảo: Cơ hội gia tăng tài sản",
+                  "Chứng khoán KIS triển khai Happy Monday, hoàn 100% phí giao dịch đầu tháng", "KIS Việt Nam triển khai “Vòng quay Chứng sỹ” mùa 5",
+                  "Internal Coaching Clinic KSPM Universitas Pancasila Bakal Gandeng KB Valbury Sekuritas"]:
+            self.assertFalse(h.foreign_ok(t), t)
+        self.assertTrue(h.foreign_ok("Dư nợ cho vay tăng lên gần 8.900 tỷ đồng, Chứng khoán KB Việt Nam báo lãi tăng hơn 15%"))
+        self.assertTrue(h.foreign_ok("Chứng khoán Mirae Asset sắp chuyển 113.5 triệu cổ phiếu ưu đãi thành phổ thông"))
+        # 국내 영문 매체(Korea Times 등) 제목은 사건 낱말이 없어도 된다(해외 매체는 있어야)
+        t = "NH Investment & Securities' Hong Kong unit eyes accelerating growth"
+        self.assertTrue(h.relevant(t, "NH투자증권", "홍콩", foreign=False))
+        self.assertFalse(h.relevant(t, "NH투자증권", "홍콩", foreign=True))
+        # 'US$'는 미국 표기가 아니다
+        t = "Mirae Asset Securities Vietnam raises US$50 million in bonds"
+        self.assertEqual([c for c in ("미국", "베트남") if h.relevant(t, "미래에셋증권", c)], ["베트남"])
+        # 두 나라 법인이 같은 이름(Pinetree)이면 나라 표기나 그 나라 말이어야 한다
+        t = "Chiến lược khác biệt của Chứng khoán Pinetree"
+        self.assertEqual([c for c in ("베트남", "싱가포르") if rel(t, "한화투자증권", c)], ["베트남"])
+        t = "Pinetree Securities launches Singapore wealth platform"
+        self.assertEqual([c for c in ("베트남", "싱가포르") if rel(t, "한화투자증권", c)], ["싱가포르"])
+        self.assertTrue(rel("Hana Asset Management launches Singapore private credit fund", "하나증권", "싱가포르"))
+        self.assertFalse(rel("Hana Asset Management launches new ETF", "하나증권", "싱가포르"))
+        self.assertIn(('"Chứng khoán Pinetree"', "vi"), h.queries("한화투자증권", "베트남", ph[("한화투자증권", "베트남")]))
+
+    def test_hub_falls_back_to_latest_within_five_years(self):
+        import tempfile
+        import fetch_hub_news as h
+        ph = {("한화투자증권", "베트남"): [("Chứng khoán Pinetree", False, False)], ("KB증권", "베트남"): [("KBSV", False, False)]}
+        old = [("Chiến lược khác biệt của Chứng khoán Pinetree", "VnExpress", "https://vnexpress.net", "2024-12-05"),
+               ("Chứng khoán Pinetree hợp tác với FPT", "CafeF", "https://cafef.vn", "2023-03-18"),
+               ("Chứng khoán Pinetree ra mắt ứng dụng mới", "CafeF", "https://cafef.vn", "2022-04-14"),
+               ("Chứng khoán Pinetree thành lập", "CafeF", "https://cafef.vn", "2019-01-10")]          # 5년 밖
+        fresh = [("KBSV báo lãi tăng 15%", "Thời báo Tài chính Việt Nam", "https://thoibaotaichinhvietnam.vn", "2026-07-21")]
+
+        def get(url, timeout=25):
+            five = "when%3A1825d" in url
+            if "Pinetree" in url:
+                return _rss(*(old if five else []))
+            return _rss(*(fresh if "KBSV" in url else []))
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(h, "OUT", Path(d) / "hub_news.json"), \
+                mock.patch.object(h, "hub_phrases", return_value=ph), mock.patch.object(h.net, "get", side_effect=get), \
+                mock.patch.object(h.time, "sleep"), mock.patch.object(h, "datetime", wraps=h.datetime) as dt:
+            dt.now.return_value = h.datetime(2026, 10, 27, 7, 0, tzinfo=h.KST)
+            h.main()
+            got = json.loads((Path(d) / "hub_news.json").read_text(encoding="utf-8"))["hubs"]
+        pine = got["한화투자증권|베트남"]
+        self.assertEqual([x["date"] for x in pine], ["2024-12-05", "2023-03-18"])    # 5년 안 최근 2건만
+        self.assertTrue(all(x["old"] and x["foreign"] and x["lang"] == "vi" for x in pine))
+        self.assertEqual([(x["date"], x.get("old")) for x in got["KB증권|베트남"]], [("2026-07-21", None)])
+
+    def test_main_feed_takes_foreign_hub_items(self):
+        import tempfile
+        from datetime import datetime
+        import fetch_news as n
+        import fetch_hub_news as h
+        cnbc = {"src": "CNBC Indonesia", "site": "www.cnbcindonesia.com"}
+        hub = {"hubs": {"NH투자증권|인도네시아": [
+            {"date": "2026-10-20", "title": "NH Korindo Sekuritas Raih Penghargaan", "url": "a", "foreign": True, **cnbc},
+            {"date": "2026-10-19", "title": "NH투자증권 인니법인 증자", "src": "연합뉴스", "url": "b"},
+            {"date": "2026-10-18", "title": "NH Korindo Sekuritas Pertahankan Rating Buy BBCA", "url": "e", "foreign": True, **cnbc},  # 지금 규칙으로는 종목 의견
+            {"date": "2026-01-02", "title": "NH Korindo rights issue", "src": "Kontan", "site": "kontan.co.id", "url": "c", "foreign": True},
+            {"date": "2023-01-02", "title": "NH Korindo old", "src": "Kontan", "url": "d", "foreign": True, "old": True}]}}
+        # 이 피드에 이미 실린 거점 기사: 거점 칸(최근 몇 건)에서 밀려나도 기간 안이면 둔다
+        prev = [{"date": "2026-09-01", "title": "Gandeng Sinarmas, NH Korindo Sekuritas Pasarkan Reksa Dana", "url": "p", "hub": "NH투자증권|인도네시아",
+                 "firms": ["NH투자증권"], **cnbc},
+                {"date": "2026-05-01", "title": "NH Korindo Sekuritas Raih Award", "url": "q", "hub": "NH투자증권|인도네시아", **cnbc},
+                {"date": "2026-09-02", "title": "NH Korindo Sekuritas buka cabang", "url": "r", **cnbc}]
+        ph = {("NH투자증권", "인도네시아"): [("NH Korindo", False, False), ("NH Korindo Sekuritas", False, False)]}
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(n, "DATA", Path(d)), mock.patch.object(h, "hub_phrases", return_value=ph):
+            (Path(d) / "hub_news.json").write_text(json.dumps(hub), encoding="utf-8")
+            got = n.hub_foreign(datetime(2026, 7, 29, tzinfo=n.KST), prev)
+        self.assertEqual([(x["url"], x["firms"], x["hub"], x.get("lang")) for x in got],
+                         [("a", ["NH투자증권"], "NH투자증권|인도네시아", "id"), ("p", ["NH투자증권"], "NH투자증권|인도네시아", "id")])
+
+
+class BrokerRankTest(unittest.TestCase):
+    def test_periods_wait_for_filing_deadline(self):
+        import broker_rank as b
+        self.assertEqual([p[:2] for p in b.periods(date(2026, 10, 26))], [("2026", "11012"), ("2026", "11013")])
+        self.assertEqual(b.periods(date(2026, 11, 16))[0][:2], ("2026", "11014"))  # 3분기 기한(11/14) 뒤 첫 월요일
+        self.assertEqual(b.periods(date(2027, 3, 29))[0][:2], ("2026", "11014"))  # 사업보고서 기한 전
+        self.assertEqual(b.periods(date(2027, 4, 5))[0][:2], ("2026", "11011"))
+
+    def test_collect_keeps_one_balance_date_and_display_names(self):
+        import broker_rank as b
+        row = lambda acc, div, amt, dt="2026.06.30 현재": {"account_nm": acc, "fs_div": div, "thstrm_amount": amt, "thstrm_dt": dt}
+        data = {
+            "A": [row("자본총계", "CFS", "2,263,405,000,000"), row("자본총계", "OFS", "2,267,400,000,000"), row("자본금", "OFS", "1,100,000,000,000")],
+            "B": [row("자본총계", "OFS", "8,220,000,000,000")],
+            "C": [row("자본총계", "OFS", "1,700,000,000,000", "2026.09.30 현재")],  # 3월 결산사의 '반기'
+            "D": [],
+        }
+        cands = {"A": ("한화투자증권", "003530"), "B": ("케이비증권", ""), "C": ("신영증권", "001720"), "D": ("감사보고서만증권", "")}
+        with mock.patch.object(b, "brokers", return_value=cands), mock.patch.object(b, "MIN_ROWS", 2), \
+                mock.patch.object(b, "api", side_effect=lambda path, key, corp_code, **k: data[corp_code]):
+            res = b.collect("dummy", today=date(2026, 10, 26))
+        self.assertEqual((res["period"], res["as_of"]), ("2026 반기보고서", "2026-06-30"))
+        self.assertEqual([r["name"] for r in b.ranked(res["rows"], lambda r: r.get("equity_ofs"))], ["KB증권", "한화투자증권"])
+        a = next(r for r in res["rows"] if r["corp_code"] == "A")
+        self.assertEqual((a["equity_cfs"], a["equity_ofs"], a["capital_ofs"]), (2263405, 2267400, 1100000))
+        self.assertEqual(res["other_fiscal"], ["신영증권(2026-09-30)"])
+        self.assertNotIn("as_of", a)
+
+    def test_no_key_is_a_noop(self):
+        import broker_rank as b
+        with mock.patch.dict("os.environ", {"DART_API_KEY": ""}), mock.patch.object(b, "OUT", Path(os.devnull)):
+            b.main()

@@ -25,14 +25,18 @@ STEPS = [
     ("dart 종속회사 전수 목록", "scripts/fetch_consolidated.py", ["DART_API_KEY"]),
     ("dart 해외 종속기업 요약재무(ROE)", "scripts/fetch_sub_fin.py", ["DART_API_KEY"]),
     ("dart 해외법인 5개년 손익 추이", "scripts/fetch_sub_trend.py", ["DART_API_KEY"]),
+    ("dart 국내 전체 증권사 자기자본 순위", "scripts/broker_rank.py", ["DART_API_KEY"]),
+    # 거점 뉴스를 먼저: 해외진출 뉴스가 거점 뉴스의 해외 매체 기사도 싣는다(news.yml과 같은 순서)
+    ("news 해외 거점별 뉴스", "scripts/fetch_hub_news.py", []),
     ("news 해외진출 뉴스", "scripts/fetch_news.py", []),
     ("news 국가별 매크로 뉴스", "scripts/fetch_macro_news.py", []),
-    ("news 해외 거점별 뉴스", "scripts/fetch_hub_news.py", []),
     ("sec 미국 순위", "scripts/update_sec.py", ["SEC_USER_AGENT"]),
     ("listed 해외 상장 증권사 순위", "scripts/update_listed.py", []),
     ("hanwha dart 해외자회사 공시", "hanwha/scripts/fetch_dart_subs.py", ["DART_API_KEY"]),
     ("hanwha 대외보고 기한", "hanwha/scripts/build_deadlines.py", []),
     ("hanwha ecos 매크로", "hanwha/scripts/fetch_macro.py", ["ECOS_API_KEY"]),
+    # 위 단계들이 갱신한 공시·지수·환율·뉴스를 읽으므로 맨 끝
+    ("news 진출국 전략 Takeaways", "scripts/build_takeaways.py", []),
 ]
 
 

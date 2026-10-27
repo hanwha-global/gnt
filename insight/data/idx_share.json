@@ -1,0 +1,877 @@
+{
+ "updated_at": "2026-10-27T02:08:17+00:00",
+ "checked_at": "2026-10-27T02:08:17+00:00",
+ "source": {
+  "label": "IDX 회원사별 거래 요약(Ringkasan Broker)",
+  "url": "https://www.idx.co.id/id/data-pasar/ringkasan-perdagangan/ringkasan-broker/"
+ },
+ "method": "회원사별 매수+매도 거래대금 ÷ 전체 회원사 합계(정규·비정규 시장 포함)",
+ "last_day": "2026-10-26",
+ "ytd": {
+  "from": "2026-01-02",
+  "to": "2026-10-26",
+  "days": 194,
+  "total": 7960318655035490,
+  "rows": [
+   {
+    "code": "XL",
+    "name": "Stockbit Sekuritas Digital",
+    "value": 889431357157412,
+    "share": 11.17,
+    "rank": 1,
+    "korean": null
+   },
+   {
+    "code": "CC",
+    "name": "MANDIRI SEKURITAS",
+    "value": 822452070894681,
+    "share": 10.33,
+    "rank": 2,
+    "korean": null
+   },
+   {
+    "code": "AK",
+    "name": "UBS Sekuritas Indonesia",
+    "value": 797845499036987,
+    "share": 10.02,
+    "rank": 3,
+    "korean": null
+   },
+   {
+    "code": "ZP",
+    "name": "Maybank Sekuritas Indonesia",
+    "value": 542239201101413,
+    "share": 6.81,
+    "rank": 4,
+    "korean": null
+   },
+   {
+    "code": "YU",
+    "name": "CGS International Sekuritas Indonesia",
+    "value": 420902265332097,
+    "share": 5.29,
+    "rank": 5,
+    "korean": null
+   },
+   {
+    "code": "YP",
+    "name": "Mirae Asset Sekuritas Indonesia",
+    "value": 408377966156229,
+    "share": 5.13,
+    "rank": 6,
+    "korean": "미래에셋증권"
+   },
+   {
+    "code": "PD",
+    "name": "Indo Premier Sekuritas",
+    "value": 306015631268902,
+    "share": 3.84,
+    "rank": 7,
+    "korean": null
+   },
+   {
+    "code": "BK",
+    "name": "J.P. Morgan Sekuritas Indonesia",
+    "value": 304334735268359,
+    "share": 3.82,
+    "rank": 8,
+    "korean": null
+   },
+   {
+    "code": "MG",
+    "name": "Semesta Indovest Sekuritas",
+    "value": 266465454145026,
+    "share": 3.35,
+    "rank": 9,
+    "korean": null
+   },
+   {
+    "code": "XC",
+    "name": "Ajaib Sekuritas Asia",
+    "value": 220890466950290,
+    "share": 2.77,
+    "rank": 10,
+    "korean": null
+   },
+   {
+    "code": "CP",
+    "name": "KB Valbury Sekuritas",
+    "value": 217105292089919,
+    "share": 2.73,
+    "rank": 11,
+    "korean": "KB증권"
+   },
+   {
+    "code": "LG",
+    "name": "Trimegah Sekuritas Indonesia Tbk.",
+    "value": 187025712904371,
+    "share": 2.35,
+    "rank": 12,
+    "korean": null
+   },
+   {
+    "code": "SQ",
+    "name": "BCA Sekuritas",
+    "value": 176673554988672,
+    "share": 2.22,
+    "rank": 13,
+    "korean": null
+   },
+   {
+    "code": "NI",
+    "name": "BNI Sekuritas",
+    "value": 160179040046702,
+    "share": 2.01,
+    "rank": 14,
+    "korean": null
+   },
+   {
+    "code": "KZ",
+    "name": "CLSA Sekuritas Indonesia",
+    "value": 138648450289960,
+    "share": 1.74,
+    "rank": 15,
+    "korean": null
+   },
+   {
+    "code": "AZ",
+    "name": "Sucor Sekuritas",
+    "value": 135620882685735,
+    "share": 1.7,
+    "rank": 16,
+    "korean": null
+   },
+   {
+    "code": "DH",
+    "name": "SINARMAS SEKURITAS",
+    "value": 133723046117908,
+    "share": 1.68,
+    "rank": 17,
+    "korean": null
+   },
+   {
+    "code": "RX",
+    "name": "Macquarie Sekuritas Indonesia",
+    "value": 117956415553617,
+    "share": 1.48,
+    "rank": 18,
+    "korean": null
+   },
+   {
+    "code": "OD",
+    "name": "BRI Danareksa Sekuritas",
+    "value": 113073238087182,
+    "share": 1.42,
+    "rank": 19,
+    "korean": null
+   },
+   {
+    "code": "KK",
+    "name": "Phillip Sekuritas Indonesia",
+    "value": 95237723478872,
+    "share": 1.2,
+    "rank": 20,
+    "korean": null
+   },
+   {
+    "code": "BB",
+    "name": "Verdhana Sekuritas Indonesia",
+    "value": 92828628694284,
+    "share": 1.17,
+    "rank": 21,
+    "korean": null
+   },
+   {
+    "code": "KI",
+    "name": "Ciptadana Sekuritas Asia",
+    "value": 88636331850728,
+    "share": 1.11,
+    "rank": 22,
+    "korean": "한화투자증권"
+   },
+   {
+    "code": "GR",
+    "name": "PANIN SEKURITAS Tbk.",
+    "value": 80290446187398,
+    "share": 1.01,
+    "rank": 23,
+    "korean": null
+   },
+   {
+    "code": "IF",
+    "name": "SAMUEL SEKURITAS INDONESIA",
+    "value": 79086853243406,
+    "share": 0.99,
+    "rank": 24,
+    "korean": null
+   },
+   {
+    "code": "BQ",
+    "name": "Korea Investment and Sekuritas Indonesia",
+    "value": 77178756712775,
+    "share": 0.97,
+    "rank": 25,
+    "korean": "한국투자증권"
+   },
+   {
+    "code": "XA",
+    "name": "NH Korindo Sekuritas Indonesia",
+    "value": 55850703088863,
+    "share": 0.7,
+    "rank": 31,
+    "korean": "NH투자증권"
+   },
+   {
+    "code": "AG",
+    "name": "Kiwoom Sekuritas Indonesia",
+    "value": 36078483560858,
+    "share": 0.45,
+    "rank": 37,
+    "korean": "키움증권"
+   },
+   {
+    "code": "AH",
+    "name": "Shinhan Sekuritas Indonesia",
+    "value": 703236669480,
+    "share": 0.01,
+    "rank": 85,
+    "korean": "신한투자증권"
+   }
+  ]
+ },
+ "month": {
+  "month": "2026-09",
+  "days": 22,
+  "total": 658540247343712,
+  "rows": [
+   {
+    "code": "XL",
+    "name": "Stockbit Sekuritas Digital",
+    "value": 82798861716024,
+    "share": 12.57,
+    "rank": 1,
+    "korean": null
+   },
+   {
+    "code": "AK",
+    "name": "UBS Sekuritas Indonesia",
+    "value": 68210986433819,
+    "share": 10.36,
+    "rank": 2,
+    "korean": null
+   },
+   {
+    "code": "CC",
+    "name": "MANDIRI SEKURITAS",
+    "value": 66736514995069,
+    "share": 10.13,
+    "rank": 3,
+    "korean": null
+   },
+   {
+    "code": "ZP",
+    "name": "Maybank Sekuritas Indonesia",
+    "value": 40903595362598,
+    "share": 6.21,
+    "rank": 4,
+    "korean": null
+   },
+   {
+    "code": "YU",
+    "name": "CGS International Sekuritas Indonesia",
+    "value": 38292076899610,
+    "share": 5.81,
+    "rank": 5,
+    "korean": null
+   },
+   {
+    "code": "YP",
+    "name": "Mirae Asset Sekuritas Indonesia",
+    "value": 31602022962919,
+    "share": 4.8,
+    "rank": 6,
+    "korean": "미래에셋증권"
+   },
+   {
+    "code": "PD",
+    "name": "Indo Premier Sekuritas",
+    "value": 24248172292202,
+    "share": 3.68,
+    "rank": 7,
+    "korean": null
+   },
+   {
+    "code": "BK",
+    "name": "J.P. Morgan Sekuritas Indonesia",
+    "value": 22943016650335,
+    "share": 3.48,
+    "rank": 8,
+    "korean": null
+   },
+   {
+    "code": "XC",
+    "name": "Ajaib Sekuritas Asia",
+    "value": 19963235353400,
+    "share": 3.03,
+    "rank": 9,
+    "korean": null
+   },
+   {
+    "code": "CP",
+    "name": "KB Valbury Sekuritas",
+    "value": 19423137565594,
+    "share": 2.95,
+    "rank": 10,
+    "korean": "KB증권"
+   },
+   {
+    "code": "MG",
+    "name": "Semesta Indovest Sekuritas",
+    "value": 18556374262800,
+    "share": 2.82,
+    "rank": 11,
+    "korean": null
+   },
+   {
+    "code": "LG",
+    "name": "Trimegah Sekuritas Indonesia Tbk.",
+    "value": 16948214710070,
+    "share": 2.57,
+    "rank": 12,
+    "korean": null
+   },
+   {
+    "code": "SQ",
+    "name": "BCA Sekuritas",
+    "value": 14507001941662,
+    "share": 2.2,
+    "rank": 13,
+    "korean": null
+   },
+   {
+    "code": "NI",
+    "name": "BNI Sekuritas",
+    "value": 13896154275380,
+    "share": 2.11,
+    "rank": 14,
+    "korean": null
+   },
+   {
+    "code": "AZ",
+    "name": "Sucor Sekuritas",
+    "value": 11960033278122,
+    "share": 1.82,
+    "rank": 15,
+    "korean": null
+   },
+   {
+    "code": "OD",
+    "name": "BRI Danareksa Sekuritas",
+    "value": 10558111145460,
+    "share": 1.6,
+    "rank": 16,
+    "korean": null
+   },
+   {
+    "code": "KZ",
+    "name": "CLSA Sekuritas Indonesia",
+    "value": 10556810746900,
+    "share": 1.6,
+    "rank": 17,
+    "korean": null
+   },
+   {
+    "code": "DH",
+    "name": "SINARMAS SEKURITAS",
+    "value": 10551974368630,
+    "share": 1.6,
+    "rank": 18,
+    "korean": null
+   },
+   {
+    "code": "KK",
+    "name": "Phillip Sekuritas Indonesia",
+    "value": 7986285693096,
+    "share": 1.21,
+    "rank": 19,
+    "korean": null
+   },
+   {
+    "code": "GR",
+    "name": "PANIN SEKURITAS Tbk.",
+    "value": 7254956451100,
+    "share": 1.1,
+    "rank": 20,
+    "korean": null
+   },
+   {
+    "code": "BB",
+    "name": "Verdhana Sekuritas Indonesia",
+    "value": 6955118867594,
+    "share": 1.06,
+    "rank": 21,
+    "korean": null
+   },
+   {
+    "code": "RX",
+    "name": "Macquarie Sekuritas Indonesia",
+    "value": 6676089480020,
+    "share": 1.01,
+    "rank": 22,
+    "korean": null
+   },
+   {
+    "code": "BQ",
+    "name": "Korea Investment and Sekuritas Indonesia",
+    "value": 6319643859650,
+    "share": 0.96,
+    "rank": 23,
+    "korean": "한국투자증권"
+   },
+   {
+    "code": "TP",
+    "name": "OCBC Sekuritas Indonesia",
+    "value": 5924649860900,
+    "share": 0.9,
+    "rank": 24,
+    "korean": null
+   },
+   {
+    "code": "HD",
+    "name": "KGI Sekuritas Indonesia",
+    "value": 5918028200500,
+    "share": 0.9,
+    "rank": 25,
+    "korean": null
+   },
+   {
+    "code": "KI",
+    "name": "Ciptadana Sekuritas Asia",
+    "value": 5496969611830,
+    "share": 0.83,
+    "rank": 26,
+    "korean": "한화투자증권"
+   },
+   {
+    "code": "XA",
+    "name": "NH Korindo Sekuritas Indonesia",
+    "value": 4990951160400,
+    "share": 0.76,
+    "rank": 29,
+    "korean": "NH투자증권"
+   },
+   {
+    "code": "AG",
+    "name": "Kiwoom Sekuritas Indonesia",
+    "value": 3811386897820,
+    "share": 0.58,
+    "rank": 33,
+    "korean": "키움증권"
+   },
+   {
+    "code": "AH",
+    "name": "Shinhan Sekuritas Indonesia",
+    "value": 114685126100,
+    "share": 0.02,
+    "rank": 81,
+    "korean": "신한투자증권"
+   }
+  ]
+ },
+ "trend": {
+  "YP": {
+   "name": "Mirae Asset Sekuritas Indonesia",
+   "firm": "미래에셋증권",
+   "pts": [
+    [
+     "2026-01",
+     6.49,
+     4
+    ],
+    [
+     "2026-02",
+     5.66,
+     5
+    ],
+    [
+     "2026-03",
+     5.12,
+     7
+    ],
+    [
+     "2026-04",
+     5.53,
+     5
+    ],
+    [
+     "2026-05",
+     4.44,
+     6
+    ],
+    [
+     "2026-06",
+     4.19,
+     7
+    ],
+    [
+     "2026-07",
+     4.83,
+     6
+    ],
+    [
+     "2026-08",
+     4.95,
+     5
+    ],
+    [
+     "2026-09",
+     4.8,
+     6
+    ],
+    [
+     "2026-10",
+     3.77,
+     6
+    ]
+   ]
+  },
+  "CP": {
+   "name": "KB Valbury Sekuritas",
+   "firm": "KB증권",
+   "pts": [
+    [
+     "2026-01",
+     3.17,
+     11
+    ],
+    [
+     "2026-02",
+     2.68,
+     12
+    ],
+    [
+     "2026-03",
+     2.52,
+     11
+    ],
+    [
+     "2026-04",
+     3.01,
+     10
+    ],
+    [
+     "2026-05",
+     2.36,
+     13
+    ],
+    [
+     "2026-06",
+     2.42,
+     11
+    ],
+    [
+     "2026-07",
+     2.66,
+     12
+    ],
+    [
+     "2026-08",
+     2.85,
+     12
+    ],
+    [
+     "2026-09",
+     2.95,
+     10
+    ],
+    [
+     "2026-10",
+     2.24,
+     11
+    ]
+   ]
+  },
+  "BQ": {
+   "name": "Korea Investment and Sekuritas Indonesia",
+   "firm": "한국투자증권",
+   "pts": [
+    [
+     "2026-01",
+     1.01,
+     23
+    ],
+    [
+     "2026-02",
+     0.9,
+     26
+    ],
+    [
+     "2026-03",
+     1.08,
+     26
+    ],
+    [
+     "2026-04",
+     0.9,
+     26
+    ],
+    [
+     "2026-05",
+     1.25,
+     23
+    ],
+    [
+     "2026-06",
+     0.75,
+     26
+    ],
+    [
+     "2026-07",
+     1.09,
+     23
+    ],
+    [
+     "2026-08",
+     1.01,
+     24
+    ],
+    [
+     "2026-09",
+     0.96,
+     23
+    ],
+    [
+     "2026-10",
+     0.78,
+     26
+    ]
+   ]
+  },
+  "XA": {
+   "name": "NH Korindo Sekuritas Indonesia",
+   "firm": "NH투자증권",
+   "pts": [
+    [
+     "2026-01",
+     0.7,
+     31
+    ],
+    [
+     "2026-02",
+     0.75,
+     30
+    ],
+    [
+     "2026-03",
+     0.59,
+     33
+    ],
+    [
+     "2026-04",
+     0.78,
+     29
+    ],
+    [
+     "2026-05",
+     0.73,
+     29
+    ],
+    [
+     "2026-06",
+     0.56,
+     30
+    ],
+    [
+     "2026-07",
+     0.72,
+     30
+    ],
+    [
+     "2026-08",
+     0.79,
+     27
+    ],
+    [
+     "2026-09",
+     0.76,
+     29
+    ],
+    [
+     "2026-10",
+     0.67,
+     30
+    ]
+   ]
+  },
+  "KI": {
+   "name": "Ciptadana Sekuritas Asia",
+   "firm": "한화투자증권",
+   "pts": [
+    [
+     "2026-01",
+     0.54,
+     35
+    ],
+    [
+     "2026-02",
+     0.57,
+     35
+    ],
+    [
+     "2026-03",
+     6.1,
+     5
+    ],
+    [
+     "2026-04",
+     0.68,
+     32
+    ],
+    [
+     "2026-05",
+     0.58,
+     34
+    ],
+    [
+     "2026-06",
+     0.47,
+     34
+    ],
+    [
+     "2026-07",
+     0.51,
+     35
+    ],
+    [
+     "2026-08",
+     0.99,
+     25
+    ],
+    [
+     "2026-09",
+     0.83,
+     26
+    ],
+    [
+     "2026-10",
+     0.68,
+     28
+    ]
+   ]
+  },
+  "AG": {
+   "name": "Kiwoom Sekuritas Indonesia",
+   "firm": "키움증권",
+   "pts": [
+    [
+     "2026-01",
+     0.36,
+     38
+    ],
+    [
+     "2026-02",
+     0.37,
+     39
+    ],
+    [
+     "2026-03",
+     0.46,
+     35
+    ],
+    [
+     "2026-04",
+     0.46,
+     35
+    ],
+    [
+     "2026-05",
+     0.48,
+     36
+    ],
+    [
+     "2026-06",
+     0.54,
+     33
+    ],
+    [
+     "2026-07",
+     0.47,
+     38
+    ],
+    [
+     "2026-08",
+     0.52,
+     34
+    ],
+    [
+     "2026-09",
+     0.58,
+     33
+    ],
+    [
+     "2026-10",
+     0.4,
+     37
+    ]
+   ]
+  },
+  "AH": {
+   "name": "Shinhan Sekuritas Indonesia",
+   "firm": "신한투자증권",
+   "pts": [
+    [
+     "2026-01",
+     0.02,
+     80
+    ],
+    [
+     "2026-02",
+     0.01,
+     84
+    ],
+    [
+     "2026-03",
+     0.01,
+     81
+    ],
+    [
+     "2026-04",
+     0.0,
+     86
+    ],
+    [
+     "2026-05",
+     0.0,
+     86
+    ],
+    [
+     "2026-06",
+     0.0,
+     87
+    ],
+    [
+     "2026-07",
+     0.01,
+     84
+    ],
+    [
+     "2026-08",
+     0.01,
+     82
+    ],
+    [
+     "2026-09",
+     0.02,
+     81
+    ],
+    [
+     "2026-10",
+     0.0,
+     87
+    ]
+   ]
+  }
+ },
+ "brokers": 90,
+ "errors": []
+}

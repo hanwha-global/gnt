@@ -1,32 +1,32 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-26",
  "law_api": true,
  "sources": {
   "https://dazpro.com/decree-155-2020-vietnam-on-securities/": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://ssc.gov.vn/cs/idcplg?IdcService=GET_FILE&allowInterrupt=1&dID=166306&dDocName=APPSSCGOVVN1620159819&filename=Eng+-+Decree+245+amending+Decree+155+in+English+translation+final.pdf": {
    "kind": "원문",
    "sig": "67374bc45fdfd024",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.vietnam-briefing.com/news/profit-repatriation-vietnam-brief-guide-2026.html/": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://theinvestor.vn/vietnam-overhauls-securities-market-rules-to-boost-foreign-investment-d17003.html": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://luatvietan.vn/dieu-kien-de-nha-dau-tu-nuoc-ngoai-thanh-lap-cong-ty-chung-khoan.html": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://hethongphapluat.com/nghi-dinh-155-2020-nd-cp-huong-dan-luat-chung-khoan/dieu-175": {
    "kind": "가변",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed_at": "2026-10-21"
   },
   "https://www.cnnindonesia.com/ekonomi/20220915173722-532-848425/jokowi-rilis-aturan-pembatasan-kepemilikan-asing-di-perusahaan-efek-ri": {
@@ -35,7 +35,7 @@
   },
   "https://finance.detik.com/bursa-dan-valas/d-8497028/ojk-rilis-aturan-permodalan-perusahaan-efek-dan-mi-ini-rinciannya": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://peraturan.bpk.go.id/Download/120729/pojk%2027-2014.pdf": {
    "kind": "원문",
@@ -43,15 +43,15 @@
   },
   "https://taxsummaries.pwc.com/indonesia/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://taxsummaries.pwc.com/republic-of-korea/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.mas.gov.sg/regulation/capital-markets/apply-for-licensing-or-registration-of-capital-market-entities/cms-licence": {
    "kind": "가변",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed_at": "2026-10-21"
   },
   "https://sso.agc.gov.sg/SL/SFA2001-RG13": {
@@ -60,172 +60,168 @@
   },
   "https://www.mas.gov.sg/regulation/forms-and-templates/application-for-approval-to-obtain-effective-control-of-holder-of-cms-licence-under-the-sfa": {
    "kind": "가변",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed_at": "2026-10-21"
   },
   "https://taxsummaries.pwc.com/singapore/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://assets.adgm.com/download/assets/Getting+Started+Guide+with+FSRA.pdf/a8c5b07a589a11efa1111ed8b674bcd6": {
    "kind": "원문",
    "sig": "3f84e0926299f19e",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.pinsentmasons.com/out-law/news/adgm-fsra-reduces-regulatory-burden-lower-risk-firms": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://webiis08.mondaq.com/financial-services/1701148/difc-and-adgm-rules-on-change-of-control-in-financial-regulated-business": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://taxsummaries.pwc.com/united-arab-emirates/corporate/taxes-on-corporate-income": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.finra.org/rules-guidance/guidance/new-member-application": {
    "kind": "원문",
    "sig": "d57418d888b5e130",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1017": {
    "kind": "원문",
    "sig": "080d9300bc7c255e",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.ecfr.gov/current/title-17/section-240.15c3-1": {
    "kind": "원문",
    "sig": "fc128f65ca713c60",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.innreg.com/blog/how-to-register-with-finra": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.finra.org/industry/faq-anti-money-laundering-faq": {
    "kind": "원문",
    "sig": "f4cf044fe935e2c0",
-   "checked": "2026-10-22",
+   "checked": "2026-10-23",
    "v": 2,
    "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
   },
   "https://taxsummaries.pwc.com/united-states/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.fsa.go.jp/en/regulated/licensed/index.html": {
    "kind": "원문",
    "sig": "564054ebf887024b",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.fsa.go.jp/en/laws_regulations/faq_on_fiea/section06.html": {
    "kind": "원문",
    "sig": "37a7af4571f1000b",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.mondaq.com/pdf/1611132.pdf": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.mondaq.com/inward-foreign-investment/1383780/overview-of-the-fefta-regulation": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://taxsummaries.pwc.com/japan/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.sfc.hk/en/Regulatory-functions/Intermediaries/Licensing": {
    "kind": "원문",
    "sig": "1c35b00b8af6a56d",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.elegislation.gov.hk/hk/cap571N": {
    "kind": "원문",
    "sig": "40ceb73544cd69d7",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.charltonslaw.com/hong-kong-law/approvals-and-notifications-required-in-relation-to-transfers-of-shares-of-a-licensed-corporation-in-hong-kong/": {
    "kind": "링크",
-   "checked": "2026-10-22",
-   "err": "HTTP 500: Composer detected issues in your platform:  Your Composer dependencies require a PHP version \">= 8.3.0\".   <!D"
+   "checked": "2026-10-26"
   },
   "https://www.ocorian.com/knowledge-hub/insights/sfc-licensing-hong-kong-how-successfully-navigate-application-process": {
    "kind": "링크",
-   "checked": "2026-10-21",
-   "err": "The read operation timed out"
+   "checked": "2026-10-26"
   },
   "https://sfc.hk/en/Regulatory-functions/Intermediaries/Licensing/Types-of-intermediary-and-licensed-individual": {
    "kind": "원문",
    "sig": "c2a17821e522b7d2",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://taxsummaries.pwc.com/hong-kong-sar/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://investinchina.chinadaily.com.cn/s/202003/16/WS5e6f02df498ea01b9aea1a16/china-to-scrap-limit-on-foreign-ownership-of-securities-firms.html": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "http://www.csrc.gov.cn/csrc_en/": {
-   "kind": "원문",
-   "sig": "e06348b173e179f7",
-   "checked": "2026-10-22",
-   "v": 2
+   "kind": "링크",
+   "checked": "2026-10-26"
   },
   "https://www.chinajusticeobserver.com/law/x/securities-law-of-china-20191229": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.fca.org.uk/firms/authorisation": {
    "kind": "원문",
    "sig": "5f85089a3d41b642",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.fca.org.uk/firms/change-control": {
    "kind": "원문",
    "sig": "01811932ceebf3c0",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.handbook.fca.org.uk/handbook/MIFIDPRU/4/4.html": {
    "kind": "원문",
    "sig": "669e2e49b21ca7f3",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.handbook.fca.org.uk/handbook/SUP/10C/1.html": {
    "kind": "원문",
    "sig": "06e39ff69c48fa21",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.handbook.fca.org.uk/handbook/COND/2/3.html": {
    "kind": "원문",
    "sig": "56be6008f4711369",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://taxsummaries.pwc.com/united-kingdom/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.fca.org.uk/firms/authorisation/apply": {
    "kind": "원문",
    "sig": "2683bb3dc4009a45",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://dpiit.gov.in/policies-rules-and-acts/policies/foreign-direct-investment-policy": {
@@ -233,15 +229,17 @@
    "err": "HTTP 404: <!DOCTYPE html><html class=\"default-theme\" lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name"
   },
   "https://www.sebi.gov.in/": {
-   "kind": "원문",
+   "kind": "링크",
    "sig": "cec807464bcec161",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12179": {
-   "kind": "가변",
-   "checked": "2026-10-22",
-   "changed_at": "2026-10-21"
+   "kind": "원문",
+   "checked": "2026-10-26",
+   "changed_at": "2026-10-21",
+   "v": 2,
+   "sig": "bb2cc78ec807d9a4"
   },
   "https://thelegalschool.in/blog/section-149-3-companies-act-2013": {
    "kind": "링크",
@@ -249,31 +247,31 @@
   },
   "https://www.sansalegal.com/post/how-to-set-up-a-wholly-owned-subsidiary-in-india-as-a-foreign-company": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://taxsummaries.pwc.com/india/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.legal500.com/developments/thought-leadership/overview-of-the-capital-market-regulation-of-mongolia/": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.frc.mn/": {
-   "kind": "원문",
+   "kind": "링크",
    "sig": "88aadb1fa0e955a8",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://mse.mn/uploads/images/laws/memberhip_rules.pdf": {
    "kind": "원문",
    "sig": "9f1413305eadde42",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://taxsummaries.pwc.com/mongolia/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.adb.org/sites/default/files/publication/681326/bond-market-guide-mongolia.pdf": {
    "kind": "링크",
@@ -284,42 +282,42 @@
    "err": "HTTP 403: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to "
   },
   "https://www.bcb.gov.br/en": {
-   "kind": "원문",
+   "kind": "링크",
    "sig": "ce71d5b8bcbe5a3f",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "v": 2
   },
   "https://cepeda.law/resolucoes-cmn-no-5-008-e-5-009-bacen-atualiza-as-normas-aplicaveis-aos-intermediarios-de-valores-mobiliarios/?lang=en": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.baptista.com.br/brazilian-companies-and-the-election-of-non-resident-officers/?lang=en": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://taxsummaries.pwc.com/brazil/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://conventuslaw.com/report/thailand-new-thai-sec-guidelines-simplify-market-entry-for-foreign-securities-businesses/": {
    "kind": "링크",
-   "err": "IncompleteRead(80680 bytes read)"
+   "err": "IncompleteRead(80672 bytes read)"
   },
   "https://www.dfdl.com/insights/legal-and-tax-updates/thailand-removes-foreign-business-licensing-requirement/": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.clearstream.com/clearstream-en/res-library/market-coverage/investment-regulation-thailand-1280826": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://taxsummaries.pwc.com/thailand/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://en.vietstock.vn/2012/05/secc-sets-minimum-capital-requirement-981-126604.htm": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.rajahtannasia.com/media/4330/rtsh_serc-issues-prakas.pdf": {
    "kind": "링크",
@@ -327,70 +325,70 @@
   },
   "https://assets.kpmg.com/content/dam/kpmg/kh/pdf/publication/2023/kpmg-investing-in-cambodia-2023-and-beyond.pdf": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://taxsummaries.pwc.com/cambodia/corporate/withholding-taxes": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.fsc.go.kr/no010101/76812": {
    "kind": "링크",
    "sig": "da890a1863daba43",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed_at": "2026-10-21"
   },
   "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148776787": {
    "kind": "링크",
    "sig": "07114f522beae5f8",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed_at": "2026-10-21"
   },
   "https://www.fsc.go.kr/po010101/71324": {
    "kind": "링크",
    "sig": "c42f6d0fb0c68450",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed_at": "2026-10-21"
   },
   "https://mstacc.com/blog/columns/deal/corporate-share-acquisition-compliance": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://law.krx.co.kr": {
    "kind": "링크",
-   "err": "<urlopen error timed out>"
+   "err": "The read operation timed out"
   },
   "https://www.fsc.go.kr/no010101/81353": {
    "kind": "링크",
    "sig": "5c426f0f85d5c161",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed_at": "2026-10-21"
   },
   "https://exchange.kfb.or.kr/data/foreign_exchange_breach.pdf": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.kcmi.re.kr/kcmifile/webzine_content/weekly_jedo/4840/webzinepdf_4840.PDF": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://www.fsc.go.kr/no010101/81140": {
    "kind": "링크",
    "sig": "9e5b895e0bf552ea",
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed_at": "2026-10-21"
   },
   "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2219265/detailRP": {
    "kind": "링크",
    "sig": "8404b7f84e888eb0",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://sootax.co.kr/4529": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "https://taxtimes.co.kr/mobile/article.html?no=268085": {
    "kind": "링크",
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   }
  },
  "laws": {
@@ -399,54 +397,61 @@
    "id": "288615",
    "effective": "20261002",
    "promulgated": "20260804",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "자본시장과 금융투자업에 관한 법률 시행령": {
    "sig": "20261013|20261013",
    "id": "291081",
    "effective": "20261013",
    "promulgated": "20261013",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "외국환거래법": {
    "sig": "20260102|20251001",
    "id": "276137",
    "effective": "20260102",
    "promulgated": "20251001",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "국제조세조정에 관한 법률": {
    "sig": "20260102|20251223",
    "id": "280389",
    "effective": "20260102",
    "promulgated": "20251223",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "외국환거래규정": {
    "sig": "20260916|20260916",
    "id": "2100000285140",
    "effective": "20260916",
    "promulgated": "20260916",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "금융회사등의 해외진출에 관한 규정": {
    "sig": "20260102|20260102",
    "id": "2100000272480",
    "effective": "20260102",
    "promulgated": "20260102",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   },
   "금융투자업규정": {
    "sig": "20260915|20260909",
    "id": "2100000285020",
    "effective": "20260915",
    "promulgated": "20260909",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "err": "검색 결과 없음"
   }
  },
  "rows": {
   "VN": {
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed": [
     {
      "t": "시행령 155/2020 제175조(최소 정관자본) 원문",
@@ -474,25 +479,25 @@
    ]
   },
   "AE": {
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "US": {
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "JP": {
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "HK": {
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "CN": {
-   "checked": "2026-10-22"
+   "checked": null
   },
   "GB": {
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "IN": {
-   "checked": "2026-10-22",
+   "checked": "2026-10-26",
    "changed": [
     {
      "t": "RBI Scale Based Regulation(NBFC 순자기자금 단계 상향)",
@@ -502,10 +507,10 @@
    ]
   },
   "MN": {
-   "checked": "2026-10-22"
+   "checked": "2026-10-26"
   },
   "BR": {
-   "checked": "2026-10-22"
+   "checked": null
   },
   "TH": {
    "checked": null
@@ -593,9 +598,9 @@
     }
    ],
    "assert": {
-    "ok": true,
-    "via": "국가법령정보센터",
-    "checked": "2026-10-22"
+    "ok": null,
+    "err": "HTTP 404: <!doctype html><html lang=\"ko-KR\" prefix=\"og: https://ogp.me/ns#\"><head><script data-no-optimize=\"1\">var lites",
+    "checked": "2026-10-23"
    }
   },
   "s15": {
