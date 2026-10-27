@@ -170,7 +170,8 @@ function renderPL(D0, ents, reg) {
   Promise.all([basis, ...files.map(([f]) => fetch(f, { method: "HEAD" }).then((r) => r.ok).catch(() => false))]).then(([b, ...ok]) => {
     const shown = files.filter((_, i) => ok[i]);
     const same = b && (b.periods || []).join() === (D0.periods || []).map((p) => p.report.rcept_no).join();
-    const note = same ? `${esc(D0.periods.at(-1).label)} 공시 기준` : `${esc(b?.label || "직전")} 공시 기준 · 새 공시는 다음 자동 갱신 때 반영`;
+    const screen = D0.periods.at(-1).label;
+    const note = same ? `${esc(screen)} 공시 기준` : b?.label ? `${esc(b.label)} 공시 기준 · 화면(${esc(screen)})과 기간이 달라 다음 자동 갱신 때 맞춰집니다` : "공시 기준 · 다음 자동 갱신 때 화면과 맞춰집니다";
     $("#dl").innerHTML = shown.length ? shown.map(([f, l]) => `<a href="${encodeURI(f)}" download>${l}</a>`).join("") + `<span class="sub"> ${note}</span>`
       : `<span class="sub">엑셀·1장 보고서는 다음 자동 갱신 때 만들어집니다.</span>`;
   });
