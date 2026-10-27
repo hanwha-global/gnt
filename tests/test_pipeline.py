@@ -744,15 +744,12 @@ class ForeignNewsTest(unittest.TestCase):
             return json.dumps([[[l + "\n", "a"] for l in lines[:-1]] + [[lines[-1], "b"]]]).encode()
 
         def get(url, params=None, headers=None, retries=3, timeout=30, data=None):
-            if "edge.microsoft.com" in url:                                                 # Microsoft 임시 토큰
-                calls.append(("ms-auth", ""))
-                if not ms["ok"]:
-                    raise RuntimeError("HTTP 403: blocked")
-                return b"tok"
-            if "microsofttranslator" in url:
-                self.assertEqual(headers["Authorization"], "Bearer tok")
-                texts = [d["Text"] for d in json.loads(data)]
+            if "edge.microsoft.com" in url:                                                 # Microsoft(Edge 번역 주소)
+                texts = json.loads(data)
                 calls.append(("ms", "\n".join(texts)))
+                if not ms["ok"]:
+                    raise RuntimeError("HTTP 404: ")
+                self.assertEqual((params["from"], params["to"]), ("id", "ko"))
                 return json.dumps([{"translations": [{"text": f"마이크로 {t[:9]}", "to": "ko"}]} for t in texts]).encode()
             q = params["q"]
             calls.append(("google" if "googleapis" in url else "mm", q))
@@ -782,14 +779,15 @@ class ForeignNewsTest(unittest.TestCase):
         self.assertEqual([x.get("title_ko") for x in items], ["키움증권 수상", "KB증권 베트남 흑자", None, None])
         self.assertNotIn("ko_by", items[3])
         self.assertEqual(calls, [("google", "Kiwoom Securities Raih Penghargaan\nJudul kosong"),  # 같은 말 제목은 묶어 한 번에
-                                 ("ms-auth", ""), ("mm", "Judul kosong")])                    # 못 한 제목만 다음 곳으로
+                                 ("ms", "Judul kosong"), ("mm", "Judul kosong")])             # 못 한 제목만 다음 곳으로
         self.assertEqual(cache["Kiwoom Sekuritas Raih Penghargaan"], ("키움증권 수상", None))
 
         # Google·Microsoft가 막히면 MyMemory로 예비 번역, MyMemory도 한도에 걸리면 멈춘다
         jam = [{"title": "Aplikasi rusak", "lang": "id"}, {"title": "Aplikasi macet", "lang": "id"}, {"title": "Aplikasi baru", "lang": "id"}]
         self.assertEqual(run(jam, {}), 1)
         self.assertEqual([(x.get("title_ko"), x.get("ko_by")) for x in jam], [("'고장' 난 앱", tr.MM), (None, None), (None, None)])
-        self.assertEqual(calls, [("google", "Aplikasi rusak\nAplikasi macet\nAplikasi baru"), ("ms-auth", ""),
+        self.assertEqual(calls, [("google", "Aplikasi rusak\nAplikasi macet\nAplikasi baru"),
+                                 ("ms", "Aplikasi rusak\nAplikasi macet\nAplikasi baru"),
                                  ("mm", "Aplikasi rusak"), ("mm", "Aplikasi macet")])
         # 다음 실행에서 Google이 되면 예비 번역을 Google 번역으로 바꾼다
         later = [{"title": "Aplikasi rusak", "lang": "id"}]
@@ -801,7 +799,7 @@ class ForeignNewsTest(unittest.TestCase):
         both = [{"title": "Aplikasi macet", "lang": "id"}, {"title": "Chứng khoán NH Việt Nam ra mắt", "lang": "vi"}]
         self.assertEqual(run(both, {}), 2)
         self.assertEqual([x["title_ko"] for x in both], ["마이크로 Aplikasi", "번역 NH Securi"])
-        self.assertEqual([c[0] for c in calls], ["google", "google", "ms-auth", "ms"])
+        self.assertEqual([c[0] for c in calls], ["google", "google", "ms"])
 
         # 줄 수가 안 맞으면 한 건씩, 한 번에 새로 번역하는 수 상한
         more = [{"title": f"Judul {i}", "lang": "id"} for i in range(5)]

@@ -1,7 +1,7 @@
 """해외 매체 기사 중 베트남어·인도네시아어 제목을 한국어로 기계 번역한다(LLM 없음, API 키 없음, 무료).
 
-- 무료 번역 주소를 차례로 쓴다: Google 번역(translate.googleapis.com, client=gtx) → Microsoft 번역(Edge 브라우저 번역 주소)
-  → MyMemory. 앞의 두 곳은 같은 말 제목을 묶어 보내 실행마다 몇 번만 부른다
+- 무료 번역 주소를 차례로 쓴다: Google 번역(translate.googleapis.com, client=gtx) → Microsoft 번역(Edge 브라우저 번역 주소,
+  edge.microsoft.com/translate/translatetext) → MyMemory. 앞의 두 곳은 같은 말 제목을 묶어 보내 실행마다 몇 번만 부른다
 - GitHub Actions 서버에서는 Google이 자주 막힌다(HTTP 429). 어느 곳이든 한 번 막히면 그 실행 동안은 다시 부르지 않는다
 - MyMemory 번역은 숫자 단위(tỷ = 10억 등)를 자주 틀려 예비로만 쓴다(ko_by). 다음 실행에서 Google·Microsoft로 다시 번역해 바꾼다
 - 이미 번역한 제목은 이전 파일에서 가져와 다시 부르지 않는다(실행마다 새 제목만 번역)
@@ -19,8 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import net  # noqa: E402
 
 GOOGLE = "https://translate.googleapis.com/translate_a/single"
-EDGE_AUTH = "https://edge.microsoft.com/translate/auth"       # 키 없는 임시 토큰(Edge 브라우저 번역 기능이 쓰는 주소)
-EDGE = "https://api-edge.cognitive.microsofttranslator.com/translate"
+EDGE = "https://edge.microsoft.com/translate/translatetext"  # Edge 브라우저 번역 기능이 쓰는 주소(키·토큰 없음)
 MYMEMORY = "https://api.mymemory.translated.net/get"
 LANGS = ("vi", "id")
 MAX_NEW = 150     # 한 번 실행에 새로 번역하는 제목 수 상한(첫 실행·밀린 날도 몇 분 안에 끝나게)
@@ -60,12 +59,9 @@ def _google(texts, sl, st):
 
 
 def _microsoft(texts, sl, st):
-    """Microsoft 번역(Edge 번역 주소): 제목 목록을 한 번에 보낸다. 토큰은 실행마다 한 번 받는다."""
-    if not st.get("edge_token"):
-        st["edge_token"] = net.get(EDGE_AUTH, retries=1, timeout=10).decode().strip()
-    body = json.dumps([{"Text": t} for t in texts]).encode()
-    data = json.loads(net.get(EDGE, {"from": sl, "to": "ko", "api-version": "3.0"}, data=body, retries=1, timeout=15,
-                              headers={"Authorization": f"Bearer {st['edge_token']}", "Content-Type": "application/json"}))
+    """Microsoft 번역(Edge 번역 주소): 제목 목록을 한 번에 보낸다."""
+    data = json.loads(net.get(EDGE, {"from": sl, "to": "ko", "isEnterpriseClient": "false"}, data=json.dumps(texts).encode(),
+                              retries=1, timeout=15, headers={"Content-Type": "application/json"}))
     if not isinstance(data, list) or len(data) != len(texts):
         return None
     return [_hangul(((d.get("translations") or [{}])[0]).get("text")) for d in data]
