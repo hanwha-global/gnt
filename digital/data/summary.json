@@ -1,15 +1,7 @@
 {
- "updated": "2026-10-26",
+ "updated": "2026-10-27",
  "headline": "한국: 원화 스테이블코인은 은행 51% 컨소시엄으로 가닥, 법안은 11월 소위로",
  "items": [
-  {
-   "jurisdiction": "한국",
-   "flag": "🇰🇷",
-   "title": "외국환거래법 시행령(가상자산이전업 보고) 입법예고 의견 마감",
-   "status": "예정",
-   "date": "2026-10-26",
-   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148877637"
-  },
   {
    "jurisdiction": "미국",
    "flag": "🇺🇸",
@@ -65,6 +57,14 @@
    "status": "예정",
    "date": "2027-01-01",
    "url": "https://www.bloter.net/news/articleView.html?idxno=669414"
+  },
+  {
+   "jurisdiction": "미국",
+   "flag": "🇺🇸",
+   "title": "GENIUS Act 시행(늦어도)",
+   "status": "예정",
+   "date": "2027-01-18",
+   "url": "https://home.treasury.gov/news/press-releases/sb0605"
   }
  ]
 }
