@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T17:08+09:00",
+ "updated_at": "2026-10-27T17:21+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -52,10 +52,10 @@
     },
     {
      "date": "2026-10-27",
-     "time": "11:28",
-     "title": "Indian shares muted as oil stays near 6-month high, Fed rate decision in focus",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcms4SkRwSDBJVER3QkV1VmoyX1pvTUlrcjRpSk4xSmNLNFZYNjh3Vi1LMGNfUnZPYnVscDdQZl9Xa0d4SHhKM1lDLXItNWh0aWMxNThJeVpMOEsxWXYwNUVXSWMtVWZRZjRRQlFUYk9tRUZxRUR1MWo0QUdPVE9TdzFnWDk0Qzd3NDZfYml4cGdSenVORGpfUTB6RTMyRV9BRmowWERaeWdsSFVLUU0zdFl3?oc=5",
+     "time": "12:45",
+     "title": "US bond market sell-off pressure to return, says Neeraj Seth of 3R Investment Management",
+     "src": "CNBC TV18",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdWhoaFZVdXpQMlNkcWIxUi1PbEVmRG5Bc3FRUjYzTnJOeVhkMko3dE5EZ0xLeG8yQ3phemtJVkpJaXowY01PUWxXaXNLLVZ2aHZoS00tU1RjdUVQTVFWSjRKaVo4LW9JUDlqMnBoSTdGbjRNMDRHaV91RzAxMkdVY0RLYWZYMFAteG5tVzZFT29uVGxaS2E3WlpRNzcyeHBXR3ZoVlpHTzgwc0xpWnhZNdIBtgFBVV95cUxOemRLX3k3clFuYU5hZS13ZFdDVHFkTUVnaEZVbWd2bDhIaXNselo2akt6Y1VjMVZHLWRldjJiSVBVNzBuZ1B4VHFPcFNjbUZseEY1S09UdjdBdDhGVUdFbTE0Z19lN3Z6QTRTM3hTa2QtU0VWTlR1S0JUdnRPSnUxSFRxWGlMdlNFT3dZWFNqaHFURGl2YndnR0tIeG5YRWppcW5UMUpjUDVLV2Y4OF9DZG9YT2ZPUQ?oc=5",
      "priority": false
     }
    ]
@@ -123,6 +123,14 @@
    "items": [
     {
      "date": "2026-10-27",
+     "time": "17:13",
+     "title": "Global Market: JGB yields climb as investors await BOJ, Fed policy decisions",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQMkViMUdOVlptY3ZQb3E4VlBQRDlvRVJ5bFV1dVF2VUJWWktWblktME84WmhBU1paS3dxRnExemxuLUNMRlkyVS14UDQ1ZTRmbDdoSVZlVW9Pc3o1LURUbUZQeTlYQ3JrV3pWZnJRZjdZc0JVb0JDeHE0RUpqMUJBWFB3d1VHZmk5cHh6Z0ZYaEllTld1Z0V3d241akpKenVDNUhWak1jYlk2aFBIaDBSZzBRRWNGbjJndXhYbkhILXF2MEw3X21QZTFZWUs0amUzYi1DZFlkOWtYZzFkaEZOdHI4WnVJV1BMdjZr0gHrAUFVX3lxTFAyRWIxR05WWm1jdlBvcThWUFBEOW9FUnlsVXV1UXZVQlZaS1ZuWS0wTzhaaEFTWlpLd3FGcTF6bG4tQ0xGWTJVLXhQNDVlNGZsN2hJVmVVb09zejUtRFRtRlB5OVhDcmtXelZmclFmN1lzQlVvQkN4cTRFSmoxQkFYUHd3VUdmaTlweHpnRlhoSWVOV3VnRXd3bjVqSkp6dUM1SFZqTWNiWTZoUEhoMFJnMFFFY0ZuMmd1eFhuSEgtcXYwTDdfbVBlMVlZSzRqZTNiLUNkWWQ5a1hnMWRoRk50cjhadUlXUEx2Nms?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-27",
      "time": "16:25",
      "title": "Japan’s trend inflation index hits 3-year high, cements case for BOJ rate hike",
      "src": "The Business Times",
@@ -136,20 +144,20 @@
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeENqdi0taGxhOTNQTjZMMm1zOGl6YXd3QnJEUjYzVF9aRlVPcC13bWFHUUwyVGh6MVJ6dzd4WTZJMGRhZDEzZlVuSERta3l1dUkzR1RhY0ZFTU8wSUhkaEQ2Q1ZlMTRZOU8yOHFxV1pFdmpCYzQ2R2ljMlFhd3BTelR2dHY5c2F4ZTF2RDh2RXZha0xRdkJ3R0NuZXh3cmhBUThvLUxnSXd1ZEZxQUlFQTV3eHhFZ2RYbktSUmZn?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-10-27",
-     "time": "11:50",
-     "title": "Ex-BOJ chief Kuroda backs more rate hikes, his former deputy urges caution",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORGd3OVRlcl82RE5aMnZNb3FSZzVVZUxxN1oxVmFIOFJZZGdJb0toUDBmWXJEbGZuWWtJOFF6X3hJeFRQT0k2VlFnTk5kWFpod0kwRS1VMjRpb21qYlV1NzZTd2padUZzWVlJal9xb01kRnRNLVYwWGo1aUhRYThpYV9hclNDUWo1VElHNGotWTk2a3VGdER5b0p4d0N6RkVtVGRfUXF0MzU4YndydEkxLXZfZnlLNVJwODM2ZWEwVE5ic2dk?oc=5",
-     "priority": false
     }
    ]
   },
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-10-27",
+     "time": "15:24",
+     "title": "Global Market: China, Hong Kong stocks slip as technology shares extend losses",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNR2lnaXdYZkRZdHFOQTdEX3dQU2FZMUFBV1p4SHA4aGtuc1U1NnR4UGVjenVmVWpNSWt5NGxsS3JKX1l0WlJqdGZRMFE0ZHIya2xCRkl2TmtHVW5QQkg5VG5xT19ybjlqNXh0Z2dLM3VnNWJFWG1jOUN0b09xQjFBLVJ0eFJ2RFRBNHdrazRvcUdoVkVYeEhFYW1JZUI3cWVOTUNkeFktemx2eUtZZms2M0tJc09GYkVBcjB2TTB2dC04QU0xcVpGdnZQLUlQWTlMcUhON0tSOHdraTJSQ0M4akJmbkp2WEVm0gHuAUFVX3lxTE83aVotSy1YYTZGSjIyb3FsblRLTWhEV214aDdTQXNDUmZBTG43ODdjUUpxTlVJczdQVnFCbFVldXFaV1M1SnZ3X1BLSzIyVHB3eUtCYTF5WU9mRUVFTDN6OS1Ick1rS0hneHBFY0VIZUZacktEZTZYSlFzeWpkd0JRVlVEdndqVFo2RjJpOTlTbWFmVXNXeER0ZU1PSGtpcm92QnBPeWpZYnAweEFrLU00Z1JIY012WVJzaUJURnZjZF8tNjhwdVRBc1dHZ2N5UFZrQktUckNXZEhFRHppLVJLamlWZHFoR201cU1rTUE?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-10-27",
      "time": "15:00",
@@ -164,14 +172,6 @@
      "title": "COMMENTARY: Why China’s stimulus keeps missing the mark",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOazJDSjk5eWVKMWY5eFVycmx2U3ZWUDRxRUhuVDVaNUlkcGNQN18tREhKOU1DWDE2d3puS0kwZHBGRU40NGk5YVZTZFBqVER2R2NhdEtYOGZNY19xVE02QVk1bXYtUDVWOWNmTVFzTG0yZmcxZVQyXzJNTndaOU1rTDc4NkllWmlkMldBUEdLNjJBTVN1T3RSVXJjSkE5RVlaUGlxSldVWWl3OWVYZkJvVV82MHY4bTJSZHZjWk8yQXFJeEdDam1n?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-25",
-     "time": "10:41",
-     "title": "China’s US$3.5 trillion stock rout deepens as profits sink, major stimulus stays elusive",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcmZLN0JtOXFkZVphX1I1cVItLUJreExqSTZHaE9vUVlYTFFlYVBKUnZjRktDVHhVZzU2dlUyRW51ck51Q2x5bXNIdlc4OXhNMnhJSElwZlVFaVB1VWtLSnhiWjE2VkR1VmVUbWxPTzYwNkJ4Yk9Ha01hZ3JpZ3BlV0JEaUZTOUJ3MTJEMzBEQzFLcW1ZWUM5eHVoTXk1ejI1TFktejBCVVMzNVM1YWZWSGhJT0RKYS1LNE4zSzRicUlmVjNRZmxOdFJXM1JJY2dDTmc?oc=5",
      "priority": false
     }
    ]

@@ -48,6 +48,12 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           SUBFIN_DEBUG: ${{ inputs.subfin_debug }}
         run: python scripts/fetch_sub_fin.py
+      - name: 국내 증권사 재무 기간별 이력 (DART 주요계정, 기간 선택용, 받은 기간은 다시 안 받음)
+        if: ${{ !inputs.quick }}
+        continue-on-error: true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python scripts/fetch_fin_hist.py
       - name: 해외법인 5개년 손익 추이 (사업·반기보고서 원문, 새 보고서만 받음)
         if: ${{ !inputs.quick }}
         continue-on-error: true
