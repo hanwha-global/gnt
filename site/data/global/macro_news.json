@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T17:50+09:00",
+ "updated_at": "2026-10-27T17:54+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -18,7 +18,7 @@
      "time": "11:12",
      "title": "코스피, 4%대 급등세 지속…외국인·기관 쌍끌이 순매수",
      "src": "연합뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmMndqYm91UWo2dms1ZUhpRWFsVFJKYzFrMjE0SGRPNGltcGVEcUM1Ri1UZGd2bkdRZ0FzSFZjSHBxTGgzQ2ZiUmZ6RUZDRmpPckpDdElZb0lPOGfSAWBBVV95cUxQTm9mNm5lNllRREo3d2cxS0hCRzVPZkhBTzJUUk9Za1RFeUNHY1NDTUM4ME9nd29fYWhVcXhaNFpGT2FQek1RMUowQ09EV1lFallKTHNyWGYySXI3YkVCNkw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOb2Y2bmU2WVFESjd3ZzFLSEJHNU9mSEFPMlRST1lrVEV5Q0djU0NNQzgwT2d3b19haFVxeFo0WkZPYVB6TVExSjBDT0RXWUVqWUpMc3JYZjJJcjdiRUI2TNIBYEFVX3lxTFBOb2Y2bmU2WVFESjd3ZzFLSEJHNU9mSEFPMlRST1lrVEV5Q0djU0NNQzgwT2d3b19haFVxeFo0WkZPYVB6TVExSjBDT0RXWUVqWUpMc3JYZjJJcjdiRUI2TA?oc=5",
      "priority": false
     },
     {
@@ -66,6 +66,14 @@
     {
      "date": "2026-10-27",
      "time": "16:57",
+     "title": "Indonesia Bond Yield Hits Four-Year High as MSCI Risk, Oil Weigh",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVo5OTQ4TUlrNnNheWQybnE2UkZ6ZHZtcEpYUDgzVTN0ZlBJSVFUbjliMUVfNi1OWlBRbE9aYnczeW11RzFIaHJIUFJZUHE1WlNIUnBiaTlGdGFjdmdTazRBS2tUdXNJcXVDcTEyUzQ5ajZZVHlBOTN5MVB1U281OUI3UzVweThKY24ycFozbmphY3RPNkoxMG80Qk5WQnhBQ2p2b1QxcG0yTjFzWGc?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-10-27",
+     "time": "16:57",
      "title": "IDR/USD: Indonesia 10-Year Yield at Four-Year High on MSCI Risk, Oil",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVo5OTQ4TUlrNnNheWQybnE2UkZ6ZHZtcEpYUDgzVTN0ZlBJSVFUbjliMUVfNi1OWlBRbE9aYnczeW11RzFIaHJIUFJZUHE1WlNIUnBiaTlGdGFjdmdTazRBS2tUdXNJcXVDcTEyUzQ5ajZZVHlBOTN5MVB1U281OUI3UzVweThKY24ycFozbmphY3RPNkoxMG80Qk5WQnhBQ2p2b1QxcG0yTjFzWGc?oc=5",
@@ -77,14 +85,6 @@
      "title": "Indonesia-Singapore spats escalate over haze, MSCI",
      "src": "Nikkei Asia",
      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSUFzcGFja3pSV21yVzVzendBanZtWnZ0a281WkZOUjdRcFBzMEtkU2Zpd3BHYzdpWFJDR1pEczY4OTF3VTNHOUI3anFIYmRXVHM0dzRRZWlmemk3bFBkUF9NMXJrYW1NaHFZbnNvNWJPelozdFYwVVd1QmJaVnhBZGhKR3owQTNibnh6QXBKcFZYcUlNUFZnMzN5N1B3Vk5TVlRTNERJd1pCZw?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-27",
-     "time": "12:15",
-     "title": "MSCI Fallout Widens With Indonesian Corporate Bond Sale Shelved",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWlpXZ3lST1B0QWxyN05pSFdrZW82MlR4endfdzkyNzFzSEZpM1pNYjg5UFV0anhGWmhxNWRnWHROVGFBRjZiYmpFWm40eU9VUEV1QnpsVFlsSFlPTk5YX0ZVTzVjVzJsZkE1UFJFOXB5Q3NEMEFOYk9KRklzTjBRNURsck1kTm5DT1hnUFpjRXN6c0tQdWRnMHpmWDYxbU93Y3RLY0ZlRi1Kd3labHFqVnVneHpyeDJZVlQ5MFlkT0w?oc=5",
      "priority": true
     }
    ]
@@ -139,10 +139,10 @@
     },
     {
      "date": "2026-10-27",
-     "time": "15:17",
-     "title": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC survey",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeENqdi0taGxhOTNQTjZMMm1zOGl6YXd3QnJEUjYzVF9aRlVPcC13bWFHUUwyVGh6MVJ6dzd4WTZJMGRhZDEzZlVuSERta3l1dUkzR1RhY0ZFTU8wSUhkaEQ2Q1ZlMTRZOU8yOHFxV1pFdmpCYzQ2R2ljMlFhd3BTelR2dHY5c2F4ZTF2RDh2RXZha0xRdkJ3R0NuZXh3cmhBUThvLUxnSXd1ZEZxQUlFQTV3eHhFZ2RYbktSUmZn?oc=5",
+     "time": "16:07",
+     "title": "Japans Nikkei rises as Anthropic IPO filing lifts AI-related shares",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdTQ0c0FnUnA2bXUybTRLVWl5cjlhVGY3TU9YSlltVGJTanAxWFl2VmNIdUllYVUzMkIwU01BYXVLelZmcDBJNFRoT1hwMXFBZ0FTbUtCMXZ6QzZzYUl6cVlvcHdOeFJIYlZpbGNBRUpoMVY3OVpzWTg0V3pVS0VNek1hNXptY09Wei0yQWp0Q203OFNaV3BHZEs3cFEyMzdsdTFsdDA3Si1jbWg5d2ZRc2VWOXFoUnZuYzZn0gHAAUFVX3lxTE9RcDA2M1EwR1QtSHhNcUpmYTlMZ0lIN1Zvc2tnOWRzalR0djZtX1EzeXdjVVpsUUJpNU94OGpidzVBMkhmX1V3SWd2TjN5R1REV0NYN2hVOGVKSGNtSUNTdjg1Nlh0djd2aTJKYl9oVTVxNWNzY09YNTF3aURveWtQQWtUYU4zZktlVHd0ejNwX3NyWFRMQ2VVaUVpSnA4WUdaRGNLeUtEZGpwSWlmTjVrc2Y3QTF1c1VCVk5WRXAzOA?oc=5",
      "priority": false
     }
    ]

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T17:48+09:00",
+ "updated_at": "2026-10-27T17:52+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,10 +8,10 @@
   "KB증권|베트남": [
    {
     "date": "2026-10-23",
-    "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
-    "src": "VnExpress",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
-    "site": "vnexpress.net",
+    "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
+    "src": "Báo Tuổi Trẻ",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
+    "site": "tuoitre.vn",
     "foreign": true,
     "lang": "vi"
    },
@@ -94,11 +94,19 @@
   ],
   "NH투자증권|영국": [
    {
+    "date": "2023-09-17",
+    "title": "이용성 NH證 런던법인장 \"농협그룹 유럽 전초기지 되겠다\"",
+    "src": "뉴스1",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE04dXd1UGhoa1NSTkNmczZSYnZtcVNQaEZlUi1hVm5jT2tzMC1WNGtGNVBFUWNDWVlfaGFJR0Q0WEdHNDVVc3NvVlUwOG51R251R194T0dYSXhVTllhZzI0?oc=5",
+    "site": "www.news1.kr",
+    "old": true
+   },
+   {
     "date": "2022-04-27",
-    "title": "NH Investment & Securities launches London corporation",
-    "src": "The Korea Herald",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TOGttY0tURjNMMEtqNVA4YmFDcFRyQVNKYm1wZlE4YVdpVWpTMjZoOS1qelJnVmFicGtxc0pOWG4zb1ZwOFZzcm03RngwQ1prcEZQdm9R?oc=5",
-    "site": "www.koreaherald.com",
+    "title": "NH투자증권, 런던 현지법인 'NHIS Europe' 출범",
+    "src": "대한경제",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4a0VOc296SFdXTnpMZ0NmMjRUWTRfQzFiYU5KRTZFaUdYMWI3TWtRUllJakFsQVlrcDUyTnhhMW5vTl9tanVrZDRjVVdYcDF3NktEa2pOajdWR05rOEp2bE1LY3JnN3FESzVLNW1BVTA2U1Nr?oc=5",
+    "site": "www.dnews.co.kr",
     "old": true
    }
   ],
@@ -114,10 +122,10 @@
    },
    {
     "date": "2026-03-14",
-    "title": "OJK Jatuhkan Sanksi SBAT dan IPO POSA, Denda dan Bekukan Izin Emisi NH Korindo",
-    "src": "Katadata.co.id",
-    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeGFacTBDbWJhN1UzQ1JQX1NmblpjQnA2Q2t4cFJTX2VQV1ZKeEZHSm02VVBuVEdQM0VtNjhaVVY5MlVuWnNiT2NOVHFQb19URWlCRWEySERWbXU3eWpvSjVIaTV4Rnd4NzBtZjRrQVN1al9yalNRQVhQRmJBMjEyWFVUY2liRUExUEtOZU5UZTgwRXh0RE9PVm0zb1lKTWdFeExaTk5PemlrRkgwRktmY01Vd3JQS1ZOdEZnUTRac1p4SEpHbDF1XzFR0gHPAUFVX3lxTE93aHUyZ0FyZlhkQ1RRcHE0aUdCOXo5WkdtZXRMV0dqcWdLVkQ1ZHQ3S0djdmpjcEFwYWFQNms2WUN3cE5SWGdMalFuSkI5eVFoaDhkN1Rjbkh6cjlmNURUNUtYZU9HTTJfMWpKRUJrMlNGbUpTNlFuUkNGc0NkWEJGdFU4Q3B5LURHbk9yMnluelFkRHg3T0U2d29sdUd6YVVoLThFTTBZUlExS2pyenpxZ2RaSDNEZ2RGODdxV2JYMU5pVEJrc1ZUMEdTRDF0QQ?oc=5",
-    "site": "katadata.co.id",
+    "title": "OJK Denda Emiten Benny Tjokro Rp 2,7 M, Bekukan Izin NH Korindo Sekuritas!",
+    "src": "detikFinance",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVENSU3hBQk0ya1BmbkdhekJWRDBJcDRVd1RMcnBQanA3WXp3WVF5ZWNpQ1d2TFJSVFRIMFhVcEJLeVg5RnFJdzBFR01nSk5ScW9JMU9jOGJSU0hmQ0hkLWl0N2NpdG5EVTZsM2x5YWk5VHVuSFVwWEZEeTdoX1EtaG94MVRESHo5SUM0ZVM1aTVPRXE5dDR0WmZFRS1CMzlyd3VWTHFvVlY0dXRZZmIzXzhRS3gtWEg3RUYzaW1FUnhNd9IBxwFBVV95cUxPV092eFEyX01LUXdmNTJVN0ZyZE9zeDNJZEpBZklrclB6X3gxUG1kOFk2M2JLaHAxTHRLZ1JHSHdBTk5FMy0tTUpuNmVxTTdFVDYxOTR4MmZFWXhLRnNSa2dtTHF0Ym90MEZoNl8zMFdYM0Y0MVR4UGFPU1lHQjVKY05RdlhYRGtaaDVfNE8wS2JWRlpORU5STEtUR2Q1RzdRanNYVjZsX3FqTmlfSElMS0dmdXcyVmNDYTJTWlJ2dU51eVVKY2t3?oc=5",
+    "site": "finance.detik.com",
     "foreign": true,
     "lang": "id"
    }
@@ -388,6 +396,15 @@
     "site": "investasi.kontan.co.id",
     "foreign": true,
     "lang": "id"
+   },
+   {
+    "date": "2026-08-11",
+    "title": "Investor Ritel Kuasai 51,1% Transaksi Saham, Kiwoom Sekuritas Fokus ke Nasabah Aktif",
+    "src": "kontan.co.id",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
+    "site": "keuangan.kontan.co.id",
+    "foreign": true,
+    "lang": "id"
    }
   ],
   "토스증권|미국": [
@@ -490,6 +507,15 @@
   ],
   "한국투자증권|베트남": [
    {
+    "date": "2026-02-05",
+    "title": "KIS Việt Nam triển khai “Vòng quay Chứng sỹ” mùa 5",
+    "src": "VnEconomy",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5fdkdTUEFWMDY0SGNXd1JLS1VUOE9TVlpVaHJ6a1Ewdl9BNXhCREJJaVVsMWNXcVRMSUY0R1kyS2czckZwYk5PdnlwTjh4Q2ZhbzBNLUwyZ0RzWVFrSVJET1UwU2dXdDhKbWRmTjZYaE1za0N0X0twTDlaN1Qxdw?oc=5",
+    "site": "vneconomy.vn",
+    "foreign": true,
+    "lang": "vi"
+   },
+   {
     "date": "2025-12-26",
     "title": "KIS Việt Nam muốn mở rộng thị phần sau 15 năm hoạt động",
     "src": "VnExpress",
@@ -522,7 +548,8 @@
     "date": "2026-02-13",
     "title": "한투증권 인니법인, 동남아 매체 선정 '최우수 로컬통화 채권상'",
     "src": "연합뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0WVl5OV9JYVBWTkRjdFdZSkVkT05tSEJEcU40d3lRNWp2Zk1aS2lxU3JwRVZtU05SWXIwN0xjWWdLYURZY2QxWFZzYkUyYlNKQWl5ZGhwd1l5YVHSAWBBVV95cUxPWEt1b3hWeFFkWkNpOTRlLUxOOUNMUFVLZ01GeHR1c01HRnlXMDB5cUtpak5ZOWJfS3VBS2pBdDNCaF8xaUdjd3k4RkE3SXFTampjdnh4Q1hzaEZtQ0hrV1I?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0WVl5OV9JYVBWTkRjdFdZSkVkT05tSEJEcU40d3lRNWp2Zk1aS2lxU3JwRVZtU05SWXIwN0xjWWdLYURZY2QxWFZzYkUyYlNKQWl5ZGhwd1l5YVHSAWBBVV95cUxPWEt1b3hWeFFkWkNpOTRlLUxOOUNMUFVLZ01GeHR1c01HRnlXMDB5cUtpak5ZOWJfS3VBS2pBdDNCaF8xaUdjd3k4RkE3SXFTampjdnh4Q1hzaEZtQ0hrV1I?oc=5",
+    "site": "www.yna.co.kr"
    },
    {
     "date": "2026-01-19",
@@ -595,11 +622,13 @@
     "old": true
    },
    {
-    "date": "2024-10-17",
-    "title": "한화투자증권, 인니 칩타다나증권 인수 완료…동남아 3번째 진출",
-    "src": "매일경제 마켓",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01WFdJWmMxbzk0czVYclpRdy03dTRZX1pOZkpaQVE5RDNyS09veUNndGZPZThNUk1ZZnVHdld2YXdGaG9qeDMzdm4ydnUza1hW?oc=5",
-    "site": "stock.mk.co.kr",
+    "date": "2025-05-08",
+    "title": "Ciptadana Luncurkan PinePick, Platform Trading Saham dengan Fitur Ramah Pengguna",
+    "src": "Kompas.com",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNc2NqSjc4bGdoT244cDd1TXdWTEhhNklldkgtenBrQ1BUQVJ4bFhMZ2NyYy1sX0phLUtDWUNvUWdib3NuMFVJWEtSMnFMS3h2djFsVlRhd3V0Q0ZaM1ZfYUZVajVleHYtTHNXSGU4UXFMZl9jOTZFbnNYNnpDQ2hZRkgxcU9VNU5Cb1N0SXdDeFhldkQ4dVBoYWk4VnUtNDJVX1hPSlpnaGFuRHI4d09KSWRWZTExNFU1WDdOX3VB?oc=5",
+    "site": "money.kompas.com",
+    "foreign": true,
+    "lang": "id",
     "old": true
    }
   ]
