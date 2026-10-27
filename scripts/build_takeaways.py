@@ -1,6 +1,6 @@
 """진출국 전략 Takeaways: 당사 현지법인이 있는 나라마다 실행 방향 3~4줄을 규칙으로 만든다(LLM 미사용).
 
-한눈에 보기 맨 위 박스가 읽는다. 사이트가 이미 매일·매주 모으는 공개 자료만 쓴다.
+전략 인사이트 탭(insight/) 맨 위 박스가 읽는다. 사이트가 이미 매일·매주 모으는 공개 자료만 쓴다.
 - 당사 해외자회사 손익·출자: hanwha/data/dart_subs.json (DART)
 - 지수·환율·정책금리·결정 일정: hanwha/data/markets.json, macro.json, rate_calendar.json
 - 나라별 구조 뉴스(MSCI·FTSE 등): site/data/global/macro_news.json
