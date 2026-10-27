@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T08:00+09:00",
+ "updated_at": "2026-10-28T08:32+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -218,6 +218,7 @@
    "src": "VnExpress",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
    "site": "vnexpress.net",
+   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -243,6 +244,7 @@
    "src": "Thời báo Tài chính Việt Nam",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR29vMHZvUlNBR2RhTzJHaDJVbGt5anFVdnlNcTZOd2hpdEJBVWZGcnR2dHFiMjRYOTN4N3AyQ201MEJoMXc2UmhLcGxBR2RKZGQtM0JaNFZacVdBV3RFVVZ2Nkd0RzRnM3hISzBGQ18xX0tCazNYRG1rOXo3aGxtcTRSc19mR3J4ckNUMkd2dDltVGs3MnBPMUFfSTBMN1ZrOWxtQkZGZXluelZOOENwMlBwUQ?oc=5",
    "site": "thoibaotaichinhvietnam.vn",
+   "title_ko": "BIDV 증권 (BSC): 3분기 매출은 19% 증가했고, IB 부문은 큰 기여를 했습니다.",
    "hub": "하나증권|베트남",
    "time": "",
    "firms": [
@@ -257,6 +259,7 @@
    "src": "Báo VietNamNet",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTldja0JLeXoyNTdTWEtKQk02RU1pOG5jMWd0bTZwOHN1ak95eG1FRHdrLWh4TTI2N09nX0ZVLXk1ODBWVkZLYjIyVDV4YWhpcFB4MDFzc3RsSmJraFpBTldWNlpFTUt4all0LVVucUJSTnJ3dmtKTWtNdm02U1RoNVEwM29SOUpNSDU0MTJUUHZya3dWdU9TZXQxWWJTVS0xQTJ5ckJPN0FfTXp6?oc=5",
    "site": "vietnamnet.vn",
+   "title_ko": "KBSV와 APEA에서 5년간 수상의 영예를 안은 '베트남 진출' 의 여정",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -393,6 +396,7 @@
    "src": "CNBC Indonesia",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3fSAcsBQVVfeXFMTm9wUS01MEFVX1VUY2FKZm5oT3hFWXA2b1ZtRTZIejFNQVJXRURLbGIxZGFqUlJxOGRveGpQYTBoYVpmZGJDc3NUWGV6dXpvaElrNkFIUHJCRTZSVlVWOWRVMDJJaXhuTmgyamFUVEtTanNCXzJJUFNIWmdpRDFFVF9mYnBWRktjUnY2U2JfZGItVGdzWHNRT1RlT19oWTQ0TmlGQTNsUFFUT1A5VEp5NTBKT3JhRXg5TzJ0ZnhqbGNjXy14LUlOc1dvajQ?oc=5",
    "site": "www.cnbcindonesia.com",
+   "title_ko": "혁신을 강화하는 미래에셋세쿠리타스인도네시아가 이 상을 받습니다!",
    "hub": "미래에셋증권|인도네시아",
    "time": "",
    "firms": [
@@ -621,6 +625,7 @@
    "src": "Vietstock",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLUFBRW5vcEhSQ0lxb0lZb21OVGZqZUhhc09ha1h3SjBTdTJDSDR4cm1XUW85MTVKSHRhdmxYR19fUTlJYzZpbjBnSXhYVjFZYm96ZUJWNk1UaVFRcERqV0h1dFRiT1MyeGhFYlhYTGo3U2p3NERjZElIZWhjazZxRFpKeDAyc2h4Uld5d0Ryc0ptSjRUdWduWUdWcDl6ejMwNHJLV0NkckFqX29fb3pPbWUyalVPczN5bnUtZGQ2LW1vdUU?oc=5",
    "site": "vietstock.vn",
+   "title_ko": "미래에셋증권 (베트남) 이 1억 1,350만 우대주식을 보통주로 전환하려고 합니다.",
    "hub": "미래에셋증권|베트남",
    "time": "",
    "firms": [
@@ -646,6 +651,7 @@
    "src": "Vietstock",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSlNNcXNCOVZ5cWVMTjkyZTlNZHNWR0ZLcC1iYkJITW1qTFFSUVFQdm9CUVdMUkFJdlhzMnZoQWNLbHN6UFVYRGlLa2hUay04M0NxZDdNQVY2cWNBb1RTUFBBRDlhVjg5cGJ5TkxFTTVwRWtHZEc3Z1JfNWV6OWVBWUlrR0tDQkpHdTFVN2dkMnU0VUJQVFNtZnBpOENlcEZFbzlvU2hZMVgtLXh5V2VtYmdSRVpoc3VYdExMVzNoc3Fob3NaSlFGVm1EVHNlZw?oc=5",
    "site": "vietstock.vn",
+   "title_ko": "신한증권, VINASTALK 출시 - 올인원 증권 투자 및 정보 플랫폼",
    "hub": "신한투자증권|베트남",
    "time": "",
    "firms": [
@@ -660,6 +666,7 @@
    "src": "kontan.co.id",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNLXJmbXFCSFJLcG9lMHZtalQ3a1RXNUZLRnNqRmZEdlhua1R5MXFhSHRaalN4VVRJTmZvZlp2TnRZRmZsSkY4b21QemxfN0lIa05hVnN6WHVyMVJiTXpjeWgyVTlMS0ZvX1VGczd2WUNKcXhEWURhSVYzYmppTFQ0LURqUXlaRm5KYkZsMHZQdWpBX19yOF82dUx2QjlSRnNN0gGYAUFVX3lxTE5IRVpQS3pQbWpEMjhFOFJRMW5QS0hadFpjU0VieEJ3OHltZVZjZ0N1V0RfR29zWm1YM3hjd21lb1ZiZ0lWZHB3UnlDMElNd2ZSZkRWbjFrT0hYUDdjRjN0TWxkZTZScjFBQVl4TGJKT1hfSGtJdGV2a0JtRDdZRUtSaURhQk9sVlNqNjF6ZGlyX1FEMkJfQloz?oc=5",
    "site": "investasi.kontan.co.id",
+   "title_ko": "부진한 IPO, 증권 키움, 채권 및 자문 사업에 의존",
    "hub": "키움증권|인도네시아",
    "time": "",
    "firms": [
@@ -763,6 +770,7 @@
    "src": "CafeF",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMUNlVGpDd0doNFlYa1lkV0RnSERIME93WVhZb05tTDdoeVdLWVNaQXdTVFNXZ0otajZRNW5FTXZ4YnU0WGJMWkh5VzlTUzVqek1fNGh5Z1pfS2cxTmFOOUdIZ0o4TjNwM3JMa05jalkwVDBkUkFQM3BCMmRud0wtUkZ5bUsxUkFNcmpqX0tzaGZMbEl6WFN2OFhHRS1JeUJhME1ZaQ?oc=5",
    "site": "cafef.vn",
+   "title_ko": "베트남 은행 증권, 파생 증권 거래 개시",
    "hub": "NH투자증권|베트남",
    "time": "",
    "firms": [
@@ -770,6 +778,21 @@
    ],
    "foreign": true,
    "lang": "vi"
+  },
+  {
+   "date": "2026-08-18",
+   "title": "Pasar Makin Selektif, Mirae Asset Sekuritas Genjot Layanan Wealth Management",
+   "src": "kontan.co.id",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
+   "site": "investasi.kontan.co.id",
+   "title_ko": "선택성이 높은 시장일수록 미래에셋증권은 자산관리 서비스를 증가시켰습니다.",
+   "hub": "미래에셋증권|인도네시아",
+   "time": "",
+   "firms": [
+    "미래에셋증권"
+   ],
+   "foreign": true,
+   "lang": "id"
   }
  ],
  "errors": []
