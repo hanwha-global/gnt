@@ -5,7 +5,7 @@
   제목에 증권사(또는 증권업계)와 해외 관련 단어가 함께 있어야 한다. 외국어 제목은 회사 소식만(시황·종목 추천 제외)
 - 거점 뉴스(fetch_hub_news.py)가 진출국 현지 매체에서 현지 법인 이름으로 찾은 기사도 싣는다("foreign": true)
 - 제목이 거의 같은 기사(통신사 전재 등)는 하나만 남긴다
-- 베트남어·인도네시아어 제목은 한국어 기계 번역을 붙인다("title_ko", translate.py: 무료 Google 번역, 키·LLM 없음)
+- 베트남어·인도네시아어 제목은 한국어 기계 번역을 붙인다("title_ko", translate.py: 무료 Google·Microsoft 번역, 키·LLM 없음)
 
 결과는 site/data/domestic/news.json. 매일 아침 GitHub Actions(news.yml)가 돌린다. 수집이 비면 이전 파일을 유지한다.
 """

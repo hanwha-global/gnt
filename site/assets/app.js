@@ -711,7 +711,7 @@
       <div class="scroll tall" style="max-height:78vh"><table class="data trend"><thead><tr><th>증권사</th><th>해외법인 · 업종 · 설립 · 지배 구조</th><th>소재지</th><th>지표</th>
         ${pers.map((p) => `<th class="num${p === h1 ? " h1" : ""}">${esc(perShort(p))}</th>`).join("")}<th>추이</th><th>추이 요약(자동)</th><th>거점 뉴스(자동)</th></tr></thead><tbody id="t-body"></tbody></table></div>
       <p class="src">영업수익은 공시 표의 영업수익(매출)입니다${revNet.length ? `(${esc(topic(revNet))} 표에 영업수익 칸이 없어 순영업손익)` : ""}. 중간지주(예: 미래에셋 홍콩법인)의 값은 별도재무제표라 자회사 배당이 섞일 수 있고, 토스 미국 지주는 자회사 포함 연결 값입니다.${h1Missing.length ? ` ${esc(topic(h1Missing))} 반기보고서에서 법인별 손익 표를 찾지 못해 ${esc(perShort(h1))} 칸이 비어 있습니다.` : ""}${h1None.length ? ` ${esc(topic(h1None))} DART에 반기보고서가 없습니다(감사보고서만 공시).` : ""} 이름이 바뀐 법인은 예전 연도가 비어 보일 수 있습니다.
-        거점 뉴스는 국내 주요 언론과 해외 매체·감독당국(Reuters·Bloomberg·현지 주요 언론 등) 기사 중 제목에 증권사와 그 나라, 또는 현지 법인 이름(Pinetree·Ciptadana Sekuritas 등)이 나온 회사 소식만 매일 자동으로 모읍니다(같은 그룹 운용사·은행 기사, 시황·종목 추천·홍보 기사 제외). 최근 1년 기사가 없으면 5년 안에서 가장 최근 2건을 흐리게 보여 주고, 베트남어·인도네시아어 제목은 Google 자동 번역을 (번역) 표시와 함께 보여 주고 원문은 제목에 마우스를 올리면 보입니다(번역이 안 됐으면 번역 링크). 추이 요약은 숫자로만 만듭니다.</p>
+        거점 뉴스는 국내 주요 언론과 해외 매체·감독당국(Reuters·Bloomberg·현지 주요 언론 등) 기사 중 제목에 증권사와 그 나라, 또는 현지 법인 이름(Pinetree·Ciptadana Sekuritas 등)이 나온 회사 소식만 매일 자동으로 모읍니다(같은 그룹 운용사·은행 기사, 시황·종목 추천·홍보 기사 제외). 최근 1년 기사가 없으면 5년 안에서 가장 최근 2건을 흐리게 보여 주고, 베트남어·인도네시아어 제목은 무료 자동 번역(Google·Microsoft)을 (번역) 표시와 함께 싣고, 원문은 제목에 마우스를 올리면 보입니다(번역이 안 됐으면 번역 링크). 추이 요약은 숫자로만 만듭니다.</p>
     </div>`;
     const draw = () => {
       const rows = trendRows();

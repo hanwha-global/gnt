@@ -7,7 +7,7 @@
 - 현지 검색: 현지 법인 정식 이름에서 만든 표기(Pinetree, Ciptadana Sekuritas, Chứng khoán KIS …)를 그 나라 판(베트남어·인도네시아어 등)에서 찾는다
 - 외국어 제목은 회사 소식(실적·출시·제휴·인수·증자·인허가·제재·수상 등)만, 같은 그룹 다른 회사와 시황·추천·홍보성 기사는 뺀다
 - 최근 1년 기사가 없는 거점은 최근 5년 안에서 가장 최근 기사 2건을 보여 준다("old": true)
-- 베트남어·인도네시아어 제목은 한국어 기계 번역을 붙인다("title_ko", translate.py: 무료 Google 번역, 키·LLM 없음)
+- 베트남어·인도네시아어 제목은 한국어 기계 번역을 붙인다("title_ko", translate.py: 무료 Google·Microsoft 번역, 키·LLM 없음)
 
 결과: site/data/domestic/hub_news.json. 매일 06:30 news.yml이 돌린다. 수집이 비면 이전 파일을 유지한다.
 """
