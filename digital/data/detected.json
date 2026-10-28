@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T01:03:28+00:00",
+ "updated": "2026-10-28T00:54:46+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,8 +66,37 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
+    {
+     "date": "2026-10-28",
+     "title": "주식 판 돈, 왜 이틀 뒤에 나올까? 토큰증권이 바꿀 결제",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPT19CZW95dWVVelUzSkdQQm5FaldtemUzblNYNl96Wkd1alhwLUlmUy1WOHF6RjlsT3BGek5fSlFRRG5IMDBoMmFJY0l2cU1QU00tVEdXdXhPQ2s1S1FsSko0T2MtMVRJMmZOQlowWTFwRkpTenRYV1BKVDB2WmVoOC13?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-10-27",
+     "title": "(보도설명) 디지털자산시장거래소 등 디지털자산업자에 대한 교육세 과세 여부는 전혀 검토된 바 없습니다.",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBYZF9UUWNZS3RjUWs3aXhmSUZJN1JmaWljUjZ4MHBUQW9vTUVmeDEwOWJ5R3FjdzNsVUdxUjNWd3FEM2ZWanlvMU9BVGpaaVlxQjdSakhPbEFIMzY2WXZmNXRGa0Q3VlZoRGpVZ3psUQ?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp",
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-10-27",
+     "title": "디지털자산시장거래소 등 디지털자산업자에 대한 교육세 과세 여부는 전혀 검토된 바 없습니다.",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VS1VQTUVwSnNKc3ZtcnBNOHpTNUQ4QmNqVEFLVWgxa2laNGJqdk96YUI5SFAxYS1FbmNtMjhsNVlBdlAxWEd6ZmZxelhnamVPaHp0OFd4UUFEUDNpUmowa0RqdU56YWc?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp",
+      "tax"
+     ]
+    },
     {
      "date": "2026-10-21",
      "title": "26년 제1차 ｢가상자산위원회｣ 개최",
@@ -75,6 +104,15 @@
      "src": "금융위원회",
      "topics": [
       "general"
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "title": "권대영 제1차관, 가상자산 과세 관련 업계·전문가 현장 의견 경청",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE14Y1ZQenY1cm1VcVV2ckw0a0psU3ZXWFVfMVlwLXpKeUtRRUpHS3loYnpsUnI2RkNWc1BfTDhrbnl6LXl3Nk5XRjAwM1hmZUJoNmZWRk1YNmlzZUtQclZnUkN3ZEJ1cmYxMVRTLWU0aURBVXVNWUE?oc=5",
+     "src": "재정경제부",
+     "topics": [
+      "tax"
      ]
     },
     {
@@ -96,9 +134,9 @@
      ]
     },
     {
-     "date": "2026-10-15",
-     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속 차단 - 전체 | 카드/한컷",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52dlVxdTBWMklmQnhsc25VcHVkZGtKdE8zUUlvYmFWWW1VZ2RUeWs4aUVOV2dDclVndkl1bGtBNmxldUlLbEtSYWNPbHVHU3c1UlJCY3J1SmUtdTN3eTFZVkVyYjJGSEZYVXJ6V3ZR?oc=5",
+     "date": "2026-10-16",
+     "title": "'무기한 선물' 이용자 유의사항 안내 - 최근 글로벌 가상자산플랫폼 등에서 거래되는 '무기한 선물'은 국내법의 투자자 보호가 적용되지 않아 각별한 주의 필요",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wRmd1MFpGOFVzTlFOMlNIT2xxa29zS0VYMUFwU2o0NzV1UDZVdFhZeXNNWmx4eFVEbS11d2pmU2hYZ3VqWG5EeDdnemtHUTRFaVV5U1FET1dOWnhfRC15cmpacVRYWWlXVGR6ZHdLVk5OR2lm?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "general"
@@ -106,9 +144,9 @@
     },
     {
      "date": "2026-10-15",
-     "title": "'무기한 선물' 이용자 유의사항 안내 - 최근 글로벌 가상자산플랫폼 등에서 거래되는 '무기한 선물'은 국내법의 투자자 보호가 적용되지 않아 각별한 주의 필요",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wRmd1MFpGOFVzTlFOMlNIT2xxa29zS0VYMUFwU2o0NzV1UDZVdFhZeXNNWmx4eFVEbS11d2pmU2hYZ3VqWG5EeDdnemtHUTRFaVV5U1FET1dOWnhfRC15cmpacVRYWWlXVGR6ZHdLVk5OR2lm?oc=5",
-     "src": "정책브리핑",
+     "title": "불법 가상자산 취급업자 인터넷 사이트 국내 접속 차단 - 전체 | 카드/한컷",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52dlVxdTBWMklmQnhsc25VcHVkZGtKdE8zUUlvYmFWWW1VZ2RUeWs4aUVOV2dDclVndkl1bGtBNmxldUlLbEtSYWNPbHVHU3c1UlJCY3J1SmUtdTN3eTFZVkVyYjJGSEZYVXJ6V3ZR?oc=5",
+     "src": "대한민국 정책브리핑",
      "topics": [
       "general"
      ]
@@ -188,7 +226,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
     {
      "date": "2026-10-23",
@@ -247,27 +285,27 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "EU": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
     {
      "date": "2026-10-14",
@@ -335,7 +373,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
     {
      "date": "2026-10-21",
@@ -358,7 +396,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
     {
      "date": "2026-10-26",
