@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-10-28T09:43+09:00",
+ "checked_at": "2026-10-28T15:32+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -42,18 +42,18 @@
      "text": "FTSE 편입에 맞춰 베트남 법인(PTSV) 외국인 기관 영업과 지수옵션 등 파생상품 준비 검토",
      "evidence": [
       "FTSE 신흥시장 편입 2026-09-21 발효",
-      "Vietnam Investment Review - VIR 10/20 '시장 승격 이후 과제' 등 구조 뉴스 2건(최근 30일)"
+      "Vietnam Investment Review - VIR 10/28 보도 등 구조 뉴스 4건(최근 30일)"
      ],
      "links": [
       {
-       "label": "시장 승격 이후 과제",
-       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSk9mNHkyaFNudkZpZDZfQjZpUk5wTzhOT3NlNUN0cVlmcjR0VTJtbEhoTXI3RDJUV0RZM2gyajNFN1RiU2Mwa3V5NWpNeVNzekdWTjk1OGhkZFQ4Zm9CMUJabzF4d2xmNGVXVXRYQWV5empuWmNLQkF5akFpaHlPdEtSTTh5VkJjMUkyWEQ5TXZtWm4zcWNnTndTV2lyOEVyRndxX3RCbGd6VWpOSEppMl9mekxSTE5EampUR3FvZTNmblU?oc=5",
-       "title": "Market upgrade is just the beginning: Vietnamese companies face tougher test to attract capital"
+       "label": "Vietnam Investment Review - VIR",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
+       "title": "Vietnam's stock market upgrade puts focus on corporate governance"
       },
       {
-       "label": "지수옵션 도입 계획",
-       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWFlJTU1wa3VHeUtFcmtqRGllWngwYzFwSDlMLVVmUEMzaE5EUGR4TU03Q0FHeWc0LUhIVmJUSFhtdUJqWm12SVN1SDF3dFZrUW1fUEhsSHJ1aW1RcGxMUVR2TC1ZazkzQklfTXQwYWtLaEZ4UXI4Z05yeHphbl84VkJxbmF1YmlVYS1qMmI1V0k1bWZlQUIwVmlUZlhCc240LXlJOG9yRjlWNmxGV0hMcA?oc=5",
-       "title": "Vietnam Plans Index Options for Next Year After FTSE Upgrade"
+       "label": "Vietnam Investment Review - VIR",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
+       "title": "Transparency and disclosure key to sustaining Vietnam\"s market upgrade"
       }
      ],
      "bucket": [
@@ -88,7 +88,7 @@
      "evidence": [
       "HOSE 2Q26 점유율 TCBS 9.36%·VPBankS 3.57%로 최고치(2026-07 HOSE 발표)",
       "HOSE 2Q26 10위 진입선 2.94%에 한국계 2곳, 베트남 법인(PTSV)은 10위 밖(2026-07 HOSE 발표)",
-      "VN-Index 1주 +4.4%·3개월 +4.6%(10/26), 2026-02 고점 대비 -6.2%"
+      "VN-Index 1주 +4.1%·3개월 +5.6%(10/27), 2026-02 고점 대비 -6.3%"
      ],
      "links": [],
      "bucket": [],
@@ -97,10 +97,11 @@
      ]
     }
    ],
-   "changed_at": "2026-10-27",
+   "changed_at": "2026-10-28",
    "reason": [
-    "규칙 개정"
+    "새 뉴스: Vietnam Investment Review - VIR 보도"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R02",
@@ -134,9 +135,21 @@
      "reason": [
       "규칙 개정"
      ]
+    },
+    {
+     "date": "2026-10-28",
+     "fp": "f54921dd7f2a",
+     "rules": [
+      "R01",
+      "R07",
+      "R12",
+      "MKT"
+     ],
+     "reason": [
+      "새 뉴스: Vietnam Investment Review - VIR 보도"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "ID": {
    "country": "인도네시아",
@@ -202,7 +215,7 @@
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용 하락에도 MSCI 결정과 손익 회복 이후로 보류, 후보 검토만 선행",
      "evidence": [
-      "IDX 5,373(10/26), 최근 1년 고점(2025-12 월말) 대비 -37.9% · 루피아 원화 대비 연초 이후 -14.8%(ECOS 10/26) · 원화 환산 지수 연초 대비 -47.0%"
+      "IDX 5,373(10/26), 최근 1년 고점(2025-12 월말) 대비 -37.9% · 루피아 원화 대비 연초 이후 -15.2%(ECOS 10/27) · 원화 환산 지수 연초 대비 -47.3%"
      ],
      "links": [],
      "bucket": [
@@ -229,10 +242,11 @@
      ]
     }
    ],
-   "changed_at": "2026-10-27",
+   "changed_at": "2026-10-28",
    "reason": [
-    "규칙 개정"
+    "지수·환율 급변"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R06",
@@ -286,9 +300,21 @@
      "reason": [
       "규칙 개정"
      ]
+    },
+    {
+     "date": "2026-10-28",
+     "fp": "d6c0f46b85fe",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "MKT"
+     ],
+     "reason": [
+      "지수·환율 급변"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -405,5 +431,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-10-27"
+ "updated_at": "2026-10-28"
 }
