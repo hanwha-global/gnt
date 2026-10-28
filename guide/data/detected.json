@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T01:25:01+00:00",
+ "updated": "2026-10-28T01:11:54+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,19 +66,19 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
     {
      "date": "2026-10-20",
@@ -95,7 +95,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
     {
      "date": "2026-10-26",
@@ -118,15 +118,22 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-27",
-   "items": []
+   "auto_checked": "2026-10-28",
+   "items": [
+    {
+     "date": "2026-10-21",
+     "title": "FIDELITY BROKERAGE SERVICES LLC",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1lMGlqTU9IaFdDM1VhdlZlaXhoTlFXNHRVYkVUMjBvQmNOb01TMDZVTEYtYUVtWVZyT2RZejNicmxUbFNackxZOWZWeVJ0U0RQM3M4Njh2cmFFa1Z0WXhCZmVsYlA?oc=5",
+     "src": "FINRA"
+    }
+   ]
   },
   "JP": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
     {
      "date": "2026-10-22",
@@ -173,24 +180,54 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": [
+    {
+     "date": "2026-10-27",
+     "title": "CHARACTER REFERENCE LETTER FOR GUN LICENSE",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZC0xdm9oX25SSERwUVZVNFE0OERaZWo0bktxQlBzQnVDSmpNWEZFZFZpR0ZyNXFtMFlTZHdGOUxYOUhIZEhsM0NlWkhSc2N2Rmc5QlZ1SVdydldrX0RQNVZmOFBycTFpdWZOZHViZ2JUWElBUU45QVFDaUJqaEtvcVhIZldWOElCMHdKZTNKSURlZw?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-10-27",
+     "title": "MARYLAND REAL ESTATE LICENSE EXAM PREP",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQV0pqeVZvTmNqb3dRbEl6Y3ZSeTI5MVdPcWtNam9BeXJ2Y2gwcnFxcjRnRW5OZTdFcFoxa3dhU0ptUFVKLThjOGdDZy1RcmpBT2Z3WTdVcjNpcEJlRFM2NXFoaWZjcUFYaWFLMkRHWUZ1cFlFa1hOQVN6YjVfcTR4WmNvcUZJOGx3TmNvVGdhLUs?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-10-27",
+     "title": "REAL ESTATE BROKER PRACTICE EXAM",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOb3JqYV82Yi1YWlZWX2pRbTVZY0JES1BCUmFxUnpVUTZhUVUxS19ieU1nYXV5MGRNR0R6YlBSUWw1M21JZ0p5YkJZbWszN0RmMmJ4c244Mi1oOXlDWDNpbmZpRHUzU3Y4QmRxbXJkVHRyNUJiSkVxTXZXVkdyLXVQdQ?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-10-26",
+     "title": "MARYLAND HOME IMPROVEMENT LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcU8ydk5RUTlGTnQzYWhXVnF3V29lU0JrMDZIUlhTaU5iX1pTYS1yVFRqc0xNbXBWRDctck9HcEtyRHBaOGY4MWV3MnVmR2p2d2d3OW5OYnFpS0J0dncxY1NwRkFvaGNLLUswd3diZmZMWXFOYm1GdGloSUJwb1VtNk9Vc1BVMlQxbFc5QmppVlFGRm9WcDlxMA?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-10-26",
+     "title": "TEXAS INSURANCE LICENSE EXAM QUESTIONS",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQajAxZWdOZkdXZWt6QW4wU1VySVE4TDRiTW9YVVBhakFoX0V0VHpUV1hDS1MtTnNTMjZkT2lLVDdSaHlIUE9GWDNxRlVfcjByNWRDbk1pU014RFVvSTNXX2t2NVR3NkJzTjBSZml4emdLSDV1ZFI5MkZHeFhubUItaV9JZEZoUU1xczZhSkFZd3UtZw?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-10-14",
      "title": "Cópia de LICENSING MHF",
@@ -200,11 +237,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-10-27",
+   "auto_checked": "2026-10-28",
    "items": []
   }
  }
