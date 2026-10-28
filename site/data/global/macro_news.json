@@ -1,10 +1,18 @@
 {
- "updated_at": "2026-10-28T18:53+09:00",
+ "updated_at": "2026-10-29T00:16+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
+    {
+     "date": "2026-10-28",
+     "time": "18:10",
+     "title": "외국인 1.1조 폭풍 매수에…코스피 뜀박질",
+     "src": "한국경제",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAyVzJmMi1IS0J6MTVib2RSeUsxZkFESENTMzF2Z3hiZmxLOFpDNlFxM2RRYm1tWGNNbDBUWVZTOVB1aDZnWGY4aFQ5NXZCaG5FaWZMVVhlU1VmUQ?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-10-28",
      "time": "13:39",
@@ -20,14 +28,6 @@
      "src": "뉴데일리",
      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFByWkdKNDJ0YXp3NENpUDFibXFtRmRzVF9HaFhpYVJGc3ZKOWNxc1RMTmRvZzVPMnRzTG11NV9selJ2cnZzSDgwTjE1LS13VmpJOGF4bERoWk1LWEVKT1B0bDNaLVptbENIQlV2eC1SdG44Q2ppZGhEWkVHWdIBgAFBVV95cUxOaVVKT2NoSUVfejZfR0cteUpodmRCSEZHcEZPUDc3eUhtdnN3cm9YZ2ZwQ2ktQklMb0doT0dtZ3F0dW5RTlNXSjMzYWFBM1Z1WW13Yi12dU9iNG5SeFA3dVBRcVVVVVJFNUR1bHVzSVhySEl6VzN5eUtjU3NXNEJvcA?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-10-28",
-     "time": "08:00",
-     "title": "[Good Morning Stock Market] Anthropic Tailwind Lifts U.S. Stocks; Will It Reach South Korea?",
-     "src": "아시아경제",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBJdEczV2txdDlKRTZaYkJYWXBZVzUtUTE4aHE0WEFLNWlxV0hDU2dRUmoxTnNvNmV3cmtZVWNvSEhreExtLU5IVVlIS2p6NjI0RUVvZzI0OXhrWFBnV3o0N1dQNzI?oc=5",
-     "priority": false
     }
    ]
   },
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
-     "date": "2026-10-28",
-     "time": "18:22",
-     "title": "Treasury yields tick higher ahead of Federal Reserve interest rate decision",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNblEzWWhhd29Pcm51emZVLUtkQ0FHb3FFYTBBRTlsTU9MN1lKQVl5eDVGUjJPYnpfTm8tV2JteFlEbVkxbV9WNHhvbHdUQ0JYOWk4YkVObXhrUlRDQ0ZLTHhNcUtCRVdRLVU5TXYyN2RLUVFRMHR5SklNMXB5eUt4RnNaZknSAYoBQVVfeXFMT19ETGtYNWFfbnVCbTdXTkoxYVBJN25Vd0xUeE1zVmxVVXlHbFhMUHZOX2Q1VGNKTmx4aTNUd0R2WVloQXF1Y2JLUHRzc0ZRaXRKRjY2UGo2R29ucndXc05LczJQQU9pekw1TmhfT0YzTm9pbEhuRUl1WHRrRThBSWJWTmxISEd3WHJB?oc=5",
+     "date": "2026-10-29",
+     "time": "00:00",
+     "title": "[김대호 진단] 연준 FOMC 기준금리 동결과 역사의 교훈",
+     "src": "글로벌이코노믹",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMkZiRzRBMnI2d0hOT0U3U3U5Sm90bTZnaU9TT09oXzdZN1pLdGNORmVHY3laSE9scVpoVERUb0JMM1pSb3Vpb3ZfWEJNcXBOWHppTEdVa1ZMNkRlOXc5eFU2QnNmM1owUnVhNHpObHNsaHN3MjhCMmZTSzBldmJaYWY1dFQ?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-28",
-     "time": "16:57",
-     "title": "미 FOMC 앞두고 국고채 금리 일제히 상승…3년물 연 3.799%(종합)",
+     "time": "23:42",
+     "title": "뉴욕증시, FOMC 금리 결정 앞두고 상승 출발…반도체주 강세",
+     "src": "KBS 뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1obmM5Tm1wc1BjRVlLVGdJTVhOSmx0Qk93VXZxeHZldV9ySDBpcFRqejZyOUtKMXZpQVVuS3E2cHZxSW5FTE5xV0tnWlJtb090bTFrY2xtaVEyWDg?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-28",
+     "time": "22:44",
+     "title": "뉴욕증시, FOMC 대기하며 상승 출발",
      "src": "매일경제 마켓",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1aN0J0cWU3T1Y0Z0tuX2k5U3ZQcDRsSXJvWGpLRGpXeWJtbk9sTDlhX2xGcWpXOGo1bFNCMmpodGQ1RnlMSlZTTWxOWmNVQlhralE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-28",
-     "time": "15:41",
-     "title": "Gold Holds Above $4,000 as Traders Look to Fed Rate Decision",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWUt1anRfa2s0VVI2NXlTQlJWaE5weVJJNlhlRWxZMzA4LTVRelVZU3ZRRzBYMXgxdEI1UjVBRE9GbmJROXdIS08tbE9OQ24tVFhDZjRvTEFPLWRNUHV1RzdhWEVpSWhXbGp5UUw3SVhJTk9UYmNLS0lvSXdVbjBETjFCY2pycF9HaDlSY2I0b2FHdlVKc0RIcEpVUUw2ZlhEbExwa3FrY20tcDY5dlNF?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1OOHNORjExWmxOc3VNN1J5VzlmaFhXRV9YbjlQLW9jSGpXbVBld20tVm8wUVN1T0xQRmlBTWxpa2VWMnlhc0pIbTNKNXVyZG1YQ1E?oc=5",
      "priority": false
     }
    ]
@@ -103,7 +103,7 @@
     {
      "date": "2026-10-28",
      "time": "14:21",
-     "title": "Transparency and disclosure key to sustaining Vietnam\"s market upgrade",
+     "title": "Transparency and disclosure key to sustaining Vietnam's market upgrade",
      "src": "Vietnam Investment Review - VIR",
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
      "priority": true
@@ -122,6 +122,14 @@
    "label": "일본",
    "items": [
     {
+     "date": "2026-10-28",
+     "time": "18:19",
+     "title": "Nikkei Rises 1.1% for Second Day as SK Hynix Blowout Earnings Revive AI Trade, but Most Tokyo Stocks Fall",
+     "src": "International Business Times Australia",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPLTBCYmozMDhaVkdNbkVfbEx1b0hkb1JkQmJQRy1fUHpQbks0VElRSjR6M1JhRWJ3MW5JcXY4Vmg0UC02UFlyQllnYVNIb3k0c1ZxdTRFWVV1aGZoLXRnU1MzdXdzVEdLei1iVE9YRzExOUJqSlRKdHVldGtuZVY0VDJR?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-27",
      "time": "17:13",
      "title": "Global Market: JGB yields climb as investors await BOJ, Fed policy decisions",
@@ -135,14 +143,6 @@
      "title": "Japan’s trend inflation index hits 3-year high, cements case for BOJ rate hike",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWFp4YlJ6Y3BaQ3I1SU0tdTVQWW9KRXR1Um5yb3VrR2hTYTdOQURJYkhPSHNzeW9tZk9GUUlrMlp5UHd3elQwQXVfMk43X3RaRklEaThXUzRhWkwyOTE2bEY1UUQ3ejBpYXhReDlJQ2VfVnc5S3BNWXZkSVowdl9pckd0cVl2cHZBdVJ1U2dzbGNvRlQ0NHRqOXpwRU55T2ZudFB5M0dNZDBOSjJmbm5fRERTQVpudkRRTi1j?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-27",
-     "time": "16:07",
-     "title": "Japans Nikkei rises as Anthropic IPO filing lifts AI-related shares",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdTQ0c0FnUnA2bXUybTRLVWl5cjlhVGY3TU9YSlltVGJTanAxWFl2VmNIdUllYVUzMkIwU01BYXVLelZmcDBJNFRoT1hwMXFBZ0FTbUtCMXZ6QzZzYUl6cVlvcHdOeFJIYlZpbGNBRUpoMVY3OVpzWTg0V3pVS0VNek1hNXptY09Wei0yQWp0Q203OFNaV3BHZEs3cFEyMzdsdTFsdDA3Si1jbWg5d2ZRc2VWOXFoUnZuYzZn0gHAAUFVX3lxTE9RcDA2M1EwR1QtSHhNcUpmYTlMZ0lIN1Zvc2tnOWRzalR0djZtX1EzeXdjVVpsUUJpNU94OGpidzVBMkhmX1V3SWd2TjN5R1REV0NYN2hVOGVKSGNtSUNTdjg1Nlh0djd2aTJKYl9oVTVxNWNzY09YNTF3aURveWtQQWtUYU4zZktlVHd0ejNwX3NyWFRMQ2VVaUVpSnA4WUdaRGNLeUtEZGpwSWlmTjVrc2Y3QTF1c1VCVk5WRXAzOA?oc=5",
      "priority": false
     }
    ]
@@ -188,19 +188,19 @@
      "priority": true
     },
     {
-     "date": "2026-10-27",
-     "time": "19:32",
-     "title": "Singapore shares fall amid mixed regional showing; STI drops 0.3%",
+     "date": "2026-10-28",
+     "time": "19:16",
+     "title": "Singapore stocks end flattish even as local banks gain; STI up 0.02%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQV3Rabkg5eUxRV3kyMEdfUkNDNFRvT3gybG9hZzhQTmZuUUlMR0hlYm5NNzcxMXV2NmwxbEhpcVNyM1l0T3ZhYnk5dHRRMHRNZmhqYk80aU1JOWdMS0tuU3E2dDNWaG01SUN2VXNJdmdOWEZIQ3QyVHJ4cTBnNnpfLWJQbUVtMWo0cnVGY2FEU0FfS09LSUlvQjRoMHhVdFBleFhfZV9pYkxObmpHRzlrcTJVVVg?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd19ldV9DbHdMUlM1dU5qV1ZZdnRYM0hmMGt1NHktaVRzZzBiZWhsYjJacXp4ZVJtWDlQVU5BZ29DS3dQZFlNQlZ6T3ZFbXFTTWViMHN0Smt6Q0R0VUY1X3VNQllXY21zZ2lBZUVnWERUbnlGNFNhSnY5TENvSzJhNUFKMHo2ZUZWOEpPdDhWeFd4WUtra1owUVZ3aFk4OWp3VmpyTVhOWXlxZzBadHluNA?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-26",
-     "time": "21:07",
-     "title": "Singapore stocks close lower amid mixed regional showing; STI down 0.1%",
+     "date": "2026-10-28",
+     "time": "19:16",
+     "title": "Singapore stocks inch up with local bank gains; STI up 0.02%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMmFGLV9CSW14dTZ6UlV6MGxIZWxfZDRQVmdjRk15R292THJMLTBEVnlPR2hDcWVGX3U0VzNHV2tOcEg2RUhxNjhoU21BRU9kbHYxZEFQT0t4TlM4RDBWMW13YVJwWVcxeXhJYml5NjBYTEdzUVBUMGJTVDJwZXB0ODZpU0NiYUcwbFRjc1d6cmRRWGI4d0pLZFNLZDMtM0FyWktZbTVNeDU4bm1NWjk5RklEVE4wQlRKcGtDcHQzTXFEN0NPOEJJa1RJUVRtR2FXMU9NU2dkY1B3QTNwYklnUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYVBCRXZ4TXNqaVJEcmEyWWZOWWxveVpsaG1wYVJWSWhBSFRZWXk0NlFwWXcxel9yUkktbk1tbUszX3gwMng1cDBkTzZabFRkNktmSFN3X3huaGNrdjNDTFZrMnNBZDl3MHdTXzgwblF1QUcyRWZ4V1lHZnRWdFlSNmNncW5WMFkzU0RmQUxIVmJFdXRjTDJMdkJPQmE3WlE?oc=5",
      "priority": false
     }
    ]

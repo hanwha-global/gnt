@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T18:53+09:00",
+ "updated_at": "2026-10-29T00:16+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -217,7 +217,7 @@
    "time": "11:11",
    "title": "미래에셋증권 홍콩, 해외법인 최초 자체 기술 달러 디지털 채권 발행",
    "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ZUmdIdDlWRHR2X2JIeUtuXzdmRE5pUEZLSXdmajBuOUNTU2JnMkpvUFFzWHRCSXZ4R1pGSHJzN0w4Vng2SzVSczRKa1U2aFpFYTVab2YzdmxybS02Tzd3UExsSzJWcHk10gFuQVVfeXFMTlE0UDRxODV5RDdob0lpMWJyd285ZWFlazg1UmFPZFl1MkhHS3c2V1lQdnctSk1lNTJxUDlaeG9UNzNEckExVEFoZEhvVjBSOGtLbVNjMzJ5RmFQbnZoNFhnaVBwbTA4WTdVTHdZQkE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5RNFA0cTg1eUQ3aG9JaTFicndvOWVhZWs4NVJhT2RZdTJIR0t3NldZUHZ3LUpNZTUycVA5WnhvVDczRHJBMVRBaGRIb1YwUjhrS21TYzMyeUZhUG52aDRYZ2lQcG0wOFk3VUx3WUJB0gFuQVVfeXFMTlE0UDRxODV5RDdob0lpMWJyd285ZWFlazg1UmFPZFl1MkhHS3c2V1lQdnctSk1lNTJxUDlaeG9UNzNEckExVEFoZEhvVjBSOGtLbVNjMzJ5RmFQbnZoNFhnaVBwbTA4WTdVTHdZQkE?oc=5",
    "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
@@ -228,8 +228,8 @@
    "time": "23:43",
    "title": "아시아 넘어 글로벌 종합금융으로…뉴욕 ‘KIS 나잇’ 이끈 김성환 한국투자증권 사장",
    "src": "세계일보",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5CSW1VUkNDUUdmWlpqVW1UMTdsUl9uN2V0eE5BTm1XVldCQlJGc1pRZUJPend1TXRPVlpIaE1tZXlSQ0dULU41MmMyWXk5YV9i0gFUQVVfeXFMTlJDcDl0bnJ4NjJCanA3UWdfM2Y3S2RIektPcm1EcExQLTNlQmRGd0YtTHlPMTNaVllTUnkzTml4dWs2T1ZTNlNEM0g4YVBheGo4czNC?oc=5",
-   "site": "m.segye.com",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GcnUzVmZDSEUxSVcxN2xob2pmN0tXUTJhXzZ6TnZha3VHdEppQzd1NkZpaDZYZEJxWWFrV2NGT3NyUFNhWEI1NmdwbkFrX2M3aUZyMUd4MmvSAVRBVV95cUxOUkNwOXRucng2MkJqcDdRZ18zZjdLZEh6S09ybURwTFAtM2VCZEZ3Ri1MeU8xM1pWWVNSeTNOaXh1azZPVlM2U0QzSDhhUGF4ajhzM0I?oc=5",
+   "site": "www.segye.com",
    "firms": [
     "한국투자증권"
    ]
@@ -518,6 +518,7 @@
    "title": "\"서학개미 안 부러워\"...증권사, 해외 투자 순익 '1조원'",
    "src": "머니투데이",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qbWpSa3ZlMmhUM3JZejVfMy1INnVtdVJibXpCVE1VVVhhVGpnNlp4cW11ZHVyVEp5azVudTVKN1ZCU0I0RVgtWndUNkFxLU1iOF9sc2pxYmdHc0MtdmZGZXRCUTNYSEkx0gFuQVVfeXFMTlBHRTdQVHZPRE1vc2tyQ1Z3T0EyWmZ1b1NjNEZzeVc4c2VYXzBhNGhuSVo4aEJZVjhaZldQZHhaUzNJY0NxTEZSYXhNNmV5YUlBRU04Slp2Z2Z1US1RSVUweTIwTHVnbVJmeWdHckE?oc=5",
+   "site": "www.mt.co.kr",
    "firms": []
   },
   {
@@ -543,21 +544,21 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
-   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
-   "site": "www.etnews.com",
+   "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5",
+   "site": "www.yna.co.kr",
    "firms": [
-    "토스증권"
+    "하나증권"
    ]
   },
   {
    "date": "2026-09-14",
    "time": "16:00",
-   "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5",
-   "site": "www.yna.co.kr",
+   "title": "하나증권, 업비트 글로벌과 맞손…디지털자산 금융사업 협력",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5nOVBIN0dueFdBYnJIQWpzM2FwNnRma3V5Uk1EdVowWnRpOTEyT29tQlY3MWxXNUxsbzR6VmZMMUtNRG9qMkhUYWdLcmdnQQ?oc=5",
+   "site": "www.etnews.com",
    "firms": [
     "하나증권"
    ]
@@ -576,11 +577,12 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
-   "title": "하나증권, 업비트 글로벌과 맞손…디지털자산 금융사업 협력",
+   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
    "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5nOVBIN0dueFdBYnJIQWpzM2FwNnRma3V5Uk1EdVowWnRpOTEyT29tQlY3MWxXNUxsbzR6VmZMMUtNRG9qMkhUYWdLcmdnQQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
+   "site": "www.etnews.com",
    "firms": [
-    "하나증권"
+    "토스증권"
    ]
   },
   {
