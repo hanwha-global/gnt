@@ -271,8 +271,9 @@ small.asof { display: block; font-size: 9.5px; font-weight: 500; color: var(--mu
 .news__m .tag { font-size: 10px; padding: 0 4px; }
 .news__head { display: flex; align-items: center; gap: 8px; }
 .news__head h3 { flex: 1; }
-/* 베트남어·인도네시아어 제목 옆 번역 링크(Google 번역) */
+/* 베트남어·인도네시아어 제목: 자동 번역 앞 (번역) 표시, 번역이 없을 때만 번역 링크(Google 번역) */
 .news__list a.news__tr, .trend__news a.news__tr { margin-left: 6px; font-size: 10.5px; font-weight: 500; color: var(--text-2); text-decoration: underline dotted; }
+.news__trl { color: var(--muted); font-weight: 500; font-size: .9em; }
 
 /* 진출 지도(한눈에 보기 재무 카드 아래) */
 .wmap svg { display: block; width: 100%; height: auto; }

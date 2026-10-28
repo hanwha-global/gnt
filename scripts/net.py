@@ -8,10 +8,11 @@ import urllib.request
 UA = "HanwhaGlobalNetworkDashboard/1.0 (github.com/hanwha-global/gnt)"
 
 
-def get(url, params=None, headers=None, retries=3, timeout=30):
+def get(url, params=None, headers=None, retries=3, timeout=30, data=None):
+    """GET(data를 주면 그 본문으로 POST)."""
     if params:
         url = f"{url}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
+    req = urllib.request.Request(url, data=data, headers={"User-Agent": UA, **(headers or {})})
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:

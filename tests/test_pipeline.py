@@ -717,7 +717,9 @@ class ForeignNewsTest(unittest.TestCase):
                ("Chứng khoán Pinetree thành lập", "CafeF", "https://cafef.vn", "2019-01-10")]          # 5년 밖
         fresh = [("KBSV báo lãi tăng 15%", "Thời báo Tài chính Việt Nam", "https://thoibaotaichinhvietnam.vn", "2026-07-21")]
 
-        def get(url, timeout=25):
+        def get(url, params=None, timeout=25, **kw):
+            if "translate.googleapis.com" in url:                                        # 제목 번역(줄마다 '번역: ' + 보낸 글)
+                return json.dumps([[["\n".join(f"번역: {q}" for q in params["q"].split("\n")), params["q"]]]]).encode()
             five = "when%3A1825d" in url
             if "Pinetree" in url:
                 return _rss(*(old if five else []))
@@ -731,7 +733,117 @@ class ForeignNewsTest(unittest.TestCase):
         pine = got["한화투자증권|베트남"]
         self.assertEqual([x["date"] for x in pine], ["2024-12-05", "2023-03-18"])    # 5년 안 최근 2건만
         self.assertTrue(all(x["old"] and x["foreign"] and x["lang"] == "vi" for x in pine))
+        self.assertEqual(pine[0]["title_ko"], "번역: Chiến lược khác biệt của 파인트리증권")  # 베트남어 제목은 한국어 번역도
         self.assertEqual([(x["date"], x.get("old")) for x in got["KB증권|베트남"]], [("2026-07-21", None)])
+
+    def test_titles_translated_to_korean_once(self):
+        import translate as tr
+        calls, ms = [], {"ok": False}
+
+        def gtx(*lines):
+            return json.dumps([[[l + "\n", "a"] for l in lines[:-1]] + [[lines[-1], "b"]]]).encode()
+
+        def get(url, params=None, headers=None, retries=3, timeout=30, data=None):
+            if "edge.microsoft.com" in url:                                                 # Microsoft(Edge 번역 주소)
+                texts = json.loads(data)
+                calls.append(("ms", "\n".join(texts)))
+                if not ms["ok"] or ms.pop("fail_once", False):
+                    raise RuntimeError("HTTP 404: ")
+                self.assertEqual((params["from"], params["to"]), ("id", "ko"))
+                return json.dumps([{"translations": [{"text": f"마이크로 {t[:9]}", "to": "ko"}]} for t in texts]).encode()
+            q = params["q"]
+            calls.append(("google" if "googleapis" in url else "mm", q))
+            if "googleapis" in url:
+                if "macet" in q:
+                    raise RuntimeError("HTTP 429: unusual traffic")                    # Google 막힘 → 이 실행은 다음 곳으로
+                if q == "[[N0]] Raih Penghargaan\nJudul kosong":                           # 회사 이름은 자리표로 보낸다
+                    return gtx("[[N0]] 수상", "kosong")                                 # 한글 없는 줄은 실패
+                if "\n" in q:
+                    return gtx("한 줄로 합친 번역")                                      # 줄 수가 안 맞으면 한 건씩
+                return gtx(f"번역 {q[:9]}")
+            if "rusak" in q:
+                return json.dumps({"responseStatus": 200, "responseData": {"translatedText": "&#39;고장&#39; 난 앱"}}).encode()
+            return json.dumps({"responseStatus": 429, "responseData": {"translatedText": "MYMEMORY WARNING: YOU USED ALL"}}).encode()
+
+        def run(items, cache, **kw):
+            calls.clear()
+            with mock.patch.object(tr.net, "get", side_effect=get), mock.patch.object(tr.time, "sleep"):
+                return tr.add_ko(items, cache, **kw)
+
+        items = [{"title": "Kiwoom Sekuritas Raih Penghargaan", "lang": "id"},
+                 {"title": "Chứng khoán KB Việt Nam báo lãi", "lang": "vi"},                 # 이전 파일에 번역이 있다
+                 {"title": "Judul kosong", "lang": "id"},
+                 {"title": "Mirae Asset wins license", "title_ko": "남은 번역", "ko_by": tr.MM}]  # 영어 제목은 번역을 달지 않는다
+        cache = tr.cache_from([{"title": "Chứng khoán KB Việt Nam báo lãi", "title_ko": "KB증권 베트남 흑자"}])
+        self.assertEqual(run(items, cache), 1)
+        self.assertEqual([x.get("title_ko") for x in items], ["키움증권 수상", "KB증권 베트남 흑자", None, None])
+        self.assertNotIn("ko_by", items[3])
+        self.assertEqual(calls, [("google", "[[N0]] Raih Penghargaan\nJudul kosong"),            # 같은 말 제목은 묶어 한 번에
+                                 ("ms", "Judul kosong"), ("mm", "Judul kosong")])             # 못 한 제목만 다음 곳으로
+        self.assertEqual(cache["Kiwoom Sekuritas Raih Penghargaan"], ("키움증권 수상", None))
+
+        # Google·Microsoft가 막히면 MyMemory로 예비 번역, MyMemory도 한도에 걸리면 멈춘다
+        jam = [{"title": "Aplikasi rusak", "lang": "id"}, {"title": "Aplikasi macet", "lang": "id"}, {"title": "Aplikasi baru", "lang": "id"}]
+        self.assertEqual(run(jam, {}), 1)
+        self.assertEqual([(x.get("title_ko"), x.get("ko_by")) for x in jam], [("'고장' 난 앱", tr.MM), (None, None), (None, None)])
+        self.assertEqual(calls, [("google", "Aplikasi rusak\nAplikasi macet\nAplikasi baru"),
+                                 ("ms", "Aplikasi rusak\nAplikasi macet\nAplikasi baru"),
+                                 ("mm", "Aplikasi rusak"), ("mm", "Aplikasi macet")])
+        # 다음 실행에서 Google이 되면 예비 번역을 Google 번역으로 바꾼다
+        later = [{"title": "Aplikasi rusak", "lang": "id"}]
+        self.assertEqual(run(later, tr.cache_from(jam)), 0)
+        self.assertEqual(later, [{"title": "Aplikasi rusak", "lang": "id", "title_ko": "번역 Aplikasi"}])
+        self.assertEqual(calls, [("google", "Aplikasi rusak")])
+        # Google이 막히고 Microsoft가 되면 Microsoft로 묶어 번역한다
+        ms["ok"] = True
+        both = [{"title": "Aplikasi macet", "lang": "id"}, {"title": "Chứng khoán NH Việt Nam ra mắt", "lang": "vi"}]
+        self.assertEqual(run(both, {}), 2)
+        self.assertEqual([x["title_ko"] for x in both], ["마이크로 Aplikasi", "번역 NH Securi"])
+        self.assertEqual([c[0] for c in calls], ["google", "google", "ms"])
+
+        # 한 번 실패한 번역기도 다음 묶음에서 다시 쓴다(두 번 실패하면 그 실행 동안 쉰다)
+        ms["fail_once"] = True
+        twice = [{"title": "Thị trường macet", "lang": "vi"}, {"title": "Aplikasi macet lagi", "lang": "id"}]
+        run(twice, {})
+        self.assertEqual([c[0] for c in calls], ["google", "ms", "mm", "google", "ms"])
+        self.assertEqual(twice[1]["title_ko"], "마이크로 Aplikasi")
+
+        # 줄 수가 안 맞으면 한 건씩, 한 번에 새로 번역하는 수 상한
+        more = [{"title": f"Judul {i}", "lang": "id"} for i in range(5)]
+        self.assertEqual(run(more, {}, max_new=2), 2)
+        self.assertEqual([x.get("title_ko") for x in more], ["번역 Judul 0", "번역 Judul 1", None, None, None])
+        self.assertEqual([q for _, q in calls], ["Judul 0\nJudul 1", "Judul 0", "Judul 1"])
+
+    def test_firm_names_and_amounts_kept_in_translation(self):
+        import translate as tr
+        self.assertEqual(tr._mask("Chứng khoán NH Việt Nam ra mắt giao dịch Chứng khoán Phái sinh", "vi"),
+                         ("NH Securities Việt Nam ra mắt giao dịch Chứng khoán Phái sinh", []))   # NH를 은행으로 읽지 않게
+        self.assertEqual(tr._mask("Chứng khoán BIDV (BSC): Doanh thu quý III tăng 19%", "vi")[0], "BIDV Securities (BSC): Doanh thu quý III tăng 19%")
+        for t in ("Sở Giao dịch Chứng khoán TP.HCM ra mắt", "Ủy ban Chứng khoán Nhà nước (SSC)", "saham sekuritas naik"):
+            self.assertEqual(tr._mask(t, "vi" if "Chứng" in t else "id"), (t, []))
+        # 국내 증권사 이름과 베트남어 금액은 자리표로 보내고 한국어로 채운다
+        self.assertEqual(tr._mask("Dư nợ cho vay tăng lên gần 8.900 tỷ đồng, Chứng khoán Mirae Asset báo lãi", "vi"),
+                         ("Dư nợ cho vay tăng lên gần [[N1]] đồng, [[N0]] báo lãi", ["미래에셋증권", "8조 9,000억"]))
+        self.assertEqual(tr._mask("Chứng khoán Mirae Asset (Việt Nam) sắp chuyển 113.5 triệu cp", "vi"),
+                         ("[[N0]] (Việt Nam) sắp chuyển [[N1]] cp", ["미래에셋증권", "1억 1,350만"]))
+        self.assertEqual(tr._mask("Lợi nhuận 700 tỷ, vốn 11.000 tỷ đồng, lãi 1,5 tỷ USD", "vi")[1], ["7,000억", "11조", "15억"])
+        self.assertEqual(tr._mask("Usai Mirae Asset, BEI Juga Sanksi PT KB Valbury Sekuritas", "id"),
+                         ("Usai [[N0]], BEI Juga Sanksi PT KB Valbury Securities", ["미래에셋"]))
+        self.assertEqual(tr._mask("Kantor Mirae Asset Sekuritas Digeledah OJK", "id"), ("Kantor [[N0]] Digeledah OJK", ["미래에셋증권"]))
+        self.assertEqual(tr._mask("Rp 2,7 M dan 8.900 tỷ", "id")[1], [])                       # 금액 자리표는 베트남어만
+        amounts = {"đặt mục tiêu lãi 700-800 tỷ đồng": ["7,000억~8,000억"],                     # 범위는 두 끝 모두
+                   "doanh thu 1.000-1.200 tỷ đồng": ["1조~1조 2,000억"], "từ 2 đến 3 nghìn tỷ đồng": ["2조~3조"],
+                   "góp thêm hơn 1,300 tỷ đồng cho NHSV": ["1조 3,000억"],                         # 영어식 천 단위 쉼표
+                   "1,5 ngàn tỉ đồng và Lãi 300 Tỷ Đồng": ["1조 5,000억", "3,000억"],               # 다른 표기·대문자
+                   "năm 2025 tỷ giá USD/VND, 20 tỷ lệ, 50 tỷ phú, VN30 tỷ trọng": []}               # 환율·비율·억만장자는 금액 아님
+        for t, want in amounts.items():
+            self.assertEqual(tr._mask(t, "vi")[1], want, t)
+        self.assertEqual(tr._mask("PT Korea Investment & Sekuritas Indonesia raih laba", "id"), ("PT [[N0]] Indonesia raih laba", ["한국투자증권"]))
+        # 자리표 바로 뒤 조사는 채운 말의 받침에 맞춘다(괄호 설명이 끼어도)
+        self.assertEqual(tr._unmask("[[N0]] (베트남)가 [[N1]]를 보통주로", ["미래에셋증권", "1억 1,350만"]), "미래에셋증권 (베트남)이 1억 1,350만을 보통주로")
+        self.assertEqual(tr._unmask("[[N0]]는 [[N1]]으로, [[N2]]이익", ["파인트리", "11조", "하나"]), "파인트리는 11조로, 하나이익")
+        self.assertEqual(tr._unmask("[[N0]](베트남)이 [[ N1 ]] 우선주로", ["미래에셋증권", "1억 1,350만"]), "미래에셋증권(베트남)이 1억 1,350만 우선주로")
+        self.assertEqual(tr._unmask("미래 자산 증권이 [[N1]]", ["미래에셋증권", "1억"]), "")         # 자리표를 빠뜨리면 번역 실패
 
     def test_main_feed_takes_foreign_hub_items(self):
         import tempfile
