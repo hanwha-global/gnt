@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T08:00+09:00",
+ "updated_at": "2026-10-28T09:42+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -307,6 +307,16 @@
    ]
   },
   {
+   "date": "2026-10-12",
+   "time": "16:00",
+   "title": "Foreign securities firms lag behind in the race to expand capital in Vietnam",
+   "src": "Theinvestor",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWdIMmNhaFZyYXJfRkNockh3cHFjYTRmZExRRkRROTVaM3RPdlUzMXFzUUgteWhXcnh0VjMtbkRSZ1d5alVRTDdUSEtVSzJwNndWR1NFZnltVXdvVVhOR2d5RDJxdHJUME5iQk0weV9HQUpEd3NtNTFjdG1tcmJySDQwbWpoZzlSWDNfME5OaDVMY19CZDBwMGJvalZCblNiTXlWcDBSNEIyM3JHT1E1OA?oc=5",
+   "site": "theinvestor.vn",
+   "firms": [],
+   "foreign": true
+  },
+  {
    "date": "2026-10-09",
    "title": "Mirae Asset Sharekhan Enables Indian Investors To Access Over 10,000 Us Stocks And ETFs Through Gift City",
    "src": "NDTV Profit",
@@ -463,20 +473,10 @@
   {
    "date": "2026-09-14",
    "time": "16:00",
-   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
-   "site": "www.etnews.com",
-   "firms": [
-    "토스증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
    "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5",
+   "site": "www.yna.co.kr",
    "firms": [
     "하나증권"
    ]
@@ -487,8 +487,20 @@
    "title": "하나증권, 업비트 글로벌과 디지털자산 사업 협력 업무협약 체결",
    "src": "한국경제",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QNjluWVc3TGhWaFJYZ21NTlFFUWFuc2I1ellQOVNfYTIzaFBYejRRd05lMHJuTzhjc0RiSjdUYU1NelY5VHhNa3VrOWJ4M1l2NlpSRTUxdjZVZw?oc=5",
+   "site": "www.hankyung.com",
    "firms": [
     "하나증권"
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": "16:00",
+   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
+   "site": "www.etnews.com",
+   "firms": [
+    "토스증권"
    ]
   },
   {
@@ -567,10 +579,10 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "Korea Investment & Securities expands global ties with Fidelity, PIMCO, Carlyle",
-   "src": "The Korea Times",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSGRpbjF3c01RbEptWFFVSWVfTDRvSWM2eXMwR2JjRm9vcG9nZFBYckVmQVJTb3VGTnpGSTlwcXlfOGVXNDduVXdDWWtCeFF2NTBaeEtjQzgxM1VMV1VvQWxObER5ZE5fZlRSLUE2YnVRUVlCQlF2TEtkYy1LMHQwRWpFYmJJa00wdzE1OXoxVE9rVmNVMmp3TFoxMUJRa05aSjVqaG41eUMwRERWR01QUFI1X3hSeGFtd1RMWVdacmNDcVI4bUYxMlF5UngzSjVfSHl6cNIB2gFBVV95cUxPX0VBN2FqeVVrSzFNcUUyVUl4TmljUjZucnF5SUNwbEdfWlhFN0ZxdnBRZUUwQmtKY3FkNEV3Vm1tbkZ4WUgzb3E0TzVMRlBTRmZzRGZOSjBVQzJDRkY0QkpyNUI0WGVfblpkWVVuMVd0WHRHdFo2d2N0Tk04aGh1R2tzTnQ2ZVk1T016bVRCRmFSQjU4Rk1lNnl4Wl9tcmQzc0NDMk5rR2p0WGJBS0xYaFdVcGg2dTNOUnotaE9SNnVNUHNNTnRkUndPQWtxSmlyNUl0TVVtMGFQQQ?oc=5",
-   "site": "www.koreatimes.co.kr",
+   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
+   "src": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
+   "site": "news.einfomax.co.kr",
    "firms": [
     "한국투자증권"
    ]
@@ -578,9 +590,10 @@
   {
    "date": "2026-09-10",
    "time": "16:00",
-   "title": "한국투자증권, 글로벌 투자역량 강화…피델리티·핌코·칼라일과 동맹",
-   "src": "연합인포맥스",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DUjFfYUdRZ1BybWJCaDU1TmVvWFcySlg4a1FJQnBqMGVJUkRrRlp3YmF3Y3JLQUt0a1VGb0h5eGVfd0NiMndiMzFPNC1KaXMxVmxwZ0RkYWtEa01ESW9Gd21PWHR5UGZNYlRjeUs4OXI?oc=5",
+   "title": "Korea Investment & Securities expands global ties with Fidelity, PIMCO, Carlyle",
+   "src": "The Korea Times",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSGRpbjF3c01RbEptWFFVSWVfTDRvSWM2eXMwR2JjRm9vcG9nZFBYckVmQVJTb3VGTnpGSTlwcXlfOGVXNDduVXdDWWtCeFF2NTBaeEtjQzgxM1VMV1VvQWxObER5ZE5fZlRSLUE2YnVRUVlCQlF2TEtkYy1LMHQwRWpFYmJJa00wdzE1OXoxVE9rVmNVMmp3TFoxMUJRa05aSjVqaG41eUMwRERWR01QUFI1X3hSeGFtd1RMWVdacmNDcVI4bUYxMlF5UngzSjVfSHl6cNIB2gFBVV95cUxPX0VBN2FqeVVrSzFNcUUyVUl4TmljUjZucnF5SUNwbEdfWlhFN0ZxdnBRZUUwQmtKY3FkNEV3Vm1tbkZ4WUgzb3E0TzVMRlBTRmZzRGZOSjBVQzJDRkY0QkpyNUI0WGVfblpkWVVuMVd0WHRHdFo2d2N0Tk04aGh1R2tzTnQ2ZVk1T016bVRCRmFSQjU4Rk1lNnl4Wl9tcmQzc0NDMk5rR2p0WGJBS0xYaFdVcGg2dTNOUnotaE9SNnVNUHNNTnRkUndPQWtxSmlyNUl0TVVtMGFQQQ?oc=5",
+   "site": "www.koreatimes.co.kr",
    "firms": [
     "한국투자증권"
    ]
@@ -770,6 +783,20 @@
    ],
    "foreign": true,
    "lang": "vi"
+  },
+  {
+   "date": "2026-08-18",
+   "title": "Pasar Makin Selektif, Mirae Asset Sekuritas Genjot Layanan Wealth Management",
+   "src": "kontan.co.id",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
+   "site": "investasi.kontan.co.id",
+   "hub": "미래에셋증권|인도네시아",
+   "time": "",
+   "firms": [
+    "미래에셋증권"
+   ],
+   "foreign": true,
+   "lang": "id"
   }
  ],
  "errors": []

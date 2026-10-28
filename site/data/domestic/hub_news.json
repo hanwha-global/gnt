@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T07:58+09:00",
+ "updated_at": "2026-10-28T09:40+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -103,10 +103,10 @@
    },
    {
     "date": "2022-04-27",
-    "title": "NH투자증권, 런던 현지법인 'NHIS Europe' 출범",
-    "src": "대한경제",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4a0VOc296SFdXTnpMZ0NmMjRUWTRfQzFiYU5KRTZFaUdYMWI3TWtRUllJakFsQVlrcDUyTnhhMW5vTl9tanVrZDRjVVdYcDF3NktEa2pOajdWR05rOEp2bE1LY3JnN3FESzVLNW1BVTA2U1Nr?oc=5",
-    "site": "www.dnews.co.kr",
+    "title": "NH Investment & Securities launches London corporation",
+    "src": "The Korea Herald",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TOGttY0tURjNMMEtqNVA4YmFDcFRyQVNKYm1wZlE4YVdpVWpTMjZoOS1qelJnVmFicGtxc0pOWG4zb1ZwOFZzcm03RngwQ1prcEZQdm9R?oc=5",
+    "site": "www.koreaherald.com",
     "old": true
    }
   ],
@@ -281,11 +281,29 @@
     "lang": "id"
    },
    {
-    "date": "2026-03-04",
-    "title": "Video: OJK-Polri Geledah Mirae Asset Sekuritas Terkait Dugaan Pidana Pasar Modal",
-    "src": "20detik",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbV9XYl9pYWlTMVp3SXQ0Wl9YUkVGbzA0NzJGWVNaUGktMU5xQWRwQVkwRW9ha2E2WWhMUkRUV2dtb3JYcTZmejdRdlp1aU96djlLMHJfMFFBR2hFQU4tamZZUWpOS0ZmM3ZyOXlJZXBYMTBnb29PeDRnSDdnS2JEWWRLSnBqMlVLdzZ2YXNwYm44YkZpcEdpc2xRV3AxMmZDaUxZSW5jQVp6WjdMUG15WW9rZkIxM3g1QjA0VlNoclpHbUlZcjV6cFFLRQ?oc=5",
-    "site": "20.detik.com",
+    "date": "2026-08-18",
+    "title": "Pasar Makin Selektif, Mirae Asset Sekuritas Genjot Layanan Wealth Management",
+    "src": "kontan.co.id",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
+    "site": "investasi.kontan.co.id",
+    "foreign": true,
+    "lang": "id"
+   },
+   {
+    "date": "2026-03-05",
+    "title": "Kenapa Kantor Mirae Asset Sekuritas Digeledah OJK?",
+    "src": "Kompas.com",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMW9lYThXUFhVWU14YTBMWGx1U1lEZ29iQVpTZWQ3eUZpMlZvMDNMSUJHNlRWZzl4YjFmWUxWNEhUMzVtM3ZrTkhqVklDc2g4SnZvZ2U5WjVWQnFJYVd2cE94aW1LMnctYVp5OHZPaTEzMzBzMkN4SVNHVDMxUjBlVW5MWXo5QjlTblI3Sm54MDYwMjJDWjBkZUpCT2VLalBMaTE5NTZ2VHBYeDEzVmc?oc=5",
+    "site": "money.kompas.com",
+    "foreign": true,
+    "lang": "id"
+   },
+   {
+    "date": "2025-12-01",
+    "title": "Respons Mirae Asset Sekuritas Usai Dilaporkan Nasabah ke Bareskrim",
+    "src": "Kompas.com",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ2Rob25BTDRvMnZNQ2VFZzZnd0lTano2LUJMUU4yQ2NqQWY1ekNvTS1teHoyNmE4T2FJTWFLR0lUWUdmcy1QMmp6MG5IalkwQkVKRzRjb1FJSFFMamVyNlk0RkcxVWhGTGdQVXFLMnExc2syaXJnaUJpUWZRUVRIRVQxOENBb3BCZF9CMTMyR0dxNHllOUxDampvY2M5VHJrMEZLc1UyQTRWaG5CcXluSTlVdHUxeTJBWE93?oc=5",
+    "site": "nasional.kompas.com",
     "foreign": true,
     "lang": "id"
    }
@@ -304,7 +322,8 @@
     "date": "2026-10-25",
     "title": "삼성증권 PB 출신 창업가…국내 증권사 6곳 뚫고, 美 진출한 비결",
     "src": "머니투데이",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBHS1lGZ20taHBDQ19BU3VQSWZSYTVlYnNfWXl0dFlRRDhwQl96eVA3Smc3RGhtTjBvSDU3QXNJMWRwTmlEQVFZemlvN2hKRFJ6TGlmNzVXbkkyR0g3ZnQ3VU96UHJWNWxKUmViRkFxY9IBb0FVX3lxTFBHS1lGZ20taHBDQ19BU3VQSWZSYTVlYnNfWXl0dFlRRDhwQl96eVA3Smc3RGhtTjBvSDU3QXNJMWRwTmlEQVFZemlvN2hKRFJ6TGlmNzVXbkkyR0g3ZnQ3VU96UHJWNWxKUmViRkFxYw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tUUZXS0I1QUw4ZUc1N2VLU1VJRFdiS2p6Q3k0OE04dnVUbzRKUjJPMS1pVXRqRy1OWEZYSVlEakd6ZHRwM0pzMFhWSGFrb19tTEpUSmlyM3YwNVlBOG1nSVJ1ZmVmZGxxRkHSAW9BVV95cUxQR0tZRmdtLWhwQ0NfQVN1UElmUmE1ZWJzX1l5dHRZUUQ4cEJfenlQN0pnN0RobU4wb0g1N0FzSTFkcE5pREFRWXppbzdoSkRSekxpZjc1V25JMkdIN2Z0N1VPelByVjVsSlJlYkZBcWM?oc=5",
+    "site": "www.mt.co.kr"
    }
   ],
   "신한투자증권|미국": [
@@ -493,7 +512,8 @@
     "date": "2026-09-29",
     "title": "한투 뉴욕 IB법인장 \"은행 규제가 기회…ABF로 영토 넓힌다\"",
     "src": "머니투데이",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hNVdyd3dldEt1X1BnUHBkeFFqelRyM09VNzFUeUt0SHZvcVZRN3FTeXZyY2VHaThDQ3dOOWNFMmFTOFdVRGpoc21MY1F4QnB1VlRCeEVKQkFScTlYazFwVmRfRFFrSlpa0gFuQVVfeXFMTVJZbUxSNXA3OThoeXc4OXhRRlVRaXMwSE5xdXlkU1g3RURhenNYUWppT0xpU3o0SlQ1Q1BsQjNJQ3lqNWtzd1JlV1A2Y1lHc1kzNTg2MmxDdnpqc2F1S2h4Qm9HMmtvREF3THlNSEE?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hNVdyd3dldEt1X1BnUHBkeFFqelRyM09VNzFUeUt0SHZvcVZRN3FTeXZyY2VHaThDQ3dOOWNFMmFTOFdVRGpoc21MY1F4QnB1VlRCeEVKQkFScTlYazFwVmRfRFFrSlpa0gFuQVVfeXFMTVJZbUxSNXA3OThoeXc4OXhRRlVRaXMwSE5xdXlkU1g3RURhenNYUWppT0xpU3o0SlQ1Q1BsQjNJQ3lqNWtzd1JlV1A2Y1lHc1kzNTg2MmxDdnpqc2F1S2h4Qm9HMmtvREF3THlNSEE?oc=5",
+    "site": "www.mt.co.kr"
    }
   ],
   "한국투자증권|베트남": [
