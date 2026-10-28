@@ -747,7 +747,7 @@ class ForeignNewsTest(unittest.TestCase):
             if "edge.microsoft.com" in url:                                                 # Microsoft(Edge 번역 주소)
                 texts = json.loads(data)
                 calls.append(("ms", "\n".join(texts)))
-                if not ms["ok"]:
+                if not ms["ok"] or ms.pop("fail_once", False):
                     raise RuntimeError("HTTP 404: ")
                 self.assertEqual((params["from"], params["to"]), ("id", "ko"))
                 return json.dumps([{"translations": [{"text": f"마이크로 {t[:9]}", "to": "ko"}]} for t in texts]).encode()
@@ -801,6 +801,13 @@ class ForeignNewsTest(unittest.TestCase):
         self.assertEqual([x["title_ko"] for x in both], ["마이크로 Aplikasi", "번역 NH Securi"])
         self.assertEqual([c[0] for c in calls], ["google", "google", "ms"])
 
+        # 한 번 실패한 번역기도 다음 묶음에서 다시 쓴다(두 번 실패하면 그 실행 동안 쉰다)
+        ms["fail_once"] = True
+        twice = [{"title": "Thị trường macet", "lang": "vi"}, {"title": "Aplikasi macet lagi", "lang": "id"}]
+        run(twice, {})
+        self.assertEqual([c[0] for c in calls], ["google", "ms", "mm", "google", "ms"])
+        self.assertEqual(twice[1]["title_ko"], "마이크로 Aplikasi")
+
         # 줄 수가 안 맞으면 한 건씩, 한 번에 새로 번역하는 수 상한
         more = [{"title": f"Judul {i}", "lang": "id"} for i in range(5)]
         self.assertEqual(run(more, {}, max_new=2), 2)
@@ -824,6 +831,17 @@ class ForeignNewsTest(unittest.TestCase):
                          ("Usai [[N0]], BEI Juga Sanksi PT KB Valbury Securities", ["미래에셋"]))
         self.assertEqual(tr._mask("Kantor Mirae Asset Sekuritas Digeledah OJK", "id"), ("Kantor [[N0]] Digeledah OJK", ["미래에셋증권"]))
         self.assertEqual(tr._mask("Rp 2,7 M dan 8.900 tỷ", "id")[1], [])                       # 금액 자리표는 베트남어만
+        amounts = {"đặt mục tiêu lãi 700-800 tỷ đồng": ["7,000억~8,000억"],                     # 범위는 두 끝 모두
+                   "doanh thu 1.000-1.200 tỷ đồng": ["1조~1조 2,000억"], "từ 2 đến 3 nghìn tỷ đồng": ["2조~3조"],
+                   "góp thêm hơn 1,300 tỷ đồng cho NHSV": ["1조 3,000억"],                         # 영어식 천 단위 쉼표
+                   "1,5 ngàn tỉ đồng và Lãi 300 Tỷ Đồng": ["1조 5,000억", "3,000억"],               # 다른 표기·대문자
+                   "năm 2025 tỷ giá USD/VND, 20 tỷ lệ, 50 tỷ phú, VN30 tỷ trọng": []}               # 환율·비율·억만장자는 금액 아님
+        for t, want in amounts.items():
+            self.assertEqual(tr._mask(t, "vi")[1], want, t)
+        self.assertEqual(tr._mask("PT Korea Investment & Sekuritas Indonesia raih laba", "id"), ("PT [[N0]] Indonesia raih laba", ["한국투자증권"]))
+        # 자리표 바로 뒤 조사는 채운 말의 받침에 맞춘다(괄호 설명이 끼어도)
+        self.assertEqual(tr._unmask("[[N0]] (베트남)가 [[N1]]를 보통주로", ["미래에셋증권", "1억 1,350만"]), "미래에셋증권 (베트남)이 1억 1,350만을 보통주로")
+        self.assertEqual(tr._unmask("[[N0]]는 [[N1]]으로, [[N2]]이익", ["파인트리", "11조", "하나"]), "파인트리는 11조로, 하나이익")
         self.assertEqual(tr._unmask("[[N0]](베트남)이 [[ N1 ]] 우선주로", ["미래에셋증권", "1억 1,350만"]), "미래에셋증권(베트남)이 1억 1,350만 우선주로")
         self.assertEqual(tr._unmask("미래 자산 증권이 [[N1]]", ["미래에셋증권", "1억"]), "")         # 자리표를 빠뜨리면 번역 실패
 

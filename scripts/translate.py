@@ -2,7 +2,7 @@
 
 - 무료 번역 주소를 차례로 쓴다: Google 번역(translate.googleapis.com, client=gtx) → Microsoft 번역(Edge 브라우저 번역 주소,
   edge.microsoft.com/translate/translatetext) → MyMemory. 앞의 두 곳은 같은 말 제목을 묶어 보내 실행마다 몇 번만 부른다
-- GitHub Actions 서버에서는 Google이 자주 막힌다(HTTP 429). 어느 곳이든 한 번 막히면 그 실행 동안은 다시 부르지 않는다
+- GitHub Actions 서버에서는 Google이 막힌다(HTTP 429). Google·Microsoft는 두 번 실패하면, MyMemory는 한 번 막히면 그 실행 동안은 다시 부르지 않는다
 - MyMemory 번역은 숫자 단위(tỷ = 10억 등)를 자주 틀려 예비로만 쓴다(ko_by). 다음 실행에서 Google·Microsoft로 다시 번역해 바꾼다
 - 이미 번역한 제목은 이전 파일에서 가져와 다시 부르지 않는다(실행마다 새 제목만 번역)
 - 모두 실패하면 번역 없이 둔다: 화면은 원문 제목과 '번역' 링크(Google 번역 페이지)를 보여 준다
@@ -37,11 +37,17 @@ ID_FIRM = re.compile(r"(\b[A-Z][\w&.-]*) Sekuritas\b")
 BRANDS = {"Mirae Asset": "미래에셋", "Korea Investment": "한국투자", "Samsung": "삼성", "Kiwoom": "키움", "Shinhan": "신한",
           "Hana": "하나", "Hanwha": "한화", "Toss": "토스", "Pinetree": "파인트리", "Ciptadana": "칩타다나"}
 _BRAND = "|".join(re.escape(b) for b in sorted(BRANDS, key=len, reverse=True))
-FIRM_KO = re.compile(rf"Chứng [Kk]hoán ({_BRAND})\b|\b({_BRAND}) (?:Sekuritas|Securities)\b|\b({_BRAND})\b")
-# 베트남어 금액: 점은 천 단위, 쉼표는 소수점(8.900 tỷ = 8,900 × 10억). 113.5 triệu처럼 점 뒤가 세 자리가 아니면 소수점
-VI_AMOUNT = re.compile(r"(?<![\d.,])(\d+(?:[.,]\d+)*)\s*(nghìn tỷ|ngàn tỷ|tỷ|tỉ|triệu)(?!\w)")
-VI_UNIT = {"triệu": 10 ** 6, "tỷ": 10 ** 9, "tỉ": 10 ** 9, "nghìn tỷ": 10 ** 12, "ngàn tỷ": 10 ** 12}
+FIRM_KO = re.compile(rf"Chứng [Kk]hoán ({_BRAND})\b|\b({_BRAND})(?: (?:&|and))? (?:Sekuritas|Securities)\b|\b({_BRAND})\b")
+# 베트남어 금액(범위 '700-800 tỷ'는 아래 끝의 단위를 같이 쓴다). 'tỷ lệ'(비율)·'tỷ giá'(환율)·'tỷ phú'(억만장자) 등은 금액이 아니다
+_NUM = r"\d+(?:[.,]\d+)*"
+VI_AMOUNT = re.compile(rf"(?<![\w.,])(?:({_NUM})\s*(?:-|–|—|~|đến|tới)\s*)?({_NUM})\s*((?:nghìn |ngàn )?(?:tỷ|tỉ)|triệu)"
+                       r"(?!\w)(?! (?:lệ|giá|trọng|suất|phú)\b)", re.I)
+VI_UNIT = {"triệu": 10 ** 6, "tỷ": 10 ** 9, "nghìn tỷ": 10 ** 12}
 SLOT = re.compile(r"\[\[\s*N\s*(\d+)\s*\]\]")
+# 자리표 바로 뒤 조사(괄호 설명이 끼어도)는 채운 말의 받침에 맞춘다: 미래에셋증권가 → 미래에셋증권이
+JOSA = re.compile(r"(\s?\([^()]*\))?(으로|은|는|이|가|을|를|과|와|로)(?![가-힣])")
+PAIRS = {"은": ("은", "는"), "는": ("은", "는"), "이": ("이", "가"), "가": ("이", "가"), "을": ("을", "를"), "를": ("을", "를"),
+         "과": ("과", "와"), "와": ("과", "와"), "으로": ("으로", "로"), "로": ("으로", "로")}
 
 
 def _prep(text, sl):
@@ -64,15 +70,25 @@ def _ko_amount(n):
     return " ".join(out) or f"{n:,}"
 
 
-def _vi_amount(m):
-    num, unit = m.group(1), m.group(2).lower()
+def _vi_number(num):
+    """베트남어 숫자: 점은 천 단위·쉼표는 소수점(8.900 = 8900, 2,5 = 2.5). 영어식(1,300 = 1300, 113.5 = 113.5)도 읽는다.
+    어느 쪽인지 알 수 없으면 None."""
     if re.fullmatch(r"\d{1,3}(?:\.\d{3})+(?:,\d+)?", num):
-        num = num.replace(".", "").replace(",", ".")
-    elif num.count(".") + num.count(",") > 1:
+        return float(num.replace(".", "").replace(",", "."))
+    if re.fullmatch(r"\d{1,3}(?:,\d{3})+(?:\.\d+)?", num):       # 쉼표 뒤 세 자리는 천 단위(1,300 tỷ)
+        return float(num.replace(",", ""))
+    if num.count(".") + num.count(",") > 1:
         return None
-    else:
-        num = num.replace(",", ".")
-    return _ko_amount(round(float(num) * VI_UNIT[unit]))
+    return float(num.replace(",", "."))
+
+
+def _vi_amount(m):
+    """베트남어 금액(범위면 두 끝 모두)을 한국식 단위로: 8.900 tỷ → '8조 9,000억', 700-800 tỷ → '7,000억~8,000억'."""
+    unit = re.sub(r"\s+", " ", m.group(3).lower()).replace("tỉ", "tỷ").replace("ngàn", "nghìn")
+    nums = [_vi_number(n) for n in (m.group(1), m.group(2)) if n]
+    if None in nums:
+        return None
+    return "~".join(_ko_amount(round(n * VI_UNIT[unit])) for n in nums)
 
 
 def _mask(text, sl):
@@ -97,11 +113,32 @@ def _mask(text, sl):
     return text, slots
 
 
+def _josa(word, josa):
+    """받침에 맞는 조사(은/는, 이/가, 을/를, 과/와, 으로/로). word 끝이 한글이 아니면 그대로."""
+    code = ord(word[-1]) - 0xAC00 if word else -1
+    if not 0 <= code < 11172:
+        return josa
+    final = code % 28
+    with_final, without = PAIRS[josa]
+    if with_final == "으로":
+        return without if final in (0, 8) else with_final        # ㄹ 받침 뒤는 '로'
+    return with_final if final else without
+
+
 def _unmask(ko, slots):
-    """자리표를 채운다. 번역기가 자리표를 빠뜨렸으면 번역이 안 된 것으로 본다("")."""
+    """자리표를 채우고 바로 뒤 조사를 받침에 맞춘다. 번역기가 자리표를 빠뜨렸으면 번역이 안 된 것으로 본다("")."""
     if sorted({int(i) for i in SLOT.findall(ko)}) != list(range(len(slots))):
         return ""
-    return SLOT.sub(lambda m: slots[int(m.group(1))], ko)
+    out, pos = [], 0
+    for m in SLOT.finditer(ko):
+        word = slots[int(m.group(1))]
+        out += [ko[pos:m.start()], word]
+        pos = m.end()
+        j = JOSA.match(ko, pos)
+        if j:
+            out += [j.group(1) or "", _josa(word, j.group(2))]
+            pos = j.end()
+    return "".join(out + [ko[pos:]])
 
 
 def _hangul(ko):
@@ -123,7 +160,7 @@ def _google(texts, sl, st):
 def _microsoft(texts, sl, st):
     """Microsoft 번역(Edge 번역 주소): 제목 목록을 한 번에 보낸다."""
     data = json.loads(net.get(EDGE, {"from": sl, "to": "ko", "isEnterpriseClient": "false"}, data=json.dumps(texts).encode(),
-                              retries=1, timeout=15, headers={"Content-Type": "application/json"}))
+                              retries=2, timeout=15, headers={"Content-Type": "application/json"}))
     if not isinstance(data, list) or len(data) != len(texts):
         return None
     return [_hangul(((d.get("translations") or [{}])[0]).get("text")) for d in data]
@@ -153,14 +190,15 @@ def _chunks(texts, size=CHUNK):
 
 
 def _batch(name, fn, texts, sl, st):
-    """묶음 번역 목록(안 된 줄은 ""). 묶음의 줄 수가 안 맞으면 한 건씩. 한 번 막히면 이 실행 동안은 다시 부르지 않는다."""
-    if st["err"].get(name):
+    """묶음 번역 목록(안 된 줄은 ""). 묶음의 줄 수가 안 맞으면 한 건씩. 두 번 실패하면 이 실행 동안은 다시 부르지 않는다."""
+    if st["fails"].get(name, 0) >= 2:
         return [""] * len(texts)
     masked = [_mask(t, sl) for t in texts]
     try:
         kos = fn([m for m, _ in masked], sl, st)
     except Exception as e:
         st["err"][name] = str(e)[:120]
+        st["fails"][name] = st["fails"].get(name, 0) + 1
         return [""] * len(texts)
     finally:
         time.sleep(PAUSE)
@@ -225,7 +263,7 @@ def add_ko(items, cache, max_new=MAX_NEW):
         if not ko or by:
             (redo if ko else new).setdefault(x["title"], x["lang"])
     todo = list({**new, **redo}.items())[:max_new]
-    st = {"err": {}, "n": {}, "fail": 0}
+    st = {"err": {}, "fails": {}, "n": {}, "fail": 0}
     for sl in LANGS:
         for chunk in _chunks([t for t, lang in todo if lang == sl]):
             got = dict.fromkeys(chunk, "")
