@@ -816,10 +816,10 @@ class ForeignNewsTest(unittest.TestCase):
             self.assertEqual(tr._mask(t, "vi" if "Chứng" in t else "id"), (t, []))
         # 국내 증권사 이름과 베트남어 금액은 자리표로 보내고 한국어로 채운다
         self.assertEqual(tr._mask("Dư nợ cho vay tăng lên gần 8.900 tỷ đồng, Chứng khoán Mirae Asset báo lãi", "vi"),
-                         ("Dư nợ cho vay tăng lên gần [[N1]], [[N0]] báo lãi", ["미래에셋증권", "8조 9,000억 동"]))
+                         ("Dư nợ cho vay tăng lên gần [[N1]] đồng, [[N0]] báo lãi", ["미래에셋증권", "8조 9,000억"]))
         self.assertEqual(tr._mask("Chứng khoán Mirae Asset (Việt Nam) sắp chuyển 113.5 triệu cp", "vi"),
                          ("[[N0]] (Việt Nam) sắp chuyển [[N1]] cp", ["미래에셋증권", "1억 1,350만"]))
-        self.assertEqual(tr._mask("Lợi nhuận 700 tỷ, vốn 11.000 tỷ đồng, lãi 1,5 tỷ USD", "vi")[1], ["7,000억", "11조 동", "15억 달러"])
+        self.assertEqual(tr._mask("Lợi nhuận 700 tỷ, vốn 11.000 tỷ đồng, lãi 1,5 tỷ USD", "vi")[1], ["7,000억", "11조", "15억"])
         self.assertEqual(tr._mask("Usai Mirae Asset, BEI Juga Sanksi PT KB Valbury Sekuritas", "id"),
                          ("Usai [[N0]], BEI Juga Sanksi PT KB Valbury Securities", ["미래에셋"]))
         self.assertEqual(tr._mask("Kantor Mirae Asset Sekuritas Digeledah OJK", "id"), ("Kantor [[N0]] Digeledah OJK", ["미래에셋증권"]))

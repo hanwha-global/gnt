@@ -8,7 +8,7 @@
 - 모두 실패하면 번역 없이 둔다: 화면은 원문 제목과 '번역' 링크(Google 번역 페이지)를 보여 준다
 - 번역기가 자주 틀리는 것은 보내기 전에 [[N0]] 같은 자리표로 바꾸고 번역 뒤에 한국어로 채운다
   · 국내 증권사 이름(Chứng khoán Mirae Asset·Mirae Asset Sekuritas → 미래에셋증권: '미래 자산 증권'으로 옮기지 않게)
-  · 베트남어 금액(8.900 tỷ đồng → 8조 9,000억 동: 번역기가 tỷ(10억)를 억으로 읽어 10배 틀리는 일이 잦다)
+  · 베트남어 금액(8.900 tỷ → 8조 9,000억: 번역기가 tỷ(10억)를 억으로 읽어 10배 틀리는 일이 잦다). 통화(đồng 등)는 번역기에 맡겨 조사가 맞게
 - 영문 약자 회사 이름은 업종 낱말을 영어로 바꿔 보낸다(Chứng khoán NH → NH Securities: NH를 은행 약자로 읽지 않게)
 """
 import html
@@ -39,9 +39,8 @@ BRANDS = {"Mirae Asset": "미래에셋", "Korea Investment": "한국투자", "Sa
 _BRAND = "|".join(re.escape(b) for b in sorted(BRANDS, key=len, reverse=True))
 FIRM_KO = re.compile(rf"Chứng [Kk]hoán ({_BRAND})\b|\b({_BRAND}) (?:Sekuritas|Securities)\b|\b({_BRAND})\b")
 # 베트남어 금액: 점은 천 단위, 쉼표는 소수점(8.900 tỷ = 8,900 × 10억). 113.5 triệu처럼 점 뒤가 세 자리가 아니면 소수점
-VI_AMOUNT = re.compile(r"(?<![\d.,])(\d+(?:[.,]\d+)*)\s*(nghìn tỷ|ngàn tỷ|tỷ|tỉ|triệu)(?:\s*(đồng|VND|USD|đô la))?(?!\w)")
+VI_AMOUNT = re.compile(r"(?<![\d.,])(\d+(?:[.,]\d+)*)\s*(nghìn tỷ|ngàn tỷ|tỷ|tỉ|triệu)(?!\w)")
 VI_UNIT = {"triệu": 10 ** 6, "tỷ": 10 ** 9, "tỉ": 10 ** 9, "nghìn tỷ": 10 ** 12, "ngàn tỷ": 10 ** 12}
-VI_CCY = {"đồng": " 동", "vnd": " 동", "usd": " 달러", "đô la": " 달러"}
 SLOT = re.compile(r"\[\[\s*N\s*(\d+)\s*\]\]")
 
 
@@ -66,14 +65,14 @@ def _ko_amount(n):
 
 
 def _vi_amount(m):
-    num, unit, ccy = m.group(1), m.group(2).lower(), (m.group(3) or "").lower()
+    num, unit = m.group(1), m.group(2).lower()
     if re.fullmatch(r"\d{1,3}(?:\.\d{3})+(?:,\d+)?", num):
         num = num.replace(".", "").replace(",", ".")
     elif num.count(".") + num.count(",") > 1:
         return None
     else:
         num = num.replace(",", ".")
-    return _ko_amount(round(float(num) * VI_UNIT[unit])) + VI_CCY.get(ccy, "")
+    return _ko_amount(round(float(num) * VI_UNIT[unit]))
 
 
 def _mask(text, sl):
