@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T15:32+09:00",
+ "updated_at": "2026-10-28T18:53+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -170,6 +170,28 @@
   },
   {
    "date": "2026-10-28",
+   "time": "14:13",
+   "title": "‘라이선스 장벽’ M&A로 넘는다…미래에셋, 일본 증권사 인수 발표",
+   "src": "헤럴드경제",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJQ0VpTUpSU3VabGM2TDltSW56M3JMUW5XVjlKTHRqemhmdFRmaHhBRlhYMmdJOGFaUXN4TkNZY1N0dkZaVGYtTno4ME1mbHRhZWpqeTZB?oc=5",
+   "site": "biz.heraldcorp.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "time": "12:30",
+   "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
+   "site": "stock.mk.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-28",
    "time": "11:28",
    "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
    "src": "아시아경제",
@@ -217,7 +239,7 @@
    "time": "17:58",
    "title": "[단독]빈그룹 아리랑본드에 2300억원 몰려…신한證베트남 단독 주관",
    "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4yRXhvdGFuWnF5QkxVRUFmdUU3YnpKX2NsU0dFOTVGSnBmZksxLUF6ZUVzbVZad0FEOFdsOGY0VWtwSnhLcGp4cHpTYTMtNGdrY2Z2LUx3b1hUdlB6aGRwWkNXZndfYmZlbFo3VHBn0gFuQVVfeXFMTjJFeG90YW5acXlCTFVFQWZ1RTdiekpfY2xTR0U5NUZKcGZmSzEtQXplRXNtVlp3QUQ4V2w4ZjRVa3BKeEtwanhwelNhMy00Z2tjZnYtTHdvWFR2UHpoZHBaQ1dmd19iZmVsWjdUcGc?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5YbTNWN055cVd0aF82WFFTUE4wSjhCaVlIbnlTSU9KSWpTSWxNblFzLUVKaFlFMnZtYjlUN0w2TGo2MENFdUp4cDNVYlFsYU83WFdjNmVLNVNVaDFTclhpbWxKR2Fiam1qeTVYQjgyR2VEU3FrTHoyazc3d9IBe0FVX3lxTE5YbTNWN055cVd0aF82WFFTUE4wSjhCaVlIbnlTSU9KSWpTSWxNblFzLUVKaFlFMnZtYjlUN0w2TGo2MENFdUp4cDNVYlFsYU83WFdjNmVLNVNVaDFTclhpbWxKR2Fiam1qeTVYQjgyR2VEU3FrTHoyazc3dw?oc=5",
    "site": "www.mt.co.kr",
    "firms": [
     "신한투자증권"
@@ -787,26 +809,6 @@
    "title": "박현주 '미래에셋 3.0' 혁신 속도전, 최종목표 '글로벌 투자 플랫폼' 향한다",
    "src": "비즈니스포스트",
    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPTFRSaE1GQ2U0eDgydl81WDVTdU8xNnlGUUxWeTBON2p6NE9zSHNVWkNfMkVxRDNpck5qZkFucmkzTlRlZ09EZWl6NlAzYW9fZFM5UmRFcF9IMnR3djZBWW5NNmE3SXFnUjN2S2xBaV8xX0E?oc=5",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-08-28",
-   "time": "16:00",
-   "title": "미래에셋증권, 퍼블릭닷컴 인수 중단…美 현지 새 매물 검토",
-   "src": "이투데이",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91WGx6SFJXNkczYU9CeUlXYzY1bzJvRXVsYUhvQ1ZqMXdlNFd3bk5MQmw4X29BNDBpMDYzTk9JcC1yX0dibHl3Rm5LWm5GNzRFaHdURg?oc=5",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-08-26",
-   "time": "16:00",
-   "title": "[단독] 미래에셋·토스, 日 증권사 인수한다",
-   "src": "한국경제",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hR2Vpc3h2TjItZHAxR0prOVZTRkR2b2ZHekVQUmZWdEd5c2VYMGdaa3BGZW0teDdnaUoxNXFrZTNFUWc3U0dpemJwVjZqVDI3M3BvcGF2OGpDUQ?oc=5",
    "firms": [
     "미래에셋증권"
    ]
