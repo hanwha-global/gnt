@@ -69,7 +69,8 @@ def periodic_reports(rows):
 
 
 def label_of(year, period):
-    return f"FY{year}" if period == "FY" else f"{period}{year[2:]}"
+    """화면 기간 이름: FY2025 · 1H26 · 1Q26 · 3Q26(9개월 누적 기간도 3Q로 적는다. 메인 화면 표기와 같게)."""
+    return f"FY{year}" if period == "FY" else f"{'3Q' if period == '9M' else period}{year[2:]}"
 
 
 def report_info(r):
@@ -270,6 +271,8 @@ def build_history(key, reps, prev, docs, chosen, today):
     old = {p["report"]["rcept_no"]: p for p in prev.get("history", [])}
     for rep, subs in chosen:  # 이번에 받은 기본 기간은 그대로 쓴다
         old[rep["rcept_no"]] = period_entry(rep, subs)
+    for p in old.values():  # 예전 저장분 이름(9M25)도 지금 규칙(3Q25)으로
+        p["label"] = label_of(p["year"], p["period"])
     skip = set(prev.get("history_skip", []))
     out = []
     for r in reps:

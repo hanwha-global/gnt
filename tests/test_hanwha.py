@@ -46,7 +46,7 @@ class DartSubsTest(unittest.TestCase):
         reps = fetch_dart_subs.periodic_reports(rows)
         self.assertEqual([(r["year"], r["period"]) for r in reps], [("2026", "1H"), ("2025", "FY")])
         self.assertEqual(reps[1]["rcept_no"], "20260401000001")
-        self.assertEqual(fetch_dart_subs.label_of("2026", "9M"), "9M26")
+        self.assertEqual(fetch_dart_subs.label_of("2026", "9M"), "3Q26")  # 9개월 누적도 화면 표기는 3Q
         self.assertEqual(fetch_dart_subs.label_of("2025", "FY"), "FY2025")
 
     def test_invest_rows_in_millions_and_only_our_subsidiaries(self):
@@ -118,7 +118,7 @@ class DartFetchFallbackTest(unittest.TestCase):
 
     def test_invest_falls_back_to_previous_interim_report(self):
         d = self.run_main(invest_ok={("2026", "11012")})  # 3분기 출자현황만 아직 없음
-        self.assertEqual([p["label"] for p in d["periods"]], ["FY2025", "9M26"])
+        self.assertEqual([p["label"] for p in d["periods"]], ["FY2025", "3Q26"])
         self.assertEqual(d["invest"]["report"]["period"], "1H")
         self.assertEqual(d["invest"]["rows"]["SG"]["end_book"], 9000.0)
 
