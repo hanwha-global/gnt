@@ -1,10 +1,18 @@
 {
- "updated_at": "2026-10-29T00:16+09:00",
+ "updated_at": "2026-10-29T10:12+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
+    {
+     "date": "2026-10-29",
+     "time": "09:15",
+     "title": "코스피, 6천선 위 상승 출발…외국인 매수에 0.6%↑",
+     "src": "연합인포맥스",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40YzF4aUdJalFiQ0dVUXFWXzk4czVfYmtFSnRtLUdWSGp0OWtQN3htZnNWeTZFaV8xS1NfMl9ZOWE2VjlWUTgwZERHbVR3U0JHbTlBSWZGYTRpR2RwUEplYkhxSGN3Y3I4UnVSM2pEVDQ?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-10-28",
      "time": "18:10",
@@ -15,18 +23,10 @@
     },
     {
      "date": "2026-10-28",
-     "time": "13:39",
-     "title": "\"외국인·기관 조 단위로 사들였다\"…삼전닉스 급등에 코스피 6000 탈환",
-     "src": "아시아경제",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FZmxYWHJXaGN5di1DdS1vNGFLZ3BMNF92QUJVQXJINF9oejU2RnNndXdPbGNmUE04SXhFMnl3YVdDZl9UM1dQczctN3NES0oxR0lWMHYtcjZDM1VJeklwZA?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-28",
-     "time": "09:46",
-     "title": "\"반도체 이익 못 믿는다\"… 코스피 PER 4배에도 외국인 208조원 '엑소더스'",
-     "src": "뉴데일리",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFByWkdKNDJ0YXp3NENpUDFibXFtRmRzVF9HaFhpYVJGc3ZKOWNxc1RMTmRvZzVPMnRzTG11NV9selJ2cnZzSDgwTjE1LS13VmpJOGF4bERoWk1LWEVKT1B0bDNaLVptbENIQlV2eC1SdG44Q2ppZGhEWkVHWdIBgAFBVV95cUxOaVVKT2NoSUVfejZfR0cteUpodmRCSEZHcEZPUDc3eUhtdnN3cm9YZ2ZwQ2ktQklMb0doT0dtZ3F0dW5RTlNXSjMzYWFBM1Z1WW13Yi12dU9iNG5SeFA3dVBRcVVVVVJFNUR1bHVzSVhySEl6VzN5eUtjU3NXNEJvcA?oc=5",
+     "time": "17:59",
+     "title": "외국인 귀환에 다시 자사주 방패…힘받는 코스피 바닥론",
+     "src": "서울경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1HbFFfLWpOWlRETmFjd1lpYkhQNW9EZkhOcWlwQmNQZ0piSktISHJzeDllOTlwUExLYUw5a1d2QlZTT2dhQ2x3MndzYVBnWmNwdGfSAVNBVV95cUxPSGJrdDlqY00wSFVfUFBiY0ZqcWZBQnpRQ0hwamJfcE5rNlI3VzIySzUyWEpscTlPbEZldWFwMUlhU2I0XzlndWYwaHAzU2Q4YnNuRQ?oc=5",
      "priority": false
     }
    ]
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-10-29",
-     "time": "00:00",
-     "title": "[김대호 진단] 연준 FOMC 기준금리 동결과 역사의 교훈",
-     "src": "글로벌이코노믹",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMkZiRzRBMnI2d0hOT0U3U3U5Sm90bTZnaU9TT09oXzdZN1pLdGNORmVHY3laSE9scVpoVERUb0JMM1pSb3Vpb3ZfWEJNcXBOWHppTEdVa1ZMNkRlOXc5eFU2QnNmM1owUnVhNHpObHNsaHN3MjhCMmZTSzBldmJaYWY1dFQ?oc=5",
+     "time": "09:56",
+     "title": "전문가들 \"연준 금리 동결, 긴축 종료 아닌 숨 고르기…12월 인상 전망\"",
+     "src": "연합인포맥스",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15bWY5RmhuRVhJMDNITDNYNUFhQmhVS3FjeU9SNUJncmxBNHRWMVpvVE5tNDZPdVczSV9rejUzTEVSWEdReEI2YVdCTGdBZlJQYm1TZExWTWdnQ2lSRS02RTB2RExQM3FNRXhfbG0zWF8?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-28",
-     "time": "23:42",
-     "title": "뉴욕증시, FOMC 금리 결정 앞두고 상승 출발…반도체주 강세",
+     "date": "2026-10-29",
+     "time": "09:54",
+     "title": "이형일 FOMC 금리동결에 물가안정 기조 유지…주식 결제주기 단축",
+     "src": "아주경제",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8za2ltdTVwUXNsa2Z6M0hpbVlFLXhPWUNDNDVwMHhPTE14bnIxbm1VMm1kem9nd3NzQlkwRnJPc3RZakhvN3ZkeTNnMHEwa3U4SU1BcndrdjdwZ9IBWEFVX3lxTE4tRnRrT193XzRDM2c2VFRNUFd5dVh5OXF0em5BUldmMlktNGd4aWw4bnFuWTZoWGdvX25fRmpqbmxLQ0c3cTNpUXpmWmZOMXFyRWpwNXZhMzE?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-29",
+     "time": "09:19",
+     "title": "한은 “미국 금리 동결했지만 AI 불확실성 등 대외 리스크 상존”",
      "src": "KBS 뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1obmM5Tm1wc1BjRVlLVGdJTVhOSmx0Qk93VXZxeHZldV9ySDBpcFRqejZyOUtKMXZpQVVuS3E2cHZxSW5FTE5xV0tnWlJtb090bTFrY2xtaVEyWDg?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-28",
-     "time": "22:44",
-     "title": "뉴욕증시, FOMC 대기하며 상승 출발",
-     "src": "매일경제 마켓",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1OOHNORjExWmxOc3VNN1J5VzlmaFhXRV9YbjlQLW9jSGpXbVBld20tVm8wUVN1T0xQRmlBTWxpa2VWMnlhc0pIbTNKNXVyZG1YQ1E?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jdldhQlJicEdkUDN5MUJjOHNjVEpQZnVNcUQtUm1BVEh2VXI5RUJYcXdyVHRnSGEyVTFnajl2ZHA3U0thY0VSY25FNW1fZFdja09aZFJySUpBY1U?oc=5",
      "priority": false
     }
    ]
@@ -63,6 +63,14 @@
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-10-28",
+     "time": "19:20",
+     "title": "Indonesia faces 'triple selling' pressure amid MSCI downgrade concerns",
+     "src": "Nikkei Asia",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNGFON01SRVZMN0lSWXA2WU9IeFlNZjdsN0J4LVZRTlFPeHdOZ0ZvWjVqb3p1allxT21sOUNZZjl0ZjVIY0k3YUNLU1hFbGZJMXBISEFiLVVYOVJDSl9KcTZpUXNiMEhlNXBSR1A1NTJSb1E1YnBTQ3psbFY2bGlDdTB0bUM3aFBDMElMc2pZMFlzdDRzTHY5UnpEaEdrMG1XQUZYNW52M0R1QXVjZXc?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-10-28",
      "time": "12:53",
@@ -77,14 +85,6 @@
      "title": "Jakarta Stocks Extend Losses as Rupiah, MSCI Risks Weigh",
      "src": "Jakarta Globe",
      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNd1ByeUE3cTBuaU94RUhXczdkNlMydzJoZUhwUEt2eC02dEgxejV0Y1VyQmdkVGlUVGZlekxmNV9YUUdxUUZWX2hZbWpfWnpIakdod1hjN1BWZUpIVmpfSm1HU2g0X0pmWHhtVC1xdzNud21DZDc3ci1sVXRfQ21veFE3VjJwN0V5djZCNTFVRWx4UQ?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-27",
-     "time": "20:05",
-     "title": "Indonesia Bond Yield Hits Four-Year High as MSCI Risk, Oil Weigh",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVo5OTQ4TUlrNnNheWQybnE2UkZ6ZHZtcEpYUDgzVTN0ZlBJSVFUbjliMUVfNi1OWlBRbE9aYnczeW11RzFIaHJIUFJZUHE1WlNIUnBiaTlGdGFjdmdTazRBS2tUdXNJcXVDcTEyUzQ5ajZZVHlBOTN5MVB1U281OUI3UzVweThKY24ycFozbmphY3RPNkoxMG80Qk5WQnhBQ2p2b1QxcG0yTjFzWGc?oc=5",
      "priority": true
     }
    ]
@@ -122,6 +122,14 @@
    "label": "일본",
    "items": [
     {
+     "date": "2026-10-29",
+     "time": "08:30",
+     "title": "BOJ Set to Hold Rate as Inflation Reaches Long-Awaited Milestone",
+     "src": "Bloomberg",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcnN0ZEp0Q1kzU1Q5SjVmNGxRXzl6UEstUjctVVFSRGJuX3c4NTFSeDlQOEl1Rl84RTlnbk5hZ2NZSUlGSlRQYjNiVHRGQmk4NFFfLXA5a3JKckd1Nk1LUWZGSEwxZWFac1Z4UVFUc29NbGFIRzNCU2RHc1dlMHVmeGVzQW00LVNralhSU2FYdGlscVVSS2JnUEJBbVZSMUcwY0FLakpjUUlNSnlPS0wtQkkzOFU5QQ?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-28",
      "time": "18:19",
      "title": "Nikkei Rises 1.1% for Second Day as SK Hynix Blowout Earnings Revive AI Trade, but Most Tokyo Stocks Fall",
@@ -135,14 +143,6 @@
      "title": "Global Market: JGB yields climb as investors await BOJ, Fed policy decisions",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQMkViMUdOVlptY3ZQb3E4VlBQRDlvRVJ5bFV1dVF2VUJWWktWblktME84WmhBU1paS3dxRnExemxuLUNMRlkyVS14UDQ1ZTRmbDdoSVZlVW9Pc3o1LURUbUZQeTlYQ3JrV3pWZnJRZjdZc0JVb0JDeHE0RUpqMUJBWFB3d1VHZmk5cHh6Z0ZYaEllTld1Z0V3d241akpKenVDNUhWak1jYlk2aFBIaDBSZzBRRWNGbjJndXhYbkhILXF2MEw3X21QZTFZWUs0amUzYi1DZFlkOWtYZzFkaEZOdHI4WnVJV1BMdjZr0gHrAUFVX3lxTFAyRWIxR05WWm1jdlBvcThWUFBEOW9FUnlsVXV1UXZVQlZaS1ZuWS0wTzhaaEFTWlpLd3FGcTF6bG4tQ0xGWTJVLXhQNDVlNGZsN2hJVmVVb09zejUtRFRtRlB5OVhDcmtXelZmclFmN1lzQlVvQkN4cTRFSmoxQkFYUHd3VUdmaTlweHpnRlhoSWVOV3VnRXd3bjVqSkp6dUM1SFZqTWNiWTZoUEhoMFJnMFFFY0ZuMmd1eFhuSEgtcXYwTDdfbVBlMVlZSzRqZTNiLUNkWWQ5a1hnMWRoRk50cjhadUlXUEx2Nms?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-27",
-     "time": "16:25",
-     "title": "Japan’s trend inflation index hits 3-year high, cements case for BOJ rate hike",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWFp4YlJ6Y3BaQ3I1SU0tdTVQWW9KRXR1Um5yb3VrR2hTYTdOQURJYkhPSHNzeW9tZk9GUUlrMlp5UHd3elQwQXVfMk43X3RaRklEaThXUzRhWkwyOTE2bEY1UUQ3ejBpYXhReDlJQ2VfVnc5S3BNWXZkSVowdl9pckd0cVl2cHZBdVJ1U2dzbGNvRlQ0NHRqOXpwRU55T2ZudFB5M0dNZDBOSjJmbm5fRERTQVpudkRRTi1j?oc=5",
      "priority": false
     }
    ]

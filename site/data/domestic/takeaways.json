@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-10-28T15:32+09:00",
+ "checked_at": "2026-10-29T10:12+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -101,7 +101,6 @@
    "reason": [
     "새 뉴스: Vietnam Investment Review - VIR 보도"
    ],
-   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R02",
@@ -149,7 +148,8 @@
       "새 뉴스: Vietnam Investment Review - VIR 보도"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   },
   "ID": {
    "country": "인도네시아",
@@ -165,19 +165,19 @@
      "category": "리스크·규제",
      "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
      "evidence": [
-      "CNA 10/26 '시세조종 대책 강화' 등 부정 구조 뉴스 3건(최근 30일)",
-      "IDX 1개월 -13.9%, 연초 대비 -37.9%(10/26)"
+      "Nikkei Asia 10/28 'MSCI 강등 검토' 등 부정 구조 뉴스 3건(최근 30일)",
+      "IDX 1개월 -14.1%, 연초 대비 -38.9%(10/28)"
      ],
      "links": [
+      {
+       "label": "MSCI 강등 검토",
+       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNGFON01SRVZMN0lSWXA2WU9IeFlNZjdsN0J4LVZRTlFPeHdOZ0ZvWjVqb3p1allxT21sOUNZZjl0ZjVIY0k3YUNLU1hFbGZJMXBISEFiLVVYOVJDSl9KcTZpUXNiMEhlNXBSR1A1NTJSb1E1YnBTQ3psbFY2bGlDdTB0bUM3aFBDMElMc2pZMFlzdDRzTHY5UnpEaEdrMG1XQUZYNW52M0R1QXVjZXc?oc=5",
+       "title": "Indonesia faces 'triple selling' pressure amid MSCI downgrade concerns"
+      },
       {
        "label": "시세조종 대책 강화",
        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMlBGd2pJTXdBQm84MEhpTzRDaFRzSHZBcXF5RlROWHhXNG5FeC16dEdyMnRqRU4xcmlpUjdIcnIxVUdmUTZsN3ZPNjEwcm5kaDBoUlp6c25jdHYtUzJ1MC1pQ0ZJM0c5ekQ1LWdZOHRMYmpSNF9BTE5HTTVNcHFHUl9VNUZlV1J1QTdIcXIyempPc3pkV2R0SDN3?oc=5",
        "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI"
-      },
-      {
-       "label": "MSCI 강등 검토",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5",
-       "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?"
       }
      ],
      "bucket": [
@@ -215,7 +215,7 @@
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용 하락에도 MSCI 결정과 손익 회복 이후로 보류, 후보 검토만 선행",
      "evidence": [
-      "IDX 5,373(10/26), 최근 1년 고점(2025-12 월말) 대비 -37.9% · 루피아 원화 대비 연초 이후 -15.2%(ECOS 10/27) · 원화 환산 지수 연초 대비 -47.3%"
+      "IDX 5,282(10/28), 최근 1년 고점(2025-12 월말) 대비 -38.9% · 루피아 원화 대비 연초 이후 -15.2%(ECOS 10/27) · 원화 환산 지수 연초 대비 -48.2%"
      ],
      "links": [],
      "bucket": [
@@ -242,9 +242,9 @@
      ]
     }
    ],
-   "changed_at": "2026-10-28",
+   "changed_at": "2026-10-29",
    "reason": [
-    "지수·환율 급변"
+    "새 뉴스: MSCI 강등 검토"
    ],
    "last_check": "갱신",
    "candidates": [
@@ -312,6 +312,19 @@
      ],
      "reason": [
       "지수·환율 급변"
+     ]
+    },
+    {
+     "date": "2026-10-29",
+     "fp": "d6c0f46b85fe",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "MKT"
+     ],
+     "reason": [
+      "새 뉴스: MSCI 강등 검토"
      ]
     }
    ]
@@ -431,5 +444,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-10-28"
+ "updated_at": "2026-10-29"
 }

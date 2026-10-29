@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T15:30+09:00",
+ "updated_at": "2026-10-29T10:09+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -22,9 +22,9 @@
     "src": "Báo VietNamNet",
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTldja0JLeXoyNTdTWEtKQk02RU1pOG5jMWd0bTZwOHN1ak95eG1FRHdrLWh4TTI2N09nX0ZVLXk1ODBWVkZLYjIyVDV4YWhpcFB4MDFzc3RsSmJraFpBTldWNlpFTUt4all0LVVucUJSTnJ3dmtKTWtNdm02U1RoNVEwM29SOUpNSDU0MTJUUHZya3dWdU9TZXQxWWJTVS0xQTJ5ckJPN0FfTXp6?oc=5",
     "site": "vietnamnet.vn",
+    "title_ko": "KBSV와 5년간의 '베트남과 함께 올라가기'의 여정이 APEA에서 기념되었습니다",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "KBSV와 5년간의 '베트남과 함께 올라가기'의 여정이 APEA에서 기념되었습니다"
+    "lang": "vi"
    },
    {
     "date": "2026-10-19",
@@ -283,6 +283,16 @@
     "site": "www.g-enews.com"
    },
    {
+    "date": "2026-10-08",
+    "title": "Mirae Asset Sekuritas Perkuat Keamanan Digital melalui Edukasi Karyawan, Proses, dan Teknologi",
+    "src": "investor.id",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHJacC1zUUVxbmVPWUNhUUJUVXNreVVRMnFmVG5nRkx4cDRUTGhOYXZkeTN5MFI1dFItR016UndWTFYwdk1OYU83SzlxZ3lyZ3ZRSXNNdjVsMmtlZS1EbURRTERhVVNPcEhhZkFfY1lraS01VGRhT0VUNWpmY0ljRFMxVmF6YlpaYy1MVGx2Y3JXMXFLc3dPcXlESHlLWjh4WVpNbEZEU1M3YThvWmw2el9CaUJtQ3k3V3dZRzN3TWFMMXZL?oc=5",
+    "site": "investor.id",
+    "foreign": true,
+    "lang": "id",
+    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다"
+   },
+   {
     "date": "2026-09-30",
     "title": "Perkuat Inovasi, Mirae Asset Sekuritas Indonesia Raih Penghargaan Ini!",
     "src": "CNBC Indonesia",
@@ -304,23 +314,13 @@
    },
    {
     "date": "2026-03-05",
-    "title": "Kenapa Kantor Mirae Asset Sekuritas Digeledah OJK?",
+    "title": "Kantor Mirae Asset Sekuritas Digeledah OJK, Ini Profil Perusahaannya",
     "src": "Kompas.com",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMW9lYThXUFhVWU14YTBMWGx1U1lEZ29iQVpTZWQ3eUZpMlZvMDNMSUJHNlRWZzl4YjFmWUxWNEhUMzVtM3ZrTkhqVklDc2g4SnZvZ2U5WjVWQnFJYVd2cE94aW1LMnctYVp5OHZPaTEzMzBzMkN4SVNHVDMxUjBlVW5MWXo5QjlTblI3Sm54MDYwMjJDWjBkZUpCT2VLalBMaTE5NTZ2VHBYeDEzVmc?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUGNnTENjNnA0QURkUTNhYndIcFRLeHJOTXBfTThSTlRaYnM1S1pfLXhaV0M2T2ZWUUJ1TmtfcTJQYms3MUYwSkk5RDY5V3huTVJhc3ZjdGxKU2JxVUJ4LWxoTXF5MmFmTzJpOFIyTlVueGtwQ2ExWC1XbGllZElGaUFHV3RKUW1URUhxcHI1S3lYYTZIdEt5Y0lBbXFjaXV3QlUycklkYmlzZE05dTdQeE9mVmJjQlBhQVlfSjc2clBGbl82Wnc?oc=5",
     "site": "money.kompas.com",
     "foreign": true,
     "lang": "id",
-    "title_ko": "왜 OJK가 미래에셋증권 사무실을 수색했나요?"
-   },
-   {
-    "date": "2025-12-01",
-    "title": "Respons Mirae Asset Sekuritas Usai Dilaporkan Nasabah ke Bareskrim",
-    "src": "Kompas.com",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ2Rob25BTDRvMnZNQ2VFZzZnd0lTano2LUJMUU4yQ2NqQWY1ekNvTS1teHoyNmE4T2FJTWFLR0lUWUdmcy1QMmp6MG5IalkwQkVKRzRjb1FJSFFMamVyNlk0RkcxVWhGTGdQVXFLMnExc2syaXJnaUJpUWZRUVRIRVQxOENBb3BCZF9CMTMyR0dxNHllOUxDampvY2M5VHJrMEZLc1UyQTRWaG5CcXluSTlVdHUxeTJBWE93?oc=5",
-    "site": "nasional.kompas.com",
-    "foreign": true,
-    "lang": "id",
-    "title_ko": "미래에셋증권 고객이 형사수사국에 신고한 후 답변"
+    "title_ko": "미래에셋증권 OJK가 사무소를 검색함, 회사 프로필입니다"
    }
   ],
   "미래에셋증권|홍콩": [
@@ -389,6 +389,13 @@
    }
   ],
   "키움증권|미국": [
+   {
+    "date": "2026-08-15",
+    "title": "키움, 72억 태운 美 법인…해외 사업 '승부수' 될까",
+    "src": "SBS Biz",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1lLVR4NHZKMzhkTWVZcW5UNTNPVnlLTC1EazZ4TDAtX3R5Y3ZIN3ZodmNsRElMOFFGcGZpOWZVcmVxUVBCbzRKcEpSWDlScU1qbmRn0gFYQVVfeXFMT1l0QVBXR1NHUzN2SGFKUE1fZEZzVTVhOGNRWUlQQi1kWEE1X2F6VjhYZFNTRVhTb2Y0TUZXSFlSdU5DVWYzMEN4bm1JUDk1MkdJNzFUTHNmVg?oc=5",
+    "site": "biz.sbs.co.kr"
+   },
    {
     "date": "2026-06-16",
     "title": "최근 '3년 적자' 美법인 산 키움증권…득일까 독일까",
@@ -512,9 +519,9 @@
     "src": "Thời báo Tài chính Việt Nam",
     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORGlRR2dKSnF2V29KdHVSWkpkcUZQZFRabWp5WUlRWXk4MEwyUk5BTVBaTHdERWZBaWl1dnV3bkRvaTJIOTZCS3JDYXhQZUN5TFNtR2w2b0JZUElQMTZIUWI2NDVtZGVfQlpHUmZYdjhZTWFQMlB1a3I4ODJHVTBDRlNEakhRdndiOUx5WjVYVnhKZTlCWENVSU1rdjlkZGkwSmNPYy1LV2YwdE9oMGtNSnF5cHUzd2toTzBsUWtn?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
+    "title_ko": "BIDV 증권의 2분기 이익은 15% 증가했으며, 마진 대출은 9조 4,700억 VND 이상으로 정점을 찍었습니다",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "BIDV 증권의 2분기 이익은 15% 증가했으며, 마진 대출은 9조 4,700억 VND 이상으로 정점을 찍었습니다"
+    "lang": "vi"
    },
    {
     "date": "2026-04-22",
@@ -573,10 +580,10 @@
     "src": "CafeF",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSzBZVDI1RVY3ME1Ldkl0NjJQdGFiZElKSHRDQ2R2YWlENVBmdmpub2lJSU1nd3hvZDZTTk42YlFqd1d0NEFZeWxRckQzQU5kV3FyaDRPZnhsQjJ4d3hpYURHZmFnR0tMNUpwZ05zd0lYNUZpY0lFaGxseXlsT1VPTkJ1MGtOS2s2cEZDaFVaVjE3Nk93TkdxRjZWUXNXYkZZczR5Wkg5YjNWUGh0b20wcWkxczBDQQ?oc=5",
     "site": "cafef.vn",
-    "foreign": true,
-    "lang": "vi",
     "title_ko": "KIS Vietnam, VND를 넘어 자본을 늘리기 위한 주식 공모 계획 마무리 4조 5,000억",
-    "ko_by": "MyMemory"
+    "ko_by": "MyMemory",
+    "foreign": true,
+    "lang": "vi"
    },
    {
     "date": "2025-11-03",
@@ -622,7 +629,16 @@
     "title": "[어게인 홍콩③] 한투證 홍콩법인장 \"하이일드 DCM·신디론 차별화\"",
     "src": "연합인포맥스",
     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE95TWFlenp0eXNLbFRjblg3VWRfSTNiN2o5Wk1jYVdHSHMzWFhScU10cGlXRHpHc2pEaUNVcGh4dEU4MVJKU2hicUEzSXN1VTRWUHlqSktDZUJ0RFRWWExSMmhfeWM0aXBMQWJEdnJpQkw?oc=5",
-    "site": "news.einfomax.co.kr"
+    "site": "news.einfomax.co.kr",
+    "old": true
+   },
+   {
+    "date": "2024-11-18",
+    "title": "주명 한투 홍콩법인장 \"아시아 지역 금융 거점될 것\"",
+    "src": "뉴시스",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2Zk1ETkxsMXRsODkxdm9mUWxGcWtWX3I5TWw1Y3JTdjdiMS1ILU9oUzJMbm11SG56Q2lZUGVUQ0VJczFWbS1NNi1RTzlNWmVPTW1wQ0dCaC1IdHZlYVQwOdIBeEFVX3lxTE5Oa3B6TkZPeUVlSkJHM0NKMTlWZXQ3YTIzd3JvT2J5azJKM09oQWdTLVl5UlRqRnhfVVBDSHZBYnBSejJyQ2FUYWdDOU9oWVM0ZkhYUEJJXzJNbWZ6YzlCaFliR3Jib0FseEhsWC10amJnNDNpcUEtRg?oc=5",
+    "site": "www.newsis.com",
+    "old": true
    }
   ],
   "한화투자증권|베트남": [
@@ -643,10 +659,10 @@
     "src": "CafeF",
     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYV9oWmt2dDkwZVIyOVJpT3dQaEM0aVFCck5FUWJGZ1dTMEFIV3JsWkRyT3JJMjl1blhEajlYU2FjVUVINWFLXzJjOTh0NmZJZWMzUU5nc0xDS2VQSWJRY3FrYlFNNU8wNjR3eTdIa3VxMXlldWt4Si04NVYtWWU1cU84RWJjckphNUdEWlc1S1hGb1ZBMzk3ejcxa2djakN2WThONjVDUFVHNWRKYjZ3?oc=5",
     "site": "cafef.vn",
+    "title_ko": "파인트리 PineX 출시 - 차세대 스마트 주식 투자 애플리케이션",
     "foreign": true,
     "lang": "vi",
-    "old": true,
-    "title_ko": "파인트리 PineX 출시 - 차세대 스마트 주식 투자 애플리케이션"
+    "old": true
    }
   ],
   "한화투자증권|싱가포르": [
