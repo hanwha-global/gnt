@@ -1427,6 +1427,7 @@
       const t = ev.target.closest?.(".tip");
       if (!t || t.contains(ev.relatedTarget)) return;
       t.classList.remove("tip--x");
+      if (ev.type === "focusin" && t.matches(":hover")) return; // 마우스를 올린 채 누를 때는 맞춰 둔 쪽을 그대로 둔다
       align(t, ev.type === "pointerover" && !!ev.target.closest(".tip-i"));
     };
     document.addEventListener("pointerover", enter);
