@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [guide/scripts/check_sources.py, workflow/data/us_entry.json]   # 점검 스크립트나 별첨 출처가 바뀌면 기준값을 다시 잡는다
+    paths: [guide/scripts/check_sources.py, workflow/data/us_entry.json]   # 점검 스크립트나 별첨 출처가 바뀌면 새 출처의 기준값만 잡는다(비교는 반기 점검)
 
 permissions:
   contents: write
@@ -30,7 +30,9 @@ jobs:
       - name: 법령·규정 원문 변경 점검
         env:
           LAW_OC: ${{ secrets.LAW_OC }}   # 국가법령정보센터 Open API 아이디(없으면 국내 법령 시행일 비교만 건너뜀)
-        run: python guide/scripts/check_sources.py --issue "$RUNNER_TEMP/issue.md"
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || vars.SEC_USER_AGENT }}   # sec.gov 는 연락처가 든 User-Agent가 없으면 403
+          MODE: ${{ github.event_name == 'push' && '--baseline-only' || '' }}
+        run: python guide/scripts/check_sources.py --issue "$RUNNER_TEMP/issue.md" $MODE
       - name: Tests
         run: python -m unittest discover -s tests
       - name: Commit data

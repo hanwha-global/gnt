@@ -3,6 +3,7 @@ import json
 import sys
 import unittest
 from datetime import datetime, timezone
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -130,6 +131,149 @@ class SourceCheckTest(unittest.TestCase):
         st, newly = self._run(st, {}, oc="x", laws=law2)
         self.assertTrue(any(n[1] == "자본시장과 금융투자업에 관한 법률" for n in newly))
         self.assertIn("changed", st["rows"]["s14"])
+
+    def test_finra_rule_compares_amendment_history_only(self):
+        u = "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1017"
+        body = ("<h1>1017. Application for Approval of Change in Ownership, Control, or Business Operations</h1>"
+                "<p>(c)(1) A member shall file an application for approval of a change in ownership or control at least 30 days prior to such change.</p>"
+                "<p>Amended by SR-FINRA-2020-011 eff. Sept. 1, 2021.</p><p>Amended by SR-FINRA-2013-015 eff. Feb. 5. 2013.</p>"
+                "<p>Amended by SR-FINRA-2012-018 and SR-FINRA-2012-036 eff. Aug. 27, 2012.</p><p>Adopted by SR-NASD-97-28 eff. Aug. 7, 1997.</p>")
+        a = check_sources.signature(u, f"<div class='promo'>Annual Conference 2026</div>{body}".encode())
+        b = check_sources.signature(u, f"<div class='promo'>FINRA Forward update</div>{body}".encode())
+        self.assertEqual(a, b)  # 쪽 꾸밈만 바뀌면 같은 값(이슈 #20 오탐)
+        for line in ("Amended by SR-FINRA-2026-001 eff. Jan. 4, 2027.", "Renumbered and amended by SR-FINRA-2026-002 eff. Feb. 1, 2027.",
+                     "Deleted by SR-FINRA-2026-003 eff. March 2, 2027."):
+            new = body.replace("<p>Adopted", f"<p>{line}</p><p>Adopted")
+            self.assertNotEqual(a, check_sources.signature(u, new.encode()), line)  # 개정 줄이 늘면 감지
+        with self.assertRaises(RuntimeError):  # 개정 이력이 없는 화면(봇 확인 등)은 해시하지 않는다
+            check_sources.signature(u, b"<p>Please wait</p>")
+        with self.assertRaises(RuntimeError):
+            check_sources.signature("https://www.fca.org.uk/firms/authorisation", b"<title>Just a moment...</title><p>Checking</p>")
+
+    def test_sfc_compares_posted_update_date(self):
+        u = "https://www.sfc.hk/en/Regulatory-functions/Intermediaries/Licensing"
+        a = check_sources.signature(u, b"<div class='menu'>Strategic Priorities 2024-2026</div><p>Licensing</p><p>Last update: <span>22 Jan 2020</span></p>")
+        b = check_sources.signature(u, b"<div class='menu'>New menu item</div><p>Licensing</p><p>Last update: <span>22 Jan 2020</span></p>")
+        self.assertEqual((a, b), ("date:22 Jan 2020", "date:22 Jan 2020"))
+        m = check_sources.signature("https://sfc.hk/en/x/Types", b'<head><meta name="meta-date" content="2025-12-30"></head><p>RO</p>')
+        self.assertEqual(m, "date:2025-12-30")
+        self.assertFalse(check_sources.signature(u, b"<p>no date</p>").startswith("date:"))  # 갱신일이 없으면 본문 해시
+        tok = b'<meta name="msvalidate.01" content="2019-01-01ABCD"><p>x</p>'
+        self.assertFalse(check_sources.signature(u, tok).startswith("date:"))  # 이름에 date가 섞인 검증 토큰은 날짜가 아님
+        both = b'<meta name="DC.date.created" content="2019-03-01"><meta property="article:modified_time" content="2025-12-30T09:00:00+08:00">'
+        self.assertEqual(check_sources.posted_date(both.decode()), "2019-03-01|2025-12-30")  # 시각은 버리고 날짜만, 둘 다 비교
+
+    def test_ecfr_compares_official_api_versions(self):
+        self.assertEqual(check_sources.ecfr_api("https://www.ecfr.gov/current/title-17/section-240.15c3-1"),
+                         "https://www.ecfr.gov/api/versioner/v1/versions/title-17.json?section=240.15c3-1")
+        self.assertEqual(check_sources.ecfr_api("https://www.ecfr.gov/current/title-31/subtitle-B/chapter-VIII/part-800"),
+                         "https://www.ecfr.gov/api/versioner/v1/versions/title-31.json?part=800")
+        self.assertIsNone(check_sources.ecfr_api("https://www.sec.gov/answers/brkrdlr.htm"))
+        v = {"content_versions": [{"amendment_date": "2016-12-31", "identifier": "240.15c3-1", "removed": False},
+                                  {"amendment_date": "2025-03-14", "identifier": "240.15c3-1", "removed": False}]}
+        a = check_sources.ecfr_signature(json.dumps(v).encode())
+        v["content_versions"].append({"amendment_date": "2027-01-04", "identifier": "240.15c3-1", "removed": False})
+        self.assertNotEqual(a, check_sources.ecfr_signature(json.dumps(v).encode()))
+        seen = []
+        with mock.patch.object(check_sources, "polite_get", lambda x: seen.append(x) or json.dumps(v).encode()):
+            check_sources.fingerprint("https://www.ecfr.gov/current/title-17/section-240.17a-11")
+        self.assertEqual(seen, ["https://www.ecfr.gov/api/versioner/v1/versions/title-17.json?section=240.17a-11"])
+        # 본문 쪽이 주는 접근 제한 화면은 원문으로 해시하지 않는다(5개 조문이 같은 값으로 '변경 없음'처럼 보이던 문제)
+        with self.assertRaises(RuntimeError):
+            check_sources.signature("https://www.federalregister.gov/x/y", b"<p>Due to aggressive automated scraping of FederalRegister.gov and eCFR.gov, programmatic access to these sites is limited</p>")
+
+    def test_push_run_only_sets_new_baselines(self):
+        st, _ = self._run({}, {})
+        u = next(s["u"] for c in G["countries"] if c["code"] == "SG" for s in c["sources"] if "mas.gov.sg" in s["u"])
+        new = "https://www.ecfr.gov/current/title-17/section-240.15c3-1"
+        old = dict(st["sources"][u])
+        del st["sources"][new]  # 새로 인용한 출처처럼
+        calls = []
+        st, newly = check_sources.run(st, "2027-01-09", "x", fetch=lambda x: "different", alive=lambda x: True,
+                                      search=lambda oc, law: calls.append("law"),
+                                      asserter=lambda a, oc, lm: calls.append("assert"), baseline_only=True)
+        self.assertEqual((newly, calls), ([], []))  # 비교·법령 API·조문 대조 없음
+        self.assertEqual(st["sources"][u], old)  # 기준값이 있는 출처는 열지 않음
+        self.assertEqual((st["sources"][new]["checked"], st["sources"][new]["sig"]), ("2027-01-09", "different"))
+        self.assertEqual(st["updated"], "2027-01-02")  # 원문 점검일은 비교한 날 그대로
+        link = next(x for x, q in st["sources"].items() if q["kind"] == "링크" and "pwc.com" in x)
+        with mock.patch.object(check_sources, "OFFICIAL_HOSTS", check_sources.OFFICIAL_HOSTS + ["pwc.com"]):
+            st, _ = check_sources.run(st, "2027-01-10", "", fetch=lambda x: "first", alive=lambda x: True,
+                                      search=lambda oc, law: None, asserter=lambda a, oc, lm: None, baseline_only=True)
+        self.assertEqual((st["sources"][link]["kind"], st["sources"][link].get("sig")), ("원문", "first"))
+
+    def _net(self, fake_get):
+        clock = [1000.0]
+        sleeps = []
+        def sleep(s):
+            sleeps.append(s)
+            clock[0] += s
+        ctx = [mock.patch.object(check_sources, "get", fake_get), mock.patch.object(check_sources, "_last", {}),
+               mock.patch.object(check_sources, "_throttled", set()),
+               mock.patch.object(check_sources.time, "sleep", sleep), mock.patch.object(check_sources.time, "monotonic", lambda: clock[0])]
+        for c in ctx:
+            c.start()
+            self.addCleanup(c.stop)
+        return sleeps
+
+    def test_rate_limited_site_waits_and_retries(self):
+        calls = []
+        def fake_get(u, headers=None, retries=3, timeout=30):
+            calls.append(u)
+            if len(calls) == 1:
+                raise RuntimeError("HTTP 429: <!DOCTYPE html><title>Just a moment...</title>")
+            return b"ok"
+        sleeps = self._net(fake_get)
+        self.assertEqual(check_sources.polite_get("https://www.finra.org/rules-guidance/rulebooks/finra-rules/1013"), b"ok")
+        self.assertEqual(check_sources.polite_get("https://www.finra.org/rules-guidance/rulebooks/finra-rules/1014"), b"ok")
+        self.assertEqual(sleeps, [45, 6.0, 6.0])  # 429 뒤 45초 쉬고 다시, 같은 사이트는 6초 간격
+
+    def test_site_that_keeps_throttling_is_skipped(self):
+        calls = []
+        def fake_get(u, headers=None, retries=3, timeout=30):
+            calls.append(u)
+            raise RuntimeError("HTTP 429: busy")
+        self._net(fake_get)
+        for u in ("https://www.finra.org/rules-guidance/rulebooks/finra-rules/1210", "https://brokercheck.finra.org/"):
+            with self.assertRaises(RuntimeError):
+                check_sources.polite_get(u)
+        self.assertEqual(len(calls), 2)  # 두 번 막힌 사이트의 다음 주소는 열지 않는다
+
+    def test_retry_count_with_real_http_helper(self):
+        import io
+        import urllib.error
+        hits = []
+        def urlopen(req, timeout=None):
+            hits.append(req.full_url)
+            raise urllib.error.HTTPError(req.full_url, 429, "Too Many Requests", {}, io.BytesIO(b"<title>Just a moment...</title>"))
+        sleeps = self._net(check_sources.get)
+        with mock.patch("urllib.request.urlopen", urlopen):
+            with self.assertRaises(RuntimeError):
+                check_sources.polite_get("https://www.finra.org/rules-guidance/rulebooks/finra-rules/4311")
+        self.assertEqual((len(hits), sleeps), (2, [45, 6.0]))  # net.get 의 2초 재시도 없이 2번
+        hits.clear()
+        sleeps.clear()
+        flaky = iter([TimeoutError("timed out")])
+        def urlopen2(req, timeout=None):
+            hits.append(req.full_url)
+            e = next(flaky, None)
+            if e:
+                raise e
+            return io.BytesIO(b"ok")
+        with mock.patch("urllib.request.urlopen", urlopen2):
+            self.assertEqual(check_sources.polite_get("https://www.fca.org.uk/firms/authorisation"), b"ok")
+        self.assertEqual((len(hits), sleeps), (2, [1.0]))  # 일시 오류는 45초 없이 간격(1초)만 두고 한 번 더
+
+    def test_sec_pages_send_contact_user_agent(self):
+        seen = {}
+        def fake_get(u, headers=None, retries=3, timeout=30):
+            seen[u] = headers
+            return b"x"
+        self._net(fake_get)
+        check_sources.polite_get("https://www.sec.gov/answers/brkrdlr.htm")
+        check_sources.polite_get("https://www.finra.org/registration-exams-ce/qualification-exams")
+        self.assertEqual(seen["https://www.sec.gov/answers/brkrdlr.htm"], {"User-Agent": check_sources.SEC_UA})
+        self.assertIsNone(seen["https://www.finra.org/registration-exams-ce/qualification-exams"])
 
     def test_assert_clears_flag_and_article_cut(self):
         st, _ = self._run({}, {}, asserter=lambda a, oc, lm: {"ok": True, "via": "test"})

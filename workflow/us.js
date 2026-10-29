@@ -104,12 +104,18 @@
 
   // 출처: 반기 원문 점검(source_status.json)의 출처별 점검일·개정 감지를 붙인다
   function srcState(u) { return ST?.sources?.[u] || null; }
+  // 점검 실패 사유: 404는 주소 문제, 403·429·503·봇 확인은 사이트가 자동 접속을 막은 경우, 인증서, 그 밖은 일시 오류
+  const failNote = (err) => (/^HTTP (404|410)/.test(err) ? "주소 확인 필요(404)"
+    : /^HTTP (403|429|503)|봇 확인/.test(err) ? "사이트가 자동 접속을 막음"
+    : /CERTIFICATE|SSL/.test(err) ? "사이트 보안 인증서 오류" : "일시 오류");
+  const unchecked = (st) => !!st?.err && !st.checked;  // 한 번도 자동 점검이 안 된 출처
   function renderSources() {
     const ids = Object.keys(U.sources);
     $("#src").innerHTML = ids.map((id) => {
       const s = U.sources[id], st = srcState(s.u);
       const rev = st?.changed_at && st.changed_at > U.meta.verified_at;
-      const chk = st?.checked ? ` · ${st.kind === "원문" ? "원문 점검" : "링크 확인"} ${fmt(st.checked)}` : "";
+      const chk = st?.checked ? ` · ${st.kind === "원문" ? "원문 점검" : "링크 확인"} ${fmt(st.checked)}${st.err ? ` · 최근 점검 실패(${failNote(st.err)})` : ""}`
+        : unchecked(st) ? ` · 자동 점검 안 됨(${failNote(st.err)})` : "";
       return `<li id="src-${id}"><a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a> <small>${esc(s.d)} · ${esc(host(s.u))}${chk}</small>${rev ? ` <span class="rev">● 개정 감지·검토 필요(${fmt(st.changed_at)})</span>` : ""}</li>`;
     }).join("");
   }
@@ -262,10 +268,14 @@
     Object.keys(U.sources).forEach((id, i) => { REF[id] = i + 1; });
     const urls = Object.values(U.sources).map((s) => s.u);
     const done = urls.filter((u) => srcState(u)?.checked);
-    const checked = done.map((u) => srcState(u).checked).sort().pop();
+    // 머리 줄 원문 점검일은 실제로 비교한 날(ST.updated)까지만: 병합 때 새 출처 기준값만 잡은 날은 빼고
+    const last = done.map((u) => srcState(u).checked).sort().pop();
+    const checked = last && ST?.updated && ST.updated < last ? ST.updated : last;
     const revised = urls.filter((u) => (srcState(u)?.changed_at || "") > U.meta.verified_at).length;
+    const nFail = urls.filter((u) => unchecked(srcState(u))).length, nWait = urls.length - done.length - nFail;
+    const part = [nFail ? `자동 점검이 안 되는 ${nFail}건은 규정 검증일 기준` : "", nWait ? `${nWait}건은 다음 점검` : ""].filter(Boolean).join(" · ");
     $("#title").textContent = U.meta.title;
-    $("#meta").innerHTML = `규정 검증 <b>${fmt(U.meta.verified_at)}</b> · 원문 점검 <b>${checked ? fmt(checked) : "다음 반기 점검(1·7월)"}</b>${checked && done.length < urls.length ? `(${done.length}/${urls.length}건, 나머지는 다음 점검)` : ""}${revised ? ` · <span class="neg">개정 감지 ${revised}건</span>` : ""} · 출처 ${urls.length}건 · 한국 측 절차는 <a href="index.html" data-to="index">Workflow 본문</a>, 국가 비교는 <a href="../#guide" target="_top">해외진출 유의사항 탭</a>`;
+    $("#meta").innerHTML = `규정 검증 <b>${fmt(U.meta.verified_at)}</b> · 원문 점검 <b>${checked ? fmt(checked) : "다음 반기 점검(1·7월)"}</b>${checked && part ? `(${urls.length}건 중 ${done.length}건 · ${part})` : ""}${revised ? ` · <span class="neg">개정 감지 ${revised}건</span>` : ""} · 출처 ${urls.length}건 · 한국 측 절차는 <a href="index.html" data-to="index">Workflow 본문</a>, 국가 비교는 <a href="../#guide" target="_top">해외진출 유의사항 탭</a>`;
     $("#note").textContent = `${U.meta.scope} ${U.meta.note}`;
     const v = `규정 검증 ${fmt(U.meta.verified_at)}`;
     $("#tm-cmp").innerHTML = tmeta(v);
