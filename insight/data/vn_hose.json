@@ -1,0 +1,142 @@
+{
+ "what": "HOSE(호찌민거래소)가 분기마다 발표하는 회원사별 중개 거래대금(주식·펀드증서) 점유율 상위 10곳",
+ "manual": "거래소가 기계 판독 자료를 내지 않아 발표 뒤 사람이 입력(두 매체 이상 대조). 분기 끝난 뒤 1주 안팎에 발표",
+ "quarters": [
+  {
+   "q": "2026Q3",
+   "label": "3Q26",
+   "published": "2026-10-05",
+   "top10": 64.86,
+   "rows": [
+    {
+     "name": "VPS",
+     "code": "VCK",
+     "value": 11.54
+    },
+    {
+     "name": "SSI",
+     "code": "SSI",
+     "value": 11.09
+    },
+    {
+     "name": "TCBS (Techcom Securities)",
+     "code": "TCX",
+     "value": 10.03
+    },
+    {
+     "name": "Vietcap",
+     "code": "VCI",
+     "value": 7.8
+    },
+    {
+     "name": "HSC",
+     "code": "HCM",
+     "value": 6.1
+    },
+    {
+     "name": "MBS",
+     "code": "MBS",
+     "value": 4.84
+    },
+    {
+     "name": "VNDIRECT",
+     "code": "VND",
+     "value": 3.9
+    },
+    {
+     "name": "KIS Vietnam",
+     "value": 3.72,
+     "korean": "한국투자증권"
+    },
+    {
+     "name": "Mirae Asset Vietnam",
+     "value": 3.03,
+     "korean": "미래에셋증권"
+    },
+    {
+     "name": "VPBankS",
+     "code": "VPX",
+     "value": 2.81
+    }
+   ],
+   "sources": [
+    {
+     "label": "Thời báo Tài chính Việt Nam(HOSE 발표 인용)",
+     "url": "https://thoibaotaichinhvietnam.vn/thi-phan-moi-gioi-quy-iii-vps-giu-ngoi-dau-ssi-va-tcbs-bam-sat-204889.html"
+    },
+    {
+     "label": "Tin nhanh Chứng khoán",
+     "url": "https://www.tinnhanhchungkhoan.vn/thi-phan-moi-gioi-hose-quy-iii2026-vps-van-dan-dau-tcbs-lan-dau-vuot-moc-10-post398895.html"
+    }
+   ]
+  },
+  {
+   "q": "2026Q2",
+   "label": "2Q26",
+   "published": "2026-07-06",
+   "top10": 65.19,
+   "rows": [
+    {
+     "name": "VPS",
+     "code": "VCK",
+     "value": 12.61
+    },
+    {
+     "name": "SSI",
+     "code": "SSI",
+     "value": 11.17
+    },
+    {
+     "name": "TCBS (Techcom Securities)",
+     "code": "TCX",
+     "value": 9.36
+    },
+    {
+     "name": "Vietcap",
+     "code": "VCI",
+     "value": 7.0
+    },
+    {
+     "name": "HSC",
+     "code": "HCM",
+     "value": 6.8
+    },
+    {
+     "name": "MBS",
+     "code": "MBS",
+     "value": 4.79
+    },
+    {
+     "name": "VNDIRECT",
+     "code": "VND",
+     "value": 3.96
+    },
+    {
+     "name": "VPBankS",
+     "code": "VPX",
+     "value": 3.57
+    },
+    {
+     "name": "KIS Vietnam",
+     "value": 2.99,
+     "korean": "한국투자증권"
+    },
+    {
+     "name": "Mirae Asset Vietnam",
+     "value": 2.94,
+     "korean": "미래에셋증권"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Thời báo Tài chính Việt Nam(HOSE 발표 인용)",
+     "url": "https://thoibaotaichinhvietnam.vn/thi-phan-moi-gioi-quy-ii-vps-co-hep-top-10-nam-giu-hon-65-200241.html"
+    },
+    {
+     "label": "Vietstock(HOSE 발표 인용)",
+     "url": "https://en.vietstock.vn/2026/07/competition-heats-up-as-securities-brokerages-battle-for-hose-market-share-36-638227.htm"
+    }
+   ]
+  }
+ ]
+}

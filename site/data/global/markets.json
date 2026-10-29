@@ -78,60 +78,60 @@
    "country": "베트남",
    "tables": [
     {
-     "title": "HOSE 브로커리지 시장점유율 (2Q26)",
+     "title": "HOSE 브로커리지 시장점유율 (3Q26)",
      "metric": "점유율",
      "unit": "%",
-     "basis": "2026-07 HOSE 발표",
+     "basis": "2026-10-05 HOSE 발표",
      "source": {
-      "label": "HOSE 발표, Vietstock·Tuoi Tre 보도",
-      "url": "https://en.vietstock.vn/2026/07/competition-heats-up-as-securities-brokerages-battle-for-hose-market-share-36-638227.htm"
+      "label": "HOSE 발표, Thời báo Tài chính Việt Nam·Tin nhanh Chứng khoán 보도",
+      "url": "https://thoibaotaichinhvietnam.vn/thi-phan-moi-gioi-quy-iii-vps-giu-ngoi-dau-ssi-va-tcbs-bam-sat-204889.html"
      },
      "rows": [
       {
        "name": "VPS",
-       "value": 12.61,
-       "note": "1Q 15.32%에서 하락(22분기 최저)"
+       "value": 11.54,
+       "note": "2Q 12.61%에서 하락, 1위 유지"
       },
       {
        "name": "SSI",
-       "value": 11.17
+       "value": 11.09
       },
       {
        "name": "TCBS (Techcom Securities)",
-       "value": 9.36,
-       "note": "사상 최고"
+       "value": 10.03,
+       "note": "처음 10% 넘음(최고치)"
       },
       {
        "name": "Vietcap",
-       "value": 7.0
+       "value": 7.8
       },
       {
        "name": "HSC",
-       "value": 6.8
+       "value": 6.1
       },
       {
        "name": "MBS",
-       "value": 4.79
+       "value": 4.84
       },
       {
        "name": "VNDIRECT",
-       "value": 3.96
-      },
-      {
-       "name": "VPBankS",
-       "value": 3.57,
-       "note": "설립 이후 최고"
+       "value": 3.9
       },
       {
        "name": "KIS Vietnam",
-       "value": 2.99,
-       "korean": "한국투자증권"
+       "value": 3.72,
+       "korean": "한국투자증권",
+       "note": "2Q 2.99%에서 상승"
       },
       {
        "name": "Mirae Asset Vietnam",
-       "value": 2.94,
-       "korean": "미래에셋증권",
-       "note": "Top 10 재진입"
+       "value": 3.03,
+       "korean": "미래에셋증권"
+      },
+      {
+       "name": "VPBankS",
+       "value": 2.81,
+       "note": "2Q 3.57%에서 하락"
       }
      ]
     }

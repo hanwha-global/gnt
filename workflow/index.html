@@ -75,6 +75,10 @@ a{color:inherit}
 .tmeta span+span::before{content:"·";margin-right:8px}
 .foot{font-size:11px;color:var(--muted);margin:0}
 .cad{font-size:11px;color:var(--muted);display:grid;gap:2px;margin:0;padding-left:16px}.cad b{color:var(--text-2);font-weight:600}
+.subnav{display:flex;gap:4px;flex-wrap:wrap}
+.subnav a{font-size:12px;font-weight:600;text-decoration:none;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--text-2)}
+.subnav a[aria-current="page"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.subnav a:not([aria-current]):hover{border-color:var(--accent)}
 .st .why{margin:4px 0 0;font-size:11px;color:var(--prog)}
 .st .auto{margin:4px 0 0;font-size:11px;color:var(--muted)}
 .st .rev{margin:0 0 4px;font-size:11.5px;font-weight:700;color:var(--neg)}.st .rev a{color:inherit}
@@ -88,6 +92,10 @@ a{color:inherit}
 </head>
 <body>
 <div class="wrap">
+  <nav class="subnav noprint" aria-label="Workflow 문서">
+    <a href="index.html" aria-current="page">본문 · 해외지분투자 절차</a>
+    <a href="us.html" data-to="us">별첨 1 · 미국 진출(설립 vs 인수)</a>
+  </nav>
   <div class="top">
     <div>
       <h1>해외지분투자 Workflow</h1>

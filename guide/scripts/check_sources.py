@@ -1,6 +1,6 @@
 """해외진출 유의사항·해외지분투자 Workflow 탭: 반기 1회 법령·규정 원문 변경 점검(LLM 미사용, 표준 라이브러리만).
 
-두 탭 데이터(guide/data/countries.json, workflow/data/steps.json)가 인용한 출처를 다시 열어 바뀌었는지 본다.
+두 탭 데이터(guide/data/countries.json, workflow/data/steps.json)와 Workflow 별첨 1(workflow/data/us_entry.json)이 인용한 출처를 다시 열어 바뀌었는지 본다.
 - 해외 공식 원문(감독당국·법령 사이트): 응답의 Last-Modified, 없으면 본문 텍스트 해시를 지난번 값과 비교한다.
 - 그 밖의 출처(로펌 해설·기사·세율 요약): 링크가 살아 있는지만 본다(본문이 자주 바뀌어 해시 비교는 오탐이 많음).
 - 국내 법령·고시: 국가법령정보센터 Open API(LAW_OC 시크릿)가 있으면 시행일·공포일을 비교한다. 없으면 건너뛴다.
@@ -27,6 +27,7 @@ from net import get  # noqa: E402
 
 GUIDE = ROOT / "guide" / "data" / "countries.json"
 STEPS = ROOT / "workflow" / "data" / "steps.json"
+US = ROOT / "workflow" / "data" / "us_entry.json"  # 별첨 1 · 미국 진출(출처 URL별 점검 결과를 화면이 직접 읽음)
 OUT = ROOT / "guide" / "data" / "source_status.json"
 KST = timezone(timedelta(hours=9))
 
@@ -35,6 +36,7 @@ OFFICIAL_HOSTS = [
     "ssc.gov.vn", "hethongphapluat.com", "peraturan.bpk.go.id", "ojk.go.id", "mas.gov.sg", "sso.agc.gov.sg", "adgm.com",
     "finra.org", "ecfr.gov", "sec.gov", "fsa.go.jp", "sfc.hk", "elegislation.gov.hk", "csrc.gov.cn", "fca.org.uk",
     "dpiit.gov.in", "rbi.org.in", "sebi.gov.in", "frc.mn", "mse.mn", "bcb.gov.br", "sec.or.th", "serc.gov.kh",
+    "nysenate.gov",
 ]
 # 해시 계산 방식이 바뀌면 올린다(지난 값과 비교하지 않고 기준값을 다시 잡음)
 SIG_V = 2
@@ -91,6 +93,9 @@ def collect():
         rows[s["id"]] = [{"t": r["t"], "u": r["u"]} for r in s["src"] if r["u"].startswith("http")]
         if s.get("assert"):
             asserts[s["id"]] = s["assert"]
+    if US.exists():
+        u = json.loads(US.read_text(encoding="utf-8"))
+        rows["annex-us"] = [{"t": s["t"], "u": s["u"]} for s in u["sources"].values()]
     return rows, asserts
 
 
@@ -246,7 +251,7 @@ def run(prev, today, oc, fetch=fingerprint, alive=None, search=drf_search, asser
 
 def issue_body(newly, today):
     lines = [f"반기 원문 점검({today})에서 아래 출처가 지난 점검 이후 바뀌었습니다.", "",
-             "요약 문구는 자동으로 고치지 않습니다. 원문을 읽고 `guide/data/countries.json` 또는 `workflow/data/steps.json`의 해당 문구와 `checked`(검증일)를 고치면 화면의 '개정 감지·검토 필요' 표시가 사라집니다.", ""]
+             "요약 문구는 자동으로 고치지 않습니다. 원문을 읽고 `guide/data/countries.json`, `workflow/data/steps.json` 또는 `workflow/data/us_entry.json`의 해당 문구와 검증일(`checked`·`verified_at`)을 고치면 화면의 '개정 감지·검토 필요' 표시가 사라집니다.", ""]
     for kind, t, detail, u in newly:
         lines.append(f"- [{kind}] {t}: {detail if kind == '법령' else u}")
     lines += ["", "자동 생성(LLM 미사용): `.github/workflows/source-check.yml`"]

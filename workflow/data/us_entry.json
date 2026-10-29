@@ -1,0 +1,240 @@
+{
+ "meta": {
+  "verified_at": "2026-10-29",
+  "title": "별첨 1 · 미국 진출(브로커-딜러)",
+  "scope": "국내 증권사가 미국에 증권 현지법인(브로커-딜러)을 직접 세우거나 기존 법인을 인수할 때 미국 측 요건과 절차. 한국 측 신고·보고는 Workflow 본문 단계로 연결.",
+  "note": "미국 측 요건은 SEC·FINRA 규칙과 뉴욕주 법 원문, 인수 사례는 각 사 발표문 기준. T-18M 같은 일정은 검토안 기준이고, 규정에 정한 기한은 '규정' 표시."
+ },
+ "kpis": [
+  {"v": "45일", "t": "SEC 등록 결정", "d": "완비 신청 후 등록 허가 또는 거부 절차 개시", "src": ["sec_bd"]},
+  {"v": "180일", "t": "FINRA 신규 회원 결정", "d": "신청 후 180일 안에 결정이 없으면 FINRA 이사회에 결정 요청 가능", "src": ["f1014"]},
+  {"v": "30일 전", "t": "지분 25% 이상 인수", "d": "지배구조 변경 신청(CMA)은 변경 30일 전까지", "src": ["f1017"]},
+  {"v": "$5천~$25만", "t": "최소 순자본", "d": "업무 범위별 하한, 시장조성은 최대 $100만", "src": ["c15c31"]},
+  {"v": "2명", "t": "등록 Principal", "d": "General Securities Principal 2명 이상", "src": ["f1210"]}
+ ],
+ "compare": [
+  {"k": "인가 절차",
+   "est": {"s": "-", "t": "SEC 등록(Form BD) + FINRA 신규 회원 가입(NMA) + 영업하는 주 등록. 심사 기준 14개를 처음부터 입증", "src": ["sec_bd", "f1013", "f1014"]},
+   "acq": {"s": "+", "t": "대상 법인의 SEC 등록·FINRA 회원 자격을 그대로 유지. 지배구조 변경 신청(CMA)으로 심사", "src": ["f1017", "f_own"]}},
+  {"k": "규정상 기간",
+   "est": {"s": "-", "t": "회원 인터뷰는 신청 후 90일 안 원칙, 결정은 인터뷰·추가자료 제출 후 30일 안. 180일이 지나면 이사회에 결정 요청 가능", "src": ["f1013", "f1014"]},
+   "acq": {"s": "+", "t": "변경 30일 전까지 신청. 승인 전에도 종결할 수 있으나 FINRA가 잠정 제한을 둘 수 있음", "src": ["f1017", "f_own"]}},
+  {"k": "초기 자금",
+   "est": {"s": "+", "t": "최소 순자본 + 설립·운영비. 인수 프리미엄 없음", "src": ["c15c31"]},
+   "acq": {"s": "-", "t": "인수가(영업권 포함) + 통합 비용. 인수 뒤에도 순자본 하한 유지", "src": ["c15c31"]}},
+  {"k": "영업 범위",
+   "est": {"s": "=", "t": "사업계획대로 범위를 설계. 범위를 넓히면 '중대한 영업 변경'으로 CMA 필요", "src": ["f1017"]},
+   "acq": {"s": "=", "t": "대상 법인의 회원가입 약정(Membership Agreement) 제한을 승계. 범위 밖 업무는 CMA 필요", "src": ["f1014", "f1017"]}},
+  {"k": "인력",
+   "est": {"s": "-", "t": "Principal 2명·FINOP·CCO를 채용하거나 시험 통과 필요", "src": ["f1210", "f1220"]},
+   "acq": {"s": "+", "t": "등록 인력 승계. 핵심 인력 유지 조건을 인수 계약에 반영", "src": ["f1220"]}},
+  {"k": "고객·청산 계약",
+   "est": {"s": "-", "t": "고객 기반 없이 시작. 청산 위탁 계약은 청산회사가 FINRA 사전 승인을 받아야 효력", "src": ["f4311"]},
+   "acq": {"s": "+", "t": "기존 고객·청산 계약·거래 실적 승계", "src": ["f4311"]}},
+  {"k": "과거 이력·우발채무",
+   "est": {"s": "+", "t": "징계·분쟁 이력 없음", "src": []},
+   "acq": {"s": "-", "t": "징계·분쟁 이력 승계. 미지급 중재 판정이 있으면 지급 능력을 입증하기 전 진행 불가. 불승인·철회 시 거래를 되돌려야 함", "src": ["f1017", "f_own"]}},
+  {"k": "거래 구조",
+   "est": {"s": "=", "t": "100% 신설 자회사", "src": []},
+   "acq": {"s": "=", "t": "주식 인수: 25% 이상 지분 취득 시 CMA. 자산 인수: 자산·사업의 25% 이상 이전은 사전 승인", "src": ["f1017", "f_own"]}},
+  {"k": "한국 측 절차",
+   "both": {"t": "두 경로 같음. 거래소 공시 → 해외직접투자 신고(누적 3천만불 이하 사후보고) → 송금 보고 → 자본시장법 보고 → 외화증권 취득보고", "wf": ["s8", "s10", "s13", "s14", "s15"]}}
+ ],
+ "pros_cons": {
+  "est": {
+   "name": "직접 설립(신규 NMA)",
+   "pros": ["인수 프리미엄 없음", "과거 징계·우발채무 없음", "사업 범위·내부통제(WSP)를 처음부터 설계", "지배구조 단순(100% 자회사)"],
+   "cons": ["NMA 심사와 인력 시험으로 영업 개시까지 김", "고객·거래 실적 없이 시작", "Principal·FINOP 직접 확보", "업무 범위를 넓힐 때마다 CMA"],
+   "fit": "자문·소개 브로커처럼 좁은 범위로 시작해 단계적으로 넓힐 때"
+  },
+  "acq": {
+   "name": "기존 법인 인수(CMA)",
+   "pros": ["SEC 등록·FINRA 회원 자격·청산 계약 유지", "등록 인력·고객·거래 실적 승계", "CMA 신청 후 승인 전 종결 가능(잠정 제한 가능)"],
+   "cons": ["인수 프리미엄과 통합 비용", "징계·분쟁 이력과 우발채무 승계", "불승인·철회 시 거래 되돌림", "기존 회원가입 약정 제한 승계", "외국인의 미국 사업 지배권 취득으로 CFIUS 심사 대상 가능"],
+   "fit": "청산·리테일처럼 인가 범위가 넓은 라이선스나 고객 기반이 바로 필요할 때"
+  },
+  "src": ["f1013", "f1014", "f1017", "f_own", "cfius"]
+ },
+ "timeline": {
+  "est": {
+   "name": "직접 설립",
+   "span": "검토안 12~18개월",
+   "phases": [
+    {"p": "준비", "w": "T-18M ~ T-12M", "items": [
+     {"t": "사업 모델과 라이선스 범위 확정(자문·소개 브로커·자기청산)"},
+     {"t": "자본금 규모 확정: 누적 투자액 미화 3천만불 기준으로 국내 신고 방식 결정", "wf": "s10"},
+     {"t": "이사회 결의", "wf": "s7"}]},
+    {"p": "법인 설립", "w": "T-12M ~ T-8M", "items": [
+     {"t": "뉴욕주 설립 증서 제출(또는 타주 설립 후 뉴욕 영업 인가)", "rule": "NYBCL §402·§1304", "src": ["ny402", "ny1301"]},
+     {"t": "조직 회의: 정관 채택·이사 선임", "rule": "NYBCL §404", "src": ["ny404"]},
+     {"t": "연방 세무번호(EIN) 발급", "rule": "IRS Form SS-4", "src": ["irs_ss4"]},
+     {"t": "해외직접투자 신고·송금 보고", "wf": "s10"},
+     {"t": "사무실·IT·보안 체계 구축"}]},
+    {"p": "인가 심사", "w": "T-8M ~ T-2M", "items": [
+     {"t": "Form BD(CRD)·Form NMA 제출: 사업계획, 12개월 월별 손익 전망, WSP, 청산 계약", "rule": "Rule 1013(a)", "src": ["f1013"]},
+     {"t": "인력 등록(Form U4)·지문·시험(SIE·7·24·27/28)", "rule": "Rule 1210·1220", "src": ["f1013", "f1210", "f1220"]},
+     {"t": "회원 인터뷰: 신청 후 90일 안 원칙, 7일 전 통지", "rule": "Rule 1013(b)", "due": true, "src": ["f1013"]},
+     {"t": "인가 전 미국 기관투자자 대상 영업: 본사가 미국 등록 BD를 통해 거래(샤프론)", "rule": "Rule 15a-6(a)(3)", "src": ["c15a6"]}]},
+    {"p": "영업 개시", "w": "T-0 ~ T+12M", "items": [
+     {"t": "회원가입 약정(Membership Agreement) 서명 후 승인 효력", "rule": "Rule 1014(d)", "src": ["f1014"]},
+     {"t": "SIPC 자동 가입·뉴욕주 BD 등록", "rule": "SIPA · GBL §359-e", "src": ["sec_bd", "ny359e"]},
+     {"t": "피델리티 본드 가입", "rule": "Rule 4360", "src": ["f4360"]},
+     {"t": "자본시장법 보고 7일·외화증권 취득보고 6개월·연간 사업실적 5개월", "wf": "s14"}]}
+   ]
+  },
+  "acq": {
+   "name": "기존 법인 인수",
+   "span": "검토안 12~15개월",
+   "phases": [
+    {"p": "대상 실사", "w": "T-12M ~ T-9M", "items": [
+     {"t": "BrokerCheck 징계·분쟁 이력, 미지급 중재 판정 확인", "rule": "Rule 1017(c)(4)", "src": ["f1017", "brokercheck"]},
+     {"t": "회원가입 약정상 업무 제한·순자본·청산 계약 확인", "src": ["f1014", "f4311"]},
+     {"t": "주식 인수 또는 자산 인수 결정(자산 25% 이상 이전은 사전 승인)", "rule": "Rule 1017(a)(3)", "src": ["f1017"]},
+     {"t": "이사회 결의·거래소 공시·인수 계약(SPA) 서명", "wf": "s9"}]},
+    {"p": "승인 신청", "w": "T-9M ~ T-6M", "items": [
+     {"t": "Form CMA 제출: 변경 30일 전까지", "rule": "Rule 1017(c)(1)", "due": true, "src": ["f1017"]},
+     {"t": "해외직접투자 신고", "wf": "s10"},
+     {"t": "CFIUS 검토(외국인의 미국 사업 지배권 취득)", "rule": "31 CFR Part 800", "src": ["cfius"]}]},
+    {"p": "심사·통합 준비", "w": "T-6M ~ T-2M", "items": [
+     {"t": "추가자료 요청 대응, 결정은 인터뷰·추가자료 후 30일 안", "rule": "Rule 1017(i)", "src": ["f1017"]},
+     {"t": "핵심 인력 유지, 감독 체계·WSP 갱신", "src": ["f1014"]},
+     {"t": "Form BD 소유 구조 정정: 사유 발생 시 지체 없이", "rule": "Rule 15b3-1", "src": ["c15b31"]}]},
+    {"p": "종결·통합", "w": "T-0 ~ T+12M", "items": [
+     {"t": "잔금 지급·주식 이전, 송금 보고", "wf": "s13"},
+     {"t": "외화증권 취득보고 6개월", "wf": "s15"},
+     {"t": "상호·대표자 변경 시 변경 보고 3개월", "wf": "s17"},
+     {"t": "인수 후 통합(PMI)", "wf": "s19"}]}
+   ]
+  }
+ },
+ "models": {
+  "rows": [
+   {"m": "자문·M&A 주선", "d": "고객 자금·증권을 받거나 보관하지 않음", "cap": "$5,000", "p": "(a)(2)(vi)", "finop": "IBD FINOP 가능"},
+   {"m": "소개 브로커(Introducing)", "d": "주문을 청산회사로 넘김. 고객 증권은 받으면 바로 넘기고 보관하지 않음", "cap": "$50,000", "p": "(a)(2)(iv)", "finop": "IBD FINOP 가능"},
+   {"m": "딜러(자기매매)", "d": "자기 계정으로 매매", "cap": "$100,000", "p": "(a)(2)(iii)", "finop": "IBD FINOP 가능"},
+   {"m": "시장조성", "d": "종목당 $2,500, 주가 $5 이하 종목은 $1,000", "cap": "최대 $1,000,000", "p": "(a)(4)", "finop": "업무 범위에 따름"},
+   {"m": "청산·보관(Carrying·Clearing)", "d": "고객 계좌를 보관하고 자금·증권을 받거나 보관", "cap": "$250,000", "p": "(a)(2)(i)", "finop": "FINOP 필수, 자기청산은 PFO·POO 분리"}
+  ],
+  "notes": [
+   {"t": "여러 업무를 하면 해당 업무 하한 중 가장 높은 금액(또는 비율 기준 금액 중 큰 것)", "src": ["c15c31"]},
+   {"t": "부채비율 기준: 총부채 ≤ 순자본의 1,500%, 영업 개시 후 12개월은 800%. 대체 기준: $250,000과 차변 합계 2% 중 큰 금액", "src": ["c15c31"]},
+   {"t": "조기 경보: 순자본이 하한의 120% 미만이면 24시간 안에 SEC·FINRA 통보", "src": ["c17a11"]},
+   {"t": "피델리티 본드: 순자본 하한 $25만 미만은 하한의 120%와 $100,000 중 큰 금액, $25만 이상은 단계표($60만~$500만)", "src": ["f4360"]}
+  ],
+  "stages": [
+   {"n": "1", "t": "본사 직접 영업", "r": "Rule 15a-6", "d": "미국 기관투자자 대상, 미국 등록 BD가 거래 집행·확인서·장부 담당. 주요 기관투자자 = 자산 $1억 초과", "src": ["c15a6"]},
+   {"n": "2", "t": "소개 브로커", "r": "$50,000", "d": "청산회사에 위탁, 청산 계약은 FINRA 사전 승인", "src": ["c15c31", "f4311"]},
+   {"n": "3", "t": "자기청산", "r": "$250,000+", "d": "고객 자산 직접 보관, FINOP(Series 27)·PFO·POO 분리", "src": ["c15c31", "f1220"]}
+  ],
+  "stage_note": "단계를 올릴 때마다 '중대한 영업 변경'으로 CMA(Rule 1017(a)(5))"
+ },
+ "people": {
+  "rows": [
+   {"r": "General Securities Principal", "n": "2명 이상", "x": "SIE + Series 7 등록 후 Series 24", "note": "관련인이 1명뿐인 회사는 예외, 그 밖에는 FINRA 면제 절차(Rule 9600)", "src": ["f1210", "f1220"]},
+   {"r": "FINOP", "n": "1명", "x": "Series 27(청산·보관 법인 필수) 또는 Series 28", "note": "재무 보고·순자본 계산", "src": ["f1220"]},
+   {"r": "CCO(준법감시)", "n": "1명", "x": "Series 14, 또는 Series 7 + Series 24", "note": "Form BD Schedule A 지정자. Series 24 보유 Principal이면 추가 시험 없음", "src": ["f1220"]},
+   {"r": "PFO·POO", "n": "지정", "x": "—", "note": "소개 브로커는 FINOP과 같은 사람 가능, 자기청산은 분리", "src": ["f1220"]},
+   {"r": "AML 책임자", "n": "지정", "x": "—", "note": "FINRA에 통보, 독립 점검 연 1회(고객 거래가 없는 회사는 2년 1회)", "src": ["f3310"]}
+  ],
+  "exams": [
+   {"x": "SIE", "q": 75, "time": "1시간 45분"},
+   {"x": "Series 7", "q": 125, "time": "3시간 45분"},
+   {"x": "Series 14", "q": 110, "time": "3시간"},
+   {"x": "Series 24", "q": 150, "time": "3시간 45분"},
+   {"x": "Series 27", "q": 145, "time": "3시간 45분"},
+   {"x": "Series 28", "q": 95, "time": "2시간"}
+  ],
+  "exam_src": ["f_exams"],
+  "notes": [
+   {"t": "등록 인력은 Form U4(CRD) 제출과 지문 날인(SEC Rule 17f-2)", "src": ["f1013"]},
+   {"t": "회사·관련인의 징계·분쟁 이력은 NMA 심사 기준 (a)(3)으로 심사", "src": ["f1014"]},
+   {"t": "E-2(조약 투자자): 한국은 조약국(1957.11.7 발효). 미국 법인 지분 50% 이상이 조약국 국적자 소유, 직원도 같은 국적이며 임원·감독직 또는 필수 기술 보유", "src": ["visa_treaty", "visa_e2"]},
+   {"t": "L-1A(주재원): 해외 관계회사에서 최근 3년 중 1년 이상 계속 근무한 관리자·임원. 신설 사무소는 첫 승인 최대 1년, 총 체류 최대 7년", "src": ["visa_l1"]}
+  ]
+ },
+ "nma": {
+  "standards": [
+   "신청서·첨부서류가 완전하고 정확함",
+   "SEC·FINRA·주 당국이 요구하는 등록·자격을 모두 갖춤",
+   "회사·관련인이 증권 법령과 FINRA 규칙을 지킬 수 있음(징계·분쟁 이력 고려)",
+   "은행·청산회사·전산 위탁 등 영업 개시에 필요한 계약 체결",
+   "계획한 영업에 충분한 시설(또는 확보 계획)",
+   "통신·운영 시스템 적정, 업무 연속성 대비",
+   "순자본(Rule 15c3-1) 유지 가능, FINRA가 더 높은 기준을 둘 수 있음",
+   "재무 통제 체계",
+   "업계 통상 수준의 준법·감독·운영·내부통제",
+   "감독 체계와 서면 감독 절차(WSP)",
+   "연방·주·자율규제 요건에 맞는 기록 보관 체계와 인력",
+   "교육 수요 평가와 서면 교육 계획",
+   "규제 회피 우려 정보 없음",
+   "그 밖에 증권 법령·FINRA 규칙에 부합"
+  ],
+  "standards_src": ["f1014"],
+  "docs": [
+   "Form NMA · Form BD",
+   "관련인 지문 카드",
+   "사업계획: 신청 전 30일 안 재무제표·순자본 계산, 12개월 월별 손익 전망, 조직도, 점포·책임자, 상품·고객 유형, 고객 확보 방식, 시설·임대차, 업무 연속성",
+   "은행·청산회사·전산 위탁 계약서",
+   "자본 출처·성격과 증빙",
+   "재무 통제, 감독 체계·WSP, 기록 보관 체계",
+   "감독자·Principal의 자격·역할·투입 시간",
+   "교육 계획, 관련인 목록과 징계 등 이력 자료"
+  ],
+  "docs_src": ["f1013"],
+  "interview": "회원 인터뷰: 신청 후 90일(추가자료 제출 후 60일) 중 늦은 날까지 원칙, 7일 전 서면 통지, 인터뷰 전 45일 안 재무제표·순자본 계산 갱신 제출"
+ },
+ "setup": [
+  {"s": "법인 설립", "rule": "NYBCL §402", "t": "설립 증서(Certificate of Incorporation)를 뉴욕주 국무부에 제출: 상호·목적·카운티·수권주식·송달 대리인", "src": ["ny402"]},
+  {"s": "조직 회의", "rule": "NYBCL §404", "t": "설립 후 조직 회의에서 정관(By-laws) 채택·이사 선임", "src": ["ny404"]},
+  {"s": "타주 법인의 뉴욕 영업", "rule": "NYBCL §1301·§1304", "t": "다른 주(예: 델라웨어)에서 설립한 법인은 뉴욕주 영업 인가(Application for Authority)를 받은 뒤 영업", "src": ["ny1301"]},
+  {"s": "연방 세무번호", "rule": "IRS Form SS-4", "t": "EIN 발급", "src": ["irs_ss4"]},
+  {"s": "SEC 등록", "rule": "Exchange Act §15(b)", "t": "Form BD를 FINRA의 CRD로 제출. 완비 신청 후 45일 안에 등록 허가 또는 거부 절차 개시. 자율규제기구(FINRA 등) 회원 가입 필요", "src": ["sec_bd"]},
+  {"s": "SIPC", "rule": "SIPA", "t": "등록하면 예외 없는 한 자동 가입, 연 분담금 납부", "src": ["sec_bd"]},
+  {"s": "뉴욕주 등록", "rule": "GBL §359-e", "t": "뉴욕에서 또는 뉴욕으로부터 증권을 팔기 전에 뉴욕주 법무부(Department of Law)에 등록", "src": ["ny359e"]},
+  {"s": "AML", "rule": "FINRA Rule 3310", "t": "서면 AML 프로그램(경영진 승인), 책임자 지정·통보, 독립 점검, 교육, 고객 확인", "src": ["f3310"]}
+ ],
+ "deals": [
+  {"date": "2019-11-25", "buyer": "Charles Schwab", "target": "TD Ameritrade", "size": "약 $26bn", "terms": "전액 주식, TD Ameritrade 1주당 Schwab 1.0837주(30일 VWAP 교환비율 대비 17% 프리미엄)", "kind": "리테일 브로커리지 통합", "src": ["d_schwab"]},
+  {"date": "2020-02-20", "buyer": "Morgan Stanley", "target": "E*TRADE", "size": "약 $13bn", "terms": "전액 주식, E*TRADE 1주당 MS 1.0432주(주당 $58.74)", "kind": "온라인 리테일 채널", "src": ["d_ms"]},
+  {"date": "2019-05-16", "buyer": "Goldman Sachs", "target": "United Capital", "size": "$750m", "terms": "현금. 운용자산 $250억, 어드바이저 220명 이상", "kind": "자산관리(RIA)", "src": ["d_gs"]},
+  {"date": "2022-08-02", "buyer": "TD Bank Group", "target": "Cowen", "size": "약 $1.3bn", "terms": "현금, 주당 $39", "kind": "외국계 은행의 미국 IB·주식 플랫폼", "src": ["d_td"]},
+  {"date": "2023-05-22", "buyer": "Mizuho", "target": "Greenhill", "size": "약 $550m(부채 포함 기업가치)", "terms": "현금, 주당 $15", "kind": "아시아계 금융그룹의 미국 M&A 자문", "src": ["d_mizuho"]},
+  {"date": "2026-05", "buyer": "키움증권", "target": "Shinhan Securities America(신한투자증권 미국 법인)", "size": "비공개", "terms": "FINRA 승인 후 인수 완료(보도), 2026.10 미국 주식 직접 중개 계획(보도)", "kind": "국내 증권사 간 미국 BD 인수", "src": ["d_kiwoom", "d_kiwoom2"]}
+ ],
+ "deals_note": "거래 규모·조건은 발표문 기준. 배수(P/B·P/E)는 발표문에 없어 적지 않음.",
+ "wf_steps": ["s7", "s8", "s9", "s10", "s13", "s14", "s15", "s16", "s17"],
+ "sources": {
+  "sec_bd": {"t": "SEC Guide to Broker-Dealer Registration", "u": "https://www.sec.gov/answers/brkrdlr.htm", "d": "현행"},
+  "f1013": {"t": "FINRA Rule 1013(신규 회원 신청·인터뷰)", "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1013", "d": "현행"},
+  "f1014": {"t": "FINRA Rule 1014(심사 기준·결정)", "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1014", "d": "현행"},
+  "f1017": {"t": "FINRA Rule 1017(소유·지배·영업 변경 승인)", "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1017", "d": "현행"},
+  "f_own": {"t": "FINRA: Changes of Ownership or Control", "u": "https://www.finra.org/registration-exams-ce/broker-dealers/update/ownership-control", "d": "현행"},
+  "f1210": {"t": "FINRA Rule 1210(등록 요건, .01 최소 Principal 수)", "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1210", "d": "현행"},
+  "f1220": {"t": "FINRA Rule 1220(등록 범주: Principal·CCO·FINOP)", "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1220", "d": "현행"},
+  "f3310": {"t": "FINRA Rule 3310(AML 프로그램)", "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3310", "d": "현행"},
+  "f4311": {"t": "FINRA Rule 4311(청산 위탁 계약)", "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4311", "d": "현행"},
+  "f4360": {"t": "FINRA Rule 4360(피델리티 본드)", "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4360", "d": "현행"},
+  "f_exams": {"t": "FINRA Qualification Exams(문항 수·시간)", "u": "https://www.finra.org/registration-exams-ce/qualification-exams", "d": "현행"},
+  "brokercheck": {"t": "FINRA BrokerCheck", "u": "https://brokercheck.finra.org/", "d": "상시"},
+  "c15c31": {"t": "SEC Rule 15c3-1(순자본, 17 CFR 240.15c3-1)", "u": "https://www.ecfr.gov/current/title-17/section-240.15c3-1", "d": "현행"},
+  "c17a11": {"t": "SEC Rule 17a-11(조기 경보 통보)", "u": "https://www.ecfr.gov/current/title-17/section-240.17a-11", "d": "현행"},
+  "c15a6": {"t": "SEC Rule 15a-6(외국 브로커-딜러 예외)", "u": "https://www.ecfr.gov/current/title-17/section-240.15a-6", "d": "현행"},
+  "c15b31": {"t": "SEC Rule 15b3-1(Form BD 정정)", "u": "https://www.ecfr.gov/current/title-17/section-240.15b3-1", "d": "현행"},
+  "cfius": {"t": "31 CFR Part 800(CFIUS 외국인 투자 심사)", "u": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-VIII/part-800", "d": "현행"},
+  "ny402": {"t": "뉴욕주 회사법(NYBCL) §402 설립 증서", "u": "https://www.nysenate.gov/legislation/laws/BSC/402", "d": "현행"},
+  "ny404": {"t": "뉴욕주 회사법(NYBCL) §404 조직 회의", "u": "https://www.nysenate.gov/legislation/laws/BSC/404", "d": "현행"},
+  "ny1301": {"t": "뉴욕주 회사법(NYBCL) §1301 타주 법인 영업 인가", "u": "https://www.nysenate.gov/legislation/laws/BSC/1301", "d": "현행"},
+  "ny359e": {"t": "뉴욕주 일반사업법(GBL) §359-e 브로커-딜러 등록", "u": "https://www.nysenate.gov/legislation/laws/GBS/359-E", "d": "현행"},
+  "irs_ss4": {"t": "IRS Form SS-4(EIN 신청)", "u": "https://www.irs.gov/forms-pubs/about-form-ss-4", "d": "현행"},
+  "visa_treaty": {"t": "미 국무부 Treaty Countries(E-1·E-2)", "u": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/treaty.html", "d": "현행"},
+  "visa_e2": {"t": "USCIS E-2 Treaty Investors", "u": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors", "d": "현행"},
+  "visa_l1": {"t": "미 국무부 외교업무매뉴얼 9 FAM 402.12(L 비자)", "u": "https://fam.state.gov/fam/09FAM/09FAM040212.html", "d": "현행"},
+  "d_schwab": {"t": "Schwab 발표: TD Ameritrade 인수", "u": "https://pressroom.aboutschwab.com/press-releases/press-release/2019/The-Charles-Schwab-Corporation-to-Acquire-TD-Ameritrade/default.aspx", "d": "2019-11-25"},
+  "d_ms": {"t": "Morgan Stanley 발표: E*TRADE 인수", "u": "https://www.morganstanley.com/press-releases/morgan-stanley-to-acquire-e-trade", "d": "2020-02-20"},
+  "d_gs": {"t": "Goldman Sachs 발표: United Capital 인수", "u": "https://www.goldmansachs.com/pressroom/press-releases/2019/announcement-16-may-2019", "d": "2019-05-16"},
+  "d_td": {"t": "TD Bank Group 발표: Cowen 인수(SEC 6-K)", "u": "https://www.sec.gov/Archives/edgar/data/947263/000119312522209400/d386083dex991.htm", "d": "2022-08-02"},
+  "d_mizuho": {"t": "Mizuho 발표: Greenhill 인수", "u": "https://www.mizuhogroup.com/news-release/20230522release-eng", "d": "2023-05-22"},
+  "d_kiwoom": {"t": "디지털데일리: 키움증권, 신한투자증권 뉴욕법인 인수 완료", "u": "https://www.ddaily.co.kr/page/view/2026052015510358006", "d": "2026-05-20"},
+  "d_kiwoom2": {"t": "머니투데이: 키움, 월가서 미국 주식 직접 중개", "u": "https://www.mt.co.kr/stock/2026/09/29/2026092808595538114", "d": "2026-09-29"}
+ }
+}
