@@ -32,12 +32,22 @@ jobs:
         run: python insight/scripts/fetch_insight.py country
       - name: 현지 경쟁 구도 (상장 증권사 자본·시가총액·P/B + 한국계 법인, 베트남은 VNDirect 전체 상장사)
         run: python insight/scripts/fetch_insight.py landscape
+      - name: 나라·시장별 상장 증권사 밸류에이션 (Yahoo Finance, 베트남은 위 VNDirect 값)
+        run: python insight/scripts/fetch_insight.py valuation
       - name: 인도네시아 거래대금 점유율 (IDX)
         run: python insight/scripts/fetch_insight.py idx
       - name: 결과 요약
         run: |
           python - <<'PY'
           import json, os
+          for f in ("vn_brokerage", "valuation"):
+              p = f"insight/data/{f}.json"
+              if os.path.exists(p):
+                  d = json.load(open(p, encoding="utf-8"))
+                  print(f"== {f}", d.get("updated_at"), "errors:", len(d.get("errors") or []))
+                  if f == "vn_brokerage":
+                      print("  quarters", d["quarters"], d["reported"], d["total_bn"])
+                      for r in d["rows"][:45]: print("   ", r["code"], r["name"][:30], r["share"], r.get("ytd"))
           for f in ("country", "landscape", "idx_share"):
               p = f"insight/data/{f}.json"
               if not os.path.exists(p):
