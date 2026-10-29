@@ -27,7 +27,7 @@
     if (!text) return label;
     const id = `tip-${++tipN}`;
     return `<span class="tip" tabindex="0" aria-describedby="${id}"><span class="tip__t">${label}</span><i class="tip-i" aria-hidden="true"></i>`
-      + `<span class="tip__box" id="${id}" aria-hidden="true"><b>${label}</b>${esc(text)}</span></span>`; // 설명은 aria-describedby로 한 번만 읽힌다
+      + `<span class="tip__box" aria-hidden="true"><b>${label}</b><span id="${id}">${esc(text)}</span></span></span>`; // 화면 낭독기는 이름 뒤에 설명만 한 번 읽는다
   };
 
   async function getJSON(path, optional = false) {
@@ -1402,21 +1402,36 @@
 
   // ---------- 용어 설명 말풍선: 좌우 맞춤과 닫기(보이고 숨는 건 CSS) ----------
   function initTips() {
-    // 말풍선은 이름 바로 아래(카드 왼쪽 맞춤)에 두고, 가장 넓은 말풍선(340px)이 화면 밖으로 나갈 카드만 오른쪽 끝에 맞춘다
-    // (오른쪽 절반이라고 무조건 오른쪽에 맞추면 짧은 이름과 말풍선이 떨어져 마우스로 옮겨 가는 사이에 닫힌다). 창 크기·화면 방향이 바뀌면 다시 맞춘다
-    const align = (t) => {
-      const vw = document.documentElement.clientWidth, left = (t.closest(".kpi") || t).getBoundingClientRect().left;
-      t.classList.toggle("tip--r", left + Math.min(340, innerWidth - 32) > vw - 16); // 말풍선 최대 폭(CSS의 min(340px, 100vw - 32px))
+    // 말풍선은 이름 바로 아래(카드 왼쪽 맞춤)에 둔다. 오른쪽 끝에 맞추는 건 (1) 그대로 두면 화면 밖으로 나갈 때,
+    // (2) 말풍선 오른쪽 끝이 ⓘ를 반쯤 가릴 때, (3) ⓘ에 마우스를 올려 열 때(말풍선이 ⓘ를 덮어 그대로 옮겨 갈 수 있게)뿐이고,
+    // 오른쪽에 맞춰도 왼쪽 끝이 화면 밖이면 왼쪽 맞춤 그대로. 폭은 그 말풍선의 실제 폭을 잰다(잠깐 보이게 해서 재고 바로 되돌려 깜박이지 않는다).
+    // 이름 글자 왼쪽·오른쪽에서 말풍선 끝까지 까는 띠(CSS --tip-l1·w1, --tip-l2·w2)도 여기서 잰다. 창 크기·화면 방향이 바뀌면 다시 맞춘다
+    const align = (t, viaIcon) => {
+      const K = t.closest(".kpi");
+      if (!K) return;
+      const vw = document.documentElement.clientWidth, k = K.getBoundingClientRect();
+      const b = t.querySelector(".tip__box"), d = b.style.display;
+      b.style.display = "block";
+      const w = b.offsetWidth;
+      b.style.display = d;
+      const pl = k.left + K.clientLeft, pr = pl + K.clientWidth; // 카드 안쪽(테두리 안) 왼쪽·오른쪽 끝 = 말풍선 기준
+      const i = t.querySelector(".tip-i").getBoundingClientRect(), end = pl + w;
+      const r = pr - w >= 0 && (viaIcon || end > vw - 16 || (end > i.left - 2 && end < i.right + 2));
+      t.classList.toggle("tip--r", r);
+      const bl = r ? pr - w : pl, br = bl + w, tx = t.querySelector(".tip__t").getBoundingClientRect();
+      const set = (n, l, rr) => { t.style.setProperty(`--tip-l${n}`, `${l - pl}px`); t.style.setProperty(`--tip-w${n}`, `${Math.max(0, rr - l)}px`); };
+      set(1, bl, Math.min(tx.left, br));
+      set(2, Math.max(tx.right, bl), br);
     };
     const enter = (ev) => {
       const t = ev.target.closest?.(".tip");
       if (!t || t.contains(ev.relatedTarget)) return;
       t.classList.remove("tip--x");
-      align(t);
+      align(t, ev.type === "pointerover" && !!ev.target.closest(".tip-i"));
     };
     document.addEventListener("pointerover", enter);
     document.addEventListener("focusin", enter);
-    window.addEventListener("resize", () => document.querySelectorAll(".tip").forEach(align));
+    window.addEventListener("resize", () => document.querySelectorAll(".tip").forEach((t) => align(t)));
     // 키보드로 옮겨 간 항목이 고정 머리글 밑에 가려 있으면 보이게 조금 내린다(브라우저가 스크롤을 마친 뒤, 화면 위로 멀리 벗어난 경우는 그대로)
     document.addEventListener("focusin", (ev) => {
       const t = ev.target.closest?.(".tip");
@@ -1426,11 +1441,14 @@
         if (t === document.activeElement && r.bottom > 0 && r.top < hb) scrollBy(0, r.top - hb - 8);
       });
     });
-    // 마우스로 누른 뒤에는 초점을 거둔다(남아 있으면 나중에 아무 키나 눌렀을 때 말풍선이 떠 버린다). 휴대폰은 누르면 초점으로 연다
-    document.addEventListener("mouseup", () => {
+    // 마우스로 누른 뒤(이름 글자를 끌어 옮긴 뒤 포함)에는 초점을 거둔다(남아 있으면 나중에 아무 키나 눌렀을 때 말풍선이 떠 버린다).
+    // 휴대폰은 누르면 초점으로 연다
+    const unfocus = () => {
       const a = document.activeElement;
       if (a?.classList.contains("tip") && !a.matches(":focus-visible") && matchMedia("(hover: hover)").matches) a.blur();
-    });
+    };
+    document.addEventListener("mouseup", unfocus);
+    document.addEventListener("dragend", unfocus);
     // Esc나 말풍선 누르기로 닫는다
     const close = (t) => { t.classList.add("tip--x"); if (t === document.activeElement) t.blur(); };
     document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") document.querySelectorAll(".tip:hover, .tip:focus").forEach(close); });
