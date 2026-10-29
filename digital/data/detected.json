@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T00:54:46+00:00",
+ "updated": "2026-10-29T01:28:55+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,21 +66,39 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
      "date": "2026-10-28",
      "title": "주식 판 돈, 왜 이틀 뒤에 나올까? 토큰증권이 바꿀 결제",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPT19CZW95dWVVelUzSkdQQm5FaldtemUzblNYNl96Wkd1alhwLUlmUy1WOHF6RjlsT3BGek5fSlFRRG5IMDBoMmFJY0l2cU1QU00tVEdXdXhPQ2s1S1FsSko0T2MtMVRJMmZOQlowWTFwRkpTenRYV1BKVDB2WmVoOC13?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOM2ZFWnFCS01YZ3dJX0tyWmtGTmhzQ1N0bXJEclpVTUN4T0tRTkp5V2N4MnJ3VWNGUTh1SHJzNTBIWGRJeHBobFYxeTA5bXRDZXFxazlfOWE0T19LYVQwNmFHNTd0azhSejRRcXN5V1lIRGZtbHc2YlVwcGFqQUtEeVdn?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "sto"
      ]
     },
     {
+     "date": "2026-10-28",
+     "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다.",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZFFEWFJwd05PMTI1akdYb01CSzBNTzNkUTdadFJ0UXpKR05UdWsyWGFLWV9hWnJNNUhINGxHX1EzOUMxeDFuRk5Sa0RVNEVHaW10LXJfY1paUVZSc3I4WDhNN0U1NVlibm9JNWU3MDVwaVc5aXVQMXN2ZFBrQjI4NGRHMkE5RWQ3aXpjTU5n?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
+     "date": "2026-10-27",
+     "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다. -「가상자산업권 등 침해사고 관련 긴급점검 회의 개최」",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaFoxd1JSdjBkNDhLVWFBaEhZY1hXVEpGTk9zWGxfMnItbE9tYVRkSjdlVlFJWHZPaEYxTnM2Wmd5SDBOMWZMNDZTcUlBczVDSXlsQThrbm5MaE53UWNSNERxejRHZWdOT3d2LUlsNGxfS1dia0w1aUJnZjMtWl9LNTd1cS16SGxWQ1g0UXlWVWZtcEJTRzFtTnpqU0h4YU5IZGpyTFZ3aHJRUFd5OGJWTFY2LW9obHdIZHViSDc1d0RkVHlLVG1rRGY1WjI0NDJZQWN0clpBc0t6ZWhlUHY0M3NUbHRVbTRCdmNYb3U1ME9xS0VPanMwZXRpX0tDcndSVk1DdHJwVGFjZEJ0cnlISQ?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
      "date": "2026-10-27",
      "title": "(보도설명) 디지털자산시장거래소 등 디지털자산업자에 대한 교육세 과세 여부는 전혀 검토된 바 없습니다.",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBYZF9UUWNZS3RjUWs3aXhmSUZJN1JmaWljUjZ4MHBUQW9vTUVmeDEwOWJ5R3FjdzNsVUdxUjNWd3FEM2ZWanlvMU9BVGpaaVlxQjdSakhPbEFIMzY2WXZmNXRGa0Q3VlZoRGpVZ3psUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rb2FDcl9tRUNlY0NOZVVKZU9Na0FmNWlPTmduSVdxcnFKX2NqOUpQSUlPX2h0eF81QlRFWU1UZnFjaEdtSDZIcFpmTWVXQjNmQW1IWTFzQVNsRVB3Rm9EeUhqWllzNE1a?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp",
@@ -226,7 +244,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
      "date": "2026-10-23",
@@ -285,27 +303,37 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-10-28",
-   "items": []
+   "auto_checked": "2026-10-29",
+   "items": [
+    {
+     "date": "2026-10-28",
+     "title": "ADGM Becomes the Region's First International Financial Centre to Publish Dedicated Crypto Mining Guidance",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOam9scmtQenh6dUNKXzQtRkpjU2FCdlNrelY2T2lGSkttM29LUWFvU0c4V3d0M0oxejh0ZlZkVzVncVY1TVJrTk5LYjQwaVZsLUl5RThXcWFvTU1rWXh1d1lqYWtUOUlvUW4zN0liT2VsZDVfUDNLYjFGbkpXNHVKeEpYT2VEdE9nUTdqVVNHVFlUV1ppa1pfSHNkTnpDZlVoeUw1N3NrdlUwdXNUZTNVTjZKZ0xtZksxS3dsUF9YM1djR0JPWEVSejBXMUJrNzZIVVV1WFRzM3JvZ2lzUGFR?oc=5",
+     "src": "ADGM",
+     "topics": [
+      "general"
+     ]
+    }
+   ]
   },
   "EU": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
      "date": "2026-10-14",
@@ -373,7 +401,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
      "date": "2026-10-21",
@@ -392,11 +420,20 @@
      "topics": [
       "general"
      ]
+    },
+    {
+     "date": "2026-10-15",
+     "title": "Help with VAT on cryptoassets — GfC21",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLUlkMV93Ri1LRmsyWTB4YloyWVhqZGF2V1o3ZlpKbXR5SFRWYkoyRWVjV0h0T2ZEeGV4STB0N3BFdnRKVk9DcTVqZU9YWXFBM3NDX3FYNkJtTlJIYl9jR3FfcmR2MXp0ODZYZklZNDdVd0lGYU9aZC0xcFE4SnUtb3Z4U0E?oc=5",
+     "src": "GOV.UK",
+     "topics": [
+      "general"
+     ]
     }
    ]
   },
   "HK": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
      "date": "2026-10-26",
