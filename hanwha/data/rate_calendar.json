@@ -23,7 +23,7 @@
    "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
   },
   "CA": {
-   "source": "공식",
+   "source": "보조",
    "count": 2,
    "url": "https://www.bankofcanada.ca/press/upcoming-events/"
   },
@@ -89,7 +89,7 @@
    "bank": "CA",
    "name": "캐나다 BoC",
    "note": "MPR 발표",
-   "source": "공식"
+   "source": "보조"
   },
   {
    "date": "2026-10-29",
