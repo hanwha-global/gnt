@@ -26,7 +26,7 @@
   },
   "https://hethongphapluat.com/nghi-dinh-155-2020-nd-cp-huong-dan-luat-chung-khoan/dieu-175": {
    "kind": "가변",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "changed_at": "2026-10-21"
   },
   "https://www.cnnindonesia.com/ekonomi/20220915173722-532-848425/jokowi-rilis-aturan-pembatasan-kepemilikan-asing-di-perusahaan-efek-ri": {
@@ -51,7 +51,7 @@
   },
   "https://www.mas.gov.sg/regulation/capital-markets/apply-for-licensing-or-registration-of-capital-market-entities/cms-licence": {
    "kind": "가변",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "changed_at": "2026-10-21"
   },
   "https://sso.agc.gov.sg/SL/SFA2001-RG13": {
@@ -60,7 +60,7 @@
   },
   "https://www.mas.gov.sg/regulation/forms-and-templates/application-for-approval-to-obtain-effective-control-of-holder-of-cms-licence-under-the-sfa": {
    "kind": "가변",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "changed_at": "2026-10-21"
   },
   "https://taxsummaries.pwc.com/singapore/corporate/withholding-taxes": {
@@ -93,15 +93,15 @@
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1017": {
    "kind": "원문",
-   "sig": "632ea0fff51f0ee3",
-   "checked": "2026-10-29",
-   "v": 2
+   "sig": "amend:316b8a4e3fae182d",
+   "checked": "2026-10-30",
+   "v": 3
   },
   "https://www.ecfr.gov/current/title-17/section-240.15c3-1": {
    "kind": "원문",
-   "sig": "fc128f65ca713c60",
-   "checked": "2026-10-29",
-   "v": 2
+   "sig": "ecfr:fc2e48b3e1bed01c",
+   "checked": "2026-10-30",
+   "v": 3
   },
   "https://www.innreg.com/blog/how-to-register-with-finra": {
    "kind": "링크",
@@ -144,9 +144,9 @@
   },
   "https://www.sfc.hk/en/Regulatory-functions/Intermediaries/Licensing": {
    "kind": "원문",
-   "sig": "590a019e0b64887c",
-   "checked": "2026-10-29",
-   "v": 2
+   "sig": "date:2020-01-22|22 Jan 2020",
+   "checked": "2026-10-30",
+   "v": 3
   },
   "https://www.elegislation.gov.hk/hk/cap571N": {
    "kind": "원문",
@@ -164,9 +164,9 @@
   },
   "https://sfc.hk/en/Regulatory-functions/Intermediaries/Licensing/Types-of-intermediary-and-licensed-individual": {
    "kind": "원문",
-   "sig": "100ba6c57876892e",
-   "checked": "2026-10-29",
-   "v": 2
+   "sig": "date:2025-12-30|30 Dec 2025",
+   "checked": "2026-10-30",
+   "v": 3
   },
   "https://taxsummaries.pwc.com/hong-kong-sar/corporate/withholding-taxes": {
    "kind": "링크",
@@ -236,7 +236,7 @@
   },
   "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12179": {
    "kind": "가변",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "changed_at": "2026-10-21",
    "v": 2
   },
@@ -355,7 +355,7 @@
   },
   "https://law.krx.co.kr": {
    "kind": "링크",
-   "err": "The read operation timed out"
+   "err": "<urlopen error timed out>"
   },
   "https://www.fsc.go.kr/no010101/81353": {
    "kind": "링크",
@@ -392,15 +392,21 @@
   },
   "https://www.sec.gov/answers/brkrdlr.htm": {
    "kind": "원문",
-   "err": "HTTP 403: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transit"
+   "sig": "eef5bc295b85eb52",
+   "v": 3,
+   "checked": "2026-10-30"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1013": {
    "kind": "원문",
-   "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
+   "sig": "amend:1677bddaaf78132e",
+   "v": 3,
+   "checked": "2026-10-30"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1014": {
    "kind": "원문",
-   "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
+   "sig": "amend:2bb6e679ea7d4a11",
+   "v": 3,
+   "checked": "2026-10-30"
   },
   "https://www.finra.org/registration-exams-ce/broker-dealers/update/ownership-control": {
    "kind": "원문",
@@ -414,19 +420,19 @@
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1220": {
    "kind": "원문",
-   "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
+   "err": "HTTP 429: 속도 제한(이번 점검 건너뜀)"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3310": {
    "kind": "원문",
-   "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
+   "err": "HTTP 429: 속도 제한(이번 점검 건너뜀)"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4311": {
    "kind": "원문",
-   "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
+   "err": "HTTP 429: 속도 제한(이번 점검 건너뜀)"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4360": {
    "kind": "원문",
-   "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
+   "err": "HTTP 429: 속도 제한(이번 점검 건너뜀)"
   },
   "https://www.finra.org/registration-exams-ce/qualification-exams": {
    "kind": "원문",
@@ -440,27 +446,27 @@
   },
   "https://www.ecfr.gov/current/title-17/section-240.17a-11": {
    "kind": "원문",
-   "sig": "fc128f65ca713c60",
-   "v": 2,
-   "checked": "2026-10-29"
+   "sig": "ecfr:87fb35326c3bbc5a",
+   "v": 3,
+   "checked": "2026-10-30"
   },
   "https://www.ecfr.gov/current/title-17/section-240.15a-6": {
    "kind": "원문",
-   "sig": "fc128f65ca713c60",
-   "v": 2,
-   "checked": "2026-10-29"
+   "sig": "ecfr:c8088cfb96c7e40f",
+   "v": 3,
+   "checked": "2026-10-30"
   },
   "https://www.ecfr.gov/current/title-17/section-240.15b3-1": {
    "kind": "원문",
-   "sig": "fc128f65ca713c60",
-   "v": 2,
-   "checked": "2026-10-29"
+   "sig": "ecfr:12a913a9e29d50d2",
+   "v": 3,
+   "checked": "2026-10-30"
   },
   "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-VIII/part-800": {
    "kind": "원문",
-   "sig": "fc128f65ca713c60",
-   "v": 2,
-   "checked": "2026-10-29"
+   "sig": "ecfr:491fd74de784a1cd",
+   "v": 3,
+   "checked": "2026-10-30"
   },
   "https://www.nysenate.gov/legislation/laws/BSC/402": {
    "kind": "원문",
@@ -508,7 +514,9 @@
   },
   "https://www.sec.gov/Archives/edgar/data/947263/000119312522209400/d386083dex991.htm": {
    "kind": "원문",
-   "err": "HTTP 403: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transit"
+   "sig": "5ebfebc8fd525745",
+   "v": 3,
+   "checked": "2026-10-30"
   },
   "https://www.mizuhogroup.com/news-release/20230522release-eng": {
    "kind": "링크",
@@ -614,13 +622,13 @@
    "checked": "2026-10-29"
   },
   "US": {
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "JP": {
    "checked": "2026-10-29"
   },
   "HK": {
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "CN": {
    "checked": null
@@ -758,7 +766,7 @@
    "checked": null
   },
   "annex-us": {
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   }
  }
 }
