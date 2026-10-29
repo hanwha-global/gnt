@@ -1402,8 +1402,12 @@
 
   // ---------- 용어 설명 말풍선: 좌우 맞춤과 닫기(보이고 숨는 건 CSS) ----------
   function initTips() {
-    // 화면 오른쪽 절반의 카드는 말풍선을 오른쪽 끝에 맞춰 화면 밖으로 나가지 않게. 창 크기·화면 방향이 바뀌면 다시 맞춘다
-    const align = (t) => t.classList.toggle("tip--r", (t.closest(".kpi") || t).getBoundingClientRect().left > document.documentElement.clientWidth / 2);
+    // 말풍선은 이름 바로 아래(카드 왼쪽 맞춤)에 두고, 가장 넓은 말풍선(340px)이 화면 밖으로 나갈 카드만 오른쪽 끝에 맞춘다
+    // (오른쪽 절반이라고 무조건 오른쪽에 맞추면 짧은 이름과 말풍선이 떨어져 마우스로 옮겨 가는 사이에 닫힌다). 창 크기·화면 방향이 바뀌면 다시 맞춘다
+    const align = (t) => {
+      const vw = document.documentElement.clientWidth, left = (t.closest(".kpi") || t).getBoundingClientRect().left;
+      t.classList.toggle("tip--r", left + Math.min(340, innerWidth - 32) > vw - 16); // 말풍선 최대 폭(CSS의 min(340px, 100vw - 32px))
+    };
     const enter = (ev) => {
       const t = ev.target.closest?.(".tip");
       if (!t || t.contains(ev.relatedTarget)) return;
