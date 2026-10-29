@@ -21,13 +21,13 @@
   const topic = (names) => { const w = names.join("·"), c = w.charCodeAt(w.length - 1) - 0xac00; return `${w}${c >= 0 && c < 11172 && c % 28 ? "은" : "는"}`; };
   const ymd = (s) => (s && s.length === 8 ? `${s.slice(0, 4)}.${s.slice(4, 6)}.${s.slice(6)}` : s || "");
   // 용어 설명: 카드에 작은 ⓘ 표시. 이름이나 ⓘ에 마우스를 올리거나, 키보드로 옮겨 가거나, 휴대폰에서 누르면
-  // 카드 바로 아래에 설명 말풍선이 뜬다(보이고 숨는 건 CSS, 좌우 맞춤만 initTips)
+  // 이름 바로 아래에 설명 말풍선이 뜬다(보이고 숨는 건 CSS, 좌우 맞춤·닫기는 initTips)
   let tipN = 0;
   const tip = (label, text) => {
     if (!text) return label;
     const id = `tip-${++tipN}`;
     return `<span class="tip" tabindex="0" aria-describedby="${id}"><span class="tip__t">${label}</span><i class="tip-i" aria-hidden="true">i</i>`
-      + `<span class="tip__box" role="tooltip" id="${id}"><b>${label}</b>${esc(text)}</span></span>`;
+      + `<span class="tip__box" id="${id}" aria-hidden="true"><b>${label}</b>${esc(text)}</span></span>`; // 설명은 aria-describedby로 한 번만 읽힌다
   };
 
   async function getJSON(path, optional = false) {
@@ -1400,17 +1400,34 @@
     }
   }
 
-  // ---------- 용어 설명 말풍선: 화면 오른쪽 절반의 카드는 말풍선을 오른쪽 끝에 맞춰 화면 밖으로 나가지 않게 하고, Esc나 말풍선 누르기로 닫는다 ----------
+  // ---------- 용어 설명 말풍선: 좌우 맞춤과 닫기(보이고 숨는 건 CSS) ----------
   function initTips() {
-    const align = (ev) => {
+    // 화면 오른쪽 절반의 카드는 말풍선을 오른쪽 끝에 맞춰 화면 밖으로 나가지 않게. 창 크기·화면 방향이 바뀌면 다시 맞춘다
+    const align = (t) => t.classList.toggle("tip--r", (t.closest(".kpi") || t).getBoundingClientRect().left > document.documentElement.clientWidth / 2);
+    const enter = (ev) => {
       const t = ev.target.closest?.(".tip");
-      if (t) t.classList.toggle("tip--r", (t.closest(".kpi") || t).getBoundingClientRect().left > innerWidth / 2);
+      if (!t || t.contains(ev.relatedTarget)) return;
+      t.classList.remove("tip--x");
+      align(t);
     };
-    document.addEventListener("pointerover", align);
-    document.addEventListener("focusin", align);
-    const close = () => { if (document.activeElement?.classList.contains("tip")) document.activeElement.blur(); };
-    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") close(); });
-    document.addEventListener("click", (ev) => { if (ev.target.closest?.(".tip__box")) close(); }); // 휴대폰: 말풍선을 누르면 닫힘
+    document.addEventListener("pointerover", enter);
+    document.addEventListener("focusin", enter);
+    window.addEventListener("resize", () => document.querySelectorAll(".tip").forEach(align));
+    // 키보드로 옮겨 간 항목이 고정 머리글 밑에 가려 있으면 보이게 조금 내린다(브라우저가 스크롤을 마친 뒤, 화면 위로 멀리 벗어난 경우는 그대로)
+    document.addEventListener("focusin", (ev) => {
+      const t = ev.target.closest?.(".tip");
+      if (!t || !t.matches(":focus-visible")) return;
+      requestAnimationFrame(() => {
+        const r = t.getBoundingClientRect(), hb = $(".top")?.getBoundingClientRect().bottom || 0;
+        if (t === document.activeElement && r.bottom > 0 && r.top < hb) scrollBy(0, r.top - hb - 8);
+      });
+    });
+    // 마우스로 누르면 초점을 주지 않는다(초점이 남으면 나중에 아무 키나 눌렀을 때 말풍선이 떠 버린다). 휴대폰은 누르면 초점으로 연다
+    document.addEventListener("mousedown", (ev) => { if (ev.target.closest?.(".tip") && matchMedia("(hover: hover)").matches) ev.preventDefault(); });
+    // Esc나 말풍선 누르기로 닫는다
+    const close = (t) => { t.classList.add("tip--x"); if (t === document.activeElement) t.blur(); };
+    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") document.querySelectorAll(".tip:hover, .tip:focus").forEach(close); });
+    document.addEventListener("click", (ev) => { const b = ev.target.closest?.(".tip__box"); if (b) close(b.closest(".tip")); });
   }
 
   // ---------- 시작 ----------
