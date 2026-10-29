@@ -173,11 +173,13 @@ table.data tr.is-off td { color: var(--muted); }
 .guide b { color: var(--accent-ink); }
 .guide__inner { max-width: 1480px; margin: 0 auto; padding: 6px 16px; font-size: 12.5px; color: var(--text-2); }
 /* 용어 설명(ⓘ): 마우스를 올리거나 누르면 말풍선(.tipbox)이 바로 뜬다(app.js initTips) */
-.tip { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; vertical-align: bottom; border-radius: 3px; cursor: default; }
-.tip__t { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tip { border-radius: 3px; cursor: default; }
 .tip:focus-visible { outline: 1px solid var(--accent); outline-offset: -1px; }
-.tip-i { flex: none; display: inline-grid; place-items: center; width: 13px; height: 13px; border: 1px solid currentColor; border-radius: 50%;
-  font: italic 700 9px/1 Georgia, "Times New Roman", serif; color: var(--muted); }
+.tip-i { display: inline-grid; place-items: center; width: 11px; height: 11px; margin-left: 3px; vertical-align: -1px; border: 1px solid currentColor; border-radius: 50%;
+  font: italic 700 8px/1 Georgia, "Times New Roman", serif; color: var(--muted); }
+/* 카드 이름 칸은 좁아서 ⓘ를 카드 오른쪽 가운데(숫자 줄의 빈 자리)에 둔다: 이름 폭을 줄이지 않는다 */
+.kpi { position: relative; }
+.kpi .tip-i { position: absolute; top: 50%; right: 10px; margin: 0; transform: translateY(-50%); }
 .tip:hover .tip-i, .tip[aria-describedby] .tip-i { color: var(--accent-ink); }
 .tipbox { position: fixed; z-index: 40; max-width: min(340px, calc(100vw - 16px)); padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
   background: #0c1630; color: var(--text-2); font-size: 12px; line-height: 1.55; box-shadow: 0 6px 18px rgba(0, 0, 0, .35); pointer-events: none; }

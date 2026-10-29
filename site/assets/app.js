@@ -1406,16 +1406,20 @@
       cur = null;
       box.hidden = true;
     };
+    // 자리: 아래에 자리가 없으면 위로, 화면 밖으로 나가지 않게(지난 자리에서 재면 폭이 줄어드므로 0에서 잰다)
+    const place = (el) => {
+      box.style.left = box.style.top = "0px";
+      const r = el.getBoundingClientRect(), w = box.offsetWidth, h = box.offsetHeight;
+      box.style.left = `${Math.max(8, Math.min(r.left, innerWidth - w - 8))}px`;
+      box.style.top = `${r.bottom + 6 + h > innerHeight && r.top > h + 6 ? r.top - h - 6 : r.bottom + 6}px`;
+    };
     const show = (el) => {
       if (el === cur) return;
       hide();
       cur = el;
       box.innerHTML = `<b>${esc(($(".tip__t", el) || el).textContent.trim())}</b>${esc(el.dataset.tip)}`;
       box.hidden = false;
-      // 아래에 자리가 없으면 위로, 화면 밖으로 나가지 않게
-      const r = el.getBoundingClientRect(), w = box.offsetWidth, h = box.offsetHeight;
-      box.style.left = `${Math.max(8, Math.min(r.left, innerWidth - w - 8))}px`;
-      box.style.top = `${r.bottom + 6 + h > innerHeight && r.top > h + 6 ? r.top - h - 6 : r.bottom + 6}px`;
+      place(el);
       el.setAttribute("aria-describedby", "tipbox");
     };
     const on = (ev) => { const el = ev.target.closest?.("[data-tip]"); el ? show(el) : hide(); };
@@ -1425,7 +1429,13 @@
     document.addEventListener("focusin", on);
     document.addEventListener("click", on);
     document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") hide(); });
-    window.addEventListener("scroll", hide, { passive: true });
+    // 스크롤하면 닫는다. 다만 초점이 그 항목에 있으면(키보드로 옮겨 가며 화면이 저절로 움직인 경우 등) 따라가다가 가려지면 닫는다
+    window.addEventListener("scroll", () => {
+      if (!cur) return;
+      if (cur !== document.activeElement) return hide();
+      const r = cur.getBoundingClientRect();
+      r.top < ($(".top")?.getBoundingClientRect().bottom || 0) || r.bottom > innerHeight ? hide() : place(cur);
+    }, { passive: true });
     window.addEventListener("hashchange", hide);
   }
 
