@@ -15,11 +15,11 @@
   const HW = "한화투자증권";
   const HWNAME = { "Pinetree Securities Corporation": "베트남 법인(PTSV)", "Pinetree Securities Pte.Ltd.": "싱가포르 법인(PTSS)", "PT Ciptadana Sekuritas Asia": "인도네시아 증권(CSA)" };
   // 법인 형태 꼬리(JSC·Corporation·Co., Ltd 등)를 떼고, 대문자 이름은 단어 첫 글자만 크게(3자 이하 약어는 그대로)
-  const ACR = { Vpbank: "VPBank", Lpbank: "LPBank", Vndirect: "VNDirect", Mbs: "MBS" };
+  const ACR = { Vpbank: "VPBank", Lpbank: "LPBank", Vndirect: "VNDirect", Mbs: "MBS", Cicc: "CICC" };
   const shortName = (n) => {
     let x = String(n || "").replace(/\s+/g, " ").trim().replace(/\s*[–-]\s*[^–-]*branch$/i, "").replace(/^PT\.?\s+/i, "")
-      .replace(/[\s,.-]*(joint[\s-]*stock|join stock)?\s*(company|corporation|corporatio|corp|incorporated|jsc|co\.?,?\s*ltd)\.?$/i, "").trim();
-    if (x === x.toUpperCase()) x = x.split(" ").map((w) => (w.length <= 3 ? w : ACR[w[0] + w.slice(1).toLowerCase()] || w[0] + w.slice(1).toLowerCase())).join(" ");
+      .replace(/[\s,.-]*(joint[\s-]*stock|join stock)?\s*\b(company|corporation|corporatio|corp|incorporation|incorporated|jsc|co\.?,?\s*ltd)\.?$/i, "").trim();
+    if (x === x.toUpperCase() && !/[가-힣]/.test(x)) x = x.split(" ").map((w) => (w.length <= 3 ? w : ACR[w[0] + w.slice(1).toLowerCase()] || w[0] + w.slice(1).toLowerCase())).join(" ");
     return x;
   };
   const label = (r) => (r.firm === HW ? `${HWNAME[r.name] || r.name}` : shortName(r.name));
@@ -298,24 +298,24 @@
     }
     if (VB?.rows?.length) {
       const qs = VB.quarters, last = qs.at(-1), pq = qs.at(-2), yq = qs.find((q) => q === `${+last.slice(0, 4) - 1}${last.slice(4)}`);
-      const hose = Object.fromEntries((cur?.rows || []).filter((r) => r.code).map((r, i) => [r.code, i + 1]));
-      const have = VB.rows.filter((r) => r.share[last] != null), miss = VB.rows.filter((r) => r.share[last] == null);
+      const hose = Object.fromEntries((cur?.rows || []).map((r, i) => [r.code, i + 1]).filter(([c]) => c));
+      const have = VB.rows.filter((r) => r.share[last] != null), miss = VB.rows.filter((r) => r.share[last] == null && !r.filed_last), nob = VB.rows.filter((r) => r.share[last] == null && r.filed_last);
       const max = Math.max(...have.map((r) => r.share[last]), 1);
       const top5 = have.slice(0, 5).reduce((x, r) => x + r.share[last], 0);
-      const rows = have.map((r, i) => `<tr><td>${i + 1}</td><td class="l">${esc(shortName(r.name))} <span class="mut">${esc(r.code)}</span>${hose[r.code] ? `<span class="tag old">HOSE ${hose[r.code]}위</span>` : ""}</td>
+      const rows = have.map((r, i) => `<tr><td>${i + 1}</td><td class="l">${esc(shortName(r.name))} <span class="mut">${esc(r.code)}</span>${hose[r.code] ? `<span class="tag old" title="${esc(cur.label)} HOSE 발표 순위">HOSE ${hose[r.code]}위</span>` : ""}</td>
         <td class="ib"><i style="width:${((r.share[last] / max) * 100).toFixed(1)}%"></i><span>${num(r.share[last], 2)}</span></td>
         <td>${num(r.share[pq], 2)}</td>${yq ? `<td>${num(r.share[yq], 2)}</td>` : ""}<td>${num(r.ytd, 2)}</td><td>${spark(qs.map((q) => r.share[q]))}</td></tr>`).join("");
       b = `<h3 class="sub">11위 이하까지: 상장 증권사 중개수익 점유율 <span class="tag auto">자동</span></h3>
-        <p class="why">거래소는 상위 10곳 밖을 공개하지 않아, 상장 증권사 ${have.length}곳의 분기 중개수수료 수익 비중으로 순위를 끝까지 잇습니다. 상위 5곳 ${num(top5, 1)}%.</p>
+        <p class="why">거래소는 상위 10곳 밖을 공개하지 않아, 상장 증권사 ${have.length}곳의 분기 중개수수료 수익 비중으로 순위를 끝까지 잇습니다. 상위 5곳 ${num(top5, 1)}%.${cur ? ` 회사 옆 HOSE 순위는 ${esc(cur.label)} 거래소 발표 기준.` : ""}</p>
         ${tm(`${qlab(last)} 분기 재무(상장 ${VB.reported[last]}곳 보고, 합계 ${num(VB.total_bn[last])}십억동) · 올해 누적 ${qlab(VB.ytd_quarters[0])}~${qlab(last)}`, "%(상장 증권사 중개수수료 수익 합계 대비)")}
         <div class="tw vnb"><table><thead><tr><th>#</th><th class="l">상장 증권사</th><th>${qlab(last)}<small>%</small></th><th>${pq ? qlab(pq) : "전 분기"}<small>%</small></th>${yq ? `<th>${qlab(yq)}<small>전년 동기</small></th>` : ""}<th>올해 누적<small>%</small></th><th>추이<small>${qlab(qs[0])}~${qlab(last)}</small></th></tr></thead><tbody>${rows}</tbody></table></div>
-        <p class="note">${esc(VB.method)}. 한국계(KIS·미래에셋·KB·신한·NH)와 PTSV는 비상장이라 빠집니다.${miss.length ? ` 아직 ${qlab(last)} 재무를 안 낸 곳: ${esc(miss.map((r) => r.code).join(", "))}.` : ""}${VB.pending ? ` ${qlab(VB.pending.q)}은 ${esc(VB.pending.missing.slice(0, 4).join(", "))}${VB.pending.missing.length > 4 ? ` 등 ${VB.pending.missing.length}곳` : ""}이 아직 안 내 집계 대기(${VB.pending.reported}곳 보고), 모이면 자동 반영.` : ""} 출처: <a href="${esc(VB.source.url)}" target="_blank" rel="noopener">${esc(VB.source.label)}</a></p>`;
+        <p class="note">${esc(VB.method)}. 한국계(KIS·미래에셋·KB·신한·NH)와 PTSV는 비상장이라 빠집니다.${miss.length ? ` 아직 ${qlab(last)} 재무를 안 낸 곳: ${esc(miss.map((r) => r.code).join(", "))}.` : ""}${nob.length ? ` ${qlab(last)} 재무에 중개수익이 없는 곳: ${esc(nob.map((r) => r.code).join(", "))}.` : ""}${VB.pending ? ` ${qlab(VB.pending.q)}은 ${esc(VB.pending.missing.slice(0, 4).join(", "))}${VB.pending.missing.length > 4 ? ` 등 ${VB.pending.missing.length}곳` : ""}이 아직 안 내 집계 대기(${VB.pending.reported}곳 보고), 모이면 자동 반영.` : ""} 출처: <a href="${esc(VB.source.url)}" target="_blank" rel="noopener">${esc(VB.source.label)}</a></p>`;
     }
     $("#vn").innerHTML = a || b ? a + b : `<div class="empty">자료 없음</div>`;
   }
 
   // ---------- 밸류에이션: 나라·시장별 상장 증권사 ----------
-  const VGROUP = ["국내", "진출국", "아시아", "미주·유럽"];
+  const VGROUP = ["국내", "진출국", "아시아·태평양", "미주·유럽"];
   let vk = "kr", vsort = "mcap_krw";
   // 겹치지 않게 라벨 놓기: 점 오른쪽 → 위아래로 비켜 → 그래도 겹치면 생략
   function svgLabels(items, W) {
@@ -349,7 +349,7 @@
     for (let v = 0; v <= y1 + 1e-9; v += ystep) grid += `<line x1="${L0}" x2="${W - R0}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"${v === 0 ? "" : ' stroke-dasharray="2 3"'}/><text x="${L0 - 4}" y="${Y(v) + 3}" text-anchor="end">${num(v, 1)}</text>`;
     grid += `<line x1="${L0}" x2="${W - R0}" y1="${Y(1)}" y2="${Y(1)}" stroke="var(--accent)" stroke-opacity=".35"/><text x="${W - R0}" y="${Y(1) - 3}" text-anchor="end" style="fill:var(--accent-ink)">P/B 1배</text>`;
     const order = [...pts].sort(([, p], [, q]) => (q.mcap_krw || 0) - (p.mcap_krw || 0));
-    const dots = order.map(([k, m]) => `<circle cx="${X(m.median_roe).toFixed(1)}" cy="${Y(m.median_pb).toFixed(1)}" r="${R(m.mcap_krw).toFixed(1)}" fill="${col(m.group)}" fill-opacity="${m.group === "아시아" || m.group === "미주·유럽" ? .45 : .8}" stroke="${k === vk ? "var(--text)" : "var(--bg)"}" stroke-width="${k === vk ? 1.5 : 1}"><title>${esc(m.name)}: P/B 중앙값 ${num(m.median_pb, 2)}배 · ROE 중앙값 ${num(m.median_roe, 1)}% · ${m.n}곳 시가총액 ${num(m.mcap_krw / 1e4, 1)}조원</title></circle>`).join("");
+    const dots = order.map(([k, m]) => `<circle cx="${X(m.median_roe).toFixed(1)}" cy="${Y(m.median_pb).toFixed(1)}" r="${R(m.mcap_krw).toFixed(1)}" fill="${col(m.group)}" fill-opacity="${m.group === "국내" || m.group === "진출국" ? .8 : .45}" stroke="${k === vk ? "var(--text)" : "var(--bg)"}" stroke-width="${k === vk ? 1.5 : 1}"><title>${esc(m.name)}: P/B 중앙값 ${num(m.median_pb, 2)}배 · ROE 중앙값 ${num(m.median_roe, 1)}% · ${m.n}곳 시가총액 ${num(m.mcap_krw / 1e4, 1)}조원</title></circle>`).join("");
     const meDot = me?.roe != null && me.pb != null ? `<rect x="${(X(me.roe) - 4).toFixed(1)}" y="${(Y(me.pb) - 4).toFixed(1)}" width="8" height="8" transform="rotate(45 ${X(me.roe).toFixed(1)} ${Y(me.pb).toFixed(1)})" fill="var(--accent)" stroke="var(--bg)"><title>한화투자증권 P/B ${num(me.pb, 2)}배 · ROE ${num(me.roe, 1)}%</title></rect>` : "";
     const labs = svgLabels([
       ...(meDot ? [{ x: X(me.roe), y: Y(me.pb), r: 5, t: "한화투자증권", style: "fill:var(--accent-ink);font-weight:700" }] : []),
@@ -366,11 +366,11 @@
     const me = V.markets.kr?.rows?.find((r) => r.name === HW);
     const pbmax = Math.max(...ms.map(([, m]) => m.median_pb || 0), 1);
     const pd = ms.map(([, m]) => m.price_date).filter(Boolean).sort().pop();
-    const body = VGROUP.map((g) => {
+    const body = [...new Set([...VGROUP, ...ms.map(([, m]) => m.group)])].map((g) => {
       const gm = ms.filter(([, m]) => m.group === g);
       return gm.length ? `<tr class="grp"><td colspan="7">${esc(g)}</td></tr>` + gm.map(([k, m]) => `<tr class="mk${k === vk ? " sel" : ""}${g === "국내" ? " home" : ""}" data-k="${k}" tabindex="0"><td class="l">${esc(m.name)}</td><td>${m.n}</td><td>${num(m.mcap_krw / 1e4, 1)}</td>
         <td class="ib"><i style="width:${(((m.median_pb || 0) / pbmax) * 100).toFixed(1)}%"></i><span>${num(m.median_pb, 2)}</span></td><td>${sgn(m.median_roe)}</td><td>${num(m.median_pe, 1)}</td>
-        <td class="l">${esc(shortName(m.rows[0]?.name || ""))}</td></tr>`).join("") : "";
+        <td class="l"><span class="nm" title="${esc(m.rows[0]?.name || "")}">${esc(shortName(m.rows[0]?.name || ""))}</span></td></tr>`).join("") : "";
     }).join("");
     const kr = V.markets.kr;
     $("#val-mkt").innerHTML = `${tm(`시가총액 ${dot(pd)} 종가 · 자본 최근 분기 · ROE·P/E 최근 4개 분기`, "개, 조원(원화 환산), 배, %")}

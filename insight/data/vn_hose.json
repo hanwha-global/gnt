@@ -73,7 +73,7 @@
   {
    "q": "2026Q2",
    "label": "2Q26",
-   "published": "2026-07",
+   "published": "2026-07-06",
    "top10": 65.19,
    "rows": [
     {
@@ -128,6 +128,10 @@
     }
    ],
    "sources": [
+    {
+     "label": "Thời báo Tài chính Việt Nam(HOSE 발표 인용)",
+     "url": "https://thoibaotaichinhvietnam.vn/thi-phan-moi-gioi-quy-ii-vps-co-hep-top-10-nam-giu-hon-65-200241.html"
+    },
     {
      "label": "Vietstock(HOSE 발표 인용)",
      "url": "https://en.vietstock.vn/2026/07/competition-heats-up-as-securities-brokerages-battle-for-hose-market-share-36-638227.htm"

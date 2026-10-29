@@ -258,8 +258,8 @@ def ttm(hist):
 
 
 def vn_universe():
-    """상장 증권사 전체의 최근 연간·분기 재무와 시가총액·P/B. (rows, errors)"""
-    errors = []
+    """상장 증권사 전체의 최근 연간·분기 재무와 시가총액·P/B. (rows, errors, 일시 실패한 회사 코드)"""
+    errors, failed = [], []
     ind = vnd("industry_classification", "codeList:SSI")
     codes = next((x["codeList"].split(",") for x in ind if str(x.get("industryCode")) == "8777"), [])
     if not codes:
@@ -285,7 +285,12 @@ def vn_universe():
             ratio = {r["ratioCode"]: r for r in vnd("ratios/latest", None, filter="ratioCode:MARKETCAP,PRICE_TO_BOOK",
                                                      where=f"code:{c}", order="reportDate", fields="ratioCode,value,reportDate")}
             ni = cur.get("ni") if cur.get("ni") is not None else cur.get("ni_all")
-            hist = vnd_hist(c)
+            try:
+                hist = vnd_hist(c)
+            except Exception as e:  # 분기 손익만 실패하면 행은 남기고 중개수익 점유율 계산에서만 실패로 센다
+                hist = {}
+                failed.append(c)
+                errors.append(f"vn {c} 분기 손익: {short(e, 60)}")
             t_ni, t_asof = ttm(hist)
             if c == "SSI":  # 분기 값이 분기분(누적 아님)인지 연간과 맞춰 본다
                 y = years[0][:4]
@@ -299,10 +304,11 @@ def vn_universe():
                          "mcap": ratio.get("MARKETCAP", {}).get("value"), "pb": ratio.get("PRICE_TO_BOOK", {}).get("value"),
                          "price_date": ratio.get("MARKETCAP", {}).get("reportDate")})
         except Exception as e:
+            failed.append(c)
             errors.append(f"vn {c}: {short(e, 80)}")
         time.sleep(0.15)
-    print(f"vn universe: 업종 {len(codes)}곳 중 상장 {len(listed)}곳, 재무 확보 {len(rows)}곳")
-    return rows, errors
+    print(f"vn universe: 업종 {len(codes)}곳 중 상장 {len(listed)}곳, 재무 확보 {len(rows)}곳, 일시 실패 {failed}")
+    return rows, errors, failed
 
 
 def norm(n):
@@ -346,12 +352,17 @@ def vn_row(d, fx, ccy, div):
             "pb": round(d["pb"], 2) if d["pb"] else None, "pb_book": "분기", "pb_asof": d["q_date"], "price_date": d["price_date"],
             "ttm_ni": u(d.get("ttm_ni")), "ttm_asof": d.get("ttm_asof"),
             "roe_ttm": round(d["ttm_ni"] / d["q_equity"] * 100, 1) if d.get("ttm_ni") is not None and d.get("q_equity") else None,
-            "pe": round(d["mcap"] / d["ttm_ni"], 1) if d.get("mcap") and d.get("ttm_ni") and d["ttm_ni"] > 0 else None,
+            "pe": (lambda n: round(d["mcap"] / n, 1) if d.get("mcap") and n and n > 0 else None)(d["ttm_ni"] if d.get("ttm_ni") is not None else d["ni"]),
             "via": "vndirect", "url": f"https://dstock.vndirect.com.vn/tong-quan/{d['code']}", "stale": False}
 
 
-def vn_brokerage(vn_rows):
+def vn_brokerage(vn_rows, failed=()):
     """상장 증권사 분기 중개수수료 수익 점유율(상장사 합계 대비) → vn_brokerage.json. 거래소 발표 상위 10곳 밖을 잇는 자동 지표."""
+    prev = load("vn_brokerage.json", {})
+    pl = (prev.get("quarters") or [None])[-1]
+    gone = [x["code"] for x in prev.get("rows", []) if x["code"] in set(failed) and (x["share"].get(pl) or 0) >= 1]
+    if gone:  # 분모에서 빠지면 나머지 회사 점유율이 모두 부풀어 오른다
+        raise RuntimeError(f"직전 점유율 1% 이상인 {', '.join(gone)}의 재무를 이번에 못 받아 이전 파일 유지")
     cnt = {}
     for r in vn_rows:
         for d, v in r.get("q_hist", {}).items():
@@ -369,7 +380,9 @@ def vn_brokerage(vn_rows):
     pending = None
     while len(cand) > 1 and cover(cand[-1], cand[-2]) < 0.95:  # 집계가 덜 된 최근 분기는 순위에서 빼고 대기로 표시
         q = cand.pop()
-        pending = {"q": q, "reported": cnt[q], "missing": [r["code"] for r in vn_rows if rev(r, cand[-1]) and not rev(r, q)]}
+        if pending is None:  # 가장 최근 대기 분기만 표시, 빠진 회사는 직전 분기 중개수익 큰 순
+            miss = sorted((r for r in vn_rows if rev(r, cand[-1]) and not rev(r, q)), key=lambda r: -rev(r, cand[-1]))
+            pending = {"q": q, "reported": cnt[q], "missing": [r["code"] for r in miss]}
     qs = cand[-6:]
     tot = {q: sum(rev(r, q) for r in vn_rows) for q in qs}
     rows = []
@@ -378,7 +391,8 @@ def vn_brokerage(vn_rows):
         share = {q: round(v / tot[q] * 100, 3) for q, v in rv.items() if v and tot[q]}
         if share:
             rows.append({"code": r["code"], "name": r["name"], "floor": r["floor"], "share": share,
-                         "rev_bn": {q: round(v / 1e9, 1) for q, v in rv.items() if v}})
+                         "rev_bn": {q: round(v / 1e9, 1) for q, v in rv.items() if v},
+                         "filed_last": qs[-1] in r["q_hist"] or (r.get("q_date") or "") >= qs[-1]})  # 최근 분기 재무를 냈는지(중개수익 0과 구분)
     last = qs[-1]
     ytd = [q for q in qs if q[:4] == last[:4]]
     yt = sum(tot[q] for q in ytd)
@@ -398,24 +412,29 @@ def landscape():
     errors = []
     oldval = {f"{m}:{r['ticker']}": r for m, mv in prev.get("markets", {}).items() for r in mv.get("rows", []) if r.get("ticker")}
 
-    def val(mid, ticker, symbol):
+    def val(mid, ticker, symbol, div):
         try:
             v = valuation(symbol)
             return v, False
         except Exception as e:
             o = oldval.get(f"{mid}:{ticker}")
             errors.append(f"{mid} {ticker}: {e}{' (이전 값 유지)' if o and o.get('mcap') else ''}"[:160])
-            return ({k: o.get(k) for k in ("price", "price_date", "mcap", "q_equity", "q_asof", "ccy")} if o and o.get("mcap") else None), True
+            if not (o and o.get("mcap")):
+                return None, True
+            # 이전 행은 표시 단위(÷div)로 저장돼 있으므로 원 통화로 되돌리고, 자본은 이전 P/B로 역산해 P/B를 그대로 잇는다
+            mc = o["mcap"] * div
+            return {"price": o.get("price"), "price_date": o.get("price_date"), "ccy": o.get("ccy"), "mcap": mc,
+                    "q_equity": mc / o["pb"] if o.get("pb") else None, "q_asof": o.get("pb_asof")}, True
 
     try:
-        vn_rows, vn_err = vn_universe()
+        vn_rows, vn_err, vn_failed = vn_universe()
         errors += vn_err
     except Exception as e:
-        vn_rows = []
+        vn_rows, vn_failed = [], []
         errors.append(f"vn 전체 목록: {short(e)} (Yahoo 상장사 목록으로 대체)")
     if vn_rows:
         try:
-            vn_brokerage(vn_rows)
+            vn_brokerage(vn_rows, vn_failed)
         except Exception as e:
             errors.append(f"vn 중개수익 점유율: {short(e)}")
     # 결산일 환율(상장사 자본·한국계 법인 원화 환산)과 최근 환율(시가총액)
@@ -438,7 +457,7 @@ def landscape():
             rows = [vn_row(d, fx, ccy, div) for d in vn_rows]
         for r in ([] if rows else listed.get("markets", {}).get(mid, {}).get("rows", [])):
             sym = r["ticker"] + (".HN" if r.get("note") == "HNX" else ysfx)
-            v, stale = val(mid, r["ticker"], sym)
+            v, stale = val(mid, r["ticker"], sym, div)
             rate = fx[ccy].get(r["asof"]) or fx[ccy]["now"]
             eq_l = r["equity"] * div  # 원 통화
             row = {"kind": "local", "name": r["name"], "ticker": r["ticker"], "note": r.get("note"), "asof": r["asof"],
@@ -513,31 +532,31 @@ VAL_MARKETS = [
     ("vn", "베트남", "진출국", None),
     ("id", "인도네시아", "진출국", [(n, f"{t}.JK", b) for n, t, b in MARKETS["id"][4]]),
     ("sg", "싱가포르", "진출국", [(n, f"{t}.SI", b) for n, t, b in MARKETS["sg"][4]]),
-    ("jp", "일본", "아시아", [(n, f"{t}.T", b) for n, t, b in MARKETS["jp"][4]]),
-    ("cn", "중국(본토 A주)", "아시아", [
+    ("jp", "일본", "아시아·태평양", [(n, f"{t}.T", b) for n, t, b in MARKETS["jp"][4]]),
+    ("cn", "중국(본토 A주)", "아시아·태평양", [
         ("CITIC Securities", "600030.SS", ""), ("Huatai Securities", "601688.SS", ""), ("Guotai Haitong Securities", "601211.SS", ""),
         ("China Merchants Securities", "600999.SS", ""), ("GF Securities", "000776.SZ", ""), ("China Galaxy Securities", "601881.SS", ""),
         ("CICC", "601995.SS", ""), ("Shenwan Hongyuan", "000166.SZ", ""), ("CSC Financial", "601066.SS", ""),
         ("Guosen Securities", "002736.SZ", ""), ("Orient Securities", "600958.SS", ""), ("Industrial Securities", "601377.SS", ""),
         ("Changjiang Securities", "000783.SZ", ""), ("Everbright Securities", "601788.SS", ""), ("Zhongtai Securities", "600918.SS", ""),
         ("Founder Securities", "601901.SS", ""), ("East Money Information", "300059.SZ", "온라인")]),
-    ("hk", "홍콩", "아시아", [
+    ("hk", "홍콩", "아시아·태평양", [
         ("CITIC Securities (H)", "6030.HK", "본토사 H주"), ("Huatai Securities (H)", "6886.HK", "본토사 H주"),
         ("Guotai Haitong (H)", "2611.HK", "본토사 H주"), ("China Merchants Securities (H)", "6099.HK", "본토사 H주"),
         ("GF Securities (H)", "1776.HK", "본토사 H주"), ("China Galaxy Securities (H)", "6881.HK", "본토사 H주"),
         ("CICC (H)", "3908.HK", "본토사 H주"), ("CSC Financial (H)", "6066.HK", "본토사 H주"), ("Orient Securities (H)", "3958.HK", "본토사 H주"),
         ("Guotai Junan International", "1788.HK", ""), ("Bright Smart Securities", "1428.HK", ""), ("Emperor Capital", "0717.HK", ""),
         ("Get Nice Holdings", "0064.HK", ""), ("Shenwan Hongyuan (H.K.)", "0218.HK", "")]),
-    ("tw", "대만", "아시아", [
+    ("tw", "대만", "아시아·태평양", [
         ("Yuanta Financial Holding", "2885.TW", "증권 주력 금융지주(은행 포함)"), ("Capital Securities", "6005.TW", ""), ("President Securities", "2855.TW", ""),
         ("Concord Securities", "6016.TWO", ""), ("Horizon Securities", "6015.TWO", "")]),
-    ("th", "태국", "아시아", [
+    ("th", "태국", "아시아·태평양", [
         ("Asia Plus Group", "ASP.BK", ""), ("KGI Securities (Thailand)", "KGI.BK", ""), ("Country Group Holdings", "CGH.BK", ""),
         ("Globlex Holding", "GBX.BK", ""), ("Trinity Watthana", "TNITY.BK", ""), ("AIRA Capital", "AIRA.BK", ""), ("XSpring Capital", "XPG.BK", ""),
         ("Maybank Securities (Thailand)", "MST.BK", "")]),
-    ("my", "말레이시아", "아시아", [
+    ("my", "말레이시아", "아시아·태평양", [
         ("Kenanga Investment Bank", "6483.KL", ""), ("Hong Leong Capital", "5274.KL", ""), ("Apex Equity Holdings", "5088.KL", "")]),
-    ("in", "인도", "아시아", [
+    ("in", "인도", "아시아·태평양", [
         ("Angel One", "ANGELONE.NS", "온라인"), ("Motilal Oswal Financial Services", "MOTILALOFS.NS", ""), ("IIFL Capital Services", "IIFLCAPS.NS", ""),
         ("Nuvama Wealth Management", "NUVAMA.NS", ""), ("JM Financial", "JMFINANCIL.NS", ""), ("Geojit Financial Services", "GEOJITFSL.NS", ""),
         ("5paisa Capital", "5PAISA.NS", "온라인"), ("Share India Securities", "SHAREINDIA.NS", ""), ("SMC Global Securities", "SMCGLOBAL.NS", ""),
@@ -554,7 +573,7 @@ VAL_MARKETS = [
     ("eu", "유럽(대륙)", "미주·유럽", [
         ("Avanza Bank", "AZA.ST", "온라인, 스웨덴"), ("Nordnet", "SAVE.ST", "온라인, 스웨덴"), ("flatexDEGIRO", "FTK.DE", "온라인, 독일"),
         ("Swissquote", "SQN.SW", "온라인, 스위스"), ("Vontobel", "VONN.SW", "스위스")]),
-    ("au", "호주", "미주·유럽", [("Macquarie Group", "MQG.AX", "투자은행 그룹(은행 포함)"), ("Bell Financial Group", "BFG.AX", "")]),
+    ("au", "호주", "아시아·태평양", [("Macquarie Group", "MQG.AX", "투자은행 그룹(은행 포함)"), ("Bell Financial Group", "BFG.AX", "")]),
 ]
 # 가격 통화가 보조 단위로 나오는 시장(런던 펜스 등)
 SUBUNIT = {"GBp": ("GBP", 100), "GBX": ("GBP", 100), "ZAc": ("ZAR", 100), "ILA": ("ILS", 100)}
@@ -625,22 +644,24 @@ def valuation_world():
                     continue
                 eq_krw = r.get("q_equity_krw") or None
                 rows.append({"name": r["name"], "symbol": r["ticker"], "note": r.get("note", ""), "mcap_krw": r["mcap_krw"],
-                             "equity_krw": eq_krw, "pb": r.get("pb"), "roe": r.get("roe_ttm") if r.get("roe_ttm") is not None else r.get("roe"),
+                             "equity_krw": eq_krw, "pb": round(r["mcap_krw"] / eq_krw, 2) if eq_krw and eq_krw > 0 else r.get("pb"), "roe": r.get("roe_ttm") if r.get("roe_ttm") is not None else r.get("roe"),
                              "roe_basis": "4Q" if r.get("roe_ttm") is not None else "연간", "pe": r.get("pe"),
                              "eq_asof": r.get("q_date"), "ni_asof": r.get("ttm_asof") or r.get("asof"), "price_date": r.get("price_date"),
                              "ccy": "VND", "url": r.get("url"), "stale": False})
         else:
+            cut = (NOW - timedelta(days=400)).strftime("%Y-%m-%d")
             for name, sym, note in lst:
                 got = raw.get((mid, sym))
-                if not got:
+                pr = fr = None
+                if got:
+                    v = got[2]
+                    pr, fr = fx.get(v["pccy"]), fx.get(v["fccy"])
+                    if not pr or not fr:
+                        errors.append(f"{mid} {sym}: 환율 없음({v['pccy']}/{v['fccy']})")
+                if not pr or not fr:  # 이번에 못 받으면 이전 값(자본 기준일이 400일 안인 것만)
                     o = old.get(f"{mid}:{sym}")
-                    if o:
+                    if o and (o.get("eq_asof") or "") >= cut:
                         rows.append({**o, "stale": True})
-                    continue
-                _, _, v = got
-                pr, fr = fx.get(v["pccy"]), fx.get(v["fccy"])
-                if not pr or not fr:
-                    errors.append(f"{mid} {sym}: 환율 없음({v['pccy']}/{v['fccy']})")
                     continue
                 mcap, eqk = v["mcap"] * pr / 1e8, v["equity"] * fr / 1e8
                 nik = v["ni"] * fr / 1e8 if v["ni"] is not None else None
