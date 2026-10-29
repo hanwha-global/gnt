@@ -490,7 +490,7 @@ def landscape():
     for name, code in KR:
         sym = code if "." in code else f"{code}.KS"
         code = code.split(".")[0]
-        v, stale = val("kr", code, sym)
+        v, stale = val("kr", code, sym, 1)
         if not v:
             continue
         o = oldval.get(f"kr:{code}", {})
