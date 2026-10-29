@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T01:11:54+00:00",
+ "updated": "2026-10-29T01:43:26+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,19 +66,19 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
      "date": "2026-10-20",
@@ -95,16 +95,16 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
-     "date": "2026-10-26",
+     "date": "2026-10-28",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
     },
     {
-     "date": "2026-10-25",
+     "date": "2026-10-27",
      "title": "Financial activity licenses | Service Details | Services | Capital...",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
      "src": "sca.gov.ae"
@@ -118,7 +118,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
      "date": "2026-10-21",
@@ -129,11 +129,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
     {
      "date": "2026-10-22",
@@ -180,24 +180,30 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": [
+    {
+     "date": "2026-10-28",
+     "title": "PA CONTRACTOR LICENSE EXAM",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iQVZOclloNkVZN3k1eGtCaWxBOGl1aHdab2Z1Z3FuN2Rmc0FyNnR3bmF4bk8yZzhUVjJkaERDWGxVQnkzRnp6TFVzbkdBMEVaLWtMakZ1RFl1c0tGd3ladFhjenZyOENlWExoVTZMLUNwajA4UTZFOXViT1dienM?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-10-27",
      "title": "CHARACTER REFERENCE LETTER FOR GUN LICENSE",
@@ -218,14 +224,14 @@
     },
     {
      "date": "2026-10-26",
-     "title": "MARYLAND HOME IMPROVEMENT LICENSE STUDY GUIDE",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcU8ydk5RUTlGTnQzYWhXVnF3V29lU0JrMDZIUlhTaU5iX1pTYS1yVFRqc0xNbXBWRDctck9HcEtyRHBaOGY4MWV3MnVmR2p2d2d3OW5OYnFpS0J0dncxY1NwRkFvaGNLLUswd3diZmZMWXFOYm1GdGloSUJwb1VtNk9Vc1BVMlQxbFc5QmppVlFGRm9WcDlxMA?oc=5",
+     "title": "TEXAS INSURANCE LICENSE EXAM QUESTIONS",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQajAxZWdOZkdXZWt6QW4wU1VySVE4TDRiTW9YVVBhakFoX0V0VHpUV1hDS1MtTnNTMjZkT2lLVDdSaHlIUE9GWDNxRlVfcjByNWRDbk1pU014RFVvSTNXX2t2NVR3NkJzTjBSZml4emdLSDV1ZFI5MkZHeFhubUItaV9JZEZoUU1xczZhSkFZd3UtZw?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
      "date": "2026-10-26",
-     "title": "TEXAS INSURANCE LICENSE EXAM QUESTIONS",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQajAxZWdOZkdXZWt6QW4wU1VySVE4TDRiTW9YVVBhakFoX0V0VHpUV1hDS1MtTnNTMjZkT2lLVDdSaHlIUE9GWDNxRlVfcjByNWRDbk1pU014RFVvSTNXX2t2NVR3NkJzTjBSZml4emdLSDV1ZFI5MkZHeFhubUItaV9JZEZoUU1xczZhSkFZd3UtZw?oc=5",
+     "title": "MARYLAND HOME IMPROVEMENT LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcU8ydk5RUTlGTnQzYWhXVnF3V29lU0JrMDZIUlhTaU5iX1pTYS1yVFRqc0xNbXBWRDctck9HcEtyRHBaOGY4MWV3MnVmR2p2d2d3OW5OYnFpS0J0dncxY1NwRkFvaGNLLUswd3diZmZMWXFOYm1GdGloSUJwb1VtNk9Vc1BVMlQxbFc5QmppVlFGRm9WcDlxMA?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
@@ -237,11 +243,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-10-28",
+   "auto_checked": "2026-10-29",
    "items": []
   }
  }
