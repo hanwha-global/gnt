@@ -171,8 +171,29 @@ table.data tr.is-off td { color: var(--muted); }
 
 .guide { background: #0c1630; border-bottom: 1px solid var(--line); }
 .guide b { color: var(--accent-ink); }
+.guide__tip { white-space: nowrap; } /* ⓘ가 줄 끝에 홀로 남지 않게 */
 .guide__inner { max-width: 1480px; margin: 0 auto; padding: 6px 16px; font-size: 12.5px; color: var(--text-2); }
-abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
+/* 용어 설명(ⓘ): 이름이나 ⓘ에 마우스를 올리거나 키보드로 옮겨 가면(휴대폰은 누르면) 카드 바로 아래에 말풍선이 뜬다.
+   말풍선은 .kpi 기준으로 놓여 이름 칸(overflow: hidden)에 잘리지 않고, 사라질 때 잠깐 머물러 마우스로 옮겨 가 읽을 수 있다 */
+.tip { border-radius: 3px; cursor: default; }
+.tip:focus-visible { outline: 1px solid var(--accent); outline-offset: -1px; }
+.tip-i { display: inline-grid; place-items: center; width: 11px; height: 11px; margin-left: 3px; vertical-align: 2px; border: 1px solid currentColor; border-radius: 50%;
+  font: italic 700 8px/1 Georgia, "Times New Roman", serif; color: var(--muted); }
+/* 카드 이름 칸은 좁아서 ⓘ를 카드 오른쪽 가운데(숫자 줄의 빈 자리)에 둔다: 이름 폭을 줄이지 않는다 */
+.kpi { position: relative; }
+.kpi .tip-i { position: absolute; top: 50%; right: 10px; margin: 0; transform: translateY(-50%); }
+.tip:focus-visible .tip-i { color: var(--accent-ink); }
+.tip__box { position: absolute; z-index: 9; top: calc(100% + 6px); left: 0; width: max-content; max-width: min(340px, calc(100vw - 32px));
+  padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: #0c1630; box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+  color: var(--text-2); font-size: 12px; font-weight: 400; line-height: 1.55; white-space: normal; text-align: left;
+  visibility: hidden; opacity: 0; transition: opacity .12s, visibility 0s .3s; }
+.tip__box b { display: block; margin-bottom: 2px; color: var(--accent-ink); font-weight: 600; }
+.tip--r .tip__box { left: auto; right: 0; }
+.tip:focus-visible .tip__box { visibility: visible; opacity: 1; transition-delay: 0s; }
+/* 마우스가 있으면 올리기만 해도, 휴대폰은 누르면(초점) 뜨고 다른 곳이나 말풍선을 누르면 닫힌다 */
+@media (hover: hover) { .tip:hover .tip-i { color: var(--accent-ink); } .tip:hover .tip__box { visibility: visible; opacity: 1; transition-delay: 0s; } }
+@media (hover: none) { .tip { cursor: pointer; } .tip:focus .tip__box { visibility: visible; opacity: 1; transition-delay: 0s; } }
+@media print { .tip__box, .tip-i { display: none !important; } }
 
 /* 한눈에 보기: 12칸 격자 */
 .kpis--wide { grid-template-columns: repeat(8, minmax(0, 1fr)); margin-bottom: 12px; }
