@@ -370,6 +370,7 @@
   {
    "code": "US",
    "name": "미국",
+   "annex": {"t": "별첨 1 · 미국 진출: 직접 설립 vs 인수 비교, 순자본·인력·심사 기준, 단계별 일정", "u": "../#workflow/us"},
    "seed": "미국",
    "lv": "open",
    "regulator": "SEC · FINRA(+ 주 증권당국)",

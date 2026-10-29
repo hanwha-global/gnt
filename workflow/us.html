@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>별첨 1 · 미국 진출</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+/* 색은 대시보드 공용 테마(../assets/theme.css)의 변수만 쓴다. 틀은 Workflow 본문(index.html)과 같다 */
+:root{--in:#8fb1ff;--in-bg:rgba(143,177,255,.13);--ext:var(--accent-ink);--ext-bg:var(--accent-soft)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:13px/1.5 "Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-feature-settings:"tnum"}
+a{color:inherit}
+.wrap{max-width:1500px;margin:0 auto;padding:10px 12px 24px;display:grid;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between}
+.top h1{margin:0;font-size:18px}
+.meta{color:var(--muted);font-size:12px}.meta b{color:var(--text-2);font-weight:600}
+.btns{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:#fff}
+.subnav{display:flex;gap:4px;flex-wrap:wrap}
+.subnav a{font-size:12px;font-weight:600;text-decoration:none;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--text-2)}
+.subnav a[aria-current="page"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.card h2{margin:0 0 6px;font-size:13px;display:flex;gap:8px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.card h2 small{font-weight:400;color:var(--muted);font-size:11px}
+.card h3{margin:8px 0 4px;font-size:12px;color:var(--text-2)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:1000px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.tmeta{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:0 8px;font-size:10.5px;line-height:1.4;color:var(--muted);margin:0 0 2px}
+.tmeta span+span::before{content:"·";margin-right:8px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:4px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:11px;font-weight:700;color:var(--muted);background:var(--surface-2);white-space:nowrap}
+td.n,th.n{text-align:right;white-space:nowrap}
+td.k{font-weight:700;white-space:nowrap;color:var(--text)}
+tbody tr:last-child td{border-bottom:0}
+sup.r{font-size:9.5px;color:var(--muted);margin-left:2px;white-space:nowrap}
+sup.r a{text-decoration:none}sup.r a:hover{color:var(--accent-ink)}
+.chip{display:inline-block;font-size:10px;font-weight:700;padding:0 5px;border-radius:4px;margin-right:4px;vertical-align:1px;white-space:nowrap}
+.s-p{color:var(--pos);background:rgba(79,209,139,.13)}.s-m{color:var(--neg);background:rgba(255,123,107,.13)}.s-e{color:var(--muted);background:var(--surface-2)}
+.rule{color:var(--ext);background:var(--ext-bg)}
+.wf{color:var(--in);background:var(--in-bg);text-decoration:none}
+a.wf:hover{outline:1px solid var(--in)}
+
+/* 핵심 수치 */
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+@media (max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:6px 9px;background:var(--surface)}
+.kpi b{display:block;font-size:17px;color:var(--accent-ink);line-height:1.2}
+.kpi span{display:block;font-size:12px;font-weight:700}
+.kpi small{display:block;font-size:11px;color:var(--muted);line-height:1.35}
+
+/* 장단점 */
+.pc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}
+@media (max-width:800px){.pc{grid-template-columns:minmax(0,1fr)}}
+.pc>div{border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--bg)}
+.pc h4{margin:0 0 4px;font-size:12.5px}
+.pc ul{margin:0;padding:0;list-style:none;display:grid;gap:1px;font-size:12px;color:var(--text-2)}
+.pc li::before{display:inline-block;width:14px;font-weight:800}
+.pc li.p::before{content:"+";color:var(--pos)}.pc li.m::before{content:"−";color:var(--neg)}
+.pc .fit{margin:5px 0 0;font-size:11.5px;color:var(--text-2)}.pc .fit b{color:var(--accent-ink)}
+
+/* 일정 비교 */
+.tl{display:grid;grid-template-columns:96px repeat(2,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.tl>div{padding:5px 8px;border-bottom:1px solid var(--line);font-size:12px}
+.tl>div:nth-last-child(-n+3){border-bottom:0}
+.tl .h{background:var(--surface-2);font-weight:700;font-size:12px}
+.tl .h small{font-weight:400;color:var(--muted);margin-left:6px}
+.tl .ph{background:var(--surface-2);font-weight:700;font-size:11.5px;color:var(--text-2)}
+.tl .ph small{display:block;font-weight:400;color:var(--muted);font-size:10.5px}
+.tl ul{margin:0;padding-left:15px;display:grid;gap:1px;color:var(--text-2)}
+.tl .w{display:block;font-size:10.5px;color:var(--muted);margin-bottom:1px}
+@media (max-width:800px){.tl{grid-template-columns:minmax(0,1fr)}.tl .ph{border-bottom:0}}
+
+/* 단계적 진출 */
+.stages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:6px}
+.stg{position:relative;border:1px solid var(--line);border-radius:8px;padding:6px 9px;background:var(--bg)}
+.stg+.stg::before{content:"→";position:absolute;left:-12px;top:40%;color:var(--accent-ink);font-weight:800}
+.stg b{font-size:12.5px}.stg .chip{margin-left:4px}
+.stg p{margin:3px 0 0;font-size:11.5px;color:var(--text-2)}
+@media (max-width:800px){.stages{grid-template-columns:minmax(0,1fr)}.stg+.stg::before{content:"↓";left:48%;top:-15px}}
+.notes{margin:6px 0 0;padding-left:16px;font-size:11.5px;color:var(--text-2);display:grid;gap:1px}
+.small{font-size:11px;color:var(--muted);margin:4px 0 0}
+
+/* 심사 기준·서류 */
+ol.std{margin:0;padding-left:20px;font-size:12px;color:var(--text-2);columns:2;column-gap:28px}
+ol.std li{break-inside:avoid;margin-bottom:1px}
+@media (max-width:700px){ol.std{columns:1}}
+ul.docs{margin:0;padding-left:16px;font-size:12px;color:var(--text-2);display:grid;gap:1px}
+
+/* 국내 절차 연결 */
+.wfl{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.wfl a{display:block;text-decoration:none;border:1px solid var(--line);border-left:3px solid var(--ext);border-radius:6px;padding:4px 8px;background:var(--bg)}
+.wfl a:hover{border-color:var(--accent)}
+.wfl b{display:block;font-size:13px;color:var(--ext)}
+.wfl span{font-size:11.5px;color:var(--text-2)}
+
+/* 출처 */
+ol.src{margin:0;padding-left:22px;font-size:11.5px;color:var(--text-2);columns:2;column-gap:20px}
+ol.src li{break-inside:avoid;margin-bottom:1px;scroll-margin-top:12px}
+ol.src small{color:var(--muted)}
+ol.src .rev{color:var(--neg);font-weight:700}
+@media (max-width:900px){ol.src{columns:1}}
+.flash{outline:2px solid var(--accent);outline-offset:2px}
+.cad{font-size:11px;color:var(--muted);display:grid;gap:2px;margin:0;padding-left:16px}.cad b{color:var(--text-2);font-weight:600}
+.empty{color:var(--muted);font-size:12px;margin:2px 0}
+.tag{font-size:10px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);padding:0 5px;border-radius:4px;margin-left:4px;white-space:nowrap}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+@media print{
+  @page{size:A4 landscape;margin:8mm}
+  :root{--bg:#fff;--surface:#fff;--surface-2:#f1f3f6;--text:#111;--text-2:#333;--muted:#666;--line:#ccc;--in:#2f5fd0;--in-bg:#e8eefb;--ext:#b8500c;--ext-bg:#fdeee3;--accent-ink:#b8500c;--pos:#13804a;--neg:#c0392b;color-scheme:light}
+  body{background:#fff;font-size:9.5px}.noprint{display:none!important}
+  .card,.kpi,.pc>div,.stg{break-inside:avoid}.wrap{max-width:none;padding:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="subnav noprint" aria-label="Workflow 문서">
+    <a href="index.html" data-to="index">본문 · 해외지분투자 절차</a>
+    <a href="us.html" aria-current="page">별첨 1 · 미국 진출</a>
+  </nav>
+  <div class="top">
+    <div>
+      <h1 id="title">별첨 1 · 미국 진출(브로커-딜러)</h1>
+      <div class="meta" id="meta">불러오는 중</div>
+    </div>
+    <div class="btns noprint">
+      <button class="btn pri" type="button" id="printBtn">인쇄·PDF</button>
+      <a class="btn" href="data/us_entry.json" target="_blank" rel="noopener">원자료(JSON)</a>
+    </div>
+  </div>
+
+  <div class="kpis" id="kpis" aria-label="규정상 핵심 수치"></div>
+
+  <section class="card" aria-labelledby="h-cmp">
+    <h2 id="h-cmp"><span>직접 설립 vs 인수 비교</span><small><span class="chip s-p">+</span>유리 <span class="chip s-m">−</span>불리 <span class="chip s-e">=</span>중립</small></h2>
+    <div class="tmeta" id="tm-cmp"></div>
+    <div class="tw"><table id="cmp"></table></div>
+    <div class="pc" id="pc"></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-tl">
+    <h2 id="h-tl"><span>단계별 일정 비교</span><small><span class="chip rule">규정</span>미국 규칙·법 조문 <span class="chip wf">WF</span>Workflow 본문 단계(누르면 이동)</small></h2>
+    <div class="tmeta" id="tm-tl"></div>
+    <div class="tl" id="tl"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card" aria-labelledby="h-cap">
+      <h2 id="h-cap">업무 범위별 최소 순자본 <small>SEC Rule 15c3-1</small></h2>
+      <div class="tmeta" id="tm-cap"></div>
+      <div class="tw"><table id="cap"></table></div>
+      <ul class="notes" id="capNotes"></ul>
+      <h3>단계적 진출 모델</h3>
+      <div class="stages" id="stages"></div>
+      <p class="small" id="stageNote"></p>
+    </section>
+    <section class="card" aria-labelledby="h-ppl">
+      <h2 id="h-ppl">필수 인력·자격 <small>FINRA Rule 1210·1220</small></h2>
+      <div class="tmeta" id="tm-ppl"></div>
+      <div class="tw"><table id="ppl"></table></div>
+      <h3>FINRA 시험</h3>
+      <div class="tmeta" id="tm-ex"></div>
+      <div class="tw"><table id="ex"></table></div>
+      <ul class="notes" id="pplNotes"></ul>
+    </section>
+  </div>
+
+  <div class="grid2">
+    <section class="card" aria-labelledby="h-nma">
+      <h2 id="h-nma">FINRA 신규 회원(NMA) 심사 기준 14개 <small>Rule 1014(a)</small></h2>
+      <div class="tmeta" id="tm-nma"></div>
+      <ol class="std" id="std"></ol>
+      <h3>제출 서류 <small id="docsRef"></small></h3>
+      <ul class="docs" id="docs"></ul>
+      <p class="small" id="itv"></p>
+    </section>
+    <section class="card" aria-labelledby="h-setup">
+      <h2 id="h-setup">설립·등록 행정(뉴욕) <small>주법 · 연방</small></h2>
+      <div class="tmeta" id="tm-setup"></div>
+      <div class="tw"><table id="setup"></table></div>
+    </section>
+  </div>
+
+  <section class="card" aria-labelledby="h-kr">
+    <h2 id="h-kr"><span>국내 증권사 미국 거점</span><small>국내 탭과 같은 집계 규칙 · DART 자동</small></h2>
+    <div class="tmeta" id="tm-kr"></div>
+    <div class="tw" id="kr"></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-deal">
+    <h2 id="h-deal">주요 인수 사례 <small>발표문 기준</small></h2>
+    <div class="tmeta" id="tm-deal"></div>
+    <div class="tw"><table id="deal"></table></div>
+    <p class="small" id="dealNote"></p>
+  </section>
+
+  <div class="grid2">
+    <section class="card" aria-labelledby="h-cmpny">
+      <h2 id="h-cmpny"><span>미국 상장 브로커리지 비교</span><small id="compSrc"></small></h2>
+      <div class="tmeta" id="tm-comp"></div>
+      <div class="tw" id="comp"></div>
+    </section>
+    <section class="card" aria-labelledby="h-wf">
+      <h2 id="h-wf">한국 측 신고·보고 <small>두 경로 공통 · 누르면 Workflow 본문 단계로 이동</small></h2>
+      <div class="tmeta" id="tm-wf"></div>
+      <div class="wfl" id="wfl"></div>
+    </section>
+  </div>
+
+  <section class="card" aria-labelledby="h-src">
+    <h2 id="h-src"><span>출처</span><small id="srcMeta"></small></h2>
+    <ol class="src" id="src"></ol>
+  </section>
+  <ul class="cad" aria-label="갱신 주기">
+    <li><b>갱신 주기</b> · 미국 규정 원문 변경 점검 <b>반기 1회(1월·7월 2일)</b>: 이 페이지 출처를 Workflow·유의사항 탭과 같은 점검(source-check.yml)이 다시 열어 비교합니다. 바뀌면 출처 옆에 '개정 감지·검토 필요'와 GitHub 이슈가 뜨고, 문구는 사람이 원문을 읽고 고칩니다.</li>
+    <li><b>국내 증권사 미국 거점</b>은 DART 매주 월요일(공시 시즌 매일), <b>미국 상장 브로커리지</b>는 SEC 공시 매주 월요일·시세 평일 자동. 인수 사례는 새 거래 발표 때 사람이 추가합니다.</li>
+    <li id="note"></li>
+  </ul>
+</div>
+<script src="us.js" defer></script>
+</body>
+</html>
