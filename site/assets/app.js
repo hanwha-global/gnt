@@ -20,6 +20,8 @@
   // 이름 목록 + 은/는(마지막 글자 받침 기준, 한글이 아니면 '는')
   const topic = (names) => { const w = names.join("·"), c = w.charCodeAt(w.length - 1) - 0xac00; return `${w}${c >= 0 && c < 11172 && c % 28 ? "은" : "는"}`; };
   const ymd = (s) => (s && s.length === 8 ? `${s.slice(0, 4)}.${s.slice(4, 6)}.${s.slice(6)}` : s || "");
+  // 용어 설명: 이름 옆 작은 ⓘ 표시. 마우스를 올리거나 누르면 설명 말풍선이 바로 뜬다(initTips)
+  const tip = (label, text) => (text ? `<span class="tip" tabindex="0" data-tip="${esc(text)}"><span class="tip__t">${label}</span><i class="tip-i" aria-hidden="true">i</i></span>` : label);
 
   async function getJSON(path, optional = false) {
     try {
@@ -434,7 +436,7 @@
       ["해외 사무소", offices, "회사 공개 자료 · 수동 확인"],
       ["진출 국가", countries.size, `최다 ${top ? `${top[0]} ${top[1]}개` : "–"}`],
       ["변동 감지", d.changes.length, d.changes.length ? changeNote(d.changes) : "최근 수집 기준 변동 없음"],
-    ].map(([l, v, n]) => `<div class="kpi"><div class="kpi__label"><abbr title="${esc(TIPS[l] || "")}">${l}</abbr></div><div class="kpi__value">${fmt(v)}</div><div class="kpi__note">${esc(n)}</div></div>`).join("");
+    ].map(([l, v, n]) => `<div class="kpi"><div class="kpi__label">${tip(l, TIPS[l])}</div><div class="kpi__value">${fmt(v)}</div><div class="kpi__note">${esc(n)}</div></div>`).join("");
   }
 
   const TIPS = {
@@ -1273,11 +1275,11 @@
     const next = (hw.reg?.todo || []).filter((t) => t.status !== "done" && t.due && t.law !== "내부").sort((a, b) => a.due.localeCompare(b.due))[0];
     const kpi = (l, v, n, cls = "", unit = "") => `<div class="kpi ${cls}"><div class="kpi__label">${l}</div><div class="kpi__value">${v}${unit ? `<small>${unit}</small>` : ""}</div><div class="kpi__note" title="${esc(n)}">${esc(n)}</div></div>`;
     $("#ov-kpis").innerHTML = [
-      kpi('<abbr title="' + esc(TIPS["해외 현지법인"]) + '">국내사 해외 현지법인</abbr>', fmt(corps.length), `${new Set(corps.map((e) => e.firm)).size}개 증권사`, "", "개"),
+      kpi(tip("국내사 해외 현지법인", TIPS["해외 현지법인"]), fmt(corps.length), `${new Set(corps.map((e) => e.firm)).size}개 증권사`, "", "개"),
       kpi("진출 국가", fmt(countries.size), `사무소 ${offices}개 포함`, "", "개국"),
-      kpi('<abbr title="' + esc(TIPS["변동 감지"]) + '">DART 신규 해외법인</abbr>', fmt(d.changes.length), d.changes.length ? `${changeNote(d.changes)} · ${[...new Set(d.changes.map((c) => SHORT[c.firm]))].join("·")}` : "변동 없음", "", "건"),
+      kpi(tip("DART 신규 해외법인", TIPS["변동 감지"]), fmt(d.changes.length), d.changes.length ? `${changeNote(d.changes)} · ${[...new Set(d.changes.map((c) => SHORT[c.firm]))].join("·")}` : "변동 없음", "", "건"),
       kpi("최근 해외·출자 공시", fmt(state.data.dart?.feed?.length ?? 0), "최근 120일 DART", "", "건"),
-      br ? kpi(`<abbr title="${esc(`DART 정기보고서를 낸 국내 증권사 ${br.rows.length}곳의 별도 자본총계 순위(연결 기준 ${br.cfs}위). 매주 월요일 자동 계산, 전체 표는 글로벌 › 한국`)}">당사 자기자본 순위</abbr>`, fmt(br.rank),
+      br ? kpi(tip("당사 자기자본 순위", `DART 정기보고서를 낸 국내 증권사 ${br.rows.length}곳의 별도 자본총계 순위(연결 기준 ${br.cfs}위). 매주 월요일 자동 계산, 전체 표는 글로벌 › 한국`), fmt(br.rank),
           `${br.rows.length}곳 중 · 대형사 ${eqRank.length}곳 중 ${myRank}위 · ${br.short} 별도`, "kpi--hw", "위")
         : kpi("당사 자기자본 순위", myRank ? fmt(myRank) : "–", `${eqRank.length}개사 중 · ${eqRank[myRank - 1]?.basis || ""}`, "kpi--hw", "위"),
       kpi("당사 해외 현지법인", fmt(mine.length), `${new Set(mine.map((e) => e.country)).size}개국 · 사무소 ${d.offices.filter((o) => o.firm === HANWHA).reduce((s, o) => s + o.count, 0)}`, "kpi--hw", "개"),
@@ -1391,6 +1393,42 @@
     }
   }
 
+  // ---------- 용어 설명 말풍선: [data-tip] 에 마우스를 올리거나, 키보드로 옮겨 가거나, 누르면(휴대폰) 바로 띄운다 ----------
+  function initTips() {
+    const box = document.createElement("div");
+    Object.assign(box, { className: "tipbox", id: "tipbox", hidden: true });
+    box.setAttribute("role", "tooltip");
+    document.body.appendChild(box);
+    let cur = null;
+    const hide = () => {
+      if (!cur) return;
+      cur.removeAttribute("aria-describedby");
+      cur = null;
+      box.hidden = true;
+    };
+    const show = (el) => {
+      if (el === cur) return;
+      hide();
+      cur = el;
+      box.innerHTML = `<b>${esc(($(".tip__t", el) || el).textContent.trim())}</b>${esc(el.dataset.tip)}`;
+      box.hidden = false;
+      // 아래에 자리가 없으면 위로, 화면 밖으로 나가지 않게
+      const r = el.getBoundingClientRect(), w = box.offsetWidth, h = box.offsetHeight;
+      box.style.left = `${Math.max(8, Math.min(r.left, innerWidth - w - 8))}px`;
+      box.style.top = `${r.bottom + 6 + h > innerHeight && r.top > h + 6 ? r.top - h - 6 : r.bottom + 6}px`;
+      el.setAttribute("aria-describedby", "tipbox");
+    };
+    const on = (ev) => { const el = ev.target.closest?.("[data-tip]"); el ? show(el) : hide(); };
+    // 마우스는 올리기만 해도, 휴대폰은 누르면 뜨고 다른 곳을 누르면 닫힌다(터치가 흉내 내는 마우스 이벤트는 쓰지 않는다)
+    document.addEventListener("pointerover", (ev) => { if (ev.pointerType === "mouse") on(ev); });
+    document.addEventListener("pointerout", (ev) => { if (ev.pointerType === "mouse" && !ev.relatedTarget) hide(); });
+    document.addEventListener("focusin", on);
+    document.addEventListener("click", on);
+    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") hide(); });
+    window.addEventListener("scroll", hide, { passive: true });
+    window.addEventListener("hashchange", hide);
+  }
+
   // ---------- 시작 ----------
   async function init() {
     try {
@@ -1472,5 +1510,6 @@
     route();
   }
 
+  initTips();
   init();
 })();
