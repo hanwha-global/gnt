@@ -26,7 +26,7 @@
   const tip = (label, text) => {
     if (!text) return label;
     const id = `tip-${++tipN}`;
-    return `<span class="tip" tabindex="0" aria-describedby="${id}"><span class="tip__t">${label}</span><i class="tip-i" aria-hidden="true">i</i>`
+    return `<span class="tip" tabindex="0" aria-describedby="${id}"><span class="tip__t">${label}</span><i class="tip-i" aria-hidden="true"></i>`
       + `<span class="tip__box" id="${id}" aria-hidden="true"><b>${label}</b>${esc(text)}</span></span>`; // 설명은 aria-describedby로 한 번만 읽힌다
   };
 
@@ -1422,8 +1422,11 @@
         if (t === document.activeElement && r.bottom > 0 && r.top < hb) scrollBy(0, r.top - hb - 8);
       });
     });
-    // 마우스로 누르면 초점을 주지 않는다(초점이 남으면 나중에 아무 키나 눌렀을 때 말풍선이 떠 버린다). 휴대폰은 누르면 초점으로 연다
-    document.addEventListener("mousedown", (ev) => { if (ev.target.closest?.(".tip") && matchMedia("(hover: hover)").matches) ev.preventDefault(); });
+    // 마우스로 누른 뒤에는 초점을 거둔다(남아 있으면 나중에 아무 키나 눌렀을 때 말풍선이 떠 버린다). 휴대폰은 누르면 초점으로 연다
+    document.addEventListener("mouseup", () => {
+      const a = document.activeElement;
+      if (a?.classList.contains("tip") && !a.matches(":focus-visible") && matchMedia("(hover: hover)").matches) a.blur();
+    });
     // Esc나 말풍선 누르기로 닫는다
     const close = (t) => { t.classList.add("tip--x"); if (t === document.activeElement) t.blur(); };
     document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") document.querySelectorAll(".tip:hover, .tip:focus").forEach(close); });
