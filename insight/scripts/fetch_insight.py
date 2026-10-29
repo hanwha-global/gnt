@@ -360,26 +360,36 @@ def vn_brokerage(vn_rows):
     if not cnt:
         return
     top = max(cnt.values())
-    qs = sorted(d for d, n in cnt.items() if n >= 0.8 * top)[-6:]  # 대부분이 낸 분기만(늦게 내는 곳 때문에 비율이 튀지 않게)
-    tot = {q: sum((r["q_hist"].get(q, {}).get("brokerage") or 0) for r in vn_rows) for q in qs}
+    cand = sorted(d for d, n in cnt.items() if n >= 0.8 * top)
+    rev = lambda r, q: r["q_hist"].get(q, {}).get("brokerage") or 0
+
+    def cover(q, p):  # q 분기를 낸 회사들이 직전 분기 중개수익의 몇 %를 차지했나(큰 회사가 아직 안 냈으면 낮다)
+        t = sum(rev(r, p) for r in vn_rows)
+        return sum(rev(r, p) for r in vn_rows if rev(r, q)) / t if t else 1
+    pending = None
+    while len(cand) > 1 and cover(cand[-1], cand[-2]) < 0.95:  # 집계가 덜 된 최근 분기는 순위에서 빼고 대기로 표시
+        q = cand.pop()
+        pending = {"q": q, "reported": cnt[q], "missing": [r["code"] for r in vn_rows if rev(r, cand[-1]) and not rev(r, q)]}
+    qs = cand[-6:]
+    tot = {q: sum(rev(r, q) for r in vn_rows) for q in qs}
     rows = []
     for r in vn_rows:
-        rev = {q: r["q_hist"].get(q, {}).get("brokerage") for q in qs}
-        share = {q: round(v / tot[q] * 100, 3) for q, v in rev.items() if v and tot[q]}
+        rv = {q: r["q_hist"].get(q, {}).get("brokerage") for q in qs}
+        share = {q: round(v / tot[q] * 100, 3) for q, v in rv.items() if v and tot[q]}
         if share:
             rows.append({"code": r["code"], "name": r["name"], "floor": r["floor"], "share": share,
-                         "rev_bn": {q: round(v / 1e9, 1) for q, v in rev.items() if v}})
+                         "rev_bn": {q: round(v / 1e9, 1) for q, v in rv.items() if v}})
     last = qs[-1]
     ytd = [q for q in qs if q[:4] == last[:4]]
     yt = sum(tot[q] for q in ytd)
     for x in rows:
         x["ytd"] = round(sum(x["rev_bn"].get(q, 0) for q in ytd) * 1e9 / yt * 100, 3) if yt else None
     rows.sort(key=lambda x: -(x["share"].get(last) or -1))
-    save("vn_brokerage.json", {"updated_at": NOW.isoformat(timespec="seconds"), "quarters": qs, "ytd_quarters": ytd,
+    save("vn_brokerage.json", {"updated_at": NOW.isoformat(timespec="seconds"), "quarters": qs, "ytd_quarters": ytd, "pending": pending,
                                "reported": {q: cnt[q] for q in qs}, "total_bn": {q: round(tot[q] / 1e9) for q in qs}, "rows": rows,
                                "source": {"label": "VNDirect 공개 재무(각 사 분기 재무제표, 중개수수료 수익)", "url": "https://dstock.vndirect.com.vn/"},
                                "method": "회사별 분기 중개수수료 수익 ÷ 같은 분기 상장 증권사 합계. 거래대금 점유율이 아니며 비상장사는 빠짐"})
-    print(f"vn brokerage: 분기 {qs}, 최근 분기 {cnt[last]}곳 보고")
+    print(f"vn brokerage: 분기 {qs}, 최근 분기 {cnt[last]}곳 보고, 집계 대기 {pending}")
 
 
 def landscape():
@@ -517,19 +527,16 @@ VAL_MARKETS = [
         ("GF Securities (H)", "1776.HK", "본토사 H주"), ("China Galaxy Securities (H)", "6881.HK", "본토사 H주"),
         ("CICC (H)", "3908.HK", "본토사 H주"), ("CSC Financial (H)", "6066.HK", "본토사 H주"), ("Orient Securities (H)", "3958.HK", "본토사 H주"),
         ("Guotai Junan International", "1788.HK", ""), ("Bright Smart Securities", "1428.HK", ""), ("Emperor Capital", "0717.HK", ""),
-        ("Get Nice Holdings", "0064.HK", ""), ("Shenwan Hongyuan (H.K.)", "0218.HK", ""), ("Futu Holdings", "FUTU", "온라인, 미국 상장")]),
+        ("Get Nice Holdings", "0064.HK", ""), ("Shenwan Hongyuan (H.K.)", "0218.HK", "")]),
     ("tw", "대만", "아시아", [
-        ("Yuanta Financial Holding", "2885.TW", "증권 주력 금융지주"), ("Capital Securities", "6005.TW", ""), ("President Securities", "2855.TW", ""),
-        ("Grand Fortune Securities", "6026.TW", ""), ("Concord Securities", "6016.TWO", ""), ("Horizon Securities", "6015.TWO", "")]),
+        ("Yuanta Financial Holding", "2885.TW", "증권 주력 금융지주(은행 포함)"), ("Capital Securities", "6005.TW", ""), ("President Securities", "2855.TW", ""),
+        ("Concord Securities", "6016.TWO", ""), ("Horizon Securities", "6015.TWO", "")]),
     ("th", "태국", "아시아", [
-        ("Asia Plus Group", "ASP.BK", ""), ("KGI Securities (Thailand)", "KGI.BK", ""), ("Finansia Syrus Securities", "FSS.BK", ""),
-        ("UOB Kay Hian Securities (Thailand)", "UOBKH.BK", ""), ("Country Group Holdings", "CGH.BK", ""), ("Globlex Holding", "GBX.BK", ""),
-        ("Trinity Watthana", "TNITY.BK", ""), ("AIRA Capital", "AIRA.BK", ""), ("XSpring Capital", "XPG.BK", ""), ("Maybank Securities (Thailand)", "MST.BK", ""),
-        ("Seamico Securities", "ZMICO.BK", "")]),
+        ("Asia Plus Group", "ASP.BK", ""), ("KGI Securities (Thailand)", "KGI.BK", ""), ("Country Group Holdings", "CGH.BK", ""),
+        ("Globlex Holding", "GBX.BK", ""), ("Trinity Watthana", "TNITY.BK", ""), ("AIRA Capital", "AIRA.BK", ""), ("XSpring Capital", "XPG.BK", ""),
+        ("Maybank Securities (Thailand)", "MST.BK", "")]),
     ("my", "말레이시아", "아시아", [
-        ("Kenanga Investment Bank", "6483.KL", ""), ("Hong Leong Capital", "5274.KL", ""), ("Apex Equity Holdings", "5088.KL", ""),
-        ("Mercury Securities Group", "0256.KL", "")]),
-    ("ph", "필리핀", "아시아", [("COL Financial Group", "COL.PS", "온라인")]),
+        ("Kenanga Investment Bank", "6483.KL", ""), ("Hong Leong Capital", "5274.KL", ""), ("Apex Equity Holdings", "5088.KL", "")]),
     ("in", "인도", "아시아", [
         ("Angel One", "ANGELONE.NS", "온라인"), ("Motilal Oswal Financial Services", "MOTILALOFS.NS", ""), ("IIFL Capital Services", "IIFLCAPS.NS", ""),
         ("Nuvama Wealth Management", "NUVAMA.NS", ""), ("JM Financial", "JMFINANCIL.NS", ""), ("Geojit Financial Services", "GEOJITFSL.NS", ""),
@@ -547,7 +554,7 @@ VAL_MARKETS = [
     ("eu", "유럽(대륙)", "미주·유럽", [
         ("Avanza Bank", "AZA.ST", "온라인, 스웨덴"), ("Nordnet", "SAVE.ST", "온라인, 스웨덴"), ("flatexDEGIRO", "FTK.DE", "온라인, 독일"),
         ("Swissquote", "SQN.SW", "온라인, 스위스"), ("Vontobel", "VONN.SW", "스위스")]),
-    ("au", "호주", "미주·유럽", [("Bell Financial Group", "BFG.AX", ""), ("Euroz Hartleys", "EZL.AX", "")]),
+    ("au", "호주", "미주·유럽", [("Macquarie Group", "MQG.AX", "투자은행 그룹(은행 포함)"), ("Bell Financial Group", "BFG.AX", "")]),
 ]
 # 가격 통화가 보조 단위로 나오는 시장(런던 펜스 등)
 SUBUNIT = {"GBp": ("GBP", 100), "GBX": ("GBP", 100), "ZAc": ("ZAR", 100), "ILA": ("ILS", 100)}
@@ -581,6 +588,10 @@ def world_val(symbol):
     ni, basis = (tn, "4Q") if tn and (not an or tn[1] >= an[1]) else (an, "연간")  # 최근 4개 분기 합이 없거나 연간보다 오래되면 연간
     if not price or not shares or not eq:
         raise RuntimeError("주가·주식 수·자본 중 없음")
+    if eq[1] < (NOW - timedelta(days=400)).strftime("%Y-%m-%d"):  # 상장폐지·인수 등으로 재무가 끊긴 종목
+        raise RuntimeError(f"자본이 오래됨({eq[1]})")
+    if ni and (datetime.fromisoformat(eq[1]) - datetime.fromisoformat(ni[1])).days > 300:  # 순이익만 오래된 경우 ROE·P/E를 비운다
+        ni = None
     return {"name_y": meta.get("longName") or meta.get("shortName"), "price": price, "pccy": pccy, "price_date": pts[-1][0] if pts else None,
             "mcap": price * shares[0], "equity": eq[0], "eq_asof": eq[1], "fccy": eq[2] or pccy,
             "ni": ni[0] if ni else None, "ni_asof": ni[1] if ni else None, "ni_basis": basis if ni else None}
