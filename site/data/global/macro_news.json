@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29T19:15+09:00",
+ "updated_at": "2026-10-30T00:21+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-10-29",
+     "time": "19:48",
+     "title": "10-year Treasury yield hovers above 5% after strong GDP report, rising inflation data",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9tUkpYWmlUR3kwRzB5cTZuejFRaTloS09XeThKc3hXUnVVem12eHNkN0ZnV2VpemJ2N09sZWNkenlUNGhHVUo4RmdxaDFIUFhSU0JmMHlKckhSbXhxWXpMUGNsZ0dWOVVmd25nNnRpTE1lbEpTbWhkNk9VTnRpeGPSAYQBQVVfeXFMUE1seWVoTlViUzNtNmZyRk1NekFwcWN2ZkZSMUhWOUY2UHJQWnVZcTB2d1NPRXNzcmhzWlFGWlNNYUd2RTlEbUR1WEZlLWVCQzhjclZPdjlVX29STXVDVW1GOFVaeVUxeUoxSk9GRkhEeGg4RmlXclBlb1ZGZFgydFl0SjJN?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-29",
+     "time": "17:31",
+     "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+     "src": "CNBC Africa",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMmlIUzdtbTFOb0hVbW80cHhsUi1jYUtGLTBxTDlodGJWaDdweEJNblBxLXZkOXZqSVdiSFd5OUJobXpDcnhlcVlhRV9nbWNUTEZLV3JxQl9rWFpZUmtOQVZXeWQyelVET1M1eEVGcjlFdkNrNkhTY0oxX3dKODdyTHh1Zi1PX1dLSV9SYkVicWkzS2RnckJNdU9UNXRRNHBocHhDWGJRZmJ3N3E2dGJjWEd3?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-29",
      "time": "16:56",
      "title": "국고채 금리, 美 금리 연동하며 하락…완화적 FOMC 소화(종합)",
      "src": "연합뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OekdTT09XVGRONEd4SG90V1ltZjVuQTZST3JfR2NIU3p1OGxRVFBEOXJLTmZ1Vng0R2xaN0RqeUp1OUxpS1UzR0EwbVlPdGxwNFdVSzg5R2FFQll1ZWhhYQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-29",
-     "time": "15:17",
-     "title": "연준 의장, 금리 동결했지만 인상 시사하며 \"한국에 관심\"...구글·MS 실적 희비 교차",
-     "src": "YTN",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBQVjZta1AyRHd2NGhkRTA3SkU4MTJRSzlrTEp5NGdIYXQzbllnZE4yUlFqVmNPR2htNTE1Rk1hRTR5aVEwazVnMXZyYUFlX01sT3RJUC1aWWxXUHFSM3k1MHVXdUZ4azc3WXBYbVdRTQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-29",
-     "time": "13:17",
-     "title": "[셀럽의 한 수] FOMC는 금리 유지, 한은은 인상 예측? 한국 GDP 상승 중, 인플레이션 압력가능",
-     "src": "SBS Biz",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE94UlNBWkUxRXBmQnRVOUZKS2drbGlhdmhSVWR0QTlaTmtMaXNMR2VzaDlUSFFsZzk0blJyT2xFYUJPU05FR2xpTWlkYk9NSVRjNmxXbmtSS3nSAVhBVV95cUxPeFJTQVpFMUVwZkJ0VTlGSktna2xpYXZoUlVkdEE5Wk5rTGlzTEdlc2g5VEhRbGc5NG5Sck9sRWFCT1NORUdsaU1pZGJPTUlUYzZsV25rUkt5?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NT3NYeGJlWHE4b0VwSXNqOTRZX3JDaEJmX21lZHQ1STd5TWVfUmJXa3BVV0ZaWkl6RUJNUHpqcjNuazNST3FoZU51d0xxZWxEdkppakp0WDBZMVE?oc=5",
      "priority": false
     }
    ]
@@ -63,6 +63,14 @@
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-10-29",
+     "time": "20:10",
+     "title": "MSCI warning a 'short-term shock', Indonesia central bank chief reassures businesses",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQekZ0Z0EwQnVmbEVqREZsVFd6SkNsMmNXbGhNbnhQN3dDYTE2WTNhUzQ3UHVFeVh3MlBRaUY0WktsNkgzSWM2Q1drU0gwUDExbWVpM2NXOU9KUzR1c1Nhby1mSlYtZTVqUnI2UTNGNDB2ZHlYQXVzUy1BTEV1RjBGclBjWWZ2eTB5RGdKd1pHSnJwYXFhOFF2bHhZUjVzZnVyZzdsdlEzbEEwZGwxRG5jT1ZjRGZFa2haaWc?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-10-29",
      "time": "10:18",
@@ -77,14 +85,6 @@
      "title": "Indonesia faces 'triple selling' pressure amid MSCI downgrade concerns",
      "src": "Nikkei Asia",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNGFON01SRVZMN0lSWXA2WU9IeFlNZjdsN0J4LVZRTlFPeHdOZ0ZvWjVqb3p1allxT21sOUNZZjl0ZjVIY0k3YUNLU1hFbGZJMXBISEFiLVVYOVJDSl9KcTZpUXNiMEhlNXBSR1A1NTJSb1E1YnBTQ3psbFY2bGlDdTB0bUM3aFBDMElMc2pZMFlzdDRzTHY5UnpEaEdrMG1XQUZYNW52M0R1QXVjZXc?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-28",
-     "time": "12:53",
-     "title": "KB국민은행 인니법인, 달러채 발행 연기하나..MSCI 인니증시 투명성 경고 여파",
-     "src": "파이낸셜뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14MXA4ckFwYkVaM19weTRDUnNNWFRCNlp1Tjd6enZVRGFzbmVQY0VENGQ2WVNYQVk2OVpsRDRhbVdhSmllNDdXaGdDMFRtRGdHVlVzN0tsTGlCQQ?oc=5",
      "priority": true
     }
    ]
@@ -123,26 +123,26 @@
    "items": [
     {
      "date": "2026-10-29",
-     "time": "10:02",
-     "title": "Why Does Japan’s Underlying Inflation Guide BOJ Rate Decisions?",
-     "src": "Bloomberg",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMjVPaFJxdlBwT1ZvWWtSekw0M1pka21ldUxKRDNiT1NUV2FjRmI2NkVKYW8xT3BuNzNyRTRWbGwyakFvMk9WdWNKN0hCeW9mNG54d01ScmgtZ1dTMk81QkpReW14bEdmV05tcHNXQ0hEdjdIWmM2MVhDYVdmcG1CNWxLQnMyZlF5c1BwNWpqMGw3XzJaSXBfUWtRU29ZQVNPejh5cUUxTVdCa3Bxa1p5cmV0NA?oc=5",
+     "time": "17:53",
+     "title": "Nikkei Climbs 1.1% as Advantest Profit Upgrade Powers Tokyo Chip Rally Ahead of Bank of Japan Rate Decision",
+     "src": "International Business Times Australia",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNaGJDV2FMT0hPME92RFFVZG1TYmRSeVNOWkwwb0RsUjVQTVBLaWg2YVhvc3VnZGxUMks3SWNqVV85WXo0YWFnc25Bd2RwQnFXc3c1a0MyeXBIYy1NbXhub09MMlpBblhuYVJaYllXa2U5S0RYczdYeUROM0RGOF9RYkVzam5FZw?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-10-29",
+     "time": "18:20",
+     "title": "Global Market: Japan bond yields steady ahead of BOJ policy decision",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWnowdXhIbFRfMVJqX3A3MmtSQ29NT3REOGpkT0F4cVFiRG5HVDBSQmcxaWlCNWg4WHpnMkFlZ3I3Y1VRZzUtX3lNa0laaGFuOUMzOFhWSklhVkYxVjZwd2JZRXdoT1E4YVZ0TzNzbFhPcTVpeE9wd0wzd0M4VVBibmdjX3RiTVB2ZC1iYm9tMWE2dkI2YXo1bF9kdFQ5amN0bU9GSVhVbDgwTlhRR0hTNkFJQ21CS3ZfOUktNm1IRk92enNyTE5sdlI4WlU0Z1R0bXBDVVVYclRTaTMy0gHiAUFVX3lxTFBySDRId2NNM1U0MDVaMWtCVElDa3VoVUZJMDVLMDZ0SEtKN3VtdHdlSzZWcTE1X3Jwa0k5U0RRZm12MnM2aktrem4xSWpuSU1ucHJrSGNCM1l4ZjhIWFBOMkRBXzBoN0Y5bUV1SlFQNHVNLVNDUWtZdmVvSml2ZXVKQ01hSjFLcXFLX0hnelBHTmZkRVlJX3JRby1sb2hibjJOYVEtTkE0VjB4YUFEbmFEbzdrYm5mQXJkRDlFc3dZQll0eEJ3YWxyMER2bmR2d2NmM1BXYkVFLUoweEt6RVo2dGc?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-29",
-     "time": "08:30",
-     "title": "BOJ Set to Hold Rate as Inflation Reaches Long-Awaited Milestone",
-     "src": "Bloomberg",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcnN0ZEp0Q1kzU1Q5SjVmNGxRXzl6UEstUjctVVFSRGJuX3c4NTFSeDlQOEl1Rl84RTlnbk5hZ2NZSUlGSlRQYjNiVHRGQmk4NFFfLXA5a3JKckd1Nk1LUWZGSEwxZWFac1Z4UVFUc29NbGFIRzNCU2RHc1dlMHVmeGVzQW00LVNralhSU2FYdGlscVVSS2JnUEJBbVZSMUcwY0FLakpjUUlNSnlPS0wtQkkzOFU5QQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-28",
-     "time": "18:19",
-     "title": "Nikkei Rises 1.1% for Second Day as SK Hynix Blowout Earnings Revive AI Trade, but Most Tokyo Stocks Fall",
-     "src": "International Business Times Australia",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPLTBCYmozMDhaVkdNbkVfbEx1b0hkb1JkQmJQRy1fUHpQbks0VElRSjR6M1JhRWJ3MW5JcXY4Vmg0UC02UFlyQllnYVNIb3k0c1ZxdTRFWVV1aGZoLXRnU1MzdXdzVEdLei1iVE9YRzExOUJqSlRKdHVldGtuZVY0VDJR?oc=5",
+     "time": "10:02",
+     "title": "Why Does Japan’s Underlying Inflation Guide BOJ Rate Decisions?",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMjVPaFJxdlBwT1ZvWWtSekw0M1pka21ldUxKRDNiT1NUV2FjRmI2NkVKYW8xT3BuNzNyRTRWbGwyakFvMk9WdWNKN0hCeW9mNG54d01ScmgtZ1dTMk81QkpReW14bEdmV05tcHNXQ0hEdjdIWmM2MVhDYVdmcG1CNWxLQnMyZlF5c1BwNWpqMGw3XzJaSXBfUWtRU29ZQVNPejh5cUUxTVdCa3Bxa1p5cmV0NA?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-10-29",
-     "time": "13:55",
-     "title": "Sensex jumps over 500 points, Nifty above 22,850 after Fed keeps rates unchanged. What lies ahead?",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOdENzbXlhLXJIRUIyV05fSUd6ZzVjYlhiei1JS0RwX0ZjeWpkM1VxWmlRWmlGYW9Od3laNXhKU0JxWjlWM2RNMDNYemJiSm90YkxlS1hWZjZzUG1BeWhVczAzSVNlcDgzZFd1MlhQRXRWNGJuSERZZ3o3Unl2QV83T1hXTXl3eFprQ3NWWTZzNDhPSjBjZFRUbVYxYUpqQ19rWlh4MHM5d2VPVzlKYUtHTXI2WW1SU0Q1dkozY0lZaFhIRnprdUxBR2Q1UkRHLWJjcEdOUnRfODhieHF6MFl2ZGdyY3dfa1hJcWxiQjBSMnlWVEhIXzVhVVk0eWLSAYICQVVfeXFMTnU5ZUZ6R1haOXo4aFlZY1RTNTJ1LXRBTTZjRUNiZk9NdDRzejRPRmJYR2dySFViel9kbm1hdURuVFB2V21DWXZPUjFDamZnVXBsQUVGbVlQODJWeG52WFlBcGFjZHhTVEdhaVVhYVZlUEpIbXg5Ym00b2wwTXRIc3NzZEdiblEzdFpoYVhPZXZGOUJ5YWw1VnNzbFJGdFFId2NHdmpiVTlzTmhOaWdGd0dtWHhGS1Y4NWJaMVpUZl93QV81ZmRQWE1VMzdTVjZtamlpV0pQUkR4Y0kxNmhhbjJPMFJUQUZjSV9qOVZFbUFGWng3cXZoR2tIb2xjVlZkd0Rn?oc=5",
+     "time": "18:07",
+     "title": "US Fed FOMC pauses interest rates: Can Nifty bulls take charge or will RBI hike spoil the rally? Investors guide",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOGluYU9JZndndUZ3MkRZX3VmYzYyN19KbU92bmYtX3V4UGR5TkRTaDZ2dzhwNXFGcTljdmJjZmtPZHQ1WlQzcS16N3pPdVZxaUxxX3dtdVJaM2JjcTlvYVpRdHpyeFRTTEh2ZXY3MUFjR2pUR2ZHcmd5ZjFMN1NIM0VkYmltd0pFMEZKRXl5RUFIWTdVMUYtT1ZvVGJIRVN4aDF3SUZkRmRjT05hd04xSVhCUWFGaUdOLW83ZGFTeFZ2dlhSREVJWmt4TGJHZEkyZ3FqRUo0azlseURrdU9NUEs5LW1GU3RsTzVkc3luTDB2YkRZR3ptci10bUl0WndQSWpsMk9zQUhRY3c00gGSAkFVX3lxTFAtalNYbWlzYko2VW1LcmMxbFdNNVh2d3FJaHJwRHhJX3c5eHR6b1kwN0liRXlzNm95RkVXaW12aUJWY0pWWGFYRWZBNUxzVUZzYkxHd2FnbnQ0Z3k0SXRnRkJ6eEVyTVJTR1JwNDZiZVpFMnFSZkNYV0MybEZwSC1QTHlwNXdMT0paMEl0dzk4blJ1UFJGc3diOWZndWlHZms2Y0pRUWx2U2RpVEQ5UFMwaFBWVjdrVWhIODNQclItMWFqaThzSGxlZlBneE9jSXFWZEdVeHNNQjNFV3VVVlA5VHlabWg2TFMxZXBVZUdqUkZ3dWEtQnE5SGwyRWVmM2NKcUhBV3lMdDFQQWkwQ2dTVHc?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-29",
-     "time": "13:25",
-     "title": "Sensex Expiry Today Prediction 29 Oct Thursday: Trading guide after US Fed FOMC outcome; support, resistance, strategy",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQX1lhMFRUVG5nU1ZYNlVmdEx2LV9xYzhwbWNiWE1WVnBfY3NDZUhsTW9JSzhHbkdwSk9WMkN2NjVyVndVNktmRGF0dWZDclJvMFJ6R0RHZ0N5cFRINWNVdmFxVE5OVng4MmdqdFlhR0hRQmNZYjBsdG5ZZVZIOXllRWZ3Z0tzY1hUSGwwT3VlRFlDYmc3R2VoNEtWdnNWbXpTc0piT2M5aVVRU2o1YVBhQjdMX2xyZlB1Q1B2RVlTa3dFbk9HaFFlUkdNamh3ZU5qVDR5Y0dhLXJteVZ5QzlZY1FHa0NMek8xanI0cHh3NW16X3hHei0xU1daNXR5UTlYWXJHOTNWS3dlMUtGajRTSmxn0gGXAkFVX3lxTE5zSnF6T0ZkR0hHSEpueG40MHF1SDBtZHhnd0FVaU1udk9kcWszVm53eENyTjRzaTctSDNpbEREVzdicHF5clFNVWFDTDFweFEzOTF0WWVmYV9DdUhxNm15bXhVQS10cHhidENOR1pXOEdUbktKdXh3eFVfR2FiNFB3YUtWNGhvd2ZKOFgtQkJiUmZUeGo1N0dqQ05DY0RTMTRtdHNRaWEzdHhqdHp5SDVoNUR3ampXVkJ6eDZ2cUh3eGlHdHFXLTV2YWdCQThac1lzMGl4d1dqenlSc0hKUHZuUTJBeHJLbk9wZVV5T0ZBQ3ozcU1aN1Rsem5hc2ktenNwNEQxZjFqeDlaUkZ3ZjNfemNtaUNNbw?oc=5",
+     "time": "13:55",
+     "title": "Sensex jumps over 500 points, Nifty above 22,850 after Fed keeps rates unchanged. What lies ahead?",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOdENzbXlhLXJIRUIyV05fSUd6ZzVjYlhiei1JS0RwX0ZjeWpkM1VxWmlRWmlGYW9Od3laNXhKU0JxWjlWM2RNMDNYemJiSm90YkxlS1hWZjZzUG1BeWhVczAzSVNlcDgzZFd1MlhQRXRWNGJuSERZZ3o3Unl2QV83T1hXTXl3eFprQ3NWWTZzNDhPSjBjZFRUbVYxYUpqQ19rWlh4MHM5d2VPVzlKYUtHTXI2WW1SU0Q1dkozY0lZaFhIRnprdUxBR2Q1UkRHLWJjcEdOUnRfODhieHF6MFl2ZGdyY3dfa1hJcWxiQjBSMnlWVEhIXzVhVVk0eWLSAYICQVVfeXFMTnU5ZUZ6R1haOXo4aFlZY1RTNTJ1LXRBTTZjRUNiZk9NdDRzejRPRmJYR2dySFViel9kbm1hdURuVFB2V21DWXZPUjFDamZnVXBsQUVGbVlQODJWeG52WFlBcGFjZHhTVEdhaVVhYVZlUEpIbXg5Ym00b2wwTXRIc3NzZEdiblEzdFpoYVhPZXZGOUJ5YWw1VnNzbFJGdFFId2NHdmpiVTlzTmhOaWdGd0dtWHhGS1Y4NWJaMVpUZl93QV81ZmRQWE1VMzdTVjZtamlpV0pQUkR4Y0kxNmhhbjJPMFJUQUZjSV9qOVZFbUFGWng3cXZoR2tIb2xjVlZkd0Rn?oc=5",
      "priority": false
     }
    ]
