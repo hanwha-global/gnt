@@ -1399,43 +1399,59 @@
     Object.assign(box, { className: "tipbox", id: "tipbox", hidden: true });
     box.setAttribute("role", "tooltip");
     document.body.appendChild(box);
-    let cur = null;
+    let cur = null, kbd = false, pressed = false; // kbd: 키보드로 연 말풍선(마우스가 다른 데 있어도 초점이 떠날 때까지 둔다)
+    const headerBottom = () => $(".top")?.getBoundingClientRect().bottom || 0;
+    // 말풍선은 카드 아래에 붙인다(카드 안의 ⓘ·숫자를 가리지 않게). 카드 밖 항목은 그 항목 아래
+    const anchor = (el) => el.closest(".kpi") || el;
     const hide = () => {
       if (!cur) return;
       cur.removeAttribute("aria-describedby");
       cur = null;
+      kbd = false;
       box.hidden = true;
     };
-    // 자리: 아래에 자리가 없으면 위로, 화면 밖으로 나가지 않게(지난 자리에서 재면 폭이 줄어드므로 0에서 잰다)
+    // 자리: 아래에 자리가 없으면 위로(머리글 밑까지만), 화면 밖으로 나가지 않게(지난 자리에서 재면 폭이 줄어드므로 0에서 잰다)
     const place = (el) => {
       box.style.left = box.style.top = "0px";
-      const r = el.getBoundingClientRect(), w = box.offsetWidth, h = box.offsetHeight;
+      const r = anchor(el).getBoundingClientRect(), w = box.offsetWidth, h = box.offsetHeight;
       box.style.left = `${Math.max(8, Math.min(r.left, innerWidth - w - 8))}px`;
-      box.style.top = `${r.bottom + 6 + h > innerHeight && r.top > h + 6 ? r.top - h - 6 : r.bottom + 6}px`;
+      box.style.top = `${r.bottom + 6 + h > innerHeight && r.top - h - 6 > headerBottom() ? r.top - h - 6 : r.bottom + 6}px`;
     };
     const show = (el) => {
-      if (el === cur) return;
-      hide();
-      cur = el;
-      box.innerHTML = `<b>${esc(($(".tip__t", el) || el).textContent.trim())}</b>${esc(el.dataset.tip)}`;
-      box.hidden = false;
-      place(el);
-      el.setAttribute("aria-describedby", "tipbox");
+      if (el !== cur) {
+        hide();
+        cur = el;
+        box.innerHTML = `<b>${esc(($(".tip__t", el) || el).textContent.trim())}</b>${esc(el.dataset.tip)}`;
+        box.hidden = false;
+        el.setAttribute("aria-describedby", "tipbox");
+        // 키보드로 옮겨 간 항목이 머리글 밑에 가려져 있으면 보이게 내린다
+        const top = anchor(el).getBoundingClientRect().top, hb = headerBottom();
+        if (top < hb) scrollBy(0, top - hb - 8);
+      }
+      place(el); // 같은 항목을 다시 눌러도 제자리로
     };
-    const on = (ev) => { const el = ev.target.closest?.("[data-tip]"); el ? show(el) : hide(); };
-    // 마우스는 올리기만 해도, 휴대폰은 누르면 뜨고 다른 곳을 누르면 닫힌다(터치가 흉내 내는 마우스 이벤트는 쓰지 않는다)
-    document.addEventListener("pointerover", (ev) => { if (ev.pointerType === "mouse") on(ev); });
-    document.addEventListener("pointerout", (ev) => { if (ev.pointerType === "mouse" && !ev.relatedTarget) hide(); });
-    document.addEventListener("focusin", on);
-    document.addEventListener("click", on);
+    const tipOf = (ev) => ev.target.closest?.("[data-tip]");
+    // 마우스는 올리기만 해도, 휴대폰은 누르면 뜨고 다른 곳(말풍선 포함)을 누르면 닫힌다(터치가 흉내 내는 마우스 이벤트는 쓰지 않는다).
+    // 키보드로 연 말풍선은 스크롤·창 크기 변화로 마우스 밑 요소가 바뀌어도 닫지 않는다
+    document.addEventListener("pointerdown", () => { pressed = true; setTimeout(() => { pressed = false; }); }, true);
+    document.addEventListener("pointerover", (ev) => {
+      if (ev.pointerType !== "mouse") return;
+      const el = tipOf(ev);
+      if (el) { if (el !== cur) kbd = false; show(el); } else if (!kbd) hide();
+    });
+    document.addEventListener("pointerout", (ev) => { if (ev.pointerType === "mouse" && !ev.relatedTarget && !kbd) hide(); });
+    document.addEventListener("focusin", (ev) => { const el = tipOf(ev); if (!el) return hide(); show(el); kbd = !pressed; });
+    document.addEventListener("click", (ev) => { const el = tipOf(ev); el ? show(el) : hide(); });
     document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") hide(); });
     // 스크롤하면 닫는다. 다만 초점이 그 항목에 있으면(키보드로 옮겨 가며 화면이 저절로 움직인 경우 등) 따라가다가 가려지면 닫는다
     window.addEventListener("scroll", () => {
       if (!cur) return;
       if (cur !== document.activeElement) return hide();
       const r = cur.getBoundingClientRect();
-      r.top < ($(".top")?.getBoundingClientRect().bottom || 0) || r.bottom > innerHeight ? hide() : place(cur);
+      r.top < headerBottom() || r.bottom > innerHeight ? hide() : place(cur);
     }, { passive: true });
+    // 창 크기·화면 방향이 바뀌면 자리를 다시 잡는다
+    window.addEventListener("resize", () => { if (cur) place(cur); });
     window.addEventListener("hashchange", hide);
   }
 
