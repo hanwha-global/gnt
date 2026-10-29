@@ -47,10 +47,12 @@ OFFICIAL_HOSTS = [
 #    본문 해시 방식은 2와 같아서, 그 출처들은 2026-10-29 기준값을 그대로 v 3으로 옮겼다
 SIG_V = 3
 
-# 같은 사이트를 몰아서 열면 막는 곳이 있다(FINRA: 429). 사이트별 최소 간격(초), 목록에 없으면 1초
-GAP = {"finra.org": 6.0}
+# 같은 사이트를 몰아서 열면 막는 곳이 있다. 사이트별 최소 간격(초), 목록에 없으면 1초
+# FINRA: 6초 간격으로 6번 연 뒤 429, 45초 쉬고 다시 열어도 429(2026-10-30 실행) → 20초
+GAP = {"finra.org": 20.0}
 PERMANENT = ("HTTP 400", "HTTP 401", "HTTP 403", "HTTP 404")  # 다시 열어도 같은 오류
-LIMITED = ("HTTP 429", "HTTP 503")  # 속도 제한: 45초 쉬고 한 번 더
+LIMITED = ("HTTP 429", "HTTP 503")  # 속도 제한: COOL초 쉬고 한 번 더, 그 사이트는 이번 점검 내내 간격 두 배
+COOL = 90
 # SEC는 연락처(이메일)가 든 User-Agent가 없으면 403(scripts/update_sec.py 와 같은 값)
 SEC_UA = os.environ.get("SEC_USER_AGENT") or \
     "HanwhaGlobalNetworkDashboard jeongpilchoi1992-hash@users.noreply.github.com"
@@ -62,7 +64,9 @@ AMEND = re.compile(r"(?i)\b(?:amended|adopted|deleted|renumbered|redesignated)\b
 # 봇 차단·확인 화면은 200으로 와도 원문이 아니다(해시하면 오탐 또는 '변경 없음' 착시)
 CHALLENGE = re.compile(r"(?i)just a moment\.\.\.|attention required|access denied|request rejected|enable javascript and cookies"
                        r"|aggressive automated scraping|programmatic access to these sites")
-_last, _throttled = {}, set()
+# 본문 해시가 아닌 값(개정 이력·게시 갱신일·eCFR API): 방문마다 바뀌지 않아 한 번만 받는다
+STRUCTURED = ("amend:", "date:", "ecfr:")
+_last, _slow, _throttled = {}, {}, set()
 
 # 국가법령정보센터 Open API로 시행일을 보는 국내 법령·고시. key 는 출처 제목에서 찾는 말.
 KR_LAWS = [
@@ -106,14 +110,14 @@ def site(u):
 
 
 def polite_get(u):
-    """사이트별 간격을 두고 연다. 429·503이면 45초, 그 밖의 일시 오류는 간격만 두고 한 번 더 연다.
+    """사이트별 간격을 두고 연다. 429·503이면 COOL초 쉬고(그 사이트 간격은 두 배로), 그 밖의 일시 오류는 간격만 두고 한 번 더 연다.
     두 번 다 속도 제한이면 그 사이트는 이번 점검에서 건너뛴다(막힌 사이트를 계속 두드리지 않음)."""
     s = site(u)
     if s in _throttled:
         raise RuntimeError("HTTP 429: 속도 제한(이번 점검 건너뜀)")
     hdr = {"User-Agent": SEC_UA} if s == "sec.gov" or s.endswith(".sec.gov") else None
     for attempt in range(2):
-        wait = _last.get(s, float("-inf")) + GAP.get(s, 1.0) - time.monotonic()
+        wait = _last.get(s, float("-inf")) + _slow.get(s, GAP.get(s, 1.0)) - time.monotonic()
         if wait > 0:
             time.sleep(wait)
         try:
@@ -125,7 +129,8 @@ def polite_get(u):
                     _throttled.add(s)
                 raise
             if msg.startswith(LIMITED):
-                time.sleep(45)
+                _slow[s] = 2 * GAP.get(s, 1.0)  # 두 배까지만(막힐 때마다 늘리면 점검이 끝없이 길어질 수 있음)
+                time.sleep(COOL)
         finally:
             _last[s] = time.monotonic()
 
@@ -297,29 +302,33 @@ def run(prev, today, oc, fetch=fingerprint, alive=None, search=drf_search, asser
             # 병합 때는 기준값이 없는 출처만 연다(며칠 사이 비교는 쪽 꾸밈 변경 오탐이 잦아 반기 점검에서만 비교)
             if baseline_only and has_baseline(u, p):
                 continue
-            p["kind"] = "원문" if is_official(u) else "링크"
+            kind = "원문" if is_official(u) else "링크"
             try:
-                if p["kind"] == "원문":
-                    # 연달아 두 번 받아 다르면 페이지 자체가 가변: 오탐을 막으려고 링크 확인만 한다
+                if kind == "원문":
                     sig = fetch(u)
-                    if fetch(u) != sig:
-                        p["kind"] = "가변"
+                    base = p.get("sig") if p.get("v") == SIG_V else None
+                    # 기준값과 다르면(또는 처음이면) 한 번 더 받아 또 다르면 페이지 자체가 가변: 오탐을 막으려고 링크 확인만 한다
+                    # 기준값과 같거나 본문 해시가 아닌 값이면 한 번만 받는다(FINRA처럼 몰아 열면 막는 사이트 요청을 줄임)
+                    if sig != base and not sig.startswith(STRUCTURED) and fetch(u) != sig:
+                        kind = "가변"
                         p.pop("sig", None)
                     else:
-                        if p.get("sig") and p.get("v") == SIG_V and p["sig"] != sig:
+                        if base and base != sig:
                             p["changed_at"] = today
                             newly.append(("원문", s["t"], u, u))
-                        p["sig"], p["v"] = sig, SIG_V
+                        p["sig"] = sig
+                    p["v"] = SIG_V  # 가변으로 본 것도 지금 방식 기준(병합 때 다시 열지 않음)
                 else:
                     alive(u)
-                p["checked"] = today
+                p["kind"], p["checked"] = kind, today
                 p.pop("err", None)
             except Exception as e:  # noqa: BLE001
+                p.setdefault("kind", kind)  # 못 열면 지난번 점검 방식을 그대로 둔다(남아 있는 점검일과 짝)
                 p["err"] = str(e)[:120]
             src[u] = p
 
     # 3) 행별 요약: 마지막 원문 점검일, 개정 감지 목록
-    out_rows = {}
+    out_rows, prev_rows = {}, prev.get("rows", {})
     for rid, lst in rows.items():
         changed, ok_dates = [], []
         for s in lst:
@@ -337,6 +346,10 @@ def run(prev, today, oc, fetch=fingerprint, alive=None, search=drf_search, asser
             if p.get("checked") and p.get("kind") == "원문":
                 ok_dates.append(p["checked"])
         r = {"checked": max(ok_dates) if ok_dates else None}
+        # 병합 때는 새 출처의 기준값만 잡으므로 있던 행의 원문 점검일(지난 비교일, 없었으면 없음)은 그대로 둔다
+        # 처음 생긴 행만 출처를 연 날
+        if baseline_only and rid in prev_rows:
+            r["checked"] = (prev_rows[rid] or {}).get("checked")
         if changed:
             r["changed"] = changed
         out_rows[rid] = r
@@ -384,7 +397,8 @@ def main():
     OUT.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     n_err = sum(1 for p in status["sources"].values() if p.get("err"))
     mode = "baseline only" if args.baseline_only else "compare"
-    print(f"{mode} · sources {len(status['sources'])} · errors {n_err} · law api {'on' if oc else 'off'} · changed {len(newly)}")
+    law = "skipped" if args.baseline_only else "on" if oc else "off"
+    print(f"{mode} · sources {len(status['sources'])} · errors {n_err} · law api {law} · changed {len(newly)}")
     if newly and args.issue:
         Path(args.issue).write_text(issue_body(newly, today), encoding="utf-8")
 

@@ -108,6 +108,32 @@ class SourceCheckTest(unittest.TestCase):
         self.assertEqual(newly, [])
         self.assertEqual(st["sources"][u]["kind"], "가변")
 
+    def test_volatile_page_is_not_reopened_on_every_push(self):
+        st, _ = self._run({}, {})
+        u = next(s["u"] for c in G["countries"] if c["code"] == "SG" for s in c["sources"] if "mas.gov.sg" in s["u"])
+        st["sources"][u] = {"kind": "가변", "checked": "2026-10-30"}  # 지금 데이터처럼 방식 표시(v)가 없는 가변 쪽
+        n, hits = iter(range(10 ** 6)), []
+        def fetch(x):
+            hits.append(x)
+            return str(next(n)) if x == u else "same"
+        for day in ("2027-01-09", "2027-01-10"):
+            st, _ = check_sources.run(st, day, "", fetch=fetch, alive=lambda x: True, search=lambda oc, law: None,
+                                      asserter=lambda a, oc, lm: None, baseline_only=True)
+        self.assertEqual((st["sources"][u]["kind"], st["sources"][u]["v"], hits.count(u)), ("가변", check_sources.SIG_V, 2))  # 두 번째 병합 때는 열지 않음
+
+    def test_failed_fetch_keeps_last_check_kind(self):
+        st, _ = self._run({}, {})
+        u = next(s["u"] for c in G["countries"] if c["code"] == "SG" for s in c["sources"] if "mas.gov.sg" in s["u"])
+        st["sources"][u] = {"kind": "가변", "v": check_sources.SIG_V, "checked": "2027-01-02"}
+        def fetch(x):
+            if x == u:
+                raise RuntimeError("HTTP 503: busy")
+            return "same"
+        st, _ = check_sources.run(st, "2027-01-03", "", fetch=fetch, alive=lambda x: True, search=lambda oc, law: None,
+                                  asserter=lambda a, oc, lm: None)
+        p = st["sources"][u]
+        self.assertEqual((p["kind"], p["checked"], p["err"]), ("가변", "2027-01-02", "HTTP 503: busy"))  # 원문 점검일로 잘못 세지 않음
+
     def test_normalize_drops_times_and_tokens(self):
         a = check_sources.normalize(b"<p>Base capital S$5,000 updated 10:42 token 9f86d081884c7d659a2feaa0c55ad015</p>")
         b = check_sources.normalize(b"<p>Base capital S$5,000 updated 11:07 token 2c26b46b68ffc68ff99b453c1d304134</p>")
@@ -196,11 +222,47 @@ class SourceCheckTest(unittest.TestCase):
         self.assertEqual(st["sources"][u], old)  # 기준값이 있는 출처는 열지 않음
         self.assertEqual((st["sources"][new]["checked"], st["sources"][new]["sig"]), ("2027-01-09", "different"))
         self.assertEqual(st["updated"], "2027-01-02")  # 원문 점검일은 비교한 날 그대로
+        self.assertEqual((st["rows"]["US"]["checked"], st["rows"]["annex-us"]["checked"]), ("2027-01-02", "2027-01-02"))  # 행도
         link = next(x for x, q in st["sources"].items() if q["kind"] == "링크" and "pwc.com" in x)
         with mock.patch.object(check_sources, "OFFICIAL_HOSTS", check_sources.OFFICIAL_HOSTS + ["pwc.com"]):
             st, _ = check_sources.run(st, "2027-01-10", "", fetch=lambda x: "first", alive=lambda x: True,
                                       search=lambda oc, law: None, asserter=lambda a, oc, lm: None, baseline_only=True)
         self.assertEqual((st["sources"][link]["kind"], st["sources"][link].get("sig")), ("원문", "first"))
+        # 있던 행은 원문 점검일이 없었어도 병합 때 기준값을 잡았다고 날짜가 생기지 않는다
+        sg = [x["u"] for c in G["countries"] if c["code"] == "SG" for x in c["sources"]]
+        others = {x for rid, lst in check_sources.collect()[0].items() if rid != "SG" for x in (y["u"] for y in lst)}
+        mas = next(x for x in sg if x not in others and check_sources.is_official(x))
+        st["rows"]["SG"]["checked"] = None
+        del st["sources"][mas]
+        st, _ = check_sources.run(st, "2027-01-11", "", fetch=lambda x: "first", alive=lambda x: True,
+                                  search=lambda oc, law: None, asserter=lambda a, oc, lm: None, baseline_only=True)
+        self.assertEqual((st["sources"][mas]["checked"], st["rows"]["SG"]["checked"]), ("2027-01-11", None))
+        # 처음 생긴 행(출처도 모두 새것)은 출처를 연 날이 원문 점검일
+        for x in sg:
+            if x not in others:
+                st["sources"].pop(x, None)
+        del st["rows"]["SG"]
+        st, _ = check_sources.run(st, "2027-01-12", "", fetch=lambda x: "first", alive=lambda x: True,
+                                  search=lambda oc, law: None, asserter=lambda a, oc, lm: None, baseline_only=True)
+        self.assertEqual(st["rows"]["SG"]["checked"], "2027-01-12")
+
+    def test_unchanged_or_structured_pages_are_fetched_once(self):
+        st, _ = self._run({}, {})
+        u = next(s["u"] for c in G["countries"] if c["code"] == "SG" for s in c["sources"] if "mas.gov.sg" in s["u"])
+        rule = "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1210"
+        del st["sources"][rule]  # 기준값이 없는 FINRA 규칙
+        hits = []
+        def fetch(x, v="same"):
+            hits.append(x)
+            return "amend:1" if x == rule else v
+        st, newly = check_sources.run(st, "2027-01-03", "", fetch=fetch, alive=lambda x: True,
+                                      search=lambda oc, law: None, asserter=lambda a, oc, lm: None)
+        self.assertEqual((hits.count(u), hits.count(rule), newly), (1, 1, []))  # 기준값과 같으면, 개정 이력이면 한 번만 받는다
+        self.assertEqual(st["sources"][rule]["sig"], "amend:1")
+        hits.clear()
+        st, newly = check_sources.run(st, "2027-01-04", "", fetch=lambda x: fetch(x, "new" if x == u else "same"), alive=lambda x: True,
+                                      search=lambda oc, law: None, asserter=lambda a, oc, lm: None)
+        self.assertEqual((hits.count(u), [n[3] for n in newly]), (2, [u]))  # 기준값과 다르면 한 번 더 받아 가변이 아님을 보고 감지
 
     def _net(self, fake_get):
         clock = [1000.0]
@@ -209,7 +271,7 @@ class SourceCheckTest(unittest.TestCase):
             sleeps.append(s)
             clock[0] += s
         ctx = [mock.patch.object(check_sources, "get", fake_get), mock.patch.object(check_sources, "_last", {}),
-               mock.patch.object(check_sources, "_throttled", set()),
+               mock.patch.object(check_sources, "_slow", {}), mock.patch.object(check_sources, "_throttled", set()),
                mock.patch.object(check_sources.time, "sleep", sleep), mock.patch.object(check_sources.time, "monotonic", lambda: clock[0])]
         for c in ctx:
             c.start()
@@ -226,7 +288,23 @@ class SourceCheckTest(unittest.TestCase):
         sleeps = self._net(fake_get)
         self.assertEqual(check_sources.polite_get("https://www.finra.org/rules-guidance/rulebooks/finra-rules/1013"), b"ok")
         self.assertEqual(check_sources.polite_get("https://www.finra.org/rules-guidance/rulebooks/finra-rules/1014"), b"ok")
-        self.assertEqual(sleeps, [45, 6.0, 6.0])  # 429 뒤 45초 쉬고 다시, 같은 사이트는 6초 간격
+        self.assertEqual(sleeps, [90, 40.0, 40.0])  # 429 뒤 90초 쉬고 다시, 그 뒤 같은 사이트는 20초의 두 배 간격
+        sleeps.clear()
+        check_sources.polite_get("https://www.fca.org.uk/firms/authorisation")
+        check_sources.polite_get("https://www.fca.org.uk/firms/authorisation/how-to-apply")
+        self.assertEqual(sleeps, [1.0])  # 다른 사이트는 그대로 1초
+
+    def test_slow_down_doubles_only_once(self):
+        calls = []
+        def fake_get(u, headers=None, retries=3, timeout=30):
+            calls.append(u)
+            if len(calls) in (1, 3):
+                raise RuntimeError("HTTP 429: busy")
+            return b"ok"
+        sleeps = self._net(fake_get)
+        for n in ("1013", "1014", "1017"):
+            self.assertEqual(check_sources.polite_get(f"https://www.finra.org/rules-guidance/rulebooks/finra-rules/{n}"), b"ok")
+        self.assertEqual(sleeps, [90, 40.0, 40.0, 90, 40.0, 40.0])  # 다시 막혀도 간격은 40초에서 더 늘지 않는다
 
     def test_site_that_keeps_throttling_is_skipped(self):
         calls = []
@@ -250,7 +328,7 @@ class SourceCheckTest(unittest.TestCase):
         with mock.patch("urllib.request.urlopen", urlopen):
             with self.assertRaises(RuntimeError):
                 check_sources.polite_get("https://www.finra.org/rules-guidance/rulebooks/finra-rules/4311")
-        self.assertEqual((len(hits), sleeps), (2, [45, 6.0]))  # net.get 의 2초 재시도 없이 2번
+        self.assertEqual((len(hits), sleeps), (2, [90, 40.0]))  # net.get 의 2초 재시도 없이 2번
         hits.clear()
         sleeps.clear()
         flaky = iter([TimeoutError("timed out")])
@@ -262,7 +340,7 @@ class SourceCheckTest(unittest.TestCase):
             return io.BytesIO(b"ok")
         with mock.patch("urllib.request.urlopen", urlopen2):
             self.assertEqual(check_sources.polite_get("https://www.fca.org.uk/firms/authorisation"), b"ok")
-        self.assertEqual((len(hits), sleeps), (2, [1.0]))  # 일시 오류는 45초 없이 간격(1초)만 두고 한 번 더
+        self.assertEqual((len(hits), sleeps), (2, [1.0]))  # 일시 오류는 90초 없이 간격(1초)만 두고 한 번 더
 
     def test_sec_pages_send_contact_user_agent(self):
         seen = {}
