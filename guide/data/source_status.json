@@ -10,7 +10,7 @@
    "kind": "원문",
    "sig": "67374bc45fdfd024",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.vietnam-briefing.com/news/profit-repatriation-vietnam-brief-guide-2026.html/": {
    "kind": "링크",
@@ -71,7 +71,7 @@
    "kind": "원문",
    "sig": "3f84e0926299f19e",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.pinsentmasons.com/out-law/news/adgm-fsra-reduces-regulatory-burden-lower-risk-firms": {
    "kind": "링크",
@@ -89,14 +89,13 @@
    "kind": "원문",
    "sig": "d57418d888b5e130",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1017": {
    "kind": "원문",
    "sig": "632ea0fff51f0ee3",
    "checked": "2026-10-29",
-   "v": 2,
-   "changed_at": "2026-10-29"
+   "v": 2
   },
   "https://www.ecfr.gov/current/title-17/section-240.15c3-1": {
    "kind": "원문",
@@ -112,7 +111,7 @@
    "kind": "원문",
    "sig": "f4cf044fe935e2c0",
    "checked": "2026-10-23",
-   "v": 2,
+   "v": 3,
    "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
   },
   "https://taxsummaries.pwc.com/united-states/corporate/withholding-taxes": {
@@ -123,13 +122,13 @@
    "kind": "원문",
    "sig": "564054ebf887024b",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.fsa.go.jp/en/laws_regulations/faq_on_fiea/section06.html": {
    "kind": "원문",
    "sig": "37a7af4571f1000b",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.mondaq.com/pdf/1611132.pdf": {
    "kind": "링크",
@@ -147,14 +146,13 @@
    "kind": "원문",
    "sig": "590a019e0b64887c",
    "checked": "2026-10-29",
-   "v": 2,
-   "changed_at": "2026-10-29"
+   "v": 2
   },
   "https://www.elegislation.gov.hk/hk/cap571N": {
    "kind": "원문",
    "sig": "40ceb73544cd69d7",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.charltonslaw.com/hong-kong-law/approvals-and-notifications-required-in-relation-to-transfers-of-shares-of-a-licensed-corporation-in-hong-kong/": {
    "kind": "링크",
@@ -168,8 +166,7 @@
    "kind": "원문",
    "sig": "100ba6c57876892e",
    "checked": "2026-10-29",
-   "v": 2,
-   "changed_at": "2026-10-29"
+   "v": 2
   },
   "https://taxsummaries.pwc.com/hong-kong-sar/corporate/withholding-taxes": {
    "kind": "링크",
@@ -191,31 +188,31 @@
    "kind": "원문",
    "sig": "5f85089a3d41b642",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.fca.org.uk/firms/change-control": {
    "kind": "원문",
    "sig": "01811932ceebf3c0",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.handbook.fca.org.uk/handbook/MIFIDPRU/4/4.html": {
    "kind": "원문",
    "sig": "669e2e49b21ca7f3",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.handbook.fca.org.uk/handbook/SUP/10C/1.html": {
    "kind": "원문",
    "sig": "06e39ff69c48fa21",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://www.handbook.fca.org.uk/handbook/COND/2/3.html": {
    "kind": "원문",
    "sig": "56be6008f4711369",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://taxsummaries.pwc.com/united-kingdom/corporate/withholding-taxes": {
    "kind": "링크",
@@ -225,7 +222,7 @@
    "kind": "원문",
    "sig": "2683bb3dc4009a45",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://dpiit.gov.in/policies-rules-and-acts/policies/foreign-direct-investment-policy": {
    "kind": "원문",
@@ -270,7 +267,7 @@
    "kind": "원문",
    "sig": "9f1413305eadde42",
    "checked": "2026-10-29",
-   "v": 2
+   "v": 3
   },
   "https://taxsummaries.pwc.com/mongolia/corporate/withholding-taxes": {
    "kind": "링크",
@@ -408,7 +405,7 @@
   "https://www.finra.org/registration-exams-ce/broker-dealers/update/ownership-control": {
    "kind": "원문",
    "sig": "4dfe134db4d71e65",
-   "v": 2,
+   "v": 3,
    "checked": "2026-10-29"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1210": {
@@ -434,7 +431,7 @@
   "https://www.finra.org/registration-exams-ce/qualification-exams": {
    "kind": "원문",
    "sig": "163cb21a53ae0099",
-   "v": 2,
+   "v": 3,
    "checked": "2026-10-29"
   },
   "https://brokercheck.finra.org/": {
@@ -617,32 +614,13 @@
    "checked": "2026-10-29"
   },
   "US": {
-   "checked": "2026-10-29",
-   "changed": [
-    {
-     "t": "FINRA Rule 1017",
-     "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1017",
-     "at": "2026-10-29"
-    }
-   ]
+   "checked": "2026-10-29"
   },
   "JP": {
    "checked": "2026-10-29"
   },
   "HK": {
-   "checked": "2026-10-29",
-   "changed": [
-    {
-     "t": "SFC Licensing",
-     "u": "https://www.sfc.hk/en/Regulatory-functions/Intermediaries/Licensing",
-     "at": "2026-10-29"
-    },
-    {
-     "t": "SFC Types of intermediary and licensed individual(RO 요건)",
-     "u": "https://sfc.hk/en/Regulatory-functions/Intermediaries/Licensing/Types-of-intermediary-and-licensed-individual",
-     "at": "2026-10-29"
-    }
-   ]
+   "checked": "2026-10-29"
   },
   "CN": {
    "checked": null
@@ -780,14 +758,7 @@
    "checked": null
   },
   "annex-us": {
-   "checked": "2026-10-29",
-   "changed": [
-    {
-     "t": "FINRA Rule 1017(소유·지배·영업 변경 승인)",
-     "u": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1017",
-     "at": "2026-10-29"
-    }
-   ]
+   "checked": "2026-10-29"
   }
  }
 }
