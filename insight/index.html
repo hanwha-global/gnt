@@ -76,7 +76,14 @@ svg text{fill:var(--muted);font-size:10px}
 .posn em{display:block;font-style:normal;font-size:10.5px;color:var(--text-2)}
 td.ib{position:relative;min-width:110px}td.ib i{position:absolute;left:2px;top:4px;bottom:4px;background:var(--bar);opacity:.45;border-radius:2px}
 tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacity:.7}td.ib span{position:relative}
-.tw.tall{max-height:560px;overflow:auto}
+.tw.tall{max-height:560px;overflow:auto}.tw.vnb{max-height:372px;overflow:auto}
+  .mtab .nm{display:inline-block;max-width:92px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}
+h3.sub{margin:10px 0 4px;font-size:12.5px;display:flex;gap:6px;align-items:center;border-top:1px solid var(--line);padding-top:8px}
+.tag.auto{color:var(--pos);border:1px solid currentColor;margin-left:0}
+.pills.sm .pill{font-size:11px;padding:1px 8px}
+tr.grp td{background:var(--surface-2);color:var(--muted);font-size:10.5px;font-weight:700;text-align:left;padding:2px 6px}
+tr.mk{cursor:pointer}tr.mk:hover td{background:var(--heat-0)}tr.mk:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+tr.mk.sel td{background:var(--accent-soft)}tr.mk.sel td:first-child{color:var(--accent-ink);font-weight:700}tr.mk.home td:first-child{font-weight:700}
 .note b{color:var(--text-2);font-weight:600}
 .empty{padding:14px;text-align:center;color:var(--muted);font-size:12px;border:1px dashed var(--line);border-radius:8px}
 .cad{font-size:11px;color:var(--muted);display:grid;gap:2px;margin:0;padding-left:16px}.cad b{color:var(--text-2);font-weight:600}
@@ -149,20 +156,20 @@ tr.kr td.ib i{background:var(--kr)}tr.hw td.ib i{background:var(--accent);opacit
     </section>
 
     <section class="card s6" aria-labelledby="h-vn">
-      <h2 id="h-vn">베트남 HOSE 브로커리지 점유율 <small>거래소 분기 발표</small></h2>
+      <h2 id="h-vn">베트남 증권사 점유율 <small>HOSE 발표 상위 10곳(수동) + 11위 이하 상장사 중개수익(자동)</small></h2>
       <div id="vn"></div>
     </section>
 
     <section class="card s12" aria-labelledby="h-val">
-      <h2 id="h-val">밸류에이션 비교 <small>시장이 증권사에 매기는 값(P/B)과 수익성(ROE): 국내 vs 진출국</small></h2>
+      <h2 id="h-val">밸류에이션 비교 <small>나라·시장별 상장 증권사: 시장이 매기는 값(P/B·P/E)과 수익성(ROE) · 국내 vs 진출국 vs 아시아·태평양·미주·유럽</small></h2>
       <div class="split"><div id="val-mkt"></div><div id="val-kr"></div></div>
     </section>
   </div>
 
   <ul class="cad" aria-label="갱신 주기·산식">
     <li><b>진출국 전략 Takeaways</b> · 매일 06:30(KST) GitHub Actions가 LLM 없이 만듦: DART 해외자회사 손익·출자, 지수·환율·정책금리, MSCI·FTSE 등 구조 뉴스, 한국계 경쟁사 뉴스, 이 탭의 현지 경쟁 구도·점유율을 규칙으로 읽어 지분 인수·증자·구조조정·비용·마케팅·제휴·리스크 중 3~4줄. 새 공시·판단 변화·새 뉴스·금리 변경·지수/환율 급변·14일 경과가 없으면 문구를 그대로 두고 확인 시각만 남깁니다.</li>
-    <li><b>갱신 주기</b> · 평일 08:10(KST) GitHub Actions가 LLM 없이 수집: 주가·시가총액·환율·IDX 거래 요약 매일, IMF 전망(4·10월 개정)·세계은행 지표(연 1회 개정)는 바뀌면 반영, 상장사 자본·순이익은 글로벌 탭과 같은 수집(매주 월)이고 베트남은 거래소 상장 증권사 전체를 VNDirect 공개 재무(자본·순이익·마진 잔고·중개수익, 각 사 감사 재무제표)로 매일 확인, 한국계 법인은 국내 탭과 같은 DART 사업보고서.</li>
-    <li><b>산식</b> · ROE = 최근 연간 순이익 ÷ 연말 자기자본 · P/B = 시가총액(최근 종가 × 발행주식 수) ÷ 최근 분기 자기자본(없으면 연말) · 원화 환산 = 자본은 결산일 환율, 시가총액은 최근 환율(Yahoo Finance 종가, USD 교차).</li>
+    <li><b>갱신 주기</b> · 평일 08:10(KST) GitHub Actions가 LLM 없이 수집: 주가·시가총액·환율·IDX 거래 요약·15개 시장 상장 증권사 밸류에이션(Yahoo Finance, 베트남은 VNDirect) 매일, IMF 전망(4·10월 개정)·세계은행 지표(연 1회 개정)는 바뀌면 반영, 상장사 자본·순이익은 글로벌 탭과 같은 수집(매주 월)이고 베트남은 거래소 상장 증권사 전체를 VNDirect 공개 재무(자본·순이익·마진 잔고·중개수익, 각 사 감사 재무제표)로 매일 확인, 한국계 법인은 국내 탭과 같은 DART 사업보고서.</li>
+    <li><b>산식</b> · 현지 경쟁 구도의 ROE = 최근 연간 순이익 ÷ 연말 자기자본, 밸류에이션 비교의 ROE·P/E = 최근 4개 분기 순이익 기준(반기 공시 시장 등 4개 분기 합이 없으면 최근 연간) · 베트남 중개수익 점유율 = 회사별 분기 중개수수료 수익 ÷ 상장 증권사 합계 · P/B = 시가총액(최근 종가 × 발행주식 수) ÷ 최근 분기 자기자본(없으면 연말) · 원화 환산 = 자본은 결산일 환율, 시가총액은 최근 환율(Yahoo Finance 종가, USD 교차).</li>
     <li><b>한계</b> · 비상장 증권사는 최근 재무를 기계로 받을 공개 출처가 없어 현지사는 순위에서 빠지고(한국계는 DART로 포함), 시가총액·P/B도 없습니다. 한국계 법인 자본은 모회사 사업보고서 원화 금액을 연말 환율로 현지 통화로 되돌린 값입니다.</li>
   </ul>
 </div>

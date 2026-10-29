@@ -160,7 +160,7 @@ def yseries(symbol, types):
         pts = [p for p in (r.get(t) or []) if p and p.get("reportedValue")]
         if pts:
             last = max(pts, key=lambda p: p["asOfDate"])
-            out[t] = (last["reportedValue"]["raw"], last["asOfDate"])
+            out[t] = (last["reportedValue"]["raw"], last["asOfDate"], last.get("currencyCode"))
     return out
 
 
@@ -229,9 +229,37 @@ def vnd_fs(code, report_type):
     return out
 
 
+def vnd_hist(code, keys=("brokerage", "ni", "ni_all", "rev"), n=8):
+    """분기 손익 이력 {fiscalDate: {항목: 값}} 최근 n분기. 항목 필터가 안 먹으면 손익 양식 전체를 받아 거른다."""
+    want = {VND_ITEMS[k]: k for k in keys}
+    base = f"code:{code}~reportType:QUARTER~modelType:90"
+    rows = vnd("financial_statements", base + "~itemCode:" + ",".join(map(str, want)), sort="fiscalDate:desc", size=200)
+    if not rows or any(int(r.get("itemCode") or 0) not in want for r in rows):
+        rows = vnd("financial_statements", base, sort="fiscalDate:desc", size=1200)
+    out = {}
+    for r in rows:
+        k = want.get(int(r.get("itemCode") or 0))
+        if k and r.get("numericValue") is not None:
+            out.setdefault(r["fiscalDate"], {})[k] = r["numericValue"]
+    return {d: out[d] for d in sorted(out, reverse=True)[:n]}
+
+
+def months_between(a, b):
+    return (int(a[:4]) - int(b[:4])) * 12 + int(a[5:7]) - int(b[5:7])
+
+
+def ttm(hist):
+    """최근 4개 분기 지배주주 순이익 합(분기가 3개월씩 이어질 때만). (값, 마지막 분기)"""
+    ds = sorted(hist, reverse=True)[:4]
+    if len(ds) < 4 or any(months_between(ds[i], ds[i + 1]) != 3 for i in range(3)):
+        return None, None
+    vals = [hist[d].get("ni") if hist[d].get("ni") is not None else hist[d].get("ni_all") for d in ds]
+    return (sum(vals), ds[0]) if all(v is not None for v in vals) else (None, None)
+
+
 def vn_universe():
-    """상장 증권사 전체의 최근 연간·분기 재무와 시가총액·P/B. (rows, errors)"""
-    errors = []
+    """상장 증권사 전체의 최근 연간·분기 재무와 시가총액·P/B. (rows, errors, 일시 실패한 회사 코드)"""
+    errors, failed = [], []
     ind = vnd("industry_classification", "codeList:SSI")
     codes = next((x["codeList"].split(",") for x in ind if str(x.get("industryCode")) == "8777"), [])
     if not codes:
@@ -257,7 +285,18 @@ def vn_universe():
             ratio = {r["ratioCode"]: r for r in vnd("ratios/latest", None, filter="ratioCode:MARKETCAP,PRICE_TO_BOOK",
                                                      where=f"code:{c}", order="reportDate", fields="ratioCode,value,reportDate")}
             ni = cur.get("ni") if cur.get("ni") is not None else cur.get("ni_all")
-            rows.append({"code": c, "name": info[c].get("companyNameEng") or info[c].get("companyName"), "name_vn": info[c].get("companyName"),
+            try:
+                hist = vnd_hist(c)
+            except Exception as e:  # 분기 손익만 실패하면 행은 남기고 중개수익 점유율 계산에서만 실패로 센다
+                hist = {}
+                failed.append(c)
+                errors.append(f"vn {c} 분기 손익: {short(e, 60)}")
+            t_ni, t_asof = ttm(hist)
+            if c == "SSI":  # 분기 값이 분기분(누적 아님)인지 연간과 맞춰 본다
+                y = years[0][:4]
+                print("vn SSI 점검: 연간 중개수익", cur.get("brokerage"), "분기 합", sum((v.get("brokerage") or 0) for d, v in hist.items() if d[:4] == y),
+                      "분기", sorted(d for d in hist if d[:4] == y))
+            rows.append({"q_hist": hist, "ttm_ni": t_ni, "ttm_asof": t_asof,"code": c, "name": info[c].get("companyNameEng") or info[c].get("companyName"), "name_vn": info[c].get("companyName"),
                          "floor": info[c]["floor"], "asof": years[0], "equity": cur["equity"], "equity_prev": prv.get("equity"),
                          "paid_in": cur.get("paid_in"), "assets": cur.get("assets"), "loans": cur.get("loans"), "ni": ni,
                          "rev": cur.get("rev"), "brokerage": cur.get("brokerage"),
@@ -265,10 +304,11 @@ def vn_universe():
                          "mcap": ratio.get("MARKETCAP", {}).get("value"), "pb": ratio.get("PRICE_TO_BOOK", {}).get("value"),
                          "price_date": ratio.get("MARKETCAP", {}).get("reportDate")})
         except Exception as e:
+            failed.append(c)
             errors.append(f"vn {c}: {short(e, 80)}")
         time.sleep(0.15)
-    print(f"vn universe: 업종 {len(codes)}곳 중 상장 {len(listed)}곳, 재무 확보 {len(rows)}곳")
-    return rows, errors
+    print(f"vn universe: 업종 {len(codes)}곳 중 상장 {len(listed)}곳, 재무 확보 {len(rows)}곳, 일시 실패 {failed}")
+    return rows, errors, failed
 
 
 def norm(n):
@@ -310,7 +350,60 @@ def vn_row(d, fx, ccy, div):
             "q_date": d["q_date"], "q_equity": u(d["q_equity"]), "q_equity_krw": d["q_equity"] * now / 1e8 if d["q_equity"] else None,
             "mcap": u(d["mcap"]), "mcap_krw": d["mcap"] * now / 1e8 if d["mcap"] else None,
             "pb": round(d["pb"], 2) if d["pb"] else None, "pb_book": "분기", "pb_asof": d["q_date"], "price_date": d["price_date"],
+            "ttm_ni": u(d.get("ttm_ni")), "ttm_asof": d.get("ttm_asof"),
+            "roe_ttm": round(d["ttm_ni"] / d["q_equity"] * 100, 1) if d.get("ttm_ni") is not None and d.get("q_equity") else None,
+            "pe": (lambda n: round(d["mcap"] / n, 1) if d.get("mcap") and n and n > 0 else None)(d["ttm_ni"] if d.get("ttm_ni") is not None else d["ni"]),
             "via": "vndirect", "url": f"https://dstock.vndirect.com.vn/tong-quan/{d['code']}", "stale": False}
+
+
+def vn_brokerage(vn_rows, failed=()):
+    """상장 증권사 분기 중개수수료 수익 점유율(상장사 합계 대비) → vn_brokerage.json. 거래소 발표 상위 10곳 밖을 잇는 자동 지표."""
+    prev = load("vn_brokerage.json", {})
+    pl = (prev.get("quarters") or [None])[-1]
+    gone = [x["code"] for x in prev.get("rows", []) if x["code"] in set(failed) and (x["share"].get(pl) or 0) >= 1]
+    if gone:  # 분모에서 빠지면 나머지 회사 점유율이 모두 부풀어 오른다
+        raise RuntimeError(f"직전 점유율 1% 이상인 {', '.join(gone)}의 재무를 이번에 못 받아 이전 파일 유지")
+    cnt = {}
+    for r in vn_rows:
+        for d, v in r.get("q_hist", {}).items():
+            if v.get("brokerage"):
+                cnt[d] = cnt.get(d, 0) + 1
+    if not cnt:
+        return
+    top = max(cnt.values())
+    cand = sorted(d for d, n in cnt.items() if n >= 0.8 * top)
+    rev = lambda r, q: r["q_hist"].get(q, {}).get("brokerage") or 0
+
+    def cover(q, p):  # q 분기를 낸 회사들이 직전 분기 중개수익의 몇 %를 차지했나(큰 회사가 아직 안 냈으면 낮다)
+        t = sum(rev(r, p) for r in vn_rows)
+        return sum(rev(r, p) for r in vn_rows if rev(r, q)) / t if t else 1
+    pending = None
+    while len(cand) > 1 and cover(cand[-1], cand[-2]) < 0.95:  # 집계가 덜 된 최근 분기는 순위에서 빼고 대기로 표시
+        q = cand.pop()
+        if pending is None:  # 가장 최근 대기 분기만 표시, 빠진 회사는 직전 분기 중개수익 큰 순
+            miss = sorted((r for r in vn_rows if rev(r, cand[-1]) and not rev(r, q)), key=lambda r: -rev(r, cand[-1]))
+            pending = {"q": q, "reported": cnt[q], "missing": [r["code"] for r in miss]}
+    qs = cand[-6:]
+    tot = {q: sum(rev(r, q) for r in vn_rows) for q in qs}
+    rows = []
+    for r in vn_rows:
+        rv = {q: r["q_hist"].get(q, {}).get("brokerage") for q in qs}
+        share = {q: round(v / tot[q] * 100, 3) for q, v in rv.items() if v and tot[q]}
+        if share:
+            rows.append({"code": r["code"], "name": r["name"], "floor": r["floor"], "share": share,
+                         "rev_bn": {q: round(v / 1e9, 1) for q, v in rv.items() if v},
+                         "filed_last": qs[-1] in r["q_hist"] or (r.get("q_date") or "") >= qs[-1]})  # 최근 분기 재무를 냈는지(중개수익 0과 구분)
+    last = qs[-1]
+    ytd = [q for q in qs if q[:4] == last[:4]]
+    yt = sum(tot[q] for q in ytd)
+    for x in rows:
+        x["ytd"] = round(sum(x["rev_bn"].get(q, 0) for q in ytd) * 1e9 / yt * 100, 3) if yt else None
+    rows.sort(key=lambda x: -(x["share"].get(last) or -1))
+    save("vn_brokerage.json", {"updated_at": NOW.isoformat(timespec="seconds"), "quarters": qs, "ytd_quarters": ytd, "pending": pending,
+                               "reported": {q: cnt[q] for q in qs}, "total_bn": {q: round(tot[q] / 1e9) for q in qs}, "rows": rows,
+                               "source": {"label": "VNDirect 공개 재무(각 사 분기 재무제표, 중개수수료 수익)", "url": "https://dstock.vndirect.com.vn/"},
+                               "method": "회사별 분기 중개수수료 수익 ÷ 같은 분기 상장 증권사 합계. 거래대금 점유율이 아니며 비상장사는 빠짐"})
+    print(f"vn brokerage: 분기 {qs}, 최근 분기 {cnt[last]}곳 보고, 집계 대기 {pending}")
 
 
 def landscape():
@@ -319,21 +412,31 @@ def landscape():
     errors = []
     oldval = {f"{m}:{r['ticker']}": r for m, mv in prev.get("markets", {}).items() for r in mv.get("rows", []) if r.get("ticker")}
 
-    def val(mid, ticker, symbol):
+    def val(mid, ticker, symbol, div):
         try:
             v = valuation(symbol)
             return v, False
         except Exception as e:
             o = oldval.get(f"{mid}:{ticker}")
             errors.append(f"{mid} {ticker}: {e}{' (이전 값 유지)' if o and o.get('mcap') else ''}"[:160])
-            return ({k: o.get(k) for k in ("price", "price_date", "mcap", "q_equity", "q_asof", "ccy")} if o and o.get("mcap") else None), True
+            if not (o and o.get("mcap")):
+                return None, True
+            # 이전 행은 표시 단위(÷div)로 저장돼 있으므로 원 통화로 되돌리고, 자본은 이전 P/B로 역산해 P/B를 그대로 잇는다
+            mc = o["mcap"] * div
+            return {"price": o.get("price"), "price_date": o.get("price_date"), "ccy": o.get("ccy"), "mcap": mc,
+                    "q_equity": mc / o["pb"] if o.get("pb") else None, "q_asof": o.get("pb_asof")}, True
 
     try:
-        vn_rows, vn_err = vn_universe()
+        vn_rows, vn_err, vn_failed = vn_universe()
         errors += vn_err
     except Exception as e:
-        vn_rows = []
+        vn_rows, vn_failed = [], []
         errors.append(f"vn 전체 목록: {short(e)} (Yahoo 상장사 목록으로 대체)")
+    if vn_rows:
+        try:
+            vn_brokerage(vn_rows, vn_failed)
+        except Exception as e:
+            errors.append(f"vn 중개수익 점유율: {short(e)}")
     # 결산일 환율(상장사 자본·한국계 법인 원화 환산)과 최근 환율(시가총액)
     days = sorted({r["asof"] for m in listed.get("markets", {}).values() for r in m.get("rows", []) if r.get("asof")}
                   | {d["asof"] for d in vn_rows} | {"2025-12-31"})
@@ -354,7 +457,7 @@ def landscape():
             rows = [vn_row(d, fx, ccy, div) for d in vn_rows]
         for r in ([] if rows else listed.get("markets", {}).get(mid, {}).get("rows", [])):
             sym = r["ticker"] + (".HN" if r.get("note") == "HNX" else ysfx)
-            v, stale = val(mid, r["ticker"], sym)
+            v, stale = val(mid, r["ticker"], sym, div)
             rate = fx[ccy].get(r["asof"]) or fx[ccy]["now"]
             eq_l = r["equity"] * div  # 원 통화
             row = {"kind": "local", "name": r["name"], "ticker": r["ticker"], "note": r.get("note"), "asof": r["asof"],
@@ -387,7 +490,7 @@ def landscape():
     for name, code in KR:
         sym = code if "." in code else f"{code}.KS"
         code = code.split(".")[0]
-        v, stale = val("kr", code, sym)
+        v, stale = val("kr", code, sym, 1)
         if not v:
             continue
         o = oldval.get(f"kr:{code}", {})
@@ -417,6 +520,175 @@ def landscape():
     save("landscape.json", out)
     for mid, m in markets.items():
         print(f"landscape {mid}: {len(m['rows'])}행, P/B 중앙값 {m['median_pb']}, ROE 중앙값 {m['median_roe']}")
+    for e in errors:
+        print("  !", e)
+
+
+# ---------- 2-2) 나라·시장별 상장 증권사 밸류에이션 ----------
+# (키, 이름, 묶음, [(회사, Yahoo 심볼, 비고)]). 일본·인니·싱가포르는 글로벌 탭 목록, 베트남은 위 VNDirect 전체 상장사를 그대로 쓴다.
+# 증권업 비중이 큰 회사만 넣는다(은행이 중심인 금융지주 제외, 금융지주라도 증권이 주력이면 비고에 표시).
+VAL_MARKETS = [
+    ("kr", "한국", "국내", [(n, c if "." in c else f"{c}.KS", "") for n, c in KR]),
+    ("vn", "베트남", "진출국", None),
+    ("id", "인도네시아", "진출국", [(n, f"{t}.JK", b) for n, t, b in MARKETS["id"][4]]),
+    ("sg", "싱가포르", "진출국", [(n, f"{t}.SI", b) for n, t, b in MARKETS["sg"][4]]),
+    ("jp", "일본", "아시아·태평양", [(n, f"{t}.T", b) for n, t, b in MARKETS["jp"][4]]),
+    ("cn", "중국(본토 A주)", "아시아·태평양", [
+        ("CITIC Securities", "600030.SS", ""), ("Huatai Securities", "601688.SS", ""), ("Guotai Haitong Securities", "601211.SS", ""),
+        ("China Merchants Securities", "600999.SS", ""), ("GF Securities", "000776.SZ", ""), ("China Galaxy Securities", "601881.SS", ""),
+        ("CICC", "601995.SS", ""), ("Shenwan Hongyuan", "000166.SZ", ""), ("CSC Financial", "601066.SS", ""),
+        ("Guosen Securities", "002736.SZ", ""), ("Orient Securities", "600958.SS", ""), ("Industrial Securities", "601377.SS", ""),
+        ("Changjiang Securities", "000783.SZ", ""), ("Everbright Securities", "601788.SS", ""), ("Zhongtai Securities", "600918.SS", ""),
+        ("Founder Securities", "601901.SS", ""), ("East Money Information", "300059.SZ", "온라인")]),
+    ("hk", "홍콩", "아시아·태평양", [
+        ("CITIC Securities (H)", "6030.HK", "본토사 H주"), ("Huatai Securities (H)", "6886.HK", "본토사 H주"),
+        ("Guotai Haitong (H)", "2611.HK", "본토사 H주"), ("China Merchants Securities (H)", "6099.HK", "본토사 H주"),
+        ("GF Securities (H)", "1776.HK", "본토사 H주"), ("China Galaxy Securities (H)", "6881.HK", "본토사 H주"),
+        ("CICC (H)", "3908.HK", "본토사 H주"), ("CSC Financial (H)", "6066.HK", "본토사 H주"), ("Orient Securities (H)", "3958.HK", "본토사 H주"),
+        ("Guotai Junan International", "1788.HK", ""), ("Bright Smart Securities", "1428.HK", ""), ("Emperor Capital", "0717.HK", ""),
+        ("Get Nice Holdings", "0064.HK", ""), ("Shenwan Hongyuan (H.K.)", "0218.HK", "")]),
+    ("tw", "대만", "아시아·태평양", [
+        ("Yuanta Financial Holding", "2885.TW", "증권 주력 금융지주(은행 포함)"), ("Capital Securities", "6005.TW", ""), ("President Securities", "2855.TW", ""),
+        ("Concord Securities", "6016.TWO", ""), ("Horizon Securities", "6015.TWO", "")]),
+    ("th", "태국", "아시아·태평양", [
+        ("Asia Plus Group", "ASP.BK", ""), ("KGI Securities (Thailand)", "KGI.BK", ""), ("Country Group Holdings", "CGH.BK", ""),
+        ("Globlex Holding", "GBX.BK", ""), ("Trinity Watthana", "TNITY.BK", ""), ("AIRA Capital", "AIRA.BK", ""), ("XSpring Capital", "XPG.BK", ""),
+        ("Maybank Securities (Thailand)", "MST.BK", "")]),
+    ("my", "말레이시아", "아시아·태평양", [
+        ("Kenanga Investment Bank", "6483.KL", ""), ("Hong Leong Capital", "5274.KL", ""), ("Apex Equity Holdings", "5088.KL", "")]),
+    ("in", "인도", "아시아·태평양", [
+        ("Angel One", "ANGELONE.NS", "온라인"), ("Motilal Oswal Financial Services", "MOTILALOFS.NS", ""), ("IIFL Capital Services", "IIFLCAPS.NS", ""),
+        ("Nuvama Wealth Management", "NUVAMA.NS", ""), ("JM Financial", "JMFINANCIL.NS", ""), ("Geojit Financial Services", "GEOJITFSL.NS", ""),
+        ("5paisa Capital", "5PAISA.NS", "온라인"), ("Share India Securities", "SHAREINDIA.NS", ""), ("SMC Global Securities", "SMCGLOBAL.NS", ""),
+        ("Groww (Billionbrains Garage Ventures)", "GROWW.NS", "온라인")]),
+    ("us", "미국", "미주·유럽", [
+        ("Morgan Stanley", "MS", ""), ("Goldman Sachs", "GS", ""), ("Charles Schwab", "SCHW", ""), ("Interactive Brokers", "IBKR", "온라인"),
+        ("Robinhood", "HOOD", "온라인"), ("Raymond James", "RJF", ""), ("LPL Financial", "LPLA", ""), ("Jefferies", "JEF", ""),
+        ("Stifel", "SF", ""), ("Evercore", "EVR", "IB 자문"), ("Houlihan Lokey", "HLI", "IB 자문"), ("StoneX", "SNEX", ""),
+        ("Piper Sandler", "PIPR", ""), ("Virtu Financial", "VIRT", ""), ("Lazard", "LAZ", "IB 자문"), ("Moelis", "MC", "IB 자문"),
+        ("PJT Partners", "PJT", "IB 자문"), ("Oppenheimer", "OPY", "")]),
+    ("uk", "영국", "미주·유럽", [
+        ("IG Group", "IGG.L", "온라인"), ("Plus500", "PLUS.L", "온라인"), ("AJ Bell", "AJB.L", "온라인"), ("CMC Markets", "CMCX.L", "온라인"),
+        ("Peel Hunt", "PEEL.L", "")]),
+    ("eu", "유럽(대륙)", "미주·유럽", [
+        ("Avanza Bank", "AZA.ST", "온라인, 스웨덴"), ("Nordnet", "SAVE.ST", "온라인, 스웨덴"), ("flatexDEGIRO", "FTK.DE", "온라인, 독일"),
+        ("Swissquote", "SQN.SW", "온라인, 스위스"), ("Vontobel", "VONN.SW", "스위스")]),
+    ("au", "호주", "아시아·태평양", [("Macquarie Group", "MQG.AX", "투자은행 그룹(은행 포함)"), ("Bell Financial Group", "BFG.AX", "")]),
+]
+# 가격 통화가 보조 단위로 나오는 시장(런던 펜스 등)
+SUBUNIT = {"GBp": ("GBP", 100), "GBX": ("GBP", 100), "ZAc": ("ZAR", 100), "ILA": ("ILS", 100)}
+
+
+def fx_now(ccys):
+    """1 통화 = ? 원 (최근 종가, USD 교차)."""
+    usd, _ = ychart("KRW=X", "5d")
+    out = {"KRW": 1.0, "USD": usd[-1][1]}
+    for c in sorted(set(ccys) - set(out)):
+        try:
+            pts, _ = ychart(f"{c}=X", "5d")
+            out[c] = usd[-1][1] / pts[-1][1]
+        except Exception as e:
+            print(f"  환율 {c}: {short(e, 60)}")
+    return out
+
+
+def world_val(symbol):
+    """주가·주식 수·최근 분기 자본·최근 4개 분기 순이익(없으면 연간). 금액은 각 통화 원 단위."""
+    pts, meta = ychart(symbol)
+    price, pccy = meta.get("regularMarketPrice") or (pts[-1][1] if pts else None), meta.get("currency")
+    if pccy in SUBUNIT:
+        pccy, k = SUBUNIT[pccy]
+        price = price / k if price else price
+    s = yseries(symbol, ["quarterlyOrdinarySharesNumber", "annualOrdinarySharesNumber", "quarterlyStockholdersEquity",
+                         "annualStockholdersEquity", "trailingNetIncome", "annualNetIncome"])
+    shares = s.get("quarterlyOrdinarySharesNumber") or s.get("annualOrdinarySharesNumber")
+    eq = s.get("quarterlyStockholdersEquity") or s.get("annualStockholdersEquity")
+    tn, an = s.get("trailingNetIncome"), s.get("annualNetIncome")
+    ni, basis = (tn, "4Q") if tn and (not an or tn[1] >= an[1]) else (an, "연간")  # 최근 4개 분기 합이 없거나 연간보다 오래되면 연간
+    if not price or not shares or not eq:
+        raise RuntimeError("주가·주식 수·자본 중 없음")
+    if eq[1] < (NOW - timedelta(days=400)).strftime("%Y-%m-%d"):  # 상장폐지·인수 등으로 재무가 끊긴 종목
+        raise RuntimeError(f"자본이 오래됨({eq[1]})")
+    if ni and (datetime.fromisoformat(eq[1]) - datetime.fromisoformat(ni[1])).days > 300:  # 순이익만 오래된 경우 ROE·P/E를 비운다
+        ni = None
+    return {"name_y": meta.get("longName") or meta.get("shortName"), "price": price, "pccy": pccy, "price_date": pts[-1][0] if pts else None,
+            "mcap": price * shares[0], "equity": eq[0], "eq_asof": eq[1], "fccy": eq[2] or pccy,
+            "ni": ni[0] if ni else None, "ni_asof": ni[1] if ni else None, "ni_basis": basis if ni else None}
+
+
+def valuation_world():
+    prev = load("valuation.json", {"markets": {}})
+    old = {f"{m}:{r['symbol']}": r for m, mv in prev.get("markets", {}).items() for r in mv.get("rows", []) if r.get("symbol")}
+    land = load("landscape.json", {"markets": {}}).get("markets", {})
+    errors, raw = [], {}
+    for mid, nm, grp, lst in VAL_MARKETS:
+        if lst is None:
+            continue
+        for name, sym, note in lst:
+            try:
+                raw[(mid, sym)] = (name, note, world_val(sym))
+            except Exception as e:
+                errors.append(f"{mid} {sym}: {short(e, 90)}")
+            time.sleep(0.25)
+    try:
+        fx = fx_now({v["pccy"] for _, _, v in raw.values()} | {v["fccy"] for _, _, v in raw.values()})
+    except Exception as e:
+        print("valuation: 환율 실패, 이전 파일 유지", e)
+        return
+    markets = {}
+    for mid, nm, grp, lst in VAL_MARKETS:
+        rows = []
+        if lst is None:  # 베트남: landscape.json 의 VNDirect 상장사 값을 그대로
+            for r in land.get("vn", {}).get("rows", []):
+                if r.get("kind") != "local" or not r.get("mcap_krw"):
+                    continue
+                eq_krw = r.get("q_equity_krw") or None
+                rows.append({"name": r["name"], "symbol": r["ticker"], "note": r.get("note", ""), "mcap_krw": r["mcap_krw"],
+                             "equity_krw": eq_krw, "pb": round(r["mcap_krw"] / eq_krw, 2) if eq_krw and eq_krw > 0 else r.get("pb"), "roe": r.get("roe_ttm") if r.get("roe_ttm") is not None else r.get("roe"),
+                             "roe_basis": "4Q" if r.get("roe_ttm") is not None else "연간", "pe": r.get("pe"),
+                             "eq_asof": r.get("q_date"), "ni_asof": r.get("ttm_asof") or r.get("asof"), "price_date": r.get("price_date"),
+                             "ccy": "VND", "url": r.get("url"), "stale": False})
+        else:
+            cut = (NOW - timedelta(days=400)).strftime("%Y-%m-%d")
+            for name, sym, note in lst:
+                got = raw.get((mid, sym))
+                pr = fr = None
+                if got:
+                    v = got[2]
+                    pr, fr = fx.get(v["pccy"]), fx.get(v["fccy"])
+                    if not pr or not fr:
+                        errors.append(f"{mid} {sym}: 환율 없음({v['pccy']}/{v['fccy']})")
+                if not pr or not fr:  # 이번에 못 받으면 이전 값(자본 기준일이 400일 안인 것만)
+                    o = old.get(f"{mid}:{sym}")
+                    if o and (o.get("eq_asof") or "") >= cut:
+                        rows.append({**o, "stale": True})
+                    continue
+                mcap, eqk = v["mcap"] * pr / 1e8, v["equity"] * fr / 1e8
+                nik = v["ni"] * fr / 1e8 if v["ni"] is not None else None
+                rows.append({"name": name, "name_y": v["name_y"], "symbol": sym, "note": note, "mcap_krw": mcap, "equity_krw": eqk,
+                             "pb": round(mcap / eqk, 2) if eqk > 0 else None,
+                             "roe": round(nik / eqk * 100, 1) if nik is not None and eqk > 0 else None, "roe_basis": v["ni_basis"],
+                             "pe": round(mcap / nik, 1) if nik and nik > 0 else None,
+                             "eq_asof": v["eq_asof"], "ni_asof": v["ni_asof"], "price_date": v["price_date"], "ccy": v["pccy"],
+                             "fccy": v["fccy"], "url": f"https://finance.yahoo.com/quote/{sym}/", "stale": False})
+        rows.sort(key=lambda x: -(x["mcap_krw"] or 0))
+        med = lambda k, pos=False: (round(statistics.median(v), 2) if (v := [x[k] for x in rows if x.get(k) is not None and (x[k] > 0 or not pos)]) else None)
+        markets[mid] = {"name": nm, "group": grp, "n": len(rows), "mcap_krw": sum(x["mcap_krw"] or 0 for x in rows),
+                        "median_pb": med("pb", True), "median_roe": med("roe"), "median_pe": med("pe", True),
+                        "eq_asof": max((x["eq_asof"] for x in rows if x.get("eq_asof")), default=None),
+                        "price_date": max((x["price_date"] for x in rows if x.get("price_date")), default=None), "rows": rows}
+    if not any(m["rows"] for m in markets.values()):
+        print("valuation: 결과 없음, 이전 파일 유지")
+        return
+    save("valuation.json", {"updated_at": NOW.isoformat(timespec="seconds"), "fx": fx, "markets": markets, "errors": errors,
+                            "source": {"label": "Yahoo Finance(주가·주식 수·각 사 공시 재무), 베트남은 VNDirect", "url": "https://finance.yahoo.com/"},
+                            "method": "P/B = 시가총액(최근 종가 × 발행주식 수) ÷ 최근 분기 자기자본, ROE·P/E = 최근 4개 분기 순이익 기준(없으면 최근 연간), 원화 환산은 최근 환율"})
+    for mid, m in markets.items():
+        print(f"valuation {mid}: {m['n']}곳 P/B {m['median_pb']} ROE {m['median_roe']} P/E {m['median_pe']} 시총 {round(m['mcap_krw'] / 1e4)}조원")
+        for r in m["rows"]:
+            print("   ", r["symbol"], "|", r["name"][:28], "|", (r.get("name_y") or "")[:40], "|", r.get("ccy"), r.get("fccy"), "|",
+                  round(r["mcap_krw"]), r.get("equity_krw") and round(r["equity_krw"]), r.get("pb"), r.get("roe"), r.get("roe_basis"), r.get("pe"),
+                  r.get("eq_asof"), r.get("ni_asof"), "STALE" if r.get("stale") else "")
     for e in errors:
         print("  !", e)
 
@@ -515,8 +787,8 @@ def idx_share():
 
 
 def main():
-    jobs = sys.argv[1:] or ["country", "landscape", "idx"]
-    for name, fn in (("country", country), ("landscape", landscape), ("idx", idx_share)):
+    jobs = sys.argv[1:] or ["country", "landscape", "valuation", "idx"]
+    for name, fn in (("country", country), ("landscape", landscape), ("valuation", valuation_world), ("idx", idx_share)):
         if name in jobs:
             try:
                 fn()
