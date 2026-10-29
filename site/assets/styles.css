@@ -189,14 +189,14 @@ table.data tr.is-off td { color: var(--muted); }
   padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: #0c1630; box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
   color: var(--text-2); font-size: 12px; font-weight: 400; line-height: 1.55; white-space: normal; text-align: left; user-select: none; }
 /* 마우스로 이름에서 말풍선으로 옮길 때(곧게든 비스듬히든) 닫히지 않게 이름과 말풍선 사이 빈 곳을 이름으로 친다:
-   이름 글자 바로 아래 1~2px 틈은 아래 여백(배치는 그대로, 이름 칸 overflow: hidden에서 잘림)으로, 글자 왼쪽·오른쪽의 이름 줄 아랫부분에서
-   말풍선 끝까지는 마우스가 올라가 있는 동안만 투명한 띠(폭은 initTips가 잼, 글자는 덮지 않아 글자 선택은 그대로)로 메운다.
+   이름 글자 바로 아래 1~2px 틈은 아래 여백(배치는 그대로, 이름 칸 overflow: hidden에서 잘림)으로, 글자 왼쪽·오른쪽의 이름 줄에서
+   말풍선 끝까지(자기 카드 안) 마우스가 올라가 있는 동안만 투명한 띠(폭은 initTips가 잼, 글자는 덮지 않아 글자 선택은 그대로)로 메운다.
    위치는 .kpi 기준(안쪽 여백 10px + 이름 줄 17.4px, 말풍선 top: 27px). 말풍선 윗변의 둥근 모서리도 말풍선으로 친다.
    휴대폰은 누르면 열리니 쓰지 않는다(넣으면 누른 자리 보정이 말풍선 쪽으로 끌려간다).
    마우스를 올린 말풍선은 키보드로 연 다른 말풍선보다 위에 그린다(고정 머리글 z-index 10보다는 아래) */
 @media (hover: hover) {
   .kpi .tip__t { padding-bottom: 4px; }
-  .kpi .tip:hover .tip__t::before, .kpi .tip:hover .tip__t::after { content: ""; position: absolute; top: 20px; height: 8px; }
+  .kpi .tip:hover .tip__t::before, .kpi .tip:hover .tip__t::after { content: ""; position: absolute; top: 10px; height: 18px; }
   .kpi .tip:hover .tip__t::before { left: var(--tip-l1, 0); width: var(--tip-w1, 0); }
   .kpi .tip:hover .tip__t::after { left: var(--tip-l2, 0); width: var(--tip-w2, 0); }
   .tip__box::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 9px; }

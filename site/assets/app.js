@@ -1420,8 +1420,8 @@
       t.classList.toggle("tip--r", r);
       const bl = r ? pr - w : pl, br = bl + w, tx = t.querySelector(".tip__t").getBoundingClientRect();
       const set = (n, l, rr) => { t.style.setProperty(`--tip-l${n}`, `${l - pl}px`); t.style.setProperty(`--tip-w${n}`, `${Math.max(0, rr - l)}px`); };
-      set(1, bl, Math.min(tx.left, br));
-      set(2, Math.max(tx.right, bl), br);
+      set(1, Math.max(bl, pl), Math.min(tx.left, br)); // 띠는 자기 카드 안에만(옆 카드 이름을 덮으면 그 카드 설명이 안 뜬다)
+      set(2, Math.max(tx.right, bl), Math.min(br, pr));
     };
     const enter = (ev) => {
       const t = ev.target.closest?.(".tip");
