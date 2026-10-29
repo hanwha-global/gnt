@@ -179,14 +179,17 @@ table.data tr.is-off td { color: var(--muted); }
 .tip { border-radius: 3px; cursor: default; }
 .tip:focus-visible { outline: 1px solid var(--accent); outline-offset: -1px; }
 .tip-i { display: inline-grid; place-items: center; width: 11px; height: 11px; margin-left: 3px; vertical-align: 2px; border: 1px solid currentColor; border-radius: 50%;
-  font: italic 700 8px/1 Georgia, "Times New Roman", serif; color: var(--muted); }
+  font: italic 700 8px/1 Georgia, "Times New Roman", serif; color: var(--muted); user-select: none; }
+.tip-i::before { content: "i"; } /* 글자를 CSS로 그려 복사할 때 'i'가 붙지 않게 */
 /* 카드 이름 칸은 좁아서 ⓘ를 카드 오른쪽 가운데(숫자 줄의 빈 자리)에 둔다: 이름 폭을 줄이지 않는다 */
 .kpi { position: relative; }
 .kpi .tip-i { position: absolute; top: 50%; right: 10px; margin: 0; transform: translateY(-50%); }
 .tip:focus-visible .tip-i { color: var(--accent-ink); }
 .tip__box { display: none; position: absolute; z-index: 9; top: 27px; left: 0; width: max-content; max-width: min(340px, calc(100vw - 32px));
   padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: #0c1630; box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
-  color: var(--text-2); font-size: 12px; font-weight: 400; line-height: 1.55; white-space: normal; text-align: left; }
+  color: var(--text-2); font-size: 12px; font-weight: 400; line-height: 1.55; white-space: normal; text-align: left; user-select: none; }
+/* 이름 글자와 말풍선 사이 1~2px 틈을 메워, 마우스를 천천히 내려도 닫히지 않게 */
+.tip__box::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 6px; }
 .tip__box b { display: block; margin-bottom: 2px; color: var(--accent-ink); font-weight: 600; }
 .tip--r .tip__box { left: auto; right: 0; }
 .tip:focus-visible .tip__box { display: block; }
