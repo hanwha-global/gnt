@@ -26,8 +26,9 @@
   },
   "https://hethongphapluat.com/nghi-dinh-155-2020-nd-cp-huong-dan-luat-chung-khoan/dieu-175": {
    "kind": "가변",
-   "checked": "2026-10-30",
-   "changed_at": "2026-10-21"
+   "checked": "2026-10-31",
+   "changed_at": "2026-10-21",
+   "v": 3
   },
   "https://www.cnnindonesia.com/ekonomi/20220915173722-532-848425/jokowi-rilis-aturan-pembatasan-kepemilikan-asing-di-perusahaan-efek-ri": {
    "kind": "링크",
@@ -51,8 +52,9 @@
   },
   "https://www.mas.gov.sg/regulation/capital-markets/apply-for-licensing-or-registration-of-capital-market-entities/cms-licence": {
    "kind": "가변",
-   "checked": "2026-10-30",
-   "changed_at": "2026-10-21"
+   "checked": "2026-10-31",
+   "changed_at": "2026-10-21",
+   "v": 3
   },
   "https://sso.agc.gov.sg/SL/SFA2001-RG13": {
    "kind": "원문",
@@ -60,8 +62,9 @@
   },
   "https://www.mas.gov.sg/regulation/forms-and-templates/application-for-approval-to-obtain-effective-control-of-holder-of-cms-licence-under-the-sfa": {
    "kind": "가변",
-   "checked": "2026-10-30",
-   "changed_at": "2026-10-21"
+   "checked": "2026-10-31",
+   "changed_at": "2026-10-21",
+   "v": 3
   },
   "https://taxsummaries.pwc.com/singapore/corporate/withholding-taxes": {
    "kind": "링크",
@@ -236,9 +239,9 @@
   },
   "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12179": {
    "kind": "가변",
-   "checked": "2026-10-30",
+   "checked": "2026-10-31",
    "changed_at": "2026-10-21",
-   "v": 2
+   "v": 3
   },
   "https://thelegalschool.in/blog/section-149-3-companies-act-2013": {
    "kind": "링크",
@@ -355,7 +358,7 @@
   },
   "https://law.krx.co.kr": {
    "kind": "링크",
-   "err": "<urlopen error timed out>"
+   "err": "The read operation timed out"
   },
   "https://www.fsc.go.kr/no010101/81353": {
    "kind": "링크",
@@ -416,32 +419,38 @@
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1210": {
    "kind": "원문",
-   "err": "HTTP 429: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
+   "sig": "amend:7ff6af62dec63270",
+   "v": 3,
+   "checked": "2026-10-31"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/1220": {
    "kind": "원문",
-   "err": "HTTP 429: 속도 제한(이번 점검 건너뜀)"
+   "sig": "amend:9cede9b3b472cd11",
+   "v": 3,
+   "checked": "2026-10-31"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3310": {
    "kind": "원문",
-   "err": "HTTP 429: 속도 제한(이번 점검 건너뜀)"
+   "sig": "amend:6c19494dca3d63fb",
+   "v": 3,
+   "checked": "2026-10-31"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4311": {
    "kind": "원문",
-   "err": "HTTP 429: 속도 제한(이번 점검 건너뜀)"
+   "sig": "amend:35cb52a22054d6f4",
+   "v": 3,
+   "checked": "2026-10-31"
   },
   "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4360": {
    "kind": "원문",
-   "err": "HTTP 429: 속도 제한(이번 점검 건너뜀)"
+   "sig": "amend:ee6cb084efb833ad",
+   "v": 3,
+   "checked": "2026-10-31"
   },
   "https://www.finra.org/registration-exams-ce/qualification-exams": {
    "kind": "원문",
    "sig": "163cb21a53ae0099",
    "v": 3,
-   "checked": "2026-10-29"
-  },
-  "https://brokercheck.finra.org/": {
-   "kind": "링크",
    "checked": "2026-10-29"
   },
   "https://www.ecfr.gov/current/title-17/section-240.17a-11": {
@@ -529,6 +538,50 @@
   "https://www.mt.co.kr/stock/2026/09/29/2026092808595538114": {
    "kind": "링크",
    "checked": "2026-10-29"
+  },
+  "https://www.businesswire.com/news/home/20241120895986/en/South-Koreas-Hanwha-Life-to-Acquire-Majority-Stake-in-U.S.-Based-Velocity-Clearing-Allowing-Both-Companies-to-Target-Global-Markets": {
+   "kind": "링크",
+   "err": "The read operation timed out"
+  },
+  "https://www.hankyung.com/article/2024112042891": {
+   "kind": "링크",
+   "err": "HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content"
+  },
+  "https://www.sedaily.com/article/14055138": {
+   "kind": "링크",
+   "checked": "2026-10-31"
+  },
+  "https://news.bizwatch.co.kr/article/finance/2024/11/20/0005": {
+   "kind": "링크",
+   "checked": "2026-10-31"
+  },
+  "https://www.businesswire.com/news/home/20250731488709/en/Hanwha-Life-Completes-Acquisition-of-U.S.-Based-Velocity-Clearing-LLC-Becoming-the-First-Korean-Insurer-to-Signal-a-Bold-Expansion-into-North-American-Capital-Markets": {
+   "kind": "링크",
+   "err": "The read operation timed out"
+  },
+  "https://www.businesswire.com/news/home/20241212294295/en/Velocity-Clearing-Takes-Leading-Role-in-Strategic-Alliance-with-Avenue-Securities-LLC": {
+   "kind": "링크",
+   "err": "The read operation timed out"
+  },
+  "https://www.businesswire.com/news/home/20250923145998/en/Avenue-Securities-and-Velocity-Clearing-Partner-to-Deliver-UCITS-ETF-Execution-Clearing-and-Custody-for-Retail-Investors": {
+   "kind": "링크",
+   "err": "The read operation timed out"
+  },
+  "https://www.sec.gov/Archives/edgar/data/1225460/000122546025000001/public24.pdf": {
+   "sig": "09377edb52002060",
+   "v": 3,
+   "kind": "원문",
+   "checked": "2026-10-31"
+  },
+  "https://www.sec.gov/Archives/edgar/data/1225460/000122546026000003/public25.pdf": {
+   "sig": "5ed0abcbc9f7443a",
+   "v": 3,
+   "kind": "원문",
+   "checked": "2026-10-31"
+  },
+  "https://www.velocityclearingllc.com/who-we-are/": {
+   "kind": "링크",
+   "checked": "2026-10-31"
   }
  },
  "laws": {
