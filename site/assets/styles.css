@@ -185,15 +185,25 @@ table.data tr.is-off td { color: var(--muted); }
 .kpi { position: relative; }
 .kpi .tip-i { position: absolute; top: 50%; right: 10px; margin: 0; transform: translateY(-50%); }
 .tip:focus-visible .tip-i { color: var(--accent-ink); }
-.tip__box { display: none; position: absolute; z-index: 9; top: 27px; left: 0; width: max-content; max-width: min(340px, calc(100vw - 32px));
+.tip__box { display: none; position: absolute; z-index: 8; top: 27px; left: 0; width: max-content; max-width: min(340px, calc(var(--tip-cw, 100vw) - 32px));
   padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: #0c1630; box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
   color: var(--text-2); font-size: 12px; font-weight: 400; line-height: 1.55; white-space: normal; text-align: left; user-select: none; }
-/* 마우스로 이름에서 말풍선으로 천천히 내려도 닫히지 않게: 이름 글자 아래 1~2px 틈(줄 간격)은 이름으로, 말풍선 윗변의 둥근 모서리는
-   말풍선으로 친다. 아래 여백은 배치를 바꾸지 않고 이름 칸(overflow: hidden) 밑에서 잘린다. 휴대폰은 누르면 열리니 필요 없고,
-   넣으면 누른 자리 보정 때문에 이름 아랫부분을 눌러도 말풍선이 눌린 것으로 쳐진다 */
+/* 마우스로 이름이나 ⓘ에서 말풍선으로 옮길 때(곧게든 비스듬히든) 닫히지 않게 그 사이 빈 곳을 이름으로 친다:
+   이름 글자 바로 아래 1~2px 틈은 아래 여백(배치는 그대로, 이름 칸 overflow: hidden에서 잘림)으로, 글자 왼쪽·오른쪽의 이름 줄과
+   (말풍선이 ⓘ에 못 미치면) 말풍선 오른쪽 끝에서 카드 끝까지, (오른쪽 맞춤 말풍선이 이름 첫 글자보다 오른쪽에서 시작하면) 그 왼쪽 틈의 이름 줄 아래는 마우스가 올라가 있는 동안만 투명한 띠(자기 카드 안,
+   크기는 initTips가 잼, 이름 글자는 덮지 않아 글자 선택은 그대로)로 메운다. 닫아 둔 동안(tip--x)은 띠도 없앤다(ⓘ나 이름으로 다시 올리면 열리게).
+   위치는 .kpi 기준(안쪽 여백 10px + 이름 줄 17.4px, 말풍선 top: 27px). 말풍선 윗변의 둥근 모서리도 말풍선으로 친다.
+   휴대폰은 누르면 열리니 쓰지 않는다(넣으면 누른 자리 보정이 말풍선 쪽으로 끌려간다).
+   마우스를 올린 말풍선은 키보드로 연 다른 말풍선보다 위에 그린다(고정 머리글 z-index 10보다는 아래) */
 @media (hover: hover) {
   .kpi .tip__t { padding-bottom: 4px; }
+  .kpi .tip:hover:not(.tip--x) .tip__t::before, .kpi .tip:hover:not(.tip--x) .tip__t::after { content: ""; position: absolute; top: 10px; height: 18px; }
+  .kpi .tip:hover:not(.tip--x) .tip__t::before { left: var(--tip-l1, 0); width: var(--tip-w1, 0); }
+  .kpi .tip:hover:not(.tip--x) .tip__t::after { left: var(--tip-l2, 0); width: var(--tip-w2, 0); }
+  .kpi .tip:hover:not(.tip--x)::after { content: ""; position: absolute; top: 27px; left: var(--tip-l3, 0); width: var(--tip-w3, 0); height: var(--tip-h3, 0); }
+  .kpi .tip:hover:not(.tip--x)::before { content: ""; position: absolute; top: 27px; left: var(--tip-l4, 0); width: var(--tip-w4, 0); height: var(--tip-h4, 0); }
   .tip__box::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 9px; }
+  .tip:hover .tip__box { z-index: 9; }
 }
 .tip__box b { display: block; margin-bottom: 2px; color: var(--accent-ink); font-weight: 600; }
 .tip--r .tip__box { left: auto; right: 0; }
