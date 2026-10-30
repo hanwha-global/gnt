@@ -1,6 +1,6 @@
 """Velocity Clearing 손익·출자: 한화생명(088350) DART 정기보고서에서 미국 법인 행을 읽는다(LLM 미사용).
 
-- 연결재무제표 주석 '종속기업 요약재무정보': 한화생명 미국 중간지주(HLI US Inv, LLC)·Nexus Clearing·VCT Holdings·Velocity
+- 연결재무제표 주석 '종속기업 요약재무정보': 한화생명 미국 중간 법인(HLI US Inv, LLC)·Nexus Clearing·VCT Holdings·Velocity
   행의 자산·부채·영업수익·당기순손익(백만원, 그 보고서 기간 누적). 인수 완료(2025-07-30) 뒤 정기보고서(2025년 3분기부터)마다
   저장하고, 이미 읽은 보고서(접수번호)는 다시 받지 않는다. 원문은 받았는데 표가 없던 보고서는 skip에 적어 다시 받지 않는다.
 - 같은 주석의 종속기업 현황 표: 지분율.
@@ -310,6 +310,7 @@ def collect(prev, errors):
     key = get_key("DART_API_KEY")
     if not key:
         print("DART_API_KEY 없음: 한화생명 공시(손익·출자)는 이전 값")
+        errors.append("DART_API_KEY 없음: 한화생명 공시는 이전 값")
         return prev
     try:
         code = P.get("corp_code") or corp_code(key)
@@ -349,21 +350,16 @@ def collect(prev, errors):
             errors.append(f"DART {r['name']}: 종속기업 요약재무정보에 미국 법인 행 없음")
             if old:
                 periods.append(old)
-    # 타법인 출자현황: 최신 보고서부터, 직전에 읽은 보고서보다 오래된 것은 받지 않는다
+    # 타법인 출자현황: 기간이 가장 최근인 보고서(같은 기간은 최근 정정본, periodic이 고름) 하나만. 접수 순서로 고르면
+    # 옛 기간의 늦은 정정본이 새 기간 값을 덮는다. 이미 읽은 보고서면 받지 않고, 아직 행이 없으면 이전 값을 두고 다음 날 다시
     inv = P.get("invest")
-    floor = (inv or {}).get("report", {}).get("rcept_no", "")
-    for r in sorted(reps, key=lambda r: r["rcept_no"], reverse=True):
-        if r["rcept_no"] < floor:
-            break
-        if inv and r["rcept_no"] == floor:
-            break  # 이미 읽은 보고서
+    last = reps[-1] if reps else None
+    if last and (inv or {}).get("report", {}).get("rcept_no") != last["rcept_no"]:
         try:
-            rows, unit = invest_rows(api("otrCprInvstmntSttus.json", key, corp_code=code, bsns_year=r["year"], reprt_code=REPRT[r["period"]]))
+            rows, unit = invest_rows(api("otrCprInvstmntSttus.json", key, corp_code=code, bsns_year=last["year"], reprt_code=REPRT[last["period"]]))
+            if rows:
+                inv = {"report": report_info(last), "label": label(last["year"], last["period"]), "unit_raw": unit, "rows": rows}
         except Exception as e:  # noqa: BLE001
-            errors.append(f"DART 타법인 출자현황 {r['name']}: {e}")
-            break
-        if rows:
-            inv = {"report": report_info(r), "label": label(r["year"], r["period"]), "unit_raw": unit, "rows": rows}
-            break
+            errors.append(f"DART 타법인 출자현황 {last['name']}: {e}")
     return {"corp_code": code, "checked": today.isoformat(), "unit": "백만원",
             "periods": periods or P.get("periods", []), "skip": sorted(skip), "invest": inv}

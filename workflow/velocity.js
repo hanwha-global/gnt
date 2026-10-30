@@ -57,6 +57,9 @@
     const bookP = [...P].reverse().find((p) => p.book?.book != null) || null; // 별도 주석 장부금액이 있는 가장 최근 기간
     return { P, k, row: (p) => (k ? p?.subs?.[k] : null), bookP };
   }
+  // 인수 완료(2025-07-30) 이전 달이 섞인 기간(2025년 누적)은 '한화생명 몫'을 계산하지 않는다
+  const ACQ = "2025-07-30";
+  const ownedAll = (p) => !!p && `${p.year}-01-01` >= ACQ;
   // ROE(연환산) = 누적 순이익 × 12 / 개월 수 ÷ 기말 자본
   const roeOf = (s, p) => (s?.ni != null && s?.equity > 0 ? (s.ni * 12 / p.months / s.equity) * 100 : null);
   // 소유 구조 지분율: 사람이 적은 값(감사보고서·BrokerCheck), 없으면 한화생명 공시(출자현황 → 종속기업 현황)
@@ -95,21 +98,24 @@
     const st = Object.values(bc.disc_status || {}), open = st.reduce((a, x) => a + (x.pending || 0) + (x.appeal || 0), 0);
     const L = (M.licenses || []).find((r) => r.auto === "disc")?.latest;
     const nc = cur?.net_capital != null ? cur : last;
-    const bk = ctx.book;
+    const bk = ctx.book, share = s?.ni != null && eff != null && ownedAll(dl);
+    // 장부가 변동: 저장된 가장 이른 공시(인수 뒤 첫 보고서)와 비교
+    const b0 = D.P.find((p) => p.book?.book != null);
     const k = [
       { t: "한화생명 실효 지분", v: eff != null ? `${num(eff, eff % 1 ? 1 : 0)}%` : "—", d: "Nexus Clearing 지분 인수 · 2025.07.30 완료", src: ["v_done"] },
       { t: "출자 장부가", v: bk ? `${num(eok(bk.book))}억원` : "—",
-        d: bk ? `${D.bookP.label} 한화생명 별도 · ${bk.prev_book != null && bk.prev_book !== bk.book ? `전기말 ${num(eok(bk.prev_book))}억원` : "취득 후 변동 없음"}` : "한화생명 공시(DART) 수집 전" },
+        d: bk ? `${D.bookP.label} 한화생명 별도 · ${b0 && b0 !== D.bookP ? (b0.book.book === bk.book ? `${b0.label} 이후 변동 없음` : `${b0.label} ${num(eok(b0.book.book))}억원`) : "첫 공시"}` : "한화생명 공시(DART) 수집 전" },
       { t: "순이익", v: s?.ni != null ? `${num(eok(s.ni))}억원` : "—",
-        d: s ? `${dl.label} 누적${eff != null ? ` · 한화생명 몫 ${num(eok(s.ni * eff / 100))}억원` : ""}` : "한화생명 공시(DART) 수집 전", neg: s?.ni < 0 },
+        d: s ? `${dl.label} 누적${share ? ` · 한화생명 몫 ${num(eok(s.ni * eff / 100))}억원` : ""}` : "한화생명 공시(DART) 수집 전", neg: s?.ni < 0 },
       { t: "ROE(연환산)", v: ctx.vRoeLatest != null ? `${num(ctx.vRoeLatest, 1)}%` : "—",
         d: ctx.vRoeLatest != null ? `${dl.label} · 상장사 중앙값 ${R?.medRoe != null ? `${num(R.medRoe, 1)}%` : "—"}` : "한화생명 공시(DART) 수집 전" },
       { t: "자본(회원 지분)", v: usd(cur?.equity), d: it ? `${ym(it.period)} ${audLab(it)} · ${yr(last.period)} ${usd(last.equity)}` : last ? `${yr(last.period)} 감사` : "" },
-      { t: "순자본(15c3-1)", v: usd(nc?.net_capital), d: nc?.required ? `최소 요건 ${usd(nc.required)}의 ${num(nc.net_capital / nc.required, 1)}배` : "" },
+      { t: "순자본(15c3-1)", v: usd(nc?.net_capital),
+        d: nc ? `${nc === it ? `${ym(it.period)} ${audLab(it)}` : `${yr(nc.period)} 감사`}${nc.required ? ` · 요건 ${usd(nc.required)}의 ${num(nc.net_capital / nc.required, 1)}배` : ""}` : "" },
       { t: "상장 브로커리지 대비", v: R ? (R.roe ? `ROE ${R.roe}위 / ${R.nRoe}` : `자본 ${R.eq}위 / ${R.n}`) : "—",
         d: R ? `${R.roe ? `자본 ${R.eq}위 · ` : ""}총자산 ${R.as}위 · ${fmt(R.date)}` : "상장사 값은 다음 자동 수집 때" },
       { t: "규제 공시", v: disc ? `${disc}건${st.length ? (open ? ` · 진행 ${open}` : " 종결") : ""}` : "—",
-        d: bc.disc_latest && L && bc.disc_latest > L.d ? `가장 최근 ${fmt(bc.disc_latest)} 개시` : L ? `최근 ${fmt(L.d)} 합의(벌금 $1.0m)` : "", src: ["v_bcpdf"] },
+        d: bc.disc_latest && L && bc.disc_latest > L.d ? `가장 최근 ${fmt(bc.disc_latest)} 개시` : L ? `최근 ${fmt(L.d)}${L.s ? ` ${L.s}` : ""}` : "", src: ["v_bcpdf"] },
     ];
     $("#kpis").innerHTML = k.map((x) => `<div class="kpi"><span>${esc(x.t)}${refs(x.src)}</span><b${x.neg ? ' class="neg"' : ""}>${esc(x.v)}</b><small>${esc(x.d)}</small></div>`).join("");
   }
@@ -126,12 +132,13 @@
     $("#tm-inv").innerHTML = tmeta(bP ? `${bP.label} ${bP.report.name.replace(/\s*\(.*\)$/, "")}(${ymd(bP.report.rcept_dt)} 공시)` : "DART", "억원 · %");
     const rows = [];
     if (bk) rows.push(`<tr><td class="k">출자 장부가</td><td class="n"><b>${num(eok(bk.book))}</b></td><td><a href="${esc(bP.report.url)}" target="_blank" rel="noopener">${esc(bk.name)}</a> · 한화생명 별도재무제표 주석 종속기업투자${bk.stake != null ? ` · 지분 ${num(bk.stake, bk.stake % 1 ? 1 : 0)}%` : ""}${bk.prev_book != null ? ` · 전기말 ${num(eok(bk.prev_book))}` : ""}</td></tr>`);
-    if (s?.ni != null && eff != null) rows.push(`<tr><td class="k">한화생명 몫 순이익</td><td class="n"><b>${sign(eok(s.ni * eff / 100))}</b></td><td>${esc(dl.label)} 누적 · Velocity 순이익 ${num(eok(s.ni))} × 실효 지분 ${num(eff, eff % 1 ? 1 : 0)}%(사업결합 공정가치 조정 전)</td></tr>`);
-    if (bk && s?.ni != null && eff != null) rows.push(`<tr><td class="k">출자 대비 수익률</td><td class="n">${sign((s.ni * eff / 100) * 12 / dl.months / bk.book * 100, 1)}%</td><td>연환산: 한화생명 몫 순이익 × 12/${dl.months} ÷ 출자 장부가(배당 아님)</td></tr>`);
+    const share = s?.ni != null && eff != null && ownedAll(dl);
+    if (share) rows.push(`<tr><td class="k">한화생명 몫 순이익</td><td class="n"><b>${sign(eok(s.ni * eff / 100))}</b></td><td>${esc(dl.label)} 누적 · Velocity 순이익 ${num(eok(s.ni))} × 실효 지분 ${num(eff, eff % 1 ? 1 : 0)}%(사업결합 공정가치 조정 전)</td></tr>`);
+    if (bk && share) rows.push(`<tr><td class="k">출자 대비 수익률</td><td class="n">${sign((s.ni * eff / 100) * 12 / dl.months / bk.book * 100, 1)}%</td><td>연환산: 한화생명 몫 순이익 × 12/${dl.months} ÷ 출자 장부가(배당 아님)</td></tr>`);
     $("#inv").innerHTML = rows.length ? `<table><tbody>${rows.join("")}</tbody></table>`
       : '<p class="empty">한화생명 별도재무제표 주석(DART)의 출자 장부가는 다음 자동 수집 때 채워집니다.</p>';
-    // 같은 보고서 '타법인 출자현황'과 금액이 다르면 원문 그대로 함께 적는다(1백만원 넘게 차이날 때만)
-    const diff = bk && ir?.end_book != null && Math.abs(ir.end_book - bk.book) > 1;
+    // 같은 보고서 '타법인 출자현황'과 금액이 다르면 원문 그대로 함께 적는다(같은 접수번호, 1백만원 넘게 차이날 때만)
+    const diff = bk && ir?.end_book != null && I?.report?.rcept_no === bP.report.rcept_no && Math.abs(ir.end_book - bk.book) > 1;
     $("#deal").innerHTML = `${M.deal ? `${esc(M.deal.t)}${refs(M.deal.src)}` : ""}${diff
       ? ` <span class="sub2">${esc(I.label)} 보고서 '타법인 출자현황' 표에는 같은 법인 장부가액이 ${num(eok(ir.end_book))}억원${ir.first_date ? `(최초 취득 ${fmt(ir.first_date)})` : ""}으로 적혀 있어 주석과 ${num(eok(Math.abs(bk.book - ir.end_book)))}억원 다르다. 위 표는 감사·검토를 받는 재무제표 주석 값.</span>` : ""}`;
   }
@@ -152,7 +159,9 @@
     const line = (lab, f, bold) => `<tr><td class="k">${lab}</td>${P.map((p) => { const v = f(D.row(p), p); return `<td class="n">${bold ? `<b>${sign(v)}</b>` : sign(v)}</td>`; }).join("")}</tr>`;
     $("#pl").innerHTML = `<table><thead><tr><th>항목</th>${head}</tr></thead><tbody>
       ${line("영업수익", (s) => eok(s.rev))}${line("당기순이익", (s) => eok(s.ni), true)}
-      ${D.k === "vel" && eff != null ? line(`한화생명 몫(${num(eff, eff % 1 ? 1 : 0)}%)`, (s) => (s.ni == null ? null : eok(s.ni * eff / 100))) : ""}
+      ${D.k === "vel" && eff != null ? `<tr><td class="k">한화생명 몫(${num(eff, eff % 1 ? 1 : 0)}%)</td>${P.map((p) => (ownedAll(p)
+        ? `<td class="n">${sign(D.row(p).ni == null ? null : eok(D.row(p).ni * eff / 100))}</td>`
+        : `<td class="n" title="인수(${fmt(ACQ)}) 전 달이 포함된 누적이라 계산하지 않음">—</td>`)).join("")}</tr>` : ""}
       ${line("자본", (s) => eok(s.equity))}${line("자산", (s) => eok(s.assets))}
       <tr><td class="k">ROE(연환산)</td>${P.map((p) => `<td class="n">${sign(roeOf(D.row(p), p), 1)}</td>`).join("")}</tr></tbody></table>`;
     // 분기 순이익: 같은 해 바로 앞 기간 누적과의 차이(1Q는 그대로). 석 달이 아닌 구간(첫 공시 9개월 등)은 막대에서 뺀다
@@ -165,7 +174,8 @@
       return ok ? { lab: `${p.months / 3}Q${p.year.slice(2)}`, v: eok(D.row(p).ni - (before ? D.row(before).ni : 0)), rev } : null;
     }).filter(Boolean).slice(-6);
     $("#plq").innerHTML = q.length > 1 ? qbars(q) : "";
-    $("#plNote").innerHTML = `${esc(M.pl_note || "")}${refs(M.pl_src)}`;
+    const pre = D.k === "vel" && eff != null && P.some((p) => !ownedAll(p));
+    $("#plNote").innerHTML = `${esc(M.pl_note || "")}${refs(M.pl_src)}${pre ? ` 한화생명 몫의 —: ${ACQ.slice(0, 4)}년 누적에는 인수(${fmt(ACQ)}) 전 달이 섞여 있어 계산하지 않음.` : ""}`;
   }
 
   // 분기 순이익 막대(0선 기준 위 양수·아래 음수, 값은 막대 끝). 마우스를 올리면 영업수익도
@@ -213,11 +223,14 @@
     $("#rank").innerHTML = `<thead><tr><th class="n">순위</th><th>회사</th><th class="n">자본</th><th class="n">총자산</th><th class="n">ROE</th></tr></thead>
       <tbody>${R.rows.map((r, i) => `<tr${r.me ? ' class="me"' : ""}><td class="rk">${i + 1}</td><td class="k" title="${esc(r.model || "")}">${esc(r.name)} <small>${esc(r.ticker)}</small></td>
         <td class="n"${odd(r) ? ` title="${esc(r.equity.end)} 기준"` : ""}>${num(mUsd(r.eq), 0)}${odd(r) ? "*" : ""}</td>
-        <td class="n">${r.as == null ? "—" : num(mUsd(r.as), 0)}</td><td class="n"${r.ni?.how ? ` title="${esc(`${r.ni.tag} · ${r.ni.how}`)}"` : ""}>${sign(r.roe, 1)}</td></tr>`).join("")}</tbody>`;
-    const oddRows = R.rows.filter(odd);
-    $("#rankNote").innerHTML = `자본 <b>${R.n}곳 중 ${R.eq}위</b>, 총자산 ${R.nAs}곳 중 ${R.as}위${R.roe ? `, ROE ${R.nRoe}곳 중 ${R.roe}위` : ""}. 상장사는 미국 본사 NYSE·NYSE American·나스닥 상장사 중 증권 중개·청산·시장조성·자산관리 중개가 주업인 ${R.n - 1}곳(자문 전업 IB·거래소·보험 겸업사 제외). ${esc(M.rank_note)} 상장사 ROE는 같은 날로 끝나는 최근 12개월 순이익 ÷ 자본(비지배지분 포함 자본이면 순이익도 포함)${ctx.vRoe != null ? `, Velocity ROE는 ${esc(ctx.dq.label)} 한화생명 공시 연환산` : ""}.${oddRows.length ? ` *는 결산월이 달라 가장 가까운 분기말 값(${oddRows.map((r) => `${esc(r.ticker)} ${fmt(r.equity.end)}`).join(", ")}).` : ""}${refs(M.rank_src)}`;
+        <td class="n">${r.as == null ? "—" : num(mUsd(r.as), 0)}</td><td class="n"${r.ni?.how ? ` title="${esc(`${r.ni.tag} · ${r.ni.how}`)}"` : ""}>${sign(r.roe, 1)}${scopeGap(r) ? "†" : ""}</td></tr>`).join("")}</tbody>`;
+    const oddRows = R.rows.filter(odd), gapRows = R.rows.filter(scopeGap);
+    $("#rankNote").innerHTML = `자본 <b>${R.n}곳 중 ${R.eq}위</b>, 총자산 ${R.nAs}곳 중 ${R.as}위${R.roe ? `, ROE ${R.nRoe}곳 중 ${R.roe}위` : ""}. 상장사는 미국 본사 NYSE·NYSE American·나스닥 상장사 중 증권 중개·청산·시장조성·자산관리 중개가 주업인 ${R.n - 1}곳(자문 전업 IB·거래소·보험 겸업사 제외). ${esc(M.rank_note)} 상장사 ROE는 같은 날로 끝나는 최근 12개월 순이익 ÷ 자본(비지배지분 포함 자본이면 순이익도 비지배지분 포함 값)${ctx.vRoe != null ? `, Velocity ROE는 ${esc(ctx.dq.label)} 한화생명 공시 연환산` : ""}.${gapRows.length ? ` †는 비지배지분 포함 순이익을 공시하지 않아 지배주주 순이익으로 계산(${gapRows.map((r) => esc(r.ticker)).join(", ")}).` : ""}${oddRows.length ? ` *는 결산월이 달라 가장 가까운 분기말 값(${oddRows.map((r) => `${esc(r.ticker)} ${fmt(r.equity.end)}`).join(", ")}).` : ""}${refs(M.rank_src)}`;
     $("#tm-rank").innerHTML = tmeta(`${fmt(d)} · 상장사 SEC XBRL(10-K·10-Q)${R.checked ? ` ${fmt(R.checked)} 수집` : ""}`, "US$ m · %");
   }
+
+  // 자본은 비지배지분 포함인데 순이익은 지배주주 몫(NetIncomeLoss)뿐인 회사
+  const scopeGap = (r) => !r.me && r.ni?.tag === "NetIncomeLoss" && !!r.equity?.tag && r.equity.tag !== "StockholdersEquity";
 
   // ---------- 위치: 규모(자본, 로그 눈금) × 수익성(ROE) 사분면 ----------
   // 가로·세로 가운데 선은 상장사 16곳 중앙값. 오른쪽 위 = 크고 잘 버는 곳(전략 인사이트 탭 지도와 같은 틀)
@@ -257,7 +270,7 @@
     $("#tm-quad").innerHTML = tmeta(`${fmt(R.date)} 자본 · ROE(상장사 최근 12개월${me ? `, Velocity ${ctx.dq.label} 연환산` : ""})`, "가로 US$(로그 눈금) · 세로 %");
     $("#quad").innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" style="display:block" role="img" aria-label="미국 상장 브로커리지 대비 규모와 수익성">${grid}${med}${qn}${dots}${meDot}${labs}</svg>
       <div class="legend"><span><i style="background:var(--muted)"></i>미국 상장 브로커리지 ${peers.length}곳</span><span><i class="dia" style="background:var(--accent)"></i>Velocity</span><span><i style="background:var(--accent);opacity:.45;border-radius:0;height:2px;width:12px;vertical-align:3px"></i>상장사 중앙값(자본 ${usd(mx)} · ROE ${num(my, 1)}%)</span></div>
-      <p class="small">${me ? `Velocity는 <b>${esc(quadName(me, mx, my))}</b> 칸: 자본은 중앙값의 ${num(me.eq / mx, 2)}배, ROE는 중앙값보다 ${num(Math.abs(me.roe - my), 1)}%p ${me.roe >= my ? "높음" : "낮음"}. ` : "Velocity ROE는 재무상태 날짜와 같은 기간의 한화생명 공시가 들어오면 점으로 나옵니다. "}자본은 상장사 그룹 연결(비지배지분 포함)·Velocity 브로커-딜러 단독, ROE는 ${LO}~${HI}% 밖이면 끝에 붙였습니다. 표는 왼쪽 순위 표와 같습니다.</p>`;
+      <p class="small">${me ? `Velocity는 <b>${esc(quadName(me, mx, my))}</b> 칸: 자본은 중앙값의 ${num(me.eq / mx, 2)}배, ROE는 중앙값보다 ${num(Math.abs(me.roe - my), 1)}%p ${me.roe >= my ? "높음" : "낮음"}. ` : "Velocity ROE는 재무상태 날짜와 같은 기간의 한화생명 공시가 들어오면 점으로 나옵니다. "}자본은 상장사 그룹 연결(비지배지분 포함)·Velocity 브로커-딜러 단독, ROE는 ${LO}~${HI}% 밖이면 끝에 붙였습니다. 값은 순위 표와 같습니다.</p>`;
   }
   const quadName = (p, mx, my) => `${p.eq >= mx ? "대형" : "소형"} · ${p.roe >= my ? "고수익" : "저수익"}`;
 
@@ -370,7 +383,11 @@
       const chk = st?.checked ? ` · ${st.kind === "원문" ? "원문 점검" : "링크 확인"} ${fmt(st.checked)}${st.err ? ` · 최근 점검 실패(${failNote(st.err)})` : ""}`
         : st?.err ? ` · 자동 점검 안 됨(${failNote(st.err)})` : "";
       return `<li id="src-${id}"><a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a> <small>${esc(s.d)} · ${esc(host(s.u))}${chk}</small>${rev ? ` <span class="rev">● 개정 감지·검토 필요(${fmt(st.changed_at)})</span>` : ""}</li>`;
-    }).join("") + auto.map((r) => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">한화생명 ${esc(r.name)}</a> <small>${ymd(r.rcept_dt)} 공시 · dart.fss.or.kr · 종속기업 요약재무정보·종속기업투자·타법인 출자현황 자동 수집</small></li>`).join("");
+    }).join("") + auto.map((r) => {
+      const p = ctx.D.P.find((x) => x.report.rcept_no === r.rcept_no);
+      const read = [p ? "종속기업 요약재무정보" : "", p?.book ? "종속기업투자" : "", V?.dart?.invest?.report?.rcept_no === r.rcept_no ? "타법인 출자현황" : ""].filter(Boolean);
+      return `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">한화생명 ${esc(r.name)}</a> <small>${ymd(r.rcept_dt)} 공시 · dart.fss.or.kr · ${read.join("·")} 자동 수집</small></li>`;
+    }).join("");
     $("#srcMeta").textContent = `${ids.length + auto.length}건 · 공식 원문은 반기마다 변경 점검, 기사·발표문은 링크 확인, DART 보고서는 매일 새 공시 확인`;
   }
 
@@ -379,6 +396,7 @@
   let CARDS = [], lastW = 0;
   const GAP = 8, TAIL = 4;
   function layout(force) {
+    if (!CARDS.length) return;
     const host = $("#mason");
     const w = host.clientWidth;
     if (!force && Math.abs(w - lastW) < 2) return;
@@ -423,23 +441,23 @@
   function setParentHash(h) {
     try { if (frame() && window.parent.location.hash.startsWith("#workflow")) window.parent.history.replaceState(null, "", h); } catch (_) { /* 교차 출처 */ }
   }
-  function wire() {
+  // 하위 탭 이동·대시보드 주소·iframe 높이: 데이터를 못 불러와도 동작하게 init 처음에 건다
+  function wireNav() {
     document.addEventListener("click", (e) => {
       const g = e.target.closest("[data-go]");
       if (g) { e.preventDefault(); go(g.dataset.go); return; }
       const b = e.target.closest("[data-to]");
       if (b) setParentHash(b.dataset.to === "index" ? "#workflow" : `#workflow/${b.dataset.to}`);
     });
-    let raf = 0;
-    window.addEventListener("resize", () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(() => layout()); });
-    window.addEventListener("beforeprint", () => layout(true));
-    document.fonts?.ready?.then(() => layout(true));
     const fe = frame();
     if (!fe) return;
     setParentHash("#workflow/velocity");
-    const fit = () => { fe.style.height = `${document.documentElement.scrollHeight + 4}px`; };
+    // 높이는 내용(body) 기준. 문서 높이(scrollHeight)는 iframe보다 작아지지 않아, 더 긴 하위 탭에서 넘어오면 아래가 빈 채로 남는다.
+    // 대시보드가 높이를 다시 정하면(iframe 창 resize) 내용 높이로 되돌린다
+    const fit = () => { fe.style.height = `${Math.ceil(document.body.getBoundingClientRect().height) + 4}px`; };
     fit();
     if ("ResizeObserver" in window) new ResizeObserver(fit).observe(document.body);
+    window.addEventListener("resize", fit);
     // 위쪽 탭 메뉴로 '해외지분투자 Workflow'(#workflow)·단계(#workflow/s10)·미국 진출(#workflow/us)을 고르면 그쪽으로
     const onHash = () => {
       let h = "";
@@ -449,6 +467,12 @@
     window.parent.addEventListener("hashchange", onHash);
     window.addEventListener("pagehide", () => { try { window.parent.removeEventListener("hashchange", onHash); } catch (_) { /* 무시 */ } });
   }
+  function wireLayout() {
+    let raf = 0;
+    window.addEventListener("resize", () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(() => layout()); });
+    window.addEventListener("beforeprint", () => layout(true));
+    document.fonts?.ready?.then(() => layout(true));
+  }
 
   async function load(url, optional) {
     try { const r = await fetch(url, { cache: "no-cache" }); if (!r.ok) throw new Error(r.status); return await r.json(); }
@@ -456,6 +480,7 @@
   }
 
   async function init() {
+    wireNav();
     try {
       [U, V, ST] = await Promise.all([load("data/us_entry.json"), load("data/velocity.json", true), load("../guide/data/source_status.json", true)]);
     } catch (e) {
@@ -475,13 +500,13 @@
     const ctx = { ...b, D, dl, dq, vRoe, vRoeLatest: dl ? roeOf(D.row(dl), dl) : null, R, inv, book: D.bookP?.book || null, eff: effStake() };
     $("#lead").textContent = M.lead;
     const parts = [V?.brokercheck?.checked ? `BrokerCheck ${fmt(V.brokercheck.checked)}` : "", V?.edgar?.checked ? `EDGAR ${fmt(V.edgar.checked)}` : "",
-      dl ? `한화생명 DART ${dl.label}(${ymd(dl.report.rcept_dt)} 공시)` : "", V?.peers?.checked ? `상장사 SEC XBRL ${fmt(V.peers.checked)}` : "", V?.news_checked ? `뉴스 ${fmt(V.news_checked)}` : ""].filter(Boolean);
+      dl ? `한화생명 DART ${dl.label}(${ymd(dl.report.rcept_dt)} 공시${V.dart.checked ? ` · ${fmt(V.dart.checked)} 확인` : ""})` : "", V?.peers?.checked ? `상장사 SEC XBRL ${fmt(V.peers.checked)}` : "", V?.news_checked ? `뉴스 ${fmt(V.news_checked)}` : ""].filter(Boolean);
     $("#meta").innerHTML = `자동 수집 <b>${esc(parts.join(" · ") || "—")}</b> · 설명 원문 검증 <b>${fmt(M.verified_at)}</b> · 미국 측 설립·인수 요건은 <a href="us.html" data-to="us">미국 진출</a>`;
     renderKpis(ctx); renderInvest(ctx); renderPL(ctx); renderBS(ctx); renderRank(ctx); renderQuad(ctx); renderLic(); renderStory(); renderFeed(ctx); renderSources(ids, ctx);
     $("#printBtn").onclick = () => window.print();
     CARDS = [...$("#mason").children];
     layout(true);
-    wire();
+    wireLayout();
   }
   init();
 })();

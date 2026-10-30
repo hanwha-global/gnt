@@ -248,9 +248,11 @@
     const fe = frame();
     if (!fe) return;
     setParentHash("#workflow/us");
-    const fit = () => { fe.style.height = `${document.documentElement.scrollHeight + 4}px`; };
+    // 높이는 내용(body) 기준: 문서 높이(scrollHeight)는 iframe보다 작아지지 않아, 더 긴 하위 탭에서 넘어오면 아래가 빈 채로 남는다
+    const fit = () => { fe.style.height = `${Math.ceil(document.body.getBoundingClientRect().height) + 4}px`; };
     fit();
     if ("ResizeObserver" in window) new ResizeObserver(fit).observe(document.body);
+    window.addEventListener("resize", fit); // 대시보드가 높이를 다시 정하면 내용 높이로 되돌린다
     // 위쪽 탭 메뉴로 '해외지분투자 Workflow'(#workflow)나 단계(#workflow/s10)를 고르면 절차 쪽으로, #workflow/velocity 는 Velocity 탭으로
     const onHash = () => {
       let h = "";

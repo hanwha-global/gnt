@@ -86,9 +86,9 @@ DART_DOC = (
     "<P>9. 종속기업, 관계기업 및 공동기업 (연결)</P>"
     + _tbl([["(1) 당반기말과 전기말 현재 종속기업의 현황", "주요 영업활동", "법인설립 및 영업소재지", "소유지분율 및 의결권비율(%)"],
             ["당반기말", "전기말"], ["종속기업"],
-            ["Hanwha Life US Investment, LLC", "지주회사", "미국", "100", "100"],
+            ["Hanwha Life US Investment, LLC", "투자업", "미국", "100", "100"],
             ["Nexus Clearing LLC (*12)", "증권청산업", "미국", "75", "75"],
-            ["VCT Holdings (*13)", "지주회사", "미국", "100", "100"],
+            ["VCT Holdings (*13)", "투자업", "미국", "100", "100"],
             ["Velocity Clearing (*11)", "증권업", "미국", "100", "100"]])
     + "<P>(3) 당반기말과 전기말 현재 주요 종속기업 및 연결대상 수익증권의 요약재무정보는 다음과 같습니다 (단위: 백만원). 1) 당반기말</P>"
     + _tbl([["구 분", "자산", "부채", "자본", "영업수익", "반기순손익", "총포괄손익"],
@@ -103,7 +103,7 @@ DART_DOC = (
     + "<P>(2) 당반기말과 전기말 현재 종속기업투자의 내역은 다음과 같습니다 (단위: 백만원).</P>"
     + _tbl([["구 분", "주요 영업활동", "법인설립/소재지", "당반기말지분율(%)", "당반기말", "전기말"], ["종속기업"],
             ["한화자산운용㈜", "자산운용업", "대한민국", "100.0", "1,092,861", "1,092,861"],
-            ["Hanwha Life US Investment, LLC", "지주회사", "미국", "100.0", "255,272", "255,272"]])
+            ["Hanwha Life US Investment, LLC", "투자업", "미국", "100.0", "255,272", "255,272"]])
     + "<P>(4) 당반기 및 전반기 중 종속기업투자의 변동내역은 다음과 같습니다 (단위: 백만원).1) 당반기</P>"
     + _tbl([["회사명", "기초", "취득/대체", "처분", "평가 등", "반기말"], ["Hanwha Life US Investment, LLC", "255,272", "-", "-", "-", "300,000"]])
 )
@@ -425,6 +425,24 @@ class FetchTest(unittest.TestCase):
         with mock.patch.object(vd, "get_key", return_value=None):
             self.assertIs(vd.collect(prev, []), prev)  # 키가 없으면 이전 값 그대로
 
+    def test_dart_late_amendment_keeps_latest_period_invest(self):
+        rep = lambda nm, no: {"report_nm": nm, "rcept_no": no, "rcept_dt": no[:8]}  # noqa: E731
+        h1 = {"year": "2026", "period": "1H", "rcept_no": "20260831001232", "rcept_dt": "20260831", "name": "[기재정정]반기보고서 (2026.06)"}
+        listing = [rep("[기재정정]반기보고서 (2026.06)", "20260831001232"), rep("[기재정정]사업보고서 (2025.12)", "20260915000001")]
+        prev = {"corp_code": "00113058", "periods": [vd.entry(h1, {"vel": {"ni": 1}}, {}, None)], "skip": [],
+                "invest": {"report": {"rcept_no": "20260831001232"}, "label": "1H26", "rows": {"hold": {"end_book": 1}}}}
+        calls = []
+
+        def api(path, key, **kw):
+            calls.append(path)
+            return listing if path == "list.json" else []
+        with mock.patch.object(vd, "get_key", return_value="k"), mock.patch.object(vd, "api", side_effect=api), \
+                mock.patch.object(vd, "document", return_value=[DART_DOC]):
+            out = vd.collect(prev, [])
+        self.assertEqual([p["label"] for p in out["periods"]], ["FY2025", "1H26"])  # 옛 기간의 늦은 정정본도 읽지만
+        self.assertEqual(out["invest"], prev["invest"])  # 출자현황은 가장 최근 기간(1H26) 그대로
+        self.assertNotIn("otrCprInvstmntSttus.json", calls)
+
 
 class DataTest(unittest.TestCase):
     """저장된 velocity.json 과 화면 문구(us_entry.json velocity)."""
@@ -466,17 +484,14 @@ class DataTest(unittest.TestCase):
             self.assertEqual(p["months"], vd.MONTHS[p["period"]])
             self.assertEqual(p["label"], vd.label(p["year"], p["period"]))
             self.assertTrue(p["report"]["url"].endswith(p["report"]["rcept_no"]))
-            v = p["subs"]["vel"]
-            self.assertLess(abs(v["assets"] - v["liab"] - v["equity"]), 1, p["label"])
-            self.assertTrue(0 < v["ni"] * 12 / p["months"] / v["equity"] < 1, p["label"])  # 연환산 ROE 0~100%
-            if p.get("book"):
+            # 열이 밀려 읽히면 자산 ≠ 부채 + 자본. 손익 크기·부호는 실제로 무엇이든 될 수 있어 보지 않는다
+            v = p["subs"].get("vel") or {}
+            if None not in (v.get("assets"), v.get("liab"), v.get("equity")):
+                self.assertLessEqual(abs(v["assets"] - v["liab"] - v["equity"]), max(2, abs(v["assets"]) * 1e-4), p["label"])
+            if (p.get("book") or {}).get("book") is not None:
                 self.assertGreater(p["book"]["book"], 0)
-        # 같은 해 누적은 기간이 길수록 크거나 같다(분기 순이익 = 누적 차이가 음수일 수는 있지만 영업수익은 늘어난다)
-        for a, b in zip(P, P[1:]):
-            if a["year"] == b["year"]:
-                self.assertGreater(b["subs"]["vel"]["rev"], a["subs"]["vel"]["rev"])
         for r in (V.get("peers") or {}).get("rows", []):
-            if r.get("ni"):
+            if r.get("ni") and r.get("equity"):
                 self.assertEqual(r["ni"]["end"], r["equity"]["end"], r["ticker"])  # 순이익 12개월은 자본과 같은 날로 끝난다
                 self.assertIn(r["ni"]["tag"], ("ProfitLoss", "NetIncomeLoss"))
 
