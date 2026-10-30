@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29T10:09+09:00",
+ "updated_at": "2026-10-30T10:17+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -160,6 +160,13 @@
   ],
   "미래에셋증권|미국": [
    {
+    "date": "2026-10-29",
+    "title": "미래에셋증권, 日 산코증권 100% 인수… 미국 법인 통해 1000억 투입",
+    "src": "글로벌이코노믹",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYTNGTXRWaXd2OUZMV1NYNGJET2FaaUduR2pBSWRoc2hUTWFpVk82WWtiOGRoR0FxdU9pNGtNOU5qT1hVQUxYb2FRempXMlprb0pYZ3ZJS2laNVlFTGdCMm81NEZhdzY1WVhFS2xZanJBUTVVeC0xWWNnSFRJWnFuUFhOUFVuR1Y4?oc=5",
+    "site": "www.g-enews.com"
+   },
+   {
     "date": "2026-09-17",
     "title": "미래에셋증권, 美 퍼블릭닷컴 인수 검토 중단…\"미국 진출은 계속 모색\"",
     "src": "MTN 머니투데이방송",
@@ -288,9 +295,9 @@
     "src": "investor.id",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHJacC1zUUVxbmVPWUNhUUJUVXNreVVRMnFmVG5nRkx4cDRUTGhOYXZkeTN5MFI1dFItR016UndWTFYwdk1OYU83SzlxZ3lyZ3ZRSXNNdjVsMmtlZS1EbURRTERhVVNPcEhhZkFfY1lraS01VGRhT0VUNWpmY0ljRFMxVmF6YlpaYy1MVGx2Y3JXMXFLc3dPcXlESHlLWjh4WVpNbEZEU1M3YThvWmw2el9CaUJtQ3k3V3dZRzN3TWFMMXZL?oc=5",
     "site": "investor.id",
+    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다"
+    "lang": "id"
    },
    {
     "date": "2026-09-30",
@@ -308,9 +315,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
     "site": "investasi.kontan.co.id",
+    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대"
+    "lang": "id"
    },
    {
     "date": "2026-03-05",
@@ -318,9 +325,18 @@
     "src": "Kompas.com",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUGNnTENjNnA0QURkUTNhYndIcFRLeHJOTXBfTThSTlRaYnM1S1pfLXhaV0M2T2ZWUUJ1TmtfcTJQYms3MUYwSkk5RDY5V3huTVJhc3ZjdGxKU2JxVUJ4LWxoTXF5MmFmTzJpOFIyTlVueGtwQ2ExWC1XbGllZElGaUFHV3RKUW1URUhxcHI1S3lYYTZIdEt5Y0lBbXFjaXV3QlUycklkYmlzZE05dTdQeE9mVmJjQlBhQVlfSjc2clBGbl82Wnc?oc=5",
     "site": "money.kompas.com",
+    "title_ko": "미래에셋증권 OJK가 사무소를 검색함, 회사 프로필입니다",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "미래에셋증권 OJK가 사무소를 검색함, 회사 프로필입니다"
+    "lang": "id"
+   }
+  ],
+  "미래에셋증권|중국": [
+   {
+    "date": "2026-10-29",
+    "title": "미래에셋 일본 '산코증권' 인수 다음은 미국과 중국, 박현주 연쇄 M&A로 'MAPS' 글로벌화 속도",
+    "src": "비즈니스포스트",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBwX1U1SmRSeFJXTlVTZDJLaTFxZzB0SVJVNUx3LXRiaklKbGJ5Q3pCMlRxanZENjVOUGFKVmlvQm9fbGx2czNSMFpST1p4ZnZVYVBoU09rUmFPdFB2aV9hcGxBa2ZYc0VkeFBWaUVBZ3p2UFU?oc=5",
+    "site": "www.businesspost.co.kr"
    }
   ],
   "미래에셋증권|홍콩": [
@@ -525,13 +541,13 @@
    },
    {
     "date": "2026-04-22",
-    "title": "ĐHĐCĐ Chứng khoán BIDV (BSC): Mục tiêu lợi nhuận 700 tỷ năm 2026, quyết tâm nâng quy mô vốn gấp đôi lên 11.000 tỷ đồng",
-    "src": "CafeF",
-    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQW8xeDFQUW10d1pvcWpXVERBdzdrTi1rOTQ3NHJnazZ2elRPRjU2Z1RxQWoxUW55RHdGc2VOZDJLX2FaUUhINU1NNnBtdFhsUHM2eVpIOUFPN0JtNHFLOE9yM0pSZHFZR0hmTWxrZW40Z20zZTlLTkpjZnRQdGMxYzE1VW5ROE9mTG1HblVCWWpBWl84NkJWUHJqVjVSVS10a0ZISlplRmhKd2RzVExEejVqMXdfSmNnbTVNeXpfOUV5X1hqQnlYc2R6QzNIUmJIZ2NQdXJ6d2pfR2QwTHlUeVRSX0cyc2Fn?oc=5",
-    "site": "cafef.vn",
+    "title": "ĐHCĐ Chứng khoán BIDV (BSI): Mục tiêu lợi nhuận 700 tỷ đồng, nâng quy mô vốn lên 11.000 tỷ đồng",
+    "src": "Tin nhanh chứng khoán",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTjdfZXljM2RvdDd2NXJUNWNCTFVTNElBaXRoNHhRNFAtVUF0dTZrOW1LT1ZkMUdndmtZMFBXeE13OWk3SEJseHlXWWxOSTI0eE52VnlMclEta1Y4TnpseDZVRi1GaXg0d0ZaYk1ZZUg0RHBGclV6eUlEYUNzTS1JbzRUTG96Z2d3a3BfSlQ2WERuNkxTTjdxbm1rckdlUDNRSUF3Tk0xRUduUE53a3RHTEZNbGRTVFNWN21oSExxSDM2eE16Q21acUZDRnVuN0h3cEQxc09Wc9IB0wFBVV95cUxQUGlaVnhyamF0UThCTnNFZEpxS0oyYTdJcWV0NzlLNXh2TEUteDJxSWE4ZlRaRmdNX2JMTUk3ZFpVNVBNQ2h2Z1NoSU5IRlFnS21lamhjMzJlMnp6MTI3UlVTZXAxbjhaYkFiUGFfQW5VQjJZV0MtUl93MkpiaUkxWDY5NV82dWpfa24zNFBzLVhjcWxueEM0Z3otWVNsX0JPQVN0Rl82Tm82czlGakMzWnc1akdwanc5MThFWlhiblhLTXNoTjFIR3hzTXVRaWo5Ynlz?oc=5",
+    "site": "www.tinnhanhchungkhoan.vn",
     "foreign": true,
     "lang": "vi",
-    "title_ko": "BIDV 증권(BSC) 주주총회: 2026년 이익 목표 7,000억, 자본 규모를 11조 동으로 두 배로 늘리기 결정"
+    "title_ko": "BIDV 증권(BSI) 주주총회: 이익 목표 7,000억 VND, 자본 규모를 11조 VND로 증가"
    },
    {
     "date": "2026-04-01",
@@ -580,8 +596,7 @@
     "src": "CafeF",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSzBZVDI1RVY3ME1Ldkl0NjJQdGFiZElKSHRDQ2R2YWlENVBmdmpub2lJSU1nd3hvZDZTTk42YlFqd1d0NEFZeWxRckQzQU5kV3FyaDRPZnhsQjJ4d3hpYURHZmFnR0tMNUpwZ05zd0lYNUZpY0lFaGxseXlsT1VPTkJ1MGtOS2s2cEZDaFVaVjE3Nk93TkdxRjZWUXNXYkZZczR5Wkg5YjNWUGh0b20wcWkxczBDQQ?oc=5",
     "site": "cafef.vn",
-    "title_ko": "KIS Vietnam, VND를 넘어 자본을 늘리기 위한 주식 공모 계획 마무리 4조 5,000억",
-    "ko_by": "MyMemory",
+    "title_ko": "KIS 베트남은 4조 5,000억동 이상 자본을 늘리기 위해 주식을 제공할 계획을 확정했습니다.",
     "foreign": true,
     "lang": "vi"
    },
