@@ -127,15 +127,19 @@
   }
 
   async function load(url, optional) {
-    try { const r = await fetch(url, { cache: "no-cache" }); if (!r.ok) throw new Error(r.status); return await r.json(); }
+    // 응답이 없으면 20초 뒤 포기한다(무한 '불러오는 중' 방지)
+    const ctl = "AbortController" in window ? new AbortController() : null;
+    const timer = ctl && setTimeout(() => ctl.abort(), 20000);
+    try { const r = await fetch(url, { cache: "no-cache", signal: ctl?.signal }); if (!r.ok) throw new Error(r.status); return await r.json(); }
     catch (e) { if (optional) return null; throw e; }
+    finally { clearTimeout(timer); }
   }
 
   async function init() {
     try {
       [R, F, D] = await Promise.all([load("data/regulation.json"), load("data/feed.json", true), load("data/detected.json", true)]);
     } catch (e) {
-      $("#meta").textContent = `데이터를 불러오지 못했습니다(${e.message}).`;
+      $("#meta").textContent = `데이터를 불러오지 못했습니다(${e.name === "AbortError" ? "응답 없음" : e.message}). 새로고침해 주세요.`;
       return;
     }
     R.markets.forEach((m) => (M[m.code] = m));
@@ -148,7 +152,12 @@
       renderMatrix(); renderPills(); renderMarket();
     };
     $("#printBtn").onclick = () => window.print();
-    renderTop(); renderUpcoming(); renderMatrix(); renderPills(); renderMarket();
+    // 한 칸이 실패해도 나머지는 그리고, 실패한 칸은 화면에 알린다('불러오는 중'에 멈추지 않게)
+    const failed = [];
+    for (const [name, fn] of [["요약", renderTop], ["일정", renderUpcoming], ["현황표", renderMatrix], ["시장 탭", renderPills], ["시장 상세", renderMarket]]) {
+      try { fn(); } catch (e) { failed.push(name); console.error(name, e); }
+    }
+    if (failed.length) $("#meta").textContent = `일부 칸(${failed.join("·")})을 그리지 못했습니다. 새로고침해 주세요.`;
     fitFrame();
   }
 

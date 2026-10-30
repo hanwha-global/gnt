@@ -52,7 +52,9 @@
 
   function merge(seed, dart, subFin, cons) {
     const firms = seed.firms.map((f) => ({ ...f }));
-    const entities = seed.entities.map((e) => ({ ...e }));
+    // 관계사·지분투자(지분 50% 미만, 하나증권 BSC·Wedbush·북경랑자)는 네트워크에서 뺀다(사용자 결정 2026-10-30)
+    const nonSub = new Set(seed.entities.filter((e) => e.relation !== "종속(자회사)").map((e) => e.name));
+    const entities = seed.entities.filter((e) => !nonSub.has(e.name)).map((e) => ({ ...e }));
     const byName = new Map(entities.filter((e) => e.name).map((e) => [e.name, e]));
     const changes = [];
     const excluded = [];
@@ -129,6 +131,7 @@
       for (let i = entities.length - 1; i >= 0; i--) if (entities[i].firm === firmName && !entities[i].name) entities.splice(i, 1);
       const seen = new Set();
       for (const x of c.overseas || []) {
+        if (x.seed_name && nonSub.has(x.seed_name)) continue;
         const keep = x.class === "영업법인" || x.class === "지주회사";
         let e = (x.seed_name && entities.find((y) => y.firm === firmName && y.name === x.seed_name)) ||
           entities.find((y) => y.firm === firmName && y.country === x.country && keyName(y.name) === keyName(x.name));
@@ -154,7 +157,7 @@
         if (e.status === "신규 후보") e.status = "운영";
         if (!e.business && x.business) e.business = x.business;
       }
-      // 종속회사였는데 목록에 없는 법인(매각·청산 등). 관계회사·지분투자는 이 목록 대상이 아니라 그대로 둔다
+      // 종속회사였는데 목록에 없는 법인(매각·청산 등)
       for (const e of entities) {
         if (e.firm === firmName && e.relation === "종속(자회사)" && e.status === "운영" && !seen.has(e)) {
           Object.assign(e, { status: "제외", exclude_reason: "최근 보고서 종속회사 목록에 없음", note: `${e.note ? `${e.note} · ` : ""}${rep} 종속회사 목록에 없음` });
@@ -447,7 +450,7 @@
   }
 
   const TIPS = {
-    "해외 현지법인": "각 사 FY2025 사업보고서(토스는 연결감사보고서) 연결 종속회사 목록에서 금융업(증권·운용·자문·IT) 영업법인을 손자회사까지 자동으로 셉니다. 중간지주·펀드·신탁·SPV·부동산·휴면·역외 투자기구와 단순 지분투자는 뺍니다. 관계회사(하나 BSC)는 넣습니다.",
+    "해외 현지법인": "각 사 FY2025 사업보고서(토스는 연결감사보고서) 연결 종속회사 목록에서 금융업(증권·운용·자문·IT) 영업법인을 손자회사까지 자동으로 셉니다. 중간지주·펀드·신탁·SPV·부동산·휴면·역외 투자기구와 관계회사·단순 지분투자는 뺍니다.",
     "해외 사무소": "영업을 하지 않는 연락·조사 사무소(법인 아님).",
     "진출 국가": "현지법인 또는 사무소가 하나 이상 있는 국가 수.",
     "변동 감지": "DART 최신 정기보고서 타법인출자현황에 새로 나온 경영참여 해외 출자 수. 금융업 법인(증권·투자·자산운용·지주 등)은 자동으로 현지법인 수·진출 현황 표·지도·해외법인 상세에 반영하고, 소재국이나 업종을 알 수 없는 출자는 확인 필요 후보로 남깁니다. 뉴스에만 나온 진출 소식은 '보도' 표시만 하고 세지 않습니다.",
@@ -510,7 +513,7 @@
       <div class="toolbar">${legend}<span class="sub" style="margin-left:auto">칸을 누르면 해당 법인 목록으로 이동합니다</span></div>
       ${head("현지법인", corpTotal, "개")}${corpTable}
       ${head("사무소", offTotal, "곳")}${offTable}
-      <p class="src">현지법인: 각 사 FY2025 사업보고서(토스는 연결감사보고서) 연결 종속회사 목록의 금융업 영업법인(손자회사 포함, 매주 자동), 중간지주·펀드·SPV·부동산·휴면·역외 투자기구·단순 지분투자 제외, 관계회사 포함. 사무소: 지분이 없어 DART에 나오지 않아 <b>수동 관리</b>, 원자료에 회사 공개 자료 정정 반영${
+      <p class="src">현지법인: 각 사 FY2025 사업보고서(토스는 연결감사보고서) 연결 종속회사 목록의 금융업 영업법인(손자회사 포함, 매주 자동), 중간지주·펀드·SPV·부동산·휴면·역외 투자기구·관계회사·단순 지분투자 제외. 사무소: 지분이 없어 DART에 나오지 않아 <b>수동 관리</b>, 원자료에 회사 공개 자료 정정 반영${
         state.data.officesUpdate ? ` + 이후 확인·정정 ${state.data.officesUpdate.items.length}건(${state.data.officesUpdate.items.map((x) => `${esc(SHORT[x.firm])} ${esc(x.city)}, ${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.source)}</a>` : esc(x.source)}`).join(" · ")}). 참고로 금감원 집계 증권업계 해외 사무소는 ${state.data.officesUpdate.industry.offices}곳입니다(<a href="${esc(state.data.officesUpdate.industry.url)}" target="_blank" rel="noopener">${esc(state.data.officesUpdate.industry.label)}</a>, 2025년 말)` : ""}. ${
         d.meta.corrections.length ? `원자료 보정 ${d.meta.corrections.length}건: ${d.meta.corrections.map((c) => `${esc(c.name)} ${esc(c.from)}→${esc(c.to)}`).join(", ")}.` : ""}</p>
     </div>`;
@@ -576,7 +579,7 @@
       <div style="display:flex;align-items:baseline;gap:8px"><p class="count" id="f-count"></p><div style="margin-left:auto">${tmeta("행마다 ‘기준’ 칸", "억원(총자산·순이익)")}</div></div>
       <div class="scroll tall" style="max-height:72vh"><table class="data"><thead><tr>${COLS.map(([k, l, n]) => `<th class="${n ? "num" : ""}" data-k="${k}">${l}${state.sort && state.sort[0] === k ? (state.sort[1] > 0 ? " ▲" : " ▼") : ""}</th>`).join("")}</tr></thead>
       <tbody id="f-body"></tbody></table></div>
-      <p class="src">총자산·순이익은 각 사 ${esc(pnlBasis())} 사업보고서 연결 주석 '종속기업 요약재무정보'(손자회사 포함)와 타법인출자현황 값(법인 전체 100%, 억원)으로 매주 자동 갱신합니다. 두 공시에 모두 없는 법인(지분법 관계회사 등)만 원자료 값을 두고 기준 칸에 <span class="stale">주황색</span>으로 표시합니다.</p>
+      <p class="src">총자산·순이익은 각 사 ${esc(pnlBasis())} 사업보고서 연결 주석 '종속기업 요약재무정보'(손자회사 포함)와 타법인출자현황 값(법인 전체 100%, 억원)으로 매주 자동 갱신합니다. 두 공시에 모두 없는 법인만 원자료 값을 두고 기준 칸에 <span class="stale">주황색</span>으로 표시합니다.</p>
     </div>`;
     const draw = () => {
       const rows = filtered();
@@ -671,7 +674,7 @@
     const last = (e) => Math.abs(e.values[fy[fy.length - 1]]?.rev ?? e.values[fy[fy.length - 2]]?.rev ?? 0);
     const out = [];
     for (const firm of FIRM_ORDER) {
-      const ents = (st.firms[firm]?.entities || []).filter((e) => Object.keys(e.values).length);
+      const ents = (st.firms[firm]?.entities || []).filter((e) => !e.ref && Object.keys(e.values).length); // 관계사·지분투자 참고 행은 싣지 않는다
       if (!ents.length) continue;
       const top = new Set(ents.filter((e) => !e.ref).sort((a, b) => last(b) - last(a)).slice(0, 3).map((e) => e.name));
       // 거점(나라)끼리 모으고, 거점은 큰 순서, 안에서는 중간지주 → 영업수익 큰 순서. 관계사·지분투자 참고 행은 끝에
@@ -717,7 +720,7 @@
     })();
     el.innerHTML = `<div class="card">
       <h3>해외법인 5개년 손익 추이 · 거점 뉴스</h3>
-      <p class="card__meta">DART 사업보고서(토스는 감사보고서)·반기보고서 주석 ‘종속기업 요약재무정보’의 법인별 값(각 법인 100%) · 법인은 위 네트워크 법인(손자회사·중간지주 포함)과 관계사·지분투자 참고 행 · 공시 시즌(3~4월·8월)에는 매일 07:00, 그 밖에는 매주 월요일 새 보고서 확인
+      <p class="card__meta">DART 사업보고서(토스는 감사보고서)·반기보고서 주석 ‘종속기업 요약재무정보’의 법인별 값(각 법인 100%) · 법인은 위 네트워크 법인(손자회사·중간지주 포함) · 공시 시즌(3~4월·8월)에는 매일 07:00, 그 밖에는 매주 월요일 새 보고서 확인
         · 최근 접수 ${esc(fyShort(fy[fy.length - 1]))} ${esc(span(fy[fy.length - 1]))}${h1 ? ` · ${esc(perShort(h1))} ${esc(span(h1))}` : ""} · 다음 ${esc(next)}</p>
       <div class="filters" style="margin-top:8px">
         <select id="t-firm" aria-label="증권사"><option value="">전체 증권사</option>${FIRM_ORDER.filter((f) => st.firms[f]?.entities?.length).map((f) => `<option value="${esc(f)}" ${f === trendState.firm ? "selected" : ""}>${esc(f)}</option>`).join("")}</select>
@@ -1385,7 +1388,8 @@
     el.innerHTML = ok
       ? `<iframe class="frame" src="${key}/index.html" title="${esc(FRAMES[key].title)}"></iframe>`
       : `<div class="section__head"><h2>${esc(FRAMES[key].title)}</h2><p>${esc(FRAMES[key].desc)}</p></div>
-         <div class="empty-state">준비 중입니다.</div>`;
+         <div class="empty-state">페이지를 불러오지 못했습니다. 탭을 다시 누르거나 새로고침하면 다시 시도합니다.</div>`;
+    if (!ok) delete el.dataset.ready; // 일시 오류면 다음에 탭을 열 때 다시 시도
     if (ok) {
       const f = $("iframe", el);
       // 탭 안 페이지는 데이터를 load 이후에 그리므로, 내용 크기가 바뀔 때마다 높이를 다시 맞춘다
