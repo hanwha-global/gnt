@@ -466,10 +466,6 @@ def today():
     return datetime.now(KST).strftime("%Y-%m-%d")
 
 
-def m(v):
-    return "—" if v is None else f"{v / 1e6:,.1f}"
-
-
 def usd(v):
     return "—" if v is None else f"{v:,.0f}"
 
@@ -481,12 +477,14 @@ def report(bc, ed, it, pe, nw, errors):
           f" · 주 {n.get('states')} · 업무 {n.get('types')}(목록 {len(bc.get('types') or [])}) · 공시 {bc.get('disclosures')}"
           f" 상태 {bc.get('disc_status')} 최근 개시 {bc.get('disc_latest')}")
     print(f"EDGAR {ed.get('checked')}: X-17A-5 {len(ed.get('filings', []))}건, 최근 {(ed.get('filings') or [{}])[0].get('filed')}")
+    # 재무는 PDF 표와 바로 맞춰 볼 수 있게 달러 그대로
     if it:
-        print(f"  누리집 {it['period']} {'감사' if it.get('audited') else '미감사' if it.get('audited') is False else ''} US$ m: 자산 {m(it.get('assets'))}"
-              f" · 부채 {m(it.get('liab'))} · 지분 {m(it.get('equity'))} · 순자본 {m(it.get('net_capital'))} / 요건 {m(it.get('required'))} ({it['url']})")
+        print(f"  누리집 {it['period']} {'감사' if it.get('audited') else '미감사' if it.get('audited') is False else ''}: 자산 {usd(it.get('assets'))}"
+              f" · 부채 {usd(it.get('liab'))} · 지분 {usd(it.get('equity'))} · 순자본 {usd(it.get('net_capital'))} − 초과 {usd(it.get('excess'))}"
+              f" = 요건 {usd(it.get('required'))} ({it['url']})")
     for f in ed.get("fin", [])[:3]:
-        print(f"  {f['period']} {'자동' if f.get('auto') else '확인값'} US$ m: 자산 {m(f.get('assets'))} · 부채 {m(f.get('liab'))}"
-              f" · 지분 {m(f.get('equity'))} · 순자본 {m(f.get('net_capital'))} / 요건 {m(f.get('required'))}")
+        print(f"  {f['period']} {'자동' if f.get('auto') else '확인값'}: 자산 {usd(f.get('assets'))} · 부채 {usd(f.get('liab'))}"
+              f" · 지분 {usd(f.get('equity'))} · 순자본 {usd(f.get('net_capital'))} − 초과 {usd(f.get('excess'))} = 요건 {usd(f.get('required'))}")
     rows = (pe or {}).get("rows", [])
     print(f"상장사 {sum(bool(r.get('ok')) for r in rows)}/{len(rows)} ({(pe or {}).get('date')}, {(pe or {}).get('checked')})")
     for r in rows:  # 10-K 표와 바로 맞춰 볼 수 있게 달러 그대로
