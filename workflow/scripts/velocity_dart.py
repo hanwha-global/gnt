@@ -4,6 +4,7 @@
   행의 자산·부채·영업수익·당기순손익(백만원, 그 보고서 기간 누적). 인수 완료(2025-07-30) 뒤 정기보고서(2025년 3분기부터)마다
   저장하고, 이미 읽은 보고서(접수번호)는 다시 받지 않는다. 원문은 받았는데 표가 없던 보고서는 skip에 적어 다시 받지 않는다.
 - 같은 주석의 종속기업 현황 표: 지분율.
+- 별도재무제표 주석 '종속기업투자의 내역' 표: 한화생명이 직접 출자한 미국 법인의 장부금액(당기말·전기말)·지분율.
 - Open DART '타법인 출자현황': 한화생명이 직접 출자한 미국 법인의 최초 취득일·금액, 기초·기말 장부가액, 지분율.
 키(DART_API_KEY)가 없거나 받기·읽기에 실패하면 이전 값을 그대로 둔다. fetch_velocity.py가 부른다.
 """
@@ -213,6 +214,43 @@ def parse_stakes(texts):
     return out
 
 
+BOOK_RX = re.compile(r"종속기업\s*투자\s*(?:의\s*)?(?:내역|현황)")
+
+
+def parse_book(texts):
+    """별도재무제표 주석 '종속기업투자의 내역' 표에서 한화생명이 직접 출자한 미국 법인 행
+    → {name, activity, stake, book, prev_book}(백만원). 표가 없으면 None. 당기말·전기말 두 칸이 한 표에 있다."""
+    best = None
+    for text in texts:
+        for before, rows in tables(text):
+            if len(rows) < 2 or not BOOK_RX.search(before[-300:]):
+                continue
+            head = rows[0]
+            cur = pick_col(head, ("당기말", "당분기말", "당반기말"), ("지분율",))
+            prev = pick_col(head, ("전기말",), ("지분율",))
+            sc = pick_col(head, ("지분율",))
+            unit = unit_of(before, " ".join(head))
+            if cur is None or not unit:
+                continue
+            for r in rows[1:]:
+                if not r or not ent(r[0]):
+                    continue
+                shift = len(head) - len(r)
+                cell = lambda c: r[c - shift] if c is not None and 0 < c - shift < len(r) else None  # noqa: E731
+                book = to_num(cell(cur))
+                if book is None:
+                    continue
+                pv = to_num(cell(prev))
+                row = {"name": plain(r[0]), "activity": (r[1] or None) if shift == 0 and len(r) > 1 else None,
+                       "stake": pct((cell(sc) or "").replace("%", "")), "book": round(book * UNITS[unit], 1),
+                       "prev_book": None if pv is None else round(pv * UNITS[unit], 1)}
+                if not best or row["book"] > best["book"]:
+                    best = row
+        if best:
+            return best
+    return best
+
+
 def invest_rows(rows):
     """타법인 출자현황 응답 → 미국 법인 {키: 값}(금액 백만원). 단위는 표 전체 가장 큰 장부가액으로 정한다:
     한화생명 최대 출자(1천억~10조원)가 1e11 이상이면 원, 1e8 이상이면 천원, 그보다 작으면 백만원."""
@@ -261,13 +299,14 @@ def debug_dump(name, texts):
                 break
 
 
-def entry(r, subs, stakes):
+def entry(r, subs, stakes, book=None):
     return {"label": label(r["year"], r["period"]), "year": r["year"], "period": r["period"], "months": MONTHS[r["period"]],
-            "end": f"{r['year']}-{END[r['period']]}", "report": report_info(r), "subs": subs, "stakes": stakes}
+            "end": f"{r['year']}-{END[r['period']]}", "report": report_info(r), "subs": subs, "stakes": stakes, "book": book}
 
 
 def collect(prev, errors):
-    """정기보고서별 미국 법인 행(periods, 오래된 것부터)과 타법인 출자현황(invest). 실패한 부분은 이전 값."""
+    """정기보고서별 미국 법인 행(periods, 오래된 것부터: 요약재무정보·지분율·별도 장부금액)과 타법인 출자현황(invest).
+    실패한 부분은 이전 값."""
     P = dict(prev or {})
     key = get_key("DART_API_KEY")
     if not key:
@@ -305,7 +344,7 @@ def collect(prev, errors):
             debug_dump(label(r["year"], r["period"]), texts)
         subs = parse_summary(texts)
         if subs:
-            periods.append(entry(r, subs, parse_stakes(texts)))
+            periods.append(entry(r, subs, parse_stakes(texts), parse_book(texts)))
         else:
             skip.add(r["rcept_no"])
             errors.append(f"DART {r['name']}: 종속기업 요약재무정보에 미국 법인 행 없음")

@@ -528,7 +528,9 @@ def report_dart(dt):
         return
     print(f"DART 한화생명({dt.get('corp_code')}) {dt.get('checked')}: 정기보고서 {len(dt.get('periods', []))}건, 건너뜀 {len(dt.get('skip', []))}건")
     for p in dt.get("periods", []):
-        print(f"  {p['label']} {p['report']['name']} ({p['report']['rcept_no']}) 지분율 {p.get('stakes')}")
+        b = p.get("book") or {}
+        print(f"  {p['label']} {p['report']['name']} ({p['report']['rcept_no']}) 지분율 {p.get('stakes')}"
+              + (f" · 별도 장부금액 {b.get('name')} {usd(b.get('book'))}(전기말 {usd(b.get('prev_book'))})" if b else " · 별도 장부금액 없음"))
         for k, v in p["subs"].items():
             print(f"    {k:5} {v.get('name')}: 자산 {usd(v.get('assets'))} · 부채 {usd(v.get('liab'))} · 자본 {usd(v.get('equity'))}"
                   f" · 영업수익 {usd(v.get('rev'))} · 순이익 {usd(v.get('ni'))} · 총포괄 {usd(v.get('tci'))}")
@@ -584,6 +586,8 @@ def main():
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     report(bc, ed, it, pe, nw, errors)
     report_dart(dt)
+    if velocity_dart.DEBUG:  # PR 확인용: 수집값 원본(JSON 한 줄)
+        print("SEED_JSON " + json.dumps({"dart": dt, "peers_ni": {r.get("ticker"): r.get("ni") for r in (pe or {}).get("rows", [])}}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velocity Clearing</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+/* 색은 대시보드 공용 테마(../assets/theme.css)의 변수만 쓴다. 틀은 미국 진출(us.html)과 같다 */
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:13px/1.5 "Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-feature-settings:"tnum"}
+a{color:inherit}
+.wrap{max-width:1500px;margin:0 auto;padding:10px 12px 24px;display:grid;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between}
+.top h1{margin:0;font-size:18px}
+.meta{color:var(--muted);font-size:12px}.meta b{color:var(--text-2);font-weight:600}
+.lead{margin:0;font-size:12.5px;color:var(--text-2)}
+.btns{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:#fff}
+.subnav{display:flex;gap:4px;flex-wrap:wrap}
+.subnav a{font-size:12px;font-weight:600;text-decoration:none;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--text-2)}
+.subnav a[aria-current="page"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 11px;min-width:0}
+.card h2{margin:0 0 4px;font-size:13px;display:flex;gap:8px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.card h2 small{font-weight:400;color:var(--muted);font-size:11px}
+.card h3{margin:7px 0 3px;font-size:12px;color:var(--text-2)}
+.tmeta{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:0 8px;font-size:10.5px;line-height:1.4;color:var(--muted);margin:0 0 2px}
+.tmeta span+span::before{content:"·";margin-right:8px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:3px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:11px;font-weight:700;color:var(--muted);background:var(--surface-2);white-space:nowrap}
+td.n,th.n{text-align:right;white-space:nowrap}
+td.k{font-weight:700;white-space:nowrap;color:var(--text)}
+td.d{white-space:nowrap;color:var(--muted);font-size:11.5px}
+tbody tr:last-child td{border-bottom:0}
+tr.me td{background:var(--accent-soft)}tr.me td.k{color:var(--accent-ink)}
+td.rk{width:28px;text-align:right;color:var(--muted)}
+th .sub,td .sub{display:block;font-size:10.5px;font-weight:400;color:var(--muted);line-height:1.35}
+sup.r{font-size:9.5px;color:var(--muted);margin-left:2px;white-space:nowrap}
+sup.r a{text-decoration:none}sup.r a:hover{color:var(--accent-ink)}
+.small{font-size:11px;color:var(--muted);margin:4px 0 0;line-height:1.45}
+.small b{color:var(--text-2)}
+.empty{color:var(--muted);font-size:12px;margin:2px 0}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+.tag{font-size:10px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);padding:0 5px;border-radius:4px;margin-left:4px;white-space:nowrap}
+
+/* 핵심 수치: 넓은 화면 한 줄 8칸 */
+.kpis{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}
+@media (max-width:1250px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:640px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:5px 8px;background:var(--surface);min-width:0}
+.kpi span{display:block;font-size:11.5px;font-weight:700;color:var(--text-2)}
+.kpi b{display:block;font-size:17px;color:var(--accent-ink);line-height:1.25;white-space:nowrap}
+.kpi small{display:block;font-size:10.5px;color:var(--muted);line-height:1.35}
+
+/* 카드 배치: 중요한 순서대로 가장 짧은 칸 아래에 쌓는다(빈칸 최소화, velocity.js) */
+.mason{display:flex;gap:8px;align-items:flex-start}
+.mason>.col{flex:1 1 0;min-width:0;display:grid;gap:8px}
+
+/* 투자 구조 */
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:2px 0;margin:2px 0 4px;font-size:11.5px}
+.chain span{border:1px solid var(--line);border-radius:6px;padding:1px 6px;background:var(--bg);white-space:nowrap}
+.chain span.hw{border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.chain span.me{background:var(--accent-soft);border-color:var(--accent);font-weight:700}
+.chain i{font-style:normal;color:var(--muted);font-size:10.5px;padding:0 4px;white-space:nowrap}
+.chain i::before{content:"→ "}
+.chain .cn{flex-basis:100%;font-size:10.5px;color:var(--muted)}
+#inv td:last-child{font-size:11.5px;color:var(--text-2)}
+.sub2{display:block;margin-top:2px;color:var(--muted)}
+
+/* 분기 순이익 막대 */
+svg text{font-size:10px;fill:var(--muted);font-family:inherit}
+svg .lab{fill:var(--text-2)}
+.legend{display:flex;flex-wrap:wrap;gap:2px 12px;font-size:11px;color:var(--text-2);margin:2px 0 0}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+.legend i.dia{border-radius:1px;transform:rotate(45deg) scale(.85)}
+
+/* 라이선스·개요 */
+.vel td.k{width:78px}
+ul.feed{margin:0;padding:0;list-style:none;display:grid;gap:1px;font-size:12px}
+ul.feed li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:6px;padding:2px 0;border-bottom:1px solid var(--line)}
+ul.feed li:last-child{border-bottom:0}
+ul.feed time{color:var(--muted);font-size:11.5px;white-space:nowrap}
+ul.feed a{text-decoration:none}ul.feed a:hover{text-decoration:underline}
+ul.feed small{color:var(--muted);margin-left:4px}
+@media (max-width:640px){
+  #bs tr>:nth-child(2),#bs tr>:nth-child(3){display:none} /* 재무상태: 가장 오래된 두 해 */
+  #rank th small{display:none}
+}
+
+/* 출처 */
+ol.src{margin:0;padding-left:22px;font-size:11.5px;color:var(--text-2);columns:2;column-gap:20px}
+ol.src li{break-inside:avoid;margin-bottom:1px;scroll-margin-top:12px}
+ol.src small{color:var(--muted)}
+ol.src .rev{color:var(--neg);font-weight:700}
+@media (max-width:900px){ol.src{columns:1}}
+.flash{outline:2px solid var(--accent);outline-offset:2px}
+.cad{font-size:11px;color:var(--muted);display:grid;gap:2px;margin:0;padding-left:16px}.cad b{color:var(--text-2);font-weight:600}
+@media print{
+  @page{size:A4 landscape;margin:8mm}
+  :root{--bg:#fff;--surface:#fff;--surface-2:#f1f3f6;--text:#111;--text-2:#333;--muted:#666;--line:#ccc;--accent-ink:#b8500c;--accent-soft:#fdeee3;--pos:#13804a;--neg:#c0392b;color-scheme:light}
+  body{background:#fff;font-size:9.5px}.noprint{display:none!important}
+  .card,.kpi{break-inside:avoid}.wrap{max-width:none;padding:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="subnav noprint" aria-label="Workflow 문서">
+    <a href="index.html" data-to="index">해외지분투자 절차</a>
+    <a href="us.html" data-to="us">미국 진출</a>
+    <a href="velocity.html" aria-current="page">Velocity(한화생명)</a>
+  </nav>
+  <div class="top">
+    <div>
+      <h1>Velocity Clearing · 한화생명 미국 브로커-딜러</h1>
+      <div class="meta" id="meta">불러오는 중</div>
+    </div>
+    <div class="btns noprint">
+      <button class="btn pri" type="button" id="printBtn">인쇄·PDF</button>
+      <a class="btn" href="data/velocity.json" target="_blank" rel="noopener">원자료(JSON)</a>
+    </div>
+  </div>
+  <p class="lead" id="lead"></p>
+  <div class="kpis" id="kpis" aria-label="핵심 수치"></div>
+
+  <!-- 중요한 순서: 투자 → 손익 → 재무상태 → 순위 → 위치(사분면) → 라이선스 → 인수 경과 → 공시·뉴스 → 개요 -->
+  <div class="mason" id="mason">
+    <section class="card" id="c-inv" aria-labelledby="h-inv">
+      <h2 id="h-inv"><span>투자 · 소유 구조</span><small>한화생명 DART 별도재무제표 주석</small></h2>
+      <div class="chain" id="chain"></div>
+      <div class="tmeta" id="tm-inv"></div>
+      <div class="tw" id="inv"></div>
+      <p class="small" id="deal"></p>
+    </section>
+    <section class="card" id="c-pl" aria-labelledby="h-pl">
+      <h2 id="h-pl"><span>손익 · Velocity 단독</span><small>한화생명 DART 종속기업 요약재무정보</small></h2>
+      <div class="tmeta" id="tm-pl"></div>
+      <div class="tw" id="pl"></div>
+      <div id="plq"></div>
+      <p class="small" id="plNote"></p>
+    </section>
+    <section class="card" id="c-bs" aria-labelledby="h-bs">
+      <h2 id="h-bs"><span>재무상태 · 순자본</span><small>연차 감사보고서(X-17A-5)·회사 누리집</small></h2>
+      <div class="tmeta" id="tm-bs"></div>
+      <div class="tw"><table id="bs"></table></div>
+      <p class="small" id="bsNote"></p>
+    </section>
+    <section class="card" id="c-rank" aria-labelledby="h-rank">
+      <h2 id="h-rank"><span>미국 상장 브로커리지 대비 순위</span><small>SEC XBRL</small></h2>
+      <div class="tmeta" id="tm-rank"></div>
+      <div class="tw"><table id="rank"></table></div>
+      <p class="small" id="rankNote"></p>
+    </section>
+    <section class="card" id="c-quad" aria-labelledby="h-quad">
+      <h2 id="h-quad"><span>위치 · 규모 × 수익성 사분면</span><small>상장사 16곳 + Velocity</small></h2>
+      <div class="tmeta" id="tm-quad"></div>
+      <div id="quad"></div>
+    </section>
+    <section class="card vel" id="c-lic" aria-labelledby="h-lic">
+      <h2 id="h-lic"><span>라이선스 · 등록 · 규제 공시</span><small>FINRA BrokerCheck</small></h2>
+      <div class="tmeta" id="tm-lic"></div>
+      <div class="tw"><table id="lic"></table></div>
+    </section>
+    <section class="card vel" id="c-tl" aria-labelledby="h-tl">
+      <h2 id="h-tl"><span>인수 경과</span><small>발표·공시일(미국 시각)</small></h2>
+      <div class="tmeta" id="tm-tl"></div>
+      <div class="tw"><table id="tl"></table></div>
+    </section>
+    <section class="card" id="c-feed" aria-labelledby="h-feed">
+      <h2 id="h-feed"><span>최근 공시 · 뉴스</span><small>SEC EDGAR · Google News</small></h2>
+      <div class="tmeta" id="tm-feed"></div>
+      <ul class="feed" id="filings"></ul>
+      <h3>뉴스 <small style="font-weight:400;color:var(--muted)">'Velocity Clearing', '한화생명 벨로시티'</small></h3>
+      <ul class="feed" id="news"></ul>
+    </section>
+    <section class="card vel" id="c-prof" aria-labelledby="h-prof">
+      <h2 id="h-prof"><span>개요</span><small id="profSrc"></small></h2>
+      <div class="tmeta" id="tm-prof"></div>
+      <div class="tw"><table id="prof"></table></div>
+    </section>
+  </div>
+
+  <section class="card" aria-labelledby="h-src">
+    <h2 id="h-src"><span>출처</span><small id="srcMeta"></small></h2>
+    <ol class="src" id="src"></ol>
+  </section>
+  <ul class="cad" aria-label="갱신 주기">
+    <li><b>매일 아침 자동</b> · 등록 현황(FINRA BrokerCheck)·공시 목록(SEC EDGAR)·뉴스. 새 연차 감사보고서(매년 3월 초)나 회사 누리집의 반기 재무상태표(9월 무렵)가 올라오면 PDF에서 재무상태표·순자본을 읽어 표에 더합니다(대차 합계가 맞을 때만).</li>
+    <li><b>한화생명 공시</b> · 분기·반기·사업보고서(5월·8월·11월 중순, 3월)가 나오면 다음 날 아침 손익·출자 표에 자동으로 더합니다. <b>상장사 비교</b>는 SEC XBRL(10-K·10-Q)로 Velocity 재무 날짜에 맞춰 7일에 한 번 확인합니다.</li>
+    <li>개요·인수 경과·라이선스 설명 문구는 사람이 원문을 읽고 씁니다(반기 1회 원문 점검).</li>
+  </ul>
+</div>
+<script src="velocity.js" defer></script>
+</body>
+</html>
