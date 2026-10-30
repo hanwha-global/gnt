@@ -196,6 +196,11 @@
  "velocity": {
   "verified_at": "2026-10-30",
   "lead": "한화생명이 2025년 7월 지분 75%를 인수한 미국 자체청산(self-clearing) 브로커-딜러. 국내 보험사가 미국 증권사를 인수한 첫 사례이고, FINRA에는 한화투자증권과 같은 한화생명 계열사로 신고되어 있다.",
+  "stake": "75%",
+  "chain": [{"n": "한화생명"}, {"n": "Hanwha Life US Investment", "k": "hold", "full": "Hanwha Life US Investment LLC(공시 표기 HLI US Inv, LLC)"}, {"n": "Nexus Clearing", "s": "75%", "full": "Nexus Clearing, LLC"}, {"n": "VCT Holdings", "s": "100%", "full": "VCT Holdings, LLC"}, {"n": "Velocity Clearing", "s": "100%", "full": "Velocity Clearing, LLC"}],
+  "chain_note": "Nexus 나머지 25%는 VCT Holdings II 보유(인수 발표: 경영진이 나머지 소수 지분 보유)",
+  "chain_src": ["v_bcpdf", "v_x25", "v_ann"],
+  "deal": {"t": "인수 대상은 모회사 Nexus Clearing 지분 75%: Nexus Clearing Investors 보유 60% 전량과 VCT Holdings II 보유분 15%. 2024-11-19(한국 시각) 계약, 2025-07-30 완료(지분 이전 효력은 7-31 영업 종료 후). 인수가는 발표되지 않았다(보도: 2천억원대 중반).", "src": ["v_ann", "v_done", "v_x25", "v_hk"]},
   "profile": [
    {"k": "법인", "t": "Velocity Clearing, LLC · 델라웨어 유한책임회사(LLC) · 뉴욕 기반(FINRA 등록 주소는 뉴저지 Hazlet)", "src": ["v_bc", "v_done"]},
    {"k": "연혁", "t": "2003년 영업 시작(SEC·FINRA 등록 2003-08-15). 이름은 NYFIX Clearing → NYFIX Securities → Quantex Clearing(2011~2019) → 지금 이름", "src": ["v_bc", "v_edgar", "v_avenue1"]},
@@ -222,10 +227,11 @@
    {"k": "주 등록", "auto": "states", "t": "50개 주와 DC·푸에르토리코·미국령 버진아일랜드", "src": ["v_bcpdf"]},
    {"k": "업무 종류", "auto": "types", "t": "", "src": ["v_bcpdf"]},
    {"k": "그 밖", "t": "SIPC 회원, CFTC·NFA 소개 브로커(IB) 등록. 순자본은 대체 방식(15c3-1: $1.5m과 고객 차변 2% 중 큰 값)", "src": ["v_crs", "v_bcpdf", "v_x25"]},
-   {"k": "규제 공시", "auto": "disc", "latest": {"d": "2025-09-30", "t": "FINRA·거래소 12곳과 합의(고객 시세조종 거래 감시 체계 미비, 견책·벌금 합계 $1.0m)"}, "t": "", "src": ["v_bcpdf"]}
+   {"k": "규제 공시", "auto": "disc", "latest": {"d": "2025-09-30", "t": "FINRA·거래소 12곳과 합의(고객 시세조종 거래 감시 체계 미비, 견책·벌금 합계 $1.0m)", "s": "합의(벌금 $1.0m)"}, "t": "", "src": ["v_bcpdf"]}
   ],
   "fin_note": "X-17A-5 공개분은 재무상태표와 주석만 싣는다(손익계산서는 비공개 요청분). 회사 누리집에 감사보고서보다 새 재무상태표(6월 말 반기, 미감사)가 올라오면 마지막 칸에 붙인다. 2022~2024년 매출 연평균 25% 성장(한화생명 인수 완료 발표). 2025년 말 총자산이 12억→53억 달러로 늘어난 것은 대부분 RP 매수(약 40억 달러)와 RP 매도(약 40억 달러)가 함께 늘었기 때문이다.",
   "fin_src": ["v_done", "v_x25", "v_site"],
+  "pl_note": "한화생명 분기·반기·사업보고서 연결재무제표 주석 '종속기업 요약재무정보'의 Velocity Clearing 행: Velocity 단독, 그 해 1월부터 누적(2025년은 인수 전 달 포함), 사업결합 공정가치 평가 전 값. SEC 공개 감사보고서에는 손익계산서가 없어(비공개 요청) 손익은 이 공시로 본다. ROE(연환산) = 누적 순이익 × 12/개월 수 ÷ 기말 자본. 새 보고서가 공시되면 다음 날 아침 자동으로 한 칸 늘어난다.",
   "rank_note": "상장사 자본은 비지배지분을 포함한 그룹 연결 값, Velocity는 브로커-딜러 법인 단독 값이다.",
   "rank_src": ["v_x25"]
  },

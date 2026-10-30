@@ -329,7 +329,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 20973000000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "NetIncomeLoss"
+    }
    },
    {
     "name": "Morgan Stanley",
@@ -348,7 +354,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 20370000000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "Charles Schwab",
@@ -367,7 +379,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 10096000000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "NetIncomeLoss"
+    }
    },
    {
     "name": "Interactive Brokers",
@@ -386,7 +404,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 4896000000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "Raymond James",
@@ -405,7 +429,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 2306000000,
+     "end": "2026-06-30",
+     "how": "FY 2025-09-30 + YTD 273일 − 전년 YTD",
+     "tag": "NetIncomeLoss"
+    }
    },
    {
     "name": "Jefferies",
@@ -424,7 +454,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 863125000,
+     "end": "2026-05-31",
+     "how": "FY 2025-11-30 + YTD 182일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "Robinhood",
@@ -443,7 +479,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 2072000000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "NetIncomeLoss"
+    }
    },
    {
     "name": "Stifel",
@@ -462,7 +504,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 953628000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "LPL Financial",
@@ -481,7 +529,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 1006867000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "NetIncomeLoss"
+    }
    },
    {
     "name": "StoneX",
@@ -500,7 +554,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 526900000,
+     "end": "2026-06-30",
+     "how": "FY 2025-09-30 + YTD 273일 − 전년 YTD",
+     "tag": "NetIncomeLoss"
+    }
    },
    {
     "name": "Virtu Financial",
@@ -519,7 +579,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 1061178000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "BGC Group",
@@ -538,7 +604,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 189196000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "Piper Sandler",
@@ -557,7 +629,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 363851000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "Oppenheimer",
@@ -576,7 +654,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 102412000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "Cohen & Company",
@@ -595,7 +679,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": 45940000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    },
    {
     "name": "Siebert Financial",
@@ -614,7 +704,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true
+    "ok": true,
+    "ni": {
+     "value": -1119000,
+     "end": "2026-06-30",
+     "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
+     "tag": "ProfitLoss"
+    }
    }
   ],
   "checked": "2026-10-31"
@@ -650,5 +746,291 @@
   }
  ],
  "news_checked": null,
- "errors": []
+ "errors": [],
+ "dart": {
+  "corp_code": "00113058",
+  "checked": "2026-10-31",
+  "unit": "백만원",
+  "periods": [
+   {
+    "label": "3Q25",
+    "year": "2025",
+    "period": "9M",
+    "months": 9,
+    "end": "2025-09-30",
+    "report": {
+     "name": "[기재정정]분기보고서 (2025.09)",
+     "rcept_no": "20251128001821",
+     "rcept_dt": "20251128",
+     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251128001821"
+    },
+    "subs": {
+     "hold": {
+      "name": "Hanwha Life US Investment, LLC",
+      "assets": 281441.0,
+      "liab": 7267.0,
+      "equity": 274174.0,
+      "rev": 4699.0,
+      "ni": 17090.0,
+      "tci": 17090.0
+     },
+     "nexus": {
+      "name": "Nexus Clearing LLC",
+      "assets": 142273.0,
+      "liab": 10684.0,
+      "equity": 131589.0,
+      "rev": 3.0,
+      "ni": 26734.0,
+      "tci": 26734.0
+     },
+     "vct": {
+      "name": "VCT Holdings",
+      "assets": 212913.0,
+      "liab": 79812.0,
+      "equity": 133101.0,
+      "rev": 66.0,
+      "ni": 41355.0,
+      "tci": 41355.0
+     },
+     "vel": {
+      "name": "Velocity Clearing",
+      "assets": 7460814.0,
+      "liab": 7262768.0,
+      "equity": 198046.0,
+      "rev": 262291.0,
+      "ni": 46323.0,
+      "tci": 46323.0
+     }
+    },
+    "stakes": {
+     "hold": 100.0,
+     "nexus": 75.0,
+     "vct": 100.0,
+     "vel": 100.0
+    },
+    "book": {
+     "name": "Velocity Clearing, LLC",
+     "stake": 100.0,
+     "book": 255272.0,
+     "prev_book": null
+    }
+   },
+   {
+    "label": "FY2025",
+    "year": "2025",
+    "period": "FY",
+    "months": 12,
+    "end": "2025-12-31",
+    "report": {
+     "name": "[기재정정]사업보고서 (2025.12)",
+     "rcept_no": "20260331003585",
+     "rcept_dt": "20260331",
+     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003585"
+    },
+    "subs": {
+     "hold": {
+      "name": "Hanwha Life US Investment, LLC",
+      "assets": 296273.0,
+      "liab": 11215.0,
+      "equity": 285058.0,
+      "rev": 10553.0,
+      "ni": 21646.0,
+      "tci": null
+     },
+     "nexus": {
+      "name": "Nexus Clearing LLC",
+      "assets": 166704.0,
+      "liab": 11497.0,
+      "equity": 155207.0,
+      "rev": 4.0,
+      "ni": 47263.0,
+      "tci": null
+     },
+     "vct": {
+      "name": "VCT Holdings",
+      "assets": 238991.0,
+      "liab": 81610.0,
+      "equity": 157381.0,
+      "rev": 104.0,
+      "ni": 74690.0,
+      "tci": null
+     },
+     "vel": {
+      "name": "Velocity Clearing",
+      "assets": 7616655.0,
+      "liab": 7391047.0,
+      "equity": 225608.0,
+      "rev": 483220.0,
+      "ni": 87446.0,
+      "tci": null
+     }
+    },
+    "stakes": {
+     "hold": 100.0,
+     "nexus": 75.0,
+     "vct": 100.0,
+     "vel": 100.0
+    },
+    "book": {
+     "name": "Hanwha Life US Investment, LLC",
+     "stake": 100.0,
+     "book": 255272.0,
+     "prev_book": null
+    }
+   },
+   {
+    "label": "1Q26",
+    "year": "2026",
+    "period": "1Q",
+    "months": 3,
+    "end": "2026-03-31",
+    "report": {
+     "name": "[기재정정]분기보고서 (2026.03)",
+     "rcept_no": "20260529001672",
+     "rcept_dt": "20260529",
+     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260529001672"
+    },
+    "subs": {
+     "hold": {
+      "name": "Hanwha Life US Investment, LLC",
+      "assets": 321660.0,
+      "liab": 14877.0,
+      "equity": 306783.0,
+      "rev": 4468.0,
+      "ni": 5922.0,
+      "tci": 21724.0
+     },
+     "nexus": {
+      "name": "Nexus Clearing LLC",
+      "assets": 185174.0,
+      "liab": 10315.0,
+      "equity": 174859.0,
+      "rev": 1.0,
+      "ni": 10784.0,
+      "tci": 21922.0
+     },
+     "vct": {
+      "name": "VCT Holdings",
+      "assets": 268867.0,
+      "liab": 93639.0,
+      "equity": 175228.0,
+      "rev": 41.0,
+      "ni": 25536.0,
+      "tci": 36811.0
+     },
+     "vel": {
+      "name": "Velocity Clearing",
+      "assets": 6806528.0,
+      "liab": 6562853.0,
+      "equity": 243675.0,
+      "rev": 180467.0,
+      "ni": 30608.0,
+      "tci": 45481.0
+     }
+    },
+    "stakes": {
+     "hold": 100.0,
+     "nexus": 75.0,
+     "vct": 100.0,
+     "vel": 100.0
+    },
+    "book": {
+     "name": "Hanwha Life US Investment, LLC",
+     "stake": 100.0,
+     "book": 255272.0,
+     "prev_book": 255272.0
+    }
+   },
+   {
+    "label": "1H26",
+    "year": "2026",
+    "period": "1H",
+    "months": 6,
+    "end": "2026-06-30",
+    "report": {
+     "name": "[기재정정]반기보고서 (2026.06)",
+     "rcept_no": "20260831001232",
+     "rcept_dt": "20260831",
+     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001232"
+    },
+    "subs": {
+     "hold": {
+      "name": "Hanwha Life US Investment, LLC",
+      "assets": 326999.0,
+      "liab": 3992.0,
+      "equity": 323007.0,
+      "rev": 8833.0,
+      "ni": 16122.0,
+      "tci": 37949.0
+     },
+     "nexus": {
+      "name": "Nexus Clearing LLC",
+      "assets": 182351.0,
+      "liab": 9917.0,
+      "equity": 172434.0,
+      "rev": 3.0,
+      "ni": 25593.0,
+      "tci": 37234.0
+     },
+     "vct": {
+      "name": "VCT Holdings",
+      "assets": 266542.0,
+      "liab": 94571.0,
+      "equity": 171971.0,
+      "rev": 85.0,
+      "ni": 49749.0,
+      "tci": 45187.0
+     },
+     "vel": {
+      "name": "Velocity Clearing",
+      "assets": 12144067.0,
+      "liab": 11907049.0,
+      "equity": 237018.0,
+      "rev": 412325.0,
+      "ni": 61019.0,
+      "tci": 66497.0
+     }
+    },
+    "stakes": {
+     "hold": 100.0,
+     "nexus": 75.0,
+     "vct": 100.0,
+     "vel": 100.0
+    },
+    "book": {
+     "name": "Hanwha Life US Investment, LLC",
+     "stake": 100.0,
+     "book": 255272.0,
+     "prev_book": 255272.0
+    }
+   }
+  ],
+  "skip": [],
+  "invest": {
+   "report": {
+    "name": "[기재정정]반기보고서 (2026.06)",
+    "rcept_no": "20260831001232",
+    "rcept_dt": "20260831",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001232"
+   },
+   "label": "1H26",
+   "unit_raw": "원",
+   "rows": {
+    "hold": {
+     "name": "Hanwha Life US Investment, LLC",
+     "first_date": "2025-07-30",
+     "purpose": "경영참여",
+     "first_amount": 225272.0,
+     "begin_stake": 100.0,
+     "begin_book": 225272.0,
+     "chg_amount": null,
+     "chg_valuation": null,
+     "end_stake": 100.0,
+     "end_book": 225272.0,
+     "recent_assets": 296273.0,
+     "recent_ni": 21646.0
+    }
+   }
+  }
+ }
 }

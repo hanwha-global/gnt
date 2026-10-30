@@ -30,10 +30,11 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || vars.SEC_USER_AGENT }}
         run: python scripts/update_sec.py
-      - name: 미국 진출 Velocity Clearing 수집 (FINRA BrokerCheck·SEC EDGAR·뉴스, 키 불필요)
+      - name: 미국 진출 Velocity Clearing 수집 (FINRA BrokerCheck·SEC EDGAR·한화생명 DART·뉴스)
         continue-on-error: true
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || vars.SEC_USER_AGENT }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}   # 한화생명 정기보고서(미국 법인 손익·출자). 없으면 그 부분만 이전 값
         run: |
           pip install --quiet pypdf==6.17.0
           python workflow/scripts/fetch_velocity.py

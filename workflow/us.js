@@ -2,8 +2,8 @@
 // - 국내 증권사 미국 거점: ../data/domestic/consolidated.json(DART 종속회사 목록) + sub_fin.json(종속기업 요약재무정보), 국내 탭과 같은 집계 규칙
 // - 미국 상장 브로커리지: ../insight/data/valuation.json(markets.us, 있으면) → 없으면 ../data/global/us_sec.json(SEC XBRL)
 // - 원문 점검: ../guide/data/source_status.json(반기 점검 결과, 출처 URL별)
-// - Velocity Clearing(한화생명 75%): data/velocity.json(workflow/scripts/fetch_velocity.py 매일 수집: BrokerCheck·EDGAR·SEC XBRL·뉴스)
-// 대시보드에서는 #workflow/us 로 들어온다. 해외지분투자 절차(index.html)와 같은 iframe 안에서 오간다.
+// 한화그룹 사례 Velocity Clearing(한화생명 75%)은 하위 탭 velocity.html(#workflow/velocity). 출처 목록은 같은 us_entry.json 을 나눠 쓴다.
+// 대시보드에서는 #workflow/us 로 들어온다. 해외지분투자 절차(index.html)·Velocity 와 같은 iframe 안에서 오간다.
 (() => {
   "use strict";
   const $ = (s, el = document) => el.querySelector(s);
@@ -19,6 +19,18 @@
   const sign = (v, d = 0) => (v == null ? "—" : `<span class="${Math.round(v * 10 ** d) < 0 ? "neg" : ""}">${num(v, d)}</span>`);
   const chipS = { "+": '<span class="chip s-p">+</span>', "-": '<span class="chip s-m">−</span>', "=": '<span class="chip s-e">=</span>' };
   let U, W, ST, REF = {};
+  // 출처 id(키가 src로 끝나는 배열)를 모은다. Velocity 설명(us_entry.json velocity)의 출처는 Velocity 탭 목록에
+  const used = (o, out = new Set()) => {
+    if (Array.isArray(o)) o.forEach((x) => used(x, out));
+    else if (o && typeof o === "object") {
+      for (const [k, v] of Object.entries(o)) {
+        if (/src$/.test(k) && Array.isArray(v)) v.forEach((id) => typeof id === "string" && out.add(id));
+        else used(v, out);
+      }
+    }
+    return out;
+  };
+  const srcIds = () => { const u = used({ ...U, velocity: null, sources: null }); return Object.keys(U.sources).filter((id) => u.has(id)); };
 
   const frame = () => { try { return window.frameElement; } catch (_) { return null; } };
   // 출처 번호 [n]: 누르면 아래 출처 목록으로
@@ -93,7 +105,7 @@
 
   function renderDeals() {
     $("#deal").innerHTML = `<thead><tr><th>발표</th><th>인수자 → 대상</th><th class="n">규모</th><th>조건</th><th>성격</th></tr></thead>
-      <tbody>${U.deals.map((d) => `<tr><td style="white-space:nowrap">${fmt(d.date)}</td><td><b>${esc(d.buyer)}</b> → ${esc(d.target)}</td><td class="n">${esc(d.size)}</td><td>${esc(d.terms)}${refs(d.src)}</td><td>${esc(d.kind)}</td></tr>`).join("")}</tbody>`;
+      <tbody>${U.deals.map((d) => `<tr><td style="white-space:nowrap">${fmt(d.date)}</td><td><b>${esc(d.buyer)}</b> → ${esc(d.target)}${/Velocity/.test(d.target) ? ' <a href="velocity.html" data-to="velocity">Velocity 탭 →</a>' : ""}</td><td class="n">${esc(d.size)}</td><td>${esc(d.terms)}${refs(d.src)}</td><td>${esc(d.kind)}</td></tr>`).join("")}</tbody>`;
     $("#dealNote").textContent = U.deals_note;
   }
 
@@ -111,7 +123,7 @@
     : /CERTIFICATE|SSL/.test(err) ? "사이트 보안 인증서 오류" : "일시 오류");
   const unchecked = (st) => !!st?.err && !st.checked;  // 한 번도 자동 점검이 안 된 출처
   function renderSources() {
-    const ids = Object.keys(U.sources);
+    const ids = srcIds();
     $("#src").innerHTML = ids.map((id) => {
       const s = U.sources[id], st = srcState(s.u);
       const rev = st?.changed_at && st.changed_at > U.meta.verified_at;
@@ -202,149 +214,6 @@
       <p class="small">사업연도 끝: ${[...new Set(rows.map((r) => r.net_income_fy?.end).filter(Boolean))].sort().map(fmt).join(", ")}. P/B·P/E는 전략 인사이트 탭 밸류에이션 수집이 붙으면 이 자리에 자동으로 나옵니다.</p>`;
   }
 
-  // ---------- Velocity Clearing(한화생명 75%) ----------
-  // 설명(개요·인수 경과·라이선스 문구)은 us_entry.json velocity, 숫자·목록은 data/velocity.json(fetch_velocity.py 매일 수집)
-  const mUsd = (v) => (v == null ? null : v / 1e6);
-  const short = (v) => (v == null ? "—" : v >= 1e9 ? `$${num(v / 1e9, 1)}bn` : `$${num(v / 1e6, 0)}m`);
-  const SRO_SHORT = [[/^New York Stock Exchange/i, "NYSE"], [/^NYSE Arca/i, "NYSE Arca"], [/^NYSE American/i, "NYSE American"],
-    [/^Nasdaq Stock Market/i, "Nasdaq"], [/^Cboe Exchange/i, "Cboe(옵션)"], [/^Investors' Exchange/i, "IEX"],
-    [/^Long-Term Stock Exchange/i, "LTSE"], [/^MIAX PEARL/i, "MIAX Pearl"], [/^24X National/i, "24X"]];
-  const sroName = (n) => SRO_SHORT.find(([re]) => re.test(n))?.[1] || n.replace(/,?\s+(Inc\.|LLC|L\.L\.C\.)$/i, "").replace(/\s+Exchange$/i, "");
-  // Form BD 업무 종류(BrokerCheck 표기) → 한국어. 목록에 없는 표기는 영어 그대로
-  const BIZ = [[/inter-dealer markets in corporat/i, "장외 주식 딜러 간 시장조성"], [/retailing corporate equity/i, "장외 주식 리테일 중개"],
-    [/selling corporate debt/i, "회사채 중개"], [/^Mutual fund retailer/i, "뮤추얼펀드 판매"], [/government securities broker/i, "미 국채 중개"],
-    [/government securities dealer/i, "미 국채 딜러"], [/^Municipal securities broker/i, "지방채 중개"], [/^Municipal securities dealer/i, "지방채 딜러"],
-    [/^Put and call broker/i, "옵션 중개·발행"], [/^Non-exchange member arranging/i, "거래소 비회원 상장증권 거래 주선"],
-    [/^Trading securities for own account/i, "자기매매"], [/^Exchange member engaged in exchange commission/i, "거래소 위탁매매"],
-    [/^Exchange member engaged in floor/i, "거래소 플로어 업무"], [/^Underwriter or selling group/i, "인수·판매단 참여"],
-    [/^Private placements/i, "사모 주선"], [/^Investment advisory/i, "투자자문"], [/^Broker or dealer selling variable/i, "변액상품 판매"],
-    [/^Solicitor of time deposits/i, "예금 권유"], [/^Broker or dealer selling oil/i, "석유·가스 권익 판매"], [/^Commodities/i, "상품"]];
-  const bizName = (t) => (/^Other\s*-/i.test(t) ? "기타(대리 청산·대차·포트폴리오 마진·프라임 브로커리지·옵션 청산·RP 등)"
-    : BIZ.find(([re]) => re.test(t))?.[1] || t);
-  const POS = [[/^CHIEF EXECUTIVE/, "CEO"], [/^CO[- ]?PRESIDENT/, "공동 사장"], [/^PRESIDENT/, "사장"], [/^CHIEF FINANCIAL OFFICER\/FINOP/, "CFO·FINOP"],
-    [/^CHIEF FINANCIAL/, "CFO"], [/^CHIEF OPERATING/, "COO"], [/^CHIEF OPERATIONS/, "운영 책임자"], [/^CHIEF COMPLIANCE/, "CCO"],
-    [/^CHIEF TECHNOLOGY/, "CTO"], [/^CHIEF RISK/, "CRO"]];
-  const person = (n) => { // 'LOGAN, MICHAEL JAMES' → 'Michael Logan'
-    const [last, rest = ""] = String(n).split(/,\s*/);
-    const tc = (s) => s.toLowerCase().replace(/(^|[\s'-])\p{L}/gu, (c) => c.toUpperCase());
-    return `${tc(rest.split(/\s+/)[0] || "")} ${tc(last)}`.trim();
-  };
-
-  // 미국 상장 브로커리지 + Velocity: 자본·총자산 순위(같은 날짜)
-  function velRank(V, last) {
-    const P = V?.peers;
-    if (!last || !P?.rows?.length || P.date !== last.period) return null;
-    const rows = P.rows.filter((r) => r.equity?.value != null).map((r) => ({ ...r, eq: r.equity.value, as: r.assets?.value ?? null }));
-    if (!rows.length) return null;
-    rows.push({ name: "Velocity Clearing", ticker: "비상장", model: "자체청산 BD(한화생명 75%)", eq: last.equity, as: last.assets, me: true });
-    rows.sort((a, b) => b.eq - a.eq);
-    const byAs = rows.filter((r) => r.as != null).sort((a, b) => b.as - a.as);
-    const me = rows.find((r) => r.me);
-    return { rows, n: rows.length, eq: rows.indexOf(me) + 1, as: byAs.indexOf(me) + 1, nAs: byAs.length, byAs };
-  }
-
-  function renderVelocity(V) {
-    const M = U.velocity;
-    if (!M) return;
-    const bc = V?.brokercheck || {}, ed = V?.edgar || {}, n = bc.counts || {};
-    const fin = (ed.fin || []).slice().sort((a, b) => (a.period < b.period ? -1 : 1)).slice(-5);
-    const last = fin[fin.length - 1], prev = fin[fin.length - 2];
-    // 감사보고서보다 새 재무상태표(회사 누리집 반기 미감사)가 있으면 KPI·순위는 그 날짜로
-    const it = V?.interim && last && V.interim.period > last.period ? V.interim : null;
-    const cur = it || last, nc = cur?.net_capital != null ? cur : last;
-    const R = velRank(V, cur);
-    const yr = (p) => `FY${String(p).slice(0, 4)}`;
-    const ym = (p) => `${String(p).slice(0, 4)}.${String(p).slice(5, 7)}`;
-    const itAud = it?.audited === false ? "미감사" : it?.audited ? "감사" : ""; // 파일 이름 기준
-    const itLab = it ? `${ym(it.period)}${itAud ? ` ${itAud}` : ""}` : "";
-    $("#velSrc").textContent = V ? `FINRA BrokerCheck·SEC EDGAR·뉴스 매일 자동 · 설명 원문 검증 ${fmt(M.verified_at)}` : `설명 원문 검증 ${fmt(M.verified_at)}`;
-    $("#velLead").textContent = M.lead;
-
-    const k = [
-      { v: "75%", t: "한화생명 지분", d: "모회사 Nexus Clearing 지분 · 2025.07.30 인수 완료", src: ["v_done"] },
-      { v: short(cur?.equity), t: "자본(회원 지분)", d: it ? `${itLab} · ${yr(last.period)} ${short(last.equity)}` : last ? `${yr(last.period)} 감사 · 전년 ${short(prev?.equity)}` : "" },
-      { v: short(cur?.assets), t: "총자산", d: it ? `${itLab} · ${yr(last.period)} ${short(last.assets)}` : last ? `${yr(last.period)} · 전년 ${short(prev?.assets)}` : "" },
-      { v: short(nc?.net_capital), t: "순자본(15c3-1)", d: nc?.required ? `${nc === it ? `${ym(it.period)} · ` : ""}최소 요건 ${short(nc.required)}의 ${num(nc.net_capital / nc.required, 1)}배` : "" },
-      { v: R ? `${R.eq}위 / ${R.n}` : "—", t: "미국 상장 브로커리지 대비 자본", d: R ? `총자산 ${R.as}위 / ${R.nAs} · ${fmt(cur.period)} 기준` : "상장사 값은 다음 자동 수집 때" },
-    ];
-    $("#velKpis").innerHTML = k.map((x) => `<div class="kpi"><b>${esc(x.v)}</b><span>${esc(x.t)}${refs(x.src)}</span><small>${esc(x.d)}</small></div>`).join("");
-
-    // 개요(+ 경영진: BrokerCheck 자동)
-    const groups = [];
-    for (const o of bc.officers || []) {
-      const lab = POS.find(([re]) => re.test(String(o.position || "").toUpperCase()))?.[1];
-      if (!lab || !/,/.test(o.name || "")) continue; // 법인 소유자(SOLE MEMBER 등)는 소유 구조 줄에
-      const g = groups.find((x) => x.lab === lab) || (groups.push({ lab, names: [] }), groups[groups.length - 1]);
-      g.names.push(person(o.name));
-    }
-    const prof = M.profile.map((r) => `<tr><td class="k">${esc(r.k)}</td><td>${esc(r.t)}${refs(r.src)}</td></tr>`);
-    if (groups.length) prof.push(`<tr><td class="k">경영진</td><td>${groups.map((g) => `${esc(g.lab)} ${esc(g.names.join("·"))}`).join(" · ")}${refs(M.officers_src)}</td></tr>`);
-    $("#velProfile").innerHTML = `<colgroup><col style="width:72px"><col></colgroup><tbody>${prof.join("")}</tbody>`;
-    $("#tm-velp").innerHTML = tmeta(`원문 검증 ${fmt(M.verified_at)}${bc.checked ? ` · 경영진 BrokerCheck ${fmt(bc.checked)}` : ""}`);
-    $("#velTl").innerHTML = `<colgroup><col style="width:78px"><col></colgroup><tbody>${M.timeline.map((r) => `<tr><td class="d">${fmt(r.d)}</td><td>${esc(r.t)}${refs(r.src)}</td></tr>`).join("")}</tbody>`;
-    $("#tm-velt").innerHTML = tmeta("발표·공시일(미국 시각)");
-
-    // 라이선스·등록: 개수·목록은 BrokerCheck 자동, 설명은 사람이 쓴 문구
-    const sros = bc.sros || [];
-    const auto = {
-      sec: () => `${bc.sec_file ? `SEC 파일 ${esc(bc.sec_file)} · ` : ""}`,
-      finra: () => [bc.crd ? `CRD ${esc(bc.crd)}` : "", bc.finra_since ? `${fmt(bc.finra_since)} 승인` : "",
-        bc.size ? `규모 분류 '${esc({ Small: "소형", Mid: "중형", Large: "대형" }[bc.size] || bc.size)}'` : ""].filter(Boolean).join(" · "),
-      sro: () => `<b>${n.sro ?? sros.length}곳</b>${sros.length ? `: ${sros.map((s) => `<span title="${esc(s.name)} · ${fmt(s.since)} 승인">${esc(sroName(s.name))}</span>`).join(", ")}` : ""} · `,
-      states: () => `<b>${n.states ?? "—"}곳</b> · `,
-      types: () => `<b>${n.types ?? "—"}종</b>${(bc.types || []).length ? `: ${bc.types.map((t) => `<span title="${esc(t)}">${esc(bizName(t))}</span>`).join(", ")}` : ""}`,
-      // 건수·진행 상태·가장 최근 개시일은 자동, 사건 설명은 사람이 쓴 문구(그보다 새 공시가 올라오면 날짜만 보여 줌)
-      disc: (r) => {
-        const st = Object.values(bc.disc_status || {}), open = st.reduce((a, x) => a + (x.pending || 0) + (x.appeal || 0), 0);
-        const L = r.latest, newer = bc.disc_latest && L && bc.disc_latest > L.d;
-        return `<b>${Object.values(bc.disclosures || {}).reduce((a, b) => a + (b || 0), 0)}건</b>(BrokerCheck 규제 공시)`
-          + (st.length ? (open ? `, 진행 중 <b>${open}건</b>` : ", 모두 종결") : "")
-          + (newer ? ` · 가장 최근 ${fmt(bc.disc_latest)} 개시 건(내용은 BrokerCheck 보고서)` : L ? ` · 가장 최근은 ${fmt(L.d)} ${esc(L.t)}` : "");
-      },
-    };
-    $("#velLic").innerHTML = `<colgroup><col style="width:84px"><col></colgroup><tbody>${M.licenses.map((r) =>
-      `<tr><td class="k">${esc(r.k)}</td><td>${r.auto && auto[r.auto] ? auto[r.auto](r) : ""}${esc(r.t)}${refs(r.src)}</td></tr>`).join("")}</tbody>`;
-    $("#tm-vell").innerHTML = tmeta(bc.checked ? `FINRA BrokerCheck ${fmt(bc.checked)}${bc.sros_checked && bc.sros_checked !== bc.checked ? ` · 거래소 목록 ${fmt(bc.sros_checked)}` : ""}` : "FINRA BrokerCheck", "곳 · 종 · 건");
-
-    // 재무 추이: 연도별 공개분 PDF로 연결(+ 그보다 새 누리집 재무상태표 한 칸)
-    const rowsF = [["총자산", "assets"], ["부채", "liab"], ["자본(회원 지분)", "equity"], ["순자본", "net_capital"], ["최소 순자본", "required"], ["초과 순자본", "excess"]];
-    const cols = it ? [...fin, it] : fin;
-    const head = (f) => (f === it
-      ? `<th class="n"><a href="${esc(it.url)}" target="_blank" rel="noopener" title="회사 누리집 재무상태표">${ym(it.period)}</a>${itAud ? `<span class="sub">${itAud}</span>` : ""}</th>`
-      : `<th class="n"><a href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.acc || "")}${f.filed ? ` · ${fmt(f.filed)} 공시` : ""}">${yr(f.period)}</a></th>`);
-    $("#velFin").innerHTML = fin.length ? `<thead><tr><th>항목</th>${cols.map(head).join("")}</tr></thead>
-      <tbody>${rowsF.map(([lab, key]) => `<tr><td class="k">${lab}</td>${cols.map((f) => `<td class="n">${key === "equity" ? `<b>${num(mUsd(f[key]), 1)}</b>` : num(mUsd(f[key]), 1)}</td>`).join("")}</tr>`).join("")}</tbody>` : "";
-    if (!fin.length) $("#velFin").outerHTML = '<p class="empty" id="velFin">연차 감사보고서 데이터를 불러오지 못했습니다.</p>';
-    $("#tm-velf").innerHTML = tmeta(`각 연도 12월 31일 감사받은 재무상태표${it ? ` · ${itLab}: 회사 누리집 재무상태표` : ""}`, "US$ m");
-    $("#velFinNote").innerHTML = `${esc(M.fin_note)}${refs(M.fin_src)}`;
-
-    // 미국 상장 브로커리지 대비 위치
-    if (R) {
-      const d = cur.period;
-      $("#velRank").innerHTML = `<thead><tr><th class="n">순위</th><th>회사</th><th>사업 모델</th><th class="n">자본</th><th class="n">총자산</th></tr></thead>
-        <tbody>${R.rows.map((r, i) => `<tr${r.me ? ' class="me"' : ""}><td class="rk">${i + 1}</td><td class="k">${esc(r.name)} <small>${esc(r.ticker)}</small></td><td>${esc(r.model)}</td>
-          <td class="n"${r.equity?.end && r.equity.end !== d ? ` title="${esc(r.equity.end)} 기준"` : ""}>${num(mUsd(r.eq), 0)}${r.equity?.end && r.equity.end !== d ? "*" : ""}</td>
-          <td class="n">${r.as == null ? "—" : num(mUsd(r.as), 0)}</td></tr>`).join("")}</tbody>`;
-      const odd = R.rows.filter((r) => r.equity?.end && r.equity.end !== d);
-      $("#velRankNote").innerHTML = `자본 기준 <b>${R.n}곳 중 ${R.eq}위</b>, 총자산 기준 ${R.nAs}곳 중 ${R.as}위. 상장사는 미국 본사 NYSE·NYSE American·나스닥 상장사 중 증권 중개·청산·시장조성·자산관리 중개가 주업인 ${R.n - 1}곳(자문 전업 IB·거래소·보험 겸업사 제외). ${esc(M.rank_note)}${odd.length ? ` *는 결산월이 달라 가장 가까운 분기말 값(${odd.map((r) => `${esc(r.ticker)} ${fmt(r.equity.end)}`).join(", ")}).` : ""}${refs(M.rank_src)}`;
-      $("#tm-velr").innerHTML = tmeta(`${fmt(d)} · 상장사 SEC XBRL(10-K·10-Q)${V.peers.checked ? ` ${fmt(V.peers.checked)} 수집` : ""}`, "US$ m");
-    } else {
-      $("#velRank").outerHTML = '<p class="empty" id="velRank">상장사 비교 값은 다음 자동 수집(SEC XBRL) 때 채워집니다.</p>';
-      $("#tm-velr").innerHTML = tmeta("SEC XBRL", "US$ m");
-    }
-
-    // 최근 공시·뉴스
-    const fins = new Map(fin.map((f) => [f.acc, f]));
-    const fl = (ed.filings || []).slice(0, 6);
-    $("#velFilings").innerHTML = fl.length ? fl.map((f) => `<li><time>${fmt(f.filed)}</time><span><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.form)} 연차 감사보고서${/\/A$/.test(f.form) ? "(정정)" : ""} · ${yr(f.period)}</a>${fins.get(f.acc)?.url ? ` <small><a href="${esc(fins.get(f.acc).url)}" target="_blank" rel="noopener">PDF</a></small>` : ""}</span></li>`).join("")
-      : '<li class="empty">공시 목록을 불러오지 못했습니다.</li>';
-    $("#tm-vele").innerHTML = tmeta(ed.checked ? `EDGAR ${fmt(ed.checked)} 확인` : "EDGAR");
-    const nw = V?.news || [];
-    $("#velNews").innerHTML = nw.length ? nw.map((x) => `<li><time>${fmt(x.date)}</time><span><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><small>${esc(x.src)}</small></span></li>`).join("")
-      : '<li class="empty">최근 2년 안 기사가 없습니다.</li>';
-    $("#tm-veln").innerHTML = tmeta(V?.news_checked ? `최근 2년 · ${fmt(V.news_checked)} 확인` : "최근 2년");
-  }
-
   // ---------- iframe 안 이동 ----------
   function go(id) {
     const el = document.getElementById(id);
@@ -373,20 +242,22 @@
       if (g) { e.preventDefault(); go(g.dataset.go); return; }
       const w = e.target.closest("[data-wf]");
       if (w && frame()) { setParentHash(`#workflow/${w.dataset.wf}`); return; } // index.html 이 대시보드 주소의 단계로 이동
-      const b = e.target.closest('[data-to="index"]');
-      if (b) setParentHash("#workflow");
+      const b = e.target.closest("[data-to]");
+      if (b) setParentHash(b.dataset.to === "index" ? "#workflow" : `#workflow/${b.dataset.to}`);
     });
     const fe = frame();
     if (!fe) return;
     setParentHash("#workflow/us");
-    const fit = () => { fe.style.height = `${document.documentElement.scrollHeight + 4}px`; };
+    // 높이는 내용(body) 기준: 문서 높이(scrollHeight)는 iframe보다 작아지지 않아, 더 긴 하위 탭에서 넘어오면 아래가 빈 채로 남는다
+    const fit = () => { fe.style.height = `${Math.ceil(document.body.getBoundingClientRect().height) + 4}px`; };
     fit();
     if ("ResizeObserver" in window) new ResizeObserver(fit).observe(document.body);
-    // 위쪽 탭 메뉴로 '해외지분투자 Workflow'(#workflow)나 단계(#workflow/s10)를 고르면 절차 쪽으로 돌아간다
+    window.addEventListener("resize", fit); // 대시보드가 높이를 다시 정하면 내용 높이로 되돌린다
+    // 위쪽 탭 메뉴로 '해외지분투자 Workflow'(#workflow)나 단계(#workflow/s10)를 고르면 절차 쪽으로, #workflow/velocity 는 Velocity 탭으로
     const onHash = () => {
       let h = "";
       try { h = window.parent.location.hash; } catch (_) { return; }
-      if (h.startsWith("#workflow") && h !== "#workflow/us") location.replace("index.html");
+      if (h.startsWith("#workflow") && h !== "#workflow/us") location.replace(h === "#workflow/velocity" ? "velocity.html" : "index.html");
     };
     window.parent.addEventListener("hashchange", onHash);
     window.addEventListener("pagehide", () => { try { window.parent.removeEventListener("hashchange", onHash); } catch (_) { /* 무시 */ } });
@@ -398,20 +269,20 @@
   }
 
   async function init() {
-    let cfg, cons, sf, upd, val, sec, vel;
+    let cfg, cons, sf, upd, val, sec;
     try {
-      [U, W, ST, cfg, cons, sf, upd, val, sec, vel] = await Promise.all([
+      [U, W, ST, cfg, cons, sf, upd, val, sec] = await Promise.all([
         load("data/us_entry.json"), load("data/steps.json", true), load("../guide/data/source_status.json", true),
         load("../data/config.json", true), load("../data/domestic/consolidated.json", true), load("../data/domestic/sub_fin.json", true),
         load("../data/domestic/offices_update.json", true), load("../insight/data/valuation.json", true), load("../data/global/us_sec.json", true),
-        load("data/velocity.json", true),
       ]);
     } catch (e) {
       $("#meta").textContent = `데이터를 불러오지 못했습니다(${e.message}).`;
       return;
     }
-    Object.keys(U.sources).forEach((id, i) => { REF[id] = i + 1; });
-    const urls = Object.values(U.sources).map((s) => s.u);
+    const ids = srcIds();
+    ids.forEach((id, i) => { REF[id] = i + 1; });
+    const urls = ids.map((id) => U.sources[id].u);
     const done = urls.filter((u) => srcState(u)?.checked);
     // 머리 줄 원문 점검일은 실제로 비교한 날(ST.updated)까지만: 병합 때 새 출처 기준값만 잡은 날은 빼고
     const last = done.map((u) => srcState(u).checked).sort().pop();
@@ -420,7 +291,7 @@
     const nFail = urls.filter((u) => unchecked(srcState(u))).length, nWait = urls.length - done.length - nFail;
     const part = [nFail ? `자동 점검이 안 되는 ${nFail}건은 규정 검증일 기준` : "", nWait ? `${nWait}건은 다음 점검` : ""].filter(Boolean).join(" · ");
     $("#title").textContent = U.meta.title;
-    $("#meta").innerHTML = `규정 검증 <b>${fmt(U.meta.verified_at)}</b> · 원문 점검 <b>${checked ? fmt(checked) : "다음 반기 점검(1·7월)"}</b>${checked && part ? `(${urls.length}건 중 ${done.length}건 · ${part})` : ""}${revised ? ` · <span class="neg">개정 감지 ${revised}건</span>` : ""} · 출처 ${urls.length}건 · 한국 측 절차는 <a href="index.html" data-to="index">해외지분투자 절차</a>, 국가 비교는 <a href="../#guide" target="_top">해외진출 유의사항 탭</a> · 한화그룹 사례 <a href="#velocity" data-go="velocity">Velocity Clearing ↓</a>`;
+    $("#meta").innerHTML = `규정 검증 <b>${fmt(U.meta.verified_at)}</b> · 원문 점검 <b>${checked ? fmt(checked) : "다음 반기 점검(1·7월)"}</b>${checked && part ? `(${urls.length}건 중 ${done.length}건 · ${part})` : ""}${revised ? ` · <span class="neg">개정 감지 ${revised}건</span>` : ""} · 출처 ${urls.length}건 · 한국 측 절차는 <a href="index.html" data-to="index">해외지분투자 절차</a>, 국가 비교는 <a href="../#guide" target="_top">해외진출 유의사항 탭</a> · 한화그룹 사례는 <a href="velocity.html" data-to="velocity">Velocity(한화생명) 탭</a>`;
     $("#note").textContent = `${U.meta.scope} ${U.meta.note}`;
     const v = `규정 검증 ${fmt(U.meta.verified_at)}`;
     $("#tm-cmp").innerHTML = tmeta(v);
@@ -434,7 +305,7 @@
     $("#tm-wf").innerHTML = tmeta(W ? `Workflow 규정 검증 ${fmt(W.meta.verified_at)}` : "", "일 · 개월");
     $("#srcMeta").textContent = `${urls.length}건 · 공식 원문은 반기마다 변경 점검, 기사·발표문은 링크 확인`;
     renderKpis(); renderCompare(); renderTimeline(); renderModels(); renderPeople(); renderNma(); renderSetup();
-    renderKr(cfg, cons, sf, upd); renderVelocity(vel); renderComps(val, sec); renderDeals(); renderWf(); renderSources();
+    renderKr(cfg, cons, sf, upd); renderComps(val, sec); renderDeals(); renderWf(); renderSources();
     $("#printBtn").onclick = () => window.print();
     wire();
   }

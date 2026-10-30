@@ -70,11 +70,11 @@
     setTimeout(() => el.classList.remove("flash"), 1600);
   }
 
-  // 대시보드 주소(#workflow/s10)나 이 페이지 주소(#s10)에 단계가 있으면 그 단계로. #workflow/us 는 미국 진출(us.html)
+  // 대시보드 주소(#workflow/s10)나 이 페이지 주소(#s10)에 단계가 있으면 그 단계로. #workflow/us 는 미국 진출(us.html), #workflow/velocity 는 Velocity(velocity.html)
   function fromHash() {
     let h = location.hash.slice(1);
     try { if (window.frameElement) h = window.parent.location.hash.split("/")[1] || ""; } catch (_) { /* 교차 출처 */ }
-    if (h === "us") { location.replace("us.html"); return; }
+    if (h === "us" || h === "velocity") { location.replace(`${h}.html`); return; }
     if (h) setTimeout(() => go(h), 150);
   }
 
@@ -82,15 +82,17 @@
     let fe = null;
     try { fe = window.frameElement; } catch (_) { return; }
     if (!fe) return;
-    const fit = () => { fe.style.height = `${document.documentElement.scrollHeight + 4}px`; };
+    // 높이는 내용(body) 기준: 문서 높이(scrollHeight)는 iframe보다 작아지지 않아, 더 긴 하위 탭에서 넘어오면 아래가 빈 채로 남는다
+    const fit = () => { fe.style.height = `${Math.ceil(document.body.getBoundingClientRect().height) + 4}px`; };
     fit();
     if ("ResizeObserver" in window) new ResizeObserver(fit).observe(document.body);
+    window.addEventListener("resize", fit); // 대시보드가 높이를 다시 정하면 내용 높이로 되돌린다
     window.parent.addEventListener("hashchange", fromHash);
-    // 미국 진출 쪽으로 넘어가면 이 페이지의 리스너를 떼고, 대시보드 주소를 #workflow/us 로 맞춘다(hashchange 없이)
+    // 미국 진출·Velocity 쪽으로 넘어가면 이 페이지의 리스너를 떼고, 대시보드 주소를 #workflow/us·#workflow/velocity 로 맞춘다(hashchange 없이)
     window.addEventListener("pagehide", () => { try { window.parent.removeEventListener("hashchange", fromHash); } catch (_) { /* 무시 */ } });
-    document.querySelector('[data-to="us"]')?.addEventListener("click", () => {
-      try { if (window.parent.location.hash.startsWith("#workflow")) window.parent.history.replaceState(null, "", "#workflow/us"); } catch (_) { /* 교차 출처 */ }
-    });
+    document.querySelectorAll("[data-to]").forEach((a) => a.addEventListener("click", () => {
+      try { if (window.parent.location.hash.startsWith("#workflow")) window.parent.history.replaceState(null, "", `#workflow/${a.dataset.to}`); } catch (_) { /* 교차 출처 */ }
+    }));
   }
 
   async function init() {
