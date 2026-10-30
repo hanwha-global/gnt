@@ -5,7 +5,8 @@
   PDF는 개수가 바뀌었거나 마지막으로 읽은 지 7일이 지났을 때만 받는다.
 - SEC EDGAR submissions API: 연차 감사보고서(X-17A-5) 목록. 새 보고서가 올라오면 공개분 PDF에서
   재무상태표(총자산·부채·회원 지분)와 순자본 주석을 읽는다(pypdf 필요, 대차 합계가 맞을 때만 반영).
-- SEC XBRL companyconcept: 미국 상장 브로커리지의 자본·총자산을 Velocity 결산일과 같은 날짜로(화면이 순위를 낸다).
+- 회사 누리집(who-we-are): 감사보고서보다 새 반기 미감사 재무상태표 PDF가 있으면 같은 방식으로 읽는다.
+- SEC XBRL companyconcept: 미국 상장 브로커리지의 자본·총자산을 Velocity 최근 재무 날짜와 같은 날로(화면이 순위를 낸다).
   결산일이 같으면 값이 바뀌지 않으므로 7일에 한 번만 다시 받는다(못 받은 회사가 있으면 매번).
 - Google News RSS: 'Velocity Clearing', '한화생명 벨로시티' 기사.
 
@@ -21,6 +22,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from urllib.parse import unquote, urljoin
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -36,6 +38,7 @@ BC_PDF = f"https://files.brokercheck.finra.org/firm/firm_{CRD}.pdf"
 SUBMISSIONS = f"https://data.sec.gov/submissions/CIK{CIK}.json"
 CONCEPT = "https://data.sec.gov/api/xbrl/companyconcept/CIK{cik}/us-gaap/{tag}.json"
 SEC_H = {"User-Agent": SEC_UA, "Accept": "application/json"}
+SITE = "https://www.velocityclearingllc.com/who-we-are/"  # 감사·반기 재무상태표 링크가 있는 회사 소개 쪽
 
 # 미국 상장 브로커리지: 미국 본사 NYSE·나스닥 상장사 중 증권 중개·청산·시장조성·자산관리 중개가 주업인 회사.
 # 자문 전업 IB(Evercore·Lazard 등), 거래소·전자거래 플랫폼, 보험·자산운용 겸업사, 외국 본사 상장사는 넣지 않는다
@@ -127,31 +130,40 @@ def parse_bc_report(text):
     return sros, types
 
 
-STATUS_LINE = re.compile(r"^(.+?)\s+(\d+)\s+(\d+)\s+(\d+)$")
+STATUS_HEAD = re.compile(r"Pending\s*Final\s*On\s*Appeal")
+STATUS_ROW = re.compile(r"\s*([A-Z][A-Za-z /]*?[A-Za-z])\s+(\d+|N/A)\s+(\d+|N/A)\s+(\d+|N/A)(?![\d/])")
 
 
 def parse_bc_disclosures(text):
-    """상세 보고서의 공시 상태표('Pending Final On Appeal' 아래 유형별 건수)와 가장 최근 개시일."""
-    lines = [x.strip() for x in text.splitlines()]
+    """상세 보고서의 공시 상태표('Pending Final On Appeal' 다음 '유형 진행 종결 항소' 줄)와 가장 최근 개시일.
+    pypdf 글자는 줄바꿈·띄어쓰기가 원문 배치와 다를 수 있어 공백을 하나로 모아 읽는다."""
+    s = re.sub(r"\s+", " ", text)
     status = {}
-    k = next((j for j, x in enumerate(lines) if re.fullmatch(r"Pending\s+Final\s+On Appeal", x)), None)
-    if k is not None:
-        for x in lines[k + 1:]:
-            m = STATUS_LINE.match(x)
-            if not m:
-                break
-            status[m.group(1)] = {"pending": int(m.group(2)), "final": int(m.group(3)), "appeal": int(m.group(4))}
+    h = STATUS_HEAD.search(s)
+    pos = h.end() if h else len(s)
+    while m := STATUS_ROW.match(s, pos):
+        n = [0 if g == "N/A" else int(g) for g in m.groups()[1:]]
+        status[m.group(1)] = {"pending": n[0], "final": n[1], "appeal": n[2]}
+        pos = m.end()
     dates = [mdy(d) for d in re.findall(r"Date Initiated:\s*(\d{2}/\d{2}/\d{4})", text)]
     return status, max(dates) if dates else None
 
 
-def pdf_text(raw):
-    """PDF 본문 글자. pypdf가 없으면 None(그 항목은 이전 값 유지)."""
+def status_snippet(text):
+    """상태표를 못 읽었을 때 실행 기록에 남길 원문 조각(형식이 바뀐 곳을 바로 볼 수 있게)."""
+    s = re.sub(r"\s+", " ", text)
+    i = s.find("number and status of disclosure")
+    return repr(s[i:i + 260]) if i >= 0 else "상태표 안내 문구 없음"
+
+
+def pdf_text(raw, layout=False):
+    """PDF 본문 글자. layout=True는 화면 배치대로(표 칸 순서 유지). pypdf가 없으면 None(그 항목은 이전 값 유지)."""
     try:
         from pypdf import PdfReader
     except ImportError:
         return None
-    return "\n".join((p.extract_text() or "") for p in PdfReader(io.BytesIO(raw)).pages)
+    kw = {"extraction_mode": "layout"} if layout else {}
+    return "\n".join((p.extract_text(**kw) or "") for p in PdfReader(io.BytesIO(raw)).pages)
 
 
 def disc_totals(d):
@@ -179,7 +191,8 @@ def brokercheck(prev, errors):
     if same and not stale(out.get("sros_checked")) and not stale(out.get("types_checked")):
         return out  # 개수가 그대로면 보고서 PDF는 7일에 한 번
     try:
-        text = pdf_text(net.get(BC_PDF, timeout=60))
+        raw = net.get(BC_PDF, timeout=60)
+        text = pdf_text(raw)
         if text is None:
             errors.append("BrokerCheck 보고서: pypdf 없음(목록은 이전 값)")
             return out
@@ -194,11 +207,16 @@ def brokercheck(prev, errors):
         else:
             errors.append(f"BrokerCheck 보고서: 업무 종류 {len(types)}건 ≠ API {n.get('types')}건(목록은 이전 값)")
         status, latest = parse_bc_disclosures(text)
+        if not (status and latest):  # 표 칸이 섞여 나온 경우: 화면 배치대로 다시 읽는다
+            text = pdf_text(raw, layout=True)
+            status2, latest2 = parse_bc_disclosures(text)
+            status, latest = status or status2, latest or latest2
         # 유형별 합계가 API 건수와 같을 때만(진행 중·종결 구분과 가장 최근 개시일)
         if status and disc_totals(status) == disc_totals(out["disclosures"]):
             out["disc_status"], out["disc_latest"] = status, latest
         elif out["disclosures"]:
-            errors.append(f"BrokerCheck 보고서: 공시 상태표 {status} ≠ API {out['disclosures']}(이전 값)")
+            errors.append(f"BrokerCheck 보고서: 공시 상태표 {status or '못 읽음'} ≠ API {out['disclosures']}(이전 값)"
+                          + ("" if status else f" 원문: {status_snippet(text)}"))
     except Exception as e:  # noqa: BLE001
         errors.append(f"BrokerCheck 보고서: {e}")
     return out
@@ -303,6 +321,54 @@ def edgar(prev, errors):
     return out
 
 
+# ---------- 회사 누리집: 반기 미감사 재무상태표 ----------
+def statement_links(page):
+    """누리집 HTML에서 재무상태표 PDF 링크 [(날짜, 주소, 파일 이름)], 최신순. 날짜는 파일 이름의 MM.DD.YYYY."""
+    out = set()
+    for u in re.findall(r"""["'(]([^"'()<>\s]+?\.pdf)(?=[?#"')])""", page.replace("\\/", "/"), re.I):
+        u = urljoin(SITE, u)  # 절대·//·상대 주소 모두
+        name = unquote(u.rsplit("/", 1)[-1])
+        m = re.search(r"(\d{1,2})[.\-_](\d{1,2})[.\-_](\d{4})", name)
+        if m and re.search(r"(?i)financial|statement|condition", name):
+            out.add((f"{m.group(3)}-{int(m.group(1)):02d}-{int(m.group(2)):02d}", u, name))
+    return sorted(out, reverse=True)
+
+
+def interim(prev, fy, errors):
+    """감사보고서(fy: 최근 연차 재무)보다 새 재무상태표(반기 미감사). 없거나 감사보고서가 같거나 더 새것이면 None,
+    못 받거나 못 읽으면 이전 값."""
+    fy_period = (fy or {}).get("period") or ""
+    keep = prev if prev and prev.get("period", "") > fy_period else None
+    try:
+        links = statement_links(net.get(SITE, timeout=30).decode("utf-8", "replace"))
+    except Exception as e:  # noqa: BLE001
+        errors.append(f"누리집: {e}")
+        return keep
+    if not links:
+        errors.append("누리집: 재무상태표 PDF 링크 없음(이전 값 유지)")
+        return keep
+    period, url, name = links[0]
+    if period <= fy_period:
+        return None  # 감사보고서가 같거나 더 새것
+    if keep and keep.get("url") == url:
+        return {**keep, "checked": today()}  # 이미 읽은 파일
+    try:
+        text = pdf_text(net.get(url, timeout=60))
+    except Exception as e:  # noqa: BLE001
+        errors.append(f"누리집 재무상태표 {period}: {e}")
+        return keep
+    vals = parse_x17a5(text) if text else None
+    if not vals:
+        errors.append(f"누리집 재무상태표 {period}: {'pypdf 없음' if text is None else '재무상태표를 읽지 못함'}(이전 값 유지)")
+        return keep
+    if fy and fy.get("equity") and not 0.2 <= vals["equity"] / fy["equity"] <= 5:
+        errors.append(f"누리집 재무상태표 {period}: 지분 {vals['equity']:,.0f}이 {fy_period} {fy['equity']:,.0f}과 자릿수가 다름(이전 값 유지)")
+        return keep
+    # 감사 여부는 파일 이름으로(Unaudited·Audited가 없으면 모름)
+    audited = False if re.search(r"(?i)unaudited", name) else True if re.search(r"(?i)audited", name) else None
+    return {"period": period, "url": url, **vals, "audited": audited, "checked": today()}
+
+
 # ---------- 미국 상장 브로커리지(같은 날짜 자본·총자산) ----------
 def value_at(units, date, window=92):
     """XBRL 값 목록에서 date 시점 값(10-K·10-Q, 같은 날이 없으면 date 이전 window일 안의 가장 가까운 분기말)."""
@@ -404,21 +470,29 @@ def m(v):
     return "—" if v is None else f"{v / 1e6:,.1f}"
 
 
-def report(bc, ed, pe, nw, errors):
+def usd(v):
+    return "—" if v is None else f"{v:,.0f}"
+
+
+def report(bc, ed, it, pe, nw, errors):
     """실행 기록(Actions 로그)에 남길 요약: 숫자를 원문과 맞춰 볼 수 있게."""
     n = bc.get("counts") or {}
     print(f"BrokerCheck {bc.get('checked')}: SEC {n.get('sec')} · SRO {n.get('sro')}(목록 {len(bc.get('sros') or [])}, {bc.get('sros_checked')})"
           f" · 주 {n.get('states')} · 업무 {n.get('types')}(목록 {len(bc.get('types') or [])}) · 공시 {bc.get('disclosures')}"
           f" 상태 {bc.get('disc_status')} 최근 개시 {bc.get('disc_latest')}")
     print(f"EDGAR {ed.get('checked')}: X-17A-5 {len(ed.get('filings', []))}건, 최근 {(ed.get('filings') or [{}])[0].get('filed')}")
+    if it:
+        print(f"  누리집 {it['period']} {'감사' if it.get('audited') else '미감사' if it.get('audited') is False else ''} US$ m: 자산 {m(it.get('assets'))}"
+              f" · 부채 {m(it.get('liab'))} · 지분 {m(it.get('equity'))} · 순자본 {m(it.get('net_capital'))} / 요건 {m(it.get('required'))} ({it['url']})")
     for f in ed.get("fin", [])[:3]:
         print(f"  {f['period']} {'자동' if f.get('auto') else '확인값'} US$ m: 자산 {m(f.get('assets'))} · 부채 {m(f.get('liab'))}"
               f" · 지분 {m(f.get('equity'))} · 순자본 {m(f.get('net_capital'))} / 요건 {m(f.get('required'))}")
     rows = (pe or {}).get("rows", [])
     print(f"상장사 {sum(bool(r.get('ok')) for r in rows)}/{len(rows)} ({(pe or {}).get('date')}, {(pe or {}).get('checked')})")
-    for r in rows:
+    for r in rows:  # 10-K 표와 바로 맞춰 볼 수 있게 달러 그대로
         e, a = r.get("equity") or {}, r.get("assets") or {}
-        print(f"  {r['ticker']:5} 자본 {m(e.get('value')):>12} ({e.get('end')}, {e.get('tag', '')[:40]}) · 총자산 {m(a.get('value')):>12} ({a.get('end')})")
+        print(f"  {r['ticker']:5} 자본 {usd(e.get('value')):>19} ({e.get('end')} {e.get('form')} {e.get('tag')})"
+              f" · 총자산 {usd(a.get('value')):>21} ({a.get('end')} {a.get('form')})")
     print(f"뉴스 {len(nw)}건", *[f"  {x['date']} {x['title'][:70]}" for x in nw], sep="\n")
     if errors:
         print("오류(이전 값 유지):", *[f"  {e}" for e in errors], sep="\n")
@@ -429,16 +503,18 @@ def main():
     errors = []
     bc = brokercheck(prev.get("brokercheck"), errors)
     ed = edgar(prev.get("edgar"), errors)
-    date = (ed.get("fin") or [{}])[0].get("period")
+    fy = (ed.get("fin") or [None])[0]
+    it = interim(prev.get("interim"), fy, errors)
+    date = it["period"] if it else (fy or {}).get("period")  # 순위는 가장 최근 재무 날짜로
     pe = peers(prev.get("peers"), date, errors) if date else prev.get("peers")
     n_err = len(errors)
     nw = news(prev.get("news"), errors)
     news_ok = len(errors) == n_err  # 두 검색이 모두 됐을 때만 확인일을 바꾼다
     out = {"updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-           "brokercheck": bc, "edgar": ed, "peers": pe, "news": nw,
+           "brokercheck": bc, "edgar": ed, "interim": it, "peers": pe, "news": nw,
            "news_checked": today() if news_ok else prev.get("news_checked"), "errors": errors}
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    report(bc, ed, pe, nw, errors)
+    report(bc, ed, it, pe, nw, errors)
 
 
 if __name__ == "__main__":

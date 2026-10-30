@@ -249,17 +249,23 @@
     const bc = V?.brokercheck || {}, ed = V?.edgar || {}, n = bc.counts || {};
     const fin = (ed.fin || []).slice().sort((a, b) => (a.period < b.period ? -1 : 1)).slice(-5);
     const last = fin[fin.length - 1], prev = fin[fin.length - 2];
-    const R = velRank(V, last);
+    // 감사보고서보다 새 재무상태표(회사 누리집 반기 미감사)가 있으면 KPI·순위는 그 날짜로
+    const it = V?.interim && last && V.interim.period > last.period ? V.interim : null;
+    const cur = it || last, nc = cur?.net_capital != null ? cur : last;
+    const R = velRank(V, cur);
     const yr = (p) => `FY${String(p).slice(0, 4)}`;
+    const ym = (p) => `${String(p).slice(0, 4)}.${String(p).slice(5, 7)}`;
+    const itAud = it?.audited === false ? "미감사" : it?.audited ? "감사" : ""; // 파일 이름 기준
+    const itLab = it ? `${ym(it.period)}${itAud ? ` ${itAud}` : ""}` : "";
     $("#velSrc").textContent = V ? `FINRA BrokerCheck·SEC EDGAR·뉴스 매일 자동 · 설명 원문 검증 ${fmt(M.verified_at)}` : `설명 원문 검증 ${fmt(M.verified_at)}`;
     $("#velLead").textContent = M.lead;
 
     const k = [
       { v: "75%", t: "한화생명 지분", d: "모회사 Nexus Clearing 지분 · 2025.07.30 인수 완료", src: ["v_done"] },
-      { v: short(last?.equity), t: "자본(회원 지분)", d: last ? `${yr(last.period)} 감사 · 전년 ${short(prev?.equity)}` : "" },
-      { v: short(last?.assets), t: "총자산", d: last ? `${yr(last.period)} · 전년 ${short(prev?.assets)}` : "" },
-      { v: short(last?.net_capital), t: "순자본(15c3-1)", d: last?.required ? `최소 요건 ${short(last.required)}의 ${num(last.net_capital / last.required, 1)}배` : "" },
-      { v: R ? `${R.eq}위 / ${R.n}` : "—", t: "미국 상장 브로커리지 대비 자본", d: R ? `총자산 ${R.as}위 / ${R.nAs} · ${fmt(last.period)} 기준` : "상장사 값은 다음 자동 수집 때" },
+      { v: short(cur?.equity), t: "자본(회원 지분)", d: it ? `${itLab} · ${yr(last.period)} ${short(last.equity)}` : last ? `${yr(last.period)} 감사 · 전년 ${short(prev?.equity)}` : "" },
+      { v: short(cur?.assets), t: "총자산", d: it ? `${itLab} · ${yr(last.period)} ${short(last.assets)}` : last ? `${yr(last.period)} · 전년 ${short(prev?.assets)}` : "" },
+      { v: short(nc?.net_capital), t: "순자본(15c3-1)", d: nc?.required ? `${nc === it ? `${ym(it.period)} · ` : ""}최소 요건 ${short(nc.required)}의 ${num(nc.net_capital / nc.required, 1)}배` : "" },
+      { v: R ? `${R.eq}위 / ${R.n}` : "—", t: "미국 상장 브로커리지 대비 자본", d: R ? `총자산 ${R.as}위 / ${R.nAs} · ${fmt(cur.period)} 기준` : "상장사 값은 다음 자동 수집 때" },
     ];
     $("#velKpis").innerHTML = k.map((x) => `<div class="kpi"><b>${esc(x.v)}</b><span>${esc(x.t)}${refs(x.src)}</span><small>${esc(x.d)}</small></div>`).join("");
 
@@ -300,17 +306,21 @@
       `<tr><td class="k">${esc(r.k)}</td><td>${r.auto && auto[r.auto] ? auto[r.auto](r) : ""}${esc(r.t)}${refs(r.src)}</td></tr>`).join("")}</tbody>`;
     $("#tm-vell").innerHTML = tmeta(bc.checked ? `FINRA BrokerCheck ${fmt(bc.checked)}${bc.sros_checked && bc.sros_checked !== bc.checked ? ` · 거래소 목록 ${fmt(bc.sros_checked)}` : ""}` : "FINRA BrokerCheck", "곳 · 종 · 건");
 
-    // 재무 추이: 연도별 공개분 PDF로 연결
+    // 재무 추이: 연도별 공개분 PDF로 연결(+ 그보다 새 누리집 재무상태표 한 칸)
     const rowsF = [["총자산", "assets"], ["부채", "liab"], ["자본(회원 지분)", "equity"], ["순자본", "net_capital"], ["최소 순자본", "required"], ["초과 순자본", "excess"]];
-    $("#velFin").innerHTML = fin.length ? `<thead><tr><th>항목</th>${fin.map((f) => `<th class="n"><a href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.acc)} · ${fmt(f.filed)} 공시">${yr(f.period)}</a></th>`).join("")}</tr></thead>
-      <tbody>${rowsF.map(([lab, key]) => `<tr><td class="k">${lab}</td>${fin.map((f) => `<td class="n">${key === "equity" ? `<b>${num(mUsd(f[key]), 1)}</b>` : num(mUsd(f[key]), 1)}</td>`).join("")}</tr>`).join("")}</tbody>` : "";
+    const cols = it ? [...fin, it] : fin;
+    const head = (f) => (f === it
+      ? `<th class="n"><a href="${esc(it.url)}" target="_blank" rel="noopener" title="회사 누리집 재무상태표">${ym(it.period)}</a>${itAud ? `<span class="sub">${itAud}</span>` : ""}</th>`
+      : `<th class="n"><a href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.acc || "")}${f.filed ? ` · ${fmt(f.filed)} 공시` : ""}">${yr(f.period)}</a></th>`);
+    $("#velFin").innerHTML = fin.length ? `<thead><tr><th>항목</th>${cols.map(head).join("")}</tr></thead>
+      <tbody>${rowsF.map(([lab, key]) => `<tr><td class="k">${lab}</td>${cols.map((f) => `<td class="n">${key === "equity" ? `<b>${num(mUsd(f[key]), 1)}</b>` : num(mUsd(f[key]), 1)}</td>`).join("")}</tr>`).join("")}</tbody>` : "";
     if (!fin.length) $("#velFin").outerHTML = '<p class="empty" id="velFin">연차 감사보고서 데이터를 불러오지 못했습니다.</p>';
-    $("#tm-velf").innerHTML = tmeta("각 연도 12월 31일 · 감사받은 재무상태표", "US$ m");
+    $("#tm-velf").innerHTML = tmeta(`각 연도 12월 31일 감사받은 재무상태표${it ? ` · ${itLab}: 회사 누리집 재무상태표` : ""}`, "US$ m");
     $("#velFinNote").innerHTML = `${esc(M.fin_note)}${refs(M.fin_src)}`;
 
     // 미국 상장 브로커리지 대비 위치
     if (R) {
-      const d = last.period;
+      const d = cur.period;
       $("#velRank").innerHTML = `<thead><tr><th class="n">순위</th><th>회사</th><th>사업 모델</th><th class="n">자본</th><th class="n">총자산</th></tr></thead>
         <tbody>${R.rows.map((r, i) => `<tr${r.me ? ' class="me"' : ""}><td class="rk">${i + 1}</td><td class="k">${esc(r.name)} <small>${esc(r.ticker)}</small></td><td>${esc(r.model)}</td>
           <td class="n"${r.equity?.end && r.equity.end !== d ? ` title="${esc(r.equity.end)} 기준"` : ""}>${num(mUsd(r.eq), 0)}${r.equity?.end && r.equity.end !== d ? "*" : ""}</td>

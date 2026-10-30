@@ -214,6 +214,7 @@
   "fin": [
    {
     "period": "2025-12-31",
+    "acc": "0001225460-26-000003",
     "filed": "2026-03-02",
     "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546026000003/public25.pdf",
     "assets": 5311159767.0,
@@ -226,6 +227,7 @@
    },
    {
     "period": "2024-12-31",
+    "acc": "0001225460-25-000001",
     "filed": "2025-03-03",
     "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546025000001/public24.pdf",
     "assets": 1225052457.0,
@@ -295,6 +297,7 @@
    }
   ]
  },
+ "interim": null,
  "peers": null,
  "news": [
   {

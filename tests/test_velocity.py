@@ -65,6 +65,14 @@ At December 31, 2025, the Company had net capital, as defined, of $136,069,088 w
 its required net capital of $6,314,141.
 """
 
+# 회사 누리집(who-we-are) HTML 모양: 절대·상대·스크립트 JSON 안 주소, 재무상태표가 아닌 PDF, PDF가 아닌 감사보고서 링크
+SITE_HTML = """<a href="https://media.velocityclearingllc.com/wp-content/uploads/2026/09/04065732/Velocity-Clearing-06.30.2026-Financial-Statement-Unaudited-1.pdf">Unaudited June 30, 2026</a>
+<a href="https://vcttechnologiesllccom-my.sharepoint.com/:b:/g/personal/x/IQB3?e=H6">Audited December 31, 2025 Financials</a>
+<a href='/wp-content/uploads/2025/09/Velocity-Clearing-6.30.2025-Statement-of-Financial-Condition.pdf'>June 30, 2025</a>
+<script>var d={"u":"https:\\/\\/media.velocityclearingllc.com\\/a\\/Form-CRS-06.30.2026.pdf"}</script>"""
+H1_URL = "https://media.velocityclearingllc.com/wp-content/uploads/2026/09/04065732/Velocity-Clearing-06.30.2026-Financial-Statement-Unaudited-1.pdf"
+X17_H1 = X17.replace("December 31, 2025", "June 30, 2026")
+
 
 def rss(*items):
     body = "".join(f"<item><title>{t} - {s}</title><link>https://n.example/{i}</link><pubDate>{d}</pubDate><source url='x'>{s}</source></item>"
@@ -93,6 +101,26 @@ class ParseTest(unittest.TestCase):
         status, latest = fv.parse_bc_disclosures(BC_REPORT)
         self.assertEqual(status, {"Regulatory Event": {"pending": 0, "final": 2, "appeal": 0}})
         self.assertEqual(latest, "2025-09-30")
+
+    def test_disclosure_status_tolerates_pdf_text_layout(self):
+        # pypdf 글자는 칸마다 줄이 바뀌거나 머리글 띄어쓰기가 빠질 수 있다. 공시 유형이 여럿이면 줄마다, 해당 없는 칸은 N/A
+        split = "matrix of the number and status of disclosure events.\nPendingFinal\nOn Appeal\nRegulatory\nEvent\n0\n19\n0\nCivil Event 0 1 0\nArbitration N/A 2 N/A\n©2026 FINRA. 23\nDate Initiated:\n09/30/2025"
+        status, latest = fv.parse_bc_disclosures(split)
+        self.assertEqual(status, {"Regulatory Event": {"pending": 0, "final": 19, "appeal": 0}, "Civil Event": {"pending": 0, "final": 1, "appeal": 0},
+                                  "Arbitration": {"pending": 0, "final": 2, "appeal": 0}})
+        self.assertEqual(latest, "2025-09-30")
+        swapped = "number and status of disclosure events. Regulatory Event 0 19 0\nPending Final On Appeal\n©2026 FINRA"
+        self.assertEqual(fv.parse_bc_disclosures(swapped)[0], {})  # 머리글 뒤에 줄이 없으면 읽지 않는다(배치대로 다시 읽음)
+        self.assertIn("Regulatory Event 0 19 0", fv.status_snippet(swapped))
+        self.assertEqual(fv.parse_bc_disclosures("no table here")[0], {})
+
+    def test_site_statement_links(self):
+        links = fv.statement_links(SITE_HTML)
+        self.assertEqual([(d, u) for d, u, _ in links], [
+            ("2026-06-30", H1_URL),
+            ("2025-06-30", "https://www.velocityclearingllc.com/wp-content/uploads/2025/09/Velocity-Clearing-6.30.2025-Statement-of-Financial-Condition.pdf"),
+        ])  # 최신순, 상대 주소는 누리집 기준 절대 주소로, Form CRS·SharePoint 링크는 뺀다
+        self.assertEqual(fv.statement_links("<p>no links</p>"), [])
 
     def test_annual_report_balance_sheet_and_net_capital(self):
         v = fv.parse_x17a5(X17)
@@ -165,6 +193,47 @@ class FetchTest(unittest.TestCase):
             out = fv.brokercheck({**prev, "sros_checked": ago(8)}, errs)
         self.assertEqual(len(out["sros"]), 3)  # 반쪽 목록은 쓰지 않는다
         self.assertTrue(any("SRO 2건" in e for e in errs))
+
+    def test_brokercheck_status_falls_back_to_layout_text(self):
+        prev = {"sros_checked": ago(8), "types_checked": ago(8)}
+        swapped = BC_REPORT.replace("Pending Final On Appeal\nRegulatory Event 0 2 0\n", "Regulatory Event 0 2 0\nPending Final On Appeal\n")
+        with mock.patch.object(fv.net, "get", side_effect=[BC_API, b"%PDF"]), \
+                mock.patch.object(fv, "pdf_text", side_effect=lambda raw, layout=False: BC_REPORT if layout else swapped) as t:
+            out = fv.brokercheck(prev, [])
+        self.assertEqual(out["disc_status"], {"Regulatory Event": {"pending": 0, "final": 2, "appeal": 0}})
+        self.assertEqual(out["disc_latest"], "2025-09-30")
+        self.assertEqual(t.call_count, 2)
+        errs = []
+        with mock.patch.object(fv.net, "get", side_effect=[BC_API, b"%PDF"]), mock.patch.object(fv, "pdf_text", return_value=swapped):
+            out = fv.brokercheck({**prev, "disc_status": {"Regulatory Event": {"pending": 0, "final": 2, "appeal": 0}}}, errs)
+        self.assertEqual(out["disc_status"]["Regulatory Event"]["final"], 2)  # 둘 다 못 읽으면 이전 값
+        self.assertTrue(any("원문:" in e for e in errs))  # 실행 기록에 원문 조각
+
+    def test_interim_statement_from_site(self):
+        fy = {"period": "2025-12-31", "equity": 156779575.0}
+        errs = []
+        with mock.patch.object(fv.net, "get", side_effect=[SITE_HTML.encode(), b"%PDF"]), mock.patch.object(fv, "pdf_text", return_value=X17_H1):
+            it = fv.interim(None, fy, errs)
+        self.assertEqual((it["period"], it["url"], it["audited"], it["equity"], it["net_capital"]), ("2026-06-30", H1_URL, False, 156779575, 136069088))
+        self.assertEqual(errs, [])
+        with mock.patch.object(fv.net, "get", return_value=SITE_HTML.encode()) as g:
+            again = fv.interim({**it, "checked": ago(3)}, fy, [])
+        self.assertEqual(g.call_count, 1)  # 이미 읽은 파일은 다시 받지 않는다
+        self.assertEqual((again["equity"], again["checked"]), (it["equity"], fv.today()))
+        with mock.patch.object(fv.net, "get", return_value=SITE_HTML.encode()):
+            self.assertIsNone(fv.interim(it, {"period": "2026-12-31", "equity": 1.6e8}, []))  # 감사보고서가 더 새것
+        with mock.patch.object(fv.net, "get", side_effect=RuntimeError("HTTP 503: x")):
+            self.assertIs(fv.interim(it, fy, []), it)  # 누리집 실패: 이전 값
+            self.assertIsNone(fv.interim(it, {"period": "2026-12-31"}, []))  # 이전 값도 감사보고서보다 오래되면 버린다
+        errs = []
+        with mock.patch.object(fv.net, "get", side_effect=[SITE_HTML.encode(), b"%PDF"]), mock.patch.object(fv, "pdf_text", return_value="scan"):
+            self.assertIsNone(fv.interim(None, fy, errs))
+        self.assertTrue(any("읽지 못함" in e for e in errs))
+        thousands = X17_H1.replace("5,311,159,767", "5,311,160").replace("5,154,380,192", "5,154,380").replace("156,779,575", "156,780")
+        errs = []
+        with mock.patch.object(fv.net, "get", side_effect=[SITE_HTML.encode(), b"%PDF"]), mock.patch.object(fv, "pdf_text", return_value=thousands):
+            self.assertIsNone(fv.interim(None, fy, errs))
+        self.assertTrue(any("자릿수" in e for e in errs))
 
     def test_brokercheck_failure_keeps_previous(self):
         errs = []
@@ -241,6 +310,12 @@ class DataTest(unittest.TestCase):
         p = V.get("peers") or {}
         if p.get("rows"):
             self.assertEqual([r["ticker"] for r in p["rows"]], [t for _, t, _, _ in fv.PEERS])
+        it = V.get("interim")
+        if it:
+            self.assertGreater(it["period"], fin[0]["period"])  # 감사보고서보다 새것만
+            self.assertLess(abs(it["assets"] - it["liab"] - it["equity"]), 1)
+            if p.get("rows"):
+                self.assertEqual(p["date"], it["period"])  # 순위는 가장 최근 재무 날짜
 
     def test_screen_text_uses_known_auto_fields(self):
         M = US["velocity"]
