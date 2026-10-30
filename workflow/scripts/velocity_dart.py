@@ -219,7 +219,7 @@ BOOK_RX = re.compile(r"종속기업\s*투자\s*(?:의\s*)?(?:내역|현황)")
 
 def parse_book(texts):
     """별도재무제표 주석 '종속기업투자의 내역' 표에서 한화생명이 직접 출자한 미국 법인 행
-    → {name, activity, stake, book, prev_book}(백만원). 표가 없으면 None. 당기말·전기말 두 칸이 한 표에 있다."""
+    → {name, stake, book, prev_book}(백만원). 표가 없으면 None. 당기말·전기말 두 칸이 한 표에 있다."""
     best = None
     for text in texts:
         for before, rows in tables(text):
@@ -241,8 +241,7 @@ def parse_book(texts):
                 if book is None:
                     continue
                 pv = to_num(cell(prev))
-                row = {"name": plain(r[0]), "activity": (r[1] or None) if shift == 0 and len(r) > 1 else None,
-                       "stake": pct((cell(sc) or "").replace("%", "")), "book": round(book * UNITS[unit], 1),
+                row = {"name": plain(r[0]), "stake": pct((cell(sc) or "").replace("%", "")), "book": round(book * UNITS[unit], 1),
                        "prev_book": None if pv is None else round(pv * UNITS[unit], 1)}
                 if not best or row["book"] > best["book"]:
                     best = row

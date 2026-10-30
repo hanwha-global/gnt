@@ -106,8 +106,8 @@
         d: ctx.vRoeLatest != null ? `${dl.label} · 상장사 중앙값 ${R?.medRoe != null ? `${num(R.medRoe, 1)}%` : "—"}` : "한화생명 공시(DART) 수집 전" },
       { t: "자본(회원 지분)", v: usd(cur?.equity), d: it ? `${ym(it.period)} ${audLab(it)} · ${yr(last.period)} ${usd(last.equity)}` : last ? `${yr(last.period)} 감사` : "" },
       { t: "순자본(15c3-1)", v: usd(nc?.net_capital), d: nc?.required ? `최소 요건 ${usd(nc.required)}의 ${num(nc.net_capital / nc.required, 1)}배` : "" },
-      { t: "상장 브로커리지 대비", v: R ? (R.roe ? `ROE ${R.roe}위 · 자본 ${R.eq}위` : `자본 ${R.eq}위`) : "—",
-        d: R ? `${R.n}곳 중 · 총자산 ${R.as}위 · ${fmt(R.date)}` : "상장사 값은 다음 자동 수집 때" },
+      { t: "상장 브로커리지 대비", v: R ? (R.roe ? `ROE ${R.roe}위 / ${R.nRoe}` : `자본 ${R.eq}위 / ${R.n}`) : "—",
+        d: R ? `${R.roe ? `자본 ${R.eq}위 · ` : ""}총자산 ${R.as}위 · ${fmt(R.date)}` : "상장사 값은 다음 자동 수집 때" },
       { t: "규제 공시", v: disc ? `${disc}건${st.length ? (open ? ` · 진행 ${open}` : " 종결") : ""}` : "—",
         d: bc.disc_latest && L && bc.disc_latest > L.d ? `가장 최근 ${fmt(bc.disc_latest)} 개시` : L ? `최근 ${fmt(L.d)} 합의(벌금 $1.0m)` : "", src: ["v_bcpdf"] },
     ];
@@ -125,9 +125,9 @@
     const I = V?.dart?.invest, ir = ctx.inv;
     $("#tm-inv").innerHTML = tmeta(bP ? `${bP.label} ${bP.report.name.replace(/\s*\(.*\)$/, "")}(${ymd(bP.report.rcept_dt)} 공시)` : "DART", "억원 · %");
     const rows = [];
-    if (bk) rows.push(`<tr><td class="k">출자 장부가</td><td class="n"><b>${num(eok(bk.book))}</b></td><td><a href="${esc(bP.report.url)}" target="_blank" rel="noopener">${esc(bk.name)}</a>${bk.activity ? `(${esc(bk.activity)})` : ""} · 한화생명 별도재무제표 주석 종속기업투자${bk.stake != null ? ` · 지분 ${num(bk.stake, bk.stake % 1 ? 1 : 0)}%` : ""}${bk.prev_book != null ? ` · 전기말 ${num(eok(bk.prev_book))}` : ""}</td></tr>`);
+    if (bk) rows.push(`<tr><td class="k">출자 장부가</td><td class="n"><b>${num(eok(bk.book))}</b></td><td><a href="${esc(bP.report.url)}" target="_blank" rel="noopener">${esc(bk.name)}</a> · 한화생명 별도재무제표 주석 종속기업투자${bk.stake != null ? ` · 지분 ${num(bk.stake, bk.stake % 1 ? 1 : 0)}%` : ""}${bk.prev_book != null ? ` · 전기말 ${num(eok(bk.prev_book))}` : ""}</td></tr>`);
     if (s?.ni != null && eff != null) rows.push(`<tr><td class="k">한화생명 몫 순이익</td><td class="n"><b>${sign(eok(s.ni * eff / 100))}</b></td><td>${esc(dl.label)} 누적 · Velocity 순이익 ${num(eok(s.ni))} × 실효 지분 ${num(eff, eff % 1 ? 1 : 0)}%(사업결합 공정가치 조정 전)</td></tr>`);
-    if (bk && s?.ni != null && eff != null) rows.push(`<tr><td class="k">출자 대비 연환산</td><td class="n">${sign((s.ni * eff / 100) * 12 / dl.months / bk.book * 100, 1)}%</td><td>한화생명 몫 순이익 × 12/${dl.months} ÷ 출자 장부가</td></tr>`);
+    if (bk && s?.ni != null && eff != null) rows.push(`<tr><td class="k">출자 대비 수익률</td><td class="n">${sign((s.ni * eff / 100) * 12 / dl.months / bk.book * 100, 1)}%</td><td>연환산: 한화생명 몫 순이익 × 12/${dl.months} ÷ 출자 장부가(배당 아님)</td></tr>`);
     $("#inv").innerHTML = rows.length ? `<table><tbody>${rows.join("")}</tbody></table>`
       : '<p class="empty">한화생명 별도재무제표 주석(DART)의 출자 장부가는 다음 자동 수집 때 채워집니다.</p>';
     // 같은 보고서 '타법인 출자현황'과 금액이 다르면 원문 그대로 함께 적는다(1백만원 넘게 차이날 때만)
@@ -188,7 +188,7 @@
   // ---------- 재무상태(감사보고서·누리집) ----------
   function renderBS(ctx) {
     const { fin, it } = ctx;
-    const rowsF = [["총자산", "assets"], ["부채", "liab"], ["자본(회원 지분)", "equity"], ["순자본", "net_capital"], ["최소 순자본", "required"], ["초과 순자본", "excess"]];
+    const rowsF = [["총자산", "assets"], ["부채", "liab"], ["자본", "equity"], ["순자본", "net_capital"], ["최소 순자본", "required"], ["초과 순자본", "excess"]];
     const cols = it ? [...fin, it] : fin;
     const head = (f) => (f === it
       ? `<th class="n"><a href="${esc(it.url)}" target="_blank" rel="noopener" title="회사 누리집 재무상태표">${ym(it.period)}</a>${audLab(it) ? `<span class="sub">${audLab(it)}</span>` : ""}</th>`
@@ -210,7 +210,7 @@
     }
     const d = cur.period;
     const odd = (r) => r.equity?.end && r.equity.end !== d;
-    $("#rank").innerHTML = `<thead><tr><th class="n">순위</th><th>회사 <small style="font-weight:400">(마우스: 사업 모델)</small></th><th class="n">자본</th><th class="n">총자산</th><th class="n">ROE</th></tr></thead>
+    $("#rank").innerHTML = `<thead><tr><th class="n">순위</th><th>회사</th><th class="n">자본</th><th class="n">총자산</th><th class="n">ROE</th></tr></thead>
       <tbody>${R.rows.map((r, i) => `<tr${r.me ? ' class="me"' : ""}><td class="rk">${i + 1}</td><td class="k" title="${esc(r.model || "")}">${esc(r.name)} <small>${esc(r.ticker)}</small></td>
         <td class="n"${odd(r) ? ` title="${esc(r.equity.end)} 기준"` : ""}>${num(mUsd(r.eq), 0)}${odd(r) ? "*" : ""}</td>
         <td class="n">${r.as == null ? "—" : num(mUsd(r.as), 0)}</td><td class="n"${r.ni?.how ? ` title="${esc(`${r.ni.tag} · ${r.ni.how}`)}"` : ""}>${sign(r.roe, 1)}</td></tr>`).join("")}</tbody>`;
@@ -261,15 +261,17 @@
   }
   const quadName = (p, mx, my) => `${p.eq >= mx ? "대형" : "소형"} · ${p.roe >= my ? "고수익" : "저수익"}`;
 
-  // 겹치지 않게 라벨 놓기: 점 오른쪽 → 위아래로 비켜 → 그래도 겹치면 생략(전략 인사이트 탭과 같은 규칙)
+  // 겹치지 않게 라벨 놓기: 점 오른쪽 → 위아래로 비켜 → 그래도 겹치면 생략(전략 인사이트 탭과 같은 규칙).
+  // 다른 점 위에도 글자를 얹지 않는다
   function svgLabels(items, W) {
     const placed = [];
+    const onDot = (p, bx, w, y) => items.some((o) => o !== p && bx < o.x + o.r && o.x - o.r < bx + w && Math.abs(y - 3 - o.y) < 5 + o.r);
     return items.map((p) => {
       const w = [...p.t].reduce((a, c) => a + (c.charCodeAt(0) > 255 ? 10 : 6), 0);
       const flip = p.x + p.r + 3 + w > W - 4, bx = flip ? p.x - p.r - 3 - w : p.x + p.r + 3;
       for (const dy of [0, -11, 11, -22, 22]) {
         const y = p.y + 3 + dy;
-        if (!placed.some((q) => bx < q.x + q.w && q.x < bx + w && Math.abs(y - q.y) < 10.5)) {
+        if (!placed.some((q) => bx < q.x + q.w && q.x < bx + w && Math.abs(y - q.y) < 10.5) && !onDot(p, bx, w, y)) {
           placed.push({ x: bx, y, w });
           return `<text x="${(flip ? bx + w : bx).toFixed(1)}" y="${y.toFixed(1)}"${flip ? ' text-anchor="end"' : ""}${p.style ? ` style="${p.style}"` : ' class="lab"'}>${esc(p.t)}</text>`;
         }
@@ -373,7 +375,9 @@
   }
 
   // ---------- 배치: 카드를 중요한 순서대로 가장 짧은 칸 아래에(빈칸 최소화) ----------
+  // 덜 중요한 마지막 네 장은 칸 높이가 가장 고르게 되는 자리를 모두 따져 고른다(칸 안 순서는 그대로 중요한 순)
   let CARDS = [], lastW = 0;
+  const GAP = 8, TAIL = 4;
   function layout(force) {
     const host = $("#mason");
     const w = host.clientWidth;
@@ -382,7 +386,21 @@
     const n = w >= 1180 ? 3 : w >= 760 ? 2 : 1;
     const cols = Array.from({ length: n }, () => Object.assign(document.createElement("div"), { className: "col" }));
     host.replaceChildren(...cols);
-    for (const c of CARDS) cols.reduce((a, b) => (b.offsetHeight < a.offsetHeight ? b : a)).appendChild(c);
+    cols[0].append(...CARDS); // 칸 너비가 모두 같아 한 칸에 넣고 높이를 잰다
+    if (n === 1) return;
+    const h = CARDS.map((c) => c.offsetHeight + GAP);
+    const H = Array(n).fill(0), pick = [];
+    const head = Math.max(0, CARDS.length - TAIL);
+    for (let i = 0; i < head; i += 1) { const j = H.indexOf(Math.min(...H)); pick.push(j); H[j] += h[i]; }
+    let best = null;
+    for (let code = 0; code < n ** (CARDS.length - head); code += 1) {
+      const T = H.slice(), a = [];
+      for (let i = head, c = code; i < CARDS.length; i += 1, c = Math.floor(c / n)) { a.push(c % n); T[c % n] += h[i]; }
+      const score = [Math.max(...T), Math.max(...T) - Math.min(...T)];
+      if (!best || score[0] < best.score[0] - 0.5 || (Math.abs(score[0] - best.score[0]) <= 0.5 && score[1] < best.score[1])) best = { score, a };
+    }
+    pick.push(...best.a);
+    CARDS.forEach((card, i) => cols[pick[i]].appendChild(card));
   }
 
   // ---------- iframe 안 이동 ----------

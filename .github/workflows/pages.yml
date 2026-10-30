@@ -35,7 +35,6 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || vars.SEC_USER_AGENT }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}   # 한화생명 정기보고서(미국 법인 손익·출자). 없으면 그 부분만 이전 값
-          VELOCITY_DART_DEBUG: ${{ github.event_name == 'pull_request' && '1' || '' }}
         run: |
           pip install --quiet pypdf==6.17.0
           python workflow/scripts/fetch_velocity.py
