@@ -297,8 +297,328 @@
    }
   ]
  },
- "interim": null,
- "peers": null,
+ "interim": {
+  "period": "2026-06-30",
+  "url": "https://media.velocityclearingllc.com/wp-content/uploads/2026/09/04065732/Velocity-Clearing-06.30.2026-Financial-Statement-Unaudited-1.pdf",
+  "assets": 7884385923.0,
+  "liab": 7731497243.0,
+  "equity": 152888680.0,
+  "net_capital": 125232645.0,
+  "excess": 114879691.0,
+  "required": 10352954.0,
+  "audited": false,
+  "checked": "2026-10-31"
+ },
+ "peers": {
+  "date": "2026-06-30",
+  "rows": [
+   {
+    "name": "Goldman Sachs",
+    "ticker": "GS",
+    "cik": "0000886982",
+    "model": "IB·트레이딩",
+    "equity": {
+     "value": 122742000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquity"
+    },
+    "assets": {
+     "value": 2127711000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Morgan Stanley",
+    "ticker": "MS",
+    "cik": "0000895421",
+    "model": "IB·WM",
+    "equity": {
+     "value": 117440000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 1675057000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Charles Schwab",
+    "ticker": "SCHW",
+    "cik": "0000316709",
+    "model": "리테일 브로커리지",
+    "equity": {
+     "value": 50147000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquity"
+    },
+    "assets": {
+     "value": 517266000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Interactive Brokers",
+    "ticker": "IBKR",
+    "cik": "0001381197",
+    "model": "온라인 브로커리지",
+    "equity": {
+     "value": 22250000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 247309000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Raymond James",
+    "ticker": "RJF",
+    "cik": "0000720005",
+    "model": "WM·IB",
+    "equity": {
+     "value": 12783000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 94237000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Jefferies",
+    "ticker": "JEF",
+    "cik": "0000096223",
+    "model": "IB",
+    "equity": {
+     "value": 10607385000,
+     "end": "2026-05-31",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 79539946000,
+     "end": "2026-05-31",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Robinhood",
+    "ticker": "HOOD",
+    "cik": "0001783879",
+    "model": "모바일 브로커리지",
+    "equity": {
+     "value": 9541000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 56550000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Stifel",
+    "ticker": "SF",
+    "cik": "0000720672",
+    "model": "WM·IB",
+    "equity": {
+     "value": 6013241000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 44907609000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "LPL Financial",
+    "ticker": "LPLA",
+    "cik": "0001397911",
+    "model": "독립 어드바이저 플랫폼",
+    "equity": {
+     "value": 5756840000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquity"
+    },
+    "assets": {
+     "value": 19791120000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "StoneX",
+    "ticker": "SNEX",
+    "cik": "0000913760",
+    "model": "기관 청산·중개",
+    "equity": {
+     "value": 2844000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquity"
+    },
+    "assets": {
+     "value": 54046000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Virtu Financial",
+    "ticker": "VIRT",
+    "cik": "0001592386",
+    "model": "시장조성·체결",
+    "equity": {
+     "value": 2325010000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 27477122000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "BGC Group",
+    "ticker": "BGC",
+    "cik": "0001094831",
+    "model": "기관 중개",
+    "equity": {
+     "value": 1273908000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 5751056000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Piper Sandler",
+    "ticker": "PIPR",
+    "cik": "0001230245",
+    "model": "IB·기관 중개",
+    "equity": {
+     "value": 1567424000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 2326856000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Oppenheimer",
+    "ticker": "OPY",
+    "cik": "0000791963",
+    "model": "WM·IB",
+    "equity": {
+     "value": 996655000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 4230726000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Cohen & Company",
+    "ticker": "COHN",
+    "cik": "0001270436",
+    "model": "채권 중개·IB",
+    "equity": {
+     "value": 109301000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 800383000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Siebert Financial",
+    "ticker": "SIEB",
+    "cik": "0000065596",
+    "model": "리테일 브로커리지",
+    "equity": {
+     "value": 88651000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 968763000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   }
+  ],
+  "checked": "2026-10-31"
+ },
  "news": [
   {
    "date": "2025-09-23",

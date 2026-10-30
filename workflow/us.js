@@ -326,7 +326,7 @@
           <td class="n"${r.equity?.end && r.equity.end !== d ? ` title="${esc(r.equity.end)} 기준"` : ""}>${num(mUsd(r.eq), 0)}${r.equity?.end && r.equity.end !== d ? "*" : ""}</td>
           <td class="n">${r.as == null ? "—" : num(mUsd(r.as), 0)}</td></tr>`).join("")}</tbody>`;
       const odd = R.rows.filter((r) => r.equity?.end && r.equity.end !== d);
-      $("#velRankNote").innerHTML = `자본 기준 <b>${R.n}곳 중 ${R.eq}위</b>, 총자산 기준 ${R.nAs}곳 중 ${R.as}위. 상장사는 미국 본사 NYSE·나스닥 상장사 중 증권 중개·청산·시장조성·자산관리 중개가 주업인 ${R.n - 1}곳(자문 전업 IB·거래소·보험 겸업사 제외). ${esc(M.rank_note)}${odd.length ? ` *는 결산월이 달라 가장 가까운 분기말 값(${odd.map((r) => `${esc(r.ticker)} ${fmt(r.equity.end)}`).join(", ")}).` : ""}${refs(M.rank_src)}`;
+      $("#velRankNote").innerHTML = `자본 기준 <b>${R.n}곳 중 ${R.eq}위</b>, 총자산 기준 ${R.nAs}곳 중 ${R.as}위. 상장사는 미국 본사 NYSE·NYSE American·나스닥 상장사 중 증권 중개·청산·시장조성·자산관리 중개가 주업인 ${R.n - 1}곳(자문 전업 IB·거래소·보험 겸업사 제외). ${esc(M.rank_note)}${odd.length ? ` *는 결산월이 달라 가장 가까운 분기말 값(${odd.map((r) => `${esc(r.ticker)} ${fmt(r.equity.end)}`).join(", ")}).` : ""}${refs(M.rank_src)}`;
       $("#tm-velr").innerHTML = tmeta(`${fmt(d)} · 상장사 SEC XBRL(10-K·10-Q)${V.peers.checked ? ` ${fmt(V.peers.checked)} 수집` : ""}`, "US$ m");
     } else {
       $("#velRank").outerHTML = '<p class="empty" id="velRank">상장사 비교 값은 다음 자동 수집(SEC XBRL) 때 채워집니다.</p>';

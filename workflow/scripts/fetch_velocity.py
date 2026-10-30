@@ -40,7 +40,7 @@ CONCEPT = "https://data.sec.gov/api/xbrl/companyconcept/CIK{cik}/us-gaap/{tag}.j
 SEC_H = {"User-Agent": SEC_UA, "Accept": "application/json"}
 SITE = "https://www.velocityclearingllc.com/who-we-are/"  # 감사·반기 재무상태표 링크가 있는 회사 소개 쪽
 
-# 미국 상장 브로커리지: 미국 본사 NYSE·나스닥 상장사 중 증권 중개·청산·시장조성·자산관리 중개가 주업인 회사.
+# 미국 상장 브로커리지: 미국 본사 NYSE·NYSE American·나스닥 상장사 중 증권 중개·청산·시장조성·자산관리 중개가 주업인 회사.
 # 자문 전업 IB(Evercore·Lazard 등), 거래소·전자거래 플랫폼, 보험·자산운용 겸업사, 외국 본사 상장사는 넣지 않는다
 PEERS = [
     ("Goldman Sachs", "GS", "0000886982", "IB·트레이딩"),

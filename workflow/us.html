@@ -116,6 +116,11 @@ ol.src .rev{color:var(--neg);font-weight:700}
 .vel td.d{white-space:nowrap;color:var(--muted);font-size:11.5px}
 .vel tr.me td{background:var(--accent-soft)}.vel tr.me td.k{color:var(--accent-ink)}
 .vel td.rk{width:34px;text-align:right;color:var(--muted)}
+/* 상장사 순위: 줄바꿈 없이 한 줄, 휴대폰에서는 사업 모델 칸을 숨겨 자본·총자산이 바로 보이게 */
+#velRank td{white-space:nowrap}
+@media (max-width:700px){#velRank th:nth-child(3),#velRank td:nth-child(3){display:none}}
+/* 재무 추이: 휴대폰에서는 가장 오래된 두 해를 숨겨 최근 값이 바로 보이게 */
+@media (max-width:700px){#velFin tr>:nth-child(2),#velFin tr>:nth-child(3){display:none}}
 .vel .sub{display:block;font-size:11px;color:var(--muted);line-height:1.4}
 ul.feed{margin:0;padding:0;list-style:none;display:grid;gap:2px;font-size:12px}
 ul.feed li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:6px;padding:2px 0;border-bottom:1px solid var(--line)}
