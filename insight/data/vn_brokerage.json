@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29T11:48:51+00:00",
+ "updated_at": "2026-10-30T02:34:35+00:00",
  "quarters": [
   "2025-03-31",
   "2025-06-30",
@@ -14,11 +14,10 @@
  ],
  "pending": {
   "q": "2026-09-30",
-  "reported": 38,
+  "reported": 39,
   "missing": [
    "SSI",
-   "VDS",
-   "TVS"
+   "VDS"
   ]
  },
  "reported": {
