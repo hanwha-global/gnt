@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T01:28:55+00:00",
+ "updated": "2026-10-30T01:30:14+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,8 +66,17 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": [
+    {
+     "date": "2026-10-29",
+     "title": "「가상자산 이용자 보호 등에 관한 법률」 위반자에 대한 과태료 사전통지(공시송달)",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ3paZkRBVG9HcGJTY2lUVzR5ekxTSnJkU2R0VXo2WWU2Z2NKd3Q0OXlDVWtJYWUzdTlFNFRYbGJ5TnpQczVIaUNXYWZwX0U5ZmVhUjFjbEEwbVNfRkFXT2YybTI1czZjR09mSFVOVHhIdmNmSkRnSXBBdERhWTlWc3N4aTdaMlhUSVdnWnpn?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-10-28",
      "title": "주식 판 돈, 왜 이틀 뒤에 나올까? 토큰증권이 바꿀 결제",
@@ -244,7 +253,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": [
     {
      "date": "2026-10-23",
@@ -303,23 +312,23 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": [
     {
      "date": "2026-10-28",
@@ -333,7 +342,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": [
     {
      "date": "2026-10-14",
@@ -401,8 +410,44 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": [
+    {
+     "date": "2026-10-29",
+     "title": "FCA stops HTX's crypto promotions",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUW9PTjNXZUFlWHcwSnhWNW5veWFtRUc3blh5aUx1X3dRRWJNdDBpMUNhWWN3MGgtM2dOdHlCbFZzYjVqT19fZmpVS3RnaTktM1EwemMxbEZzZHZsdDc1YXl0dDdTVWY5OFlWQlRYM0gxdlRab3lnblVOZnA1ODFLaw?oc=5",
+     "src": "Financial Conduct Authority | FCA",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-29",
+     "title": "Consultation on supervisory expectations for central counterparties seeking to accept tokenised collateral",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNLTVkVDlMWHhKNDFqWTY4NW9ndkdyT2JXY2JaT3lGM1ExbWEydXpQT2ZiYWpKSmZZVktVOUF3Q1FCMmNpVFllT0pueWhyaFhOdkdJRFZoRW5Gc010WWxSclBIV2dFZkJkQW5KMFFLTUN2M2UxQUZ2S2hlbDN2c25rTkE3dm9yTk52VzVjSk9VUzllakdCdkZELU8yTExfY1Y5dVBhQnZSR0Zza3hUTWFkZnlwUktBa3ZoNkE?oc=5",
+     "src": "Bank of England",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-10-28",
+     "title": "Tax treatment of Cryptoasset Loans and Liquidity Pools",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYmFqWGpCRXRDd3ZOZUs2SGdKQWc1S0FkaHYyUHo2dENHcHZfei1pelBJMlZzUU13aGVIVnBURXF2c2NxWTY5OGN0Wl93ZlFGTEc4OWY4Y3E1RG5UaHg5bEc2TXBZaFJuSllEZUZSeUt3TmZ6QkIydWNZeVhpUnBuWVpZcXNNV1dvU1BDNFdHbEJFTHo0aUVvUU1qbXB0MHdNMjBMM29FbDlVREVOZnExTkZmaUg1d2lLZWpMeUVKc0N0ZllXN2ozVWUyZHVqc2dE?oc=5",
+     "src": "GOV.UK",
+     "topics": [
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-10-25",
+     "title": "token; counter (Cumberland Jack)",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUnd3bGcwNzR5Qll3UnRaWWVidDlOZlpUYUUweDA3bVhqS2xuZllLRm9rZ1B1ei16Q1kwRmhFVzRGdjFVVllYYmdnTHdQSVFSOW55allLZDFmb1o2bENjbmdWX19KbFlTb1F5UmhaWUxuRVVJTHI3WGNfNkJiMy1aNUNyemk?oc=5",
+     "src": "Falkirk Council",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-10-21",
      "title": "CP26/36: Cryptoasset perimeter guidance",
@@ -433,7 +478,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-10-29",
+   "auto_checked": "2026-10-30",
    "items": [
     {
      "date": "2026-10-26",
