@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T10:19+09:00",
+ "updated_at": "2026-10-30T19:16+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -159,6 +159,24 @@
  "items": [
   {
    "date": "2026-10-30",
+   "time": "16:14",
+   "title": "토스, 日 모바일 증권사 340억원 규모 인수 추진…해외 시장 진출",
+   "src": "뉴스1",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE82YzctcFVfX2gxZUJXUF9KS29MWVVwRGFIemhDOWUyR2FsblI1VHcweHVwaWFud3dGV3RJZEFVUGY1MGEwN2lObTEyZEloSmh4azdIRFVQbEdMc05uUEltcDln?oc=5",
+   "site": "www.news1.kr",
+   "firms": []
+  },
+  {
+   "date": "2026-10-30",
+   "time": "15:19",
+   "title": "토스, 日 증권사 340억원에 인수 추진…일본 금융시장 진출",
+   "src": "아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9HdFRtRFRNeVo0YzFWa2FwMzlvaExZVnBHakYtaVdzRHBrWHQyeTlnMTFwd3M3RkNnTTlfY3VsSTNlQnA1VDJFUVdja1g1aGhiU0ZlcGo4QnphUdIBWEFVX3lxTE5fdGo2d3drYU1YTlVvZlp3ZjE5V2VsaUZRWTNNVmNCd29UcWpGSjhBcEl2cGl0aUU4eHp6b3IydzZhNFN4bWRCVDl1SGxiUTR3NkhKbXRoVUs?oc=5",
+   "site": "www.ajunews.com",
+   "firms": []
+  },
+  {
+   "date": "2026-10-30",
    "time": "08:55",
    "title": "키움증권 \"KT&G 올해 배당성향 65% 전망, 해외담배 수익성 개선에 주목\"",
    "src": "비즈니스포스트",
@@ -234,7 +252,7 @@
    "time": "16:58",
    "title": "미래에셋증권, 日 산코증권 인수…글로벌 사업 확장 노린다",
    "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE93SjZFeDdlUFhyaFJPd2stajVYV29YVFUwUExpRXV4ai1NLVVjWDdFd1k0Tm84aWV3SlN1NHFPMmtLb3hjVXN1cTRYdjBXaWxzcklNZkdUMUh2Y2FBRHRoUzVpbmlPcHE30gFuQVVfeXFMT0VPdHhFNkhnRXBUa1FwRThrVW1VSy16MXVReTJwYTFuQVFGYURaekgwUm5kZFRqclFzU2Jrb25hOWVtZnA0clAxTW9jdVNpYkdjbVhIN1ZjUlJVREt3TV9BR1JpNWlMMFVBSVgwYmc?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Ub295a3U2U3YxRGpOSWRDeW9JM0QxZDZtRDBpa2ptTmg4T2hpaVIxZjFjNTdvQTgxZ0JsQmd1d1Nld0p6WkpDM3VIQVc5Y3N3VC0zazF5SVJUenhpVnZ2Y195LUxXX3hIZ0xFSW8tSUtzc2hBN0HSAXtBVV95cUxQeEtBdEdFdEVIQjZwSk00eUtMLTVRdmFDbnBwREdaZkhTRURzSm8wbHN2WV9fVUZpRkJwOG1wVGZ3LUpvb0pNeVB1NThtbUlZb3ZCWHBrUEx2SUNJaGFZZy1TOEd3TVpDVXRCQXB6SDNtd2hkdzdMMlNiRnc?oc=5",
    "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
@@ -245,7 +263,7 @@
    "time": "15:29",
    "title": "미래에셋증권, 일본 산코증권 인수…“일본 사업 기반 확보”",
    "src": "경향신문",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBBLU1ROVhtUDI2M09KVVVzWVRnQVM4d2JZcU5tOWFUeXJ4UUtqdlFWX3RES3JBNk9hUktlb00wSU9Ocmd3SzZET2ZvNXhRdTFVZW1pdzJORi10N3dxN1A40gFfQVVfeXFMUEEtTVE5WG1QMjYzT0pVVXNZVGdBUzh3YllxTm05YVR5cnhRS2p2UVZfdERLckE2T2FSS2VvTTBJT05yZ3dLNkRPZm81eFF1MVVlbWl3Mk5GLXQ3d3E3UDg?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13MGZvb1hJSGpGNjVJb29NV2c2WnVqZVVtcHowdDd6amtYcE9rcm1zY19YYkRlWVlKOEFDRUJtU21adEV3UGRPTmlzNFFsclpSX3JRRVJBUy1DQdIBX0FVX3lxTFBBLU1ROVhtUDI2M09KVVVzWVRnQVM4d2JZcU5tOWFUeXJ4UUtqdlFWX3RES3JBNk9hUktlb00wSU9Ocmd3SzZET2ZvNXhRdTFVZW1pdzJORi10N3dxN1A4?oc=5",
    "site": "www.khan.co.kr",
    "firms": [
     "미래에셋증권"
@@ -276,7 +294,7 @@
    "time": "11:58",
    "title": "미래에셋증권, 일본 산코증권 476억원에 인수",
    "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBjb3RCU1BSSXVsWDVkekdNUVlNZGk4cXFQNktCYXFCT1BvemNFLTlLbHFiTWtOMkZWSWFicVZuMDVGaU5zT1hQS1VHalVVT0RXTkwycEVpQ2pCcG0xOWtla1Bfd0dQb0dXRHhsUGt5SVdreVZjMEHSAXtBVV95cUxOQnpHMFY1OTZ0dlZuWlVVLTc0MEdualdzNjQxYWlUalBPaVY2bGhibVdJR2I2dVlNRVE2NmJESXBmSW92Zy15Mi01OEpxamlJWVpTY01PRHo0aGI0dm80eTRodldvVVVQeFZ1enFxSmdkYi04WjVUaFVVTkk?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBqWENVNjlKTkYyTmVMV00yMTMyeFFvTm00UFJSZWlJOW9qUW10US0zMUNDUk02UVR3Yl9JU2lxeVR6TEZOSEdrcWpGdEM1cVNKLUdCbGc0aWl3ZW10dWJWS290UHNsYUpN0gFuQVVfeXFMUDBScHBkTDBtMXhoZTBKS0g3M1hGQjdwTEZtNG9lU3pXa19ucUlWZ3JUZERLZF9MSDljVXpBdTl0d2FEbUFOcktOWE9ORVA5Ujk3b2sxNU80clBxWTROR1dwa0JwcmU2eG80UVVyT2c?oc=5",
    "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
@@ -390,6 +408,17 @@
   },
   {
    "date": "2026-10-28",
+   "time": "15:33",
+   "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB2MzRoZFFxcGp4TVRzbUdHZU1WOU1MMkE0cDFGUlBaY3lHck1fSXJUTG5NOGZNVlN4TThRZ1JUV2FpRDVSU1J6V0xvOFNNUQ?oc=5",
+   "site": "www.etnews.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-28",
    "time": "14:35",
    "title": "박현주號 미래에셋, 해외 M&A '재시동'…日·中으로 영토 확장",
    "src": "글로벌이코노믹",
@@ -417,17 +446,6 @@
    "src": "매일경제",
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1FWUVaRXVDd1NlMUpRSVd0WnZoa0IwTGRqd1RTQWlaOUpER0QwUzBWS0VHbm1QNDhTOC1pb2hiR1NVQ0pCRlltX01QcEd2WTZaNXc?oc=5",
    "site": "www.mk.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "time": "11:28",
-   "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
-   "src": "아시아경제",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NcElndzBqVXJIbjF2WS0yVWt2Nm9Tb3lsdHRUTGNJekJIUmhraFhrYlloZVhhUjZuYTdJV2VoMHNPNUJXUHVlN1NBdlk2bnU0MXVJTUg3ZHhxcDV6c1IyYw?oc=5",
-   "site": "www.asiae.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -785,28 +803,6 @@
    "firms": [
     "한국투자증권",
     "신한투자증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
-   "title": "하나증권, 업비트 글로벌과 가상자산·금융 사업 협력 MOU",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZC1NN3BPZWVQejFEWHFVdjdNWklsZU5Zam1KUXpCbWNwTXZZcndKNkZZd25BVUtSUDZiM3RxcHk1UG9ab19zMU00MkRMVDNzQm5IOVB2LUpvVknSAWBBVV95cUxPQy0yaGdNLVdxOURkOWRtQm9JWGQycDdPU1k2TlphWWc5M3ZTMGd2ZmppX2pGV0Y4M2RLQjFOS09EZmQ4VG5aYm1ZbTZzT20tSDRfemRmRmpKbWtIUlB6Ukg?oc=5",
-   "site": "www.yna.co.kr",
-   "firms": [
-    "하나증권"
-   ]
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
-   "title": "[人사이트]이영곤 토스증권 리서치센터장 “해외기업 정보 접근성 높이는 콘텐츠로 투자 경험 확장”",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maDZQQVZqMFo1ak9LdGFyRGtZcGQteDM1OExZVDJ2RENodjY1V1pwQWphdVhXQjZzcjVnTmdsY3RZN1FLLUlIdW93TUN0UQ?oc=5",
-   "site": "www.etnews.com",
-   "firms": [
-    "토스증권"
    ]
   }
  ],
