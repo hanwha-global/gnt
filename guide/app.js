@@ -75,7 +75,7 @@
       return `<td class="${key}">${key === "own" ? chip(c.lv) : ""}<span class="t">${esc(f.v)}</span>${warn(f)}</td>`;
     }).join("");
     return `<tr class="r ${c.hanwha ? "hw" : ""} ${c.ref ? "ref" : ""} ${open === c.code ? "open" : ""}" tabindex="0" data-code="${c.code}">
-      <td class="nm"><b>${esc(c.name)}</b><small>${esc(c.regulator)}</small>${c.annex ? `<a class="annex" href="${esc(c.annex.u)}" target="_top" title="${esc(c.annex.t)}">별첨: 설립 vs 인수 ↗</a>` : ""}${n ? `<span class="new" title="검증일 이후 감독당국 공식 발표 ${n}건 자동 감지: 내용 확인 필요">● 신규 공식 발표 ${n}</span>` : ""}${rv.length ? `<span class="new rev" title="반기 원문 점검에서 출처 ${rv.length}건이 바뀜: 행을 열어 확인">● 개정 감지·검토 필요</span>` : ""}</td>
+      <td class="nm"><b>${esc(c.name)}</b><small>${esc(c.regulator)}</small>${c.annex ? `<a class="annex" href="${esc(c.annex.u)}" target="_top" title="${esc(c.annex.t)}">미국 진출: 설립 vs 인수 ↗</a>` : ""}${n ? `<span class="new" title="검증일 이후 감독당국 공식 발표 ${n}건 자동 감지: 내용 확인 필요">● 신규 공식 발표 ${n}</span>` : ""}${rv.length ? `<span class="new rev" title="반기 원문 점검에서 출처 ${rv.length}건이 바뀜: 행을 열어 확인">● 개정 감지·검토 필요</span>` : ""}</td>
       <td class="kr">${k?.n || "—"}<small>${k ? `${k.firms.size}개사${k.off ? ` · 사무소 ${k.off}` : ""}` : "진출 없음"}</small></td>
       ${cells}
       <td class="ck ${stale ? "stale" : ""}">${fmt(c.checked).slice(2)}<small>원문 ${sc ? fmt(sc).slice(2) : "—"}</small><small>발표 ${ac ? fmt(ac).slice(5) : "—"}${stale ? " ⚠" : ""}</small></td></tr>`;

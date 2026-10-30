@@ -24,6 +24,14 @@ jobs:
       - name: 감독당국 공식 발표 자동 감지 (국가별 진입 규제)
         continue-on-error: true
         run: python guide/scripts/detect_entry_rules.py
+      # 미국 진출 페이지: 등록·라이선스(BrokerCheck), 연차 감사보고서(EDGAR, 새 보고서는 PDF 자동 읽기), 미국 상장 브로커리지 비교, 뉴스
+      - name: Velocity Clearing (FINRA BrokerCheck·SEC EDGAR·상장 브로커리지 비교·뉴스)
+        continue-on-error: true
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || vars.SEC_USER_AGENT }}   # sec.gov 는 연락처가 든 User-Agent가 없으면 403
+        run: |
+          pip install --quiet pypdf==6.17.0
+          python workflow/scripts/fetch_velocity.py
       - name: Tests
         run: python -m unittest discover -s tests
       - name: Commit data
@@ -31,11 +39,11 @@ jobs:
         run: |
           git config user.name "gnd-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add guide/data
+          git add guide/data workflow/data/velocity.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "data: overseas-entry guide check $(date -u +%F)"
+            git commit -m "data: overseas-entry guide check · Velocity $(date -u +%F)"
             git pull --rebase origin main
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"

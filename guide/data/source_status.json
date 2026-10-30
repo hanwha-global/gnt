@@ -622,13 +622,13 @@
    "checked": "2026-10-29"
   },
   "US": {
-   "checked": "2026-10-30"
+   "checked": "2026-10-29"
   },
   "JP": {
    "checked": "2026-10-29"
   },
   "HK": {
-   "checked": "2026-10-30"
+   "checked": "2026-10-29"
   },
   "CN": {
    "checked": null
@@ -766,7 +766,7 @@
    "checked": null
   },
   "annex-us": {
-   "checked": "2026-10-30"
+   "checked": "2026-10-29"
   }
  }
 }

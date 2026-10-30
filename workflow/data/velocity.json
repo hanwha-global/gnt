@@ -1,0 +1,654 @@
+{
+ "updated_at": "2026-10-30T15:20:00+00:00",
+ "brokercheck": {
+  "crd": "126588",
+  "name": "VELOCITY CLEARING, LLC",
+  "status": "Approved",
+  "sec_file": "8-65894",
+  "finra_since": "2003-08-15",
+  "formed": "2010-06-11",
+  "formed_state": "Delaware",
+  "firm_type": "Limited Liability Company",
+  "size": "Small",
+  "other_names": [
+   "GUARDIAN TRADING",
+   "VELOCITY PRIME SERVICES",
+   "VELOCITY EXECUTION SERVICES",
+   "VELOCITY CLEARING, LLC",
+   "QUANTEX CLEARING, LLC",
+   "NYFIX SECURITIES LLC",
+   "NYFIX SECURITIES CORPORATION",
+   "NYFIX CLEARING CORPORATION"
+  ],
+  "address": "HAZLET, NJ",
+  "counts": {
+   "sec": 1,
+   "sro": 16,
+   "states": 53,
+   "types": 10
+  },
+  "disclosures": {
+   "Regulatory Event": 19
+  },
+  "officers": [
+   {
+    "name": "VCT HOLDINGS, LLC",
+    "position": "SOLE MEMBER"
+   },
+   {
+    "name": "BRACERO, FRANK WILLIAM",
+    "position": "CHIEF FINANCIAL OFFICER/FINOP"
+   },
+   {
+    "name": "CALICE, ROBERT PEER",
+    "position": "CHIEF OPERATIONS OFFICER"
+   },
+   {
+    "name": "LOGAN, MICHAEL JAMES",
+    "position": "CHIEF EXECUTIVE OFFICER"
+   },
+   {
+    "name": "PRATNICKI, GREG",
+    "position": "CHIEF COMPLIANCE OFFICER"
+   },
+   {
+    "name": "RAY, TERRY DAVID",
+    "position": "CHIEF OPERATING OFFICER"
+   },
+   {
+    "name": "ROBERTS, RALSTON PERMAR",
+    "position": "CO-PRESIDENT"
+   },
+   {
+    "name": "SCHAEFFER, BRIAN KEITH",
+    "position": "CO PRESIDENT"
+   }
+  ],
+  "checked": "2026-10-30",
+  "sros": [
+   {
+    "name": "FINRA",
+    "since": "2003-08-15"
+   },
+   {
+    "name": "24X National Exchange LLC",
+    "since": "2025-10-24"
+   },
+   {
+    "name": "Cboe BYX Exchange, Inc.",
+    "since": "2011-12-27"
+   },
+   {
+    "name": "Cboe BZX Exchange, Inc.",
+    "since": "2011-10-03"
+   },
+   {
+    "name": "Cboe EDGA Exchange, Inc.",
+    "since": "2011-05-17"
+   },
+   {
+    "name": "Cboe EDGX Exchange, Inc.",
+    "since": "2011-05-17"
+   },
+   {
+    "name": "Cboe Exchange, Inc.",
+    "since": "2022-10-03"
+   },
+   {
+    "name": "Investors' Exchange LLC",
+    "since": "2021-06-10"
+   },
+   {
+    "name": "Long-Term Stock Exchange, Inc.",
+    "since": "2025-05-28"
+   },
+   {
+    "name": "MEMX LLC",
+    "since": "2021-06-09"
+   },
+   {
+    "name": "MIAX PEARL, LLC",
+    "since": "2023-08-21"
+   },
+   {
+    "name": "NYSE Arca, Inc.",
+    "since": "2011-08-16"
+   },
+   {
+    "name": "Nasdaq PHLX LLC",
+    "since": "2020-02-03"
+   },
+   {
+    "name": "Nasdaq Stock Market",
+    "since": "2006-07-12"
+   },
+   {
+    "name": "Nasdaq Texas, LLC",
+    "since": "2020-02-03"
+   },
+   {
+    "name": "New York Stock Exchange",
+    "since": "2021-11-19"
+   }
+  ],
+  "types": [
+   "Broker or dealer making inter-dealer markets in corporation securities over-the-counter",
+   "Broker or dealer retailing corporate equity securities over-the-counter",
+   "Broker or dealer selling corporate debt securities",
+   "Mutual fund retailer",
+   "U S. government securities broker",
+   "Municipal securities broker",
+   "Put and call broker or dealer or option writer",
+   "Non-exchange member arranging for transactions in listed securities by exchange member",
+   "Trading securities for own account",
+   "Other - CLEAR EXCHANGE LISTED AND OTC EQUITY SECURITIES FOR CORRESPONDENTS,EXECUTE STOCK LOAN TRANSACTIONS, PORTFOLIO MARGIN AND PRIME BROKERAGE SERVICES. OPTIONS BROKER OR DEALER OR OPTIONS WRITER ENGAGED IN CLEARING AND SETTLING PROPRIETARY AND CUSTOMER OPTIONS TRANSACTIONS. ENGAGE IN REPURCHASE/REVERSE REPURCHASE TRANSACTIONS. ENGAGE IN RESEARCH ACTIVITIES LIMITED TO THE DISTRIBUTION OF THIRD-PARTY RESEARCH. CFTC/NFA REGISTERED INTRODUCING BROKER."
+  ],
+  "disc_status": {
+   "Regulatory Event": {
+    "pending": 0,
+    "final": 19,
+    "appeal": 0
+   }
+  },
+  "disc_latest": "2025-09-30"
+ },
+ "edgar": {
+  "filings": [
+   {
+    "form": "X-17A-5",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "acc": "0001225460-26-000003",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546026000003/0001225460-26-000003-index.htm"
+   },
+   {
+    "form": "X-17A-5",
+    "filed": "2025-03-03",
+    "period": "2024-12-31",
+    "acc": "0001225460-25-000001",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546025000001/0001225460-25-000001-index.htm"
+   },
+   {
+    "form": "X-17A-5",
+    "filed": "2024-02-29",
+    "period": "2023-12-31",
+    "acc": "0001225460-24-000003",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546024000003/0001225460-24-000003-index.htm"
+   },
+   {
+    "form": "X-17A-5",
+    "filed": "2023-03-01",
+    "period": "2022-12-31",
+    "acc": "0001225460-23-000003",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546023000003/0001225460-23-000003-index.htm"
+   },
+   {
+    "form": "X-17A-5/A",
+    "filed": "2022-03-03",
+    "period": "2021-12-31",
+    "acc": "0001225460-22-000004",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546022000004/0001225460-22-000004-index.htm"
+   },
+   {
+    "form": "X-17A-5",
+    "filed": "2022-03-01",
+    "period": "2021-12-31",
+    "acc": "0001225460-22-000003",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546022000003/0001225460-22-000003-index.htm"
+   },
+   {
+    "form": "X-17A-5",
+    "filed": "2021-03-02",
+    "period": "2020-12-31",
+    "acc": "0001746403-21-000001",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000174640321000001/0001746403-21-000001-index.htm"
+   },
+   {
+    "form": "X-17A-5",
+    "filed": "2020-02-28",
+    "period": "2019-12-31",
+    "acc": "0001295234-20-000005",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000129523420000005/0001295234-20-000005-index.htm"
+   }
+  ],
+  "fin": [
+   {
+    "period": "2025-12-31",
+    "acc": "0001225460-26-000003",
+    "filed": "2026-03-02",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546026000003/public25.pdf",
+    "assets": 5311159767.0,
+    "liab": 5154380192.0,
+    "equity": 156779575.0,
+    "net_capital": 136069088.0,
+    "excess": 129754947.0,
+    "required": 6314141.0,
+    "auto": false
+   },
+   {
+    "period": "2024-12-31",
+    "acc": "0001225460-25-000001",
+    "filed": "2025-03-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546025000001/public24.pdf",
+    "assets": 1225052457.0,
+    "liab": 1102098676.0,
+    "equity": 122953781.0,
+    "net_capital": 104031605.0,
+    "excess": 95126372.0,
+    "required": 8905233.0,
+    "auto": false
+   },
+   {
+    "period": "2023-12-31",
+    "acc": "0001225460-24-000003",
+    "filed": "2024-02-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546024000003/vcpublic2023.pdf",
+    "assets": 787143796.0,
+    "liab": 687985476.0,
+    "equity": 99158320.0,
+    "net_capital": 90414608.0,
+    "excess": 86400315.0,
+    "required": 4014293.0,
+    "auto": false
+   },
+   {
+    "period": "2022-12-31",
+    "acc": "0001225460-23-000003",
+    "filed": "2023-03-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546023000003/velocity22public.pdf",
+    "assets": 608347261.0,
+    "liab": 495126557.0,
+    "equity": 113220704.0,
+    "net_capital": 102843555.0,
+    "excess": 101343555.0,
+    "required": 1500000.0,
+    "auto": false
+   },
+   {
+    "period": "2021-12-31",
+    "acc": "0001225460-22-000003",
+    "filed": "2022-03-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1225460/000122546022000003/vc21s.pdf",
+    "assets": 693091780.0,
+    "liab": 585271123.0,
+    "equity": 107820657.0,
+    "net_capital": 102284899.0,
+    "excess": 101930841.0,
+    "required": 354058.0,
+    "auto": false
+   }
+  ],
+  "checked": "2026-10-30",
+  "former_names": [
+   {
+    "name": "QUANTEX CLEARING, LLC",
+    "from": "2011-03-11",
+    "to": "2019-03-04"
+   },
+   {
+    "name": "NYFIX SECURITIES CORPORATION",
+    "from": "2008-02-28",
+    "to": "2010-03-01"
+   },
+   {
+    "name": "NYFIX CLEARING CORPORATION",
+    "from": "2004-03-02",
+    "to": "2007-02-28"
+   }
+  ]
+ },
+ "interim": {
+  "period": "2026-06-30",
+  "url": "https://media.velocityclearingllc.com/wp-content/uploads/2026/09/04065732/Velocity-Clearing-06.30.2026-Financial-Statement-Unaudited-1.pdf",
+  "assets": 7884385923.0,
+  "liab": 7731497243.0,
+  "equity": 152888680.0,
+  "net_capital": 125232645.0,
+  "excess": 114879691.0,
+  "required": 10352954.0,
+  "audited": false,
+  "checked": "2026-10-31"
+ },
+ "peers": {
+  "date": "2026-06-30",
+  "rows": [
+   {
+    "name": "Goldman Sachs",
+    "ticker": "GS",
+    "cik": "0000886982",
+    "model": "IB·트레이딩",
+    "equity": {
+     "value": 122742000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquity"
+    },
+    "assets": {
+     "value": 2127711000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Morgan Stanley",
+    "ticker": "MS",
+    "cik": "0000895421",
+    "model": "IB·WM",
+    "equity": {
+     "value": 117440000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 1675057000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Charles Schwab",
+    "ticker": "SCHW",
+    "cik": "0000316709",
+    "model": "리테일 브로커리지",
+    "equity": {
+     "value": 50147000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquity"
+    },
+    "assets": {
+     "value": 517266000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Interactive Brokers",
+    "ticker": "IBKR",
+    "cik": "0001381197",
+    "model": "온라인 브로커리지",
+    "equity": {
+     "value": 22250000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 247309000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Raymond James",
+    "ticker": "RJF",
+    "cik": "0000720005",
+    "model": "WM·IB",
+    "equity": {
+     "value": 12783000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 94237000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Jefferies",
+    "ticker": "JEF",
+    "cik": "0000096223",
+    "model": "IB",
+    "equity": {
+     "value": 10607385000,
+     "end": "2026-05-31",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 79539946000,
+     "end": "2026-05-31",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Robinhood",
+    "ticker": "HOOD",
+    "cik": "0001783879",
+    "model": "모바일 브로커리지",
+    "equity": {
+     "value": 9541000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 56550000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Stifel",
+    "ticker": "SF",
+    "cik": "0000720672",
+    "model": "WM·IB",
+    "equity": {
+     "value": 6013241000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 44907609000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "LPL Financial",
+    "ticker": "LPLA",
+    "cik": "0001397911",
+    "model": "독립 어드바이저 플랫폼",
+    "equity": {
+     "value": 5756840000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquity"
+    },
+    "assets": {
+     "value": 19791120000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "StoneX",
+    "ticker": "SNEX",
+    "cik": "0000913760",
+    "model": "기관 청산·중개",
+    "equity": {
+     "value": 2844000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquity"
+    },
+    "assets": {
+     "value": 54046000000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Virtu Financial",
+    "ticker": "VIRT",
+    "cik": "0001592386",
+    "model": "시장조성·체결",
+    "equity": {
+     "value": 2325010000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 27477122000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "BGC Group",
+    "ticker": "BGC",
+    "cik": "0001094831",
+    "model": "기관 중개",
+    "equity": {
+     "value": 1273908000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 5751056000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Piper Sandler",
+    "ticker": "PIPR",
+    "cik": "0001230245",
+    "model": "IB·기관 중개",
+    "equity": {
+     "value": 1567424000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 2326856000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Oppenheimer",
+    "ticker": "OPY",
+    "cik": "0000791963",
+    "model": "WM·IB",
+    "equity": {
+     "value": 996655000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 4230726000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Cohen & Company",
+    "ticker": "COHN",
+    "cik": "0001270436",
+    "model": "채권 중개·IB",
+    "equity": {
+     "value": 109301000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 800383000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   },
+   {
+    "name": "Siebert Financial",
+    "ticker": "SIEB",
+    "cik": "0000065596",
+    "model": "리테일 브로커리지",
+    "equity": {
+     "value": 88651000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    },
+    "assets": {
+     "value": 968763000,
+     "end": "2026-06-30",
+     "form": "10-Q",
+     "tag": "Assets"
+    },
+    "ok": true
+   }
+  ],
+  "checked": "2026-10-31"
+ },
+ "news": [
+  {
+   "date": "2025-09-23",
+   "title": "Avenue Securities and Velocity Clearing Partner to Deliver UCITS ETF Execution, Clearing and Custody for Retail Investors",
+   "src": "Business Wire",
+   "url": "https://www.businesswire.com/news/home/20250923145998/en/Avenue-Securities-and-Velocity-Clearing-Partner-to-Deliver-UCITS-ETF-Execution-Clearing-and-Custody-for-Retail-Investors",
+   "lang": "en"
+  },
+  {
+   "date": "2025-07-31",
+   "title": "Hanwha Life Completes Acquisition of U.S.-Based Velocity Clearing, LLC, Becoming the First Korean Insurer to Signal a Bold Expansion into North American Capital Markets",
+   "src": "Business Wire",
+   "url": "https://www.businesswire.com/news/home/20250731488709/en/Hanwha-Life-Completes-Acquisition-of-U.S.-Based-Velocity-Clearing-LLC-Becoming-the-First-Korean-Insurer-to-Signal-a-Bold-Expansion-into-North-American-Capital-Markets",
+   "lang": "en"
+  },
+  {
+   "date": "2024-12-12",
+   "title": "Velocity Clearing Takes Leading Role in Strategic Alliance with Avenue Securities, LLC",
+   "src": "Business Wire",
+   "url": "https://www.businesswire.com/news/home/20241212294295/en/Velocity-Clearing-Takes-Leading-Role-in-Strategic-Alliance-with-Avenue-Securities-LLC",
+   "lang": "en"
+  },
+  {
+   "date": "2024-11-20",
+   "title": "South Korea's Hanwha Life to Acquire Majority Stake in U.S.-Based Velocity Clearing, Allowing Both Companies to Target Global Markets",
+   "src": "Business Wire",
+   "url": "https://www.businesswire.com/news/home/20241120895986/en/South-Koreas-Hanwha-Life-to-Acquire-Majority-Stake-in-U.S.-Based-Velocity-Clearing-Allowing-Both-Companies-to-Target-Global-Markets",
+   "lang": "en"
+  }
+ ],
+ "news_checked": null,
+ "errors": []
+}

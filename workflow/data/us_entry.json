@@ -1,8 +1,8 @@
 {
  "meta": {
   "verified_at": "2026-10-29",
-  "title": "별첨 1 · 미국 진출(브로커-딜러)",
-  "scope": "국내 증권사가 미국에 증권 현지법인(브로커-딜러)을 직접 세우거나 기존 법인을 인수할 때 미국 측 요건과 절차. 한국 측 신고·보고는 Workflow 본문 단계로 연결.",
+  "title": "미국 진출 · 브로커-딜러 설립과 인수",
+  "scope": "국내 증권사가 미국에 증권 현지법인(브로커-딜러)을 직접 세우거나 기존 법인을 인수할 때 미국 측 요건과 절차. 한국 측 신고·보고는 해외지분투자 절차 단계로 연결.",
   "note": "미국 측 요건은 SEC·FINRA 규칙과 뉴욕주 법 원문, 인수 사례는 각 사 발표문 기준. T-18M 같은 일정은 검토안 기준이고, 규정에 정한 기한은 '규정' 표시."
  },
  "kpis": [
@@ -193,12 +193,49 @@
   {"s": "뉴욕주 등록", "rule": "GBL §359-e", "t": "뉴욕에서 또는 뉴욕으로부터 증권을 팔기 전에 뉴욕주 법무부(Department of Law)에 등록", "src": ["ny359e"]},
   {"s": "AML", "rule": "FINRA Rule 3310", "t": "서면 AML 프로그램(경영진 승인), 책임자 지정·통보, 독립 점검, 교육, 고객 확인", "src": ["f3310"]}
  ],
+ "velocity": {
+  "verified_at": "2026-10-30",
+  "lead": "한화생명이 2025년 7월 지분 75%를 인수한 미국 자체청산(self-clearing) 브로커-딜러. 국내 보험사가 미국 증권사를 인수한 첫 사례이고, FINRA에는 한화투자증권과 같은 한화생명 계열사로 신고되어 있다.",
+  "profile": [
+   {"k": "법인", "t": "Velocity Clearing, LLC · 델라웨어 유한책임회사(LLC) · 뉴욕 기반(FINRA 등록 주소는 뉴저지 Hazlet)", "src": ["v_bc", "v_done"]},
+   {"k": "연혁", "t": "2003년 영업 시작(SEC·FINRA 등록 2003-08-15). 이름은 NYFIX Clearing → NYFIX Securities → Quantex Clearing(2011~2019) → 지금 이름", "src": ["v_bc", "v_edgar", "v_avenue1"]},
+   {"k": "사업", "t": "자체청산 브로커-딜러: 다른 증권사 대리 청산(코레스폰던트)·체결·수탁, 주식 대차·로케이트, RP, 포트폴리오 마진·프라임 브로커리지. 리테일 데이트레이딩은 Guardian Trading 사업부", "src": ["v_ann", "v_bcpdf", "v_crs"]},
+   {"k": "고객", "t": "브로커-딜러, 헤지펀드, 패밀리오피스, 프랍 트레이딩사, 리테일 트레이더(미국·해외). 인수 발표 때 2023년 이후 수탁자산 +300%, 대리 청산 사업 2배 이상", "src": ["v_ann"]},
+   {"k": "소유 구조", "t": "한화생명 → Hanwha Life US Investment LLC → Nexus Clearing, LLC(75%) → VCT Holdings, LLC(100%) → Velocity(100%). Nexus 나머지 25%는 VCT Holdings II 보유(인수 발표: 경영진이 나머지 소수 지분 보유)", "src": ["v_bcpdf", "v_x25", "v_ann"]},
+   {"k": "한화 계열", "t": "한화투자증권과 그 해외법인(베트남 법인(PTSV)·싱가포르 법인(PTSS)·인도네시아 증권(CSA)), 한화자산운용(한국·미국·싱가포르)이 한화생명 공동 지배 계열사로 FINRA에 신고됨(2025-08-05)", "src": ["v_bcpdf"]}
+  ],
+  "officers_src": ["v_bc"],
+  "timeline": [
+   {"d": "2024-11-20", "t": "한화생명, Velocity 모회사 지분 75% 인수 계약(SPA, 한국 시각 11-19 체결) 발표. 경영진이 나머지 보유, 한·미 감독당국 승인 조건", "src": ["v_ann", "v_bizwatch"]},
+   {"d": "2025-03-03", "t": "FY2024 감사보고서 주석: 지분 매각이 미국 감독당국·FINRA·CFIUS(외국인투자위원회)·한국 감독당국 승인 대기 중", "src": ["v_x24"]},
+   {"d": "2025-04-17", "t": "금융위원회 승인(4월 초)에 이어 미국 CFIUS 심사 통과(보도)", "src": ["v_sed"]},
+   {"d": "2025-07-30", "t": "인수 완료(한화생명 발표). Nexus Clearing Investors 보유 60% 전량과 VCT Holdings II 보유분 15%를 매입, 매도 지분 대부분은 Cerberus 계열 보유분. 감사보고서 주석은 지분 이전 효력을 7-31 영업 종료 후로 적음", "src": ["v_done", "v_x25"]},
+   {"d": "2025-08-05", "t": "FINRA 등록 정보에 한화생명 공동 지배 계열사(한화투자증권·베트남 법인(PTSV)·인도네시아 증권(CSA) 등) 반영", "src": ["v_bcpdf"]},
+   {"d": "2025-09-23", "t": "Avenue Securities(브라질 투자자 대상)와 UCITS ETF 체결·청산·수탁 제휴", "src": ["v_avenue2"]},
+   {"d": "2025-09-30", "t": "FINRA·거래소 12곳과 합의로 종결: 고객 시세조종 거래 감시 체계 미비, 견책·벌금 합계 $1.0m", "src": ["v_bcpdf"]}
+  ],
+  "licenses": [
+   {"k": "SEC", "auto": "sec", "t": "브로커-딜러 겸 정부증권 브로커-딜러", "src": ["v_bcpdf"]},
+   {"k": "FINRA", "auto": "finra", "t": "", "src": ["v_bc"]},
+   {"k": "거래소(SRO)", "auto": "sro", "t": "", "src": ["v_bcpdf"]},
+   {"k": "청산기관", "t": "DTC·NSCC·FICC·OCC에 청산 예치금(자체청산), NYSE·Cboe·Nasdaq BX·Nasdaq PHLX 등 거래소 청산 회원. 다른 브로커-딜러에 청산 서비스 제공. 일부 증권은 Pershing·Goldman Sachs·StoneX와 fully disclosed 방식 청산 계약", "src": ["v_x25", "v_bcpdf"]},
+   {"k": "주 등록", "auto": "states", "t": "50개 주와 DC·푸에르토리코·미국령 버진아일랜드", "src": ["v_bcpdf"]},
+   {"k": "업무 종류", "auto": "types", "t": "", "src": ["v_bcpdf"]},
+   {"k": "그 밖", "t": "SIPC 회원, CFTC·NFA 소개 브로커(IB) 등록. 순자본은 대체 방식(15c3-1: $1.5m과 고객 차변 2% 중 큰 값)", "src": ["v_crs", "v_bcpdf", "v_x25"]},
+   {"k": "규제 공시", "auto": "disc", "latest": {"d": "2025-09-30", "t": "FINRA·거래소 12곳과 합의(고객 시세조종 거래 감시 체계 미비, 견책·벌금 합계 $1.0m)"}, "t": "", "src": ["v_bcpdf"]}
+  ],
+  "fin_note": "X-17A-5 공개분은 재무상태표와 주석만 싣는다(손익계산서는 비공개 요청분). 회사 누리집에 감사보고서보다 새 재무상태표(6월 말 반기, 미감사)가 올라오면 마지막 칸에 붙인다. 2022~2024년 매출 연평균 25% 성장(한화생명 인수 완료 발표). 2025년 말 총자산이 12억→53억 달러로 늘어난 것은 대부분 RP 매수(약 40억 달러)와 RP 매도(약 40억 달러)가 함께 늘었기 때문이다.",
+  "fin_src": ["v_done", "v_x25", "v_site"],
+  "rank_note": "상장사 자본은 비지배지분을 포함한 그룹 연결 값, Velocity는 브로커-딜러 법인 단독 값이다.",
+  "rank_src": ["v_x25"]
+ },
  "deals": [
   {"date": "2019-11-25", "buyer": "Charles Schwab", "target": "TD Ameritrade", "size": "약 $26bn", "terms": "전액 주식, TD Ameritrade 1주당 Schwab 1.0837주(30일 VWAP 교환비율 대비 17% 프리미엄)", "kind": "리테일 브로커리지 통합", "src": ["d_schwab"]},
   {"date": "2020-02-20", "buyer": "Morgan Stanley", "target": "E*TRADE", "size": "약 $13bn", "terms": "전액 주식, E*TRADE 1주당 MS 1.0432주(주당 $58.74)", "kind": "온라인 리테일 채널", "src": ["d_ms"]},
   {"date": "2019-05-16", "buyer": "Goldman Sachs", "target": "United Capital", "size": "$750m", "terms": "현금. 운용자산 $250억, 어드바이저 220명 이상", "kind": "자산관리(RIA)", "src": ["d_gs"]},
   {"date": "2022-08-02", "buyer": "TD Bank Group", "target": "Cowen", "size": "약 $1.3bn", "terms": "현금, 주당 $39", "kind": "외국계 은행의 미국 IB·주식 플랫폼", "src": ["d_td"]},
   {"date": "2023-05-22", "buyer": "Mizuho", "target": "Greenhill", "size": "약 $550m(부채 포함 기업가치)", "terms": "현금, 주당 $15", "kind": "아시아계 금융그룹의 미국 M&A 자문", "src": ["d_mizuho"]},
+  {"date": "2024-11-20", "buyer": "한화생명", "target": "Velocity Clearing(모회사 Nexus Clearing 지분 75%)", "size": "비공개(보도: 2천억원대 중반)", "terms": "Nexus Clearing Investors 보유 60% 전량 + VCT Holdings II 보유분 15% 매입, 2025-07-30 완료. 나머지 지분은 경영진 보유(발표)", "kind": "국내 보험사의 미국 자체청산 브로커-딜러 인수(첫 사례)", "src": ["v_ann", "v_done", "v_x25", "v_hk"]},
   {"date": "2026-05", "buyer": "키움증권", "target": "Shinhan Securities America(신한투자증권 미국 법인)", "size": "비공개", "terms": "FINRA 승인 후 인수 완료(보도), 2026.10 미국 주식 직접 중개 계획(보도)", "kind": "국내 증권사 간 미국 BD 인수", "src": ["d_kiwoom", "d_kiwoom2"]}
  ],
  "deals_note": "거래 규모·조건은 발표문 기준. 배수(P/B·P/E)는 발표문에 없어 적지 않음.",
@@ -234,6 +271,20 @@
   "d_gs": {"t": "Goldman Sachs 발표: United Capital 인수", "u": "https://www.goldmansachs.com/pressroom/press-releases/2019/announcement-16-may-2019", "d": "2019-05-16"},
   "d_td": {"t": "TD Bank Group 발표: Cowen 인수(SEC 6-K)", "u": "https://www.sec.gov/Archives/edgar/data/947263/000119312522209400/d386083dex991.htm", "d": "2022-08-02"},
   "d_mizuho": {"t": "Mizuho 발표: Greenhill 인수", "u": "https://www.mizuhogroup.com/news-release/20230522release-eng", "d": "2023-05-22"},
+  "v_ann": {"t": "BusinessWire: 한화생명, Velocity Clearing 지분 75% 인수 발표", "u": "https://www.businesswire.com/news/home/20241120895986/en/South-Koreas-Hanwha-Life-to-Acquire-Majority-Stake-in-U.S.-Based-Velocity-Clearing-Allowing-Both-Companies-to-Target-Global-Markets", "d": "2024-11-20"},
+  "v_hk": {"t": "한국경제: 한화생명, 미국 증권사 벨로시티 인수(거래 금액 2천억원 중반대 보도)", "u": "https://www.hankyung.com/article/2024112042891", "d": "2024-11-20"},
+  "v_sed": {"t": "서울경제: 한화생명 벨로시티 인수, 금융위 승인 뒤 CFIUS 심사 통과", "u": "https://www.sedaily.com/article/14055138", "d": "2025-04-17"},
+  "v_bizwatch": {"t": "비즈워치: 한화생명, 미 증권사 벨로시티 인수…국내 보험사 최초", "u": "https://news.bizwatch.co.kr/article/finance/2024/11/20/0005", "d": "2024-11-20"},
+  "v_done": {"t": "BusinessWire: 한화생명, Velocity Clearing 인수 완료", "u": "https://www.businesswire.com/news/home/20250731488709/en/Hanwha-Life-Completes-Acquisition-of-U.S.-Based-Velocity-Clearing-LLC-Becoming-the-First-Korean-Insurer-to-Signal-a-Bold-Expansion-into-North-American-Capital-Markets", "d": "2025-07-31"},
+  "v_avenue1": {"t": "BusinessWire: Velocity Clearing–Avenue Securities 전략 제휴", "u": "https://www.businesswire.com/news/home/20241212294295/en/Velocity-Clearing-Takes-Leading-Role-in-Strategic-Alliance-with-Avenue-Securities-LLC", "d": "2024-12-12"},
+  "v_avenue2": {"t": "BusinessWire: Avenue Securities–Velocity Clearing UCITS ETF 제휴", "u": "https://www.businesswire.com/news/home/20250923145998/en/Avenue-Securities-and-Velocity-Clearing-Partner-to-Deliver-UCITS-ETF-Execution-Clearing-and-Custody-for-Retail-Investors", "d": "2025-09-23"},
+  "v_bc": {"t": "FINRA BrokerCheck: Velocity Clearing, LLC(CRD 126588)", "u": "https://brokercheck.finra.org/firm/summary/126588", "d": "상시"},
+  "v_bcpdf": {"t": "FINRA BrokerCheck 상세 보고서(등록·소유·계열·공시)", "u": "https://files.brokercheck.finra.org/firm/firm_126588.pdf", "d": "상시"},
+  "v_crs": {"t": "Velocity Clearing Form CRS(고객 관계 요약서)", "u": "https://files.brokercheck.finra.org/crs_126588.pdf", "d": "현행"},
+  "v_edgar": {"t": "SEC EDGAR: Velocity Clearing, LLC 공시(CIK 1225460)", "u": "https://www.sec.gov/edgar/browse/?CIK=1225460", "d": "상시"},
+  "v_x24": {"t": "Velocity Clearing 연차 감사보고서(X-17A-5 공개분) FY2024", "u": "https://www.sec.gov/Archives/edgar/data/1225460/000122546025000001/public24.pdf", "d": "2025-03-03"},
+  "v_x25": {"t": "Velocity Clearing 연차 감사보고서(X-17A-5 공개분) FY2025", "u": "https://www.sec.gov/Archives/edgar/data/1225460/000122546026000003/public25.pdf", "d": "2026-03-02"},
+  "v_site": {"t": "Velocity Clearing 회사 소개(감사·반기 재무상태표 게시)", "u": "https://www.velocityclearingllc.com/who-we-are/", "d": "상시"},
   "d_kiwoom": {"t": "디지털데일리: 키움증권, 신한투자증권 뉴욕법인 인수 완료", "u": "https://www.ddaily.co.kr/page/view/2026052015510358006", "d": "2026-05-20"},
   "d_kiwoom2": {"t": "머니투데이: 키움, 월가서 미국 주식 직접 중개", "u": "https://www.mt.co.kr/stock/2026/09/29/2026092808595538114", "d": "2026-09-29"}
  }
