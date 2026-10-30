@@ -6,8 +6,10 @@
 - SEC EDGAR submissions API: 연차 감사보고서(X-17A-5) 목록. 새 보고서가 올라오면 공개분 PDF에서
   재무상태표(총자산·부채·회원 지분)와 순자본 주석을 읽는다(pypdf 필요, 대차 합계가 맞을 때만 반영).
 - 회사 누리집(who-we-are): 감사보고서보다 새 반기 미감사 재무상태표 PDF가 있으면 같은 방식으로 읽는다.
-- SEC XBRL companyconcept: 미국 상장 브로커리지의 자본·총자산을 Velocity 최근 재무 날짜와 같은 날로(화면이 순위를 낸다).
+- SEC XBRL companyconcept: 미국 상장 브로커리지의 자본·총자산을 Velocity 최근 재무 날짜와 같은 날로(화면이 순위를 낸다),
+  같은 날로 끝나는 최근 12개월 순이익(ROE용, 자본과 같은 범위: 비지배지분 포함 자본이면 ProfitLoss).
   결산일이 같으면 값이 바뀌지 않으므로 7일에 한 번만 다시 받는다(못 받은 회사가 있으면 매번).
+- 한화생명 DART 정기보고서(velocity_dart.py, DART_API_KEY): 미국 법인 손익(종속기업 요약재무정보)·출자(타법인 출자현황).
 - Google News RSS: 'Velocity Clearing', '한화생명 벨로시티' 기사.
 
 출력: workflow/data/velocity.json. 사람이 원문을 읽고 쓴 인수 경과·라이선스 설명은 workflow/data/us_entry.json 의 velocity.
@@ -29,6 +31,9 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import net  # noqa: E402
 from fetch_news import rss_url  # noqa: E402
 from update_sec import EQUITY_TAGS, SEC_UA  # noqa: E402
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import velocity_dart  # noqa: E402
 
 OUT = ROOT / "workflow" / "data" / "velocity.json"
 KST = timezone(timedelta(hours=9))
@@ -385,16 +390,61 @@ def value_at(units, date, window=92):
     return best[1] if best else None
 
 
+_UNITS = {}
+
+
+def units_of(cik, tag):
+    """companyconcept 값 목록(USD). 그 회사가 안 쓰는 태그(404)는 빈 목록. 한 실행 안에서는 다시 받지 않는다."""
+    if (cik, tag) not in _UNITS:
+        try:
+            _UNITS[(cik, tag)] = json.loads(sec_get(CONCEPT.format(cik=cik, tag=tag)))["units"].get("USD", [])
+        except RuntimeError as e:
+            if not str(e).startswith("HTTP 404"):
+                raise
+            _UNITS[(cik, tag)] = []
+    return _UNITS[(cik, tag)]
+
+
 def concept(cik, tags, date):
     """태그 순서대로 date 시점 값(앞 태그 우선)."""
     for tag in tags:
-        try:
-            units = json.loads(sec_get(CONCEPT.format(cik=cik, tag=tag)))["units"].get("USD", [])
-        except RuntimeError as e:
-            if str(e).startswith("HTTP 404"):  # 그 회사가 안 쓰는 태그
-                continue
-            raise
-        v = value_at(units, date)
+        v = value_at(units_of(cik, tag), date)
+        if v:
+            return {**v, "tag": tag}
+    return None
+
+
+DUR_FORMS = ("10-K", "10-K/A", "10-Q", "10-Q/A")
+
+
+def ttm(units, end):
+    """end로 끝나는 최근 12개월 값(10-K·10-Q 기간 값). 연간이 end에 끝나면 그 값, 아니면
+    직전 연간 + 올해 누적(연간 끝 다음 날부터 end까지) − 전년 같은 기간 누적. 셋 중 하나라도 없으면 None."""
+    d = datetime.fromisoformat
+    fs = [u for u in units if u.get("start") and u.get("form") in DUR_FORMS and u["end"] <= end]
+    days = lambda u: (d(u["end"]) - d(u["start"])).days  # noqa: E731
+    last = lambda c: max(c, key=lambda u: u.get("filed", "")) if c else None  # noqa: E731  같은 기간은 가장 최근 제출(정정 반영)
+    ann = [u for u in fs if 350 <= days(u) <= 380]
+    if not ann:
+        return None
+    a_end = max(u["end"] for u in ann)
+    a = last([u for u in ann if u["end"] == a_end])
+    if a_end == end:
+        return {"value": a["val"], "end": end, "how": "FY"}
+    nxt = d(a_end) + timedelta(days=1)
+    cur = last([u for u in fs if u["end"] == end and abs((d(u["start"]) - nxt).days) <= 3])
+    if not cur:
+        return None
+    pre = last([u for u in fs if u["end"] < a_end and abs((d(u["start"]) - d(a["start"])).days) <= 3 and abs(days(u) - days(cur)) <= 5])
+    if not pre:
+        return None
+    return {"value": a["val"] + cur["val"] - pre["val"], "end": end, "how": f"FY {a_end} + YTD {days(cur) + 1}일 − 전년 YTD"}
+
+
+def ni_ttm(cik, end, nci):
+    """자본과 범위가 같은 최근 12개월 순이익: 비지배지분 포함 자본이면 ProfitLoss, 아니면 NetIncomeLoss를 먼저 본다."""
+    for tag in (["ProfitLoss", "NetIncomeLoss"] if nci else ["NetIncomeLoss", "ProfitLoss"]):
+        v = ttm(units_of(cik, tag), end)
         if v:
             return {**v, "tag": tag}
     return None
@@ -405,7 +455,7 @@ def peers(prev, date, errors):
     P = prev or {}
     tickers = [t for _, t, _, _ in PEERS]
     if (P.get("date") == date and [r.get("ticker") for r in P.get("rows", [])] == tickers
-            and all(r.get("ok") for r in P["rows"]) and not stale(P.get("checked"))):
+            and all(r.get("ok") and "ni" in r for r in P["rows"]) and not stale(P.get("checked"))):
         return P  # 같은 날짜 값은 바뀌지 않는다: 7일에 한 번만 다시 확인
     old = {r["ticker"]: r for r in P.get("rows", [])} if P.get("date") == date else {}
     rows = []
@@ -414,10 +464,12 @@ def peers(prev, date, errors):
         try:
             row["equity"] = concept(cik, EQUITY_TAGS, date)
             row["assets"] = concept(cik, ASSET_TAGS, date)
+            e = row["equity"]
+            row["ni"] = ni_ttm(cik, e["end"], e["tag"] != "StockholdersEquity") if e else None
             row["ok"] = bool(row["equity"])
         except Exception as e:  # noqa: BLE001
             errors.append(f"SEC {ticker}: {e}")
-            row.update({k: v for k, v in old.get(ticker, {}).items() if k in ("equity", "assets")})
+            row.update({k: v for k, v in old.get(ticker, {}).items() if k in ("equity", "assets", "ni")})
             row["ok"] = False
         rows.append(row)
     return {"date": date, "rows": rows, "checked": today()}
@@ -470,6 +522,21 @@ def usd(v):
     return "—" if v is None else f"{v:,.0f}"
 
 
+def report_dart(dt):
+    """한화생명 공시 값(백만원): 원문 표와 바로 맞춰 볼 수 있게 그대로."""
+    if not dt:
+        return
+    print(f"DART 한화생명({dt.get('corp_code')}) {dt.get('checked')}: 정기보고서 {len(dt.get('periods', []))}건, 건너뜀 {len(dt.get('skip', []))}건")
+    for p in dt.get("periods", []):
+        print(f"  {p['label']} {p['report']['name']} ({p['report']['rcept_no']}) 지분율 {p.get('stakes')}")
+        for k, v in p["subs"].items():
+            print(f"    {k:5} {v.get('name')}: 자산 {usd(v.get('assets'))} · 부채 {usd(v.get('liab'))} · 자본 {usd(v.get('equity'))}"
+                  f" · 영업수익 {usd(v.get('rev'))} · 순이익 {usd(v.get('ni'))} · 총포괄 {usd(v.get('tci'))}")
+    inv = dt.get("invest") or {}
+    if inv:
+        print(f"  출자 {inv.get('label')} {inv['report']['name']} (원자료 단위 {inv.get('unit_raw')}): {json.dumps(inv.get('rows'), ensure_ascii=False)}")
+
+
 def report(bc, ed, it, pe, nw, errors):
     """실행 기록(Actions 로그)에 남길 요약: 숫자를 원문과 맞춰 볼 수 있게."""
     n = bc.get("counts") or {}
@@ -488,9 +555,11 @@ def report(bc, ed, it, pe, nw, errors):
     rows = (pe or {}).get("rows", [])
     print(f"상장사 {sum(bool(r.get('ok')) for r in rows)}/{len(rows)} ({(pe or {}).get('date')}, {(pe or {}).get('checked')})")
     for r in rows:  # 10-K 표와 바로 맞춰 볼 수 있게 달러 그대로
-        e, a = r.get("equity") or {}, r.get("assets") or {}
+        e, a, ni = r.get("equity") or {}, r.get("assets") or {}, r.get("ni") or {}
+        roe = f"{ni['value'] / e['value'] * 100:.1f}%" if ni.get("value") is not None and e.get("value") else "—"
         print(f"  {r['ticker']:5} 자본 {usd(e.get('value')):>19} ({e.get('end')} {e.get('form')} {e.get('tag')})"
-              f" · 총자산 {usd(a.get('value')):>21} ({a.get('end')} {a.get('form')})")
+              f" · 총자산 {usd(a.get('value')):>21} ({a.get('end')} {a.get('form')})"
+              f" · 순이익 12개월 {usd(ni.get('value')):>16} ({ni.get('tag')} {ni.get('how')}) · ROE {roe}")
     print(f"뉴스 {len(nw)}건", *[f"  {x['date']} {x['title'][:70]}" for x in nw], sep="\n")
     if errors:
         print("오류(이전 값 유지):", *[f"  {e}" for e in errors], sep="\n")
@@ -505,14 +574,16 @@ def main():
     it = interim(prev.get("interim"), fy, errors)
     date = it["period"] if it else (fy or {}).get("period")  # 순위는 가장 최근 재무 날짜로
     pe = peers(prev.get("peers"), date, errors) if date else prev.get("peers")
+    dt = velocity_dart.collect(prev.get("dart"), errors)
     n_err = len(errors)
     nw = news(prev.get("news"), errors)
     news_ok = len(errors) == n_err  # 두 검색이 모두 됐을 때만 확인일을 바꾼다
     out = {"updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-           "brokercheck": bc, "edgar": ed, "interim": it, "peers": pe, "news": nw,
+           "brokercheck": bc, "edgar": ed, "interim": it, "peers": pe, "dart": dt, "news": nw,
            "news_checked": today() if news_ok else prev.get("news_checked"), "errors": errors}
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     report(bc, ed, it, pe, nw, errors)
+    report_dart(dt)
 
 
 if __name__ == "__main__":

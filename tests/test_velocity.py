@@ -274,11 +274,17 @@ class FetchTest(unittest.TestCase):
         self.assertTrue(any("자릿수" in e for e in errs))
 
     def test_peers_recheck_weekly_and_keep_failed_rows(self):
-        rows = [{"name": n, "ticker": t, "cik": c, "model": m, "equity": {"value": 1, "end": "2025-12-31"}, "ok": True} for n, t, c, m in fv.PEERS]
+        rows = [{"name": n, "ticker": t, "cik": c, "model": m, "equity": {"value": 1, "end": "2025-12-31"}, "ni": None, "ok": True} for n, t, c, m in fv.PEERS]
         fresh = {"date": "2025-12-31", "rows": rows, "checked": ago(1)}
         with mock.patch.object(fv, "concept") as c:
             self.assertIs(fv.peers(fresh, "2025-12-31", []), fresh)
         c.assert_not_called()
+        # 순이익 칸이 생기기 전에 저장한 값(ni 없음)은 7일을 기다리지 않고 다시 받는다
+        old = {**fresh, "rows": [{k: v for k, v in r.items() if k != "ni"} for r in rows]}
+        with mock.patch.object(fv, "concept", return_value={"value": 2, "end": "2025-12-31", "tag": "StockholdersEquity"}), \
+                mock.patch.object(fv, "ni_ttm", return_value={"value": 1, "end": "2025-12-31", "tag": "NetIncomeLoss"}):
+            out = fv.peers(old, "2025-12-31", [])
+        self.assertEqual(out["rows"][0]["ni"]["value"], 1)
         errs = []
         with mock.patch.object(fv, "concept", side_effect=RuntimeError("HTTP 503: busy")):
             out = fv.peers({**fresh, "checked": ago(8)}, "2025-12-31", errs)
