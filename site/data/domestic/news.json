@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T19:16+09:00",
+ "updated_at": "2026-10-31T00:09+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -178,6 +178,17 @@
   {
    "date": "2026-10-30",
    "time": "08:55",
+   "title": "키움증권 \"KT&G 올해 배당성향 65% 전망, 해외 담배 사업 수익성 개선 주목\"",
+   "src": "비즈니스포스트",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1mV3BNQXliUTFVWl80bDZ4Uks4NlZjdHFtOFd0bExSWWN3VFZzRFRQeER5YzhxeDRVcC1yWFhZWVN0RlVoamFzdzg2cmhxejNQOXZlMmIzcFVPNldibVFsU1dGOEh5dG1JTFFXUEFOTGFubDQ?oc=5",
+   "site": "www.businesspost.co.kr",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "time": "08:55",
    "title": "키움증권 \"KT&G 올해 배당성향 65% 전망, 해외담배 수익성 개선에 주목\"",
    "src": "비즈니스포스트",
    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1mV3BNQXliUTFVWl80bDZ4Uks4NlZjdHFtOFd0bExSWWN3VFZzRFRQeER5YzhxeDRVcC1yWFhZWVN0RlVoamFzdzg2cmhxejNQOXZlMmIzcFVPNldibVFsU1dGOEh5dG1JTFFXUEFOTGFubDQ?oc=5",
@@ -229,6 +240,17 @@
   },
   {
    "date": "2026-10-29",
+   "time": "22:46",
+   "title": "미래에셋증권, 日 산코증권 지분 100% 취득…인수·사업확장 1006억원 투입",
+   "src": "아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1JenJZa2szM3FSbkoyclFWWVZtekluQU5XemljUmNFZWp2M3VnV3lXOVVxdWF0M09HcWVranFwbmxYd3pYWnVfNkc4eXlVMGlWWWR1cV81a2jSAVhBVV95cUxNSXpyWWtrMzNxUm5KMnJRVllWbXpJbkFOV3ppY1JjRWVqdjN1Z1d5VzlVcXVhdDNPR3Fla2pxcG5sWHd6WFp1XzZHOHl5VTBpVllkdXFfNWto?oc=5",
+   "site": "www.ajunews.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
    "time": "17:56",
    "title": "미래에셋, 산코증권 인수…日 리테일 시장 공략",
    "src": "서울경제",
@@ -252,7 +274,7 @@
    "time": "16:58",
    "title": "미래에셋증권, 日 산코증권 인수…글로벌 사업 확장 노린다",
    "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Ub295a3U2U3YxRGpOSWRDeW9JM0QxZDZtRDBpa2ptTmg4T2hpaVIxZjFjNTdvQTgxZ0JsQmd1d1Nld0p6WkpDM3VIQVc5Y3N3VC0zazF5SVJUenhpVnZ2Y195LUxXX3hIZ0xFSW8tSUtzc2hBN0HSAXtBVV95cUxQeEtBdEdFdEVIQjZwSk00eUtMLTVRdmFDbnBwREdaZkhTRURzSm8wbHN2WV9fVUZpRkJwOG1wVGZ3LUpvb0pNeVB1NThtbUlZb3ZCWHBrUEx2SUNJaGFZZy1TOEd3TVpDVXRCQXB6SDNtd2hkdzdMMlNiRnc?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE93SjZFeDdlUFhyaFJPd2stajVYV29YVFUwUExpRXV4ai1NLVVjWDdFd1k0Tm84aWV3SlN1NHFPMmtLb3hjVXN1cTRYdjBXaWxzcklNZkdUMUh2Y2FBRHRoUzVpbmlPcHE30gFuQVVfeXFMT0VPdHhFNkhnRXBUa1FwRThrVW1VSy16MXVReTJwYTFuQVFGYURaekgwUm5kZFRqclFzU2Jrb25hOWVtZnA0clAxTW9jdVNpYkdjbVhIN1ZjUlJVREt3TV9BR1JpNWlMMFVBSVgwYmc?oc=5",
    "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
@@ -356,7 +378,7 @@
    "time": "08:39",
    "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
    "src": "서울경제TV",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE42VjN1OGdYWGZ6SUpiZGFIUHo0bEYwYU9lQU5PbzNvcTNJem9yQm1BSkF2SWU3UDd1d3lYcnhwUTN6N0dkNFl3VDRxRGwycDJuRnZtNXRBbkFYNGN3d1pVdGphZTl2cUxYLU44?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
    "site": "www.sentv.co.kr",
    "firms": [
     "미래에셋증권"
@@ -466,7 +488,7 @@
    "time": "11:11",
    "title": "미래에셋증권 홍콩, 해외법인 최초 자체 기술 달러 디지털 채권 발행",
    "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5RNFA0cTg1eUQ3aG9JaTFicndvOWVhZWs4NVJhT2RZdTJIR0t3NldZUHZ3LUpNZTUycVA5WnhvVDczRHJBMVRBaGRIb1YwUjhrS21TYzMyeUZhUG52aDRYZ2lQcG0wOFk3VUx3WUJB0gFuQVVfeXFMTlE0UDRxODV5RDdob0lpMWJyd285ZWFlazg1UmFPZFl1MkhHS3c2V1lQdnctSk1lNTJxUDlaeG9UNzNEckExVEFoZEhvVjBSOGtLbVNjMzJ5RmFQbnZoNFhnaVBwbTA4WTdVTHdZQkE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5pMnpuYmVqd19ucFdrNVVaa01XaFVsQkdVNkV4aWNTNGpIbzhHRFJzb3d3UEtSUjlwOGJ1Z1FzZ2lSWEhZRHhicG83cUNhRk1xSUt1U2xlNVJyeDE1UzdSUndJLXg3RkZ0OFhIeFB6OGR5NkRkR0dwRTR1QdIBe0FVX3lxTE5pMnpuYmVqd19ucFdrNVVaa01XaFVsQkdVNkV4aWNTNGpIbzhHRFJzb3d3UEtSUjlwOGJ1Z1FzZ2lSWEhZRHhicG83cUNhRk1xSUt1U2xlNVJyeDE1UzdSUndJLXg3RkZ0OFhIeFB6OGR5NkRkR0dwRTR1QQ?oc=5",
    "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
@@ -784,26 +806,6 @@
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qbWpSa3ZlMmhUM3JZejVfMy1INnVtdVJibXpCVE1VVVhhVGpnNlp4cW11ZHVyVEp5azVudTVKN1ZCU0I0RVgtWndUNkFxLU1iOF9sc2pxYmdHc0MtdmZGZXRCUTNYSEkx0gFuQVVfeXFMTlBHRTdQVHZPRE1vc2tyQ1Z3T0EyWmZ1b1NjNEZzeVc4c2VYXzBhNGhuSVo4aEJZVjhaZldQZHhaUzNJY0NxTEZSYXhNNmV5YUlBRU04Slp2Z2Z1US1RSVUweTIwTHVnbVJmeWdHckE?oc=5",
    "site": "www.mt.co.kr",
    "firms": []
-  },
-  {
-   "date": "2026-09-16",
-   "time": "16:00",
-   "title": "일본시장 눈독 들이는 한국 톱 증권사…‘3000만 절세계좌’에 담긴 기회[한중일 톺아보기]",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Zd0ItQXVXVm5XX2FYUUVrMjNrRjVRbUN2a0g4VXVkamptNk9SaU1Ubk15NEJfZWZtdlE2UkRSM093Y2dtSGNZb1IybmJSbl9wQnc?oc=5",
-   "firms": []
-  },
-  {
-   "date": "2026-09-15",
-   "time": "16:00",
-   "title": "신한투자증권, 일본·홍콩·베트남 방문…투자자 한국 유치 나서",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBrYVZaR0tqeXlMNWF0Ukw1MVJyWkE1cVAwWWwyR2tOUGQ4S3ZqRFZvWUk2bVlGMlNFMmc0a1IwZ2J6NlNMRzdlUGF1WWx0dw?oc=5",
-   "site": "www.etnews.com",
-   "firms": [
-    "한국투자증권",
-    "신한투자증권"
-   ]
   }
  ],
  "errors": []

@@ -1,10 +1,18 @@
 {
- "updated_at": "2026-10-30T19:16+09:00",
+ "updated_at": "2026-10-31T00:09+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
+    {
+     "date": "2026-10-30",
+     "time": "16:22",
+     "title": "美·유럽·日 나란히 동결 … 반도체 호황에 한은만 인상 저울질, '금리 분화' 갈림길",
+     "src": "뉴데일리",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Oc3A0dTZfQ01ydGpOQktPdjN1bi1HcmRNZzlvMXlhOVlCZjEtSlZmbXZNR2kwUTJCNXlYanlrOTRKSi11ZGJIaWJ4MExpNVYxWlJxSjI0Q2RXeGNJaktkLVQwN0x2YVhUOHRRc2QyNXpyOFpXcUdYRXhDUdIBgAFBVV95cUxNbGk5a19MTW1BZzdmSHpRaUFHWVFSSzZiVXFXYkh2MWNXQTdwMDJza21CWl9YVFpxdTZfa01LMnMxUjZXcVhwVy1vQkQ4eGI5U2pjSEZxM0dOSzZsVXg3ZGRVQTdEcjVlcThHTjJoeGs5UmhkbUg1NEhEZHZvRk9mcA?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-10-30",
      "time": "16:08",
@@ -15,18 +23,10 @@
     },
     {
      "date": "2026-10-30",
-     "time": "16:02",
-     "title": "코스피, 외국인 매도 공세에 3% 급락 마감…5700선 후퇴",
-     "src": "매일경제 마켓",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9kYW5CcGVsRW9pTVZiMXA2TFBaNHJKdVJlZnVtSVg4UjlscHFxTmhKVEt0SFhFTGgwNlZEai1nSDhUNzIyRjdyMFlXNVB4QUlzRXc?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-30",
-     "time": "15:56",
-     "title": "미국발 악재·외국인 매도에 코스피 3.48%↓…SK하이닉스 6% 이상 급락",
-     "src": "매일경제 마켓",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5tV1lDeUZnSkhZRUZEaTdqZlNUUnU4dFVwcHB5VXNrc2FtMzhYdXc4M2lWcVpYZ0dvSi13UWRlN1A0dC1iWEZTV0cxZW1iR2U1Q1E?oc=5",
+     "time": "16:04",
+     "title": "알파벳 쇼크에 코스피 3.5%↓…외국인 1.8조 '팔자'",
+     "src": "머니투데이",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8zdXlwN0VTTmJJWkJTTFZBdEV0Z0ZOXzNUdFRGMUU3SXhZNVpZQ08tbWhjdi1DM3h1QjFITE9QSUZ1UHpYazgxaVNJUjlOWE5Pbk5aVDVBVGdiU09Zb0FUNnl5bEJOcmd4b1hIZXg0MEtkeDdiS0HSAXtBVV95cUxNdlIyZWd4U29YZHdjTUhZMl90SnhiQlBtUlRxN1hRRWxQa1Zwbzk4SjdPVlN4LTdmbHlQQ1E0TTlhTWZlRVk3YzBmb2t6STVrZW5WLV9HRUhZV1dhN3dFTGZxQ0ZFdm1KWWd4SHZ1YjNxYlBYazYzVFJjLUU?oc=5",
      "priority": false
     }
    ]
@@ -65,6 +65,14 @@
    "items": [
     {
      "date": "2026-10-30",
+     "time": "19:07",
+     "title": "Jakarta Stocks Lose 41 Points on Global Risks, MSCI Uncertainty",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTWZsSnVhLWplc0ZaX3ZNbVNuQW1KZ19SVFp4b3ZGZDNTd1lJUmk1Wld1TzItUHJEZXZlVnh6emIzSEUyN05wM1phVFlsNDlrcGstOWl4MHNCWUtHVEFscHBHSWI0Z0NrOE5wcnM4RnlQeGJKTEtrQzJNZWI2a2NIbVBYMlhXbDJOT252Z2hzU2dHeUs2Vm9LbzA4NA?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-10-30",
      "time": "11:36",
      "title": "인니증시 강등경고에 중앙은행 \"단기 충격\"…대통령 동생 \"심각\"",
      "src": "연합뉴스",
@@ -72,19 +80,11 @@
      "priority": true
     },
     {
-     "date": "2026-10-29",
-     "time": "20:10",
-     "title": "MSCI warning a 'short-term shock', Indonesia central bank chief reassures businesses",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQekZ0Z0EwQnVmbEVqREZsVFd6SkNsMmNXbGhNbnhQN3dDYTE2WTNhUzQ3UHVFeVh3MlBRaUY0WktsNkgzSWM2Q1drU0gwUDExbWVpM2NXOU9KUzR1c1Nhby1mSlYtZTVqUnI2UTNGNDB2ZHlYQXVzUy1BTEV1RjBGclBjWWZ2eTB5RGdKd1pHSnJwYXFhOFF2bHhZUjVzZnVyZzdsdlEzbEEwZGwxRG5jT1ZjRGZFa2haaWc?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-29",
-     "time": "10:19",
-     "title": "Letter: MSCI owes investors an explanation for its Indonesia warning",
-     "src": "Financial Times",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE12TXhxYkluQ3dOd2Ztc05pU2RtaUpVRUhlOUotX01LR0p6RWdnbFQ4bkxGU0JJQ3R1ZjdSNzliMmVDOGxyLTFhMXVUeW5hNlA5WVIwX240Yi1tSkpCeVpLU3FBTTFlUzZXWGk1WjJXWDg?oc=5",
+     "date": "2026-10-30",
+     "time": "08:01",
+     "title": "Prabowo's Brother Warns Rupiah Could Hit 21,000 if MSCI Downgrades Indonesia",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU0JYVjJTV1JMXzc0Skk4M2tERW9vX0NCb0RiaE5KQzZiYkVhNjZoRGVyUXJOcGZWYTJ4NnBQUmQ1Tm1UMFRXUWdFZ2RnVlZCbGN6dXY3Q0JsMnRyRVF6VFdyYmU1VnZYNFpzdWZRMnIyQnlTVTFkU0RNN19vRG5EWm5mQ2dxNHc5eTNTWDRzdnJLS0t2QUFGLS1haFRMZzlKdks2anFUOHNSZXc?oc=5",
      "priority": true
     }
    ]
@@ -92,6 +92,14 @@
   "VN": {
    "label": "베트남",
    "items": [
+    {
+     "date": "2026-10-30",
+     "time": "20:26",
+     "title": "Implementation key to Vietnam’s post-upgrade capital inflows",
+     "src": "Vietnam Investment Review - VIR",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTlJQYzIwVlVxREItVEI5UnFtWFR4Y29GZmJtcktoSHdrY3N1NExsUVh2OU9oVU5nbElZMVMtbElJV2ZXX2VsVUk0bHZ3WFhqc1lpbEdMQ1FSTWZnY0RHYV9tdWZJSXpYVy1CTWdjMy1UY1MtVUh5d2Z0R1BSSUZSaFloYVB1MFJTTEJLQlBXLThTQk1h?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-10-28",
      "time": "14:37",
@@ -106,14 +114,6 @@
      "title": "Transparency and disclosure key to sustaining Vietnam's market upgrade",
      "src": "Vietnam Investment Review - VIR",
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-20",
-     "time": "18:04",
-     "title": "Market upgrade is just the beginning: Vietnamese companies face tougher test to attract capital",
-     "src": "Vietnam Investment Review - VIR",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSk9mNHkyaFNudkZpZDZfQjZpUk5wTzhOT3NlNUN0cVlmcjR0VTJtbEhoTXI3RDJUV0RZM2gyajNFN1RiU2Mwa3V5NWpNeVNzekdWTjk1OGhkZFQ4Zm9CMUJabzF4d2xmNGVXVXRYQWV5empuWmNLQkF5akFpaHlPdEtSTTh5VkJjMUkyWEQ5TXZtWm4zcWNnTndTV2lyOEVyRndxX3RCbGd6VWpOSEppMl9mekxSTE5EampUR3FvZTNmblU?oc=5",
      "priority": true
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-10-30",
-     "time": "18:11",
-     "title": "BOJ Says Japan’s Inflation Trend Hits 2% Target as it Holds Rates",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcnhYX2pTREQwTVpVRkliZlptQl81YWowMUtRS1VSYU5nN1BsR3ZvWjlxMTkyVXk3Y2VuMktGR2k2M3AxTTQ2dmo2aVRBRlNreHBxb1pFeWtIb2VzbW56UHpsRDEteGVJTXluYmthbWVWWVNWaWpMcmduTDRMMXRTdjZuSkpHX084a2tEblN5NDVLVzMzTmVuRE9SWWV1TUptN1JWOUYyMFU3OEp0WEt6YkhkTHN2Zw?oc=5",
+     "time": "19:49",
+     "title": "Bank of Japan says 2% inflation goal reached after decades of deflation",
+     "src": "Financial Times",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVi1KTThMaldwbS1RUlphdUZuVE9lU0N1M0ZvNll2eXJGczlyVy1NN0VvajJ0Q1RfVnh2THVreHdMdVdmQlpXSzRneVgyTU55cmVQMl9oa2piLWFjNmJuM0V6Qk5lSWhkWC1LUWtBSldNdGFycU1aa25hNnpHT1BTcGZLNGU?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-30",
-     "time": "17:34",
-     "title": "Bank of Japan holds rates and guides to further tightening",
-     "src": "Financial Times",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1sN3JiZFVDZE9ucHhraDFpX2lmNmRYMUhkc0Y1b19XQkNRZ0dlbTJEbHFyTi05T3Z6cHhTZzQtWjg1ZjV3NnVFQTFKQlRWbVg3UzcxRjE1Y1VoRU9lVjlJalF4eHd4OVpWdnhpa2ZUQTk?oc=5",
+     "time": "18:11",
+     "title": "BOJ Says Japan’s Inflation Trend Hits 2% Target as it Holds Rates",
+     "src": "Bloomberg",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcnhYX2pTREQwTVpVRkliZlptQl81YWowMUtRS1VSYU5nN1BsR3ZvWjlxMTkyVXk3Y2VuMktGR2k2M3AxTTQ2dmo2aVRBRlNreHBxb1pFeWtIb2VzbW56UHpsRDEteGVJTXluYmthbWVWWVNWaWpMcmduTDRMMXRTdjZuSkpHX084a2tEblN5NDVLVzMzTmVuRE9SWWV1TUptN1JWOUYyMFU3OEp0WEt6YkhkTHN2Zw?oc=5",
      "priority": false
     }
    ]
@@ -152,26 +152,26 @@
    "items": [
     {
      "date": "2026-10-30",
-     "time": "10:00",
-     "title": "Traders await Hong Kong’s marquee financial summit: a good omen for stocks?",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY1dmMmxtTWNULWh3bHN2anJmN1pzMkRPU2tiV1l6S0ktUnpWWkpWbDJ3UWFXVzF6b3FMUERlN0VQcHdHclY4NFFjUHI2bmdrWnpmMDF3WUphX3hoNE9uMmI1U0RXUEV4NGdUdTYtX3JIbFlJd1VGb3ZTLWVYdDZKbVo2TG1qc3BXQTVZZ05pS1JZUmJkRGZ6bVlHbFpZcm9jMm9kWWFMeWZMd1FXc05nRGw4ZTk1eUdwUmMtRUdOeUlXOVo0Z1HSAcYBQVVfeXFMTzhCTHZvRDRvZk4xWnNfVWJzOVRvRW5NbjdUSVdlWlVhNUpfbVA4MXJGWmhUdnZYc2JNdEZmVDlzTGdUZXM1clVfSG41U2F4Q0M4bFE2NUVhNk9jNjE2Tkl1Y3lGMUFSUk1hTXFhaHNoeEtJZk9uaUNSODhabzJBRnBtOWhBRTMxWnViUUNrSWFNV3VNNXFiQnFjMGZVSlRPT294Y0ZvUEhhMVRMRXJ1dTMxamVqdFhBYmdqczhxcTZDZ0ExcFJn?oc=5",
+     "time": "22:57",
+     "title": "China's central bank steps up shift toward overnight rate as policy anchor",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPeVdpV3d2UGwyVHFBR2lNS1JNaUxINlpjVXppYjNiSVc2QUtoa3RISFhVcUZFeEppWHlBTmJoRko2dEpJSjNwb2NfVDJMMVp5bGp5VUtBb1ZnYjZ2NXRKUjlwRi0wSmNYblh1TU5iNE5odmtRN09uZ1Ryemx1dzJQYmpsRVpXRS1yQUl5MzRWZVMzSXJvNW03UHBodmZHbm9tMXhwZFFiVXE2ZEpJTi05TVJpWHItRF9zbG9MRmVpSFhtVFVvc3V2TnBFOWExeXVq?oc=5",
      "priority": false
     },
     {
      "date": "2026-10-30",
-     "time": "09:00",
-     "title": "Hong Kong Stocks Lose a Key Backer as Chinese Investors Head for Exit",
+     "time": "18:16",
+     "title": "PBOC Reveals Overnight Rate at 1.25% Before Policy Anchor Shift",
      "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeU5nUUh0aU4wcVVpU2czZUJNQzdma2N6cE9zLTdQYko3MlAtZzJFMXNtQ2ZMQmd0SkJhd2FjQlpIbEQweEJRZ0VBb3VOdGdjbUJOQWIyU20tOU9vaTNiYXdaeFZjU1d6bENWNmI1S2tVOUtqb01XeHZXb0pFdFZrZDZ1UElCRUhOSG1XUUF6NUk3ck4xYUgyTkhNNGZDaTFCX0NvNlpoYzFNcVFoX3k0Vi1nNA?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV2VqYzFqUFRRckRPOVdEaDVwN3hwZmJwek5RRzV5RE1BUXlhRUUxY1JEUnRJeEljMnNOSUJVQjVWelB1SGdfaTF1emg0TXBSSHdVdHhSZGFJOEJuZVNBM1RiTWdLZkt6MUY3blZyTFNqS3Z0NEM0N0JpRjlpbGxqemxJVzBBTzExRzJSNUdkdW1kT0VsTERwTzFXUkdJODlTT2tINk1YWDVvaU5TTlRnTFVEMA?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-28",
-     "time": "14:37",
-     "title": "Global Market: China, Hong Kong stocks rebound as SK Hynix earnings lift AI optimism",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZ3REakE3UWU5cThfQXRjdGVDZnloR0hISzRyUWZpVFNGTWhUR2NmQTVWTGVzVDJCRkcwMVNQTk8xSGNpMGJodHRhR2t2ZzlRa3JBYU5xRU5pSlJPSHhTVEJJVk1mVWFTUlR4YUZITXpHLV9Fa3dsal9mSGdfT05Sc3hnRmJENERlMHNvMUt4ZXNBRmRHWGMtWFRQT05XYldpWVlIMlJ2amltS2JKQk9PWXVxclp3VEdWU2Zyczc3UzVmbE5mTkJOZ2lVTjMtT3ZYTm1DeVpGZEQ2bTNVZGZpX3BiUkpnTnNsUTVLVnIwQ1TSAfYBQVVfeXFMTi1KaXg4SER6dEhDS0V5bjRyYldDSGxzRjd2Tnc2dUNCN3ZyWjdoSV9CcWVVN0plWDUydi1MOW85VVpoQ1A5dC1BVFFaWW0yWHVTdDFWTkFnZFFIMEQ1YXRYeGJYSXJxMU1WZzhCNWxWTDBqLXBJLWFuMjVxSUxHb2xGakRqVkRHV280aUtfTFNVeU01MjktWGFYaW95eWI0cVdDbFczcVVYdGZhaThYZzNBRF9sYjJaUWdaUmZDclNKQnlfeFlaY1JMdTRzWkxBRzFiX2wxLTh0U1NEOXRsQklWdGVVd3VnSHFNTFZBcmxJMlQ2WkZR?oc=5",
+     "date": "2026-10-30",
+     "time": "10:00",
+     "title": "Traders await Hong Kong’s marquee financial summit: a good omen for stocks?",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY1dmMmxtTWNULWh3bHN2anJmN1pzMkRPU2tiV1l6S0ktUnpWWkpWbDJ3UWFXVzF6b3FMUERlN0VQcHdHclY4NFFjUHI2bmdrWnpmMDF3WUphX3hoNE9uMmI1U0RXUEV4NGdUdTYtX3JIbFlJd1VGb3ZTLWVYdDZKbVo2TG1qc3BXQTVZZ05pS1JZUmJkRGZ6bVlHbFpZcm9jMm9kWWFMeWZMd1FXc05nRGw4ZTk1eUdwUmMtRUdOeUlXOVo0Z1HSAcYBQVVfeXFMTzhCTHZvRDRvZk4xWnNfVWJzOVRvRW5NbjdUSVdlWlVhNUpfbVA4MXJGWmhUdnZYc2JNdEZmVDlzTGdUZXM1clVfSG41U2F4Q0M4bFE2NUVhNk9jNjE2Tkl1Y3lGMUFSUk1hTXFhaHNoeEtJZk9uaUNSODhabzJBRnBtOWhBRTMxWnViUUNrSWFNV3VNNXFiQnFjMGZVSlRPT294Y0ZvUEhhMVRMRXJ1dTMxamVqdFhBYmdqczhxcTZDZ0ExcFJn?oc=5",
      "priority": false
     }
    ]
@@ -189,18 +189,18 @@
     },
     {
      "date": "2026-10-30",
+     "time": "19:19",
+     "title": "Singapore shares fall as chip stocks take a beating; STI down 0.4%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOV9PbEhndGEtLVdHcmlBbktLeUNIVUxsZTA4TmtURmJ4SUc5SkFYOTQ0NlVEc3I1LTQ1bjM3MGE0YldXY0NQRkI5dzdWdEE5QXJGTFhZcGFDRjk0Yl9Td0M2NTRvdzZ0Q21lRVZhelVKYXBVeExjeVlGMEVBQXliREMxenhUS1VoYVdwZjNyb1c4TEhZMDhHVGl2LVR5UjdWX2ZJYVVHM1BYdWhZa19R?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-30",
      "time": "14:40",
      "title": "AEM and other Singapore chip stocks tumble after tech rout on Wall Street",
      "src": "The Straits Times",
      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNTVBalQ1X1IxT0FtMk4tamRwZjZKZHBBUTdpZGVTZTFnMjJoTDFVMlJhaF9yUU9wQ1NEX295ODlhSjliQUtEc3MyMVowZW9WY1ZGd0otclMwWnUwa1ZvUWlfY0U1TmpfQ0dKTWdwdkVaWG51aXJjMGpOTXZaLXNYdXh0SEFyVW1lWktfU3hjWUFpOWd3c2ZYbnhBcVhyQXpxbUZXek50UjJlZmtRUnpUdTRfQy1TZURaVU5ueWpweVBteVRsYU4tX0ZOMzYxQQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-29",
-     "time": "19:08",
-     "title": "Singapore stocks fall amid mixed regional showing; STI down 0.03%",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOV1R0Z3AyVDNRbmV4YlBXdjVoejRpYklvUkhoQVNNQ0VGaVBReFJ6Nm1XVFNVWUNnMnIxUFZfUk9GU2xmbUhBRTJ2SUFZSjJib3NfUktzTGdkV2YxUzktU0FFZXF4UTA5UmYtYi1YUnJQS1VKTHozV2l4VGtuazBIX3Z4WnUyb3ppVWlMRGZwZDM3RFdiNmwyX0xVTG45MkJOS2xfLVhnNkUybnZDa1FxaWtkR3FWV293MTZQZTQ3VG0?oc=5",
      "priority": false
     }
    ]
@@ -219,17 +219,17 @@
     {
      "date": "2026-10-30",
      "time": "11:25",
-     "title": "Indian shares inch higher on IT rally, earnings-led rebound; oil caps gains",
+     "title": "IT, earnings, tax-cut hopes power Indian shares to monthly gains",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMFp6N3FNV2FiY1Y2UFlWQ21yeTgyVlRKcTV6UEMzQTRiUFlTM0lJaWtYSzFpWHMydzQxSWZCeDZLV2hSUzZlNUwyRTNDY2llYnEydkp4WG95cUxzaW1Ed0ZRdUZGbUtjeW1CVWpIeERKR2xERGVWcjdVcTBHQTZiTzNyaHJsMlhpU3hSWnlESUZBc2ZIT3dUUWwwRGpVYk1fVVU2MEx2V1RfNk54NVBRVVFPWEtkcDQ2TUw4TFgwNUc?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-29",
-     "time": "18:07",
-     "title": "US Fed FOMC pauses interest rates: Can Nifty bulls take charge or will RBI hike spoil the rally? Investors guide",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOGluYU9JZndndUZ3MkRZX3VmYzYyN19KbU92bmYtX3V4UGR5TkRTaDZ2dzhwNXFGcTljdmJjZmtPZHQ1WlQzcS16N3pPdVZxaUxxX3dtdVJaM2JjcTlvYVpRdHpyeFRTTEh2ZXY3MUFjR2pUR2ZHcmd5ZjFMN1NIM0VkYmltd0pFMEZKRXl5RUFIWTdVMUYtT1ZvVGJIRVN4aDF3SUZkRmRjT05hd04xSVhCUWFGaUdOLW83ZGFTeFZ2dlhSREVJWmt4TGJHZEkyZ3FqRUo0azlseURrdU9NUEs5LW1GU3RsTzVkc3luTDB2YkRZR3ptci10bUl0WndQSWpsMk9zQUhRY3c00gGSAkFVX3lxTFAtalNYbWlzYko2VW1LcmMxbFdNNVh2d3FJaHJwRHhJX3c5eHR6b1kwN0liRXlzNm95RkVXaW12aUJWY0pWWGFYRWZBNUxzVUZzYkxHd2FnbnQ0Z3k0SXRnRkJ6eEVyTVJTR1JwNDZiZVpFMnFSZkNYV0MybEZwSC1QTHlwNXdMT0paMEl0dzk4blJ1UFJGc3diOWZndWlHZms2Y0pRUWx2U2RpVEQ5UFMwaFBWVjdrVWhIODNQclItMWFqaThzSGxlZlBneE9jSXFWZEdVeHNNQjNFV3VVVlA5VHlabWg2TFMxZXBVZUdqUkZ3dWEtQnE5SGwyRWVmM2NKcUhBV3lMdDFQQWkwQ2dTVHc?oc=5",
+     "date": "2026-10-30",
+     "time": "11:25",
+     "title": "Indian shares inch higher on IT rally, earnings-led rebound; oil caps gains",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMFp6N3FNV2FiY1Y2UFlWQ21yeTgyVlRKcTV6UEMzQTRiUFlTM0lJaWtYSzFpWHMydzQxSWZCeDZLV2hSUzZlNUwyRTNDY2llYnEydkp4WG95cUxzaW1Ed0ZRdUZGbUtjeW1CVWpIeERKR2xERGVWcjdVcTBHQTZiTzNyaHJsMlhpU3hSWnlESUZBc2ZIT3dUUWwwRGpVYk1fVVU2MEx2V1RfNk54NVBRVVFPWEtkcDQ2TUw4TFgwNUc?oc=5",
      "priority": false
     }
    ]
