@@ -30,6 +30,13 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || vars.SEC_USER_AGENT }}
         run: python scripts/update_sec.py
+      - name: 미국 진출 Velocity Clearing 수집 (FINRA BrokerCheck·SEC EDGAR·뉴스, 키 불필요)
+        continue-on-error: true
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || vars.SEC_USER_AGENT }}
+        run: |
+          pip install --quiet pypdf==6.17.0
+          python workflow/scripts/fetch_velocity.py
       - name: Build site
         run: python scripts/build_site.py
       - uses: actions/upload-pages-artifact@v3

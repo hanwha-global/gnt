@@ -1,6 +1,6 @@
 """해외진출 유의사항·해외지분투자 Workflow 탭: 반기 1회 법령·규정 원문 변경 점검(LLM 미사용, 표준 라이브러리만).
 
-두 탭 데이터(guide/data/countries.json, workflow/data/steps.json)와 Workflow 별첨 1(workflow/data/us_entry.json)이 인용한 출처를 다시 열어 바뀌었는지 본다.
+두 탭 데이터(guide/data/countries.json, workflow/data/steps.json)와 미국 진출 페이지(workflow/data/us_entry.json)가 인용한 출처를 다시 열어 바뀌었는지 본다.
 - 해외 공식 원문(감독당국·법령 사이트): 본문 텍스트 해시를 지난번 값과 비교한다. FINRA 규칙은 조문 끝의 개정 이력 줄,
   쪽마다 갱신일을 게시하는 SFC는 그 날짜, eCFR(미 연방규정)은 공식 API의 개정 이력으로 비교한다(쪽 꾸밈 변경 오탐·접근 제한 화면 방지).
 - 그 밖의 출처(로펌 해설·기사·세율 요약): 링크가 살아 있는지만 본다(본문이 자주 바뀌어 해시 비교는 오탐이 많음).
@@ -30,7 +30,7 @@ from net import get  # noqa: E402
 
 GUIDE = ROOT / "guide" / "data" / "countries.json"
 STEPS = ROOT / "workflow" / "data" / "steps.json"
-US = ROOT / "workflow" / "data" / "us_entry.json"  # 별첨 1 · 미국 진출(출처 URL별 점검 결과를 화면이 직접 읽음)
+US = ROOT / "workflow" / "data" / "us_entry.json"  # 미국 진출 페이지(출처 URL별 점검 결과를 화면이 직접 읽음)
 OUT = ROOT / "guide" / "data" / "source_status.json"
 KST = timezone(timedelta(hours=9))
 
@@ -41,6 +41,9 @@ OFFICIAL_HOSTS = [
     "dpiit.gov.in", "rbi.org.in", "sebi.gov.in", "frc.mn", "mse.mn", "bcb.gov.br", "sec.or.th", "serc.gov.kh",
     "nysenate.gov",
 ]
+# 상시 갱신 데이터베이스(FINRA BrokerCheck 등록 정보·SEC EDGAR 공시 목록)는 법령·규정 원문이 아니고 회사 사정으로 수시로 바뀐다.
+# 점검하지 않는다(개정 감지 오탐 방지, FINRA 요청 절약). 미국 진출 페이지 Velocity 수집이 매일 직접 읽는다
+LIVE = re.compile(r"(?i)^https?://(?:[\w-]+\.)*brokercheck\.finra\.org/|^https?://(?:www\.)?sec\.gov/(?:edgar/browse/|cgi-bin/browse-edgar)")
 # 해시 계산 방식이 바뀌면 올린다(지난 값과 비교하지 않고 기준값을 다시 잡음)
 # 3: FINRA 규칙은 개정 이력 줄, SFC는 게시 갱신일, eCFR는 공식 API 개정 이력으로 비교
 #    (2026-10-29 이슈 #20: 내용은 그대로인데 쪽 꾸밈만 바뀐 오탐. eCFR 본문 쪽은 자동 접속에 같은 접근 제한 화면을 줌)
@@ -298,6 +301,9 @@ def run(prev, today, oc, fetch=fingerprint, alive=None, search=drf_search, asser
             if u in seen or host(u).endswith("law.go.kr"):
                 continue
             seen.add(u)
+            if LIVE.match(u):
+                src.pop(u, None)  # 예전에 링크 확인했던 기록도 지운다(점검 대상 아님)
+                continue
             p = src.get(u, {})
             # 병합 때는 기준값이 없는 출처만 연다(며칠 사이 비교는 쪽 꾸밈 변경 오탐이 잦아 반기 점검에서만 비교)
             if baseline_only and has_baseline(u, p):

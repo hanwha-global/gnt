@@ -70,7 +70,7 @@
     setTimeout(() => el.classList.remove("flash"), 1600);
   }
 
-  // 대시보드 주소(#workflow/s10)나 이 페이지 주소(#s10)에 단계가 있으면 그 단계로. #workflow/us 는 별첨 1(us.html)
+  // 대시보드 주소(#workflow/s10)나 이 페이지 주소(#s10)에 단계가 있으면 그 단계로. #workflow/us 는 미국 진출(us.html)
   function fromHash() {
     let h = location.hash.slice(1);
     try { if (window.frameElement) h = window.parent.location.hash.split("/")[1] || ""; } catch (_) { /* 교차 출처 */ }
@@ -86,7 +86,7 @@
     fit();
     if ("ResizeObserver" in window) new ResizeObserver(fit).observe(document.body);
     window.parent.addEventListener("hashchange", fromHash);
-    // 별첨으로 넘어가면 이 페이지의 리스너를 떼고, 대시보드 주소를 #workflow/us 로 맞춘다(hashchange 없이)
+    // 미국 진출 쪽으로 넘어가면 이 페이지의 리스너를 떼고, 대시보드 주소를 #workflow/us 로 맞춘다(hashchange 없이)
     window.addEventListener("pagehide", () => { try { window.parent.removeEventListener("hashchange", fromHash); } catch (_) { /* 무시 */ } });
     document.querySelector('[data-to="us"]')?.addEventListener("click", () => {
       try { if (window.parent.location.hash.startsWith("#workflow")) window.parent.history.replaceState(null, "", "#workflow/us"); } catch (_) { /* 교차 출처 */ }

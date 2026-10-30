@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [guide/scripts/check_sources.py, workflow/data/us_entry.json]   # 점검 스크립트나 별첨 출처가 바뀌면 새 출처의 기준값만 잡는다(비교는 반기 점검)
+    paths: [guide/scripts/check_sources.py, workflow/data/us_entry.json]   # 점검 스크립트나 미국 진출 페이지 출처가 바뀌면 새 출처의 기준값만 잡는다(비교는 반기 점검)
 
 permissions:
   contents: write

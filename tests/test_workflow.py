@@ -48,7 +48,7 @@ US = json.loads((ROOT / "workflow" / "data" / "us_entry.json").read_text(encodin
 
 
 def _src_ids(x):
-    """별첨 데이터 안의 모든 출처 id(src, *_src 목록)."""
+    """미국 진출 데이터 안의 모든 출처 id(src, *_src 목록)."""
     out = []
     if isinstance(x, dict):
         for k, v in x.items():
@@ -63,7 +63,7 @@ def _src_ids(x):
 
 
 class UsAnnexTest(unittest.TestCase):
-    """별첨 1 · 미국 진출: 출처 연결, 비교표·일정 형식, Workflow 단계 링크."""
+    """미국 진출: 출처 연결, 비교표·일정 형식, Workflow 단계 링크."""
 
     def test_every_reference_resolves_and_every_source_is_used(self):
         used = set(_src_ids({k: v for k, v in US.items() if k != "sources"}))
