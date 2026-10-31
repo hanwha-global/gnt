@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T15:20:00+00:00",
+ "updated_at": "2026-10-31T01:30:39+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -64,7 +64,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "sros": [
    {
     "name": "FINRA",
@@ -141,7 +141,7 @@
    "Put and call broker or dealer or option writer",
    "Non-exchange member arranging for transactions in listed securities by exchange member",
    "Trading securities for own account",
-   "Other - CLEAR EXCHANGE LISTED AND OTC EQUITY SECURITIES FOR CORRESPONDENTS,EXECUTE STOCK LOAN TRANSACTIONS, PORTFOLIO MARGIN AND PRIME BROKERAGE SERVICES. OPTIONS BROKER OR DEALER OR OPTIONS WRITER ENGAGED IN CLEARING AND SETTLING PROPRIETARY AND CUSTOMER OPTIONS TRANSACTIONS. ENGAGE IN REPURCHASE/REVERSE REPURCHASE TRANSACTIONS. ENGAGE IN RESEARCH ACTIVITIES LIMITED TO THE DISTRIBUTION OF THIRD-PARTY RESEARCH. CFTC/NFA REGISTERED INTRODUCING BROKER."
+   "Other - CLEAR EXCHANGE LISTED AND OTC EQUITY SECURITIES FOR CORRESPONDENTS,EXECUTE STOCK LOAN TRANSACTIONS, PORTFOLIO MARGIN AND PRIME BROKERAGE SERVICES.  OPTIONS BROKER OR DEALER OR OPTIONS WRITER ENGAGED IN CLEARING AND SETTLING PROPRIETARY AND CUSTOMER OPTIONS TRANSACTIONS.  ENGAGE IN REPURCHASE/REVERSE REPURCHASE TRANSACTIONS.  ENGAGE IN RESEARCH ACTIVITIES LIMITED TO THE DISTRIBUTION OF THIRD-PARTY RESEARCH.  CFTC/NFA REGISTERED INTRODUCING BROKER. 13©2026 FINRA. All rights reserved.    Report about VELOCITY CLEARING, LLC"
   ],
   "disc_status": {
    "Regulatory Event": {
@@ -150,7 +150,9 @@
     "appeal": 0
    }
   },
-  "disc_latest": "2025-09-30"
+  "disc_latest": "2025-09-30",
+  "sros_checked": "2026-10-31",
+  "types_checked": "2026-10-31"
  },
  "edgar": {
   "filings": [
@@ -278,7 +280,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -715,38 +717,6 @@
   ],
   "checked": "2026-10-31"
  },
- "news": [
-  {
-   "date": "2025-09-23",
-   "title": "Avenue Securities and Velocity Clearing Partner to Deliver UCITS ETF Execution, Clearing and Custody for Retail Investors",
-   "src": "Business Wire",
-   "url": "https://www.businesswire.com/news/home/20250923145998/en/Avenue-Securities-and-Velocity-Clearing-Partner-to-Deliver-UCITS-ETF-Execution-Clearing-and-Custody-for-Retail-Investors",
-   "lang": "en"
-  },
-  {
-   "date": "2025-07-31",
-   "title": "Hanwha Life Completes Acquisition of U.S.-Based Velocity Clearing, LLC, Becoming the First Korean Insurer to Signal a Bold Expansion into North American Capital Markets",
-   "src": "Business Wire",
-   "url": "https://www.businesswire.com/news/home/20250731488709/en/Hanwha-Life-Completes-Acquisition-of-U.S.-Based-Velocity-Clearing-LLC-Becoming-the-First-Korean-Insurer-to-Signal-a-Bold-Expansion-into-North-American-Capital-Markets",
-   "lang": "en"
-  },
-  {
-   "date": "2024-12-12",
-   "title": "Velocity Clearing Takes Leading Role in Strategic Alliance with Avenue Securities, LLC",
-   "src": "Business Wire",
-   "url": "https://www.businesswire.com/news/home/20241212294295/en/Velocity-Clearing-Takes-Leading-Role-in-Strategic-Alliance-with-Avenue-Securities-LLC",
-   "lang": "en"
-  },
-  {
-   "date": "2024-11-20",
-   "title": "South Korea's Hanwha Life to Acquire Majority Stake in U.S.-Based Velocity Clearing, Allowing Both Companies to Target Global Markets",
-   "src": "Business Wire",
-   "url": "https://www.businesswire.com/news/home/20241120895986/en/South-Koreas-Hanwha-Life-to-Acquire-Majority-Stake-in-U.S.-Based-Velocity-Clearing-Allowing-Both-Companies-to-Target-Global-Markets",
-   "lang": "en"
-  }
- ],
- "news_checked": null,
- "errors": [],
  "dart": {
   "corp_code": "00113058",
   "checked": "2026-10-31",
@@ -1032,5 +1002,65 @@
     }
    }
   }
- }
+ },
+ "news": [
+  {
+   "date": "2026-10-21",
+   "title": "Velocity Clearing bolsters Global Markets leadership",
+   "src": "Securities Finance Times",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbXpDZ2ZBVEpJakdfYjczV01TellRakh1SVlRM3Zxbi1MVVdZVUhydTVwSnBuOHJ2Q08wVjJPcU9ZbWJhS1k3NmRGdjRYcFVLMHZWcFpDVGlsem9idG9fT1VXMU9KeDdIUGtYdDgtektuNTZTZmZ3dTdjcWtqM05XTmNETG8xZzV3S1ZYVVczQ3dhRkt3bnlidlc2RTNOcHMzQTNv?oc=5",
+   "lang": "en"
+  },
+  {
+   "date": "2026-08-12",
+   "title": "Hanwha Life acquires Velocity Clearing, Korean insurer entry into U.S. securities market",
+   "src": "Beinsure",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VRmIycFdLNGw1UFZJb0VEdmczeHNxY1pOYW1xVTVwTnluTlBueGlValAtWklsUm80SkNlMXNHVmh5Qk9oS0hHY0NRNVUzLUhNdXZrc3AwSWdoRXdkT1VhU2VOclVGbnM?oc=5",
+   "lang": "en"
+  },
+  {
+   "date": "2026-05-08",
+   "title": "미래에셋증권-한화생명 '벨로시티', 美 디지털자산 논의 참여",
+   "src": "데일리브리프",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LeDRKUWxXNlFyUklZT3lhTmlfckhQemQwaGFsRjJldjcwZ2N0U1JOUzcxLVQyUkNJZkFHbld1QmtSWkFCWXJING84Wm9xZWxrdnZSeUx6YnU2QmFPcGZxNGhjS1J5OVhNUktVcjl3?oc=5",
+   "lang": "ko"
+  },
+  {
+   "date": "2025-11-12",
+   "title": "한화생명-벨로시티, 인수 시너지 대신 '14억 벌금 시너지' 터졌다",
+   "src": "데일리시사닷컴",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE95TEw3Um5LLWx5cGpfcE1RS01ONzJFNFNCRktiY2NKZ0RGMUxCbjl2MjNSeEloNVp1TnB3UjRPVzlJYnZoV0Fxc0U4OHBjV2VVOUNRMURteno2WTFsdUhGSEZNQ3ZSMWl5QlE?oc=5",
+   "lang": "ko"
+  },
+  {
+   "date": "2025-11-10",
+   "title": "[단독] 한화생명 인수 벨로시티 美서 벌금",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhcmdlZG95bktJZjNPRUhZYlM1bk9EdnVZSW1IVmtwaHRrek1TNGRaZTJHWDhNdzhJUktuR25kc1hFdjFLWVQ4dUpvM2JKSU5felHSAVNBVV95cUxOMmNfclBXS3o1R0tPR1YzWFZnN0Nra0taMWJxSGJKMFd3a2ZPd3lNT0NrMnE1NmxTSHFJNWYtdHdLOS1FWjZCSzZjRXN3U1ZQQXNTMA?oc=5",
+   "lang": "ko"
+  },
+  {
+   "date": "2025-10-01",
+   "title": "Velocity Clearing to pay $1M fine for alleged non-compliance with rules prohibiting manipulative trading activity",
+   "src": "FX News Group",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQb1ZpVFl5U3o3RTVZTlFaZFlrSm1Gc1NEcWNSaFhUbWdUX2IxZTJybWo3RmF6M0w0dXVVQ1JEWXBuaFhYUjhabndHRUpqblFULWtGOWkwWHpNalRRM1lTYmlhYkxXczdLQXBEdEtLSnhvamgtVFFaZmR1akN1TVFJRHo3eWMxSVFvSUpPclBnaWpJbDRzVGxBY0Z4UF9GNTcyZjhUTkJUV3ktRmEzb19QMmp5YzhJVUNmb0VOYVhNaEI4ZVdEU1ZieUNGcU9JaTVGWkhNaXRfRDZrUTlFeTVjdHZGcDRfTGtTMTZZcjRGRDhTOWcz?oc=5",
+   "lang": "en"
+  },
+  {
+   "date": "2025-09-23",
+   "title": "Avenue Securities and Velocity Clearing Partner to Deliver UCITS ETF Execution, Clearing, and Custody for Retail Investors",
+   "src": "Business Wire",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQX3Q1bDlJS2g4QXN6ZE9ZOHhwVmV1SEpld0c2MWZYZ2RvNEVYSlgtSENNazd3MGpJRFVnem5GdWFDM1dwbU1yc3BoS3F1OG9NS0xGZGpuV2Y5b0FPWnBnNUpkWjdtRDZseXJsblVnNUNzYmJweU1mZVQ2Y3BBRzFkY2ItUzQtQlVtWHd1TEh2SkRfaDlCQ3hNWWRRZzdwLXhabC1WMTFSWERDWGFvYkJNRnlJaEpCRTQ1c2dkb0hNWGhURldvblJUWDVROG9rN281MGNvQ1RLM0t2VWdvX2lmenM0WXJXUEFzb0U5OWZJckU0aGlndm9ZNmhXc3I0OVBDcm1IQTZlTWE?oc=5",
+   "lang": "en"
+  },
+  {
+   "date": "2025-08-20",
+   "title": "노부은행·벨로시티 잇단 인수…한화생명 김동원, 승부수 띄웠다",
+   "src": "한경매거진",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kX2VnbFhrMDRsMWM2T0hrS0EwN29UQ3dzWE54MTBSblNLRWhRYVFmZXpzbnNwUm1lZXhwYmFBTnNOQklHa1BMaUlDMlZSeWpNM1BQQk9DMzYteTczcWRGMVc3N0otc3I0Mi1hNA?oc=5",
+   "lang": "ko"
+  }
+ ],
+ "news_checked": "2026-10-31",
+ "errors": []
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T01:52:25+00:00",
+ "updated": "2026-10-31T01:30:29+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,19 +66,26 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-10-30",
-   "items": []
+   "auto_checked": "2026-10-31",
+   "items": [
+    {
+     "date": "2026-10-18",
+     "title": "Siaran Pers: OJK dan SRO Gelar Dialog Konsolidasi dengan Pelaku Pasar Modal",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMGVUVW5NSjFoalR1NkhhUzhrS3RlZkVpMFNmWTFheDdvU2JEMjk3QU12OVd1NFdZSGI3eHdGSkpfOHl4QnYyeUVCVGVNRkVuNGcxb0dxSmljV2ZlNWN1d01ZWUhxN2ZnU1FHOWE5SXp5QmFsYm9CV2pKejdQM2hzR0s5TXFXUzNkYVFLWGJTRENMOU9KMG1GQmxqaXpvQnV2ck9UUTMtODRlZ2I0RHlZbHl4M1Y4NGZCTFVjakR4OGlCV0Nz?oc=5",
+     "src": "OJK"
+    }
+   ]
   },
   "SG": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
     {
      "date": "2026-10-20",
@@ -95,18 +102,18 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
+    {
+     "date": "2026-10-29",
+     "title": "Financial activity licenses | Service Details | Services | Capital...",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
+     "src": "sca.gov.ae"
+    },
     {
      "date": "2026-10-29",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
-     "src": "sca.gov.ae"
-    },
-    {
-     "date": "2026-10-27",
-     "title": "Financial activity licenses | Service Details | Services | Capital...",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
      "src": "sca.gov.ae"
     },
     {
@@ -118,7 +125,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
     {
      "date": "2026-10-30",
@@ -135,11 +142,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
     {
      "date": "2026-10-22",
@@ -186,34 +193,40 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
+    {
+     "date": "2026-10-30",
+     "title": "TEXAS FIRE ALARM LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQazF3Y3RRX1Jma0QyTWRSeTRIVTVQT3plekJjcHAwN1Z3dnZZcGJ2Nmx5aF9Nc1EtX2hjOWRiNEZZQzhtX3cwZ1AyclVHWDF2UFQxR25OX1hOWkNLZXNoQnhYSkFkRnk1QmNHNkNSdGFPVXY1Y1p4ZndoanVRTmlOcmEzandKTUhHQUFFc3JR?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-10-30",
+     "title": "KAHRAMAA LICENSE FOR ELECTRICAL ENGINEER",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTkp4MUFZVEdlYXRRcUVCQWpnTFp6bHRVUEt2VU44QUpRNG03b0RDOHQwWTcwYUlhcENOOXZOcTZ4MUw5UnE5WVFkTDhzT3oyWGFacE1IUmZ0MnVibWNzYy1vY2c5T2YwNkRJRkNPd3A3ZlQzVXNIY3B3NkhhbVpoSlV5bVlqWEFlTkRkd3Z1Zw?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-10-28",
      "title": "PA CONTRACTOR LICENSE EXAM",
      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iQVZOclloNkVZN3k1eGtCaWxBOGl1aHdab2Z1Z3FuN2Rmc0FyNnR3bmF4bk8yZzhUVjJkaERDWGxVQnkzRnp6TFVzbkdBMEVaLWtMakZ1RFl1c0tGd3ladFhjenZyOENlWExoVTZMLUNwajA4UTZFOXViT1dienM?oc=5",
-     "src": "10anos.cdes.gov.br"
-    },
-    {
-     "date": "2026-10-27",
-     "title": "CHARACTER REFERENCE LETTER FOR GUN LICENSE",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZC0xdm9oX25SSERwUVZVNFE0OERaZWo0bktxQlBzQnVDSmpNWEZFZFZpR0ZyNXFtMFlTZHdGOUxYOUhIZEhsM0NlWkhSc2N2Rmc5QlZ1SVdydldrX0RQNVZmOFBycTFpdWZOZHViZ2JUWElBUU45QVFDaUJqaEtvcVhIZldWOElCMHdKZTNKSURlZw?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
@@ -226,6 +239,12 @@
      "date": "2026-10-27",
      "title": "REAL ESTATE BROKER PRACTICE EXAM",
      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOb3JqYV82Yi1YWlZWX2pRbTVZY0JES1BCUmFxUnpVUTZhUVUxS19ieU1nYXV5MGRNR0R6YlBSUWw1M21JZ0p5YkJZbWszN0RmMmJ4c244Mi1oOXlDWDNpbmZpRHUzU3Y4QmRxbXJkVHRyNUJiSkVxTXZXVkdyLXVQdQ?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-10-27",
+     "title": "CHARACTER REFERENCE LETTER FOR GUN LICENSE",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZC0xdm9oX25SSERwUVZVNFE0OERaZWo0bktxQlBzQnVDSmpNWEZFZFZpR0ZyNXFtMFlTZHdGOUxYOUhIZEhsM0NlWkhSc2N2Rmc5QlZ1SVdydldrX0RQNVZmOFBycTFpdWZOZHViZ2JUWElBUU45QVFDaUJqaEtvcVhIZldWOElCMHdKZTNKSURlZw?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
@@ -249,11 +268,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   }
  }
