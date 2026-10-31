@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T01:30:14+00:00",
+ "updated": "2026-10-31T01:22:07+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,8 +66,17 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
+    {
+     "date": "2026-10-30",
+     "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcnJyaEE3SG0tYndpaTExZXluSEdBYVJQS3JTRUswcEFqQ2w0bDNubVhjZElsUXpYZ29qblhxWHFxeVp0b05zX2lBbTBGVjhLX0NnaFRoTHJvUTdnak5GN1J1WXdLdmtVNFJ3UXo2LXRBVU1LdnhpUnNJMG5wa1FVZDFtdGhCVDBORHhMUkRsczBwOE8zV1haMW1GRDRNeVBxcUlMNWxmTzE1dUFHQ0wwSS16aEI4U2htRzdaOUk0RDIxQW1uUDBxdU9vTGtfbzM1aFJJVw?oc=5",
+     "src": "bok.or.kr",
+     "topics": [
+      "stable"
+     ]
+    },
     {
      "date": "2026-10-29",
      "title": "「가상자산 이용자 보호 등에 관한 법률」 위반자에 대한 과태료 사전통지(공시송달)",
@@ -98,7 +107,7 @@
     {
      "date": "2026-10-27",
      "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다. -「가상자산업권 등 침해사고 관련 긴급점검 회의 개최」",
-     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaFoxd1JSdjBkNDhLVWFBaEhZY1hXVEpGTk9zWGxfMnItbE9tYVRkSjdlVlFJWHZPaEYxTnM2Wmd5SDBOMWZMNDZTcUlBczVDSXlsQThrbm5MaE53UWNSNERxejRHZWdOT3d2LUlsNGxfS1dia0w1aUJnZjMtWl9LNTd1cS16SGxWQ1g0UXlWVWZtcEJTRzFtTnpqU0h4YU5IZGpyTFZ3aHJRUFd5OGJWTFY2LW9obHdIZHViSDc1d0RkVHlLVG1rRGY1WjI0NDJZQWN0clpBc0t6ZWhlUHY0M3NUbHRVbTRCdmNYb3U1ME9xS0VPanMwZXRpX0tDcndSVk1DdHJwVGFjZEJ0cnlISQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVUZRaTh3V3NhdkJRa0YxaVEwUzFKQzVaeUlEQVQ0NkUyaXdINzJrYmRHYkRGbVFlSzh1TkEzeFlrSXgxU3V2VEtXNE40Q0U1SjJhMTljSUFfbXo0bUJyRHJ6cEdiWXkyZUtDSi0zSU9VaVdUY2hsSzhvUFZWaC03NHNIRlNhYjJDM1VaU1JtVlJ3QQ?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
@@ -143,7 +152,7 @@
      ]
     },
     {
-     "date": "2026-10-19",
+     "date": "2026-10-20",
      "title": "가상자산 과세 관련 현장 간담회 개최",
      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oeUZQdHFrM21rSG1GVE1wYnQ2aHZFdUMwVFZqZ1VPd3dlYWlFV1VLTWFFMmdYMGdSSENndmhrQkt0N05WcjVPN3NqM240SE1zWVJhRmxGUzYtbmdKSjNuVUJtY3FJeWtkVWVsM0E5WXc4VE1V?oc=5",
      "src": "대한민국 정책브리핑",
@@ -253,7 +262,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
     {
      "date": "2026-10-23",
@@ -312,23 +321,33 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-10-30",
-   "items": []
+   "auto_checked": "2026-10-31",
+   "items": [
+    {
+     "date": "2026-10-17",
+     "title": "Consultation on Proposed Amendments to the Payment Services Act 2019 for Stablecoins Regulation",
+     "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNelUzT1oxQXRyeE1jZHhjQ0xhOE9JVnA4bzFISkJ6Zm9fcFpHMVhNR2tnZk94Mld5cnNQRFNQV2xJMkk0YjJDQ1hHQ09mZ21MeHFSdTNEMVZRSVlsWnZfTURGUktGaUMzQUVRaDI0bkJaNkRrOGhzZnRtTm8yOURpUGdjVUt2X2x5akpsdjVfanFRZTR2SXFJWmM2ZFUtd3JDTDU4NUphWGZqTktiQ3ZQb1lONVllckxKdktpNkpDZU5jWm1NZVVYdVdEZlJjLW13QkViVXVEQjlkeHlDRHRYRml3WjlaT2RtaWpSZjZJZnUzZFJCaGtfOThSMWg5dHUyd0JEWnBaRlFDeFVtaDhIeDE2WWNnNWRvZXd1MVVBdFFpeXFNSWlSWm5nSzE?oc=5",
+     "src": "Monetary Authority of Singapore",
+     "topics": [
+      "stable"
+     ]
+    }
+   ]
   },
   "ID": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
     {
      "date": "2026-10-28",
@@ -342,8 +361,17 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
+    {
+     "date": "2026-10-21",
+     "title": "ESMA75-113276571-1625 Compliance table on the Guidelines on supervisory practices to prevent and detect market abuse under MiCA",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaXUzV25oMDhrU25sOTdDbC10dFZpOEhnd1VfbUh5OXFIMHFpTEQxdGdRdmtnaUJXTGprMkVNUzhkUEppa2NGYm5MTEhUdUhGSHBDaTNkdEc3bk8zVkc1ZndMdUpWS29md1lvSjliRXVrM3ZrVGk4Q0ViSTZVdHhncTNTMFN0VGFFRTlIMkR4ckdMRUVOcWhHel9XRnRUUHFUWF9oQ1B2REVUb3VGaWhOcWRzQkdjVlN1MlRuQlpDMlpOZUVOc2IwMg?oc=5",
+     "src": "| European Securities and Markets Authority",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-10-14",
      "title": "​The EBA classifies USDC as the first significant e-money token in the European Union",
@@ -410,17 +438,8 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
-    {
-     "date": "2026-10-29",
-     "title": "FCA stops HTX's crypto promotions",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUW9PTjNXZUFlWHcwSnhWNW5veWFtRUc3blh5aUx1X3dRRWJNdDBpMUNhWWN3MGgtM2dOdHlCbFZzYjVqT19fZmpVS3RnaTktM1EwemMxbEZzZHZsdDc1YXl0dDdTVWY5OFlWQlRYM0gxdlRab3lnblVOZnA1ODFLaw?oc=5",
-     "src": "Financial Conduct Authority | FCA",
-     "topics": [
-      "general"
-     ]
-    },
     {
      "date": "2026-10-29",
      "title": "Consultation on supervisory expectations for central counterparties seeking to accept tokenised collateral",
@@ -428,6 +447,15 @@
      "src": "Bank of England",
      "topics": [
       "sto"
+     ]
+    },
+    {
+     "date": "2026-10-29",
+     "title": "FCA stops HTX's crypto promotions",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUW9PTjNXZUFlWHcwSnhWNW5veWFtRUc3blh5aUx1X3dRRWJNdDBpMUNhWWN3MGgtM2dOdHlCbFZzYjVqT19fZmpVS3RnaTktM1EwemMxbEZzZHZsdDc1YXl0dDdTVWY5OFlWQlRYM0gxdlRab3lnblVOZnA1ODFLaw?oc=5",
+     "src": "Financial Conduct Authority | FCA",
+     "topics": [
+      "general"
      ]
     },
     {
@@ -478,7 +506,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-10-30",
+   "auto_checked": "2026-10-31",
    "items": [
     {
      "date": "2026-10-26",
