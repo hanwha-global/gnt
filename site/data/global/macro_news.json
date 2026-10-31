@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31T00:09+09:00",
+ "updated_at": "2026-10-31T10:00+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
-     "date": "2026-10-30",
-     "time": "17:09",
-     "title": "U.S. Treasury yields fall as investors await more economic data",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NUzdmdnZUZHUxOE1CV0xGYzQwOENIc2xvcmdfSTVhWklWMkRRLUkwQktBdURkcHo1cVZHWmlzc1RBUFV5QlljNFJYajlRMGtlUEUwYTJ5LUtqZ1luS29qSDI0aGI0YUMxMjcxNFhQcG5xcW52Rk5wQmwzNEdYMGPSAYQBQVVfeXFMUEVTdlR1RDZpc1ZDalJPOXdkeWMwbFFnZnNzVVUwdEdCY0d6R21ZbTF4Q21LdE5MQTh3dW5feVg3cWxPVEZyQTlHT1ZpYzBzUm5uYkNFTWVmb0EtNjcxdVZOakFZWjRVZmFkTFRzQ3QwZ1Z2RTJnWnFwc0lMYTNoZWd6aUMw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-30",
-     "time": "13:04",
-     "title": "Retirees Weigh 10-Year U.S. Treasuries at 5% Yield",
-     "src": "조선일보",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONTRETXhHdUYtTFZ1ck5LT2pOcmJ2eDdyR1V0OHNqZFJoTDB0UEFmWEVheGNfWGtjUVBWRkRkaHlYb3BjRV82T1gtRklkYjRMTm8tS05rQ3JQQTJFOWo2TWtBcjRWVmx5MTFWakNvU3VmQ0RNeG1hMzgzVnRQanE4WGhOUlhrOFNMdmlyLW5B?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-30",
-     "time": "10:22",
-     "title": "BofA, 연준 금리 전망 수정…\"12월·내년 3월 추가 인상 예상\"",
+     "date": "2026-10-31",
+     "time": "04:54",
+     "title": "댈러스 연은 총재 \"FOMC 최소 두 차례 금리 인상해야\"",
      "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TQWM2Q0NPQUhDR2szRlhxRTYtSWpFSVBYRDdaTlQ2d3dETFRrNmpmbDFOcFFnM2pnem8tWmpwNnZMRmlxdmZWRnltYnlGampUSW9oajRfOG5VcEprUWRxczhta2ROWWoyTHdYa19FTEPSAXRBVV95cUxNSXc5ODRqbHpFV0phS3VKZzZXWFJEaUpVcGkwYmp1TGo3X2xVZndmQ0RENkl5SHcxWlY0bFlYUm1aU0F1NVUyYTZnUHRwa1FuMmF2TVRFdHZHX0M0UHZDVFZaYjVzazZDTWIyN1UzU3RVNWxSSw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wWlhhUlluVGhCRS1paWFBSXdVZnRvQ1Z4M1k2V3B0YTE2aENFSGNCSXhyVkU0dlZ6ZG5QWUp0cjFHLWx2Yjg3dEJncGlXMUYxWmdncVI5QkljSnFXVjdxdXdIc3FwbnFXalJKem4wZ0w?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-31",
+     "time": "01:30",
+     "title": "Fed officials are already saying they’ll need to get back to hiking rates",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQ0hqSXZpT1VZTUNGSkRVSkVaa092QjVSaGt3ZHlpM0F6RENCYlA4U3A4V285MTE0eXp3aFNKNXVjSVVjTEMwbXE1aV95NFJHOFdxMElwWTBsZ05oYjdtWVlmZkFQNzlqMzV2cldpekQxZGVqSTJ6ZXpSc205THRQYdIBhgFBVV95cUxQSU5zQlBqM3NxZWNyWnU3a3NHOEMyNUFZdnh3WW9KOWVDNUh0Q3pIRUdkYzZoZ1lONi00cUF6NmNxM3FGN0ZYYzVoamo1ZHJ1LXBkLUFBVUFBREgtVWVEWFh0NTJnOGQ2T09TUmNpX3dFYjZRS29SSjlFMlk0T25DamNmVWtndw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-30",
+     "time": "23:36",
+     "title": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSzBScVdLTXgycmdGRnZnV0pORERuMjh4NWg3WU9IVkVwQjJKYVEtX3lwWjBrNkZLLTNKYjZ3cjVValhvT1hsbjlxdUJ3ZUtySVAyZ3NPUHhKcElkV1lFVlYtdWJxYnZjR1hLSksxYXl6VmoyWGY2N0ZmY2dqbDlGVWVn0gGHAUFVX3lxTE5wQ2hrNEN6Mi1hNHNfZll0M3ZNWVlsanM4MkR6dlZxTTcxaFU3TnJPeGtBX2daM0hMb1Y0VjVjbFhzRFhCUEROdml6MTZ2bWZmOFltUUNSZkdnTElMaVhVTFdJa01qbFBKMW9uSG1tZWhqLTZlZDl1UXc0cFpWdXU3dkgwTnNMQQ?oc=5",
      "priority": false
     }
    ]
@@ -141,7 +141,7 @@
      "date": "2026-10-30",
      "time": "18:11",
      "title": "BOJ Says Japan’s Inflation Trend Hits 2% Target as it Holds Rates",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcnhYX2pTREQwTVpVRkliZlptQl81YWowMUtRS1VSYU5nN1BsR3ZvWjlxMTkyVXk3Y2VuMktGR2k2M3AxTTQ2dmo2aVRBRlNreHBxb1pFeWtIb2VzbW56UHpsRDEteGVJTXluYmthbWVWWVNWaWpMcmduTDRMMXRTdjZuSkpHX084a2tEblN5NDVLVzMzTmVuRE9SWWV1TUptN1JWOUYyMFU3OEp0WEt6YkhkTHN2Zw?oc=5",
      "priority": false
     }
@@ -160,7 +160,7 @@
     },
     {
      "date": "2026-10-30",
-     "time": "18:16",
+     "time": "19:25",
      "title": "PBOC Reveals Overnight Rate at 1.25% Before Policy Anchor Shift",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV2VqYzFqUFRRckRPOVdEaDVwN3hwZmJwek5RRzV5RE1BUXlhRUUxY1JEUnRJeEljMnNOSUJVQjVWelB1SGdfaTF1emg0TXBSSHdVdHhSZGFJOEJuZVNBM1RiTWdLZkt6MUY3blZyTFNqS3Z0NEM0N0JpRjlpbGxqemxJVzBBTzExRzJSNUdkdW1kT0VsTERwTzFXUkdJODlTT2tINk1YWDVvaU5TTlRnTFVEMA?oc=5",

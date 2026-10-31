@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-30T10:17+09:00",
+ "updated_at": "2026-10-31T09:58+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -160,11 +160,11 @@
   ],
   "미래에셋증권|미국": [
    {
-    "date": "2026-10-29",
-    "title": "미래에셋증권, 日 산코증권 100% 인수… 미국 법인 통해 1000억 투입",
-    "src": "글로벌이코노믹",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYTNGTXRWaXd2OUZMV1NYNGJET2FaaUduR2pBSWRoc2hUTWFpVk82WWtiOGRoR0FxdU9pNGtNOU5qT1hVQUxYb2FRempXMlprb0pYZ3ZJS2laNVlFTGdCMm81NEZhdzY1WVhFS2xZanJBUTVVeC0xWWNnSFRJWnFuUFhOUFVuR1Y4?oc=5",
-    "site": "www.g-enews.com"
+    "date": "2026-10-30",
+    "title": "미래에셋증권 뉴욕법인, 미국 금융 인프라 기관 'DTCC'와 토큰화 서비스 협력",
+    "src": "비즈니스포스트",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4zVklfVWpmNzUySmhEaTBMSTNjQV93eksxS3UyRzV3YW1RSjRsMXdvMjREV2tnOGR5cC12XzhkRkhqWUxXcGFzMTRJbllRX1dPSVI4OVA1VVVLRkFYbHExZk42R0hYX052aEd1alBRWXJSRjg?oc=5",
+    "site": "www.businesspost.co.kr"
    },
    {
     "date": "2026-09-17",
@@ -244,6 +244,14 @@
   ],
   "미래에셋증권|인도": [
    {
+    "date": "2026-10-30",
+    "title": "Gold faces further losses as $3,930 support in focus: Mirae Asset Sharekhan",
+    "src": "Business Standard",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNQWp2TDdGQjd2MENvem9CenBJVF9IbWF0anNQbWRnQ3EzS2tUMU5oNkRGdFNXbTRLZFlsQ1VMWUNtekZ0bWdvRVNEelFSazNuWUo0bExKSnp2MURIdG5HbnNJMFRuX3liNG9lU3JKcTkxTnJ4TldabkxWdlVMQTZ2YjVRREJvSzlwazZFa0hJTGxmWHdOT3JfWEhfR2lxRWVTSWlUaXpYTlBCTGNVelp3Q0pPSXBvcFhFNWo3V3ZtYXUxWEJXWWRNMFV0RWtBMmJjRmpBeUNIWdIB3AFBVV95cUxPNG1LMEl2Yjk2d1BKdnFYTXR6OXgxdW4yaEJLZEx4dUQxeXJIdHF5NmxicC1WUmNuUHdpaGUta0E1SmFhUDFrbjNnTFlsVWc5MlVpVUpKTjEzNDc1ckNUNTRYcUhJZjBaRE1Ic09HUXFCbjBQMTUyTEttSFRJa1dLc0hldXVfYllPMGNvSmNucTZhSndtQlpqUEhLeDFtWXBjRkk2Q0hpYWlDbkhaZVB0RWMtZTRmbHExQS16MEY5OWFJSmVBVVNHRXJuZDhSOEZXeHhiUnByZUZYbjVl?oc=5",
+    "site": "www.business-standard.com",
+    "foreign": true
+   },
+   {
     "date": "2026-10-09",
     "title": "Mirae Asset Sharekhan Enables Indian Investors To Access Over 10,000 Us Stocks And ETFs Through Gift City",
     "src": "NDTV Profit",
@@ -270,14 +278,6 @@
     "src": "Business Standard",
     "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxObDNmei1TWE9VbDRqODVNN29qSlJvcjB5ZzdoS2RKSFhySzVnazV5VllYNzBVcHRtR2l0Z2o3VEFmV0JSTG9GUkVZSWJDMWtOa3B0TXBLWG5wZEV6b1ozYzYzZDVZbVdZSEZxZ2ZSb2l5dmtzOS1iREhzeER5RURwb18tM3VGMm1HLW1MT0twUVNlbTB6ZUk3dkRWdG9PUVFyYXBqUGR2UkpLTUpvYXRfX2p6cDRXYTRCYUhZUlZKSEN2SVZnNERucWNmSjltT05WdWtyVndkQUFkaVFOaUtZcWdCSHhua09CdUlNSzdnT1FveXE1cnhUamZEa3VrdU9kd09YVElQRlBuT18wMmR0T2k0Y0JsZHQxdk5qZ2NJeHRWZklMY2R30gGsAkFVX3lxTE8xR210eG5VWmh2MEtSY1NuVEJYSHQ4WThSUGRDclVRWEZDMWltc3U5MXNmbC14V3VTRHoyVnpIbXByOE9WV2Fjd2htS3hoSWJZRnJlVmhBWnktUWhqdmJQZzNlSDJNLWlwdUtnaFdmdmpjTFktUXplMkhWcVhneXhibk5DQnk1T0tmWmFIVERwMVVLOXlLLTFqeUt4U1d2d2ZKby1kaDhlNU5uWjRaV3psVHFIZVZDT0QtR2cyRzNVUVF5RDNULUlQVTJEb1pkQ3FnbzN0UHFEQVdlSFlaU3JGc01WSjBnQ01rNzZZaU43RFJ0NURWRmhQcXA2d0VENFUxcWVPZ0pZcG8wTFh1X2MyWElwdEt3UUhaVDVpMTFuYjhGMmlHMmd4WHNlTg?oc=5",
     "site": "www.business-standard.com",
-    "foreign": true
-   },
-   {
-    "date": "2026-03-13",
-    "title": "Mirae Asset merges Sharekhan lending unit to consolidate NBFC operations",
-    "src": "CNBC TV18",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa2x6eHp3UTg3M3NQQk9BenIxTFo3clVzZlFHS3Z6TlFGTzN1SGprRk5mNkpxX0s3QXEzRjMzQ05lcXZjX2tEUFF2M241U0Q1WE5VREZTZ2JjLWVCT3IzUlZxbEVxSzZtbXFuM1FzN3gySnJyWUxFcTJIaGxJcG5OeWZtTkthMUpDZXl1SXBzaFNLVFVrVjBzVDAwYzVWZ0NxODdaY1N6R040SE84YzEzeXJUQzhzX2xONFpvdjJlYzDSAcYBQVVfeXFMTldVYW8zSUY5emI3LXVmU2diZ0JnNXlZbGZWNXMtdm5BNWxPRTNXcU1GbDRoZ3YyNlJjelZRdmpOZTRKNzhKVDE4eF9JTmRxUU82T1FDeXhWSUt6X0N5WXNkcGlTUmRVbnZXaUFOajR6Tmw2RnhRc3hObUt6cnZ6WjljYnBlOGVINGQtb2lqYUp6QVUxUDJEYnd0TGtqeUxIVktmQ3FXRXZBMkEzUEVsSnAxdl9pNXNqU21TYVBOTER0Qi1LajNB?oc=5",
-    "site": "www.cnbctv18.com",
     "foreign": true
    }
   ],
@@ -321,13 +321,13 @@
    },
    {
     "date": "2026-03-05",
-    "title": "Kantor Mirae Asset Sekuritas Digeledah OJK, Ini Profil Perusahaannya",
-    "src": "Kompas.com",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUGNnTENjNnA0QURkUTNhYndIcFRLeHJOTXBfTThSTlRaYnM1S1pfLXhaV0M2T2ZWUUJ1TmtfcTJQYms3MUYwSkk5RDY5V3huTVJhc3ZjdGxKU2JxVUJ4LWxoTXF5MmFmTzJpOFIyTlVueGtwQ2ExWC1XbGllZElGaUFHV3RKUW1URUhxcHI1S3lYYTZIdEt5Y0lBbXFjaXV3QlUycklkYmlzZE05dTdQeE9mVmJjQlBhQVlfSjc2clBGbl82Wnc?oc=5",
-    "site": "money.kompas.com",
-    "title_ko": "미래에셋증권 OJK가 사무소를 검색함, 회사 프로필입니다",
+    "title": "Video: OJK-Polri Geledah Mirae Asset Sekuritas Terkait Dugaan Pidana Pasar Modal",
+    "src": "20detik",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbV9XYl9pYWlTMVp3SXQ0Wl9YUkVGbzA0NzJGWVNaUGktMU5xQWRwQVkwRW9ha2E2WWhMUkRUV2dtb3JYcTZmejdRdlp1aU96djlLMHJfMFFBR2hFQU4tamZZUWpOS0ZmM3ZyOXlJZXBYMTBnb29PeDRnSDdnS2JEWWRLSnBqMlVLdzZ2YXNwYm44YkZpcEdpc2xRV3AxMmZDaUxZSW5jQVp6WjdMUG15WW9rZkIxM3g1QjA0VlNoclpHbUlZcjV6cFFLRQ?oc=5",
+    "site": "20.detik.com",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "영상: 자본시장 범죄 혐의에 대한 OJK-Polri 검색 미래에셋증권"
    }
   ],
   "미래에셋증권|중국": [
@@ -394,14 +394,21 @@
   ],
   "신한투자증권|인도네시아": [
    {
+    "date": "2026-07-01",
+    "title": "\"에코프로비엠, 1.2조원 유상증자…인니 니켈 제련소 투자로 공급망 내재화\" 신한투자證",
+    "src": "파이낸셜뉴스",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VVmRFU2VMdktSNU0xRlBTTlE0ZGxtUjVVd1FsekxuMTNrdklFTzN6T2xGeWtYWU1KaTk2RXRXLXNpMUl0SFU5QkZReFZFZ2NUX09fX05MREEyQQ?oc=5",
+    "site": "www.fnnews.com"
+   },
+   {
     "date": "2026-02-04",
-    "title": "Video: Kantor Shinhan Sekuritas Digeledah Bareskrim",
-    "src": "CNBC Indonesia",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ2M3OUpvUEJTcnFrS2FaU1JBenNHd0wwM1l4RDVubjY4ZHE2eEpVZ1ctNHpnUURaY3NWeDZmUnFxVGdlc2pkMDJleS1LQV9ySGVvTVdPUzU2TFE2ZVBWRmRLaTA1Mm82TWVjUmZvajVqbGJMaDJtR0hsU1oyRFQ2bkxDUTM4MmxvUktWVFVRMThpTmFLeVVyYXQ4aUZpYlozUHZxaWlCRHhHamN5d2dKMm9n?oc=5",
-    "site": "www.cnbcindonesia.com",
+    "title": "Profil & Rekam Jejak Penjaminan IPO Shinhan Sekuritas",
+    "src": "Bloomberg Technoz",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ1dkQXhVbGNmUFdDaVp5Vko2ZURBbURKT1F4Z1YyeGxoNHVhMmFhTF9pU0otZ3FBakk4dXBPcXR2R1NiU0JIc3BFcm9aRHRtendZQW1MQTVFQlM0cU1QTWNic2djV1FJcDBzVnJVR09TaWowWFB4WUNfY3FqMzl3bkVJbXlLcTJUcUZJM19rN0xDQWNidTVCMXpVTDd0bjVNRXBkaw?oc=5",
+    "site": "www.bloombergtechnoz.com",
     "foreign": true,
     "lang": "id",
-    "title_ko": "영상: 신한증권 사무실 검색: Bareskrim"
+    "title_ko": "IPO 인수 프로필 및 실적 신한증권"
    }
   ],
   "키움증권|미국": [
@@ -470,9 +477,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
     "site": "keuangan.kontan.co.id",
+    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요"
+    "lang": "id"
    }
   ],
   "토스증권|미국": [
@@ -509,13 +516,6 @@
     "src": "연합인포맥스",
     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtQktmRy0tRFBKTXFCV2hPRWFFaks4dXhmRDdydWhyZjR6QkpjNkxUaTBWUnBHQi1OWm9UV1lGNEhGUW9KZFJ4NmtRa1NGQzZ0aDE2Ykd0WDM0QWJDS285Q2ZkNTVBQko4ZTRBMW9Mb3o?oc=5",
     "site": "news.einfomax.co.kr"
-   },
-   {
-    "date": "2025-10-30",
-    "title": "토스증권, 美·싱가포르 이어 일본 진출…도쿄에 개발 법인 세운다",
-    "src": "전자신문",
-    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE45b2xJWEhnbFBrU3N5U0tOTm1kSkllNzh4Tmc0ejBmTlFSZnByMEtFXzhpVko5YXBTWGJVLXMyb2JuVVVhZWJFbElQUWRhUQ?oc=5",
-    "site": "www.etnews.com"
    }
   ],
   "하나증권|베트남": [
@@ -674,10 +674,10 @@
     "src": "CafeF",
     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYV9oWmt2dDkwZVIyOVJpT3dQaEM0aVFCck5FUWJGZ1dTMEFIV3JsWkRyT3JJMjl1blhEajlYU2FjVUVINWFLXzJjOTh0NmZJZWMzUU5nc0xDS2VQSWJRY3FrYlFNNU8wNjR3eTdIa3VxMXlldWt4Si04NVYtWWU1cU84RWJjckphNUdEWlc1S1hGb1ZBMzk3ejcxa2djakN2WThONjVDUFVHNWRKYjZ3?oc=5",
     "site": "cafef.vn",
-    "title_ko": "파인트리 PineX 출시 - 차세대 스마트 주식 투자 애플리케이션",
     "foreign": true,
     "lang": "vi",
-    "old": true
+    "old": true,
+    "title_ko": "파인트리 PineX 출시 - 차세대 스마트 주식 투자 애플리케이션"
    }
   ],
   "한화투자증권|싱가포르": [

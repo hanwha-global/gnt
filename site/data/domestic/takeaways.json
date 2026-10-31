@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-10-30T10:19+09:00",
+ "checked_at": "2026-10-31T10:00+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -165,19 +165,19 @@
      "category": "리스크·규제",
      "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
      "evidence": [
-      "Nikkei Asia 10/28 'MSCI 강등 검토' 등 부정 구조 뉴스 3건(최근 30일)",
-      "IDX 1개월 -14.1%, 연초 대비 -38.9%(10/28)"
+      "연합뉴스 10/30 '단기 충격' 등 부정 구조 뉴스 4건(최근 30일)",
+      "IDX 1개월 -16.7%, 연초 대비 -41.5%(10/30)"
      ],
      "links": [
       {
-       "label": "MSCI 강등 검토",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNGFON01SRVZMN0lSWXA2WU9IeFlNZjdsN0J4LVZRTlFPeHdOZ0ZvWjVqb3p1allxT21sOUNZZjl0ZjVIY0k3YUNLU1hFbGZJMXBISEFiLVVYOVJDSl9KcTZpUXNiMEhlNXBSR1A1NTJSb1E1YnBTQ3psbFY2bGlDdTB0bUM3aFBDMElMc2pZMFlzdDRzTHY5UnpEaEdrMG1XQUZYNW52M0R1QXVjZXc?oc=5",
-       "title": "Indonesia faces 'triple selling' pressure amid MSCI downgrade concerns"
+       "label": "단기 충격",
+       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBrWlIzLXFacGdDcktyd1F2N01kWUh1TEowdlVtZjhPMmwteENydlJZaTI1NEMxSUZxbU1yVUpGYUY2cWJjU3dmLUxVOVBqb0Z5bHVfbmlicnZ5RXPSAWBBVV95cUxQaGI5SjZFaEJYVmV0WExabzlLS09SbVZvTmF0ZFo1ekF2WngwOW5JTHVDNjl6cXNneERpelg4RlhnV1JvU3g2M05ETVhWLUh6RTk5TXkydVJienNDZGpWOHQ?oc=5",
+       "title": "인니증시 강등경고에 중앙은행 \"단기 충격\"…대통령 동생 \"심각\""
       },
       {
-       "label": "시세조종 대책 강화",
-       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMlBGd2pJTXdBQm84MEhpTzRDaFRzSHZBcXF5RlROWHhXNG5FeC16dEdyMnRqRU4xcmlpUjdIcnIxVUdmUTZsN3ZPNjEwcm5kaDBoUlp6c25jdHYtUzJ1MC1pQ0ZJM0c5ekQ1LWdZOHRMYmpSNF9BTE5HTTVNcHFHUl9VNUZlV1J1QTdIcXIyempPc3pkV2R0SDN3?oc=5",
-       "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI"
+       "label": "MSCI 강등 검토",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU0JYVjJTV1JMXzc0Skk4M2tERW9vX0NCb0RiaE5KQzZiYkVhNjZoRGVyUXJOcGZWYTJ4NnBQUmQ1Tm1UMFRXUWdFZ2RnVlZCbGN6dXY3Q0JsMnRyRVF6VFdyYmU1VnZYNFpzdWZRMnIyQnlTVTFkU0RNN19vRG5EWm5mQ2dxNHc5eTNTWDRzdnJLS0t2QUFGLS1haFRMZzlKdks2anFUOHNSZXc?oc=5",
+       "title": "Prabowo's Brother Warns Rupiah Could Hit 21,000 if MSCI Downgrades Indonesia"
       }
      ],
      "bucket": [
@@ -215,7 +215,7 @@
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용 하락에도 MSCI 결정과 손익 회복 이후로 보류, 후보 검토만 선행",
      "evidence": [
-      "IDX 5,282(10/28), 최근 1년 고점(2025-12 월말) 대비 -38.9% · 루피아 원화 대비 연초 이후 -15.2%(ECOS 10/27) · 원화 환산 지수 연초 대비 -48.2%"
+      "IDX 5,057(10/30), 최근 1년 고점(2025-12 월말) 대비 -41.5% · 루피아 원화 대비 연초 이후 -15.2%(ECOS 10/27) · 원화 환산 지수 연초 대비 -50.4%"
      ],
      "links": [],
      "bucket": [
@@ -242,10 +242,12 @@
      ]
     }
    ],
-   "changed_at": "2026-10-29",
+   "changed_at": "2026-10-31",
    "reason": [
-    "새 뉴스: MSCI 강등 검토"
+    "새 뉴스: 단기 충격",
+    "지수·환율 급변"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R06",
@@ -325,9 +327,22 @@
      "reason": [
       "새 뉴스: MSCI 강등 검토"
      ]
+    },
+    {
+     "date": "2026-10-31",
+     "fp": "d6c0f46b85fe",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "MKT"
+     ],
+     "reason": [
+      "새 뉴스: 단기 충격",
+      "지수·환율 급변"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -444,5 +459,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-10-29"
+ "updated_at": "2026-10-31"
 }

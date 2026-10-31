@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31T00:09+09:00",
+ "updated_at": "2026-10-31T09:59+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -158,6 +158,17 @@
  ],
  "items": [
   {
+   "date": "2026-10-31",
+   "time": "07:19",
+   "title": "[MD포커스] 박현주가 낙점한 日 증권사는 ‘산코’…미래에셋 “현지 리테일 진출”",
+   "src": "마이데일리",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5XM2RCNk1TdC1IaG42SlhkUjdVanRWWEV0OGdwMk5hVVhpZmVrRnA4M01BdjRHRkYzLTlHZkxVMTNLT043aTZmMDdqck10UzVPR0xqbElCM3JXNE13eUlnOQ?oc=5",
+   "site": "mydaily.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
    "date": "2026-10-30",
    "time": "16:14",
    "title": "토스, 日 모바일 증권사 340억원 규모 인수 추진…해외 시장 진출",
@@ -239,6 +250,19 @@
    ]
   },
   {
+   "date": "2026-10-30",
+   "title": "Gold faces further losses as $3,930 support in focus: Mirae Asset Sharekhan",
+   "src": "Business Standard",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNQWp2TDdGQjd2MENvem9CenBJVF9IbWF0anNQbWRnQ3EzS2tUMU5oNkRGdFNXbTRLZFlsQ1VMWUNtekZ0bWdvRVNEelFSazNuWUo0bExKSnp2MURIdG5HbnNJMFRuX3liNG9lU3JKcTkxTnJ4TldabkxWdlVMQTZ2YjVRREJvSzlwazZFa0hJTGxmWHdOT3JfWEhfR2lxRWVTSWlUaXpYTlBCTGNVelp3Q0pPSXBvcFhFNWo3V3ZtYXUxWEJXWWRNMFV0RWtBMmJjRmpBeUNIWdIB3AFBVV95cUxPNG1LMEl2Yjk2d1BKdnFYTXR6OXgxdW4yaEJLZEx4dUQxeXJIdHF5NmxicC1WUmNuUHdpaGUta0E1SmFhUDFrbjNnTFlsVWc5MlVpVUpKTjEzNDc1ckNUNTRYcUhJZjBaRE1Ic09HUXFCbjBQMTUyTEttSFRJa1dLc0hldXVfYllPMGNvSmNucTZhSndtQlpqUEhLeDFtWXBjRkk2Q0hpYWlDbkhaZVB0RWMtZTRmbHExQS16MEY5OWFJSmVBVVNHRXJuZDhSOEZXeHhiUnByZUZYbjVl?oc=5",
+   "site": "www.business-standard.com",
+   "hub": "미래에셋증권|인도",
+   "time": "",
+   "firms": [
+    "미래에셋증권"
+   ],
+   "foreign": true
+  },
+  {
    "date": "2026-10-29",
    "time": "22:46",
    "title": "미래에셋증권, 日 산코증권 지분 100% 취득…인수·사업확장 1006억원 투입",
@@ -264,9 +288,9 @@
    "date": "2026-10-29",
    "time": "17:38",
    "title": "박현주의 영토 개척…日증권사 인수해 리테일 시장 진출",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ROTZZbkpJUmdNQTFDNVYwaG5kWjVxakVJN3dUNEdmWEhBT3lrSExIWl9EVWlyQi1PQUpnbFhBQ1FKQ2trYmlvN0xWd3RBc05paGc?oc=5",
-   "site": "stock.mk.co.kr",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBqcEJGZFlOeVl5QWVOdC1RQXIwRUpIN3ZsVHhJaWtXN0pDd09xS1M3VXYzeUFNc05sZmFFUi1jYzVmcHlFU3ktLWY1V0Z4UnV6N0E?oc=5",
+   "site": "www.mk.co.kr",
    "firms": []
   },
   {
@@ -788,24 +812,6 @@
    "firms": [
     "한국투자증권"
    ]
-  },
-  {
-   "date": "2026-09-28",
-   "time": "16:00",
-   "title": "'지분투자·해외기관 협력' 해외사업 속도내는 증권업계",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjMGdrbXJ4amhCTGo5ZHdqeDBQaUd0eVNiYjBaQV9NOTBnMmtIRzFBcXdvOWpOdWg2UjFGMTNrQ0xsaXJKc19hWWQ5aUdGYkZiUU92YU42djNNel9LY2h1dmtiZk5VZXJa0gFuQVVfeXFMT1JHZkg0dW5FNC1Mcjc3WGxKajZQUFZod1RQRTlBaERyOXBjVTBOSWJLR2xGUm5PV29yWFZiNFRiUzFadDAwdmxKODRsZ3FfR2xMNmZDU1o5M2ZOM014NUtEQ0ZJN1RDZW9mcU4zSnc?oc=5",
-   "site": "www.mt.co.kr",
-   "firms": []
-  },
-  {
-   "date": "2026-09-28",
-   "time": "16:00",
-   "title": "\"서학개미 안 부러워\"...증권사, 해외 투자 순익 '1조원'",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qbWpSa3ZlMmhUM3JZejVfMy1INnVtdVJibXpCVE1VVVhhVGpnNlp4cW11ZHVyVEp5azVudTVKN1ZCU0I0RVgtWndUNkFxLU1iOF9sc2pxYmdHc0MtdmZGZXRCUTNYSEkx0gFuQVVfeXFMTlBHRTdQVHZPRE1vc2tyQ1Z3T0EyWmZ1b1NjNEZzeVc4c2VYXzBhNGhuSVo4aEJZVjhaZldQZHhaUzNJY0NxTEZSYXhNNmV5YUlBRU04Slp2Z2Z1US1RSVUweTIwTHVnbVJmeWdHckE?oc=5",
-   "site": "www.mt.co.kr",
-   "firms": []
   }
  ],
  "errors": []
