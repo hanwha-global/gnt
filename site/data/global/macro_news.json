@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31T10:00+09:00",
+ "updated_at": "2026-11-01T09:21+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -151,16 +151,16 @@
    "label": "중국·홍콩",
    "items": [
     {
-     "date": "2026-10-30",
-     "time": "22:57",
-     "title": "China's central bank steps up shift toward overnight rate as policy anchor",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPeVdpV3d2UGwyVHFBR2lNS1JNaUxINlpjVXppYjNiSVc2QUtoa3RISFhVcUZFeEppWHlBTmJoRko2dEpJSjNwb2NfVDJMMVp5bGp5VUtBb1ZnYjZ2NXRKUjlwRi0wSmNYblh1TU5iNE5odmtRN09uZ1Ryemx1dzJQYmpsRVpXRS1yQUl5MzRWZVMzSXJvNW03UHBodmZHbm9tMXhwZFFiVXE2ZEpJTi05TVJpWHItRF9zbG9MRmVpSFhtVFVvc3V2TnBFOWExeXVq?oc=5",
+     "date": "2026-10-31",
+     "time": "12:53",
+     "title": "China lifts secrecy on new key rate, sets it below old benchmark",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTS1kX21mSmhrWGJhUXZoR0x5QTl3NkVSY3c3QjQzNkhMc2p4WjNmM1FnLUpjeXBhYlRqTmU1ZWQyS1NoblRTZmFkeHNQd19BZDZiQnpjNm5fNHhtaVFRMVZUczlSYVJGb3lBNm1fYjk0QVBWVTA0ZmJnSDc5VGtTSWd4TU53R3RlX0U0UUVFbk5YU1BJdVFHU3JoTU0zdjZjaERqSnJQYjlZRFk?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-30",
-     "time": "19:25",
+     "date": "2026-10-31",
+     "time": "12:49",
      "title": "PBOC Reveals Overnight Rate at 1.25% Before Policy Anchor Shift",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV2VqYzFqUFRRckRPOVdEaDVwN3hwZmJwek5RRzV5RE1BUXlhRUUxY1JEUnRJeEljMnNOSUJVQjVWelB1SGdfaTF1emg0TXBSSHdVdHhSZGFJOEJuZVNBM1RiTWdLZkt6MUY3blZyTFNqS3Z0NEM0N0JpRjlpbGxqemxJVzBBTzExRzJSNUdkdW1kT0VsTERwTzFXUkdJODlTT2tINk1YWDVvaU5TTlRnTFVEMA?oc=5",
@@ -168,10 +168,10 @@
     },
     {
      "date": "2026-10-30",
-     "time": "10:00",
-     "title": "Traders await Hong Kong’s marquee financial summit: a good omen for stocks?",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY1dmMmxtTWNULWh3bHN2anJmN1pzMkRPU2tiV1l6S0ktUnpWWkpWbDJ3UWFXVzF6b3FMUERlN0VQcHdHclY4NFFjUHI2bmdrWnpmMDF3WUphX3hoNE9uMmI1U0RXUEV4NGdUdTYtX3JIbFlJd1VGb3ZTLWVYdDZKbVo2TG1qc3BXQTVZZ05pS1JZUmJkRGZ6bVlHbFpZcm9jMm9kWWFMeWZMd1FXc05nRGw4ZTk1eUdwUmMtRUdOeUlXOVo0Z1HSAcYBQVVfeXFMTzhCTHZvRDRvZk4xWnNfVWJzOVRvRW5NbjdUSVdlWlVhNUpfbVA4MXJGWmhUdnZYc2JNdEZmVDlzTGdUZXM1clVfSG41U2F4Q0M4bFE2NUVhNk9jNjE2Tkl1Y3lGMUFSUk1hTXFhaHNoeEtJZk9uaUNSODhabzJBRnBtOWhBRTMxWnViUUNrSWFNV3VNNXFiQnFjMGZVSlRPT294Y0ZvUEhhMVRMRXJ1dTMxamVqdFhBYmdqczhxcTZDZ0ExcFJn?oc=5",
+     "time": "22:57",
+     "title": "China's central bank steps up shift toward overnight rate as policy anchor",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPeVdpV3d2UGwyVHFBR2lNS1JNaUxINlpjVXppYjNiSVc2QUtoa3RISFhVcUZFeEppWHlBTmJoRko2dEpJSjNwb2NfVDJMMVp5bGp5VUtBb1ZnYjZ2NXRKUjlwRi0wSmNYblh1TU5iNE5odmtRN09uZ1Ryemx1dzJQYmpsRVpXRS1yQUl5MzRWZVMzSXJvNW03UHBodmZHbm9tMXhwZFFiVXE2ZEpJTi05TVJpWHItRF9zbG9MRmVpSFhtVFVvc3V2TnBFOWExeXVq?oc=5",
      "priority": false
     }
    ]
@@ -179,6 +179,14 @@
   "SG": {
    "label": "싱가포르",
    "items": [
+    {
+     "date": "2026-10-22",
+     "time": "16:00",
+     "title": "Ex-Vice FM Doubts Singapore is Behind Indonesia’s MSCI Downgrade",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONmwxSW1uTXJSVDdfR2pXclYxdmhJNzFqMWJ6Unhra2hkTDItYWg1M2EtbzdNQjdaWGVpZWg0d3BzQnJRdUp1X0pXRm1WNXVBaTVteFczVGVWMGZ0LU9oMDUxWjhBaGNPVjJHdWlQMy1iOWozWXRvWWZpdnVhTldaTjF5U3FlRlhZNGFrYS0yTHM0WWh6emNGQnpzOA?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-10-21",
      "time": "14:25",
@@ -193,14 +201,6 @@
      "title": "Singapore shares fall as chip stocks take a beating; STI down 0.4%",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOV9PbEhndGEtLVdHcmlBbktLeUNIVUxsZTA4TmtURmJ4SUc5SkFYOTQ0NlVEc3I1LTQ1bjM3MGE0YldXY0NQRkI5dzdWdEE5QXJGTFhZcGFDRjk0Yl9Td0M2NTRvdzZ0Q21lRVZhelVKYXBVeExjeVlGMEVBQXliREMxenhUS1VoYVdwZjNyb1c4TEhZMDhHVGl2LVR5UjdWX2ZJYVVHM1BYdWhZa19R?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-30",
-     "time": "14:40",
-     "title": "AEM and other Singapore chip stocks tumble after tech rout on Wall Street",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNTVBalQ1X1IxT0FtMk4tamRwZjZKZHBBUTdpZGVTZTFnMjJoTDFVMlJhaF9yUU9wQ1NEX295ODlhSjliQUtEc3MyMVowZW9WY1ZGd0otclMwWnUwa1ZvUWlfY0U1TmpfQ0dKTWdwdkVaWG51aXJjMGpOTXZaLXNYdXh0SEFyVW1lWktfU3hjWUFpOWd3c2ZYbnhBcVhyQXpxbUZXek50UjJlZmtRUnpUdTRfQy1TZURaVU5ueWpweVBteVRsYU4tX0ZOMzYxQQ?oc=5",
      "priority": false
     }
    ]

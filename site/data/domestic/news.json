@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31T09:59+09:00",
+ "updated_at": "2026-11-01T09:21+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -157,6 +157,29 @@
   "fca.org.uk"
  ],
  "items": [
+  {
+   "date": "2026-10-31",
+   "time": "18:00",
+   "title": "국내 금융사 일본 공략 속도…미래에셋 이어 토스도 진출",
+   "src": "세계일보",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1IV3p6VHY3T0NTQ0gyR2dudlBQMzhpNHluNFAxQVF2MDZYbUhtTU1fU21FUGdnSE50cVhWWFZOVnUwVTVDVjlMc2lFYzlZbFBmYnNoQWtVUmXSAVRBVV95cUxOM0haRUJMY25uNV9MREJlbkhHenpzZjdqWWJpRUtaQW81c21fWVI4emRNN0lmWFBGZVF3alZNWEI1S3VvSEZfNEdJR2ZuOVpiR1N6djU?oc=5",
+   "site": "www.segye.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "time": "11:16",
+   "title": "BSC - Hana Securities Cooperation: Imprint in connecting the Vietnam - Korea capital market",
+   "src": "Laodong.vn",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWkJCei1sYndSRkNZemJtQ0JMOVQzLVlwcXVhRjlLTS1sQXN5dF9OZ0c4ZnhGZGoxVTJpWVNpWUVpQi1NQWRPdnFfeU9sTWZ1Mm9fRVFiNkV6UzlsNlRMTVVMVm5EM2tzSmVWRDlGRmt6QWlYMkR6QzBUY0wxU1ZzemljVFVKYTNmVThxbmJNYlRGREhIV21obmYteklsdFROOWdkRHU3S3JTWlY0Ulk3N1RWUDEyRHFrd1Nhek94SlNNQ3FjTXpHQlc5UWdadE90MUViSVFJbw?oc=5",
+   "site": "news.laodong.vn",
+   "firms": [
+    "하나증권"
+   ],
+   "foreign": true
+  },
   {
    "date": "2026-10-31",
    "time": "07:19",
@@ -331,6 +354,17 @@
    "src": "전자신문",
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SZEhQVThRbkxOMnRiRkVITHBWWXFxUVRvUTZSVjBfaVEtaGtwTjBhWHpzVkpWM196QU5RdnRyeUJieGNmbm4zRlFRR0sxdw?oc=5",
    "site": "www.etnews.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "13:33",
+   "title": "Mirae Asset Securities to fully acquire Japanese brokerage Sanko Securities",
+   "src": "Korea JoongAng Daily",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
+   "site": "www.koreajoongangdaily.com",
    "firms": [
     "미래에셋증권"
    ]
@@ -575,6 +609,21 @@
   },
   {
    "date": "2026-10-23",
+   "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
+   "src": "Tuổi Trẻ",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
+   "site": "tuoitre.vn",
+   "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다",
+   "hub": "KB증권|베트남",
+   "time": "",
+   "firms": [
+    "KB증권"
+   ],
+   "foreign": true,
+   "lang": "vi"
+  },
+  {
+   "date": "2026-10-23",
    "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
    "src": "VnExpress",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
@@ -590,7 +639,7 @@
   },
   {
    "date": "2026-10-22",
-   "time": "15:34",
+   "time": "16:00",
    "title": "한국투자AC, 일본 VC와 맞손 한·일 스타트업 해외 진출 지원",
    "src": "파이낸셜뉴스",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTSHZJX05ERm4zZzgwd3lGR2hBTHhzVzM1SnFtSTJ6bkQ4cjZJTXBsRWpHMldITWRUajVleXBjUWI0ZlU1bVJiZ0xXMlpzVk91c01zdkVSWmMxQQ?oc=5",
@@ -765,52 +814,6 @@
    "site": "www.mt.co.kr",
    "firms": [
     "신한투자증권"
-   ]
-  },
-  {
-   "date": "2026-09-30",
-   "time": "16:00",
-   "title": "\"한국 회사 알려줘\" 큰손 몰린다...월가에 깃발 꽂은 K증권사들 전략은",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE80d2xBUVRFRnhoSjNRZHNmR1Bmd3F3Q0U4M3FXbld6ck9Lc2EwSWFWTUUzbnRqSEFIeU5XY1FpU3BRQzQ2SXZNQlFXbzNtbkp4ZkVqTEFEekVzd2xFdFc2NTcxamRnemxW0gFuQVVfeXFMTUEzTmtwcEhoR3ZHYWZ3X2tZUHI3aS11N292T1J0X2ZRNUhNTlNRSUtLamlpSzBRc2hKRktmOTJRWS1NSDEydmJvemhYal9ZT19QbVY4SlU1cG5wekhJV0J2bFIxMHFnUl9meDBodkE?oc=5",
-   "site": "www.mt.co.kr",
-   "firms": []
-  },
-  {
-   "date": "2026-09-30",
-   "title": "Perkuat Inovasi, Mirae Asset Sekuritas Indonesia Raih Penghargaan Ini!",
-   "src": "CNBC Indonesia",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3fSAcsBQVVfeXFMTm9wUS01MEFVX1VUY2FKZm5oT3hFWXA2b1ZtRTZIejFNQVJXRURLbGIxZGFqUlJxOGRveGpQYTBoYVpmZGJDc3NUWGV6dXpvaElrNkFIUHJCRTZSVlVWOWRVMDJJaXhuTmgyamFUVEtTanNCXzJJUFNIWmdpRDFFVF9mYnBWRktjUnY2U2JfZGItVGdzWHNRT1RlT19oWTQ0TmlGQTNsUFFUT1A5VEp5NTBKT3JhRXg5TzJ0ZnhqbGNjXy14LUlOc1dvajQ?oc=5",
-   "site": "www.cnbcindonesia.com",
-   "title_ko": "혁신 강화, 미래에셋증권 인도네시아가 이 상을 수상했습니다!",
-   "hub": "미래에셋증권|인도네시아",
-   "time": "",
-   "firms": [
-    "미래에셋증권"
-   ],
-   "foreign": true,
-   "lang": "id"
-  },
-  {
-   "date": "2026-09-29",
-   "time": "16:00",
-   "title": "개인투자자 1위 키움, 월가서 미국 주식 직접 중개…\"지금이 적기\"",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MQWt5clBGTTlFcWZydEprUlVtd2lRSGVVMHRzY2VPY1d1TTRwOXZ1VVUzLTd4Zlk5ekg4Qm9Ic0VBT0pPcG5ZN0p1SGF2NjNHbEtPQ0NIZ2dycWNzNFBIS1h6UWh1MFhP0gFuQVVfeXFMTUNxc212SWg4WWVQNWFPYTZKZTh1T3lzMko2N1RuTTR1cWdlZ3FaXzZPTjJRZGZrWGloU09QMkNuN2JBekJIa1pHMzlwbFpvM3huZ1JsWDJvY183YWttakNGRXVKOTBaZWNoeWVWLVE?oc=5",
-   "site": "www.mt.co.kr",
-   "firms": [
-    "키움증권"
-   ]
-  },
-  {
-   "date": "2026-09-29",
-   "time": "16:00",
-   "title": "한투 뉴욕 IB법인장 \"은행 규제가 기회…ABF로 영토 넓힌다\"",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hNVdyd3dldEt1X1BnUHBkeFFqelRyM09VNzFUeUt0SHZvcVZRN3FTeXZyY2VHaThDQ3dOOWNFMmFTOFdVRGpoc21MY1F4QnB1VlRCeEVKQkFScTlYazFwVmRfRFFrSlpa0gFuQVVfeXFMTVJZbUxSNXA3OThoeXc4OXhRRlVRaXMwSE5xdXlkU1g3RURhenNYUWppT0xpU3o0SlQ1Q1BsQjNJQ3lqNWtzd1JlV1A2Y1lHc1kzNTg2MmxDdnpqc2F1S2h4Qm9HMmtvREF3THlNSEE?oc=5",
-   "site": "www.mt.co.kr",
-   "firms": [
-    "한국투자증권"
    ]
   }
  ],

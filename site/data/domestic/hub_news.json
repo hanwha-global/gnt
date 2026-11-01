@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31T09:58+09:00",
+ "updated_at": "2026-11-01T09:19+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,13 +8,13 @@
   "KB증권|베트남": [
    {
     "date": "2026-10-23",
-    "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
-    "src": "VnExpress",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
-    "site": "vnexpress.net",
+    "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
+    "src": "Tuổi Trẻ",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
+    "site": "tuoitre.vn",
     "foreign": true,
     "lang": "vi",
-    "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대"
+    "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다"
    },
    {
     "date": "2026-10-21",
@@ -46,26 +46,14 @@
   ],
   "KB증권|인도네시아": [
    {
-    "date": "2023-07-12",
-    "title": "Usai Mirae Asset, BEI Juga Sanksi PT KB Valbury Sekuritas",
-    "src": "detikFinance",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTlhTNzJ1OUFCdEFieXVqa2hEY19BaDVVaVVuRkFJSkw4eUo4UmMyak9uSnRUX1B4bmdnYzJaaE9qTGtNblpBckM0THhCS2FxMi1WaEVXYmJnMkh1SjNJY0Zac1R1bnZOV2FXTHBEWjMzZmRzdk0xdHBWaDd5RjJPakFRTzB2ZWhzWjlUU0FtSDRTUllRU0hSb0tzVnJuVkpycXpyWjRXQzZFX3Js0gGyAUFVX3lxTE5Rc1Z4NkNPNTVYNVNRS3UtRDlVSWsxTTIydVlyOHZoSkY0Q0RWeVFjTENnV1ZyRHpHdUlES3pyTXp2ZFhoTWh3OHVQTUc3MloxcTlodmtpdmVCVkJDZjY5UFd6ME5NM0NNdHBwNDBPWUdERlZOV3l3ZUo4cFBEWndGb3hOUktUTEhRYmhlUHcxTmk4SjJJVzd1TmRTZDZYWFYwRFViWll0RjNVTlR5cVRtN1E?oc=5",
-    "site": "finance.detik.com",
+    "date": "2025-11-10",
+    "title": "Mirae Asset Didenda BEI Rp200 Juta, KB Valbury Sekuritas Dapat Teguran Tertulis",
+    "src": "IDX Channel",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOFJyWF9xMHBQeExNYklvWk5EdW1fT2pMLUdNdVp1bl9oZnJZa1dOOTBQbm5KeFRhWnI5T25FekR1Z3dJQ0poUTkyanAxcW9xd2h5NUZCMlBiXzhuVWdRemVyUlN1dllVQjAwMFdDYU4xZWt1NkFhODRDWUw3aHpzcjNhS2xnV0JDeTdZdzEwaTd2a0tPTmlickdDVFVWTnQ2cERuUUJRSWNrbS1tcDNab2N2UlloUQ?oc=5",
+    "site": "www.idxchannel.com",
     "foreign": true,
     "lang": "id",
-    "old": true,
-    "title_ko": "미래에셋 이후, IDX는 PT KB 발버리 증권에도 제재를 가합니다"
-   },
-   {
-    "date": "2022-07-07",
-    "title": "KB Bukopin-KB Valbury Sekuritas Kolaborasi Tingkatkan Layanan",
-    "src": "CNBC Indonesia",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOamhPWGlMd1BNUVFnNmpUZHg0YzJmVzg1U2VlRzYwc3U1eGFMbHRtbTduT19rMURWajRlTUsyRVlweVlIbjM0ZUhCR3RLU0ZSeERzZnpucVkzT05LUXdZenhKTG45RU1jM1F1ZERrWVlpTTF0Uzctc1VRb1ZGR3BpUXU3M3oyRVhoYmxLTjVMSUlKUVB2ckx2TUQxMVJRVTZva3JDT19vTmthOWtpODQ5Q2V2bERLWkd2ZXRLZ2I1SlfSAcYBQVVfeXFMTUIwUFUwRGJEcHZLbHZsOUlPTFgwQlA3Y2c1bk5QSm9fQndmZkxEYk9WQXhvR3NUZXRHd0V4Ynl5aWVRd254Y2FhRURFSTFsTTE0RVYtYmY1NnVpOXd4VGx1bDdXdXZTcVZCQ3lNTWREUG04NjFuSGVMc043Q0RzMU1Na3B5NDJETzVoQ2Z0RlFtNEM5T1BGeUtWNW92d254V3lOQ1p0VDlOX29rb0F6S0hWdUsxSU92WWhKSFFMSVU1ZmRTOEJR?oc=5",
-    "site": "www.cnbcindonesia.com",
-    "foreign": true,
-    "lang": "id",
-    "old": true,
-    "title_ko": "KB 부코핀-KB 발버리 증권, 서비스 개선을 위한 협력"
+    "title_ko": "미래에셋 IDX IDX 2억 달러 벌금, KB 발버리 증권, 서면 경고 받다"
    }
   ],
   "NH투자증권|미국": [
@@ -109,10 +97,10 @@
    },
    {
     "date": "2022-04-27",
-    "title": "NH Investment & Securities launches London corporation",
-    "src": "The Korea Herald",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TOGttY0tURjNMMEtqNVA4YmFDcFRyQVNKYm1wZlE4YVdpVWpTMjZoOS1qelJnVmFicGtxc0pOWG4zb1ZwOFZzcm03RngwQ1prcEZQdm9R?oc=5",
-    "site": "www.koreaherald.com",
+    "title": "NH투자증권, 런던 현지법인 출범…'글로벌 IB 허브'로 육성",
+    "src": "연합뉴스",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5QN1FmXzhia3R4U0RtSWlTdEpNeldpeEl0czJaNkotWXNMTlVpVDMtSFhtWjNqa2RuN1ZiQzR4VFQ4ODJQcU9VRDRURTN3YUVfMXFpTEhJTUVocDDSAWBBVV95cUxPWDZBS2lrZ09GdVBTLUZ0cWdSOU5rN2t0QTRkQmdGY2xadWpyd1lNV2VQSnJSd3RHOXdIRXhEd0N6WEtoX3pITWZWdWRXN2tGU2s2eVZXQjFKeXR3TkVqRVg?oc=5",
+    "site": "www.yna.co.kr",
     "old": true
    }
   ],
@@ -303,7 +291,7 @@
     "date": "2026-09-30",
     "title": "Perkuat Inovasi, Mirae Asset Sekuritas Indonesia Raih Penghargaan Ini!",
     "src": "CNBC Indonesia",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3fSAcsBQVVfeXFMTm9wUS01MEFVX1VUY2FKZm5oT3hFWXA2b1ZtRTZIejFNQVJXRURLbGIxZGFqUlJxOGRveGpQYTBoYVpmZGJDc3NUWGV6dXpvaElrNkFIUHJCRTZSVlVWOWRVMDJJaXhuTmgyamFUVEtTanNCXzJJUFNIWmdpRDFFVF9mYnBWRktjUnY2U2JfZGItVGdzWHNRT1RlT19oWTQ0TmlGQTNsUFFUT1A5VEp5NTBKT3JhRXg5TzJ0ZnhqbGNjXy14LUlOc1dvajQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3c?oc=5",
     "site": "www.cnbcindonesia.com",
     "foreign": true,
     "lang": "id",
@@ -520,6 +508,14 @@
   ],
   "하나증권|베트남": [
    {
+    "date": "2026-10-31",
+    "title": "BSC - Hana Securities Cooperation: Imprint in connecting the Vietnam - Korea capital market",
+    "src": "Laodong.vn",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWkJCei1sYndSRkNZemJtQ0JMOVQzLVlwcXVhRjlLTS1sQXN5dF9OZ0c4ZnhGZGoxVTJpWVNpWUVpQi1NQWRPdnFfeU9sTWZ1Mm9fRVFiNkV6UzlsNlRMTVVMVm5EM2tzSmVWRDlGRmt6QWlYMkR6QzBUY0wxU1ZzemljVFVKYTNmVThxbmJNYlRGREhIV21obmYteklsdFROOWdkRHU3S3JTWlY0Ulk3N1RWUDEyRHFrd1Nhek94SlNNQ3FjTXpHQlc5UWdadE90MUViSVFJbw?oc=5",
+    "site": "news.laodong.vn",
+    "foreign": true
+   },
+   {
     "date": "2026-10-22",
     "title": "Chứng khoán BIDV (BSC): Doanh thu quý III tăng 19%, mảng IB đóng góp lớn",
     "src": "Thời báo Tài chính Việt Nam",
@@ -558,16 +554,6 @@
     "foreign": true,
     "lang": "vi",
     "title_ko": "BIDV 증권(BSI)은 세전 이익 7,000억 동을 기록할 계획입니다"
-   },
-   {
-    "date": "2026-03-12",
-    "title": "Chứng khoán BIDV bổ nhiệm 2 Phó Tổng Giám đốc",
-    "src": "CafeF",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQlh4cnd5akxpRkVRMkRjV3NEbTN6NnlWdDE0ZmowZ1ZHVzMtSnRiQklpMU1pRG5WVkVIM002c3pUbFpuMzFmeFZSZDJJVzFFRjRaVUFQRVpVRG5FVkJ6dkxwb29NbjlmNFp1aEJYdkR1WjhYSWpKMi1uLXVlTXh2cy1vUjNHR0tiVGFFUXln?oc=5",
-    "site": "cafef.vn",
-    "foreign": true,
-    "lang": "vi",
-    "title_ko": "BIDV 증권, 부총괄 이사 2명을 임명함"
    }
   ],
   "한국투자증권|미국": [
@@ -580,6 +566,16 @@
    }
   ],
   "한국투자증권|베트남": [
+   {
+    "date": "2026-02-02",
+    "title": "KIS Việt Nam ra mắt Margin K+, lãi vay chỉ từ 5,5%/năm",
+    "src": "CafeF",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcmlyTUVmRUtFcnBzSU1BcFlpeXY0ZV9LUDhxOUZBdHdDNFBsY3Fydk91a1RhQ2s1UDlEWU94MFJ4YmRwRFFJR3RuRE5MOHdfR2pXXzFvSHdRYmpKbDFnWjhuNVk5aWRWWm1ad3JuUkZPNlF3SXNkRlp3bUR0YTQtckJmamk1ZFFEV1ROM3l2cUlDblJO?oc=5",
+    "site": "cafef.vn",
+    "foreign": true,
+    "lang": "vi",
+    "title_ko": "KIS 베트남, 마진 K+, 대출 이자율 연간 5.5%에서 시작하다"
+   },
    {
     "date": "2025-12-26",
     "title": "KIS Việt Nam muốn mở rộng thị phần sau 15 năm hoạt động",
@@ -658,26 +654,14 @@
   ],
   "한화투자증권|베트남": [
    {
-    "date": "2024-12-05",
-    "title": "Chiến lược khác biệt của Chứng khoán Pinetree",
-    "src": "VnExpress",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQnpaYVlyZEdJNC1SLUQxV1Blbk9GS3ZZdjZjbURxT2JOdjRPcEF3TzRTbGxJVkh4UVdfclhWaTl5aWdlS1BkbGU4QmNnWWkxZm5iamhvNG5hb1l6VTVhWnU5b3FTLTBzY0MtdHR1QzlnSDNiRnlrOFBlTkx2RUxlcXk5UjU0MWM?oc=5",
-    "site": "vnexpress.net",
+    "date": "2026-05-05",
+    "title": "Chứng khoán Pinetree có Chủ tịch mới",
+    "src": "Vietstock",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZTJGRmdKYllEM2xocDdFZ3BySENvMGI0RzFYLVBrT0M1eUtBY0VGTElSR1RQM0RGUVVuMmkzVEFLaXR2RVNsQW9PaEtVSmtCWXZpazNGbEhDNWhRM2tHWUNZZmFQMk5faHpGM0NVNXFGNDdCdUMzSDI1emJrVkc2bHI2NzRpVWZW?oc=5",
+    "site": "vietstock.vn",
     "foreign": true,
     "lang": "vi",
-    "old": true,
-    "title_ko": "차별화된 전략 파인트리증권"
-   },
-   {
-    "date": "2021-12-30",
-    "title": "Pinetree ra mắt PineX- Ứng dụng đầu tư chứng khoán thông minh thế hệ mới",
-    "src": "CafeF",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYV9oWmt2dDkwZVIyOVJpT3dQaEM0aVFCck5FUWJGZ1dTMEFIV3JsWkRyT3JJMjl1blhEajlYU2FjVUVINWFLXzJjOTh0NmZJZWMzUU5nc0xDS2VQSWJRY3FrYlFNNU8wNjR3eTdIa3VxMXlldWt4Si04NVYtWWU1cU84RWJjckphNUdEWlc1S1hGb1ZBMzk3ejcxa2djakN2WThONjVDUFVHNWRKYjZ3?oc=5",
-    "site": "cafef.vn",
-    "foreign": true,
-    "lang": "vi",
-    "old": true,
-    "title_ko": "파인트리 PineX 출시 - 차세대 스마트 주식 투자 애플리케이션"
+    "title_ko": "파인트리증권 새 회장이 있습니다"
    }
   ],
   "한화투자증권|싱가포르": [
