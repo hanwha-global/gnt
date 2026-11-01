@@ -1,15 +1,7 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "headline": "한국: 원화 스테이블코인은 은행 51% 컨소시엄으로 가닥, 법안은 11월 소위로",
  "items": [
-  {
-   "jurisdiction": "미국",
-   "flag": "🇺🇸",
-   "title": "OCC GENIUS법 최종 규칙 확정 목표",
-   "status": "예정",
-   "date": "2026-10-31",
-   "url": "https://www.pymnts.com/legal/2026/occ-races-the-clock-to-finish-genius-act-stablecoin-rules/"
-  },
   {
    "jurisdiction": "한국",
    "flag": "🇰🇷",
@@ -65,6 +57,14 @@
    "status": "예정",
    "date": "2027-01-18",
    "url": "https://home.treasury.gov/news/press-releases/sb0605"
+  },
+  {
+   "jurisdiction": "한국",
+   "flag": "🇰🇷",
+   "title": "토큰증권(STO) 제도 시행",
+   "status": "예정",
+   "date": "2027-02-04",
+   "url": "https://www.theblock.co/news/regulation/2026-09-04-south-korea-to-start-tokenizing-all-types-of-securities-in-three-stages-from-2027-413523"
   }
  ]
 }
