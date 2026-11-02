@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T12:58+09:00",
+ "updated_at": "2026-11-02T20:29+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,6 +35,14 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-02",
+     "time": "18:27",
+     "title": "Treasury yields mixed as oil prices tumble ahead of the midterms",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zeUV1S0FMQzdjaTU2S0djZmVVMjNSZ0hKMGdGdHpjU1p3NEs0ckRaNjJlemVySWtTeWZGMkNraWVmR1F5Y3RjUHhxZkxiRlpRXy1UY1VTYm9fWm5WTzhjRDlWOENzazhrWGhkZW130gFzQVVfeXFMUDNESWlyVGRXTEFHaHJxSFp1YXNkeWlQNkk2cXU4eG9maHROb3lZdzhMRzRJOWptcGF4bjZNZzlkTTE0cERiQ25vMGh1MUpvRGFHd3pMaE94N2dCcENocHJ3QlhVLWVlM1dpemVmV2QtWWhidw?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-01",
      "time": "17:31",
      "title": "Yen gains against US dollar after Bank of Japan holds rates",
@@ -49,14 +57,6 @@
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMlpxTjRrd0pFbThfU2w3bE90TGQ4bkt0VWZ2bG0zNERPWDhtc21WRmJyZ2RlZWZTcFhoSVBlR0xnWDd3MXNSVFREMTlGbm5IVzlqV2tMYUt0TTBBcWZYanJmV2h6cDFxUkhjS002N3BPaFV0Q3JmaFdiZzB5TmdXN04ybHZPbEY4Z0Y2YXJkank4TFFxN3hDQjhzMEtXS3U0cUpvbDRpTmFMWjgzQy03OUREVXVHUkxsWnlOYUVCTEZkYWZZeGprbjBxOUZUNERl0gHWAUFVX3lxTE1GbjF0T3VCZTFnalZsb2t0UVN0YUZfaGNNdWpnclpjRXRtVXVfZ21sa0ZFWE1VbzVSblNCT21jcllvS3NVdE9TcWZaOU9kUjh4cjNRWE90b1B1d1dkR3M2bGVkRU4tMGVYalJTYWNfNmprZ2NlWlR1dkczOXF4dzJ2R0Naa1RxMnNKSlo5b000OW5LenZrYk1HdnZLQzhTbVR6V19Fc0NEX0lQUTFkQW01TWVrTTNnYXdQcXlrb0UzUkFPUXdBRHVnZ0YzcUlBUjJfZW9zV0E?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-10-31",
-     "time": "04:54",
-     "title": "댈러스 연은 총재 \"FOMC 최소 두 차례 금리 인상해야\"",
-     "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wWlhhUlluVGhCRS1paWFBSXdVZnRvQ1Z4M1k2V3B0YTE2aENFSGNCSXhyVkU0dlZ6ZG5QWUp0cjFHLWx2Yjg3dEJncGlXMUYxWmdncVI5QkljSnFXVjdxdXdIc3FwbnFXalJKem4wZ0w?oc=5",
-     "priority": false
     }
    ]
   },
@@ -67,7 +67,7 @@
      "date": "2026-11-02",
      "time": "07:00",
      "title": "Wash Trades and 5,000% Gains: Inside Indonesia’s MSCI Hustle",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQXd1UzBJS1FqSmpBdEtDMm9LUzRzdnlZWXFJTTBhVV9NN3FRMHVrUHV0ci01V2E2SV8tSW54N1B4MFNZZXRoNW4zR096bWlpcXlJOGdsd0tPSWVySjdHeHZLanNoSG1RUDNuNG1KbDJualJjY2o5WG5jbmxwQ3NTSTUzQW9oaTA5UGM0by03WW4zeHpqM0JGSDFaZFNKdndDWjJmZmtRMWRjRFk2eG4zdGYtY2E?oc=5",
      "priority": true
     },
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-01",
-     "time": "17:31",
-     "title": "Yen gains against US dollar after Bank of Japan holds rates",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQjdVcE13eERMQzMxaDgzeldZb1RKNWhlT3VWYWRIRXJYb0VSRnEwckk2QlVjaXVrMTVHbURDaDhhaVhncno2bUVjYjVmTTZHcVZYZzhPcnB4bWFCMTJvekpkc1U0Ym1KNnZlMGwtQnU5X0t2dktMT1ZYYmdaMndWOUl6YlMwRW14cnhCTE0wb1h2NDJoMDV0RDlnSjR1eklMZUtiandVT1drVjdkdFlCcnNacXhCZjhjODVYYXhzR2p5RldUMzIzVG9EUWVPX1E?oc=5",
+     "date": "2026-11-02",
+     "time": "16:01",
+     "title": "Japanese Stocks Fall on Tech Selloff, Kioxia’s Profit Outlook",
+     "src": "Bloomberg",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdGUyS2diYVFSbnZmdklpSmxqNFhqREJobEZCUjhZV3BhQzhCOUdScEp4N09WOGJyQk9XU05qVDlVMkotSEpobUhKWGEwejVrUm05WlN2NmdzYTNJbFltNmtPTU8yemVvMFVOZlQ4WGhqZEZzMVRzZEhFUHJxVTZOZEtFQ0NWYVZlUmJoVnl1VGVhUWotWWRMcmJPN211TkNEb1dyWTBuZXQ4ZGtWSVEzag?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-31",
-     "time": "06:11",
-     "title": "Yen set for third straight daily gain against dollar after BOJ holds rates",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMHRlb2xFdjF1SUl3NUktRkR1WEpsOVktNG9kRlhNQWhVZm0wMGdPdlYzYUpxQVdTV3FnVkF4ekhmOUYyX3R1d1JQTmlGRGdrYVB6LTlWNTA4YXIzb1lOMDF0QW4zb25aaVNkRE5RaWlEQUZteXZMWnVmcGVTU19yVFlBY1FZZFIyWHRaYUhZbERiOHZvdXFhNUtIakZ5UmFjVy1vVzVjZmwzX0NKTHNXWWZFZ2M1bGlIVXNuZ3hn?oc=5",
+     "date": "2026-11-02",
+     "time": "15:52",
+     "title": "Nikkei Slips Below 63,100 as Kioxia Outlook and Wall Street Tech Rout Rattle Japan's Chip Stocks Again",
+     "src": "International Business Times Australia",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNlpUanRhMjJpdS1NT3dKNW13Y2w2RG5udXAtUXY4dnZqUTE2U0lfTTBjcF80U1lVZTBuU2FPQ182OGxuTWI4b05sNlhzRS0xb1AwbVBlczhXamlvTll6eV9nN21aVy1CQnNHOE5rSmplMmZ0TkFFdkRtd09lTDU1MGlUbDdNMHNB?oc=5",
      "priority": false
     }
    ]
@@ -197,10 +197,10 @@
     },
     {
      "date": "2026-11-02",
-     "time": "11:00",
-     "title": "Singapore stocks beat Wall Street over the last five years | Investing basics explained",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWnJaeXc1NmFIREtCblMwY0JoRUR5X0I1V1pZMUVDZzM5MTFVcGxkYUt3OHhYbVJwQXcxWmNoRXUzdGhtWXBKeDNyd1JaeGZ6V1pWV3N3TUpzZDgxWGVmX2RmOFd1MXNiR3ZtVWNqeVNkNnFNNVFNMmdkQ0tqZ2VLcTFlVXZJX3lNOWVGSFhhUWpkOFBLWmhtN1hQN1hMX3Q2VVdjN1JRakk3Uy1tZnJKcUlCdG5GclJyT201WXBKR1I?oc=5",
+     "time": "19:08",
+     "title": "Singapore shares end lower as local banks decline; STI falls 1.4%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeDlNSHQxcTUwUEV5aUtZWGhJTFFxQkNkc0xXeTl6QmNucjFCeURtLXVJMk9Kc2c2RHVqemVQSERHWms4UFRiT3FZcFpXbkdSOS01R2NCX2tIeVA2OFMwNkFRY0lMeWhVSDQtbHNuSFdSZ0Q4eDZQS0JIX1Rna05QM3hEZVltNjM0UHVQV3JqdXphWGZ4NWFUM21SYTVDbXZYb2hpbW5QTWRvZ2hKWnhjYw?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-11-02",
-     "time": "05:00",
-     "title": "India’s Consumers Are Back, Its Stocks Aren’t",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSWh5U3FLMDNHaUZYcWhfQlNSenN0Y0wyaC00SmRDT1YyTzJLcUkyTnFSc095YnZhS1MtQ05xYVhVM2tGazl4azQweWlMaGh2MXpOUXpXRGw0UVFlRTZITWVWc2FneXNZUDhLZlhXVlU2VWdWdG9KODVIX2dBSkJseEkzbFlZbHJHZnA4c05FT1JzNEFxdmdUYk14ZzhSY29FeXotOWJPMzNrZEJWT0xr?oc=5",
+     "time": "18:33",
+     "title": "RBI FRB 2034 interest rate jumps to 7.26%: How much more will investors earn?",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQelkxVnVNaU15ZnVQNTloUXVNemlPNkQ4NGxpa21JWV9TamM1X0RfVktVZEphS2ZzMHNTVHhXNWFGS1RqM3lWbnZtNjlTTGpPRkhoc2ZTanlIeW9JSGV4eUxmLXNXMzJHTFdJaXQ5VjI4Q2pYTThTUmp6bkxXQ2x0MFNaanRGSTRJWGlSbkh6WmFFbENYTTg4cXoxRWhPZWZrSWdBUlUtRTRpS1NRVWphbk5hNGJSREdoclc1T0RiZXRBUlo4UG1kQnRJNXUzOEJ0RkkwVy03QUxtN3dNTUQtQjNoREtvZERDazFkQllLWHU2cnNVSGVySWEwMXdNLU1XM0EwUGJYaUNfQ1BScFREUmpqaHltTkx2enZ1SjdWdEp5TDBfU1FoRzlGMWRubE0tYmJKTnRvbUFsa0Uw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-01",
-     "time": "22:29",
-     "title": "India's 10-year bond yield may ease to 6.75-7% by March: SBI Research",
+     "date": "2026-11-02",
+     "time": "15:48",
+     "title": "Bank of India, Suryoday SFB raise interest rates on fixed deposits",
      "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPN1pKeXpjaTZvTk5hZXpKNFpUTXRhaGRiSnFGc2Zjbm8wcWViUUVvcHFVN2JNZlpTSEE0bGhXY1BWTmFuLXduTHlBTDFzbU1EaVFGQV9Ob0xRZmhFUVd3bDd2aGhzQ2prcXJ0N1RYVFdxTWYxVjNmbDcyS0pNcEhsMmwzaDFaNVFxdmdEOVhyWl9uOXo5NlJtc1EwdlQ3aE5oY2hHbUYzT2cwcmVkNzNLX1BBM19sVEUtT0JoQkNRNFd2b3RTSmFNeEJrc3dwMk3SAdQBQVVfeXFMTV9XUXlIanNDS2pyVnN5T2tlUWhaZVllMVE2d1hBUDB5U1FKNEhhNmx3ZVd1cXBnaFV1YkpqMFhsSVNXLWtxUVZIdnZVbi1Gd2NQeFd3X19xckZKdEJHbmtNZFItZWc5U1lUb0lBaEtUWVdncjI5c1lsYW5wcko3M3VsYVJfeG1rMVVRemVDX2g0Rk9ZNGVFV2taRU5UemNzWFFJdmlDU3drd05hQWRwS2I5TTEzd3JwOTI2WFlrVDhNOHdSS1B3YzJ6YXZCUU5sempXcjg?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZjh6Nm9adDNnazZpRzcxa01TbGJwemNSSTdYUEdhSE9mYWNZek5kLWNET2NjUGVCUlBrYm9RcV9nQVdLb2hKNnd5ZXNIZEY4T2NxS2lzWldtZERSeFZRXzR0dXZicDlmN3V4ZGFkMTk3UDRwcGNrMjBYOUY5anNGTndlSzBGQUstWjBKcTZiUGRnNlZhV1o3a1kzN1BXdFh3OTNZZVhWMk5aSzNoZEZ3VWo3YWJsQnBNZTY3MGF3aXfSAcYBQVVfeXFMTWQzTjZadzN4MkxJSkFMRUxEMS00OXFtaUZxa0YycXlxVjhiTXB1X244U2tPN2kyUzNZSS1nbFd5Rk5XRVZFYXZzbUtXY2o4Y29mRFVtckh0SXdJRjBCMjBvekZJa3NYWHllMV90QmxFb1BqTjZtM09DWDdlSEthYTAwMTN1SU9fWVJGRDl2b1UwT3FDWFp4Mmx4NUJGcHBVd0xNbURZRlN3c01TMk1vRkRadDhicjhsbnNZWFlPN2UxbHloczN3?oc=5",
      "priority": false
     }
    ]
@@ -237,6 +237,14 @@
   "GL": {
    "label": "글로벌",
    "items": [
+    {
+     "date": "2026-10-30",
+     "time": "08:01",
+     "title": "Prabowo's Brother Warns Rupiah Could Hit 21,000 if MSCI Downgrades Indonesia",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU0JYVjJTV1JMXzc0Skk4M2tERW9vX0NCb0RiaE5KQzZiYkVhNjZoRGVyUXJOcGZWYTJ4NnBQUmQ1Tm1UMFRXUWdFZ2RnVlZCbGN6dXY3Q0JsMnRyRVF6VFdyYmU1VnZYNFpzdWZRMnIyQnlTVTFkU0RNN19vRG5EWm5mQ2dxNHc5eTNTWDRzdnJLS0t2QUFGLS1haFRMZzlKdks2anFUOHNSZXc?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-10-26",
      "time": "14:52",
@@ -251,14 +259,6 @@
      "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?",
      "src": "CNA",
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-21",
-     "time": "17:35",
-     "title": "GIC, Temasek rebut allegations of pressuring MSCI to downgrade Indonesia",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU2VEV01yRWE3bU9VbXpPeFlaNVo3eTU4R1lBQ3EyNjhwakY4ZzJCQUlab285V202UG5JNGdpRTBVXzFYRlROdGZQRUQwek5GYXhDWmJGSUdUak5OOTAxdnZ3Nk9jNDZhd3hWYkpGazR1S0gydjJPN1lObkI2dTZ0UGJ0eFhWQTNmRzdSMlp4VG1uUGk3VkFLeFVRbW5vOUdsRXNMNTZLU0tLcEE4?oc=5",
      "priority": true
     }
    ]
