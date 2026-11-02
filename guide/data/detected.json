@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T00:59:36+00:00",
+ "updated": "2026-11-02T01:27:12+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,15 +66,15 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
      "date": "2026-10-18",
@@ -85,7 +85,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
      "date": "2026-10-20",
@@ -102,10 +102,10 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
-     "date": "2026-10-30",
+     "date": "2026-10-31",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
@@ -125,7 +125,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
      "date": "2026-10-30",
@@ -142,16 +142,16 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
-     "date": "2026-10-22",
+     "date": "2026-11-01",
      "title": "Liquor Licensing Board to meet on Tuesday",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHZEdjdmVNMmpET1J1ZThOcll6OVpkb1AxNHRvWW5sVVduUGk5dG9NamxSMWNhRHZYb3JsLXVSOGJQWXBpRExMZzdLM2VHb2dQSVlkTHk1eHdZQVRjQ3JQYnR2S1F1WnRmQWI1cnFORGFEQQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16T2hyb1JJWmR4eTJoNVdNUkw0bk9MVk13SGVGazE3UF9ZQy0xU051cWJrdW54Sk11QzE1RFlYa2NlM1VOZGoxS1BMblp4TWdmREpIWmhhQWxhUXh6dF9hYTNtRk9Ya2c3YVphRENGaTJqaDA?oc=5",
      "src": "www.info.gov.hk"
     },
     {
@@ -193,24 +193,36 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
+    {
+     "date": "2026-10-31",
+     "title": "MN DRIVERS LICENSE TEST STUDY GUIDE VIETNAMESE",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcnVQWXE4dlJKbmJBcDBaaWhtVUFRb0xmOHVmeXpuT1VvNVlqVDdHWWtaaFlUMzFpNVI3N1RiMXI4SDByY20xNnBvNkt1OGN3S3pkUzhVWWVTNGJPVjZLMWt0UWZTT3pMS0wzZzI0U1RiQldmWjFZbEd0VUhFY29yXzJMRi1jR3JFYXRNQmxHS244bUlLUW1RTm9YUQ?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-10-31",
+     "title": "CHAUFFEUR LICENSE TEST QUESTIONS ANSWERS MICHIGAN",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTkg4X0FsTGNJZkZzUnZmdnNsSlZmYXNXVnZodVVUOVlNeE9ma2ZYRFYwNFRMM3dvSVA2bDBTdzZlcHUyYWprX0pzT00tYjY5b2ZEM3d1d3FzNE9HZFhLUnVpZjQtRHAyVktZRG85ZWhOVFIyeGdaVzg4Z0diMjc2U0N1MUtPdlVIV285MUNoTkZmc0ZSd0tiTw?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-10-30",
      "title": "TEXAS FIRE ALARM LICENSE STUDY GUIDE",
@@ -219,14 +231,14 @@
     },
     {
      "date": "2026-10-30",
-     "title": "BOTSWANA DRIVING LICENSE THEORY BOOK",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcHJ3SW5YTXZTUXZFZWFpcDIwS3V2b2dEM0xlTEJvZ2FPelhwZ2xlejI2WXVOaWR4NWFNSi1VTXo1VkFMQ2FOUmVSeDZWRWVtZ2NyankwZTRBMVVwekxRd3lTcEhDSkJPM29BUDEtaENNYU85aDlqRWhoN3VFQVF0MGVKMHNCbjl3UkE?oc=5",
+     "title": "KAHRAMAA LICENSE FOR ELECTRICAL ENGINEER",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTkp4MUFZVEdlYXRRcUVCQWpnTFp6bHRVUEt2VU44QUpRNG03b0RDOHQwWTcwYUlhcENOOXZOcTZ4MUw5UnE5WVFkTDhzT3oyWGFacE1IUmZ0MnVibWNzYy1vY2c5T2YwNkRJRkNPd3A3ZlQzVXNIY3B3NkhhbVpoSlV5bVlqWEFlTkRkd3Z1Zw?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
      "date": "2026-10-30",
-     "title": "KAHRAMAA LICENSE FOR ELECTRICAL ENGINEER",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTkp4MUFZVEdlYXRRcUVCQWpnTFp6bHRVUEt2VU44QUpRNG03b0RDOHQwWTcwYUlhcENOOXZOcTZ4MUw5UnE5WVFkTDhzT3oyWGFacE1IUmZ0MnVibWNzYy1vY2c5T2YwNkRJRkNPd3A3ZlQzVXNIY3B3NkhhbVpoSlV5bVlqWEFlTkRkd3Z1Zw?oc=5",
+     "title": "BOTSWANA DRIVING LICENSE THEORY BOOK",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcHJ3SW5YTXZTUXZFZWFpcDIwS3V2b2dEM0xlTEJvZ2FPelhwZ2xlejI2WXVOaWR4NWFNSi1VTXo1VkFMQ2FOUmVSeDZWRWVtZ2NyankwZTRBMVVwekxRd3lTcEhDSkJPM29BUDEtaENNYU85aDlqRWhoN3VFQVF0MGVKMHNCbjl3UkE?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
@@ -274,11 +286,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   }
  }
