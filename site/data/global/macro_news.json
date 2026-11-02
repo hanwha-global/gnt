@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T20:29+09:00",
+ "updated_at": "2026-11-03T03:38+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-03",
+     "time": "01:57",
+     "title": "Fed will vote on rates less often. What that could mean for borrowers",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQM2s1TjF5cEFpQnNoNk56UU1ILW12OWJpWjQ4ellNWUdjeFQwN0c3TGh3OEtLdk5sVDJHWHlISEhyZG9qS0lXSndiX2xpQ2FXcUQ2Y0V3emt3cTVLRnVqeTl3LTdFa01WTHBMMV9DWlViRExVQWMyWTZSVjUwV2V3UDBR0gGHAUFVX3lxTE9Zcm9XMks4V2g5TmdoOWVIR0Q3VGVwM2pmVk9EbVZVb1N2YlBNZ3RsSkhkdEUxVFROd3NReGxUSm1Ga3dvWVl4eXpsOG5iSFdMUFN1N0dHZFdBZ1hXZURzMmdyWGcyM2RrVUdHa21wcS1nWWNYXzJmc2xyTnBpWjdwZkM4ZzdFYw?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-02",
      "time": "18:27",
-     "title": "Treasury yields mixed as oil prices tumble ahead of the midterms",
+     "title": "Treasury yields are mixed as oil prices tumble ahead of the midterms",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zeUV1S0FMQzdjaTU2S0djZmVVMjNSZ0hKMGdGdHpjU1p3NEs0ckRaNjJlemVySWtTeWZGMkNraWVmR1F5Y3RjUHhxZkxiRlpRXy1UY1VTYm9fWm5WTzhjRDlWOENzazhrWGhkZW130gFzQVVfeXFMUDNESWlyVGRXTEFHaHJxSFp1YXNkeWlQNkk2cXU4eG9maHROb3lZdzhMRzRJOWptcGF4bjZNZzlkTTE0cERiQ25vMGh1MUpvRGFHd3pMaE94N2dCcENocHJ3QlhVLWVlM1dpemVmV2QtWWhidw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-01",
-     "time": "17:31",
-     "title": "Yen gains against US dollar after Bank of Japan holds rates",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQjdVcE13eERMQzMxaDgzeldZb1RKNWhlT3VWYWRIRXJYb0VSRnEwckk2QlVjaXVrMTVHbURDaDhhaVhncno2bUVjYjVmTTZHcVZYZzhPcnB4bWFCMTJvekpkc1U0Ym1KNnZlMGwtQnU5X0t2dktMT1ZYYmdaMndWOUl6YlMwRW14cnhCTE0wb1h2NDJoMDV0RDlnSjR1eklMZUtiandVT1drVjdkdFlCcnNacXhCZjhjODVYYXhzR2p5RldUMzIzVG9EUWVPX1E?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-31",
-     "time": "20:53",
-     "title": "US bonds rally, sending yields to biggest monthly decline since 2023",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMlpxTjRrd0pFbThfU2w3bE90TGQ4bkt0VWZ2bG0zNERPWDhtc21WRmJyZ2RlZWZTcFhoSVBlR0xnWDd3MXNSVFREMTlGbm5IVzlqV2tMYUt0TTBBcWZYanJmV2h6cDFxUkhjS002N3BPaFV0Q3JmaFdiZzB5TmdXN04ybHZPbEY4Z0Y2YXJkank4TFFxN3hDQjhzMEtXS3U0cUpvbDRpTmFMWjgzQy03OUREVXVHUkxsWnlOYUVCTEZkYWZZeGprbjBxOUZUNERl0gHWAUFVX3lxTE1GbjF0T3VCZTFnalZsb2t0UVN0YUZfaGNNdWpnclpjRXRtVXVfZ21sa0ZFWE1VbzVSblNCT21jcllvS3NVdE9TcWZaOU9kUjh4cjNRWE90b1B1d1dkR3M2bGVkRU4tMGVYalJTYWNfNmprZ2NlWlR1dkczOXF4dzJ2R0Naa1RxMnNKSlo5b000OW5LenZrYk1HdnZLQzhTbVR6V19Fc0NEX0lQUTFkQW01TWVrTTNnYXdQcXlrb0UzUkFPUXdBRHVnZ0YzcUlBUjJfZW9zV0E?oc=5",
+     "date": "2026-11-02",
+     "time": "18:27",
+     "title": "Treasury yields mixed as oil prices tumble ahead of the midterms",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zeUV1S0FMQzdjaTU2S0djZmVVMjNSZ0hKMGdGdHpjU1p3NEs0ckRaNjJlemVySWtTeWZGMkNraWVmR1F5Y3RjUHhxZkxiRlpRXy1UY1VTYm9fWm5WTzhjRDlWOENzazhrWGhkZW130gFzQVVfeXFMUDNESWlyVGRXTEFHaHJxSFp1YXNkeWlQNkk2cXU4eG9maHROb3lZdzhMRzRJOWptcGF4bjZNZzlkTTE0cERiQ25vMGh1MUpvRGFHd3pMaE94N2dCcENocHJ3QlhVLWVlM1dpemVmV2QtWWhidw?oc=5",
      "priority": false
     }
    ]
@@ -67,7 +67,7 @@
      "date": "2026-11-02",
      "time": "07:00",
      "title": "Wash Trades and 5,000% Gains: Inside Indonesia’s MSCI Hustle",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQXd1UzBJS1FqSmpBdEtDMm9LUzRzdnlZWXFJTTBhVV9NN3FRMHVrUHV0ci01V2E2SV8tSW54N1B4MFNZZXRoNW4zR096bWlpcXlJOGdsd0tPSWVySjdHeHZLanNoSG1RUDNuNG1KbDJualJjY2o5WG5jbmxwQ3NTSTUzQW9oaTA5UGM0by03WW4zeHpqM0JGSDFaZFNKdndDWjJmZmtRMWRjRFk2eG4zdGYtY2E?oc=5",
      "priority": true
     },
@@ -133,7 +133,7 @@
      "date": "2026-11-02",
      "time": "16:01",
      "title": "Japanese Stocks Fall on Tech Selloff, Kioxia’s Profit Outlook",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdGUyS2diYVFSbnZmdklpSmxqNFhqREJobEZCUjhZV3BhQzhCOUdScEp4N09WOGJyQk9XU05qVDlVMkotSEpobUhKWGEwejVrUm05WlN2NmdzYTNJbFltNmtPTU8yemVvMFVOZlQ4WGhqZEZzMVRzZEhFUHJxVTZOZEtFQ0NWYVZlUmJoVnl1VGVhUWotWWRMcmJPN211TkNEb1dyWTBuZXQ4ZGtWSVEzag?oc=5",
      "priority": false
     },
@@ -218,7 +218,7 @@
     },
     {
      "date": "2026-11-02",
-     "time": "18:33",
+     "time": "18:42",
      "title": "RBI FRB 2034 interest rate jumps to 7.26%: How much more will investors earn?",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQelkxVnVNaU15ZnVQNTloUXVNemlPNkQ4NGxpa21JWV9TamM1X0RfVktVZEphS2ZzMHNTVHhXNWFGS1RqM3lWbnZtNjlTTGpPRkhoc2ZTanlIeW9JSGV4eUxmLXNXMzJHTFdJaXQ5VjI4Q2pYTThTUmp6bkxXQ2x0MFNaanRGSTRJWGlSbkh6WmFFbENYTTg4cXoxRWhPZWZrSWdBUlUtRTRpS1NRVWphbk5hNGJSREdoclc1T0RiZXRBUlo4UG1kQnRJNXUzOEJ0RkkwVy03QUxtN3dNTUQtQjNoREtvZERDazFkQllLWHU2cnNVSGVySWEwMXdNLU1XM0EwUGJYaUNfQ1BScFREUmpqaHltTkx2enZ1SjdWdEp5TDBfU1FoRzlGMWRubE0tYmJKTnRvbUFsa0Uw?oc=5",
@@ -238,6 +238,14 @@
    "label": "글로벌",
    "items": [
     {
+     "date": "2026-11-02",
+     "time": "23:26",
+     "title": "Greek Stocks to Suffer Outflows on MSCI Upgrade, JPMorgan Says",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWVmcEhvblNrV0ZZMmtQVWc3RmZNNTdybFBYZzdFZVZUUW0zc1lmakxBR3NFTzBxeFdOSklzeUFQajBqVHRnVUpQRU5lN3lNWW1lZFBXWm5waGZodWhaNjFYVTlSc1RFXzkwaDJHMloxb2EzYllNR1ozMG1NNEVXTnExeHNwRmZtNnVrc0R5bTlYNFhGYjZ4dG9BUGdjWThZR0RYTUp5cDVTRFJvakNwUEV3?oc=5",
+     "priority": true
+    },
+    {
      "date": "2026-10-30",
      "time": "08:01",
      "title": "Prabowo's Brother Warns Rupiah Could Hit 21,000 if MSCI Downgrades Indonesia",
@@ -251,14 +259,6 @@
      "title": "FTSE Russell Keeps Indonesia Off Watchlist",
      "src": "Jakarta Globe",
      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMXBablczeVZFNDhGc243VTg0LXdjamQyZmpObHZkS2NrNDJ4elc5bWl6cWFCR3NMSG5vMEFrY2xjcDFrOHRjbkhwWE1xdko5VnIwa3NEWEpCMVVpek5aeXkxeGdVNFE0NVlPMGx1bU5pbnlTZlQxYjNLVEdUbi1yRg?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-23",
-     "time": "16:02",
-     "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?",
-     "src": "CNA",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDVZUnIxM0Izdm9wNDNPUnhoLUlqdllqb29jMXl5d0dEZ3c1V2pZblEyd1ZyczlLbnNTTV91WGN3UGR1QUp3NjlrT2dEU0gzVmpXMUFxRHdDM19ZbEFzUTNVZGFpeUFfczlUMzA3T1duRTloc2o2NnQ1LU0xVk1VNkhMZWE1bGZmRVlwUXZtcE1VdkhKeWFwQzl0MmhYU3hBT2c?oc=5",
      "priority": true
     }
    ]
