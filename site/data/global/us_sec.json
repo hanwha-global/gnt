@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T08:22:45+00:00",
+ "updated_at": "2026-11-02T03:59:11+00:00",
  "source": "SEC EDGAR XBRL companyfacts (10-K/10-Q)",
  "unit": "USD",
  "rows": [
@@ -152,8 +152,8 @@
    "cik": "0001783879",
    "model": "모바일 브로커리지",
    "equity": {
-    "value": 9541000000,
-    "end": "2026-06-30",
+    "value": 10078000000,
+    "end": "2026-09-30",
     "form": "10-Q",
     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
    },
@@ -200,8 +200,8 @@
    "cik": "0001397911",
    "model": "독립 어드바이저 플랫폼",
    "equity": {
-    "value": 5756840000,
-    "end": "2026-06-30",
+    "value": 5812318000,
+    "end": "2026-09-30",
     "form": "10-Q",
     "tag": "StockholdersEquity"
    },

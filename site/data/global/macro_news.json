@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T10:00+09:00",
+ "updated_at": "2026-11-02T12:58+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -15,18 +15,18 @@
     },
     {
      "date": "2026-11-02",
-     "time": "09:19",
-     "title": "코스피 5700 밑으로…개인·외국인 매도세에 하락",
+     "time": "09:47",
+     "title": "코스피 상승 전환…기관 매수, 개인·외국인 매도",
      "src": "머니투데이",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9SNm54S2tDTGZwRURVTjVQc0pkZjVQamdfaWFyVWRPN2h2T242b2kzT1dfekRJWE55TURiLTllVy11aDF6Z3FDdWlyM0RQRU1keE1ZcmZLOGNEdFVGdXBBS2ZPeVd3cUFw0gFuQVVfeXFMT0p1dHNreFVENHJmMVdxUHNsTnVzRE5lZk0wdGZiazBUOXdSVHpNUXpCTzZVLVRzb0VRSm5CWTZOYW5UaXBGRzZWOFlleG8wV1dzNUd3YjV3bUZUcmJxYVl2VmlhQjFNYmpzalBScmc?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TSDNLSi1xYVJiMGhtcGhqWEVKRXo3V3hTcFJSWlVuUXdIWDZqc3hmczRjQ3FTa2otYzJqbmc3Tm1oeG1uZkdPUW8yYXExSnBGcnRYaC16ZUg0X3h1ME80YjY0ellEMXJmamljOERmXzN1UEdyZEHSAXtBVV95cUxQMFR1UkRtc2l1Nm9HWlhKWGFDbDYxOWJmbW02TDA2aG55ZFlpQXEzVktCYlZjR203OVhwSWg2TklvdU5pZzlZZlFvZkRsMWpBc2ZJM3BhekdlMFN1OVBjcnVEVy1wVkdhY2lSX2tKMTVReVhuOEs3WmFyNm8?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-30",
-     "time": "16:22",
-     "title": "美·유럽·日 나란히 동결 … 반도체 호황에 한은만 인상 저울질, '금리 분화' 갈림길",
-     "src": "뉴데일리",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Oc3A0dTZfQ01ydGpOQktPdjN1bi1HcmRNZzlvMXlhOVlCZjEtSlZmbXZNR2kwUTJCNXlYanlrOTRKSi11ZGJIaWJ4MExpNVYxWlJxSjI0Q2RXeGNJaktkLVQwN0x2YVhUOHRRc2QyNXpyOFpXcUdYRXhDUdIBgAFBVV95cUxNbGk5a19MTW1BZzdmSHpRaUFHWVFSSzZiVXFXYkh2MWNXQTdwMDJza21CWl9YVFpxdTZfa01LMnMxUjZXcVhwVy1vQkQ4eGI5U2pjSEZxM0dOSzZsVXg3ZGRVQTdEcjVlcThHTjJoeGs5UmhkbUg1NEhEZHZvRk9mcA?oc=5",
+     "date": "2026-11-02",
+     "time": "09:37",
+     "title": "코스피, 외국인·개인 매도세에 장중 1% 약세",
+     "src": "아시아경제",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8td1FLRkExaUpQYnVCV3lOaFlRMndYYlhWZmFaOHRIOW02MWptM3p6a0t4Z3pxMXBzYlRXcHF5UWdHS2NlWDhCVGw0VEFzUjdOZDVVel9BVTZpeEZDeWNnbGJB?oc=5",
      "priority": false
     }
    ]
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-01",
+     "time": "17:31",
+     "title": "Yen gains against US dollar after Bank of Japan holds rates",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQjdVcE13eERMQzMxaDgzeldZb1RKNWhlT3VWYWRIRXJYb0VSRnEwckk2QlVjaXVrMTVHbURDaDhhaVhncno2bUVjYjVmTTZHcVZYZzhPcnB4bWFCMTJvekpkc1U0Ym1KNnZlMGwtQnU5X0t2dktMT1ZYYmdaMndWOUl6YlMwRW14cnhCTE0wb1h2NDJoMDV0RDlnSjR1eklMZUtiandVT1drVjdkdFlCcnNacXhCZjhjODVYYXhzR2p5RldUMzIzVG9EUWVPX1E?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-10-31",
+     "time": "20:53",
+     "title": "US bonds rally, sending yields to biggest monthly decline since 2023",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMlpxTjRrd0pFbThfU2w3bE90TGQ4bkt0VWZ2bG0zNERPWDhtc21WRmJyZ2RlZWZTcFhoSVBlR0xnWDd3MXNSVFREMTlGbm5IVzlqV2tMYUt0TTBBcWZYanJmV2h6cDFxUkhjS002N3BPaFV0Q3JmaFdiZzB5TmdXN04ybHZPbEY4Z0Y2YXJkank4TFFxN3hDQjhzMEtXS3U0cUpvbDRpTmFMWjgzQy03OUREVXVHUkxsWnlOYUVCTEZkYWZZeGprbjBxOUZUNERl0gHWAUFVX3lxTE1GbjF0T3VCZTFnalZsb2t0UVN0YUZfaGNNdWpnclpjRXRtVXVfZ21sa0ZFWE1VbzVSblNCT21jcllvS3NVdE9TcWZaOU9kUjh4cjNRWE90b1B1d1dkR3M2bGVkRU4tMGVYalJTYWNfNmprZ2NlWlR1dkczOXF4dzJ2R0Naa1RxMnNKSlo5b000OW5LenZrYk1HdnZLQzhTbVR6V19Fc0NEX0lQUTFkQW01TWVrTTNnYXdQcXlrb0UzUkFPUXdBRHVnZ0YzcUlBUjJfZW9zV0E?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-31",
      "time": "04:54",
      "title": "댈러스 연은 총재 \"FOMC 최소 두 차례 금리 인상해야\"",
      "src": "연합인포맥스",
      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wWlhhUlluVGhCRS1paWFBSXdVZnRvQ1Z4M1k2V3B0YTE2aENFSGNCSXhyVkU0dlZ6ZG5QWUp0cjFHLWx2Yjg3dEJncGlXMUYxWmdncVI5QkljSnFXVjdxdXdIc3FwbnFXalJKem4wZ0w?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-31",
-     "time": "01:30",
-     "title": "Fed officials are already saying they’ll need to get back to hiking rates",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQ0hqSXZpT1VZTUNGSkRVSkVaa092QjVSaGt3ZHlpM0F6RENCYlA4U3A4V285MTE0eXp3aFNKNXVjSVVjTEMwbXE1aV95NFJHOFdxMElwWTBsZ05oYjdtWVlmZkFQNzlqMzV2cldpekQxZGVqSTJ6ZXpSc205THRQYdIBhgFBVV95cUxQSU5zQlBqM3NxZWNyWnU3a3NHOEMyNUFZdnh3WW9KOWVDNUh0Q3pIRUdkYzZoZ1lONi00cUF6NmNxM3FGN0ZYYzVoamo1ZHJ1LXBkLUFBVUFBREgtVWVEWFh0NTJnOGQ2T09TUmNpX3dFYjZRS29SSjlFMlk0T25DamNmVWtndw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-30",
-     "time": "23:36",
-     "title": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSzBScVdLTXgycmdGRnZnV0pORERuMjh4NWg3WU9IVkVwQjJKYVEtX3lwWjBrNkZLLTNKYjZ3cjVValhvT1hsbjlxdUJ3ZUtySVAyZ3NPUHhKcElkV1lFVlYtdWJxYnZjR1hLSksxYXl6VmoyWGY2N0ZmY2dqbDlGVWVn0gGHAUFVX3lxTE5wQ2hrNEN6Mi1hNHNfZll0M3ZNWVlsanM4MkR6dlZxTTcxaFU3TnJPeGtBX2daM0hMb1Y0VjVjbFhzRFhCUEROdml6MTZ2bWZmOFltUUNSZkdnTElMaVhVTFdJa01qbFBKMW9uSG1tZWhqLTZlZDl1UXc0cFpWdXU3dkgwTnNMQQ?oc=5",
      "priority": false
     }
    ]
@@ -151,27 +151,27 @@
    "label": "중국·홍콩",
    "items": [
     {
+     "date": "2026-11-02",
+     "time": "10:39",
+     "title": "China's shift to new policy rate signals easier funding conditions",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQR1Y5OGZoNEh2ZzdKN3pfVGlFWG8zT0tUdk9xOXQ2T0JfVlREREdhUWhpaFlTZmJPMV8wZ0h5SUg2YWd1bHA5M3FIaVFBZUdwbG1sbi0xMnNXdDFVNWotcmJTbHpCZWhCV0stcDd2WDFvcTZ6RkxsQ050V2ltZW5UUFgxcUk2ei0xQjROZENtTXdPX1A3ZGJ5RWluMVV5eHdvUThnbVdpb19vaTA0RGR5ZWVyLVg2bVh6Q2c?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-01",
+     "time": "16:03",
+     "title": "Chinese AI Stocks Deflate as Semiconductor Shares Plummet",
+     "src": "조선일보",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOXNfdm52MHJLZ2VHN0xVMjhreXpVRldBQkF5c2FnbUJmaUpPMXhVWVpyVzZmbjFEYXFFTmtEWU9PUWFFTWtyQjVEQnBVTjNURDdqVXhNQmFxSTRBZ3AxaEhEVlQ2azNmVEY3WEJCdTZvbFEzOWtCUjUwQ3lxMHpnTUtacVotUW1X?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-10-31",
      "time": "12:53",
      "title": "China lifts secrecy on new key rate, sets it below old benchmark",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTS1kX21mSmhrWGJhUXZoR0x5QTl3NkVSY3c3QjQzNkhMc2p4WjNmM1FnLUpjeXBhYlRqTmU1ZWQyS1NoblRTZmFkeHNQd19BZDZiQnpjNm5fNHhtaVFRMVZUczlSYVJGb3lBNm1fYjk0QVBWVTA0ZmJnSDc5VGtTSWd4TU53R3RlX0U0UUVFbk5YU1BJdVFHU3JoTU0zdjZjaERqSnJQYjlZRFk?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-31",
-     "time": "12:49",
-     "title": "PBOC Reveals Overnight Rate at 1.25% Before Policy Anchor Shift",
-     "src": "Bloomberg",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV2VqYzFqUFRRckRPOVdEaDVwN3hwZmJwek5RRzV5RE1BUXlhRUUxY1JEUnRJeEljMnNOSUJVQjVWelB1SGdfaTF1emg0TXBSSHdVdHhSZGFJOEJuZVNBM1RiTWdLZkt6MUY3blZyTFNqS3Z0NEM0N0JpRjlpbGxqemxJVzBBTzExRzJSNUdkdW1kT0VsTERwTzFXUkdJODlTT2tINk1YWDVvaU5TTlRnTFVEMA?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-10-30",
-     "time": "22:57",
-     "title": "China's central bank steps up shift toward overnight rate as policy anchor",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPeVdpV3d2UGwyVHFBR2lNS1JNaUxINlpjVXppYjNiSVc2QUtoa3RISFhVcUZFeEppWHlBTmJoRko2dEpJSjNwb2NfVDJMMVp5bGp5VUtBb1ZnYjZ2NXRKUjlwRi0wSmNYblh1TU5iNE5odmtRN09uZ1Ryemx1dzJQYmpsRVpXRS1yQUl5MzRWZVMzSXJvNW03UHBodmZHbm9tMXhwZFFiVXE2ZEpJTi05TVJpWHItRF9zbG9MRmVpSFhtVFVvc3V2TnBFOWExeXVq?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-10-30",
-     "time": "19:19",
-     "title": "Singapore shares fall as chip stocks take a beating; STI down 0.4%",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOV9PbEhndGEtLVdHcmlBbktLeUNIVUxsZTA4TmtURmJ4SUc5SkFYOTQ0NlVEc3I1LTQ1bjM3MGE0YldXY0NQRkI5dzdWdEE5QXJGTFhZcGFDRjk0Yl9Td0M2NTRvdzZ0Q21lRVZhelVKYXBVeExjeVlGMEVBQXliREMxenhUS1VoYVdwZjNyb1c4TEhZMDhHVGl2LVR5UjdWX2ZJYVVHM1BYdWhZa19R?oc=5",
+     "date": "2026-11-02",
+     "time": "11:00",
+     "title": "Singapore stocks beat Wall Street over the last five years | Investing basics explained",
+     "src": "The Straits Times",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWnJaeXc1NmFIREtCblMwY0JoRUR5X0I1V1pZMUVDZzM5MTFVcGxkYUt3OHhYbVJwQXcxWmNoRXUzdGhtWXBKeDNyd1JaeGZ6V1pWV3N3TUpzZDgxWGVmX2RmOFd1MXNiR3ZtVWNqeVNkNnFNNVFNMmdkQ0tqZ2VLcTFlVXZJX3lNOWVGSFhhUWpkOFBLWmhtN1hQN1hMX3Q2VVdjN1JRakk3Uy1tZnJKcUlCdG5GclJyT201WXBKR1I?oc=5",
      "priority": false
     }
    ]

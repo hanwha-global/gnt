@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T09:58+09:00",
+ "updated_at": "2026-11-02T12:56+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -291,15 +291,15 @@
     "src": "investor.id",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHJacC1zUUVxbmVPWUNhUUJUVXNreVVRMnFmVG5nRkx4cDRUTGhOYXZkeTN5MFI1dFItR016UndWTFYwdk1OYU83SzlxZ3lyZ3ZRSXNNdjVsMmtlZS1EbURRTERhVVNPcEhhZkFfY1lraS01VGRhT0VUNWpmY0ljRFMxVmF6YlpaYy1MVGx2Y3JXMXFLc3dPcXlESHlLWjh4WVpNbEZEU1M3YThvWmw2el9CaUJtQ3k3V3dZRzN3TWFMMXZL?oc=5",
     "site": "investor.id",
+    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다"
+    "lang": "id"
    },
    {
     "date": "2026-09-30",
     "title": "Perkuat Inovasi, Mirae Asset Sekuritas Indonesia Raih Penghargaan Ini!",
     "src": "CNBC Indonesia",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3c?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3fSAcsBQVVfeXFMTm9wUS01MEFVX1VUY2FKZm5oT3hFWXA2b1ZtRTZIejFNQVJXRURLbGIxZGFqUlJxOGRveGpQYTBoYVpmZGJDc3NUWGV6dXpvaElrNkFIUHJCRTZSVlVWOWRVMDJJaXhuTmgyamFUVEtTanNCXzJJUFNIWmdpRDFFVF9mYnBWRktjUnY2U2JfZGItVGdzWHNRT1RlT19oWTQ0TmlGQTNsUFFUT1A5VEp5NTBKT3JhRXg5TzJ0ZnhqbGNjXy14LUlOc1dvajQ?oc=5",
     "site": "www.cnbcindonesia.com",
     "foreign": true,
     "lang": "id",
@@ -311,9 +311,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
     "site": "investasi.kontan.co.id",
+    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대"
+    "lang": "id"
    },
    {
     "date": "2026-03-05",
@@ -347,7 +347,7 @@
     "date": "2026-10-28",
     "title": "미래에셋증권 홍콩법인, 자체 기술로 '달러화 디지털 채권' 발행",
     "src": "연합뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPeFN1OEpEdUIwSm5EODlvX2xlVFpTQ05xZjNZVmZyTXI4X2ZVeEVFeEVKMUdjZndoaTN0ZElBTFFmLUZHdDZkd1FYRXczcDNNS1RiTDQ5bmpwUUk?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPeFN1OEpEdUIwSm5EODlvX2xlVFpTQ05xZjNZVmZyTXI4X2ZVeEVFeEVKMUdjZndoaTN0ZElBTFFmLUZHdDZkd1FYRXczcDNNS1RiTDQ5bmpwUUnSAWBBVV95cUxNY3JWdS11ZnpYM2tra1lmVjRXOHVxZmFUOVZPUnlLRVlaR0hHWENnajFKWlFWWnJEa2J6Vlc4NFpkMnRIV3ctVW1ESGhOM1lHckEybkZxcUxQMEJNTThZSWs?oc=5",
     "site": "www.yna.co.kr"
    },
    {
@@ -490,9 +490,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
     "site": "keuangan.kontan.co.id",
+    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요"
+    "lang": "id"
    }
   ],
   "토스증권|미국": [
