@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-01T09:21+09:00",
+ "checked_at": "2026-11-02T10:01+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -165,19 +165,19 @@
      "category": "리스크·규제",
      "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
      "evidence": [
-      "연합뉴스 10/30 '단기 충격' 등 부정 구조 뉴스 4건(최근 30일)",
+      "Nikkei Asia 11/2 보도 등 부정 구조 뉴스 5건(최근 30일)",
       "IDX 1개월 -16.7%, 연초 대비 -41.5%(10/30)"
      ],
      "links": [
       {
+       "label": "Nikkei Asia",
+       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxON3RBdFhybUNtVDJLVTdzUG9IT0NKS0RRdUw0N2lkNlQ1ZU5zNTNTdDhUNDdpZkdFMGRvOVp1U20xdWFnRFhWS3VFbFF6cVZvU1Q5OWxQTDhod1FCWHRxZjlxQ1czNkpFS0VwbUpNOG1mMHhsSEVUZnJ0TFlDVHUtWGIySlhzNU9YemdiZndaOGJGNmxMc285ZmxBbUNnZHRsREJmNE94cXE3c1NGMTB3Ry1RTnpuOHA5ZFpiNFVKNkhDcERjRlQxcA?oc=5",
+       "title": "Indonesian political maneuvers hinder market reforms amid downgrade threats"
+      },
+      {
        "label": "단기 충격",
        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBrWlIzLXFacGdDcktyd1F2N01kWUh1TEowdlVtZjhPMmwteENydlJZaTI1NEMxSUZxbU1yVUpGYUY2cWJjU3dmLUxVOVBqb0Z5bHVfbmlicnZ5RXPSAWBBVV95cUxQaGI5SjZFaEJYVmV0WExabzlLS09SbVZvTmF0ZFo1ekF2WngwOW5JTHVDNjl6cXNneERpelg4RlhnV1JvU3g2M05ETVhWLUh6RTk5TXkydVJienNDZGpWOHQ?oc=5",
        "title": "인니증시 강등경고에 중앙은행 \"단기 충격\"…대통령 동생 \"심각\""
-      },
-      {
-       "label": "MSCI 강등 검토",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU0JYVjJTV1JMXzc0Skk4M2tERW9vX0NCb0RiaE5KQzZiYkVhNjZoRGVyUXJOcGZWYTJ4NnBQUmQ1Tm1UMFRXUWdFZ2RnVlZCbGN6dXY3Q0JsMnRyRVF6VFdyYmU1VnZYNFpzdWZRMnIyQnlTVTFkU0RNN19vRG5EWm5mQ2dxNHc5eTNTWDRzdnJLS0t2QUFGLS1haFRMZzlKdks2anFUOHNSZXc?oc=5",
-       "title": "Prabowo's Brother Warns Rupiah Could Hit 21,000 if MSCI Downgrades Indonesia"
       }
      ],
      "bucket": [
@@ -242,11 +242,11 @@
      ]
     }
    ],
-   "changed_at": "2026-10-31",
+   "changed_at": "2026-11-02",
    "reason": [
-    "새 뉴스: 단기 충격",
-    "지수·환율 급변"
+    "새 뉴스: Nikkei Asia 보도"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R06",
@@ -340,9 +340,21 @@
       "새 뉴스: 단기 충격",
       "지수·환율 급변"
      ]
+    },
+    {
+     "date": "2026-11-02",
+     "fp": "d6c0f46b85fe",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "MKT"
+     ],
+     "reason": [
+      "새 뉴스: Nikkei Asia 보도"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -459,5 +471,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-02"
 }

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-01T09:21+09:00",
+ "updated_at": "2026-11-02T10:00+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -158,6 +158,17 @@
  ],
  "items": [
   {
+   "date": "2026-11-01",
+   "time": "17:12",
+   "title": "미래에셋 이어 토스도 일본 증권사 인수…일본 시장 진출 나선 금융사들",
+   "src": "경향신문",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9USGdDTVdTNUEtX2Mwc0Qxa0stRTB5Tkx6NS1tNTFpUHZXN215MThITGk2ZlEzZjJnYVFkbW9GOEpzTmo5Vl80dzVjbW9zTDFWeHhHOVRDQkJLQmFoMHdz0gFfQVVfeXFMT1RIZ0NNV1M1QS1fYzBzRDFrSy1FMHlOTHo1LW01MWlQdlc3bXkxOEhMaTZmUTNmMmdhUWRtb0Y4SnNOajlWXzR3NWNtb3NMMVZ4eEc5VENCQktCYWgwd3M?oc=5",
+   "site": "www.khan.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
    "date": "2026-10-31",
    "time": "18:00",
    "title": "국내 금융사 일본 공략 속도…미래에셋 이어 토스도 진출",
@@ -247,7 +258,7 @@
    "time": "07:03",
    "title": "\"국내는 좁다\"…해외로 눈 돌리는 증권사, 글로벌 경쟁력은 제각각",
    "src": "데일리안",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wSXRScmtBMWNLTXZOTUJFZlVEb1hiWTJiZXJlQUlnR3pJbDhialhxd3p5VXpOT3JNMnhqV2djbk5GbENhZFJiY184WFo0VjUtMXZVNQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1YQUs2QU1UTzd6RlJDSHV0VUw1T1NVN3VMVE13eFJUZ0xPRllGZEpubW5pazUtUHdnRnlDR3VQejByT3pUQkV2S3B3N0FnMml1UFF3?oc=5",
    "site": "m.dailian.co.kr",
    "firms": []
   },
@@ -311,9 +322,9 @@
    "date": "2026-10-29",
    "time": "17:38",
    "title": "박현주의 영토 개척…日증권사 인수해 리테일 시장 진출",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBqcEJGZFlOeVl5QWVOdC1RQXIwRUpIN3ZsVHhJaWtXN0pDd09xS1M3VXYzeUFNc05sZmFFUi1jYzVmcHlFU3ktLWY1V0Z4UnV6N0E?oc=5",
-   "site": "www.mk.co.kr",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ROTZZbkpJUmdNQTFDNVYwaG5kWjVxakVJN3dUNEdmWEhBT3lrSExIWl9EVWlyQi1PQUpnbFhBQ1FKQ2trYmlvN0xWd3RBc05paGc?oc=5",
+   "site": "stock.mk.co.kr",
    "firms": []
   },
   {
@@ -321,7 +332,7 @@
    "time": "16:58",
    "title": "미래에셋증권, 日 산코증권 인수…글로벌 사업 확장 노린다",
    "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE93SjZFeDdlUFhyaFJPd2stajVYV29YVFUwUExpRXV4ai1NLVVjWDdFd1k0Tm84aWV3SlN1NHFPMmtLb3hjVXN1cTRYdjBXaWxzcklNZkdUMUh2Y2FBRHRoUzVpbmlPcHE30gFuQVVfeXFMT0VPdHhFNkhnRXBUa1FwRThrVW1VSy16MXVReTJwYTFuQVFGYURaekgwUm5kZFRqclFzU2Jrb25hOWVtZnA0clAxTW9jdVNpYkdjbVhIN1ZjUlJVREt3TV9BR1JpNWlMMFVBSVgwYmc?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Ub295a3U2U3YxRGpOSWRDeW9JM0QxZDZtRDBpa2ptTmg4T2hpaVIxZjFjNTdvQTgxZ0JsQmd1d1Nld0p6WkpDM3VIQVc5Y3N3VC0zazF5SVJUenhpVnZ2Y195LUxXX3hIZ0xFSW8tSUtzc2hBN0HSAXtBVV95cUxQeEtBdEdFdEVIQjZwSk00eUtMLTVRdmFDbnBwREdaZkhTRURzSm8wbHN2WV9fVUZpRkJwOG1wVGZ3LUpvb0pNeVB1NThtbUlZb3ZCWHBrUEx2SUNJaGFZZy1TOEd3TVpDVXRCQXB6SDNtd2hkdzdMMlNiRnc?oc=5",
    "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
@@ -479,9 +490,9 @@
    "date": "2026-10-29",
    "time": "07:19",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
-   "site": "stock.mk.co.kr",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
+   "site": "www.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -609,11 +620,11 @@
   },
   {
    "date": "2026-10-23",
-   "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
-   "src": "Tuổi Trẻ",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
-   "site": "tuoitre.vn",
-   "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다",
+   "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
+   "src": "VnExpress",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
+   "site": "vnexpress.net",
+   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -624,11 +635,11 @@
   },
   {
    "date": "2026-10-23",
-   "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
-   "src": "VnExpress",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
-   "site": "vnexpress.net",
-   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
+   "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
+   "src": "Tuổi Trẻ",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
+   "site": "tuoitre.vn",
+   "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -804,17 +815,6 @@
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4aG9QUHhpeFBXVWNlcjEydDJHVGYzWkZnTFpENjNJZ1RLUm5YNm10V1lfYnB0UVh6RGoteTFicVBzU0lHeXhldnVyam5fYno1S056YXZpUnNqWEVZdVoyMEpJXzVkNlB30gFuQVVfeXFMTy0tRVd3Qk5pZThYTENUSTJkZkJuOXFqdnV4YjBTTklRVWtyeE9Wa2U5ZXdKbGVsYk1feG5Za05qYVZ2NXJlZUtnR3JOajJocnVaV28xdEdDNG9IdXR0cnNocjl0SVRSdXF5Z3ZfLUE?oc=5",
    "site": "www.mt.co.kr",
    "firms": []
-  },
-  {
-   "date": "2026-10-01",
-   "time": "16:00",
-   "title": "신한證, 베트남 뿌리내린 10년…IB·리테일 수익 성장 '주목'",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmSnVZNFJIWVllZkR3elQxSG1DcXdvSHlBaVo0TWREbFF3cG14dWlpYTh6OG1RZEYxTnM5WWJ6U044aVVkMzNIczVGTVVIU1QxTlJNZ1VuQjR1RjE4b19oNkpoV1BSMGc10gFuQVVfeXFMTlMtSjhLazFEQ3lOVlgxZ1ZWYmhSMEFXWFNfY2Y5RUdSX1R4NmFpNExEUTg4eGNaTngzQko2Mm1JRDNlVm9YQ0JXVksweWtjSElRd3N5aFEyZFRMbGtWQUhXeE5xUS1GdHd4YUhPNmc?oc=5",
-   "site": "www.mt.co.kr",
-   "firms": [
-    "신한투자증권"
-   ]
   }
  ],
  "errors": []

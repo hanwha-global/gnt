@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-01T09:19+09:00",
+ "updated_at": "2026-11-02T09:58+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,13 +8,13 @@
   "KB증권|베트남": [
    {
     "date": "2026-10-23",
-    "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
-    "src": "Tuổi Trẻ",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
-    "site": "tuoitre.vn",
+    "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
+    "src": "VnExpress",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
+    "site": "vnexpress.net",
     "foreign": true,
     "lang": "vi",
-    "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다"
+    "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대"
    },
    {
     "date": "2026-10-21",
@@ -51,9 +51,9 @@
     "src": "IDX Channel",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOFJyWF9xMHBQeExNYklvWk5EdW1fT2pMLUdNdVp1bl9oZnJZa1dOOTBQbm5KeFRhWnI5T25FekR1Z3dJQ0poUTkyanAxcW9xd2h5NUZCMlBiXzhuVWdRemVyUlN1dllVQjAwMFdDYU4xZWt1NkFhODRDWUw3aHpzcjNhS2xnV0JDeTdZdzEwaTd2a0tPTmlickdDVFVWTnQ2cERuUUJRSWNrbS1tcDNab2N2UlloUQ?oc=5",
     "site": "www.idxchannel.com",
+    "title_ko": "미래에셋 IDX IDX 2억 달러 벌금, KB 발버리 증권, 서면 경고 받다",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "미래에셋 IDX IDX 2억 달러 벌금, KB 발버리 증권, 서면 경고 받다"
+    "lang": "id"
    }
   ],
   "NH투자증권|미국": [
@@ -137,6 +137,14 @@
    }
   ],
   "NH투자증권|홍콩": [
+   {
+    "date": "2025-01-14",
+    "title": "NH투자증권 홍콩법인장에 이윤기 홀세일기획 부장 선임",
+    "src": "연합인포맥스",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKWHFiU1BIRWdPUmlXYmdEaG8zLVhpUVVDT3FxVDd1b3pwNXp3QVhlbmJTZFRzWDJBTklfSkt6V2xFOEltVmx3azBtWUJJclNNdHdZU09Qc3YtN2psT2hGRVRqQkFtWHd1bkoxak9iMl8?oc=5",
+    "site": "news.einfomax.co.kr",
+    "old": true
+   },
    {
     "date": "2022-06-29",
     "title": "[INTERVIEW] NH Investment & Securities accelerating growth in Hong Kong",
@@ -283,9 +291,9 @@
     "src": "investor.id",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHJacC1zUUVxbmVPWUNhUUJUVXNreVVRMnFmVG5nRkx4cDRUTGhOYXZkeTN5MFI1dFItR016UndWTFYwdk1OYU83SzlxZ3lyZ3ZRSXNNdjVsMmtlZS1EbURRTERhVVNPcEhhZkFfY1lraS01VGRhT0VUNWpmY0ljRFMxVmF6YlpaYy1MVGx2Y3JXMXFLc3dPcXlESHlLWjh4WVpNbEZEU1M3YThvWmw2el9CaUJtQ3k3V3dZRzN3TWFMMXZL?oc=5",
     "site": "investor.id",
-    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다"
    },
    {
     "date": "2026-09-30",
@@ -303,9 +311,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
     "site": "investasi.kontan.co.id",
-    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대"
    },
    {
     "date": "2026-03-05",
@@ -329,10 +337,17 @@
   ],
   "미래에셋증권|홍콩": [
    {
+    "date": "2026-10-30",
+    "title": "[단독]미래에셋 홍콩법인 \"내달초 MAPS에 RWA 거래기능 탑재\"",
+    "src": "이데일리",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVWlwS09OaWg0S3ZpazZLU3hMQk44SFN2U29MQUFYNFpaX1BGNjBYZGNFWFB2N1pfQmt6VGFhZHFBQUkzdFhPVXBvSTZ2ZEx1Tjl5eGY5R2R4MllvTGtnYldWQTktMVY3RG9iMHY4eTdRN01XaHJKSlVNX0VXeFhBeA?oc=5",
+    "site": "www.edaily.co.kr"
+   },
+   {
     "date": "2026-10-28",
     "title": "미래에셋증권 홍콩법인, 자체 기술로 '달러화 디지털 채권' 발행",
     "src": "연합뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPeFN1OEpEdUIwSm5EODlvX2xlVFpTQ05xZjNZVmZyTXI4X2ZVeEVFeEVKMUdjZndoaTN0ZElBTFFmLUZHdDZkd1FYRXczcDNNS1RiTDQ5bmpwUUnSAWBBVV95cUxNY3JWdS11ZnpYM2tra1lmVjRXOHVxZmFUOVZPUnlLRVlaR0hHWENnajFKWlFWWnJEa2J6Vlc4NFpkMnRIV3ctVW1ESGhOM1lHckEybkZxcUxQMEJNTThZSWs?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPeFN1OEpEdUIwSm5EODlvX2xlVFpTQ05xZjNZVmZyTXI4X2ZVeEVFeEVKMUdjZndoaTN0ZElBTFFmLUZHdDZkd1FYRXczcDNNS1RiTDQ5bmpwUUk?oc=5",
     "site": "www.yna.co.kr"
    },
    {
@@ -378,6 +393,16 @@
     "foreign": true,
     "lang": "vi",
     "title_ko": "신한증권 VINASTALK - 올인원 증권 투자 및 정보 플랫폼 출시"
+   },
+   {
+    "date": "2025-12-25",
+    "title": "Chứng khoán Shinhan lần đầu ra mắt hệ thống giao dịch trực tuyến chứng chỉ quỹ mở",
+    "src": "VnEconomy",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMTl6emR1NUdqb0NpLTE3TWZTSWhSdzVfbGZzX3hmVzRlOFR0a2NmOENYam1MY0xtV253bjBjbXRxQ3d1N2Q4bGU4bmc2UllhQnVtUTM0aEI1d3NpMlc4SUFzX2Y3Qk1ta1N0cWsyZjg1aWtoN3h1bW1MWUxteGZ4Q0VqczVWTnptcUFKZlpOSE5xZDVmWGhTMFV1Tnl5eEJpM3gtR01IelFQZw?oc=5",
+    "site": "vneconomy.vn",
+    "foreign": true,
+    "lang": "vi",
+    "title_ko": "신한증권 처음으로 개방형 펀드 증서 온라인 거래 시스템을 출시했습니다"
    }
   ],
   "신한투자증권|인도네시아": [
@@ -465,9 +490,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
     "site": "keuangan.kontan.co.id",
-    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요"
    }
   ],
   "토스증권|미국": [
