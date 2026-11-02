@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T00:37:30+00:00",
+ "updated": "2026-11-02T01:11:46+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
      "date": "2026-10-30",
@@ -262,8 +262,17 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
+    {
+     "date": "2026-10-29",
+     "title": "Crypto Task Force Written Input",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTnVrNWozNmVJNDZFamNyQlctVG9zQkJHWkg2ejNpMmxVLW9YREtNcnZSb0dZZjZpYXk0NDFETnlYR1RuWjFmZG9UT0tZZ2VQcUlGRDNYWjF4bUNNZHBxdl81QUpaTXVHdEJ4Y3JMd0IyQVJCMXlhd0pYdXVKM0ZsWkJqck5rN0w2ZHpnVm1B?oc=5",
+     "src": "SEC.gov",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-10-23",
      "title": "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
@@ -301,15 +310,6 @@
      ]
     },
     {
-     "date": "2026-10-20",
-     "title": "Crypto Task Force Written Input",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVzROOFg3WUVONGFiOEtqZGVyd19tYm96eXZLTk9xVFZETzBLLWNIQUt6VWV5R2J0YnhpMXpwZ0lXVzJKblV6U29lbXNVdkZCN0NscHlRQ3FwRXhMaEpZRDlIekZTNDBQUjJkekNxYTB4ajZfcXRkTUZfcjNVbjFYdHJRd3F1bG1JWGNrVENsQzdrS3Z2UHo5TjY5NC1IdDB1UzlsbjJfZk40aEdPbURITlhveE1WODd6Zm5uMmVBVG44TVZiY1FqLTFKZkhaaHZxSmdn?oc=5",
-     "src": "SEC.gov",
-     "topics": [
-      "general"
-     ]
-    },
-    {
      "date": "2026-10-13",
      "title": "Regulation Crypto Asset Transactions and Regulation Crypto Asset Markets",
      "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20888/regulation-crypto-asset-transactions-and-regulation-crypto-asset-markets",
@@ -321,15 +321,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
      "date": "2026-10-17",
@@ -343,11 +343,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
      "date": "2026-10-28",
@@ -361,7 +361,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
      "date": "2026-10-21",
@@ -438,8 +438,17 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
+    {
+     "date": "2026-10-31",
+     "title": "MERIDIAN CAPITAL CRYPTO LTD",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYVduaGtxb040Zmh4eEhLdmdsekNQRUlvTWZleVRUM3hmbDRMLXhieXd1MTFnN19HRXFJT1otb2xXZWpKYmZMRVFJRjlIdkRCUTgyRHdkMEZlbW5xMnI5T0NYejQ4bFFBNTE1dlJLMzZHbWpsSHRXVS1LSjhkQ1hSNG9lSzBlMk0?oc=5",
+     "src": "Find and update company information",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-10-29",
      "title": "Consultation on supervisory expectations for central counterparties seeking to accept tokenised collateral",
@@ -506,7 +515,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-01",
+   "auto_checked": "2026-11-02",
    "items": [
     {
      "date": "2026-10-26",
