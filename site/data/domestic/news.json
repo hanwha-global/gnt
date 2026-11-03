@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-03T12:03+09:00",
+ "updated_at": "2026-11-03T20:07+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -157,6 +157,15 @@
   "fca.org.uk"
  ],
  "items": [
+  {
+   "date": "2026-11-03",
+   "time": "14:50",
+   "title": "온투업·일본 증권사까지 … 토스, 확장 속도만큼 커진 관리 책임",
+   "src": "뉴데일리",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVU52SjFyMmF3OElYYnVTci1JYXB3ODV6cUtTZ3dHLUx1T2g2Zmg1R1pZbmJXVC13T1BCOHpsX3RjOWZUNUZzYWd6Tjd0bzA3VHpBSzZqczBQdjJEa3NuYUhxR2Z2TkxJWndhQllnOG0zNEtGVGlXSXdkYnFLXy1TbNIBgAFBVV95cUxOVU52SjFyMmF3OElYYnVTci1JYXB3ODV6cUtTZ3dHLUx1T2g2Zmg1R1pZbmJXVC13T1BCOHpsX3RjOWZUNUZzYWd6Tjd0bzA3VHpBSzZqczBQdjJEa3NuYUhxR2Z2TkxJWndhQllnOG0zNEtGVGlXSXdkYnFLXy1TbA?oc=5",
+   "site": "biz.newdaily.co.kr",
+   "firms": []
+  },
   {
    "date": "2026-11-02",
    "time": "15:15",
@@ -351,9 +360,9 @@
    "date": "2026-10-29",
    "time": "17:38",
    "title": "박현주의 영토 개척…日증권사 인수해 리테일 시장 진출",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ROTZZbkpJUmdNQTFDNVYwaG5kWjVxakVJN3dUNEdmWEhBT3lrSExIWl9EVWlyQi1PQUpnbFhBQ1FKQ2trYmlvN0xWd3RBc05paGc?oc=5",
-   "site": "stock.mk.co.kr",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1ka19UdTRHZC1OUl9GY3hUencxXzRMZ0VRU3JoU0p3Tm11dnlkZUpZcVVSU1VHZ1QzVXRLV3ZicVo2R0d4OGc?oc=5",
+   "site": "m.mk.co.kr",
    "firms": []
   },
   {
@@ -761,6 +770,17 @@
    ]
   },
   {
+   "date": "2026-10-16",
+   "time": "16:00",
+   "title": "한투증권, 베슬AI와 손잡고 ‘GPU 파이낸싱’ 시장 진출",
+   "src": "글로벌이코노믹",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNeXlGVUZYYUZKblgwQ3JpaE1nZ2FTbjhaaTdkVy1WMzZhNTc5ejJhbFg1eS1LSDY1cXBoQ3FpRERLcnZjQmVLSm5raFRYOWhPNWVhcHVFX0xQb1JUbmJfa21fMmJKUDNTQ2NUaDFfOUp1Tlp6b3I2bzJ6M0hTNlg4Qw?oc=5",
+   "site": "www.g-enews.com",
+   "firms": [
+    "한국투자증권"
+   ]
+  },
+  {
    "date": "2026-10-12",
    "time": "17:28",
    "title": "한화證, 日GI캐피털 지분인수 계약",
@@ -792,31 +812,6 @@
     "미래에셋증권"
    ],
    "foreign": true
-  },
-  {
-   "date": "2026-10-08",
-   "time": "16:00",
-   "title": "키움증권 \"소프트웨어 업계 위기…글로벌 AI 업체와 협력해야\"",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhcnV3dzZQQ1hNZWxUZXU4Ty1yZHptbUZSV240cXgyT1djTXA4SFpwdFNHM1hEQ09WZEU5Yjdfemo3T09PcThabVhXVk04bVdsbkE?oc=5",
-   "firms": [
-    "키움증권"
-   ]
-  },
-  {
-   "date": "2026-10-08",
-   "title": "Mirae Asset Sekuritas Perkuat Keamanan Digital melalui Edukasi Karyawan, Proses, dan Teknologi",
-   "src": "investor.id",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHJacC1zUUVxbmVPWUNhUUJUVXNreVVRMnFmVG5nRkx4cDRUTGhOYXZkeTN5MFI1dFItR016UndWTFYwdk1OYU83SzlxZ3lyZ3ZRSXNNdjVsMmtlZS1EbURRTERhVVNPcEhhZkFfY1lraS01VGRhT0VUNWpmY0ljRFMxVmF6YlpaYy1MVGx2Y3JXMXFLc3dPcXlESHlLWjh4WVpNbEZEU1M3YThvWmw2el9CaUJtQ3k3V3dZRzN3TWFMMXZL?oc=5",
-   "site": "investor.id",
-   "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다",
-   "hub": "미래에셋증권|인도네시아",
-   "time": "",
-   "firms": [
-    "미래에셋증권"
-   ],
-   "foreign": true,
-   "lang": "id"
   }
  ],
  "errors": []
