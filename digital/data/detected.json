@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T01:11:46+00:00",
+ "updated": "2026-11-03T03:16:13+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,8 +66,27 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
+    {
+     "date": "2026-11-03",
+     "title": "(보도설명) 해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이 아닙니다.",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYVlOZmpNWVFPejBjRWpJZzU4X3FCcVpnTDNoVGEwM0tnY1MzNGFDOENxcHN2V0RfOXpNTUlRRUdDNkg3dFBTMW15NzBDak1BNW9wRlBDdkJsZlhPdmZLZURIMFJWWmgtdW9LdE5RYXIzdHlnS2xZTUdhTUJmREQ0WngyV1JZOFBEZWsyWmRTZw?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp",
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-11-02",
+     "title": "글로벌 해킹 위협에 대비한 국내 가상자산사업자의 사고대응력 제고를 위해 긴밀하고 신속하게",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOWY2d1F4ZHpaM3lGdjF2RVpyVzlwM3RyN2l1M0czY096U21mSl96dHl5R1UydHFKcllSSGdSNnZMRzliVXJNQ3hmZ1BXMGFLVjRNc19TVlNZYlFiOEx4am9GM3ktSjBFOG1vTkxyRU9neEo2X195bTVmVUhFaGMxNDRyMENFei1iRmNnRmJR?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "vasp"
+     ]
+    },
     {
      "date": "2026-10-30",
      "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행",
@@ -89,7 +108,7 @@
     {
      "date": "2026-10-28",
      "title": "주식 판 돈, 왜 이틀 뒤에 나올까? 토큰증권이 바꿀 결제",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOM2ZFWnFCS01YZ3dJX0tyWmtGTmhzQ1N0bXJEclpVTUN4T0tRTkp5V2N4MnJ3VWNGUTh1SHJzNTBIWGRJeHBobFYxeTA5bXRDZXFxazlfOWE0T19LYVQwNmFHNTd0azhSejRRcXN5V1lIRGZtbHc2YlVwcGFqQUtEeVdn?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9vYkRTVDB4elNhUy1ZLVlnNk96MVYzV2lyN1FwRndTdVV4Z0VRelNtVHdmNzI2bWNoLS1MQXJnVW14S3Q1TVQ5T3FsSDRoYWlFRVgwRzVLZV9HZk5aSl8yU1k2dVg?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "sto"
@@ -262,7 +281,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-10-29",
@@ -321,15 +340,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-10-17",
@@ -343,11 +362,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-10-28",
@@ -361,7 +380,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-10-21",
@@ -438,13 +457,22 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-10-31",
      "title": "MERIDIAN CAPITAL CRYPTO LTD",
      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYVduaGtxb040Zmh4eEhLdmdsekNQRUlvTWZleVRUM3hmbDRMLXhieXd1MTFnN19HRXFJT1otb2xXZWpKYmZMRVFJRjlIdkRCUTgyRHdkMEZlbW5xMnI5T0NYejQ4bFFBNTE1dlJLMzZHbWpsSHRXVS1LSjhkQ1hSNG9lSzBlMk0?oc=5",
      "src": "Find and update company information",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-10-29",
+     "title": "FCA stops HTX's crypto promotions",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUW9PTjNXZUFlWHcwSnhWNW5veWFtRUc3blh5aUx1X3dRRWJNdDBpMUNhWWN3MGgtM2dOdHlCbFZzYjVqT19fZmpVS3RnaTktM1EwemMxbEZzZHZsdDc1YXl0dDdTVWY5OFlWQlRYM0gxdlRab3lnblVOZnA1ODFLaw?oc=5",
+     "src": "Financial Conduct Authority | FCA",
      "topics": [
       "general"
      ]
@@ -459,12 +487,12 @@
      ]
     },
     {
-     "date": "2026-10-29",
-     "title": "FCA stops HTX's crypto promotions",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUW9PTjNXZUFlWHcwSnhWNW5veWFtRUc3blh5aUx1X3dRRWJNdDBpMUNhWWN3MGgtM2dOdHlCbFZzYjVqT19fZmpVS3RnaTktM1EwemMxbEZzZHZsdDc1YXl0dDdTVWY5OFlWQlRYM0gxdlRab3lnblVOZnA1ODFLaw?oc=5",
-     "src": "Financial Conduct Authority | FCA",
+     "date": "2026-10-28",
+     "title": "Taxation of stablecoins",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdEpTWkM3RjNEdG5DTUp0S2ItWERQcTlQczZjSlowZmFVNngtRGU0eGZvOGNqM0R3Qk5sOVZreENOcEwzSVdWSmRJZE5vNE9oeGFuVkgxV0dzVnhDTk91MzJ1YURoVDhEeE91Y1A3cDhPbklzenhLX2UxUjE1MGRTeWZBLWlIbmQzZzZYNWJvbzdqYUlEMi1HZk95UQ?oc=5",
+     "src": "GOV.UK",
      "topics": [
-      "general"
+      "stable"
      ]
     },
     {
@@ -515,8 +543,44 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
+    {
+     "date": "2026-11-02",
+     "title": "LegCo to consider Inland Revenue (Amendment) (Crypto-Asset Reporting Framework and Amended Common Reporting Standard) Bill 2026",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5CV3dKaU1zdy1TRTJ3QkRsSEZHOXY5OXVKNEQtQ3A0NmptNTd4MjhadjA2MjR2amxhM0ZQemhRMkNIdndCeWJVdzNHMEJqYV9iVE14bklYQkR5T19objZsNGtfVkhFdFlhRWZRSTYzclFfdw?oc=5",
+     "src": "www.info.gov.hk",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-11-02",
+     "title": "HKMA advances Project Ensemble pilot phase to 24/7 settlement in tokenised Central Bank Money",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPLXhsT2lKcHBPRGpPU2xxbm5Id2NVdVJzZW5Zb2N0MnVQc2x3Sk9XUGJfVGpqalU4RTNxZWtnREd3RHdqUWhwM2Q1TVlla1lLcTdZRzlsWGxhXzlKVlZmLVZSNEU5LUxqaEZERjlyd2J2WEh6V3U4ZGpmMGxXWndWamdXZw?oc=5",
+     "src": "Hong Kong Monetary Authority",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-11-02",
+     "title": "From Tracks to Traffic: Scaling Tokenisation in Hong Kong’s Capital Markets",
+     "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNZW9adFdpNXhaLXdYM2VmRnE4bmtHNVVXdWVydm5IOVBMWVhwZ2tkaERhc0NSMC1JMEItbHRQY2tlNDlMQVJjd3BrLVFGRnUzWFRvRXBqY2F1VFY3Z0IyUVlKOUZ5cWd5VmtHanoxSzJOcTNKejZ1Z0d5TTJqZWhJd3AtSEtnMFlGMkZ3bVNTbENmdG56T3JLZVNBdXIwSncwRFFVYVVMa1BQbEkwWDBWdS1EdEwyOUgtZjBaVHlremlwbERRU2VjYVNuNUJwVzMxRWpTODVRdDZ0cnJ1eTh3cmtNOC11VDJlR2xhczVPdVFCWGJMaldtY1lFLWE2cFpLUGxlVE1pQWIyakp4cmIzMkg4YXNRNUZaTUVVcg?oc=5",
+     "src": "Securities & Futures Commission of Hong Kong",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-11-02",
+     "title": "HKMA advances Project Ensemble pilot phase to 24x7 settlement in tokenised Central Bank Money",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8wSlVhbTRydkhmYTVVdHhNSDVOcDJKWVN3bndnQkJLajlqb0Y1a3ViU29Nd3NySlNHQVlwNTJyYUtiYkEyT1dJNklIX3NOYWw4QU9nX2s2dU1nb2Z3RF9Iai10cVVpdkVjMzIzZnBtQ3dTZw?oc=5",
+     "src": "www.info.gov.hk",
+     "topics": [
+      "sto"
+     ]
+    },
     {
      "date": "2026-10-26",
      "title": "SFC approves first-ever secondary trading of tokenised public funds",
