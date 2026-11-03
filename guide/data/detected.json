@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T01:27:12+00:00",
+ "updated": "2026-11-03T03:26:43+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,15 +66,15 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-10-18",
@@ -85,7 +85,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-10-20",
@@ -102,18 +102,18 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
+    {
+     "date": "2026-11-02",
+     "title": "Financial activity licenses | Service Details | Services | Capital...",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
+     "src": "sca.gov.ae"
+    },
     {
      "date": "2026-10-31",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
-     "src": "sca.gov.ae"
-    },
-    {
-     "date": "2026-10-29",
-     "title": "Financial activity licenses | Service Details | Services | Capital...",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
      "src": "sca.gov.ae"
     },
     {
@@ -125,7 +125,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-10-30",
@@ -142,11 +142,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
     {
      "date": "2026-11-01",
@@ -193,24 +193,30 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": [
+    {
+     "date": "2026-11-02",
+     "title": "MICHIGAN CHAUFFEUR LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdVk4SUF4ZEp5VWVzeDdKOW5WUmR2YnpJUVdMM3p6a3lXT0pEVDQwUmg4VVh3WVRmZktZcWdZRy1ETDlnb25rRnAxNUZ0ZGdvVzdHM2pybm1ZWFNuMHN1Z3I5WDRjQTBGamFCT2JQYmpSUV9XdGFUTWU5a0hqcHlYc1FOZGJkRC02al9iVg?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-10-31",
      "title": "MN DRIVERS LICENSE TEST STUDY GUIDE VIETNAMESE",
@@ -286,11 +292,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-02",
+   "auto_checked": "2026-11-03",
    "items": []
   }
  }
