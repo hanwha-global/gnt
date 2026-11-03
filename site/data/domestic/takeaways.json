@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-02T10:01+09:00",
+ "checked_at": "2026-11-03T12:03+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -246,7 +246,6 @@
    "reason": [
     "새 뉴스: Nikkei Asia 보도"
    ],
-   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R06",
@@ -354,7 +353,8 @@
       "새 뉴스: Nikkei Asia 보도"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   },
   "SG": {
    "country": "싱가포르",

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T12:56+09:00",
+ "updated_at": "2026-11-03T12:01+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -39,9 +39,9 @@
     "src": "Thời báo Tài chính Việt Nam",
     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUDczWl9KdldYaHl1WjZ1MElTTjFVbm1xVVZud01fX0RSeF9LLUtGXzZlUDFVMHlZTllZcXVVekdhQnd6MFdBbWpiRnJTM1JZUkNvc0htSzlEQ3RZNmNuWHlJRG9IMFItTjU2T1BwXzh0dVpFMmdQR3pyY0k4RWRSeklnVjF1NHZUTVdNMEpJZllXVUlROGx5cUtISkZyaG92UG1PcW9TUUhnNXFXXzlqQjkyMUJZTUlrQTlfVHZOUm9CWGV1dXpKeW1B?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
+    "title_ko": "대출 대출 대출은 거의 8조 9,000억 VND로 증가했으며, KB 증권 베트남은 이자가 15% 이상 증가했다고 보고했습니다",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "대출 대출 대출은 거의 8조 9,000억 VND로 증가했으며, KB 증권 베트남은 이자가 15% 이상 증가했다고 보고했습니다"
+    "lang": "vi"
    }
   ],
   "KB증권|인도네시아": [
@@ -424,6 +424,16 @@
     "title_ko": "IPO 인수 프로필 및 실적 신한증권"
    }
   ],
+  "신한투자증권|홍콩": [
+   {
+    "date": "2023-11-15",
+    "title": "신한투자증권, 홍콩 법인 해외 선순위 인수금융 셀다운 완료",
+    "src": "아시아경제",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qVlBqaWtjOVpwNnlGLUlUTmZSRVZReC1PQWZ0WDNZcS1haWZ0dVRJMnRjc0k5eHdDLVcyckZ3UTl1WUhlMVdYSGRSZTFTWjNuNEEwRjh5elBGOW9JbjBiem04QUhIRGx1SV84Sw?oc=5",
+    "site": "www.asiae.co.kr",
+    "old": true
+   }
+  ],
   "키움증권|미국": [
    {
     "date": "2026-08-15",
@@ -529,6 +539,15 @@
     "src": "연합인포맥스",
     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtQktmRy0tRFBKTXFCV2hPRWFFaks4dXhmRDdydWhyZjR6QkpjNkxUaTBWUnBHQi1OWm9UV1lGNEhGUW9KZFJ4NmtRa1NGQzZ0aDE2Ykd0WDM0QWJDS285Q2ZkNTVBQko4ZTRBMW9Mb3o?oc=5",
     "site": "news.einfomax.co.kr"
+   }
+  ],
+  "하나증권|미국": [
+   {
+    "date": "2026-09-17",
+    "title": "하나증권 \"포스코인터, 美가스전 인수로 연간 영업익 1천억 전망\"",
+    "src": "연합뉴스",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0NEgtUTlta004ZkxsTFFvcHFoNDZxWElxcW1kM0czZ01oX0dqMjl4UmZXRVZadlljS1ZHUVVUeDJIclhQcGJpaExTM0IxR2ltZEtQSXBkdmQ0QnPSAWBBVV95cUxPMDJGR2xnWHZQdm5yTVV2endhdXg3TmZhdGFFT1NBSXN1bEZMS3Zxemh1bnFfTXdwUlpFSjhZbVlYbDFPTVZxUDJhSkpUNmJpaTU0UDZZTHEyRTNsT0ZxdG4?oc=5",
+    "site": "www.yna.co.kr"
    }
   ],
   "하나증권|베트남": [

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-03T03:38+09:00",
+ "updated_at": "2026-11-03T12:03+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -369,6 +369,17 @@
   },
   {
    "date": "2026-10-29",
+   "time": "16:33",
+   "title": "미래에셋증권, 日 산코증권 인수…현지 리테일 사업까지 확장",
+   "src": "동아일보",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GYUJ1cmpoYmNVUWU0RzB1QjRMR3prQ2w1LUZQUUh4aHVOS1Y1R1d3bVF2ZFNUUk1uZ2RHR1U5NEZVd05DeXBqMGZhTmg1M19OVDhoRDNGVGNESkJiOVN2YmFUWTBDd9IBZkFVX3lxTE9GYUJ1cmpoYmNVUWU0RzB1QjRMR3prQ2w1LUZQUUh4aHVOS1Y1R1d3bVF2ZFNUUk1uZ2RHR1U5NEZVd05DeXBqMGZhTmg1M19OVDhoRDNGVGNESkJiOVN2YmFUWTBDdw?oc=5",
+   "site": "www.donga.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
    "time": "15:29",
    "title": "미래에셋증권, 일본 산코증권 인수…“일본 사업 기반 확보”",
    "src": "경향신문",
@@ -443,8 +454,8 @@
    "time": "10:10",
    "title": "미래에셋, 日산코증권 인수…현지 시장 공략 본격화",
    "src": "데일리안",
-   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxONXRXbjE2RVBSS0kyNXk0VTNCX21oanp6SlFTZ1ctSDVQdExyTm1za2twY1FIRUpfZVdsVzBUTUx1NnRkOHR0aG95NnRLR3BOY3ljNlU2S2JSbWlHOUEzSGV2N2hyMThtRlU5T3NxeXVMXzdjdGlHWWYzbGtzYkExTElFOXhpdTNZbU45bE1aVW9lT29LMUVRUm9JNjd6ZUVfb01qRENNYnhWczdmODQyeUExVXBySF9meWdaSUpvYjhFQkdVVDkycWdjaFJtYjBOZWh6SG5EVlBJOElBWVd3RlNTazQ2VTFVNFRLTmdwdE82RmExNXFteWJuRW12bDE4Q2lNSERRaVVQZXMwOXRaME5wY2liQzRYR210Uy1CVjd6dE0?oc=5",
-   "site": "www.dailian.co.kr",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VWkdud0l0VFplRVRTSUt2Mm9haTY3bXVUSG5HWkM5VnJqU3JDUjVTNHFhWHhwS1c3akg3YzVra1B6Wk5fQWZOYVBMdWM2YTEycWxqUA?oc=5",
+   "site": "m.dailian.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -806,17 +817,6 @@
    ],
    "foreign": true,
    "lang": "id"
-  },
-  {
-   "date": "2026-10-07",
-   "time": "16:00",
-   "title": "한투, 글로벌 퀀트 운용사 ‘AQR’과 맞손… 해외 대체투자 공략",
-   "src": "서울경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1peEtEXzd3Y1FnbUV4cXlZaFBDb1Bwcm44a0ZTOXhnMTJnaUt3SUplMHJZVVhjLWhFQ21abmlsXzJ2aElQaU5wcG9aV2F3V3VUOFHSAVNBVV95cUxNbzRDYWJGYWhfTzUxUENyUEMtd1YwSXdpRVJPdGtjeUQ3ZjBIWVlnYkZlQmRxZGZCbjhSemd1Rmt1dHp1eXpNekRGYkQ1aTloMGdTdw?oc=5",
-   "site": "www.sedaily.com",
-   "firms": [
-    "한국투자증권"
-   ]
   }
  ],
  "errors": []

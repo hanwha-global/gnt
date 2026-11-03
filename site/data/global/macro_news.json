@@ -1,32 +1,32 @@
 {
- "updated_at": "2026-11-03T03:38+09:00",
+ "updated_at": "2026-11-03T12:03+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
     {
+     "date": "2026-11-03",
+     "time": "10:01",
+     "title": "“삼겹살 한번 먹기도 무섭다” 물가 여전히 높아…한은 기준금리 인상으로 더 기운다 [머니뭐니]",
+     "src": "헤럴드경제",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KU1k0UHBJWWgtOVJISEJOdUp0YXVJX0ItMXlHYWpVVnVPajBBLVZsVDcybFBmZ1lrQWJsa0ZIMzRKRmxsZ1pwRHVwNzhuRTZ1Vko4MHBB?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-03",
+     "time": "09:00",
+     "title": "외국인 매도에 흔들리는 코스피…김영구 대표가 포착한 새로운 기회는?",
+     "src": "아시아경제",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RQmtNRy1wNVBMZkpILU01WWMtVzFrUkFoSkM1MGVhVHZYZUxpX3lxRk1aem5ZX2E2RDZlUnBQeTdzcDltNlBLc0p5WnZ5QVpZclNwdm0tSmtuLVZSZ1pobg?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-02",
      "time": "09:55",
      "title": "[포토] 코스피 상승 전환…기관 매수, 개인·외국인 매도",
      "src": "아시아경제",
      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5xZGdSQThrZkk5Y2pxSTMwS0pBeFJwYzZtNTBXanJveFFxaHJZTnVxWklLVTVIMDkwSW5GdWhpVE1QUVVBYlloT0VGSW1jX2N3RU5TRnhYU3djMnVMM3VCdw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-02",
-     "time": "09:47",
-     "title": "코스피 상승 전환…기관 매수, 개인·외국인 매도",
-     "src": "머니투데이",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TSDNLSi1xYVJiMGhtcGhqWEVKRXo3V3hTcFJSWlVuUXdIWDZqc3hmczRjQ3FTa2otYzJqbmc3Tm1oeG1uZkdPUW8yYXExSnBGcnRYaC16ZUg0X3h1ME80YjY0ellEMXJmamljOERmXzN1UEdyZEHSAXtBVV95cUxQMFR1UkRtc2l1Nm9HWlhKWGFDbDYxOWJmbW02TDA2aG55ZFlpQXEzVktCYlZjR203OVhwSWg2TklvdU5pZzlZZlFvZkRsMWpBc2ZJM3BhekdlMFN1OVBjcnVEVy1wVkdhY2lSX2tKMTVReVhuOEs3WmFyNm8?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-02",
-     "time": "09:37",
-     "title": "코스피, 외국인·개인 매도세에 장중 1% 약세",
-     "src": "아시아경제",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8td1FLRkExaUpQYnVCV3lOaFlRMndYYlhWZmFaOHRIOW02MWptM3p6a0t4Z3pxMXBzYlRXcHF5UWdHS2NlWDhCVGw0VEFzUjdOZDVVel9BVTZpeEZDeWNnbGJB?oc=5",
      "priority": false
     }
    ]
@@ -64,27 +64,27 @@
    "label": "인도네시아",
    "items": [
     {
+     "date": "2026-11-03",
+     "time": "09:04",
+     "title": "Franklin Templeton CEO Hopes Indonesia Changes on MSCI Warning",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZWltTkd5a2E4QTVRaEdZbUwtZm8wYWk5RWx5TGx3WkpRZ3BMOWNmellJX3pmWHE2MkZhSlJkVlh1azE1UmQ2ZGNfeFloVDJuS2FKSmpfTEFYdWU3WDFEbmZKMUNLM1RGMlBDa0s0OFJCYjFGWEMzN3NfdHRZRmxxU20tZFVoeGZ3N1NSQWg5R2ZUWGVwbVBzVmFObU42UlNZWnU0ZXdKWHhfU0lTNTNWeXl1VQ?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-11-03",
+     "time": "06:10",
+     "title": "주가 5만% 상승? 인도네시아 증시 무너뜨린 ‘MSCI 트레이드’",
+     "src": "서울경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1rSi13N0ExVVJnbFhXZXB6WEs5Zzh4UE5sR3VVcFVDcnpZQWR2VHBLekFQS1VselNkMWgxNWlpTjMwWXl6Q3IxMTBZQXZnWTI5cGfSAVNBVV95cUxOMVJyX2xMcHA2Y3B4THJ0bHpRNFB3OW94N3UxSXpWdnZvNGwtaDRRcm14UC02eDY5M3J3Rk0zaHd2TlFLVC1NTFd2aTdqU01PWlNqVQ?oc=5",
+     "priority": true
+    },
+    {
      "date": "2026-11-02",
      "time": "07:00",
      "title": "Wash Trades and 5,000% Gains: Inside Indonesia’s MSCI Hustle",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQXd1UzBJS1FqSmpBdEtDMm9LUzRzdnlZWXFJTTBhVV9NN3FRMHVrUHV0ci01V2E2SV8tSW54N1B4MFNZZXRoNW4zR096bWlpcXlJOGdsd0tPSWVySjdHeHZLanNoSG1RUDNuNG1KbDJualJjY2o5WG5jbmxwQ3NTSTUzQW9oaTA5UGM0by03WW4zeHpqM0JGSDFaZFNKdndDWjJmZmtRMWRjRFk2eG4zdGYtY2E?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-02",
-     "time": "06:00",
-     "title": "Indonesian political maneuvers hinder market reforms amid downgrade threats",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxON3RBdFhybUNtVDJLVTdzUG9IT0NKS0RRdUw0N2lkNlQ1ZU5zNTNTdDhUNDdpZkdFMGRvOVp1U20xdWFnRFhWS3VFbFF6cVZvU1Q5OWxQTDhod1FCWHRxZjlxQ1czNkpFS0VwbUpNOG1mMHhsSEVUZnJ0TFlDVHUtWGIySlhzNU9YemdiZndaOGJGNmxMc285ZmxBbUNnZHRsREJmNE94cXE3c1NGMTB3Ry1RTnpuOHA5ZFpiNFVKNkhDcERjRlQxcA?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-30",
-     "time": "19:07",
-     "title": "Jakarta Stocks Lose 41 Points on Global Risks, MSCI Uncertainty",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTWZsSnVhLWplc0ZaX3ZNbVNuQW1KZ19SVFp4b3ZGZDNTd1lJUmk1Wld1TzItUHJEZXZlVnh6emIzSEUyN05wM1phVFlsNDlrcGstOWl4MHNCWUtHVEFscHBHSWI0Z0NrOE5wcnM4RnlQeGJKTEtrQzJNZWI2a2NIbVBYMlhXbDJOT252Z2hzU2dHeUs2Vm9LbzA4NA?oc=5",
      "priority": true
     }
    ]
