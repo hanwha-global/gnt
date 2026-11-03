@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-03T20:07+09:00",
+ "updated_at": "2026-11-04T01:24+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -23,10 +23,10 @@
     },
     {
      "date": "2026-11-03",
-     "time": "10:01",
-     "title": "“삼겹살 한번 먹기도 무섭다” 물가 여전히 높아…한은 기준금리 인상으로 더 기운다 [머니뭐니]",
-     "src": "헤럴드경제",
-     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KU1k0UHBJWWgtOVJISEJOdUp0YXVJX0ItMXlHYWpVVnVPajBBLVZsVDcybFBmZ1lrQWJsa0ZIMzRKRmxsZ1pwRHVwNzhuRTZ1Vko4MHBB?oc=5",
+     "time": "15:10",
+     "title": "물가 둔화에도 '11월 금리인상' 전망…긴축 고삐 못 푸는 한은",
+     "src": "이데일리",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSDlGdnlrNFk4X2p0aXpSa3BsWnJvbEJWNDh4Z2tXaDhfa0dfU1dKeXRHSGxncUtvLXQ3enFUTlVVcl9rckprLWlOZXZsRWtjTWpZMHpLZmVxeUtLV2UxQU1kV2tSNUlfTTR1ZmVQR3cwaUxXdXllalVJNTFpTW0zWQ?oc=5",
      "priority": false
     }
    ]
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-04",
+     "time": "00:48",
+     "title": "Fed Chair Kevin Warsh's New Plan Could Change How Often US Borrowers See Interest Rate Relief",
+     "src": "International Business Times UK",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQUJ0RUV6QzBUVksxNDFkQzhob3RZd0FYWlVRcUhBMkl5VmJsRVpaZWREOEQ4YzM1N1ZPc19HNHlBWkdUTkhnSWFXVExrQjhncmtqNTJ4dHJmcktHVFRmbUg3S2VDNFFCalZZUTdMSkpHZEcxeEFZM19WSGpNNTNNdA?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-03",
-     "time": "01:57",
-     "title": "Fed will vote on rates less often. What that could mean for borrowers",
+     "time": "18:51",
+     "title": "Treasury yields rise as investors weigh midterm vote, jobs data and Iran tensions",
      "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQM2s1TjF5cEFpQnNoNk56UU1ILW12OWJpWjQ4ellNWUdjeFQwN0c3TGh3OEtLdk5sVDJHWHlISEhyZG9qS0lXSndiX2xpQ2FXcUQ2Y0V3emt3cTVLRnVqeTl3LTdFa01WTHBMMV9DWlViRExVQWMyWTZSVjUwV2V3UDBR0gGHAUFVX3lxTE9Zcm9XMks4V2g5TmdoOWVIR0Q3VGVwM2pmVk9EbVZVb1N2YlBNZ3RsSkhkdEUxVFROd3NReGxUSm1Ga3dvWVl4eXpsOG5iSFdMUFN1N0dHZFdBZ1hXZURzMmdyWGcyM2RrVUdHa21wcS1nWWNYXzJmc2xyTnBpWjdwZkM4ZzdFYw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TM0lMaGtzaDFiQWsxYWh1Tm1pWnZ1c1FlSzF6OXFsUXVnV0s2RDM0aVFQVEY5Z0hMTHZnV1VER0RXZ2NoNzJzaEhYd1NILXNnVHJPYTdnMGxwWENQbkJyNmlveWkzREg0cWcwSWxB0gFzQVVfeXFMTmphanNOR2U3amR0WWtFZVg4b2p3Q0x6d294TW9Iam0wWGZtTFJMNndXUWE4TURRbWlieS1FaE5TN2dLbmgydk9JZUYzSVpHLTFqclFXSThuTXdzNkxkeTJLQVVTcE1wOVlRSl9qLTRZTG1lbw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-02",
-     "time": "18:27",
-     "title": "Treasury yields are mixed as oil prices tumble ahead of the midterms",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zeUV1S0FMQzdjaTU2S0djZmVVMjNSZ0hKMGdGdHpjU1p3NEs0ckRaNjJlemVySWtTeWZGMkNraWVmR1F5Y3RjUHhxZkxiRlpRXy1UY1VTYm9fWm5WTzhjRDlWOENzazhrWGhkZW130gFzQVVfeXFMUDNESWlyVGRXTEFHaHJxSFp1YXNkeWlQNkk2cXU4eG9maHROb3lZdzhMRzRJOWptcGF4bjZNZzlkTTE0cERiQ25vMGh1MUpvRGFHd3pMaE94N2dCcENocHJ3QlhVLWVlM1dpemVmV2QtWWhidw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-02",
-     "time": "18:27",
-     "title": "Treasury yields mixed as oil prices tumble ahead of the midterms",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zeUV1S0FMQzdjaTU2S0djZmVVMjNSZ0hKMGdGdHpjU1p3NEs0ckRaNjJlemVySWtTeWZGMkNraWVmR1F5Y3RjUHhxZkxiRlpRXy1UY1VTYm9fWm5WTzhjRDlWOENzazhrWGhkZW130gFzQVVfeXFMUDNESWlyVGRXTEFHaHJxSFp1YXNkeWlQNkk2cXU4eG9maHROb3lZdzhMRzRJOWptcGF4bjZNZzlkTTE0cERiQ25vMGh1MUpvRGFHd3pMaE94N2dCcENocHJ3QlhVLWVlM1dpemVmV2QtWWhidw?oc=5",
+     "date": "2026-11-03",
+     "time": "07:29",
+     "title": "Why are 10-year Treasury note, yield on 30-year bond down ahead of November 3 Election Day after hitting h",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOazJnc2JjNXF3SDN2NHhBYXpHelVlSmlJcWhEcHdUYlpINEJtZXo5SUszei1SanhXOC1Yb2ZBZGdmM0ZXdFl1ZnFYb0w5Qm82UTltMHVnaUtoOHlCVkc3OXB3WGh3SGxJMVBDcHg0NVY5ZlRtalBXbEZabS1BU3VfTEhveUVjZEU1VjIwcEdxWDdpcjFoXzBNMUhXUVVhOWM2cVBXeHljb29IeXNqaDNHVzV0RHB6ZlJhZWlIdlh2cURBRDlYaDJRdkdiWk02LWV4dEw4Y1hBMjdkZDM2NS1sTnFFTHMzQTI3WFNudE5lb0JSMEdpWTkxa3pCUkFVOVZPR3daaXhDZnRnaERMano3ZXdEOVhPSTFtMkNaWlI0TWcyc1Fib1RaVVhDWmh5Y0lmOHJrZmt1LWUycmpKVlZJ0gHEAkFVX3lxTE0zUENHeTFvb1NDNUhiYTdLaG9jdGF1Y2pJWGpiY1lkdV9YbVFxbG9wcTNybmRwc3RaOFNJOWFQUGlZZXRhWjV3eVpFc0NNdGJsYktlRlhnM1VEVXFFTjVoQ2xCYnFSZU1DbnRLMFlYUWNhZU1ZTUxSbE5pYTk3d0Z3THBkaHk1UWtjVVJxbXJDeTVHSFhzMGI1YU1Cczc5TEtDN21HeUJ4VkJ5LVluX1RxZ0V4WWV4VGoxenEwT0JWRkJKemhsSmljMFBSTU1Yd0htTG9JZHdrcXFGSDFfbmI0ajd6ZGVlSnU5VnA0aUhlMUU5TmJsWGJ0cjdlN3hCMHVDMm5NMzEtSEthYTJCMUl5bFRwNkRwR1A2UkxlT2d2TlNIaTJOaEVLdnh6cWhRYU8xVHZpVE9PWWZoSkZlNlNSay16QQ?oc=5",
      "priority": false
     }
    ]
@@ -83,7 +83,7 @@
      "date": "2026-11-03",
      "time": "09:04",
      "title": "Franklin Templeton CEO Hopes Indonesia Changes on MSCI Warning",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZWltTkd5a2E4QTVRaEdZbUwtZm8wYWk5RWx5TGx3WkpRZ3BMOWNmellJX3pmWHE2MkZhSlJkVlh1azE1UmQ2ZGNfeFloVDJuS2FKSmpfTEFYdWU3WDFEbmZKMUNLM1RGMlBDa0s0OFJCYjFGWEMzN3NfdHRZRmxxU20tZFVoeGZ3N1NSQWg5R2ZUWGVwbVBzVmFObU42UlNZWnU0ZXdKWHhfU0lTNTNWeXl1VQ?oc=5",
      "priority": true
     }
@@ -198,9 +198,9 @@
     {
      "date": "2026-11-03",
      "time": "19:41",
-     "title": "Singapore stocks continue decline; STI down 0.7%",
+     "title": "Singapore stocks extend decline; STI down 0.7%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMzlDQ1h5MUFRWmZQYWprZ0FlUFl1WEVCVU1FRW4zQ0F4Y0d4eUU4YkdFS2t2QjBoZFNvcmphbURLQ1A2S3FkZHNSTmxwVWx5NlBzT0p3WUQ2NUJ6ZFlpeEhaeU9iSXIwWnk5aHB2al91QWJUUWN5T3c4SExmR19ScU9JRGhXdFptS1RwTW5PRklsdUZWMTlpY2FyUG84QQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORE1pYjBKRHlvMTFtQ1E3YzQ2aWxWRkN6UXIyN09GZVlaTVFWRXBQdG9yNmhPTWlfaGR6MXE1MkpUYkZmMmJsOElFSkhlWVhLZjlPbElla0FCV25lSzBaZk1KX29LYWxuQmp0bllRZEFJNWZDOEZxN1FsMUFoLUJJX2NvRVQ3dDJHa0RNeTB4WThzbWNjeHo0c3kwYw?oc=5",
      "priority": false
     }
    ]
