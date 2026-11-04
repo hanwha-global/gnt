@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T10:37+09:00",
+ "updated_at": "2026-11-04T20:18+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -159,6 +159,39 @@
  "items": [
   {
    "date": "2026-11-04",
+   "time": "14:51",
+   "title": "Korea Investment & Securities, Neuberger eye global investment products",
+   "src": "The Korea Herald",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJcFBDMDI5OHR6QTZOVkpmV0lYSkFESVNXbnlnNHBJTUZReUF3cURhLXlDNEZXaUJia05nRHJrRjg2ZmtlMjlkR19kS1g3SV96NXJpZ1RlWQ?oc=5",
+   "site": "www.koreaherald.com",
+   "firms": [
+    "한국투자증권"
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "time": "10:28",
+   "title": "키움증권, 국내 바이오기업 사우디 진출 지원…SFDA 청장 초청 간담회",
+   "src": "아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5jYndpaW5GZENkU3BrYUZjcUszTEtweEk2amFzV3hQTE9jLTRUUDEtZEd2TTVwQ292S2ZsbnBOWE9hUVMySnp1MlhIT1JHVk91b2lleG14RDbSAVhBVV95cUxOY2J3aWluRmRDZFNwa2FGY3FLM0xLcHhJNmphc1d4UExPYy00VFAxLWRHdk01cENvdktmbG5wTlhPYVFTMkp6dTJYSE9SR1ZPdW9pZXhteEQ2?oc=5",
+   "site": "www.ajunews.com",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "time": "10:12",
+   "title": "키움證, 사우디 식약청장 초청…K바이오 진출 방안 논의",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FMVZRSUJtd2hzbW1GWGc5bEhBSThTZ1FaQTdMZXZBdjNxSGJYN0w5QnV2WlJUNHBjM2RsQW94N2NvR01FQmJWcXZTeGNtOHJjQzB30gFTQVVfeXFMT0UxVlFJQm13aHNtbUZYZzlsSEFJOFNnUVpBN0xldkF2M3FIYlg3TDlCdXZaUlQ0cGMzZGxBb3g3Y29HTUVCYlZxdlN4Y204cmNDMHc?oc=5",
+   "site": "m.sedaily.com",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
+   "date": "2026-11-04",
    "time": "09:45",
    "title": "키움증권, 사우디 식품의약청장 초청 간담회…바이오 협력 모색",
    "src": "매일경제 마켓",
@@ -181,6 +214,17 @@
   },
   {
    "date": "2026-11-04",
+   "time": "09:29",
+   "title": "키움증권, 사우디 식약청장 초청 간담회…K-바이오 중동 진출 지원",
+   "src": "서울경제TV",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5hOGk3RFZ1czl0WEZBTkgxclJIalgyX0NZOUF3ajJXVjg1VHlmT1pQZGJ6TjJ2ZFlZRl9xRHotVkFrYldkVmRrV0dYNTJuWkFGYm9pYy1CbHdsOXNUTXVYQUdtNU4?oc=5",
+   "site": "www.sentv.co.kr",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
+   "date": "2026-11-04",
    "time": "09:19",
    "title": "키움증권, 사우디 식약청장 간담회…韓 바이오 기업 진출 돕는다",
    "src": "아시아경제",
@@ -195,7 +239,7 @@
    "time": "14:50",
    "title": "온투업·일본 증권사까지 … 토스, 확장 속도만큼 커진 관리 책임",
    "src": "뉴데일리",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5XZldFM1dzeGRJYU1xZ29BaG9RWm5XeXd5alRsNjl5MEZWanFwMUhES3NMUnloMDdjTHBOS21Ga3dJb3RnNnNXNUNxbzB6aFA5MkFiRVRud1dERFgzbUpWbURGLWNsNGktcFdJbnFMcXlUUHBpNEo4T3REd9IBgAFBVV95cUxOVU52SjFyMmF3OElYYnVTci1JYXB3ODV6cUtTZ3dHLUx1T2g2Zmg1R1pZbmJXVC13T1BCOHpsX3RjOWZUNUZzYWd6Tjd0bzA3VHpBSzZqczBQdjJEa3NuYUhxR2Z2TkxJWndhQllnOG0zNEtGVGlXSXdkYnFLXy1TbA?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVU52SjFyMmF3OElYYnVTci1JYXB3ODV6cUtTZ3dHLUx1T2g2Zmg1R1pZbmJXVC13T1BCOHpsX3RjOWZUNUZzYWd6Tjd0bzA3VHpBSzZqczBQdjJEa3NuYUhxR2Z2TkxJWndhQllnOG0zNEtGVGlXSXdkYnFLXy1TbNIBgAFBVV95cUxOVU52SjFyMmF3OElYYnVTci1JYXB3ODV6cUtTZ3dHLUx1T2g2Zmg1R1pZbmJXVC13T1BCOHpsX3RjOWZUNUZzYWd6Tjd0bzA3VHpBSzZqczBQdjJEa3NuYUhxR2Z2TkxJWndhQllnOG0zNEtGVGlXSXdkYnFLXy1TbA?oc=5",
    "site": "biz.newdaily.co.kr",
    "firms": []
   },
@@ -215,7 +259,7 @@
    "time": "14:36",
    "title": "Korean financial firms are buying into Japan's brokerage market",
    "src": "The Korea Times",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQVJiSmpCT21oQjVBR0REUERYTGczLVJ3X0ZOaHJ5TDlBcXYwclpSZzVuQjh6WjdaOEIxNnRiY051RmNWMXNURjdTTU5rdlM2MnkweWFNMnc3RW9vaUozZldLTm9QNEM3cTllSmVIZUdjN0czX0hNbVRHM1RfWklKaVVqV095YTZ6aHVyVExWeFItaGJiNkdfaHdUc1B4UFMyc0NHSVVFTHhnS2FnM0VCYTlJZ3FvSnFXNWlNUmlobTg4a05IUmVDQ9IByAFBVV95cUxPQVJiSmpCT21oQjVBR0REUERYTGczLVJ3X0ZOaHJ5TDlBcXYwclpSZzVuQjh6WjdaOEIxNnRiY051RmNWMXNURjdTTU5rdlM2MnkweWFNMnc3RW9vaUozZldLTm9QNEM3cTllSmVIZUdjN0czX0hNbVRHM1RfWklKaVVqV095YTZ6aHVyVExWeFItaGJiNkdfaHdUc1B4UFMyc0NHSVVFTHhnS2FnM0VCYTlJZ3FvSnFXNWlNUmlobTg4a05IUmVDQw?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVdjT01aeVpjUTJ5cmFlVnlpN3JydjdLVHpQNzl4RnNaOFBSNC1DYWJpa3AzR1Y3UDJaaWd2cmZDSzQ3eEdMZElQRk01UjI2SXhBU0xRY1BGa3EyMTNzbDhGdm9QVl95TWNLWE80S0lod2VVcHZpbFhvMHU4Yk54R0k3RnBrclE5dUdmeEdSQ05VU2JhSUZtX19DM2d4ODRTSV8wVkRuZVFDc0pGeE9yWnJoaFptY21raDNyX1RNYmoyQkXSAcgBQVVfeXFMT0FSYkpqQk9taEI1QUdERFBEWExnMy1Sd19GTmhyeUw5QXF2MHJaUmc1bkI4elo3WjhCMTZ0YmNOdUZjVjFzVEY3U01Oa3ZTNjJ5MHlhTTJ3N0Vvb2lKM2ZXS05vUDRDN3E5ZUplSGVHYzdHM19ITW1URzNUX1pJSmlValdPeWE2emh1clRMVnhSLWhiYjZHX2h3VHNQeFBTMnNDR0lVRUx4Z0thZzNFQmE5SWdxb0pxVzVpTVJpaG04OGtOSFJlQ0M?oc=5",
    "site": "www.koreatimes.co.kr",
    "firms": []
   },
@@ -224,7 +268,7 @@
    "time": "17:12",
    "title": "미래에셋 이어 토스도 일본 증권사 인수…일본 시장 진출 나선 금융사들",
    "src": "경향신문",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9USGdDTVdTNUEtX2Mwc0Qxa0stRTB5Tkx6NS1tNTFpUHZXN215MThITGk2ZlEzZjJnYVFkbW9GOEpzTmo5Vl80dzVjbW9zTDFWeHhHOVRDQkJLQmFoMHdz0gFfQVVfeXFMT1RIZ0NNV1M1QS1fYzBzRDFrSy1FMHlOTHo1LW01MWlQdlc3bXkxOEhMaTZmUTNmMmdhUWRtb0Y4SnNOajlWXzR3NWNtb3NMMVZ4eEc5VENCQktCYWgwd3M?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBuckV0V0ozWDlZQkRsXzNGM1BmVnZ1N2hRSXRSaXNoZFRuZWo2RENkVnBEZmJya01LNTJ5X2Q4TFNiWWxmTEt5dzk1V3llZExSUm4xQkRtNkExd9IBX0FVX3lxTE9USGdDTVdTNUEtX2Mwc0Qxa0stRTB5Tkx6NS1tNTFpUHZXN215MThITGk2ZlEzZjJnYVFkbW9GOEpzTmo5Vl80dzVjbW9zTDFWeHhHOVRDQkJLQmFoMHdz?oc=5",
    "site": "www.khan.co.kr",
    "firms": [
     "미래에셋증권"
@@ -329,8 +373,8 @@
    "time": "07:03",
    "title": "\"국내는 좁다\"…해외로 눈 돌리는 증권사, 글로벌 경쟁력은 제각각",
    "src": "데일리안",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1YQUs2QU1UTzd6RlJDSHV0VUw1T1NVN3VMVE13eFJUZ0xPRllGZEpubW5pazUtUHdnRnlDR3VQejByT3pUQkV2S3B3N0FnMml1UFF3?oc=5",
-   "site": "m.dailian.co.kr",
+   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQYnlQZ2VZWXFXdnRyOFdkRmh2RGluWXczTEtTNV9QWlRMcEJ1TFkyOWxodEpfZl9MUU50bFBNMjI5SUdSazdLMG9nUXFiVnZ4S0tRR2pvWVFpd2o2bEVQOTlZUTN4aVBwTWlEckVNblNvdW1veFFNazhVZENhbzdUcUxqcXRpaHpnLWFTNmc5NXFzelVmeEFMTmI1dlBHY2M3Y0htaDZBbVRHMm5DZXpCdXdfdTc1YjhmbVc1c3h0alBGY3pHN2NKNHhZZ3J1SWdzUWs1VWZWREd6RmxFN3hqZ3QzcTlScXFKNmlWSUtYS1FpbW1CUjRNUkItYmItVlRkS1lmVENpUHhyNTRYd0lBM08zQzdqSVk?oc=5",
+   "site": "www.dailian.co.kr",
    "firms": []
   },
   {
@@ -572,9 +616,9 @@
    "date": "2026-10-29",
    "time": "07:19",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
-   "site": "stock.mk.co.kr",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
+   "site": "www.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -770,48 +814,6 @@
    ],
    "foreign": true,
    "lang": "vi"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "17:33",
-   "title": "KB증권 베트남 청소년 교육 환경 개선 지원, \"글로벌 ESG경영 적극 실천\"",
-   "src": "비즈니스포스트",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5sMExNQVhNR2hlXzJjd28ySnZMWHpvVHNnUXRxenlmbzl4Qk9WdmZSYlVXaUhPNXAyNGZSWkYySm1WRS1rUjFDNnpuVGd4ckNPZUxmMjNibEgyT1pGNERiZ21jQUI1SWJnanBZMnU4WmJxalk?oc=5",
-   "firms": [
-    "KB증권"
-   ]
-  },
-  {
-   "date": "2026-10-19",
-   "time": "16:00",
-   "title": "KB증권, 베트남 중학교에 '무지개교실' 조성…하노이국립대 장학금 지원도",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5rSVRsX1RDMXBtYUdWMTVGaUtpVmtXNXdsaU9QN0lJUmdhbEppbExRLUdwbWpmQlpyWnNaazhpRXo2MkdEczAzYzlCbWxwZw?oc=5",
-   "site": "www.etnews.com",
-   "firms": [
-    "KB증권"
-   ]
-  },
-  {
-   "date": "2026-10-19",
-   "time": "10:02",
-   "title": "KB증권, 베트남 중학교에 '무지개교실' 열고 하노이국립대에 장학금 전달",
-   "src": "서울경제TV",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5QcmM4SnJ4SGdBTjViZFNEQW9veEI1R3pCR3FKaHNObDczRTB1cnZEUWtLSmhLdUtwSDkxd0hNTXdUR19SYmxBQ1lReVcwVWdxVzcyRW93QlVubTdCWXFvcjJJd2o?oc=5",
-   "firms": [
-    "KB증권"
-   ]
-  },
-  {
-   "date": "2026-10-16",
-   "time": "16:00",
-   "title": "한투증권, 베슬AI와 손잡고 ‘GPU 파이낸싱’ 시장 진출",
-   "src": "글로벌이코노믹",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNeXlGVUZYYUZKblgwQ3JpaE1nZ2FTbjhaaTdkVy1WMzZhNTc5ejJhbFg1eS1LSDY1cXBoQ3FpRERLcnZjQmVLSm5raFRYOWhPNWVhcHVFX0xQb1JUbmJfa21fMmJKUDNTQ2NUaDFfOUp1Tlp6b3I2bzJ6M0hTNlg4Qw?oc=5",
-   "site": "www.g-enews.com",
-   "firms": [
-    "한국투자증권"
-   ]
   }
  ],
  "errors": []

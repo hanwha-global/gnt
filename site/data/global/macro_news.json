@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T10:38+09:00",
+ "updated_at": "2026-11-04T20:18+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -7,26 +7,26 @@
    "items": [
     {
      "date": "2026-11-04",
-     "time": "08:48",
-     "title": "“외국인 돌아오려면 최소 3개월”…코스피, 추세 반등 신중론 [코주부]",
-     "src": "서울경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCM2FMeGxwWER1bjEtRll1MlF3RXpQUlJRb2ZPOVJ5Sk1aNElqLW44MDVDVW5ZT0RzT3JXbk1ZOXBzQXNtWGU5eWk2WmhWZ19kTVHSAVNBVV95cUxPX1ZGVHM5RTdMMzI3LS1vZ0RScm1RRS1GOVZBdy1KbDYyVmlEeFBwTVI1Z1dtNDBpdmU5dnJydHVPYXlNc1R0dUhNeWFlSFpPU3NuOA?oc=5",
+     "time": "14:22",
+     "title": "외국인 매도확대에 코스피 출렁…7개월째 '팔자' 외국인 복귀 언제쯤",
+     "src": "연합뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4TTlseV9fMTk3MHp6N3pzM1lYSV96N1dvWXM5Vjg4QUxwWmpHaEdZaWtGTFhrdHlYTGxISDV5NV9UVlltOEhnUm9JY3o1eUFieUx6bjhCaG52SHM4aWtsc9IBYEFVX3lxTFA4TTlseV9fMTk3MHp6N3pzM1lYSV96N1dvWXM5Vjg4QUxwWmpHaEdZaWtGTFhrdHlYTGxISDV5NV9UVlltOEhnUm9JY3o1eUFieUx6bjhCaG52SHM4aWtscw?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-04",
-     "time": "04:30",
-     "title": "물가 안정이냐, 내수 회복이냐...한은, 이달 금리 인상 '고심'",
-     "src": "이데일리",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWHRRa3NpYVpGUm9ETTdiZ0Z6QzlSV2lkYlRWVkpkeWpwMEd0cmtzVGxYNllGdWxLLWJKMjYwMDR4TFF2TVlYUmttcVU1WUxhQTAxRldTSmo4QTBvU2tDZ1JzZk9iVlBNdGdrc2U4LU5LTzdYLVdUT1hCX2V4N2lTdg?oc=5",
+     "time": "11:07",
+     "title": "코스피, 상승 반납하고 하락 전환…외국인 1.2조 '팔자'",
+     "src": "한국경제",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43X1A4Z1RtME4tU0RpMkYta0U2eWliMXE4OENraTI5cGtKX1NZenNNdHlMNkhzSXNPNm9wckN2NGhrU0VnS2Z6QzlKcEl3d29XaEhQaXZDVDUzUQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-03",
-     "time": "16:08",
-     "title": "AI 우려에 외국인 매도 폭탄…코스피 3%대 급락",
-     "src": "연합뉴스TV",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE80VTgwU1UzNW5xaE9EWWFNY0ltbzM3WDdWME85UFBhd2RnUlFEbHJWalQySjNKQVRncEdDeHJoQ3pOSGwtdEtzYURwcWVQWXh6YV9xLVY1S29fNi14d2VPcHZBWUFrcEU?oc=5",
+     "date": "2026-11-04",
+     "time": "10:55",
+     "title": "외국인 '팔자'에 그만…상승 출발한 코스피·코스닥 하락전환",
+     "src": "아시아경제",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WeHdCb25RYXdaOWpDMlhDRDl6cVNjZVVLekZWbUQ5WGF3RGkydWdQTnVlVmlzczhJSmtUQW5La3V3MkpXSHBhZkxuV0t0dFYwMGd6bjFBYng2Q3F1QnpfbmVR?oc=5",
      "priority": false
     }
    ]
@@ -34,6 +34,14 @@
   "US": {
    "label": "미국",
    "items": [
+    {
+     "date": "2026-11-04",
+     "time": "12:24",
+     "title": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ2FPb0VDa1pUYWotYjQwXzBBYm1nN0dhMUw1X0hLZ3B1MTRPeTh3ZnhkT1BPVDVMYS1tZDVRYjIzS19SNkh5dlFMZzZEZktrdTk2dmR4ZXYyZVA1VWxEMEJadkZXcXFLelM2VEp6c19sSjdybnZzMFgweU5lNndHemoyY29qVXgyaFh5TlBOYnQ0ZHpJS1VwbVZqanhpcDVZQXFVVdIBqgFBVV95cUxPaE54YmlQLU1IZ2hRWnFkOGZHRzg1VFJTQVlkaGxkVUVzZTlvSFdXOUplRmhUUURkMnJybkpxMkNERjFQbkFlb0xTbS1KUmJIbHBKSmw4aG9fOXF6c3pQSHl3bmE3N1lyR1VNTEhiblRKX3VMYm5qWXRsc05aYkxNaHJ3SERJT1NESjg1QTcxSnBXcVJhbVpramJSUDFydnF0dnp4bU15cmlMUQ?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-04",
      "time": "00:48",
@@ -48,14 +56,6 @@
      "title": "Treasury yields rise as investors weigh midterm vote, jobs data and Iran tensions",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TM0lMaGtzaDFiQWsxYWh1Tm1pWnZ1c1FlSzF6OXFsUXVnV0s2RDM0aVFQVEY5Z0hMTHZnV1VER0RXZ2NoNzJzaEhYd1NILXNnVHJPYTdnMGxwWENQbkJyNmlveWkzREg0cWcwSWxB0gFzQVVfeXFMTmphanNOR2U3amR0WWtFZVg4b2p3Q0x6d294TW9Iam0wWGZtTFJMNndXUWE4TURRbWlieS1FaE5TN2dLbmgydk9JZUYzSVpHLTFqclFXSThuTXdzNkxkeTJLQVVTcE1wOVlRSl9qLTRZTG1lbw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-03",
-     "time": "07:29",
-     "title": "Why are 10-year Treasury note, yield on 30-year bond down ahead of November 3 Election Day after hitting h",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOazJnc2JjNXF3SDN2NHhBYXpHelVlSmlJcWhEcHdUYlpINEJtZXo5SUszei1SanhXOC1Yb2ZBZGdmM0ZXdFl1ZnFYb0w5Qm82UTltMHVnaUtoOHlCVkc3OXB3WGh3SGxJMVBDcHg0NVY5ZlRtalBXbEZabS1BU3VfTEhveUVjZEU1VjIwcEdxWDdpcjFoXzBNMUhXUVVhOWM2cVBXeHljb29IeXNqaDNHVzV0RHB6ZlJhZWlIdlh2cURBRDlYaDJRdkdiWk02LWV4dEw4Y1hBMjdkZDM2NS1sTnFFTHMzQTI3WFNudE5lb0JSMEdpWTkxa3pCUkFVOVZPR3daaXhDZnRnaERMano3ZXdEOVhPSTFtMkNaWlI0TWcyc1Fib1RaVVhDWmh5Y0lmOHJrZmt1LWUycmpKVlZJ0gHEAkFVX3lxTE0zUENHeTFvb1NDNUhiYTdLaG9jdGF1Y2pJWGpiY1lkdV9YbVFxbG9wcTNybmRwc3RaOFNJOWFQUGlZZXRhWjV3eVpFc0NNdGJsYktlRlhnM1VEVXFFTjVoQ2xCYnFSZU1DbnRLMFlYUWNhZU1ZTUxSbE5pYTk3d0Z3THBkaHk1UWtjVVJxbXJDeTVHSFhzMGI1YU1Cczc5TEtDN21HeUJ4VkJ5LVluX1RxZ0V4WWV4VGoxenEwT0JWRkJKemhsSmljMFBSTU1Yd0htTG9JZHdrcXFGSDFfbmI0ajd6ZGVlSnU5VnA0aUhlMUU5TmJsWGJ0cjdlN3hCMHVDMm5NMzEtSEthYTJCMUl5bFRwNkRwR1A2UkxlT2d2TlNIaTJOaEVLdnh6cWhRYU8xVHZpVE9PWWZoSkZlNlNSay16QQ?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-03",
-     "time": "11:16",
-     "title": "Japan’s interest rates are rising. Will young people lose out?",
-     "src": "Financial Times",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYk9oN00xWVJoQmhNZjlfQTY2YTd4QjJhU3ppeXVFaVU3U0g1Z1dOYUtaREt2WEZoNVNLUTZDaHluNENDRFktNmI2LVd6bDVGeWtJbU85SlFuU1lrTk91T0FIUl9CdU1JM0VyV0IyQm96eHdla0JQNC1sZ3N4eE9vOS10QmM?oc=5",
+     "date": "2026-11-04",
+     "time": "12:18",
+     "title": "Japan, South Korea stocks fall over 3% as Democrats lead in US midterms",
+     "src": "Nikkei Asia",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcEEyc29kYjR6eDlFUlpRVWtBY0VzNUVONDJ5eUlYcjU5cGNlSjhXNUFCMndnZEFqRTVMa3FvTTI1NXAwZ1FIelpvR3Jwcm4yWnhYM25LV2dhMU9OSnJRdmQ3OUhSRGZzNlZ6RTB6ck9WbGJyZm0xS0d4ZFZKSTYxSFVIdzl0eUhCNTVFT01zbEEzczM1WG9QZ00weHcwSFpVaVpBZ3BaM1ZHYTRIUnd3?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-02",
-     "time": "16:01",
-     "title": "Japanese Stocks Fall on Tech Selloff, Kioxia’s Profit Outlook",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdGUyS2diYVFSbnZmdklpSmxqNFhqREJobEZCUjhZV3BhQzhCOUdScEp4N09WOGJyQk9XU05qVDlVMkotSEpobUhKWGEwejVrUm05WlN2NmdzYTNJbFltNmtPTU8yemVvMFVOZlQ4WGhqZEZzMVRzZEhFUHJxVTZOZEtFQ0NWYVZlUmJoVnl1VGVhUWotWWRMcmJPN211TkNEb1dyWTBuZXQ4ZGtWSVEzag?oc=5",
+     "date": "2026-11-04",
+     "time": "12:18",
+     "title": "Japan, South Korea stocks fall over 4% as Democrats lead in US midterms",
+     "src": "Nikkei Asia",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSURReXFqM2ZZSXFoSEg1Nk9nQWE5Y1pGbF9DNk1DM3kyMTh2cGRNY3hKaWUwMlJacXR1WTd6cWttMTVES2xvaExNNDlrSElnNTJZV2l4WWNVcFN5azUzVndCYXlnZHVvX0w3c0NUQ2ktS3Z5cnJzNkk5UUdnWWd1SlduczVNeWNqNUVtQThhNzZoX09WWFlxMjZYa2w1T1VSaUxHWUVOWFpHSXZqLVlJ?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-03",
-     "time": "19:41",
-     "title": "Singapore stocks extend decline; STI down 0.7%",
+     "date": "2026-11-04",
+     "time": "20:11",
+     "title": "Singapore stocks end flat as Democrats win in US midterm elections",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORE1pYjBKRHlvMTFtQ1E3YzQ2aWxWRkN6UXIyN09GZVlaTVFWRXBQdG9yNmhPTWlfaGR6MXE1MkpUYkZmMmJsOElFSkhlWVhLZjlPbElla0FCV25lSzBaZk1KX29LYWxuQmp0bllRZEFJNWZDOEZxN1FsMUFoLUJJX2NvRVQ3dDJHa0RNeTB4WThzbWNjeHo0c3kwYw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ2xqVEZPSjhsXzItVWNOQkFRb3dPTTdpVDdOU0hLYU5DMFZVRmh6WkdLSXBEWWkxTU1zTjZ6LUZQVTItbk1HTE9nV1RpVEtOMVFfS3UyMHNlbTM2d0lVSVpNV3AtMFUzMWNOUkhVMUZHSVhfSExlTkFfSUQ5dTJST2FiQTZZUlYwU1hfVmVmcFpxd3Bhb245YkIzTE5vWko3bWc5ZWR5UG80R2NuV193aQ?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-04",
+     "time": "11:39",
+     "title": "Indian stocks inch higher as investors assess foreign fund flows, US election results",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT0tFa0Z0bnRlSFU3NTdYOFVXaGdid3Fad1NTRnViRDBTUWg2Um1BQ21RVlNkSWdjR2Y1Z2VXdV9fWXdjY19GZkJDZ2F0ZFFvckRQY2V0eDRwVzZJMkJ5a29mbGlLZUQyQkFzX1VwVThZdEQtZEdiUVJMRzJxeGFXQUxmclZST2l1RzN6elNobi1IZC11a2N2cFJDZEdQNVo1MmgxWlFBaHA3VXlLWHc?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-03",
      "time": "11:38",
      "title": "Indian shares extend rally as earnings, cooling crude draw foreign buyers",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcVNvY0lPbFp1SlNTR1BlbUstUy1iMUtZcGJzSTBxLXVBdEpWajhoT0RuWklLUkxfM1dFd1pWLVJxMnlaQzFnQzVyMUJEVC1sbVJGbmJTd2p5RGhNaldxbkNicjBvNWJ4dXoxS3RobzN6NTRzeDM5TV9fME1FTTJWM1JaNVNvM0JsSGRXTWQ1TG03MmlGZU43TVJyS1NHT0xGRWRpXy1ETkx1Q1E?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-02",
-     "time": "18:42",
-     "title": "RBI FRB 2034 interest rate jumps to 7.26%: How much more will investors earn?",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQelkxVnVNaU15ZnVQNTloUXVNemlPNkQ4NGxpa21JWV9TamM1X0RfVktVZEphS2ZzMHNTVHhXNWFGS1RqM3lWbnZtNjlTTGpPRkhoc2ZTanlIeW9JSGV4eUxmLXNXMzJHTFdJaXQ5VjI4Q2pYTThTUmp6bkxXQ2x0MFNaanRGSTRJWGlSbkh6WmFFbENYTTg4cXoxRWhPZWZrSWdBUlUtRTRpS1NRVWphbk5hNGJSREdoclc1T0RiZXRBUlo4UG1kQnRJNXUzOEJ0RkkwVy03QUxtN3dNTUQtQjNoREtvZERDazFkQllLWHU2cnNVSGVySWEwMXdNLU1XM0EwUGJYaUNfQ1BScFREUmpqaHltTkx2enZ1SjdWdEp5TDBfU1FoRzlGMWRubE0tYmJKTnRvbUFsa0Uw?oc=5",
      "priority": false
     }
    ]
