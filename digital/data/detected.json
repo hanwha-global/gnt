@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T03:16:13+00:00",
+ "updated": "2026-11-04T01:50:02+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,12 +66,31 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-11-03",
      "title": "(보도설명) 해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이 아닙니다.",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYVlOZmpNWVFPejBjRWpJZzU4X3FCcVpnTDNoVGEwM0tnY1MzNGFDOENxcHN2V0RfOXpNTUlRRUdDNkg3dFBTMW15NzBDak1BNW9wRlBDdkJsZlhPdmZLZURIMFJWWmgtdW9LdE5RYXIzdHlnS2xZTUdhTUJmREQ0WngyV1JZOFBEZWsyWmRTZw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeFVnenlIazF3a0hPZTZDSkwyaThBRk1xNzBFdlgtM2dqNFhDamdvSFhNeVhuSWNaUEt1NG9xaDY2dWZpbVpmTlpNVnJ3NHg0a1hmZ1gtRVZQNUF6eG9WOXRrUFptR0ZlbFNrNUF2SGpuTGEwU1BNSnFDUW1NTkFZdlVMV29NWXdO?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp",
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "title": "정부는 가상자산사업자에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다.",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Fc1MyRGxaSUlqbGtTQkloVU8zSXlJc0RhQmNGc2JmWEJLRGx3X0N1Rmp5c0g3djNEZFZMQm90Qi1qNlhXTHZGRmh5U0c2LUhoWUN5Q2NsWXNOSlpEcW5JM1ROc20tMFpJSWloQWFnZw?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "title": "해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtYVhHTDU3MzB4QnlVOGNBZmxDQlNoVnUwV0xBdVNEOG4za1VxR3JEdnB3SV9NY1JmSXVpMENCOFpsSXlYWVN3RzBlLXdGWW82UjdDMUF4b3NrSldQaDNGYU1UZ0hES2I0dWN4TVowdktDS1h1VGc?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp",
@@ -108,7 +127,7 @@
     {
      "date": "2026-10-28",
      "title": "주식 판 돈, 왜 이틀 뒤에 나올까? 토큰증권이 바꿀 결제",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9vYkRTVDB4elNhUy1ZLVlnNk96MVYzV2lyN1FwRndTdVV4Z0VRelNtVHdmNzI2bWNoLS1MQXJnVW14S3Q1TVQ5T3FsSDRoYWlFRVgwRzVLZV9HZk5aSl8yU1k2dVg?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOM2ZFWnFCS01YZ3dJX0tyWmtGTmhzQ1N0bXJEclpVTUN4T0tRTkp5V2N4MnJ3VWNGUTh1SHJzNTBIWGRJeHBobFYxeTA5bXRDZXFxazlfOWE0T19LYVQwNmFHNTd0azhSejRRcXN5V1lIRGZtbHc2YlVwcGFqQUtEeVdn?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "sto"
@@ -126,7 +145,7 @@
     {
      "date": "2026-10-27",
      "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다. -「가상자산업권 등 침해사고 관련 긴급점검 회의 개최」",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVUZRaTh3V3NhdkJRa0YxaVEwUzFKQzVaeUlEQVQ0NkUyaXdINzJrYmRHYkRGbVFlSzh1TkEzeFlrSXgxU3V2VEtXNE40Q0U1SjJhMTljSUFfbXo0bUJyRHJ6cEdiWXkyZUtDSi0zSU9VaVdUY2hsSzhvUFZWaC03NHNIRlNhYjJDM1VaU1JtVlJ3QQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaFoxd1JSdjBkNDhLVWFBaEhZY1hXVEpGTk9zWGxfMnItbE9tYVRkSjdlVlFJWHZPaEYxTnM2Wmd5SDBOMWZMNDZTcUlBczVDSXlsQThrbm5MaE53UWNSNERxejRHZWdOT3d2LUlsNGxfS1dia0w1aUJnZjMtWl9LNTd1cS16SGxWQ1g0UXlWVWZtcEJTRzFtTnpqU0h4YU5IZGpyTFZ3aHJRUFd5OGJWTFY2LW9obHdIZHViSDc1d0RkVHlLVG1rRGY1WjI0NDJZQWN0clpBc0t6ZWhlUHY0M3NUbHRVbTRCdmNYb3U1ME9xS0VPanMwZXRpX0tDcndSVk1DdHJwVGFjZEJ0cnlISQ?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
@@ -281,7 +300,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-10-29",
@@ -340,15 +359,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-10-17",
@@ -362,11 +381,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-10-28",
@@ -380,7 +399,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-10-21",
@@ -457,8 +476,17 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
+    {
+     "date": "2026-11-03",
+     "title": "The Financial Services and Markets Act 2000 (Cryptoassets) (Miscellaneous Amendments) Regulations 2026",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9waUlUMHZCOXZ2ZUpORERRVTlIOFRXMDIxOGpsdmRWdWdXZWFaX1JyMV9PTGdlalYtSjB5YUdidk9xS1M3eEliS2haWGNJZWJreEZJd1BZRWJ2MkpIOHNPV1NVcWNtTHJxZ2JWSXpqd2FmQmY5aHh3?oc=5",
+     "src": "Legislation.gov.uk",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-10-31",
      "title": "MERIDIAN CAPITAL CRYPTO LTD",
@@ -543,17 +571,8 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
-    {
-     "date": "2026-11-02",
-     "title": "LegCo to consider Inland Revenue (Amendment) (Crypto-Asset Reporting Framework and Amended Common Reporting Standard) Bill 2026",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5CV3dKaU1zdy1TRTJ3QkRsSEZHOXY5OXVKNEQtQ3A0NmptNTd4MjhadjA2MjR2amxhM0ZQemhRMkNIdndCeWJVdzNHMEJqYV9iVE14bklYQkR5T19objZsNGtfVkhFdFlhRWZRSTYzclFfdw?oc=5",
-     "src": "www.info.gov.hk",
-     "topics": [
-      "general"
-     ]
-    },
     {
      "date": "2026-11-02",
      "title": "HKMA advances Project Ensemble pilot phase to 24/7 settlement in tokenised Central Bank Money",
@@ -561,6 +580,15 @@
      "src": "Hong Kong Monetary Authority",
      "topics": [
       "sto"
+     ]
+    },
+    {
+     "date": "2026-11-02",
+     "title": "LegCo to consider Inland Revenue (Amendment) (Crypto-Asset Reporting Framework and Amended Common Reporting Standard) Bill 2026",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5CV3dKaU1zdy1TRTJ3QkRsSEZHOXY5OXVKNEQtQ3A0NmptNTd4MjhadjA2MjR2amxhM0ZQemhRMkNIdndCeWJVdzNHMEJqYV9iVE14bklYQkR5T19objZsNGtfVkhFdFlhRWZRSTYzclFfdw?oc=5",
+     "src": "www.info.gov.hk",
+     "topics": [
+      "general"
      ]
     },
     {
