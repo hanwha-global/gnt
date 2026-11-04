@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-03T12:01+09:00",
+ "updated_at": "2026-11-04T10:35+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,13 +8,13 @@
   "KB증권|베트남": [
    {
     "date": "2026-10-23",
-    "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
-    "src": "VnExpress",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
-    "site": "vnexpress.net",
+    "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
+    "src": "Tuổi Trẻ",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
+    "site": "tuoitre.vn",
     "foreign": true,
     "lang": "vi",
-    "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대"
+    "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다"
    },
    {
     "date": "2026-10-21",
@@ -291,9 +291,9 @@
     "src": "investor.id",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHJacC1zUUVxbmVPWUNhUUJUVXNreVVRMnFmVG5nRkx4cDRUTGhOYXZkeTN5MFI1dFItR016UndWTFYwdk1OYU83SzlxZ3lyZ3ZRSXNNdjVsMmtlZS1EbURRTERhVVNPcEhhZkFfY1lraS01VGRhT0VUNWpmY0ljRFMxVmF6YlpaYy1MVGx2Y3JXMXFLc3dPcXlESHlLWjh4WVpNbEZEU1M3YThvWmw2el9CaUJtQ3k3V3dZRzN3TWFMMXZL?oc=5",
     "site": "investor.id",
-    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다"
    },
    {
     "date": "2026-09-30",
@@ -306,24 +306,24 @@
     "title_ko": "혁신 강화, 미래에셋증권 인도네시아가 이 상을 수상했습니다!"
    },
    {
+    "date": "2026-08-27",
+    "title": "Kebutuhan Investor Makin Kompleks, Mirae Asset Sekuritas Perkuat Layanan Wealth Management",
+    "src": "investor.id",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZUtTT3dud2hQNGw1NWYtcHdoNlBJbWlTbUZDMDZFSkl3WnZWeEJ6dm0yMk9kYml5U2hCdmkwdV9QaHVKY1czM1ZMT3F0OXRhVzM5RkUxYk5UdHNyLWpSeFEtcnN0c3pBeUc2TVFRZmlLWFp2RUJaQWdaam1kRm42YnNsT2VFeTFyUUVZTGJyT3JBaUw5TE5DNU05ZE16QklsRFk2dE52UEp6NzhWNGdtd3FjWkE5dzZ2VUpreTRsNzc?oc=5",
+    "site": "investor.id",
+    "foreign": true,
+    "lang": "id",
+    "title_ko": "투자자 요구가 복잡해지고 있으며, 미래에셋증권 자산 관리 서비스 강화"
+   },
+   {
     "date": "2026-08-18",
     "title": "Pasar Makin Selektif, Mirae Asset Sekuritas Genjot Layanan Wealth Management",
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
     "site": "investasi.kontan.co.id",
-    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대",
-    "foreign": true,
-    "lang": "id"
-   },
-   {
-    "date": "2026-03-05",
-    "title": "Video: OJK-Polri Geledah Mirae Asset Sekuritas Terkait Dugaan Pidana Pasar Modal",
-    "src": "20detik",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbV9XYl9pYWlTMVp3SXQ0Wl9YUkVGbzA0NzJGWVNaUGktMU5xQWRwQVkwRW9ha2E2WWhMUkRUV2dtb3JYcTZmejdRdlp1aU96djlLMHJfMFFBR2hFQU4tamZZUWpOS0ZmM3ZyOXlJZXBYMTBnb29PeDRnSDdnS2JEWWRLSnBqMlVLdzZ2YXNwYm44YkZpcEdpc2xRV3AxMmZDaUxZSW5jQVp6WjdMUG15WW9rZkIxM3g1QjA0VlNoclpHbUlZcjV6cFFLRQ?oc=5",
-    "site": "20.detik.com",
     "foreign": true,
     "lang": "id",
-    "title_ko": "영상: 자본시장 범죄 혐의에 대한 OJK-Polri 검색 미래에셋증권"
+    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대"
    }
   ],
   "미래에셋증권|중국": [
@@ -639,16 +639,6 @@
     "title_ko": "KIS 베트남은 4조 5,000억동 이상 자본을 늘리기 위해 주식을 제공할 계획을 확정했습니다.",
     "foreign": true,
     "lang": "vi"
-   },
-   {
-    "date": "2025-11-03",
-    "title": "Chứng khoán KIS là đại lý phân phối cổ phiếu IPO của VPS",
-    "src": "CafeF",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORnFPeElOVldQRVgwNTdFc0h6YlpCY2ZwQ3lKVVJCWXdra2FUZ0s4TEVNRFdoZVptLU1ReXJxSHp3Mk81QVN6d3drTEltZjlqRHpEYl92RVA1WHlLS2RYUkZEWjl2SkkwYzBRUUNCVTBfcjZqNXRzaTVWWDk5WE1CenBIZ2g5V2lYbU93SFBqRExyRFJiN2pNVHAwbnE?oc=5",
-    "site": "cafef.vn",
-    "foreign": true,
-    "lang": "vi",
-    "title_ko": "KIS 증권은 VPS IPO 주식의 유통 대리인입니다"
    }
   ],
   "한국투자증권|인도네시아": [
@@ -680,20 +670,11 @@
   ],
   "한국투자증권|홍콩": [
    {
-    "date": "2025-10-28",
-    "title": "[어게인 홍콩③] 한투證 홍콩법인장 \"하이일드 DCM·신디론 차별화\"",
+    "date": "2026-04-16",
+    "title": "한투증권, 홍콩법인서 2천억 뺐다…트레이딩 접고 IB 집중",
     "src": "연합인포맥스",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE95TWFlenp0eXNLbFRjblg3VWRfSTNiN2o5Wk1jYVdHSHMzWFhScU10cGlXRHpHc2pEaUNVcGh4dEU4MVJKU2hicUEzSXN1VTRWUHlqSktDZUJ0RFRWWExSMmhfeWM0aXBMQWJEdnJpQkw?oc=5",
-    "site": "news.einfomax.co.kr",
-    "old": true
-   },
-   {
-    "date": "2024-11-18",
-    "title": "주명 한투 홍콩법인장 \"아시아 지역 금융 거점될 것\"",
-    "src": "뉴시스",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2Zk1ETkxsMXRsODkxdm9mUWxGcWtWX3I5TWw1Y3JTdjdiMS1ILU9oUzJMbm11SG56Q2lZUGVUQ0VJczFWbS1NNi1RTzlNWmVPTW1wQ0dCaC1IdHZlYVQwOdIBeEFVX3lxTE5Oa3B6TkZPeUVlSkJHM0NKMTlWZXQ3YTIzd3JvT2J5azJKM09oQWdTLVl5UlRqRnhfVVBDSHZBYnBSejJyQ2FUYWdDOU9oWVM0ZkhYUEJJXzJNbWZ6YzlCaFliR3Jib0FseEhsWC10amJnNDNpcUEtRg?oc=5",
-    "site": "www.newsis.com",
-    "old": true
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3WGo3SzZPUmp0d05LQWgycEt2bS14QlB0a2VOdGdkUkZQejdUajFZbjZoMlFBUl9tVS1rUExzUTc1QmdlMzNLdUJKQmRFcC1USzBXMXdMVFg5aDVLTWJjOXBFallNaC0zekFmdmVKaDk?oc=5",
+    "site": "news.einfomax.co.kr"
    }
   ],
   "한화투자증권|베트남": [

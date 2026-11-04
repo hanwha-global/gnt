@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-03T12:03+09:00",
+ "checked_at": "2026-11-04T10:38+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -165,19 +165,19 @@
      "category": "리스크·규제",
      "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
      "evidence": [
-      "Nikkei Asia 11/2 보도 등 부정 구조 뉴스 5건(최근 30일)",
-      "IDX 1개월 -16.7%, 연초 대비 -41.5%(10/30)"
+      "Jakarta Globe 11/3 보도 등 부정 구조 뉴스 6건(최근 30일)",
+      "IDX 1개월 -18.8%, 연초 대비 -43.3%(11/3)"
      ],
      "links": [
+      {
+       "label": "Jakarta Globe",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMl94OVBQZDZ0anF2cFVqOVdtdGhYVENlS0VRTkxiSU1uSGZhMndLZnZfVlQybmdNVm5QZWg0dnQxN003WVlQSVJSVTBqQV91anhCV2R5Q1NSdGg0S3RBcUN6TXdsbmE0OXNtR1VxVGUxalBGWWtXWmVWMi1TT3NxZTBYU2Q4cGtCZmduOW9wMjQtLU80c215X1hpcTdkZw?oc=5",
+       "title": "Indonesian Stocks Plunge 3.78% as Foreign Selling, MSCI Fears Mount"
+      },
       {
        "label": "Nikkei Asia",
        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxON3RBdFhybUNtVDJLVTdzUG9IT0NKS0RRdUw0N2lkNlQ1ZU5zNTNTdDhUNDdpZkdFMGRvOVp1U20xdWFnRFhWS3VFbFF6cVZvU1Q5OWxQTDhod1FCWHRxZjlxQ1czNkpFS0VwbUpNOG1mMHhsSEVUZnJ0TFlDVHUtWGIySlhzNU9YemdiZndaOGJGNmxMc285ZmxBbUNnZHRsREJmNE94cXE3c1NGMTB3Ry1RTnpuOHA5ZFpiNFVKNkhDcERjRlQxcA?oc=5",
        "title": "Indonesian political maneuvers hinder market reforms amid downgrade threats"
-      },
-      {
-       "label": "단기 충격",
-       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBrWlIzLXFacGdDcktyd1F2N01kWUh1TEowdlVtZjhPMmwteENydlJZaTI1NEMxSUZxbU1yVUpGYUY2cWJjU3dmLUxVOVBqb0Z5bHVfbmlicnZ5RXPSAWBBVV95cUxQaGI5SjZFaEJYVmV0WExabzlLS09SbVZvTmF0ZFo1ekF2WngwOW5JTHVDNjl6cXNneERpelg4RlhnV1JvU3g2M05ETVhWLUh6RTk5TXkydVJienNDZGpWOHQ?oc=5",
-       "title": "인니증시 강등경고에 중앙은행 \"단기 충격\"…대통령 동생 \"심각\""
       }
      ],
      "bucket": [
@@ -197,7 +197,7 @@
      "evidence": [
       "1H26 두 법인 순손실 12.2억원, 비용 85.2억원 vs 매출 73.0억원(DART 2026.06 반기보고서)",
       "인도네시아 증권(CSA) FY2025 순이익 27.2억원에서 적자 전환",
-      "IDX 2026-09 일평균 거래대금 연초 이후 평균 대비 -27%(IDX 회원사 집계)"
+      "IDX 2026-10 일평균 거래대금 연초 이후 평균 대비 -20%(IDX 회원사 집계)"
      ],
      "links": [],
      "bucket": [
@@ -215,7 +215,7 @@
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용 하락에도 MSCI 결정과 손익 회복 이후로 보류, 후보 검토만 선행",
      "evidence": [
-      "IDX 5,057(10/30), 최근 1년 고점(2025-12 월말) 대비 -41.5% · 루피아 원화 대비 연초 이후 -15.2%(ECOS 10/27) · 원화 환산 지수 연초 대비 -50.4%"
+      "IDX 4,904(11/3), 최근 1년 고점(2025-12 월말) 대비 -43.3% · 루피아 원화 대비 연초 이후 -14.3%(ECOS 11/2) · 원화 환산 지수 연초 대비 -51.4%"
      ],
      "links": [],
      "bucket": [
@@ -232,8 +232,7 @@
      "category": "마케팅·고객",
      "text": "인도네시아 증권(CSA) 고정비 절감분을 모바일 온보딩·디지털 수수료 프로모션에 재배분, 점유율 회복 검토",
      "evidence": [
-      "IDX 2026-09 거래대금 점유율 디지털 3사 19.3%(Stockbit 1위 12.6%) vs 인도네시아 증권(CSA) 0.83%(26위)",
-      "인도네시아 증권(CSA) IDX 점유율 7~9월 평균 0.78%, 1~6월 0.57%(3월 일회성 제외, IDX 회원사 집계)"
+      "인도네시아 증권(CSA) IDX 점유율 8~10월 평균 0.82%, 1~6월 0.57%(3월 일회성 제외, IDX 회원사 집계)"
      ],
      "links": [],
      "bucket": [],
@@ -242,10 +241,11 @@
      ]
     }
    ],
-   "changed_at": "2026-11-02",
+   "changed_at": "2026-11-04",
    "reason": [
-    "새 뉴스: Nikkei Asia 보도"
+    "새 뉴스: Jakarta Globe 보도"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R06",
@@ -352,9 +352,21 @@
      "reason": [
       "새 뉴스: Nikkei Asia 보도"
      ]
+    },
+    {
+     "date": "2026-11-04",
+     "fp": "d6c0f46b85fe",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "MKT"
+     ],
+     "reason": [
+      "새 뉴스: Jakarta Globe 보도"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -471,5 +483,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-11-02"
+ "updated_at": "2026-11-04"
 }

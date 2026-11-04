@@ -1,32 +1,32 @@
 {
- "updated_at": "2026-11-04T01:24+09:00",
+ "updated_at": "2026-11-04T10:38+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
     {
+     "date": "2026-11-04",
+     "time": "08:48",
+     "title": "“외국인 돌아오려면 최소 3개월”…코스피, 추세 반등 신중론 [코주부]",
+     "src": "서울경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCM2FMeGxwWER1bjEtRll1MlF3RXpQUlJRb2ZPOVJ5Sk1aNElqLW44MDVDVW5ZT0RzT3JXbk1ZOXBzQXNtWGU5eWk2WmhWZ19kTVHSAVNBVV95cUxPX1ZGVHM5RTdMMzI3LS1vZ0RScm1RRS1GOVZBdy1KbDYyVmlEeFBwTVI1Z1dtNDBpdmU5dnJydHVPYXlNc1R0dUhNeWFlSFpPU3NuOA?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-04",
+     "time": "04:30",
+     "title": "물가 안정이냐, 내수 회복이냐...한은, 이달 금리 인상 '고심'",
+     "src": "이데일리",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWHRRa3NpYVpGUm9ETTdiZ0Z6QzlSV2lkYlRWVkpkeWpwMEd0cmtzVGxYNllGdWxLLWJKMjYwMDR4TFF2TVlYUmttcVU1WUxhQTAxRldTSmo4QTBvU2tDZ1JzZk9iVlBNdGdrc2U4LU5LTzdYLVdUT1hCX2V4N2lTdg?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-03",
      "time": "16:08",
      "title": "AI 우려에 외국인 매도 폭탄…코스피 3%대 급락",
      "src": "연합뉴스TV",
      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE80VTgwU1UzNW5xaE9EWWFNY0ltbzM3WDdWME85UFBhd2RnUlFEbHJWalQySjNKQVRncEdDeHJoQ3pOSGwtdEtzYURwcWVQWXh6YV9xLVY1S29fNi14d2VPcHZBWUFrcEU?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-03",
-     "time": "15:59",
-     "title": "코스피, AI 수익성 우려·외국인 팔자에 3.59% 급락…삼전닉스↓",
-     "src": "매일경제 마켓",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Ic1hMZHlCQ2YzRktZTlVuUmRUSm9Udk5UY1EzNVZVeEtST0NCeHVXcnA1SXYyeTFMM3RMQlBUZUFzdmNRTERiaDBpTW9SOTh0Mnc?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-03",
-     "time": "15:10",
-     "title": "물가 둔화에도 '11월 금리인상' 전망…긴축 고삐 못 푸는 한은",
-     "src": "이데일리",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSDlGdnlrNFk4X2p0aXpSa3BsWnJvbEJWNDh4Z2tXaDhfa0dfU1dKeXRHSGxncUtvLXQ3enFUTlVVcl9rckprLWlOZXZsRWtjTWpZMHpLZmVxeUtLV2UxQU1kV2tSNUlfTTR1ZmVQR3cwaUxXdXllalVJNTFpTW0zWQ?oc=5",
      "priority": false
     }
    ]

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T01:24+09:00",
+ "updated_at": "2026-11-04T10:37+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -158,11 +158,44 @@
  ],
  "items": [
   {
+   "date": "2026-11-04",
+   "time": "09:45",
+   "title": "키움증권, 사우디 식품의약청장 초청 간담회…바이오 협력 모색",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zNjVQQU5wMWFIaXQ3d0pJU0NZaVBfdnA5MWNmYjdKMlBsb3ZOaXhPLUdhdTFNX09hV202SEt0LW9wdS1PakVHUk05N1h1a3ZfbHc?oc=5",
+   "site": "stock.mk.co.kr",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "time": "09:41",
+   "title": "키움증권, 사우디 식품의약청장 초청 간담회…K바이오 중동 진출 지원",
+   "src": "글로벌이코노믹",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcC1ZU2I0NWVCaDlVd3NkdjZiWW1acDUxQnRLektxUGtiTmkxejFWQW96TFluVXFDczM1Q0lUMU0yTEhnR1Zoa2NNYXZtb1BpZ1Ixa2lMemJzMW9uSkM4RjlJMHM0R2poVnd2Rm1iOGc4VzZIbDRaZlg1clhBUWE1dTg2YXcwOEU?oc=5",
+   "site": "www.g-enews.com",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "time": "09:19",
+   "title": "키움증권, 사우디 식약청장 간담회…韓 바이오 기업 진출 돕는다",
+   "src": "아시아경제",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xSV8tMWYxLW9teUlVa0ozQkZqZnE5dl9wOVU2anFpNzZvRU83ZDItM3FBT2U4cnNaOGxOYmpqMm13RDh0NWR0TEJ5S0d3cFJhdnVrdXZSaWN1LU1HZkRFcA?oc=5",
+   "site": "www.asiae.co.kr",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
    "date": "2026-11-03",
    "time": "14:50",
    "title": "온투업·일본 증권사까지 … 토스, 확장 속도만큼 커진 관리 책임",
    "src": "뉴데일리",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVU52SjFyMmF3OElYYnVTci1JYXB3ODV6cUtTZ3dHLUx1T2g2Zmg1R1pZbmJXVC13T1BCOHpsX3RjOWZUNUZzYWd6Tjd0bzA3VHpBSzZqczBQdjJEa3NuYUhxR2Z2TkxJWndhQllnOG0zNEtGVGlXSXdkYnFLXy1TbNIBgAFBVV95cUxOVU52SjFyMmF3OElYYnVTci1JYXB3ODV6cUtTZ3dHLUx1T2g2Zmg1R1pZbmJXVC13T1BCOHpsX3RjOWZUNUZzYWd6Tjd0bzA3VHpBSzZqczBQdjJEa3NuYUhxR2Z2TkxJWndhQllnOG0zNEtGVGlXSXdkYnFLXy1TbA?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5XZldFM1dzeGRJYU1xZ29BaG9RWm5XeXd5alRsNjl5MEZWanFwMUhES3NMUnloMDdjTHBOS21Ga3dJb3RnNnNXNUNxbzB6aFA5MkFiRVRud1dERFgzbUpWbURGLWNsNGktcFdJbnFMcXlUUHBpNEo4T3REd9IBgAFBVV95cUxOVU52SjFyMmF3OElYYnVTci1JYXB3ODV6cUtTZ3dHLUx1T2g2Zmg1R1pZbmJXVC13T1BCOHpsX3RjOWZUNUZzYWd6Tjd0bzA3VHpBSzZqczBQdjJEa3NuYUhxR2Z2TkxJWndhQllnOG0zNEtGVGlXSXdkYnFLXy1TbA?oc=5",
    "site": "biz.newdaily.co.kr",
    "firms": []
   },
@@ -539,9 +572,9 @@
    "date": "2026-10-29",
    "time": "07:19",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
-   "site": "www.mk.co.kr",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
+   "site": "stock.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -669,11 +702,11 @@
   },
   {
    "date": "2026-10-23",
-   "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
-   "src": "VnExpress",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
-   "site": "vnexpress.net",
-   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
+   "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
+   "src": "Tuổi Trẻ",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
+   "site": "tuoitre.vn",
+   "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -684,11 +717,11 @@
   },
   {
    "date": "2026-10-23",
-   "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
-   "src": "Tuổi Trẻ",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
-   "site": "tuoitre.vn",
-   "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다",
+   "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
+   "src": "VnExpress",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
+   "site": "vnexpress.net",
+   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -779,39 +812,6 @@
    "firms": [
     "한국투자증권"
    ]
-  },
-  {
-   "date": "2026-10-12",
-   "time": "17:28",
-   "title": "한화證, 日GI캐피털 지분인수 계약",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vTFBYZ2dna0NCYzVFaTJLLWlvYXJoODB2Q1puclNHQ1NwLWVCLUhaMHd0b3F3aUNOaHladktyalM0aGVXMU80elB5TFdaY0hwWUE?oc=5",
-   "firms": [
-    "한화투자증권"
-   ]
-  },
-  {
-   "date": "2026-10-12",
-   "time": "16:00",
-   "title": "Foreign securities firms lag behind in the race to expand capital in Vietnam",
-   "src": "Theinvestor",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWdIMmNhaFZyYXJfRkNockh3cHFjYTRmZExRRkRROTVaM3RPdlUzMXFzUUgteWhXcnh0VjMtbkRSZ1d5alVRTDdUSEtVSzJwNndWR1NFZnltVXdvVVhOR2d5RDJxdHJUME5iQk0weV9HQUpEd3NtNTFjdG1tcmJySDQwbWpoZzlSWDNfME5OaDVMY19CZDBwMGJvalZCblNiTXlWcDBSNEIyM3JHT1E1OA?oc=5",
-   "site": "theinvestor.vn",
-   "firms": [],
-   "foreign": true
-  },
-  {
-   "date": "2026-10-09",
-   "title": "Mirae Asset Sharekhan Enables Indian Investors To Access Over 10,000 Us Stocks And ETFs Through Gift City",
-   "src": "NDTV Profit",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNbDk0ZjVqNGttTGw2dTFzbDZJbU1VZUlETFpPRmwzdEY5ZXk4Z0x6T2NzeW9sbnVzbnc1WDBCYi0yOHdjNEgyWVROS20xdEFnUGpTNGdwSWFaUWNhd0tWc3dLaGVtYnhTUF9jaUExSUZkSlhDdTlPVkEwS3l6eEhpb2U3SzFYT09nZk5vdzZjazBBUE00X29FcVZ0cXBuNXNHRDhuTzAyYWs2elVZcWxRZ2gxLUFqX1dkcVZxWkx0bHlSYVc3VGxoZlFHQWU1bEt0a2NIanNucmZKLUhvVzBJZ3Mtc9IB6wFBVV95cUxNZmRuQU1xczBNcnhHUko4b3VhQzF6a3RmcDQzQ2VDZ3hPSzZVOHVwaVc0MHhRQzVmT0NPOXQ5dFRVd21DMmVsWUF0cksxQmNkajVqaUV0MHFrYkxfNllrODhPMFJ4VGZ0cEN2RmRFcTQ1b0dTMGFURGlSSWJXTmxSYzd3UGxxZG1CX21SeXNVR1JRdmF6QXVSLUxTTWpZZkpMbDdSWHpoLTRNZXIweEZ6SWs5ck9lcGc0Tk5EMWo0UlczWUhLRTZmX2hyTmRZS2pCSG80dTVHMDRfVHNBTzI0STdTd1pnMTJUWDh3?oc=5",
-   "site": "www.ndtvprofit.com",
-   "hub": "미래에셋증권|인도",
-   "time": "",
-   "firms": [
-    "미래에셋증권"
-   ],
-   "foreign": true
   }
  ],
  "errors": []
