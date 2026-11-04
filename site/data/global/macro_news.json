@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T20:18+09:00",
+ "updated_at": "2026-11-05T01:27+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -37,6 +37,14 @@
     {
      "date": "2026-11-04",
      "time": "12:24",
+     "title": "10-year Treasury yield is little changed as traders mull over Democrats' midterm victories",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ2FPb0VDa1pUYWotYjQwXzBBYm1nN0dhMUw1X0hLZ3B1MTRPeTh3ZnhkT1BPVDVMYS1tZDVRYjIzS19SNkh5dlFMZzZEZktrdTk2dmR4ZXYyZVA1VWxEMEJadkZXcXFLelM2VEp6c19sSjdybnZzMFgweU5lNndHemoyY29qVXgyaFh5TlBOYnQ0ZHpJS1VwbVZqanhpcDVZQXFVVdIBqgFBVV95cUxPaE54YmlQLU1IZ2hRWnFkOGZHRzg1VFJTQVlkaGxkVUVzZTlvSFdXOUplRmhUUURkMnJybkpxMkNERjFQbkFlb0xTbS1KUmJIbHBKSmw4aG9fOXF6c3pQSHl3bmE3N1lyR1VNTEhiblRKX3VMYm5qWXRsc05aYkxNaHJ3SERJT1NESjg1QTcxSnBXcVJhbVpramJSUDFydnF0dnp4bU15cmlMUQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-04",
+     "time": "12:24",
      "title": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ2FPb0VDa1pUYWotYjQwXzBBYm1nN0dhMUw1X0hLZ3B1MTRPeTh3ZnhkT1BPVDVMYS1tZDVRYjIzS19SNkh5dlFMZzZEZktrdTk2dmR4ZXYyZVA1VWxEMEJadkZXcXFLelM2VEp6c19sSjdybnZzMFgweU5lNndHemoyY29qVXgyaFh5TlBOYnQ0ZHpJS1VwbVZqanhpcDVZQXFVVdIBqgFBVV95cUxPaE54YmlQLU1IZ2hRWnFkOGZHRzg1VFJTQVlkaGxkVUVzZTlvSFdXOUplRmhUUURkMnJybkpxMkNERjFQbkFlb0xTbS1KUmJIbHBKSmw4aG9fOXF6c3pQSHl3bmE3N1lyR1VNTEhiblRKX3VMYm5qWXRsc05aYkxNaHJ3SERJT1NESjg1QTcxSnBXcVJhbVpramJSUDFydnF0dnp4bU15cmlMUQ?oc=5",
@@ -44,18 +52,10 @@
     },
     {
      "date": "2026-11-04",
-     "time": "00:48",
-     "title": "Fed Chair Kevin Warsh's New Plan Could Change How Often US Borrowers See Interest Rate Relief",
-     "src": "International Business Times UK",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQUJ0RUV6QzBUVksxNDFkQzhob3RZd0FYWlVRcUhBMkl5VmJsRVpaZWREOEQ4YzM1N1ZPc19HNHlBWkdUTkhnSWFXVExrQjhncmtqNTJ4dHJmcktHVFRmbUg3S2VDNFFCalZZUTdMSkpHZEcxeEFZM19WSGpNNTNNdA?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-03",
-     "time": "18:51",
-     "title": "Treasury yields rise as investors weigh midterm vote, jobs data and Iran tensions",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TM0lMaGtzaDFiQWsxYWh1Tm1pWnZ1c1FlSzF6OXFsUXVnV0s2RDM0aVFQVEY5Z0hMTHZnV1VER0RXZ2NoNzJzaEhYd1NILXNnVHJPYTdnMGxwWENQbkJyNmlveWkzREg0cWcwSWxB0gFzQVVfeXFMTmphanNOR2U3amR0WWtFZVg4b2p3Q0x6d294TW9Iam0wWGZtTFJMNndXUWE4TURRbWlieS1FaE5TN2dLbmgydk9JZUYzSVpHLTFqclFXSThuTXdzNkxkeTJLQVVTcE1wOVlRSl9qLTRZTG1lbw?oc=5",
+     "time": "06:54",
+     "title": "Dollar Rises Most in a Month on Higher US Yields, Strong Data",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMFQ3WWNUdmpsME9pTGJxOEVCZGZoNkZ0RDV2dFZMcDVRUTAycFRwNUFRNWdwbHBmTHV6SlRhOW96SkFIVlc0cDRpdXRUM3R5MVphNmJDZlpKdGgxV1BHVzRDU0FRRnNFVmMtU1VKM1dXN1I0V19HdHAwcTFPU3JDUHZkRGNQUV9yaHNvTldzVmM5Qi1ZNUhTU0ppb0VINnF1Vm9wTC05WjZlMTU1MnY1czEyRmI?oc=5",
      "priority": false
     }
    ]
@@ -132,17 +132,17 @@
     {
      "date": "2026-11-04",
      "time": "12:18",
-     "title": "Japan, South Korea stocks fall over 3% as Democrats lead in US midterms",
+     "title": "Japan, South Korea stocks fall over 4% as Democrats lead in US midterms",
      "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcEEyc29kYjR6eDlFUlpRVWtBY0VzNUVONDJ5eUlYcjU5cGNlSjhXNUFCMndnZEFqRTVMa3FvTTI1NXAwZ1FIelpvR3Jwcm4yWnhYM25LV2dhMU9OSnJRdmQ3OUhSRGZzNlZ6RTB6ck9WbGJyZm0xS0d4ZFZKSTYxSFVIdzl0eUhCNTVFT01zbEEzczM1WG9QZ00weHcwSFpVaVpBZ3BaM1ZHYTRIUnd3?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSURReXFqM2ZZSXFoSEg1Nk9nQWE5Y1pGbF9DNk1DM3kyMTh2cGRNY3hKaWUwMlJacXR1WTd6cWttMTVES2xvaExNNDlrSElnNTJZV2l4WWNVcFN5azUzVndCYXlnZHVvX0w3c0NUQ2ktS3Z5cnJzNkk5UUdnWWd1SlduczVNeWNqNUVtQThhNzZoX09WWFlxMjZYa2w1T1VSaUxHWUVOWFpHSXZqLVlJ?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-04",
      "time": "12:18",
-     "title": "Japan, South Korea stocks fall over 4% as Democrats lead in US midterms",
+     "title": "Japan, South Korea stocks fall over 3% as Democrats lead in US midterms",
      "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSURReXFqM2ZZSXFoSEg1Nk9nQWE5Y1pGbF9DNk1DM3kyMTh2cGRNY3hKaWUwMlJacXR1WTd6cWttMTVES2xvaExNNDlrSElnNTJZV2l4WWNVcFN5azUzVndCYXlnZHVvX0w3c0NUQ2ktS3Z5cnJzNkk5UUdnWWd1SlduczVNeWNqNUVtQThhNzZoX09WWFlxMjZYa2w1T1VSaUxHWUVOWFpHSXZqLVlJ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcEEyc29kYjR6eDlFUlpRVWtBY0VzNUVONDJ5eUlYcjU5cGNlSjhXNUFCMndnZEFqRTVMa3FvTTI1NXAwZ1FIelpvR3Jwcm4yWnhYM25LV2dhMU9OSnJRdmQ3OUhSRGZzNlZ6RTB6ck9WbGJyZm0xS0d4ZFZKSTYxSFVIdzl0eUhCNTVFT01zbEEzczM1WG9QZ00weHcwSFpVaVpBZ3BaM1ZHYTRIUnd3?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-04",
-     "time": "11:39",
-     "title": "Indian stocks inch higher as investors assess foreign fund flows, US election results",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT0tFa0Z0bnRlSFU3NTdYOFVXaGdid3Fad1NTRnViRDBTUWg2Um1BQ21RVlNkSWdjR2Y1Z2VXdV9fWXdjY19GZkJDZ2F0ZFFvckRQY2V0eDRwVzZJMkJ5a29mbGlLZUQyQkFzX1VwVThZdEQtZEdiUVJMRzJxeGFXQUxmclZST2l1RzN6elNobi1IZC11a2N2cFJDZEdQNVo1MmgxWlFBaHA3VXlLWHc?oc=5",
+     "date": "2026-11-05",
+     "time": "00:03",
+     "title": "IBLA | Uday Kotak's big RBI call: Interest rates could rise 75 bps this year",
+     "src": "CNBC TV18",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcW5BY2g4bFBEQ2l3MUdrbVY4Nm94QUdybXplOXNiTzI5S0l5cUhmRGxnc1dQMEFrTk9nTjE3SGF0YWJSMjZjVDlad1IwTmR0RjVxa0w4X3NGTkVDY0w4cF83WDlFRGNvTEpaeHVnU24zcGY5a3MxMmczcGNlLVBhNkFocjhGWlRCLWZWOF91dkZWMXNnazJ1b095TUZXb2NKNnlwd0R6a2NnaE82Wnk3b0puLVNxa3JySkNn0gHAAUFVX3lxTE5xQ2tOdlVfaWhmLWtYWUh2czREd21WSllKUUVkdWNEc0hOZU13aV9zQVM0OVZzWWJ6YVJrMVpERHhQNFhZcmFCUVJpY0hEX05pSnFLM2tGNmVuRXRka0tIZmdaN2VhYnhfRGs2TmphZTlNZUFwRHJTQ1ZnS2t6ck5BZkQ1SzNHa1E2S010SGFveWtwVHQxZTlPUDRGc0J5M1FHRkZ1QkdVZTlLOXhoTkhoNGl1b2NmVHU5WWpkSEdoRQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-03",
-     "time": "11:38",
-     "title": "Indian shares extend rally as earnings, cooling crude draw foreign buyers",
+     "date": "2026-11-04",
+     "time": "11:39",
+     "title": "Indian stocks post longest winning streak in nearly 5 months on FPI inflow hopes",
      "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcVNvY0lPbFp1SlNTR1BlbUstUy1iMUtZcGJzSTBxLXVBdEpWajhoT0RuWklLUkxfM1dFd1pWLVJxMnlaQzFnQzVyMUJEVC1sbVJGbmJTd2p5RGhNaldxbkNicjBvNWJ4dXoxS3RobzN6NTRzeDM5TV9fME1FTTJWM1JaNVNvM0JsSGRXTWQ1TG03MmlGZU43TVJyS1NHT0xGRWRpXy1ETkx1Q1E?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT0tFa0Z0bnRlSFU3NTdYOFVXaGdid3Fad1NTRnViRDBTUWg2Um1BQ21RVlNkSWdjR2Y1Z2VXdV9fWXdjY19GZkJDZ2F0ZFFvckRQY2V0eDRwVzZJMkJ5a29mbGlLZUQyQkFzX1VwVThZdEQtZEdiUVJMRzJxeGFXQUxmclZST2l1RzN6elNobi1IZC11a2N2cFJDZEdQNVo1MmgxWlFBaHA3VXlLWHc?oc=5",
      "priority": false
     }
    ]
