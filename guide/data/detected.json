@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T03:26:43+00:00",
+ "updated": "2026-11-04T02:10:16+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,15 +66,15 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-10-18",
@@ -85,7 +85,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-10-20",
@@ -102,7 +102,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-11-02",
@@ -125,7 +125,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-10-30",
@@ -142,11 +142,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
     {
      "date": "2026-11-01",
@@ -193,24 +193,30 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": [
+    {
+     "date": "2026-11-02",
+     "title": "GENERAL HAM LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNd1pjbEdwZXhGMFNvX2FibThfeDhoWm9SMmZUWDBST3kwS3Q4RTNjUkZpcWV5akJoVkFGT1phSURMWHJfN3VueFZXNnlCZFBwVFZ4bWR2UkdWVklIdld1QmIwdk1jdmFUQm80NWVvVGZBWGFVMFprRUlKakhiWFlQTGdSeVFuaGs?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-11-02",
      "title": "MICHIGAN CHAUFFEUR LICENSE STUDY GUIDE",
@@ -237,14 +243,14 @@
     },
     {
      "date": "2026-10-30",
-     "title": "KAHRAMAA LICENSE FOR ELECTRICAL ENGINEER",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTkp4MUFZVEdlYXRRcUVCQWpnTFp6bHRVUEt2VU44QUpRNG03b0RDOHQwWTcwYUlhcENOOXZOcTZ4MUw5UnE5WVFkTDhzT3oyWGFacE1IUmZ0MnVibWNzYy1vY2c5T2YwNkRJRkNPd3A3ZlQzVXNIY3B3NkhhbVpoSlV5bVlqWEFlTkRkd3Z1Zw?oc=5",
+     "title": "BOTSWANA DRIVING LICENSE THEORY BOOK",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcHJ3SW5YTXZTUXZFZWFpcDIwS3V2b2dEM0xlTEJvZ2FPelhwZ2xlejI2WXVOaWR4NWFNSi1VTXo1VkFMQ2FOUmVSeDZWRWVtZ2NyankwZTRBMVVwekxRd3lTcEhDSkJPM29BUDEtaENNYU85aDlqRWhoN3VFQVF0MGVKMHNCbjl3UkE?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
      "date": "2026-10-30",
-     "title": "BOTSWANA DRIVING LICENSE THEORY BOOK",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcHJ3SW5YTXZTUXZFZWFpcDIwS3V2b2dEM0xlTEJvZ2FPelhwZ2xlejI2WXVOaWR4NWFNSi1VTXo1VkFMQ2FOUmVSeDZWRWVtZ2NyankwZTRBMVVwekxRd3lTcEhDSkJPM29BUDEtaENNYU85aDlqRWhoN3VFQVF0MGVKMHNCbjl3UkE?oc=5",
+     "title": "KAHRAMAA LICENSE FOR ELECTRICAL ENGINEER",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTkp4MUFZVEdlYXRRcUVCQWpnTFp6bHRVUEt2VU44QUpRNG03b0RDOHQwWTcwYUlhcENOOXZOcTZ4MUw5UnE5WVFkTDhzT3oyWGFacE1IUmZ0MnVibWNzYy1vY2c5T2YwNkRJRkNPd3A3ZlQzVXNIY3B3NkhhbVpoSlV5bVlqWEFlTkRkd3Z1Zw?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
@@ -292,11 +298,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-03",
+   "auto_checked": "2026-11-04",
    "items": []
   }
  }
