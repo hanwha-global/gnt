@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T02:10:16+00:00",
+ "updated": "2026-11-05T02:17:10+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,15 +66,15 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "ID": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-10-18",
@@ -85,7 +85,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-10-20",
@@ -102,7 +102,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-11-02",
@@ -125,7 +125,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-10-30",
@@ -142,11 +142,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-11-01",
@@ -193,34 +193,34 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
-    {
-     "date": "2026-11-02",
-     "title": "GENERAL HAM LICENSE STUDY GUIDE",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNd1pjbEdwZXhGMFNvX2FibThfeDhoWm9SMmZUWDBST3kwS3Q4RTNjUkZpcWV5akJoVkFGT1phSURMWHJfN3VueFZXNnlCZFBwVFZ4bWR2UkdWVklIdld1QmIwdk1jdmFUQm80NWVvVGZBWGFVMFprRUlKakhiWFlQTGdSeVFuaGs?oc=5",
-     "src": "10anos.cdes.gov.br"
-    },
     {
      "date": "2026-11-02",
      "title": "MICHIGAN CHAUFFEUR LICENSE STUDY GUIDE",
      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdVk4SUF4ZEp5VWVzeDdKOW5WUmR2YnpJUVdMM3p6a3lXT0pEVDQwUmg4VVh3WVRmZktZcWdZRy1ETDlnb25rRnAxNUZ0ZGdvVzdHM2pybm1ZWFNuMHN1Z3I5WDRjQTBGamFCT2JQYmpSUV9XdGFUTWU5a0hqcHlYc1FOZGJkRC02al9iVg?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-02",
+     "title": "GENERAL HAM LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNd1pjbEdwZXhGMFNvX2FibThfeDhoWm9SMmZUWDBST3kwS3Q4RTNjUkZpcWV5akJoVkFGT1phSURMWHJfN3VueFZXNnlCZFBwVFZ4bWR2UkdWVklIdld1QmIwdk1jdmFUQm80NWVvVGZBWGFVMFprRUlKakhiWFlQTGdSeVFuaGs?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
@@ -298,11 +298,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   }
  }
