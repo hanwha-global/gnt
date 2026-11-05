@@ -1,38 +1,38 @@
 {
- "updated_at": "2026-11-04T03:06:06+00:00",
- "checked_at": "2026-11-04T03:06:06+00:00",
+ "updated_at": "2026-11-05T03:34:27+00:00",
+ "checked_at": "2026-11-05T03:34:27+00:00",
  "source": {
   "label": "IDX 회원사별 거래 요약(Ringkasan Broker)",
   "url": "https://www.idx.co.id/id/data-pasar/ringkasan-perdagangan/ringkasan-broker/"
  },
  "method": "회원사별 매수+매도 거래대금 ÷ 전체 회원사 합계(정규·비정규 시장 포함)",
- "last_day": "2026-11-03",
+ "last_day": "2026-11-04",
  "ytd": {
   "from": "2026-01-02",
-  "to": "2026-11-03",
-  "days": 200,
-  "total": 8122211566459958,
+  "to": "2026-11-04",
+  "days": 201,
+  "total": 8143749024308352,
   "rows": [
    {
     "code": "XL",
     "name": "Stockbit Sekuritas Digital",
-    "value": 904043193579682,
-    "share": 11.13,
+    "value": 905880592679532,
+    "share": 11.12,
     "rank": 1,
     "korean": null
    },
    {
     "code": "CC",
     "name": "MANDIRI SEKURITAS",
-    "value": 840170442390667,
-    "share": 10.34,
+    "value": 842800002916267,
+    "share": 10.35,
     "rank": 2,
     "korean": null
    },
    {
     "code": "AK",
     "name": "UBS Sekuritas Indonesia",
-    "value": 821167366798851,
+    "value": 823722160866431,
     "share": 10.11,
     "rank": 3,
     "korean": null
@@ -40,15 +40,15 @@
    {
     "code": "ZP",
     "name": "Maybank Sekuritas Indonesia",
-    "value": 552090156927039,
-    "share": 6.8,
+    "value": 553309294296497,
+    "share": 6.79,
     "rank": 4,
     "korean": null
    },
    {
     "code": "YU",
     "name": "CGS International Sekuritas Indonesia",
-    "value": 430147966693905,
+    "value": 431436030553725,
     "share": 5.3,
     "rank": 5,
     "korean": null
@@ -56,15 +56,15 @@
    {
     "code": "YP",
     "name": "Mirae Asset Sekuritas Indonesia",
-    "value": 414811086316929,
-    "share": 5.11,
+    "value": 415732695988929,
+    "share": 5.1,
     "rank": 6,
     "korean": "미래에셋증권"
    },
    {
     "code": "BK",
     "name": "J.P. Morgan Sekuritas Indonesia",
-    "value": 312890162532883,
+    "value": 313887134553131,
     "share": 3.85,
     "rank": 7,
     "korean": null
@@ -72,7 +72,7 @@
    {
     "code": "PD",
     "name": "Indo Premier Sekuritas",
-    "value": 310501608258422,
+    "value": 311047792722426,
     "share": 3.82,
     "rank": 8,
     "korean": null
@@ -80,7 +80,7 @@
    {
     "code": "MG",
     "name": "Semesta Indovest Sekuritas",
-    "value": 272238330872306,
+    "value": 273162321479206,
     "share": 3.35,
     "rank": 9,
     "korean": null
@@ -88,7 +88,7 @@
    {
     "code": "XC",
     "name": "Ajaib Sekuritas Asia",
-    "value": 225261231012990,
+    "value": 225770244873490,
     "share": 2.77,
     "rank": 10,
     "korean": null
@@ -96,7 +96,7 @@
    {
     "code": "CP",
     "name": "KB Valbury Sekuritas",
-    "value": 221182690860504,
+    "value": 221712904955504,
     "share": 2.72,
     "rank": 11,
     "korean": "KB증권"
@@ -104,7 +104,7 @@
    {
     "code": "LG",
     "name": "Trimegah Sekuritas Indonesia Tbk.",
-    "value": 189548138797321,
+    "value": 189740534736221,
     "share": 2.33,
     "rank": 12,
     "korean": null
@@ -112,7 +112,7 @@
    {
     "code": "SQ",
     "name": "BCA Sekuritas",
-    "value": 180435429097342,
+    "value": 180955807628442,
     "share": 2.22,
     "rank": 13,
     "korean": null
@@ -120,7 +120,7 @@
    {
     "code": "NI",
     "name": "BNI Sekuritas",
-    "value": 162973611899802,
+    "value": 163310997295802,
     "share": 2.01,
     "rank": 14,
     "korean": null
@@ -128,15 +128,15 @@
    {
     "code": "KZ",
     "name": "CLSA Sekuritas Indonesia",
-    "value": 142235013383460,
-    "share": 1.75,
+    "value": 142993107940760,
+    "share": 1.76,
     "rank": 15,
     "korean": null
    },
    {
     "code": "AZ",
     "name": "Sucor Sekuritas",
-    "value": 138558563164535,
+    "value": 138979871347135,
     "share": 1.71,
     "rank": 16,
     "korean": null
@@ -144,7 +144,7 @@
    {
     "code": "DH",
     "name": "SINARMAS SEKURITAS",
-    "value": 137490065907534,
+    "value": 137845042329552,
     "share": 1.69,
     "rank": 17,
     "korean": null
@@ -152,15 +152,15 @@
    {
     "code": "RX",
     "name": "Macquarie Sekuritas Indonesia",
-    "value": 119803336509803,
-    "share": 1.48,
+    "value": 120059733757683,
+    "share": 1.47,
     "rank": 18,
     "korean": null
    },
    {
     "code": "OD",
     "name": "BRI Danareksa Sekuritas",
-    "value": 116108069575882,
+    "value": 116390759620082,
     "share": 1.43,
     "rank": 19,
     "korean": null
@@ -168,7 +168,7 @@
    {
     "code": "KK",
     "name": "Phillip Sekuritas Indonesia",
-    "value": 97154624892772,
+    "value": 97411994324372,
     "share": 1.2,
     "rank": 20,
     "korean": null
@@ -176,7 +176,7 @@
    {
     "code": "BB",
     "name": "Verdhana Sekuritas Indonesia",
-    "value": 94800895812342,
+    "value": 95245809920390,
     "share": 1.17,
     "rank": 21,
     "korean": null
@@ -184,7 +184,7 @@
    {
     "code": "KI",
     "name": "Ciptadana Sekuritas Asia",
-    "value": 89380367849473,
+    "value": 89471042542373,
     "share": 1.1,
     "rank": 22,
     "korean": "한화투자증권"
@@ -192,23 +192,23 @@
    {
     "code": "GR",
     "name": "PANIN SEKURITAS Tbk.",
-    "value": 81672000772598,
-    "share": 1.01,
+    "value": 81824122477298,
+    "share": 1.0,
     "rank": 23,
     "korean": null
    },
    {
     "code": "IF",
     "name": "SAMUEL SEKURITAS INDONESIA",
-    "value": 80526768871206,
-    "share": 0.99,
+    "value": 81245747468406,
+    "share": 1.0,
     "rank": 24,
     "korean": null
    },
    {
     "code": "BQ",
     "name": "Korea Investment and Sekuritas Indonesia",
-    "value": 78433124212699,
+    "value": 78619307178999,
     "share": 0.97,
     "rank": 25,
     "korean": "한국투자증권"
@@ -216,7 +216,7 @@
    {
     "code": "XA",
     "name": "NH Korindo Sekuritas Indonesia",
-    "value": 57167822041763,
+    "value": 57341991002963,
     "share": 0.7,
     "rank": 31,
     "korean": "NH투자증권"
@@ -224,7 +224,7 @@
    {
     "code": "AG",
     "name": "Kiwoom Sekuritas Indonesia",
-    "value": 37258106473038,
+    "value": 37379554481338,
     "share": 0.46,
     "rank": 37,
     "korean": "키움증권"
@@ -232,7 +232,7 @@
    {
     "code": "AH",
     "name": "Shinhan Sekuritas Indonesia",
-    "value": 711711314280,
+    "value": 711824388380,
     "share": 0.01,
     "rank": 85,
     "korean": "신한투자증권"
@@ -543,7 +543,7 @@
     ],
     [
      "2026-11",
-     3.85,
+     3.98,
      7
     ]
    ]
@@ -604,8 +604,8 @@
     ],
     [
      "2026-11",
-     3.1,
-     11
+     2.9,
+     12
     ]
    ]
   },
@@ -665,7 +665,7 @@
     ],
     [
      "2026-11",
-     0.84,
+     0.85,
      26
     ]
    ]
@@ -726,8 +726,8 @@
     ],
     [
      "2026-11",
-     1.11,
-     22
+     1.02,
+     25
     ]
    ]
   },
@@ -787,8 +787,8 @@
     ],
     [
      "2026-11",
-     0.38,
-     39
+     0.4,
+     38
     ]
    ]
   },
@@ -848,8 +848,8 @@
     ],
     [
      "2026-11",
-     0.71,
-     29
+     0.66,
+     30
     ]
    ]
   },
@@ -910,7 +910,7 @@
     [
      "2026-11",
      0.0,
-     85
+     86
     ]
    ]
   }
