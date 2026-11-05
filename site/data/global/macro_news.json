@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T10:44+09:00",
+ "updated_at": "2026-11-05T20:15+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -7,26 +7,26 @@
    "items": [
     {
      "date": "2026-11-05",
-     "time": "10:34",
-     "title": "코스피, 낙폭 확대에 매도 사이드카…외국인 1조원대 순매도",
-     "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IcDNpb3BBblROeEg4LUYyRDI2VkdLMnF1cHRIU1JoRTF4NTlnbENUX0JIaVhhZkJGUHhxUVp0QlYzRVlReHdfcnVuS1phS1ktRUotd1gyZEFuc0RBMzI3Y2p3NjVwaTJveW43LUxLc0g?oc=5",
+     "time": "19:56",
+     "title": "파란 쓰나미에 코스피도…외국인들 팔아치운 주식 보니",
+     "src": "news.sbs.co.kr",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORTlOa3dSUGs4UG1IREZCRUhYZ0huVjZMZjZFSTVCZ3FrbExfMkdONHZSWHJaMEhwcmh6b2tKRHNvWjYtWUw2c3dMVmhDZ1VqSm5uVTgyY21rQzd0LXh3YzZlbEVIVmh4OFpCZmlKTl9jcndEb1VKMG5UcTYzMTgzOGZ6UGpzdGtmMTRUc1RRLXJ4Zw?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-05",
-     "time": "10:23",
-     "title": "코스피, 외국인 매도세에 장중 4%대 하락…매도 사이드카 발동",
-     "src": "아시아경제",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDeElvYmN4VUpQRVNFeE9Mc3pXOU5oY2tZLWVRZjF0dEtHeEVGOVF5Z0J1dkd1VHJTZ1R6WlJVTDhWNENQbGc2ZjVFSXU0TmdrTXVtOVI5Y29Mc2tOc0pFRFhB?oc=5",
+     "time": "17:12",
+     "title": "AI·반도체株 투매한 외국인, '블루웨이브' 코스피엔 쓰나미",
+     "src": "머니투데이",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IX19KYWJOeXpZRTBwbWw2Z0VxUFlVY2hkRU15V1JES29LQlYyUzlvYV95UVNXeXFDem1xYWJ0S3R1Ri1DT2U4X0luV21EYTlsem8wcFU3TzBrWHZvZ0xoUV9jdnVNM0YxdlNiSU9xdGR3cVBQSVHSAXtBVV95cUxPb2JSbm5PbkNpcThLY1JTZWJGanFvNGJSRTFZOW9rV0plQ0Z4Zl9zejVxR1BneTZhQzVSLWRYLUNZUklNaEdiY2xrelNKc3BnSXFTa21rSHpTbVM2b2ttZEFkTlVVbDM5Q2hPVDJZMTFTVkF1bnJ0Tl9Gdlk?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-05",
-     "time": "10:00",
-     "title": "[영상] 美 중간선거에 출렁인 코스피…외국인 하루 2.5조 순매도",
-     "src": "서울경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5kVDc0TEU1b2YtMWFEZEowbkY1SHVnLUMzLWxnWDJEMEJiMzlEOF9tQl9yZlI5ODZkSWNseEpUcnZUOVpXRm16SFJXc1NnRkZXMnc?oc=5",
+     "time": "16:16",
+     "title": "외국인 3조 순매도…코스피, 5.28% 내린 5383 마감",
+     "src": "SBS Biz",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5wRExNd1czRzh1M0s5TXlqaUtlckhtdlFCWVV1VGtUdl9RTW9PWDFlV2tRWE5udEt3dDhiczN6WHFqVjF1TjNQSzJsV3RCaEV2UE530gFYQVVfeXFMUFA3UkY1VFdtMFVVaDQ1dkg0VW92enlTd19pOC1feUZINkVrWVl3eFdLTEM3M1VzSFJTT3pMc2k1b2RZa0Q3VXdaU0w4SG5iYWRQMU5fWWxELQ?oc=5",
      "priority": false
     }
    ]
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
-     "date": "2026-11-04",
-     "time": "12:24",
-     "title": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+     "date": "2026-11-05",
+     "time": "18:38",
+     "title": "Treasury yields continue to fall after midterms, traders look ahead to jobs data",
      "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ2FPb0VDa1pUYWotYjQwXzBBYm1nN0dhMUw1X0hLZ3B1MTRPeTh3ZnhkT1BPVDVMYS1tZDVRYjIzS19SNkh5dlFMZzZEZktrdTk2dmR4ZXYyZVA1VWxEMEJadkZXcXFLelM2VEp6c19sSjdybnZzMFgweU5lNndHemoyY29qVXgyaFh5TlBOYnQ0ZHpJS1VwbVZqanhpcDVZQXFVVdIBqgFBVV95cUxPaE54YmlQLU1IZ2hRWnFkOGZHRzg1VFJTQVlkaGxkVUVzZTlvSFdXOUplRmhUUURkMnJybkpxMkNERjFQbkFlb0xTbS1KUmJIbHBKSmw4aG9fOXF6c3pQSHl3bmE3N1lyR1VNTEhiblRKX3VMYm5qWXRsc05aYkxNaHJ3SERJT1NESjg1QTcxSnBXcVJhbVpramJSUDFydnF0dnp4bU15cmlMUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBwRFU3SzVLNDJOd1p3SDRNMkE0QjBMRms2d1RJaDZEMlZaSGQzUUN1Qjc4eW90Z2NDTmZITmh0QnZIbU1uc3hlUFRZV2NvYTRkQ2I1eHZ3dGpJSVFQRUpWZ1YycWJZYy1iZnZzdTNiQ0x2Wi1WQ2RkNmpuUm1vd9IBgwFBVV95cUxNNHdYYnNDYV9CX1JxUEl4bGJBSmtGSXNGTWN0NURsdkpHRHZqcVBmUGhHWUxlZ19ab0VfdjFiTjIwZkpCX3ZZaWVSNXdLUWY3eU43ekw1N0Z2WC1qWVYxUHFKZ3Z1Y01ON1B6N1Y5RlVoNUJWbmZ6YjZQN1B0ZTk1RjNhQQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-04",
-     "time": "12:24",
-     "title": "10-year Treasury yield is little changed as traders mull over Democrats' midterm victories",
+     "date": "2026-11-05",
+     "time": "14:03",
+     "title": "Gold hits a two-week high as dollar, Treasury yields ease after U.S. midterm elections",
      "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ2FPb0VDa1pUYWotYjQwXzBBYm1nN0dhMUw1X0hLZ3B1MTRPeTh3ZnhkT1BPVDVMYS1tZDVRYjIzS19SNkh5dlFMZzZEZktrdTk2dmR4ZXYyZVA1VWxEMEJadkZXcXFLelM2VEp6c19sSjdybnZzMFgweU5lNndHemoyY29qVXgyaFh5TlBOYnQ0ZHpJS1VwbVZqanhpcDVZQXFVVdIBqgFBVV95cUxPaE54YmlQLU1IZ2hRWnFkOGZHRzg1VFJTQVlkaGxkVUVzZTlvSFdXOUplRmhUUURkMnJybkpxMkNERjFQbkFlb0xTbS1KUmJIbHBKSmw4aG9fOXF6c3pQSHl3bmE3N1lyR1VNTEhiblRKX3VMYm5qWXRsc05aYkxNaHJ3SERJT1NESjg1QTcxSnBXcVJhbVpramJSUDFydnF0dnp4bU15cmlMUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNT0lNbWJsNm9BQkZObjdwTWNBbTQwd093S1c1dV9PTjZmNEQxVmtwNTZwQUROOXJTRFJndXVzVUJJMGloUGdsTjhfN3ctWTdrWFFvME1RbU10OU9MRjFsVElxd0djQTh6YzVKRVhURjA2U1haNEE3ZlVsSXo0VUxNS2F6cnNvQ2RVc0psX3dLck1iNklSLTdRLVE1ZWNSZ2x3MVHSAacBQVVfeXFMTUQta0lIa2tjODZlMzc5Y1hWN3Jpb2YzUVByM3dTNWFsNkdSVmVMT0tVck96cER4VW1jckVUX3VKTG9kVllod0VnTy1Vcy13MVoydnU3NWp1aVBEZjVSY3BVQTNOMUw0V0JmX3p0ZWFSVUNGZ3FZWC1ydW9uakQ4S3dUYTVCUkRPZ2pmWWJISzRZbmxRWEI1UXR1LVZtWVVTNVd2R0U5ZjQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-04",
-     "time": "12:24",
-     "title": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ2FPb0VDa1pUYWotYjQwXzBBYm1nN0dhMUw1X0hLZ3B1MTRPeTh3ZnhkT1BPVDVMYS1tZDVRYjIzS19SNkh5dlFMZzZEZktrdTk2dmR4ZXYyZVA1VWxEMEJadkZXcXFLelM2VEp6c19sSjdybnZzMFgweU5lNndHemoyY29qVXgyaFh5TlBOYnQ0ZHpJS1VwbVZqanhpcDVZQXFVVdIBqgFBVV95cUxPaE54YmlQLU1IZ2hRWnFkOGZHRzg1VFJTQVlkaGxkVUVzZTlvSFdXOUplRmhUUURkMnJybkpxMkNERjFQbkFlb0xTbS1KUmJIbHBKSmw4aG9fOXF6c3pQSHl3bmE3N1lyR1VNTEhiblRKX3VMYm5qWXRsc05aYkxNaHJ3SERJT1NESjg1QTcxSnBXcVJhbVpramJSUDFydnF0dnp4bU15cmlMUQ?oc=5",
+     "date": "2026-11-05",
+     "time": "13:07",
+     "title": "Treasuries Gain as US Vote Fuels Hopes for Curbing Bond Supply",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNklNSm52T3VRLUJPMElGSVN3QWswWkFqSjIxcHJTM1U5eFhqX3pTZElBRVc1bHRibnY5UE9BdG5vcDJ0eDJjZ0V0angwZ3VNdXo2N1V0WlJSUGdtVUJFeFZ0SnkwWnJtNHplZy1rWnZ0Q1poMUl3cEthOHJLeUZxdVJaVDRxOHFFSThtWG5WVlptVDF0T2xkNjZMR0lvUG9xcGYtakpwNUluUnZ0ZmJnelF5cw?oc=5",
      "priority": false
     }
    ]
@@ -63,6 +63,14 @@
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-11-05",
+     "time": "14:53",
+     "title": "Indonesia Kicks Off First Dollar Bond Sale Since MSCI Fallout",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOW9hWGdXcjU2c0VGcXpPMXppNmtHenpLcFB1bzdWdEppU1podFNiTlFVNzJiVDVWWk10TGVNbVhySkItNEV1bFNESl9JeVpEV09GY2FHSmNWN2xIWHFhNVJnb0ZMMmhSbTNud29fa09WZnFpNEhERkU0aURkRmdtTXFaVGlRVThRTzNTQ2VXQzEyeGRwX1BPMkpGZjZyanRpMERYV3NXb3hrOGdyakRBdUl3?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-03",
      "time": "18:11",
@@ -77,14 +85,6 @@
      "title": "MSCI’s warning does not define Indonesia’s economy",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNb2tmUUVkN1FUdjZ6Snd0bFJpWmpEb184R2oxRnhkZ3NtUk9JSThkdTFESzhIa3V4azdYa1ZuLUNGd2RZMzNaRmpKdE02Uzk1a2VwMzlKUnJoejQxNU9Rb3JFQm1PT1k0X1pSd0Nma1JLV3ZvNEFLVFhLYnNKdXNPWUx0MUR3bVZvV0ZCLWl1UUdRNWhuS3ZVZE8tZ2JySk0?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-03",
-     "time": "09:04",
-     "title": "Franklin Templeton CEO Hopes Indonesia Changes on MSCI Warning",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZWltTkd5a2E4QTVRaEdZbUwtZm8wYWk5RWx5TGx3WkpRZ3BMOWNmellJX3pmWHE2MkZhSlJkVlh1azE1UmQ2ZGNfeFloVDJuS2FKSmpfTEFYdWU3WDFEbmZKMUNLM1RGMlBDa0s0OFJCYjFGWEMzN3NfdHRZRmxxU20tZFVoeGZ3N1NSQWg5R2ZUWGVwbVBzVmFObU42UlNZWnU0ZXdKWHhfU0lTNTNWeXl1VQ?oc=5",
      "priority": true
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-05",
-     "time": "09:05",
-     "title": "BOJ debated need for more rate hikes, scope for faster move, September minutes show",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMGtjWlBTY0pHaGtXZXZ5SnhvXzkyREVPdWJmcU5YRWpRcktiSTc5NnExRXlZbC13WE9aLVdOWktKUGdpSXk0VlE4aTBkbmg0RHhDa2x4YXpDdHhxQTJDMzU2OThrbVFKVTlWVkpfYWF4TEVCYi1yaWJzMFMwcUdkSnN6Q0lwU2FQYVMyYXU2MDFjckNlWC1LbWZPQ2JPaGlSaDNKMUdRRnh4dWJvX2gwWEdaQmttbDIwQ2hlYmtFT0Q?oc=5",
+     "time": "16:03",
+     "title": "BOJ policymakers signal scope for faster interest rate hikes",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNkZFQ0dIdUlGMmp1MURhUWNxREtIQ3RFZTYzMElzVHJzVVo0bGg3alFDRGVWdnNGaURMdU1fR3pGd0ZCaF9wcG5LTjVSNnBObU5vWEllX1Z0dU1Pa21xM2pNcE9mdkVDNXRlaC1kb0RVTXFkY1AxdTByTHlQV2s2TVRhdndKR0lZSXNITlNBZi04YVFodG1peEVLZlBkc29ocklaOGhxcWRlOGNRaUFNMEUtajk4dFppZmFQblZJSS1DU2MyY1VyajZKaEtKYm1vSmE40gHYAUFVX3lxTE5SY21WTTYtTTFqaXhOZi1Yd1ZNbEFJVEdJUXRxWllvaE56QWZ2SWxnYTZ2TVQtTGlKaUZzbEZ4VDNwa0UtMEdEMFpiYmhCbnRMREw0QkIzbEcyTm93SmN3cnlOamFiQUVxYTlmU1NrYTBaUko3NkwxaHNfYy1Kak5PbG8ybHduLS1JM2Fid1BnOTg1VUdpdGgxUF9qWmxWZG5WTW1hRVFpajMwQnF6T3J1NDIyVTVxbFBRVUhBeEU3a0d3RTFnejFXblBhTTduOU1welBweHc0Vw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-04",
-     "time": "13:45",
-     "title": "Japanese Stocks Sink as US Midterm Results Hit Tech Shares",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcDB3akEyZElHNy1WcXY0RTZsc0F1RE5GTGZQdFhIR3U5aEl3QXdjUWVmNzhJOEZRUHZiRmstb0NUeF9Bb0hOYXVMSzhHWHRRWTZmdXdWQkZuWU5sWE9FMWJtQVRMdTk3TjRCYWZnY0xJb1RhdHhuRVlxM0tMeVVqYy12ME5RQTBBZUhNWEs4ODNIaDd4RWwwa0E2cnVLVUJpS09xWDdiQ1NhMDVJZXc?oc=5",
+     "date": "2026-11-05",
+     "time": "15:04",
+     "title": "Japan bond yields fall as oil prices slide on hopes of Iran war de-escalation",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQX0VSTHBjWWIyOGxWN2x6LXNiblZfUnJZbHZxclk1c0dPRlB0TExpWDU2TW5EcEY0cEQyVGRFZkJjTG0tNUNiRTQwUWFuTU9XbUJNQ1R5dUtpcF9lSTZyNGxObS1icjNmekZoajExb3NHS0VmaUtFeERBdVZpcW41SmVBdG9tdTdFSXVxdVZtb1B5TUhfMWN5VG1JeUcxRVBQN1RBTkd0T0FsUERvRXhOd2ljQlVJOWM4YlZnRXZDRTZwTHV6MHNNVTJQZ0tLWlJ2V3BCQ3p5N21MMzBBbW1zdHZaSUtyTU1LeVHSAe8BQVVfeXFMTTI1YThqOFhXVGJyWks0Q2IzVVppX1JValZsOVA4MEZmSUM5eHozWjhaVGxQV2U0b1hoOGZfNkp4QUx2aUlpbS1tT3R5bHVzcHNYV2VxS29JSGlHX2tnOHRDNjZGOTUzR1NweVdpeU9sNkU5SUhIRTRkbzhNcDd6UzFqam9nZ0xxdVczTmV6N0FrMjVNdzZZSktjdmk4RFdKYUdSYXlOU0lfMmJfcXRtTmh3OVAxbGpFdFhJWG1GcXdRTVYwdDZ5RkJwdFdyWThnZWlBZC04YkdkY1pMam9FZjhlMWVNVG53N2IwckFFM3c?oc=5",
      "priority": false
     }
    ]
@@ -151,27 +151,27 @@
    "label": "중국·홍콩",
    "items": [
     {
-     "date": "2026-11-02",
-     "time": "10:39",
-     "title": "China's shift to new policy rate signals easier funding conditions",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQR1Y5OGZoNEh2ZzdKN3pfVGlFWG8zT0tUdk9xOXQ2T0JfVlREREdhUWhpaFlTZmJPMV8wZ0h5SUg2YWd1bHA5M3FIaVFBZUdwbG1sbi0xMnNXdDFVNWotcmJTbHpCZWhCV0stcDd2WDFvcTZ6RkxsQ050V2ltZW5UUFgxcUk2ei0xQjROZENtTXdPX1A3ZGJ5RWluMVV5eHdvUThnbVdpb19vaTA0RGR5ZWVyLVg2bVh6Q2c?oc=5",
+     "date": "2026-11-05",
+     "time": "17:45",
+     "title": "Hong Kong Stocks Roar Back as Value Rotation Boosts China Tech",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaDdjYlRJdXR5ZF96alAtRG1fVk9ROW9xYzlqdWt2TnlfNi1nN0RxNmREcU5NV3VYY1NIRjdMYTRQN1VQMHVCakhKY1lDdFlGWVB3aDBHQVRFTXM3bGdSVXltaHVxQ1p4bTUtN1A5MFcxLV9kUGZNWFdLSmJQYlNJNm12NjI5dVRlal8ySnhyTDdRei1HSEpnSWxXMHR1TzZLZnYxRUl3VWZXYjdfbldV?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-01",
-     "time": "16:03",
-     "title": "Chinese AI Stocks Deflate as Semiconductor Shares Plummet",
-     "src": "조선일보",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOXNfdm52MHJLZ2VHN0xVMjhreXpVRldBQkF5c2FnbUJmaUpPMXhVWVpyVzZmbjFEYXFFTmtEWU9PUWFFTWtyQjVEQnBVTjNURDdqVXhNQmFxSTRBZ3AxaEhEVlQ2azNmVEY3WEJCdTZvbFEzOWtCUjUwQ3lxMHpnTUtacVotUW1X?oc=5",
+     "date": "2026-11-05",
+     "time": "15:09",
+     "title": "Hong Kong stocks jump 3%, China shares edge higher as tech stocks rally",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNX2w1cE9jN3p0UkVOY3F5a1ctRF95Zm40aTFNOTE4RnkyV2JvZktnMmtGdkZjQUU1TTl4TGViSERsWmNlSk9vdkhmMmgtQ3IyMGtpeUNCSUsydExiWmltbUV2OUN5WUl5NGExSXcxd3RvVVRXLTVUWHhuTkZtQmNKcWYybjhIRXRENmNZanpYcmVaNXJMTnlOZDk5Q29oSENxcE9mX3FSOXQ5eUhOUjhKY0VKYmJSOXV6WlZOVXZKZ0c3cXBDZWpsX3NRdkFvekNGRkJHSnlCQlcwYnp5cC1F0gHkAUFVX3lxTFBFQ0pfUDl1SnFZQjNkaEM3UUtnaUdIUUNfRXlqdldLSlhsRnNmaE14RTZMV052UnQ3aFQtMUV0OC1oQ25xdnNzRnVyYVEwT0s3bE5MRHRtV0E1RFJQczc4cWN0U3BMR0tyQUotOVNTQlJUVmNqalJRMlJFWnN5bmNGQ1FyTnQxS0syT2pzOVNGSnRjSXhzLW5sS2dhd0pxazBMRG5KNko0RGI5UG80cDFOT0VfN0xUUmxDRHQ2dnEwTHJzZlNwa25obGtNRjJHX1lTQ1o4bkFfcEFKTlVlaDNnOEV2LQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-10-31",
-     "time": "12:53",
-     "title": "China lifts secrecy on new key rate, sets it below old benchmark",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTS1kX21mSmhrWGJhUXZoR0x5QTl3NkVSY3c3QjQzNkhMc2p4WjNmM1FnLUpjeXBhYlRqTmU1ZWQyS1NoblRTZmFkeHNQd19BZDZiQnpjNm5fNHhtaVFRMVZUczlSYVJGb3lBNm1fYjk0QVBWVTA0ZmJnSDc5VGtTSWd4TU53R3RlX0U0UUVFbk5YU1BJdVFHU3JoTU0zdjZjaERqSnJQYjlZRFk?oc=5",
+     "date": "2026-11-05",
+     "time": "13:27",
+     "title": "China Bank Funding Costs Hit Record Low on PBOC Rate Shift",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMHF2ZjZRMk03bzY5NC1maE5kT2NTaVBYTFpBOFowclNWUXFuRDFfZHp5ZTVUUUZ5VF9GM0twX2hCMmdrdVRhTTFmNVhNU1RaQ092bnRCa2VJeEtOeEthc0hsRnBNdk9XZTZVX010N0QwTDVZM19UWEc0dm1kZ2JlRXRvLVBwNmxkbV9ITEJuM0dCeTQ0cnFvd1lNdy1BZXRMZHJMVWZvZ3hPR2llMVE?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-04",
-     "time": "20:11",
-     "title": "Singapore stocks end flat as Democrats win in US midterm elections",
+     "date": "2026-11-05",
+     "time": "19:32",
+     "title": "Singapore shares rise on strong win by Democrats; STI up 0.5%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ2xqVEZPSjhsXzItVWNOQkFRb3dPTTdpVDdOU0hLYU5DMFZVRmh6WkdLSXBEWWkxTU1zTjZ6LUZQVTItbk1HTE9nV1RpVEtOMVFfS3UyMHNlbTM2d0lVSVpNV3AtMFUzMWNOUkhVMUZHSVhfSExlTkFfSUQ5dTJST2FiQTZZUlYwU1hfVmVmcFpxd3Bhb245YkIzTE5vWko3bWc5ZWR5UG80R2NuV193aQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOd1k4QjN5elVSYTBrZWJxV1RTd09zRl9XZmZKc1d4M1ZrRVQ4dUJxeTlhUk5oeVlkazBDV2U0NjUyWGFfaXUta3ozaV9NZmJtMGhOMncxcWZFdkhSdzczamtvSkdZYjFEQnZZNFpsbDNEdjdnWmk0UUR2dEZqR1VKUU1xRGE5TFpqU0dNdE9Ua2NwUkUwQTVQR2xoYWhDUVJCOFF3?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-11-05",
-     "time": "00:03",
-     "title": "IBLA | Uday Kotak's big RBI call: Interest rates could rise 75 bps this year",
-     "src": "CNBC TV18",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcW5BY2g4bFBEQ2l3MUdrbVY4Nm94QUdybXplOXNiTzI5S0l5cUhmRGxnc1dQMEFrTk9nTjE3SGF0YWJSMjZjVDlad1IwTmR0RjVxa0w4X3NGTkVDY0w4cF83WDlFRGNvTEpaeHVnU24zcGY5a3MxMmczcGNlLVBhNkFocjhGWlRCLWZWOF91dkZWMXNnazJ1b095TUZXb2NKNnlwd0R6a2NnaE82Wnk3b0puLVNxa3JySkNn0gHAAUFVX3lxTE5xQ2tOdlVfaWhmLWtYWUh2czREd21WSllKUUVkdWNEc0hOZU13aV9zQVM0OVZzWWJ6YVJrMVpERHhQNFhZcmFCUVJpY0hEX05pSnFLM2tGNmVuRXRka0tIZmdaN2VhYnhfRGs2TmphZTlNZUFwRHJTQ1ZnS2t6ck5BZkQ1SzNHa1E2S010SGFveWtwVHQxZTlPUDRGc0J5M1FHRkZ1QkdVZTlLOXhoTkhoNGl1b2NmVHU5WWpkSEdoRQ?oc=5",
+     "time": "16:34",
+     "title": "Sensex stocks Adani Ports, TechM at new highs; Eternal, ICICI Bk near peaks",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWW9iX3J2LTNxdVB3SnJQZkpSUW1ZcExiRFZJbGFVeS1KUWlTWDEtLXJ5cEdTTUxVcEdjQnBJYl9CYmdxX0JUaU5aSnUzbGp3OE50Yy11NlVndFFNUU0xdGNSdVdEYlZqdVBaWWNraEJOUHVldnQtVzAybnpEbDBLa2Joa0pOMkZRNzZOaWhyaFltU1NvX01YajAycGxpcnJSRlJkeXRQRUVwdU5seDJKOFlZM3BEUjJyQllXMXdzaGYzMHN3YU9HaXVDd1g3dGd2eldoZWhScXrSAd4BQVVfeXFMUGxHZHZYS1NhZEZsbzhJb0tPOWE5VzV1eVA5SllJWmNzVFVKZWY0aUtQSERmSVpTOTlFdWhaaWZGSFhpeGhXQzR3QnE2Q3BRa2Vjc21RYXhUSVRHVDRTb0ZNb0tkcnRfMGtRQy1KV3JDRzdoRi1UT21hUXVPUlhWWmhzVGdnR21vNkFaeERUUlhBeFFzVVFINlBjcGdZcDNVQzBYYjZ6c0U0QUk5eEttR1o2VGRwUnBFaUVxZ25fVkZTRVhTVl9QT08zOWFoX0tWY2U4eGI0MnFiZWRiOVp3?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-04",
-     "time": "11:39",
-     "title": "Indian stocks post longest winning streak in nearly 5 months on FPI inflow hopes",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT0tFa0Z0bnRlSFU3NTdYOFVXaGdid3Fad1NTRnViRDBTUWg2Um1BQ21RVlNkSWdjR2Y1Z2VXdV9fWXdjY19GZkJDZ2F0ZFFvckRQY2V0eDRwVzZJMkJ5a29mbGlLZUQyQkFzX1VwVThZdEQtZEdiUVJMRzJxeGFXQUxmclZST2l1RzN6elNobi1IZC11a2N2cFJDZEdQNVo1MmgxWlFBaHA3VXlLWHc?oc=5",
+     "date": "2026-11-05",
+     "time": "14:07",
+     "title": "Stock Market Rally: India is back to being a $5 trillion market - Here are the factors and stocks that led it",
+     "src": "CNBC TV18",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZGJyOXNTRnFnTHVrclEtQlRhU2NpNXN6NVIyTVowMUtjM3FuWlMxUFdnaXFuMlBXcEdYZFc4ZTBqbXNLanVNaVAxZXNRYXhjUWo3VXdrVmRMTDVfTm9Vcld5VkJHZElOOHBSdFc3VFdremJnd0JLVGxkSTZqY1lwNVFRWVBXWFFpQzVweXZ3RDgtdUlCOWFkQlVaT254R2k5Sjl3R09QT0xCWlpuaHhFMXpCTjh3cHp6eFZzMEw0YXNuWndWajBZTndqNlNodl9qY19yeEp5YnF1cnozQm5nd2Nsd0XSAeoBQVVfeXFMTXRIM0dieGRNMUdoREpHZllXMHdHOEtTSXpIMEliaFlCRDRXUEpmQ0R6QnYzVEtrekFGcks2dHV4Y3ZtdVhhVzhId1BidWd3d0dKa2E0UmNfV1JCVndNMjBiOG1zNEQ2c1RhOVJYTXpsaEl4b3RDQWF4M0daRnpkV1l6RGxldERueGFPVVllUVJGRkVLM2RhUlRIVVhqRWlBdDYydDBSX1IxQ2dnc0ZldUhWX3VnZklSVlhjNUs4eFRjN19TdHZidkE2b0VoMHBIRnlwX1FPM3VhenZZSVRWYUZwdHFyZ2dVanln?oc=5",
      "priority": false
     }
    ]
