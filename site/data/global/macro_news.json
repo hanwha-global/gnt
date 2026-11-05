@@ -1,32 +1,32 @@
 {
- "updated_at": "2026-11-05T01:27+09:00",
+ "updated_at": "2026-11-05T10:44+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
     {
-     "date": "2026-11-04",
-     "time": "14:22",
-     "title": "외국인 매도확대에 코스피 출렁…7개월째 '팔자' 외국인 복귀 언제쯤",
-     "src": "연합뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4TTlseV9fMTk3MHp6N3pzM1lYSV96N1dvWXM5Vjg4QUxwWmpHaEdZaWtGTFhrdHlYTGxISDV5NV9UVlltOEhnUm9JY3o1eUFieUx6bjhCaG52SHM4aWtsc9IBYEFVX3lxTFA4TTlseV9fMTk3MHp6N3pzM1lYSV96N1dvWXM5Vjg4QUxwWmpHaEdZaWtGTFhrdHlYTGxISDV5NV9UVlltOEhnUm9JY3o1eUFieUx6bjhCaG52SHM4aWtscw?oc=5",
+     "date": "2026-11-05",
+     "time": "10:34",
+     "title": "코스피, 낙폭 확대에 매도 사이드카…외국인 1조원대 순매도",
+     "src": "연합인포맥스",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IcDNpb3BBblROeEg4LUYyRDI2VkdLMnF1cHRIU1JoRTF4NTlnbENUX0JIaVhhZkJGUHhxUVp0QlYzRVlReHdfcnVuS1phS1ktRUotd1gyZEFuc0RBMzI3Y2p3NjVwaTJveW43LUxLc0g?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-04",
-     "time": "11:07",
-     "title": "코스피, 상승 반납하고 하락 전환…외국인 1.2조 '팔자'",
-     "src": "한국경제",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43X1A4Z1RtME4tU0RpMkYta0U2eWliMXE4OENraTI5cGtKX1NZenNNdHlMNkhzSXNPNm9wckN2NGhrU0VnS2Z6QzlKcEl3d29XaEhQaXZDVDUzUQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-04",
-     "time": "10:55",
-     "title": "외국인 '팔자'에 그만…상승 출발한 코스피·코스닥 하락전환",
+     "date": "2026-11-05",
+     "time": "10:23",
+     "title": "코스피, 외국인 매도세에 장중 4%대 하락…매도 사이드카 발동",
      "src": "아시아경제",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WeHdCb25RYXdaOWpDMlhDRDl6cVNjZVVLekZWbUQ5WGF3RGkydWdQTnVlVmlzczhJSmtUQW5La3V3MkpXSHBhZkxuV0t0dFYwMGd6bjFBYng2Q3F1QnpfbmVR?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDeElvYmN4VUpQRVNFeE9Mc3pXOU5oY2tZLWVRZjF0dEtHeEVGOVF5Z0J1dkd1VHJTZ1R6WlJVTDhWNENQbGc2ZjVFSXU0TmdrTXVtOVI5Y29Mc2tOc0pFRFhB?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-05",
+     "time": "10:00",
+     "title": "[영상] 美 중간선거에 출렁인 코스피…외국인 하루 2.5조 순매도",
+     "src": "서울경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5kVDc0TEU1b2YtMWFEZEowbkY1SHVnLUMzLWxnWDJEMEJiMzlEOF9tQl9yZlI5ODZkSWNseEpUcnZUOVpXRm16SFJXc1NnRkZXMnc?oc=5",
      "priority": false
     }
    ]
@@ -34,6 +34,14 @@
   "US": {
    "label": "미국",
    "items": [
+    {
+     "date": "2026-11-04",
+     "time": "12:24",
+     "title": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ2FPb0VDa1pUYWotYjQwXzBBYm1nN0dhMUw1X0hLZ3B1MTRPeTh3ZnhkT1BPVDVMYS1tZDVRYjIzS19SNkh5dlFMZzZEZktrdTk2dmR4ZXYyZVA1VWxEMEJadkZXcXFLelM2VEp6c19sSjdybnZzMFgweU5lNndHemoyY29qVXgyaFh5TlBOYnQ0ZHpJS1VwbVZqanhpcDVZQXFVVdIBqgFBVV95cUxPaE54YmlQLU1IZ2hRWnFkOGZHRzg1VFJTQVlkaGxkVUVzZTlvSFdXOUplRmhUUURkMnJybkpxMkNERjFQbkFlb0xTbS1KUmJIbHBKSmw4aG9fOXF6c3pQSHl3bmE3N1lyR1VNTEhiblRKX3VMYm5qWXRsc05aYkxNaHJ3SERJT1NESjg1QTcxSnBXcVJhbVpramJSUDFydnF0dnp4bU15cmlMUQ?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-04",
      "time": "12:24",
@@ -48,14 +56,6 @@
      "title": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ2FPb0VDa1pUYWotYjQwXzBBYm1nN0dhMUw1X0hLZ3B1MTRPeTh3ZnhkT1BPVDVMYS1tZDVRYjIzS19SNkh5dlFMZzZEZktrdTk2dmR4ZXYyZVA1VWxEMEJadkZXcXFLelM2VEp6c19sSjdybnZzMFgweU5lNndHemoyY29qVXgyaFh5TlBOYnQ0ZHpJS1VwbVZqanhpcDVZQXFVVdIBqgFBVV95cUxPaE54YmlQLU1IZ2hRWnFkOGZHRzg1VFJTQVlkaGxkVUVzZTlvSFdXOUplRmhUUURkMnJybkpxMkNERjFQbkFlb0xTbS1KUmJIbHBKSmw4aG9fOXF6c3pQSHl3bmE3N1lyR1VNTEhiblRKX3VMYm5qWXRsc05aYkxNaHJ3SERJT1NESjg1QTcxSnBXcVJhbVpramJSUDFydnF0dnp4bU15cmlMUQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-04",
-     "time": "06:54",
-     "title": "Dollar Rises Most in a Month on Higher US Yields, Strong Data",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMFQ3WWNUdmpsME9pTGJxOEVCZGZoNkZ0RDV2dFZMcDVRUTAycFRwNUFRNWdwbHBmTHV6SlRhOW96SkFIVlc0cDRpdXRUM3R5MVphNmJDZlpKdGgxV1BHVzRDU0FRRnNFVmMtU1VKM1dXN1I0V19HdHAwcTFPU3JDUHZkRGNQUV9yaHNvTldzVmM5Qi1ZNUhTU0ppb0VINnF1Vm9wTC05WjZlMTU1MnY1czEyRmI?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-04",
-     "time": "12:18",
-     "title": "Japan, South Korea stocks fall over 4% as Democrats lead in US midterms",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSURReXFqM2ZZSXFoSEg1Nk9nQWE5Y1pGbF9DNk1DM3kyMTh2cGRNY3hKaWUwMlJacXR1WTd6cWttMTVES2xvaExNNDlrSElnNTJZV2l4WWNVcFN5azUzVndCYXlnZHVvX0w3c0NUQ2ktS3Z5cnJzNkk5UUdnWWd1SlduczVNeWNqNUVtQThhNzZoX09WWFlxMjZYa2w1T1VSaUxHWUVOWFpHSXZqLVlJ?oc=5",
+     "date": "2026-11-05",
+     "time": "09:05",
+     "title": "BOJ debated need for more rate hikes, scope for faster move, September minutes show",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMGtjWlBTY0pHaGtXZXZ5SnhvXzkyREVPdWJmcU5YRWpRcktiSTc5NnExRXlZbC13WE9aLVdOWktKUGdpSXk0VlE4aTBkbmg0RHhDa2x4YXpDdHhxQTJDMzU2OThrbVFKVTlWVkpfYWF4TEVCYi1yaWJzMFMwcUdkSnN6Q0lwU2FQYVMyYXU2MDFjckNlWC1LbWZPQ2JPaGlSaDNKMUdRRnh4dWJvX2gwWEdaQmttbDIwQ2hlYmtFT0Q?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-04",
-     "time": "12:18",
-     "title": "Japan, South Korea stocks fall over 3% as Democrats lead in US midterms",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcEEyc29kYjR6eDlFUlpRVWtBY0VzNUVONDJ5eUlYcjU5cGNlSjhXNUFCMndnZEFqRTVMa3FvTTI1NXAwZ1FIelpvR3Jwcm4yWnhYM25LV2dhMU9OSnJRdmQ3OUhSRGZzNlZ6RTB6ck9WbGJyZm0xS0d4ZFZKSTYxSFVIdzl0eUhCNTVFT01zbEEzczM1WG9QZ00weHcwSFpVaVpBZ3BaM1ZHYTRIUnd3?oc=5",
+     "time": "13:45",
+     "title": "Japanese Stocks Sink as US Midterm Results Hit Tech Shares",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcDB3akEyZElHNy1WcXY0RTZsc0F1RE5GTGZQdFhIR3U5aEl3QXdjUWVmNzhJOEZRUHZiRmstb0NUeF9Bb0hOYXVMSzhHWHRRWTZmdXdWQkZuWU5sWE9FMWJtQVRMdTk3TjRCYWZnY0xJb1RhdHhuRVlxM0tMeVVqYy12ME5RQTBBZUhNWEs4ODNIaDd4RWwwa0E2cnVLVUJpS09xWDdiQ1NhMDVJZXc?oc=5",
      "priority": false
     }
    ]

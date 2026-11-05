@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T10:35+09:00",
+ "updated_at": "2026-11-05T10:42+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,13 +8,13 @@
   "KB증권|베트남": [
    {
     "date": "2026-10-23",
-    "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
-    "src": "Tuổi Trẻ",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
-    "site": "tuoitre.vn",
+    "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
+    "src": "VnExpress",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
+    "site": "vnexpress.net",
     "foreign": true,
     "lang": "vi",
-    "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다"
+    "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대"
    },
    {
     "date": "2026-10-21",
@@ -500,9 +500,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
     "site": "keuangan.kontan.co.id",
-    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요"
    }
   ],
   "토스증권|미국": [
@@ -654,9 +654,9 @@
     "src": "PT Bursa Efek Indonesia",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbkxxNWNpeHlDU3NCSklLNWhvSV9YX3M4S2dna21SeHQ2UTRJcy1QeWZOY1hHdXBqMDNzTnoxUXEwSWo3SXdTQ2pSRDZ1LW5zc2o5SldZTGJGRWhwMjhpYk9DN3JrN1ZwdUkxMVJwWFpMcVRScEJyS1lTYnBfOWdVMA?oc=5",
     "site": "www.idx.co.id",
+    "title_ko": "PT KISI 자산운용의 명칭 변경 행사",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "PT KISI 자산운용의 명칭 변경 행사"
+    "lang": "id"
    }
   ],
   "한국투자증권|중국": [

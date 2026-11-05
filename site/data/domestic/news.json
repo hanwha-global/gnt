@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T01:27+09:00",
+ "updated_at": "2026-11-05T10:44+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -616,9 +616,9 @@
    "date": "2026-10-29",
    "time": "07:19",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
-   "site": "www.mk.co.kr",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
+   "site": "stock.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -746,11 +746,11 @@
   },
   {
    "date": "2026-10-23",
-   "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
-   "src": "Tuổi Trẻ",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
-   "site": "tuoitre.vn",
-   "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다",
+   "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
+   "src": "VnExpress",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
+   "site": "vnexpress.net",
+   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
@@ -761,11 +761,11 @@
   },
   {
    "date": "2026-10-23",
-   "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
-   "src": "VnExpress",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
-   "site": "vnexpress.net",
-   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
+   "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
+   "src": "Tuổi Trẻ",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
+   "site": "tuoitre.vn",
+   "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [
