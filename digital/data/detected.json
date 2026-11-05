@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T01:50:02+00:00",
+ "updated": "2026-11-05T01:57:17+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-11-03",
@@ -98,6 +98,15 @@
      ]
     },
     {
+     "date": "2026-11-03",
+     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVg5VWRhcElqbnBWV2cxUFNja2l3Y2VHVlhBZHU2N0FaN3dpZkxjcE5vYVhGTDNxRnJOTVdVYmE3WGJjdHQ2UzgwYlJEblc4YUJ1c1ZOd21qbDBPT1BNalh2Y1RVay10OWJBZ2Y3LXI2aldpeVlOYTRmUjFKYUdVV2FZd1JFc2lWQkhUaVFqdzF3eFFESUJHLUEwVHA1d0p6MFNZ?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "general"
+     ]
+    },
+    {
      "date": "2026-11-02",
      "title": "글로벌 해킹 위협에 대비한 국내 가상자산사업자의 사고대응력 제고를 위해 긴밀하고 신속하게",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOWY2d1F4ZHpaM3lGdjF2RVpyVzlwM3RyN2l1M0czY096U21mSl96dHl5R1UydHFKcllSSGdSNnZMRzliVXJNQ3hmZ1BXMGFLVjRNc19TVlNZYlFiOEx4am9GM3ktSjBFOG1vTkxyRU9neEo2X195bTVmVUhFaGMxNDRyMENFei1iRmNnRmJR?oc=5",
@@ -113,6 +122,15 @@
      "src": "bok.or.kr",
      "topics": [
       "stable"
+     ]
+    },
+    {
+     "date": "2026-10-29",
+     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자)에 대한 수사의뢰(DAXA, 3건) 및 접속차단(2건) 요청",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPak9fc0w3VTNLTGF4MExBdUdPUHY0Rzl4TFZlZWlDZHNrbEtBOWxxNkM3ZVN5WUdPaDBNSHowSWZ1RjJzczNyYjJoUGFqT0tpNmVac0thUTRKbDFKV0FENWw5NW1iaDlTVU1vR0FqdFNDdDJJcVo2M2I1ajZfZkY0T3FvbFd5VjQ0YldEeg?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
      ]
     },
     {
@@ -144,15 +162,6 @@
     },
     {
      "date": "2026-10-27",
-     "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다. -「가상자산업권 등 침해사고 관련 긴급점검 회의 개최」",
-     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaFoxd1JSdjBkNDhLVWFBaEhZY1hXVEpGTk9zWGxfMnItbE9tYVRkSjdlVlFJWHZPaEYxTnM2Wmd5SDBOMWZMNDZTcUlBczVDSXlsQThrbm5MaE53UWNSNERxejRHZWdOT3d2LUlsNGxfS1dia0w1aUJnZjMtWl9LNTd1cS16SGxWQ1g0UXlWVWZtcEJTRzFtTnpqU0h4YU5IZGpyTFZ3aHJRUFd5OGJWTFY2LW9obHdIZHViSDc1d0RkVHlLVG1rRGY1WjI0NDJZQWN0clpBc0t6ZWhlUHY0M3NUbHRVbTRCdmNYb3U1ME9xS0VPanMwZXRpX0tDcndSVk1DdHJwVGFjZEJ0cnlISQ?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp"
-     ]
-    },
-    {
-     "date": "2026-10-27",
      "title": "(보도설명) 디지털자산시장거래소 등 디지털자산업자에 대한 교육세 과세 여부는 전혀 검토된 바 없습니다.",
      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rb2FDcl9tRUNlY0NOZVVKZU9Na0FmNWlPTmduSVdxcnFKX2NqOUpQSUlPX2h0eF81QlRFWU1UZnFjaEdtSDZIcFpmTWVXQjNmQW1IWTFzQVNsRVB3Rm9EeUhqWllzNE1a?oc=5",
      "src": "대한민국 정책브리핑",
@@ -172,12 +181,12 @@
      ]
     },
     {
-     "date": "2026-10-21",
-     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVg5VWRhcElqbnBWV2cxUFNja2l3Y2VHVlhBZHU2N0FaN3dpZkxjcE5vYVhGTDNxRnJOTVdVYmE3WGJjdHQ2UzgwYlJEblc4YUJ1c1ZOd21qbDBPT1BNalh2Y1RVay10OWJBZ2Y3LXI2aldpeVlOYTRmUjFKYUdVV2FZd1JFc2lWQkhUaVFqdzF3eFFESUJHLUEwVHA1d0p6MFNZ?oc=5",
-     "src": "금융위원회",
+     "date": "2026-10-27",
+     "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다. -「가상자산업권 등 침해사고 관련 긴급점검 회의 개최」",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaFoxd1JSdjBkNDhLVWFBaEhZY1hXVEpGTk9zWGxfMnItbE9tYVRkSjdlVlFJWHZPaEYxTnM2Wmd5SDBOMWZMNDZTcUlBczVDSXlsQThrbm5MaE53UWNSNERxejRHZWdOT3d2LUlsNGxfS1dia0w1aUJnZjMtWl9LNTd1cS16SGxWQ1g0UXlWVWZtcEJTRzFtTnpqU0h4YU5IZGpyTFZ3aHJRUFd5OGJWTFY2LW9obHdIZHViSDc1d0RkVHlLVG1rRGY1WjI0NDJZQWN0clpBc0t6ZWhlUHY0M3NUbHRVbTRCdmNYb3U1ME9xS0VPanMwZXRpX0tDcndSVk1DdHJwVGFjZEJ0cnlISQ?oc=5",
+     "src": "대한민국 정책브리핑",
      "topics": [
-      "general"
+      "vasp"
      ]
     },
     {
@@ -300,8 +309,17 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
+    {
+     "date": "2026-11-02",
+     "title": "Frequently Asked Questions on the Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM2NoRHZrWjgtb3BHRzVNMV8tWXd6Y1FTZ1M2ODVITmVlQldXY2FuMUJ3Nnk4R2pydzczS2xySndoOHhHZFBBYmFVTG5wdFdGV0VwY3ZWSzRVSVh0R3k4OHVBdWJ4OGxfN1I1Q0JHOFJCSEszdU1XMkw3Ui01UVVmd1cyeERFSnBmNnNWOW5LOGxnSTgwNHc?oc=5",
+     "src": "SEC.gov",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-10-29",
      "title": "Crypto Task Force Written Input",
@@ -359,15 +377,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-10-17",
@@ -381,11 +399,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-10-28",
@@ -399,7 +417,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
      "date": "2026-10-21",
@@ -476,8 +494,17 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
+    {
+     "date": "2026-11-04",
+     "title": "OAuth2 Graph Token",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rSjhNWGJMWV9FUHJ4MGFaSldnX2tLUXg4VmtHNlVWNGJVTV96al9LQl8xYjEzVVhiWFpXRGZXdE12Mmc1SzNSYzRVTmRtVU4wZGRhcFFSY0s1ZlFLNWJ0UzJmWjlMQjVaM3RWMXBJck9LSU4yYWpHb05oQWtQQQ?oc=5",
+     "src": "Broads Authority",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-11-03",
      "title": "The Financial Services and Markets Act 2000 (Cryptoassets) (Miscellaneous Amendments) Regulations 2026",
@@ -571,15 +598,24 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-04",
+   "auto_checked": "2026-11-05",
    "items": [
     {
-     "date": "2026-11-02",
-     "title": "HKMA advances Project Ensemble pilot phase to 24/7 settlement in tokenised Central Bank Money",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPLXhsT2lKcHBPRGpPU2xxbm5Id2NVdVJzZW5Zb2N0MnVQc2x3Sk9XUGJfVGpqalU4RTNxZWtnREd3RHdqUWhwM2Q1TVlla1lLcTdZRzlsWGxhXzlKVlZmLVZSNEU5LUxqaEZERjlyd2J2WEh6V3U4ZGpmMGxXWndWamdXZw?oc=5",
-     "src": "Hong Kong Monetary Authority",
+     "date": "2026-11-04",
+     "title": "Government welcomes passage of Inland Revenue (Amendment) (Crypto-Asset Reporting Framework and Amended Common Reporting Standard) Bill 2026",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1TanJFY0xYbmNxby1odGpOMzZqeTVQS09oVG9JV2dOZ1lYYWNfaGM4cDloQlNFbF9OcjUzbDVfRmlLY1lsd3h3Smw0cHRrRDctaGYzamJZcGEzczEzRmZ3dmZZbVlGNWhNc1FiS3lVWVVoZw?oc=5",
+     "src": "www.info.gov.hk",
      "topics": [
-      "sto"
+      "general"
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "title": "LCQ1: Policy on the development of digital assets",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE84UGRTU1l1S3lBeno3OTZmczBTUGUxX3RHa19RQ1EtMW5EeXh5ajU5aFRxeWRmRGdOcE1lNEI0Nk9MRjFkVUhVQTJnYkVpOUdHZVpGSE1EWlpUR2YyQVI2VUtSTkJuNjk5ZDM1eDlTd1lEdw?oc=5",
+     "src": "www.info.gov.hk",
+     "topics": [
+      "general"
      ]
     },
     {
@@ -593,9 +629,9 @@
     },
     {
      "date": "2026-11-02",
-     "title": "From Tracks to Traffic: Scaling Tokenisation in Hong Kong’s Capital Markets",
-     "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNZW9adFdpNXhaLXdYM2VmRnE4bmtHNVVXdWVydm5IOVBMWVhwZ2tkaERhc0NSMC1JMEItbHRQY2tlNDlMQVJjd3BrLVFGRnUzWFRvRXBqY2F1VFY3Z0IyUVlKOUZ5cWd5VmtHanoxSzJOcTNKejZ1Z0d5TTJqZWhJd3AtSEtnMFlGMkZ3bVNTbENmdG56T3JLZVNBdXIwSncwRFFVYVVMa1BQbEkwWDBWdS1EdEwyOUgtZjBaVHlremlwbERRU2VjYVNuNUJwVzMxRWpTODVRdDZ0cnJ1eTh3cmtNOC11VDJlR2xhczVPdVFCWGJMaldtY1lFLWE2cFpLUGxlVE1pQWIyakp4cmIzMkg4YXNRNUZaTUVVcg?oc=5",
-     "src": "Securities & Futures Commission of Hong Kong",
+     "title": "HKMA advances Project Ensemble pilot phase to 24/7 settlement in tokenised Central Bank Money",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPLXhsT2lKcHBPRGpPU2xxbm5Id2NVdVJzZW5Zb2N0MnVQc2x3Sk9XUGJfVGpqalU4RTNxZWtnREd3RHdqUWhwM2Q1TVlla1lLcTdZRzlsWGxhXzlKVlZmLVZSNEU5LUxqaEZERjlyd2J2WEh6V3U4ZGpmMGxXWndWamdXZw?oc=5",
+     "src": "Hong Kong Monetary Authority",
      "topics": [
       "sto"
      ]
@@ -605,6 +641,15 @@
      "title": "HKMA advances Project Ensemble pilot phase to 24x7 settlement in tokenised Central Bank Money",
      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8wSlVhbTRydkhmYTVVdHhNSDVOcDJKWVN3bndnQkJLajlqb0Y1a3ViU29Nd3NySlNHQVlwNTJyYUtiYkEyT1dJNklIX3NOYWw4QU9nX2s2dU1nb2Z3RF9Iai10cVVpdkVjMzIzZnBtQ3dTZw?oc=5",
      "src": "www.info.gov.hk",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-11-02",
+     "title": "From Tracks to Traffic: Scaling Tokenisation in Hong Kong’s Capital Markets",
+     "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNZW9adFdpNXhaLXdYM2VmRnE4bmtHNVVXdWVydm5IOVBMWVhwZ2tkaERhc0NSMC1JMEItbHRQY2tlNDlMQVJjd3BrLVFGRnUzWFRvRXBqY2F1VFY3Z0IyUVlKOUZ5cWd5VmtHanoxSzJOcTNKejZ1Z0d5TTJqZWhJd3AtSEtnMFlGMkZ3bVNTbENmdG56T3JLZVNBdXIwSncwRFFVYVVMa1BQbEkwWDBWdS1EdEwyOUgtZjBaVHlremlwbERRU2VjYVNuNUJwVzMxRWpTODVRdDZ0cnJ1eTh3cmtNOC11VDJlR2xhczVPdVFCWGJMaldtY1lFLWE2cFpLUGxlVE1pQWIyakp4cmIzMkg4YXNRNUZaTUVVcg?oc=5",
+     "src": "Securities & Futures Commission of Hong Kong",
      "topics": [
       "sto"
      ]

@@ -1,9 +1,23 @@
 {
- "updated": "2026-11-04T01:50:05+00:00",
+ "updated": "2026-11-05T01:57:21+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
   "KR": [
+   {
+    "date": "2026-11-05",
+    "title": "美 중간선거 후 디지털자산 입법 향배는…오늘 국회 세미나",
+    "src": "이데일리",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdW1obHc0NEIySkV6aWozeTcxbGJyQXBIeTFycFZBWmJfMWRJSUpyU1dVT0RWdDk3eW1wLVoyRnc3bGJHRnJsc2hpYl80eEd6R1R6WkNueGFRSXJxR0JiY3R6dlBPMm5qOWpzNmxoQ1ZPRGtFcUZOVnpoMjM3a0U0Mg?oc=5",
+    "code": "KR"
+   },
+   {
+    "date": "2026-11-04",
+    "title": "토큰증권 시행 석 달 앞으로⋯기존 주주 동의는 어떻게 받나",
+    "src": "이투데이",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1hS3l3MV9rUmRoMGx0TUQ0bzlkd0RxX21MN2xVMTZKQjRRN0U4YVpublpXbWU4VnFuaTRsVlFIR0FEQnFGdjE1dmVqYWFXLUFabG9KNw?oc=5",
+    "code": "KR"
+   },
    {
     "date": "2026-11-04",
     "title": "블록체인산업진흥협회 \"토큰증권 제3자 검증 허용해야\"…금융위에 제도 개선 건의",
@@ -33,13 +47,6 @@
     "code": "KR"
    },
    {
-    "date": "2026-11-03",
-    "title": "퍼블릭 블록체인 빗장 풀릴까…토큰증권, 제도 시행 앞두고 업계 규제 완화 요구",
-    "src": "파이낸셜투데이",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1Ulhuc3RzSHFXZHJ0Ym1rR0xDelVDWlRubnpETmgyTGVPNGdtVkpMYXYzeGdiUUlIcHVPSmJ1VzVxUzFMemxPN2REbGZfZFBZYXlfcUlLamNOR1hlYzNDcnVLOV9SRGtEbXfSAW5BVV95cUxPZ2EzN054NDNHZlNoRDQ5UW5EMXhKdkp1aGdqekktWEtFWEtuazNjTVlOZy1fR0NVN1VOenJCT1kyNk5jLVJHYm80Mzl5dXlkRzNvaHJrRmRSTGxmS2VGbklrSllpamxXSGNXWUdvUQ?oc=5",
-    "code": "KR"
-   },
-   {
     "date": "2026-11-02",
     "title": "금융위 \"디지털자산기본법 최대한 신속 추진\"",
     "src": "비즈워치",
@@ -51,13 +58,6 @@
     "title": "금융위 \"디지털자산기본법 최대한 신속 추진…샌드박스 테스트도 검토\"",
     "src": "블루밍비트",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE42M3JzN2ZVRTRsbFpua3kzVVp1a1Q0U0dCbUFEWGRiY1hnbHZkd2hnb1NiMV8yeHMyV25LZnhsNmQxTTAzdFl5Uy1EcGRYSDdz?oc=5",
-    "code": "KR"
-   },
-   {
-    "date": "2026-11-02",
-    "title": "[속보]금융위 \"디지털자산기본법 최대한 신속 추진...샌드박스 테스트도 고민\"",
-    "src": "이데일리",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT08xSkJiSDZwcDBmSk1pZ0R2THgwUGtzeUJwY08wSmRNS3BYQVp6OU5RVURhSXFleDJIS2FBeXl0cS1vNktUOU1rU09DTS11SUd6T3NBWHM2R2k1SXlFdFg2RS1kNmVQdldOTXBVZ3ZLSkpoeE1TS21lRkpEZUVDWA?oc=5",
     "code": "KR"
    }
   ],
@@ -95,41 +95,47 @@
     "official": true
    },
    {
-    "date": "2026-10-05",
-    "title": "Proposal of Special Measure Prohibiting the Transmittal of Funds Regarding Transactions Involving the A7 Network's Sub-Agents",
-    "src": "Federal Register · Proposed Rule · Treasury Department, Financial Crimes Enforcement Network",
-    "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20371/proposal-of-special-measure-prohibiting-the-transmittal-of-funds-regarding-transactions-involving",
-    "code": "US",
-    "official": true
-   },
-   {
-    "date": "2026-11-03",
-    "title": "OCC Opens Stablecoin Issuance Path for Community Banks",
-    "src": "PYMNTS.com",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWDNoZ084VTlnU3FSdVY5QmZnWTRGdlo3aHVIUDhXalY2cHdhSkxHSDNHMmRoVnJianFQa1B1b2R3VF92YTRac1Y5cFF1bGxpQzk4bEoyZU5Ja18xRnFDTXp6THdRVXlURmhhZV9DTml1LUlQMEtjdEpBUkc4TEN2RU5qX0U1QnFQRGlDb3VWc2ZFVmFqRDlvc2Nn?oc=5",
+    "date": "2026-11-05",
+    "title": "Stablecoin Regulation: OCC Final Rules Impact",
+    "src": "OneSafe",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9uR2JQZGtWcmFsMFQ5SWtOOXlIRmN2WlZSTGx0WlJZSjM4QUJuRHFuLTFVZkZ0UVlCUnVzSXExUFE0ZFMyY2EzUWxMbWpjOG9lMElSUHo3NWNWcWhuLW5kNEhkcWcxM1BjZEV3VnItR1BObk9ldE82bUpnQQ?oc=5",
     "code": "US"
    },
    {
-    "date": "2026-11-02",
-    "title": "Midterm Elections Could Reshape U.S. Crypto Regulation",
-    "src": "Forbes",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPU3BrQ1hlUjZmQlV3eG5XMHJkQndkREhMTmVpaG1MNDBKenpveFZ0MmE5aUh6TVhBeVc3S1ZWOEhyVk9jdHBKc2dzazc2VDBwRGhPem1pWWlVOEZ3TTBvODRVUDZfZmZKREU0eHRGZFZNS3NsQWc4bXRrTUtHaDBDQ3dHUFI1S0QwZVpWa09GMUpwVlVwNFhodWNtWjFYbkFVY2RTekdORkFYUVIwZTNGcVhSc2tSeWhjTUxaOEdYUExkZld6bzVYTjZQUjg0Q2pjWV9OQw?oc=5",
+    "date": "2026-11-04",
+    "title": "What Banks Need to Know About the OCC’s Final Stablecoin Rules and Licensing Guidance",
+    "src": "JD Supra",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPc1VscVZqMzZwajltUUJaUE5KaFJVMmNHRmJQSkJxMFVBbnhzYkh4blFHNFQ2QzNsdWpUdDVORGFYZWNWUzFhelA5U1ZsM2w1Y194YzUtU2JIUVQyNmxQcWNPczM1QUxrdUN2dlpkS0VVeThtekFKSVVUNUp6amppQkdrM1RuRElqMXc?oc=5",
     "code": "US"
    },
    {
-    "date": "2026-10-31",
-    "title": "Crypto ETFs Already Go Far Beyond Bitcoin. The SEC Wants to Know If Its Rules Have Kept Up",
-    "src": "24/7 Wall St.",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNXgyY21ELWR3MXh5QUxSLVQzZ3l1V1hjZ3BlY1dTclBGTUlRbTZaX0xrZ3V2UkZmR21PWEhkZnhoOGxWQlg2WXBQd0Rfc1dIcDdmSW55UnlPc2lVclpFdHBnZTB5UV9FOGxqQUpxZ2xuOHJMR3I2TXRzb3pqM0RROUNNTE9lc0JkTXVJdTBaOVRWWlhlOFItY1k1SzZ6a3dxWmloWUY2Y1F4VEVfWDJWaE1uaWloQUlWNjBtQVoyV3dPREdzb1pQMnhXY2NhTVRQalhN?oc=5",
+    "date": "2026-11-04",
+    "title": "Tokenization and stablecoins may weather Democrats' sweep as broader crypto rules face uncertainty",
+    "src": "CoinDesk",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdmswcTRmQmFqWFhPeFdtY1YtUi1ZUDU0WENyejFNZS1ENkVOdWpJdXFPLTc5ZXh1dUoycHEycVpGUGpnOHJidEc5TnRTTUt2XzFRd3A5b19DNXNsMmJWOFQyR3hhMF9BM2tCNndxQ1ZVbG9iVFZSY0tleHRodllQSUhlM3NqVHNZQnhkX2JmTHllenpJUUNJNV9YTE51ZkozQkdEazVYX0hhMS0zZWVjU2Z5MU00dURVdldBeDlxaFlha0FJRGpXcWVOU19zOFdfM0dRamFOTQ?oc=5",
+    "code": "US"
+   },
+   {
+    "date": "2026-11-04",
+    "title": "What Democrats' midterm victory means for your crypto investments, according to experts",
+    "src": "CNBC",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNGV5cWJNWTZhR25sblhkZlBwTklKc3hYMHNtaGtFSG9ndHZCYjFEbXNTQzI4OWVIRHFzWEhqN3Z4MXNpUlN4ekgtT3lEVXc0X2JFeFJFUUZsbzJsbHppaVB0T1JyX0hPaG1SVUZsbmZ4UzJYNXNLOXZPeEpKTUs4VEV0VkUxakJFVEJWVWlGelN3RlJLRkNhUtIBngFBVV95cUxOMHB6ZnhSd1hCdHA4Tk1GZWUxV1FocVdRUVZLak1jWm82Q200dnlsaGpVVk95QWJFM293ejlIYW5EemtzQWYzbUZEcThJZUQwYWRib1VkZUptUHA4US1wd0pBOWxuYmcxY1pTM0NGVDVkNWhReG5zeTI2eGtUd3l4VUlTVFBJRUtuY0FCcmx6MHV0b1ZMTnU1amVNT3E1QQ?oc=5",
     "code": "US"
    }
   ],
   "JP": [
    {
+    "date": "2026-11-04",
+    "title": "Hong Kong Adopts OECD Crypto Reporting Rules, Opening Tax Data Pipeline to Overseas Agencies in 2028",
+    "src": "BigGo Finance",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE03NlNBNkJacjFHZFVzcWo3akplYVpuWmFXR1pIbnluVlFRWHNFLXhWMzUxbEViX2o4QzNHdnJjdXFDX1Fjc3I1cTRKelYyUW9IUWN2MFYweVl2dFViUFVhMUw2Sll2VGV0VUx4blZDWUhaS0MyMmc?oc=5",
+    "code": "JP"
+   },
+   {
     "date": "2026-11-03",
-    "title": "세금 고친 일본, 날짜 고친 한국[비트코인 A to Z]",
-    "src": "한경매거진",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TSVlWVnZZVWJ0dURBTGJmVmE1WTZRdlR2aC04VFNvNWx2WTZCNFNEcXFtMHlWWHNaQmtoMi12RzdyeEZfUmd2NlI5X2lfcnZ2LXczTHU2bldUQWZ4RzN2VDNocmhNNm1WcXBIcQ?oc=5",
+    "title": "Japan's FSA Seeks Tax Filing Exemption for Trust-Type Stablecoins in 2027",
+    "src": "CoinMarketCap",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON1YxRTRXRVF5ZGp3Q0d5cGllSnVZak1QYzhfY1pLTWJNMERaWEpxNHo0VWdNUzN1YmZFT05hckNjWVBpX0l2cjMyc0NJZUhNN2hJLW5IWm02anNSNmpzVENVd0VISmJXUUR1S2NBVWZPUEhHQ0JLRC1CdnRUcFZxTE9HYm1qYUtNbGtQUElKWXFyTkFjWVJlTnhLQmpkRk93cDRwYkxBeFNLSXlNSFBGM01EUnc?oc=5",
     "code": "JP"
    },
    {
@@ -154,6 +160,13 @@
     "code": "JP"
    },
    {
+    "date": "2026-11-02",
+    "title": "세금 고친 일본, 날짜 고친 한국[비트코인 A to Z]",
+    "src": "한경매거진",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TSVlWVnZZVWJ0dURBTGJmVmE1WTZRdlR2aC04VFNvNWx2WTZCNFNEcXFtMHlWWHNaQmtoMi12RzdyeEZfUmd2NlI5X2lfcnZ2LXczTHU2bldUQWZ4RzN2VDNocmhNNm1WcXBIcQ?oc=5",
+    "code": "JP"
+   },
+   {
     "date": "2026-10-28",
     "title": "Japan Poised To Move Bitcoin and ETH Under Financial Instruments Law",
     "src": "CoinMarketCap",
@@ -166,23 +179,30 @@
     "src": "Disruption Banking",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSFFfb2t2M3ZyTUFReExPbjIwWmNvMGRscVNta05rSlZSdDBoTFRhR2xCcGdRVnlYNnhGekZ2LU5BYk5fMDFwUFoyNHI5TzgtaHYzekFSWU45U1pUa001RFJkWkdaWXBzT2o0R01OdWtLRjROSkZVR2k3Z3k0czE1elQ0Uk4yeHl6UTdtMmpYY1FpYlZJUVItZ2dfNTJpQmlsZlhwTV9tR050RmNCSGMwdng2UjdlNjBuREJrRmFzVnR4QXdEbHlNRnloeU1IYnY5MEZ1SjFTY2Q?oc=5",
     "code": "JP"
-   },
-   {
-    "date": "2026-10-27",
-    "title": "Japan's Yen Stablecoin JPYC Reaches Only ¥3.2 Billion in Circulation One Year After Launch — A Quarter of Its Target",
-    "src": "BigGo Finance",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE12Vkd2cFRpcVU2QlpVTmhjcDFHa3FTTXdadExCcUozM2pzdDFZOUVyN1M3N1RjZlhZbWs1UjdfMF9yeUxfeUFkUGhkcHYtRkpmRGlJcTJLSXAyenJSXzJCcmtXRm1oMUx6aV9PNU1WTEJuRzU1TVE?oc=5",
-    "code": "JP"
-   },
-   {
-    "date": "2026-10-27",
-    "title": "LDP Blockchain Caucus Reports on U.S. Trip; JBA Proposes 8 Measures for DeFi Legislation; Japan's FSA to Issue Interim Findings in Early 2027",
-    "src": "BigGo Finance",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9PbjNJMkk2YmxzZ2M5bU9hY2hsel9PdnMtS0NfaWk3cnJNUlpqdEZlY0xXVWZEVTl0NkduNk1FN0x1ZDdGSWhTNGR5bnVmOGY3NnFXTVpjUGVqUVFLOU13eTJnMUJWalB5THk3XzBMTE1JN1puMVE?oc=5",
-    "code": "JP"
    }
   ],
   "VN": [
+   {
+    "date": "2026-11-05",
+    "title": "\"회색지대 8년 끝났다\"...300조 베트남 가상 자산 '5년 실험' 내막 [베트남 가상자산]",
+    "src": "인사이드비나",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0wSUVHRmJCTGxrMHZXNm5CeVl4MkcydzE2aTg3UkJzZWZkSjNlaTd4VTJkSmduNGN5YnFEN0I2eEtZWDBjcG9FY3VNSDJvNXl6Q3d2TUZ2RjJKcjI3V1kyZ3ZKQzRDTVVLNnl6Uw?oc=5",
+    "code": "VN"
+   },
+   {
+    "date": "2026-11-04",
+    "title": "Vietnamese cryptocurrency exchanges must report incidents within 24 hours.",
+    "src": "Vietnam.vn",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbW1oT1VLMXJvRjRuNFE1LW0zV3llR2cxVXE4UGNPRnFGTVkyRzl4UllHSDVSN1BJQlF5djd0NVVPR2c3ZHN2LUdFSlNVWkJKaWpDWVRDQ0otdDJqQzVJLVozdnpSTnpFLXpZV202ZmJyVkdSeGE0QnZ5Y1pHc2plYmliRTY?oc=5",
+    "code": "VN"
+   },
+   {
+    "date": "2026-11-04",
+    "title": "New regulations on reporting and disclosure of information in the cryptocurrency market.",
+    "src": "Vietnam.vn",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxObG5aNTVhLVMwSE45eG9HRGZ0Q3E5V0J6SGh2QVNMZHpEbkI5N1dWSGJlS0xaMHplcm4tRGJLVFh1dVVQVlZMZm1uVzJPWDg5ZEtSdlJiOHhfU0s5M1VNT1RZbmFsQnMzT1BaZXJOTXBGMmpQM0F6YklLcENPTmdNVDYycERscF9ZMVllZ0dpT2hJNDB0QndMWUZQTlNEWHJ5RzVRakZR?oc=5",
+    "code": "VN"
+   },
    {
     "date": "2026-10-31",
     "title": "Binance Replenishes 90% Of Stolen Crypto Assets, Targets November 1 Withdrawals: 13 outlets compared",
@@ -205,13 +225,6 @@
     "code": "VN"
    },
    {
-    "date": "2026-10-28",
-    "title": "카이아 의장 “KB국민은행과 스테이블코인 베트남 송금 실증…비용 87% 절감”",
-    "src": "이코노미블록",
-    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5pTjJBbndfZWRhandaUWRkWlljcmlXV3BmS2FtVVZGc0YxRHpUZm1nWnhIMUZDVmt0NWxmeEIyRUNQVkRsVkhnNnRZcjk?oc=5",
-    "code": "VN"
-   },
-   {
     "date": "2026-10-26",
     "title": "Crypto Facto FintechAsianet: Features, Facts & 2026 Trends",
     "src": "Coin Gabbar",
@@ -224,20 +237,6 @@
     "src": "TNGlobal",
     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTXZ3XzRFSHpMRDVvZDlQMzJ2NHYyelp0Wm1lLUxoU0NPTUhFb1IwRXlQTlBUZzNtNWNNRUk1ZlZoT3dYcU9tT2JpcFU2YWdzU2RZRFpWWmgxU3pKSXVYVURSYTZJMTU4OEYtS094cFJWd01PdnhiMzduSWNMQjlKcUpQWWlyLTRZMmRieUwyTzdfUV9fOTRONEdFMXN2UDFLUVlZeEtlZlNxLUFURXJFb2YyOFB5bjVYcUdNRUNkdHpWNlhWYzM5eW1YMGJpTG1zMV84?oc=5",
     "code": "VN"
-   },
-   {
-    "date": "2026-10-21",
-    "title": "Digital asset exchange awaits completion of operational requirements",
-    "src": "Vietnam Investment Review - VIR",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS3pDUVU4U3BDMGhQa25jZzhha2xOMFNOM0l2c1ZtYlZ0NUpmUFdNT19NbWNkODVyOWJlQ3hUb2dGV1JEMFFSeVFqcFBERWlSY3lZaU53cjFnc29WbHpGb01ER2lld2xfWmdzZWdWN28tOGlsTlQzZUg2NVl2R0hHckQta1pjUXV0RTFScks4bEVadFhrdnVfdEpQQkIwYlE2?oc=5",
-    "code": "VN"
-   },
-   {
-    "date": "2026-10-21",
-    "title": "Stablecoin Payments for Vietnam: The Cross-Border Opportunity",
-    "src": "www.circle.com",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcV9KaXdJWVh5aTlBNy1xYmQ0ZEh2a2xOR3VmcUtBcUJyOWJJbGl1OVgtTGpxR2diQk0wdzVuSVAzdFpjVl93TzRMU3F3UGFyeUpXU0lDOU9vd0trTHkyLVFKX3VjWWlkSGRWNGduUjV1RnBQNS1Ndkh4SklyeTBycy1mVTZBWHd1ZktvdV9NaGJ5UmhNYjg5Q0V5Nm5reWp4dk52bQ?oc=5",
-    "code": "VN"
    }
   ],
   "SG": [
@@ -246,13 +245,6 @@
     "title": "Stablecoin News: Singapore MAS Adds Malaysia and Thailand to BLOOM Initiative",
     "src": "CryptoRank",
     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPazNNVUo4TGMwVUNvT2VWUTZ6dkc1aEFwcFV1S0hEaFlBWG9zYkdoZzRHSXZXdmNxUXJ5cFh0aHRGT2dlTEktWDUyQUlXci1odklvX1pELVdaUS04TkY5YzU4UWFoTEZzRm5zUnZmbDVFMnVFNTllNndSYzNCdXprQzNkTnJnR3NnYU44QmcxQ3JobjRiZkxvd2oyWkJuREg0a2JLNzVfUEU0OE02WTlQRHp0UzA?oc=5",
-    "code": "SG"
-   },
-   {
-    "date": "2026-10-24",
-    "title": "Singapore’s BLOOM Adds Malaysian and Thai Central Banks, but MAS Names No Token",
-    "src": "unchainedcrypto.com",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYS11ZU82OFFIcG85STJzUUxNcy0yeThyTmJjUzAxblJqa3RZdDhEQ2VYNndkcGk3bGFlZzRicjEyeF8wLTZOakJ0NXh6WHlra3ZmZWl6QlpPbGd5V2hTeXVVTi01a2pRelFtNXAtczB1eFduUmlmdWVWMDJ4eUpDZzJwNVJmS19ma2dGU09kaEVRMExYMEI2YkU1cmo1eUlWX3BNcW9mR19Wdw?oc=5",
     "code": "SG"
    },
    {
@@ -270,10 +262,10 @@
     "code": "SG"
    },
    {
-    "date": "2026-10-05",
-    "title": "Digital payment tokens, insurance policies could become tax-exempted for Singapore family offices",
-    "src": "The Business Times",
-    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVTcxZ3M4bkNOMC1PT1p2N1RhNk1CdnNoUFhHNUlKdnNSUkhxcC1HaHpPcTQxaUtUOVc3X2lsX0Y4Z2M3dkNOeDRsWlViQXh5Z0Z6Z1NYYTJkWDBmbnFzbS1LR0phREhla0RvVzhYTGRwcWwtYnVhNElsSzZJcGd5N2NXYXN1Z2dvWDJZYjBTanR2VFZVZ2RWOEpLSzl3NENzb1Zhd3FfcXB2WmY0Wnl1cFp4eExTb25nU0Z4dkNaeTUwWmpBZ1NrZk9ZZFFZZmw0aEtxNUJoeVNPWW8?oc=5",
+    "date": "2026-10-07",
+    "title": "Hyperliquid Labs Is Registered in Singapore, but the Blockchain Is a Different Story",
+    "src": "CCN.com",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZmJ6djR6OVlHQXhOOXlleWtQTUFfaUE0VXdxUENMZ2FzeHkxSUIwazh1M1BFeTBLZUpFRmVaSlA3SHBmRFh5d3FqZi1sZXpFN3F4YmtVWEVRaWVkM1pRNDZQdDNLSWNmd2hLRnRQYjV0dk42cjRjSm1vMDZjMGJGV2Q2X2R3cks3?oc=5",
     "code": "SG"
    }
   ],
@@ -283,6 +275,13 @@
     "title": "OJK Advocates for Growth of Shariah-Compliant Crypto Assets",
     "src": "Coinfomania",
     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOLU91Qk5BbEhOSDlRNkJObkVhYWgyNGU0NG1VT2FLVmFkU1NtUlZfR1p4bGNSdE14ckhXd3FocjZCTHdaWDhpMENoVDdZQTE1dzFsX0FxdHJab3VqcVRiUmpXZlF2OG43akkydjcwN0hiNVg4ejZJUWFBbE5WMFlQb0hMNUNTVlJYU055LQ?oc=5",
+    "code": "ID"
+   },
+   {
+    "date": "2026-11-02",
+    "title": "How is Pintu navigating the cryptocurrency downturn while preparing for the next growth cycle?",
+    "src": "The Asian Banker",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQX0UzSUpVR3dQUnJEc3BDSnRHUE1aMXRzTFV0TU9IQTNrWVV1V2VxbHlkXzNEY1JPMjMzN3IxbVZweS1pVFZfQUVZRm5lUm9IaTBIX2NWbHk1M2ZVSVFoaklBajBGRndndUl0U0NINW85MXN4cnBQeWNaMlQ1ZTdtSGRoMXhWMjJhNlk3amRrc1JKTi1KeHhkeXY5WHV6R2dnTFI2TjVhYkY2Z0IycDRkdjNZWUFWM3FrSVlRWjdNY2lFb0YxaU9xeFNXUGx5UWp0LVkyUXBtdlA4NlN5YkE?oc=5",
     "code": "ID"
    },
    {
@@ -297,13 +296,6 @@
     "title": "US Treasury plans crypto regulation with SEC an...",
     "src": "Pluang",
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUmtuYjJ2SEdNTERVbDVzdWpXMlFEaWhXcDFWSm5HaDI0eV82QkJmcTU0QjRqZ3A4N2s1ekh6OXluNDRpMGdWcWdKSUNXTXR2VUtDRktCZTkxMFcwYmlQTUpKZTZ6LVBzNkdqa0V0ZVFlR0s0YmgyUGpKRE93b1pVMTd0blVXUFF5Yll4T05sUUthTHg3SXNSS1BMbEU5X0U?oc=5",
-    "code": "ID"
-   },
-   {
-    "date": "2026-10-28",
-    "title": "98 Years of Youth Pledge in Indonesia's AI and Digital Asset Era",
-    "src": "IDNFinancials",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZGhaRkJ3VmhvdFFSOGY3cDdLTW95TlNMbHdXVndndEp0YzY3RURlUzNJbFJtV2JTWGJNQ3E0U1hwQlB1UjN5V3pOZWt0dUhFd1JGbW9ZV1d6dXVrZGgxZDlYc1JVLWdNdFlxYkFLbzJFZ1c2SXdTVVJCQnpGenlqQnc1aXVhNDZlTkV0bmJKSGJ6V25EeGJMem54ZGFlY0ozcWxPTXBmZFZjN1JhRkVwQnhNaw?oc=5",
     "code": "ID"
    },
    {
@@ -326,63 +318,21 @@
     "src": "Tempo.co English",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLXpQWUk1NHZ0WVdzOGVOTzZ5U3VTWnpkR3J0d3ktMnAydEhvaS1yNGQ2dXg0S3VwbElJOEN1SlJ4aF9kbmdyMHlVUUt1MUhudkt3eC1uUTZ4VjZuUUtkMVQ2Q2FGTXpGWTI5djQteDh6WUVRbFpLSmFYM0x3QzRQdWZiRUFZbFhFd1pGTmxmdVdLMXFnNXRoOHE1U0k?oc=5",
     "code": "ID"
+   },
+   {
+    "date": "2026-10-07",
+    "title": "Best Crypto Payment Gateways In Indonesia In 2026",
+    "src": "MKAU Gaming",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNLUQtRlJIQk15Wl9MSnBLNG8tNWNaVkRiUlZPWjNXalZ0eGU2dW95OEJBd3VNSGtBS1JZc2p5dU9kVzdfcWszQ1JyeGRFUXJIRzMydldBakZzRDZ5dnA5QmlDS09DR0VIQzZ3bmJBbkhnUUdXZDRKQWVjWVdpVFd2cXhVYw?oc=5",
+    "code": "ID"
    }
   ],
   "AE": [
    {
     "date": "2026-11-02",
-    "title": "Animoca Brands wins Abu Dhabi fund management license as crypto VC cools",
-    "src": "Cryptopolitan",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6TTNWWEo5Z2ZyZENUQjNhLTVnWlNFMkpFSk9neDVXbWM2U0U3U1owZkY4ZzZsUTdlRnBjajQyVEhlaU83eFVndU9uSFdmbnBGejdsZHQ2QXhkT0Nja29Uc1Q4dWtybTVFOWpqVWtNT19IVy1lNDF5QzJmQlQ?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-11-02",
     "title": "\"韓·중동 잇는 디지털자산 투자 거점\" 한국 VC가 아부다비에 둥지 튼 이유",
     "src": "한국일보",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE01am1sXzVDZ2dYcXotaGtuc0VBaWJwQzk2eGYyM2pwbFA4b3hFZzhFZkZBRlJhYVNWdTJaRktjMzNXYUhsTzFITVpQRnpKYWFMalQwNHF3LThCZFcxRzFNQ29fZlZZSG1qb2lOWWREdXlzYWfSAXNBVV95cUxNNWptbF81Q2dnWHF6LWhrbnNFQWlicEM5NnhmMjNqcGxQOG94RWc4RWZGQUZSYWFTVnUyWkZLYzMzV2FIbE8xSE1aUEZ6SmFhTGpUMDRxdy04QmRXMUcxTUNvX2ZWWUhtam9pTllkRHV5c2Fn?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-11-01",
-    "title": "Post-Binance hack: Industry experts weigh in on crypto’s safest haven",
-    "src": "Cryptopolitan",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMDBUZnBBbkx0cExkUncxWHZhUC0tdDF1Ni10LV9DTm5TLUtwcU5BakVLOE5GZjQxS2c4UDVvaDVhVVVkZFktY0NhNVNnZlhUUFByOWJ0N1ViVXlBc3pLTHNuMHFFY0c0NXV1X2p5ZlhWWWEwT3JQTTNYSmphQTR6Mg?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-10-29",
-    "title": "Abu Dhabi's ADGM Introduces Commercial Licensing Guidance For Crypto Mining",
-    "src": "Forbes Middle East",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOVBBel9BUzIwRk9BbWhLc2QxMkhGUENLMlFjZEVYSlhoaE5FckoycnFlUXAta3pYZ05xUFUtakhvOVJMR3d6TllENGVPTTEyakkxVDhpdVFqUXpzYzhSdTNpbUp6b1ZQRW5FT2RteUVNUm5OUEFsOVN0dHdYMnZTMXZxczVpZDItY0JaMWJnb25KUTFqYjFpcG56WVo1eUFtRmN3ZXJvZ1JJMldlZTl3U1YyY2JpOXg5eHZpT0Y4M0RqVk0?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-10-29",
-    "title": "ADGM Opens Crypto Mining Licensing With New Oversight Rules",
-    "src": "Cryptonews.net",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFByVWxIbGJLVktIdFQ2TEh0d2RjcmRZdTM1Zk1PckhBek5mZ2NDQ2RPS2Q3LThVYVhaQ3ZBNjhiZnF0azE2b3hYSHkyWEhhTlFzSmQwWk5R?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-10-29",
-    "title": "Abu Dhabi’s ADGM introduces licensing framework for crypto mining firms",
-    "src": "Funds Global MENA",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQzhLU01sRGtIRGluT1d5eXhMaFoyRldRQ3hsaDhKYUJ6VTJxZWJ0T01BMFB1SFVDNWVNV2dDYkttY3Flc3dwU1pCdVBiVENzT1cxOHJCWnZKM0xkLThhRVJVLXdvaFFINmRxaldPMjVBMDBGdXZxUzB2SlhlVEFpTWdORlRQZ3hydVduUndYU1NEcEIzRGJoejh3ZFZjQXhhR3BlbjJB?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-10-27",
-    "title": "ADQ-backed Further picks Chainlink to police tokenized trades in Abu Dhabi",
-    "src": "Cryptonews.net",
-    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBlS1lVZzZEdlJVeGFaZ3lHellqb2JWbDRKNnN3SHFQT29QNWhxNW0wMlV1UmNoMzVmaWJhYmZFenQ0NE51d2FCU3RWX3ZsWEp4UFNBRDZIS0xJWGY3?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-10-14",
-    "title": "EMEA Digital Assets Market Quarterly",
-    "src": "White & Case LLP",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb04tbHpadUZXQ0wyb0RnbFRMVk9DMGt6TzZvZVBHX1pHeVJIbzhscjlnRGYwVi1pS3g5d1RrZXdxVjhoY3pEeEdRVUcwTmtmQjFIZDJJLTVwTXo4emRvc2JEMFBFSkwxZVYtV1A4MndpZks3akVhR2UxYUpHdzdTLWt3?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9aZHp0WFhQNUdTUTgwTnJmaGVlUnJObFZiaDdFN3d2TEtaX3RDdGJlaDZUYll4QWZlUDhyblJqbWdsM19QRVJWMXJjNUVzdGpGcnNkUG1rb2NwMEtrOThjclFPckpxbWRXUHhjb2tR0gFzQVVfeXFMTTVqbWxfNUNnZ1hxei1oa25zRUFpYnBDOTZ4ZjIzanBsUDhveEVnOEVmRkFGUmFhU1Z1MlpGS2MzM1dhSGxPMUhNWlBGekphYUxqVDA0cXctOEJkVzFHMU1Db19mVllIbWpvaU5ZZER1eXNhZw?oc=5",
     "code": "AE"
    }
   ]
