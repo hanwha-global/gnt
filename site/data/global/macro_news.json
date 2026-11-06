@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-06T20:13+09:00",
+ "updated_at": "2026-11-07T01:05+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-06",
+     "time": "19:19",
+     "title": "[숏폼] 민주당 압승, 트럼프 참패 12월 FOMC 금리인상 유력?",
+     "src": "SBS Biz",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5VamNLem5xdFFHd041RUYtQVFtS0JyenVlU3NIUDYyb0UxbTVsMElKQ256d2o4WE9rYnJNUkJDeGFMSURicThGbm00ejduTXc0Rm9zM0d0a2rSAVhBVV95cUxOVWpjS3pucXRRR3dONUVGLUFRbUtCcnp1ZVNzSFA2Mm9FMW01bDBJSkNuendqOFhPa2JyTVJCQ3hhTElEYnE4Rm5tNHo3bk13NEZvczNHdGtq?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-06",
      "time": "18:34",
-     "title": "Treasury yields inch lower as investors look ahead to key jobs data",
+     "title": "10-year Treasury yield rises after much stronger-than-expected October jobs report",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEd4MDlaNjAwRjlYdFp0aDhKVDFsVHZNUnBCWXU1aHhPWGMtQ2hmTVJnZmpoMWo3cnJNbEZwRWJHRVp0UjI1SU9ELURwYjctRnRUS19MUVhrdVlvTWswem9xR0dRT2V0ZHJxUm5pZFE5cnpxTmR5Wm1lR1pYRk9xYXh4dGtiVWQtNWJfcVBzQmVSS1VRR1F6UDRpWnhjVlJsSF9iazlCRUrSAa4BQVVfeXFMTXFRWnBSVk1BYjJrMzR4N0VZOXZIa2U2MXZnWFZVS0t3amRvOTdSVC1PaEpLQ3NMS08wamNTeFlmRk5PUWNRZWp6VTZnUHozNVNvWXpLTko3UHNOOUhCQWhpS2xqQmdEd08zVkRDTHBCUU9Gc1drd2NwWWlNMlc1SHVUeUVSZUVwNEhNRDU2d0xCMERmWkdXbWI4QW1UaWhRR3U3MHhQSWlFR1ptT0Fn?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-06",
-     "time": "07:06",
-     "title": "\"금리 더 자주 조금씩 올려야\"…美연준 커지는 매파 목소리",
-     "src": "머니투데이",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1wUFF6emNueEQzZVNQV3NTaUhWQ29IVGYtSm12U1Uzay01bDZva05MTUdoWTBxS1BFS2VJYVpvdWtXdjV4U19BS0liX1NLVXBPTHU2M3lMakNlZU5DVWlIMmNjX1pnT25KdnZ5a016S2daQ0RLbHfSAXtBVV95cUxQQ0hlb1FacjBtZ05RWm9kX2NQS3FnQk4xemJOUm9oOUVYX3dFaU0tdnM1aG01bTV1NG5SdExRMm9YSFNHeElsMlQ3SUE0OFI4blVwNWxNbzlOYzc5ZlFnbFBuWUF0TmdEZUpjUjBxR19xN3E4Q1dMbDJpSDA?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "05:31",
-     "title": "'금리동결 반대' 연준 위원 긴축 전환돼야…작고 잦은 조정 선호",
-     "src": "SBS Biz",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tZ1hUZ1h2Z1E1NWNVQVZtUVduY1dCMDFRdXpNc2N4ZDR0dWZlVGVzSXZFWkYyNm5PUERwd0ZmRHB3a3lQZzNSaV94R3lQWTJVWndj0gFYQVVfeXFMTWxwelVpWlpWZzFpTjlIcHlPckhubi1KcXp3eGlOVnBrazduVW8yRV9yNTN3b1Jxc2dzMGtLYS1SRm5pY2ZNV3ctRzNGdGVXSzRQRUxMTTlIQQ?oc=5",
+     "time": "18:34",
+     "title": "Treasury yields inch lower as investors look ahead to key jobs data",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEd4MDlaNjAwRjlYdFp0aDhKVDFsVHZNUnBCWXU1aHhPWGMtQ2hmTVJnZmpoMWo3cnJNbEZwRWJHRVp0UjI1SU9ELURwYjctRnRUS19MUVhrdVlvTWswem9xR0dRT2V0ZHJxUm5pZFE5cnpxTmR5Wm1lR1pYRk9xYXh4dGtiVWQtNWJfcVBzQmVSS1VRR1F6UDRpWnhjVlJsSF9iazlCRUrSAa4BQVVfeXFMTXFRWnBSVk1BYjJrMzR4N0VZOXZIa2U2MXZnWFZVS0t3amRvOTdSVC1PaEpLQ3NMS08wamNTeFlmRk5PUWNRZWp6VTZnUHozNVNvWXpLTko3UHNOOUhCQWhpS2xqQmdEd08zVkRDTHBCUU9Gc1drd2NwWWlNMlc1SHVUeUVSZUVwNEhNRDU2d0xCMERmWkdXbWI4QW1UaWhRR3U3MHhQSWlFR1ptT0Fn?oc=5",
      "priority": false
     }
    ]
@@ -197,10 +197,10 @@
     },
     {
      "date": "2026-11-06",
-     "time": "10:23",
-     "title": "Singapore tech stocks plunge as Nasdaq bloodbath spills into region",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNR3ljWFhOVkJXQUlpbnQ5T0RHRkhEcEkxQU4ybEt6TGJlYm4yWkZQQWZUZDJMUTYzUkY2VV9PMkZ5bW9FQ3phbjZoUW4tOUxHbXpSVGxVZUFqd3NmbW0yOUQ3eVAycTdKUG9HME4zVGk2NTFlZUc1bUZjc0NPYnJyLWdEaV9KQjJTemh5eTJ6bEZSem1qVWJNSXN6WmJxZ3NuUkdCTm90aTZkcWxfbHRsTDNmRjJCN214Mm11V3RuQmVfcEJBa1ZubmhsT3ZXd2JGWkxz?oc=5",
+     "time": "23:51",
+     "title": "Singapore stocks fall amid concerns over AI valuations, tighter US regulation",
+     "src": "CNA",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZlFTZ0RYa3k3aWcyWmtEWll4YWdVSXpBQU9XOXlkR3RjX0JyMjRXVjBiLWJTRzlaWjhUS3I5bmg5REktblV6djVDRnNmQUM5TVlMbkhhQTR3dWpTLVZzR0JxTDNTOGR0MXNHM0x6NEdDS2xMUjNpTTdIaW0wVHVkSGdRcjF5c19kMVZSY2J6UTJRNnVNWVNyNDRXMUtGdGZHMWR5c2NZZDNhOVdVeWUwdW45VHlpQlI0OEE4RGFFNA?oc=5",
      "priority": false
     }
    ]
@@ -255,7 +255,7 @@
     },
     {
      "date": "2026-10-26",
-     "time": "14:52",
+     "time": "16:00",
      "title": "FTSE Russell Keeps Indonesia Off Watchlist",
      "src": "Jakarta Globe",
      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMXBablczeVZFNDhGc243VTg0LXdjamQyZmpObHZkS2NrNDJ4elc5bWl6cWFCR3NMSG5vMEFrY2xjcDFrOHRjbkhwWE1xdko5VnIwa3NEWEpCMVVpek5aeXkxeGdVNFE0NVlPMGx1bU5pbnlTZlQxYjNLVEdUbi1yRg?oc=5",
