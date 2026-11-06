@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T02:17:10+00:00",
+ "updated": "2026-11-06T02:15:14+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,16 +66,29 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-05",
-   "items": []
+   "auto_checked": "2026-11-06",
+   "items": [
+    {
+     "date": "2026-11-05",
+     "title": "Ha Noi gains authority to license foreign-invested universities under Capital Law 2026",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ3NldzE1QzJQdFdGS0d2cVZhN1dBdkk4UnRoNkpXRlZTYldxWkJtQ3NmSHdIQzJmQjRIVTA0bVhCUkI0MUxrV1JaQnRoVkNON2JkZDdWNVlHOW1PS0VhcWRIbFN3M2VqQi0zYjI0LXQ5SF9kbVhoTXNZNlRkaGhGLUdOc0M2Q0NCT0ZmZm1WQWdtYWwtYWtXeExCWWJhLVVPcVAtZTFMSUsxRXBXeHJFTUhOdmt1LXlNVm0xWkhpbkhnUGcxdnZZQllFaGRhOWl3aHZzMmxJS3U?oc=5",
+     "src": "thanglong.chinhphu.vn"
+    }
+   ]
   },
   "ID": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
+    {
+     "date": "2026-10-26",
+     "title": "Siaran Pers: OJK Perkuat Stabilitas dan Integritas Pasar Modal Melalui Tiga Langkah Kebijakan Strategis",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQV29OYkpSTkZTUkhGMUYzMDV6MVRrVWl4OTdmclh0YXVHY2UzRlBxRGtIaWRSbFFUTUl3aTZmcU90MWF3TEFxZXpxR1JaWEZNQTdHOGdOTHlVVHFZb0lkUEVaZTE5MFpCVU1DSXViZG5fNlBPR0ZTa051UXhoMW5kLW5lNkVBWlNIY2ZRd2dmYmpnYXZoeG02U2wxS2N3R18wZHFTTjUxUzlNdFJBaHBGVkxDaVl4LWJEcnUyR195RGVfaDZxLUJkczc2MnkxNWVqUUh3dUVGZmFyUlNod2VEZFM1TjVzSm0xaFE?oc=5",
+     "src": "OJK"
+    },
     {
      "date": "2026-10-18",
      "title": "Siaran Pers: OJK dan SRO Gelar Dialog Konsolidasi dengan Pelaku Pasar Modal",
@@ -85,7 +98,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
      "date": "2026-10-20",
@@ -102,7 +115,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
      "date": "2026-11-02",
@@ -125,7 +138,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
      "date": "2026-10-30",
@@ -142,11 +155,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
      "date": "2026-11-01",
@@ -193,34 +206,40 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
-     "date": "2026-11-02",
-     "title": "MICHIGAN CHAUFFEUR LICENSE STUDY GUIDE",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdVk4SUF4ZEp5VWVzeDdKOW5WUmR2YnpJUVdMM3p6a3lXT0pEVDQwUmg4VVh3WVRmZktZcWdZRy1ETDlnb25rRnAxNUZ0ZGdvVzdHM2pybm1ZWFNuMHN1Z3I5WDRjQTBGamFCT2JQYmpSUV9XdGFUTWU5a0hqcHlYc1FOZGJkRC02al9iVg?oc=5",
+     "date": "2026-11-04",
+     "title": "PA BOATING LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1jSWtLOXR6QmRrdm1Ra1o2YUZvVVZEbS12RWtzajZKdXpCWmhBNnV1alFsSEIzWVM3X0YxVW9MSVlVNTNBQkJJYS1HdGt1RU9ZY2dyWVJjNk1Ld2xOSnFfXzVIcmRGUUE4aWpja056VTRYMzJGX0hSbV9oX0c?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
      "date": "2026-11-02",
      "title": "GENERAL HAM LICENSE STUDY GUIDE",
      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNd1pjbEdwZXhGMFNvX2FibThfeDhoWm9SMmZUWDBST3kwS3Q4RTNjUkZpcWV5akJoVkFGT1phSURMWHJfN3VueFZXNnlCZFBwVFZ4bWR2UkdWVklIdld1QmIwdk1jdmFUQm80NWVvVGZBWGFVMFprRUlKakhiWFlQTGdSeVFuaGs?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-02",
+     "title": "MICHIGAN CHAUFFEUR LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdVk4SUF4ZEp5VWVzeDdKOW5WUmR2YnpJUVdMM3p6a3lXT0pEVDQwUmg4VVh3WVRmZktZcWdZRy1ETDlnb25rRnAxNUZ0ZGdvVzdHM2pybm1ZWFNuMHN1Z3I5WDRjQTBGamFCT2JQYmpSUV9XdGFUTWU5a0hqcHlYc1FOZGJkRC02al9iVg?oc=5",
      "src": "10anos.cdes.gov.br"
     },
     {
@@ -298,11 +317,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   }
  }

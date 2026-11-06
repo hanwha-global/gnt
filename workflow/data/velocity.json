@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T02:17:20+00:00",
+ "updated_at": "2026-11-06T02:15:27+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -40,10 +40,6 @@
     "position": "CHIEF FINANCIAL OFFICER/FINOP"
    },
    {
-    "name": "CALICE, ROBERT PEER",
-    "position": "CHIEF OPERATIONS OFFICER"
-   },
-   {
     "name": "LOGAN, MICHAEL JAMES",
     "position": "CHIEF EXECUTIVE OFFICER"
    },
@@ -64,7 +60,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-11-05",
+  "checked": "2026-11-06",
   "sros": [
    {
     "name": "FINRA",
@@ -280,7 +276,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-11-05",
+  "checked": "2026-11-06",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -309,7 +305,7 @@
   "excess": 114879691.0,
   "required": 10352954.0,
   "audited": false,
-  "checked": "2026-11-05"
+  "checked": "2026-11-06"
  },
  "peers": {
   "date": "2026-06-30",
@@ -719,7 +715,7 @@
  },
  "dart": {
   "corp_code": "00113058",
-  "checked": "2026-11-05",
+  "checked": "2026-11-06",
   "unit": "백만원",
   "periods": [
    {
@@ -1061,6 +1057,6 @@
    "lang": "ko"
   }
  ],
- "news_checked": "2026-11-05",
+ "news_checked": "2026-11-06",
  "errors": []
 }
