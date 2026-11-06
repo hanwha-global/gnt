@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-05T10:44+09:00",
+ "checked_at": "2026-11-06T10:46+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -249,7 +249,6 @@
    "reason": [
     "판단 변화: +교차판매"
    ],
-   "last_check": "갱신",
    "candidates": [
     {
      "rule": "MKT",
@@ -383,7 +382,8 @@
       "판단 변화: +교차판매"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   },
   "SG": {
    "country": "싱가포르",

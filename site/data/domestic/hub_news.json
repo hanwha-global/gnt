@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T10:42+09:00",
+ "updated_at": "2026-11-06T10:44+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -42,6 +42,16 @@
     "title_ko": "대출 대출 대출은 거의 8조 9,000억 VND로 증가했으며, KB 증권 베트남은 이자가 15% 이상 증가했다고 보고했습니다",
     "foreign": true,
     "lang": "vi"
+   },
+   {
+    "date": "2026-02-25",
+    "title": "KBSV sắp thay Chủ tịch",
+    "src": "Vietstock",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8xa2tISWRzZ2ZTWHRmTzd3ZUVYTnhLZEQ0bGpROGJKVVdJVVZTV1hRaWNzRTVRY3RjOTB4VEhzdFFUUHRzXzFlM0Z2LWhhV2ZXTWpNakVkVm5Wa0RKR1Bud1dDRlgzUnEzRWtPako2UWR0YWpFdEE?oc=5",
+    "site": "vietstock.vn",
+    "foreign": true,
+    "lang": "vi",
+    "title_ko": "KBSV가 회장을 바꿀 예정이다."
    }
   ],
   "KB증권|인도네시아": [
