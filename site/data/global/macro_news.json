@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-06T10:46+09:00",
+ "updated_at": "2026-11-06T20:13+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -7,26 +7,26 @@
    "items": [
     {
      "date": "2026-11-06",
-     "time": "08:00",
-     "title": "역대급 외국인 매도에 5%대 빠진 코스피 [1분 브리프]",
-     "src": "아시아경제",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE54QndUNFFMTGsyYU5LWEowSF9OT25SLVhzcmVsZ2FpV0Fhd2R1YmQ0STQ4WFhIU3RiVS1xWGJuUWFsdGRBWS1fM0J1S3Q1RHhTdE13THg1VFJTMEE1STFkNg?oc=5",
-     "priority": false
+     "time": "16:24",
+     "title": "MSCI 회장 “한국 MSCI 선진국 지수 편입, 예상보다 더 빠를 수 있다”",
+     "src": "매일경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5acHlieHlEMzRVQ2YzbFBJaGVFYkdDVEZOUVg0WUgyaDdHdm9mSUFXUzRtaFJhd1BBOUxuSDJfTHNWWFpWdFNYV1o4Yzg0NWxkVnc?oc=5",
+     "priority": true
     },
     {
      "date": "2026-11-06",
-     "time": "06:00",
-     "title": "외국인 215조 판 코스피…연말까지 엑소더스 장세 이어지나[엑소더스 외국인, 언제까지①]",
-     "src": "이투데이",
-     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBwVmduLVpqUmNFbTJhbndZRHJNYjQwRHNYQmZHc1QtMXllbjZRSXNxNTFuaUo4eThNZlN0MXYzcFNfNUk4TFlNVFBXVGRpYmlHWjdQXw?oc=5",
-     "priority": false
+     "time": "11:19",
+     "title": "MSCI says it needs to see South Korea's regulatory changes put into practice for market upgrade",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWEgxQ1BoU2RsY2FCQmZwUWo2aTQzUlB4V196RzRZY1lsUUY3dEdCZG5fdjFHWDY2dTlKX3NtUG41OURjbUZUNWdIbW5uSXFoZmVXdmRFNnZPQnhGa0J0enJiNjFhdlZPd1Q4UVRPaGI3a2p3RW1jcEdWcF90Sjhqek0tREVVQllJZ2dEUVdRUUhfRUsyV0k2bzhlU0RkMVZ4Yy1PQTA3NV9meDh2RmxyZTUxTjROeERKTXJ2VG1feXN4ZHE5OHpqX29QUkI3Unc?oc=5",
+     "priority": true
     },
     {
-     "date": "2026-11-05",
-     "time": "19:56",
-     "title": "파란 쓰나미에 코스피도…외국인들 팔아치운 주식 보니",
-     "src": "SBS 뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE91V1BuaVRKby00dXlTSVpneERHdXhJM2Z5d0xNOGhqRmdGZ1NZT3JITndaMWQ2LTkzaEdISEw5UjJKcFg1Xy1NWkQ5NndWdUpnZ3JsVFoxS2lSUHZFaVpuV0JVU2pweWxpYnfSAWZBVV95cUxOdVNTSy1CSGo2SnVJUHZoeVc3aFo2VV9yZGFMQzd3Z0Rqb3BVaGZMYldPc2lBLXZaQkttczYydWpacElOMjRzNHV5X3A2NTdLR1l6dVBFVDdvdnVvZk9LWGdVc0F1a0E?oc=5",
+     "date": "2026-11-06",
+     "time": "16:44",
+     "title": "씨티 \"코스피 급락에도 11월 금리 인상 전망 유지\"",
+     "src": "연합뉴스 한민족센터",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kYXlEUlRyZHY0dktCbWhPQ0Z1NkJ3dXhsSlBDdFVkRW5RLTl2QlFLNXlqY3dRTkkyTDdkUzZNSHJ6UE5icmN2RnRSNDZtUWVaYTRJRV9Oa2g3TElLRkxrdENlby1lSjJSckxMZndVUzJ5dXo5?oc=5",
      "priority": false
     }
    ]
@@ -34,6 +34,14 @@
   "US": {
    "label": "미국",
    "items": [
+    {
+     "date": "2026-11-06",
+     "time": "18:34",
+     "title": "Treasury yields inch lower as investors look ahead to key jobs data",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEd4MDlaNjAwRjlYdFp0aDhKVDFsVHZNUnBCWXU1aHhPWGMtQ2hmTVJnZmpoMWo3cnJNbEZwRWJHRVp0UjI1SU9ELURwYjctRnRUS19MUVhrdVlvTWswem9xR0dRT2V0ZHJxUm5pZFE5cnpxTmR5Wm1lR1pYRk9xYXh4dGtiVWQtNWJfcVBzQmVSS1VRR1F6UDRpWnhjVlJsSF9iazlCRUrSAa4BQVVfeXFMTXFRWnBSVk1BYjJrMzR4N0VZOXZIa2U2MXZnWFZVS0t3amRvOTdSVC1PaEpLQ3NMS08wamNTeFlmRk5PUWNRZWp6VTZnUHozNVNvWXpLTko3UHNOOUhCQWhpS2xqQmdEd08zVkRDTHBCUU9Gc1drd2NwWWlNMlc1SHVUeUVSZUVwNEhNRDU2d0xCMERmWkdXbWI4QW1UaWhRR3U3MHhQSWlFR1ptT0Fn?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-06",
      "time": "07:06",
@@ -49,20 +57,20 @@
      "src": "SBS Biz",
      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tZ1hUZ1h2Z1E1NWNVQVZtUVduY1dCMDFRdXpNc2N4ZDR0dWZlVGVzSXZFWkYyNm5PUERwd0ZmRHB3a3lQZzNSaV94R3lQWTJVWndj0gFYQVVfeXFMTWxwelVpWlpWZzFpTjlIcHlPckhubi1KcXp3eGlOVnBrazduVW8yRV9yNTN3b1Jxc2dzMGtLYS1SRm5pY2ZNV3ctRzNGdGVXSzRQRUxMTTlIQQ?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "04:57",
-     "title": "'금리동결 반대' 연준 위원 \"긴축 필요…작고 잦은 조정 선호\"",
-     "src": "연합뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBoSlJwM0V6SkZOVUVnVWh6Ql92bG5DbUFqUXpfemR0eXlyZW0wYjEwT09YcjFTNVBTR1M4c1ZBT1VBV19nZGt5MGhyVHk2bXQ3YThOSEx1eGlkRlHSAWBBVV95cUxOYWRFMmQ2RUZBbzJ6RlNqbEVYSUpFcHRyQlFSbHJvdERXZ2o0NHF5VG9ONHBEcFR2aERNNFlpQ0xMUjFCMUtoVjN1X1NXWEx2cWpJdzJZdjFwOXJzWGFrcGc?oc=5",
-     "priority": false
     }
    ]
   },
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-11-06",
+     "time": "19:22",
+     "title": "Indonesia presses ahead with equity market reforms after MSCI downgrade warning",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTFJrMVVCWlNCeXpOZ2NhRVhhOTFtTDhnSWdPNEhpT3NsNklGTW9nTFZ3SkpIQ2pCakgxYmFlbmQ0Z0pHRXljSEFLNUtjSkgydVdPUE1GNmppZHh6ZmtnYl9BY1gzejB0YUZxVDBYTmdETTBYMUFIN3Q1anctVGVNQW1KWFQ0VUkwck5vMG8wMjNCTVVscEF6N1hBeERyY3puWnIxclBjcnE4SFM5SHo2UzI4amEzZkl6ZkdlU1h6NUVWQTdqTFNnQ2pYZUJWaTQ?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-06",
      "time": "05:52",
@@ -77,14 +85,6 @@
      "title": "Indonesian Stocks Plunge 3.78% as Foreign Selling, MSCI Fears Mount",
      "src": "Jakarta Globe",
      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMl94OVBQZDZ0anF2cFVqOVdtdGhYVENlS0VRTkxiSU1uSGZhMndLZnZfVlQybmdNVm5QZWg0dnQxN003WVlQSVJSVTBqQV91anhCV2R5Q1NSdGg0S3RBcUN6TXdsbmE0OXNtR1VxVGUxalBGWWtXWmVWMi1TT3NxZTBYU2Q4cGtCZmduOW9wMjQtLU80c215X1hpcTdkZw?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-03",
-     "time": "13:36",
-     "title": "MSCI’s warning does not define Indonesia’s economy",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNb2tmUUVkN1FUdjZ6Snd0bFJpWmpEb184R2oxRnhkZ3NtUk9JSThkdTFESzhIa3V4azdYa1ZuLUNGd2RZMzNaRmpKdE02Uzk1a2VwMzlKUnJoejQxNU9Rb3JFQm1PT1k0X1pSd0Nma1JLV3ZvNEFLVFhLYnNKdXNPWUx0MUR3bVZvV0ZCLWl1UUdRNWhuS3ZVZE8tZ2JySk0?oc=5",
      "priority": true
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-06",
-     "time": "09:41",
-     "title": "Japan, South Korea stocks plummet as AI selloff accelerates",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbkFabC16R3lTUDFNMXlBSUkySzFaSlM2ek9vb3JzNjhIYktuUk5aUHZsazJrRkpCNkczd1ZjUlR3YU8xaXRWc3pJb2FOLVl2X1lQc1RDSFM5UkVGQ2ZxbHZkdFNScGhKYU9ja2ZZV3ZLS18tZXFLX2dGMEZhd21Va0V6aHozM0FRLU9aR2NMVnk2Q184Nlh2RTY5YlJvNTM0?oc=5",
+     "time": "16:42",
+     "title": "BOJ to hike in December, seek terminal rate of 2%, says ex-central bank top economist",
+     "src": "CNA",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNM1pqYXYwVlRWc1JITW1ETDJncU5XVDJvZ3R1T1VYX2wtSlNmVU50YnJtSWNacEJYdjEzbUdXVmxSZUN3NmgySlFueTdiRkdJeWt4NUt4ZDZtUS10TnhyNTBLRUM2ZUNsTzBtNUozbmJhcnZxaUk1enNvU2RObHQtdkY5N0ZiODNrbGFraG1WVHFEWXFTenVXM3RSZEw5VHo4dVZRcDR3V1BXQUVZeVMtUEt4eGRJb3NFdDgyNVFsZkc5MVk?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-06",
-     "time": "08:59",
-     "title": "Japan’s real wages rise for ninth month in September, backing BOJ rate hike",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORG5USkh1RUREZnVFc2pScklXaDJURU81MlpiV3VwNzhiUHMxaUhhOEZmbFdFcWt5aFQ1dHc5ZlIxdGJsMG9WY2p5Vzh0ZV81RWFqbkEtV0hJcUhiRkpGWTlteHJwTS1ENU9RR3pOUndTaFpfbk5FTnFnTXM1LTI2cWMxQnowZjdEUU9JYzRfR09OeWx0dW9uS3JreE5lR2NtbU0yR3JCbWx2R2k2TS1aTGFkTQ?oc=5",
+     "time": "15:28",
+     "title": "Japan Bonds Rally as Global Risk-Off Move Boosts Haven Demand",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWmJyTTlSNWdpa2E0WjU1VUdBOG5KNzVFem1CWVgwUHE3dVR4V3VXYjZBaTdZeE9Ndk80MDc4WVlHb0JjcmxEQXBfeEo0ZTRTWUFYWGJuaFBqUEJFX0NjVkxQUGdublYxVGo3UW5YM0hhbnd6a3ZXVnRIU2tBRXREenRUeVpfTW95ZmF0Q1VFM0FfdG41ZnJnUTE1a3N3Nkx2aHlqZ1luQVFoQmdsS24xSXpn?oc=5",
      "priority": false
     }
    ]
@@ -151,27 +151,27 @@
    "label": "중국·홍콩",
    "items": [
     {
-     "date": "2026-11-05",
-     "time": "17:45",
-     "title": "Hong Kong Stocks Roar Back as Value Rotation Boosts China Tech",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaDdjYlRJdXR5ZF96alAtRG1fVk9ROW9xYzlqdWt2TnlfNi1nN0RxNmREcU5NV3VYY1NIRjdMYTRQN1VQMHVCakhKY1lDdFlGWVB3aDBHQVRFTXM3bGdSVXltaHVxQ1p4bTUtN1A5MFcxLV9kUGZNWFdLSmJQYlNJNm12NjI5dVRlal8ySnhyTDdRei1HSEpnSWxXMHR1TzZLZnYxRUl3VWZXYjdfbldV?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-05",
-     "time": "15:26",
-     "title": "China's November diesel exports to ease amid thin domestic stocks, sources say",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUC1heWwydGNUd0wzYWtNUXViUFMta2hyYVhFMm1pSV9oSi1lUGxxVEw1alpQYm02MUh1bU40U2VkNWNOYTZVS1BHUGRhN3Y0Z1FZODNaM2NtT0NLWW1abmxRQ0w4LVhkUzVHTHBnQmhYOVBRODhCRXpMMmpndVBsdm0tVG45NXd1c0h5YTlwSjU2bTJvNGEtdWxNT0NOTWNXa0lXN3NFakZTeUN3cWl2Mks4V3hhcWRrb18tU0NuTjJHRjQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-05",
-     "time": "15:09",
-     "title": "Hong Kong stocks jump 3%, China shares edge higher as tech stocks rally",
+     "date": "2026-11-06",
+     "time": "15:15",
+     "title": "China, Hong Kong stocks fall as US tech rout sparks AI bubble fears",
      "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNX2w1cE9jN3p0UkVOY3F5a1ctRF95Zm40aTFNOTE4RnkyV2JvZktnMmtGdkZjQUU1TTl4TGViSERsWmNlSk9vdkhmMmgtQ3IyMGtpeUNCSUsydExiWmltbUV2OUN5WUl5NGExSXcxd3RvVVRXLTVUWHhuTkZtQmNKcWYybjhIRXRENmNZanpYcmVaNXJMTnlOZDk5Q29oSENxcE9mX3FSOXQ5eUhOUjhKY0VKYmJSOXV6WlZOVXZKZ0c3cXBDZWpsX3NRdkFvekNGRkJHSnlCQlcwYnp5cC1F0gHkAUFVX3lxTFBFQ0pfUDl1SnFZQjNkaEM3UUtnaUdIUUNfRXlqdldLSlhsRnNmaE14RTZMV052UnQ3aFQtMUV0OC1oQ25xdnNzRnVyYVEwT0s3bE5MRHRtV0E1RFJQczc4cWN0U3BMR0tyQUotOVNTQlJUVmNqalJRMlJFWnN5bmNGQ1FyTnQxS0syT2pzOVNGSnRjSXhzLW5sS2dhd0pxazBMRG5KNko0RGI5UG80cDFOT0VfN0xUUmxDRHQ2dnEwTHJzZlNwa25obGtNRjJHX1lTQ1o4bkFfcEFKTlVlaDNnOEV2LQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdHJxTXVoZVVVdENFaGRGNTF6V0U4VUxFTjg0ZFE2VldvUmVEWkFtNGc4Y2RlMkhtUDdnOVJfZ3pGbUN6S200TkFzNk02T1dzM091U0h4NWU1Y3FDd3plekFvTmdCV3VZUGlNMGl2S243R1ZpRFRLX2c4UUl5cXJVbnI4VlVtenFTT0xOY3NTWmRkdDV5NWZRZmVqZEJuTklmNGNkUi02bVd4QWRNSE9CeG56YU92azV2dmZGUGJWSThyYlk4YmFwcy1XOUlKVUV3R1hydUJYOXJEdEnSAeABQVVfeXFMTlpQU1pTTkNnaG9CTEVvNmptUVU4SkFha18xYVM5X08xeThfeWZiYmN3ZXdQSzhib29iclpRR0c4UThNaVF1ZXpiYlk0WW5TWlpqVWZHeUthNzRoc2R6ajliZkR0SGMwQmlBVVZCbGpjUlRhbU8yUWVVWjlVRlM5bDJiUjU0eTFfcXQzOEFpcDhpS0RtdGhrT2EzUzFQZUtmOEdxdFFzb0tFY2hMM1FtV2NabmM4RTFGTzNyVFVCR1hTNmxfSWN0SXN2WnZFczFvQ2VpOGNJMTlQekJPeWJ6X1I?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-06",
+     "time": "10:59",
+     "title": "Tech stocks lead declines in Hong Kong, mainland China on US$2.3tr plunge in US",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbHJBbEI4d0hrMENKUWlYYmRpYkFtNjI5a2V0ZFVMY2VLTng1SkxqeWFjdFBrbEFpVjV2MGJBRXAtRjJKYWVpSUFwTEZzcjRINUI4ek5ReW83YThBQldibGNZdzFBNUJwU3ZjZ3RxRzY2Snk5S19qbFBoejBZTmxqaG1PZWFBZHhyVUV0N1k4dkdnMkNZd2FXYm8teWxRYW9fMmNVWXZ0RzVyY1V5MlBqaHdCYkRFV1lHYjdITll6QXpqN1FIQlBXVXZfQlhJZmVOVXc?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-06",
+     "time": "07:29",
+     "title": "Five charts for the month ahead: AI financing, global rates, Hong Kong stocks and more",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdXJraFowcUEtTUNnMzU0Q1BTeXZQaUQtN1RBLVdhYzBNWUVwV2lZTUc3UEE3ODlxWnBmUGJHZFBhQlEtX2xlOWJab0lxY2swdGFrQWlDT3pDS2JEcWpFUm43NllwYjBWc0tTVVVNV2pJOWpyVVpVdlNxRFE3Vk1iM2JvNjFObGxmRWRxeGNKcTVISHJXcTFzUTBPck9DNlRHZXo0MGNjQ2xuQ0txZVJndFEtU2FNXy0yQ2w1QkhPOUdXN2lnVU1TdzU2U0h1X0dCaEwwVzRxYw?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-05",
-     "time": "16:34",
-     "title": "Sensex stocks Adani Ports, TechM at new highs; Eternal, ICICI Bk near peaks",
+     "date": "2026-11-06",
+     "time": "17:12",
+     "title": "'Anti-AI' trade puts Indian stocks ahead of Asian peers amid global selloff",
      "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWW9iX3J2LTNxdVB3SnJQZkpSUW1ZcExiRFZJbGFVeS1KUWlTWDEtLXJ5cEdTTUxVcEdjQnBJYl9CYmdxX0JUaU5aSnUzbGp3OE50Yy11NlVndFFNUU0xdGNSdVdEYlZqdVBaWWNraEJOUHVldnQtVzAybnpEbDBLa2Joa0pOMkZRNzZOaWhyaFltU1NvX01YajAycGxpcnJSRlJkeXRQRUVwdU5seDJKOFlZM3BEUjJyQllXMXdzaGYzMHN3YU9HaXVDd1g3dGd2eldoZWhScXrSAd4BQVVfeXFMUGxHZHZYS1NhZEZsbzhJb0tPOWE5VzV1eVA5SllJWmNzVFVKZWY0aUtQSERmSVpTOTlFdWhaaWZGSFhpeGhXQzR3QnE2Q3BRa2Vjc21RYXhUSVRHVDRTb0ZNb0tkcnRfMGtRQy1KV3JDRzdoRi1UT21hUXVPUlhWWmhzVGdnR21vNkFaeERUUlhBeFFzVVFINlBjcGdZcDNVQzBYYjZ6c0U0QUk5eEttR1o2VGRwUnBFaUVxZ25fVkZTRVhTVl9QT08zOWFoX0tWY2U4eGI0MnFiZWRiOVp3?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVFNMUU1lLXdpel96NGlEZGVHbGkxd1JFUUlrSzN1SU1RZnFycWIwM01JbjM1cFQyeUxJNmJDdGVoTXdHemNqdzV1VzZ4cWdHb0VHZk5HVXQ4M3UydFZhUVJONGZyemNvci1mWE8yYUVWWUIycV9MYkhBLWludkNsRGthYVZWcmVlaGMwSENmTWxuRjFIRlN2NWdGdmF4THE5UlFmQ09XVmNqT2hYbnRyRGR1c1BQaTIybXZCa1oxdkJTbm5MZEhyT1V1cC13cHAtRFJnbnV2MNIB3AFBVV95cUxNYm5xS3oya3lsejVqSThYSXZISTlxVzdBa0NTT0RDWnNBN0x3N3p5Wm9kdXVORFVvWEVEaTlYLXBsbFpTZTFTTFhSNk41SXBnR3dBQ2hLQktRTHR4SlNsdEhVRzNuazBKYUdFcjhTSU9OVDd6b2FkbC1oTy1zZUhTRlZJeFpidG0zTUlUNUwtM0l6SDh4TzZHdExyYzBuU21GMjNfT1hlTDgzc0RkNUNJSnJRQTZSV1hEbHdjZDdkTGYwOHlacWNwZVF4VXhDZ3hQZVI0cTBFOGNDeWNy?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-05",
-     "time": "14:07",
-     "title": "Stock Market Rally: India is back to being a $5 trillion market - Here are the factors and stocks that led it",
-     "src": "CNBC TV18",
-     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZGJyOXNTRnFnTHVrclEtQlRhU2NpNXN6NVIyTVowMUtjM3FuWlMxUFdnaXFuMlBXcEdYZFc4ZTBqbXNLanVNaVAxZXNRYXhjUWo3VXdrVmRMTDVfTm9Vcld5VkJHZElOOHBSdFc3VFdremJnd0JLVGxkSTZqY1lwNVFRWVBXWFFpQzVweXZ3RDgtdUlCOWFkQlVaT254R2k5Sjl3R09QT0xCWlpuaHhFMXpCTjh3cHp6eFZzMEw0YXNuWndWajBZTndqNlNodl9qY19yeEp5YnF1cnozQm5nd2Nsd0XSAeoBQVVfeXFMTXRIM0dieGRNMUdoREpHZllXMHdHOEtTSXpIMEliaFlCRDRXUEpmQ0R6QnYzVEtrekFGcks2dHV4Y3ZtdVhhVzhId1BidWd3d0dKa2E0UmNfV1JCVndNMjBiOG1zNEQ2c1RhOVJYTXpsaEl4b3RDQWF4M0daRnpkV1l6RGxldERueGFPVVllUVJGRkVLM2RhUlRIVVhqRWlBdDYydDBSX1IxQ2dnc0ZldUhWX3VnZklSVlhjNUs4eFRjN19TdHZidkE2b0VoMHBIRnlwX1FPM3VhenZZSVRWYUZwdHFyZ2dVanln?oc=5",
+     "date": "2026-11-06",
+     "time": "16:51",
+     "title": "India's October consumer inflation likely nears top of RBI target on food costs: Reuters poll",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNc3JHMmp6UTRTTm5UeVRCNFhQNG9HVllXVFJLdDVOQ2hMSFpLa01IeDl1TW5jelhIb3Bqa0ZJazBoY3ZXT3A1WXItWHBwaENFMmN0ZlRUSDJKZ2loajF2ZGhiWTFsY285OVdQeGQ2MzcwQnZnY0U5TkRIREVnb3VFeDRaUFUwYUpLcUUtdWRVZGVCVnl3SU9GZmdUT1BsT2RxRlJnRTk5X1k2OTk0WW10eEdBdnRuSHdsSi10R0lwVjQ5Y0pMQVFYb0gzNkNveGphY3dHd2FFejA1emtsYkZrdTFiWm1aTkg4d0pTc3ZGVGVVdGV5Z21Bd2RDTG50b3Y20gGGAkFVX3lxTE5Oc1hhbW5ZRlJXLWlnS1JWT19GUWxBdHVWNGNlRlF2SkV1Z2p4WmZZZFBhYzBhX05UV3ZhaWZ3eXVCNlo3LVQzRDZQckdjZmFnclpyOWYtdEwwZGcwNlZGUVIwUGU1cFQ2S0VuOU9vNU9paHpwTGRTeW5GbTJGS0x3T2JCX2Faam84eWpKdXdYMHg1eUdUUV9xTHY4b2R3VWNpWmdMeFl6eFp3anpxa0ExdE1XRjg0b2JrN18ydFRSTldWVHRXQ3JNYmpBRndFLUU0bVduLTJIOE5rM2QySksyUndYTHQzY2lESXNQdnl6S2xNZE5GNmJnRU9iZ1ZuT2lsaDU4dmc?oc=5",
      "priority": false
     }
    ]

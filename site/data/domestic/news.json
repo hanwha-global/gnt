@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-06T10:45+09:00",
+ "updated_at": "2026-11-06T20:13+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -581,6 +581,17 @@
   },
   {
    "date": "2026-10-29",
+   "time": "08:19",
+   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
+   "site": "www.sedaily.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
    "time": "08:11",
    "title": "미래에셋, 日산코증권 인수…日주식거래시장 첫 진출",
    "src": "SBS Biz",
@@ -796,21 +807,6 @@
    "time": "",
    "firms": [
     "하나증권"
-   ],
-   "foreign": true,
-   "lang": "vi"
-  },
-  {
-   "date": "2026-10-21",
-   "title": "KBSV và hành trình 'Đi lên cùng Việt Nam' qua 5 năm được vinh danh tại APEA",
-   "src": "Báo VietNamNet",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTldja0JLeXoyNTdTWEtKQk02RU1pOG5jMWd0bTZwOHN1ak95eG1FRHdrLWh4TTI2N09nX0ZVLXk1ODBWVkZLYjIyVDV4YWhpcFB4MDFzc3RsSmJraFpBTldWNlpFTUt4all0LVVucUJSTnJ3dmtKTWtNdm02U1RoNVEwM29SOUpNSDU0MTJUUHZya3dWdU9TZXQxWWJTVS0xQTJ5ckJPN0FfTXp6?oc=5",
-   "site": "vietnamnet.vn",
-   "title_ko": "KBSV와 5년간의 '베트남과 함께 올라가기'의 여정이 APEA에서 기념되었습니다",
-   "hub": "KB증권|베트남",
-   "time": "",
-   "firms": [
-    "KB증권"
    ],
    "foreign": true,
    "lang": "vi"
