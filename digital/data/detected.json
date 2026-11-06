@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T01:57:17+00:00",
+ "updated": "2026-11-06T01:57:23+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,12 +66,49 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
+    {
+     "date": "2026-11-05",
+     "title": "가상자산 소득과세 2년 유예 추진…2029년 시행 기반 마련",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSHFTS29yR1BDdHZOa1VoUlc2bFVIcXE2UmotRGN4WFZXYnRpMlQ3Nk5LaWxCd09Yenl0Y0NUQ05mS3UzMjFhcmJ6WVl1LUY2SndiZmNVM2tOREVoV1VKNFQzN0hUU01EM1BPc0VURXZvaVBlTzNMOUhtclpQWXBuR2ZqMnVraklrTmc?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcTBQR09UamNOLVlFbV9Lb3BDYnRpV1dRMFZLS1lhcHA4WXJKakM1cV95ckktanpjZGYxcHktaEpYc3otUkhwNnhJNW4tUHJ6VTdUUmdheFJ0eEVxNDNhY3VjWlZMMmtsaEM5TUdfTnZUeElwNHRlQTNIdkRlSDc0bTBLOTA3R2tIQ1QtSEk3M3hzeHlza3V0TC0temRVdncwTlRUQ0V6MUx5c0JqeVBSc19yLTJEb1NXS0lrYjlTSEFEYnVyVnZxZFJDZ3o?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "title": "가상자산 과세 관련 부총리 브리핑 - 보도자료 | 브리핑룸",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQX0N4dkdUUDlKcE9RTllncnlVU2FWMTZTNVVONnlFUXkxVlM1bExRVWhCWFU1MEROYTdMXzRZekZ3YWxyT1BXNkkxMHcyWUpaZksxbjA2V2llQmM2aG9aQVYzejFEeUQ3a05vT2IwLUxVZ2Ntc0JGdlVjWU91aXJ5elVVa1pjMnZxaExYMF9EUXd2SzlTMGh6S25KZE5UeHpSOFBoRmpjb2phc2JfUUZPZW9hUHQzSzltQVUzRW4xZ0UyZjNRU19ETEpHcjBMa2x3NWh1a05ZcUg5SXFMaFBySERBVlYtbHh0VW96SXl1TElUVVB5UjVNZ1RLcUVsNGcyQnNCLTQ4N0dfZjNTZTdZaExR?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "title": "해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtYVhHTDU3MzB4QnlVOGNBZmxDQlNoVnUwV0xBdVNEOG4za1VxR3JEdnB3SV9NY1JmSXVpMENCOFpsSXlYWVN3RzBlLXdGWW82UjdDMUF4b3NrSldQaDNGYU1UZ0hES2I0dWN4TVowdktDS1h1VGc?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp",
+      "tax"
+     ]
+    },
     {
      "date": "2026-11-03",
      "title": "(보도설명) 해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이 아닙니다.",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeFVnenlIazF3a0hPZTZDSkwyaThBRk1xNzBFdlgtM2dqNFhDamdvSFhNeVhuSWNaUEt1NG9xaDY2dWZpbVpmTlpNVnJ3NHg0a1hmZ1gtRVZQNUF6eG9WOXRrUFptR0ZlbFNrNUF2SGpuTGEwU1BNSnFDUW1NTkFZdlVMV29NWXdO?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE54UGxCeXBkZkU4YUxVd0FydnV5MGh1UXhGZEZnMkQ5WVYwbXpLYjRXNFBYSEVCUGJDMG90WE42UXpyTUNrZW9YWFJIdFZhckR5ODZkV0djNENIYml2ZVo4RXFMYUpfWnpBUXpNalItRQ?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp",
@@ -85,16 +122,6 @@
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
-     ]
-    },
-    {
-     "date": "2026-11-03",
-     "title": "해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtYVhHTDU3MzB4QnlVOGNBZmxDQlNoVnUwV0xBdVNEOG4za1VxR3JEdnB3SV9NY1JmSXVpMENCOFpsSXlYWVN3RzBlLXdGWW82UjdDMUF4b3NrSldQaDNGYU1UZ0hES2I0dWN4TVowdktDS1h1VGc?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp",
-      "tax"
      ]
     },
     {
@@ -113,6 +140,15 @@
      "src": "금융위원회",
      "topics": [
       "vasp"
+     ]
+    },
+    {
+     "date": "2026-10-30",
+     "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행 | (상세) | 한국은행 홈페이지",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNWt5Nm5aX0g5LUk0V2U0WjY4Q0FIVmNpaERzV2dhSnBrM0F3T0hZZFVzcnVqT3NkN1paTG9Xa2xsZUNxWFVUb193ZllYWExqS0ZFU0E2ZGg2UDVCSWV5VTlSVWFnREhLQVRReWVmVncxb2E0M3NSWk1PZVZtOUxNdUJBM0E?oc=5",
+     "src": "bok.or.kr",
+     "topics": [
+      "stable"
      ]
     },
     {
@@ -245,15 +281,6 @@
     },
     {
      "date": "2026-10-13",
-     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01OV9mbVhza3d6SXVwd2dNNVFRVGNhWGRSUVlvS0hINFI5dzdfcW15VXlyanY2aElDNDNDQjdXM3N3dGFmbDEtR3E3cHpySTRYYmtEZldUWFYyRWN6aHpRdmxGXzVjem1VQ2IwQ0MtXzNHT0ty?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp"
-     ]
-    },
-    {
-     "date": "2026-10-13",
      "title": "미신고 불법 가상자산 취급 웹사이트 27곳 접속 차단…피해 예방",
      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IWU1VU1luUWhSVXdnWXdOUnNhZmhwd3lqWlVBc2NZSU5MZ1hyNDd3MVY1VWlNVTlCZ2FaR2NjNVBnbUtBdmN0d1ZGeFh2WEk3NnJ6QV84UkVGZzFWRkxkTTVoUXBzLUlWUF9Ccw?oc=5",
      "src": "대한민국 정책브리핑",
@@ -309,7 +336,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
      "date": "2026-11-02",
@@ -377,15 +404,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
      "date": "2026-10-17",
@@ -399,11 +426,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
      "date": "2026-10-28",
@@ -417,8 +444,26 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
+    {
+     "date": "2026-11-05",
+     "title": "Expert roundtable on tokenisation of financial markets",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQV3A5eFFGWldhMDNBeDZPaUpZcGduOXJmeVQtVjk0ZlNMOHp1VVJ2dUJRRE1DNFVkSDhKZ0U0Qk1sNWZPZ2l1cjZZa0diYjRSb001NHBOUUtuaEc4TFBXZW9XcjZVb0Zxal8yZ0w2ZEdtRzVBUEhzbUM2TGkzVmdZay10WUt6MkdWaTNFRDhtUzR0enJkT204b3lOZElIdDg?oc=5",
+     "src": "finance.ec.europa.eu",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "title": "Tokenisation: implications for market functioning and monetary policy implementation",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRFZIY3dDc253NzdQWkRqTzlQelg5TVdQWEJNaUpPeS1ZY2dZS3JBNWFjc2ZCMTFMU2hSZHVqWS0ybEdqZnd2SmlPdlJ3RTVBcjVqTHBZMk8wQnRwdUlaVE5wUm9aVEJpRWo0RXQ1RV85SzQtMVRla2JJR1pMZGs4Z2dXTnR0aDZVVm4tZHJvanRkT2ZxSGZOQnAxc25XcGRNb01GbDFxS2RJWUhrYUplWC1ac0MyUEdSdUVYLWwtaG9GclJxbUh4cDkxc3Q5T1dycUE?oc=5",
+     "src": "European Central Bank",
+     "topics": [
+      "sto"
+     ]
+    },
     {
      "date": "2026-10-21",
      "title": "ESMA75-113276571-1625 Compliance table on the Guidelines on supervisory practices to prevent and detect market abuse under MiCA",
@@ -494,8 +539,17 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
+    {
+     "date": "2026-11-05",
+     "title": "Crypto - FCA",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQS3hMTTBzRVBlc1UzaEZZUDFhVGpsZ0M3QW8tN1VTbmh3V3JHa2lQZmFlTGY2THBxZFhTbXk1dUZyRGxCend4blVaZlNfZnpZY3BPVHNUSDBEU2d1NFB0eERVZHBDc3VJb3JRa0dCWl84b2lRbTFDTndHWjQ5M1FIUTNvOFprVGYxLUpaWjZUN3BEcVRMYnFLVA?oc=5",
+     "src": "Financial Conduct Authority | FCA",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-11-04",
      "title": "OAuth2 Graph Token",
@@ -598,7 +652,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-05",
+   "auto_checked": "2026-11-06",
    "items": [
     {
      "date": "2026-11-04",
