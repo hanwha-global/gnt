@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-06T02:15:27+00:00",
+ "updated_at": "2026-11-07T01:48:48+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -60,7 +60,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-11-06",
+  "checked": "2026-11-07",
   "sros": [
    {
     "name": "FINRA",
@@ -137,7 +137,7 @@
    "Put and call broker or dealer or option writer",
    "Non-exchange member arranging for transactions in listed securities by exchange member",
    "Trading securities for own account",
-   "Other - CLEAR EXCHANGE LISTED AND OTC EQUITY SECURITIES FOR CORRESPONDENTS,EXECUTE STOCK LOAN TRANSACTIONS, PORTFOLIO MARGIN AND PRIME BROKERAGE SERVICES.  OPTIONS BROKER OR DEALER OR OPTIONS WRITER ENGAGED IN CLEARING AND SETTLING PROPRIETARY AND CUSTOMER OPTIONS TRANSACTIONS.  ENGAGE IN REPURCHASE/REVERSE REPURCHASE TRANSACTIONS.  ENGAGE IN RESEARCH ACTIVITIES LIMITED TO THE DISTRIBUTION OF THIRD-PARTY RESEARCH.  CFTC/NFA REGISTERED INTRODUCING BROKER. 13©2026 FINRA. All rights reserved.    Report about VELOCITY CLEARING, LLC"
+   "Other - CLEAR EXCHANGE LISTED AND OTC EQUITY SECURITIES FOR CORRESPONDENTS,EXECUTE STOCK LOAN TRANSACTIONS, PORTFOLIO MARGIN AND PRIME BROKERAGE SERVICES.  OPTIONS BROKER OR DEALER OR OPTIONS WRITER ENGAGED IN CLEARING AND SETTLING PROPRIETARY AND CUSTOMER OPTIONS TRANSACTIONS.  ENGAGE IN REPURCHASE/REVERSE REPURCHASE TRANSACTIONS.  ENGAGE IN RESEARCH ACTIVITIES LIMITED TO THE DISTRIBUTION OF THIRD-PARTY RESEARCH.  CFTC/NFA REGISTERED INTRODUCING BROKER. 12©2026 FINRA. All rights reserved.    Report about VELOCITY CLEARING, LLC"
   ],
   "disc_status": {
    "Regulatory Event": {
@@ -147,8 +147,8 @@
    }
   },
   "disc_latest": "2025-09-30",
-  "sros_checked": "2026-10-31",
-  "types_checked": "2026-10-31"
+  "sros_checked": "2026-11-07",
+  "types_checked": "2026-11-07"
  },
  "edgar": {
   "filings": [
@@ -276,7 +276,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-11-06",
+  "checked": "2026-11-07",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -305,7 +305,7 @@
   "excess": 114879691.0,
   "required": 10352954.0,
   "audited": false,
-  "checked": "2026-11-06"
+  "checked": "2026-11-07"
  },
  "peers": {
   "date": "2026-06-30",
@@ -327,13 +327,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 20973000000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "NetIncomeLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Morgan Stanley",
@@ -352,13 +352,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 20370000000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Charles Schwab",
@@ -377,13 +377,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 10096000000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "NetIncomeLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Interactive Brokers",
@@ -402,13 +402,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 4896000000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Raymond James",
@@ -427,13 +427,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 2306000000,
      "end": "2026-06-30",
      "how": "FY 2025-09-30 + YTD 273일 − 전년 YTD",
      "tag": "NetIncomeLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Jefferies",
@@ -452,13 +452,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 863125000,
      "end": "2026-05-31",
      "how": "FY 2025-11-30 + YTD 182일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Robinhood",
@@ -477,13 +477,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 2072000000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "NetIncomeLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Stifel",
@@ -502,13 +502,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 953628000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "LPL Financial",
@@ -527,13 +527,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 1006867000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "NetIncomeLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "StoneX",
@@ -552,13 +552,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 526900000,
      "end": "2026-06-30",
      "how": "FY 2025-09-30 + YTD 273일 − 전년 YTD",
      "tag": "NetIncomeLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Virtu Financial",
@@ -577,13 +577,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 1061178000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "BGC Group",
@@ -602,13 +602,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 189196000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Piper Sandler",
@@ -627,13 +627,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 363851000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Oppenheimer",
@@ -652,13 +652,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 102412000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Cohen & Company",
@@ -677,13 +677,13 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": 45940000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    },
    {
     "name": "Siebert Financial",
@@ -702,20 +702,20 @@
      "form": "10-Q",
      "tag": "Assets"
     },
-    "ok": true,
     "ni": {
      "value": -1119000,
      "end": "2026-06-30",
      "how": "FY 2025-12-31 + YTD 181일 − 전년 YTD",
      "tag": "ProfitLoss"
-    }
+    },
+    "ok": true
    }
   ],
-  "checked": "2026-10-31"
+  "checked": "2026-11-07"
  },
  "dart": {
   "corp_code": "00113058",
-  "checked": "2026-11-06",
+  "checked": "2026-11-07",
   "unit": "백만원",
   "periods": [
    {
@@ -1057,6 +1057,6 @@
    "lang": "ko"
   }
  ],
- "news_checked": "2026-11-06",
+ "news_checked": "2026-11-07",
  "errors": []
 }

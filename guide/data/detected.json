@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T02:15:14+00:00",
+ "updated": "2026-11-07T01:48:18+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,12 +66,18 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
+    {
+     "date": "2026-11-05",
+     "title": "Ha Noi empowered to license foreign-invested universities under Capital Law 2026",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ3NldzE1QzJQdFdGS0d2cVZhN1dBdkk4UnRoNkpXRlZTYldxWkJtQ3NmSHdIQzJmQjRIVTA0bVhCUkI0MUxrV1JaQnRoVkNON2JkZDdWNVlHOW1PS0VhcWRIbFN3M2VqQi0zYjI0LXQ5SF9kbVhoTXNZNlRkaGhGLUdOc0M2Q0NCT0ZmZm1WQWdtYWwtYWtXeExCWWJhLVVPcVAtZTFMSUsxRXBXeHJFTUhOdmt1LXlNVm0xWkhpbkhnUGcxdnZZQllFaGRhOWl3aHZzMmxJS3U?oc=5",
+     "src": "thanglong.chinhphu.vn"
+    },
     {
      "date": "2026-11-05",
      "title": "Ha Noi gains authority to license foreign-invested universities under Capital Law 2026",
@@ -81,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-10-26",
@@ -98,7 +104,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-10-20",
@@ -115,8 +121,14 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
+    {
+     "date": "2026-11-05",
+     "title": "Licensed Companies | Open Data | Capital Market Authority",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
+     "src": "sca.gov.ae"
+    },
     {
      "date": "2026-11-02",
      "title": "Financial activity licenses | Service Details | Services | Capital...",
@@ -124,9 +136,9 @@
      "src": "sca.gov.ae"
     },
     {
-     "date": "2026-10-31",
-     "title": "Licensed Companies | Open Data | Capital Market Authority",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
+     "date": "2026-10-24",
+     "title": "Fees and Description for Activities licensed by the SCA Licensing Fees Activity Description",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYmFPVFNBVU9ZcU9RMDV3azRhRk5SU0ZJUVRCdUhhNEVrRVAwc3dPUFdxMG81c09oZzRHM2tHTGRlZXo2YXVYdW1Wand6S21iVmhiN1ZJX3lUMkF4QUY1SGx2d3l5THUyOXV5Sm0wZFVsZEJLdWE4ckVWd1lQeDBzdjlob1JxbEk3blcwbktPaDY4S203ek9kYWthTUlBS2hxbkE?oc=5",
      "src": "sca.gov.ae"
     },
     {
@@ -138,7 +150,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-10-30",
@@ -155,11 +167,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-11-01",
@@ -206,24 +218,30 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
+    {
+     "date": "2026-11-06",
+     "title": "STATE OF MICHIGAN CHAUFFEURS LICENSE PRACTICE TEST",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1o4bnZpWkp0dnZidHRZdDVlUUZVMWZiamlleHZyaGdJb0pCZTlDUEozN1hRV2thbFBQQ21sSXV5aUs5bGRoUUxQM3JMNWUxOXppOGptRll2bnJtQlV6RHB1YTF1V3d0cWhkdl9PRTk1NFJ3N3BlUXdULWphdVJtX0dvSUpMNEQ2RjA4N3A2YVRuNmFvR3VlSXA4dw?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-11-04",
      "title": "PA BOATING LICENSE STUDY GUIDE",
@@ -317,11 +335,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   }
  }
