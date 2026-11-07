@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-07T01:05+09:00",
+ "updated_at": "2026-11-07T10:07+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -23,10 +23,10 @@
     },
     {
      "date": "2026-11-06",
-     "time": "16:44",
-     "title": "씨티 \"코스피 급락에도 11월 금리 인상 전망 유지\"",
-     "src": "연합뉴스 한민족센터",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kYXlEUlRyZHY0dktCbWhPQ0Z1NkJ3dXhsSlBDdFVkRW5RLTl2QlFLNXlqY3dRTkkyTDdkUzZNSHJ6UE5icmN2RnRSNDZtUWVaYTRJRV9Oa2g3TElLRkxrdENlby1lSjJSckxMZndVUzJ5dXo5?oc=5",
+     "time": "22:07",
+     "title": "5300선까지 하락한 코스피...미국 반도체주·외국인 향방 주목",
+     "src": "머니투데이",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zajl2WkdBRmxBVnZ2MUVRalM0STVycUhFai1hdGhMcE9ta3VoR2Y4dzJHRUxITzRWa0xKV0JpTzd5aENUdE1wanN3d0JiUFdMSUtQM2hYQ1VYOEkyOTRjR2V1amtkZi040gFuQVVfeXFMTV9uUnlfNUYwM1VBSGhHcktwOEEwVWMwemRTN2dWWDFpQ205X0VRaDJnSF9TTVltaXpxcTVyWTVmSGVPMlZ3RFdCUnhmYllzQm5TTTFiTDRMeXNYSDVtSTdVTmloM0p0M2VEUXNpZUE?oc=5",
      "priority": false
     }
    ]
@@ -34,6 +34,14 @@
   "US": {
    "label": "미국",
    "items": [
+    {
+     "date": "2026-11-07",
+     "time": "04:57",
+     "title": "Stock Market Outlook: Nvidia Earnings, Anthropic’s IPO, and the Fed Rate Decision",
+     "src": "Barron's",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdVM5RWx2cGx4U3R0Z3pJMzRzQ1NWaURpbkhvRnRXbzhPU3dVcVRmbVBuT05DOUJ4aXduWGhWYXBzQVZSbVhpU3FHVkQxdnBIWEFLSHBzNGJuc2VWR0Exb3F4dkFSazFNM0ZvQkhrYm1jMzlQcDVGVGQ0RUlYWW5ZVUIzRng1Z3YxZFZmaC1TbWUzSVhoTUJfY3Nn?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-06",
      "time": "19:19",
@@ -45,15 +53,7 @@
     {
      "date": "2026-11-06",
      "time": "18:34",
-     "title": "10-year Treasury yield rises after much stronger-than-expected October jobs report",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEd4MDlaNjAwRjlYdFp0aDhKVDFsVHZNUnBCWXU1aHhPWGMtQ2hmTVJnZmpoMWo3cnJNbEZwRWJHRVp0UjI1SU9ELURwYjctRnRUS19MUVhrdVlvTWswem9xR0dRT2V0ZHJxUm5pZFE5cnpxTmR5Wm1lR1pYRk9xYXh4dGtiVWQtNWJfcVBzQmVSS1VRR1F6UDRpWnhjVlJsSF9iazlCRUrSAa4BQVVfeXFMTXFRWnBSVk1BYjJrMzR4N0VZOXZIa2U2MXZnWFZVS0t3amRvOTdSVC1PaEpLQ3NMS08wamNTeFlmRk5PUWNRZWp6VTZnUHozNVNvWXpLTko3UHNOOUhCQWhpS2xqQmdEd08zVkRDTHBCUU9Gc1drd2NwWWlNMlc1SHVUeUVSZUVwNEhNRDU2d0xCMERmWkdXbWI4QW1UaWhRR3U3MHhQSWlFR1ptT0Fn?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "18:34",
-     "title": "Treasury yields inch lower as investors look ahead to key jobs data",
+     "title": "10-year Treasury yield is little changed after stronger-than-expected October jobs report",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEd4MDlaNjAwRjlYdFp0aDhKVDFsVHZNUnBCWXU1aHhPWGMtQ2hmTVJnZmpoMWo3cnJNbEZwRWJHRVp0UjI1SU9ELURwYjctRnRUS19MUVhrdVlvTWswem9xR0dRT2V0ZHJxUm5pZFE5cnpxTmR5Wm1lR1pYRk9xYXh4dGtiVWQtNWJfcVBzQmVSS1VRR1F6UDRpWnhjVlJsSF9iazlCRUrSAa4BQVVfeXFMTXFRWnBSVk1BYjJrMzR4N0VZOXZIa2U2MXZnWFZVS0t3amRvOTdSVC1PaEpLQ3NMS08wamNTeFlmRk5PUWNRZWp6VTZnUHozNVNvWXpLTko3UHNOOUhCQWhpS2xqQmdEd08zVkRDTHBCUU9Gc1drd2NwWWlNMlc1SHVUeUVSZUVwNEhNRDU2d0xCMERmWkdXbWI4QW1UaWhRR3U3MHhQSWlFR1ptT0Fn?oc=5",
      "priority": false
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-06",
-     "time": "16:42",
-     "title": "BOJ to hike in December, seek terminal rate of 2%, says ex-central bank top economist",
-     "src": "CNA",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNM1pqYXYwVlRWc1JITW1ETDJncU5XVDJvZ3R1T1VYX2wtSlNmVU50YnJtSWNacEJYdjEzbUdXVmxSZUN3NmgySlFueTdiRkdJeWt4NUt4ZDZtUS10TnhyNTBLRUM2ZUNsTzBtNUozbmJhcnZxaUk1enNvU2RObHQtdkY5N0ZiODNrbGFraG1WVHFEWXFTenVXM3RSZEw5VHo4dVZRcDR3V1BXQUVZeVMtUEt4eGRJb3NFdDgyNVFsZkc5MVk?oc=5",
+     "date": "2026-11-07",
+     "time": "02:16",
+     "title": "BOJ’s Ueda Says Unclear How Long 2% Inflation Rate Will Remain",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNGtUcFRNdmZqZ2VBWW9FQ3c1R043Yk9JY1JiMHU3ZzdNMVZrVVZsLWxMZE5fM1B1VDRPbGpmdkhLUEN6MEtHb1VrNUEtUWVEcE9EOWxZT3ZXMWJ3WFdwUmk5LUg5eEVpa0tvSmZKcnhRc09uTGZCbDVfZDBFY3BXMEFCR1JSZkVzdE16eXVMU3NDbHpRdVFfSzlPVUR0dkVSbVNSQk51TkNjRWxNOFEwSEF3?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-06",
-     "time": "15:28",
-     "title": "Japan Bonds Rally as Global Risk-Off Move Boosts Haven Demand",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWmJyTTlSNWdpa2E0WjU1VUdBOG5KNzVFem1CWVgwUHE3dVR4V3VXYjZBaTdZeE9Ndk80MDc4WVlHb0JjcmxEQXBfeEo0ZTRTWUFYWGJuaFBqUEJFX0NjVkxQUGdublYxVGo3UW5YM0hhbnd6a3ZXVnRIU2tBRXREenRUeVpfTW95ZmF0Q1VFM0FfdG41ZnJnUTE1a3N3Nkx2aHlqZ1luQVFoQmdsS24xSXpn?oc=5",
+     "time": "16:42",
+     "title": "BOJ to hike in December, seek terminal rate of 2%, says ex-central bank top economist",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeGFvMG44dWxIN2owV0d3ZGhMUVQwaTd2YzlMU2xTdnU1WnptUGpncVVuUVh4S0VGelVHQ2xZaEdaOEtpMkRhS1FyVVA0eDg1d1ZGbHc1YzlDSW1MbXR0bWNyM1BiaG1xOFlXUDQ4WU9kMFJOTWxrM1ZOUDRnT25JUHdzcXpHUW9ySG0tZGY4MjFvSzlPcWRWa3lzeUs2Q2hqZENoVC1KOHI2SDRKTjBXNHB1MW82NVM5OC12RGt6RjdwYXBIN2VF?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-11-06",
-     "time": "17:12",
-     "title": "'Anti-AI' trade puts Indian stocks ahead of Asian peers amid global selloff",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVFNMUU1lLXdpel96NGlEZGVHbGkxd1JFUUlrSzN1SU1RZnFycWIwM01JbjM1cFQyeUxJNmJDdGVoTXdHemNqdzV1VzZ4cWdHb0VHZk5HVXQ4M3UydFZhUVJONGZyemNvci1mWE8yYUVWWUIycV9MYkhBLWludkNsRGthYVZWcmVlaGMwSENmTWxuRjFIRlN2NWdGdmF4THE5UlFmQ09XVmNqT2hYbnRyRGR1c1BQaTIybXZCa1oxdkJTbm5MZEhyT1V1cC13cHAtRFJnbnV2MNIB3AFBVV95cUxNYm5xS3oya3lsejVqSThYSXZISTlxVzdBa0NTT0RDWnNBN0x3N3p5Wm9kdXVORFVvWEVEaTlYLXBsbFpTZTFTTFhSNk41SXBnR3dBQ2hLQktRTHR4SlNsdEhVRzNuazBKYUdFcjhTSU9OVDd6b2FkbC1oTy1zZUhTRlZJeFpidG0zTUlUNUwtM0l6SDh4TzZHdExyYzBuU21GMjNfT1hlTDgzc0RkNUNJSnJRQTZSV1hEbHdjZDdkTGYwOHlacWNwZVF4VXhDZ3hQZVI0cTBFOGNDeWNy?oc=5",
+     "time": "20:50",
+     "title": "Indian shares log biggest gains in seven months on oil slide, foreign flows",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVmJaMVVmaUE0cUtPUW9iRklDNUNCV2k4c1NXYzllRGYzeUdXOFJkeGVEOUNsdkhwc0pfc3pkSVdvb3Nwc3FMSE0xTVBnbEtiQ29Gd2NzbmFtMU9rVXNoNXF3MkRrMEtHczdSX0VGUExrTDkyNHAxYWI0SGFWbVRSZWhDaGlvNkhLdUtiZGdDaWVQaFJ0NkRkckJvQ0ZzSnM2dmFUd2tZXzdQaWZBaFN4Y3BNYXo0UkVZRGpQTkdTUQ?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-06",
-     "time": "16:51",
-     "title": "India's October consumer inflation likely nears top of RBI target on food costs: Reuters poll",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNc3JHMmp6UTRTTm5UeVRCNFhQNG9HVllXVFJLdDVOQ2hMSFpLa01IeDl1TW5jelhIb3Bqa0ZJazBoY3ZXT3A1WXItWHBwaENFMmN0ZlRUSDJKZ2loajF2ZGhiWTFsY285OVdQeGQ2MzcwQnZnY0U5TkRIREVnb3VFeDRaUFUwYUpLcUUtdWRVZGVCVnl3SU9GZmdUT1BsT2RxRlJnRTk5X1k2OTk0WW10eEdBdnRuSHdsSi10R0lwVjQ5Y0pMQVFYb0gzNkNveGphY3dHd2FFejA1emtsYkZrdTFiWm1aTkg4d0pTc3ZGVGVVdGV5Z21Bd2RDTG50b3Y20gGGAkFVX3lxTE5Oc1hhbW5ZRlJXLWlnS1JWT19GUWxBdHVWNGNlRlF2SkV1Z2p4WmZZZFBhYzBhX05UV3ZhaWZ3eXVCNlo3LVQzRDZQckdjZmFnclpyOWYtdEwwZGcwNlZGUVIwUGU1cFQ2S0VuOU9vNU9paHpwTGRTeW5GbTJGS0x3T2JCX2Faam84eWpKdXdYMHg1eUdUUV9xTHY4b2R3VWNpWmdMeFl6eFp3anpxa0ExdE1XRjg0b2JrN18ydFRSTldWVHRXQ3JNYmpBRndFLUU0bVduLTJIOE5rM2QySksyUndYTHQzY2lESXNQdnl6S2xNZE5GNmJnRU9iZ1ZuT2lsaDU4dmc?oc=5",
+     "time": "17:12",
+     "title": "'Anti-AI' trade puts Indian stocks ahead of Asian peers amid global selloff",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVFNMUU1lLXdpel96NGlEZGVHbGkxd1JFUUlrSzN1SU1RZnFycWIwM01JbjM1cFQyeUxJNmJDdGVoTXdHemNqdzV1VzZ4cWdHb0VHZk5HVXQ4M3UydFZhUVJONGZyemNvci1mWE8yYUVWWUIycV9MYkhBLWludkNsRGthYVZWcmVlaGMwSENmTWxuRjFIRlN2NWdGdmF4THE5UlFmQ09XVmNqT2hYbnRyRGR1c1BQaTIybXZCa1oxdkJTbm5MZEhyT1V1cC13cHAtRFJnbnV2MNIB3AFBVV95cUxNYm5xS3oya3lsejVqSThYSXZISTlxVzdBa0NTT0RDWnNBN0x3N3p5Wm9kdXVORFVvWEVEaTlYLXBsbFpTZTFTTFhSNk41SXBnR3dBQ2hLQktRTHR4SlNsdEhVRzNuazBKYUdFcjhTSU9OVDd6b2FkbC1oTy1zZUhTRlZJeFpidG0zTUlUNUwtM0l6SDh4TzZHdExyYzBuU21GMjNfT1hlTDgzc0RkNUNJSnJRQTZSV1hEbHdjZDdkTGYwOHlacWNwZVF4VXhDZ3hQZVI0cTBFOGNDeWNy?oc=5",
      "priority": false
     }
    ]
