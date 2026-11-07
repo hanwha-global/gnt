@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T01:57:23+00:00",
+ "updated": "2026-11-07T01:32:09+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,8 +66,26 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
+    {
+     "date": "2026-11-06",
+     "title": "가상자산 과세 관련 부총리 브리핑 - 보도자료 | 브리핑룸",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qVU5wOWhvcENOQ3FGemhFMkZLSHVIOVA4UzNHRG9mdVdhSTRJZVlBREpiRVNEMWlnRDFHZTFTTkJZSi1uNnZmQU9lUVY5aXJzemFGZnZ1c2ctX0JZbXAxOGw5TzFxeWtPdmRxUE1wdk44emtY?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "title": "가상자산 소득과세 시행 2년 유예 추진 2029년 시행 위한 과세기반 정비와 디지털자산 산업 생태",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB0YlUtU21MUTFOUnpMVHV1TEVJcUlnNEgzSXZxekUwYXRBSGZIUU1SWnJYbmJkc1dYUlpZNlVHU09UcVl1Tm5BVHhsbWVvcHZ2cF9CRFk1S2VKQjc4bzlRR1NycWN6UER5ZDdiVno4NkJpWVd0ZGc?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "tax"
+     ]
+    },
     {
      "date": "2026-11-05",
      "title": "가상자산 소득과세 2년 유예 추진…2029년 시행 기반 마련",
@@ -87,12 +105,12 @@
      ]
     },
     {
-     "date": "2026-11-04",
-     "title": "가상자산 과세 관련 부총리 브리핑 - 보도자료 | 브리핑룸",
-     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQX0N4dkdUUDlKcE9RTllncnlVU2FWMTZTNVVONnlFUXkxVlM1bExRVWhCWFU1MEROYTdMXzRZekZ3YWxyT1BXNkkxMHcyWUpaZksxbjA2V2llQmM2aG9aQVYzejFEeUQ3a05vT2IwLUxVZ2Ntc0JGdlVjWU91aXJ5elVVa1pjMnZxaExYMF9EUXd2SzlTMGh6S25KZE5UeHpSOFBoRmpjb2phc2JfUUZPZW9hUHQzSzltQVUzRW4xZ0UyZjNRU19ETEpHcjBMa2x3NWh1a05ZcUg5SXFMaFBySERBVlYtbHh0VW96SXl1TElUVVB5UjVNZ1RLcUVsNGcyQnNCLTQ4N0dfZjNTZTdZaExR?oc=5",
-     "src": "대한민국 정책브리핑",
+     "date": "2026-11-05",
+     "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNLXQyWUlMRjRfRWc2QUVDSEUwY0tyWjd0NmRxenFfOG5UTXhaM0RIcjFzUHZoaEYybV9tVjZqejU3VVR0YUR1aWppajVCZGtGcElXczNtMW5hRldLQU5WdjZsUjRCZVhNalNxQWRFbTF2YURSVEY3YzFCcU1XRjNmVFBzZVA?oc=5",
+     "src": "bok.or.kr",
      "topics": [
-      "tax"
+      "stable"
      ]
     },
     {
@@ -146,15 +164,6 @@
      "date": "2026-10-30",
      "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행 | (상세) | 한국은행 홈페이지",
      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNWt5Nm5aX0g5LUk0V2U0WjY4Q0FIVmNpaERzV2dhSnBrM0F3T0hZZFVzcnVqT3NkN1paTG9Xa2xsZUNxWFVUb193ZllYWExqS0ZFU0E2ZGg2UDVCSWV5VTlSVWFnREhLQVRReWVmVncxb2E0M3NSWk1PZVZtOUxNdUJBM0E?oc=5",
-     "src": "bok.or.kr",
-     "topics": [
-      "stable"
-     ]
-    },
-    {
-     "date": "2026-10-30",
-     "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcnJyaEE3SG0tYndpaTExZXluSEdBYVJQS3JTRUswcEFqQ2w0bDNubVhjZElsUXpYZ29qblhxWHFxeVp0b05zX2lBbTBGVjhLX0NnaFRoTHJvUTdnak5GN1J1WXdLdmtVNFJ3UXo2LXRBVU1LdnhpUnNJMG5wa1FVZDFtdGhCVDBORHhMUkRsczBwOE8zV1haMW1GRDRNeVBxcUlMNWxmTzE1dUFHQ0wwSS16aEI4U2htRzdaOUk0RDIxQW1uUDBxdU9vTGtfbzM1aFJJVw?oc=5",
      "src": "bok.or.kr",
      "topics": [
       "stable"
@@ -336,7 +345,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-11-02",
@@ -404,15 +413,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-10-17",
@@ -426,11 +435,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-10-28",
@@ -444,7 +453,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-11-05",
@@ -539,8 +548,17 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
+    {
+     "date": "2026-11-06",
+     "title": "Crypto Global Brokerage",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5makFBeXB2cThHMThYZ2JHOVZYaFpPOFJrTlE4SVNJX2RIUi1KMC1LMEQ0em9JclJ5MGQwaTdxMmRMcWtQTTJaVmUtMmY5Vy1KZm1vOTFrVmN1OXVMTmxHcUFlQ3dxMHNUbTBsYg?oc=5",
+     "src": "Financial Conduct Authority | FCA",
+     "topics": [
+      "broker"
+     ]
+    },
     {
      "date": "2026-11-05",
      "title": "Crypto - FCA",
@@ -652,12 +670,12 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-06",
+   "auto_checked": "2026-11-07",
    "items": [
     {
      "date": "2026-11-04",
      "title": "Government welcomes passage of Inland Revenue (Amendment) (Crypto-Asset Reporting Framework and Amended Common Reporting Standard) Bill 2026",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1TanJFY0xYbmNxby1odGpOMzZqeTVQS09oVG9JV2dOZ1lYYWNfaGM4cDloQlNFbF9OcjUzbDVfRmlLY1lsd3h3Smw0cHRrRDctaGYzamJZcGEzczEzRmZ3dmZZbVlGNWhNc1FiS3lVWVVoZw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9BY190MEJvZVlVa2UxdGpjSE9ZeFU1aUtRc1RFTXdBdzNQTTl0TkR3QzhOSl93QjBiZEhSbWR0Mnl0aGk0eHJFY1cxWl9XdGN2TkRSQmZHXzIwLUluVm05bFhkVGE1LV9zTnBQOGJ6N3YzMFE?oc=5",
      "src": "www.info.gov.hk",
      "topics": [
       "general"
