@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-07T10:07+09:00",
+ "updated_at": "2026-11-08T09:54+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -22,11 +22,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-06",
-     "time": "22:07",
-     "title": "5300선까지 하락한 코스피...미국 반도체주·외국인 향방 주목",
-     "src": "머니투데이",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zajl2WkdBRmxBVnZ2MUVRalM0STVycUhFai1hdGhMcE9ta3VoR2Y4dzJHRUxITzRWa0xKV0JpTzd5aENUdE1wanN3d0JiUFdMSUtQM2hYQ1VYOEkyOTRjR2V1amtkZi040gFuQVVfeXFMTV9uUnlfNUYwM1VBSGhHcktwOEEwVWMwemRTN2dWWDFpQ205X0VRaDJnSF9TTVltaXpxcTVyWTVmSGVPMlZ3RFdCUnhmYllzQm5TTTFiTDRMeXNYSDVtSTdVTmloM0p0M2VEUXNpZUE?oc=5",
+     "date": "2026-11-08",
+     "time": "07:05",
+     "title": "물가는 3% 육박, 코스피는 5000선 위태…금리 결정 앞둔 한은 딜레마",
+     "src": "뉴스1",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aXzJNbmp4S1RxczFtUVMxMlJVRGc4SFBWRU9vRTB5ZEpmTmFDdndNR3UySFFIRTUxbW9YR0d2YXZCdUtFd1U5MEljRWlXRGlKdnpqMg?oc=5",
      "priority": false
     }
    ]
@@ -53,9 +53,9 @@
     {
      "date": "2026-11-06",
      "time": "18:34",
-     "title": "10-year Treasury yield is little changed after stronger-than-expected October jobs report",
+     "title": "10-year Treasury yield rises after much stronger-than-expected October jobs report",
      "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEd4MDlaNjAwRjlYdFp0aDhKVDFsVHZNUnBCWXU1aHhPWGMtQ2hmTVJnZmpoMWo3cnJNbEZwRWJHRVp0UjI1SU9ELURwYjctRnRUS19MUVhrdVlvTWswem9xR0dRT2V0ZHJxUm5pZFE5cnpxTmR5Wm1lR1pYRk9xYXh4dGtiVWQtNWJfcVBzQmVSS1VRR1F6UDRpWnhjVlJsSF9iazlCRUrSAa4BQVVfeXFMTXFRWnBSVk1BYjJrMzR4N0VZOXZIa2U2MXZnWFZVS0t3amRvOTdSVC1PaEpLQ3NMS08wamNTeFlmRk5PUWNRZWp6VTZnUHozNVNvWXpLTko3UHNOOUhCQWhpS2xqQmdEd08zVkRDTHBCUU9Gc1drd2NwWWlNMlc1SHVUeUVSZUVwNEhNRDU2d0xCMERmWkdXbWI4QW1UaWhRR3U3MHhQSWlFR1ptT0Fn?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEd4MDlaNjAwRjlYdFp0aDhKVDFsVHZNUnBCWXU1aHhPWGMtQ2hmTVJnZmpoMWo3cnJNbEZwRWJHRVp0UjI1SU9ELURwYjctRnRUS19MUVhrdVlvTWswem9xR0dRT2V0ZHJxUm5pZFE5cnpxTmR5Wm1lR1pYRk9xYXh4dGtiVWQtNWJfcVBzQmVSS1VRR1F6UDRpWnhjVlJsSF9iazlCRUo?oc=5",
      "priority": false
     }
    ]
@@ -102,7 +102,7 @@
     },
     {
      "date": "2026-10-28",
-     "time": "14:37",
+     "time": "16:00",
      "title": "Vietnam's stock market upgrade puts focus on corporate governance",
      "src": "Vietnam Investment Review - VIR",
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
@@ -139,10 +139,10 @@
     },
     {
      "date": "2026-11-06",
-     "time": "16:42",
-     "title": "BOJ to hike in December, seek terminal rate of 2%, says ex-central bank top economist",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeGFvMG44dWxIN2owV0d3ZGhMUVQwaTd2YzlMU2xTdnU1WnptUGpncVVuUVh4S0VGelVHQ2xZaEdaOEtpMkRhS1FyVVA0eDg1d1ZGbHc1YzlDSW1MbXR0bWNyM1BiaG1xOFlXUDQ4WU9kMFJOTWxrM1ZOUDRnT25JUHdzcXpHUW9ySG0tZGY4MjFvSzlPcWRWa3lzeUs2Q2hqZENoVC1KOHI2SDRKTjBXNHB1MW82NVM5OC12RGt6RjdwYXBIN2VF?oc=5",
+     "time": "20:07",
+     "title": "Taiwan, South Korea, Japan stock markets hit hard by AI sell-off",
+     "src": "Nikkei Asia",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTm5vQzNBZnVpSUdPZWwzU3J2Yi04Y3JXaWpwYjNGVEt2U1lDMjZubjdnQTdKRENVeE94QlhSblNGR0Z6cHl4QjJyVU8tbThXazVnTjVxZ1JfU25YTXlDU3hlNGdQek90TDBGM0V5NWFENFJyM3QyalVDZzd6TzdLcmhHVHpHMzZldGtuck1XMjI5WXNWS1dXWnFZSXJHSmlZbmUzYlpB?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-07",
+     "time": "13:56",
+     "title": "Muhurat Trading 2026: Sensex, Nifty has 80% strike rate. Will this trend continue as Samvat 2083 kicks off",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxON0dGZFMxclAxRE1GTFUzWUtsdG9hMmdlWFNBM0t6T1lXQ1BSY29zQmtFUlkwSXlBem55M0M5STd2STZXMjczajZHUGU2SnJIN3JJYnFraHBZVHBEM0lLRGsxY1c3anJscngtLU9BTkR3UnNUUjVrZGN4NmJfNzRJWVdSQWdBSW53UzdHX2FjQnktUm1MT0NwNFRHNFZHVkpTbmdqdGdQdWh4U0dGVE1uclZPbXFQdnFkYWJxVlBYODdIcWFiVENXeDFlZEdJamVBMndnMGE2MTR1WjN4UzZnaXVSb1ZyN0NwMmtZTnk4UEtIai1lR0pkWkVOQjZxWDVUcGhjLWJOMNIBjAJBVV95cUxPbE15bUhzMXhkT0pnTGZNTW5YVVlCQWMxQXhwNmdpMWVRNi1VRXRZaWozY3RVa2lNeXMzSlBDMkFFWmY0Y19ZcENMNEtIelBEcUNPZVN3V09uMFZ3Tm9KT09UU1cxSi1QT3ZsZE44UFNwRVZZWjlOZTJIV3Zwck1BODUzcElCaWNoM2c0WGx2cUkwTTcyT2w1Ql9VUlNhQ085dUdfZDRPRDRjQWJSX1FxRFZhem9ESWN3NUNqekhFcUdrVWxoVHQ0WDA1WVJkM2lSRWVyVVBJbzA1Z2VtaGEtT3dySXk5b29KMnVkTUJSMEpUMHFXQTRxY0VkZ0RkNTFPYnQ1ZGN1ck9iQ3lv?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-06",
      "time": "20:50",
      "title": "Indian shares log biggest gains in seven months on oil slide, foreign flows",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVmJaMVVmaUE0cUtPUW9iRklDNUNCV2k4c1NXYzllRGYzeUdXOFJkeGVEOUNsdkhwc0pfc3pkSVdvb3Nwc3FMSE0xTVBnbEtiQ29Gd2NzbmFtMU9rVXNoNXF3MkRrMEtHczdSX0VGUExrTDkyNHAxYWI0SGFWbVRSZWhDaGlvNkhLdUtiZGdDaWVQaFJ0NkRkckJvQ0ZzSnM2dmFUd2tZXzdQaWZBaFN4Y3BNYXo0UkVZRGpQTkdTUQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "17:12",
-     "title": "'Anti-AI' trade puts Indian stocks ahead of Asian peers amid global selloff",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVFNMUU1lLXdpel96NGlEZGVHbGkxd1JFUUlrSzN1SU1RZnFycWIwM01JbjM1cFQyeUxJNmJDdGVoTXdHemNqdzV1VzZ4cWdHb0VHZk5HVXQ4M3UydFZhUVJONGZyemNvci1mWE8yYUVWWUIycV9MYkhBLWludkNsRGthYVZWcmVlaGMwSENmTWxuRjFIRlN2NWdGdmF4THE5UlFmQ09XVmNqT2hYbnRyRGR1c1BQaTIybXZCa1oxdkJTbm5MZEhyT1V1cC13cHAtRFJnbnV2MNIB3AFBVV95cUxNYm5xS3oya3lsejVqSThYSXZISTlxVzdBa0NTT0RDWnNBN0x3N3p5Wm9kdXVORFVvWEVEaTlYLXBsbFpTZTFTTFhSNk41SXBnR3dBQ2hLQktRTHR4SlNsdEhVRzNuazBKYUdFcjhTSU9OVDd6b2FkbC1oTy1zZUhTRlZJeFpidG0zTUlUNUwtM0l6SDh4TzZHdExyYzBuU21GMjNfT1hlTDgzc0RkNUNJSnJRQTZSV1hEbHdjZDdkTGYwOHlacWNwZVF4VXhDZ3hQZVI0cTBFOGNDeWNy?oc=5",
      "priority": false
     }
    ]

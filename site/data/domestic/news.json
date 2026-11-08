@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-07T10:06+09:00",
+ "updated_at": "2026-11-08T09:54+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -321,10 +321,20 @@
    "date": "2026-10-30",
    "time": "16:14",
    "title": "토스, 日 모바일 증권사 340억원 규모 인수 추진…해외 시장 진출",
-   "src": "뉴스1",
-   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE82YzctcFVfX2gxZUJXUF9KS29MWVVwRGFIemhDOWUyR2FsblI1VHcweHVwaWFud3dGV3RJZEFVUGY1MGEwN2lObTEyZEloSmh4azdIRFVQbEdMc05uUEltcDln?oc=5",
-   "site": "www.news1.kr",
+   "src": "파이낸셜뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14YmdGNjhCNW0zRm1vVXU2NDRyZVhuRlVUckJXYjNYU01Wc2JPOGdnZ0VxYVdva3drUFItNzF3dlNuaFJ5UnRtNGkwOGJfWE1uWUM2cW1NQVNpZw?oc=5",
+   "site": "www.fnnews.com",
    "firms": []
+  },
+  {
+   "date": "2026-10-30",
+   "time": "16:00",
+   "title": "Operator of South Korea's Toss app to buy online Japanese brokerage Cheer",
+   "src": "Nikkei Asia",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZVFqWE9GT2NzcGE5MThEeWlyTGVkZS1xYUtNLVN5ZFlvVmJNN2tmVEdERnRwbnZWX242OTNqbkdfN1VyU0ZyWWZZZzh3Tk5YR0pKNmctdzJQb290ek8zTFJBX1A1eVZDcUs0UlFETXJPZ2NRRGNQa2pUb3ZFNE43WGktcFFCRzJ1eE1maFVnUXZHdmNnN01ZRk9RdWpFV3pIbnY2ci1jN2JFWEJudEtJRm9lZzJkYV9vMVRKUDRn?oc=5",
+   "site": "asia.nikkei.com",
+   "firms": [],
+   "foreign": true
   },
   {
    "date": "2026-10-30",
@@ -376,16 +386,6 @@
    "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQYnlQZ2VZWXFXdnRyOFdkRmh2RGluWXczTEtTNV9QWlRMcEJ1TFkyOWxodEpfZl9MUU50bFBNMjI5SUdSazdLMG9nUXFiVnZ4S0tRR2pvWVFpd2o2bEVQOTlZUTN4aVBwTWlEckVNblNvdW1veFFNazhVZENhbzdUcUxqcXRpaHpnLWFTNmc5NXFzelVmeEFMTmI1dlBHY2M3Y0htaDZBbVRHMm5DZXpCdXdfdTc1YjhmbVc1c3h0alBGY3pHN2NKNHhZZ3J1SWdzUWs1VWZWREd6RmxFN3hqZ3QzcTlScXFKNmlWSUtYS1FpbW1CUjRNUkItYmItVlRkS1lmVENpUHhyNTRYd0lBM08zQzdqSVk?oc=5",
    "site": "www.dailian.co.kr",
    "firms": []
-  },
-  {
-   "date": "2026-10-30",
-   "time": "06:15",
-   "title": "Operator of South Korea's Toss app to buy online Japanese brokerage Cheer",
-   "src": "Nikkei Asia",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZVFqWE9GT2NzcGE5MThEeWlyTGVkZS1xYUtNLVN5ZFlvVmJNN2tmVEdERnRwbnZWX242OTNqbkdfN1VyU0ZyWWZZZzh3Tk5YR0pKNmctdzJQb290ek8zTFJBX1A1eVZDcUs0UlFETXJPZ2NRRGNQa2pUb3ZFNE43WGktcFFCRzJ1eE1maFVnUXZHdmNnN01ZRk9RdWpFV3pIbnY2ci1jN2JFWEJudEtJRm9lZzJkYV9vMVRKUDRn?oc=5",
-   "site": "asia.nikkei.com",
-   "firms": [],
-   "foreign": true
   },
   {
    "date": "2026-10-30",
@@ -477,6 +477,39 @@
   },
   {
    "date": "2026-10-29",
+   "time": "16:00",
+   "title": "미래에셋, 日 산코증권 인수…일본 금융시장 공략 본격화",
+   "src": "한국경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aVGlYNWxOcVl0YlAxVWlZSGpQZDNDOHR1ZWlZXzdsQnFvM3pPUlBqNl92WTBPSG9ESmZwSDQ0Q3V2QTdQUkdTMkw2M0VESE5PQy1uNzl4NFlvdw?oc=5",
+   "site": "www.hankyung.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
+   "site": "www.yna.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
+   "src": "서울경제TV",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
+   "site": "www.sentv.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
    "time": "15:29",
    "title": "미래에셋증권, 일본 산코증권 인수…“일본 사업 기반 확보”",
    "src": "경향신문",
@@ -524,6 +557,17 @@
    "src": "머니투데이",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBqWENVNjlKTkYyTmVMV00yMTMyeFFvTm00UFJSZWlJOW9qUW10US0zMUNDUk02UVR3Yl9JU2lxeVR6TEZOSEdrcWpGdEM1cVNKLUdCbGc0aWl3ZW10dWJWS290UHNsYUpN0gFuQVVfeXFMUDBScHBkTDBtMXhoZTBKS0g3M1hGQjdwTEZtNG9lU3pXa19ucUlWZ3JUZERLZF9MSDljVXpBdTl0d2FEbUFOcktOWE9ORVA5Ujk3b2sxNU80clBxWTROR1dwa0JwcmU2eG80UVVyT2c?oc=5",
    "site": "www.mt.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "11:36",
+   "title": "미래에셋, 日 산코증권 품는다…글로벌 시장 영토 확장(종합)",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBNcFJkQ1lqWTFMbTUwbjhEZkF5dHFQbEwzOGUycklMNktvVTBhd2lDX016V1hPdlUwc2ZwemJlQTFfdW9NRDI2WmNPWUhaWDNyUnZneWRoS1RvXzDSAWBBVV95cUxPckFxUXAzN2RLUVhKSllGX1oyOThLVWl4ZDY0eEo4U2Q4OTJxakJPeXpYb1lSNnktbTd2MlFqWGR1UDhMS1R3ZGk5amNZaGc1VXJ5dFBaaEdRWEwwRmxOUHc?oc=5",
+   "site": "www.yna.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -581,17 +625,6 @@
   },
   {
    "date": "2026-10-29",
-   "time": "08:39",
-   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
-   "src": "서울경제TV",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
-   "site": "www.sentv.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
    "time": "08:19",
    "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
    "src": "서울경제",
@@ -608,17 +641,6 @@
    "src": "SBS Biz",
    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QSnJGN2Z6eUc2M0hzenNHV3lMS1k4SjV4c3dONWpQSldpdlhpUlh3UnZKekd3bGQwSE0zd3pQWHk2N0JTR0xLX3NVYnRveTNsSFg40gFYQVVfeXFMTkJsbFJrVnF1eUVjczJVSDh0V1B4Zy1OcWtGVE5XakdUTjJvSnBqQTltckp5Ymp5amlrSzZPRlJwbm82UG5yQ0VDR2ctRERjc0V1aGhyMHlINw?oc=5",
    "site": "biz.sbs.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "08:09",
-   "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
-   "site": "www.yna.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -781,32 +803,6 @@
    "time": "",
    "firms": [
     "KB증권"
-   ],
-   "foreign": true,
-   "lang": "vi"
-  },
-  {
-   "date": "2026-10-22",
-   "time": "16:00",
-   "title": "한국투자AC, 일본 VC와 맞손 한·일 스타트업 해외 진출 지원",
-   "src": "파이낸셜뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTSHZJX05ERm4zZzgwd3lGR2hBTHhzVzM1SnFtSTJ6bkQ4cjZJTXBsRWpHMldITWRUajVleXBjUWI0ZlU1bVJiZ0xXMlpzVk91c01zdkVSWmMxQQ?oc=5",
-   "site": "www.fnnews.com",
-   "firms": [
-    "한국투자증권"
-   ]
-  },
-  {
-   "date": "2026-10-22",
-   "title": "Chứng khoán BIDV (BSC): Doanh thu quý III tăng 19%, mảng IB đóng góp lớn",
-   "src": "Thời báo Tài chính Việt Nam",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR29vMHZvUlNBR2RhTzJHaDJVbGt5anFVdnlNcTZOd2hpdEJBVWZGcnR2dHFiMjRYOTN4N3AyQ201MEJoMXc2UmhLcGxBR2RKZGQtM0JaNFZacVdBV3RFVVZ2Nkd0RzRnM3hISzBGQ18xX0tCazNYRG1rOXo3aGxtcTRSc19mR3J4ckNUMkd2dDltVGs3MnBPMUFfSTBMN1ZrOWxtQkZGZXluelZOOENwMlBwUQ?oc=5",
-   "site": "thoibaotaichinhvietnam.vn",
-   "title_ko": "BIDV 증권(BSC): 3분기 매출은 19% 증가했으며, IB 부문이 크게 기여했습니다",
-   "hub": "하나증권|베트남",
-   "time": "",
-   "firms": [
-    "하나증권"
    ],
    "foreign": true,
    "lang": "vi"
