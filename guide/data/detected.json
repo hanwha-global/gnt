@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T01:48:18+00:00",
+ "updated": "2026-11-08T01:18:50+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-10-26",
@@ -104,7 +104,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-10-20",
@@ -121,7 +121,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-11-05",
@@ -150,7 +150,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-10-30",
@@ -167,11 +167,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-11-01",
@@ -218,24 +218,30 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
+    {
+     "date": "2026-11-07",
+     "title": "C 36 LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAwTVF2Q0ItLTQ2dUZzQ0gwSk9qeHRRdXY4aVJhZnJXc1hxYTdQalJSTERRSmktNjA3TlhNRkRDTFVtYUh5WW5taTgxYkFDVTgwOXdJMl9hXzFZQXl5emJLTFdVUVliWmRRcFR4VkZvekppM2FoQjNqWmZYNEwzZw?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-11-06",
      "title": "STATE OF MICHIGAN CHAUFFEURS LICENSE PRACTICE TEST",
@@ -335,11 +341,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   }
  }

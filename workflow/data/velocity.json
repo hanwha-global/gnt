@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-07T01:48:48+00:00",
+ "updated_at": "2026-11-08T01:18:58+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -60,7 +60,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-11-07",
+  "checked": "2026-11-08",
   "sros": [
    {
     "name": "FINRA",
@@ -276,7 +276,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-11-07",
+  "checked": "2026-11-08",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -305,7 +305,7 @@
   "excess": 114879691.0,
   "required": 10352954.0,
   "audited": false,
-  "checked": "2026-11-07"
+  "checked": "2026-11-08"
  },
  "peers": {
   "date": "2026-06-30",
@@ -715,7 +715,7 @@
  },
  "dart": {
   "corp_code": "00113058",
-  "checked": "2026-11-07",
+  "checked": "2026-11-08",
   "unit": "백만원",
   "periods": [
    {
@@ -1029,6 +1029,13 @@
    "lang": "ko"
   },
   {
+   "date": "2025-11-11",
+   "title": "한화생명이 인수한 美 벨로시티, ‘감시 부실’에 14억원 벌금",
+   "src": "S저널",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzcGZaTzhoT1ZwMGRmTXJFcGI3OEtIaWVkZkdZUUR6OXFlRVcwTTRpWkM3MGJvY3lRRWIzRVd5b3Z6VTZNNl9RNG1Zd3B2SzY4eEE2N1p6UmMzMEhPdHIwWnczSkppdjF5YTBrYWZB?oc=5",
+   "lang": "ko"
+  },
+  {
    "date": "2025-11-10",
    "title": "[단독] 한화생명 인수 벨로시티 美서 벌금",
    "src": "서울경제",
@@ -1048,15 +1055,8 @@
    "src": "Business Wire",
    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQX3Q1bDlJS2g4QXN6ZE9ZOHhwVmV1SEpld0c2MWZYZ2RvNEVYSlgtSENNazd3MGpJRFVnem5GdWFDM1dwbU1yc3BoS3F1OG9NS0xGZGpuV2Y5b0FPWnBnNUpkWjdtRDZseXJsblVnNUNzYmJweU1mZVQ2Y3BBRzFkY2ItUzQtQlVtWHd1TEh2SkRfaDlCQ3hNWWRRZzdwLXhabC1WMTFSWERDWGFvYkJNRnlJaEpCRTQ1c2dkb0hNWGhURldvblJUWDVROG9rN281MGNvQ1RLM0t2VWdvX2lmenM0WXJXUEFzb0U5OWZJckU0aGlndm9ZNmhXc3I0OVBDcm1IQTZlTWE?oc=5",
    "lang": "en"
-  },
-  {
-   "date": "2025-08-20",
-   "title": "노부은행·벨로시티 잇단 인수…한화생명 김동원, 승부수 띄웠다",
-   "src": "한경매거진",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kX2VnbFhrMDRsMWM2T0hrS0EwN29UQ3dzWE54MTBSblNLRWhRYVFmZXpzbnNwUm1lZXhwYmFBTnNOQklHa1BMaUlDMlZSeWpNM1BQQk9DMzYteTczcWRGMVc3N0otc3I0Mi1hNA?oc=5",
-   "lang": "ko"
   }
  ],
- "news_checked": "2026-11-07",
+ "news_checked": "2026-11-08",
  "errors": []
 }
