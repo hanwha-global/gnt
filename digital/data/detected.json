@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T01:32:09+00:00",
+ "updated": "2026-11-08T01:00:25+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-11-06",
@@ -78,19 +78,37 @@
      ]
     },
     {
-     "date": "2026-11-05",
-     "title": "가상자산 소득과세 시행 2년 유예 추진 2029년 시행 위한 과세기반 정비와 디지털자산 산업 생태",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB0YlUtU21MUTFOUnpMVHV1TEVJcUlnNEgzSXZxekUwYXRBSGZIUU1SWnJYbmJkc1dYUlpZNlVHU09UcVl1Tm5BVHhsbWVvcHZ2cF9CRFk1S2VKQjc4bzlRR1NycWN6UER5ZDdiVno4NkJpWVd0ZGc?oc=5",
+     "date": "2026-11-06",
+     "title": "가상자산 소득과세 2년 유예 추진…2029년 시행 기반 마련",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsT2pOaG81QmxZdV9nQ0RLd054T043bDNlRXdhQV9LVVFIZDZIemJ1M2pkck1EaGY5UThzX2xvQnl4UXV3Y2FKUU1sWm9zcS1iU1hmeGdwTEVwNVdpQlNqa1dUR29leDRzY2xsVA?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "tax"
      ]
     },
     {
+     "date": "2026-11-06",
+     "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행",
+     "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPbEpqZE9iampwYWthRHVST0tDdk85b1pvd2hTN0dyVjBWU1ltOTYzVEFLc3NGY0x1Tll1N2VWLVduQmd6Q0o4TVd6T1FtRndLU0U1bndFbktUUzN2ZUVQVS1fMTczaHZtY245UklCRmE4TWtGcnNxd1RRYVd2WEtHeHF6eVVGYjV1NVBZcDlsaExQNVB4QXdaWGxrcmRBc3NSWUcwd1hIckFLcG11b3Z6d3ZoRHVER3JJbUh0clI3LThHSHQ5RWprMW5FV01yMlpDaW1TdUJ3WUVjY0IzNnAyRHFPN1g5SEZ3SVVYTW5La1ZIVUlhZlJRZ0h1dExDLURNeVM5TS1WWkxQUng1T0duMzNHTEMyVEZ0amc?oc=5",
+     "src": "bok.or.kr",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
      "date": "2026-11-05",
-     "title": "가상자산 소득과세 2년 유예 추진…2029년 시행 기반 마련",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSHFTS29yR1BDdHZOa1VoUlc2bFVIcXE2UmotRGN4WFZXYnRpMlQ3Nk5LaWxCd09Yenl0Y0NUQ05mS3UzMjFhcmJ6WVl1LUY2SndiZmNVM2tOREVoV1VKNFQzN0hUU01EM1BPc0VURXZvaVBlTzNMOUhtclpQWXBuR2ZqMnVraklrTmc?oc=5",
-     "src": "대한민국 정책브리핑",
+     "title": "가상자산 소득과세 시행 2년 유예 추진 2029년 시행 위한 과세기반 정비와 디지털자산 산업 생태",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB0YlUtU21MUTFOUnpMVHV1TEVJcUlnNEgzSXZxekUwYXRBSGZIUU1SWnJYbmJkc1dYUlpZNlVHU09UcVl1Tm5BVHhsbWVvcHZ2cF9CRFk1S2VKQjc4bzlRR1NycWN6UER5ZDdiVno4NkJpWVd0ZGc?oc=5",
+     "src": "택스넷",
+     "topics": [
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "title": "가상자산 과세 관련 부총리 브리핑",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOV2VIekZyYmJBalExUUxYcWQ2YkF6RE1qX3U5ZGxQNVJNd2MySTdyUjBtVDNpdkFDd0VYRVJFcEdvV1h5OWMydWl0REF6V1g0ZFR5SmpTOFI2N0dkclZnamlEa3MwVnZYdW9IcjZHbVRyTjFGbTU0SGlTbFdqVFlVRWRmemt0aldhMm1XNFhIX0pzT2tYZzI2Uk9ha1YyRjk1bzE2U0YtTFBtamVwN0Y0TmJqNGQ4MDRPajNMV3F5ZWtTN1lGLVloaHlvUWw?oc=5",
+     "src": "재정경제부",
      "topics": [
       "tax"
      ]
@@ -105,28 +123,9 @@
      ]
     },
     {
-     "date": "2026-11-05",
-     "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNLXQyWUlMRjRfRWc2QUVDSEUwY0tyWjd0NmRxenFfOG5UTXhaM0RIcjFzUHZoaEYybV9tVjZqejU3VVR0YUR1aWppajVCZGtGcElXczNtMW5hRldLQU5WdjZsUjRCZVhNalNxQWRFbTF2YURSVEY3YzFCcU1XRjNmVFBzZVA?oc=5",
-     "src": "bok.or.kr",
-     "topics": [
-      "stable"
-     ]
-    },
-    {
      "date": "2026-11-03",
      "title": "해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이",
      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtYVhHTDU3MzB4QnlVOGNBZmxDQlNoVnUwV0xBdVNEOG4za1VxR3JEdnB3SV9NY1JmSXVpMENCOFpsSXlYWVN3RzBlLXdGWW82UjdDMUF4b3NrSldQaDNGYU1UZ0hES2I0dWN4TVowdktDS1h1VGc?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp",
-      "tax"
-     ]
-    },
-    {
-     "date": "2026-11-03",
-     "title": "(보도설명) 해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이 아닙니다.",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE54UGxCeXBkZkU4YUxVd0FydnV5MGh1UXhGZEZnMkQ5WVYwbXpLYjRXNFBYSEVCUGJDMG90WE42UXpyTUNrZW9YWFJIdFZhckR5ODZkV0djNENIYml2ZVo4RXFMYUpfWnpBUXpNalItRQ?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp",
@@ -140,6 +139,16 @@
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "title": "(보도설명) 해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이 아닙니다.",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE54UGxCeXBkZkU4YUxVd0FydnV5MGh1UXhGZEZnMkQ5WVYwbXpLYjRXNFBYSEVCUGJDMG90WE42UXpyTUNrZW9YWFJIdFZhckR5ODZkV0djNENIYml2ZVo4RXFMYUpfWnpBUXpNalItRQ?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp",
+      "tax"
      ]
     },
     {
@@ -161,6 +170,15 @@
      ]
     },
     {
+     "date": "2026-11-01",
+     "title": "글로벌 해킹 위협에 대비한 국내 가상자산사업자의 사고대응력 제고를 위해 긴밀하고 신속하게 대응해 나가겠습니다.",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcDZtMDcwbDZlNjN5LWE0NG1rWlE0emNNa0JNdDRxS2l4bTNhUndwbnNSaU04VFZpaFNZWVdqOGdWYjRZUzJUTEg2MFBTbFQwa0NvdFdvcnBxaTJBMl9jR0R0TUNTYk1MNERmcGp5bFFKZFVVcWtRNGMwMXhlZ3hPdW9HS0lQcFhHSjM3bA?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
      "date": "2026-10-30",
      "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행 | (상세) | 한국은행 홈페이지",
      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNWt5Nm5aX0g5LUk0V2U0WjY4Q0FIVmNpaERzV2dhSnBrM0F3T0hZZFVzcnVqT3NkN1paTG9Xa2xsZUNxWFVUb193ZllYWExqS0ZFU0E2ZGg2UDVCSWV5VTlSVWFnREhLQVRReWVmVncxb2E0M3NSWk1PZVZtOUxNdUJBM0E?oc=5",
@@ -172,7 +190,7 @@
     {
      "date": "2026-10-29",
      "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자)에 대한 수사의뢰(DAXA, 3건) 및 접속차단(2건) 요청",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPak9fc0w3VTNLTGF4MExBdUdPUHY0Rzl4TFZlZWlDZHNrbEtBOWxxNkM3ZVN5WUdPaDBNSHowSWZ1RjJzczNyYjJoUGFqT0tpNmVac0thUTRKbDFKV0FENWw5NW1iaDlTVU1vR0FqdFNDdDJJcVo2M2I1ajZfZkY0T3FvbFd5VjQ0YldEeg?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53YkFFR1c0dkJ3aWdGMjdXOG9nd19UMm1wdW1KZTZNbGh3UVlLUGZVWEVRSjh3dzVHVllmeVNRbDNBaU4xMmpUeXVmcTU2Z3pxSjg5Mmc4b0YyVU4zeFdnUGpBRDdJeTNNRjd0a3JsTnNIQ1c4?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
@@ -345,7 +363,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-11-02",
@@ -413,15 +431,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-10-17",
@@ -435,11 +453,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-10-28",
@@ -453,7 +471,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-11-05",
@@ -548,7 +566,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-11-06",
@@ -670,7 +688,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-07",
+   "auto_checked": "2026-11-08",
    "items": [
     {
      "date": "2026-11-04",
