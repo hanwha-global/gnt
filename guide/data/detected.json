@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T01:18:50+00:00",
+ "updated": "2026-11-09T01:39:27+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": [
     {
      "date": "2026-10-26",
@@ -104,7 +104,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": [
     {
      "date": "2026-10-20",
@@ -121,10 +121,10 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": [
     {
-     "date": "2026-11-05",
+     "date": "2026-11-07",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
@@ -150,7 +150,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": [
     {
      "date": "2026-10-30",
@@ -167,11 +167,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": [
     {
      "date": "2026-11-01",
@@ -218,24 +218,48 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": [
+    {
+     "date": "2026-11-09",
+     "title": "PA MASSAGE THERAPY LICENSE",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBoMUVSMll5OWZXdWVOZVFISmlUd2hudHZZdWFpMWd4N01BNUcxbDhBUjNNdnRaQUlVLWd1RGpuQXZFcnotdEF5cEg2YV9PZzRTcERDUk5Sa1RjUWhhNzdaSmlVMzlGREM1VWhJcWlkQzY4TXEydFdYd3FJNA?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-08",
+     "title": "UTAH INSURANCE LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNajhhV0pEOEZlbzBqZ2ZmMS1GclhUN3lRSUs0Vlp2ZG9LaW5XZWZ5MWR6Q19ZbkRzcGE0SDBReVZjNEFtWTJmVFhBWGlka0REZjNLZzZJTW9lQnpIZVNrU29mMVhUdTZXV013VmhIbTNhcEQ4UW9PaXNsYXp1ZFNjWGtWRkt0cUtzc1M0?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-08",
+     "title": "EXCLUSIVE BEAT LICENSE AGREEMENT",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcGZ2dWpLX0dxZWxMMHNLUVpQQmdYSWdsMWFCMmtDNmNpZ2lMM1pSam1vR1o2c0NfLXRmNUIxOEpvd1dLOTg0RUMybXlpTHY3ZlhTUEdTdFRxSXlWTndQNTY2dENXdk9PSDFJcW04ZUtXTXZGb1c2c0wzVjV5QWF3VnBQUlZKZw?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-08",
+     "title": "C 8 LICENSE PRACTICE TEST",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA0MzExSnYtNzFRVkk4UnJ1RVQ1VVRPZVRjTF9fLWRlQlVUd1AwdVVFNEo0WVdWNDNDZGxOV2ZfbEZ3RHhKcnV5R1k2S3BJZkxUX3dnbGxuQk8wcjA5bUZyMzhubGhpTnk3Tml2amxWYWo0bmYwLUF6V2FVNms?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-11-07",
      "title": "C 36 LICENSE STUDY GUIDE",
@@ -341,11 +365,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": []
   }
  }
