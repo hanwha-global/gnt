@@ -1,7 +1,18 @@
 {
- "updated": "2026-11-08T01:00:28+00:00",
+ "updated": "2026-11-09T01:27:17+00:00",
  "keep_days": 30,
- "errors": [],
+ "errors": [
+  "KR news: HTTP Error 503: Service Unavailable",
+  "US news: HTTP Error 503: Service Unavailable",
+  "JP news: HTTP Error 503: Service Unavailable",
+  "JP news: HTTP Error 503: Service Unavailable",
+  "VN news: HTTP Error 503: Service Unavailable",
+  "VN news: HTTP Error 503: Service Unavailable",
+  "SG news: HTTP Error 503: Service Unavailable",
+  "ID news: HTTP Error 503: Service Unavailable",
+  "AE news: HTTP Error 503: Service Unavailable",
+  "AE news: HTTP Error 503: Service Unavailable"
+ ],
  "markets": {
   "KR": [
    {
@@ -85,41 +96,6 @@
     "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20888/regulation-crypto-asset-transactions-and-regulation-crypto-asset-markets",
     "code": "US",
     "official": true
-   },
-   {
-    "date": "2026-11-07",
-    "title": "SEC vs. CFTC: Who Regulates Crypto in the US?",
-    "src": "The Defiant",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMzE0ZFJHT1JCaEN4Z3I1ZVFic1FEUmpSYnd0WEFuOW9LU2FJUWk2QjZ0Y2RDVDUyYm9FajlmaWhOLTIydVNXZ2x0T0E3OF9HUjdyZHRhbnVPV3JZT0k1UHdKSk5zanVib1lTLXZFMEF4STNzWUZpWTdTdEluOEY2SjctMWxOM0U?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-11-07",
-    "title": "Democrats Target Crypto Rules With Bigger SEC Role After Midterm Wins",
-    "src": "Altcoin Buzz",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUGpJaV9wRWNnTVVzMkdGQjAyT0NTWU55RnZrbUJyTWFPVlRkQXJ5WUNZVFF4MjNaSUtHZC0xemR1SmxfZlQzbF9ydE42RlMwcTlrREhhVjlBRk9tanNXRmVjU0dqLVZLeEhyd2IzbmFXVGdGQWJBbDV2X2IwUDBWMGFR?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-11-07",
-    "title": "White House Reviews SEC Crypto Rules After Democratic Midterm Victory",
-    "src": "Bitcoin News",
-    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUVlSdHNCVHk5am5xalk3MXphUk8tWnRDSDdLZEFhcWJwZG9JMEUzRXE0LWhWQnJNTWlleFlFWW1LR0VNOE9aOTBYOHdGRzlwUXM0bk04blhhNWhnM19fSUFNZ0s0dHVSeUJONVc3TzF4Q2E2bWtISDh2R1FJeWJqc3lrbEptWjFTSkh4OW44N01LLU5Wek43OU4tVkhac1NuWWJqYWlobnEyUGFmNVVpdXY5QVpaSnM?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-11-06",
-    "title": "White House looks to review SEC crypto rule changes",
-    "src": "Fox Business",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xN3QyVlNzMGgzRlpkUzhjVDVjd3EydzBOZUN4cDlCMjRoYkZUV1VOSzhsMC1JRXJJR3U2aFBXV1Z5TkV5dS00eUFDVEt0SUlYSGlUMm5tNzRKdkE?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-11-06",
-    "title": "Crypto Regulation Outlook Under Democratic Control",
-    "src": "Forbes",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS1ZuWDBwaTFUX0RUVFdaV2FUbXZZX3h0U1RwRzQ4NHdlRE5ubzRlYkN1d0Rtd1NCN0tWUHl1WE1FdWg3UUp6bDZvVEI0M1BiSDdoNk1fYW9tc1BPRHF3Q0lnODIzMy1CZUhYc000SHJqcWI3Sl9IU1VtQ3JlM3hlN3JJbDBaNUcyT2xCbko3MEFickhoY2FDdVF6OEVsRFh5RGp1dnlvWUFuTHVUVGV5TDZEamZLc3dlanRGekwzeno?oc=5",
-    "code": "US"
    }
   ],
   "JP": [

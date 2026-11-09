@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T01:00:25+00:00",
+ "updated": "2026-11-09T01:22:34+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -63,7 +63,18 @@
    "info.gov.hk"
   ]
  },
- "errors": [],
+ "errors": [
+  "KR: HTTP Error 503: Service Unavailable",
+  "US: HTTP Error 503: Service Unavailable",
+  "JP: HTTP Error 503: Service Unavailable",
+  "VN: HTTP Error 503: Service Unavailable",
+  "SG: HTTP Error 503: Service Unavailable",
+  "ID: HTTP Error 503: Service Unavailable",
+  "AE: HTTP Error 503: Service Unavailable",
+  "EU: HTTP Error 503: Service Unavailable",
+  "UK: HTTP Error 503: Service Unavailable",
+  "HK: HTTP Error 503: Service Unavailable"
+ ],
  "markets": {
   "KR": {
    "auto_checked": "2026-11-08",
@@ -363,7 +374,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-09",
    "items": [
     {
      "date": "2026-11-02",
