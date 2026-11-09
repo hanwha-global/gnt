@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T03:31:28+00:00",
+ "updated_at": "2026-11-09T03:46:08+00:00",
  "source": "DART OpenAPI (정기보고서 주요재무·타법인출자현황, 공시목록)",
  "firms": {
   "미래에셋증권": {
@@ -1947,6 +1947,17 @@
      "seed_name": "Pinetree Securities Pte. Ltd."
     },
     {
+     "name": "PT Ciptadana Asset Management",
+     "country_guess": "인도네시아",
+     "purpose": "경영참여",
+     "first_acquired": "2025.12.19",
+     "share_pct": 80.0,
+     "book_value": 16638,
+     "total_assets": 5468,
+     "net_income": 679,
+     "seed_name": "PT Ciptadana Asset Management"
+    },
+    {
      "name": "Pinetree Securities Corporation",
      "country_guess": null,
      "purpose": "경영참여",
@@ -1967,17 +1978,6 @@
      "total_assets": 68624,
      "net_income": -153,
      "seed_name": "PT Ciptadana Sekuritas Asia"
-    },
-    {
-     "name": "PT Ciptadana Asset Management",
-     "country_guess": "인도네시아",
-     "purpose": "경영참여",
-     "first_acquired": "2025.12.19",
-     "share_pct": 80.0,
-     "book_value": 16638,
-     "total_assets": 5468,
-     "net_income": 679,
-     "seed_name": "PT Ciptadana Asset Management"
     },
     {
      "name": "CapBridgeHoldings Pte.Ltd.",
@@ -2101,7 +2101,7 @@
  ],
  "errors": [],
  "diff": {
-  "prev_at": "2026-10-27T08:15:37+00:00",
+  "prev_at": "2026-11-02T03:31:28+00:00",
   "entities_added": [],
   "entities_removed": [],
   "candidates_added": [],

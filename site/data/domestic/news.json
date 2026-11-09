@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T10:10+09:00",
+ "updated_at": "2026-11-09T13:12+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -329,6 +329,17 @@
   {
    "date": "2026-10-30",
    "time": "16:00",
+   "title": "미래에셋만이 아니다⋯새 수익원 찾아 해외로 향하는 증권사들 [국경 넘는 K증권]",
+   "src": "이투데이",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ndlktN3FiZ3p6N0xIb0lHOXNxNTBvZWRWWFk0QS1PdzdRZ3hTd1RMWGxVMmVnMHJlS3VGMnhOUkFxamdMcXlXemFJUWtjWVEwT2pydA?oc=5",
+   "site": "www.etoday.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "time": "16:00",
    "title": "Operator of South Korea's Toss app to buy online Japanese brokerage Cheer",
    "src": "Nikkei Asia",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZVFqWE9GT2NzcGE5MThEeWlyTGVkZS1xYUtNLVN5ZFlvVmJNN2tmVEdERnRwbnZWX242OTNqbkdfN1VyU0ZyWWZZZzh3Tk5YR0pKNmctdzJQb290ek8zTFJBX1A1eVZDcUs0UlFETXJPZ2NRRGNQa2pUb3ZFNE43WGktcFFCRzJ1eE1maFVnUXZHdmNnN01ZRk9RdWpFV3pIbnY2ci1jN2JFWEJudEtJRm9lZzJkYV9vMVRKUDRn?oc=5",
@@ -386,17 +397,6 @@
    "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQYnlQZ2VZWXFXdnRyOFdkRmh2RGluWXczTEtTNV9QWlRMcEJ1TFkyOWxodEpfZl9MUU50bFBNMjI5SUdSazdLMG9nUXFiVnZ4S0tRR2pvWVFpd2o2bEVQOTlZUTN4aVBwTWlEckVNblNvdW1veFFNazhVZENhbzdUcUxqcXRpaHpnLWFTNmc5NXFzelVmeEFMTmI1dlBHY2M3Y0htaDZBbVRHMm5DZXpCdXdfdTc1YjhmbVc1c3h0alBGY3pHN2NKNHhZZ3J1SWdzUWs1VWZWREd6RmxFN3hqZ3QzcTlScXFKNmlWSUtYS1FpbW1CUjRNUkItYmItVlRkS1lmVENpUHhyNTRYd0lBM08zQzdqSVk?oc=5",
    "site": "www.dailian.co.kr",
    "firms": []
-  },
-  {
-   "date": "2026-10-30",
-   "time": "06:00",
-   "title": "미래에셋만이 아니다⋯새 수익원 찾아 해외로 향하는 증권사들 [국경 넘는 K증권]",
-   "src": "이투데이",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ndlktN3FiZ3p6N0xIb0lHOXNxNTBvZWRWWFk0QS1PdzdRZ3hTd1RMWGxVMmVnMHJlS3VGMnhOUkFxamdMcXlXemFJUWtjWVEwT2pydA?oc=5",
-   "site": "www.etoday.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
   },
   {
    "date": "2026-10-30",
@@ -471,6 +471,17 @@
    "src": "매일경제",
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
    "site": "www.mk.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
+   "site": "www.sedaily.com",
    "firms": [
     "미래에셋증권"
    ]
@@ -619,17 +630,6 @@
    "src": "아주경제",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBqMHFYY2FwbTdnbkZ0clFZT3lrWEFRWmtsVU9oeXpSNE1VRDFfSS14QW5BZExzVVk4M2dKUXQ1c0tVcjgzOWRPZ1htWHJXcGtNbktoNHZNVEHSAVhBVV95cUxQajBxWGNhcG03Z25GdHJRWU95a1hBUVprbFVPaHl6UjRNVUQxX0kteEFuQWRMc1VZODNnSlF0NXNLVXI4MzlkT2dYbVhyV3BrTW5LaDR2TVRB?oc=5",
    "site": "www.ajunews.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "08:19",
-   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
-   "src": "서울경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
-   "site": "www.sedaily.com",
    "firms": [
     "미래에셋증권"
    ]

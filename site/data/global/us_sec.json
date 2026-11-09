@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T03:59:11+00:00",
+ "updated_at": "2026-11-09T04:13:15+00:00",
  "source": "SEC EDGAR XBRL companyfacts (10-K/10-Q)",
  "unit": "USD",
  "rows": [
@@ -8,8 +8,8 @@
    "cik": "0000886982",
    "model": "IB·트레이딩",
    "equity": {
-    "value": 122742000000,
-    "end": "2026-06-30",
+    "value": 124929000000,
+    "end": "2026-09-30",
     "form": "10-Q",
     "tag": "StockholdersEquity"
    },
@@ -32,8 +32,8 @@
    "cik": "0000895421",
    "model": "IB·WM",
    "equity": {
-    "value": 117440000000,
-    "end": "2026-06-30",
+    "value": 118320000000,
+    "end": "2026-09-30",
     "form": "10-Q",
     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
    },
@@ -56,8 +56,8 @@
    "cik": "0000316709",
    "model": "리테일 브로커리지",
    "equity": {
-    "value": 50147000000,
-    "end": "2026-06-30",
+    "value": 51446000000,
+    "end": "2026-09-30",
     "form": "10-Q",
     "tag": "StockholdersEquity"
    },
@@ -80,8 +80,8 @@
    "cik": "0001381197",
    "model": "온라인 브로커리지",
    "equity": {
-    "value": 22250000000,
-    "end": "2026-06-30",
+    "value": 23251000000,
+    "end": "2026-09-30",
     "form": "10-Q",
     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
    },
@@ -176,8 +176,8 @@
    "cik": "0000720672",
    "model": "WM·IB",
    "equity": {
-    "value": 6013241000,
-    "end": "2026-06-30",
+    "value": 6046168000,
+    "end": "2026-09-30",
     "form": "10-Q",
     "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
    },

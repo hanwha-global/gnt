@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T10:10+09:00",
+ "updated_at": "2026-11-09T13:13+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -23,10 +23,10 @@
     },
     {
      "date": "2026-11-09",
-     "time": "08:14",
-     "title": "[Good Morning Stock Market] U.S. Semiconductor Stocks Rebound... Will South Korean Stocks Try to Recoup Losses?",
-     "src": "아시아경제",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE03WG03eE9xZFNlbGkzRGx2UzRBYW9SMTZJNU9fZWlhSXJyTWE3bVA3MmhLMVlzR3VYbmM3akVVVHR3SDJxZGFhNkxXRzE4UlNhUEM4SC1VMFA4bXFDazkyS1hnWGI?oc=5",
+     "time": "10:29",
+     "title": "5100선 올라섰던 코스피, 어디로?…삼전닉스 상승에도 외국인은 ‘팔자’",
+     "src": "매일경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ISnU0Ti1Ub1pNMWc1Szdmamhsb0dZdS1xUElUdG1wNnE0c1REako1bzN1Q01VSmxoWW1LUzhkT2JnQjBNLW14cU1zbkdfbUxwUlE?oc=5",
      "priority": false
     }
    ]
@@ -64,6 +64,14 @@
    "label": "인도네시아",
    "items": [
     {
+     "date": "2026-11-09",
+     "time": "11:33",
+     "title": "Jakarta Stocks Start Week Higher, With MSCI Changes in Focus",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUWFscXhyS3VLSVBFYkk1Y2MwTTdfaVdVclcyb2NfdEp2TmIyak9JOGZxRm9xTEt0Uy0tRHZGa2gxRE01eE0wN2RZRF8yMVYyS0xMckhZeWRkYVJ3ZXpfSVhNYnBTUWZmazlGa3M0YkpRaElsUTI0QjhYc0lOWExLYmdneWlyZnlqM1lOQ0Eyb256Q0NIckx3?oc=5",
+     "priority": true
+    },
+    {
      "date": "2026-11-08",
      "time": "10:32",
      "title": "Indonesian president’s adviser says MSCI downgrade threat ‘went too far’",
@@ -77,14 +85,6 @@
      "title": "Indonesia presses ahead with equity market reforms after MSCI downgrade warning",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTFJrMVVCWlNCeXpOZ2NhRVhhOTFtTDhnSWdPNEhpT3NsNklGTW9nTFZ3SkpIQ2pCakgxYmFlbmQ0Z0pHRXljSEFLNUtjSkgydVdPUE1GNmppZHh6ZmtnYl9BY1gzejB0YUZxVDBYTmdETTBYMUFIN3Q1anctVGVNQW1KWFQ0VUkwck5vMG8wMjNCTVVscEF6N1hBeERyY3puWnIxclBjcnE4SFM5SHo2UzI4amEzZkl6ZkdlU1h6NUVWQTdqTFNnQ2pYZUJWaTQ?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-06",
-     "time": "05:52",
-     "title": "Indonesia Kicks Off First Dollar Bond Sale Since MSCI Fallout",
-     "src": "Bloomberg",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOW9hWGdXcjU2c0VGcXpPMXppNmtHenpLcFB1bzdWdEppU1podFNiTlFVNzJiVDVWWk10TGVNbVhySkItNEV1bFNESl9JeVpEV09GY2FHSmNWN2xIWHFhNVJnb0ZMMmhSbTNud29fa09WZnFpNEhERkU0aURkRmdtTXFaVGlRVThRTzNTQ2VXQzEyeGRwX1BPMkpGZjZyanRpMERYV3NXb3hrOGdyakRBdUl3?oc=5",
      "priority": true
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-09",
+     "time": "12:10",
+     "title": "HSBC is back to being 'overweight' on Indian stock markets after seven months - These are its top picks",
+     "src": "CNBC TV18",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcy1vUmNzSEFRam5UeUlXUVA5dWUtUTdnMzBTQl9BNUZmR3g4cnpENktiSTRxU2tmM093ZmFtTnhGSUd4MEF6cDVsb1FPcm9FbF9nX0NCOU1NWU84dFBXWWgtX0xwR0dlZE1NQ1pwMThEXzJuOWZjSlF5aEpSSVh6QVYxSUJ3ZTRUTEJEbjlBOTk5cnZpZFM0YlNVaVViVGhQTGdTOHM0Z3NvRzk2Qzk3NGgybEFmM1BqTFpLYms1WG5Yam_SAcgBQVVfeXFMUF9fb2Q3dFctZTU2RlowazN2UjdwVFNfamNFM0owNVN0bm5tYk85QnNPTF9pNW5YMmttenAyNXJZcTdzdy0yMzdMT2NOTVVKZ2sxNHJ5Q05kYjFQMDJJQTBON1VHY3Q2RThiajRmRUdqR2trMk51eGtmSC1UajdXSTVQUnctaGxzU0xuRFNlTHlEbVZXdEU5T0F3SlBYUDVWZko0emFwajJ2R0dmNVViR2hHNGt0UmhmdFBtdTYtZFVhSFgzbml2VkU?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-08",
      "time": "19:43",
      "title": "Indian shares consolidate in Diwali session after seven-day rally",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSURhQVo2bnpTNGJqSFRaSk5Tc1ZFcmxGcTU0MXNiVkR4b2tQekR0VXlhVktMZzYwMWdHUnpkWWdyM1lGTUowOXhLR19tMl9wd1BpS3J4MWpvNnJxaUpUSXg5M2pyTUtCaUFaRy16dTdKRDBGekI1czdXSGcwMjR4MnJDVGxLbDdPREdyMms4cFlpbTl6U3FxeHY5NXI4NHQ4VVR3VTQyT2cyU2wwa2Iw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-07",
-     "time": "13:56",
-     "title": "Muhurat Trading 2026: Sensex, Nifty has 80% strike rate. Will this trend continue as Samvat 2083 kicks off",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxON0dGZFMxclAxRE1GTFUzWUtsdG9hMmdlWFNBM0t6T1lXQ1BSY29zQmtFUlkwSXlBem55M0M5STd2STZXMjczajZHUGU2SnJIN3JJYnFraHBZVHBEM0lLRGsxY1c3anJscngtLU9BTkR3UnNUUjVrZGN4NmJfNzRJWVdSQWdBSW53UzdHX2FjQnktUm1MT0NwNFRHNFZHVkpTbmdqdGdQdWh4U0dGVE1uclZPbXFQdnFkYWJxVlBYODdIcWFiVENXeDFlZEdJamVBMndnMGE2MTR1WjN4UzZnaXVSb1ZyN0NwMmtZTnk4UEtIai1lR0pkWkVOQjZxWDVUcGhjLWJOMNIBjAJBVV95cUxPbE15bUhzMXhkT0pnTGZNTW5YVVlCQWMxQXhwNmdpMWVRNi1VRXRZaWozY3RVa2lNeXMzSlBDMkFFWmY0Y19ZcENMNEtIelBEcUNPZVN3V09uMFZ3Tm9KT09UU1cxSi1QT3ZsZE44UFNwRVZZWjlOZTJIV3Zwck1BODUzcElCaWNoM2c0WGx2cUkwTTcyT2w1Ql9VUlNhQ085dUdfZDRPRDRjQWJSX1FxRFZhem9ESWN3NUNqekhFcUdrVWxoVHQ0WDA1WVJkM2lSRWVyVVBJbzA1Z2VtaGEtT3dySXk5b29KMnVkTUJSMEpUMHFXQTRxY0VkZ0RkNTFPYnQ1ZGN1ck9iQ3lv?oc=5",
      "priority": false
     }
    ]
