@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-08T09:54+09:00",
+ "updated_at": "2026-11-09T10:10+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -338,6 +338,17 @@
   },
   {
    "date": "2026-10-30",
+   "time": "16:00",
+   "title": "미래에셋증권, 해외 인수·제휴 행보는 계속될 것...주주환원에 이목-NH",
+   "src": "이데일리",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaEkwVzBLbzJSX2dWY3pTdUw3bU5ZN3hSTzVCdDNvSVQ0VmtxZFRvaDltTUFaVy1mZXdHZ3l4cWl2UHFxSkFEU2lQbHQycFVmOFctZEZkUng1RXdBRU5CRkpwNFE3Qkg0X092OFhSZkJYbEhlNXY1OEs2NWg2Szh6bA?oc=5",
+   "site": "www.edaily.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-30",
    "time": "15:19",
    "title": "토스, 日 증권사 340억원에 인수 추진…일본 금융시장 진출",
    "src": "아주경제",
@@ -365,17 +376,6 @@
    "site": "www.businesspost.co.kr",
    "firms": [
     "키움증권"
-   ]
-  },
-  {
-   "date": "2026-10-30",
-   "time": "07:55",
-   "title": "미래에셋증권, 해외 인수·제휴 행보는 계속될 것...주주환원에 이목-NH",
-   "src": "이데일리",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaEkwVzBLbzJSX2dWY3pTdUw3bU5ZN3hSTzVCdDNvSVQ0VmtxZFRvaDltTUFaVy1mZXdHZ3l4cWl2UHFxSkFEU2lQbHQycFVmOFctZEZkUng1RXdBRU5CRkpwNFE3Qkg0X092OFhSZkJYbEhlNXY1OEs2NWg2Szh6bA?oc=5",
-   "site": "www.edaily.co.kr",
-   "firms": [
-    "미래에셋증권"
    ]
   },
   {
@@ -478,6 +478,17 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
+   "title": "미래에셋증권, 日 산코증권 인수…글로벌 성장동력 확보",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SZEhQVThRbkxOMnRiRkVITHBWWXFxUVRvUTZSVjBfaVEtaGtwTjBhWHpzVkpWM196QU5RdnRyeUJieGNmbm4zRlFRR0sxdw?oc=5",
+   "site": "www.etnews.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
    "title": "미래에셋, 日 산코증권 인수…일본 금융시장 공략 본격화",
    "src": "한국경제",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aVGlYNWxOcVl0YlAxVWlZSGpQZDNDOHR1ZWlZXzdsQnFvM3pPUlBqNl92WTBPSG9ESmZwSDQ0Q3V2QTdQUkdTMkw2M0VESE5PQy1uNzl4NFlvdw?oc=5",
@@ -489,10 +500,30 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
+   "title": "Mirae Asset buys Japanese brokerage to break into retail market",
+   "src": "The Korea Herald",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51WXN6UElkRXVyUmRFRHBmb3diMGlpMEs5ZGRVb0NNeldrVW1renVkWG9jOUU3Nm43VVB0c1ktQTlIT2NmTHQ1RUV4M3dpcE51M1hDcS1hQQ?oc=5",
+   "site": "www.koreaherald.com",
+   "firms": []
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
    "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
    "site": "www.yna.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "Mirae Asset Securities to fully acquire Japanese brokerage Sanko Securities",
+   "src": "Korea JoongAng Daily",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
+   "site": "www.koreajoongangdaily.com",
    "firms": [
     "미래에셋증권"
    ]
@@ -515,37 +546,6 @@
    "src": "경향신문",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13MGZvb1hJSGpGNjVJb29NV2c2WnVqZVVtcHowdDd6amtYcE9rcm1zY19YYkRlWVlKOEFDRUJtU21adEV3UGRPTmlzNFFsclpSX3JRRVJBUy1DQdIBX0FVX3lxTFBBLU1ROVhtUDI2M09KVVVzWVRnQVM4d2JZcU5tOWFUeXJ4UUtqdlFWX3RES3JBNk9hUktlb00wSU9Ocmd3SzZET2ZvNXhRdTFVZW1pdzJORi10N3dxN1A4?oc=5",
    "site": "www.khan.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "14:43",
-   "title": "Mirae Asset buys Japanese brokerage to break into retail market",
-   "src": "The Korea Herald",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51WXN6UElkRXVyUmRFRHBmb3diMGlpMEs5ZGRVb0NNeldrVW1renVkWG9jOUU3Nm43VVB0c1ktQTlIT2NmTHQ1RUV4M3dpcE51M1hDcS1hQQ?oc=5",
-   "site": "www.koreaherald.com",
-   "firms": []
-  },
-  {
-   "date": "2026-10-29",
-   "time": "13:43",
-   "title": "미래에셋증권, 日 산코증권 인수…글로벌 성장동력 확보",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SZEhQVThRbkxOMnRiRkVITHBWWXFxUVRvUTZSVjBfaVEtaGtwTjBhWHpzVkpWM196QU5RdnRyeUJieGNmbm4zRlFRR0sxdw?oc=5",
-   "site": "www.etnews.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "13:33",
-   "title": "Mirae Asset Securities to fully acquire Japanese brokerage Sanko Securities",
-   "src": "Korea JoongAng Daily",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
-   "site": "www.koreajoongangdaily.com",
    "firms": [
     "미래에셋증권"
    ]
@@ -658,6 +658,17 @@
   },
   {
    "date": "2026-10-28",
+   "time": "16:00",
+   "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
+   "site": "stock.mk.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-28",
    "time": "15:33",
    "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
    "src": "전자신문",
@@ -685,17 +696,6 @@
    "src": "헤럴드경제",
    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJQ0VpTUpSU3VabGM2TDltSW56M3JMUW5XVjlKTHRqemhmdFRmaHhBRlhYMmdJOGFaUXN4TkNZY1N0dkZaVGYtTno4ME1mbHRhZWpqeTZB?oc=5",
    "site": "biz.heraldcorp.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "time": "12:30",
-   "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1FWUVaRXVDd1NlMUpRSVd0WnZoa0IwTGRqd1RTQWlaOUpER0QwUzBWS0VHbm1QNDhTOC1pb2hiR1NVQ0pCRlltX01QcEd2WTZaNXc?oc=5",
-   "site": "www.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]

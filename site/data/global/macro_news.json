@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-08T09:54+09:00",
+ "updated_at": "2026-11-09T10:10+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -22,11 +22,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-08",
-     "time": "07:05",
-     "title": "물가는 3% 육박, 코스피는 5000선 위태…금리 결정 앞둔 한은 딜레마",
-     "src": "뉴스1",
-     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aXzJNbmp4S1RxczFtUVMxMlJVRGc4SFBWRU9vRTB5ZEpmTmFDdndNR3UySFFIRTUxbW9YR0d2YXZCdUtFd1U5MEljRWlXRGlKdnpqMg?oc=5",
+     "date": "2026-11-09",
+     "time": "08:14",
+     "title": "[Good Morning Stock Market] U.S. Semiconductor Stocks Rebound... Will South Korean Stocks Try to Recoup Losses?",
+     "src": "아시아경제",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE03WG03eE9xZFNlbGkzRGx2UzRBYW9SMTZJNU9fZWlhSXJyTWE3bVA3MmhLMVlzR3VYbmM3akVVVHR3SDJxZGFhNkxXRzE4UlNhUEM4SC1VMFA4bXFDazkyS1hnWGI?oc=5",
      "priority": false
     }
    ]
@@ -34,6 +34,14 @@
   "US": {
    "label": "미국",
    "items": [
+    {
+     "date": "2026-11-07",
+     "time": "09:16",
+     "title": "US treasury bond prices down on Friday, Yields on 10-year, 30-year, 2-year jump. Check latest rates",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQU0VwVnh0d3ZtLThFRi1ydDFZcEV3R2VHUE01eFJxb1hab1dzTXJBLXR3bzhfMTlhRlZkcDR3WHYwcEtaWjZtUnRESE0ydGxFQ0M0OGNGV2tHTHJpZXFXS1hfcGt5dVhOYU9GTy1CR2tTaXBHU2pUcWIwcU0wbHo3UHV6ZTVPeG1qNWR3M1lrMEo3bTVfc3U3VnNZNW5CTnh6aWVwVi01SEFoNTJ2Q3NGUmRKWFVwMjVhVm8wbm9pcjBXb3lsT2dtV1FIbzRtVnk2TGtKUEo0M0FhSTJYX1h1YkVhRjh3cVRTcllrVVU2ekUzeHp6ekhIY253RzBNd0R00gGGAkFVX3lxTE1Na1FJdzNJVDlGM21aUFgyZnVQNmVxbnpyUzhILVo5bVBWTVhxNDAzN2piaWtkc24yZ1B0UDFGaHJuLVBLcDRaOUZEMVllcDd3bGhkek9GdENLWFFJTVM1NDRPQmlCQUZuNkVVV3g3bDZHS0FveUxmUUt5dU5lSHpUUnNUVy0xU0xtRWlvVkdhMkFadnN2d1ZMbW1CYmtaOTZCS0lWanNyOWppTHUxLVNnblF5REVsdnR6d2dvNTQ2MnpSU2FXMjNUdWk4elJWVkpnU2lsSmJCQjFJdVd0eWtUX043Tmw1eWYzZU12a05ZUlhHd0M5MzlJMEJJdG55SzJZZW9oUlE?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-07",
      "time": "04:57",
@@ -49,20 +57,20 @@
      "src": "SBS Biz",
      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5VamNLem5xdFFHd041RUYtQVFtS0JyenVlU3NIUDYyb0UxbTVsMElKQ256d2o4WE9rYnJNUkJDeGFMSURicThGbm00ejduTXc0Rm9zM0d0a2rSAVhBVV95cUxOVWpjS3pucXRRR3dONUVGLUFRbUtCcnp1ZVNzSFA2Mm9FMW01bDBJSkNuendqOFhPa2JyTVJCQ3hhTElEYnE4Rm5tNHo3bk13NEZvczNHdGtq?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "18:34",
-     "title": "10-year Treasury yield rises after much stronger-than-expected October jobs report",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEd4MDlaNjAwRjlYdFp0aDhKVDFsVHZNUnBCWXU1aHhPWGMtQ2hmTVJnZmpoMWo3cnJNbEZwRWJHRVp0UjI1SU9ELURwYjctRnRUS19MUVhrdVlvTWswem9xR0dRT2V0ZHJxUm5pZFE5cnpxTmR5Wm1lR1pYRk9xYXh4dGtiVWQtNWJfcVBzQmVSS1VRR1F6UDRpWnhjVlJsSF9iazlCRUo?oc=5",
-     "priority": false
     }
    ]
   },
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-11-08",
+     "time": "10:32",
+     "title": "Indonesian president’s adviser says MSCI downgrade threat ‘went too far’",
+     "src": "Financial Times",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORlE2Z2t5M0tUaFdPQXlWUW1mOHpXMFc3blN1c2djVy1VUDUzanZ6aHp5SGFZVG9aMkxjZnU2X1ZvSlRoanVaYVFZeFZPajN6SDdycEkwSjVVR0M0cXM3MHd4OFpDc2J5VlU0elR0YUR2NVlVSU92QmhnZFk4YXVfT1RmcmM?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-06",
      "time": "19:22",
@@ -75,16 +83,8 @@
      "date": "2026-11-06",
      "time": "05:52",
      "title": "Indonesia Kicks Off First Dollar Bond Sale Since MSCI Fallout",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOW9hWGdXcjU2c0VGcXpPMXppNmtHenpLcFB1bzdWdEppU1podFNiTlFVNzJiVDVWWk10TGVNbVhySkItNEV1bFNESl9JeVpEV09GY2FHSmNWN2xIWHFhNVJnb0ZMMmhSbTNud29fa09WZnFpNEhERkU0aURkRmdtTXFaVGlRVThRTzNTQ2VXQzEyeGRwX1BPMkpGZjZyanRpMERYV3NXb3hrOGdyakRBdUl3?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-03",
-     "time": "18:11",
-     "title": "Indonesian Stocks Plunge 3.78% as Foreign Selling, MSCI Fears Mount",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMl94OVBQZDZ0anF2cFVqOVdtdGhYVENlS0VRTkxiSU1uSGZhMndLZnZfVlQybmdNVm5QZWg0dnQxN003WVlQSVJSVTBqQV91anhCV2R5Q1NSdGg0S3RBcUN6TXdsbmE0OXNtR1VxVGUxalBGWWtXWmVWMi1TT3NxZTBYU2Q4cGtCZmduOW9wMjQtLU80c215X1hpcTdkZw?oc=5",
      "priority": true
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-07",
-     "time": "02:16",
-     "title": "BOJ’s Ueda Says Unclear How Long 2% Inflation Rate Will Remain",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNGtUcFRNdmZqZ2VBWW9FQ3c1R043Yk9JY1JiMHU3ZzdNMVZrVVZsLWxMZE5fM1B1VDRPbGpmdkhLUEN6MEtHb1VrNUEtUWVEcE9EOWxZT3ZXMWJ3WFdwUmk5LUg5eEVpa0tvSmZKcnhRc09uTGZCbDVfZDBFY3BXMEFCR1JSZkVzdE16eXVMU3NDbHpRdVFfSzlPVUR0dkVSbVNSQk51TkNjRWxNOFEwSEF3?oc=5",
+     "date": "2026-11-08",
+     "time": "12:41",
+     "title": "‘Feeling guilty’: Price hikes a tough sell in Japan despite inflation",
+     "src": "The Straits Times",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUVN6X2FONF9jXzY0cm1oXy1kaTlIZWZ4c0JNdjhhQ0Q2d0VqbnljNXdHSUdLRlRBU2lVbXlUc0VVREtMVHNnVWZscnJOUG9vakZucFlVT2dUYU1WdEJVMV9jTF9JcVFablFHek5aTkg1a0g2OVE4bFpiMk9rOVppaUV4NXk2R1ItNlBRaHhVMDZ6eEV1Sl9wb21WRjVna1NZVUNxQ3pOQVNHZWVsNkRj?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-06",
-     "time": "20:07",
-     "title": "Taiwan, South Korea, Japan stock markets hit hard by AI sell-off",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTm5vQzNBZnVpSUdPZWwzU3J2Yi04Y3JXaWpwYjNGVEt2U1lDMjZubjdnQTdKRENVeE94QlhSblNGR0Z6cHl4QjJyVU8tbThXazVnTjVxZ1JfU25YTXlDU3hlNGdQek90TDBGM0V5NWFENFJyM3QyalVDZzd6TzdLcmhHVHpHMzZldGtuck1XMjI5WXNWS1dXWnFZSXJHSmlZbmUzYlpB?oc=5",
+     "date": "2026-11-07",
+     "time": "02:16",
+     "title": "BOJ’s Ueda Says Unclear How Long 2% Inflation Rate Will Remain",
+     "src": "Bloomberg",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNGtUcFRNdmZqZ2VBWW9FQ3c1R043Yk9JY1JiMHU3ZzdNMVZrVVZsLWxMZE5fM1B1VDRPbGpmdkhLUEN6MEtHb1VrNUEtUWVEcE9EOWxZT3ZXMWJ3WFdwUmk5LUg5eEVpa0tvSmZKcnhRc09uTGZCbDVfZDBFY3BXMEFCR1JSZkVzdE16eXVMU3NDbHpRdVFfSzlPVUR0dkVSbVNSQk51TkNjRWxNOFEwSEF3?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-06",
-     "time": "23:51",
-     "title": "Singapore stocks fall amid concerns over AI valuations, tighter US regulation",
-     "src": "CNA",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZlFTZ0RYa3k3aWcyWmtEWll4YWdVSXpBQU9XOXlkR3RjX0JyMjRXVjBiLWJTRzlaWjhUS3I5bmg5REktblV6djVDRnNmQUM5TVlMbkhhQTR3dWpTLVZzR0JxTDNTOGR0MXNHM0x6NEdDS2xMUjNpTTdIaW0wVHVkSGdRcjF5c19kMVZSY2J6UTJRNnVNWVNyNDRXMUtGdGZHMWR5c2NZZDNhOVdVeWUwdW45VHlpQlI0OEE4RGFFNA?oc=5",
+     "date": "2026-11-09",
+     "time": "06:00",
+     "title": "Binance hack clouds Singapore crypto push for tokenized stocks",
+     "src": "Nikkei Asia",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeFZQSXFQX3d5a1p3WkE4RHI2cmFLNUdqNmMtcEhqcUlITkg4SzhkNVVBQWNXckNXbTFYa3JJMXdHeERZanJ4T1hCMW9rS0NzMnIzRmJSdWxoaFZHMXoxa1JnV1BoQWpENl9pNFd1ckUwODBiT25VRmpGOGM3Z2ROMzFES1IyMERrQlRtaUdNX2NiREthb0ZQMHk4NGRCM1lXYnZBSF9ybGhtVW5nSzhlbE5Jemg1Umc?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-08",
+     "time": "19:43",
+     "title": "Indian shares consolidate in Diwali session after seven-day rally",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSURhQVo2bnpTNGJqSFRaSk5Tc1ZFcmxGcTU0MXNiVkR4b2tQekR0VXlhVktMZzYwMWdHUnpkWWdyM1lGTUowOXhLR19tMl9wd1BpS3J4MWpvNnJxaUpUSXg5M2pyTUtCaUFaRy16dTdKRDBGekI1czdXSGcwMjR4MnJDVGxLbDdPREdyMms4cFlpbTl6U3FxeHY5NXI4NHQ4VVR3VTQyT2cyU2wwa2Iw?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-07",
      "time": "13:56",
      "title": "Muhurat Trading 2026: Sensex, Nifty has 80% strike rate. Will this trend continue as Samvat 2083 kicks off",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxON0dGZFMxclAxRE1GTFUzWUtsdG9hMmdlWFNBM0t6T1lXQ1BSY29zQmtFUlkwSXlBem55M0M5STd2STZXMjczajZHUGU2SnJIN3JJYnFraHBZVHBEM0lLRGsxY1c3anJscngtLU9BTkR3UnNUUjVrZGN4NmJfNzRJWVdSQWdBSW53UzdHX2FjQnktUm1MT0NwNFRHNFZHVkpTbmdqdGdQdWh4U0dGVE1uclZPbXFQdnFkYWJxVlBYODdIcWFiVENXeDFlZEdJamVBMndnMGE2MTR1WjN4UzZnaXVSb1ZyN0NwMmtZTnk4UEtIai1lR0pkWkVOQjZxWDVUcGhjLWJOMNIBjAJBVV95cUxPbE15bUhzMXhkT0pnTGZNTW5YVVlCQWMxQXhwNmdpMWVRNi1VRXRZaWozY3RVa2lNeXMzSlBDMkFFWmY0Y19ZcENMNEtIelBEcUNPZVN3V09uMFZ3Tm9KT09UU1cxSi1QT3ZsZE44UFNwRVZZWjlOZTJIV3Zwck1BODUzcElCaWNoM2c0WGx2cUkwTTcyT2w1Ql9VUlNhQ085dUdfZDRPRDRjQWJSX1FxRFZhem9ESWN3NUNqekhFcUdrVWxoVHQ0WDA1WVJkM2lSRWVyVVBJbzA1Z2VtaGEtT3dySXk5b29KMnVkTUJSMEpUMHFXQTRxY0VkZ0RkNTFPYnQ1ZGN1ck9iQ3lv?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "20:50",
-     "title": "Indian shares log biggest gains in seven months on oil slide, foreign flows",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVmJaMVVmaUE0cUtPUW9iRklDNUNCV2k4c1NXYzllRGYzeUdXOFJkeGVEOUNsdkhwc0pfc3pkSVdvb3Nwc3FMSE0xTVBnbEtiQ29Gd2NzbmFtMU9rVXNoNXF3MkRrMEtHczdSX0VGUExrTDkyNHAxYWI0SGFWbVRSZWhDaGlvNkhLdUtiZGdDaWVQaFJ0NkRkckJvQ0ZzSnM2dmFUd2tZXzdQaWZBaFN4Y3BNYXo0UkVZRGpQTkdTUQ?oc=5",
      "priority": false
     }
    ]
@@ -241,7 +241,7 @@
      "date": "2026-11-02",
      "time": "23:26",
      "title": "Greek Stocks to Suffer Outflows on MSCI Upgrade, JPMorgan Says",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWVmcEhvblNrV0ZZMmtQVWc3RmZNNTdybFBYZzdFZVZUUW0zc1lmakxBR3NFTzBxeFdOSklzeUFQajBqVHRnVUpQRU5lN3lNWW1lZFBXWm5waGZodWhaNjFYVTlSc1RFXzkwaDJHMloxb2EzYllNR1ozMG1NNEVXTnExeHNwRmZtNnVrc0R5bTlYNFhGYjZ4dG9BUGdjWThZR0RYTUp5cDVTRFJvakNwUEV3?oc=5",
      "priority": true
     },

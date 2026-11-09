@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-08T09:54+09:00",
+ "checked_at": "2026-11-09T10:10+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -165,14 +165,14 @@
      "category": "리스크·규제",
      "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
      "evidence": [
-      "Reuters 11/6 'MSCI 강등 검토' 등 부정 구조 뉴스 6건(최근 30일)",
+      "Financial Times 11/8 'MSCI 강등 검토' 등 부정 구조 뉴스 6건(최근 30일)",
       "IDX 1개월 -18.4%, 연초 대비 -41.6%(11/6)"
      ],
      "links": [
       {
        "label": "MSCI 강등 검토",
-       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTFJrMVVCWlNCeXpOZ2NhRVhhOTFtTDhnSWdPNEhpT3NsNklGTW9nTFZ3SkpIQ2pCakgxYmFlbmQ0Z0pHRXljSEFLNUtjSkgydVdPUE1GNmppZHh6ZmtnYl9BY1gzejB0YUZxVDBYTmdETTBYMUFIN3Q1anctVGVNQW1KWFQ0VUkwck5vMG8wMjNCTVVscEF6N1hBeERyY3puWnIxclBjcnE4SFM5SHo2UzI4amEzZkl6ZkdlU1h6NUVWQTdqTFNnQ2pYZUJWaTQ?oc=5",
-       "title": "Indonesia presses ahead with equity market reforms after MSCI downgrade warning"
+       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORlE2Z2t5M0tUaFdPQXlWUW1mOHpXMFc3blN1c2djVy1VUDUzanZ6aHp5SGFZVG9aMkxjZnU2X1ZvSlRoanVaYVFZeFZPajN6SDdycEkwSjVVR0M0cXM3MHd4OFpDc2J5VlU0elR0YUR2NVlVSU92QmhnZFk4YXVfT1RmcmM?oc=5",
+       "title": "Indonesian president’s adviser says MSCI downgrade threat ‘went too far’"
       },
       {
        "label": "Jakarta Globe",
@@ -245,10 +245,11 @@
      ]
     }
    ],
-   "changed_at": "2026-11-07",
+   "changed_at": "2026-11-09",
    "reason": [
     "새 뉴스: MSCI 강등 검토"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "MKT",
@@ -394,9 +395,21 @@
      "reason": [
       "새 뉴스: MSCI 강등 검토"
      ]
+    },
+    {
+     "date": "2026-11-09",
+     "fp": "c97d83264f8e",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "R06"
+     ],
+     "reason": [
+      "새 뉴스: MSCI 강등 검토"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -513,5 +526,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-09"
 }
