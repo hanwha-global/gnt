@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T13:12+09:00",
+ "updated_at": "2026-11-09T20:52+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -500,17 +500,6 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋, 日 산코증권 인수…일본 금융시장 공략 본격화",
-   "src": "한국경제",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aVGlYNWxOcVl0YlAxVWlZSGpQZDNDOHR1ZWlZXzdsQnFvM3pPUlBqNl92WTBPSG9ESmZwSDQ0Q3V2QTdQUkdTMkw2M0VESE5PQy1uNzl4NFlvdw?oc=5",
-   "site": "www.hankyung.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
    "title": "Mirae Asset buys Japanese brokerage to break into retail market",
    "src": "The Korea Herald",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51WXN6UElkRXVyUmRFRHBmb3diMGlpMEs5ZGRVb0NNeldrVW1renVkWG9jOUU3Nm43VVB0c1ktQTlIT2NmTHQ1RUV4M3dpcE51M1hDcS1hQQ?oc=5",
@@ -535,6 +524,17 @@
    "src": "Korea JoongAng Daily",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
    "site": "www.koreajoongangdaily.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "미래에셋, 日 산코증권 인수…일본 금융시장 공략 본격화",
+   "src": "한국경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aVGlYNWxOcVl0YlAxVWlZSGpQZDNDOHR1ZWlZXzdsQnFvM3pPUlBqNl92WTBPSG9ESmZwSDQ0Q3V2QTdQUkdTMkw2M0VESE5PQy1uNzl4NFlvdw?oc=5",
+   "site": "www.hankyung.com",
    "firms": [
     "미래에셋증권"
    ]

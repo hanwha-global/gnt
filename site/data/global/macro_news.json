@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T13:13+09:00",
+ "updated_at": "2026-11-09T20:53+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -23,10 +23,10 @@
     },
     {
      "date": "2026-11-09",
-     "time": "10:29",
-     "title": "5100선 올라섰던 코스피, 어디로?…삼전닉스 상승에도 외국인은 ‘팔자’",
-     "src": "매일경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ISnU0Ti1Ub1pNMWc1Szdmamhsb0dZdS1xUElUdG1wNnE0c1REako1bzN1Q01VSmxoWW1LUzhkT2JnQjBNLW14cU1zbkdfbUxwUlE?oc=5",
+     "time": "16:30",
+     "title": "코스피·코스닥, 0.8% 하락 마감...외국인 순매도 계속",
+     "src": "YTN",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBzVFdmaHFGUmk5VkFZRHdlUGlMWGh0WmliS2FoaTFIUm90QWpOSllxZzFvVmZTOG9zVWhsVmhiaXpQdVJjS1ljQ2tMemVUYVNjV1F4aGpycndBS3JaNkE?oc=5",
      "priority": false
     }
    ]
@@ -34,6 +34,14 @@
   "US": {
    "label": "미국",
    "items": [
+    {
+     "date": "2026-11-09",
+     "time": "18:42",
+     "title": "Treasury yields steady as investors await more economic data",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JVE44LUJheWlkSEJZWlBaUVRGUXR2aGVMbm9yZnNDUnR1alJLSDdlU3Y3RktFcmplWmViVjV1ME1UYU9qSDA1YTN2NUdJbTJvWmZGUU5FZ3VTMU1lV3ppbk10SXBWLWxTcHVWYjRFbw?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-07",
      "time": "09:16",
@@ -48,14 +56,6 @@
      "title": "Stock Market Outlook: Nvidia Earnings, Anthropic’s IPO, and the Fed Rate Decision",
      "src": "Barron's",
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdVM5RWx2cGx4U3R0Z3pJMzRzQ1NWaURpbkhvRnRXbzhPU3dVcVRmbVBuT05DOUJ4aXduWGhWYXBzQVZSbVhpU3FHVkQxdnBIWEFLSHBzNGJuc2VWR0Exb3F4dkFSazFNM0ZvQkhrYm1jMzlQcDVGVGQ0RUlYWW5ZVUIzRng1Z3YxZFZmaC1TbWUzSVhoTUJfY3Nn?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "19:19",
-     "title": "[숏폼] 민주당 압승, 트럼프 참패 12월 FOMC 금리인상 유력?",
-     "src": "SBS Biz",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5VamNLem5xdFFHd041RUYtQVFtS0JyenVlU3NIUDYyb0UxbTVsMElKQ256d2o4WE9rYnJNUkJDeGFMSURicThGbm00ejduTXc0Rm9zM0d0a2rSAVhBVV95cUxOVWpjS3pucXRRR3dONUVGLUFRbUtCcnp1ZVNzSFA2Mm9FMW01bDBJSkNuendqOFhPa2JyTVJCQ3hhTElEYnE4Rm5tNHo3bk13NEZvczNHdGtq?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-08",
-     "time": "12:41",
-     "title": "‘Feeling guilty’: Price hikes a tough sell in Japan despite inflation",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUVN6X2FONF9jXzY0cm1oXy1kaTlIZWZ4c0JNdjhhQ0Q2d0VqbnljNXdHSUdLRlRBU2lVbXlUc0VVREtMVHNnVWZscnJOUG9vakZucFlVT2dUYU1WdEJVMV9jTF9JcVFablFHek5aTkg1a0g2OVE4bFpiMk9rOVppaUV4NXk2R1ItNlBRaHhVMDZ6eEV1Sl9wb21WRjVna1NZVUNxQ3pOQVNHZWVsNkRj?oc=5",
+     "date": "2026-11-09",
+     "time": "17:19",
+     "title": "Japanese households buy record 5-year government bonds as rate hike expectations peak",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNNlM0bElPUjNFbFJSTERfNVJERjJnV1JfSkF5ZWlNOHRzaEtHdG5DYzRsTmxwNEU3UXFIakRUZzJGVmdTblFZV1lwc0tQQTJqZmpCREZzamd6ZVFZQ2NvS3BTMDgxUWllRzgyODhmRG80c1JxVFVCSG5fbEp0R1o4UDZjZkxNaFplWVlSNUFfNEU2MExUZGNDbWtXOWhzS1c5YkZySUY3ZWp5VktYd1pGemZ4MGZuZ1JGM2FQeTdtdWUwdWxWS2VkZHAxeDlDNFFObHFzeXR3MVRZZ056U3NNdGRqU1ZDN1hFTFRXS2hJWFlaVXVF0gH6AUFVX3lxTE50WjAxLUZOZkJ4V0xKTjREbXlzUEVjYnNTbUdmSWI0eEtpckhTWjdVWVhXM3g0MFFZbTBpcjY0UTZDRjBkX2EzMEo1SDhqQnplV0JwMnZpS1BzdjNEZGktY0JFbWVTRmx2R2I2YzExeDlDUVFoQUlpWkkycUpmdG4zdzEtZnQ4ZURtX2VZb1AwWXRYMmlxQzU3V0U1dFViMHljX0tHWW1jTVI0dVpDMzlsTGlLSkRrbk9nZUFvV2RvQ0ZwcGI3RmZrT3gtOWMxUXdlNF9oYVNKTE5rSUFNWHFkX1NqVS1mMjRmU0FuaHotOFJPN1RwSWlKYkE?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-07",
-     "time": "02:16",
-     "title": "BOJ’s Ueda Says Unclear How Long 2% Inflation Rate Will Remain",
-     "src": "Bloomberg",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNGtUcFRNdmZqZ2VBWW9FQ3c1R043Yk9JY1JiMHU3ZzdNMVZrVVZsLWxMZE5fM1B1VDRPbGpmdkhLUEN6MEtHb1VrNUEtUWVEcE9EOWxZT3ZXMWJ3WFdwUmk5LUg5eEVpa0tvSmZKcnhRc09uTGZCbDVfZDBFY3BXMEFCR1JSZkVzdE16eXVMU3NDbHpRdVFfSzlPVUR0dkVSbVNSQk51TkNjRWxNOFEwSEF3?oc=5",
+     "date": "2026-11-09",
+     "time": "15:39",
+     "title": "Nikkei Jumps 2.2% as Japanese Stocks Bounce From Bear Market Plunge, Though SoftBank Slips on ABB Deal Snag",
+     "src": "International Business Times Australia",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMHRDY013ekxQRnU0QW8xbkZLTThTS2N0MVk4QVA4ajVWcTA2ZGh5dnU2NHVtb1FZMHVfUFdpV3lQZHc0RlJ3U09fdXNfRXIxSERRVHltb19uWVlwR0oyeHAzZzlmTEZxdDNGakV2alJLTG9ucFZVTzl6V3E2YWRFcVRock93QQ?oc=5",
      "priority": false
     }
    ]
@@ -151,27 +151,27 @@
    "label": "중국·홍콩",
    "items": [
     {
+     "date": "2026-11-09",
+     "time": "14:31",
+     "title": "China, Hong Kong stocks edge higher as Beijing vows measures to stabilise markets",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNbV9PV3RseUp6MllIaFhSNm1vdXBib3llbW1pRHNpQ01Wdng4U2ZaaHRNcng4eDFEeVdhdkUwNGdCS0VzQnplc2ZTMmdjTi04VUFSaUh0V1ZRNGdkYTNsYVVnamJoNWZGdGNqNDlYRTRQandVWkFKcVk1X1BlOFdKT2Voc2U5MjEtT2hzSDVscFVsd21TWktkVy1nYWVCb3dLMFFTa01iQzF3SG5aNVNOWkdzWkVfSXBOTVNoQTRMaTR2MERXRGs4V19oZU8yWERvclJ6dVBIY1ZoSUU5MDc4bmV1TElZUWZmdFNHc1Rn0gHzAUFVX3lxTE53UngzTlJCVTVHcThtRWJ6Z0Y3WmdBN1RTeFNQU3laSDM1aXZVaW5UMmJOVUk3T0daMmN6a3ppVTRBTlVwQ1FxcnlYcThKZXl5bUtFeTRLMXBxUS1ZdW83VEFvQl84ODdJU3pNandOdktTbzdPTnJFSUkxQndMbTk5OU50ZDR3ZUVjblVtZk5Md1dEd3ByaG1tRkItMEFoWTJhazBGaDNZT3U5Y3B3MFlPYXV5d1N4X2t6V3NTWUdmd19Jejg5U3l5RjVWZ0x6ZzlyWVc3c1hzZC04UnNDemJfZ0pYOGFUNEU3OHJPb1lxM2wyaw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-09",
+     "time": "13:41",
+     "title": "China's economy not weak enough to trigger major fiscal stimulus: Societe General",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaEhPa2RCajVaenp2WnRTeUxPWmE0VDFCQXFEcDNGZHBaY1FpTjgwY0t6bWQ2dHppMzJsQnpGdkFWZGcxT1F3cVRmNDNkQkNpMFRjTlJQdy0tZnBRb1VSeEUxWjYzcVI4WTRseFFpYlk5MlN4endwdTloWGl5anREdFhtaE9xQTB2LXBBYjBfZHltckNWVGJKeWdhdDVMeTRmNlIwMHRfaElOSnZuRTU0OXJrdnJaT2tGUXU4eUpB?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-06",
      "time": "15:15",
      "title": "China, Hong Kong stocks fall as US tech rout sparks AI bubble fears",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdHJxTXVoZVVVdENFaGRGNTF6V0U4VUxFTjg0ZFE2VldvUmVEWkFtNGc4Y2RlMkhtUDdnOVJfZ3pGbUN6S200TkFzNk02T1dzM091U0h4NWU1Y3FDd3plekFvTmdCV3VZUGlNMGl2S243R1ZpRFRLX2c4UUl5cXJVbnI4VlVtenFTT0xOY3NTWmRkdDV5NWZRZmVqZEJuTklmNGNkUi02bVd4QWRNSE9CeG56YU92azV2dmZGUGJWSThyYlk4YmFwcy1XOUlKVUV3R1hydUJYOXJEdEnSAeABQVVfeXFMTlpQU1pTTkNnaG9CTEVvNmptUVU4SkFha18xYVM5X08xeThfeWZiYmN3ZXdQSzhib29iclpRR0c4UThNaVF1ZXpiYlk0WW5TWlpqVWZHeUthNzRoc2R6ajliZkR0SGMwQmlBVVZCbGpjUlRhbU8yUWVVWjlVRlM5bDJiUjU0eTFfcXQzOEFpcDhpS0RtdGhrT2EzUzFQZUtmOEdxdFFzb0tFY2hMM1FtV2NabmM4RTFGTzNyVFVCR1hTNmxfSWN0SXN2WnZFczFvQ2VpOGNJMTlQekJPeWJ6X1I?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "10:59",
-     "title": "Tech stocks lead declines in Hong Kong, mainland China on US$2.3tr plunge in US",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbHJBbEI4d0hrMENKUWlYYmRpYkFtNjI5a2V0ZFVMY2VLTng1SkxqeWFjdFBrbEFpVjV2MGJBRXAtRjJKYWVpSUFwTEZzcjRINUI4ek5ReW83YThBQldibGNZdzFBNUJwU3ZjZ3RxRzY2Snk5S19qbFBoejBZTmxqaG1PZWFBZHhyVUV0N1k4dkdnMkNZd2FXYm8teWxRYW9fMmNVWXZ0RzVyY1V5MlBqaHdCYkRFV1lHYjdITll6QXpqN1FIQlBXVXZfQlhJZmVOVXc?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "07:29",
-     "title": "Five charts for the month ahead: AI financing, global rates, Hong Kong stocks and more",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdXJraFowcUEtTUNnMzU0Q1BTeXZQaUQtN1RBLVdhYzBNWUVwV2lZTUc3UEE3ODlxWnBmUGJHZFBhQlEtX2xlOWJab0lxY2swdGFrQWlDT3pDS2JEcWpFUm43NllwYjBWc0tTVVVNV2pJOWpyVVpVdlNxRFE3Vk1iM2JvNjFObGxmRWRxeGNKcTVISHJXcTFzUTBPck9DNlRHZXo0MGNjQ2xuQ0txZVJndFEtU2FNXy0yQ2w1QkhPOUdXN2lnVU1TdzU2U0h1X0dCaEwwVzRxYw?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-11-09",
-     "time": "12:10",
-     "title": "HSBC is back to being 'overweight' on Indian stock markets after seven months - These are its top picks",
+     "time": "19:12",
+     "title": "Sensex, Nifty end higher: 3 reasons why PSU banks, defence stocks rallied today",
      "src": "CNBC TV18",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcy1vUmNzSEFRam5UeUlXUVA5dWUtUTdnMzBTQl9BNUZmR3g4cnpENktiSTRxU2tmM093ZmFtTnhGSUd4MEF6cDVsb1FPcm9FbF9nX0NCOU1NWU84dFBXWWgtX0xwR0dlZE1NQ1pwMThEXzJuOWZjSlF5aEpSSVh6QVYxSUJ3ZTRUTEJEbjlBOTk5cnZpZFM0YlNVaVViVGhQTGdTOHM0Z3NvRzk2Qzk3NGgybEFmM1BqTFpLYms1WG5Yam_SAcgBQVVfeXFMUF9fb2Q3dFctZTU2RlowazN2UjdwVFNfamNFM0owNVN0bm5tYk85QnNPTF9pNW5YMmttenAyNXJZcTdzdy0yMzdMT2NOTVVKZ2sxNHJ5Q05kYjFQMDJJQTBON1VHY3Q2RThiajRmRUdqR2trMk51eGtmSC1UajdXSTVQUnctaGxzU0xuRFNlTHlEbVZXdEU5T0F3SlBYUDVWZko0emFwajJ2R0dmNVViR2hHNGt0UmhmdFBtdTYtZFVhSFgzbml2VkU?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMktHQ3FYckd1dHBobXRwdWFkVnZYX0xQRTFQWEZBR1FPcjVvUHFZcHRqaE5FaENPWGZnanh5V0FVM3BHVjVzd2FRbG1HRHpDam44aHhmMldOa2lCa24tV2RmbHo0WVVVcEEtVWQzWEIzdUUzdkIydmdWRkNaYU9HQnBpUXIzdDR5eUZoeVdNYkdtS3NlTWhYeWp3YW44ZzJxR2dJQmotd2Y5YW0zX1VrWmhNOWk3SkRfZUtZdEln0gHDAUFVX3lxTE9MNTFIQW1qcjcwbzFZYzdDckRDQjVtWUgxem81VjdTTld0VE1NWXlac0o3V1FPNHlUMjd4N3NsQ1RzQUJNa0x3QnRXOUNUbl9wVkRkcm02X0x0T1E4bDFieFRkUDktd3NVcUZ0cWlYRmF1QnNXbWpXdzRwRWdiQ0lHTnczYnZ1MmdaSFk0RVpQRnZBVm1DUEZVdnpRS21SUVFGRGt1Mk4yUklEMzNuN21hRWRHbFZjUjVDYmFlNi1fOEp6MA?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-08",
-     "time": "19:43",
-     "title": "Indian shares consolidate in Diwali session after seven-day rally",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSURhQVo2bnpTNGJqSFRaSk5Tc1ZFcmxGcTU0MXNiVkR4b2tQekR0VXlhVktMZzYwMWdHUnpkWWdyM1lGTUowOXhLR19tMl9wd1BpS3J4MWpvNnJxaUpUSXg5M2pyTUtCaUFaRy16dTdKRDBGekI1czdXSGcwMjR4MnJDVGxLbDdPREdyMms4cFlpbTl6U3FxeHY5NXI4NHQ4VVR3VTQyT2cyU2wwa2Iw?oc=5",
+     "date": "2026-11-09",
+     "time": "18:03",
+     "title": "Is stock market closed tomorrow in India? Holiday in NSE, BSE or trading of shares allowed? Check exchange calendar",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPNjV6OWx5Z2Y2TXQxT08tUnNvQk8xUm1FYXNsQ3I1WjM3RjRGbHdmMVFXRWtzWEVYSUVCdkc0ZVlSRUZwVmNZWnkwRnFKVm5CNnFUclVXMEtMUVJBeEVvbF8xcUlaU215VVQ1MzF3UjlyTXZQSmtvOXduelRwU3RPM1ZDMWpMZG85T21OVWRSamota3RneF9tWWVrS182Wl85TUQ2Y00wdFhhODhMY2FGU2VjTVVYT1dWZFRRRng1SEVlVnNpbTRaSUdlREZmRTJSbUgyWTQ3eHJFRWlyZ0djTEw2MDJfY0xRaWZ3dzBiQnVURG5tUEFkeS0wcjVXQTZZZVhBSWZqY2pRbzBUcEFR0gGUAkFVX3lxTE04aGtxRXZmcVJkUTlmejUxVzNjMmNCTFpoTVRfcU5xQWJicHRQekVDTUR6ak5UVFpLR2Y0c0xKcWFJVE5xTDB5emQ2TmxmX0pMVGpUVTB2dlo4d1VnSkhicFh4UVhmaHgyTGpDTTJlbUVKM3VnUF9qN255NlR5MG1JLTZfRHRERHVBaHJQQkVGMkljeUU3LU1yUWp1ZGJveTYyal9DdHZxdlpXTXBRcDlBcmhpVUJWQ0M4OHdsQVBhTnN0LW5zeW5sUDRmNXhFTU5yaGRwZk1tVmRQTUhDbHFsNDY5UnBpOW1FdkYwOVdMc1ExVDhWaXNGWEoySVJqcFBtYldUeVdJbTQ0b01pRTY3dXBXNw?oc=5",
      "priority": false
     }
    ]
@@ -241,7 +241,7 @@
      "date": "2026-11-02",
      "time": "23:26",
      "title": "Greek Stocks to Suffer Outflows on MSCI Upgrade, JPMorgan Says",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWVmcEhvblNrV0ZZMmtQVWc3RmZNNTdybFBYZzdFZVZUUW0zc1lmakxBR3NFTzBxeFdOSklzeUFQajBqVHRnVUpQRU5lN3lNWW1lZFBXWm5waGZodWhaNjFYVTlSc1RFXzkwaDJHMloxb2EzYllNR1ozMG1NNEVXTnExeHNwRmZtNnVrc0R5bTlYNFhGYjZ4dG9BUGdjWThZR0RYTUp5cDVTRFJvakNwUEV3?oc=5",
      "priority": true
     },
