@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T12:46+09:00",
+ "updated_at": "2026-11-10T20:27+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -23,10 +23,10 @@
     },
     {
      "date": "2026-11-10",
-     "time": "11:10",
-     "title": "주가 급락에 한은 금리 인상 브레이크 걸릴까",
-     "src": "이투데이",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9HWUZKUThybGliU01IcUxsekdLZ2YxNDdDMTgyU0NrUGtfRjZiVG9taVZjMU9EUE1ZLWRuYXBNQnZSSmxWNmlPTjZYSEc1cHZwbDJsT0dGdGNLVzRxUTdGWGpPYzd0eTZ4VWQtNW9qZ1dGNTZv?oc=5",
+     "time": "18:47",
+     "title": "금통위원 과반 \"추가 금리인상 필요\"…AI 증시 충격 '경계'",
+     "src": "뉴스1",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Delh4SFdMMHk0S0dXU1NQUW9ZVmRNY3poR2VZWks1UUczUkZBM2toZGxIZmFhQlBGRDJSYVVNUDkwSHpDRlpaS3NKdHZtOTItMkpxVw?oc=5",
      "priority": false
     }
    ]
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-10",
-     "time": "07:10",
-     "title": "CPI Inflation Data: How the October Report Affects the Fed’s Next Rate Decision",
-     "src": "Barron's",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQb0dpUnNRSjlyNnVNVFJOSjlnLXBPOWFjdGVVNlVuZnM4ckJzRllBSEVPWkdxWTV5Ujl5MHMwa3piNmQtU3lta0xaTE1xNVJfdmdrVzFuS3MxRnBSbWZjSGNoMnA2THJ2NVBHUmVDM2s4UFJnNVNFb3pxcjRmMl9CdFMwRzVYc2l5RTJxSHpwLU8?oc=5",
+     "time": "19:55",
+     "title": "US Treasury yields rise as Fed's Waller presses rate hike case",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY1YwSTl1MHpmbHdDdk9DVUI5RjNRTUJqLVlEOU1PaHd0RlIwQWE3ZVdRcGdKUU9ud0VLNFlJNk80Wi05NG1ZOFhtMmhOclZVT1dIVS1VYTVieHRNdjUtaTZSSjVhSjNreUxSeWhqTkc1dDUyNFo2Rl9pQ3lEV3BsSFN6bHhwSFFRLVE4NHppcnU5ZTNTV293dzFKMGVacUVCOVUwTWQxVklraTRVZjFTM3c1QjFqN1k5SC0wazJlSWxRSnFtY29SQdIBzgFBVV95cUxPamtLeXgyQko5STJYZXhodlRUUDl0TlBiMjUyMTRIRWI3Q0RhRDBoaUNQbG9xM203ZTl6OVRoa1FnVlo2ckRfcUlFSGo3YVo5Y202TkNMaGUzbGROYUNCU19FYmxKOFdFc1pQd0QzU1Z3RDRaSlllYU0tYmJpM1VvWkNyNzhEOUdjLVBwd3NkeUo2SmNGX1VPYm16aXoyd2ppYlBub1hDZjZzUVdNY2x5T1lVYkRsWlpYcWRYa0VNN1MwX1YyZWhldDRpdVl1Zw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-09",
-     "time": "18:42",
-     "title": "Treasury yields rise as investors await October CPI and producer prices",
+     "date": "2026-11-10",
+     "time": "19:25",
+     "title": "Treasury yields edge higher as traders await CPI inflation data",
      "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JVE44LUJheWlkSEJZWlBaUVRGUXR2aGVMbm9yZnNDUnR1alJLSDdlU3Y3RktFcmplWmViVjV1ME1UYU9qSDA1YTN2NUdJbTJvWmZGUU5FZ3VTMU1lV3ppbk10SXBWLWxTcHVWYjRFbw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00TGg2Rk5HQzViV3NxTHZvREFib0dkOURuR3VIUHZJbjZHWTRzOERZelY0WVZlcVZSNGhCS094UTJDXzM2b3NLeVFSMG5jckhkMndFeG9pc0VvM0JnTUsxN2pTckFuQ3NTMTNZWnQ2MA?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-09",
-     "time": "18:42",
-     "title": "Treasury yields are steady as investors await more economic data",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JVE44LUJheWlkSEJZWlBaUVRGUXR2aGVMbm9yZnNDUnR1alJLSDdlU3Y3RktFcmplWmViVjV1ME1UYU9qSDA1YTN2NUdJbTJvWmZGUU5FZ3VTMU1lV3ppbk10SXBWLWxTcHVWYjRFbw?oc=5",
+     "date": "2026-11-10",
+     "time": "17:32",
+     "title": "물가불안 속 고용 선방 … 美 12월 금리인상 탄력",
+     "src": "매일경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0yY3BTVzlmWUN2bU9IX25oT2NWNGx0ay1IUmZrVDQ3bDZpZFB1Mk15WEdERkRXTUJmTHcySUc1Zm82Rm5pcWJnZkY2a2NKS2VsNmc?oc=5",
      "priority": false
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-10",
-     "time": "12:22",
-     "title": "Japan's Nikkei surges nearly 3% as AI stocks extend rebound; SoftBank jumps 14%",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOFpESkhPbXNIV0tvSWxvc0twcDdzN1huZFRlRkJqT1dCNHZFYjBCRGFVTHowRDU4VlBNdjNJa0NYNHR6T1VsN1piQzlqS2RFNVZuMnpMa0djaUNfd0FsbXdBbmFjWVFRQVF2TmdMU3hjNkxtNUJ2eVpmNzdyZVNsN29NcEFMT1pFaVJLMk9SX094ZUhZQXR2T0FNREhwUVF2RXgxam13YVpfa19tazFFRUh3N3RtRXdUMmpKWnF4WnVmTGhpblRVRldxYmxUZ0g3SHU0T3RxUGk5RFNMa3E3clRNcDN1aFE?oc=5",
+     "time": "19:13",
+     "title": "Bank of Japan rate debate switches to pace and timing of future hikes",
+     "src": "Financial Times",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Ga3RTSE5NRHdocGpDOGE2R1R2Tmt3dzRjZTMtSVh6YTY5eVZHdGZkMFRKSzJaaDNKZ3MzUEplamdjRllBRG5xT1lKQ3ctR0tkVWhUbFFkbUljM21wMEMyMkZodTdTMUpaODJZWFZCNmI?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-10",
-     "time": "10:38",
-     "title": "BOJ Summary Suggests Good Chance of Near-Term Interest Rate Hike",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVHZjZGpFM0F5YmtCb216cU9MUVpSRUhyelZiemlPT2Z0X3RKM1VVQVgtTmUwRU55aV9yTWxVaXlQUE1qcUt1ZDZNbFhmeVJra1ZGYm9OM19lY1dyZ3A4REFRcnRHRlgyaUtfODlYcXRQWWZQcWtaVEh2cU43TG0wMU1lbFBnemRSTHNGY0RxVkdMS1gzUk0tOGc2UHdCRHlCZFpnRV9VMC1xdVhsMnByc2VCRXE3UQ?oc=5",
+     "time": "12:22",
+     "title": "Japan's Nikkei surges nearly 3% as AI stocks extend rebound; SoftBank jumps 14%",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOFpESkhPbXNIV0tvSWxvc0twcDdzN1huZFRlRkJqT1dCNHZFYjBCRGFVTHowRDU4VlBNdjNJa0NYNHR6T1VsN1piQzlqS2RFNVZuMnpMa0djaUNfd0FsbXdBbmFjWVFRQVF2TmdMU3hjNkxtNUJ2eVpmNzdyZVNsN29NcEFMT1pFaVJLMk9SX094ZUhZQXR2T0FNREhwUVF2RXgxam13YVpfa19tazFFRUh3N3RtRXdUMmpKWnF4WnVmTGhpblRVRldxYmxUZ0g3SHU0T3RxUGk5RFNMa3E3clRNcDN1aFE?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-11-10",
+     "time": "14:28",
+     "title": "China, Hong Kong stocks rise as AI shares rally, oil prices slide",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUmo5QlJ3M3YyaWJFdGxydzlVX3REQnNqOGJhdHNXdklCVUxJRjA2ZmVKR1lzOXEyVEVCX0R2WTU4UlZsV180NFd2Zi1ncmQ2VV9OOGRPTVExUGxLd1FQYzh4cXpYOXVWeVZwVl9FcTFTdmZuaFR3LW1YRGlRLXRMTmlxbk5Dc2tvUmVzbjFfREp2RHJPWHctUXVlZXRIeDAtWWoxeGNQQVpFTldOQjI5WXVUNXRnbi1KeWFVS3dCcW85eGNsb1NscmRRc1NSeGE0Q2UzUW04MNIB3AFBVV95cUxPbW1tT1NCUjlEczdpbUhBaFVMR0J3NHY1MVBxazlBSWlOalRnTklHa3NXZGhRU3ljQVpuMTFBNG5HWUt2Z01sSEJ5S1pMT3ZmUGhnUzNFcVFEbUNNdFgxQ2tGOFZDcFFVMWVmVlVINFQ2Ujd0MWYzQ1A0Y0NCSy1BYjFtdkJQMm9qWUpuSjB0UkxOdVpKVmhHNE1ISzY4dm95aENNNFBIVDRNaUhxYTRKWFhsQkt6WE5EWkYwYUUtRVd5T0FXVTVfcGg0WFVjbHd1QXJpODVXQ3JZRWVw?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-09",
      "time": "14:31",
@@ -164,14 +172,6 @@
      "title": "China's economy not weak enough to trigger major fiscal stimulus: Societe General",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaEhPa2RCajVaenp2WnRTeUxPWmE0VDFCQXFEcDNGZHBaY1FpTjgwY0t6bWQ2dHppMzJsQnpGdkFWZGcxT1F3cVRmNDNkQkNpMFRjTlJQdy0tZnBRb1VSeEUxWjYzcVI4WTRseFFpYlk5MlN4endwdTloWGl5anREdFhtaE9xQTB2LXBBYjBfZHltckNWVGJKeWdhdDVMeTRmNlIwMHRfaElOSnZuRTU0OXJrdnJaT2tGUXU4eUpB?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-06",
-     "time": "15:15",
-     "title": "China, Hong Kong stocks fall as US tech rout sparks AI bubble fears",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdHJxTXVoZVVVdENFaGRGNTF6V0U4VUxFTjg0ZFE2VldvUmVEWkFtNGc4Y2RlMkhtUDdnOVJfZ3pGbUN6S200TkFzNk02T1dzM091U0h4NWU1Y3FDd3plekFvTmdCV3VZUGlNMGl2S243R1ZpRFRLX2c4UUl5cXJVbnI4VlVtenFTT0xOY3NTWmRkdDV5NWZRZmVqZEJuTklmNGNkUi02bVd4QWRNSE9CeG56YU92azV2dmZGUGJWSThyYlk4YmFwcy1XOUlKVUV3R1hydUJYOXJEdEnSAeABQVVfeXFMTlpQU1pTTkNnaG9CTEVvNmptUVU4SkFha18xYVM5X08xeThfeWZiYmN3ZXdQSzhib29iclpRR0c4UThNaVF1ZXpiYlk0WW5TWlpqVWZHeUthNzRoc2R6ajliZkR0SGMwQmlBVVZCbGpjUlRhbU8yUWVVWjlVRlM5bDJiUjU0eTFfcXQzOEFpcDhpS0RtdGhrT2EzUzFQZUtmOEdxdFFzb0tFY2hMM1FtV2NabmM4RTFGTzNyVFVCR1hTNmxfSWN0SXN2WnZFczFvQ2VpOGNJMTlQekJPeWJ6X1I?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-09",
-     "time": "06:00",
-     "title": "Binance hack clouds Singapore crypto push for tokenized stocks",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeFZQSXFQX3d5a1p3WkE4RHI2cmFLNUdqNmMtcEhqcUlITkg4SzhkNVVBQWNXckNXbTFYa3JJMXdHeERZanJ4T1hCMW9rS0NzMnIzRmJSdWxoaFZHMXoxa1JnV1BoQWpENl9pNFd1ckUwODBiT25VRmpGOGM3Z2ROMzFES1IyMERrQlRtaUdNX2NiREthb0ZQMHk4NGRCM1lXYnZBSF9ybGhtVW5nSzhlbE5Jemg1Umc?oc=5",
+     "date": "2026-11-10",
+     "time": "19:33",
+     "title": "Singapore stocks rise as tech stocks gain ground; STI up 1.5%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOc3JMc0V1R204YlhESzhHcWYtU0Q2cnNMOE45WlF6cWNZTUczaGhITzlJQ2Y3V3pEN1NtZE1vRjZHcGRDOFh1dHRGVkRzeGpLa2FqQmtqdVVBc3c1RVpYTTlablhWSEVNTzNYa0lvLWtTdGZzUUVKQ0tseUR0LTRYcEI0eDJaWkp2aVJRQWctdWlrOVdxcHVlSnpvUjlMX3VDTHpNR2N0UQ?oc=5",
      "priority": false
     }
    ]

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T12:45+09:00",
+ "updated_at": "2026-11-10T20:27+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -157,6 +157,17 @@
   "fca.org.uk"
  ],
  "items": [
+  {
+   "date": "2026-11-10",
+   "time": "16:00",
+   "title": "Korea Investment & Securities teams up with Morgan Stanley on global investments",
+   "src": "The Korea Herald",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9Ka1dvVE5qWDhLbHowb0ROUkRjTFBaWWZ5ZHVfOFlkZV84N1pXOWhkeFI1YzdOWEdGZmdtaU56b1Y0b1R5NlB3SGRnY0VqZVlDekVkdThaSQ?oc=5",
+   "site": "www.koreaherald.com",
+   "firms": [
+    "한국투자증권"
+   ]
+  },
   {
    "date": "2026-11-09",
    "title": "MB Capital, FPT Capital, Chứng khoán KIS, nhà đầu tư Hàn Quốc cùng dự kiến mua một cổ phiếu ngân hàng",
@@ -483,9 +494,9 @@
    "date": "2026-10-29",
    "time": "16:00",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
-   "site": "www.mk.co.kr",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
+   "site": "stock.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -791,21 +802,6 @@
    "firms": [
     "삼성증권"
    ]
-  },
-  {
-   "date": "2026-10-23",
-   "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
-   "src": "VnExpress",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
-   "site": "vnexpress.net",
-   "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
-   "hub": "KB증권|베트남",
-   "time": "",
-   "firms": [
-    "KB증권"
-   ],
-   "foreign": true,
-   "lang": "vi"
   }
  ],
  "errors": []
