@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T01:22:34+00:00",
+ "updated": "2026-11-10T03:56:14+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -63,21 +63,10 @@
    "info.gov.hk"
   ]
  },
- "errors": [
-  "KR: HTTP Error 503: Service Unavailable",
-  "US: HTTP Error 503: Service Unavailable",
-  "JP: HTTP Error 503: Service Unavailable",
-  "VN: HTTP Error 503: Service Unavailable",
-  "SG: HTTP Error 503: Service Unavailable",
-  "ID: HTTP Error 503: Service Unavailable",
-  "AE: HTTP Error 503: Service Unavailable",
-  "EU: HTTP Error 503: Service Unavailable",
-  "UK: HTTP Error 503: Service Unavailable",
-  "HK: HTTP Error 503: Service Unavailable"
- ],
+ "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-11-06",
@@ -90,20 +79,20 @@
     },
     {
      "date": "2026-11-06",
-     "title": "가상자산 소득과세 2년 유예 추진…2029년 시행 기반 마련",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsT2pOaG81QmxZdV9nQ0RLd054T043bDNlRXdhQV9LVVFIZDZIemJ1M2pkck1EaGY5UThzX2xvQnl4UXV3Y2FKUU1sWm9zcS1iU1hmeGdwTEVwNVdpQlNqa1dUR29leDRzY2xsVA?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "tax"
-     ]
-    },
-    {
-     "date": "2026-11-06",
      "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행",
      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPbEpqZE9iampwYWthRHVST0tDdk85b1pvd2hTN0dyVjBWU1ltOTYzVEFLc3NGY0x1Tll1N2VWLVduQmd6Q0o4TVd6T1FtRndLU0U1bndFbktUUzN2ZUVQVS1fMTczaHZtY245UklCRmE4TWtGcnNxd1RRYVd2WEtHeHF6eVVGYjV1NVBZcDlsaExQNVB4QXdaWGxrcmRBc3NSWUcwd1hIckFLcG11b3Z6d3ZoRHVER3JJbUh0clI3LThHSHQ5RWprMW5FV01yMlpDaW1TdUJ3WUVjY0IzNnAyRHFPN1g5SEZ3SVVYTW5La1ZIVUlhZlJRZ0h1dExDLURNeVM5TS1WWkxQUng1T0duMzNHTEMyVEZ0amc?oc=5",
      "src": "bok.or.kr",
      "topics": [
       "stable"
+     ]
+    },
+    {
+     "date": "2026-11-06",
+     "title": "가상자산 소득과세 2년 유예 추진…2029년 시행 기반 마련",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsT2pOaG81QmxZdV9nQ0RLd054T043bDNlRXdhQV9LVVFIZDZIemJ1M2pkck1EaGY5UThzX2xvQnl4UXV3Y2FKUU1sWm9zcS1iU1hmeGdwTEVwNVdpQlNqa1dUR29leDRzY2xsVA?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "tax"
      ]
     },
     {
@@ -191,6 +180,15 @@
     },
     {
      "date": "2026-10-30",
+     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자)에 대한 수사의뢰(DAXA, 3건) 및 접속차단(2건) 요청",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53YkFFR1c0dkJ3aWdGMjdXOG9nd19UMm1wdW1KZTZNbGh3UVlLUGZVWEVRSjh3dzVHVllmeVNRbDNBaU4xMmpUeXVmcTU2Z3pxSjg5Mmc4b0YyVU4zeFdnUGpBRDdJeTNNRjd0a3JsTnNIQ1c4?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
+     "date": "2026-10-30",
      "title": "[현지정보] 홍콩달러화 기반 소매용 스테이블코인 최초로 발행 | (상세) | 한국은행 홈페이지",
      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNWt5Nm5aX0g5LUk0V2U0WjY4Q0FIVmNpaERzV2dhSnBrM0F3T0hZZFVzcnVqT3NkN1paTG9Xa2xsZUNxWFVUb193ZllYWExqS0ZFU0E2ZGg2UDVCSWV5VTlSVWFnREhLQVRReWVmVncxb2E0M3NSWk1PZVZtOUxNdUJBM0E?oc=5",
      "src": "bok.or.kr",
@@ -200,20 +198,20 @@
     },
     {
      "date": "2026-10-29",
-     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자)에 대한 수사의뢰(DAXA, 3건) 및 접속차단(2건) 요청",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53YkFFR1c0dkJ3aWdGMjdXOG9nd19UMm1wdW1KZTZNbGh3UVlLUGZVWEVRSjh3dzVHVllmeVNRbDNBaU4xMmpUeXVmcTU2Z3pxSjg5Mmc4b0YyVU4zeFdnUGpBRDdJeTNNRjd0a3JsTnNIQ1c4?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp"
-     ]
-    },
-    {
-     "date": "2026-10-29",
      "title": "「가상자산 이용자 보호 등에 관한 법률」 위반자에 대한 과태료 사전통지(공시송달)",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ3paZkRBVG9HcGJTY2lUVzR5ekxTSnJkU2R0VXo2WWU2Z2NKd3Q0OXlDVWtJYWUzdTlFNFRYbGJ5TnpQczVIaUNXYWZwX0U5ZmVhUjFjbEEwbVNfRkFXT2YybTI1czZjR09mSFVOVHhIdmNmSkRnSXBBdERhWTlWc3N4aTdaMlhUSVdnWnpn?oc=5",
      "src": "금융위원회",
      "topics": [
       "general"
+     ]
+    },
+    {
+     "date": "2026-10-28",
+     "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다. -「가상자산업권 등 침해사고 관련 긴급점검 회의 개최」",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVUZRaTh3V3NhdkJRa0YxaVEwUzFKQzVaeUlEQVQ0NkUyaXdINzJrYmRHYkRGbVFlSzh1TkEzeFlrSXgxU3V2VEtXNE40Q0U1SjJhMTljSUFfbXo0bUJyRHJ6cEdiWXkyZUtDSi0zSU9VaVdUY2hsSzhvUFZWaC03NHNIRlNhYjJDM1VaU1JtVlJ3QQ?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
      ]
     },
     {
@@ -252,15 +250,6 @@
      "topics": [
       "vasp",
       "tax"
-     ]
-    },
-    {
-     "date": "2026-10-27",
-     "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다. -「가상자산업권 등 침해사고 관련 긴급점검 회의 개최」",
-     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaFoxd1JSdjBkNDhLVWFBaEhZY1hXVEpGTk9zWGxfMnItbE9tYVRkSjdlVlFJWHZPaEYxTnM2Wmd5SDBOMWZMNDZTcUlBczVDSXlsQThrbm5MaE53UWNSNERxejRHZWdOT3d2LUlsNGxfS1dia0w1aUJnZjMtWl9LNTd1cS16SGxWQ1g0UXlWVWZtcEJTRzFtTnpqU0h4YU5IZGpyTFZ3aHJRUFd5OGJWTFY2LW9obHdIZHViSDc1d0RkVHlLVG1rRGY1WjI0NDJZQWN0clpBc0t6ZWhlUHY0M3NUbHRVbTRCdmNYb3U1ME9xS0VPanMwZXRpX0tDcndSVk1DdHJwVGFjZEJ0cnlISQ?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp"
      ]
     },
     {
@@ -374,7 +363,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-11-02",
@@ -442,15 +431,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-10-17",
@@ -464,11 +453,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-10-28",
@@ -482,8 +471,17 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": [
+    {
+     "date": "2026-11-09",
+     "title": "EU seeks nominations for stakeholder group on tokenisation standards in finance",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSkdZR2RkaGUxM1luMm1yYmtSWkVWNUlNVWpGcUMwV1lPRUVJeXhRd0RRRTJhYy12U1dSdGVxa3BWN3V6NFVObHZvWVN4Z3RRRkxUMWtPUGJ1Q083VGYtakdRS0o5QUZJZkkyeHkxNEpOVGhTZWRWdHJyU2FrMDRqOVpkZXllUEFTd09CdXJkcmZKdDlUUUFyeHdLb0VOdzJxOTFqdm1hWWJKaHl5RDRwazhwa09LS3c1?oc=5",
+     "src": "finance.ec.europa.eu",
+     "topics": [
+      "sto"
+     ]
+    },
     {
      "date": "2026-11-05",
      "title": "Expert roundtable on tokenisation of financial markets",
@@ -577,7 +575,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-11-06",
@@ -699,7 +697,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-08",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-11-04",
