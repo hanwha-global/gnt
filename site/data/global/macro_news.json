@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T03:58+09:00",
+ "updated_at": "2026-11-10T12:46+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -22,11 +22,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-09",
-     "time": "16:30",
-     "title": "코스피·코스닥, 0.8% 하락 마감...외국인 순매도 계속",
-     "src": "YTN",
-     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBzVFdmaHFGUmk5VkFZRHdlUGlMWGh0WmliS2FoaTFIUm90QWpOSllxZzFvVmZTOG9zVWhsVmhiaXpQdVJjS1ljQ2tMemVUYVNjV1F4aGpycndBS3JaNkE?oc=5",
+     "date": "2026-11-10",
+     "time": "11:10",
+     "title": "주가 급락에 한은 금리 인상 브레이크 걸릴까",
+     "src": "이투데이",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9HWUZKUThybGliU01IcUxsekdLZ2YxNDdDMTgyU0NrUGtfRjZiVG9taVZjMU9EUE1ZLWRuYXBNQnZSSmxWNmlPTjZYSEc1cHZwbDJsT0dGdGNLVzRxUTdGWGpPYzd0eTZ4VWQtNW9qZ1dGNTZv?oc=5",
      "priority": false
     }
    ]
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-10",
+     "time": "07:10",
+     "title": "CPI Inflation Data: How the October Report Affects the Fed’s Next Rate Decision",
+     "src": "Barron's",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQb0dpUnNRSjlyNnVNVFJOSjlnLXBPOWFjdGVVNlVuZnM4ckJzRllBSEVPWkdxWTV5Ujl5MHMwa3piNmQtU3lta0xaTE1xNVJfdmdrVzFuS3MxRnBSbWZjSGNoMnA2THJ2NVBHUmVDM2s4UFJnNVNFb3pxcjRmMl9CdFMwRzVYc2l5RTJxSHpwLU8?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-09",
+     "time": "18:42",
+     "title": "Treasury yields rise as investors await October CPI and producer prices",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JVE44LUJheWlkSEJZWlBaUVRGUXR2aGVMbm9yZnNDUnR1alJLSDdlU3Y3RktFcmplWmViVjV1ME1UYU9qSDA1YTN2NUdJbTJvWmZGUU5FZ3VTMU1lV3ppbk10SXBWLWxTcHVWYjRFbw?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-09",
      "time": "18:42",
      "title": "Treasury yields are steady as investors await more economic data",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JVE44LUJheWlkSEJZWlBaUVRGUXR2aGVMbm9yZnNDUnR1alJLSDdlU3Y3RktFcmplWmViVjV1ME1UYU9qSDA1YTN2NUdJbTJvWmZGUU5FZ3VTMU1lV3ppbk10SXBWLWxTcHVWYjRFbw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-09",
-     "time": "18:42",
-     "title": "Treasury yields steady as investors await more economic data",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JVE44LUJheWlkSEJZWlBaUVRGUXR2aGVMbm9yZnNDUnR1alJLSDdlU3Y3RktFcmplWmViVjV1ME1UYU9qSDA1YTN2NUdJbTJvWmZGUU5FZ3VTMU1lV3ppbk10SXBWLWxTcHVWYjRFbw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-07",
-     "time": "09:16",
-     "title": "US treasury bond prices down on Friday, Yields on 10-year, 30-year, 2-year jump. Check latest rates",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQU0VwVnh0d3ZtLThFRi1ydDFZcEV3R2VHUE01eFJxb1hab1dzTXJBLXR3bzhfMTlhRlZkcDR3WHYwcEtaWjZtUnRESE0ydGxFQ0M0OGNGV2tHTHJpZXFXS1hfcGt5dVhOYU9GTy1CR2tTaXBHU2pUcWIwcU0wbHo3UHV6ZTVPeG1qNWR3M1lrMEo3bTVfc3U3VnNZNW5CTnh6aWVwVi01SEFoNTJ2Q3NGUmRKWFVwMjVhVm8wbm9pcjBXb3lsT2dtV1FIbzRtVnk2TGtKUEo0M0FhSTJYX1h1YkVhRjh3cVRTcllrVVU2ekUzeHp6ekhIY253RzBNd0R00gGGAkFVX3lxTE1Na1FJdzNJVDlGM21aUFgyZnVQNmVxbnpyUzhILVo5bVBWTVhxNDAzN2piaWtkc24yZ1B0UDFGaHJuLVBLcDRaOUZEMVllcDd3bGhkek9GdENLWFFJTVM1NDRPQmlCQUZuNkVVV3g3bDZHS0FveUxmUUt5dU5lSHpUUnNUVy0xU0xtRWlvVkdhMkFadnN2d1ZMbW1CYmtaOTZCS0lWanNyOWppTHUxLVNnblF5REVsdnR6d2dvNTQ2MnpSU2FXMjNUdWk4elJWVkpnU2lsSmJCQjFJdVd0eWtUX043Tmw1eWYzZU12a05ZUlhHd0M5MzlJMEJJdG55SzJZZW9oUlE?oc=5",
      "priority": false
     }
    ]
@@ -63,6 +63,14 @@
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-11-10",
+     "time": "10:02",
+     "title": "Indonesia Markets Second Panda Bond Offering Despite MSCI Threat",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMWtFZTA2emJjLVNBcThFMGo5aV92ajdJZjFxM1dTZWhlQV95cWlUOEtPMC0wcDFfX0Q3VWhOU3QyTWIzU1FMRV9tc2xRal9kOTBXcGEydHVYZ2lwMkk2WDVCRjhJRXdVOWU4SzZEVlNuRDR2a1NZbjluSzRQa2RsSGpIeVJKelkzVndTU3Q2Q0VEem9rYzlKdzYxM3NHUGpJc2lZYkJrWml0bGZ6OTM0NXpvLWh4QQ?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-09",
      "time": "11:33",
@@ -77,14 +85,6 @@
      "title": "Indonesian president’s adviser says MSCI downgrade threat ‘went too far’",
      "src": "Financial Times",
      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORlE2Z2t5M0tUaFdPQXlWUW1mOHpXMFc3blN1c2djVy1VUDUzanZ6aHp5SGFZVG9aMkxjZnU2X1ZvSlRoanVaYVFZeFZPajN6SDdycEkwSjVVR0M0cXM3MHd4OFpDc2J5VlU0elR0YUR2NVlVSU92QmhnZFk4YXVfT1RmcmM?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-06",
-     "time": "19:22",
-     "title": "Indonesia presses ahead with equity market reforms after MSCI downgrade warning",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTFJrMVVCWlNCeXpOZ2NhRVhhOTFtTDhnSWdPNEhpT3NsNklGTW9nTFZ3SkpIQ2pCakgxYmFlbmQ0Z0pHRXljSEFLNUtjSkgydVdPUE1GNmppZHh6ZmtnYl9BY1gzejB0YUZxVDBYTmdETTBYMUFIN3Q1anctVGVNQW1KWFQ0VUkwck5vMG8wMjNCTVVscEF6N1hBeERyY3puWnIxclBjcnE4SFM5SHo2UzI4amEzZkl6ZkdlU1h6NUVWQTdqTFNnQ2pYZUJWaTQ?oc=5",
      "priority": true
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-09",
-     "time": "17:19",
-     "title": "Japanese households buy record 5-year government bonds as rate hike expectations peak",
+     "date": "2026-11-10",
+     "time": "12:22",
+     "title": "Japan's Nikkei surges nearly 3% as AI stocks extend rebound; SoftBank jumps 14%",
      "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNNlM0bElPUjNFbFJSTERfNVJERjJnV1JfSkF5ZWlNOHRzaEtHdG5DYzRsTmxwNEU3UXFIakRUZzJGVmdTblFZV1lwc0tQQTJqZmpCREZzamd6ZVFZQ2NvS3BTMDgxUWllRzgyODhmRG80c1JxVFVCSG5fbEp0R1o4UDZjZkxNaFplWVlSNUFfNEU2MExUZGNDbWtXOWhzS1c5YkZySUY3ZWp5VktYd1pGemZ4MGZuZ1JGM2FQeTdtdWUwdWxWS2VkZHAxeDlDNFFObHFzeXR3MVRZZ056U3NNdGRqU1ZDN1hFTFRXS2hJWFlaVXVF0gH6AUFVX3lxTE50WjAxLUZOZkJ4V0xKTjREbXlzUEVjYnNTbUdmSWI0eEtpckhTWjdVWVhXM3g0MFFZbTBpcjY0UTZDRjBkX2EzMEo1SDhqQnplV0JwMnZpS1BzdjNEZGktY0JFbWVTRmx2R2I2YzExeDlDUVFoQUlpWkkycUpmdG4zdzEtZnQ4ZURtX2VZb1AwWXRYMmlxQzU3V0U1dFViMHljX0tHWW1jTVI0dVpDMzlsTGlLSkRrbk9nZUFvV2RvQ0ZwcGI3RmZrT3gtOWMxUXdlNF9oYVNKTE5rSUFNWHFkX1NqVS1mMjRmU0FuaHotOFJPN1RwSWlKYkE?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOFpESkhPbXNIV0tvSWxvc0twcDdzN1huZFRlRkJqT1dCNHZFYjBCRGFVTHowRDU4VlBNdjNJa0NYNHR6T1VsN1piQzlqS2RFNVZuMnpMa0djaUNfd0FsbXdBbmFjWVFRQVF2TmdMU3hjNkxtNUJ2eVpmNzdyZVNsN29NcEFMT1pFaVJLMk9SX094ZUhZQXR2T0FNREhwUVF2RXgxam13YVpfa19tazFFRUh3N3RtRXdUMmpKWnF4WnVmTGhpblRVRldxYmxUZ0g3SHU0T3RxUGk5RFNMa3E3clRNcDN1aFE?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-09",
-     "time": "15:39",
-     "title": "Nikkei Jumps 2.2% as Japanese Stocks Bounce From Bear Market Plunge, Though SoftBank Slips on ABB Deal Snag",
-     "src": "International Business Times Australia",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMHRDY013ekxQRnU0QW8xbkZLTThTS2N0MVk4QVA4ajVWcTA2ZGh5dnU2NHVtb1FZMHVfUFdpV3lQZHc0RlJ3U09fdXNfRXIxSERRVHltb19uWVlwR0oyeHAzZzlmTEZxdDNGakV2alJLTG9ucFZVTzl6V3E2YWRFcVRock93QQ?oc=5",
+     "date": "2026-11-10",
+     "time": "10:38",
+     "title": "BOJ Summary Suggests Good Chance of Near-Term Interest Rate Hike",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVHZjZGpFM0F5YmtCb216cU9MUVpSRUhyelZiemlPT2Z0X3RKM1VVQVgtTmUwRU55aV9yTWxVaXlQUE1qcUt1ZDZNbFhmeVJra1ZGYm9OM19lY1dyZ3A4REFRcnRHRlgyaUtfODlYcXRQWWZQcWtaVEh2cU43TG0wMU1lbFBnemRSTHNGY0RxVkdMS1gzUk0tOGc2UHdCRHlCZFpnRV9VMC1xdVhsMnByc2VCRXE3UQ?oc=5",
      "priority": false
     }
    ]

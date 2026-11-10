@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T03:58+09:00",
+ "updated_at": "2026-11-10T12:45+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -158,6 +158,21 @@
  ],
  "items": [
   {
+   "date": "2026-11-09",
+   "title": "MB Capital, FPT Capital, Chứng khoán KIS, nhà đầu tư Hàn Quốc cùng dự kiến mua một cổ phiếu ngân hàng",
+   "src": "CafeF",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZEstWmFwZl9fcEpabEVTQ0tQSERrTTljN0VEOU5qWmJNNUYyRHdkaFhFY2J0SXF0SDhPSXNIZTFjV242NkRFblowYXlKZE5mS2NRSFRyWFNWM3BvaXpFVDVYZEdpdzJNQmV2UEczRkNwSnU1T0IxeExGYkZUMGFRY0M4Yk5kMEZ0djVLVHB5N3FNUERKSVRBYTJKSW5qMm1qZjJXekpIZkx3X05uQmFzNUdmREdYOU9jTEVUZnRZb2lRMXU5WWI3WXl4U0lxeDVvLWxmQQ?oc=5",
+   "site": "cafef.vn",
+   "title_ko": "MB캐피탈, FPT캐피탈, KIS증권, 한국 투자자 모두 은행주 매입 계획",
+   "hub": "한국투자증권|베트남",
+   "time": "",
+   "firms": [
+    "한국투자증권"
+   ],
+   "foreign": true,
+   "lang": "vi"
+  },
+  {
    "date": "2026-11-04",
    "time": "16:09",
    "title": "Korea Investment & Securities, Neuberger eye global investment products",
@@ -276,7 +291,7 @@
   },
   {
    "date": "2026-11-01",
-   "time": "09:00",
+   "time": "16:00",
    "title": "토스, 일본 모바일 증권사 치어증권 인수 추진…일본 금융시장 진출 확대",
    "src": "서울경제",
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE82NE0wZ0cta1pQWHA1SmVjejNkU2xvVmRQeGVhRU9KbHpuTkZkbmFXeE1rRUZGREVScFpNODR6X3lWQ2VkQmUyTmt2bHI0clVON1HSAVNBVV95cUxNTVVvaFR6b0NmZGxjU3ktYkItdmFBUW9lVjdIOWhkbTY4Vi1RVXQ5RFdTcEItdm9jcWZCdnRzUW83MV81VDBfMDZoRTc5bGo5UlhCRQ?oc=5",
@@ -509,10 +524,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
-   "site": "www.yna.co.kr",
+   "title": "Mirae Asset Securities to fully acquire Japanese brokerage Sanko Securities",
+   "src": "Korea JoongAng Daily",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
+   "site": "www.koreajoongangdaily.com",
    "firms": [
     "미래에셋증권"
    ]
@@ -520,10 +535,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "Mirae Asset Securities to fully acquire Japanese brokerage Sanko Securities",
-   "src": "Korea JoongAng Daily",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
-   "site": "www.koreajoongangdaily.com",
+   "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
+   "site": "www.yna.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -784,21 +799,6 @@
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFY3d1hBSjhIUGtIZXRFal9QZHNlYzBYZHhud3RnanZScEcyR29DZ2ZrU3VyV3VUYVdJYXdwZTd3YUo1VVBra1BydTJCRGVXbVJCaU9UWXFhSkptTW9odktwM2tPRDlxTUJBYXU0dUVLVnJkbWJoUThLVERZM055czFfYTM?oc=5",
    "site": "vnexpress.net",
    "title_ko": "KBSV와 MB, 디지털 플랫폼 협력 확대",
-   "hub": "KB증권|베트남",
-   "time": "",
-   "firms": [
-    "KB증권"
-   ],
-   "foreign": true,
-   "lang": "vi"
-  },
-  {
-   "date": "2026-10-23",
-   "title": "KBSV và Ngân hàng MB ký kết hợp tác phát triển dịch vụ tài chính số",
-   "src": "Tuổi Trẻ",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaTNJNzR5a2Z5SllUMjhmWGh3b09oNXBJSFhyZjl3ZVVnVzQ3OTRzVklEc21HaXVza2FiQlBKQUx1MjBZWmpFWEpBWGdtdEJqcEZlenpfSVhzQTMxTEJvQnUxNWlxMkdDbWVxRkpxTmU3cmliWm1lbURVNG5UY0MzLS1yNXVjU2lmbDkwNENVTkFSS2hQYXp1WlJxVjhFRzU0Sl9CbjB6U3o5amlDSlE?oc=5",
-   "site": "tuoitre.vn",
-   "title_ko": "KBSV와 MB 은행은 디지털 금융 서비스 개발을 위한 협력 협약을 체결했습니다",
    "hub": "KB증권|베트남",
    "time": "",
    "firms": [

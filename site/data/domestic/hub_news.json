@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T13:11+09:00",
+ "updated_at": "2026-11-10T12:44+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -22,9 +22,9 @@
     "src": "Báo VietNamNet",
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTldja0JLeXoyNTdTWEtKQk02RU1pOG5jMWd0bTZwOHN1ak95eG1FRHdrLWh4TTI2N09nX0ZVLXk1ODBWVkZLYjIyVDV4YWhpcFB4MDFzc3RsSmJraFpBTldWNlpFTUt4all0LVVucUJSTnJ3dmtKTWtNdm02U1RoNVEwM29SOUpNSDU0MTJUUHZya3dWdU9TZXQxWWJTVS0xQTJ5ckJPN0FfTXp6?oc=5",
     "site": "vietnamnet.vn",
-    "title_ko": "KBSV와 5년간의 '베트남과 함께 올라가기'의 여정이 APEA에서 기념되었습니다",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "KBSV와 5년간의 '베트남과 함께 올라가기'의 여정이 APEA에서 기념되었습니다"
    },
    {
     "date": "2026-10-19",
@@ -585,19 +585,19 @@
     "src": "Thời báo Tài chính Việt Nam",
     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORGlRR2dKSnF2V29KdHVSWkpkcUZQZFRabWp5WUlRWXk4MEwyUk5BTVBaTHdERWZBaWl1dnV3bkRvaTJIOTZCS3JDYXhQZUN5TFNtR2w2b0JZUElQMTZIUWI2NDVtZGVfQlpHUmZYdjhZTWFQMlB1a3I4ODJHVTBDRlNEakhRdndiOUx5WjVYVnhKZTlCWENVSU1rdjlkZGkwSmNPYy1LV2YwdE9oMGtNSnF5cHUzd2toTzBsUWtn?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
-    "title_ko": "BIDV 증권의 2분기 이익은 15% 증가했으며, 마진 대출은 9조 4,700억 VND 이상으로 정점을 찍었습니다",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "BIDV 증권의 2분기 이익은 15% 증가했으며, 마진 대출은 9조 4,700억 VND 이상으로 정점을 찍었습니다"
    },
    {
     "date": "2026-04-22",
-    "title": "ĐHCĐ Chứng khoán BIDV (BSI): Mục tiêu lợi nhuận 700 tỷ đồng, nâng quy mô vốn lên 11.000 tỷ đồng",
-    "src": "Tin nhanh chứng khoán",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTjdfZXljM2RvdDd2NXJUNWNCTFVTNElBaXRoNHhRNFAtVUF0dTZrOW1LT1ZkMUdndmtZMFBXeE13OWk3SEJseHlXWWxOSTI0eE52VnlMclEta1Y4TnpseDZVRi1GaXg0d0ZaYk1ZZUg0RHBGclV6eUlEYUNzTS1JbzRUTG96Z2d3a3BfSlQ2WERuNkxTTjdxbm1rckdlUDNRSUF3Tk0xRUduUE53a3RHTEZNbGRTVFNWN21oSExxSDM2eE16Q21acUZDRnVuN0h3cEQxc09Wc9IB0wFBVV95cUxQUGlaVnhyamF0UThCTnNFZEpxS0oyYTdJcWV0NzlLNXh2TEUteDJxSWE4ZlRaRmdNX2JMTUk3ZFpVNVBNQ2h2Z1NoSU5IRlFnS21lamhjMzJlMnp6MTI3UlVTZXAxbjhaYkFiUGFfQW5VQjJZV0MtUl93MkpiaUkxWDY5NV82dWpfa24zNFBzLVhjcWxueEM0Z3otWVNsX0JPQVN0Rl82Tm82czlGakMzWnc1akdwanc5MThFWlhiblhLTXNoTjFIR3hzTXVRaWo5Ynlz?oc=5",
-    "site": "www.tinnhanhchungkhoan.vn",
+    "title": "ĐHĐCĐ Chứng khoán BIDV (BSC): Mục tiêu lợi nhuận 700 tỷ năm 2026, quyết tâm nâng quy mô vốn gấp đôi lên 11.000 tỷ đồng",
+    "src": "CafeF",
+    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQW8xeDFQUW10d1pvcWpXVERBdzdrTi1rOTQ3NHJnazZ2elRPRjU2Z1RxQWoxUW55RHdGc2VOZDJLX2FaUUhINU1NNnBtdFhsUHM2eVpIOUFPN0JtNHFLOE9yM0pSZHFZR0hmTWxrZW40Z20zZTlLTkpjZnRQdGMxYzE1VW5ROE9mTG1HblVCWWpBWl84NkJWUHJqVjVSVS10a0ZISlplRmhKd2RzVExEejVqMXdfSmNnbTVNeXpfOUV5X1hqQnlYc2R6QzNIUmJIZ2NQdXJ6d2pfR2QwTHlUeVRSX0cyc2Fn?oc=5",
+    "site": "cafef.vn",
     "foreign": true,
     "lang": "vi",
-    "title_ko": "BIDV 증권(BSI) 주주총회: 이익 목표 7,000억 VND, 자본 규모를 11조 VND로 증가"
+    "title_ko": "BIDV 증권(BSC) 주주총회: 2026년 이익 목표 7,000억, 자본금 규모를 11조 VND로 두 배로 결정"
    },
    {
     "date": "2026-04-01",
@@ -612,6 +612,13 @@
   ],
   "한국투자증권|미국": [
    {
+    "date": "2026-11-10",
+    "title": "[단독]흑자 내던 美 인수금융 합작사 접는다…한투증권, 해외 IB 사업 재편",
+    "src": "이데일리",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOc3l5UjQ3N1o0dURUWG9qcFRkRFh2NnQ0THJMejVBbjU4ZW1oSHV6cnotQTdFMHJxQVVwZ0c1SWlkOTdUcWcweFRaVjlxdUpqM055Q2VpN0JDNzFZZkdSOHhvSVhxR1dUNzBBeGhDbUszR1VsRGxoazF2cEVaSWRrMg?oc=5",
+    "site": "www.edaily.co.kr"
+   },
+   {
     "date": "2026-09-29",
     "title": "한투 뉴욕 IB법인장 \"은행 규제가 기회…ABF로 영토 넓힌다\"",
     "src": "머니투데이",
@@ -620,6 +627,16 @@
    }
   ],
   "한국투자증권|베트남": [
+   {
+    "date": "2026-11-09",
+    "title": "MB Capital, FPT Capital, Chứng khoán KIS, nhà đầu tư Hàn Quốc cùng dự kiến mua một cổ phiếu ngân hàng",
+    "src": "CafeF",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZEstWmFwZl9fcEpabEVTQ0tQSERrTTljN0VEOU5qWmJNNUYyRHdkaFhFY2J0SXF0SDhPSXNIZTFjV242NkRFblowYXlKZE5mS2NRSFRyWFNWM3BvaXpFVDVYZEdpdzJNQmV2UEczRkNwSnU1T0IxeExGYkZUMGFRY0M4Yk5kMEZ0djVLVHB5N3FNUERKSVRBYTJKSW5qMm1qZjJXekpIZkx3X05uQmFzNUdmREdYOU9jTEVUZnRZb2lRMXU5WWI3WXl4U0lxeDVvLWxmQQ?oc=5",
+    "site": "cafef.vn",
+    "foreign": true,
+    "lang": "vi",
+    "title_ko": "MB캐피탈, FPT캐피탈, KIS증권, 한국 투자자 모두 은행주 매입 계획"
+   },
    {
     "date": "2026-02-02",
     "title": "KIS Việt Nam ra mắt Margin K+, lãi vay chỉ từ 5,5%/năm",
