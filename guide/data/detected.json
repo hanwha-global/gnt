@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T01:39:27+00:00",
+ "updated": "2026-11-10T04:03:30+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-10-26",
@@ -104,7 +104,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-10-20",
@@ -121,7 +121,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-11-07",
@@ -150,7 +150,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": [
     {
      "date": "2026-10-30",
@@ -167,12 +167,18 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": [
+    {
+     "date": "2026-11-02",
+     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism Early Alert on United Nations Sanctions",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSGVuY3lqYTgtY2RXZmlrREZLV3UzZ0NVZlhjdW5SajNJV2dhNFZlTVFWWkNmRXRsdDNKM2FNc3dZc1dwcjNUNkt4alFBOVQwRFd4eEtSOEJ1Yy1LY0h6YzFkVnZ2UWZteVgwWUNOdUlpYlM2SHkwZ0RhVXdSdllmRGdzZw?oc=5",
+     "src": "Securities & Futures Commission of Hong Kong"
+    },
     {
      "date": "2026-11-01",
      "title": "Liquor Licensing Board to meet on Tuesday",
@@ -184,12 +190,6 @@
      "title": "LCQ9: Licensing and regulatory regime for massage establishments",
      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAxRmJvbmhRdm5Uckl5cHI5UnRPZlpvYmlyZ1BxTWtCZXVjbGc2aEZIWk9NVlk1Z0dISm1VQ1Q0ZVFRTnVlellsYm1PXzBLMVNIcEpkeEEtT2o1Z1pQbXRENjRDdURXd0VHamtqWUxzbG9zUQ?oc=5",
      "src": "www.info.gov.hk"
-    },
-    {
-     "date": "2026-10-13",
-     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism Anti-Money Laundering and Counter-Financing of Terrorism Webinar",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSkxPX3F5bWxrOG1lbXJYS3Q2em9WQmVjQ3hpRmpMbDE5d05LSmctRlltbUR6V0Q0SEg2eTNKdEU4VGRDampOT2owOWVlSVFxNXlPSER2bVZOQUlwaVBSanhXOG84dHRpVlZ1cV9MZWhEV3hlOHhLSnp4MnN4d2R6Slc1bw?oc=5",
-     "src": "Securities & Futures Commission of Hong Kong"
     },
     {
      "date": "2026-10-13",
@@ -218,24 +218,30 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": [
+    {
+     "date": "2026-11-09",
+     "title": "CALIFORNIA PLUMBING LICENSE PRACTICE TEST",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZGJOUXNIeVJEc1JjaWZMN004eEpuZkJWU0RRSnMzelFGU1BEMDdhOHRNdk9ERkwyWlcyYS1CR2lrX1dtcl90dU9QaU5nYTZBWUgyNnZJVGtxRjdYTWxQeUYwNk9nT0VEVTBqbG10Yl9mblphU1ZiRXBPbFZKREwxbXVjVUs2WDJ6X2Z5YmNfWWJWZw?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-11-09",
      "title": "PA MASSAGE THERAPY LICENSE",
@@ -365,11 +371,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-09",
+   "auto_checked": "2026-11-10",
    "items": []
   }
  }
