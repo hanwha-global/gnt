@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T20:27+09:00",
+ "updated_at": "2026-11-11T01:30+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
-     "date": "2026-11-10",
-     "time": "19:55",
-     "title": "US Treasury yields rise as Fed's Waller presses rate hike case",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY1YwSTl1MHpmbHdDdk9DVUI5RjNRTUJqLVlEOU1PaHd0RlIwQWE3ZVdRcGdKUU9ud0VLNFlJNk80Wi05NG1ZOFhtMmhOclZVT1dIVS1VYTVieHRNdjUtaTZSSjVhSjNreUxSeWhqTkc1dDUyNFo2Rl9pQ3lEV3BsSFN6bHhwSFFRLVE4NHppcnU5ZTNTV293dzFKMGVacUVCOVUwTWQxVklraTRVZjFTM3c1QjFqN1k5SC0wazJlSWxRSnFtY29SQdIBzgFBVV95cUxPamtLeXgyQko5STJYZXhodlRUUDl0TlBiMjUyMTRIRWI3Q0RhRDBoaUNQbG9xM203ZTl6OVRoa1FnVlo2ckRfcUlFSGo3YVo5Y202TkNMaGUzbGROYUNCU19FYmxKOFdFc1pQd0QzU1Z3RDRaSlllYU0tYmJpM1VvWkNyNzhEOUdjLVBwd3NkeUo2SmNGX1VPYm16aXoyd2ppYlBub1hDZjZzUVdNY2x5T1lVYkRsWlpYcWRYa0VNN1MwX1YyZWhldDRpdVl1Zw?oc=5",
+     "date": "2026-11-11",
+     "time": "01:01",
+     "title": "Stocks, Bonds Fall as CPI Data Fuel Fed-Hike Bets: Markets Wrap",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNXVKNll2bkFUUU5EVDg4eTF6a3YwZ0pIS0d4bGFTdkItMkl3SkFCbGRiZFdzSmlidHZZN3I1YzF1VkVXYlM0dDJrRlRPeDRGYXp6cVBuRGVjbl9vNWxrdlRYLTl4NTRxMnRFcGtuOUROekFvUUsxdTE1R3IwWmRKRVlUVFpFTlY0WXNlWTZTa1hIdmV1?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-10",
-     "time": "19:25",
-     "title": "Treasury yields edge higher as traders await CPI inflation data",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00TGg2Rk5HQzViV3NxTHZvREFib0dkOURuR3VIUHZJbjZHWTRzOERZelY0WVZlcVZSNGhCS094UTJDXzM2b3NLeVFSMG5jckhkMndFeG9pc0VvM0JnTUsxN2pTckFuQ3NTMTNZWnQ2MA?oc=5",
+     "date": "2026-11-11",
+     "time": "00:19",
+     "title": "美 소비자 물가 한 달 새 0.4% 상승…금리 인상 신호탄 되나",
+     "src": "아주경제",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0ycXdIeHMxMUNzbzNCMnpnUC1SbFF3d3ZfSFZ1Ukc1RzJ2MlZ2YXk2ZU9wTzNURVFER21FQm1qX0xVWU9NWHFCUEc3d2dXbU9uOVg4akJwb3Bjd9IBWEFVX3lxTE5tdUZtdW05YUhoOXdWM19NeTJtSGxRRkh3OU00RU1MZDNoSlJUYWoyX244M01wUmVHUVg1aTdqY0g5ODN2SzB2VU1ZaTNERUt6MlVnZEc3QTk?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-10",
-     "time": "17:32",
-     "title": "물가불안 속 고용 선방 … 美 12월 금리인상 탄력",
-     "src": "매일경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0yY3BTVzlmWUN2bU9IX25oT2NWNGx0ay1IUmZrVDQ3bDZpZFB1Mk15WEdERkRXTUJmTHcySUc1Zm82Rm5pcWJnZkY2a2NKS2VsNmc?oc=5",
+     "date": "2026-11-11",
+     "time": "00:10",
+     "title": "美 연준 월러, 12월 금리 0.5%P 인상 가능성 첫 거론",
+     "src": "글로벌이코노믹",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVG5fZWw5UHMwMkZtd1lma3h6Vll0NDdoTHVVNGxhN3hQYTYyRFRpdktNNE90aEpUNU9JN3JOYnpwcW91bl9naktZMlU3ZUVTdU9McE5XVGstYnJwWDhaMGZLOHdmbk5uMGJkczFQLWV2dEZDWHg1TU80UndCc083bmZqZ1NWdTVL?oc=5",
      "priority": false
     }
    ]
@@ -198,9 +198,9 @@
     {
      "date": "2026-11-10",
      "time": "19:33",
-     "title": "Singapore stocks rise as tech stocks gain ground; STI up 1.5%",
+     "title": "Singapore shares rise as tech stocks gain ground; STI up 1.5%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOc3JMc0V1R204YlhESzhHcWYtU0Q2cnNMOE45WlF6cWNZTUczaGhITzlJQ2Y3V3pEN1NtZE1vRjZHcGRDOFh1dHRGVkRzeGpLa2FqQmtqdVVBc3c1RVpYTTlablhWSEVNTzNYa0lvLWtTdGZzUUVKQ0tseUR0LTRYcEI0eDJaWkp2aVJRQWctdWlrOVdxcHVlSnpvUjlMX3VDTHpNR2N0UQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOREMtVWFaNUhMbEZKWU1oU09KdVMwUVdtcTNiTG9MT1BMMkp1NmlQMExYTl94R1RLMW8zbFBGanVpUEFfbFJfdl9memdneVlYcFd5dXpsa0I3VVFJbXoxSVBLVVVrQ1QyaEdna0J3X2tpSGhsaFYydXl1eC1WM1JEMHJVeXJwa0t6RW0xZ0Y1ZDNwMlRUY0V2YmVBcTJySFczQ2hmNnRJcw?oc=5",
      "priority": false
     }
    ]
