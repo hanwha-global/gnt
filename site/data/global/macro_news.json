@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T01:30+09:00",
+ "updated_at": "2026-11-11T10:26+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -22,11 +22,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-10",
-     "time": "18:47",
-     "title": "금통위원 과반 \"추가 금리인상 필요\"…AI 증시 충격 '경계'",
-     "src": "뉴스1",
-     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Delh4SFdMMHk0S0dXU1NQUW9ZVmRNY3poR2VZWks1UUczUkZBM2toZGxIZmFhQlBGRDJSYVVNUDkwSHpDRlpaS3NKdHZtOTItMkpxVw?oc=5",
+     "date": "2026-11-11",
+     "time": "09:26",
+     "title": "美 물가 쇼크에 코스피 약보합…코스닥은 외국인 매수에 '질주'",
+     "src": "한국경제",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kMWxvdEQwTXpCVWREVG5URlBZRXZkMXNJa3AzUmVBaEt2cWxpdGY1emRPeXZWWDU4M3NjcXE0cFpyTF9EOVpUQXY4bXVYUTN2YWltUWZvRTAxQQ?oc=5",
      "priority": false
     }
    ]
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-11",
-     "time": "01:01",
-     "title": "Stocks, Bonds Fall as CPI Data Fuel Fed-Hike Bets: Markets Wrap",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNXVKNll2bkFUUU5EVDg4eTF6a3YwZ0pIS0d4bGFTdkItMkl3SkFCbGRiZFdzSmlidHZZN3I1YzF1VkVXYlM0dDJrRlRPeDRGYXp6cVBuRGVjbl9vNWxrdlRYLTl4NTRxMnRFcGtuOUROekFvUUsxdTE1R3IwWmRKRVlUVFpFTlY0WXNlWTZTa1hIdmV1?oc=5",
+     "time": "08:03",
+     "title": "US treasury yields jump: What does it mean for mortgage rates?",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQUYyQ1hNaFJMN1d2VkNEVjB3UUkyREE0VGJ1Rl9xWjhNV0JmbjRTNmhCWXhkc1psWDF2bUFUdGVCN2lneGU5Yl9Ja09YZGh1RUJ3XzF1RXJWZTFNMmpVek9Sa2ZoU1JfS1lmOTJDSHBzcE1fQ2ZIaU1USjU0U3d2akVoWThObG02akJGMWVneERHYllXMXplWDFEbUs4bXVjbkFqUktKekFCYWpEUGM5clprOVUya3E1ZjczeGNNb3RTTUZNTDdZMzVPZ1hzMmV3Z3fSAdcBQVVfeXFMUHEzb0ZZaElqcVdoVGJUdnk2c2Y2REw1TEw2a1lOMV9CaG5OWG1ON3RqeTBfVlZleUxtTk9wZ3ZQNG1KUWVRbzhRYnlQRlFFRElUbllpQ19vLV9xZTFEc2JtYVpqd1ZfMF8zcmt3WWQ0QUlPWUNvakd0WlJ1RzliX3ZpazR2djBmOEFoQ1R1MU9MbGVDckZGNHdYWmk3THJETWE2dmpsNTBwSE94ZVNUdkZsS0lqNVRNbWpRcG1RUWwwZHl2Qkk1OTBBYlFiS1hLU3lnYUlvWVk?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-11",
-     "time": "00:19",
-     "title": "美 소비자 물가 한 달 새 0.4% 상승…금리 인상 신호탄 되나",
-     "src": "아주경제",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0ycXdIeHMxMUNzbzNCMnpnUC1SbFF3d3ZfSFZ1Ukc1RzJ2MlZ2YXk2ZU9wTzNURVFER21FQm1qX0xVWU9NWHFCUEc3d2dXbU9uOVg4akJwb3Bjd9IBWEFVX3lxTE5tdUZtdW05YUhoOXdWM19NeTJtSGxRRkh3OU00RU1MZDNoSlJUYWoyX244M01wUmVHUVg1aTdqY0g5ODN2SzB2VU1ZaTNERUt6MlVnZEc3QTk?oc=5",
+     "time": "07:16",
+     "title": "칼라일 연준, 12월 금리 0.5%p 인상할 수도",
+     "src": "SBS Biz",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fYk9XSUFjTUpwVUF5NnlXSHo3OTN5S0l4VThFR2RRRlBtN3J4NWJVRW5UbjNFM01IWkJyNEMzbTRMS0FreHBDbzJqMW9EMUlCU25B0gFYQVVfeXFMT2FYVUlzdTZYS3VDb3hfaFhEX3FtQ0FIQnJXQTEwWk9EaE1KZGdpN0pTdmNHMDh1TUxxWmNBMV9GMFNOMVluZXJOTlBnenhBMWpBR1JIVmpTTw?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-11",
-     "time": "00:10",
-     "title": "美 연준 월러, 12월 금리 0.5%P 인상 가능성 첫 거론",
-     "src": "글로벌이코노믹",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVG5fZWw5UHMwMkZtd1lma3h6Vll0NDdoTHVVNGxhN3hQYTYyRFRpdktNNE90aEpUNU9JN3JOYnpwcW91bl9naktZMlU3ZUVTdU9McE5XVGstYnJwWDhaMGZLOHdmbk5uMGJkczFQLWV2dEZDWHg1TU80UndCc083bmZqZ1NWdTVL?oc=5",
+     "time": "06:42",
+     "title": "Stocks fall as the 10-year Treasury yield nears 5% mark",
+     "src": "MarketWatch",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdWxxNHUtVm9iTEJTMXpJSmJyRFc3aC1jZC1qNnNxVURCYVhSUHRXQlVLVDctY003RTFhUzVZTkZ2dUNXaVZRUEZ2UXdtYk5HVGJkZEh0RmNnNkllS2JmY2pPM2l6YkVacEdtdmM0UGNNMUZtTE4tWUNBUzV4X2ZBUlZEbGJtcWlMSEtiTUFDc0xmcEp2aGp4WXVrdXJkZmF3QXZ5OXl6cF85UTRKQ19hMWhMVGZwR1lORFF4TzNxaHpxUXpoU0U5Rzg0QXVRUy1NbHhVMUI2LWY?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-11",
+     "time": "04:07",
+     "title": "Japan Tobacco shares tumble on fears of $8bn Russia loss",
+     "src": "Nikkei Asia",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWnBRbWlHT2JVYUJzQzIxSHFfQUU1aUsyQ3ktZERaYmtwU0xDX1l4R0R6Tlg0NnNlQkFCRHRZbkJQOEM1bmZyOThtSjhoelRpYkJvZHhGZW01ak05RGE5LVFPVjVxRWRqY2RzeDAyRF9Teldpbl82YVpodHFQWEN4SFpqM1dJT2F2MEJPLXV0VHlVUnFyd1hRb0NfN1ppOC1fc2VUNGZwaUQ?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-10",
      "time": "19:13",
      "title": "Bank of Japan rate debate switches to pace and timing of future hikes",
      "src": "Financial Times",
      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Ga3RTSE5NRHdocGpDOGE2R1R2Tmt3dzRjZTMtSVh6YTY5eVZHdGZkMFRKSzJaaDNKZ3MzUEplamdjRllBRG5xT1lKQ3ctR0tkVWhUbFFkbUljM21wMEMyMkZodTdTMUpaODJZWFZCNmI?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-10",
-     "time": "12:22",
-     "title": "Japan's Nikkei surges nearly 3% as AI stocks extend rebound; SoftBank jumps 14%",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOFpESkhPbXNIV0tvSWxvc0twcDdzN1huZFRlRkJqT1dCNHZFYjBCRGFVTHowRDU4VlBNdjNJa0NYNHR6T1VsN1piQzlqS2RFNVZuMnpMa0djaUNfd0FsbXdBbmFjWVFRQVF2TmdMU3hjNkxtNUJ2eVpmNzdyZVNsN29NcEFMT1pFaVJLMk9SX094ZUhZQXR2T0FNREhwUVF2RXgxam13YVpfa19tazFFRUh3N3RtRXdUMmpKWnF4WnVmTGhpblRVRldxYmxUZ0g3SHU0T3RxUGk5RFNMa3E3clRNcDN1aFE?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-10",
-     "time": "19:33",
-     "title": "Singapore shares rise as tech stocks gain ground; STI up 1.5%",
+     "date": "2026-11-11",
+     "time": "09:35",
+     "title": "Stocks to watch: YZJ Shipbuilding, JMSEA, KIT, UMS, Boustead Singapore",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOREMtVWFaNUhMbEZKWU1oU09KdVMwUVdtcTNiTG9MT1BMMkp1NmlQMExYTl94R1RLMW8zbFBGanVpUEFfbFJfdl9memdneVlYcFd5dXpsa0I3VVFJbXoxSVBLVVVrQ1QyaEdna0J3X2tpSGhsaFYydXl1eC1WM1JEMHJVeXJwa0t6RW0xZ0Y1ZDNwMlRUY0V2YmVBcTJySFczQ2hmNnRJcw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYTFIczFVZDYxZ3VnUGJTQ05WMmZ5dFNHN011U3MyeWJtSHZiLTdzVzZuT2ZDYkJxRU54eng0a1I2dE5aczh1Y2F4NWFsWjJfTlRxZWR3elpRSjlINHpJLW82WVdJRzBHTHZFYTF2MUFUWWhGQ0VWQjg3S0tzVHZWMGU3alhUZTlWMUM1VHI5ZWp2V2ZmS0tncHM1dGd3TnBDRWdsLU5XT2tfZWhnYklZZkdRbw?oc=5",
      "priority": false
     }
    ]
@@ -208,6 +208,14 @@
   "IN": {
    "label": "인도",
    "items": [
+    {
+     "date": "2026-11-10",
+     "time": "00:07",
+     "title": "HSBC upgrades Indian equities to 'overweight', cuts China to 'neutral'",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNX0VjRjdZcnhsMmpaeml3YmVVN2JpM0hTUTlMWWRTNWV2NnJLT1E4ZjE4TFdqYUJDSTBtcG4teklfTWh2R0ItUTR5bXZyaGJGcENNOHAtWUQtWU9PeUFTb05YYzJWdnQ4SlhWakwtcUk0MXlLYWczd0xtYTMtSFhlVmxsVUQ2Y0lXTWs4bkJ0THNlX1lYbVVSOTR5ZDJVVkFyMV9kUVloNk1SX1p6ZmRuYXU4YnkzTGc2ZXdHeFhzQkd5SWVXZHpxZ2I4MG3SAdIBQVVfeXFMT0xBZmNGaWkxUG1pVnZFQ203ZnBjdExzdjQ5YmlGZzZtMUp5ekFuUWMteTQxYmdjbkxoMzNqOVM2OGJzQTRSTWhtQURrNnE3aGFPdnFuYWw3QkVoSnp3SGRHNW5BT0dhdkJYLVNCTXVEMy1qYzhZZ0JFQ0R0LTlobjhSVm10eEhMMERlVWY1WTRFVDZBVVBvc1RtMmJlWUh1RjdZaU9rdHNDZHA2MjZOczd2aUhtODFKUmVFczlGQmtManNtX0hIX2FaQnc2WHFFUlln?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-10-23",
      "time": "17:04",
@@ -222,14 +230,6 @@
      "title": "October retail inflation may have breached RBI's 6% upper limit: BS poll",
      "src": "Business Standard",
      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNk9rZjRTcVRnaWpJcngtSUttUXhzc3V1dW5xdjlFUE8zdlBnd3ZMa29NSXMyZEVvNFhCanVlX2g1cE5McERTS0NIeU8yQkd0RWtVYnJWTVRidHN2QlBQZnlnNTIwRjJLdTRMcTlfSzlRVklQclhOQWRaYkw2dmRVdG9BQ1A4eTk1UXZ6UzIydFZZMGZ0bFhLbW1PQkljWjlXTFVLRjM5Y3lHTVJfNzhvZnk0eTVia21ZNnpqcmt5dUk4Y3FaMDlSYXg4cDNXZ3NVTmdV0gHYAUFVX3lxTFBBV0dSQTFVdDBQZDF6VmRBVVZiSFA4dnlEenBJcURha3VWTGs3OU5CNzEzNjc4UzJzMlBIRFc5WWtFSGg5Rng1eTVWbDZGLVgzanpWbTh1MS1fNktkYVZ5U3otckJQYllZTVF2ZGZTdHI5ZmpBdm9leFBKV3VhTlNlNWVQYWJKRks2cWtHRjhXdjZ2Wlk4T0Y5VUVvSnpXMXNTQ2Utc0hmWkpqaktUbU9Dd29TVk0yVjdoM3l2UWpSWVhoRmRyZnJReU1vWGNRSmx4ZjEyNTMwaw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-09",
-     "time": "19:12",
-     "title": "Sensex, Nifty end higher: 3 reasons why PSU banks, defence stocks rallied today",
-     "src": "CNBC TV18",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMktHQ3FYckd1dHBobXRwdWFkVnZYX0xQRTFQWEZBR1FPcjVvUHFZcHRqaE5FaENPWGZnanh5V0FVM3BHVjVzd2FRbG1HRHpDam44aHhmMldOa2lCa24tV2RmbHo0WVVVcEEtVWQzWEIzdUUzdkIydmdWRkNaYU9HQnBpUXIzdDR5eUZoeVdNYkdtS3NlTWhYeWp3YW44ZzJxR2dJQmotd2Y5YW0zX1VrWmhNOWk3SkRfZUtZdEln0gHDAUFVX3lxTE9MNTFIQW1qcjcwbzFZYzdDckRDQjVtWUgxem81VjdTTld0VE1NWXlac0o3V1FPNHlUMjd4N3NsQ1RzQUJNa0x3QnRXOUNUbl9wVkRkcm02X0x0T1E4bDFieFRkUDktd3NVcUZ0cWlYRmF1QnNXbWpXdzRwRWdiQ0lHTnczYnZ1MmdaSFk0RVpQRnZBVm1DUEZVdnpRS21SUVFGRGt1Mk4yUklEMzNuN21hRWRHbFZjUjVDYmFlNi1fOEp6MA?oc=5",
      "priority": false
     }
    ]

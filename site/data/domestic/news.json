@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T01:30+09:00",
+ "updated_at": "2026-11-11T10:26+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -685,21 +685,21 @@
   {
    "date": "2026-10-28",
    "time": "16:00",
-   "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
-   "site": "stock.mk.co.kr",
+   "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
+   "src": "아시아경제",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NcElndzBqVXJIbjF2WS0yVWt2Nm9Tb3lsdHRUTGNJekJIUmhraFhrYlloZVhhUjZuYTdJV2VoMHNPNUJXUHVlN1NBdlk2bnU0MXVJTUg3ZHhxcDV6c1IyYw?oc=5",
+   "site": "www.asiae.co.kr",
    "firms": [
     "미래에셋증권"
    ]
   },
   {
    "date": "2026-10-28",
-   "time": "15:33",
-   "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
-   "src": "전자신문",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB2MzRoZFFxcGp4TVRzbUdHZU1WOU1MMkE0cDFGUlBaY3lHck1fSXJUTG5NOGZNVlN4TThRZ1JUV2FpRDVSU1J6V0xvOFNNUQ?oc=5",
-   "site": "www.etnews.com",
+   "time": "16:00",
+   "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
+   "site": "stock.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]

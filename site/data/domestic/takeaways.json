@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-10T12:46+09:00",
+ "checked_at": "2026-11-11T10:27+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -36,34 +36,6 @@
      ]
     },
     {
-     "rule": "R07",
-     "variant": "deriv",
-     "category": "상품·제휴",
-     "text": "FTSE 편입에 맞춰 베트남 법인(PTSV) 외국인 기관 영업과 지수옵션 등 파생상품 준비 검토",
-     "evidence": [
-      "FTSE 신흥시장 편입 2026-09-21 발효",
-      "Vietnam Investment Review - VIR 10/28 보도 등 구조 뉴스 4건(최근 30일)"
-     ],
-     "links": [
-      {
-       "label": "Vietnam Investment Review - VIR",
-       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
-       "title": "Vietnam's stock market upgrade puts focus on corporate governance"
-      },
-      {
-       "label": "Vietnam Investment Review - VIR",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
-       "title": "Transparency and disclosure key to sustaining Vietnam\"s market upgrade"
-      }
-     ],
-     "bucket": [
-      "POS"
-     ],
-     "keys": [
-      "VN"
-     ]
-    },
-    {
      "rule": "R12",
      "variant": "",
      "category": "구조조정·비용",
@@ -81,14 +53,40 @@
      ]
     },
     {
+     "rule": "R07",
+     "variant": "deriv",
+     "category": "상품·제휴",
+     "text": "FTSE 편입에 맞춰 베트남 법인(PTSV) 외국인 기관 영업과 지수옵션 등 파생상품 준비 검토",
+     "evidence": [
+      "FTSE 신흥시장 편입 2026-09-21 발효",
+      "Vietnam Investment Review - VIR 10/28 보도 등 구조 뉴스 4건(최근 30일)"
+     ],
+     "links": [
+      {
+       "label": "Vietnam Investment Review - VIR",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
+       "title": "Vietnam's stock market upgrade puts focus on corporate governance"
+      },
+      {
+       "label": "Vietnam Investment Review - VIR",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
+       "title": "Transparency and disclosure key to sustaining Vietnam's market upgrade"
+      }
+     ],
+     "bucket": [
+      "POS"
+     ],
+     "keys": [
+      "VN"
+     ]
+    },
+    {
      "rule": "MKT",
      "variant": "targeted",
      "category": "마케팅·고객",
      "text": "베트남 법인(PTSV) 전면 수수료 인하 대신 은행·핀테크 제휴와 타깃 프로모션으로 신규 고객 유입 확대 검토",
      "evidence": [
-      "HOSE 2Q26 점유율 TCBS 9.36%·VPBankS 3.57%로 최고치(2026-07 HOSE 발표)",
-      "HOSE 2Q26 10위 진입선 2.94%에 한국계 2곳, 베트남 법인(PTSV)은 10위 밖(2026-07 HOSE 발표)",
-      "VN-Index 1주 +4.1%·3개월 +5.6%(10/27), 2026-02 고점 대비 -6.3%"
+      "HOSE 3Q26 10위 진입선 2.81%에 한국계 2곳, 베트남 법인(PTSV)은 10위 밖(2026-10-05 HOSE 발표)"
      ],
      "links": [],
      "bucket": [],
@@ -97,10 +95,11 @@
      ]
     }
    ],
-   "changed_at": "2026-10-28",
+   "changed_at": "2026-11-11",
    "reason": [
-    "새 뉴스: Vietnam Investment Review - VIR 보도"
+    "정기 갱신(14일)"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R02",
@@ -147,9 +146,21 @@
      "reason": [
       "새 뉴스: Vietnam Investment Review - VIR 보도"
      ]
+    },
+    {
+     "date": "2026-11-11",
+     "fp": "f54921dd7f2a",
+     "rules": [
+      "R01",
+      "R12",
+      "R07",
+      "MKT"
+     ],
+     "reason": [
+      "정기 갱신(14일)"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "ID": {
    "country": "인도네시아",
@@ -493,7 +504,6 @@
    "reason": [
     "정기 갱신(14일)"
    ],
-   "last_check": "갱신",
    "candidates": [],
    "history": [
     {
@@ -535,9 +545,10 @@
       "정기 갱신(14일)"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   }
  },
  "errors": [],
- "updated_at": "2026-11-10"
+ "updated_at": "2026-11-11"
 }
