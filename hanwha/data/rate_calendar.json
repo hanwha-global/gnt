@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "note": "중앙은행 공식 일정 페이지를 매일 자동으로 읽는다. '보조'는 공식 페이지를 읽지 못해 공표 일정을 옮겨 적은 목록. 결과는 정책금리 월말 값 변화로 자동 표시.",
  "banks": {
   "US": {
@@ -19,7 +19,7 @@
   },
   "JP": {
    "source": "공식",
-   "count": 8,
+   "count": 9,
    "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
   },
   "CA": {
@@ -474,6 +474,13 @@
    "bank": "UK",
    "name": "영국 BoE",
    "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-12-17",
+   "bank": "JP",
+   "name": "일본 BOJ",
+   "note": "12/16~17",
    "source": "공식"
   }
  ]
