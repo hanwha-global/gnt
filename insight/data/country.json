@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-11-10T04:36:23+00:00",
- "checked_at": "2026-11-10T04:36:23+00:00",
+ "updated_at": "2026-11-11T02:45:01+00:00",
+ "checked_at": "2026-11-11T02:45:01+00:00",
  "weo_year": 2026,
  "fields": {
   "gdp_growth": {
@@ -27,26 +27,6 @@
    "label": "GDP",
    "unit": "십억 USD",
    "src": "IMF WEO 전망"
-  },
-  "mcap_gdp": {
-   "label": "상장주식 시가총액/GDP",
-   "unit": "%",
-   "src": "세계은행"
-  },
-  "turnover": {
-   "label": "주식 회전율",
-   "unit": "%",
-   "src": "세계은행"
-  },
-  "listed": {
-   "label": "상장 국내기업 수",
-   "unit": "개",
-   "src": "세계은행"
-  },
-  "account": {
-   "label": "금융계좌 보유율(15세+)",
-   "unit": "%",
-   "src": "세계은행"
   }
  },
  "sources": [
@@ -439,5 +419,10 @@
    }
   }
  },
- "errors": []
+ "errors": [
+  "세계은행 CM.MKT.LCAP.GD.ZS: HTTP 502: error code: 502 ",
+  "세계은행 CM.MKT.TRNR: HTTP 502: error code: 502 ",
+  "세계은행 CM.MKT.LDOM.NO: HTTP 502: error code: 502 ",
+  "세계은행 FX.OWN.TOTL.ZS: HTTP 502: error code: 502 "
+ ]
 }
