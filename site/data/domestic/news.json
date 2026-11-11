@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T20:15+09:00",
+ "updated_at": "2026-11-12T01:25+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -494,9 +494,9 @@
    "date": "2026-10-29",
    "time": "16:00",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
-   "site": "stock.mk.co.kr",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
+   "site": "www.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
