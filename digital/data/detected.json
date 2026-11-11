@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T03:56:14+00:00",
+ "updated": "2026-11-11T01:40:21+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": [
     {
      "date": "2026-11-06",
@@ -135,8 +135,8 @@
     {
      "date": "2026-11-03",
      "title": "정부는 가상자산사업자에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다.",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Fc1MyRGxaSUlqbGtTQkloVU8zSXlJc0RhQmNGc2JmWEJLRGx3X0N1Rmp5c0g3djNEZFZMQm90Qi1qNlhXTHZGRmh5U0c2LUhoWUN5Q2NsWXNOSlpEcW5JM1ROc20tMFpJSWloQWFnZw?oc=5",
-     "src": "대한민국 정책브리핑",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZVZ5WXlRQkZrTTJBYk9GQW5kcFpjQ0RQR0FZaE12aWFUay12VlhmVGFTM2szWW5wZ0h5TVNCc1FkWV84VkhpV05maWpYaEdfZkM2UEFuUnB2Tl83ck81T3ZiYUtJSWh0U05jUUI3UERfSDZWZllSdFp6anNIY2ZzdVlVcjBvTnJyenUyZTh3?oc=5",
+     "src": "금융위원회",
      "topics": [
       "vasp"
      ]
@@ -363,7 +363,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": [
     {
      "date": "2026-11-02",
@@ -431,15 +431,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": [
     {
      "date": "2026-10-17",
@@ -453,11 +453,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": [
     {
      "date": "2026-10-28",
@@ -471,13 +471,13 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": [
     {
      "date": "2026-11-09",
      "title": "EU seeks nominations for stakeholder group on tokenisation standards in finance",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSkdZR2RkaGUxM1luMm1yYmtSWkVWNUlNVWpGcUMwV1lPRUVJeXhRd0RRRTJhYy12U1dSdGVxa3BWN3V6NFVObHZvWVN4Z3RRRkxUMWtPUGJ1Q083VGYtakdRS0o5QUZJZkkyeHkxNEpOVGhTZWRWdHJyU2FrMDRqOVpkZXllUEFTd09CdXJkcmZKdDlUUUFyeHdLb0VOdzJxOTFqdm1hWWJKaHl5RDRwazhwa09LS3c1?oc=5",
-     "src": "finance.ec.europa.eu",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOC1PeHR4Skw5azFtTncwc3NJa1MxcFBkMzFQYkhKb18wWHhjbE1LVnVpbkk1NGJXS3dydTltUS1iRzdxMEZwS09RSk8yeTU2UUV1UnBEZ3p2cTlWd1hnUm9lcllfZkZYZ0RkcUljZ2Vod1I0MmpObEF5RFdIUjFydlB5UWdic2pDSWlNV0pUSHJqZWdBdF8wcmhxTXVMUUNab2xWaG5sVlA2dkF2dlVFTEQxOTR3c0ky?oc=5",
+     "src": "| European Securities and Markets Authority",
      "topics": [
       "sto"
      ]
@@ -575,7 +575,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": [
     {
      "date": "2026-11-06",
@@ -697,7 +697,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-10",
+   "auto_checked": "2026-11-11",
    "items": [
     {
      "date": "2026-11-04",
