@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T10:25+09:00",
+ "updated_at": "2026-11-12T11:25+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -422,9 +422,9 @@
     "src": "VnEconomy",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMTl6emR1NUdqb0NpLTE3TWZTSWhSdzVfbGZzX3hmVzRlOFR0a2NmOENYam1MY0xtV253bjBjbXRxQ3d1N2Q4bGU4bmc2UllhQnVtUTM0aEI1d3NpMlc4SUFzX2Y3Qk1ta1N0cWsyZjg1aWtoN3h1bW1MWUxteGZ4Q0VqczVWTnptcUFKZlpOSE5xZDVmWGhTMFV1Tnl5eEJpM3gtR01IelFQZw?oc=5",
     "site": "vneconomy.vn",
-    "title_ko": "신한증권 처음으로 개방형 펀드 증서 온라인 거래 시스템을 출시했습니다",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "신한증권 처음으로 개방형 펀드 증서 온라인 거래 시스템을 출시했습니다"
    }
   ],
   "신한투자증권|인도네시아": [
