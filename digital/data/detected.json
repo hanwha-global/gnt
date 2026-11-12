@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T01:40:21+00:00",
+ "updated": "2026-11-12T02:39:29+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-11-06",
@@ -143,21 +143,21 @@
     },
     {
      "date": "2026-11-03",
+     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVg5VWRhcElqbnBWV2cxUFNja2l3Y2VHVlhBZHU2N0FaN3dpZkxjcE5vYVhGTDNxRnJOTVdVYmE3WGJjdHQ2UzgwYlJEblc4YUJ1c1ZOd21qbDBPT1BNalh2Y1RVay10OWJBZ2Y3LXI2aldpeVlOYTRmUjFKYUdVV2FZd1JFc2lWQkhUaVFqdzF3eFFESUJHLUEwVHA1d0p6MFNZ?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-11-03",
      "title": "(보도설명) 해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이 아닙니다.",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE54UGxCeXBkZkU4YUxVd0FydnV5MGh1UXhGZEZnMkQ5WVYwbXpLYjRXNFBYSEVCUGJDMG90WE42UXpyTUNrZW9YWFJIdFZhckR5ODZkV0djNENIYml2ZVo4RXFMYUpfWnpBUXpNalItRQ?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp",
       "tax"
-     ]
-    },
-    {
-     "date": "2026-11-03",
-     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVg5VWRhcElqbnBWV2cxUFNja2l3Y2VHVlhBZHU2N0FaN3dpZkxjcE5vYVhGTDNxRnJOTVdVYmE3WGJjdHQ2UzgwYlJEblc4YUJ1c1ZOd21qbDBPT1BNalh2Y1RVay10OWJBZ2Y3LXI2aldpeVlOYTRmUjFKYUdVV2FZd1JFc2lWQkhUaVFqdzF3eFFESUJHLUEwVHA1d0p6MFNZ?oc=5",
-     "src": "금융위원회",
-     "topics": [
-      "general"
      ]
     },
     {
@@ -363,7 +363,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-11-02",
@@ -431,15 +431,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-10-17",
@@ -453,11 +453,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-10-28",
@@ -471,7 +471,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-11-09",
@@ -575,8 +575,17 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
+    {
+     "date": "2026-11-12",
+     "title": "Crypto Custodian Assistant",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNkszeWQ4TGxMb2xYa0o3TnRlaEZOWGNwWEJkRTE1V1ZuT05BLU5RR3NEbUdoSDFZU2ZKanRyTjVBVm16d0VuUlpQTG1RWXd1cGp6RjV4WlhpLVpZZ3lWbWx0QTJEMG43Y3VYMDVMcWZwUlc4VkhhOFhvWXlqN09hcGNXaw?oc=5",
+     "src": "Civil Service Jobs",
+     "topics": [
+      "broker"
+     ]
+    },
     {
      "date": "2026-11-06",
      "title": "Crypto Global Brokerage",
@@ -697,7 +706,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-11-04",
