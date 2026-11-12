@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T01:51:16+00:00",
+ "updated_at": "2026-11-12T02:51:31+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -23,7 +23,7 @@
   "address": "HAZLET, NJ",
   "counts": {
    "sec": 1,
-   "sro": 16,
+   "sro": 17,
    "states": 53,
    "types": 10
   },
@@ -60,7 +60,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-11-11",
+  "checked": "2026-11-12",
   "sros": [
    {
     "name": "FINRA",
@@ -125,6 +125,10 @@
    {
     "name": "New York Stock Exchange",
     "since": "2021-11-19"
+   },
+   {
+    "name": "Texas Stock Exchange LLC",
+    "since": "2026-10-06"
    }
   ],
   "types": [
@@ -137,7 +141,7 @@
    "Put and call broker or dealer or option writer",
    "Non-exchange member arranging for transactions in listed securities by exchange member",
    "Trading securities for own account",
-   "Other - CLEAR EXCHANGE LISTED AND OTC EQUITY SECURITIES FOR CORRESPONDENTS,EXECUTE STOCK LOAN TRANSACTIONS, PORTFOLIO MARGIN AND PRIME BROKERAGE SERVICES.  OPTIONS BROKER OR DEALER OR OPTIONS WRITER ENGAGED IN CLEARING AND SETTLING PROPRIETARY AND CUSTOMER OPTIONS TRANSACTIONS.  ENGAGE IN REPURCHASE/REVERSE REPURCHASE TRANSACTIONS.  ENGAGE IN RESEARCH ACTIVITIES LIMITED TO THE DISTRIBUTION OF THIRD-PARTY RESEARCH.  CFTC/NFA REGISTERED INTRODUCING BROKER. 12©2026 FINRA. All rights reserved.    Report about VELOCITY CLEARING, LLC"
+   "Other - CLEAR EXCHANGE LISTED AND OTC EQUITY SECURITIES FOR CORRESPONDENTS,EXECUTE STOCK LOAN TRANSACTIONS, PORTFOLIO MARGIN AND PRIME BROKERAGE SERVICES.  OPTIONS BROKER OR DEALER OR OPTIONS WRITER ENGAGED IN CLEARING AND SETTLING PROPRIETARY AND CUSTOMER OPTIONS TRANSACTIONS.  ENGAGE IN REPURCHASE/REVERSE REPURCHASE TRANSACTIONS.  ENGAGE IN RESEARCH ACTIVITIES LIMITED TO THE DISTRIBUTION OF THIRD-PARTY RESEARCH.  CFTC/NFA REGISTERED INTRODUCING BROKER. 13©2026 FINRA. All rights reserved.    Report about VELOCITY CLEARING, LLC"
   ],
   "disc_status": {
    "Regulatory Event": {
@@ -147,8 +151,8 @@
    }
   },
   "disc_latest": "2025-09-30",
-  "sros_checked": "2026-11-07",
-  "types_checked": "2026-11-07"
+  "sros_checked": "2026-11-12",
+  "types_checked": "2026-11-12"
  },
  "edgar": {
   "filings": [
@@ -276,7 +280,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-11-11",
+  "checked": "2026-11-12",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -305,7 +309,7 @@
   "excess": 114879691.0,
   "required": 10352954.0,
   "audited": false,
-  "checked": "2026-11-11"
+  "checked": "2026-11-12"
  },
  "peers": {
   "date": "2026-06-30",
@@ -715,7 +719,7 @@
  },
  "dart": {
   "corp_code": "00113058",
-  "checked": "2026-11-11",
+  "checked": "2026-11-12",
   "unit": "백만원",
   "periods": [
    {
@@ -1057,6 +1061,6 @@
    "lang": "en"
   }
  ],
- "news_checked": "2026-11-11",
+ "news_checked": "2026-11-12",
  "errors": []
 }

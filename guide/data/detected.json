@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T01:51:10+00:00",
+ "updated": "2026-11-12T02:51:19+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-10-26",
@@ -104,7 +104,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-10-20",
@@ -121,10 +121,10 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
-     "date": "2026-11-09",
+     "date": "2026-11-10",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
@@ -150,7 +150,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-10-30",
@@ -167,11 +167,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
     {
      "date": "2026-11-02",
@@ -218,24 +218,42 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": [
+    {
+     "date": "2026-11-11",
+     "title": "MINNESOTA GENERAL CONTRACTOR LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNEphSDBYaXhVMU95dXpNSlRncXpkd2ZJV0ZLVmRvay1NNDh5NEpvenIzRGF1bW5oamhlVnk0VC1XTTNPTktRMXdlTEtRNTVwV01mamNCZTBNOHNJamtYS29HVHZLZTRqdXI4MlpfdzlVc1N1NllUTHNTZk5Jbk5GbG1lS3BUcG54Z3VGVWMtUWtPZS12eFhjNVdGN3VzMTZP?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-11",
+     "title": "CHAUFFEUR LICENSE STUDY GUIDE MICHIGAN",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTTYzcWhzcmRFeFBuRTVQNGdDdXFkYnA4YUdobjc2OWNBQzNjSDJwVnRoUkxOb2taMm1uZHMtZWgzRmpHZF9rcXRab0VPWG1pbXEzYjhBY2FyOVR5UVB6VjdnSFYtSjA1QnZqa1ZFdmwwOFpoQURCREtOeFlUQlY4eEx6NUpyaHo3Vko5TkVaMmdpdlJN?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-10",
+     "title": "PROPERTY MANAGEMENT IN FLORIDA LICENSE REQUIREMENTS",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPY2MwSEltcTVkS0MxTUdYNFp3WVBZYzhndzZzMUJSTk8yU1ZGNXQ3MkVIekpUbDQ2VjRiOU92VU9hM3FJdzVPa19FYlA4QWxYR054YTg0MVppNk5sazI4cEYwMExrdG9UcS1MQkduNFlNNFpxbmxTRkg0dG80elh1S0w5UXRFSng2aUIwSUVVS20yT0ZuNTMwb3ZLM1p1SnBoQmg0?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-11-09",
      "title": "CALIFORNIA PLUMBING LICENSE PRACTICE TEST",
@@ -377,11 +395,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-11",
+   "auto_checked": "2026-11-12",
    "items": []
   }
  }
