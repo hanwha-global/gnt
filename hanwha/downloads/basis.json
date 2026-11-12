@@ -1,12 +1,12 @@
 {
  "periods": [
   "20260310002967",
-  "20260813001503"
+  "20261112000432"
  ],
- "label": "1H26",
+ "label": "3Q26",
  "invest": "20260813001503",
- "data": "72f97f48ca3562d0",
- "next": "periodic-2026-3Q",
+ "data": "ac621d0cc0eb7034",
+ "next": "periodic-2026-FY",
  "investments": "f349bfdf8d39a35e",
  "entities": "2c9f440ab847830b",
  "script": "d382afdc2dcd6b45"

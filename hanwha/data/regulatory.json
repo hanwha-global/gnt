@@ -132,9 +132,9 @@
       "due": "2026-11-16",
       "basis": "자본시장법 제159·160조, 기간 종료 후 45일 (주말 → 다음 영업일)",
       "law": "공시",
-      "note": "종속기업 요약재무정보·지분율·장부가 점검",
+      "note": "DART 접수 2026-11-12 (자동 확인)",
       "auto": true,
-      "status": "upcoming"
+      "status": "done"
     },
     {
       "id": "periodic-2026-FY",
@@ -203,7 +203,7 @@
       "status": "upcoming"
     }
   ],
-  "generated": "2026-11-12",
+  "generated": "2026-11-13",
   "playbook": [
     {
       "event": "증자·추가 출자 (현금 송금)",
