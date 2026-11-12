@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12T11:27+09:00",
+ "updated_at": "2026-11-12T20:33+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -185,7 +185,7 @@
   },
   {
    "date": "2026-11-04",
-   "time": "16:09",
+   "time": "17:00",
    "title": "Korea Investment & Securities, Neuberger eye global investment products",
    "src": "The Korea Herald",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJcFBDMDI5OHR6QTZOVkpmV0lYSkFESVNXbnlnNHBJTUZReUF3cURhLXlDNEZXaUJia05nRHJrRjg2ZmtlMjlkR19kS1g3SV96NXJpZ1RlWQ?oc=5",
@@ -526,6 +526,17 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
+   "title": "미래에셋증권, 일본 산코증권 476억원에 인수",
+   "src": "머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBqWENVNjlKTkYyTmVMV00yMTMyeFFvTm00UFJSZWlJOW9qUW10US0zMUNDUk02UVR3Yl9JU2lxeVR6TEZOSEdrcWpGdEM1cVNKLUdCbGc0aWl3ZW10dWJWS290UHNsYUpN0gFuQVVfeXFMUDBScHBkTDBtMXhoZTBKS0g3M1hGQjdwTEZtNG9lU3pXa19ucUlWZ3JUZERLZF9MSDljVXpBdTl0d2FEbUFOcktOWE9ORVA5Ujk3b2sxNU80clBxWTROR1dwa0JwcmU2eG80UVVyT2c?oc=5",
+   "site": "www.mt.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
    "title": "Mirae Asset buys Japanese brokerage to break into retail market",
    "src": "The Korea Herald",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51WXN6UElkRXVyUmRFRHBmb3diMGlpMEs5ZGRVb0NNeldrVW1renVkWG9jOUU3Nm43VVB0c1ktQTlIT2NmTHQ1RUV4M3dpcE51M1hDcS1hQQ?oc=5",
@@ -583,17 +594,6 @@
    "src": "경향신문",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13MGZvb1hJSGpGNjVJb29NV2c2WnVqZVVtcHowdDd6amtYcE9rcm1zY19YYkRlWVlKOEFDRUJtU21adEV3UGRPTmlzNFFsclpSX3JRRVJBUy1DQdIBX0FVX3lxTFBBLU1ROVhtUDI2M09KVVVzWVRnQVM4d2JZcU5tOWFUeXJ4UUtqdlFWX3RES3JBNk9hUktlb00wSU9Ocmd3SzZET2ZvNXhRdTFVZW1pdzJORi10N3dxN1A4?oc=5",
    "site": "www.khan.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "11:58",
-   "title": "미래에셋증권, 일본 산코증권 476억원에 인수",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBqWENVNjlKTkYyTmVMV00yMTMyeFFvTm00UFJSZWlJOW9qUW10US0zMUNDUk02UVR3Yl9JU2lxeVR6TEZOSEdrcWpGdEM1cVNKLUdCbGc0aWl3ZW10dWJWS290UHNsYUpN0gFuQVVfeXFMUDBScHBkTDBtMXhoZTBKS0g3M1hGQjdwTEZtNG9lU3pXa19ucUlWZ3JUZERLZF9MSDljVXpBdTl0d2FEbUFOcktOWE9ORVA5Ujk3b2sxNU80clBxWTROR1dwa0JwcmU2eG80UVVyT2c?oc=5",
-   "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
    ]

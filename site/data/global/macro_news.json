@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12T11:27+09:00",
+ "updated_at": "2026-11-12T20:33+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -23,10 +23,10 @@
     },
     {
      "date": "2026-11-12",
-     "time": "10:43",
-     "title": "코스피 개인·외국인 순매수에 장중 5400선 강보합세, 코스닥은 700선 약보합",
-     "src": "비즈니스포스트",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1reG5KQVlya05TOEdzYXhUMFpzSV9fRTlxUm5MWjkwNmVrQm5qSDQxcUs3ZGhIcVJta044MGRYNURZU09leE44aXpnVWNIYnJKWFRsWVAxRllWT19fMDRRcHQtdHpnZkVjRkM2OWdkU1NNTGs?oc=5",
+     "time": "18:15",
+     "title": "외국인 떠난 코스피 대형주…시총 톱10 지분율 줄고 주가도 급락",
+     "src": "아주경제",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oeFVjRU5ZeVNBNTl6QkJvd1dvVWNWWndDaGx2OTFTa1RnSkF1eHA0M0htSGxVb2FsVlYtd25MYTZyajRsOVRLa1E2RGx3TUdkTGhWWEc1ZWlBZ9IBWEFVX3lxTE1IT0I4WHFKczdIc0Y3VHUxZWdjbFlhWDhSQ3Z0VlJUSm1yaENmOGl2Zl9VQ3pQR3pac3BoVTU5OEkxLXFFTUR3Nl9NN2lzaHVUTVpSSHZ0U2Y?oc=5",
      "priority": false
     }
    ]
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-12",
+     "time": "16:38",
+     "title": "Treasury yields edge higher as investors await fresh inflation and housing data",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5kS2N1QmprS3IzX3ZuTHRrNlBkaERHTlNMTEdzMkk3bUR3eXo5cDcyMGpiSF9xUVpPQzZHaDBZN2NrbHdFVGpmWTZ1ZXAxMXBuOHlkdzNEcEdRQU44Rm14a3llS1VOUFhPaTByWThqaw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-12",
+     "time": "15:12",
+     "title": "美 연준 빅스텝설에 상승하는 시장 금리",
+     "src": "머니투데이",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1za3NJLTA5VU5ZNnJIZk5mVlhlUEhrdGc2NUVIY0FTWF9zbFk2MnV1c3BYYWpUUGdoZWRsS19LaG9VS1pJbHFxekJvMW9fUXppeHdjd2ZVaVItYUtMcTZmOGQwNFJBaUpVRndoRHpKN3dpSDRNZkHSAXtBVV95cUxPY01ydklENGQzN01aanJnMFZsU3pyN1V6akpndnVIYkdsbi0yZU4zejlJNHk2MkRSY1N3YkRqcEc4Wm5TMkVwcWJGYnBXb3IzOGJOWS13VTR0MXVwd2pCSGMxaGlUcUU5WWgwallVVUYwMHY1R2pHWWdYNUU?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-12",
      "time": "10:24",
      "title": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike",
      "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMTJybnByRUZtMk5uajdEUVROVDJnSmZlQVRsazNHSmZaY0FKMVM0d0tvVnhDdlozdUhuMkx4ZkJZV0IyUDRCMmxtSzF0U3RmWWkxckVJVVVUV1pZczI2dmZfN29TYmN0YkVWMml2X2NJY1liZk1WeWFVdXNHbFpqdHBVWmhMTE4zTHozN2l5ZGFOWVBxWVBzTVB6V3dLeTR5UmlYYTVtN0xJQW5MMTVRdUJn?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-11",
-     "time": "18:52",
-     "title": "Falling US Bond Futures Offer No Relief as Fed Hike Bets Grow",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOa2hXVmxBejZuMktqMDMzbUNTcDA3ajBFdlE0MlpZc3AyU0ZPeHl0ZjJ3b3BhT2REdlRDVmRYWS05aFVhemtkZmVacFBnWFNXQlg5QjlmREo0VEdHRFFyTXNYR1FqV1VKUlhtVlNsT1ppUDRVQ0FVUTdGTW9FTXdVWWRVN0ZZMXpMNFo1dFBtMzJ4SzNRWHJkWnBlaGZId0x6dXJXSmU0ZW5tczhnc2pUM2Rn?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-11",
-     "time": "16:41",
-     "title": "World in Brief: Treasury yields jump on inflation data; American soldier arrested on Russian spying allegations",
-     "src": "The Economist",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOOHZ4UmtqSkJLYUtrdDRETi1pbVA2UC1XUEcyekFpaDNqQi1VVmpoYnV0VkVmbFZkcnpVX2VvSW5BOHpIU2lHUjh3MGJZZTVMZUNydE92ei1hcHg0bi01Q0FjZ3ZsUmVaRnZKRDItRlozWWRaZWpwTHNrVUxoa0MwTDV6Tl9EVy1Wa3NNdmh3eXpoeXBNaXBB?oc=5",
      "priority": false
     }
    ]
@@ -65,26 +65,26 @@
    "items": [
     {
      "date": "2026-11-12",
-     "time": "11:06",
+     "time": "18:39",
      "title": "Indonesia Rupiah Drops to Record Low on Strong Dollar, MSCI Woes",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWXhXdEdKMENVbWhpRG5yelRzVU1zM09Eb0thNk1VRFQyam9LUE14VE1Bc1V5QnJjbEx2M2ljeGpzTHlSdUpULXVQWXh5UXlMU2E2czZKcnBKU25oZVdmRThGVHBCcUVTb2V0SWJ1S3RuQURjMXVRMnROZk9tU1FCWmpKcUl1NFNabjJKOTJPeG5GejJ1MGh0MzZXMFZxdDJfSmxFTHcwUEY1M1pWNm53NnRWSkFTYzVodHYtODJB?oc=5",
      "priority": true
     },
     {
      "date": "2026-11-12",
-     "time": "09:39",
-     "title": "MSCI removes more Indonesian stocks, dealing fresh blow to market amid reform push",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOM0U4TFJZTndRMVRQLUVlQ0JoZXJRME9GUE5wUFZaZjNlUVoyQVpwVkFEVFJUMFF2MXhMOXZPa3dkZE5seUtrMGxISUUzSWtWTlJ6UDZlN1pFdUpVVzRaTjM3dXJYVGJiSW9xTy14dFhuWWdNa1U5UlJqaXpyMUg2NXVDamM2NUhfcWsxVkFoSThEdXJFVHN1LVBqUzdnYUlSYzRuZERoTzVxOE14aVdrRDFZQnBmZ0VTd0JBVE43aGRKV09Ta1VVRnZBVQ?oc=5",
+     "time": "18:11",
+     "title": "Jakarta Stocks Rally 2.7% Despite MSCI Outflow Risks, Political Uncertainty",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObndjQmRBWkx1cF9EN1BfZVl1SWRzblJtQWlmS3BCdDRsOUtoWDlubWZZaXJ6blN1QS15WUkzNC1iVGlHMVZtTEVyYmE1R3Fpb2p3NVdQU0s4T3NjZkI5ZnFwNE5RVFc1SUNOSnh3VmZJd2FoU0syWlVRNEd4bnMwa1JtazZWVG5USnpKQVRKNzlzS3d6OHZDLXJlTVlrSG9rck4yQ3dGNUo?oc=5",
      "priority": true
     },
     {
      "date": "2026-11-12",
-     "time": "08:25",
-     "title": "MSCI says Indonesia’s Barito Pacific will be removed from its indexes",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQay15QmVEd21LMDRLS2ptcTZ6bHl3bDBmRi1fR2oyc0t5WVFhRlFBd1AwTUZKaFRKblNNYWpRc0ZRVFV0cWdjLUZrQXMtdUFDdzZGME5wQkQzaXFnMmxOaENxemo0TlF1a09NWmtvUlF4ZzFkdUU2enp0cUN3ZFIyNk1JbkRvNUllenNLNl9rWFg0MHhHWnVWeHZTY0RycUEtbE1UWTdiOEhvS1g1cjhHN3VRNW80RWdwaUd1cWl3VW94QQ?oc=5",
+     "time": "12:32",
+     "title": "Indonesian billionaire Prajogo Pangestu's Barito Pacific to be removed from MSCI indexes",
+     "src": "VnExpress International",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbTl2SWdPY3BCWnl2QmN3VnZGRjFaVkJOeFF3c1djMXVxM3N2OWpzSGY2WnhyczQyX09na3FCYWZvZUdEMjJLMDNYZmxQb2cyRTNFMElXQmhfWEpHZWNWRlJYcDBIbTREb09jMVlodGQzcFozM2FfT1I3aTNYdnQ4Qkt5al92a2ZYQzJPRWtRb0dPQmxocUlCUmg5ZjBNWTdVZ1Riam9ydEQ0UEx6d0lNSnR3SUlfb3hwR2NRZ2dUSHJjdmZuWlE2YkZsS2dVRHZORHlHc1hJd1hHSUpoVWxoaHlKOA?oc=5",
      "priority": true
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-11",
-     "time": "04:07",
-     "title": "Japan Tobacco shares tumble on fears of $8bn Russia loss",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWnBRbWlHT2JVYUJzQzIxSHFfQUU1aUsyQ3ktZERaYmtwU0xDX1l4R0R6Tlg0NnNlQkFCRHRZbkJQOEM1bmZyOThtSjhoelRpYkJvZHhGZW01ak05RGE5LVFPVjVxRWRqY2RzeDAyRF9Teldpbl82YVpodHFQWEN4SFpqM1dJT2F2MEJPLXV0VHlVUnFyd1hRb0NfN1ppOC1fc2VUNGZwaUQ?oc=5",
+     "date": "2026-11-12",
+     "time": "15:58",
+     "title": "BOJ’s Dovish Member Calls for Caution on Pace of Rate Increases",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQN1lrWGhjSmZGRTNKc0hHV0dQeVFJd0Z0cjZfdVB6Ql9YTlhnU3pIa01XNi11R284a0JrMlhBN1BZS1hHamVNWEFsNDVhYURnSkhXTFpfNVFQMHRwWG5ISzE1dnhSZVFmdkpIckRFMS1aa2ZLTk13Z1hXQ1k2QV9PamFQbmtPd0MxVXFmbTlSODlGMkUzMnB4aXhLclF2WEV4ZHQ0UGZYdzFoU0pITGtfX016ZjI?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-10",
-     "time": "19:13",
-     "title": "Bank of Japan rate debate switches to pace and timing of future hikes",
-     "src": "Financial Times",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Ga3RTSE5NRHdocGpDOGE2R1R2Tmt3dzRjZTMtSVh6YTY5eVZHdGZkMFRKSzJaaDNKZ3MzUEplamdjRllBRG5xT1lKQ3ctR0tkVWhUbFFkbUljM21wMEMyMkZodTdTMUpaODJZWFZCNmI?oc=5",
+     "date": "2026-11-12",
+     "time": "14:03",
+     "title": "BOJ policymaker Asada cautions against premature rate hikes, warns of growth risks",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNVlE4bk1RUlhtVkZmNDVQVTVobURIQ3Q4Vkt0dHNlVXFQak5RYzV0NXlxc244OWlqYk1jd085RTJ4MEZVajhLeTUtQTV4Ny16VHdMU1BvbXlKUGs4aHNCNlFQRGZoMEdUNFFhM2xHV3VSOTUzWTZWYWVIckRrbnJtaUhZVjNXUGI0b09jdHRCbEFJZ0dOckJ0bUN4VTJmc2FmZWtsR3Z2dzVwc0gyX3ZQODBEZmNHdnpGbjlyMUROLTJvbEltYWItdDdRM2M4WkdEby1mMXJXRWMtTzZSay03YkNjYW9GNFdCY1BTZlE4eHFMMmJkZjU3Y3NfSHRVQTk20gGGAkFVX3lxTFB4dVR3SFJjR1hpUERxcTgyRndwUUF6dDI3OVB0MFpPLW9TNzR2RWhHcmpPQU9HcHNuZnJObllseGpOR3RuamJpQlJ2WGdKTEhCcTl2WUNPb3h6Z1ZNQzNRSEllRS0tbFdTeVhEWGdBR29oNVRaNTgxNnRJbFdLcmE2b0tHTk1OV2h6OUQxZGt3SExOVDNVLXdvc1d6dnYxMHNiMzBGWkNua2V0dzNDczcyQ0hyOFBxNjQxaWFKNHhTQjdvU3dqb3o4OEpjM2VwN2ZkNGw2Sm9FQUM5dno5eTk4eUVMSTYtSWdPOE8xb1pudkc4cmtDTHRiX3I3TEpZZ0JnSDl0RlE?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-11-12",
+     "time": "12:53",
+     "title": "China’s Loan Interest Rates Are Already Low, Central Bank Says",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYW1ueXJqQzBaUmFvSzY3cFh6MkdVOEN3WUxsQ2pzSHhySDJsTHljS01VQ0NxeXpSQ1RrVzBOM3VBaUZ0NlR4Q2U1c2xhRjBHTnlSam4xSlFubWN6ejEwNnRJNG9NU2x4Rnk5bmw0dUpoUnN1TEV2OTA5WGRpYm52UmVtNzd0eGpVQ3F0WGdjZmMzUlFWcDVMcGJwbHZqeS0zY1hwWEdXT1hsNG0xeXA1T1JR?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-11",
      "time": "15:03",
@@ -164,14 +172,6 @@
      "title": "Sichuan Neautus shares surge 119% in Hong Kong IPO debut",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMERmeUtPazZ4Q2RocXVHWEY2c2V0WFdNNE9nQWgteUhucm9hUWlzSDBFY3pHV0thREdCNmxOd2g3czlQdWRnbklXWkdzZzc4M0tiRGM1VFc5U0RMWkxtZVVNdE1yV0VUZUtDc1dKcGxGUFF4NndMNE5ocDJrd1dNeVNoLTA2bFo0NjZqMUJkTlVwZm5fVnN4bmdLYTR6UGZQUVlucGpmb0dXbVFCbU82ODZsREVqOVF3YXpPUlVoYmR1TThUVUxlY3VmMm_SAdIBQVVfeXFMTmFpTjZKTllpM3VIMzlQTXZkLWZlUE0zeGlzRHhuQTZwbkpWblFmbkttVzYyY3pkU1QtcjJpZ1pWeG1PdnJ1dDVQWktKamFsbjUwUGUzaDhkcy1EUWdhOTlCLXBVNjBCcVdLQzk4MlZRbWlQUjRUbmNqUXhpTjIybHYwODlqc2lCYU96S3hUU2Q2MGpOeDRjNHlzWmVVVjZrbzJ4U0l5Q2tPWk1EQnlQZ2NJd0x0d19YUDRGNlMyZ0FqQWJKQlF4c2FtZFVsd0lISTh3?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-11",
-     "time": "13:06",
-     "title": "Chinese yuan remains range-bound as US rate hike bets strengthen dollar",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSWdPd0dRbjRMWk45SWpscjEwZ2lFdFZ5T0szSXhaeTRIemNyc1BVdTV5Vlh5UlhranNERUpaOXhRODhhNlN1bF9DWUNmSklNRHdYMk13aklDelNIWnJkMmFSVUJkNVJvRlJDNlVvT0pUWGZHalo5ZnpiY3Z4NFlYd3VTNEZsME9QcWlTeHd0aklxbzJvbm1iaDRGNmE1a1VjVkJyUlF3ZmdQZWFnX3FWWVhiVkhQR0Fpa3hRNWN5TTNXUS1ZQ2YweGtudUhKVFUybmhZdDMtUjBOS2VmbkF3SENR0gHnAUFVX3lxTFBfU0VlenlfLVVTazVOOEF2MFluOHZHemQzel9vS3llaHF5WlVFMWczR1lBeE42dDVkSmhDNF9Td19ReXZ1dTFfSzJZWlN3MGVJTzF6SXpoSHVoTS1GY2hRa3VHVHVQRVN6MUlWbHFYMHh3UHUzZjNQemoxaGJtZFR0S0hYZURNbmtpQWkzdFJWYnVsMEZWMnNRMF9aN1FxdGR6NnBlaFNuSEh2dmFqRkd0aThMYm9VelV3OUtfblNJa2U4ZVVKcUJoSm8zRTFkWkZYMEVQMHVFdW1NQVJMdVBGWGhpM1pPTQ?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-11",
-     "time": "19:09",
-     "title": "Singapore shares rise with Venture leading the way; STI up 0.6%",
+     "date": "2026-11-12",
+     "time": "19:30",
+     "title": "Singapore shares drop in tandem with regional bourses; STI down 0.1%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcWxTM1JQWFVQeFV1bndkc1NuTzE5a1ZpVTd1R0dYSkpzNlk1cVNyaXgwc25jQXJYTlB6TnN2enpNSW1OQmMzNHFWVk9Pa2RjZTcxX3JOdzl1eVozaTMxU2FtSXlfTjdWc0stc2dUUzJvVDc0QUJVNkk4SHBuX3plZ3JZbElfM0RNd284Q1JSZTFONERjNWtLSnZkOWN5di1ITUE?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWHh1UHFkUmFqY21xOGhiU1RoOW5RN3RSa21MTE9uazNESll5ZXFDdEZzdlNpUTdaZFQxcHM2VkZMbi1NNUFvSTJJTWxUVXJoUmF6UFF6V1F2SHNBamhQRHdRNVFTbWU3TFJYZG41VFNZVnpSRWRVVzVOc25UVTg5VHpianFPVThqUmttdUN3WlMxUnQ3U2NyNTVFQ2J5TERkOFZ3?oc=5",
      "priority": false
     }
    ]
@@ -226,10 +226,10 @@
     },
     {
      "date": "2026-11-12",
-     "time": "02:22",
-     "title": "Nifty eyes record as largecaps lead charge on strong corporate earnings",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNc0hnSUgxWkhNRU1wMXNhNHFrRDVyTGxwMVd4b0lKdmtxVkc5YTlIdVVMekZMMzNrbG4zTGZfb0gxN1NJWnc3Z09FeXBGdHRmOV9Dc0dtalNudVNLRXBPei1YWEJGUlpLUUVJM0VkbzRnN2JZUWtCTm8tQ3dKaU1Ec0JFMlg1RkZic3c0czJBSzFXX2tER2FjS2RSckt0elhVV3Bhck04QUJoOTg3enlEbnVaTUxuclpjWkJPYWtaWHhkN19SZWRvYl9OTWZlampNN1NwQdIB2gFBVV95cUxQTW93YWJDVDNQUlZyT051YWU0dkVZNDktRXZrSXdVdE9HbjBQV0x2Y05iZ2otVTFrbEg0ajBhM3V2cXA4TVk1dHVqaDRqSExRWEl5aUxsX0tiSnBoRXZrajFTd1B1YnFZbEEwWVNSOGlRWVZTa3A1dnc0QkJnZy1HcWZhcVZCMDJkWUdDZDkwM3VXSUlpVHFHeDdlbXE1YXpyWklWMklrNFE4X2JOaGRpcjlPZzRjZHBfTHFzRzB5aFFzUjd2cDI0SnBPUjRsR2FhRkUybkJnRWt5dw?oc=5",
+     "time": "20:03",
+     "title": "India October inflation tops RBI's 6% limit, strengthens case for rate hikes",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSlE4RjR5cTc2cVI3bWZZWHJxcGdTTXA4UjBQNUEtbVdfeXJwdXZ1b21ZejRTaERGWmlXa0JDZ2ZKWHdBaUx3cVFwRnlTSzVzci1FakptNjVUWVZZYXZ2WEEwVy1LMktOWFlUdE5GNHpLbTBMNTR2VFFwRHUtSDFqUkNnUkFNUDBBR2Z0Zm84YjZraTJnaV9uUEU1NVZGN0xnaHVIMWVxRFNiOEsyelNQdWI0R1Y3UVpZ?oc=5",
      "priority": false
     }
    ]
@@ -237,6 +237,14 @@
   "GL": {
    "label": "글로벌",
    "items": [
+    {
+     "date": "2026-11-12",
+     "time": "08:38",
+     "title": "MSCI says Indonesia's Barito Pacific will be removed from its indexes",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNEF1b01HVFNzeWNSRHkyZ0V1SFlvMldoRW01Z1VXMzJ6OVBuVXNCNHhxbWhHRUt6RGlHT2VoaHQ2OE9WN09Kb0VUMER2cy0zUkU3UjZHYV9paTVpamNEcG8wZ014cVpNV2pyZ2RiUHFsNWhQc3RYTkN5dXEzdEZpWGU0MjRHSXg5Y3czM2dUR2Y4dTBLYkwzM2NDQUU2cjV4WXM1OGt6RXA1ZFNYTFdvZDN0Rl95LV9MRUE?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-02",
      "time": "23:26",
@@ -251,14 +259,6 @@
      "title": "Prabowo's Brother Warns Rupiah Could Hit 21,000 if MSCI Downgrades Indonesia",
      "src": "Jakarta Globe",
      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU0JYVjJTV1JMXzc0Skk4M2tERW9vX0NCb0RiaE5KQzZiYkVhNjZoRGVyUXJOcGZWYTJ4NnBQUmQ1Tm1UMFRXUWdFZ2RnVlZCbGN6dXY3Q0JsMnRyRVF6VFdyYmU1VnZYNFpzdWZRMnIyQnlTVTFkU0RNN19vRG5EWm5mQ2dxNHc5eTNTWDRzdnJLS0t2QUFGLS1haFRMZzlKdks2anFUOHNSZXc?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-26",
-     "time": "16:00",
-     "title": "FTSE Russell Keeps Indonesia Off Watchlist",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMXBablczeVZFNDhGc243VTg0LXdjamQyZmpObHZkS2NrNDJ4elc5bWl6cWFCR3NMSG5vMEFrY2xjcDFrOHRjbkhwWE1xdko5VnIwa3NEWEpCMVVpek5aeXkxeGdVNFE0NVlPMGx1bU5pbnlTZlQxYjNLVEdUbi1yRg?oc=5",
      "priority": true
     }
    ]
