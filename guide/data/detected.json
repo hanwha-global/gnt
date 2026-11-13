@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T02:51:19+00:00",
+ "updated": "2026-11-13T02:33:05+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-10-26",
@@ -104,7 +104,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-10-20",
@@ -121,7 +121,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-11-10",
@@ -150,8 +150,20 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
+    {
+     "date": "2026-11-09",
+     "title": "Broker Dealer Firms We Regulate - A",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE13LUZhTHowU3lvcTZWclFra0Zvb1ZWbkVuWnFXS3NSeENmOHY0OGxiUFlyWkRNcjRkb0VpRWpBeTJ5QXpYcDJQZXRza2ZsS3VDMWZTYjJJTEdFYnZoaEZLSFV5cC1pblh4Y2tyQ1lsd1BQOFU?oc=5",
+     "src": "FINRA"
+    },
+    {
+     "date": "2026-11-09",
+     "title": "Broker-Dealer Firms We Regulate - C",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa3dJVy05aDRrSkh0UXpGSVZXYmlkTVBpb01XdlQ0SGN2c0ZZMjN4T3otZG1aOEtDVWtlVmUydmdMYktaMVIxXzhhU19USUZiLWV0Q3dUNjRaajhNYnp6aU1VRWdKbnl1YjBKNjczYi1GQ3VRQ0JFMXFTRE9oSUliWDVPVXBIeDV6RUE?oc=5",
+     "src": "FINRA"
+    },
     {
      "date": "2026-10-30",
      "title": "Jason R. Anderson; Blox Lending, LLC; Digital Licensing, Inc.; Schad Brannon; Roydon Nelson; and Business Funding Solutions, LLC, Relief Defendant.",
@@ -167,11 +179,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-11-02",
@@ -218,23 +230,23 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-11-11",
@@ -395,11 +407,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   }
  }
