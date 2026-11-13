@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T02:39:29+00:00",
+ "updated": "2026-11-13T02:20:15+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,8 +66,17 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
+    {
+     "date": "2026-11-12",
+     "title": "가상자산사업자에 대한 최고 수준의 보안 강화 조치를 통해 이용자의 자산과 정보를 철저히 지",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOWluUEphTUtPY1FYTldfalpVSjJhQmp2UHBkZnBYR2Y5ekd1QU9pdWQ4NFhuTU84RkpMdlN0N1VvWnNreXNaSUw1UzI4M2NUa1dMVjJiMHNnZXJvVGhyQVBuMzRGVzl0RDZReG1Ed0N3VWh4NUhuS242TjhEVDNoR01vMGY0MUVSZnIxc0p3?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "vasp"
+     ]
+    },
     {
      "date": "2026-11-06",
      "title": "가상자산 과세 관련 부총리 브리핑 - 보도자료 | 브리핑룸",
@@ -363,7 +372,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-11-02",
@@ -431,15 +440,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-10-17",
@@ -453,11 +462,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-10-28",
@@ -471,7 +480,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-11-09",
@@ -575,7 +584,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
     {
      "date": "2026-11-12",
@@ -706,12 +715,21 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-12",
+   "auto_checked": "2026-11-13",
    "items": [
+    {
+     "date": "2026-11-12",
+     "title": "HKMA and SFC co-host seminar to advance tokenisation in Hong Kong and promote collaborative opportunities within Project Ensemble",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOLWg1SUtIamhGa0RacGFLTW4yV2ZJeEhfSUw1Q2hQQVFlZ1JNUFU1QVVuejFxNWFFMjJwRTd5XzQyMmZ0SzIwdW9XSVFyTzc5ZUFwUnB1bEJUU0hWVnhGWS10cVdCVWpyOFhMRVBfN1ZNQ1ltTlJwczU1M1BncVZNYjU3WQ?oc=5",
+     "src": "Hong Kong Monetary Authority",
+     "topics": [
+      "sto"
+     ]
+    },
     {
      "date": "2026-11-04",
      "title": "Government welcomes passage of Inland Revenue (Amendment) (Crypto-Asset Reporting Framework and Amended Common Reporting Standard) Bill 2026",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9BY190MEJvZVlVa2UxdGpjSE9ZeFU1aUtRc1RFTXdBdzNQTTl0TkR3QzhOSl93QjBiZEhSbWR0Mnl0aGk0eHJFY1cxWl9XdGN2TkRSQmZHXzIwLUluVm05bFhkVGE1LV9zTnBQOGJ6N3YzMFE?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1TanJFY0xYbmNxby1odGpOMzZqeTVQS09oVG9JV2dOZ1lYYWNfaGM4cDloQlNFbF9OcjUzbDVfRmlLY1lsd3h3Smw0cHRrRDctaGYzamJZcGEzczEzRmZ3dmZZbVlGNWhNc1FiS3lVWVVoZw?oc=5",
      "src": "www.info.gov.hk",
      "topics": [
       "general"
