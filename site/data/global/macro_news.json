@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T20:18+09:00",
+ "updated_at": "2026-11-14T01:38+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -23,10 +23,10 @@
     },
     {
      "date": "2026-11-13",
-     "time": "16:31",
-     "title": "코스피, 외국인 이탈 0.98% 하락… 5300선 하회",
-     "src": "글로벌이코노믹",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYWpHd3RkWHZqWUZWV3BXN09Pd1RLMFF1UEUyLWt5dTlQaUt0V1k1d2Jqb1hIZDNNUDBPZEhYODRSQ0RBc1RaQXZaXzVTbURFUllScElybTJLdUxaMWlEMWVrZlNRRHgyU1BXck5YbDNrX1FRSWc3ZWdSSFg1azdzY3RIbTVLZ1ZX?oc=5",
+     "time": "20:56",
+     "title": "’젠슨 황 사임’에도 올랐던 코스피…외국인 매도에 하락",
+     "src": "연합뉴스TV",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EZkJJTHFTdVlFWFdDRWwteTc3ak1IaUJSZjh4MnJKVnY2ZVVGUEJWWE9EbHVhS1o2dmhOamgydTNvNFJYWGtBYmxXd3hjenlVQmo3SE5wNHZ0MWt4T3pDbmxRUlVCS2M?oc=5",
      "priority": false
     }
    ]
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-14",
+     "time": "00:37",
+     "title": "That Haven Trade in Treasury Bonds Didn’t Last Long",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcE43RTdfZ2FKdDFXTk9Vem9FaXBvYnlMT3p1aVUybDVrVTZ5cWE4SnMzT2tqN2kzY3NMdVRCbF9mdTVmMzlaVHJNNU0yMHdQWTAzeTF5d3dZbzFGc3czUFBUUWp6cmpIaUZMVEtSeWtOdGJWdm5Ka3ktN2E0YmNkM0dJM3BFVldEdWFqaHRsajZPclBqcmM2Z2dfQ3Z1bV9vVlczWEVIclU?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-13",
+     "time": "23:33",
+     "title": "美 고용 호조…베선트 재무 \"전쟁 이유로 금리 큰 폭 인상 안 돼\"",
+     "src": "뉴스1",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ORUFrZS1ENmxqUl9lSW1INE9TSmN3Y2RZeGpsVEIxRVFDcHhWOXFHV01tUGdXX2tEZHZ1TnNvTUF0YnlLNVY5d2s1RGtCZFFNdS1nWXhOdnE?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-13",
      "time": "18:26",
      "title": "Treasury Yield Surge Shatters Hopes Worst of Bond Rout Is Over",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWjhkdkdUYk85b1djY25EQk9aY3VBUmdlZGVpS251di03VTMzaDRvVHIzbEZBcjZSSlNvMDNXdXFNX3A0QTB6TFBXRndSdFFyNXBwMXRtRmZIcVJySzVXaEZDQ25HN0ZDOGZtbkpibUZ3UDZPUWpiVWVLMU1hVzk3X3JwQ2NxVXo3WkVWMnhqandnNUg0UjlnUUNSTkUwYjFLd3ZBeEFBel9yT2h5WVRObU0zYw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-13",
-     "time": "17:43",
-     "title": "Treasury yields rise as traders strengthen Fed rate hike bets",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1iVEhaNGZvZDlvWlBGMldrUE5jUlVpUXp2d0YwdEFzZU5ScmVUOTk0ZDdORVhuMjhvRWZTWVQtR0JXWUlWVWVGVHlfOG4wdWZiZVVQNGZXTzByQ2tCRU5LQmFGajY3VDdtVnZIam9MSdIBdEFVX3lxTE1HYkdxR2dlMXVleXNjckE4Nm4xS1JNU1lQMC1JMGtkQ1FwRU0zWXNsSU45UnpYRjNqeVZkZEVwbmxZYmdnLTlfQkVNRW9iV210ZWtPYjdvRGVUc0ZDSDFMNy1FY2JiLTVjTlJ2eEc1VUxpbGZu?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-13",
-     "time": "15:06",
-     "title": "미 연준, 내년 금리 결정 회의 7번으로 줄여",
-     "src": "매일경제TV",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1UaTR3YUlpRWdqMVd6ZzF0a09FSEQySHVlRmxORUZqMkhfQWRUWkJ6MFcyREJ1NDVzNXZiMkNiTzRDODhJck1VU3lwYnMtNTRyUGdZajRCMkRreUFqeG1PLUc1Q0E3THBj?oc=5",
      "priority": false
     }
    ]
@@ -198,9 +198,9 @@
     {
      "date": "2026-11-13",
      "time": "20:08",
-     "title": "Genting Singapore hits one-year low amid broader fall of Singapore stocks; STI down 1%",
+     "title": "Genting hits one-year low amid broader fall of Singapore stocks; STI down 1%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWHA2dGdXVk9SMlNKUmFMSU5FUmxqdHdsc2luYXQ3QzF0UHNTbndUNWh1c3VaTkhUeEdnX0RUa3AzVlhweDlJTTMzOUhxaGU0dWZ1bkVzcDFTQ2JhdVNPQngzc0RRU2JhazZObG5UMk9VY0t4M0RnNDZYam1PNkc0VEh0b0JvNmhhNl8wUEYxOG1wQ0dWLVBOeWk2aTFheE9YSk44ampfcUt3SE1sanlKMkRmcTB5ZDg5Q0tyYUhSOUN6aW0wbTh4WkVFakU?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNd3FraEFib0hEWVVYTld6TGJPZUY1RWtjVEQzSmYzNEdCNlFXelM0aGtyc2hvajJ1dWc3bXk3a1BCRXUxRTdmUE1TTUIwMlFpUXQyYk5fOXZVNVh4aUk3d0VGRDVoWUpBWURLekFNRnY4dE01aHhTdzMzYVVzbnlyX1hzdFJJQk9rTmwydTN0N0RDS3hzT1gzbmpnSGhnSjlZQ2hWTzJrNm5TLUIxczhnejFIQ1Z4enpnMXdod3Yxdw?oc=5",
      "priority": false
     }
    ]
