@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-12T11:27+09:00",
+ "checked_at": "2026-11-13T11:05+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -41,8 +41,8 @@
      "category": "구조조정·비용",
      "text": "베트남 법인(PTSV) 비용 증가율을 매출 증가율 이하로 묶는 비용 상한 관리 검토",
      "evidence": [
-      "1H26 비용 +18.5% vs 매출 +11.5%(FY2025 반기 환산 대비, DART)",
-      "순이익률 FY2025 15.9%·1H26 10.7% vs 한국계 흑자 5사 FY2025 중간값 18.3%"
+      "3Q26 비용 +22.2% vs 매출 +16.4%(FY2025 9개월 환산 대비, DART)",
+      "순이익률 FY2025 15.9%·3Q26 11.7% vs 한국계 흑자 5사 FY2025 중간값 18.3%"
      ],
      "links": [],
      "bucket": [
@@ -95,10 +95,11 @@
      ]
     }
    ],
-   "changed_at": "2026-11-11",
+   "changed_at": "2026-11-13",
    "reason": [
-    "정기 갱신(14일)"
+    "DART 분기보고서 (2026.09) 반영"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "R02",
@@ -158,9 +159,21 @@
      "reason": [
       "정기 갱신(14일)"
      ]
+    },
+    {
+     "date": "2026-11-13",
+     "fp": "f54921dd7f2a",
+     "rules": [
+      "R01",
+      "R12",
+      "R07",
+      "MKT"
+     ],
+     "reason": [
+      "DART 분기보고서 (2026.09) 반영"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "ID": {
    "country": "인도네시아",
@@ -171,44 +184,14 @@
    "regime": "NEG",
    "bullets": [
     {
-     "rule": "R08",
-     "variant": "NEG",
-     "category": "리스크·규제",
-     "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
-     "evidence": [
-      "Financial Times 11/8 'MSCI 강등 검토' 등 부정 구조 뉴스 6건(최근 30일)",
-      "IDX 1개월 -18.4%, 연초 대비 -41.6%(11/6)"
-     ],
-     "links": [
-      {
-       "label": "MSCI 강등 검토",
-       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORlE2Z2t5M0tUaFdPQXlWUW1mOHpXMFc3blN1c2djVy1VUDUzanZ6aHp5SGFZVG9aMkxjZnU2X1ZvSlRoanVaYVFZeFZPajN6SDdycEkwSjVVR0M0cXM3MHd4OFpDc2J5VlU0elR0YUR2NVlVSU92QmhnZFk4YXVfT1RmcmM?oc=5",
-       "title": "Indonesian president’s adviser says MSCI downgrade threat ‘went too far’"
-      },
-      {
-       "label": "Jakarta Globe",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMl94OVBQZDZ0anF2cFVqOVdtdGhYVENlS0VRTkxiSU1uSGZhMndLZnZfVlQybmdNVm5QZWg0dnQxN003WVlQSVJSVTBqQV91anhCV2R5Q1NSdGg0S3RBcUN6TXdsbmE0OXNtR1VxVGUxalBGWWtXWmVWMi1TT3NxZTBYU2Q4cGtCZmduOW9wMjQtLU80c215X1hpcTdkZw?oc=5",
-       "title": "Indonesian Stocks Plunge 3.78% as Foreign Selling, MSCI Fears Mount"
-      }
-     ],
-     "bucket": [
-      "NEG",
-      "MSCI 결정"
-     ],
-     "keys": [
-      "CSA",
-      "CAM"
-     ]
-    },
-    {
      "rule": "R13",
      "variant": "",
      "category": "구조조정·비용",
      "text": "인도네시아 증권(CSA)·인도네시아 운용(CAM) 백오피스·IT·준법 통합으로 중복 고정비 축소 검토",
      "evidence": [
-      "1H26 두 법인 순손실 12.2억원, 비용 85.2억원 vs 매출 73.0억원(DART 2026.06 반기보고서)",
+      "3Q26 두 법인 순손실 9.7억원, 비용 117.9억원 vs 매출 108.3억원(DART 2026.09 분기보고서)",
       "인도네시아 증권(CSA) FY2025 순이익 27.2억원에서 적자 전환",
-      "IDX 2026-10 일평균 거래대금 연초 이후 평균 대비 -19%(IDX 회원사 집계)"
+      "IDX 2026-10 일평균 거래대금 연초 이후 평균 대비 -20%(IDX 회원사 집계)"
      ],
      "links": [],
      "bucket": [
@@ -221,12 +204,42 @@
      ]
     },
     {
+     "rule": "R08",
+     "variant": "NEG",
+     "category": "리스크·규제",
+     "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
+     "evidence": [
+      "Jakarta Globe 11/12 보도 등 부정 구조 뉴스 7건(최근 30일)",
+      "IDX 1개월 -11.5%, 연초 대비 -39.3%(11/12)"
+     ],
+     "links": [
+      {
+       "label": "Jakarta Globe",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObndjQmRBWkx1cF9EN1BfZVl1SWRzblJtQWlmS3BCdDRsOUtoWDlubWZZaXJ6blN1QS15WUkzNC1iVGlHMVZtTEVyYmE1R3Fpb2p3NVdQU0s4T3NjZkI5ZnFwNE5RVFc1SUNOSnh3VmZJd2FoU0syWlVRNEd4bnMwa1JtazZWVG5USnpKQVRKNzlzS3d6OHZDLXJlTVlrSG9rck4yQ3dGNUo?oc=5",
+       "title": "Jakarta Stocks Rally 2.7% Despite MSCI Outflow Risks, Political Uncertainty"
+      },
+      {
+       "label": "MSCI 강등 검토",
+       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORlE2Z2t5M0tUaFdPQXlWUW1mOHpXMFc3blN1c2djVy1VUDUzanZ6aHp5SGFZVG9aMkxjZnU2X1ZvSlRoanVaYVFZeFZPajN6SDdycEkwSjVVR0M0cXM3MHd4OFpDc2J5VlU0elR0YUR2NVlVSU92QmhnZFk4YXVfT1RmcmM?oc=5",
+       "title": "Indonesian president’s adviser says MSCI downgrade threat ‘went too far’"
+      }
+     ],
+     "bucket": [
+      "NEG",
+      "MSCI 결정"
+     ],
+     "keys": [
+      "CSA",
+      "CAM"
+     ]
+    },
+    {
      "rule": "R04",
      "variant": "gated",
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용 하락에도 MSCI 결정과 손익 회복 이후로 보류, 후보 검토만 선행",
      "evidence": [
-      "IDX 5,050(11/6), 최근 1년 고점(2025-12 월말) 대비 -41.6% · 루피아 원화 대비 연초 이후 -14.3%(ECOS 11/2) · 원화 환산 지수 연초 대비 -49.9%"
+      "IDX 5,251(11/12), 최근 1년 고점(2025-12 월말) 대비 -39.3% · 루피아 원화 대비 연초 이후 -12.8%(ECOS 11/9) · 원화 환산 지수 연초 대비 -47.0%"
      ],
      "links": [],
      "bucket": [
@@ -243,8 +256,8 @@
      "category": "상품·제휴",
      "text": "BI 고금리 국면에 맞춰 인도네시아 운용(CAM) 채권형·MMF의 인도네시아 증권(CSA) 고객 교차판매 검토",
      "evidence": [
-      "BI 기준금리 5.75%(2026-09 기준, 1년 +100bp, 다음 결정 11/18)",
-      "인도네시아 운용(CAM) 1H26 매출 9.4억원·순손실 5.5억원(DART)"
+      "BI 기준금리 5.75%(2026-10 기준, 1년 +100bp, 다음 결정 11/18)",
+      "인도네시아 운용(CAM) 3Q26 매출 12.0억원·순손실 6.7억원(DART)"
      ],
      "links": [],
      "bucket": [
@@ -256,10 +269,12 @@
      ]
     }
    ],
-   "changed_at": "2026-11-09",
+   "changed_at": "2026-11-13",
    "reason": [
-    "새 뉴스: MSCI 강등 검토"
+    "DART 분기보고서 (2026.09) 반영",
+    "새 뉴스: Jakarta Globe 보도"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "MKT",
@@ -418,9 +433,22 @@
      "reason": [
       "새 뉴스: MSCI 강등 검토"
      ]
+    },
+    {
+     "date": "2026-11-13",
+     "fp": "c97d83264f8e",
+     "rules": [
+      "R13",
+      "R08",
+      "R04",
+      "R06"
+     ],
+     "reason": [
+      "DART 분기보고서 (2026.09) 반영",
+      "새 뉴스: Jakarta Globe 보도"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -435,8 +463,8 @@
      "category": "구조조정·비용",
      "text": "싱가포르 법인(PTSS) 비용이 매출의 5.4배, 고정비를 매출 규모에 맞추는 조직 축소·재편 검토",
      "evidence": [
-      "1H26 순손실 11.8억원(FY2025 순손실 15.3억원), 매출 2.7억원(DART 2026.06 반기보고서)",
-      "STI 1H26 +11.3%에도 같은 기간 매출은 FY2025 반기 환산 대비 -19.5%"
+      "3Q26 순손실 16.5억원(FY2025 순손실 15.3억원), 매출 3.7억원(DART 2026.09 분기보고서)",
+      "STI 3Q26 +22.2%에도 같은 기간 매출은 FY2025 9개월 환산 대비 -25.5%"
      ],
      "links": [],
      "bucket": [
@@ -452,7 +480,7 @@
      "category": "자본",
      "text": "싱가포르 법인(PTSS) 증자 자금 단계별 분할 집행, 분기마다 매출 성과 점검",
      "evidence": [
-      "1H26 중 출자 101.4억원(DART 2026.06 반기보고서 타법인출자현황) 후 자본 대비 매출 3.7%(1H26 연환산) vs FY2025 14.1%"
+      "1H26 중 출자 101.4억원(DART 2026.06 반기보고서 타법인출자현황) 후 자본 대비 매출 4.0%(3Q26 연환산) vs FY2025 14.1%"
      ],
      "links": [],
      "bucket": [
@@ -468,7 +496,7 @@
      "category": "M&A·지분",
      "text": "싱가포르 법인(PTSS) 현지 상장사 인수 부담 과중, 지분 인수보다 제휴·JV형 확장 우선 검토",
      "evidence": [
-      "SGX 상장 증권사 2곳 시가총액 2.6~3.2조원(11/6 주가) vs 당사 자기자본 2.26조원(2026 반기보고서 연결, DART)"
+      "SGX 상장 증권사 2곳 시가총액 2.6~3.2조원(11/12 주가) vs 당사 자기자본 2.26조원(2026 반기보고서 연결, DART)"
      ],
      "links": [],
      "bucket": [],
@@ -500,10 +528,11 @@
      ]
     }
    ],
-   "changed_at": "2026-11-10",
+   "changed_at": "2026-11-13",
    "reason": [
-    "정기 갱신(14일)"
+    "DART 분기보고서 (2026.09) 반영"
    ],
+   "last_check": "갱신",
    "candidates": [],
    "history": [
     {
@@ -544,11 +573,23 @@
      "reason": [
       "정기 갱신(14일)"
      ]
+    },
+    {
+     "date": "2026-11-13",
+     "fp": "a1ea8857f88f",
+     "rules": [
+      "R11",
+      "R05",
+      "R03",
+      "R18"
+     ],
+     "reason": [
+      "DART 분기보고서 (2026.09) 반영"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   }
  },
  "errors": [],
- "updated_at": "2026-11-11"
+ "updated_at": "2026-11-13"
 }

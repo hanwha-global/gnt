@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12T11:25+09:00",
+ "updated_at": "2026-11-13T11:03+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -129,13 +129,13 @@
   "NH투자증권|인도네시아": [
    {
     "date": "2026-03-16",
-    "title": "Video: NH Korindo Sekuritas di Sanksi OJK atas Kasus Dana IPO BLISS",
-    "src": "CNBC Indonesia",
-    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZ0NCc0t2LXJiakpRY0hYRVhvNGNNbDFEMlpQZEQ1MzRyd3dQaUJZOXZObE1xZG9HYUc5SzBPRWY1cFJ6aXBnWkdkbWxzZGotMlByUGh2MjJmYjZ3bXpkclFzeE9mWno3UXh2RnIxRm1iQWFCRE1zTEI3Nk5uYUxYcDRleHhFOG9uQzF5OTZDMW9iOWlMMDlNUWYybU9IVjdxQmJlVGFLVGVjQ3dpM1VpUm1Ca3RJdFNSWnQzT0ZyQ0FSbGJxMVN3?oc=5",
-    "site": "www.cnbcindonesia.com",
+    "title": "OJK Blacklist Bentjok di Bursa, Izin Emisi Efek NH Korindo Dibekukan",
+    "src": "CNN Indonesia",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUXNYUFVpV0I4bTdxckdRMWgteEZvRGZCa3phSXJlUkN1cVpKUFcxRjJja3lVd0hDV3JhM0hSemIyQUtkbklWRUxUZ0ZJWHE4SVdsUEM5U3kwenZLR2lSR3dPYlVZaFd6TFBwOTV3RE1xV3ZxclJPb2NRZnFzZ3ljR1dOZDZxM1hlRFBqaFZuVHMyeXB2YUdsUm83MlhBSjZRc2FoeWZHQ1J4dUFmZ1NtVzA4TFhZREhHd3VzOHBrcUVuRzlqNlF6UmlR0gHPAUFVX3lxTE5keVhuOFZfeGpSVU9kNlZYS3VPZXNXTTJHd1VXb2RCSkRsOEdOeEd2U2IxaUdYUGtnNUY3bVFQTWw1cHhxZnQyWWJKd3ZmcVpabFF2ajB5Y3VrVktGUXBILW5sWTdHdzhNbGtEcjdOdXYtZ045eXhSa0xQVENQUXJNSUlYWkRDUHo4eFpiU05WbVR4SDRDYWIwNHJGdkg5YmwtekdjaDdnOWRoVGlDY0tSMmNkSERmMUVxajdKMjR6UnBiWWxqbEJyVkg0VE9JVQ?oc=5",
+    "site": "www.cnnindonesia.com",
     "foreign": true,
     "lang": "id",
-    "title_ko": "영상: NH 코린도 증권이 OJK에서 BLISS IPO 펀드 사건에 대한 제재"
+    "title_ko": "OJK, 증권거래소에 벤족 블랙리스트, NH코린도증권 배출허가 정지"
    },
    {
     "date": "2026-03-14",
@@ -449,10 +449,10 @@
   "신한투자증권|홍콩": [
    {
     "date": "2023-11-15",
-    "title": "신한투자증권, 홍콩 법인 해외 선순위 인수금융 셀다운 완료",
-    "src": "아시아경제",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qVlBqaWtjOVpwNnlGLUlUTmZSRVZReC1PQWZ0WDNZcS1haWZ0dVRJMnRjc0k5eHdDLVcyckZ3UTl1WUhlMVdYSGRSZTFTWjNuNEEwRjh5elBGOW9JbjBiem04QUhIRGx1SV84Sw?oc=5",
-    "site": "www.asiae.co.kr",
+    "title": "신한투자증권, 홍콩법인 1000억원 규모 선순위 인수금융 셀다운 완료",
+    "src": "머니투데이",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JanZmUDZuYjNBSmlyY3ByOUZ0QmIxZm9DZGp5aEJaTk00LXh4V0xtQ01NQnVFamMtOG1MU3NDUDhkTE9MX2pGYnpkLWthbXotemo1QjQ1NmRfc2hPQjhvcW53MDNtbjlW0gFuQVVfeXFMTTRtcE9zTFVJb2xkTzZmR3FvWlJKbmhsTG9MQ2Q4amhxd2dacnVnSEJ2c2xENEF0eU05QmxzY25Sa09wMEE4OUs5am9fV21TTTEzbUdROUlDbVBwUGF1X1lsRVhLTDhiT0VJUjVCeFE?oc=5",
+    "site": "www.mt.co.kr",
     "old": true
    }
   ],
@@ -603,13 +603,13 @@
    },
    {
     "date": "2026-04-22",
-    "title": "ĐHCĐ Chứng khoán BIDV (BSI): Mục tiêu lợi nhuận 700 tỷ đồng, nâng quy mô vốn lên 11.000 tỷ đồng",
-    "src": "Tin nhanh chứng khoán",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTjdfZXljM2RvdDd2NXJUNWNCTFVTNElBaXRoNHhRNFAtVUF0dTZrOW1LT1ZkMUdndmtZMFBXeE13OWk3SEJseHlXWWxOSTI0eE52VnlMclEta1Y4TnpseDZVRi1GaXg0d0ZaYk1ZZUg0RHBGclV6eUlEYUNzTS1JbzRUTG96Z2d3a3BfSlQ2WERuNkxTTjdxbm1rckdlUDNRSUF3Tk0xRUduUE53a3RHTEZNbGRTVFNWN21oSExxSDM2eE16Q21acUZDRnVuN0h3cEQxc09Wc9IB0wFBVV95cUxQUGlaVnhyamF0UThCTnNFZEpxS0oyYTdJcWV0NzlLNXh2TEUteDJxSWE4ZlRaRmdNX2JMTUk3ZFpVNVBNQ2h2Z1NoSU5IRlFnS21lamhjMzJlMnp6MTI3UlVTZXAxbjhaYkFiUGFfQW5VQjJZV0MtUl93MkpiaUkxWDY5NV82dWpfa24zNFBzLVhjcWxueEM0Z3otWVNsX0JPQVN0Rl82Tm82czlGakMzWnc1akdwanc5MThFWlhiblhLTXNoTjFIR3hzTXVRaWo5Ynlz?oc=5",
-    "site": "www.tinnhanhchungkhoan.vn",
+    "title": "ĐHĐCĐ Chứng khoán BIDV (BSC): Mục tiêu lợi nhuận 700 tỷ năm 2026, quyết tâm nâng quy mô vốn gấp đôi lên 11.000 tỷ đồng",
+    "src": "CafeF",
+    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQW8xeDFQUW10d1pvcWpXVERBdzdrTi1rOTQ3NHJnazZ2elRPRjU2Z1RxQWoxUW55RHdGc2VOZDJLX2FaUUhINU1NNnBtdFhsUHM2eVpIOUFPN0JtNHFLOE9yM0pSZHFZR0hmTWxrZW40Z20zZTlLTkpjZnRQdGMxYzE1VW5ROE9mTG1HblVCWWpBWl84NkJWUHJqVjVSVS10a0ZISlplRmhKd2RzVExEejVqMXdfSmNnbTVNeXpfOUV5X1hqQnlYc2R6QzNIUmJIZ2NQdXJ6d2pfR2QwTHlUeVRSX0cyc2Fn?oc=5",
+    "site": "cafef.vn",
     "foreign": true,
     "lang": "vi",
-    "title_ko": "BIDV 증권(BSI) 주주총회: 이익 목표 7,000억 VND, 자본 규모를 11조 VND로 확대"
+    "title_ko": "BIDV 증권(BSC) 주주총회: 2026년 이익 목표 7,000억, 자본금 규모를 11조 VND로 두 배로 결정"
    },
    {
     "date": "2026-04-01",
@@ -723,9 +723,9 @@
     "src": "Vietstock",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZTJGRmdKYllEM2xocDdFZ3BySENvMGI0RzFYLVBrT0M1eUtBY0VGTElSR1RQM0RGUVVuMmkzVEFLaXR2RVNsQW9PaEtVSmtCWXZpazNGbEhDNWhRM2tHWUNZZmFQMk5faHpGM0NVNXFGNDdCdUMzSDI1emJrVkc2bHI2NzRpVWZW?oc=5",
     "site": "vietstock.vn",
+    "title_ko": "파인트리증권 새 회장이 있습니다",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "파인트리증권 새 회장이 있습니다"
+    "lang": "vi"
    }
   ],
   "한화투자증권|싱가포르": [

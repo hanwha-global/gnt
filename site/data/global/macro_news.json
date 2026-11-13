@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T01:57+09:00",
+ "updated_at": "2026-11-13T11:05+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -22,11 +22,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-12",
-     "time": "22:00",
-     "title": "\"외국인 놀이터 됐다\"…한국 주식 산 개미들 분통 터진 이유 [분석+]",
-     "src": "한국경제",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OM2tVX1B1QlBGZnI3NUpXZEtVb3VCX3VFb2ZUZVJ3dnJNOWhfU2R0aXBHcGVXTnpyRzZBUFhOcThVWi1UODA3LWFtaEhyaEZaOE5kODlxMzVPdw?oc=5",
+     "date": "2026-11-13",
+     "time": "10:51",
+     "title": "코스피 외국인·기관 순매수에 장중 5470선 상승세, 코스닥은 720선 강세",
+     "src": "비즈니스포스트",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NRnQ0U1VLeEdyT2I3VkxUY1BTVlZNMURvbXpoa2JVckw2M2xHaXZPTE9PSFlNdHpRa2xLMks5NVh6U05sbk02cFFlbnhEdDJSMTY0ajZkMHBtaW1QMVBON05uY2lLY2drT283WW5GNzUzajQ?oc=5",
      "priority": false
     }
    ]
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-13",
-     "time": "00:54",
-     "title": "US Treasury yields rise after Trump comments raise concerns of Iran escalation",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWTRHU0lsbl9neGFKMGxnV3dnbmhrR09Bb1hjOHU2Vy1xb3FkMnN6UTJsR0k3b09YYmYxdm9SLUZ4Mjc2dDBPZHpqMF9sdGRqOXZIcTBCVGsyNjc2MG9QWWE0SXRoR3BVSGJuZ2dXd2lzbkU1UEhsX3JmZGxRYkpBQ2x0RFE1aGVQVUFkcFAzR1NkUkpuSVNlak4xb2FzZlBFUmVmRC1EaWg1MzFfUExoaFVSQWRuS1JXWHVaaWR0UQ?oc=5",
+     "time": "10:55",
+     "title": "Stocks recover from Nvidia whiplash, dollar climbs with US yields",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZ0cyVmdPTTRkWGt3UlMtUFRyOGhvdDNlM1FYVy1MSVN0elpQZHgtWXctVEE1M2RjQm9IcmwzUGU4cEhEQnhsQWlOX2RhUFk1NzBXeFkwM3lMek16ajB1ZmozdGpLR0cwQ2JTcGVlTTJwMEc2ZFZ3bklxeTk4eElFaHZLaw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-12",
-     "time": "16:38",
-     "title": "10-year Treasury yield jumps back above 5% as oil gains, more Fed hikes expected",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5kS2N1QmprS3IzX3ZuTHRrNlBkaERHTlNMTEdzMkk3bUR3eXo5cDcyMGpiSF9xUVpPQzZHaDBZN2NrbHdFVGpmWTZ1ZXAxMXBuOHlkdzNEcEdRQU44Rm14a3llS1VOUFhPaTByWThqaw?oc=5",
+     "date": "2026-11-13",
+     "time": "10:15",
+     "title": "美연준, 2027년 FOMC 일정 공개…기준금리 결정 8번→7번",
+     "src": "뉴시스",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE83TGhZSDQ3UXJZeGlDZkN6UTdxaG1fVlRkemtyMllLSGVRTlR2S2d5MDBjVl9GSEd4c2xMWDk5Q3VyR2pCSWs2NkV6VFN1cXoyanA4aWY2UXRQN1dSM3RBZg?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-12",
-     "time": "16:38",
-     "title": "Treasury yields edge higher as investors await fresh inflation and housing data",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5kS2N1QmprS3IzX3ZuTHRrNlBkaERHTlNMTEdzMkk3bUR3eXo5cDcyMGpiSF9xUVpPQzZHaDBZN2NrbHdFVGpmWTZ1ZXAxMXBuOHlkdzNEcEdRQU44Rm14a3llS1VOUFhPaTByWThqaw?oc=5",
+     "date": "2026-11-13",
+     "time": "07:32",
+     "title": "연준, 내년 금리 결정 8→7회 공식화...10월엔 통화전략만 논의",
+     "src": "서울경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9WbjYwQWVkS1VCMHNiNlZhdDFJQUsxSVpuZTQ0bEswNjdjeFhXQUNCNEFpQjd1am9oNURmQnZwS1F5NWRETXk1dzBFaWpYeURCeUHSAVNBVV95cUxPUE5XYWNyc2oySVA0dUJlc0pXYUFET2ExcFJXRkd5bElBN0hMYWFTUzR0ZmYzTWdLTGlmUG4xOXBFSnFaTnVtaUVjcE1Xb2Z1eVFTOA?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-13",
+     "time": "09:40",
+     "title": "Yen Falls to 160 per Dollar Amid U.S.-Japan Rate Concerns",
+     "src": "조선일보",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSEhCUmU4WmFfclNRUkUyZERRdUVZSmlHSThab2pMLUVFVFpKQlRLMEo5RTJkTmc0Q1BaTjczTVZ0T0FydEJKMnpQdjZPMmpYZXRNRjRYaUhhQ193YzFoemlYVzY2Z29QY1EzdVVzeWRtbVZKakloNUtvREhnY3o5WGZobnU?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-12",
      "time": "15:58",
      "title": "BOJ’s Dovish Member Calls for Caution on Pace of Rate Increases",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQN1lrWGhjSmZGRTNKc0hHV0dQeVFJd0Z0cjZfdVB6Ql9YTlhnU3pIa01XNi11R284a0JrMlhBN1BZS1hHamVNWEFsNDVhYURnSkhXTFpfNVFQMHRwWG5ISzE1dnhSZVFmdkpIckRFMS1aa2ZLTk13Z1hXQ1k2QV9PamFQbmtPd0MxVXFmbTlSODlGMkUzMnB4aXhLclF2WEV4ZHQ0UGZYdzFoU0pITGtfX016ZjI?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-12",
-     "time": "14:03",
-     "title": "BOJ policymaker Asada cautions against premature rate hikes, warns of growth risks",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNVlE4bk1RUlhtVkZmNDVQVTVobURIQ3Q4Vkt0dHNlVXFQak5RYzV0NXlxc244OWlqYk1jd085RTJ4MEZVajhLeTUtQTV4Ny16VHdMU1BvbXlKUGs4aHNCNlFQRGZoMEdUNFFhM2xHV3VSOTUzWTZWYWVIckRrbnJtaUhZVjNXUGI0b09jdHRCbEFJZ0dOckJ0bUN4VTJmc2FmZWtsR3Z2dzVwc0gyX3ZQODBEZmNHdnpGbjlyMUROLTJvbEltYWItdDdRM2M4WkdEby1mMXJXRWMtTzZSay03YkNjYW9GNFdCY1BTZlE4eHFMMmJkZjU3Y3NfSHRVQTk20gGGAkFVX3lxTFB4dVR3SFJjR1hpUERxcTgyRndwUUF6dDI3OVB0MFpPLW9TNzR2RWhHcmpPQU9HcHNuZnJObllseGpOR3RuamJpQlJ2WGdKTEhCcTl2WUNPb3h6Z1ZNQzNRSEllRS0tbFdTeVhEWGdBR29oNVRaNTgxNnRJbFdLcmE2b0tHTk1OV2h6OUQxZGt3SExOVDNVLXdvc1d6dnYxMHNiMzBGWkNua2V0dzNDczcyQ0hyOFBxNjQxaWFKNHhTQjdvU3dqb3o4OEpjM2VwN2ZkNGw2Sm9FQUM5dno5eTk4eUVMSTYtSWdPOE8xb1pudkc4cmtDTHRiX3I3TEpZZ0JnSDl0RlE?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-11-13",
+     "time": "08:30",
+     "title": "Wild Price Swings Expose Stress in Hong Kong Stocks, Study Shows",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRmxXOF9NaHN3SDZiRFlnWktabnRxaDlWWEtrQkswWVByMFNndTNlbFRraDY1WDdVUmlDRE9xMWZUZ0c1M3pqVkN1WHJHVHVJZ1VhSVd0STRLT2FZa01GVzVLZjV5S2RmMTN1eG94ZmxOVG9WYy1zWGM3c1hQUkV1T3hEOGw4RnBfdHgyVTZTeVBfeWM4S0hSZ3pyazBwZGxPanBRbUtHSE1uaGV5S3Bxeld1djY?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-12",
      "time": "12:53",
@@ -164,14 +172,6 @@
      "title": "China stocks edge lower, Hong Kong shares fall as global rate concerns weigh",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMzBSd0lCYTJJYzB5ejNMeDZhV3BZdUpNQXlESDhVczJlOWxZQnFDb3ZyZzRTTkNwbGRnMjB0RktTdnNQeFRDeUdpOUFYQzMyc09LemZDbzk4M0dzVGxRS1FrTUd6TDJqRTJHZnhYTzQ4UFk3aW5xV1FQSFZyWTBNWDg2cmNoQ3ZNZkZheDdwUVpHWXZqeGc4YUIxQmsxTHdzOFJxMWFIQUF2NWpMTjc0NGZtdVpORHBRVnpZUlJBbi1FSDhiLW40QU5oN09PX2JHOVBXaUoyM1lZYUR0bkRKdXduQV9KbUHSAewBQVVfeXFMT0l4b0lLSzRxSzJIb21yZXdBN0wyVzlKWjFvZWpsRDk0QjFkLUhtTlM1d2xsU21FZkxPT1o1Rl9GcUtRRGlmUjMyVVdUZVJ1SV9FMU52MUttTF9iWGZ2WWdjN2Q1b0dyUmU3eDBpemJ1Nl9WWklpSEY4ZUZlOVdsaUExZ1hhYk0xWkZXTGl6R2dlLUVrYXV5WFJ2U0Z1aEVYX2Z6bkFwWHZ2c2NSeUZmZi1kd0VGTk00QXRaTXdfSUJVa1J3NmZ4MklhZmhTQmRrTGtxcVRUVkw5OFNtaUdpQ195WUx3Q251MWxoeGU?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-11",
-     "time": "13:52",
-     "title": "Sichuan Neautus shares surge 119% in Hong Kong IPO debut",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMERmeUtPazZ4Q2RocXVHWEY2c2V0WFdNNE9nQWgteUhucm9hUWlzSDBFY3pHV0thREdCNmxOd2g3czlQdWRnbklXWkdzZzc4M0tiRGM1VFc5U0RMWkxtZVVNdE1yV0VUZUtDc1dKcGxGUFF4NndMNE5ocDJrd1dNeVNoLTA2bFo0NjZqMUJkTlVwZm5fVnN4bmdLYTR6UGZQUVlucGpmb0dXbVFCbU82ODZsREVqOVF3YXpPUlVoYmR1TThUVUxlY3VmMm_SAdIBQVVfeXFMTmFpTjZKTllpM3VIMzlQTXZkLWZlUE0zeGlzRHhuQTZwbkpWblFmbkttVzYyY3pkU1QtcjJpZ1pWeG1PdnJ1dDVQWktKamFsbjUwUGUzaDhkcy1EUWdhOTlCLXBVNjBCcVdLQzk4MlZRbWlQUjRUbmNqUXhpTjIybHYwODlqc2lCYU96S3hUU2Q2MGpOeDRjNHlzWmVVVjZrbzJ4U0l5Q2tPWk1EQnlQZ2NJd0x0d19YUDRGNlMyZ0FqQWJKQlF4c2FtZFVsd0lISTh3?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-12",
-     "time": "19:30",
-     "title": "Singapore shares drop in tandem with regional bourses; STI down 0.1%",
+     "date": "2026-11-13",
+     "time": "09:40",
+     "title": "Stocks to watch: Singtel, ST Engineering, Genting Singapore, Golden Agri, CDG, Food Empire",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUGFvRnc5M2w4V053anJPbWpVQTUwRWJnQW12TC1xdHRFM1NLYzM0TjRweTFhbnByUFBoS0laeW40cmstYkJjdTB5Ulk3MEFGamREUnhIczF4QU5tMWVFQTM3cDltSVFjb0Z4Y1FmeVYtNUpkVEM2OF9iRXRPOVhaX0NRWmp2YVpOenpZYWhNcDZuYWVZVko0TFZMeFdXMjVoSEZzVnZyM1hJZC1hNVE?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYmFCdE9DSVFpZjJjdnVZS3BrMUpBbXlLWjlobUwyaThjRVBLbmNDelNrSXFtRzVCazVtS3BGa1NpUlhOa0U0aHluZnVBMzFxSnRuOEcwV085LWFlVXZlMGwzaVlDMk43XzVTU3NvVl9aS0xkeExfdlpjVGdMRm1ndmVHRGFRcFBaWHAzWmJxU3l0VW5PbEZGMHpUbWZqRlVoQjdDT090a05BQWlicktjOWd0RjNyWG5WQWR1Ul9GU1ZwTTdtMmRveS1aX2I?oc=5",
      "priority": false
     }
    ]
@@ -226,10 +226,10 @@
     },
     {
      "date": "2026-11-13",
-     "time": "00:24",
-     "title": "SBI economists halve December RBI rate hike forecast to 25 bps on easing rupee pressure, foreign inflows",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNS3lWVjc2em9KbENCZDNZNFBLeUZXeE9SY09yckFXMnhpdGJxd3NRVVppS1Y5UW9jdExscFZFem1mUjBEX01Rdmd0cTBJYV9LaEQ4S0doaHBxZ0FLOWVTTTJ3TzU5LU92ZXRhekxxLVAzVHZfVG1nMDUxd2xtT1IybmV4VkEzTUhhNXZaSjgwNTdsWnRYOWRPVm84R0xmRmM2alFVTEJVZFFiODcwM2JoMVIzWmkta3Blc21Kek1aTWlNX0ZzbGpjeG00aFdRWHhRc2JWUGRydXE2MHcxWHUxM2g3VGVxdnR0YjNjOF9wYVR3U1hrQnRQbno4TjdtNjRjc0hlbGgtSGtIcUFEVUHSAZMCQVVfeXFMUDRjaGxnY1cwUW9pMUJLd0JoVXVrZVBPeVg1VnVObjZydGdUSzEzUEVWUUEwbFYxTUgyYWJSalFDeWdwWjFhN2NUNm01V3NoMDdWbVg2TFBGLThpMFM5QnBOd3JNOTNCNmx1ckhRelJOTWxIQ2gwdldULUJHTmdVT1JpZnlmRkJ4YVFMUTJ1VjNtV3B5S3BsdVBad1VIWk9FcTYtbU1rcko1TjkzUDZzNTFGM2lySkl2ck10R0lha2VCUjJ3Zm5rR0JPLW41OU96Z3J0ZVUwSWFPRF9PUzIycTJ3c0RCOVdRX0lobVBFZ1NwYzJ4WC1hS2V1NERMc3VkM2s4NTI0dm5icFRmeFJSTDVpemc?oc=5",
+     "time": "10:45",
+     "title": "Stock market outlook today, 13 Nov: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQb29vTkxNTHVRRmtGUDJmcjVJZmx5MEVtLXNuaGtfUHVYazVyQ1lRNDNKV0VZelQtOENaV1ZZLWoxRTQ0ME56SjdOeGQ4UUlpRzYtSXFleGd5NHJRVDQ3dUR3SlR3R0s3TGpzRVc2ODNWWFFzS1VUMmM0LTZxeXNnNUpCbm5TakhiekRBQXFnR3E5T0xIWWRsdzdBZ1lNU3g1WWNETlhnald3WTA4YzB6VlFaZkxocXFpQjgyY0pHSTU3QzhYSi1OQXdSX2NTZGtmQWpVVHRndDdobGpCVkV2N1hBaS1EcE1EYVB0T0phWmtwN3p5aVNjd2NySDNud3haYkZaVNIBigJBVV95cUxQaHNZRlk1RVF5eFA4dVEzdlBOcWFSNTdMU193ZXg0TTZhaUpfVlE5eU1DMExuc1gyQUo5VFhPREdjQXVqd29wUVZOUk55ejJ5N3hFQ0RDSjF5SWhUNmE2RWdXV1BkV2ZFWU5jazdjWFFOVGdOTWZzQ1JtMWRWZExqNmZVTnRNeTdkcWQ5Wi1ydmtiTEl6S3kwbWhxbDlscEJ3V3ZfTXloQWZuQWxtZHVZb3V4UTB0ODdrNzMzZG1qTjRJcUprWXNuanB3RUtBNmdXXzRPX2JxLXZ6V0Vqa1BIaFdKWGIwcVhLTC1QaVFIc18zRjljNzNfaElhbVJQRlcyWUZqQXM5ZVp5dw?oc=5",
      "priority": false
     }
    ]
