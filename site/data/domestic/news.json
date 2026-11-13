@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T11:05+09:00",
+ "updated_at": "2026-11-13T20:18+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -504,17 +504,6 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
-   "src": "서울경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
-   "site": "www.sedaily.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
    "title": "미래에셋증권, 日 산코증권 인수…글로벌 성장동력 확보",
    "src": "전자신문",
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SZEhQVThRbkxOMnRiRkVITHBWWXFxUVRvUTZSVjBfaVEtaGtwTjBhWHpzVkpWM196QU5RdnRyeUJieGNmbm4zRlFRR0sxdw?oc=5",
@@ -550,6 +539,17 @@
    "src": "Korea JoongAng Daily",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
    "site": "www.koreajoongangdaily.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
+   "site": "www.sedaily.com",
    "firms": [
     "미래에셋증권"
    ]
