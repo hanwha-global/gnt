@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T02:33:05+00:00",
+ "updated": "2026-11-14T02:16:41+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-10-26",
@@ -104,7 +104,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-10-20",
@@ -121,18 +121,18 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
-     "date": "2026-11-10",
-     "title": "Licensed Companies | Open Data | Capital Market Authority",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
+     "date": "2026-11-12",
+     "title": "Financial activity licenses | Service Details | Services | Capital...",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
      "src": "sca.gov.ae"
     },
     {
-     "date": "2026-11-02",
-     "title": "Financial activity licenses | Service Details | Services | Capital...",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
+     "date": "2026-11-12",
+     "title": "Licensed Companies | Open Data | Capital Market Authority",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
     },
     {
@@ -150,7 +150,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-09",
@@ -179,11 +179,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-02",
@@ -196,6 +196,12 @@
      "title": "Liquor Licensing Board to meet on Tuesday",
      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5QXl2M3RGblRDMjdHdE5haUVlS0d4UEFVaFFPQWhzMjMtd1k4WVFJeHBKejJ3S3N3emMxME9DbWZRbzZLeXBlSlF3Uk9PNzJWblQ3Q0VVeVVxWDVsVkktMDJibS02Z0szcGNCR1NXbmJxdw?oc=5",
      "src": "www.info.gov.hk"
+    },
+    {
+     "date": "2026-10-31",
+     "title": "CONDITION VARIATIONS OF LICENSED PERSONS / REGISTERED INSTITUTIONS DURING 10/2026 CE Name: Brevan Howard (Hong Kong) Limi",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOV1h4ZkZ2M0E0TjVGV3o1OHFMWUd6MXBUU3dQM2FFMXpQbXZMTjFib2hjZm05VkVlbTRZYWd5akpwTUtlOUdHTDUtOHVaWlZ4MFRZNWFsSjhyWURUM3JvSkFxbHNHMTFsdmNCRDA3V2puTWE0azc0SDktNHhkenZHWWZOOHBubmZJNEJCYjJ4aV8xeWdQZ0M0SmFqNmh0RzRsakxEX25tVDdZYzhWNTNmMWRVZUswdTNGX29zYnZPLV9heU9VTzY2dmJEc2hYam9fTERDUS1UZHJJWVkyT2x2OFlHRFo?oc=5",
+     "src": "Securities & Futures Commission of Hong Kong"
     },
     {
      "date": "2026-10-14",
@@ -230,23 +236,23 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-11",
@@ -407,11 +413,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   }
  }
