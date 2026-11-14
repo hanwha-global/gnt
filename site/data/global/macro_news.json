@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T01:38+09:00",
+ "updated_at": "2026-11-14T10:40+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-14",
+     "time": "09:00",
+     "title": "Fed’s Jefferson Says Inflation Will Determine Rate Decisions",
+     "src": "Bloomberg",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZzBwMC1SRHV2ZUJHLTJ2STdWWFlSSXhKN1lkajNFZ0VTNUZNTnRGeW1uMXJRWXhyR05ic2JDMU9xcGxTV0JKZFM3WVByb0gwbEhrQW1WaTViQm12d1FZT1FnU29xX0tZSjJXOXhaWkI5bnk0aENFVTNOTUNYV09RQmJid1E4bFZxeUliR01kTkVCcXFMRDVnTWFUbTFrbk1HM1Q4MDBHbkVVSm9LUHNxMA?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-14",
+     "time": "01:41",
+     "title": "BofA \"연준, 다음 달부터 3회 연속 금리 인상\"…1월 전망 추가",
+     "src": "연합인포맥스",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wUGQ3T1lmeDBuT3dOUklaQ0hOUEFxS1dTcUpmMXFFci1EX05QNjlIaUgzQ1ZkNFZpNFN6ZlVVU2ZfMzRYRE1yajc3SElEd1FyNE40anQtbE1vek1LMGNGRTZtQ2xzbG11QUxkdUw4dG0?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-14",
      "time": "00:37",
      "title": "That Haven Trade in Treasury Bonds Didn’t Last Long",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcE43RTdfZ2FKdDFXTk9Vem9FaXBvYnlMT3p1aVUybDVrVTZ5cWE4SnMzT2tqN2kzY3NMdVRCbF9mdTVmMzlaVHJNNU0yMHdQWTAzeTF5d3dZbzFGc3czUFBUUWp6cmpIaUZMVEtSeWtOdGJWdm5Ka3ktN2E0YmNkM0dJM3BFVldEdWFqaHRsajZPclBqcmM2Z2dfQ3Z1bV9vVlczWEVIclU?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-13",
-     "time": "23:33",
-     "title": "美 고용 호조…베선트 재무 \"전쟁 이유로 금리 큰 폭 인상 안 돼\"",
-     "src": "뉴스1",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ORUFrZS1ENmxqUl9lSW1INE9TSmN3Y2RZeGpsVEIxRVFDcHhWOXFHV01tUGdXX2tEZHZ1TnNvTUF0YnlLNVY5d2s1RGtCZFFNdS1nWXhOdnE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-13",
-     "time": "18:26",
-     "title": "Treasury Yield Surge Shatters Hopes Worst of Bond Rout Is Over",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWjhkdkdUYk85b1djY25EQk9aY3VBUmdlZGVpS251di03VTMzaDRvVHIzbEZBcjZSSlNvMDNXdXFNX3A0QTB6TFBXRndSdFFyNXBwMXRtRmZIcVJySzVXaEZDQ25HN0ZDOGZtbkpibUZ3UDZPUWpiVWVLMU1hVzk3X3JwQ2NxVXo3WkVWMnhqandnNUg0UjlnUUNSTkUwYjFLd3ZBeEFBel9yT2h5WVRObU0zYw?oc=5",
      "priority": false
     }
    ]
@@ -75,7 +75,7 @@
      "date": "2026-11-12",
      "time": "18:39",
      "title": "Indonesia Rupiah Drops to Record Low on Strong Dollar, MSCI Woes",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWXhXdEdKMENVbWhpRG5yelRzVU1zM09Eb0thNk1VRFQyam9LUE14VE1Bc1V5QnJjbEx2M2ljeGpzTHlSdUpULXVQWXh5UXlMU2E2czZKcnBKU25oZVdmRThGVHBCcUVTb2V0SWJ1S3RuQURjMXVRMnROZk9tU1FCWmpKcUl1NFNabjJKOTJPeG5GejJ1MGh0MzZXMFZxdDJfSmxFTHcwUEY1M1pWNm53NnRWSkFTYzVodHYtODJB?oc=5",
      "priority": true
     },
@@ -154,7 +154,7 @@
      "date": "2026-11-13",
      "time": "08:30",
      "title": "Wild Price Swings Expose Stress in Hong Kong Stocks, Study Shows",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRmxXOF9NaHN3SDZiRFlnWktabnRxaDlWWEtrQkswWVByMFNndTNlbFRraDY1WDdVUmlDRE9xMWZUZ0c1M3pqVkN1WHJHVHVJZ1VhSVd0STRLT2FZa01GVzVLZjV5S2RmMTN1eG94ZmxOVG9WYy1zWGM3c1hQUkV1T3hEOGw4RnBfdHgyVTZTeVBfeWM4S0hSZ3pyazBwZGxPanBRbUtHSE1uaGV5S3Bxeld1djY?oc=5",
      "priority": false
     },

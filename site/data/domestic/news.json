@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T01:38+09:00",
+ "updated_at": "2026-11-14T10:40+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -196,6 +196,17 @@
   },
   {
    "date": "2026-11-04",
+   "time": "17:00",
+   "title": "키움증권, 사우디 식품의약청장 초청 간담회…K바이오 중동 진출 지원",
+   "src": "글로벌이코노믹",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcC1ZU2I0NWVCaDlVd3NkdjZiWW1acDUxQnRLektxUGtiTmkxejFWQW96TFluVXFDczM1Q0lUMU0yTEhnR1Zoa2NNYXZtb1BpZ1Ixa2lMemJzMW9uSkM4RjlJMHM0R2poVnd2Rm1iOGc4VzZIbDRaZlg1clhBUWE1dTg2YXcwOEU?oc=5",
+   "site": "www.g-enews.com",
+   "firms": [
+    "키움증권"
+   ]
+  },
+  {
+   "date": "2026-11-04",
    "time": "10:28",
    "title": "키움증권, 국내 바이오기업 사우디 진출 지원…SFDA 청장 초청 간담회",
    "src": "아주경제",
@@ -223,17 +234,6 @@
    "src": "매일경제 마켓",
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zNjVQQU5wMWFIaXQ3d0pJU0NZaVBfdnA5MWNmYjdKMlBsb3ZOaXhPLUdhdTFNX09hV202SEt0LW9wdS1PakVHUk05N1h1a3ZfbHc?oc=5",
    "site": "stock.mk.co.kr",
-   "firms": [
-    "키움증권"
-   ]
-  },
-  {
-   "date": "2026-11-04",
-   "time": "09:41",
-   "title": "키움증권, 사우디 식품의약청장 초청 간담회…K바이오 중동 진출 지원",
-   "src": "글로벌이코노믹",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcC1ZU2I0NWVCaDlVd3NkdjZiWW1acDUxQnRLektxUGtiTmkxejFWQW96TFluVXFDczM1Q0lUMU0yTEhnR1Zoa2NNYXZtb1BpZ1Ixa2lMemJzMW9uSkM4RjlJMHM0R2poVnd2Rm1iOGc4VzZIbDRaZlg1clhBUWE1dTg2YXcwOEU?oc=5",
-   "site": "www.g-enews.com",
    "firms": [
     "키움증권"
    ]
@@ -504,6 +504,17 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
+   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
+   "site": "www.sedaily.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
    "title": "미래에셋증권, 日 산코증권 인수…글로벌 성장동력 확보",
    "src": "전자신문",
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SZEhQVThRbkxOMnRiRkVITHBWWXFxUVRvUTZSVjBfaVEtaGtwTjBhWHpzVkpWM196QU5RdnRyeUJieGNmbm4zRlFRR0sxdw?oc=5",
@@ -546,10 +557,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
-   "src": "서울경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
-   "site": "www.sedaily.com",
+   "title": "미래에셋, 日산코증권 인수…日주식거래시장 첫 진출",
+   "src": "SBS Biz",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QSnJGN2Z6eUc2M0hzenNHV3lMS1k4SjV4c3dONWpQSldpdlhpUlh3UnZKekd3bGQwSE0zd3pQWHk2N0JTR0xLX3NVYnRveTNsSFg40gFYQVVfeXFMTkJsbFJrVnF1eUVjczJVSDh0V1B4Zy1OcWtGVE5XakdUTjJvSnBqQTltckp5Ymp5amlrSzZPRlJwbm82UG5yQ0VDR2ctRERjc0V1aGhyMHlINw?oc=5",
+   "site": "biz.sbs.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -662,17 +673,6 @@
   },
   {
    "date": "2026-10-29",
-   "time": "08:11",
-   "title": "미래에셋, 日산코증권 인수…日주식거래시장 첫 진출",
-   "src": "SBS Biz",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QSnJGN2Z6eUc2M0hzenNHV3lMS1k4SjV4c3dONWpQSldpdlhpUlh3UnZKekd3bGQwSE0zd3pQWHk2N0JTR0xLX3NVYnRveTNsSFg40gFYQVVfeXFMTkJsbFJrVnF1eUVjczJVSDh0V1B4Zy1OcWtGVE5XakdUTjJvSnBqQTltckp5Ymp5amlrSzZPRlJwbm82UG5yQ0VDR2ctRERjc0V1aGhyMHlINw?oc=5",
-   "site": "biz.sbs.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
    "time": "07:55",
    "title": "미래에셋증권, 日 산코증권 인수…현지 주식 사업 진출",
    "src": "파이낸셜뉴스",
@@ -685,10 +685,10 @@
   {
    "date": "2026-10-28",
    "time": "16:00",
-   "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
-   "src": "아시아경제",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NcElndzBqVXJIbjF2WS0yVWt2Nm9Tb3lsdHRUTGNJekJIUmhraFhrYlloZVhhUjZuYTdJV2VoMHNPNUJXUHVlN1NBdlk2bnU0MXVJTUg3ZHhxcDV6c1IyYw?oc=5",
-   "site": "www.asiae.co.kr",
+   "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
+   "site": "stock.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -696,10 +696,10 @@
   {
    "date": "2026-10-28",
    "time": "16:00",
-   "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
-   "site": "stock.mk.co.kr",
+   "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
+   "src": "아시아경제",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NcElndzBqVXJIbjF2WS0yVWt2Nm9Tb3lsdHRUTGNJekJIUmhraFhrYlloZVhhUjZuYTdJV2VoMHNPNUJXUHVlN1NBdlk2bnU0MXVJTUg3ZHhxcDV6c1IyYw?oc=5",
+   "site": "www.asiae.co.kr",
    "firms": [
     "미래에셋증권"
    ]
