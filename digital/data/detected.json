@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T02:20:15+00:00",
+ "updated": "2026-11-14T01:56:48+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-12",
@@ -108,7 +108,7 @@
      "date": "2026-11-05",
      "title": "가상자산 소득과세 시행 2년 유예 추진 2029년 시행 위한 과세기반 정비와 디지털자산 산업 생태",
      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB0YlUtU21MUTFOUnpMVHV1TEVJcUlnNEgzSXZxekUwYXRBSGZIUU1SWnJYbmJkc1dYUlpZNlVHU09UcVl1Tm5BVHhsbWVvcHZ2cF9CRFk1S2VKQjc4bzlRR1NycWN6UER5ZDdiVno4NkJpWVd0ZGc?oc=5",
-     "src": "택스넷",
+     "src": "대한민국 정책브리핑",
      "topics": [
       "tax"
      ]
@@ -152,21 +152,21 @@
     },
     {
      "date": "2026-11-03",
-     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVg5VWRhcElqbnBWV2cxUFNja2l3Y2VHVlhBZHU2N0FaN3dpZkxjcE5vYVhGTDNxRnJOTVdVYmE3WGJjdHQ2UzgwYlJEblc4YUJ1c1ZOd21qbDBPT1BNalh2Y1RVay10OWJBZ2Y3LXI2aldpeVlOYTRmUjFKYUdVV2FZd1JFc2lWQkhUaVFqdzF3eFFESUJHLUEwVHA1d0p6MFNZ?oc=5",
-     "src": "금융위원회",
-     "topics": [
-      "general"
-     ]
-    },
-    {
-     "date": "2026-11-03",
      "title": "(보도설명) 해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이 아닙니다.",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE54UGxCeXBkZkU4YUxVd0FydnV5MGh1UXhGZEZnMkQ5WVYwbXpLYjRXNFBYSEVCUGJDMG90WE42UXpyTUNrZW9YWFJIdFZhckR5ODZkV0djNENIYml2ZVo4RXFMYUpfWnpBUXpNalItRQ?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp",
       "tax"
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVg5VWRhcElqbnBWV2cxUFNja2l3Y2VHVlhBZHU2N0FaN3dpZkxjcE5vYVhGTDNxRnJOTVdVYmE3WGJjdHQ2UzgwYlJEblc4YUJ1c1ZOd21qbDBPT1BNalh2Y1RVay10OWJBZ2Y3LXI2aldpeVlOYTRmUjFKYUdVV2FZd1JFc2lWQkhUaVFqdzF3eFFESUJHLUEwVHA1d0p6MFNZ?oc=5",
+     "src": "금융위원회",
+     "topics": [
+      "general"
      ]
     },
     {
@@ -372,7 +372,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-02",
@@ -440,15 +440,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-10-17",
@@ -462,11 +462,11 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": []
   },
   "AE": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-10-28",
@@ -480,7 +480,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-09",
@@ -584,7 +584,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-12",
@@ -715,7 +715,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-13",
+   "auto_checked": "2026-11-14",
    "items": [
     {
      "date": "2026-11-12",
