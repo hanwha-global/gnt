@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T02:16:41+00:00",
+ "updated": "2026-11-15T01:46:22+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,8 +87,14 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
+    {
+     "date": "2026-11-12",
+     "title": "Licensing of Financial Sector Technological Innovation, Digital Financial Asset, and Crypto Asset",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX2U0Q0g0NWJHcjBQSVQ4ellsVHphRmJ0cXgwem1scTVmNlRTTi1POW50SUJkVHltYW8yNHE5N2c2R0xGNWgyMEtTM25OaDRrQXk3cXJ0VExWN0VTN1Q0RlplUlJ5bHRSd25sLVFGUDRsR0RDWF9pUF9jbUVZSUVjaFpNRmJNRmFXYzFvZXg1TzZ6RGZlcDFiTzJpaEJLa3laNFE?oc=5",
+     "src": "OJK"
+    },
     {
      "date": "2026-10-26",
      "title": "Siaran Pers: OJK Perkuat Stabilitas dan Integritas Pasar Modal Melalui Tiga Langkah Kebijakan Strategis",
@@ -104,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-10-20",
@@ -121,18 +127,18 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
-     "date": "2026-11-12",
-     "title": "Financial activity licenses | Service Details | Services | Capital...",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
+     "date": "2026-11-13",
+     "title": "Licensed Companies | Open Data | Capital Market Authority",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
     },
     {
      "date": "2026-11-12",
-     "title": "Licensed Companies | Open Data | Capital Market Authority",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
+     "title": "Financial activity licenses | Service Details | Services | Capital...",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44OGJKOURDWU1hcDMzYXNvVXpRMC04Z1lqV1VNcjE2d1BGTHMyLWVJY3NGdUZmQTRtZFdHay1penRET0d5QTFvSll6X0N3TThJcHRkM1drZEdVeWlBWWFpS2M2ZE9mWGFIWTlWY3Rhcw?oc=5",
      "src": "sca.gov.ae"
     },
     {
@@ -150,8 +156,14 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
+    {
+     "date": "2026-11-09",
+     "title": "Broker-Dealer Firms We Regulate",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUDZiZ0hkYkhEcUZLVjNuNjhWdzhtSi1oZ1ZvWFlYTnZQZWZZZzNacUFyc01WZ0ZhNXlqZVR3VGdnaXNhWjhwN1FmUnFjQjNYbmpwLXUyYUVNTzVmLUliaDBLSzVjeDVodFdsUVFNNk50bGxacFdKcHZabnJEM3had21rbUVuTW8?oc=5",
+     "src": "FINRA"
+    },
     {
      "date": "2026-11-09",
      "title": "Broker Dealer Firms We Regulate - A",
@@ -179,11 +191,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-11-02",
@@ -236,23 +248,23 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-11-11",
@@ -413,11 +425,11 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "KH": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   }
  }
