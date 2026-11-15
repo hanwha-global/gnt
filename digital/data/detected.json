@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T01:56:48+00:00",
+ "updated": "2026-11-15T01:28:58+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,13 +66,13 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-11-12",
      "title": "가상자산사업자에 대한 최고 수준의 보안 강화 조치를 통해 이용자의 자산과 정보를 철저히 지",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOWluUEphTUtPY1FYTldfalpVSjJhQmp2UHBkZnBYR2Y5ekd1QU9pdWQ4NFhuTU84RkpMdlN0N1VvWnNreXNaSUw1UzI4M2NUa1dMVjJiMHNnZXJvVGhyQVBuMzRGVzl0RDZReG1Ed0N3VWh4NUhuS242TjhEVDNoR01vMGY0MUVSZnIxc0p3?oc=5",
-     "src": "금융위원회",
+     "src": "KDI 경제교육·정보센터",
      "topics": [
       "vasp"
      ]
@@ -133,16 +133,6 @@
     },
     {
      "date": "2026-11-03",
-     "title": "해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtYVhHTDU3MzB4QnlVOGNBZmxDQlNoVnUwV0xBdVNEOG4za1VxR3JEdnB3SV9NY1JmSXVpMENCOFpsSXlYWVN3RzBlLXdGWW82UjdDMUF4b3NrSldQaDNGYU1UZ0hES2I0dWN4TVowdktDS1h1VGc?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp",
-      "tax"
-     ]
-    },
-    {
-     "date": "2026-11-03",
      "title": "정부는 가상자산사업자에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다.",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZVZ5WXlRQkZrTTJBYk9GQW5kcFpjQ0RQR0FZaE12aWFUay12VlhmVGFTM2szWW5wZ0h5TVNCc1FkWV84VkhpV05maWpYaEdfZkM2UEFuUnB2Tl83ck81T3ZiYUtJSWh0U05jUUI3UERfSDZWZllSdFp6anNIY2ZzdVlVcjBvTnJyenUyZTh3?oc=5",
      "src": "금융위원회",
@@ -154,6 +144,16 @@
      "date": "2026-11-03",
      "title": "(보도설명) 해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이 아닙니다.",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE54UGxCeXBkZkU4YUxVd0FydnV5MGh1UXhGZEZnMkQ5WVYwbXpLYjRXNFBYSEVCUGJDMG90WE42UXpyTUNrZW9YWFJIdFZhckR5ODZkV0djNENIYml2ZVo4RXFMYUpfWnpBUXpNalItRQ?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp",
+      "tax"
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "title": "해외 가상자산거래소에서 거래되는 무기한 선물 등이 파생상품으로 과세된다는 보도는 사실이",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtYVhHTDU3MzB4QnlVOGNBZmxDQlNoVnUwV0xBdVNEOG4za1VxR3JEdnB3SV9NY1JmSXVpMENCOFpsSXlYWVN3RzBlLXdGWW82UjdDMUF4b3NrSldQaDNGYU1UZ0hES2I0dWN4TVowdktDS1h1VGc?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp",
@@ -372,7 +372,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-11-02",
@@ -440,15 +440,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-10-17",
@@ -462,11 +462,21 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-14",
-   "items": []
+   "auto_checked": "2026-11-15",
+   "items": [
+    {
+     "date": "2026-11-12",
+     "title": "Licensing of Financial Sector Technological Innovation, Digital Financial Asset, and Crypto Asset",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX2U0Q0g0NWJHcjBQSVQ4ellsVHphRmJ0cXgwem1scTVmNlRTTi1POW50SUJkVHltYW8yNHE5N2c2R0xGNWgyMEtTM25OaDRrQXk3cXJ0VExWN0VTN1Q0RlplUlJ5bHRSd25sLVFGUDRsR0RDWF9pUF9jbUVZSUVjaFpNRmJNRmFXYzFvZXg1TzZ6RGZlcDFiTzJpaEJLa3laNFE?oc=5",
+     "src": "OJK",
+     "topics": [
+      "vasp"
+     ]
+    }
+   ]
   },
   "AE": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-10-28",
@@ -480,7 +490,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-11-09",
@@ -584,7 +594,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-11-12",
@@ -715,7 +725,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-14",
+   "auto_checked": "2026-11-15",
    "items": [
     {
      "date": "2026-11-12",
