@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T10:40+09:00",
+ "updated_at": "2026-11-15T10:14+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -272,6 +272,15 @@
   {
    "date": "2026-11-02",
    "time": "17:00",
+   "title": "Korean financial firms are buying into Japan's brokerage market",
+   "src": "The Korea Times",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVdjT01aeVpjUTJ5cmFlVnlpN3JydjdLVHpQNzl4RnNaOFBSNC1DYWJpa3AzR1Y3UDJaaWd2cmZDSzQ3eEdMZElQRk01UjI2SXhBU0xRY1BGa3EyMTNzbDhGdm9QVl95TWNLWE80S0lod2VVcHZpbFhvMHU4Yk54R0k3RnBrclE5dUdmeEdSQ05VU2JhSUZtX19DM2d4ODRTSV8wVkRuZVFDc0pGeE9yWnJoaFptY21raDNyX1RNYmoyQkXSAcgBQVVfeXFMT0FSYkpqQk9taEI1QUdERFBEWExnMy1Sd19GTmhyeUw5QXF2MHJaUmc1bkI4elo3WjhCMTZ0YmNOdUZjVjFzVEY3U01Oa3ZTNjJ5MHlhTTJ3N0Vvb2lKM2ZXS05vUDRDN3E5ZUplSGVHYzdHM19ITW1URzNUX1pJSmlValdPeWE2emh1clRMVnhSLWhiYjZHX2h3VHNQeFBTMnNDR0lVRUx4Z0thZzNFQmE5SWdxb0pxVzVpTVJpaG04OGtOSFJlQ0M?oc=5",
+   "site": "www.koreatimes.co.kr",
+   "firms": []
+  },
+  {
+   "date": "2026-11-02",
+   "time": "17:00",
    "title": "미래에셋·토스, 日 시장 정조준…해외 리테일 경쟁 '후끈'",
    "src": "글로벌이코노믹",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeWhCeUlxdUxuR2Z5czNLX3d2TnQxUm1WM1hNWmZEQTExRlRTNW1pOWQtaXZzbk9UaFhhLTZRTUlVWExyblIzWnV2dHE1d0dkYmpyakNHTjNZb0pDQ2NHZDJuRmxERmRIT0xfQjVsX1R2V2pldXZIc1V4SnRVaDNINHhBRGVLekg1?oc=5",
@@ -279,15 +288,6 @@
    "firms": [
     "미래에셋증권"
    ]
-  },
-  {
-   "date": "2026-11-02",
-   "time": "14:36",
-   "title": "Korean financial firms are buying into Japan's brokerage market",
-   "src": "The Korea Times",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVdjT01aeVpjUTJ5cmFlVnlpN3JydjdLVHpQNzl4RnNaOFBSNC1DYWJpa3AzR1Y3UDJaaWd2cmZDSzQ3eEdMZElQRk01UjI2SXhBU0xRY1BGa3EyMTNzbDhGdm9QVl95TWNLWE80S0lod2VVcHZpbFhvMHU4Yk54R0k3RnBrclE5dUdmeEdSQ05VU2JhSUZtX19DM2d4ODRTSV8wVkRuZVFDc0pGeE9yWnJoaFptY21raDNyX1RNYmoyQkXSAcgBQVVfeXFMT0FSYkpqQk9taEI1QUdERFBEWExnMy1Sd19GTmhyeUw5QXF2MHJaUmc1bkI4elo3WjhCMTZ0YmNOdUZjVjFzVEY3U01Oa3ZTNjJ5MHlhTTJ3N0Vvb2lKM2ZXS05vUDRDN3E5ZUplSGVHYzdHM19ITW1URzNUX1pJSmlValdPeWE2emh1clRMVnhSLWhiYjZHX2h3VHNQeFBTMnNDR0lVRUx4Z0thZzNFQmE5SWdxb0pxVzVpTVJpaG04OGtOSFJlQ0M?oc=5",
-   "site": "www.koreatimes.co.kr",
-   "firms": []
   },
   {
    "date": "2026-11-01",

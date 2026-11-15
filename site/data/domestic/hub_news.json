@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T10:38+09:00",
+ "updated_at": "2026-11-15T10:13+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -129,13 +129,13 @@
   "NH투자증권|인도네시아": [
    {
     "date": "2026-03-16",
-    "title": "OJK Blacklist Bentjok di Bursa, Izin Emisi Efek NH Korindo Dibekukan",
-    "src": "CNN Indonesia",
-    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUXNYUFVpV0I4bTdxckdRMWgteEZvRGZCa3phSXJlUkN1cVpKUFcxRjJja3lVd0hDV3JhM0hSemIyQUtkbklWRUxUZ0ZJWHE4SVdsUEM5U3kwenZLR2lSR3dPYlVZaFd6TFBwOTV3RE1xV3ZxclJPb2NRZnFzZ3ljR1dOZDZxM1hlRFBqaFZuVHMyeXB2YUdsUm83MlhBSjZRc2FoeWZHQ1J4dUFmZ1NtVzA4TFhZREhHd3VzOHBrcUVuRzlqNlF6UmlR0gHPAUFVX3lxTE5keVhuOFZfeGpSVU9kNlZYS3VPZXNXTTJHd1VXb2RCSkRsOEdOeEd2U2IxaUdYUGtnNUY3bVFQTWw1cHhxZnQyWWJKd3ZmcVpabFF2ajB5Y3VrVktGUXBILW5sWTdHdzhNbGtEcjdOdXYtZ045eXhSa0xQVENQUXJNSUlYWkRDUHo4eFpiU05WbVR4SDRDYWIwNHJGdkg5YmwtekdjaDdnOWRoVGlDY0tSMmNkSERmMUVxajdKMjR6UnBiWWxqbEJyVkg0VE9JVQ?oc=5",
-    "site": "www.cnnindonesia.com",
+    "title": "Video: NH Korindo Sekuritas di Sanksi OJK atas Kasus Dana IPO BLISS",
+    "src": "CNBC Indonesia",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZ0NCc0t2LXJiakpRY0hYRVhvNGNNbDFEMlpQZEQ1MzRyd3dQaUJZOXZObE1xZG9HYUc5SzBPRWY1cFJ6aXBnWkdkbWxzZGotMlByUGh2MjJmYjZ3bXpkclFzeE9mWno3UXh2RnIxRm1iQWFCRE1zTEI3Nk5uYUxYcDRleHhFOG9uQzF5OTZDMW9iOWlMMDlNUWYybU9IVjdxQmJlVGFLVGVjQ3dpM1VpUm1Ca3RJdFNSWnQzT0ZyQ0FSbGJxMVN3?oc=5",
+    "site": "www.cnbcindonesia.com",
     "foreign": true,
     "lang": "id",
-    "title_ko": "OJK, 증권거래소에 벤족 블랙리스트, NH코린도증권 배출허가 정지"
+    "title_ko": "영상: NH코린도증권, BLISS IPO 펀드 사건에 대해 OJK로부터 제재를 받음"
    },
    {
     "date": "2026-03-14",
@@ -313,9 +313,9 @@
     "src": "investor.id",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHJacC1zUUVxbmVPWUNhUUJUVXNreVVRMnFmVG5nRkx4cDRUTGhOYXZkeTN5MFI1dFItR016UndWTFYwdk1OYU83SzlxZ3lyZ3ZRSXNNdjVsMmtlZS1EbURRTERhVVNPcEhhZkFfY1lraS01VGRhT0VUNWpmY0ljRFMxVmF6YlpaYy1MVGx2Y3JXMXFLc3dPcXlESHlLWjh4WVpNbEZEU1M3YThvWmw2el9CaUJtQ3k3V3dZRzN3TWFMMXZL?oc=5",
     "site": "investor.id",
+    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "미래에셋증권 직원 교육, 프로세스 및 기술을 통해 디지털 보안을 강화합니다"
+    "lang": "id"
    },
    {
     "date": "2026-09-30",
@@ -333,9 +333,9 @@
     "src": "investor.id",
     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZUtTT3dud2hQNGw1NWYtcHdoNlBJbWlTbUZDMDZFSkl3WnZWeEJ6dm0yMk9kYml5U2hCdmkwdV9QaHVKY1czM1ZMT3F0OXRhVzM5RkUxYk5UdHNyLWpSeFEtcnN0c3pBeUc2TVFRZmlLWFp2RUJaQWdaam1kRm42YnNsT2VFeTFyUUVZTGJyT3JBaUw5TE5DNU05ZE16QklsRFk2dE52UEp6NzhWNGdtd3FjWkE5dzZ2VUpreTRsNzc?oc=5",
     "site": "investor.id",
+    "title_ko": "투자자 요구가 복잡해지고 있으며, 미래에셋증권 자산 관리 서비스 강화",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "투자자 요구가 복잡해지고 있으며, 미래에셋증권 자산 관리 서비스 강화"
+    "lang": "id"
    },
    {
     "date": "2026-08-18",
@@ -648,6 +648,16 @@
     "foreign": true,
     "lang": "vi",
     "title_ko": "MB캐피탈, FPT캐피탈, KIS증권, 한국 투자자 모두 은행주 매입 계획"
+   },
+   {
+    "date": "2026-02-23",
+    "title": "Đầu xuân, KIS Việt Nam triển khai “Lì xì Chứng Sĩ” 2026",
+    "src": "CafeF",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcUZubU1WakVqejgwWk1RdzU4ZG9HY0JtYnhqa1lzb1NNRFhDUzRwNkFweXRkQ2pObExyTUZsY29IQUJWd0JMUU11bzNaOWI2VllCTnlHNjVwZWVnOGhROUJveVJSY3RBYVhsdU1yMVpfMGNuNlEtUXhZWmVISW5xd2o1bUl1T1FwUFNoRVN5cl9HaTRpM01n?oc=5",
+    "site": "cafef.vn",
+    "foreign": true,
+    "lang": "vi",
+    "title_ko": "이른 봄, KIS 베트남은 2026년 \"증인을 위한 행운의 선물\"을 출시했습니다."
    },
    {
     "date": "2026-02-02",

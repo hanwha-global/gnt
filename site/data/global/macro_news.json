@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T10:40+09:00",
+ "updated_at": "2026-11-15T10:14+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -7,7 +7,7 @@
    "items": [
     {
      "date": "2026-11-06",
-     "time": "16:24",
+     "time": "17:00",
      "title": "MSCI 회장 “한국 MSCI 선진국 지수 편입, 예상보다 더 빠를 수 있다”",
      "src": "매일경제",
      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5acHlieHlEMzRVQ2YzbFBJaGVFYkdDVEZOUVg0WUgyaDdHdm9mSUFXUzRtaFJhd1BBOUxuSDJfTHNWWFpWdFNYV1o4Yzg0NWxkVnc?oc=5",
@@ -22,11 +22,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-13",
-     "time": "20:56",
-     "title": "’젠슨 황 사임’에도 올랐던 코스피…외국인 매도에 하락",
-     "src": "연합뉴스TV",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EZkJJTHFTdVlFWFdDRWwteTc3ak1IaUJSZjh4MnJKVnY2ZVVGUEJWWE9EbHVhS1o2dmhOamgydTNvNFJYWGtBYmxXd3hjenlVQmo3SE5wNHZ0MWt4T3pDbmxRUlVCS2M?oc=5",
+     "date": "2026-11-15",
+     "time": "06:00",
+     "title": "'빅스텝'까지 거론되는 美 연준…한은, 내주 금리 올리나",
+     "src": "뉴시스",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBHWktSUC1rZkx0bFFRWC1pQTYyS0ZrUGN0U3dHT1BZTUhhYVp4RDBpWjFnSlV4c0RmZ1pYSlIzVWpLNVJoeW1aUzI1Vy02LTVjb1FzQURYcjh3ZzBaZk1na9IBeEFVX3lxTE5TSVdVVjJjczhwZllhWkxsMnB4a2ZzRnhQbVM2cDNGWjF5NG1iNmJMMGE1c0RwSVdkRktMUmhoVzZvVTFtQXV3clhBOHBSRm5Ca2FlcWdDVkt0T1RHSDlBbVhqdEUyUXJhTURoS2x2bmEwNEhQQ2F1UA?oc=5",
      "priority": false
     }
    ]
@@ -38,8 +38,16 @@
      "date": "2026-11-14",
      "time": "09:00",
      "title": "Fed’s Jefferson Says Inflation Will Determine Rate Decisions",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZzBwMC1SRHV2ZUJHLTJ2STdWWFlSSXhKN1lkajNFZ0VTNUZNTnRGeW1uMXJRWXhyR05ic2JDMU9xcGxTV0JKZFM3WVByb0gwbEhrQW1WaTViQm12d1FZT1FnU29xX0tZSjJXOXhaWkI5bnk0aENFVTNOTUNYV09RQmJid1E4bFZxeUliR01kTkVCcXFMRDVnTWFUbTFrbk1HM1Q4MDBHbkVVSm9LUHNxMA?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-14",
+     "time": "04:55",
+     "title": "Fed on Track to Raise Interest Rates Next Month And Maybe Again in January",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeXJmalVqcjF1WEgxXzRyZ2hNRTRMWXdCWGdpblhnaGwxY0ZDeFIwYTVnWENtQ2U2NFg3YkpUS21EdkNHaXlwVlVicGxWd2RJZnJqOXlySXJfZzdscXlqRFNJSkswUjZ0ZjFINC11aU9GMWdrMGR6SzdfYUlkN3pGaDZZci1NbnkxWmtoZ1lNa3E2MmxDcnFqRnN0MWpwUURLT05odHBpdVlhNXRjNUJOd3JGcnNCYzd6bjVqWQ?oc=5",
      "priority": false
     },
     {
@@ -48,14 +56,6 @@
      "title": "BofA \"연준, 다음 달부터 3회 연속 금리 인상\"…1월 전망 추가",
      "src": "연합인포맥스",
      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wUGQ3T1lmeDBuT3dOUklaQ0hOUEFxS1dTcUpmMXFFci1EX05QNjlIaUgzQ1ZkNFZpNFN6ZlVVU2ZfMzRYRE1yajc3SElEd1FyNE40anQtbE1vek1LMGNGRTZtQ2xzbG11QUxkdUw4dG0?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-14",
-     "time": "00:37",
-     "title": "That Haven Trade in Treasury Bonds Didn’t Last Long",
-     "src": "Bloomberg",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcE43RTdfZ2FKdDFXTk9Vem9FaXBvYnlMT3p1aVUybDVrVTZ5cWE4SnMzT2tqN2kzY3NMdVRCbF9mdTVmMzlaVHJNNU0yMHdQWTAzeTF5d3dZbzFGc3czUFBUUWp6cmpIaUZMVEtSeWtOdGJWdm5Ka3ktN2E0YmNkM0dJM3BFVldEdWFqaHRsajZPclBqcmM2Z2dfQ3Z1bV9vVlczWEVIclU?oc=5",
      "priority": false
     }
    ]
@@ -75,7 +75,7 @@
      "date": "2026-11-12",
      "time": "18:39",
      "title": "Indonesia Rupiah Drops to Record Low on Strong Dollar, MSCI Woes",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWXhXdEdKMENVbWhpRG5yelRzVU1zM09Eb0thNk1VRFQyam9LUE14VE1Bc1V5QnJjbEx2M2ljeGpzTHlSdUpULXVQWXh5UXlMU2E2czZKcnBKU25oZVdmRThGVHBCcUVTb2V0SWJ1S3RuQURjMXVRMnROZk9tU1FCWmpKcUl1NFNabjJKOTJPeG5GejJ1MGh0MzZXMFZxdDJfSmxFTHcwUEY1M1pWNm53NnRWSkFTYzVodHYtODJB?oc=5",
      "priority": true
     },
@@ -103,17 +103,17 @@
     {
      "date": "2026-10-28",
      "time": "16:00",
-     "title": "Vietnam's stock market upgrade puts focus on corporate governance",
+     "title": "Transparency and disclosure key to sustaining Vietnam's market upgrade",
      "src": "Vietnam Investment Review - VIR",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
      "priority": true
     },
     {
      "date": "2026-10-28",
-     "time": "14:21",
-     "title": "Transparency and disclosure key to sustaining Vietnam's market upgrade",
+     "time": "16:00",
+     "title": "Vietnam's stock market upgrade puts focus on corporate governance",
      "src": "Vietnam Investment Review - VIR",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
      "priority": true
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-15",
+     "time": "09:00",
+     "title": "Strong office rental growth keeps US investors in Japan despite rate increases",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbW50cVBlN3AyUXJQT3A0czcwUHczak5EUG5hUDZrc0hNNXF1QXhjMTZwRFVZMWx2OGgtdlgwS3p0VkpXZmxQbHkxaUEwMklrb3RLeGE4dFBGdkhmS3MtZUFQNi15NGF5QUppbjZEUndhRjVBcnBKNjZycDFMeFZMdkNPbEhMWE5vNVR4MVE1YldxU2ZyZHZKZXp1ZG8tTDdueTBkQnZiWGEwUGlkeDZ4ZkNyaGZPeEx2VTRJZUtpUkhjcTJwdDU0Q0lIUGRJdUpw?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-13",
      "time": "09:40",
      "title": "Yen Falls to 160 per Dollar Amid U.S.-Japan Rate Concerns",
      "src": "조선일보",
      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSEhCUmU4WmFfclNRUkUyZERRdUVZSmlHSThab2pMLUVFVFpKQlRLMEo5RTJkTmc0Q1BaTjczTVZ0T0FydEJKMnpQdjZPMmpYZXRNRjRYaUhhQ193YzFoemlYVzY2Z29QY1EzdVVzeWRtbVZKakloNUtvREhnY3o5WGZobnU?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-12",
-     "time": "15:58",
-     "title": "BOJ’s Dovish Member Calls for Caution on Pace of Rate Increases",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQN1lrWGhjSmZGRTNKc0hHV0dQeVFJd0Z0cjZfdVB6Ql9YTlhnU3pIa01XNi11R284a0JrMlhBN1BZS1hHamVNWEFsNDVhYURnSkhXTFpfNVFQMHRwWG5ISzE1dnhSZVFmdkpIckRFMS1aa2ZLTk13Z1hXQ1k2QV9PamFQbmtPd0MxVXFmbTlSODlGMkUzMnB4aXhLclF2WEV4ZHQ0UGZYdzFoU0pITGtfX016ZjI?oc=5",
      "priority": false
     }
    ]
@@ -154,7 +154,7 @@
      "date": "2026-11-13",
      "time": "08:30",
      "title": "Wild Price Swings Expose Stress in Hong Kong Stocks, Study Shows",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRmxXOF9NaHN3SDZiRFlnWktabnRxaDlWWEtrQkswWVByMFNndTNlbFRraDY1WDdVUmlDRE9xMWZUZ0c1M3pqVkN1WHJHVHVJZ1VhSVd0STRLT2FZa01GVzVLZjV5S2RmMTN1eG94ZmxOVG9WYy1zWGM3c1hQUkV1T3hEOGw4RnBfdHgyVTZTeVBfeWM4S0hSZ3pyazBwZGxPanBRbUtHSE1uaGV5S3Bxeld1djY?oc=5",
      "priority": false
     },
@@ -225,11 +225,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-13",
-     "time": "19:20",
-     "title": "RBI may raise repo rate to 6% by February as inflation breaches upper band",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOc1VVLWQ3eHZRSEhHLURKTE51ZjJ4V2ZQV0tLdWFsU3FEMnMzTUxQZGRzUU9UVUl5ZXlZM3RFZmpVUnc5R2huZjR4eTN3RlkwdlF2QmdfcXZlekJBbTdQRlZ4YmdfRkw3NDRfbnctdF9zelR1T3VMLUVsd0ZBWXp4dE42bGtJZnF1MHFuX0RiaHZxcE8xeFJYaFI4UzhkRmIyRWRvOEVjVjFxdkZyQjl5UTBIejNmZnlRYkUtS0QyMVkxenozcDVNcVgxb2Rld9IB0wFBVV95cUxOYjMtdXNZbUVOalRLQURvM0Y4RkRLVEc0bWswMTNRQjZxaEExaTZybXBNcG8yeERfdmwwODBxRFZsb24zblNraEUtajBWV1NydXJZVFVUMGVveGZXM195TGh6akU0aTZhS2xjeUV2cUw5NDV2TXI4bXFGTlVpZTA0azVQXzRMaTB5ZGJWbEJPQ0x1ZXlRN2VkYW1jYnZMd1pFU0ZRM3hvNmpGeXBLWEtCazZwS1lGeVFjUFpWYWdwQTlLd3RGMEUzemVWUkJORDlVVjRF?oc=5",
+     "date": "2026-11-15",
+     "time": "01:01",
+     "title": "Beyond Coal India, ONGC: 10 lesser-known dividend stocks with up to 19.6% yield - Premco, GOCL, Accelya to D-Link | List",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPblYza2pYdjlmeEQ5X2laTXRqRnVabnVWUWRSLWY2WlJsR0NrWVZPWk94Z1cyQU9oLVpGLUZTUDhGa1prN2RtMF9panpUdzNuRU0tUzkzLWxlUjdNSWxhcUQtRlE2dFJwdVdzVnNKWGE0dVdMR2ZkeUhEdzlkRlpvSEVGc3FkRzlZX09meS1BYlRvdTB2Y1FfZ2cyNHViZmVBZWxVcXd5NGJPM0RPLXRWamtpZXB4VE5OQWZwaU9IUDFESW1RSi1KNlp1VGtEZEktMllKS3ZvcmxJWV9rUG5ucXhoeUZXTDAybGZ1amJQMmpyTksxQmdrQmFZMVV2NW5CbTBDWThIRGR2YXPSAZACQVVfeXFMT0ctY1BCWDl5ZWRzdEFDS0g4aEk3amdwZmNIZ1UyQjF2YUplekl4bzFXbkhXNjVwTnMzZk43OElzX2ZnZ1BHNk4wNkFuN3dYdERZLUlXVVdNbC1GdEJzSEpqY2d6MmstV1BDeV9rV2tTQkxDc2ZzSHMxN08wME9kLTBZNWptQ2Q2NWJmSWdMREV0cEFNeTZVTWtsamp4Uzl4SHp6MThVVnZxVEk4OG9yZ3dpSnJJejlrVUE0THJvNjc4WXJlQzc4Y3A1QWdidGVKd0RxdkdPcnhDR1U1NzFYb0hmYVhMV2JPSlhrM3hVd19XSTJpb1JlS21LMkRNbzNPSC1uVXFnTmVTSGt0YzNHcUk?oc=5",
      "priority": false
     }
    ]
