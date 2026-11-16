@@ -59,5 +59,17 @@ class YahooPointsTest(unittest.TestCase):
         self.assertEqual(pts[-1], ("2026-11-16", 102.5))
 
 
+    def test_overnight_session_keeps_previous_day_close(self):
+        # 달러인덱스: 뉴욕(UTC-5) 기준 11/16 20:00 ~ 11/17 17:00 세션 진행 중이면 11/16 봉은 마감된 값이라 남긴다
+        res = {
+            "meta": {"gmtoffset": -18000, "regularMarketTime": ts(2026, 11, 16, 23, 30), "regularMarketPrice": 104.0,
+                     "currentTradingPeriod": {"regular": {"start": ts(2026, 11, 17, 1), "end": ts(2026, 11, 17, 22)}}},
+            "timestamp": [ts(2026, 11, 13, 5), ts(2026, 11, 16, 5)],
+            "indicators": {"quote": [{"close": [103.4, 103.5]}]},
+        }
+        pts = fetch_markets.yahoo_points(res, now=ts(2026, 11, 17, 2))
+        self.assertEqual(pts[-1], ("2026-11-16", 103.5))
+
+
 if __name__ == "__main__":
     unittest.main()

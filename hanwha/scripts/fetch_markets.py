@@ -94,14 +94,16 @@ def yahoo_points(res, now=None):
         return dt.datetime.fromtimestamp(t + off, dt.timezone.utc).date().isoformat()
 
     reg = (meta.get("currentTradingPeriod") or {}).get("regular") or {}
-    live_day = day(reg["start"]) if reg.get("start") and reg.get("end") and reg["start"] <= now < reg["end"] else None
+    live = bool(reg.get("start") and reg.get("end") and reg["start"] <= now < reg["end"])
+    # 밤새 이어지는 세션(달러인덱스 등)은 마감하는 날의 봉이 진행 중이다
+    live_day = day(reg["end"]) if live else None
     ts, cl = res.get("timestamp") or [], res["indicators"]["quote"][0].get("close") or []
     pts = {}
     for t, c in zip(ts, cl):
         if c is not None and day(t) != live_day:
             pts[day(t)] = round(float(c), 4)
     t, c = meta.get("regularMarketTime"), meta.get("regularMarketPrice")
-    if t and c and day(t) != live_day and (not pts or day(t) > max(pts)):
+    if t and c and not (live and t >= reg["start"]) and day(t) != live_day and (not pts or day(t) > max(pts)):
         pts[day(t)] = round(float(c), 4)
     return sorted(pts.items())
 
