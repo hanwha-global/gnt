@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T01:46:22+00:00",
+ "updated": "2026-11-16T01:53:07+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,10 +127,10 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
-     "date": "2026-11-13",
+     "date": "2026-11-14",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
@@ -156,7 +156,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-09",
@@ -191,23 +191,23 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
+    {
+     "date": "2026-11-12",
+     "title": "Liquor Licensing Board to meet on Tuesday",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1IdkFNdUYxeDNJWDFjbUE3dlRIcGJJZkx2U1lWdlBkTW9KU3lhMWlnZ0dpcFVmSGszSUVhaVY2T3FjUWZVTFo1ZlRtb3dsTEJhUlU0MFZqUXJLaXJ0UF8yUGJFem53VVBhdktlMzBWVUhBQQ?oc=5",
+     "src": "www.info.gov.hk"
+    },
     {
      "date": "2026-11-02",
      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism Early Alert on United Nations Sanctions",
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSGVuY3lqYTgtY2RXZmlrREZLV3UzZ0NVZlhjdW5SajNJV2dhNFZlTVFWWkNmRXRsdDNKM2FNc3dZc1dwcjNUNkt4alFBOVQwRFd4eEtSOEJ1Yy1LY0h6YzFkVnZ2UWZteVgwWUNOdUlpYlM2SHkwZ0RhVXdSdllmRGdzZw?oc=5",
      "src": "Securities & Futures Commission of Hong Kong"
-    },
-    {
-     "date": "2026-11-01",
-     "title": "Liquor Licensing Board to meet on Tuesday",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5QXl2M3RGblRDMjdHdE5haUVlS0d4UEFVaFFPQWhzMjMtd1k4WVFJeHBKejJ3S3N3emMxME9DbWZRbzZLeXBlSlF3Uk9PNzJWblQ3Q0VVeVVxWDVsVkktMDJibS02Z0szcGNCR1NXbmJxdw?oc=5",
-     "src": "www.info.gov.hk"
     },
     {
      "date": "2026-10-31",
@@ -248,23 +248,23 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   },
   "GB": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-11",
@@ -425,11 +425,18 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-15",
-   "items": []
+   "auto_checked": "2026-11-16",
+   "items": [
+    {
+     "date": "2026-11-15",
+     "title": "Financial Statement (Full version) - TISCO SECURITIES COMPANY LIMITED",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbDBaLVZIUlVFQjIxbGd0UWFzeUNjb3dZM2Jqd1N5aWtCRGo3TVYtWXZBdWJxcFZHVzNMSTBMNUNtbjREZUUxRF9JZThSVDJGb3Y2RUNRWkp0MVRQTzRjMno0b0tnQUxuRGFVNlZ6eUFuZ2hFVHRmT1FfdTZoQ3ZudE5BWGlmZjFyOGFJNlljajF3dWNnOVlIcXZObS1Tb193ZktyR19lSXlzdE5YMWhEeTZ3QmQ?oc=5",
+     "src": "market.sec.or.th"
+    }
+   ]
   },
   "KH": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   }
  }

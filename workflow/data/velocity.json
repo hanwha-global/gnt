@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T01:46:31+00:00",
+ "updated_at": "2026-11-16T01:53:20+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -60,7 +60,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "sros": [
    {
     "name": "FINRA",
@@ -280,7 +280,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -309,7 +309,7 @@
   "excess": 114879691.0,
   "required": 10352954.0,
   "audited": false,
-  "checked": "2026-11-14"
+  "checked": "2026-11-16"
  },
  "peers": {
   "date": "2026-06-30",
@@ -719,7 +719,7 @@
  },
  "dart": {
   "corp_code": "00113058",
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "unit": "백만원",
   "periods": [
    {
@@ -1061,8 +1061,8 @@
    "lang": "en"
   }
  ],
- "news_checked": "2026-11-15",
+ "news_checked": "2026-11-16",
  "errors": [
-  "누리집: 재무상태표 PDF 링크 없음(이전 값 유지)"
+  "DART 원문 분기보고서 (2026.09): File is not a zip file"
  ]
 }
