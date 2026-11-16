@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T01:28:58+00:00",
+ "updated": "2026-11-16T01:31:39+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,13 +66,22 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-12",
      "title": "가상자산사업자에 대한 최고 수준의 보안 강화 조치를 통해 이용자의 자산과 정보를 철저히 지",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOWluUEphTUtPY1FYTldfalpVSjJhQmp2UHBkZnBYR2Y5ekd1QU9pdWQ4NFhuTU84RkpMdlN0N1VvWnNreXNaSUw1UzI4M2NUa1dMVjJiMHNnZXJvVGhyQVBuMzRGVzl0RDZReG1Ed0N3VWh4NUhuS242TjhEVDNoR01vMGY0MUVSZnIxc0p3?oc=5",
-     "src": "KDI 경제교육·정보센터",
+     "src": "금융위원회",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcTBQR09UamNOLVlFbV9Lb3BDYnRpV1dRMFZLS1lhcHA4WXJKakM1cV95ckktanpjZGYxcHktaEpYc3otUkhwNnhJNW4tUHJ6VTdUUmdheFJ0eEVxNDNhY3VjWlZMMmtsaEM5TUdfTnZUeElwNHRlQTNIdkRlSDc0bTBLOTA3R2tIQ1QtSEk3M3hzeHlza3V0TC0temRVdncwTlRUQ0V6MUx5c0JqeVBSc19yLTJEb1NXS0lrYjlTSEFEYnVyVnZxZFJDZ3o?oc=5",
+     "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
      ]
@@ -120,15 +129,6 @@
      "src": "재정경제부",
      "topics": [
       "tax"
-     ]
-    },
-    {
-     "date": "2026-11-05",
-     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcTBQR09UamNOLVlFbV9Lb3BDYnRpV1dRMFZLS1lhcHA4WXJKakM1cV95ckktanpjZGYxcHktaEpYc3otUkhwNnhJNW4tUHJ6VTdUUmdheFJ0eEVxNDNhY3VjWlZMMmtsaEM5TUdfTnZUeElwNHRlQTNIdkRlSDc0bTBLOTA3R2tIQ1QtSEk3M3hzeHlza3V0TC0temRVdncwTlRUQ0V6MUx5c0JqeVBSc19yLTJEb1NXS0lrYjlTSEFEYnVyVnZxZFJDZ3o?oc=5",
-     "src": "대한민국 정책브리핑",
-     "topics": [
-      "vasp"
      ]
     },
     {
@@ -372,7 +372,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-02",
@@ -440,15 +440,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-10-17",
@@ -462,7 +462,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-12",
@@ -476,7 +476,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-10-28",
@@ -490,7 +490,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-09",
@@ -594,7 +594,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-12",
@@ -619,6 +619,24 @@
      "title": "Crypto - FCA",
      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQS3hMTTBzRVBlc1UzaEZZUDFhVGpsZ0M3QW8tN1VTbmh3V3JHa2lQZmFlTGY2THBxZFhTbXk1dUZyRGxCend4blVaZlNfZnpZY3BPVHNUSDBEU2d1NFB0eERVZHBDc3VJb3JRa0dCWl84b2lRbTFDTndHWjQ5M1FIUTNvOFprVGYxLUpaWjZUN3BEcVRMYnFLVA?oc=5",
      "src": "Financial Conduct Authority | FCA",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "title": "Chainalysis — Blockchain Analytics & Compliance Platform",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaWN1ZjZ5UDVYY1dNdXp0bU5WSUkxZll0MUQ2Z3QzZlRKVVBTaVZGaGdRakZZR3RKb3BTdzJTWWE5aUdSOUt1OGdET21UdXluU0JuMndENEdZQkFnUHNEYm40dW1WMUFrUVBkMkQzSjZOMTR5ZGZDRkhnUlgzdENiZFJXQjZHUXdIS1hoYWNQLTg5andITWlHME9SUQ?oc=5",
+     "src": "Digital Marketplace",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "title": "authenticating-proxy: Generating an auth bypass token",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVUlXRlJ0WDFvbG0xcHVZMkdXUkxYV0p3SlRvVmotbVpHQWhEZHZ2RzdkeHMwZXpPV0VpMFlpNk0wRTktUlVhQkY3YWFiWmhYSzBDclZ5NG5uUXU3MWNkUk9UbFpXXy02ZFM0MUVITzRaRERuZ0cyWTVkU2FrZnVfRmdoRkJJWnNJU2VmaHRiTW5oUlU?oc=5",
+     "src": "GOV.UK",
      "topics": [
       "general"
      ]
@@ -725,7 +743,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-15",
+   "auto_checked": "2026-11-16",
    "items": [
     {
      "date": "2026-11-12",
