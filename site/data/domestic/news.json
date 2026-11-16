@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T10:14+09:00",
+ "updated_at": "2026-11-16T10:21+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -157,6 +157,17 @@
   "fca.org.uk"
  ],
  "items": [
+  {
+   "date": "2026-11-15",
+   "time": "06:00",
+   "title": "미래에셋증권 '스페이스X 보유지분 가치 변동성'에 3분기 충격적 적자, 김미섭·허선호 '글로벌·디지털'로 새 동력 박차",
+   "src": "비즈니스포스트",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16WXBodHVDTlJZbGFDQXczOHY5V21NUHBDa2c5NjFsNUI0QlRuekVHWElkalVMOVA3WEVhcHdOTGl2ZkVzTlRVd2RyRnl1NmZEQURUbkZrVGpMNlNFMjBlZUMtT1JyN2drWVU2YzBDSHZabmc?oc=5",
+   "site": "www.businesspost.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
   {
    "date": "2026-11-10",
    "time": "16:00",
@@ -790,17 +801,6 @@
    "site": "www.etoday.co.kr",
    "firms": [
     "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-25",
-   "time": "16:00",
-   "title": "삼성증권 PB 출신 창업가…국내 증권사 6곳 뚫고, 美 진출한 비결",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tUUZXS0I1QUw4ZUc1N2VLU1VJRFdiS2p6Q3k0OE04dnVUbzRKUjJPMS1pVXRqRy1OWEZYSVlEakd6ZHRwM0pzMFhWSGFrb19tTEpUSmlyM3YwNVlBOG1nSVJ1ZmVmZGxxRkHSAW9BVV95cUxQR0tZRmdtLWhwQ0NfQVN1UElmUmE1ZWJzX1l5dHRZUUQ4cEJfenlQN0pnN0RobU4wb0g1N0FzSTFkcE5pREFRWXppbzdoSkRSekxpZjc1V25JMkdIN2Z0N1VPelByVjVsSlJlYkZBcWM?oc=5",
-   "site": "www.mt.co.kr",
-   "firms": [
-    "삼성증권"
    ]
   }
  ],

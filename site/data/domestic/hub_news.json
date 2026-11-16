@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T10:13+09:00",
+ "updated_at": "2026-11-16T10:19+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -61,10 +61,10 @@
     "src": "IDX Channel",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOFJyWF9xMHBQeExNYklvWk5EdW1fT2pMLUdNdVp1bl9oZnJZa1dOOTBQbm5KeFRhWnI5T25FekR1Z3dJQ0poUTkyanAxcW9xd2h5NUZCMlBiXzhuVWdRemVyUlN1dllVQjAwMFdDYU4xZWt1NkFhODRDWUw3aHpzcjNhS2xnV0JDeTdZdzEwaTd2a0tPTmlickdDVFVWTnQ2cERuUUJRSWNrbS1tcDNab2N2UlloUQ?oc=5",
     "site": "www.idxchannel.com",
+    "title_ko": "미래에셋 IDX IDX 2억 달러 벌금, KB 발버리 증권, 서면 경고 받다",
     "foreign": true,
     "lang": "id",
-    "old": true,
-    "title_ko": "미래에셋 IDX IDX 2억 달러 벌금, KB 발버리 증권, 서면 경고 받다"
+    "old": true
    },
    {
     "date": "2023-07-12",
@@ -367,10 +367,10 @@
    },
    {
     "date": "2026-10-28",
-    "title": "미래에셋증권 홍콩법인, 자체 기술로 '달러화 디지털 채권' 발행",
-    "src": "연합뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPeFN1OEpEdUIwSm5EODlvX2xlVFpTQ05xZjNZVmZyTXI4X2ZVeEVFeEVKMUdjZndoaTN0ZElBTFFmLUZHdDZkd1FYRXczcDNNS1RiTDQ5bmpwUUnSAWBBVV95cUxNY3JWdS11ZnpYM2tra1lmVjRXOHVxZmFUOVZPUnlLRVlaR0hHWENnajFKWlFWWnJEa2J6Vlc4NFpkMnRIV3ctVW1ESGhOM1lHckEybkZxcUxQMEJNTThZSWs?oc=5",
-    "site": "www.yna.co.kr"
+    "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
+    "src": "매일경제 마켓",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
+    "site": "stock.mk.co.kr"
    },
    {
     "date": "2026-04-16",
@@ -522,9 +522,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
     "site": "keuangan.kontan.co.id",
+    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요"
+    "lang": "id"
    }
   ],
   "토스증권|미국": [
@@ -650,6 +650,16 @@
     "title_ko": "MB캐피탈, FPT캐피탈, KIS증권, 한국 투자자 모두 은행주 매입 계획"
    },
    {
+    "date": "2026-08-06",
+    "title": "Chứng khoán KIS triển khai chương trình cộng tác viên, hoa hồng tới 80%",
+    "src": "VnEconomy",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMDZaR1ZIN29UWUxpTmRLaExYc3M0MHhaWmdWTjNUbFhSOEViamVkbUpvbkZkMXhORkpyU3k5SmVXaWtvZXktNUFkYTFwLVZzZTgyenRnR1BfWm5tb1k2c2pFV0VNMVA1YlQ4NVJGQ1dwNjQ2b0FVeGlXc3JUNGhZSmZDLUpRVFZHWXlBZXphMUprZVJaZW5fZEhR?oc=5",
+    "site": "vneconomy.vn",
+    "foreign": true,
+    "lang": "vi",
+    "title_ko": "KIS 증권, 제휴 프로그램 출시, 수수료 최대 80%"
+   },
+   {
     "date": "2026-02-23",
     "title": "Đầu xuân, KIS Việt Nam triển khai “Lì xì Chứng Sĩ” 2026",
     "src": "CafeF",
@@ -678,16 +688,6 @@
     "foreign": true,
     "lang": "vi",
     "title_ko": "KIS 베트남은 15년 운영 후 시장 점유율 확대를 원합니다"
-   },
-   {
-    "date": "2025-11-19",
-    "title": "KIS Việt Nam chốt phương án chào bán cổ phiếu để tăng vốn vượt 4.500 tỷ đồng",
-    "src": "CafeF",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSzBZVDI1RVY3ME1Ldkl0NjJQdGFiZElKSHRDQ2R2YWlENVBmdmpub2lJSU1nd3hvZDZTTk42YlFqd1d0NEFZeWxRckQzQU5kV3FyaDRPZnhsQjJ4d3hpYURHZmFnR0tMNUpwZ05zd0lYNUZpY0lFaGxseXlsT1VPTkJ1MGtOS2s2cEZDaFVaVjE3Nk93TkdxRjZWUXNXYkZZczR5Wkg5YjNWUGh0b20wcWkxczBDQQ?oc=5",
-    "site": "cafef.vn",
-    "title_ko": "KIS 베트남은 4조 5,000억동 이상 자본을 늘리기 위해 주식을 제공할 계획을 확정했습니다.",
-    "foreign": true,
-    "lang": "vi"
    }
   ],
   "한국투자증권|인도네시아": [

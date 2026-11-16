@@ -1,10 +1,18 @@
 {
- "updated_at": "2026-11-15T10:14+09:00",
+ "updated_at": "2026-11-16T10:21+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
    "label": "한국",
    "items": [
+    {
+     "date": "2026-11-14",
+     "time": "13:20",
+     "title": "iFAST Xtrackers MSCI Korea UCITS Index ETF Overview (KOR)",
+     "src": "Barron's",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qbjFpWU9yelFaS3N6c0tRSzZ4WnpNNmU5UHpicF9aSVBpdFllZ3N5bmY2VXk0MmwwaXBVNXZuUzlNSEplTlNTSTZDMV9lbDB1dXVoV1k3dENLLURqNGFwNEFmdFp5TGY2OW1KZQ?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-06",
      "time": "17:00",
@@ -20,20 +28,20 @@
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWEgxQ1BoU2RsY2FCQmZwUWo2aTQzUlB4V196RzRZY1lsUUY3dEdCZG5fdjFHWDY2dTlKX3NtUG41OURjbUZUNWdIbW5uSXFoZmVXdmRFNnZPQnhGa0J0enJiNjFhdlZPd1Q4UVRPaGI3a2p3RW1jcEdWcF90Sjhqek0tREVVQllJZ2dEUVdRUUhfRUsyV0k2bzhlU0RkMVZ4Yy1PQTA3NV9meDh2RmxyZTUxTjROeERKTXJ2VG1feXN4ZHE5OHpqX29QUkI3Unc?oc=5",
      "priority": true
-    },
-    {
-     "date": "2026-11-15",
-     "time": "06:00",
-     "title": "'빅스텝'까지 거론되는 美 연준…한은, 내주 금리 올리나",
-     "src": "뉴시스",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBHWktSUC1rZkx0bFFRWC1pQTYyS0ZrUGN0U3dHT1BZTUhhYVp4RDBpWjFnSlV4c0RmZ1pYSlIzVWpLNVJoeW1aUzI1Vy02LTVjb1FzQURYcjh3ZzBaZk1na9IBeEFVX3lxTE5TSVdVVjJjczhwZllhWkxsMnB4a2ZzRnhQbVM2cDNGWjF5NG1iNmJMMGE1c0RwSVdkRktMUmhoVzZvVTFtQXV3clhBOHBSRm5Ca2FlcWdDVkt0T1RHSDlBbVhqdEUyUXJhTURoS2x2bmEwNEhQQ2F1UA?oc=5",
-     "priority": false
     }
    ]
   },
   "US": {
    "label": "미국",
    "items": [
+    {
+     "date": "2026-11-16",
+     "time": "08:08",
+     "title": "[오늘의 투자전략] 美 금리 부담 속 엔비디아 실적 대기…\"코스피, 하방 지지 주목\"",
+     "src": "이투데이",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBGXzBHTGJtZ2E5RkhtZy1jSGJrOGo5ZW9xenhCdDVrNVNlM2J5bnNFbmdmYWdOZmJtZUxmRVF6cjBvSkt6RTBsR0NiWDZnZ2RNSTJ3YQ?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-14",
      "time": "09:00",
@@ -48,14 +56,6 @@
      "title": "Fed on Track to Raise Interest Rates Next Month And Maybe Again in January",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeXJmalVqcjF1WEgxXzRyZ2hNRTRMWXdCWGdpblhnaGwxY0ZDeFIwYTVnWENtQ2U2NFg3YkpUS21EdkNHaXlwVlVicGxWd2RJZnJqOXlySXJfZzdscXlqRFNJSkswUjZ0ZjFINC11aU9GMWdrMGR6SzdfYUlkN3pGaDZZci1NbnkxWmtoZ1lNa3E2MmxDcnFqRnN0MWpwUURLT05odHBpdVlhNXRjNUJOd3JGcnNCYzd6bjVqWQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-14",
-     "time": "01:41",
-     "title": "BofA \"연준, 다음 달부터 3회 연속 금리 인상\"…1월 전망 추가",
-     "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wUGQ3T1lmeDBuT3dOUklaQ0hOUEFxS1dTcUpmMXFFci1EX05QNjlIaUgzQ1ZkNFZpNFN6ZlVVU2ZfMzRYRE1yajc3SElEd1FyNE40anQtbE1vek1LMGNGRTZtQ2xzbG11QUxkdUw4dG0?oc=5",
      "priority": false
     }
    ]
@@ -225,11 +225,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-15",
-     "time": "01:01",
-     "title": "Beyond Coal India, ONGC: 10 lesser-known dividend stocks with up to 19.6% yield - Premco, GOCL, Accelya to D-Link | List",
+     "date": "2026-11-16",
+     "time": "10:12",
+     "title": "Stock market outlook today,16 Nov: Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
      "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPblYza2pYdjlmeEQ5X2laTXRqRnVabnVWUWRSLWY2WlJsR0NrWVZPWk94Z1cyQU9oLVpGLUZTUDhGa1prN2RtMF9panpUdzNuRU0tUzkzLWxlUjdNSWxhcUQtRlE2dFJwdVdzVnNKWGE0dVdMR2ZkeUhEdzlkRlpvSEVGc3FkRzlZX09meS1BYlRvdTB2Y1FfZ2cyNHViZmVBZWxVcXd5NGJPM0RPLXRWamtpZXB4VE5OQWZwaU9IUDFESW1RSi1KNlp1VGtEZEktMllKS3ZvcmxJWV9rUG5ucXhoeUZXTDAybGZ1amJQMmpyTksxQmdrQmFZMVV2NW5CbTBDWThIRGR2YXPSAZACQVVfeXFMT0ctY1BCWDl5ZWRzdEFDS0g4aEk3amdwZmNIZ1UyQjF2YUplekl4bzFXbkhXNjVwTnMzZk43OElzX2ZnZ1BHNk4wNkFuN3dYdERZLUlXVVdNbC1GdEJzSEpqY2d6MmstV1BDeV9rV2tTQkxDc2ZzSHMxN08wME9kLTBZNWptQ2Q2NWJmSWdMREV0cEFNeTZVTWtsamp4Uzl4SHp6MThVVnZxVEk4OG9yZ3dpSnJJejlrVUE0THJvNjc4WXJlQzc4Y3A1QWdidGVKd0RxdkdPcnhDR1U1NzFYb0hmYVhMV2JPSlhrM3hVd19XSTJpb1JlS21LMkRNbzNPSC1uVXFnTmVTSGt0YzNHcUk?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZ0k3c3lyNVA0N2VzMEtudWx4aHpVWXptWjZQT1B3VnAxN2xIMFlGS3h6d1p2TWVUNUtyNFUtVjJPYnVJQThQWjRQNHlMVkV0MkdNWHlqcnB6QWhia0JRdjFHRzFQd2hWTi1meWVLYlVzRWhrTTlld2pDd1RNTVpmbmZDN2l5bzU0VlN1Y2FmVjZIaE16SFllYW5yMF9yY3VFVC1NOWtfWUVGdUJjT1BxTjl2OGJjeEtLTGZkQndMc2ZNbDRvLUg4VWxUS0pmTUZ5VUxHM0NtbFV4UjF5WGlPMXRKTjdIZm1SVjJGdzdaakJrTl9paGE1OVNtS205dkw2eUdMd9IBigJBVV95cUxPeHROLTNJdWlVUUJPWEFrcVJHeDZTWUFibjVGZUZ0bmhxR09Kb2ZqZ1hZNWV1ay12UlgtTjdCczBybXpSRmEtVVl0TXpwWEhfSUkwQ1lfemZ5OHZKS011RmpjTFRyZlhYQjIyNkxCRU8yNUpOQ24teXRPQ0NuWHJ1S2RNY1Z3Mjl4VEZQZE9IT0JPZWZmWEc3cEdpZlpwY1NfaHlIMzlod1JRUWhvREhDeklBZHdPNkdLc1EyV2tCd1dhT1NJLXBUT2hVWVM0aEltVmkzRGd6UnlSUHZFM0JSekJaT25IRUJUaVR4Rk5VTHAwelhkWW8tZG5WYjlsdVotbnZWQXdETGlvQQ?oc=5",
      "priority": false
     }
    ]
@@ -238,27 +238,27 @@
    "label": "글로벌",
    "items": [
     {
+     "date": "2026-11-14",
+     "time": "23:00",
+     "title": "Beximco Pharma, LafargeHolcim, 4 banks from Bangladesh added to MSCI Frontier Markets Index",
+     "src": "The Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQnIwUFZzSHVkWUc2SjZMZjY1Wm9aR0U3VzJrNFRIRmxhMXFob2J0c1pRVGZGN1lqSU9NOFNrU21mOVVEdzZELVFGRXJlR1VURDZmbExmeTROMkx2blZIcC1CUTF2X21mN1hFRk5fNTlHcnVxcWFTY1UwVHktU2tCVG1CazVzOFhIYkh6RU5pLXU0RmRmSnBNUkc5d0tsVGVBRHdoSE1WM19JTU92LXY3Sg?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-11-14",
+     "time": "15:00",
+     "title": "JCI Soars 5.8% as Political Calm, MSCI Review Lift Market Sentiment",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON0tpYjd3cW1DZ3p3Q0Q4VnJHbUZRcDZHWUhXc256TklpZkxCLW1DcmFjdUNVNGZRQnZrNHpmMVNmS1F2Zk1jRFFBVGxfN1l5ZHZ2UHMySzRRdXhBaFpteHpBakNwQVFZUThTV0pFY3d3bW9kMGRGeUFaUUUxUWZkd0pUZGJnaWpkMmFfMlJzYk1yU0NtdmkxTzV4dDN5QQ?oc=5",
+     "priority": true
+    },
+    {
      "date": "2026-11-12",
      "time": "08:38",
      "title": "MSCI says Indonesia's Barito Pacific will be removed from its indexes",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNEF1b01HVFNzeWNSRHkyZ0V1SFlvMldoRW01Z1VXMzJ6OVBuVXNCNHhxbWhHRUt6RGlHT2VoaHQ2OE9WN09Kb0VUMER2cy0zUkU3UjZHYV9paTVpamNEcG8wZ014cVpNV2pyZ2RiUHFsNWhQc3RYTkN5dXEzdEZpWGU0MjRHSXg5Y3czM2dUR2Y4dTBLYkwzM2NDQUU2cjV4WXM1OGt6RXA1ZFNYTFdvZDN0Rl95LV9MRUE?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-02",
-     "time": "23:26",
-     "title": "Greek Stocks to Suffer Outflows on MSCI Upgrade, JPMorgan Says",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWVmcEhvblNrV0ZZMmtQVWc3RmZNNTdybFBYZzdFZVZUUW0zc1lmakxBR3NFTzBxeFdOSklzeUFQajBqVHRnVUpQRU5lN3lNWW1lZFBXWm5waGZodWhaNjFYVTlSc1RFXzkwaDJHMloxb2EzYllNR1ozMG1NNEVXTnExeHNwRmZtNnVrc0R5bTlYNFhGYjZ4dG9BUGdjWThZR0RYTUp5cDVTRFJvakNwUEV3?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-10-30",
-     "time": "08:01",
-     "title": "Prabowo's Brother Warns Rupiah Could Hit 21,000 if MSCI Downgrades Indonesia",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU0JYVjJTV1JMXzc0Skk4M2tERW9vX0NCb0RiaE5KQzZiYkVhNjZoRGVyUXJOcGZWYTJ4NnBQUmQ1Tm1UMFRXUWdFZ2RnVlZCbGN6dXY3Q0JsMnRyRVF6VFdyYmU1VnZYNFpzdWZRMnIyQnlTVTFkU0RNN19vRG5EWm5mQ2dxNHc5eTNTWDRzdnJLS0t2QUFGLS1haFRMZzlKdks2anFUOHNSZXc?oc=5",
      "priority": true
     }
    ]
