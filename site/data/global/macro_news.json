@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16T20:48+09:00",
+ "updated_at": "2026-11-17T03:44+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,6 +36,14 @@
    "items": [
     {
      "date": "2026-11-16",
+     "time": "18:17",
+     "title": "Treasury yields fall as investors await comments from Fed Chairman Warsh",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Hb0xmSm1PekxUM0FmRThxUmxKLUp6RFhoZmg0SXdEd2xaeGdKODRRbkhqN205X0MwZmhqbHlhRnVvQVpaUDhWMWp6QUJoamxaazJNN1lFNUVVWVRISnpLVGxpbllUbklySjAteGtLdWR6WmNCQ0hj0gF8QVVfeXFMUFlyRVFLcV9peGl3NGN0ZWljZTFuaXEyNEt0MHRHeXBYbG1UZHhFT2V6OTVBeVVibG1wWmZCdXE5TlFlQzZTc1ZvVmVFWHJTRUZwOWh6MDM1em8yMjhyaG44MTFOV1JXUHVzcmIxZk9nWVpBR0ZQNTFVVW9ERw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-16",
      "time": "17:19",
      "title": "Federal Reserve's Susan Collins sees ‘gradual’ hikes in interest rate to curb inflation, manage economy",
      "src": "Livemint",
@@ -49,14 +57,6 @@
      "src": "South China Morning Post",
      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRGdDNFBYZTA2bFNMS1ZCVVVFZjhWOUNSNmJjT1lBcHZwUkhiSFctTEZ5ZlNRenozMEREc1RpVHltTjVLcER0aExLOUNrNjZmQV9KU2dnb2Jqa1RZcEJDS0F0Ym9nT1FTZzVWTXpraE5OV25wQkNieDk2SWh4VnRLTmZhQnJsbFFkaHRsTWlLdTNkNmEwbmtXdDF1bFBoWUo5M01Hd0xfZXZpSnFSTHZ1V3FJNHJ3WVY2WmNQQVpHUkZJRmZTWEE?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-11-16",
-     "time": "16:53",
-     "title": "美 국채금리 5% 돌파 속…워시 연준 의장 17일 발언 주목",
-     "src": "서울경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xRExIbURRN3hTbk9qem1Zc1lEX2xPZkF4XzQ2WDhnZHNkMlZTMHlmaVVFT3k3Z0ctMzlCUmhKV2htQTNxRkV1TDdfaEJ0ajZVSnfSAVNBVV95cUxOM3lEM3ZJcXlmVHVoaXBUb0MwODBQSzhKa2RCMjR0UDB2NExIYnU3VjlOekhnRENjRFVLQXhDSkhwTzZvOFVPWWdXVnl1eGJ3Q2pBSQ?oc=5",
-     "priority": false
     }
    ]
   },
@@ -66,7 +66,7 @@
     {
      "date": "2026-11-16",
      "time": "14:26",
-     "title": "FTSE Russell excludes 14 Indonesian stocks, maintains emerging market status",
+     "title": "FTSE Russell excludes 14 Indonesian stocks, maintains emerging market status - Markets",
      "src": "The Jakarta Post",
      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObTJYSmZpeGNUdzBmUnBEaGtyLXQwX2VhajVKWjE0cGphdlptWl9LUVZKd3lVU0ZwRVFHNHlhd0NkWW9rdHBSYXVGM3E4dzZYVWtrMUV3d0puX3dKZkJOTG1jYnk5X0hCR3BGUjczNF9uS0k2V00wNHI5d3I1YzVhMlg4ZFJIT1c2RWJKT1hkWmI1ZFkwdFJkNUlFSnIxZEJXa1JJTk5yd204cW1aVHJQbUtubjc5YXJEYjZneUV6aUJsUlFk?oc=5",
      "priority": true
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-16",
-     "time": "17:10",
-     "title": "Japan bond yields hit multi-week highs as US rate hike bets strengthen",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNXlOQzZMcFptczdmMlgyQVg2OFdoWm1BbE42cDI2QU1BVjVsb1h2eFpFZ3RHekdiN00tZTZMWTg0U19obkJkOHFiT0xuT2RxUzhKSnpValV3RVdXRllNUnpCaXpQWnVzUjRndzQxdC1sTDJ3RWs3MVNOakVXaW91bHJraDFJd3ZuVVNSRmROTEN1U3ZYZnhGbk5XYnBCMzFjc0lPMWFkSFdPV2JLOUZOWUY5aFpvWFJKMVE1VHZKaEkwOHNJa2F3RFNILXlqejlpaUlnY1d3Tndsc2x6TDktdtIB5gFBVV95cUxPRkhpa0plVFFqSU1WcERNei1NOTgzNkJpRlcxSV8tejZ3Z2FwaUpfVUhoVVJOMnZ6bkIyUnNNV2JVZnhXZldlaU53bnIwWjhLbk8zMDlSUXlNby02cXMwY285Q0xrVzZYN0lvRG8yNFBaZmFSMkpkT1NjSXo0T3Nka3NQVVAySWxaN0R5R0luZ09uSWJuQjVPdmRySFRlUnpyRWZ0WDhBbFFFZG1idmxjYXVoNEFUUE40aGdaamQ2Y0FaY3B4TEQ3Tmd1M1NJS1dhOHRFTzFybDZscmszRGpzRzRvMDN4UQ?oc=5",
+     "time": "21:36",
+     "title": "Weak growth casts further doubt on Bank of Japan’s December rate rise",
+     "src": "Financial Times",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5EM2NlYXlkS1l2WUdsSXM5U2JaRkg0SHFHZldETVd5XzNtYjUyX2ZublI2MEdTbzNXcHlGU3RyVnpMYk1jbnBjSFdvdGhONU93b2V2Q2F4dl9CVXMwZy1fb1k5aTBpaUhuTDhzaE5FTVI?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-16",
-     "time": "16:32",
-     "title": "Nikkei 225 Tumbles 2.4% Below 60,000 Mark as Japanese Stocks Lose Nearly 1,500 Points in Sharp Monday Selloff",
-     "src": "International Business Times Australia",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMzhUWTlqRW1rSHgxZ2puM0NzS1A1MkEwdG1RTUdJc0FvakJyamswYWJOZGxvQlZZcUlHYm1jSXBKRC1XTjlmdi1qay1QMmpFdEplQmVkN0dCMjg3VWc5YnlDaXlGUnFGMG9ETGdKajVpR0Y0RDBBbFAxcEJ1aFhTZnBVSmZXUy1rTFpz?oc=5",
+     "time": "17:10",
+     "title": "Japan bond yields hit multi-week highs as US rate hike bets strengthen",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNXlOQzZMcFptczdmMlgyQVg2OFdoWm1BbE42cDI2QU1BVjVsb1h2eFpFZ3RHekdiN00tZTZMWTg0U19obkJkOHFiT0xuT2RxUzhKSnpValV3RVdXRllNUnpCaXpQWnVzUjRndzQxdC1sTDJ3RWs3MVNOakVXaW91bHJraDFJd3ZuVVNSRmROTEN1U3ZYZnhGbk5XYnBCMzFjc0lPMWFkSFdPV2JLOUZOWUY5aFpvWFJKMVE1VHZKaEkwOHNJa2F3RFNILXlqejlpaUlnY1d3Tndsc2x6TDktdtIB5gFBVV95cUxPRkhpa0plVFFqSU1WcERNei1NOTgzNkJpRlcxSV8tejZ3Z2FwaUpfVUhoVVJOMnZ6bkIyUnNNV2JVZnhXZldlaU53bnIwWjhLbk8zMDlSUXlNby02cXMwY285Q0xrVzZYN0lvRG8yNFBaZmFSMkpkT1NjSXo0T3Nka3NQVVAySWxaN0R5R0luZ09uSWJuQjVPdmRySFRlUnpyRWZ0WDhBbFFFZG1idmxjYXVoNEFUUE40aGdaamQ2Y0FaY3B4TEQ3Tmd1M1NJS1dhOHRFTzFybDZscmszRGpzRzRvMDN4UQ?oc=5",
      "priority": false
     }
    ]
@@ -160,18 +160,18 @@
     },
     {
      "date": "2026-11-16",
-     "time": "16:31",
-     "title": "China’s Economy Disappoints With New Stimulus Yet to Kick In",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZjFiTE1FdTd4TV93WnROMERVZXMtQzdSZDRTOTh3cVhocV9Sb1NSRVVGelJYamtpWkwyLWc5WTc2MGRWVUJWckNkVVJTOVBUZTNuN3Jxdl92R1E3dWRySnk3RTAyZ3BlVVI2bGZKbjJKb0U4WkNSS1VJU3dQZ1B2eUJXaUF3TVZaWk4zS0N5RlVVSWRlcXZ4UkZQYl9nQkxrRkFxNF93dm94c0NLWEdCa1d3X2Z2UQ?oc=5",
+     "time": "17:59",
+     "title": "Hong Kong developer New World’s shares tumble 40% on $3.2bn rights issue plan",
+     "src": "Financial Times",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZFlCaUpqLU1SN3ZmYjQtbjF1NTRaaWRQYXVOaFNid1NYaUtOaml2RnIzOF9HUUFES3RGQ3dSTVRELWpSbnZ6aE1Odm1pbC1abHNTbW9JeXhXalBJM0J1ZXptdHBfOUw0cFJZMmtqNzhMYTk0a0ljR2tfaVppVHVPV0FFdUo?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-16",
-     "time": "11:51",
-     "title": "China home price slump drags on despite latest stimulus push",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYlBEdmoySzl6dkhfSnBHMnRwWWRyQzh4T0VmVzdCZ1kyRnFMWnBfODBCYW1pM3dtSENIdG1XUEpWMEhWOG5QSzlrdG5melBEcFNQaUpLT2N5aVU4U2gtSUpOOGhJQUlkb0NtazJ2QmVXUzU0TV8ybXlUUS1jMHBUSExrbXp5OVNHVWRGR0Y5dXpNRENBLTgyZ1dhV2IxeWRV?oc=5",
+     "time": "16:31",
+     "title": "China’s Economy Disappoints With New Stimulus Yet to Kick In",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZjFiTE1FdTd4TV93WnROMERVZXMtQzdSZDRTOTh3cVhocV9Sb1NSRVVGelJYamtpWkwyLWc5WTc2MGRWVUJWckNkVVJTOVBUZTNuN3Jxdl92R1E3dWRySnk3RTAyZ3BlVVI2bGZKbjJKb0U4WkNSS1VJU3dQZ1B2eUJXaUF3TVZaWk4zS0N5RlVVSWRlcXZ4UkZQYl9nQkxrRkFxNF93dm94c0NLWEdCa1d3X2Z2UQ?oc=5",
      "priority": false
     }
    ]
@@ -198,9 +198,9 @@
     {
      "date": "2026-11-16",
      "time": "19:40",
-     "title": "Singapore shares down 0.9% in tandem with key Asian markets on AI uncertainty",
+     "title": "Singapore shares fall in tandem with key Asian markets on AI uncertainty; STI down 0.9%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbVBQOWNIUEJueDJERGVQNncxM3ZaLUFyWGlReHprdUFxbzJsdlp5bWJMTHcyS09Ma2ZMSUt1U2ZEbjN5dkZhWm85dUtUQTZ1bGVsdURSendKckJkejA5bVRER1M3SVZuZHZQdWJmOFlQdjRlU2dzLWRrVzhiTWJjQThBVDBIcnd3c2RhbjRpenliR3dSOUY2T2JxZ0FRU1hBWWJwWnAwVFZmbU8xYlVUTXB1QnlXSTQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQmFZc0dwcHhJVFEyUmNtZWlpbHRQOS1nQ2Z3RlBGLXdMYklJMjYyRlBSdDlWZnI4dlZlV3JkSmp1Ti0yVTFkaXRBc1U0c1RwWUtMWDRBUkFPSHBONEFKRGRHM3k3bl80WG5hR3FmRmhRXzdZSFBRZk5NSEZwY29pNmZabk1pU2RFOXplY2RmTVlBZUliSGtlZjU4OVhtdk1BbklSU296YjdERGVIVWU4NURBaHpjeTNrYklCSnlWN3VBQ0U?oc=5",
      "priority": false
     }
    ]
@@ -225,11 +225,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-16",
-     "time": "17:53",
-     "title": "Sensex at 95,000 or 1 lakh? Morgan Stanley says India’s 3D engine is putting stocks at an inflexion point",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOOFVkYUVYZ0FXeWc1WFRiY2FVeGVXTmtPMGVEZGh1ZEQxd3VKaDM4TFJuMWJzNjhYbG9KTHhqMGdldzdRSXFsUEpHRTFBZFpfRmpZQXhsRmJsSExyRC1rOW01eVBsbm52alNnbzU1Rk42SmNzLWZ5aWMydEFSTG9XNldTUlJHTDYyN2VKc0RfeWl4OUFtb2ZXWVRBRmRzR0VsemduZV9LLWZHdE1IckUwandKZ2MyVXNBLUZTUnBpR21rQUhmQThydml0Yl9aWWYzbjZmbElxRkVxWENTOUJQT3dLd2twRHhFYm5mZWtNY19rTUVNeXFQYUxzUjZrdTVpNVFzTW15QmTSAY4CQVVfeXFMTlNkTHVaa2FDQzBhNGhyekFENExWNjFiTFhGTWpVc1c2a2VsMkV3REN4VVpOb0N6NXk4a1JGbEhOQlZMbkRmUktVMmtXekpTTE5kYVQwNmg2VWZBQVJ4THNOWUt2WUtxU0lCM1JBanI1ME44cTFHMzV4akc5djZUeXNmblg0QXREclV2aGV6STNZUVpael90YlNDM3NMTTZTejV1SVM1Q2c1Xzc0c2FoOGN1UDU3N004V0NJdE85V3BqS0VDUWZ0Z09Lbk9yUDliSXdsdjdOS0JmSEZfOWdEa3FXcnBvWnZKeGpENFdTcndzOHBMX2pSWUlFX1VyZnZQaEJja2tyX3dfLVRBc1B3?oc=5",
+     "date": "2026-11-17",
+     "time": "02:36",
+     "title": "RBI files review petition in SC over YES Bank's ₹8,415 cr AT-1 bond case",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZGR6V0x4Zl9WajZFUDBOTUtPRVhGVkliN3E3SnRaNzQ0VW5uNlkwUFJwbGVVdmlZYXFsejBVdjdQZXN1UGpfVmYyUVZsM3plT3ZsT25Lcm1PV0FNc20xNGVraHc4SU1YdjRHWTFHVFpVQzhiVUtLbzUzdnEwTldKVnlmNC1TOUxtTG1wNTdQVm9mb2o1M2lkZ25MU1U1ZmJ1T19pSWNzczV4WlpmMWNQTkVINmtsWW5MWmVVR0tMOENjMmxYQjR3REdPZXdrV3BUZUVKU3loTGpad9IB3wFBVV95cUxQbV9JSDV1UVB6VHpZUlU0M1VPWjlKNXFuSEZrdlUwZ0pNclhnQnkwVjRoWHJnT3k1aGR0N1dsYjhac1FEZm5acFBvaU9mbUk3RXNYWHpwZUxEX1V5b0s4ZUhGT1J1OFJsb21QSVJZUVdhVFlZNVVCX3AwYmtkV01wb1ItenZKaDlrMUlaWFhuVXJqNU1LM1EyVDVsS3VjbHhWQ0pYRVdaOGtFb2xjbHhpUk9EbGJZc1g0NExjV2wxMjk1akN3aWRfRHV6OEI1SGNZZk9VX2JJLUd0ZGJrbEE0?oc=5",
      "priority": false
     }
    ]

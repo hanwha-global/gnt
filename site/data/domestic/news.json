@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16T20:48+09:00",
+ "updated_at": "2026-11-17T03:44+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -157,6 +157,15 @@
   "fca.org.uk"
  ],
  "items": [
+  {
+   "date": "2026-11-16",
+   "time": "15:57",
+   "title": "[BP금융포럼 in 싱가포르 에필로그②] 국내 증권사 '사자의 도시'로 가는 이유, 아시아 금융 중심지서 글로벌 자금 물꼬 튼다",
+   "src": "비즈니스포스트",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5ckZzbEN6RHltUXpWNnJwdDhwOS1RT2h1aXI4cjAwZkJKZHRfUFpLTjM5VUh5M0NTZ3ZoQkFxbGNGaUNKOGdST0dXVjJEUkZjMllOUGhEN3U3S0lQS25NTXpDNms0dWhoWmdNVkJlZWxaN00?oc=5",
+   "site": "www.businesspost.co.kr",
+   "firms": []
+  },
   {
    "date": "2026-11-16",
    "time": "15:57",
@@ -566,10 +575,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUU?oc=5",
-   "site": "www.yna.co.kr",
+   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
+   "src": "서울경제TV",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
+   "site": "www.sentv.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -577,10 +586,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
-   "src": "서울경제TV",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
-   "site": "www.sentv.co.kr",
+   "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUU?oc=5",
+   "site": "www.yna.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -788,17 +797,6 @@
    "site": "www.mt.co.kr",
    "firms": [
     "신한투자증권"
-   ]
-  },
-  {
-   "date": "2026-10-27",
-   "time": "17:38",
-   "title": "미래에셋, 이번주 日증권사 인수 발표",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MaE5aMXAxVlVINXd3WUpIVC1GUzFYMFlWdXQ3c2c4WERIZGh5TkMzdDVFS0F1TlUwOFNaQXBDMlRjbHZTUWRldXJvX2NfczNhVWc?oc=5",
-   "site": "stock.mk.co.kr",
-   "firms": [
-    "미래에셋증권"
    ]
   }
  ],
