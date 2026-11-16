@@ -109,14 +109,27 @@ def yahoo_points(res, now=None):
 
 
 def yahoo(symbol, rng="2y", interval="1d"):
-    """[(YYYY-MM-DD, close)] 오름차순, 마감된 날만. 실패하면 빈 리스트."""
+    """[(YYYY-MM-DD, close)] 오름차순, 마감된 날만. 실패하면 빈 리스트.
+
+    긴 기간(2y) 일봉은 최근 하루가 늦게 붙기도 해서 짧은 기간(5d)도 받아 빠진 최근 날짜를 채운다.
+    """
     q = urllib.parse.quote(symbol)
     for host in ("query1", "query2"):
         try:
-            d = http_json(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?range={rng}&interval={interval}")
-            pts = yahoo_points(d["chart"]["result"][0])
-            if pts:
-                return pts
+            res = http_json(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?range={rng}&interval={interval}")["chart"]["result"][0]
+            pts = dict(yahoo_points(res))
+            if not pts:
+                continue
+            try:
+                recent = yahoo_points(http_json(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?range=5d&interval={interval}")["chart"]["result"][0])
+                last = max(pts)
+                pts.update({d: c for d, c in recent if d > last})
+            except Exception as e:  # noqa: BLE001
+                print(f"  yahoo {symbol} 5d 실패: {e}")
+            m = res.get("meta") or {}
+            reg = (m.get("currentTradingPeriod") or {}).get("regular") or {}
+            print(f"  {symbol}: 기준일 {max(pts)} · meta {m.get('regularMarketTime')} · 정규장 {reg.get('start')}~{reg.get('end')}")
+            return sorted(pts.items())
         except Exception as e:  # noqa: BLE001 — 출처 하나의 실패로 전체를 멈추지 않는다
             print(f"  yahoo {symbol} ({host}) 실패: {e}")
     return []
