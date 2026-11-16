@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16T10:19+09:00",
+ "updated_at": "2026-11-16T12:57+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -80,6 +80,13 @@
   ],
   "NH투자증권|미국": [
    {
+    "date": "2026-11-16",
+    "title": "NH투자 \"코스맥스 미국법인 내년에도 흑자 전망, 중국에서도 중장기 수혜 가능\"",
+    "src": "비즈니스포스트",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5XeUw1UzJNNkEwYjhxRVZtYWFaTThSWVZoTWdvNEZjY195cW9uWmMtTDFKWkk1aThzcHdkY1RSRkFSc1M1Tm1sOWlzckJtT3YtNUFJWVFfY182V0NhZ0JzRGxleGQxdDRDWnBHNm92YWJseDA?oc=5",
+    "site": "www.businesspost.co.kr"
+   },
+   {
     "date": "2026-06-17",
     "title": "NH투자증권 \"오로라, 팜팔스·美법인 성장에 사상 최대 실적…판교 사옥 매각도 주목\"",
     "src": "이투데이",
@@ -150,12 +157,11 @@
   ],
   "NH투자증권|중국": [
    {
-    "date": "2024-10-17",
-    "title": "NH투자증권, 중국 비상장기업 투자 위한 합작펀드 출범",
-    "src": "한국경제",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBheEZsbFh4SzZPV1BYcUstcnFCRDZVZVZNMEdJeFM1aXhHcEk5Zl93OEZpckl3aXhfeEhjZXpZaEtfVWNUNzVIM3MzM2o4Z0poOHctTmQ0T2lEdw?oc=5",
-    "site": "www.hankyung.com",
-    "old": true
+    "date": "2026-11-16",
+    "title": "NH투자 \"코스맥스 미국법인 내년에도 흑자 전망, 중국에서도 중장기 수혜 가능\"",
+    "src": "비즈니스포스트",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5XeUw1UzJNNkEwYjhxRVZtYWFaTThSWVZoTWdvNEZjY195cW9uWmMtTDFKWkk1aThzcHdkY1RSRkFSc1M1Tm1sOWlzckJtT3YtNUFJWVFfY182V0NhZ0JzRGxleGQxdDRDWnBHNm92YWJseDA?oc=5",
+    "site": "www.businesspost.co.kr"
    }
   ],
   "NH투자증권|홍콩": [

@@ -1,14 +1,21 @@
 {
- "updated": "2026-11-16T01:31:42+00:00",
+ "updated": "2026-11-16T03:59:43+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
   "KR": [
    {
+    "date": "2026-11-16",
+    "title": "토큰증권 업계, 금융위에 하위법규 보완 요청…“원장 간 이전 허용해야”",
+    "src": "이데일리",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMDhxc25wcTJOaE15c2RsTnQwTE93cGF2N291NXNaUHZENThYWjkxNnE0VWJHZncwRGE1Y3ZDaDh0NWJQcDVjdjJmZWZweHI1YkhQREljcVBDamJFQXl2dVltZHduSUZkblJ0SGpTTnU1ZmJpdUlURlpQeFgwcDlRVA?oc=5",
+    "code": "KR"
+   },
+   {
     "date": "2026-11-15",
-    "title": "[영상] 시장개척한 스타트업 탈락...조각투자 토큰증권 거래소 인가 논란 왜?",
-    "src": "경인방송 뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fZjU0Nnp6OWxwMFRmNjhvckRCTzFQOVEwYWt1Z0VreUdES3NVdHkyLUpiOTNtNjJpb0t0X0dxWDZESVYxY21SejhXc3FwZjNsWFR2UzczLWU5dXdjVjZPRzJWTDjSAWhBVV95cUxOb0NvS3QweUFxTzM3YldjT1VTTzhxTVJFLUlzMDRfWmNkQm5fdC15dXZ0bFd3bTE2MmtsV2hkZHJkTkN5R3BnV0pwRWh0cFFHbU8ySGRmZFNvNmRSTVF0TEhWMnBOZERneQ?oc=5",
+    "title": "디지털자산기본법은 왜 필요할까요[금알못]",
+    "src": "뉴시스",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YMk5VZXdlNkFuRDA4Rm96TEg0Uk82SXg4NmxyTEhfQV9pandwMHlJUHVEUUk1bW5qeDIxb2dWV1lUQVQ5UHBWNTZ2ZE9neFRPWXNQdUpoQktiUXlUd3pkUNIBeEFVX3lxTE5LTG5HM1pZUFQ2WkN1anhwY1FEZnJjUWpNZFI3VUpXNE1rbVlGbHNFYi1DQVdpN2x1VmRhM0daVWM0Ym5tSU5sRnRWRm54VksxR1otYkVVbG1TMFNlM2VlTnhndWZfWTJwQ2NVc3AxRUNMNnQ5TVU2WQ?oc=5",
     "code": "KR"
    },
    {
@@ -52,13 +59,6 @@
     "src": "뉴스1",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rUU1oV053RGprd3VoTEhlYTJqRUsxQzBmQWh4cS1XOGkwcllnUUxDWk53ZHdlaWllR2dWMjU1WWJObFdEd0M0STk0R25RNGZYbWY1TUN2TXd4VFRtREhDeHM1Yw?oc=5",
     "code": "KR"
-   },
-   {
-    "date": "2026-11-12",
-    "title": "정부, 가상자산 법인시장 개방 의지 재확인…디지털자산기본법 입법 속도(종합)",
-    "src": "뉴시스",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE94TGlsRTYyeXQ5YWxBMElOU3NhWTlzZjJqZmFSMlJCZEdGdGV3UURMQWsxSExMdU15bkU2ZGo3aHFETnlsVkVsMW1Wc2xWRTZaLXd3SWM5Ynl3OEFfbTNhRFhaekp0OVNrN2MzR3RFRGlwdEIwMXhZddIBeEFVX3lxTE94TGlsRTYyeXQ5YWxBMElOU3NhWTlzZjJqZmFSMlJCZEdGdGV3UURMQWsxSExMdU15bkU2ZGo3aHFETnlsVkVsMW1Wc2xWRTZaLXd3SWM5Ynl3OEFfbTNhRFhaekp0OVNrN2MzR3RFRGlwdEIwMXhZdQ?oc=5",
-    "code": "KR"
    }
   ],
   "US": [
@@ -88,15 +88,29 @@
    },
    {
     "date": "2026-11-16",
+    "title": "Thailand's SEC Proposes 5 Million Baht Daily Cap on Stablecoin Transfers",
+    "src": "Blockhead",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVE9odEJwSjFpdWlZb0F2LTMtQU5faGJ1NkxVbHp3ODk0SVFDY19pSmlEX3VDUERBcUVFNEpmTGFGVExSVkhuZ3N5T3BLdjNrTU9RQVlhNkdVakg5VG1PclhleUlUdC05dXUwdUpYZDVoNUc0QTNhVFV3aUlqWG5ocWJrbVdpSzhqV3NmeEwzcjd5NWRMTV8tOE5UaS15bE1EZl9rbkVQZnd0eHpZ?oc=5",
+    "code": "US"
+   },
+   {
+    "date": "2026-11-16",
     "title": "Stablecoin Regulation: OCC Final Rule Takes Effect in 2027",
     "src": "OneSafe",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1qcUhuZTNKc0xPQTl0ZFE4cTV5RVh2NHJ6TEtjWHdXam5EWXBGQjBIdDg3RS0zSjVDemRfOTRISERBWXI3NXFhc2xpc3VpeGFSVTFHM3ctbnhLMm5zeW5fVmtLbEZKSmtFZ2lZQ1Q3RjI3ZEozMl9FaGtYOEJkR1U?oc=5",
     "code": "US"
    },
    {
+    "date": "2026-11-16",
+    "title": "Stablecoin Regulation: Thailand Proposes Daily Transfer Cap",
+    "src": "OneSafe",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZmxyd0t5SGQtOVR6SlR5bTh1ZUZPMHU2UHVFdkUwTnhPZTRiZ1JZcXkwWFFuR2JnbXFDMmt4Qm1qNFRLTlJKcHFfS2lfQUl2V1UzRURCOTRNSVlSdFBBcUQxa09VOGk5cVpENEdVemVZRTBVZ3lVT3VyejFwUGVCTjZLVHRnWkZLS3JMSGhPNA?oc=5",
+    "code": "US"
+   },
+   {
     "date": "2026-11-15",
     "title": "OCC Final Rule Moves U.S. Stablecoin Law Into Implementation",
-    "src": "www.tokenpost.com",
+    "src": "TOKENPOST",
     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oVF8zLWVadWpEcWs1YjJGb1RRbnRQTE11WTV6VEx6Z2prbWYzd2FiZVhwVzNwVnNnWlJLeWlwaUNqdFRENFZORkxKQ0l0QnNGNklWb1ZUQzRzWVE?oc=5",
     "code": "US"
    },
@@ -105,20 +119,6 @@
     "title": "CFTC Chair Selig says crypto firms are signing up for his agency's rules as Congress stalls",
     "src": "Startup Fortune",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYjBCVWdDT1c2MFEtOTJXTDNNT0pVT1JGX2JrMGVkQ1FHV0xKU0cyS3BGVlpzb21sM194ODFyNGN4UzlfN2JxVVFuNlF0MGhzdG5QTlJpakZGMl9xNVhuWkxPVlcxNEo0Ql9ESFpLOHhaRlZOOXBHdFJtTzJaVTh2bDF1cTlWOWphazRjZ2FBV2ZISDNSSGZLaXlNUXhlTG1DcEFBN2p5MXJRS3JBSTBsR3l6MEJUMWE0SEE?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-11-14",
-    "title": "CFTC Chair Said Crypto Exchanges Are Interested in New Rules amid Political Changes in US",
-    "src": "Incrypted",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcG9neDJNaEczQmpuc1dYVnk5Y3piM01rOTVSYnl0cWNuTDBaMU91LUdiY3RHX0QyZEJFUURMcDQ5blJVS3FIbjk1RjkweVJJZEJFV1NjckMzdTJjbEMxQWd1SDRBdTREMHZoUlBlUXU2RlU1a1JPTkt4eTZ5eGhGY0xYZHNLUVdZMTdCQmlUdzZHdmVvMzY5RUFHMXFQYTdERkNMQm81dFM3TnBzdHMtRGFweUpNUQ?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-11-14",
-    "title": "Crypto firms consider operating under CFTC’s federal rules",
-    "src": "finway.com.ua",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE83YlRxeFJfVmdVYmtyR3lBM2ZwQ0VBc3pBVUlySGZ2TjBpcmNvQzRCTXFuZUt0Q3p6S29wMWdMVmRsTjZmWHJqVEVZZmJpVHRvbUgxaHd1bkxJdW5xR1RCdXdZdThTd1dlUUtrNVRZNkhqR1dPX25n?oc=5",
     "code": "US"
    }
   ],
@@ -196,6 +196,13 @@
     "code": "VN"
    },
    {
+    "date": "2026-11-11",
+    "title": "Imposing a tax on the transfer of digital assets ensures fairness among different investment channels.",
+    "src": "Vietnam.vn",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOFhsTnJJUnNZeDVZQnZiWjNfRnloQjVQV3luZ1V5T1dyYXJ6bE5pVUx4UFVSTUw0S2dUSkJsU0xWamVwdWpyOFpEcTFkLVZFQktRU3Z3VFZ6SnNMX1FnRHU2Y0ZkNnRiMjI3Zm85RlJyQkR6Rl85R3ljcmFtdFk5cG5FOHU5NW1CWW1Zd2hkVDNHdmUwR1NpMzV4VFdwQkU?oc=5",
+    "code": "VN"
+   },
+   {
     "date": "2026-11-10",
     "title": "OKX Ventures, HashKey Back CAEX for Vietnam Crypto Pilot",
     "src": "CoinMarketCap",
@@ -228,13 +235,6 @@
     "title": "Vietnam Plans Q3 Launch for Regulated Crypto Market",
     "src": "CoinMarketCap",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUFEteDN6RXhpckFPY1pZVGYzTDEwNkpxRHVxSFNPRjNhbkNJWmxmVV9lNkpvczVBTUlKQnAtaGFLbFpQOEh0djE3WnRFcW1tYjViR2haVEk5VlVzVS05OXJNQnJnZ18zM1I5ZmpWT3pydktyXzVCMHZMb2ZBMmlRWFp4RWxna1Rk?oc=5",
-    "code": "VN"
-   },
-   {
-    "date": "2026-10-23",
-    "title": "When will Vietnam have its first cryptocurrency exchange?",
-    "src": "Vietnam.vn",
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORnl2N1NCSlFfN2NNR2h5bVRFa1lSX0NlV2pnWFdwR2hGZzJmYk4xb1lNVEJaQWc4YW9nOXdCQ2VZalNRUURxdllvdmphdGhRc3YyYjFkaVQ5NnE4Q2RBRE9rV2NvcHF4NTE1SXBMSzVrd0lSR0s0bzhGREQxSy1HS1dxNlhZSkFTYks4?oc=5",
     "code": "VN"
    }
   ],
@@ -275,6 +275,13 @@
     "code": "SG"
    },
    {
+    "date": "2026-10-25",
+    "title": "Stablecoin News: Singapore MAS Adds Malaysia and Thailand to BLOOM Initiative",
+    "src": "CryptoRank",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPazNNVUo4TGMwVUNvT2VWUTZ6dkc1aEFwcFV1S0hEaFlBWG9zYkdoZzRHSXZXdmNxUXJ5cFh0aHRGT2dlTEktWDUyQUlXci1odklvX1pELVdaUS04TkY5YzU4UWFoTEZzRm5zUnZmbDVFMnVFNTllNndSYzNCdXprQzNkTnJnR3NnYU44QmcxQ3JobjRiZkxvd2oyWkJuREg0a2JLNzVfUEU0OE02WTlQRHp0UzA?oc=5",
+    "code": "SG"
+   },
+   {
     "date": "2026-10-23",
     "title": "Singapore’s BLOOM Adds Malaysian and Thai Central Banks, but MAS Names No Token",
     "src": "unchainedcrypto.com",
@@ -309,13 +316,6 @@
     "title": "OJK Takes Over Crypto Supervision as the Ministry of Trade Revokes Previous Regulations",
     "src": "Veritask AI",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVmgzRE9OSHdDMmpHZlN3c0lWYVE1R1JLUGtjakZHQ3pVTHpMSXZ1TFlZMGNpTlV3VEJWNG5LQmRuSVJSemVISFhWTmVWRjdRWUFqdEFQaTNFVmNIdUhhaFJid0x2NF9pazdjODNzRlZfNlZwLVhTYnVNdk14OGZMbGZlRzFScDZmUVdUUEtNeGZ6LXVfQU9qSlpzLWJOLUxMMG5yMGZnbVpFQXhwRFYwLU5fNC1XOEhQMnc?oc=5",
-    "code": "ID"
-   },
-   {
-    "date": "2026-11-05",
-    "title": "Ripple exec confident crypto regulation progres...",
-    "src": "Pluang",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdG41cjA5a1RxZjh5bjYwQ0Rqa0pBNWFfVGFIVm8xd2pfMGFCVTlNQ1dDRUxjRGwyenNrQ1NCUDJYNVhNc1JHUzlOQ01YenUtVmE5aWlLczBXQ2J4WXRwczZ5OE5GZmJxa0xSYnJfYkpXSHI4QkFzdGcxRzlXandBdERDdXN3ZENfdF9kX1Via0QzY2RTWng1RXJGcTl0aVhXQUE?oc=5",
     "code": "ID"
    },
    {

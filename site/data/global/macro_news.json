@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16T10:21+09:00",
+ "updated_at": "2026-11-16T12:59+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -46,7 +46,7 @@
      "date": "2026-11-14",
      "time": "09:00",
      "title": "Fed’s Jefferson Says Inflation Will Determine Rate Decisions",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZzBwMC1SRHV2ZUJHLTJ2STdWWFlSSXhKN1lkajNFZ0VTNUZNTnRGeW1uMXJRWXhyR05ic2JDMU9xcGxTV0JKZFM3WVByb0gwbEhrQW1WaTViQm12d1FZT1FnU29xX0tZSjJXOXhaWkI5bnk0aENFVTNOTUNYV09RQmJid1E4bFZxeUliR01kTkVCcXFMRDVnTWFUbTFrbk1HM1Q4MDBHbkVVSm9LUHNxMA?oc=5",
      "priority": false
     },
@@ -54,7 +54,7 @@
      "date": "2026-11-14",
      "time": "04:55",
      "title": "Fed on Track to Raise Interest Rates Next Month And Maybe Again in January",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeXJmalVqcjF1WEgxXzRyZ2hNRTRMWXdCWGdpblhnaGwxY0ZDeFIwYTVnWENtQ2U2NFg3YkpUS21EdkNHaXlwVlVicGxWd2RJZnJqOXlySXJfZzdscXlqRFNJSkswUjZ0ZjFINC11aU9GMWdrMGR6SzdfYUlkN3pGaDZZci1NbnkxWmtoZ1lNa3E2MmxDcnFqRnN0MWpwUURLT05odHBpdVlhNXRjNUJOd3JGcnNCYzd6bjVqWQ?oc=5",
      "priority": false
     }
@@ -75,7 +75,7 @@
      "date": "2026-11-12",
      "time": "18:39",
      "title": "Indonesia Rupiah Drops to Record Low on Strong Dollar, MSCI Woes",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWXhXdEdKMENVbWhpRG5yelRzVU1zM09Eb0thNk1VRFQyam9LUE14VE1Bc1V5QnJjbEx2M2ljeGpzTHlSdUpULXVQWXh5UXlMU2E2czZKcnBKU25oZVdmRThGVHBCcUVTb2V0SWJ1S3RuQURjMXVRMnROZk9tU1FCWmpKcUl1NFNabjJKOTJPeG5GejJ1MGh0MzZXMFZxdDJfSmxFTHcwUEY1M1pWNm53NnRWSkFTYzVodHYtODJB?oc=5",
      "priority": true
     },
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-16",
+     "time": "10:40",
+     "title": "Japan’s economy unexpectedly shrinks as inflation squeezes households",
+     "src": "The Straits Times",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOczhVa0pMSlBzVXUyRzBQdndHdjZ2anJoWEp6MElXSmppN2F6MG1FVmZkYlhzcGdJcXZqc0pzMU1yX0hTNG96TmJwT191TDVBMlhaTjRWUWRoVjFBMEgtT0h5UEhmZUZPNFJ5enB2RjE2SlpzSUhWM3JRb0FsX1BYRXB4X2VJYUdDVHVpYUZfZ0dVTW1kVzNWZUpLbFRteEpxdlVpVTFQVnp4UQ?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-15",
      "time": "09:00",
      "title": "Strong office rental growth keeps US investors in Japan despite rate increases",
      "src": "South China Morning Post",
      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbW50cVBlN3AyUXJQT3A0czcwUHczak5EUG5hUDZrc0hNNXF1QXhjMTZwRFVZMWx2OGgtdlgwS3p0VkpXZmxQbHkxaUEwMklrb3RLeGE4dFBGdkhmS3MtZUFQNi15NGF5QUppbjZEUndhRjVBcnBKNjZycDFMeFZMdkNPbEhMWE5vNVR4MVE1YldxU2ZyZHZKZXp1ZG8tTDdueTBkQnZiWGEwUGlkeDZ4ZkNyaGZPeEx2VTRJZUtpUkhjcTJwdDU0Q0lIUGRJdUpw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-13",
-     "time": "09:40",
-     "title": "Yen Falls to 160 per Dollar Amid U.S.-Japan Rate Concerns",
-     "src": "조선일보",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSEhCUmU4WmFfclNRUkUyZERRdUVZSmlHSThab2pMLUVFVFpKQlRLMEo5RTJkTmc0Q1BaTjczTVZ0T0FydEJKMnpQdjZPMmpYZXRNRjRYaUhhQ193YzFoemlYVzY2Z29QY1EzdVVzeWRtbVZKakloNUtvREhnY3o5WGZobnU?oc=5",
      "priority": false
     }
    ]
@@ -151,27 +151,27 @@
    "label": "중국·홍콩",
    "items": [
     {
-     "date": "2026-11-13",
-     "time": "08:30",
-     "title": "Wild Price Swings Expose Stress in Hong Kong Stocks, Study Shows",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRmxXOF9NaHN3SDZiRFlnWktabnRxaDlWWEtrQkswWVByMFNndTNlbFRraDY1WDdVUmlDRE9xMWZUZ0c1M3pqVkN1WHJHVHVJZ1VhSVd0STRLT2FZa01GVzVLZjV5S2RmMTN1eG94ZmxOVG9WYy1zWGM3c1hQUkV1T3hEOGw4RnBfdHgyVTZTeVBfeWM4S0hSZ3pyazBwZGxPanBRbUtHSE1uaGV5S3Bxeld1djY?oc=5",
+     "date": "2026-11-16",
+     "time": "11:51",
+     "title": "China home price slump drags on despite latest stimulus push",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYlBEdmoySzl6dkhfSnBHMnRwWWRyQzh4T0VmVzdCZ1kyRnFMWnBfODBCYW1pM3dtSENIdG1XUEpWMEhWOG5QSzlrdG5melBEcFNQaUpLT2N5aVU4U2gtSUpOOGhJQUlkb0NtazJ2QmVXUzU0TV8ybXlUUS1jMHBUSExrbXp5OVNHVWRGR0Y5dXpNRENBLTgyZ1dhV2IxeWRV?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-12",
-     "time": "12:53",
-     "title": "China’s Loan Interest Rates Are Already Low, Central Bank Says",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYW1ueXJqQzBaUmFvSzY3cFh6MkdVOEN3WUxsQ2pzSHhySDJsTHljS01VQ0NxeXpSQ1RrVzBOM3VBaUZ0NlR4Q2U1c2xhRjBHTnlSam4xSlFubWN6ejEwNnRJNG9NU2x4Rnk5bmw0dUpoUnN1TEV2OTA5WGRpYm52UmVtNzd0eGpVQ3F0WGdjZmMzUlFWcDVMcGJwbHZqeS0zY1hwWEdXT1hsNG0xeXA1T1JR?oc=5",
+     "date": "2026-11-16",
+     "time": "11:45",
+     "title": "China’s Economy Weakens More Than Forecast Despite Stimulus Push",
+     "src": "Bloomberg",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZjFiTE1FdTd4TV93WnROMERVZXMtQzdSZDRTOTh3cVhocV9Sb1NSRVVGelJYamtpWkwyLWc5WTc2MGRWVUJWckNkVVJTOVBUZTNuN3Jxdl92R1E3dWRySnk3RTAyZ3BlVVI2bGZKbjJKb0U4WkNSS1VJU3dQZ1B2eUJXaUF3TVZaWk4zS0N5RlVVSWRlcXZ4UkZQYl9nQkxrRkFxNF93dm94c0NLWEdCa1d3X2Z2UQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-11",
-     "time": "15:03",
-     "title": "China stocks edge lower, Hong Kong shares fall as global rate concerns weigh",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMzBSd0lCYTJJYzB5ejNMeDZhV3BZdUpNQXlESDhVczJlOWxZQnFDb3ZyZzRTTkNwbGRnMjB0RktTdnNQeFRDeUdpOUFYQzMyc09LemZDbzk4M0dzVGxRS1FrTUd6TDJqRTJHZnhYTzQ4UFk3aW5xV1FQSFZyWTBNWDg2cmNoQ3ZNZkZheDdwUVpHWXZqeGc4YUIxQmsxTHdzOFJxMWFIQUF2NWpMTjc0NGZtdVpORHBRVnpZUlJBbi1FSDhiLW40QU5oN09PX2JHOVBXaUoyM1lZYUR0bkRKdXduQV9KbUHSAewBQVVfeXFMT0l4b0lLSzRxSzJIb21yZXdBN0wyVzlKWjFvZWpsRDk0QjFkLUhtTlM1d2xsU21FZkxPT1o1Rl9GcUtRRGlmUjMyVVdUZVJ1SV9FMU52MUttTF9iWGZ2WWdjN2Q1b0dyUmU3eDBpemJ1Nl9WWklpSEY4ZUZlOVdsaUExZ1hhYk0xWkZXTGl6R2dlLUVrYXV5WFJ2U0Z1aEVYX2Z6bkFwWHZ2c2NSeUZmZi1kd0VGTk00QXRaTXdfSUJVa1J3NmZ4MklhZmhTQmRrTGtxcVRUVkw5OFNtaUdpQ195WUx3Q251MWxoeGU?oc=5",
+     "date": "2026-11-16",
+     "time": "00:24",
+     "title": "Hong Kong developer New World’s shares tumble 47% on $3.2bn rights issue plan",
+     "src": "Financial Times",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZFlCaUpqLU1SN3ZmYjQtbjF1NTRaaWRQYXVOaFNid1NYaUtOaml2RnIzOF9HUUFES3RGQ3dSTVRELWpSbnZ6aE1Odm1pbC1abHNTbW9JeXhXalBJM0J1ZXptdHBfOUw0cFJZMmtqNzhMYTk0a0ljR2tfaVppVHVPV0FFdUo?oc=5",
      "priority": false
     }
    ]
@@ -226,10 +226,10 @@
     },
     {
      "date": "2026-11-16",
-     "time": "10:12",
-     "title": "Stock market outlook today,16 Nov: Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZ0k3c3lyNVA0N2VzMEtudWx4aHpVWXptWjZQT1B3VnAxN2xIMFlGS3h6d1p2TWVUNUtyNFUtVjJPYnVJQThQWjRQNHlMVkV0MkdNWHlqcnB6QWhia0JRdjFHRzFQd2hWTi1meWVLYlVzRWhrTTlld2pDd1RNTVpmbmZDN2l5bzU0VlN1Y2FmVjZIaE16SFllYW5yMF9yY3VFVC1NOWtfWUVGdUJjT1BxTjl2OGJjeEtLTGZkQndMc2ZNbDRvLUg4VWxUS0pmTUZ5VUxHM0NtbFV4UjF5WGlPMXRKTjdIZm1SVjJGdzdaakJrTl9paGE1OVNtS205dkw2eUdMd9IBigJBVV95cUxPeHROLTNJdWlVUUJPWEFrcVJHeDZTWUFibjVGZUZ0bmhxR09Kb2ZqZ1hZNWV1ay12UlgtTjdCczBybXpSRmEtVVl0TXpwWEhfSUkwQ1lfemZ5OHZKS011RmpjTFRyZlhYQjIyNkxCRU8yNUpOQ24teXRPQ0NuWHJ1S2RNY1Z3Mjl4VEZQZE9IT0JPZWZmWEc3cEdpZlpwY1NfaHlIMzlod1JRUWhvREhDeklBZHdPNkdLc1EyV2tCd1dhT1NJLXBUT2hVWVM0aEltVmkzRGd6UnlSUHZFM0JSekJaT25IRUJUaVR4Rk5VTHAwelhkWW8tZG5WYjlsdVotbnZWQXdETGlvQQ?oc=5",
+     "time": "10:32",
+     "title": "US-Iran deal uncertainty to weigh on rupee and bonds; Fed, RBI rate paths eyed",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVNxZjdMUWpxX0k5UFljV1NLWVhkTW5lMnE0SVVsRjlVNml3N1BCWmt2NTgwV0RGZkNYam1yQ1N3MXRjUHJLME5jZmY0dERCNGo4Rl9rZjdKZldwajhnbmlTQ25PRzE4WndhUEFoS29fZmFDWVczMUZfRFRRa21MektCU0luRGJiNllsTnZiRmZHVUN1R0kwTlJsM2dCN2hlYzJyOXk0bUZRX29XajFHRkhubzk?oc=5",
      "priority": false
     }
    ]
@@ -255,10 +255,10 @@
     },
     {
      "date": "2026-11-12",
-     "time": "08:38",
-     "title": "MSCI says Indonesia's Barito Pacific will be removed from its indexes",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNEF1b01HVFNzeWNSRHkyZ0V1SFlvMldoRW01Z1VXMzJ6OVBuVXNCNHhxbWhHRUt6RGlHT2VoaHQ2OE9WN09Kb0VUMER2cy0zUkU3UjZHYV9paTVpamNEcG8wZ014cVpNV2pyZ2RiUHFsNWhQc3RYTkN5dXEzdEZpWGU0MjRHSXg5Y3czM2dUR2Y4dTBLYkwzM2NDQUU2cjV4WXM1OGt6RXA1ZFNYTFdvZDN0Rl95LV9MRUE?oc=5",
+     "time": "19:12",
+     "title": "Rupiah Hits New Low as Gibran Exit, MSCI Fears Rattle Markets",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQ01OenM2MHBGN3JTa2xjb2hST2VjSVh2MC1xNEI0X29ld1VGZUxRTHFyQ3NyRHhrcFhSWlNlaVZ5QnFlY2RkWXRJWTlwOXE3LVQ5YXV3UDlXVXZ0WnFCZXgtMW9Ha2F4eWI4Qm9RbHExZGFhMTJIdXhnaW4xTm9XMTU0V1dqM0U3UkFfdlFraDg5a1c3S0VFbg?oc=5",
      "priority": true
     }
    ]
