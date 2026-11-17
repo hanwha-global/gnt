@@ -38,8 +38,8 @@
    "url": "https://www.bi.go.id/en/fungsi-utama/moneter/rapat-dewan-gubernur/default.aspx"
   },
   "IN": {
-   "source": "보조",
-   "count": 1,
+   "source": "공식",
+   "count": 2,
    "url": "https://www.rbi.org.in/Scripts/Annualpolicy.aspx"
   },
   "CN": {
@@ -62,6 +62,13 @@
    "name": "인니 BI",
    "note": "10/20~21 이사회",
    "source": "보조"
+  },
+  {
+   "date": "2026-10-21",
+   "bank": "IN",
+   "name": "인도 RBI",
+   "note": "",
+   "source": "공식"
   },
   {
    "date": "2026-10-22",
