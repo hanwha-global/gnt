@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T21:09+09:00",
+ "updated_at": "2026-11-18T02:44+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -37,6 +37,14 @@
     {
      "date": "2026-11-17",
      "time": "17:23",
+     "title": "Treasury yields rise as investors parse retail sales data",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xcWR1OGh2RVFmcDRsR1JtUDJUVFhqWFVjQ3R2V1ZjSFpqWmNtRXQweHFac0UxYllNRzJ2akQ0R2Q3dTFpTkhGeWFMS3d4MFNIX1pMWW5oUWxyQzh2bV8zcG91MlVCNm5kNlVXN3dmMG1pVWYycHFR0gF8QVVfeXFMTlpoUmZfei1Qbjl3OU9tR3A4MmlvbXNIR3FXa1JaRW5CMm5qQmgwcVBRMlFGa1BFc243bG5vR1hJVjBhYVJvMDVmNmstX2M3ME93cjZUbXc5dE5IWHJ5bndwRlJOLUNBTDBEY08tTUVMdG12c0VpemV3VUQtSw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-17",
+     "time": "17:23",
      "title": "Treasury yields are broadly flat as investors await retail sales data",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xcWR1OGh2RVFmcDRsR1JtUDJUVFhqWFVjQ3R2V1ZjSFpqWmNtRXQweHFac0UxYllNRzJ2akQ0R2Q3dTFpTkhGeWFMS3d4MFNIX1pMWW5oUWxyQzh2bV8zcG91MlVCNm5kNlVXN3dmMG1pVWYycHFR0gF8QVVfeXFMTlpoUmZfei1Qbjl3OU9tR3A4MmlvbXNIR3FXa1JaRW5CMm5qQmgwcVBRMlFGa1BFc243bG5vR1hJVjBhYVJvMDVmNmstX2M3ME93cjZUbXc5dE5IWHJ5bndwRlJOLUNBTDBEY08tTUVMdG12c0VpemV3VUQtSw?oc=5",
@@ -48,14 +56,6 @@
      "title": "US 10-year Treasury yield tops 5% again, dividend stocks emerge as alternative amid tightening fears",
      "src": "머니투데이",
      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1PN3JaNGZ2R3BtalJaZ3RPbkstSU5JS2ZGNUFGb19IaW1HSUhYVkVJUFVfYXFKeDI5c2pvWnZjR25XZHBPTHJoZ0tIM3RQYTZMZGhfTGJEYmF4M2JWVzI3aG90SV9fc1JtWHktWA?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-17",
-     "time": "05:26",
-     "title": "美국채 금리 하락·10년물 5.117%…워시 'AI 실망' 경고에 안전자산 선호",
-     "src": "뉴스1",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5hLU8tQml1WUhPZU5EWHpYUW13NElHcHBDRFlFVWdsWUJkQlV2aVFJSC1UODhXeXB1QzVhQ3RDT1ducFFJNy1JbXA1SWhGaFlOZW53SXhzdnY?oc=5",
      "priority": false
     }
    ]
@@ -225,11 +225,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-17",
-     "time": "15:05",
-     "title": "India's stock market premium faces test from slower growth, tight rates: UBS",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWEVSQ2ZWWjlmVFZvazBCN21SYjNyMzJrUS02MlJTd0pONDBtMWJ6RlJRQkVFS08yS0c4RHE2YVYzZXV5RDMyOEtQOFlvdHhZVnVaUEpCN05FRno1UkxLeGVpWTlHZ05XT1RadlptNGVOX1ktYVZGVmMyZUthLWo3NEdNREsyZC1mcDVLUGkwaFg4RUdJSi1uTmxTY0xLNXp1Y2YwTmM2Nk5VZmdUOC0wNHR1WDgyQjc5TFZZXzZZeHJIcTFibzhrUTNaY1c2c1RSQnpkQkpQNVjSAd4BQVVfeXFMTUc4LW45dkRaZ0R0NHU1dXJpaWpCZVN6SHdkeHdqcmZZQTlsMWhHS0ZTOGJsR0JvY1NrM3lYakQ0bGRjdFRSNzgybHA2OHJnUXJHNGpUUmFrNEhXbjBoVlM1QmRNWTQ1STJLRGpSMW9xWFRKZi1FMnN4dzdWMmltUWxOcVlneGhNVXM4c1JYVHVnTzZGT0FEakE3RGVxbEJUUm9RcFFBMzgxTERPY2dPNjh6dGxMM2hWRXlaRl9PU09xYXB2OEFkUjNTQnNNajZzSzh1aUhxM2M1S3NpR2Z3?oc=5",
+     "date": "2026-11-18",
+     "time": "00:54",
+     "title": "Nifty reclaims pre-war levels intraday as Indian stocks lead Asia with 10% monthly gain",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOMVJ5S2hHT3Nlamh4YTNRTVJqWU5JSzRFYWFRMEh2d0YyTjVmV3I3OUoyOE82MGd6UGg3cG9oZmhhQWpSLVJFMW4wcWl1MWw4eWw4dDV2ZnFPbWpxUVNNQVBOaEc4Q1AtSlNxOFpzc2paWllQa21Oakx1QmhnSU5tV0g3VTVnRmY2TVNTZmJnYjVLZ3ZHQ2s3VnRoUWVObFNQZzJGYThrb3dCZW9MZlZTdWQwVlFjRHhxTW45cDNnbjNJSURnVlRIZS1pWHg3VkxBUkk2MFB4MW8wQ3pFR2RBbTY2VFNpVUxrOG44U9IB8gFBVV95cUxPMmlEZXp2OU1Dc3pqTU5oNlNTZVhkSnF2T2J2MXdELTdEdmV3WURxZjAzdUhqcm4taTdnYkhHMWlCT2p0MlBZYS1FUC1DOVI0d2g5LWdBMENUMXgwcWxQMTJxV1VmSkkxekhvTGFGT0pVUnhKYUgyREpjdi1Ja2V3QjcyZG1JQU1vM2JGY3JSa1o1WmhlMVdtdmVWOExTbWgteDdpQzNSZ1huVTFXRmJZNnJvZ2xIS0dCbmhSU0I1VEwtcHJLcmI4Vy1BR01scWRGRVJnTF9aUWJ0RS1Db243Z19vQUhublk1UWg4ZFd1bmtPQQ?oc=5",
      "priority": false
     }
    ]
