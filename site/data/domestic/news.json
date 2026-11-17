@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T13:10+09:00",
+ "updated_at": "2026-11-17T21:09+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -157,6 +157,17 @@
   "fca.org.uk"
  ],
  "items": [
+  {
+   "date": "2026-11-17",
+   "time": "17:01",
+   "title": "KB증권 베트남법인 계좌서 비정상 출금 사고…“경위 파악중”",
+   "src": "전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5BaFpJdkktTGZLdFptN1FCMlpTU0JXZS1pZmxnY1Y2NS1jbXd0YUVkY21VWGFTR3hKNGNfVFREb01JTWFheGpLRHlKcUJYQQ?oc=5",
+   "site": "www.etnews.com",
+   "firms": [
+    "KB증권"
+   ]
+  },
   {
    "date": "2026-11-17",
    "time": "08:58",
@@ -547,20 +558,9 @@
    "date": "2026-10-29",
    "time": "16:00",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
-   "site": "www.mk.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
-   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
-   "src": "서울경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
-   "site": "www.sedaily.com",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
+   "site": "stock.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -625,6 +625,17 @@
    "src": "서울경제TV",
    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
    "site": "www.sentv.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
+   "site": "www.sedaily.com",
    "firms": [
     "미래에셋증권"
    ]
@@ -786,17 +797,6 @@
    "src": "헤럴드경제",
    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYU1hLYk5aZjZLR2ExZHVwV0h2azI1ZVdhNTluV3ZHQ3Y3Y1FuY04tODNmdzBXcDRoaXpSTDdwaTlwVGhuUEdTNzFTbExQM0lVMGFzM0R3?oc=5",
    "site": "biz.heraldcorp.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "time": "11:11",
-   "title": "미래에셋증권 홍콩, 해외법인 최초 자체 기술 달러 디지털 채권 발행",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5NZ3lXZmFLVVR4VXF1ZUxLaF9uXzZCZC0xa2huOFo0TGk1N1RuV2dWNngyWi0tUkphM2pYb0tfYWpiVjlZNHJJUFhmYURZU3pJUm5rUWMxWXhBYkd0b1gxWnc0dnotelFLa3dMaU9RaVBMWlc3WlHSAXtBVV95cUxOaTJ6bmJlandfbnBXazVVWmtNV2hVbEJHVTZFeGljUzRqSG84R0RSc293d1BLUlI5cDhidWdRc2dpUlhIWUR4YnBvN3FDYUZNcUlLdVNsZTVScngxNVM3UlJ3SS14N0ZGdDhYSHhQejhkeTZEZEdHcEU0dUE?oc=5",
-   "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
    ]

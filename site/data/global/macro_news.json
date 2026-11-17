@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T13:11+09:00",
+ "updated_at": "2026-11-17T21:09+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-17",
-     "time": "05:26",
-     "title": "美국채 금리 하락·10년물 5.117%…워시 'AI 실망' 경고에 안전자산 선호",
-     "src": "뉴스1",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5hLU8tQml1WUhPZU5EWHpYUW13NElHcHBDRFlFVWdsWUJkQlV2aVFJSC1UODhXeXB1QzVhQ3RDT1ducFFJNy1JbXA1SWhGaFlOZW53SXhzdnY?oc=5",
+     "time": "17:23",
+     "title": "Treasury yields are broadly flat as investors await retail sales data",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xcWR1OGh2RVFmcDRsR1JtUDJUVFhqWFVjQ3R2V1ZjSFpqWmNtRXQweHFac0UxYllNRzJ2akQ0R2Q3dTFpTkhGeWFMS3d4MFNIX1pMWW5oUWxyQzh2bV8zcG91MlVCNm5kNlVXN3dmMG1pVWYycHFR0gF8QVVfeXFMTlpoUmZfei1Qbjl3OU9tR3A4MmlvbXNIR3FXa1JaRW5CMm5qQmgwcVBRMlFGa1BFc243bG5vR1hJVjBhYVJvMDVmNmstX2M3ME93cjZUbXc5dE5IWHJ5bndwRlJOLUNBTDBEY08tTUVMdG12c0VpemV3VUQtSw?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-17",
-     "time": "03:03",
-     "title": "Gold sinks to 1-year low as Treasury yields and dollar bite, set for worst year since 2015",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVkNEMWt0MEpVV2U4c0tCZEQ0N3FJRnBMWEFJRktVNVpBNGZ4RWFjVXA0TnR0VE8yam5OenZaaF9KWVhuc3RCQkZXWGlwb0pPRElEM0JoU0Rsb3BpX2ZTUjBLUG52SUM1V2RkcHRKLVdLR1ZmeXFISlplcTRQU0xJMzZHcFBFbUZPVWtYeGpqbWxKU1gtQjMxZXBMZU5rdldKOTRaWXpNSkZqd3MwajRHUzVvSVI2QTBOb1dJMGc3U3VzdTFP?oc=5",
+     "time": "16:00",
+     "title": "US 10-year Treasury yield tops 5% again, dividend stocks emerge as alternative amid tightening fears",
+     "src": "머니투데이",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1PN3JaNGZ2R3BtalJaZ3RPbkstSU5JS2ZGNUFGb19IaW1HSUhYVkVJUFVfYXFKeDI5c2pvWnZjR25XZHBPTHJoZ0tIM3RQYTZMZGhfTGJEYmF4M2JWVzI3aG90SV9fc1JtWHktWA?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-16",
-     "time": "18:17",
-     "title": "Treasury prices catch a small bid as stock market weakens and Warsh says AI might 'disappoint'",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Hb0xmSm1PekxUM0FmRThxUmxKLUp6RFhoZmg0SXdEd2xaeGdKODRRbkhqN205X0MwZmhqbHlhRnVvQVpaUDhWMWp6QUJoamxaazJNN1lFNUVVWVRISnpLVGxpbllUbklySjAteGtLdWR6WmNCQ0hj0gF8QVVfeXFMUFlyRVFLcV9peGl3NGN0ZWljZTFuaXEyNEt0MHRHeXBYbG1UZHhFT2V6OTVBeVVibG1wWmZCdXE5TlFlQzZTc1ZvVmVFWHJTRUZwOWh6MDM1em8yMjhyaG44MTFOV1JXUHVzcmIxZk9nWVpBR0ZQNTFVVW9ERw?oc=5",
+     "date": "2026-11-17",
+     "time": "05:26",
+     "title": "美국채 금리 하락·10년물 5.117%…워시 'AI 실망' 경고에 안전자산 선호",
+     "src": "뉴스1",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5hLU8tQml1WUhPZU5EWHpYUW13NElHcHBDRFlFVWdsWUJkQlV2aVFJSC1UODhXeXB1QzVhQ3RDT1ducFFJNy1JbXA1SWhGaFlOZW53SXhzdnY?oc=5",
      "priority": false
     }
    ]
@@ -63,6 +63,14 @@
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-11-17",
+     "time": "13:44",
+     "title": "Indonesia on a 'slippery slope' as political tumult adds to MSCI-led market angst",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd0xCd1pZMjZLRGo4TEMxemFQd0hsdDZsNTFCNUpYVDRPeXEwcnhFNE1XbHZsY0xWWTRtYTFIMk9jSWpKUnFhemdCQnRNZVVTU2FPOGw2MWdzVTFlZ3U4S2hqVmU1VU9xUlhYbzc4aWFiNHNaY3lVQUdVMHRNNnFySmpPejN6UWx6Ni1yVllLZ2N5aGJxR0YyYkVoODktRkdJbTlGd1E4NDB1MXdKdG1VS2p1RVZYTV9JdGww?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-16",
      "time": "14:26",
@@ -77,14 +85,6 @@
      "title": "MSCI downgrade threat exposes Indonesia's patronage problem",
      "src": "Nikkei Asia",
      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVk1nZXdyMjAyQTRCTmZnNUVKWUlJUlk2X3VWR3h4R2plTC1TTE0yVXJJM0hmVVBTdXhaVjFlaW9Mdm9rbUhFMnRrM0s5SEhmcTVOMDVpLW83V0hmUURyN0Zqa2h5UFpicElTMGRGeEJ2N2ZESWxrNndHb0pNb1lPZjZZZ3daLXZid1V1dWZaU0lIRXVtYXc?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-12",
-     "time": "18:39",
-     "title": "Indonesia Rupiah Drops to Record Low on Strong Dollar, MSCI Woes",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWXhXdEdKMENVbWhpRG5yelRzVU1zM09Eb0thNk1VRFQyam9LUE14VE1Bc1V5QnJjbEx2M2ljeGpzTHlSdUpULXVQWXh5UXlMU2E2czZKcnBKU25oZVdmRThGVHBCcUVTb2V0SWJ1S3RuQURjMXVRMnROZk9tU1FCWmpKcUl1NFNabjJKOTJPeG5GejJ1MGh0MzZXMFZxdDJfSmxFTHcwUEY1M1pWNm53NnRWSkFTYzVodHYtODJB?oc=5",
      "priority": true
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-17",
-     "time": "09:00",
-     "title": "Former BOJ Chief Kuroda Sees Chance of Rate Rising Above Neutral",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWDA2WFhmM2RhaG56MXhwYXBKdjBLUzY0aVBRcjdFazRKTGtxeWRmcVkyWFFZY3d6dXNaRFlPZG9xcU56Mk90aEhLU1p3X1hMZktwWDFvRkJwSEFsY1F6UEZ6NElweVQ3NUZoazd6Mm5RUU1ibnBqVUNKY21tMXRRcnB0UnVvVWtKaFJxOHV3NU5rUkJIWU1rVG9WV2xIYUpDdTB5VmxpOVdlbXpFVng2TWd5UVdtQQ?oc=5",
+     "time": "14:13",
+     "title": "Japan's Nikkei falls over 1% as AI stocks slide ahead of Nvidia earnings",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUkhLbHhaQnRHVmFadkdKbmFhTFg5UXBQNDEtTWQ2OXJyUGZENGI3Y2xIbTctMHhLM3ZCNlkyVFBCMkI2bjJFaHhVX3VsVk42Q09XQzlva2FOUXprem5IV2dGOHZxa1c1c0hwRkc0QlVpWk9RODJKaHdFaE8tOVZTOWdRU3RVLWI3SFNqbEk2RmVoSEdPNVNwc19pR3l6dDNTazY3MXpSQTZXLTRwRHIwMk01VUVnOHN1YnVmS0s3MXJoVmVpek5Ca0tEX3ZNZmR3VTE1Z2RDaGcyOVlFLWotZ9IB5gFBVV95cUxNQ2xGb0d0R3pWSUJ4TVZwbm1ZcG04bVd6YTV1TGlBYjhESDQzVzlJMHNTTnlHRHNzODMxdE1tbWp3UTg1dVhfWmhJRmEydTF2MGx6TENlQ2JrQnRUZ0hoUFZpVTR3TXZtLVN0ZTlKRDJVWkpkc1FPVGp3UUstblVYRWtNYTdKV1FmOEhxWmR0TVRjaEt0ZzdCQTNVMHNjVlpTam1aVk1rVElQZXlLRHctWUtJS1ltaWxUTzZmU0VnS21xNUV5WkwtR1RJVDZXcll4cktkaG1MVHQ1OWNlN0E1dm1mYU5DQQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-16",
-     "time": "21:36",
-     "title": "Weak growth casts further doubt on Bank of Japan’s December rate rise",
-     "src": "Financial Times",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5EM2NlYXlkS1l2WUdsSXM5U2JaRkg0SHFHZldETVd5XzNtYjUyX2ZublI2MEdTbzNXcHlGU3RyVnpMYk1jbnBjSFdvdGhONU93b2V2Q2F4dl9CVXMwZy1fb1k5aTBpaUhuTDhzaE5FTVI?oc=5",
+     "date": "2026-11-17",
+     "time": "12:20",
+     "title": "Nikkei 225 Sinks Below 59,000 as Japan GDP Contraction, Weak Yen Near 160 and Tech Rout Pile Pressure on Tokyo",
+     "src": "International Business Times Australia",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNV3dLSmxZMkdkQWg5djFVWjVfTnA3VjZOSnd4MG5LdkxsOGJQbmhXOUhKTXdGcklCWEYxSTEtN1ZoQmNIZFQxX1lrcnlTaUk3TXdYVkNkVzNhcTZWTDVtbHlXa0Vab0dTU3FBOXNvYjZiY1lqaGxnY19WbG9tSkpwVC1GNzQ3QUxsVzJIN0xyZw?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-16",
-     "time": "19:40",
-     "title": "Singapore shares fall in tandem with key Asian markets on AI uncertainty; STI down 0.9%",
+     "date": "2026-11-17",
+     "time": "19:34",
+     "title": "Singapore stocks fall even as exports surge; STI down 1.4%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQmFZc0dwcHhJVFEyUmNtZWlpbHRQOS1nQ2Z3RlBGLXdMYklJMjYyRlBSdDlWZnI4dlZlV3JkSmp1Ti0yVTFkaXRBc1U0c1RwWUtMWDRBUkFPSHBONEFKRGRHM3k3bl80WG5hR3FmRmhRXzdZSFBRZk5NSEZwY29pNmZabk1pU2RFOXplY2RmTVlBZUliSGtlZjU4OVhtdk1BbklSU296YjdERGVIVWU4NURBaHpjeTNrYklCSnlWN3VBQ0U?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOWktQUdIUExyZVY1Rks3RS1tVG9DT0lHTG02VG8zWXh6Q0EzRFJRVG1hYWlnY3FoODFpT0Q3dnpCSkdGQVpwTFZvcF9fV0tBWDE1NVMyRURvTm5CUm9lUlBJMXpRMlRCR1p3dkFLRUpxcHV3c25nYUF3cTNidG12RlJ6NVkyeHJPR1JwaU9FVUFoYjJ0UlJXbHpLZ1BOcmJJS1ZScnNvUQ?oc=5",
      "priority": false
     }
    ]
@@ -226,10 +226,10 @@
     },
     {
      "date": "2026-11-17",
-     "time": "10:10",
-     "title": "Stock market outlook today,17 Nov:Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOQmM1b1V4Z0wyazRoTEdXMVB1OHo0TmZrRWx3R2s3Q3d4YTZXVkdBaGRFaU43dm5rUnpCSzJNRnBrMGN6bnZ2aF80UFlKcDVJcG5QWHVZWkxhaHdYUVVhM2ZjaW5VYWpLbjMyU0kxS1A0RGRlWGJ1c2ZVNWFvNW55Wlo5bS0xMmRjU3FOUk4tRERVM2VsZi1zV2dYdFN4enhwYm1LZjRLTjZVM09DVkU5dVR2Q3dCY1JSNWNOSTdTVElpdG16VWk3a1lYZ0NuaFNVZ0dmY3FzbFQ4UWxwUTlTcGQ0RWRmXy1obEJOZmxSVllhTTN1bDQ2YUZ1NnhnWkF1T3Q3WjFGMlJZZ9IBjwJBVV95cUxNVHhOeXd1Z0pmZGlqdEJUM2w3REJCMHJWUk1pTHFZbEJsN0VMQlBWNkFrQ1Z3ZDJSUXI0cXRWRWxEc1RSLUpVSjYwYTFLTEEzdDdxSlpzQ3BGREdlTWZZai12MG9ObmZKYmpWOEx5NmZoelpCRFZfTFVFUnU1VWF0WVRNS1JuUmR4aVNka0NzZkk1eFdTWlBLTW1qTU1PT1VFNzNNLVE3cWpCc1J0TXZ4Q2g1Rld0am1wVGZxd3k5SW1DODhlTnlHai02TjZlZUlrQlRfZ3IxSkh1bTUyR19TNWs3TFBaTVhPbVdhUzBVbEdSTVNiSlBzOVhsWkYySTNlaU9QVTd5b016UWVsLXZz?oc=5",
+     "time": "15:05",
+     "title": "India's stock market premium faces test from slower growth, tight rates: UBS",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWEVSQ2ZWWjlmVFZvazBCN21SYjNyMzJrUS02MlJTd0pONDBtMWJ6RlJRQkVFS08yS0c4RHE2YVYzZXV5RDMyOEtQOFlvdHhZVnVaUEpCN05FRno1UkxLeGVpWTlHZ05XT1RadlptNGVOX1ktYVZGVmMyZUthLWo3NEdNREsyZC1mcDVLUGkwaFg4RUdJSi1uTmxTY0xLNXp1Y2YwTmM2Nk5VZmdUOC0wNHR1WDgyQjc5TFZZXzZZeHJIcTFibzhrUTNaY1c2c1RSQnpkQkpQNVjSAd4BQVVfeXFMTUc4LW45dkRaZ0R0NHU1dXJpaWpCZVN6SHdkeHdqcmZZQTlsMWhHS0ZTOGJsR0JvY1NrM3lYakQ0bGRjdFRSNzgybHA2OHJnUXJHNGpUUmFrNEhXbjBoVlM1QmRNWTQ1STJLRGpSMW9xWFRKZi1FMnN4dzdWMmltUWxOcVlneGhNVXM4c1JYVHVnTzZGT0FEakE3RGVxbEJUUm9RcFFBMzgxTERPY2dPNjh6dGxMM2hWRXlaRl9PU09xYXB2OEFkUjNTQnNNajZzSzh1aUhxM2M1S3NpR2Z3?oc=5",
      "priority": false
     }
    ]
