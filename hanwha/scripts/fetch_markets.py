@@ -4,13 +4,14 @@
 - 환율(일): ECOS 731Y001(주요국 통화의 대원화환율, 매매기준율). 실패 시 Yahoo Finance 환율로 대체
 - 주가지수·달러인덱스(일): Yahoo Finance chart API (키 불필요). VN-Index는 VNDirect 공개 시세 API
 
-GitHub Actions가 평일 하루 두 번 실행한다. 표준 라이브러리만 쓰고 LLM 토큰은 쓰지 않는다.
+GitHub Actions가 평일 각 시장 마감 뒤 하루 네 번 실행한다. 표준 라이브러리만 쓰고 LLM 토큰은 쓰지 않는다.
 한 출처가 실패해도 나머지는 갱신하고, 전부 실패한 항목은 기존 값을 그대로 둔다.
 """
 import datetime as dt
 import json
 import os
 import sys
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -78,21 +79,57 @@ def http_json(url, timeout=30):
 
 
 # ---------- Yahoo ----------
+def yahoo_points(res, now=None):
+    """chart API 결과 하나를 [(YYYY-MM-DD, 종가)]로 바꾼다.
+
+    - 장중(정규장 시작~마감 사이)의 당일 봉은 아직 종가가 아니라서 뺀다.
+    - 아시아 지수는 마감 뒤에도 몇 시간~하루 동안 일봉(timestamp)에 당일이 빠져 있는 경우가 있다.
+      이때 meta의 마지막 정규장 가격(regularMarketPrice·Time)이 마감된 날의 값이면 그날 종가로 보탠다.
+    """
+    now = time.time() if now is None else now
+    meta = res.get("meta") or {}
+    off = meta.get("gmtoffset", 0)
+
+    def day(t):
+        return dt.datetime.fromtimestamp(t + off, dt.timezone.utc).date().isoformat()
+
+    reg = (meta.get("currentTradingPeriod") or {}).get("regular") or {}
+    live = bool(reg.get("start") and reg.get("end") and reg["start"] <= now < reg["end"])
+    # 밤새 이어지는 세션(달러인덱스 등)은 마감하는 날의 봉이 진행 중이다
+    live_day = day(reg["end"]) if live else None
+    ts, cl = res.get("timestamp") or [], res["indicators"]["quote"][0].get("close") or []
+    pts = {}
+    for t, c in zip(ts, cl):
+        if c is not None and day(t) != live_day:
+            pts[day(t)] = round(float(c), 4)
+    t, c = meta.get("regularMarketTime"), meta.get("regularMarketPrice")
+    if t and c and not (live and t >= reg["start"]) and day(t) != live_day and (not pts or day(t) > max(pts)):
+        pts[day(t)] = round(float(c), 4)
+    return sorted(pts.items())
+
+
 def yahoo(symbol, rng="2y", interval="1d"):
-    """[(YYYY-MM-DD, close)] 오름차순. 실패하면 빈 리스트."""
+    """[(YYYY-MM-DD, close)] 오름차순, 마감된 날만. 실패하면 빈 리스트.
+
+    긴 기간(2y) 일봉은 최근 하루가 늦게 붙기도 해서 짧은 기간(5d)도 받아 빠진 최근 날짜를 채운다.
+    """
     q = urllib.parse.quote(symbol)
     for host in ("query1", "query2"):
         try:
-            d = http_json(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?range={rng}&interval={interval}")
-            res = d["chart"]["result"][0]
-            off = res.get("meta", {}).get("gmtoffset", 0)
-            ts, cl = res.get("timestamp") or [], res["indicators"]["quote"][0].get("close") or []
-            pts = {}
-            for t, c in zip(ts, cl):
-                if c is not None:
-                    pts[dt.datetime.fromtimestamp(t + off, dt.timezone.utc).date().isoformat()] = round(float(c), 4)
-            if pts:
-                return sorted(pts.items())
+            res = http_json(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?range={rng}&interval={interval}")["chart"]["result"][0]
+            pts = dict(yahoo_points(res))
+            if not pts:
+                continue
+            try:
+                recent = yahoo_points(http_json(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?range=5d&interval={interval}")["chart"]["result"][0])
+                last = max(pts)
+                pts.update({d: c for d, c in recent if d > last})
+            except Exception as e:  # noqa: BLE001
+                print(f"  yahoo {symbol} 5d 실패: {e}")
+            m = res.get("meta") or {}
+            reg = (m.get("currentTradingPeriod") or {}).get("regular") or {}
+            print(f"  {symbol}: 기준일 {max(pts)} · meta {m.get('regularMarketTime')} · 정규장 {reg.get('start')}~{reg.get('end')}")
+            return sorted(pts.items())
         except Exception as e:  # noqa: BLE001 — 출처 하나의 실패로 전체를 멈추지 않는다
             print(f"  yahoo {symbol} ({host}) 실패: {e}")
     return []

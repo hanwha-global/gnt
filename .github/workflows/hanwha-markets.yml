@@ -2,8 +2,11 @@ name: Hanwha daily (DART disclosures · rates · indices · FX, no LLM)
 
 on:
   schedule:
-    - cron: "30 22 * * 0-4"   # 평일 07:30 KST (미국·유럽 마감 반영)
-    - cron: "30 7 * * 1-5"    # 평일 16:30 KST (아시아 마감, 당일 DART 공시 반영)
+    # 각 시장 정규장 마감 뒤에 한 번씩. GitHub 예약 실행은 몇 시간씩 밀릴 수 있어 횟수를 늘려 둔다(공개 저장소라 무료).
+    - cron: "30 22 * * 0-4"   # 평일 07:30 KST (미국 마감 반영)
+    - cron: "30 7 * * 1-5"    # 평일 16:30 KST (한국·일본 마감, 당일 DART 공시 반영)
+    - cron: "45 10 * * 1-5"   # 평일 19:45 KST (중국·홍콩·베트남·인니·싱가포르 마감)
+    - cron: "15 17 * * 1-5"   # 평일 02:15 KST (유럽 마감)
   workflow_dispatch:
   pull_request:
     paths:
