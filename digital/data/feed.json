@@ -1,9 +1,23 @@
 {
- "updated": "2026-11-16T03:59:43+00:00",
+ "updated": "2026-11-17T04:17:42+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
   "KR": [
+   {
+    "date": "2026-11-17",
+    "title": "KB증권·수호아이오, STO 실증 성공…“스테이블코인 연계 검토”",
+    "src": "이데일리",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYXpqQXRqRWt6ZWpWc3ZNMVpzb0pOSjdFODJ1OFNxQzVBaVo3T0pQbmN4em9FTFJTZVp3VTdFeG9pRlhrRGxzZGNXRXpWbWxycUdNaDBNTUt2YV9NUmVGNDMyX3VXdDdKb3hfdWlDXzlYSzhTbmFmLWhkMnJwbXUwdg?oc=5",
+    "code": "KR"
+   },
+   {
+    "date": "2026-11-17",
+    "title": "스테이블코인법 앞두고 금융권 디지털자산 대응 가속",
+    "src": "https://www.kmjournal.net/",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5zendnUWx1UDFfdFB3Und2UFpQQUxMaG5adXBYTlMxb29ZN3JjM2JGUnRKYTVNbEVRY1UtTnVSbko4azFUMHF5bzRRYlpZSEFGZTkxNXZ5U2xXM3hWU2g4eTdtdjgwcS1xYUVR?oc=5",
+    "code": "KR"
+   },
    {
     "date": "2026-11-16",
     "title": "토큰증권 업계, 금융위에 하위법규 보완 요청…“원장 간 이전 허용해야”",
@@ -12,10 +26,24 @@
     "code": "KR"
    },
    {
+    "date": "2026-11-16",
+    "title": "“AI·스테이블코인 국제 공조 강화”…이억원, 유럽 3개국 방문",
+    "src": "디지털데일리",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9vT3R2UTFyN2QtR2JmeEEtTlpSUHZYZDAyQzRrU3MxSDgtZ2pYWEY5SVozM2Z6M1VrQXRLMmx4SjVMZW1PSVE1T2lXMzlEZHVaaHZyWXpmcWhjRzRpcGhhbkdCazI?oc=5",
+    "code": "KR"
+   },
+   {
     "date": "2026-11-15",
     "title": "디지털자산기본법은 왜 필요할까요[금알못]",
     "src": "뉴시스",
     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YMk5VZXdlNkFuRDA4Rm96TEg0Uk82SXg4NmxyTEhfQV9pandwMHlJUHVEUUk1bW5qeDIxb2dWV1lUQVQ5UHBWNTZ2ZE9neFRPWXNQdUpoQktiUXlUd3pkUNIBeEFVX3lxTE5LTG5HM1pZUFQ2WkN1anhwY1FEZnJjUWpNZFI3VUpXNE1rbVlGbHNFYi1DQVdpN2x1VmRhM0daVWM0Ym5tSU5sRnRWRm54VksxR1otYkVVbG1TMFNlM2VlTnhndWZfWTJwQ2NVc3AxRUNMNnQ5TVU2WQ?oc=5",
+    "code": "KR"
+   },
+   {
+    "date": "2026-11-15",
+    "title": "[영상] 시장개척한 스타트업 탈락...조각투자 토큰증권 거래소 인가 논란 왜?",
+    "src": "경인방송 뉴스",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fZjU0Nnp6OWxwMFRmNjhvckRCTzFQOVEwYWt1Z0VreUdES3NVdHkyLUpiOTNtNjJpb0t0X0dxWDZESVYxY21SejhXc3FwZjNsWFR2UzczLWU5dXdjVjZPRzJWTDjSAWhBVV95cUxOb0NvS3QweUFxTzM3YldjT1VTTzhxTVJFLUlzMDRfWmNkQm5fdC15dXZ0bFd3bTE2MmtsV2hkZHJkTkN5R3BnV0pwRWh0cFFHbU8ySGRmZFNvNmRSTVF0TEhWMnBOZERneQ?oc=5",
     "code": "KR"
    },
    {
@@ -30,34 +58,6 @@
     "title": "이억원 금융위원장, FSB 총회 참석…AI·스테이블코인 등 현안 논의",
     "src": "아시아경제",
     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZZ0dfeVNLaTdiSkdXaVVmZUdZYmQ1My1kQURVQ3pTMkJaMTF1U2M0MHJ5aXVjUDFxci1pcE4ydzd3MG5ycVFMMWVJcmtxeV9EMXE2YUJMa2NRdVNRT2cwMA?oc=5",
-    "code": "KR"
-   },
-   {
-    "date": "2026-11-15",
-    "title": "이억원 금융위원장 유럽 3개국 방문…AI·스테이블코인 논의",
-    "src": "동행미디어 시대",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE95c2ZQZzNQclRDWEp4QURrUFVWN3RvVHQ0T1pYX0c1R05HUVlZMEpzREtQS0Y1ZFRhR0thVFU0LV9TOEUyc0liNW1MTmtoYUVrYVh4bG1LcUgyM1dKalE?oc=5",
-    "code": "KR"
-   },
-   {
-    "date": "2026-11-13",
-    "title": "한국, 디지털자산기본법 입법 가속…법인·기관투자자 시장 개방 본격화[엠블록레터]",
-    "src": "매일경제 마켓",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBKN1FZYjF1bkVPNnNUMEsyRGoyRUdabi1EeXZDQXRwYXl6SGtJSmxGQ1dpMUpSUnNfMG5RQzYyQUp2TEFWeFQ0VDlXVUFidWhITkE?oc=5",
-    "code": "KR"
-   },
-   {
-    "date": "2026-11-13",
-    "title": "디지털자산기본법 연내 통과될까… 금융위 \"금융회사 수준 영업규율 마련하겠다\"",
-    "src": "블록체인투데이",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE95bGxKNUVFT0JUNXRwR1BsdlZfM1JtNTFJbXRNRTF2VlRldmY3MUxDTVBvWmk2ODNJY0o3TmJnX1o3NnJJMGxkbUoxRmxpMkktc3U0UU9La2pBcGh1cGRZMXNjM1ZleVlrc3dXSXUyT0E?oc=5",
-    "code": "KR"
-   },
-   {
-    "date": "2026-11-12",
-    "title": "신진창 금융위 부위원장 \"디지털자산기본법 조속 제출…입법 속도\"",
-    "src": "뉴스1",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rUU1oV053RGprd3VoTEhlYTJqRUsxQzBmQWh4cS1XOGkwcllnUUxDWk53ZHdlaWllR2dWMjU1WWJObFdEd0M0STk0R25RNGZYbWY1TUN2TXd4VFRtREhDeHM1Yw?oc=5",
     "code": "KR"
    }
   ],
@@ -87,10 +87,10 @@
     "official": true
    },
    {
-    "date": "2026-11-16",
-    "title": "Thailand's SEC Proposes 5 Million Baht Daily Cap on Stablecoin Transfers",
-    "src": "Blockhead",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVE9odEJwSjFpdWlZb0F2LTMtQU5faGJ1NkxVbHp3ODk0SVFDY19pSmlEX3VDUERBcUVFNEpmTGFGVExSVkhuZ3N5T3BLdjNrTU9RQVlhNkdVakg5VG1PclhleUlUdC05dXUwdUpYZDVoNUc0QTNhVFV3aUlqWG5ocWJrbVdpSzhqV3NmeEwzcjd5NWRMTV8tOE5UaS15bE1EZl9rbkVQZnd0eHpZ?oc=5",
+    "date": "2026-11-17",
+    "title": "Stablecoin Regulation: What Today’s Forum Means for You",
+    "src": "OneSafe",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VaGZ1V1VqU21kU2czXzRMVl9mTmstMWJDRHp4Znp2dW44dzR6R05qb0d6a044S2J2QnBibWpvajFMX1pGenRtRXIxLXYySWF6cGdNU2QtcDhMN0lNTUY5eDR5WE8tNTA4dnd0VTA0YVQ4dw?oc=5",
     "code": "US"
    },
    {
@@ -102,16 +102,9 @@
    },
    {
     "date": "2026-11-16",
-    "title": "Stablecoin Regulation: Thailand Proposes Daily Transfer Cap",
-    "src": "OneSafe",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZmxyd0t5SGQtOVR6SlR5bTh1ZUZPMHU2UHVFdkUwTnhPZTRiZ1JZcXkwWFFuR2JnbXFDMmt4Qm1qNFRLTlJKcHFfS2lfQUl2V1UzRURCOTRNSVlSdFBBcUQxa09VOGk5cVpENEdVemVZRTBVZ3lVT3VyejFwUGVCTjZLVHRnWkZLS3JMSGhPNA?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-11-15",
-    "title": "OCC Final Rule Moves U.S. Stablecoin Law Into Implementation",
-    "src": "TOKENPOST",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oVF8zLWVadWpEcWs1YjJGb1RRbnRQTE11WTV6VEx6Z2prbWYzd2FiZVhwVzNwVnNnWlJLeWlwaUNqdFRENFZORkxKQ0l0QnNGNklWb1ZUQzRzWVE?oc=5",
+    "title": "US Crypto Regulations: How Agency Rulemaking Could Impact Businesses",
+    "src": "Analytics Insight",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNWZrSU44NGRIdGNRNVA2TXNjSEpFZEtrSjlVNzlPdVo5NWNKSjd3QlpxYnpleGJVZzZDcVAxNzg4VHM1NUtFT3FlMzVkTWsyclFHZENJdWxvX192aUhYRjhRS2VhOHJxQWtyMG5idkl5bDMtcWczRVB3ZjZyOTN0eFBWeXludTc4UDFadVk5eGhCSzc5clQ3enF0eVFlTjlTaGlaM1cxb1FWeG8zbHh1OFM3dnYxcFBlOHAzZE0ta1BFbVJ0bFpXSnV6blFvZ9IB2wFBVV95cUxPdTE4SE53UUdaQlBaUW9XQldfU21GeHZOdzNjeHBTRDA1clJkeTMtVW1FSlpoUmRvcC03cE5FVkFaZy1DY2E4WkNRSGQ4VUhzVHdSM0lfMnRucGI2U2dPZzliMjZ0YUlaUXdEUDB1OUFjMFhVd1VocDJCOFRaa1cyQk1qZGpxOEJBZW9aSUFsVmtERlRqbG9SVkFrZHoyZHlqcnB1MGtCcnkwSmJad21EaTJQT09GWHdlWndFT1prNHhtYWZ2S0taQU16UWxpUzI0S05XOFVaWWp6VHc?oc=5",
     "code": "US"
    },
    {
@@ -120,14 +113,42 @@
     "src": "Startup Fortune",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYjBCVWdDT1c2MFEtOTJXTDNNT0pVT1JGX2JrMGVkQ1FHV0xKU0cyS3BGVlpzb21sM194ODFyNGN4UzlfN2JxVVFuNlF0MGhzdG5QTlJpakZGMl9xNVhuWkxPVlcxNEo0Ql9ESFpLOHhaRlZOOXBHdFJtTzJaVTh2bDF1cTlWOWphazRjZ2FBV2ZISDNSSGZLaXlNUXhlTG1DcEFBN2p5MXJRS3JBSTBsR3l6MEJUMWE0SEE?oc=5",
     "code": "US"
+   },
+   {
+    "date": "2026-11-14",
+    "title": "CFTC Chair Said Crypto Exchanges Are Interested in New Rules amid Political Changes in US",
+    "src": "Incrypted",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcG9neDJNaEczQmpuc1dYVnk5Y3piM01rOTVSYnl0cWNuTDBaMU91LUdiY3RHX0QyZEJFUURMcDQ5blJVS3FIbjk1RjkweVJJZEJFV1NjckMzdTJjbEMxQWd1SDRBdTREMHZoUlBlUXU2RlU1a1JPTkt4eTZ5eGhGY0xYZHNLUVdZMTdCQmlUdzZHdmVvMzY5RUFHMXFQYTdERkNMQm81dFM3TnBzdHMtRGFweUpNUQ?oc=5",
+    "code": "US"
    }
   ],
   "JP": [
    {
-    "date": "2026-11-13",
+    "date": "2026-11-16",
+    "title": "SMBC targets March for yen stablecoin as Japan’s megabanks bet on code",
+    "src": "Crypto Briefing",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ocXpoMFpEbUJjYzEwM25sVU81OTAtN0VWV09QZ0w1Yy1TdTQzYjdYT0w0clM3ZWpWV2RkRnRkSzR0eHZ4U0NRc0lDNlZOeUVMdF9FOFpaMS1rWVJZLXktOFZpRFQ3Q29DLTRrZA?oc=5",
+    "code": "JP"
+   },
+   {
+    "date": "2026-11-16",
+    "title": "Zelle demonstrates confidential $1.25 million stablecoin transfer on Solana",
+    "src": "Crypto Briefing",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9fOFBWeGVZYzZmUm4yVXdYWXJ4cl9oNElkYUVsRDhLeEVBdHozalRJMk54XzBVUXY2UHJYSjlMTWJBamdyeDdpMTRxMFZydW8zSTFyNHdUTnB3RVhVQ0sxaGdqRUFOMFZjajZ5VUpUa01xYlVlWEJDNzltNA?oc=5",
+    "code": "JP"
+   },
+   {
+    "date": "2026-11-16",
     "title": "Japan Poised To Move Bitcoin and ETH Under Financial Instruments Law",
     "src": "CoinMarketCap",
     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUEliWWhIcmlZRnBiRC14UVlrMWZqN2VINlhjRy02b0tJR2dKejQyd3B4SWRwS3lQbHBRYlllSW4yUFF1OHdHZzFMbURfNW0xaU9jWW5WM2NteWl2OWpqQi1LdDUwVEgtLXMzQVBiVUR6LWNtNE11WjRfX2d6QnNUQk1lQm1nMW9UeFJrZ2hBbnZYLUFkNmRTMUY1OF9HNkdyX3I2VDBxNFZXQ3dfaVhN?oc=5",
+    "code": "JP"
+   },
+   {
+    "date": "2026-11-16",
+    "title": "Japan's Three Megabanks Target March 2027 Launch for Yen-Backed Stablecoin",
+    "src": "Hokanews",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAwSXFPdm1LRnhwWThCMHh2a2czOWxyUHVKbTl2eWxtY3BUYnlqY3pUX3p3Y29sY0pyYjItTWpUOEcyd1lHT2Fjb1RTNV9oRzdmQ2hSNDFueWxuWUxfQjROZkg5SVdteDE5VG13clQ2M09ScExkUHUzTVZEMHl4dw?oc=5",
     "code": "JP"
    },
    {
@@ -135,13 +156,6 @@
     "title": "SBI Holdings Moves To Acquire Bitbank Amid Japan Crypto Overhaul",
     "src": "CoinMarketCap",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOWRDTjZkV29EbE8wakZiN0JScV9mb2I2VjNPdG9FWDhYeDZZSnpXR3pNNmtqVGF6eTNTSURrbE9ydkxyZFl2MXV6ZDd3WkRpNkRvVWNzcF9lQ0hnSF9lVGkwYi1JN0xFVXhkM3ZmbTVhMnJqcXFMX2E3VkFrcTY2MUZob3VhMW9ZeTJ5cDI1TlgxY3Y1TmtIOEM1cjZjblB1elhCOHN3eEdlZw?oc=5",
-    "code": "JP"
-   },
-   {
-    "date": "2026-11-12",
-    "title": "FSA discusses the risk of forced sale of securities by stablecoins",
-    "src": "portalcripto.com.br",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQY0NEei1sMFZLSm4xM3dZWDRhZUlpUUZfSmcxXzlVM1N6RkhFa2ZCSUpaTUM0dzhFU1ZybDQwdzI1X0NUT1VmQ0lkNW1LWkdka2JTLTBXdDhySEZxenpJN0ZuZ3JYb0hNLWVuVmhmcm9ZZWJlOTc4cDBzbVFhLVJ1QXpkQnNMYXQ1bmxuV0o1QTkzSkhfZl9tWXFjaWNwdw?oc=5",
     "code": "JP"
    },
    {
@@ -164,23 +178,16 @@
     "src": "CoinMarketCap",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSS1wN2NmMjVJYkxCdFpkbXNHSEtBbGlvM0ZDZlBxbjVvWURKblRTLWVGQ2FIZlR5MmVTRlY0MWpYd0ZJOUJkd1dqckstMXZWVEJ5aTRVNVBOVENtaWR3YUhxN1lQNzdoWHVLVWtRLXpBa2s3bUVLUWd0M2pGOUxULXZHcjA2RmFscGVqUDRR?oc=5",
     "code": "JP"
-   },
-   {
-    "date": "2026-11-10",
-    "title": "Japan Plans 20% Crypto Tax Rate and Insider Trading Rules",
-    "src": "CoinMarketCap",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWjJsZ1V4RnIwZ0pFQmxXMmxSaDBqMjBDb01nc1NUdDAtYTFzMXhPY3R5NG1lS0tnR29hSzNrMHZ0UkRVQWVoZG5oOXNFTVBtU052WjhMZ2ZhOUFINUtuTVc0bXZ1ZnBPQm11T0otR1lYREl0M1ZFUEZPUDN6UWVyWXpxNXJJSTQ4T2xrMjNzaVZ2WVN2VkJhMUZQUmRadG9nQnNFT1Q3d1M?oc=5",
-    "code": "JP"
-   },
-   {
-    "date": "2026-11-10",
-    "title": "日 첫 엔화스테이블코인 발행사 JPYC, 누적 550억원 투자유치",
-    "src": "이데일리",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdmlxOWJXNThJdjdSSXhwcVpUenJBSEVQWDN1QTliM2hGRjkxM2tZYi1YNU5tVUlWV25BcVM1ak4tTUN0TFR1YS1KbE94RUMycXQ3ZWxocWx1enZieGhmdjFlWFV4SmhwaG1sVUZBd193cUM3S0lCRGtoUVBDMV8tSA?oc=5",
-    "code": "JP"
    }
   ],
   "VN": [
+   {
+    "date": "2026-11-17",
+    "title": "Cryptocurrency assets: Creating a legal framework to protect investors.",
+    "src": "Vietnam.vn",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbFJXbm1JYjB5U191X296WC1jRWFWb0wxemFvSG9xZUl1RHFBUEJOaTdjTWc0S3N2VlljTTBzMENKTzF1Y0FSdWVHT0xHNzhWZ0FjZmotZHRMREJFTWQyMTNmcllJcEtNbzVpcVJnMFdpc2RlRUQ0c3ZKOVdtLWx0RU1wRGtzSVVzWk5MTE5R?oc=5",
+    "code": "VN"
+   },
    {
     "date": "2026-11-13",
     "title": "Techcombank-linked TCEX raises capital to meet minimum requirement for Vietnam crypto exchange pilot",
@@ -193,13 +200,6 @@
     "title": "Vietnam pioneers controlled crypto testing to boost digital economy",
     "src": "SGGP English Edition",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOFdNamdHQk5GeGFkbEh6ZEdNVlh0SGkxS3pPbjFPc1BWZUUxczVFTzVDU1FEc0hYQ0RnVnZqMjJTMjEwU0tvNlpmZ01JUGw0aURLQk1tZzQzZU4xMEtOT0dGOUhXYXlZTXBhSEs1eW5BWlBnTkRfUnR6T0xOWVZuS1V6V1NXYmU5ZGNELWUwX1VmckhPTldrSi1OWmRtR053eFczN1E3UjBxZw?oc=5",
-    "code": "VN"
-   },
-   {
-    "date": "2026-11-11",
-    "title": "Imposing a tax on the transfer of digital assets ensures fairness among different investment channels.",
-    "src": "Vietnam.vn",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOFhsTnJJUnNZeDVZQnZiWjNfRnloQjVQV3luZ1V5T1dyYXJ6bE5pVUx4UFVSTUw0S2dUSkJsU0xWamVwdWpyOFpEcTFkLVZFQktRU3Z3VFZ6SnNMX1FnRHU2Y0ZkNnRiMjI3Zm85RlJyQkR6Rl85R3ljcmFtdFk5cG5FOHU5NW1CWW1Zd2hkVDNHdmUwR1NpMzV4VFdwQkU?oc=5",
     "code": "VN"
    },
    {
@@ -231,14 +231,21 @@
     "code": "VN"
    },
    {
-    "date": "2026-11-09",
-    "title": "Vietnam Plans Q3 Launch for Regulated Crypto Market",
-    "src": "CoinMarketCap",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUFEteDN6RXhpckFPY1pZVGYzTDEwNkpxRHVxSFNPRjNhbkNJWmxmVV9lNkpvczVBTUlKQnAtaGFLbFpQOEh0djE3WnRFcW1tYjViR2haVEk5VlVzVS05OXJNQnJnZ18zM1I5ZmpWT3pydktyXzVCMHZMb2ZBMmlRWFp4RWxna1Rk?oc=5",
+    "date": "2026-10-23",
+    "title": "When will Vietnam have its first cryptocurrency exchange?",
+    "src": "Vietnam.vn",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORnl2N1NCSlFfN2NNR2h5bVRFa1lSX0NlV2pnWFdwR2hGZzJmYk4xb1lNVEJaQWc4YW9nOXdCQ2VZalNRUURxdllvdmphdGhRc3YyYjFkaVQ5NnE4Q2RBRE9rV2NvcHF4NTE1SXBMSzVrd0lSR0s0bzhGREQxSy1HS1dxNlhZSkFTYks4?oc=5",
     "code": "VN"
    }
   ],
   "SG": [
+   {
+    "date": "2026-11-15",
+    "title": "The growing use of stablecoins",
+    "src": "Daily Express Malaysia",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE12S2R1Q1VHU1ZJTGNOQkpaV1kwUi1xZDVhQW1oazJtdFJiQ3RvNmc5WVhSd3lNdVNBVk9KUVlYTVI3NGFVWlVpSi1nWUZ4aXdWSDY2UHdYUTlUZ0dBTGJmWG91TERkRWo3M2ZoYTI2WTdpLThwc3ZUWmRZY0pDUQ?oc=5",
+    "code": "SG"
+   },
    {
     "date": "2026-11-13",
     "title": "Best Cryptocurrency Exchanges in Singapore to Explore in 2026",
@@ -254,20 +261,6 @@
     "code": "SG"
    },
    {
-    "date": "2026-11-07",
-    "title": "Singapore MAS Warns Public Against Crypto Trading After Binance Hack",
-    "src": "Blockonomi",
-    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUE95LVBkUnVJSUoyYkRZclJKX05wX3FBYTRuTE5WWWRCV1dsUklDd3JicmNMOURHakF0Rlh4bkgydmVfWFJCeDJOMnpNc3V2cENjWUJlbERnMWdOUHp6THAxSWt2QTduQzhFN3oyeTBDVXJUUkYzMk90OFBHM24zMl9wWjRqbzRqTnE4Szg2Zks2cWphOGhr?oc=5",
-    "code": "SG"
-   },
-   {
-    "date": "2026-11-06",
-    "title": "Why MAS licensing is becoming the deciding factor in Singapore's crypto off-ramp market",
-    "src": "Crypto Briefing",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQODJlMmp4bi1jWkJ4b2x0VGFjTTlaaGZYdUxuNWFYaURVaUp5eEJCeGJub281cXVOLXZsRUotelE1MzFDREJqQkFJMDBWWWZkRjd1QndSNzdVaHBtTjZSX09PcnVXVnNGMmpDRmlPOF9zMVNKal9DOGNueUNNcUR4SFBLT0x2R1BnelBTMXVpSzhfWXpmZlJaSkVIYk1qS01ZeUd0cDdlNWJEb0dnaUFKWU5OOFU?oc=5",
-    "code": "SG"
-   },
-   {
     "date": "2026-10-29",
     "title": "Nearly 90% of Businesses Are Adopting Tokenised Money as Digital Payments Gain Momentum",
     "src": "Spherical Insights",
@@ -275,10 +268,10 @@
     "code": "SG"
    },
    {
-    "date": "2026-10-25",
-    "title": "Stablecoin News: Singapore MAS Adds Malaysia and Thailand to BLOOM Initiative",
-    "src": "CryptoRank",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPazNNVUo4TGMwVUNvT2VWUTZ6dkc1aEFwcFV1S0hEaFlBWG9zYkdoZzRHSXZXdmNxUXJ5cFh0aHRGT2dlTEktWDUyQUlXci1odklvX1pELVdaUS04TkY5YzU4UWFoTEZzRm5zUnZmbDVFMnVFNTllNndSYzNCdXprQzNkTnJnR3NnYU44QmcxQ3JobjRiZkxvd2oyWkJuREg0a2JLNzVfUEU0OE02WTlQRHp0UzA?oc=5",
+    "date": "2026-10-28",
+    "title": "DBS Digital Exchange and the Shift Towards Institutional Digital Asset Trading",
+    "src": "The Ritz Herald",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUGZqMnVaMk1MU3ZQSW5mRHZrQVd6b0VCTEFMR1lmMGhEMnZxQlgxN09EaEhGNjNxRkJlNEE3NUUxTnNpT3l0MTZwMFYzWVhvTi1zdDdzSmNGUGNRNVViQ3IxWVNhVkV0TkRBb3RCZzFOLXFtRFlGel9mRDRmMjkyMnZ5YkVaNEFSQ0RhRC1nYmxmdTZTSHp5YVZQZHpqS1JhX3JXdw?oc=5",
     "code": "SG"
    },
    {
@@ -319,6 +312,13 @@
     "code": "ID"
    },
    {
+    "date": "2026-11-05",
+    "title": "Ripple exec confident crypto regulation progres...",
+    "src": "Pluang",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdG41cjA5a1RxZjh5bjYwQ0Rqa0pBNWFfVGFIVm8xd2pfMGFCVTlNQ1dDRUxjRGwyenNrQ1NCUDJYNVhNc1JHUzlOQ01YenUtVmE5aWlLczBXQ2J4WXRwczZ5OE5GZmJxa0xSYnJfYkpXSHI4QkFzdGcxRzlXandBdERDdXN3ZENfdF9kX1Via0QzY2RTWng1RXJGcTl0aVhXQUE?oc=5",
+    "code": "ID"
+   },
+   {
     "date": "2026-10-30",
     "title": "Why Global Banks Started Transacting With Stablecoins in 2026, and Where Indonesia Stands",
     "src": "Pintu",
@@ -339,13 +339,6 @@
     "title": "[기획] 한화금융, 디지털자산 판 키운다…증권·운용·보험 '삼각편대' 완성",
     "src": "오늘경제",
     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE10bnJ3OGdZZHdIYTRiY3lUUWRFV1ZtdWFvblJUckF5U0diblFvWUY2SXdQalBvU3BPT1JlOGhMTU04NWs2VFlRdGpjdHduemlacDZuelYwcGdDVHJJV0d1MEpTOVYxZmxtMzBfQVFGR0EtSWc?oc=5",
-    "code": "AE"
-   },
-   {
-    "date": "2026-10-23",
-    "title": "\"결제는 여러 코인, 정산은 실시간\"...하나금융, 두나무와 기술검증",
-    "src": "부산파이낸셜뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBneVhiNDZZVkxzemxaeW8xdkhmQnBkeWRFQ2p0Vl91WGppWFBzX0pJZVBidFJTNVQtZFkwSEFJVVFBcU1wTnBTWnlQZmxfTWI2dXhyOUJxcXFUcUZx?oc=5",
     "code": "AE"
    }
   ]
