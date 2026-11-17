@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T01:53:07+00:00",
+ "updated": "2026-11-17T04:25:59+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,7 +127,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": [
     {
      "date": "2026-11-14",
@@ -156,7 +156,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": [
     {
      "date": "2026-11-09",
@@ -191,11 +191,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": [
     {
      "date": "2026-11-12",
@@ -248,24 +248,37 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-16",
-   "items": []
+   "auto_checked": "2026-11-17",
+   "items": [
+    {
+     "date": "2026-11-16",
+     "title": "Citi wins approval to set up wholly foreign-owned securities firm in China",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOU2IyTE15UDkyTGpEejZsR2owWVBtR1p5YkdzV1hnUlhiSGRWOERwU0ktX2ZiNU5sUGJVOXZXSnpXR1hLQjJvWEtKbVE2SnNETGs4dThLNkVaVVR5ODBkd21OZVdzNG5zYXA0WmtSV3I1WU1iUnUwT00tSjNIMjZYc1pBOFNFVjk4WFhrdnl4SGtuMGRCOHMzdVRFU2FaZw?oc=5",
+     "src": "International Services Shanghai"
+    }
+   ]
   },
   "GB": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": []
   },
   "MN": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": [
+    {
+     "date": "2026-11-17",
+     "title": "DO YOU NEED A LICENSE TO PRACTICE ACUPRESSURE",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWVdDcF80OGIwQnZhT0xGVFZ2YUIyQ29OMThadW9KS1pDWTlmSU16UDhpckNxaS03dDF5S3A3bHZGTEU3bjFkbG9UaW11VFo5OTB2YTE1cmhOVENyWVFmeHphVUEwTUxEeXNtQmVGd3JvdVA4R1FUZmR6RWFuaXhQV1d6YnJRSHV6OW5zWUs1THFFZEVGRlFtN253?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
     {
      "date": "2026-11-11",
      "title": "MINNESOTA GENERAL CONTRACTOR LICENSE STUDY GUIDE",
@@ -425,7 +438,7 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": [
     {
      "date": "2026-11-15",
@@ -436,7 +449,7 @@
    ]
   },
   "KH": {
-   "auto_checked": "2026-11-16",
+   "auto_checked": "2026-11-17",
    "items": []
   }
  }

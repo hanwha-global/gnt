@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16T01:53:20+00:00",
+ "updated_at": "2026-11-17T04:27:09+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -60,7 +60,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-11-16",
+  "checked": "2026-11-17",
   "sros": [
    {
     "name": "FINRA",
@@ -280,7 +280,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-11-16",
+  "checked": "2026-11-17",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -309,7 +309,7 @@
   "excess": 114879691.0,
   "required": 10352954.0,
   "audited": false,
-  "checked": "2026-11-16"
+  "checked": "2026-11-17"
  },
  "peers": {
   "date": "2026-06-30",
@@ -719,7 +719,7 @@
  },
  "dart": {
   "corp_code": "00113058",
-  "checked": "2026-11-16",
+  "checked": "2026-11-17",
   "unit": "백만원",
   "periods": [
    {
@@ -973,6 +973,69 @@
      "book": 255272.0,
      "prev_book": 255272.0
     }
+   },
+   {
+    "label": "3Q26",
+    "year": "2026",
+    "period": "9M",
+    "months": 9,
+    "end": "2026-09-30",
+    "report": {
+     "name": "분기보고서 (2026.09)",
+     "rcept_no": "20261112000436",
+     "rcept_dt": "20261112",
+     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000436"
+    },
+    "subs": {
+     "hold": {
+      "name": "Hanwha Life US Investment, LLC",
+      "assets": 294577.0,
+      "liab": 5560.0,
+      "equity": 289017.0,
+      "rev": 12030.0,
+      "ni": 20616.0,
+      "tci": 3959.0
+     },
+     "nexus": {
+      "name": "Nexus Clearing LLC",
+      "assets": 168952.0,
+      "liab": 7917.0,
+      "equity": 161035.0,
+      "rev": 35.0,
+      "ni": 35022.0,
+      "tci": 22765.0
+     },
+     "vct": {
+      "name": "VCT Holdings",
+      "assets": 244054.0,
+      "liab": 84327.0,
+      "equity": 159727.0,
+      "rev": 133.0,
+      "ni": 66115.0,
+      "tci": 40564.0
+     },
+     "vel": {
+      "name": "Velocity Clearing",
+      "assets": 9528403.0,
+      "liab": 9307354.0,
+      "equity": 221049.0,
+      "rev": 616493.0,
+      "ni": 84462.0,
+      "tci": 60855.0
+     }
+    },
+    "stakes": {
+     "hold": 100.0,
+     "nexus": 75.0,
+     "vct": 100.0,
+     "vel": 100.0
+    },
+    "book": {
+     "name": "Hanwha Life US Investment, LLC",
+     "stake": 100.0,
+     "book": 255272.0,
+     "prev_book": 255272.0
+    }
    }
   ],
   "skip": [],
@@ -1061,8 +1124,6 @@
    "lang": "en"
   }
  ],
- "news_checked": "2026-11-16",
- "errors": [
-  "DART 원문 분기보고서 (2026.09): File is not a zip file"
- ]
+ "news_checked": "2026-11-17",
+ "errors": []
 }
