@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T03:44+09:00",
+ "updated_at": "2026-11-17T13:10+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -157,6 +157,30 @@
   "fca.org.uk"
  ],
  "items": [
+  {
+   "date": "2026-11-17",
+   "time": "08:58",
+   "title": "칼시, 증권사 인수 후 주식 중개업 진출",
+   "src": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhTk42UUNYYUtPYW5wUXpMREpjSzhLalIyenA1bkh4SWRqOVkzY203ZDZWNDV0TC1nSWExcWpyVkduYU9meHpGaC1Pb2JWd2VrUkczRlh2SjdTSHZubEpyZy1LTWZJSTNqZGUwUDlYU1_SAXRBVV95cUxONVlNRk9RNjNVWlBYcjVTdFhCQmtYOE92cmhFeVUxTlJVcmY2LWp3Yl92X1VkakpVbWxSZjVDODRIS0RYbmtnVGRMNXBCX2hxeTQtSmJ5NDVYZEs2bGotZDc3Nnh6OU1mQ1F1YnNrNzd0dTExVw?oc=5",
+   "site": "news.einfomax.co.kr",
+   "firms": []
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Chứng khoán Pinetree nhận giải công ty có phí giao dịch tốt nhất Việt Nam",
+   "src": "VnExpress",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRTNpdnRaMnAwVVlkRFpvYVlwdlVGQ2diVUFjNmhtcHk4YVVYT1padWwtSEYwNDg0bklNQ2paeGJkMlg3cDZaODVJa3VWWVFtZjdobXdGUVVBS3hQZ0lmaTZDUVdnWThhZExqblY5b2xzNU5PeExMcTEzU0J4UUZqLWtjUmUyaHVhX09DNmNoem9LTnprZHdvdnlhV192SmlTd2k5SUFTRWtCTEV1?oc=5",
+   "site": "vnexpress.net",
+   "title_ko": "파인트리증권은 베트남에서 거래 수수료가 가장 우수한 회사로 상을 받았습니다.",
+   "hub": "한화투자증권|베트남",
+   "time": "",
+   "firms": [
+    "한화투자증권"
+   ],
+   "foreign": true,
+   "lang": "vi"
+  },
   {
    "date": "2026-11-16",
    "time": "15:57",
@@ -533,6 +557,17 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
+   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
+   "src": "서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
+   "site": "www.sedaily.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
    "title": "미래에셋증권, 日 산코증권 인수…글로벌 성장동력 확보",
    "src": "전자신문",
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SZEhQVThRbkxOMnRiRkVITHBWWXFxUVRvUTZSVjBfaVEtaGtwTjBhWHpzVkpWM196QU5RdnRyeUJieGNmbm4zRlFRR0sxdw?oc=5",
@@ -575,17 +610,6 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
-   "src": "서울경제TV",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
-   "site": "www.sentv.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
    "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUU?oc=5",
@@ -597,10 +621,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋, 日산코증권 인수…日주식거래시장 첫 진출",
-   "src": "SBS Biz",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QSnJGN2Z6eUc2M0hzenNHV3lMS1k4SjV4c3dONWpQSldpdlhpUlh3UnZKekd3bGQwSE0zd3pQWHk2N0JTR0xLX3NVYnRveTNsSFg40gFYQVVfeXFMTkJsbFJrVnF1eUVjczJVSDh0V1B4Zy1OcWtGVE5XakdUTjJvSnBqQTltckp5Ymp5amlrSzZPRlJwbm82UG5yQ0VDR2ctRERjc0V1aGhyMHlINw?oc=5",
-   "site": "biz.sbs.co.kr",
+   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
+   "src": "서울경제TV",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
+   "site": "www.sentv.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -608,10 +632,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋, 日산코증권 인수…“리테일 확장 본격화”",
-   "src": "서울경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
-   "site": "www.sedaily.com",
+   "title": "미래에셋, 日산코증권 인수…日주식거래시장 첫 진출",
+   "src": "SBS Biz",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QSnJGN2Z6eUc2M0hzenNHV3lMS1k4SjV4c3dONWpQSldpdlhpUlh3UnZKekd3bGQwSE0zd3pQWHk2N0JTR0xLX3NVYnRveTNsSFg40gFYQVVfeXFMTkJsbFJrVnF1eUVjczJVSDh0V1B4Zy1OcWtGVE5XakdUTjJvSnBqQTltckp5Ymp5amlrSzZPRlJwbm82UG5yQ0VDR2ctRERjc0V1aGhyMHlINw?oc=5",
+   "site": "biz.sbs.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -775,28 +799,6 @@
    "site": "www.mt.co.kr",
    "firms": [
     "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-27",
-   "time": "23:43",
-   "title": "아시아 넘어 글로벌 종합금융으로…뉴욕 ‘KIS 나잇’ 이끈 김성환 한국투자증권 사장",
-   "src": "세계일보",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GcnUzVmZDSEUxSVcxN2xob2pmN0tXUTJhXzZ6TnZha3VHdEppQzd1NkZpaDZYZEJxWWFrV2NGT3NyUFNhWEI1NmdwbkFrX2M3aUZyMUd4MmvSAVRBVV95cUxOUkNwOXRucng2MkJqcDdRZ18zZjdLZEh6S09ybURwTFAtM2VCZEZ3Ri1MeU8xM1pWWVNSeTNOaXh1azZPVlM2U0QzSDhhUGF4ajhzM0I?oc=5",
-   "site": "www.segye.com",
-   "firms": [
-    "한국투자증권"
-   ]
-  },
-  {
-   "date": "2026-10-27",
-   "time": "17:58",
-   "title": "[단독]빈그룹 아리랑본드에 2300억원 몰려…신한證베트남 단독 주관",
-   "src": "머니투데이",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4yRXhvdGFuWnF5QkxVRUFmdUU3YnpKX2NsU0dFOTVGSnBmZksxLUF6ZUVzbVZad0FEOFdsOGY0VWtwSnhLcGp4cHpTYTMtNGdrY2Z2LUx3b1hUdlB6aGRwWkNXZndfYmZlbFo3VHBn0gFuQVVfeXFMTjJFeG90YW5acXlCTFVFQWZ1RTdiekpfY2xTR0U5NUZKcGZmSzEtQXplRXNtVlp3QUQ4V2w4ZjRVa3BKeEtwanhwelNhMy00Z2tjZnYtTHdvWFR2UHpoZHBaQ1dmd19iZmVsWjdUcGc?oc=5",
-   "site": "www.mt.co.kr",
-   "firms": [
-    "신한투자증권"
    ]
   }
  ],

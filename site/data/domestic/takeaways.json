@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-16T10:21+09:00",
+ "checked_at": "2026-11-17T13:11+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -16,16 +16,9 @@
      "text": "베트남 법인(PTSV) 증자만으로는 격차 축소 한계, 현지 증권사 지분 인수로 규모·수익 동반 확대 검토",
      "evidence": [
       "FY2025 자기자본 881억원, 한국계 6사 중 6위(당사 제외 중간값 2,485억원, DART)",
-      "ROE 3.9% vs 현지 상장사 42곳 중간값 6.9%",
-      "국내 보도 '자본금 확대' 등 3건(10/1~10/2, 최근 45일)"
+      "ROE 3.9% vs 현지 상장사 42곳 중간값 6.9%"
      ],
-     "links": [
-      {
-       "label": "자본금 확대",
-       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qZDVRZ2cyQkozMlJyWTc2eDNnLUZQMGlnanlVTUhxMkxXVjZkZHREM3hNUXFQY0xCTkIzOUhzdVlub0FoNWtvaGlYS3FBQzY5RWhNVXpVemlhb0ZvNFdjeFBHTkFBenpU0gFuQVVfeXFMUG5YaXJwZ01sdndHektINGhHMnZac1lhdHZrcDBLWnJnbXRmbGVydUdTWmUySUJmRjRjV01pcC1MR1lWSHd1YjNJZmpoN1FwNjZuVU5DYVF0eHFURmRONHhMMmU0aEhEeXE0UVRpSHc?oc=5",
-       "title": "베트남 진출 국내 증권사의 숙제 '자본금 확대'"
-      }
-     ],
+     "links": [],
      "bucket": [
       "acquire",
       6,
@@ -64,13 +57,13 @@
      "links": [
       {
        "label": "Vietnam Investment Review - VIR",
-       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
-       "title": "Vietnam's stock market upgrade puts focus on corporate governance"
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
+       "title": "Transparency and disclosure key to sustaining Vietnam's market upgrade"
       },
       {
        "label": "Vietnam Investment Review - VIR",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
-       "title": "Transparency and disclosure key to sustaining Vietnam's market upgrade"
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
+       "title": "Vietnam's stock market upgrade puts focus on corporate governance"
       }
      ],
      "bucket": [
@@ -95,17 +88,12 @@
      ]
     }
    ],
-   "changed_at": "2026-11-13",
+   "changed_at": "2026-11-17",
    "reason": [
-    "DART 분기보고서 (2026.09) 반영"
+    "새 뉴스: VnExpress 보도"
    ],
-   "candidates": [
-    {
-     "rule": "R02",
-     "variant": "",
-     "why_not": "R01에 합침"
-    }
-   ],
+   "last_check": "갱신",
+   "candidates": [],
    "history": [
     {
      "date": "2026-10-27",
@@ -171,9 +159,21 @@
      "reason": [
       "DART 분기보고서 (2026.09) 반영"
      ]
+    },
+    {
+     "date": "2026-11-17",
+     "fp": "f54921dd7f2a",
+     "rules": [
+      "R01",
+      "R12",
+      "R07",
+      "MKT"
+     ],
+     "reason": [
+      "새 뉴스: VnExpress 보도"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "ID": {
    "country": "인도네시아",
@@ -239,7 +239,7 @@
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용 하락에도 MSCI 결정과 손익 회복 이후로 보류, 후보 검토만 선행",
      "evidence": [
-      "IDX 5,344(11/13), 최근 1년 고점(2025-12 월말) 대비 -38.2% · 루피아 원화 대비 연초 이후 -12.8%(ECOS 11/9) · 원화 환산 지수 연초 대비 -46.1%"
+      "IDX 5,344(11/13), 최근 1년 고점(2025-12 월말) 대비 -38.2% · 루피아 원화 대비 연초 이후 -14.9%(ECOS 11/16) · 원화 환산 지수 연초 대비 -47.4%"
      ],
      "links": [],
      "bucket": [
@@ -269,10 +269,11 @@
      ]
     }
    ],
-   "changed_at": "2026-11-14",
+   "changed_at": "2026-11-17",
    "reason": [
-    "새 뉴스: MSCI 강등 검토"
+    "새 뉴스: FTSE 강등 우려 해소"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "MKT",
@@ -458,9 +459,21 @@
      "reason": [
       "새 뉴스: MSCI 강등 검토"
      ]
+    },
+    {
+     "date": "2026-11-17",
+     "fp": "c97d83264f8e",
+     "rules": [
+      "R13",
+      "R08",
+      "R04",
+      "R06"
+     ],
+     "reason": [
+      "새 뉴스: FTSE 강등 우려 해소"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -603,5 +616,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-11-14"
+ "updated_at": "2026-11-17"
 }

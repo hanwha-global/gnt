@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T03:44+09:00",
+ "updated_at": "2026-11-17T13:11+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-17",
+     "time": "05:26",
+     "title": "美국채 금리 하락·10년물 5.117%…워시 'AI 실망' 경고에 안전자산 선호",
+     "src": "뉴스1",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5hLU8tQml1WUhPZU5EWHpYUW13NElHcHBDRFlFVWdsWUJkQlV2aVFJSC1UODhXeXB1QzVhQ3RDT1ducFFJNy1JbXA1SWhGaFlOZW53SXhzdnY?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-17",
+     "time": "03:03",
+     "title": "Gold sinks to 1-year low as Treasury yields and dollar bite, set for worst year since 2015",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVkNEMWt0MEpVV2U4c0tCZEQ0N3FJRnBMWEFJRktVNVpBNGZ4RWFjVXA0TnR0VE8yam5OenZaaF9KWVhuc3RCQkZXWGlwb0pPRElEM0JoU0Rsb3BpX2ZTUjBLUG52SUM1V2RkcHRKLVdLR1ZmeXFISlplcTRQU0xJMzZHcFBFbUZPVWtYeGpqbWxKU1gtQjMxZXBMZU5rdldKOTRaWXpNSkZqd3MwajRHUzVvSVI2QTBOb1dJMGc3U3VzdTFP?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-16",
      "time": "18:17",
-     "title": "Treasury yields fall as investors await comments from Fed Chairman Warsh",
+     "title": "Treasury prices catch a small bid as stock market weakens and Warsh says AI might 'disappoint'",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Hb0xmSm1PekxUM0FmRThxUmxKLUp6RFhoZmg0SXdEd2xaeGdKODRRbkhqN205X0MwZmhqbHlhRnVvQVpaUDhWMWp6QUJoamxaazJNN1lFNUVVWVRISnpLVGxpbllUbklySjAteGtLdWR6WmNCQ0hj0gF8QVVfeXFMUFlyRVFLcV9peGl3NGN0ZWljZTFuaXEyNEt0MHRHeXBYbG1UZHhFT2V6OTVBeVVibG1wWmZCdXE5TlFlQzZTc1ZvVmVFWHJTRUZwOWh6MDM1em8yMjhyaG44MTFOV1JXUHVzcmIxZk9nWVpBR0ZQNTFVVW9ERw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-16",
-     "time": "17:19",
-     "title": "Federal Reserve's Susan Collins sees ‘gradual’ hikes in interest rate to curb inflation, manage economy",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOaFZIQmhjLXdrcDBDdVkwVzRfMHJLSFhCc3czUjI1andRTjlxWXp6aTNBaTREOGc3dFNwUFF4WFdmaDlsV0U1MHJqRlRmYzV3aHNDUW1RVEZLeWZwZVI0eW1qUzE5SWlFZmNKSy04RVluLVhnMjBtSjdvZmItZGJ5c0RRakhNbjhTZkpPY3JyNFozUVV5ODAwYjUwZUZmd292SVR3SFRxRkdBVHFfRHNEbGdLYTljNlQ1QVEyVG83b29Mck1pMUQxWTdaRWNtVlc4WGt2X3JWcDJmenk2VzNUQk5fTFdhcTFsdVZRcDg3dHBlb01NNmliZy1DTdIBgAJBVV95cUxPeTJWM25CelhDSjlieTEydGpRVVE4TUdoWVlvR3pHWG40bGNIOXdmdEpEdnBkRUdSdFowOW0wSHhNVzJPR2Z4Ny0wVVF6RmpwUWZfb1FsVmQyWloxTmdZNi1MTEdXeWtJcnAtSkJzZkNISE5pX2xtdmhnVkJLeUg5N3FJZ2drQ0ZYMmx1ZkdzN0o4VXdfTlJVOU0tTmdwYlZXdW9PMU9VZFhKOVpCQ3RUbnJzalJPb25HT243Tk1HRTg5enJ6NEd0cGtOdWxseEQ5M3pUY2Y2UzN0SXEwTFlrMElUMlFJOFVZano2ZUZwc0F6eGI4c2sxVFZUU3d5Qmtr?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-16",
-     "time": "17:00",
-     "title": "Gold set to snap blistering run of 3-year gains as Fed rate increase looms",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRGdDNFBYZTA2bFNMS1ZCVVVFZjhWOUNSNmJjT1lBcHZwUkhiSFctTEZ5ZlNRenozMEREc1RpVHltTjVLcER0aExLOUNrNjZmQV9KU2dnb2Jqa1RZcEJDS0F0Ym9nT1FTZzVWTXpraE5OV25wQkNieDk2SWh4VnRLTmZhQnJsbFFkaHRsTWlLdTNkNmEwbmtXdDF1bFBoWUo5M01Hd0xfZXZpSnFSTHZ1V3FJNHJ3WVY2WmNQQVpHUkZJRmZTWEE?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-17",
+     "time": "09:00",
+     "title": "Former BOJ Chief Kuroda Sees Chance of Rate Rising Above Neutral",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWDA2WFhmM2RhaG56MXhwYXBKdjBLUzY0aVBRcjdFazRKTGtxeWRmcVkyWFFZY3d6dXNaRFlPZG9xcU56Mk90aEhLU1p3X1hMZktwWDFvRkJwSEFsY1F6UEZ6NElweVQ3NUZoazd6Mm5RUU1ibnBqVUNKY21tMXRRcnB0UnVvVWtKaFJxOHV3NU5rUkJIWU1rVG9WV2xIYUpDdTB5VmxpOVdlbXpFVng2TWd5UVdtQQ?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-16",
      "time": "21:36",
      "title": "Weak growth casts further doubt on Bank of Japan’s December rate rise",
      "src": "Financial Times",
      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5EM2NlYXlkS1l2WUdsSXM5U2JaRkg0SHFHZldETVd5XzNtYjUyX2ZublI2MEdTbzNXcHlGU3RyVnpMYk1jbnBjSFdvdGhONU93b2V2Q2F4dl9CVXMwZy1fb1k5aTBpaUhuTDhzaE5FTVI?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-16",
-     "time": "17:10",
-     "title": "Japan bond yields hit multi-week highs as US rate hike bets strengthen",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNXlOQzZMcFptczdmMlgyQVg2OFdoWm1BbE42cDI2QU1BVjVsb1h2eFpFZ3RHekdiN00tZTZMWTg0U19obkJkOHFiT0xuT2RxUzhKSnpValV3RVdXRllNUnpCaXpQWnVzUjRndzQxdC1sTDJ3RWs3MVNOakVXaW91bHJraDFJd3ZuVVNSRmROTEN1U3ZYZnhGbk5XYnBCMzFjc0lPMWFkSFdPV2JLOUZOWUY5aFpvWFJKMVE1VHZKaEkwOHNJa2F3RFNILXlqejlpaUlnY1d3Tndsc2x6TDktdtIB5gFBVV95cUxPRkhpa0plVFFqSU1WcERNei1NOTgzNkJpRlcxSV8tejZ3Z2FwaUpfVUhoVVJOMnZ6bkIyUnNNV2JVZnhXZldlaU53bnIwWjhLbk8zMDlSUXlNby02cXMwY285Q0xrVzZYN0lvRG8yNFBaZmFSMkpkT1NjSXo0T3Nka3NQVVAySWxaN0R5R0luZ09uSWJuQjVPdmRySFRlUnpyRWZ0WDhBbFFFZG1idmxjYXVoNEFUUE40aGdaamQ2Y0FaY3B4TEQ3Tmd1M1NJS1dhOHRFTzFybDZscmszRGpzRzRvMDN4UQ?oc=5",
      "priority": false
     }
    ]
@@ -226,10 +226,10 @@
     },
     {
      "date": "2026-11-17",
-     "time": "02:36",
-     "title": "RBI files review petition in SC over YES Bank's ₹8,415 cr AT-1 bond case",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZGR6V0x4Zl9WajZFUDBOTUtPRVhGVkliN3E3SnRaNzQ0VW5uNlkwUFJwbGVVdmlZYXFsejBVdjdQZXN1UGpfVmYyUVZsM3plT3ZsT25Lcm1PV0FNc20xNGVraHc4SU1YdjRHWTFHVFpVQzhiVUtLbzUzdnEwTldKVnlmNC1TOUxtTG1wNTdQVm9mb2o1M2lkZ25MU1U1ZmJ1T19pSWNzczV4WlpmMWNQTkVINmtsWW5MWmVVR0tMOENjMmxYQjR3REdPZXdrV3BUZUVKU3loTGpad9IB3wFBVV95cUxQbV9JSDV1UVB6VHpZUlU0M1VPWjlKNXFuSEZrdlUwZ0pNclhnQnkwVjRoWHJnT3k1aGR0N1dsYjhac1FEZm5acFBvaU9mbUk3RXNYWHpwZUxEX1V5b0s4ZUhGT1J1OFJsb21QSVJZUVdhVFlZNVVCX3AwYmtkV01wb1ItenZKaDlrMUlaWFhuVXJqNU1LM1EyVDVsS3VjbHhWQ0pYRVdaOGtFb2xjbHhpUk9EbGJZc1g0NExjV2wxMjk1akN3aWRfRHV6OEI1SGNZZk9VX2JJLUd0ZGJrbEE0?oc=5",
+     "time": "10:10",
+     "title": "Stock market outlook today,17 Nov:Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOQmM1b1V4Z0wyazRoTEdXMVB1OHo0TmZrRWx3R2s3Q3d4YTZXVkdBaGRFaU43dm5rUnpCSzJNRnBrMGN6bnZ2aF80UFlKcDVJcG5QWHVZWkxhaHdYUVVhM2ZjaW5VYWpLbjMyU0kxS1A0RGRlWGJ1c2ZVNWFvNW55Wlo5bS0xMmRjU3FOUk4tRERVM2VsZi1zV2dYdFN4enhwYm1LZjRLTjZVM09DVkU5dVR2Q3dCY1JSNWNOSTdTVElpdG16VWk3a1lYZ0NuaFNVZ0dmY3FzbFQ4UWxwUTlTcGQ0RWRmXy1obEJOZmxSVllhTTN1bDQ2YUZ1NnhnWkF1T3Q3WjFGMlJZZ9IBjwJBVV95cUxNVHhOeXd1Z0pmZGlqdEJUM2w3REJCMHJWUk1pTHFZbEJsN0VMQlBWNkFrQ1Z3ZDJSUXI0cXRWRWxEc1RSLUpVSjYwYTFLTEEzdDdxSlpzQ3BGREdlTWZZai12MG9ObmZKYmpWOEx5NmZoelpCRFZfTFVFUnU1VWF0WVRNS1JuUmR4aVNka0NzZkk1eFdTWlBLTW1qTU1PT1VFNzNNLVE3cWpCc1J0TXZ4Q2g1Rld0am1wVGZxd3k5SW1DODhlTnlHai02TjZlZUlrQlRfZ3IxSkh1bTUyR19TNWs3TFBaTVhPbVdhUzBVbEdSTVNiSlBzOVhsWkYySTNlaU9QVTd5b016UWVsLXZz?oc=5",
      "priority": false
     }
    ]
@@ -238,8 +238,8 @@
    "label": "글로벌",
    "items": [
     {
-     "date": "2026-11-16",
-     "time": "19:12",
+     "date": "2026-11-17",
+     "time": "10:20",
      "title": "Beximco Pharma, LafargeHolcim, 4 banks from Bangladesh added to MSCI Frontier Markets Index",
      "src": "The Business Standard",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQnIwUFZzSHVkWUc2SjZMZjY1Wm9aR0U3VzJrNFRIRmxhMXFob2J0c1pRVGZGN1lqSU9NOFNrU21mOVVEdzZELVFGRXJlR1VURDZmbExmeTROMkx2blZIcC1CUTF2X21mN1hFRk5fNTlHcnVxcWFTY1UwVHktU2tCVG1CazVzOFhIYkh6RU5pLXU0RmRmSnBNUkc5d0tsVGVBRHdoSE1WM19JTU92LXY3Sg?oc=5",
