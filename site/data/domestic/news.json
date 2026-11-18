@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T12:06+09:00",
+ "updated_at": "2026-11-18T20:58+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -159,11 +159,38 @@
  "items": [
   {
    "date": "2026-11-18",
+   "time": "16:44",
+   "title": "금투협 증권사 CEO 일본 혁신사례 살피러 도쿄행, 황성엽 \"새 성장동력 발굴\"",
+   "src": "비즈니스포스트",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvcmc4T1BzZUpuZTZVUF9Edm5ZQ2E0YjY4ZElNb3ZWU0E0ejZrcGwtel9aTDMyR01hTURkcUc0Q294TWxKUTEzblIxYk10VlFUb2cybG5ETjJaNmZHalg2WTM2WnlJaWtIZGRVNUx4ak5hZDQ?oc=5",
+   "site": "www.businesspost.co.kr",
+   "firms": []
+  },
+  {
+   "date": "2026-11-18",
+   "time": "15:16",
+   "title": "금투협·증권업계 CEO 11명, 일본서 미래 성장모델 모색",
+   "src": "아시아경제",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5iWm5CUmRGMlVwM0dFV09tOWs4RzJnd05tWm5ldnVBRXFYMEdPaVQyZWdNQk42ekJYMEl3Mjdma2w3T3pPVFN2aGhGNF9HNUt1b1N1aUNiUTdobEdrUE16TENn?oc=5",
+   "site": "core.asiae.co.kr",
+   "firms": []
+  },
+  {
+   "date": "2026-11-18",
+   "time": "14:02",
+   "title": "증권사 CEO 11명 일본행…자본시장 혁신·미래 성장전략 모색",
+   "src": "파이낸셜뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KTGtxOS1tLUJ5ZXpoYjVyZHFDdkM0emZ4RFFGcDJPNlZXX3ZDdFo1aE9VVThvRmEzbmZINjlJNWlZSlFMdjVZZFo2WnEtZndaSHBaSTFMV1lRdw?oc=5",
+   "site": "www.fnnews.com",
+   "firms": []
+  },
+  {
+   "date": "2026-11-18",
    "time": "11:06",
    "title": "금투협, 증권사 CEO 11명과 일본 방문…자본시장 혁신 방안 모색",
    "src": "뉴시스",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3cDNZVUEtWm8zV0JEN1NBSjJSS3BKVnZDR0ZiOTJwRUFqUl96d0FEaDBoUWZfRFpwOE1VYnhjekluT3JGNUVDVTJhR3lVRlpNS3llcHhEbTZUaWdyZWlNbNIBeEFVX3lxTE1RLTdrODhINkNqaElIUmh5Q25mVTVPYnY5MV8ybFQ2anBvcFIwRWYtTjdpVDVWNjlJQWFFQjRCbW1FdFRobGM4N2xWTEcyOXlhZkpQV2ppRmoxSXo1VWU5REwxZ05JRDlvR2k0UE9Vd2hNV3RmWVlySQ?oc=5",
-   "site": "www.newsis.com",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1RLTdrODhINkNqaElIUmh5Q25mVTVPYnY5MV8ybFQ2anBvcFIwRWYtTjdpVDVWNjlJQWFFQjRCbW1FdFRobGM4N2xWTEcyOXlhZkpQV2ppRmoxSXo1VWU5REwxZ05JRDlvR2k0UE9Vd2hNV3RmWVlySdIBeEFVX3lxTE1RLTdrODhINkNqaElIUmh5Q25mVTVPYnY5MV8ybFQ2anBvcFIwRWYtTjdpVDVWNjlJQWFFQjRCbW1FdFRobGM4N2xWTEcyOXlhZkpQV2ppRmoxSXo1VWU5REwxZ05JRDlvR2k0UE9Vd2hNV3RmWVlySQ?oc=5",
+   "site": "mobile.newsis.com",
    "firms": []
   },
   {
@@ -641,7 +668,7 @@
    "time": "16:00",
    "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
    "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUU?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
    "site": "www.yna.co.kr",
    "firms": [
     "미래에셋증권"
@@ -760,39 +787,6 @@
    "src": "아주경제",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBqMHFYY2FwbTdnbkZ0clFZT3lrWEFRWmtsVU9oeXpSNE1VRDFfSS14QW5BZExzVVk4M2dKUXQ1c0tVcjgzOWRPZ1htWHJXcGtNbktoNHZNVEHSAVhBVV95cUxQajBxWGNhcG03Z25GdHJRWU95a1hBUVprbFVPaHl6UjRNVUQxX0kteEFuQWRMc1VZODNnSlF0NXNLVXI4MzlkT2dYbVhyV3BrTW5LaDR2TVRB?oc=5",
    "site": "www.ajunews.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "07:55",
-   "title": "미래에셋증권, 日 산코증권 인수…현지 주식 사업 진출",
-   "src": "파이낸셜뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9xWnVaRG1xdGl2VkxtVVQ1ZmN6MkVLNmxxOGw2aXFmbnE3M0RhcU9DYmNpUUdISlNUeWZVNUNUcUU3czhlY0FmcmRmYm44YlVWUHVsVzk2bUdBQQ?oc=5",
-   "site": "www.fnnews.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "time": "16:00",
-   "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
-   "site": "stock.mk.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "time": "16:00",
-   "title": "미래에셋증권 홍콩법인, 자체 기술로 美 달러 디지털 채권 현지 발행",
-   "src": "아시아경제",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NcElndzBqVXJIbjF2WS0yVWt2Nm9Tb3lsdHRUTGNJekJIUmhraFhrYlloZVhhUjZuYTdJV2VoMHNPNUJXUHVlN1NBdlk2bnU0MXVJTUg3ZHhxcDV6c1IyYw?oc=5",
-   "site": "www.asiae.co.kr",
    "firms": [
     "미래에셋증권"
    ]
