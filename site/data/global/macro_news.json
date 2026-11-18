@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T20:58+09:00",
+ "updated_at": "2026-11-19T02:25+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -37,6 +37,14 @@
     {
      "date": "2026-11-18",
      "time": "18:32",
+     "title": "Two-year Treasury note yield climbs as Waller warns that Fed may need to ‘shock people’ with half-point rate hike",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Hc0tPVG9tRHRYTVBHa2ZvTWQ2ODQ4NTJONXdHLTU4dGJmVjNvMTRFLWpDNG1OdmVIWk5INUxFV2V0dzZpNDUxWWVDNi1XVGtxa19jYkQ0OEFLeTJnQkJLOGxCeExfbUNmWVhtWkh3Y9IBdEFVX3lxTE1OTTltQng1Ukh2QnI2TkdkUGI5VWpLYi1Nb0VDS1A2d0xyOFpZTHN4dnIwbUlRS09sZWlTY1gzNkxJYVpqdWEteW5lbjJTZW5neXRGZkpWbEc0VEwyTkZDVVJUNlRjb0lPVkVKMGpNZ3FvdTFP?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-18",
+     "time": "18:32",
      "title": "Treasury yields hold steady as investors look ahead to Fed minutes",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Hc0tPVG9tRHRYTVBHa2ZvTWQ2ODQ4NTJONXdHLTU4dGJmVjNvMTRFLWpDNG1OdmVIWk5INUxFV2V0dzZpNDUxWWVDNi1XVGtxa19jYkQ0OEFLeTJnQkJLOGxCeExfbUNmWVhtWkh3Y9IBdEFVX3lxTE1OTTltQng1Ukh2QnI2TkdkUGI5VWpLYi1Nb0VDS1A2d0xyOFpZTHN4dnIwbUlRS09sZWlTY1gzNkxJYVpqdWEteW5lbjJTZW5neXRGZkpWbEc0VEwyTkZDVVJUNlRjb0lPVkVKMGpNZ3FvdTFP?oc=5",
@@ -48,14 +56,6 @@
      "title": "Gold slides to over one-year low on firm dollar, U.S. rate outlook",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTXRXUlc4TVVGam9kXzJabE84a2tVS2g4dEUyUE9KbUhaNnVlU1VDaGdZX0RkZHJYaDhKdzVnVkdzVS1TOGF3RjlrVnBUOW5yUVpWa3p3dGR6XzNKZWp6R2c5VXdSR1BmQjJrUlFLZXNkWjNQS2lvcFQyX3RTWHJjQlFOX3dtRlhzSDU2Q01oZWtfVFpIbUF0X0V3WkZreTZGLVHSAacBQVVfeXFMT1BQel9WZ3VlTGtfVFBmR1V6OTRMWEhjQVVYejNzYUFZaWpGRU4xTUxVbjJmQnZSZHVmamI1VGVhekpQYkdIdEI1anpqLS1QM0lBM2x2eXMtbGVjSi1vYmN3em1tRjQ0ZVVyNFN5RVNJaFhGRG5rSlloT3FHOXZyQndBNEVzUTVMOWNDWDZpN3pHa3EtWkdMRWVRTGg1bUlRN0liMVkxNVE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-18",
-     "time": "10:16",
-     "title": "뉴욕 연은 총재 “급격한 금리 인상 불필요”…美 연준 ‘빅스텝’에 제동",
-     "src": "매일경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15dnhWOVBVcU8xcjZtOEpTbk91MWx6VWdEeUxoNGpVMEp2T3NyVmZucXZweDJzQWpuRFpRU2lHLVFUOGU4M1MwcnJxX0VLMWZMN1E?oc=5",
      "priority": false
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-18",
-     "time": "12:11",
-     "title": "Bank of Japan governor says central bank should keep raising rates",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGRYdzBBY2FDdlFqd1pFaUZxZkxkdlZ5c3g0WmtaU1NOTkhqZHBBcVY2ZVJhV01TeWJVVTl1NWUyUjZ6LVdVTnQyTnREdDJYWFdpLTdTQUFmLUROd0JYQUhlLVVNR2FQUnI4OUFwOFZsUlFSRlVzM3RfeF9iV21rTEljQTlmcm9VcGg0eV9mRm9kbDFmdXRHX1ZrSnNUd001QnF0bnh0Zw?oc=5",
+     "time": "23:59",
+     "title": "Nikkei 225 Today Ends 3-Session Slide as Nvidia Earnings Lift Lasertec, Advantest While Most Tokyo Stocks Fall",
+     "src": "International Business Times Australia",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbjlxS0U1UU14NEtkcmZwRnd4TU1lVl9hN0hJVHN0cFhnYU8yZ092cGh3WkpVUFp1NzdaZmlTT090Mlo4ZFc1MzNRM3Exd1ZfT2dSOHpsVzYyc3RyWVE4blVYaTN6blhHWFhFbTNESk1uSUtQSzcwQXREY0ZtQ2VUOV9IbFQ?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-18",
-     "time": "03:38",
-     "title": "Japan bond market revival fuels record profits for Nomura, Daiwa",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVG0xNmFSVDRYbWZxZ0hZM0Fidld0eUVBN2JNOUVPQ2xxNjhzal9VQ1lZT2Q0NjYzUE9BZWp5ZHVFY1B5bl9uczF2X0dLWlNMYzNTOF8tSG9ybzQzcVRSNGV3dUtzT1RRZE40bkpPeGVrZi1ienBOWjBiU2p2Uy1sdFJ0N255NERWTzB6LUpzLUhVclRaM3BuLWktS3dTY3NCRFpoeVdORlRSRk9TOXc0?oc=5",
+     "time": "12:11",
+     "title": "Bank of Japan governor says central bank should keep raising rates",
+     "src": "The Straits Times",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGRYdzBBY2FDdlFqd1pFaUZxZkxkdlZ5c3g0WmtaU1NOTkhqZHBBcVY2ZVJhV01TeWJVVTl1NWUyUjZ6LVdVTnQyTnREdDJYWFdpLTdTQUFmLUROd0JYQUhlLVVNR2FQUnI4OUFwOFZsUlFSRlVzM3RfeF9iV21rTEljQTlmcm9VcGg0eV9mRm9kbDFmdXRHX1ZrSnNUd001QnF0bnh0Zw?oc=5",
      "priority": false
     }
    ]
@@ -226,10 +226,10 @@
     },
     {
      "date": "2026-11-18",
-     "time": "19:41",
-     "title": "RBI may hike interest rates by 75 basis points by Q2 of next year: Goldman Sachs",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQczJnMThWMksteU0tN2JsU0pNQmRISmRwS0I0SWR0ZkxOeVB5UWN3cG8zYnFpbG5sNTNBUExETHZfbk9xaVpibUU0MWZWVWF6Uk04X001OWRyYTZCTzg2NGdqQlZ5LXpjZFhRRmJVWXE5a2NNb1FhdHdxUzRRRGtrY2cxRVd5Zkg5c215UFhNVFptTURKbkU0QjVmTkVXZjhaY0JQNkM4NU4xZzBRTG1YVm54VURVaTNERnJYZUpxby1rNllUbzY5MVRSYmthbl9oU2haaV9GLVdCdFFzUUJ4ZXlmWldHY2xO0gHuAUFVX3lxTE9JQlVONC1SZ001clZaOGpYdndnaXpCM0JtT2dtTFgwRWpvZDB1X0FxSFJQRjA4aUVwUlcxelQzeF9EYU5HT3o4enNsalZsZXB0SzlGNDNET1dUdi1JVVdaRXgwcThZLTFfaUZ0N0FDdWVQcW5FNnRVdmw2UFBOLVhHa1FWTnhjdEVZWnNwWW11VmVTNzZ6WWdXNk5vTE5TNXRfN0k2Ulp5QlVTemFQQ1doQ1hzbW9YRU13Q202VlRyTHhFZmEweW5fVkJwd01aeUExcG9TcXIyTGphRC01UTVXalpUd0hIQ0Zva3NrT0E?oc=5",
+     "time": "23:35",
+     "title": "Goldman Sachs sees RBI repo rate rising by 75 bps to 6.25% by mid-2027",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeFNoTmpTUVFnNmlpUVFTdnVSNFNNTnFKNXcyeXc2a3dyWm41S29pN3hackw2d3hsRVhSZ2ExQ1FLWmJkVE5nMGx1aktaTTRIZ01qRmxLME9WSjNFdmpNSjhuME1faU5DaTFCTTczbEdScV81XzM3VEcxeGhWSTV4Y0JEUFlBT0VaQkdGLXcycGFVNUR1aVczNEdQQUt6ZnlTSjBkYW41dGJGQWNUTWVnSFc5dEF4Y3ptZVRxYVA1QktwNEp2WE81NmlwZlpwYjhqRUHSAdcBQVVfeXFMTnRQMnN0LVZ2TUthVFJuckE5cEJkYXJzSklTMHlidWl0dDJaTVl0Znc1aVR5bkNQOVVzcmlxTEx4d01qYnNlN08xLWpEVGlobEdYUlY3RDd2WVRlcUhDWkRBNnQ3VjB5TWppX1F0VXEtUlFNamhGRHgwNG5CTDdCdy1fUm1sUjlqX1VCV0xKUU51UHlxUjlkdWh5a1VkU1VPTGJFQnRObzA1TkpPbG1FZmhxSjhGQi04Qlhsc3ZQZXhLcG9XdzhQMFR2RlViZ0pwOFNwMjEtYzQ?oc=5",
      "priority": false
     }
    ]
