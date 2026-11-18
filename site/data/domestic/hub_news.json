@@ -1,11 +1,18 @@
 {
- "updated_at": "2026-11-17T13:06+09:00",
+ "updated_at": "2026-11-18T12:04+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
  "fallback_keep": 2,
  "hubs": {
   "KB증권|베트남": [
+   {
+    "date": "2026-11-17",
+    "title": "KB증권 베트남법인 계좌서 ’비정상적 출금’ 사고",
+    "src": "연합뉴스TV",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0eUxGa2JnRWJ6R2MxeTRVZm4tYlNmZWw2c203LTJFZEtwek1Va0ozckFmb09NSXVVOGNjWFJDWEFjeFMxc3RVVEFFb1VQdU5MUW1sVV9tU3V3c00zTnJ0MGRHRldMRWc?oc=5",
+    "site": "www.yonhapnewstv.co.kr"
+   },
    {
     "date": "2026-10-23",
     "title": "KBSV và MB mở rộng hợp tác trên nền tảng số",
@@ -42,16 +49,6 @@
     "title_ko": "대출 대출 대출은 거의 8조 9,000억 VND로 증가했으며, KB 증권 베트남은 이자가 15% 이상 증가했다고 보고했습니다",
     "foreign": true,
     "lang": "vi"
-   },
-   {
-    "date": "2026-02-25",
-    "title": "KBSV sắp thay Chủ tịch",
-    "src": "Vietstock",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8xa2tISWRzZ2ZTWHRmTzd3ZUVYTnhLZEQ0bGpROGJKVVdJVVZTV1hRaWNzRTVRY3RjOTB4VEhzdFFUUHRzXzFlM0Z2LWhhV2ZXTWpNakVkVm5Wa0RKR1Bud1dDRlgzUnEzRWtPako2UWR0YWpFdEE?oc=5",
-    "site": "vietstock.vn",
-    "foreign": true,
-    "lang": "vi",
-    "title_ko": "KBSV가 회장을 바꿀 예정이다."
    }
   ],
   "KB증권|인도네시아": [
@@ -206,10 +203,10 @@
    },
    {
     "date": "2026-05-08",
-    "title": "Mirae Asset Securities USA joins DTCC tokenization working group",
-    "src": "The Korea Herald",
-    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9XU0VrS2NhbktEbGoxTENoa0JOeWk4c3dScy1yWnhUaG4xckg4SFZFalE5WFhGQ0tDLXhlT192c2JqR2NXM2tsVlVtNXJyT3ZfcjlxaS1zcw?oc=5",
-    "site": "www.koreaherald.com"
+    "title": "미래에셋증권 미국법인, DTCC ‘토큰화 워킹그룹’ 합류",
+    "src": "서울경제",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ORFB0UTVTWjdDcmcydHZYSldKU0NRYTN5eG1pYUpJZXA1RE01ZDByRmVpeUs5cUNTd2tVa1p5QXFwVTNkSWRrTHE2SGNXTjVva3fSAVNBVV95cUxNMXVjSWh6R1pNVlNhNEtHR3pBbW0xOS1vSjV5SmRVSVc4OU9fMVFERWFlZVg3WndJZXlrVGcyUUgxQlJfS0NmaTRlTVh1UDVPZjFBMA?oc=5",
+    "site": "www.sedaily.com"
    }
   ],
   "미래에셋증권|베트남": [
@@ -660,9 +657,9 @@
     "src": "VnEconomy",
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMDZaR1ZIN29UWUxpTmRLaExYc3M0MHhaWmdWTjNUbFhSOEViamVkbUpvbkZkMXhORkpyU3k5SmVXaWtvZXktNUFkYTFwLVZzZTgyenRnR1BfWm5tb1k2c2pFV0VNMVA1YlQ4NVJGQ1dwNjQ2b0FVeGlXc3JUNGhZSmZDLUpRVFZHWXlBZXphMUprZVJaZW5fZEhR?oc=5",
     "site": "vneconomy.vn",
+    "title_ko": "KIS 증권, 제휴 프로그램 출시, 수수료 최대 80%",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "KIS 증권, 제휴 프로그램 출시, 수수료 최대 80%"
+    "lang": "vi"
    },
    {
     "date": "2026-02-23",
@@ -772,8 +769,5 @@
    }
   ]
  },
- "errors": [
-  "\"Toss Securities\" Singapore (en, 365일): HTTP 429: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: verdana, arial, san",
-  "한화투자증권 인니 (ko, 365일): HTTP 429: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: verdana, arial, sans-serif; backgroun"
- ]
+ "errors": []
 }

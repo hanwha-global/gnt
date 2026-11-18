@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T02:44+09:00",
+ "updated_at": "2026-11-18T12:06+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -157,6 +157,35 @@
   "fca.org.uk"
  ],
  "items": [
+  {
+   "date": "2026-11-18",
+   "time": "11:06",
+   "title": "금투협, 증권사 CEO 11명과 일본 방문…자본시장 혁신 방안 모색",
+   "src": "뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3cDNZVUEtWm8zV0JEN1NBSjJSS3BKVnZDR0ZiOTJwRUFqUl96d0FEaDBoUWZfRFpwOE1VYnhjekluT3JGNUVDVTJhR3lVRlpNS3llcHhEbTZUaWdyZWlNbNIBeEFVX3lxTE1RLTdrODhINkNqaElIUmh5Q25mVTVPYnY5MV8ybFQ2anBvcFIwRWYtTjdpVDVWNjlJQWFFQjRCbW1FdFRobGM4N2xWTEcyOXlhZkpQV2ppRmoxSXo1VWU5REwxZ05JRDlvR2k0UE9Vd2hNV3RmWVlySQ?oc=5",
+   "site": "www.newsis.com",
+   "firms": []
+  },
+  {
+   "date": "2026-11-18",
+   "time": "09:14",
+   "title": "이지스운용, 하나증권·딜로이트 안진과 패밀리오피스 시장 진출",
+   "src": "아시아경제",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5YakEzdVNsVURydjlINzhsNjE0V3hxM1BQR0Q4dnd4ejZaU1g4MEh2Sk5RdTRtVk5LRkhNYXlybHRtc3VkUFYzbG5NcTJ3UGtQM2tTMzdFSkVXU19ucF9wWA?oc=5",
+   "site": "www.asiae.co.kr",
+   "firms": [
+    "하나증권"
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "time": "07:35",
+   "title": "[디지털자산 2.0]코인거래소 인수부터 토큰화까지…증권사 디지털자산 쟁탈전",
+   "src": "아시아경제",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPaVluUVlKQ0RGZFJISkpzQ3RyV09PMnlWTjNhY05lcE1lUmFlUFlOdmdTbEhKMVlBbXd2cEo5djV5NjQ0bG5xYmowcWRreUhSU0RSYUlYSzhDRlFrTmRnSUZ3?oc=5",
+   "site": "core.asiae.co.kr",
+   "firms": []
+  },
   {
    "date": "2026-11-17",
    "time": "17:01",
@@ -612,7 +641,7 @@
    "time": "16:00",
    "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
    "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUU?oc=5",
    "site": "www.yna.co.kr",
    "firms": [
     "미래에셋증권"
@@ -764,39 +793,6 @@
    "src": "아시아경제",
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NcElndzBqVXJIbjF2WS0yVWt2Nm9Tb3lsdHRUTGNJekJIUmhraFhrYlloZVhhUjZuYTdJV2VoMHNPNUJXUHVlN1NBdlk2bnU0MXVJTUg3ZHhxcDV6c1IyYw?oc=5",
    "site": "www.asiae.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "time": "14:35",
-   "title": "박현주號 미래에셋, 해외 M&A '재시동'…日·中으로 영토 확장",
-   "src": "글로벌이코노믹",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUWFrTnIxNkhMOVFIdG1yMWYxblBjVnd1TE9hVzZlZjBZOHJoTTdBdDBpZWg3bFRab3NrZE9OdTFBWkliSVMtQWUyTy1DWmZkQjhPVzVDOFJQcDQ3S3NtTnh2MDgzcnY3M0JvdEZMbklzWm1PQWt5UEE3UDduLUFGdVRTYzh0ckVh?oc=5",
-   "site": "www.g-enews.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "time": "14:13",
-   "title": "‘라이선스 장벽’ M&A로 넘는다…미래에셋, 일본 증권사 인수 발표",
-   "src": "헤럴드경제",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJQ0VpTUpSU3VabGM2TDltSW56M3JMUW5XVjlKTHRqemhmdFRmaHhBRlhYMmdJOGFaUXN4TkNZY1N0dkZaVGYtTno4ME1mbHRhZWpqeTZB?oc=5",
-   "site": "biz.heraldcorp.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "time": "11:26",
-   "title": "미래에셋, 日 증권사 인수…‘라이선스 장벽’ M&A로 돌파",
-   "src": "헤럴드경제",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYU1hLYk5aZjZLR2ExZHVwV0h2azI1ZVdhNTluV3ZHQ3Y3Y1FuY04tODNmdzBXcDRoaXpSTDdwaTlwVGhuUEdTNzFTbExQM0lVMGFzM0R3?oc=5",
-   "site": "biz.heraldcorp.com",
    "firms": [
     "미래에셋증권"
    ]
