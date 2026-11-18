@@ -1,9 +1,23 @@
 {
- "updated": "2026-11-17T04:17:42+00:00",
+ "updated": "2026-11-18T03:16:43+00:00",
  "keep_days": 30,
  "errors": [],
  "markets": {
   "KR": [
+   {
+    "date": "2026-11-17",
+    "title": "코인거래소 대주주 지분 규제, 일단 유예로 가닥",
+    "src": "매일경제 마켓",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBkYmpaRlZaaFBxc0ttSnIzdE81dkJwdWR6MmQxVEZVVDZYZFd6YWlSV2M2ODk4VHBOR2U0Y2dRTS1GdEI3Nzg4NUVDQXIxUlVkY0E?oc=5",
+    "code": "KR"
+   },
+   {
+    "date": "2026-11-17",
+    "title": "하나금융, 원화 스테이블코인 답안지 10개월 전에 썼다…은행 과반 요건에 4곳 연합",
+    "src": "녹색경제신문",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1yOFBlUnJVd2pGS2JqVmVnQ09IaEdjcy1pRGw4cDNtY2ZqUjNUOHg5ZmhMSk5UWUVVVmVrQ2VqSWkxQjB5dmVfRkdoMlpRaFR6V1ZCVV9GMmhNMzB1UXVDNHFRWE5XbzBN?oc=5",
+    "code": "KR"
+   },
    {
     "date": "2026-11-17",
     "title": "KB증권·수호아이오, STO 실증 성공…“스테이블코인 연계 검토”",
@@ -45,20 +59,6 @@
     "src": "경인방송 뉴스",
     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fZjU0Nnp6OWxwMFRmNjhvckRCTzFQOVEwYWt1Z0VreUdES3NVdHkyLUpiOTNtNjJpb0t0X0dxWDZESVYxY21SejhXc3FwZjNsWFR2UzczLWU5dXdjVjZPRzJWTDjSAWhBVV95cUxOb0NvS3QweUFxTzM3YldjT1VTTzhxTVJFLUlzMDRfWmNkQm5fdC15dXZ0bFd3bTE2MmtsV2hkZHJkTkN5R3BnV0pwRWh0cFFHbU8ySGRmZFNvNmRSTVF0TEhWMnBOZERneQ?oc=5",
     "code": "KR"
-   },
-   {
-    "date": "2026-11-15",
-    "title": "이억원 금융위원장, 유럽 3개국 방문…AI·스테이블코인 국제 공조 논의",
-    "src": "뉴스1",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE41dm94VG5ERXBkMmptb3ZhQWFhdVg3VkNRQ2R2QnVPRHBHMVdBYUVWTE9qeGpuRW5PSDk4emlES1l0VnR6Y2VMTkZMMkNXaGkxcnZSSWxwRTVjS0NmWFl2VGlB?oc=5",
-    "code": "KR"
-   },
-   {
-    "date": "2026-11-15",
-    "title": "이억원 금융위원장, FSB 총회 참석…AI·스테이블코인 등 현안 논의",
-    "src": "아시아경제",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZZ0dfeVNLaTdiSkdXaVVmZUdZYmQ1My1kQURVQ3pTMkJaMTF1U2M0MHJ5aXVjUDFxci1pcE4ydzd3MG5ycVFMMWVJcmtxeV9EMXE2YUJMa2NRdVNRT2cwMA?oc=5",
-    "code": "KR"
    }
   ],
   "US": [
@@ -88,9 +88,23 @@
    },
    {
     "date": "2026-11-17",
+    "title": "Senators Warn SEC's Tokenized Stock Rule Has AML Gaps",
+    "src": "CoinMarketCap",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTkRzM2JqOE0yRC1oSGVMbGpUSld3NlkxeG1yWVlqUlpsMTd6ZkdqRGJlTEcybnVVS20yVDAzdDdiOW9peWNHdUVCWHlZeWZDVHNYazhfTElHYUdRNG1qR3h1aS1Hbm9PSnVRYWl6dl9ja0NQVFBmbzloamhOdm9DRWRTR3ZWMERtOGxqcTF3bzkxWk94R1doTnAzOFM?oc=5",
+    "code": "US"
+   },
+   {
+    "date": "2026-11-17",
     "title": "Stablecoin Regulation: What Today’s Forum Means for You",
     "src": "OneSafe",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VaGZ1V1VqU21kU2czXzRMVl9mTmstMWJDRHp4Znp2dW44dzR6R05qb0d6a044S2J2QnBibWpvajFMX1pGenRtRXIxLXYySWF6cGdNU2QtcDhMN0lNTUY5eDR5WE8tNTA4dnd0VTA0YVQ4dw?oc=5",
+    "code": "US"
+   },
+   {
+    "date": "2026-11-17",
+    "title": "CFTC Grants Breakthrough 1st Crypto Derivatives Approval",
+    "src": "TronWeekly",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvNHlibGxkQXdZZXNkd1hlX0c1dUtZMGx4a2FkOWpEY19NSGhSeXVJMVFxbDkwWDhvVE9XN2FrSHp0TWdMZmtjNUxHOXpBb3c4SVRUSWZraUMwVndBejExaWxWR0wyQUJEWkZqaUZHTHQ?oc=5",
     "code": "US"
    },
    {
@@ -106,35 +120,21 @@
     "src": "Analytics Insight",
     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNWZrSU44NGRIdGNRNVA2TXNjSEpFZEtrSjlVNzlPdVo5NWNKSjd3QlpxYnpleGJVZzZDcVAxNzg4VHM1NUtFT3FlMzVkTWsyclFHZENJdWxvX192aUhYRjhRS2VhOHJxQWtyMG5idkl5bDMtcWczRVB3ZjZyOTN0eFBWeXludTc4UDFadVk5eGhCSzc5clQ3enF0eVFlTjlTaGlaM1cxb1FWeG8zbHh1OFM3dnYxcFBlOHAzZE0ta1BFbVJ0bFpXSnV6blFvZ9IB2wFBVV95cUxPdTE4SE53UUdaQlBaUW9XQldfU21GeHZOdzNjeHBTRDA1clJkeTMtVW1FSlpoUmRvcC03cE5FVkFaZy1DY2E4WkNRSGQ4VUhzVHdSM0lfMnRucGI2U2dPZzliMjZ0YUlaUXdEUDB1OUFjMFhVd1VocDJCOFRaa1cyQk1qZGpxOEJBZW9aSUFsVmtERlRqbG9SVkFrZHoyZHlqcnB1MGtCcnkwSmJad21EaTJQT09GWHdlWndFT1prNHhtYWZ2S0taQU16UWxpUzI0S05XOFVaWWp6VHc?oc=5",
     "code": "US"
-   },
-   {
-    "date": "2026-11-14",
-    "title": "CFTC Chair Selig says crypto firms are signing up for his agency's rules as Congress stalls",
-    "src": "Startup Fortune",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYjBCVWdDT1c2MFEtOTJXTDNNT0pVT1JGX2JrMGVkQ1FHV0xKU0cyS3BGVlpzb21sM194ODFyNGN4UzlfN2JxVVFuNlF0MGhzdG5QTlJpakZGMl9xNVhuWkxPVlcxNEo0Ql9ESFpLOHhaRlZOOXBHdFJtTzJaVTh2bDF1cTlWOWphazRjZ2FBV2ZISDNSSGZLaXlNUXhlTG1DcEFBN2p5MXJRS3JBSTBsR3l6MEJUMWE0SEE?oc=5",
-    "code": "US"
-   },
-   {
-    "date": "2026-11-14",
-    "title": "CFTC Chair Said Crypto Exchanges Are Interested in New Rules amid Political Changes in US",
-    "src": "Incrypted",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcG9neDJNaEczQmpuc1dYVnk5Y3piM01rOTVSYnl0cWNuTDBaMU91LUdiY3RHX0QyZEJFUURMcDQ5blJVS3FIbjk1RjkweVJJZEJFV1NjckMzdTJjbEMxQWd1SDRBdTREMHZoUlBlUXU2RlU1a1JPTkt4eTZ5eGhGY0xYZHNLUVdZMTdCQmlUdzZHdmVvMzY5RUFHMXFQYTdERkNMQm81dFM3TnBzdHMtRGFweUpNUQ?oc=5",
-    "code": "US"
    }
   ],
   "JP": [
+   {
+    "date": "2026-11-17",
+    "title": "Japan's Three Megabanks to Launch Yen-Backed Stablecoin Trading in March 2027, Taking On a Market That Is 97% Dollar",
+    "src": "BigGo Finance",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB5QmFZVnJheXFGSGE0RURjVTBhRHgwS0h3Y0dCSHNGUGhOVzVqcDFKdmktOEdCczJuUzUtS3JDVjl6M29qejdkdUdrTTlaVDFtbUY5T3dnSnhzVlVkUUZwSEVTdzFKeVpaeUdTSGpBQWZWRXJ4Tnc?oc=5",
+    "code": "JP"
+   },
    {
     "date": "2026-11-16",
     "title": "SMBC targets March for yen stablecoin as Japan’s megabanks bet on code",
     "src": "Crypto Briefing",
     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ocXpoMFpEbUJjYzEwM25sVU81OTAtN0VWV09QZ0w1Yy1TdTQzYjdYT0w0clM3ZWpWV2RkRnRkSzR0eHZ4U0NRc0lDNlZOeUVMdF9FOFpaMS1rWVJZLXktOFZpRFQ3Q29DLTRrZA?oc=5",
-    "code": "JP"
-   },
-   {
-    "date": "2026-11-16",
-    "title": "Zelle demonstrates confidential $1.25 million stablecoin transfer on Solana",
-    "src": "Crypto Briefing",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9fOFBWeGVZYzZmUm4yVXdYWXJ4cl9oNElkYUVsRDhLeEVBdHozalRJMk54XzBVUXY2UHJYSjlMTWJBamdyeDdpMTRxMFZydW8zSTFyNHdUTnB3RVhVQ0sxaGdqRUFOMFZjajZ5VUpUa01xYlVlWEJDNzltNA?oc=5",
     "code": "JP"
    },
    {
@@ -247,17 +247,17 @@
     "code": "SG"
    },
    {
-    "date": "2026-11-13",
-    "title": "Best Cryptocurrency Exchanges in Singapore to Explore in 2026",
-    "src": "Analytics Insight",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSElTYjhWZlk5akpoWXRGTTFVZE1oRVJvb3JtcEF1SXdWY0piZVQ4UmREVFFHeG5BZVgxR29fLXNUbHNxaWgxVEE2dFBFaWcxWlVmaFh0eF9IXzd4NjN3b0pnRmdmT1IxdE9ibDNOWmpmZEFTMEg1aXBSN3FoekxWdHA5a0xuekVjTERqaTN0czBBTmtmT2s5TlpMSkxnbVozWko3UFRSTGphYXN5YndYUzItZ1hiQVpyWGVjRWxjYUFOMDNLRThqZjhrc3pGOU1IbEJZ0gHTAUFVX3lxTFBISVNiOFZmWTlqSmhZdEZNMVVkTWhFUm9vcm1wQXVJd1ZjSmJlVDhSZERUUUd4bkFlWDFHb18tc1Rsc3FpaDFUQTZ0UEVpZzFaVWZoWHR4X0hfN3g2M3dvSmdGZ2ZPUjF0T2JsM05aamZkQVMwSDVpcFI3cWh6TFZ0cDlrTG56RWNMRGppM3RzMEFOa2ZPazlOWkxKTGdtWjNaSjdQVFJMamFhc3lid1hTMi1nWGJBWnJYZWNFbGNhQU4wM0tFOGpmOGtzekY5TUhsQlk?oc=5",
-    "code": "SG"
-   },
-   {
     "date": "2026-11-07",
     "title": "Singapore’s MAS Issues Crypto Trading Warning Following Binance’s $6.3B Hack",
     "src": "The Crypto Times",
     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaHZ5ZDdBR3JoNkhPS29tRnAxWVNSajBsYVNOdDFwZllhdXdxaXBVSkQzaFVDd25GVFVLU0lTNlgtY0xtYjJWdE1RVW5kdzRiU1lRc2dJTTNxRE9IRDV5bUQxU05lb1hmQ0VXeXp3LXJhUkNQMXR3OWloY0Q2R215SEVFNUd4TWc2RUFIa0NuZ0dJU3p1b1dDbElycnBHQWRpRDRuSGZYekxpUGVjTVhQS1Zn?oc=5",
+    "code": "SG"
+   },
+   {
+    "date": "2026-11-06",
+    "title": "Why MAS licensing is becoming the deciding factor in Singapore's crypto off-ramp market",
+    "src": "Crypto Briefing",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQODJlMmp4bi1jWkJ4b2x0VGFjTTlaaGZYdUxuNWFYaURVaUp5eEJCeGJub281cXVOLXZsRUotelE1MzFDREJqQkFJMDBWWWZkRjd1QndSNzdVaHBtTjZSX09PcnVXVnNGMmpDRmlPOF9zMVNKal9DOGNueUNNcUR4SFBLT0x2R1BnelBTMXVpSzhfWXpmZlJaSkVIYk1qS01ZeUd0cDdlNWJEb0dnaUFKWU5OOFU?oc=5",
     "code": "SG"
    },
    {
