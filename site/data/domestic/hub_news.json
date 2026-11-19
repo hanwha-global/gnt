@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T12:04+09:00",
+ "updated_at": "2026-11-19T11:44+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -223,9 +223,9 @@
     "src": "Vietstock",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLUFBRW5vcEhSQ0lxb0lZb21OVGZqZUhhc09ha1h3SjBTdTJDSDR4cm1XUW85MTVKSHRhdmxYR19fUTlJYzZpbjBnSXhYVjFZYm96ZUJWNk1UaVFRcERqV0h1dFRiT1MyeGhFYlhYTGo3U2p3NERjZElIZWhjazZxRFpKeDAyc2h4Uld5d0Ryc0ptSjRUdWduWUdWcDl6ejMwNHJLV0NkckFqX29fb3pPbWUyalVPczN5bnUtZGQ2LW1vdUU?oc=5",
     "site": "vietstock.vn",
+    "title_ko": "미래에셋증권 (베트남)이 1억 1,350만 우선주를 일반주로 전환하려 한다고요?",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "미래에셋증권 (베트남)이 1억 1,350만 우선주를 일반주로 전환하려 한다고요?"
+    "lang": "vi"
    },
    {
     "date": "2026-02-04",
@@ -371,10 +371,10 @@
    },
    {
     "date": "2026-10-28",
-    "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
-    "src": "매일경제 마켓",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
-    "site": "stock.mk.co.kr"
+    "title": "미래에셋증권 홍콩법인, 자체 기술로 '달러화 디지털 채권' 발행",
+    "src": "연합뉴스",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPeFN1OEpEdUIwSm5EODlvX2xlVFpTQ05xZjNZVmZyTXI4X2ZVeEVFeEVKMUdjZndoaTN0ZElBTFFmLUZHdDZkd1FYRXczcDNNS1RiTDQ5bmpwUUnSAWBBVV95cUxNY3JWdS11ZnpYM2tra1lmVjRXOHVxZmFUOVZPUnlLRVlaR0hHWENnajFKWlFWWnJEa2J6Vlc4NFpkMnRIV3ctVW1ESGhOM1lHckEybkZxcUxQMEJNTThZSWs?oc=5",
+    "site": "www.yna.co.kr"
    },
    {
     "date": "2026-04-16",
@@ -556,13 +556,6 @@
     "src": "데일리안",
     "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPNjQzX0dpZzAyRV9rYkhPaGw2bXZRREZPdVhJUDA4YldIVThRR3FFUGZ1LWxPc3pHRl9qTFJIdDRvdzlTSXhtMnNOc0luRVQxdXNfc28yR1VsNG1rOEpCX2xWbUVMcnlucVZWc1ZNdF96ek0wWGlGYWs2YnlOd1NYblgtRG43VkFLOFhvUmNpMVlsdHJxdWFSVTdIdkJudmpydnVWTHlULUtCNTJ3ME5FWVV2VHNuMHNLM3p5TUV3T0VpSVZYUlVpTGN5a2xkYUZneXFxZ184S3MxaEh1ODB5LXpuZkxDdlhpekFGRVdiTC15N09NRFlneThKU3QzbGFKWE9XMmZVbWs2RllWWk1vVnpNV3N2YzZ0MkFDc0ZZdURYOE54cWcyRFVyTWZOQQ?oc=5",
     "site": "www.dailian.co.kr"
-   },
-   {
-    "date": "2025-11-18",
-    "title": "일본 진출하는 토스증권…NISA 열풍 속 토종 핀테크 시험대",
-    "src": "연합인포맥스",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtQktmRy0tRFBKTXFCV2hPRWFFaks4dXhmRDdydWhyZjR6QkpjNkxUaTBWUnBHQi1OWm9UV1lGNEhGUW9KZFJ4NmtRa1NGQzZ0aDE2Ykd0WDM0QWJDS285Q2ZkNTVBQko4ZTRBMW9Mb3o?oc=5",
-    "site": "news.einfomax.co.kr"
    }
   ],
   "하나증권|미국": [
@@ -589,9 +582,9 @@
     "src": "Thời báo Tài chính Việt Nam",
     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR29vMHZvUlNBR2RhTzJHaDJVbGt5anFVdnlNcTZOd2hpdEJBVWZGcnR2dHFiMjRYOTN4N3AyQ201MEJoMXc2UmhLcGxBR2RKZGQtM0JaNFZacVdBV3RFVVZ2Nkd0RzRnM3hISzBGQ18xX0tCazNYRG1rOXo3aGxtcTRSc19mR3J4ckNUMkd2dDltVGs3MnBPMUFfSTBMN1ZrOWxtQkZGZXluelZOOENwMlBwUQ?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
+    "title_ko": "BIDV 증권(BSC): 3분기 매출은 19% 증가했으며, IB 부문이 크게 기여했습니다",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "BIDV 증권(BSC): 3분기 매출은 19% 증가했으며, IB 부문이 크게 기여했습니다"
+    "lang": "vi"
    },
    {
     "date": "2026-07-21",

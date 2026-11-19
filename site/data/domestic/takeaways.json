@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-18T12:06+09:00",
+ "checked_at": "2026-11-19T11:46+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -47,12 +47,12 @@
     },
     {
      "rule": "R07",
-     "variant": "deriv",
+     "variant": "base",
      "category": "상품·제휴",
-     "text": "FTSE 편입에 맞춰 베트남 법인(PTSV) 외국인 기관 영업과 지수옵션 등 파생상품 준비 검토",
+     "text": "베트남 시장 지위 상향에 맞춰 베트남 법인(PTSV) 외국인 기관 영업·영문 리서치 강화 검토",
      "evidence": [
       "FTSE 신흥시장 편입 2026-09-21 발효",
-      "Vietnam Investment Review - VIR 10/28 보도 등 구조 뉴스 4건(최근 30일)"
+      "Vietnam Investment Review - VIR 10/28 보도 등 구조 뉴스 3건(최근 30일)"
      ],
      "links": [
       {
@@ -88,10 +88,11 @@
      ]
     }
    ],
-   "changed_at": "2026-11-17",
+   "changed_at": "2026-11-19",
    "reason": [
-    "새 뉴스: VnExpress 보도"
+    "판단 변화: +시장 지위 상향"
    ],
+   "last_check": "갱신",
    "candidates": [],
    "history": [
     {
@@ -171,9 +172,21 @@
      "reason": [
       "새 뉴스: VnExpress 보도"
      ]
+    },
+    {
+     "date": "2026-11-19",
+     "fp": "7f85d5f06d97",
+     "rules": [
+      "R01",
+      "R12",
+      "R07",
+      "MKT"
+     ],
+     "reason": [
+      "판단 변화: +시장 지위 상향"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "ID": {
    "country": "인도네시아",
@@ -273,7 +286,6 @@
    "reason": [
     "새 뉴스: Reuters 보도"
    ],
-   "last_check": "갱신",
    "candidates": [
     {
      "rule": "MKT",
@@ -486,7 +498,8 @@
       "새 뉴스: Reuters 보도"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   },
   "SG": {
    "country": "싱가포르",
@@ -629,5 +642,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-11-18"
+ "updated_at": "2026-11-19"
 }
