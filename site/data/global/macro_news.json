@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T20:56+09:00",
+ "updated_at": "2026-11-20T02:30+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,6 +35,14 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-20",
+     "time": "00:00",
+     "title": "[김대호 진단] 빅스텝 금리인상... FOMC 저승사자 \"폴 볼커 역사의 교훈\"",
+     "src": "글로벌이코노믹",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVVJBTzJ2ZlgzNWx6SEZKazBPMDE2V2twZ1Jpd1o4TzFXYktPQWFSNV9ldDNvRzhOdFRhNktJcnQyb1N5dk4zRHM4TnpZQmZ6YndBS1RUOGRlRy1LaVNNSG9MVXdkX19xTXJLY1daWTFEUGdpNmR4eEZGRF9Wb2tBWVNHcFY?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-19",
      "time": "18:52",
      "title": "Treasury yields inch higher as investors weigh the state of the U.S. economy",
@@ -48,14 +56,6 @@
      "title": "연준 10월 의사록 공개…\"금리 추가 인상 필요\"",
      "src": "매일경제TV",
      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9SQ0ttbzV0TGlOaGE4UHl5dWl6aFEyWWlfaUtVR3lnWk5kdjU2eTZubVZ3X19xMTliX1JOZ25OQjFoYzdCcjVQa0o1aVo1ODRrU3dDNi16UGc0d0tEcFNRbVNnS3dLNHd4?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-19",
-     "time": "10:53",
-     "title": "'금리 동결' 10월 FOMC서 추가 금리 인상에 공감대‥'빅스텝' 거론도",
-     "src": "MBC 뉴스",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vbzdrRWMtdWxNMzFNd1UzVnF3bDEwWDI1S3EtQU00ZDJrdFd3dHlpRlN6RHdhRmlqZk0wRDJYVG5lR042N1VYSVF4RTFyckJTWDBJSVhtWUt3MWQwZ3pHWjBHX3o1VVNNOEJiTU13alh1N3pa0gF0QVVfeXFMTWVTSTkxVmxYWG8wc2RqYzI4YjEtMGR3VWR6QTB4UnRuMFhhbDdJQUs4T3VpQXFwLUYxbnlWMVdoUHFQMDhxdmZjYW5oTGs2QTk5Vlk1MjZNMlBVWlF2LWhGWHZxMEpHTlNLbGoxRWh0LWVRa0Q?oc=5",
      "priority": false
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-19",
-     "time": "13:34",
-     "title": "BOJ chief plays down soft consumption data, signals near-term rate hike",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSmVjRlJwOVJHVDNnLUtOR1Fnd0I5cThTck1xd05fWWJxdlJKMjJYVG9LVFI1MTU5NEc1Z0UzWTFzUWZxeFRhalgxS01EWWw0bzc1TUNkM2UtN05CdUN5MXBqY1A3ZklLdXVENVM2VDRVODVja1ZKZzh5QjZMZFdxalVSMlRyVmJ5d3FhMzgwSlBpbnlSczQ3Z2tvNVJNbEc4Q1Jobjg5TmhBaEo0YTJRWjlROHRYTEVXUXJhQWFYVEJEUVRRcGw5clljY1lKcjFPd080?oc=5",
+     "time": "14:01",
+     "title": "BOJ’s Ueda signals further rate hikes, rules out fresh review of ETF sales pace",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQeW9UTzFjcmhKMVFLNGZoakMtVzc1Z1ZJaUFRTm1TUEtRWDFpVmo3bUlTckRwUTRXUlNydmVxczZPNzlDc3BKc0ZWOFI5VnFfODZWelVNM2tGdFVIMW9wMjhMc3JSbHpScUVDRFA2NVpUQ0V4Z1ZVdDFjR3lJbUZuLVlSOXlFTTVwbWVyZHV5ODYwMl9vYlUyVDhqT2VRS0hWTE9ELUJ1ZTg2MXdrVVA2cWk5S1RvMW5WbHRUbEQ4NlpZUEN0a1A1blBzUVRyUXZaME04UWVUM1kxZTl6b0djbGNoT01vWmVzSHdpa1I2bkctZlNwYktRTWdxTdIBgAJBVV95cUxNN2UwbjBlSFdvd3JOd3RyWHJpMjdGMmlySm5uMjlqVVlIdXBvSzF5X1BLYWgweWRVSWxFdktDVHJZX0xBUHUzbmtoaWkzSlRPM2VUM1VYWTN2WlYtb2JPLXNacFV2aVNRU25iSE5ZWW5fRTBaOENOcE1qdjE4TTljdkIwdFk4VGpHOGNQMUR4R3IzdlZIQy14eDF2bFU4VGtETWdZVmtDZkszSEZLSTV0UXpiYlRlRFFGVm91U1kzTVZ6VVNYcVBta0I4Skthb1Zmb2ZaWnlnUWpRTW9yZGFJNUJuQm9TTTZDUTE1czNZZW5EN0NKQzdxVE02SXRCTHY1?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-19",
-     "time": "12:45",
-     "title": "BOJ’s Ueda Unfazed by Consumption Drop, Stays Open to Rate Hike",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSG1JU2I1SGpEeHlsWVZicXVlMFZ2d3ZYNzBBSHZFRDBPU0UxR19YZ29Wbzg3cnMtM0U1QlpyZVJQNlpUYjFLSUVGQW9KSkRFTE4ydUQxRlJNTWk1TF9ERWtyQngyb0lGdW5xNE9DNHFuckREdmxxajd5dnFQSnRURXpRcExSSHRrOUp6UjF2QXBVal8zelgtS045TW4tcndlVHMyRnB2RW02ZXNUd0JPbHd3OA?oc=5",
+     "time": "13:34",
+     "title": "BOJ chief plays down soft consumption data, signals near-term rate hike",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSmVjRlJwOVJHVDNnLUtOR1Fnd0I5cThTck1xd05fWWJxdlJKMjJYVG9LVFI1MTU5NEc1Z0UzWTFzUWZxeFRhalgxS01EWWw0bzc1TUNkM2UtN05CdUN5MXBqY1A3ZklLdXVENVM2VDRVODVja1ZKZzh5QjZMZFdxalVSMlRyVmJ5d3FhMzgwSlBpbnlSczQ3Z2tvNVJNbEc4Q1Jobjg5TmhBaEo0YTJRWjlROHRYTEVXUXJhQWFYVEJEUVRRcGw5clljY1lKcjFPd080?oc=5",
      "priority": false
     }
    ]
@@ -198,9 +198,9 @@
     {
      "date": "2026-11-19",
      "time": "19:32",
-     "title": "Singtel takes the lead as Singapore stocks rise; STI up 0.5%",
+     "title": "Singtel takes the lead as Singapore shares rise; STI up 0.5%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR28yUzRlRVdJckVRNFdmQTdBb2FSTXZjdXJuYXdoMEROazFjVjFOMFFBU2k1LWtGdExfN2NNWVJ5VFBxd2xjdXIzVmxhWDZvcV9MN2tvemJhTWZuN01yMmZjM0pJVHJuSnpxR2FRdEhmSGU5SV9feUdfclNNM2VWU1QtZmo4Nmg1VXA2b0NJQTR5SVRlbG1GNkFTOUhrMjhG?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUEs1ckV2a2hBYzJjRVk3eHZwcDZpXzMtbGR1ZnN3N2lwRUNMdWFtV2tmNmkya3FIa1N2bVVyT3RLX3JRTk54TG9hak5abExCSVFubkJwdEV3SWpYc1Zfak9LTXNfNG81RjhaOUpFYVZrQUJKNktoOVV4aFo1cWhGSExBaDdFU3c0RzJZektqM0lEQkpYMG13NVdHSWFraVFh?oc=5",
      "priority": false
     }
    ]
