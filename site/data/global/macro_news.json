@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T11:46+09:00",
+ "updated_at": "2026-11-19T20:56+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-19",
+     "time": "18:52",
+     "title": "Treasury yields inch higher as investors weigh the state of the U.S. economy",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNkZZT1lIeU1WR19KR0NSTzF2YzA4dnQwalkwYTZKRUpJOW9DWldwNHdfZ1d1eXFmcHU0WHNlTXVocTNaQks3Tm9UalRQUFFGOXp3VkNNdDRHV1Y5czJQZ29fblFmcENfSnZUQWJsU3FjeWNfVTFVM1kxZzlUUWhuOTBB0gGHAUFVX3lxTE0ydXg2dUZCNEs4WnNRc2ZhUmFxR19LRkRzREFLOFc0aWxWSDJFTFJXaEQxdTJtQkg5Smo4azh3bXdRc1VveW9aYk5Rbzc0bGRxZng5dVhQWXhCV0syX09tVHRxclg1b2hiMnJjSzZjSm9LUWh1azA2bjZVbkNkY3cwRmpYT2ZiSQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-19",
+     "time": "16:40",
+     "title": "연준 10월 의사록 공개…\"금리 추가 인상 필요\"",
+     "src": "매일경제TV",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9SQ0ttbzV0TGlOaGE4UHl5dWl6aFEyWWlfaUtVR3lnWk5kdjU2eTZubVZ3X19xMTliX1JOZ25OQjFoYzdCcjVQa0o1aVo1ODRrU3dDNi16UGc0d0tEcFNRbVNnS3dLNHd4?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-19",
      "time": "10:53",
      "title": "'금리 동결' 10월 FOMC서 추가 금리 인상에 공감대‥'빅스텝' 거론도",
      "src": "MBC 뉴스",
      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vbzdrRWMtdWxNMzFNd1UzVnF3bDEwWDI1S3EtQU00ZDJrdFd3dHlpRlN6RHdhRmlqZk0wRDJYVG5lR042N1VYSVF4RTFyckJTWDBJSVhtWUt3MWQwZ3pHWjBHX3o1VVNNOEJiTU13alh1N3pa0gF0QVVfeXFMTWVTSTkxVmxYWG8wc2RqYzI4YjEtMGR3VWR6QTB4UnRuMFhhbDdJQUs4T3VpQXFwLUYxbnlWMVdoUHFQMDhxdmZjYW5oTGs2QTk5Vlk1MjZNMlBVWlF2LWhGWHZxMEpHTlNLbGoxRWh0LWVRa0Q?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-19",
-     "time": "08:26",
-     "title": "미 연준, 추가 금리 인상 공감대...일부 위원 '빅스텝' 거론",
-     "src": "YTN",
-     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ORnhHczc2ZzZDbWZJbG5tNmMwLVVqVDhMTXU0MzFTb05zNkRlbFFqZkRfR2YtVWNtT1AtSkt0MkdTaWRYc3ZJVHN1dmFocDFEVVJIazB0TXVudDJMRlE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-19",
-     "time": "07:49",
-     "title": "美연준, 10월 FOMC서 추가 금리인상 공감대…일부는 ‘빅스텝’ 가능성도",
-     "src": "헤럴드경제",
-     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzT2xDSjRyQzVkNzdIUFl6VmpIdFdncnh5d053OHRKWkVTdzFGNDJrZUVTLWpXZjFsYVdodjM5WE1JZkNXemljZ2VBNnF1Y2plTHBVWlhB?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-18",
-     "time": "23:59",
-     "title": "Nikkei 225 Today Ends 3-Session Slide as Nvidia Earnings Lift Lasertec, Advantest While Most Tokyo Stocks Fall",
-     "src": "International Business Times Australia",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbjlxS0U1UU14NEtkcmZwRnd4TU1lVl9hN0hJVHN0cFhnYU8yZ092cGh3WkpVUFp1NzdaZmlTT090Mlo4ZFc1MzNRM3Exd1ZfT2dSOHpsVzYyc3RyWVE4blVYaTN6blhHWFhFbTNESk1uSUtQSzcwQXREY0ZtQ2VUOV9IbFQ?oc=5",
+     "date": "2026-11-19",
+     "time": "13:34",
+     "title": "BOJ chief plays down soft consumption data, signals near-term rate hike",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSmVjRlJwOVJHVDNnLUtOR1Fnd0I5cThTck1xd05fWWJxdlJKMjJYVG9LVFI1MTU5NEc1Z0UzWTFzUWZxeFRhalgxS01EWWw0bzc1TUNkM2UtN05CdUN5MXBqY1A3ZklLdXVENVM2VDRVODVja1ZKZzh5QjZMZFdxalVSMlRyVmJ5d3FhMzgwSlBpbnlSczQ3Z2tvNVJNbEc4Q1Jobjg5TmhBaEo0YTJRWjlROHRYTEVXUXJhQWFYVEJEUVRRcGw5clljY1lKcjFPd080?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-18",
-     "time": "12:11",
-     "title": "Bank of Japan governor says central bank should keep raising rates",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGRYdzBBY2FDdlFqd1pFaUZxZkxkdlZ5c3g0WmtaU1NOTkhqZHBBcVY2ZVJhV01TeWJVVTl1NWUyUjZ6LVdVTnQyTnREdDJYWFdpLTdTQUFmLUROd0JYQUhlLVVNR2FQUnI4OUFwOFZsUlFSRlVzM3RfeF9iV21rTEljQTlmcm9VcGg0eV9mRm9kbDFmdXRHX1ZrSnNUd001QnF0bnh0Zw?oc=5",
+     "date": "2026-11-19",
+     "time": "12:45",
+     "title": "BOJ’s Ueda Unfazed by Consumption Drop, Stays Open to Rate Hike",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSG1JU2I1SGpEeHlsWVZicXVlMFZ2d3ZYNzBBSHZFRDBPU0UxR19YZ29Wbzg3cnMtM0U1QlpyZVJQNlpUYjFLSUVGQW9KSkRFTE4ydUQxRlJNTWk1TF9ERWtyQngyb0lGdW5xNE9DNHFuckREdmxxajd5dnFQSnRURXpRcExSSHRrOUp6UjF2QXBVal8zelgtS045TW4tcndlVHMyRnB2RW02ZXNUd0JPbHd3OA?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-11-19",
+     "time": "16:03",
+     "title": "Hong Kong stocks sink nearly 2% to four-month low as US-China trade tensions escalate",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOQ2JjQzhZUktEb2dyUlFIM2ZnOVVSRkMtUTVtOWszS2JlazJsaXFqaDk0aTdsZ0hsQzFtcXkwM0hfdDg3d3AyMndIQ1RDa1lSbloyOEs3RnJvX2gtcXpIdndpOTNCREZiMl92Qjg5bTd2SVFodkRFOFJRNDlMck1lYjhyMTQxZFhCNEc0Q1ZlNFJaVUZfcFVfd0lxcTEtNkhfaUNUc00xTnYzOV92OGZPVl9iZktOWTc2U0RTUVU0Vnk5ZU8xai1nUy1FalZTX0lrQjczbDlRR0s4MmhqZ0tBU01hTW5tcnllOGZjVGpYa25tcEXSAfgBQVVfeXFMTzFQNTI5WUJkZEhOVG9VX2tycVZiaWdWcklFMTY1Z2VpMWhSa2pKUHB2T3RHTkJLV0NDQ05VajV4bkgxZ3JueXZrOHUzejB2cktlT0VzQTByXzJmSFBaZUJvUkZ1c2g4YmVpQy1WZ2R1ckl5dHg0c0lCQkx6dFFXSEY3NGxUMVVTaXNSMmt3aGFBRlR2YU5NZjlqbWFwT2pvbkVFbXdlWURHWjN1aHd5NS1yenlkbDVJSWJULVIxcjZKZkxsSGdFaXhBZ2dQN1k2U20yVjNReWktQXVyNUtubVJvU3I3bnpyZ3otbnRaZTZaRV91VHdKNUs?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-18",
      "time": "15:22",
@@ -164,14 +172,6 @@
      "title": "Offshore yuan bond sales top US dollar debt in Hong Kong for first time",
      "src": "South China Morning Post",
      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQT21MQVJPLXRhODN4R1FOanpzeEx1dm1pdFlsNDJIc1hrQzNwZzdJUjl5YkkyWXJfd0U0RF9CMjZQVGRjZXgtbmpibUpoV0F0c0FtQUR1cDZ6clAweHJ4b0QzckVBc3hIN2wxcVZ4QVFGTDFXX18tYmJabUU2cERWb0MyMFQ2VkxYd3d0aTJXaWJiSTE2NlU4UXMtQ1l4by1PNkI3OHlueU5SYk92OG1ZbVMyMERvR195UXNLN1ViZXBJMFo5SFBYMTdUSWxFaXBxcWJBYjRuOURlN0E5SUdCYQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-16",
-     "time": "17:59",
-     "title": "Hong Kong developer New World’s shares tumble 40% on $3.2bn rights issue plan",
-     "src": "Financial Times",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZFlCaUpqLU1SN3ZmYjQtbjF1NTRaaWRQYXVOaFNid1NYaUtOaml2RnIzOF9HUUFES3RGQ3dSTVRELWpSbnZ6aE1Odm1pbC1abHNTbW9JeXhXalBJM0J1ZXptdHBfOUw0cFJZMmtqNzhMYTk0a0ljR2tfaVppVHVPV0FFdUo?oc=5",
      "priority": false
     }
    ]
@@ -196,11 +196,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-18",
-     "time": "19:00",
-     "title": "Singapore stocks closed lower on Wednesday, STI down 1.1%",
+     "date": "2026-11-19",
+     "time": "19:32",
+     "title": "Singtel takes the lead as Singapore stocks rise; STI up 0.5%",
      "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOS1Oc0FvYVFKTnNUTHpJeG9VVkh5ZGxJbEtMczl3b3ZydTlBaVA4UTVKeXM5QXJYdklhbXByV2tSXzhuaGRzLTl5Q3lXaDQ0ZTVaUDliQU8yb1RsTXktTHpseDFZaXh2MHFUYXVTTlFNM0VLUEszcmpKUGh1UkFwNEF3ejJ3SWZadVEtSllQSXVVLTNHblFkTXFWcVJ5cHAtQ3lZTWl3?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR28yUzRlRVdJckVRNFdmQTdBb2FSTXZjdXJuYXdoMEROazFjVjFOMFFBU2k1LWtGdExfN2NNWVJ5VFBxd2xjdXIzVmxhWDZvcV9MN2tvemJhTWZuN01yMmZjM0pJVHJuSnpxR2FRdEhmSGU5SV9feUdfclNNM2VWU1QtZmo4Nmg1VXA2b0NJQTR5SVRlbG1GNkFTOUhrMjhG?oc=5",
      "priority": false
     }
    ]
@@ -225,11 +225,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-18",
-     "time": "23:35",
-     "title": "Goldman Sachs sees RBI repo rate rising by 75 bps to 6.25% by mid-2027",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeFNoTmpTUVFnNmlpUVFTdnVSNFNNTnFKNXcyeXc2a3dyWm41S29pN3hackw2d3hsRVhSZ2ExQ1FLWmJkVE5nMGx1aktaTTRIZ01qRmxLME9WSjNFdmpNSjhuME1faU5DaTFCTTczbEdScV81XzM3VEcxeGhWSTV4Y0JEUFlBT0VaQkdGLXcycGFVNUR1aVczNEdQQUt6ZnlTSjBkYW41dGJGQWNUTWVnSFc5dEF4Y3ptZVRxYVA1QktwNEp2WE81NmlwZlpwYjhqRUHSAdcBQVVfeXFMTnRQMnN0LVZ2TUthVFJuckE5cEJkYXJzSklTMHlidWl0dDJaTVl0Znc1aVR5bkNQOVVzcmlxTEx4d01qYnNlN08xLWpEVGlobEdYUlY3RDd2WVRlcUhDWkRBNnQ3VjB5TWppX1F0VXEtUlFNamhGRHgwNG5CTDdCdy1fUm1sUjlqX1VCV0xKUU51UHlxUjlkdWh5a1VkU1VPTGJFQnRObzA1TkpPbG1FZmhxSjhGQi04Qlhsc3ZQZXhLcG9XdzhQMFR2RlViZ0pwOFNwMjEtYzQ?oc=5",
+     "date": "2026-11-19",
+     "time": "11:11",
+     "title": "Top stocks to watch today: Coal India, Jio Financial, NALCO, Bharat Forge, Sky Gold, Dalmia Bharat and 7 others in focus",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNSS1HQnlNdWJ1MFFvSWNvMlV5eklPUEtkNlppdlQ3bWQxUzhfNTZQSlBxelJ5VmNFQ1FSSElwaVVkbzdlVXVXbXNyU1BNWEl1elVWWVhOTU0zSmtydGZMTnFockpVUTJJVGF3bUxOWmNGUmVrQnYwS1l6Y1o0U2ZOLUdPM2FxdEEwdjFkQ1FUU044VEJlRVlzMkVjRW9CSThyQ1pHSVpEekpQY1ktQzBQTnZzLVdLbEJoa2pyNHZnNDdaSGlyWkhaYVdGeFFxXy1pVi1WR1dSSzBZTFQyTldYOVJDT2RTclVrSmlFVkNlaFRzc3BEeUdoYTVrdGg4YkpfX3hEUDBSeHRpQmZIWXFIZ3Z30gGXAkFVX3lxTE1oZkY5T1ViLWdjQ3dsWGdnd1Z3YXZob3FkWWVaa3NOM2pKTFU2NFdZSzktZXFCOURiMVZ4NjhVaHRxbXg4akw3cEFmLTFWZlF6TnNTbWV0STJQMHQ3alRia3FHQW1PVzQycVhJZXlYaHd2STZzMjk3S2R5NmcxLU9nM0pqX21aUnF5eG5HUEUtQU1wZnQ0X3gwOXFyZU9CVXo2aUtlTFJrMGVXNFQ4RmY4OFlYY2JiV05EaXdsQnNxNVlnSENrb1lJR2h4dXR4aS1TbHdESmJlOGtsb1E3M2g4VDBqSEhzZzZLMDZGdWswbDBSNVlYWWFiNTlLVVE0UFRJYjc5dGtRSWNDQ1czTG5UczVZMnFwaw?oc=5",
      "priority": false
     }
    ]
