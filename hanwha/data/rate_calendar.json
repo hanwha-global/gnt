@@ -23,8 +23,8 @@
    "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
   },
   "CA": {
-   "source": "보조",
-   "count": 2,
+   "source": "공식",
+   "count": 6,
    "url": "https://www.bankofcanada.ca/press/upcoming-events/"
   },
   "KR": {
@@ -183,6 +183,13 @@
    "source": "공식"
   },
   {
+   "date": "2027-01-27",
+   "bank": "CA",
+   "name": "캐나다 BoC",
+   "note": "",
+   "source": "공식"
+  },
+  {
    "date": "2027-01-28",
    "bank": "US",
    "name": "미국 FOMC",
@@ -254,6 +261,13 @@
   },
   {
    "date": "2027-04-28",
+   "bank": "CA",
+   "name": "캐나다 BoC",
+   "note": "",
+   "source": "공식"
+  },
+  {
+   "date": "2027-04-28",
    "bank": "JP",
    "name": "일본 BOJ",
    "note": "4/27~28",
@@ -286,6 +300,13 @@
    "name": "중국 LPR",
    "note": "매월 20일(휴일이면 다음 영업일)",
    "source": "규칙"
+  },
+  {
+   "date": "2027-05-24",
+   "bank": "CA",
+   "name": "캐나다 BoC",
+   "note": "",
+   "source": "공식"
   },
   {
    "date": "2027-06-10",
@@ -328,6 +349,13 @@
    "name": "중국 LPR",
    "note": "매월 20일(휴일이면 다음 영업일)",
    "source": "규칙"
+  },
+  {
+   "date": "2027-07-21",
+   "bank": "CA",
+   "name": "캐나다 BoC",
+   "note": "",
+   "source": "공식"
   },
   {
    "date": "2027-07-22",
