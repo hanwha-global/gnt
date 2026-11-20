@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-19T11:46+09:00",
+ "checked_at": "2026-11-20T11:32+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -92,7 +92,6 @@
    "reason": [
     "판단 변화: +시장 지위 상향"
    ],
-   "last_check": "갱신",
    "candidates": [],
    "history": [
     {
@@ -186,7 +185,8 @@
       "판단 변화: +시장 지위 상향"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   },
   "ID": {
    "country": "인도네시아",

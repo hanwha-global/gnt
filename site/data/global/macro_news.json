@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T02:30+09:00",
+ "updated_at": "2026-11-20T11:32+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,6 +36,14 @@
    "items": [
     {
      "date": "2026-11-20",
+     "time": "07:01",
+     "title": "연준, 추가 금리인상 공감대…물가 압박에 긴축 필요 강조",
+     "src": "애틀랜타 중앙일보",
+     "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkYTF0SERrZ3hvX2FndEpMTjNwZlRxeWN4b0p6VHJmV2c2WWV1ck95RGRnQlZINnVocmZXWE05WTZWQXc5ak9WMUNIQXZYVVk?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-20",
      "time": "00:00",
      "title": "[김대호 진단] 빅스텝 금리인상... FOMC 저승사자 \"폴 볼커 역사의 교훈\"",
      "src": "글로벌이코노믹",
@@ -45,17 +53,9 @@
     {
      "date": "2026-11-19",
      "time": "18:52",
-     "title": "Treasury yields inch higher as investors weigh the state of the U.S. economy",
+     "title": "Treasury yields tick lower as investors weigh the state of the U.S. economy",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNkZZT1lIeU1WR19KR0NSTzF2YzA4dnQwalkwYTZKRUpJOW9DWldwNHdfZ1d1eXFmcHU0WHNlTXVocTNaQks3Tm9UalRQUFFGOXp3VkNNdDRHV1Y5czJQZ29fblFmcENfSnZUQWJsU3FjeWNfVTFVM1kxZzlUUWhuOTBB0gGHAUFVX3lxTE0ydXg2dUZCNEs4WnNRc2ZhUmFxR19LRkRzREFLOFc0aWxWSDJFTFJXaEQxdTJtQkg5Smo4azh3bXdRc1VveW9aYk5Rbzc0bGRxZng5dVhQWXhCV0syX09tVHRxclg1b2hiMnJjSzZjSm9LUWh1azA2bjZVbkNkY3cwRmpYT2ZiSQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-19",
-     "time": "16:40",
-     "title": "연준 10월 의사록 공개…\"금리 추가 인상 필요\"",
-     "src": "매일경제TV",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9SQ0ttbzV0TGlOaGE4UHl5dWl6aFEyWWlfaUtVR3lnWk5kdjU2eTZubVZ3X19xMTliX1JOZ25OQjFoYzdCcjVQa0o1aVo1ODRrU3dDNi16UGc0d0tEcFNRbVNnS3dLNHd4?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-19",
-     "time": "14:01",
-     "title": "BOJ’s Ueda signals further rate hikes, rules out fresh review of ETF sales pace",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQeW9UTzFjcmhKMVFLNGZoakMtVzc1Z1ZJaUFRTm1TUEtRWDFpVmo3bUlTckRwUTRXUlNydmVxczZPNzlDc3BKc0ZWOFI5VnFfODZWelVNM2tGdFVIMW9wMjhMc3JSbHpScUVDRFA2NVpUQ0V4Z1ZVdDFjR3lJbUZuLVlSOXlFTTVwbWVyZHV5ODYwMl9vYlUyVDhqT2VRS0hWTE9ELUJ1ZTg2MXdrVVA2cWk5S1RvMW5WbHRUbEQ4NlpZUEN0a1A1blBzUVRyUXZaME04UWVUM1kxZTl6b0djbGNoT01vWmVzSHdpa1I2bkctZlNwYktRTWdxTdIBgAJBVV95cUxNN2UwbjBlSFdvd3JOd3RyWHJpMjdGMmlySm5uMjlqVVlIdXBvSzF5X1BLYWgweWRVSWxFdktDVHJZX0xBUHUzbmtoaWkzSlRPM2VUM1VYWTN2WlYtb2JPLXNacFV2aVNRU25iSE5ZWW5fRTBaOENOcE1qdjE4TTljdkIwdFk4VGpHOGNQMUR4R3IzdlZIQy14eDF2bFU4VGtETWdZVmtDZkszSEZLSTV0UXpiYlRlRFFGVm91U1kzTVZ6VVNYcVBta0I4Skthb1Zmb2ZaWnlnUWpRTW9yZGFJNUJuQm9TTTZDUTE1czNZZW5EN0NKQzdxVE02SXRCTHY1?oc=5",
+     "date": "2026-11-20",
+     "time": "10:15",
+     "title": "Japan’s core inflation accelerates in October, cementing rate hike expectations",
+     "src": "The Straits Times",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWlljYjY5b01Bek12NnpQZXA4NF93RmJzZ1RjbmZMbFZUd19OeERqUkdLeHNZQlMwdWdjZVFwOFZLNmlNcG5Zd1NlMUNfYk03LXZBb0ZfVGpuRVdNYk5qcjlMMlJTaFpDSS1wRXhLZk1NWnBDMDRlQmNtNHZNMG5sOUU3SEg0b2JpTUk3WEVZWHg4TG9ld1dKQ0xZODlWME11VlpBUlZ1S3hkRlBwdTctRC1BSzFzZw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-19",
-     "time": "13:34",
-     "title": "BOJ chief plays down soft consumption data, signals near-term rate hike",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSmVjRlJwOVJHVDNnLUtOR1Fnd0I5cThTck1xd05fWWJxdlJKMjJYVG9LVFI1MTU5NEc1Z0UzWTFzUWZxeFRhalgxS01EWWw0bzc1TUNkM2UtN05CdUN5MXBqY1A3ZklLdXVENVM2VDRVODVja1ZKZzh5QjZMZFdxalVSMlRyVmJ5d3FhMzgwSlBpbnlSczQ3Z2tvNVJNbEc4Q1Jobjg5TmhBaEo0YTJRWjlROHRYTEVXUXJhQWFYVEJEUVRRcGw5clljY1lKcjFPd080?oc=5",
+     "date": "2026-11-20",
+     "time": "09:47",
+     "title": "Analysis:BOJ's ambiguity on rate hike path could tempt yen bears",
+     "src": "CNA",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObHd5VUtLbTNBc1pwOW5WclFsSW0xaGdja2FROGYxcm5qZWxEZHBRS091MmFwTHdKWVNSaTlCc25VemJRdGpnWGdld24yUXhNY1ZIbWtIVU5DSy1JX3RsVVNFMlplSnBYSmpRZnpoa2loMGNrNS1PWko1S2dqLTNoMy1rSXByck9nU0FoYkxWdlFPOVB2ajg0NXRxem8wYmNYeEI0YnJLVFlZR0xk?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-11-20",
+     "time": "08:00",
+     "title": "CATL, Innolight May Join Hong Kong Tech Index in Major AI Revamp",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUXhzSGVqVW9FRE1lNk8yRWloZWxweDkzQXdnYVRNdmNPdUhSTnZLdGpWVHJWbThKMGxwaDk2NnFIY1dGVnlmQWdGYlNjZXdDV0FJa0p4VWNPWVlteUtwXy0zemVDczhIV1lzVDU5MnZVcDltRHZ1bU5YOFZORW5FcFdtUWJhRkhUTk5iS3pNNU9CWURVOWVjUDdKRnpvdXBERmhkVHVwa0VpSHY1UGJENkVzY2k?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-19",
      "time": "16:03",
@@ -164,14 +172,6 @@
      "title": "China, Hong Kong stocks fall as US-China tech tensions weigh on AI shares",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNkY4eF9hVVEyR1Brd0NkcFl4ckc5V2dtU2pMcGUtQWNTVFhvYlZ2VFZYRi1YSHlOakxYM3hwZDB2b3NtcURVZTNfTlFXX0t0bFJTWVV3MHhNQ1U5LXViVmEyYmVPOWdXeEhoaDlMMUxwdDZnNFVabUZhcW11SGF5U2RUNmZOOTZYMDdRY3hUMFpTMmx6U0RnMW1nZjFkaEZCUUlVTlQ1QnVrNkdwQmhFRTllTWdTNEwwQjRkT0R0bU9xRkVnbVZIU1dJcjVqSDlKQ0tFM2tXUHRKMVRHUTlVR2ZvONIB6AFBVV95cUxQN1JvWDJmcWF6Z2Jsc1NrdUkwdkNqS0Y5NE9hSGNpN1ZKUzVDS3JCQTJYbzFjSHM2d1d5M3ZvYnJ1akx0elVxWThCTmdRZFQtOTBYODI0QVVDN0tSbUdkbkl5NDJ3T1c2ZXNFclpaU0NweEJHaDlrS1Y5WlVNN2U5QkYteTlLV1BxTnlVRkJWVmQ4Mll1RG90RWZXVDk5MGtHUkJ2MFhsTHIzelQ1SVpSeEZCcHp0dXR6SWdLblZwRHFYSzk1NVl1M0VfU3NUTHJ2dFFBNkhpWmMxVkNoVXlrWXVEUVh5Sklh?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-16",
-     "time": "20:00",
-     "title": "Offshore yuan bond sales top US dollar debt in Hong Kong for first time",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQT21MQVJPLXRhODN4R1FOanpzeEx1dm1pdFlsNDJIc1hrQzNwZzdJUjl5YkkyWXJfd0U0RF9CMjZQVGRjZXgtbmpibUpoV0F0c0FtQUR1cDZ6clAweHJ4b0QzckVBc3hIN2wxcVZ4QVFGTDFXX18tYmJabUU2cERWb0MyMFQ2VkxYd3d0aTJXaWJiSTE2NlU4UXMtQ1l4by1PNkI3OHlueU5SYk92OG1ZbVMyMERvR195UXNLN1ViZXBJMFo5SFBYMTdUSWxFaXBxcWJBYjRuOURlN0E5SUdCYQ?oc=5",
      "priority": false
     }
    ]
@@ -225,11 +225,11 @@
      "priority": true
     },
     {
-     "date": "2026-11-19",
-     "time": "11:11",
-     "title": "Top stocks to watch today: Coal India, Jio Financial, NALCO, Bharat Forge, Sky Gold, Dalmia Bharat and 7 others in focus",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNSS1HQnlNdWJ1MFFvSWNvMlV5eklPUEtkNlppdlQ3bWQxUzhfNTZQSlBxelJ5VmNFQ1FSSElwaVVkbzdlVXVXbXNyU1BNWEl1elVWWVhOTU0zSmtydGZMTnFockpVUTJJVGF3bUxOWmNGUmVrQnYwS1l6Y1o0U2ZOLUdPM2FxdEEwdjFkQ1FUU044VEJlRVlzMkVjRW9CSThyQ1pHSVpEekpQY1ktQzBQTnZzLVdLbEJoa2pyNHZnNDdaSGlyWkhaYVdGeFFxXy1pVi1WR1dSSzBZTFQyTldYOVJDT2RTclVrSmlFVkNlaFRzc3BEeUdoYTVrdGg4YkpfX3hEUDBSeHRpQmZIWXFIZ3Z30gGXAkFVX3lxTE1oZkY5T1ViLWdjQ3dsWGdnd1Z3YXZob3FkWWVaa3NOM2pKTFU2NFdZSzktZXFCOURiMVZ4NjhVaHRxbXg4akw3cEFmLTFWZlF6TnNTbWV0STJQMHQ3alRia3FHQW1PVzQycVhJZXlYaHd2STZzMjk3S2R5NmcxLU9nM0pqX21aUnF5eG5HUEUtQU1wZnQ0X3gwOXFyZU9CVXo2aUtlTFJrMGVXNFQ4RmY4OFlYY2JiV05EaXdsQnNxNVlnSENrb1lJR2h4dXR4aS1TbHdESmJlOGtsb1E3M2g4VDBqSEhzZzZLMDZGdWswbDBSNVlYWWFiNTlLVVE0UFRJYjc5dGtRSWNDQ1czTG5UczVZMnFwaw?oc=5",
+     "date": "2026-11-20",
+     "time": "09:16",
+     "title": "RBI probes suspicious off-market trades in illiquid state bonds",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQTA5NUc1clRCUmtfQWFLNFFRRGtSTmdEQkU3N3lzcDJmdE1EcEFyaS1WcXN2SEZRNEdvcjFTOThBR19kd1dZZ3hQZDRaQ1MwQ3FDN0dBV1h2RmxxN2hxZVEyQVhYMzUtUEt0bFNET2xweGw1ZXFQazk5THhiWUx2bVBrX3o4WWVHX2I5MGtkd05hQXkyX2puS1hKek9DSXdkdHVHOUIzWmpNSmdXMENhSW43YVcxVzJWZHRWalNnc3M1M1JaQ1RCbS1Rb9IB0AFBVV95cUxPdENDazBuWVpDeWN1M2R0eGNLMjJRM3JxRnJKal9HSWRSby1sdEhndHlTRFZRZk1SYlBxRlA5YnV4ZmhyamZJV0lvLWxrR0pNUE5xMHNmei00VTN6M0ppS1B6UGVNUGZyUGxLWl83NkhHR0M1SlhyeFk0N2lfTDZxTk1tNEV0V3ozc1ozNVl0S2ZPSWJHV0pUc0kyMXZycU9tcVZ0MmRKT0EySll2bGJHZ0o0UVp0Rzg1cVpGTC1JTGl0TVNBX3Q0anAzbGNRWlM1?oc=5",
      "priority": false
     }
    ]

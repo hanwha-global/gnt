@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T11:44+09:00",
+ "updated_at": "2026-11-20T11:30+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,10 +8,10 @@
   "KB증권|베트남": [
    {
     "date": "2026-11-17",
-    "title": "KB증권 베트남법인 계좌서 ’비정상적 출금’ 사고",
-    "src": "연합뉴스TV",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0eUxGa2JnRWJ6R2MxeTRVZm4tYlNmZWw2c203LTJFZEtwek1Va0ozckFmb09NSXVVOGNjWFJDWEFjeFMxc3RVVEFFb1VQdU5MUW1sVV9tU3V3c00zTnJ0MGRHRldMRWc?oc=5",
-    "site": "www.yonhapnewstv.co.kr"
+    "title": "KB증권 베트남법인 계좌서 '비정상 출금' 사고…현지 당국 조사",
+    "src": "연합인포맥스",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjVmdLbzVrcGtCczBERkw0eTgzSjBabTRzUVhOUm5vRmROYWwyRktGMnNLcnVoRTdjVE5iYTVTM2R1NFVHRlJwU2I2NmlJc0tQZHNEY1ZnOHJBbW9odzdaRFM4MnB2dGxFZ2FKcEZHVk8?oc=5",
+    "site": "news.einfomax.co.kr"
    },
    {
     "date": "2026-10-23",
@@ -123,10 +123,10 @@
    },
    {
     "date": "2022-04-27",
-    "title": "NH투자증권, 런던 현지법인 출범…'글로벌 IB 허브'로 육성",
-    "src": "연합뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5QN1FmXzhia3R4U0RtSWlTdEpNeldpeEl0czJaNkotWXNMTlVpVDMtSFhtWjNqa2RuN1ZiQzR4VFQ4ODJQcU9VRDRURTN3YUVfMXFpTEhJTUVocDDSAWBBVV95cUxPWDZBS2lrZ09GdVBTLUZ0cWdSOU5rN2t0QTRkQmdGY2xadWpyd1lNV2VQSnJSd3RHOXdIRXhEd0N6WEtoX3pITWZWdWRXN2tGU2s2eVZXQjFKeXR3TkVqRVg?oc=5",
-    "site": "www.yna.co.kr",
+    "title": "NH투자증권, 런던 현지법인 'NHIS Europe' 출범",
+    "src": "대한경제",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4a0VOc296SFdXTnpMZ0NmMjRUWTRfQzFiYU5KRTZFaUdYMWI3TWtRUllJakFsQVlrcDUyTnhhMW5vTl9tanVrZDRjVVdYcDF3NktEa2pOajdWR05rOEp2bE1LY3JnN3FESzVLNW1BVTA2U1Nr?oc=5",
+    "site": "www.dnews.co.kr",
     "old": true
    }
   ],
@@ -203,10 +203,10 @@
    },
    {
     "date": "2026-05-08",
-    "title": "미래에셋증권 미국법인, DTCC ‘토큰화 워킹그룹’ 합류",
-    "src": "서울경제",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ORFB0UTVTWjdDcmcydHZYSldKU0NRYTN5eG1pYUpJZXA1RE01ZDByRmVpeUs5cUNTd2tVa1p5QXFwVTNkSWRrTHE2SGNXTjVva3fSAVNBVV95cUxNMXVjSWh6R1pNVlNhNEtHR3pBbW0xOS1vSjV5SmRVSVc4OU9fMVFERWFlZVg3WndJZXlrVGcyUUgxQlJfS0NmaTRlTVh1UDVPZjFBMA?oc=5",
-    "site": "www.sedaily.com"
+    "title": "Mirae Asset Securities USA joins DTCC tokenization working group",
+    "src": "The Korea Herald",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9XU0VrS2NhbktEbGoxTENoa0JOeWk4c3dScy1yWnhUaG4xckg4SFZFalE5WFhGQ0tDLXhlT192c2JqR2NXM2tsVlVtNXJyT3ZfcjlxaS1zcw?oc=5",
+    "site": "www.koreaherald.com"
    }
   ],
   "미래에셋증권|베트남": [
@@ -441,11 +441,13 @@
    },
    {
     "date": "2026-02-04",
-    "title": "Shinhan Sekuritas Pernah Menjadi Penjamin IPO DADA",
-    "src": "Bloomberg Technoz",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNkRISDNjUWZiVFJTcXhhTnFWVFhfVFNLMHpJMkFuN2ZJZUNZeWRieVFRV3pQVjlEMWhWT1g2Q0NQemZnWnFvU0dUT25sVnAwdVlZZF9DRGd2TFNrSXVHT3JNUTdrdWxFRFc3S1hWVlRwOWVmUWlOQW8zLTdwdGZWcVVBcml6dHZ1eXBjRFlMel9EMlZTNnhPUXZiZnp0TXBfdHFV?oc=5",
-    "site": "www.bloombergtechnoz.com",
-    "foreign": true
+    "title": "Video: Kantor Shinhan Sekuritas Digeledah Bareskrim",
+    "src": "CNBC Indonesia",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ2M3OUpvUEJTcnFrS2FaU1JBenNHd0wwM1l4RDVubjY4ZHE2eEpVZ1ctNHpnUURaY3NWeDZmUnFxVGdlc2pkMDJleS1LQV9ySGVvTVdPUzU2TFE2ZVBWRmRLaTA1Mm82TWVjUmZvajVqbGJMaDJtR0hsU1oyRFQ2bkxDUTM4MmxvUktWVFVRMThpTmFLeVVyYXQ4aUZpYlozUHZxaWlCRHhHamN5d2dKMm9n?oc=5",
+    "site": "www.cnbcindonesia.com",
+    "foreign": true,
+    "lang": "id",
+    "title_ko": "영상: Bareskrim이 검색한 신한증권의 사무실"
    }
   ],
   "신한투자증권|홍콩": [
@@ -688,9 +690,10 @@
   "한국투자증권|인도네시아": [
    {
     "date": "2026-02-13",
-    "title": "한투증권 인니법인, 동남아 매체 선정 '최우수 로컬통화 채권상'",
-    "src": "연합뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0WVl5OV9JYVBWTkRjdFdZSkVkT05tSEJEcU40d3lRNWp2Zk1aS2lxU3JwRVZtU05SWXIwN0xjWWdLYURZY2QxWFZzYkUyYlNKQWl5ZGhwd1l5YVHSAWBBVV95cUxPWEt1b3hWeFFkWkNpOTRlLUxOOUNMUFVLZ01GeHR1c01HRnlXMDB5cUtpak5ZOWJfS3VBS2pBdDNCaF8xaUdjd3k4RkE3SXFTampjdnh4Q1hzaEZtQ0hrV1I?oc=5"
+    "title": "한국투자증권 인도네시아법인, '2025 인도네시아 최우수 로컬 통화 채권상' 수상",
+    "src": "글로벌이코노믹",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRERBRmtmZkY1RnNnazVmbW1qY1VCRlF1NDVqaWY2RjA5V280bVJtUkdrSXpqcGNwbzJacDZJcmVMYm5xQWZPMWVmbkt3eFk0M0F6STVYZGkxaWFLWXMyekNWNVNDRmw0TXFyT080WkVlV1cycUJtOG03UFlZYnBXZXpiS1V6WU1N?oc=5",
+    "site": "www.g-enews.com"
    },
    {
     "date": "2026-01-19",
