@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T02:54:29+00:00",
+ "updated": "2026-11-20T02:48:09+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,8 +66,26 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
+    {
+     "date": "2026-11-18",
+     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdmxkYzlFbDJOdjRFZXJfZUl2bW54c1FqY29kUlRoZXpGWGFOcTJLWXdzWkwyZWF5c2lNMFVPQmdFYzBOMHJsOHlJYjNTbS1wckVPQVN2d3ktQ2ZEZ0pUZGNkVEEtT0h4TnZUaC1xTFhTbGxCS3BUdHl6SEZjNWRRLTBhNXZ5dGZsNVo1WERKZFF2Vk10cFpVYmdlWWlKWVF5VGpYbzljcw?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "title": "과기정통부 팀 코리아 로 , ‘ ’ 블록체인 아시아 시장 진출 지원 K-",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1QWmxCaU5ZVVVSUDhfTTZ2QWl1amJaV1c1bWxsbW9EZHVpQlZrYldxSXRVUVFNOEZOdlFZVVlYQ0tHeUQ2ZGs0YXFFWk92OFFWdXdhc3QzOXFlWFg1bl90Z0RQN3JNZWx0UU9XZkhlVkpUVE9hY1E?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-11-16",
      "title": "가상자산사업자에 최고 수준의 보안 강화 주문 - 전체 | 카드/한컷 | 멀티미디어",
@@ -82,15 +100,6 @@
      "title": "가상자산사업자에 대한 최고 수준의 보안 강화 조치를 통해 이용자의 자산과 정보를 철저히 지",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOWluUEphTUtPY1FYTldfalpVSjJhQmp2UHBkZnBYR2Y5ekd1QU9pdWQ4NFhuTU84RkpMdlN0N1VvWnNreXNaSUw1UzI4M2NUa1dMVjJiMHNnZXJvVGhyQVBuMzRGVzl0RDZReG1Ed0N3VWh4NUhuS242TjhEVDNoR01vMGY0MUVSZnIxc0p3?oc=5",
      "src": "금융위원회",
-     "topics": [
-      "vasp"
-     ]
-    },
-    {
-     "date": "2026-11-11",
-     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcTBQR09UamNOLVlFbV9Lb3BDYnRpV1dRMFZLS1lhcHA4WXJKakM1cV95ckktanpjZGYxcHktaEpYc3otUkhwNnhJNW4tUHJ6VTdUUmdheFJ0eEVxNDNhY3VjWlZMMmtsaEM5TUdfTnZUeElwNHRlQTNIdkRlSDc0bTBLOTA3R2tIQ1QtSEk3M3hzeHlza3V0TC0temRVdncwTlRUQ0V6MUx5c0JqeVBSc19yLTJEb1NXS0lrYjlTSEFEYnVyVnZxZFJDZ3o?oc=5",
-     "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
      ]
@@ -381,8 +390,17 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
+    {
+     "date": "2026-11-19",
+     "title": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPQXJ4SzhFRDZBS2VnQkUtWHBUSVdqNXdVRG5BZEtLa21ZYkNadHJuQUg1WHRDalNqVzhLb00xY2JveVhvV0I1TWk1QTJ0MmZiOXlUR2NoYy0yRkZzQmNhQ3hnLURwa0VwVkZzdC1MTl9EV2RJVzNmT0RablVlRnBpTUlLbTdvYV9RT1RfWXBsNEZkamF0NFpDMzVqUElTMnVPSXNKY0E5ZXZ4Szc2TVAxNUIzREFZenBNX2htbXY4ejVNSzROLTl5XzhhaEJvRzFSVUQwamJicmV4dDBSaWRobw?oc=5",
+     "src": "SEC.gov",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-11-02",
      "title": "Frequently Asked Questions on the Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets",
@@ -449,16 +467,34 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
+    {
+     "date": "2026-11-19",
+     "title": "Guardian Tokenised Collateral Framework",
+     "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPd3hqT0NJNEVQX1RqZWM4TVdaYU9wQ2VMRWFEdnRsRlFDT1pUMEpjX3NSRUlLVEJhT0FfaTk1OWljaGVDY2s2eFFXRmx5TEkxbFZ0MFJVT0w4Z3NVY3pLNnRkRjdLRzRnMi15U3BRWmdXSFFZd2gyMkE5YzRxWVhCNS1CUDRLWHJQSEhqVGQ0TkZ4cHJjZWkyRVpacmlyc1ZhZF9qRnNxWC1MNWl4cDRHYVpMODNnR0pjTXNKYS1YSEpHekVWX0hWZ01va2Z4TUM0d3QxRHVVY0J2TGZDUW1laHhBaDQ1RzI2WENoTTl4UGJpLTBPTUpzdXc0UDJMUklZcktydQ?oc=5",
+     "src": "Monetary Authority of Singapore",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "title": "GUIDE ON THE TOKENISATION OF BANK DEPOSITS",
+     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPc0JwSktGcEg0MVhPd0lqbXNrZHplUEk4aC0zMU9WVGF0VDdSdTNLQmJwWmVVamd4UlU4Yzk4Wk9LVTlTek82Y2JLWTV1OEd1SzZRRUFBMDBHTWQ4UU9oWUpxWV9qbXhJTmJBVTZabFdyUHNOM055SVRJeE14dFV5aG5mcE1JN3lkOHVEQ3NvRFJpM3YweldmNnY1MEczVFNMNVRDRTNfU0JFRnl0d3g0UmpSend2WlB3ZlNaSDNqX2FqbVBCTFpVQTZnMC1pbDBfMVlDM1RtUFdUSlRwZk9fZFJ6MXhjVWd2MGR4VDJydmpEM3dwUWpoZ214cnhvYTRLR0lzd2V1NGxIQQ?oc=5",
+     "src": "Monetary Authority of Singapore",
+     "topics": [
+      "sto"
+     ]
+    },
     {
      "date": "2026-11-16",
      "title": "MAS and Deutsche Bundesbank Advance Cross-Border Digital Asset Settlement Connectivity",
@@ -480,7 +516,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-12",
@@ -494,7 +530,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-10-28",
@@ -508,7 +544,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-09",
@@ -612,7 +648,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-12",
@@ -779,7 +815,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-17",
