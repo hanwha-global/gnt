@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T21:08+09:00",
+ "updated_at": "2026-11-21T02:05+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,6 +36,14 @@
    "items": [
     {
      "date": "2026-11-20",
+     "time": "19:21",
+     "title": "Treasury yields are sharply lower as investors flee to safe havens",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE56cmNjcGpHN0dNOXd4NmdpWVJ2Z1R6NUhmRDlXUExPNnVTcU12MnNlSUF4c2FFWmcyRkh3a0k1b0lsZWpIbTM0NzhfOHhpMkhNaWVnSGJ3eTlpVElJNWxzei15VFAycmFfdjVtTTROSDNsUi1aNGtZ0gF8QVVfeXFMTVB4bFI5cDFDUEJCM1RXQnU0UUpxZmh3cHN2ZVY5Rkx6X3dwTjltTy1tR1puQm5kOGF0bzdxMUNqUXd2ZVRQc1VJbkNsVURINk1LXzY4VGQyZmJFSjZuVldEVDlWZlpkZ2RpZGJ5ZE5QUzY5Sm0yeXRBNWNMOQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-20",
      "time": "07:01",
      "title": "연준, 추가 금리인상 공감대…물가 압박에 긴축 필요 강조",
      "src": "애틀랜타 중앙일보",
@@ -48,14 +56,6 @@
      "title": "[김대호 진단] 빅스텝 금리인상... FOMC 저승사자 \"폴 볼커 역사의 교훈\"",
      "src": "글로벌이코노믹",
      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVVJBTzJ2ZlgzNWx6SEZKazBPMDE2V2twZ1Jpd1o4TzFXYktPQWFSNV9ldDNvRzhOdFRhNktJcnQyb1N5dk4zRHM4TnpZQmZ6YndBS1RUOGRlRy1LaVNNSG9MVXdkX19xTXJLY1daWTFEUGdpNmR4eEZGRF9Wb2tBWVNHcFY?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-19",
-     "time": "18:52",
-     "title": "Treasury yields tick lower as investors weigh the state of the U.S. economy",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNkZZT1lIeU1WR19KR0NSTzF2YzA4dnQwalkwYTZKRUpJOW9DWldwNHdfZ1d1eXFmcHU0WHNlTXVocTNaQks3Tm9UalRQUFFGOXp3VkNNdDRHV1Y5czJQZ29fblFmcENfSnZUQWJsU3FjeWNfVTFVM1kxZzlUUWhuOTBB0gGHAUFVX3lxTE0ydXg2dUZCNEs4WnNRc2ZhUmFxR19LRkRzREFLOFc0aWxWSDJFTFJXaEQxdTJtQkg5Smo4azh3bXdRc1VveW9aYk5Rbzc0bGRxZng5dVhQWXhCV0syX09tVHRxclg1b2hiMnJjSzZjSm9LUWh1azA2bjZVbkNkY3cwRmpYT2ZiSQ?oc=5",
      "priority": false
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-20",
-     "time": "10:15",
-     "title": "Japan’s core inflation accelerates in October, cementing rate hike expectations",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWlljYjY5b01Bek12NnpQZXA4NF93RmJzZ1RjbmZMbFZUd19OeERqUkdLeHNZQlMwdWdjZVFwOFZLNmlNcG5Zd1NlMUNfYk03LXZBb0ZfVGpuRVdNYk5qcjlMMlJTaFpDSS1wRXhLZk1NWnBDMDRlQmNtNHZNMG5sOUU3SEg0b2JpTUk3WEVZWHg4TG9ld1dKQ0xZODlWME11VlpBUlZ1S3hkRlBwdTctRC1BSzFzZw?oc=5",
+     "time": "13:53",
+     "title": "Japan Tobacco shares fall 10%; Russia seizure hits 900,000 investors",
+     "src": "Nikkei Asia",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxON2ZpMmF5V3BnU0ZKREt1MWY5NVg5ZU1hYW4xcHRyZEFfN1VmVzZXSGpJMXlyNmJtVTZuazh0cm5CeFdKWW02aHd5bEdnaDZxNk1XbkYxWVNkT2RaU1lHY19JSXBLYVhDUHNqX1IwRkk1UVB1NV9hWVI2bVB5MzNHUnFzX3VENlB6SmV3WllRQ3pNNkQ5SndwSmVKRVhmd3NJOWg3UEo3NGt2OU91TFFSeHNQWm9TcW8?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-20",
-     "time": "09:47",
-     "title": "Analysis:BOJ's ambiguity on rate hike path could tempt yen bears",
-     "src": "CNA",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObHd5VUtLbTNBc1pwOW5WclFsSW0xaGdja2FROGYxcm5qZWxEZHBRS091MmFwTHdKWVNSaTlCc25VemJRdGpnWGdld24yUXhNY1ZIbWtIVU5DSy1JX3RsVVNFMlplSnBYSmpRZnpoa2loMGNrNS1PWko1S2dqLTNoMy1rSXByck9nU0FoYkxWdlFPOVB2ajg0NXRxem8wYmNYeEI0YnJLVFlZR0xk?oc=5",
+     "time": "12:59",
+     "title": "Japan's Nikkei plunges over 4% to seven-month low as AI trade fears hit tech stocks",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQY0xlUlJGSTBmay1WSlV1RnV5cENoTzB3aGxYNkx4ZWhudTkwMlBhV3FqcVVQbndsbG9wS0E2RE9sTXpWTVdNWUxfQ1YxUVFXVkJkaTBFbGx0NmF0Unp2TnNIaDFWTGVNYkg0TGc4R19mRDdaYWgydm1wVFpTUTB0bUIwWmxjb01OQWdnLXZ6YnR1bXBvcjBVQV9aa0txbTd5SmpBUHVVTEp2d2I5RUM5UHJoVlQtUGdZWExaZFFyOGh6YVgyVmNxSy1SWk5ScWlNVGlBRERuWFA0OUZ1Z3ZtWUJJVnFrQXFXMnpN0gH0AUFVX3lxTE1kd1VYYUpoNDVGbzBpU3djVUdzLVhCak9McDlsOFZqbVIyMzZlMTEzNDNBemVnZGNEbzF3SVhNNHBHcGYxTWNEdVktRm9wZnd4dDFsemtaQ1UyQnVqa2V4WGRYMEhOTVBvMDhEMVNaNVBmZVZwX1lNU1AxSDFsUWhiZ05oVndxOWVidkVqWHM0cVBqcU15NU9GcXhDanFMZFZrREdGWXptMVFSQmVhYXlZR1ljcndRODlpTzJQb25kQjJRSzFCXy1YTlBsWU9rSVFDek9hTXlfUVZpLWlIdWZYZmk2RGxMdUNXLTc0R21CejV5SUE?oc=5",
      "priority": false
     }
    ]
@@ -152,26 +152,26 @@
    "items": [
     {
      "date": "2026-11-20",
+     "time": "17:24",
+     "title": "Hong Kong Stocks Fall 20% From 2026 High as AI Selloff Spreads",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbThIazd1YWxmaDlBTURHZmxKVzJPcWpOLXY3eVZGWXlua3ZwMlJxWDItMTJPTGhwakh4aEJSZFNVNE15LXhZazJveTVJQzVKUDZjUmJhNlVqd2FxWHQyQ3c5Zjl0d2FiM2ZMZl9MSXEwMXh5a0xtQXJxSUJIUGJfVmNBbW15XzNiQ211c3NwbXFwS2h5eW85YlJzTlAyNzh4X3JRWEptQ2pYODV4aVhQck45aXI?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-20",
+     "time": "11:32",
+     "title": "Hong Kong stocks fall near 19-month as AI jitters persist",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZ3RUTUZWNlBTSDVVYTNpTlJOUTY0amg4Y2k1V1ZqVk1zSksweFo1Tzg4VDN2T1JIaTVGSGVUTjRTQVNHT2s4NzEzQ1pHaWxOdW12aFhnbXdMcHdyV3EtaWRjNnRaLUhDWHF4NFpreXJiVWRianFGWlN3VFNUbTBDVHBCTllSUFFPeG1mT3YzaXFOc3lxQ1RWd2FiU3VnZS05dUdNV2Iwa04xemR6azJMNW56OVBUT2R0bWNqMjJiTWtsY1ExMEhmMGw4WHhkcElaNzFwM0lrOA?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-20",
      "time": "08:00",
      "title": "CATL, Innolight May Join Hong Kong Tech Index in Major AI Revamp",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUXhzSGVqVW9FRE1lNk8yRWloZWxweDkzQXdnYVRNdmNPdUhSTnZLdGpWVHJWbThKMGxwaDk2NnFIY1dGVnlmQWdGYlNjZXdDV0FJa0p4VWNPWVlteUtwXy0zemVDczhIV1lzVDU5MnZVcDltRHZ1bU5YOFZORW5FcFdtUWJhRkhUTk5iS3pNNU9CWURVOWVjUDdKRnpvdXBERmhkVHVwa0VpSHY1UGJENkVzY2k?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-19",
-     "time": "16:03",
-     "title": "Hong Kong stocks sink nearly 2% to four-month low as US-China trade tensions escalate",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOQ2JjQzhZUktEb2dyUlFIM2ZnOVVSRkMtUTVtOWszS2JlazJsaXFqaDk0aTdsZ0hsQzFtcXkwM0hfdDg3d3AyMndIQ1RDa1lSbloyOEs3RnJvX2gtcXpIdndpOTNCREZiMl92Qjg5bTd2SVFodkRFOFJRNDlMck1lYjhyMTQxZFhCNEc0Q1ZlNFJaVUZfcFVfd0lxcTEtNkhfaUNUc00xTnYzOV92OGZPVl9iZktOWTc2U0RTUVU0Vnk5ZU8xai1nUy1FalZTX0lrQjczbDlRR0s4MmhqZ0tBU01hTW5tcnllOGZjVGpYa25tcEXSAfgBQVVfeXFMTzFQNTI5WUJkZEhOVG9VX2tycVZiaWdWcklFMTY1Z2VpMWhSa2pKUHB2T3RHTkJLV0NDQ05VajV4bkgxZ3JueXZrOHUzejB2cktlT0VzQTByXzJmSFBaZUJvUkZ1c2g4YmVpQy1WZ2R1ckl5dHg0c0lCQkx6dFFXSEY3NGxUMVVTaXNSMmt3aGFBRlR2YU5NZjlqbWFwT2pvbkVFbXdlWURHWjN1aHd5NS1yenlkbDVJSWJULVIxcjZKZkxsSGdFaXhBZ2dQN1k2U20yVjNReWktQXVyNUtubVJvU3I3bnpyZ3otbnRaZTZaRV91VHdKNUs?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-18",
-     "time": "15:22",
-     "title": "China, Hong Kong stocks fall as US-China tech tensions weigh on AI shares",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNkY4eF9hVVEyR1Brd0NkcFl4ckc5V2dtU2pMcGUtQWNTVFhvYlZ2VFZYRi1YSHlOakxYM3hwZDB2b3NtcURVZTNfTlFXX0t0bFJTWVV3MHhNQ1U5LXViVmEyYmVPOWdXeEhoaDlMMUxwdDZnNFVabUZhcW11SGF5U2RUNmZOOTZYMDdRY3hUMFpTMmx6U0RnMW1nZjFkaEZCUUlVTlQ1QnVrNkdwQmhFRTllTWdTNEwwQjRkT0R0bU9xRkVnbVZIU1dJcjVqSDlKQ0tFM2tXUHRKMVRHUTlVR2ZvONIB6AFBVV95cUxQN1JvWDJmcWF6Z2Jsc1NrdUkwdkNqS0Y5NE9hSGNpN1ZKUzVDS3JCQTJYbzFjSHM2d1d5M3ZvYnJ1akx0elVxWThCTmdRZFQtOTBYODI0QVVDN0tSbUdkbkl5NDJ3T1c2ZXNFclpaU0NweEJHaDlrS1Y5WlVNN2U5QkYteTlLV1BxTnlVRkJWVmQ4Mll1RG90RWZXVDk5MGtHUkJ2MFhsTHIzelQ1SVpSeEZCcHp0dXR6SWdLblZwRHFYSzk1NVl1M0VfU3NUTHJ2dFFBNkhpWmMxVkNoVXlrWXVEUVh5Sklh?oc=5",
      "priority": false
     }
    ]
@@ -188,12 +188,12 @@
      "priority": true
     },
     {
-     "date": "2026-10-21",
-     "time": "14:25",
-     "title": "Indonesia stock exchange chief defends MSCI after ex-minister alleges Singapore interference",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQjRBQ1NXX2xOUzVIQmNTOHZtVllkbXZNamI4RVRIeUhhMmhIQ1BhUDZ4eDdwVXU3YlRrRlEzaDg5aGs1X3F0UGkxZUJiWWdvbnZFNWoyTXIxT3V6Q1dJQTVLMVVtdUNKWHJBZUxGaWxZeTkybHBnM1RSWks1N3pzR0RiOWcxWlYyMHZfaG1wd0VpMTd4Ni16ZW1hakxvb2FwYkF0dk9sM2NYak8wR2tidmZTT1MzZWZsRUpYcFhQVXQxSG1wZUNMUXBmUmtIRlk?oc=5",
-     "priority": true
+     "date": "2026-11-20",
+     "time": "19:41",
+     "title": "Singapore stocks fall in tandem with regional downturn; STI down 2.1%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQlNqZkFPYjdYNGZwd0cyWU5UUl9CVVRZb3ZaZ2pzMDVuMnJBYnRRc0Q0VU9CSUdXOW5WcngtT3liY212SzBoU0d6dHBIWl82YXh0VDJmdThvV0o5TkM1amdzNFdUVlQweE5BUXQ0ZEtnNzRYTDQ2MzJzMzdZNlZJcXdfQlFTdmJvQkZVcWJJQjNsQkJxN0hnREdpYnhyLVF4c196cg?oc=5",
+     "priority": false
     },
     {
      "date": "2026-11-19",
@@ -226,10 +226,10 @@
     },
     {
      "date": "2026-11-20",
-     "time": "09:16",
-     "title": "RBI probes suspicious off-market trades in illiquid state bonds",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQTA5NUc1clRCUmtfQWFLNFFRRGtSTmdEQkU3N3lzcDJmdE1EcEFyaS1WcXN2SEZRNEdvcjFTOThBR19kd1dZZ3hQZDRaQ1MwQ3FDN0dBV1h2RmxxN2hxZVEyQVhYMzUtUEt0bFNET2xweGw1ZXFQazk5THhiWUx2bVBrX3o4WWVHX2I5MGtkd05hQXkyX2puS1hKek9DSXdkdHVHOUIzWmpNSmdXMENhSW43YVcxVzJWZHRWalNnc3M1M1JaQ1RCbS1Rb9IB0AFBVV95cUxPdENDazBuWVpDeWN1M2R0eGNLMjJRM3JxRnJKal9HSWRSby1sdEhndHlTRFZRZk1SYlBxRlA5YnV4ZmhyamZJV0lvLWxrR0pNUE5xMHNmei00VTN6M0ppS1B6UGVNUGZyUGxLWl83NkhHR0M1SlhyeFk0N2lfTDZxTk1tNEV0V3ozc1ozNVl0S2ZPSWJHV0pUc0kyMXZycU9tcVZ0MmRKT0EySll2bGJHZ0o0UVp0Rzg1cVpGTC1JTGl0TVNBX3Q0anAzbGNRWlM1?oc=5",
+     "time": "22:54",
+     "title": "Markets gain 2.6% on FPI inflows, rupee rally and cooling crude oil prices",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSktmSjNaMEFCRGluQXh5d0Vwelc4WlRWTGxUX0gxeTdYZ2RMak9jWWJUMTlZQ3JIbndfZDVaa0FHNGhwZG9SaElBZURXcDlLaHBxTkhHMEhtSHlZRVNuX0xKQWwwSmFid2tVczhFdl9pMGNISkR2UnMtTl9GUWhROUQ4S3YtYTZUek5jalo5QU5Da09PODZIY2ExYlZOQjdnU2I4elVtZnRIZ2RvNHZpOVE4UlYzaklkZHN4RVp2Nk5PS0VQZEtObjhFcXlHbkpjNF9RNGNR0gHbAUFVX3lxTE1VOENVNy1sVGptdDNOaldpanYxNkpndmQ2Q3RNVnVmcy1NVkNGdDFpRHlTN1o1MnM3RVI1VUg3Q3hlWnIzLTVhdFhMY29UZ2xSZFZ4bnlWZGItNERZdEhyUnpLd05tSnBvLXB3bmRmY3EwZmY0YTV3OWRxUjctb2s1dFlQZW1SeWNhcFJzYUZtbDlSNVVxV1hyOEh1Vm1QNGEzVnJxYkJyblpFZXhVRGxhZ0xScFBDMWVjR19fUjFaVEFYMWtUZFR6ME1sX0VxNXRQdWZWRmcxYjN0bw?oc=5",
      "priority": false
     }
    ]
@@ -264,16 +264,5 @@
    ]
   }
  },
- "errors": [
-  "KR MSCI 선진지수 한국: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: ve",
-  "KR 한국은행 기준금리: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: verda",
-  "KR 코스피 외국인: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: verdana",
-  "KR MSCI Korea developed market: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { ",
-  "US Fed rate decision: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-famil",
-  "US FOMC 금리: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: verdana",
-  "US US Treasury yields: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-fami",
-  "ID MSCI Indonesia: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: ",
-  "ID Indonesia stocks: HTTP 429: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family",
-  "ID Bank Indonesia rate: HTTP 503: <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-fam"
- ]
+ "errors": []
 }
