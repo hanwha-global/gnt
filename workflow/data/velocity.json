@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T03:13:45+00:00",
+ "updated_at": "2026-11-20T03:00:30+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -60,7 +60,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-11-19",
+  "checked": "2026-11-20",
   "sros": [
    {
     "name": "FINRA",
@@ -280,7 +280,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-11-19",
+  "checked": "2026-11-20",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -309,7 +309,7 @@
   "excess": 114879691.0,
   "required": 10352954.0,
   "audited": false,
-  "checked": "2026-11-19"
+  "checked": "2026-11-20"
  },
  "peers": {
   "date": "2026-06-30",
@@ -719,7 +719,7 @@
  },
  "dart": {
   "corp_code": "00113058",
-  "checked": "2026-11-19",
+  "checked": "2026-11-20",
   "unit": "백만원",
   "periods": [
    {
@@ -1068,10 +1068,17 @@
  },
  "news": [
   {
+   "date": "2026-11-20",
+   "title": "Velocity Clearing | Opening Bell 11-19-26",
+   "src": "Cboe Global Markets",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5TUTNsb0g1UUJqZXRtUmtyMFNQcEI3VXNDTkVLdC1vb2xtVDNCemJnY1d4RWdsYXY5ZTAzUlpNdm1fVTZ6OWdFQTM5aGYxMmM?oc=5",
+   "lang": "en"
+  },
+  {
    "date": "2026-10-21",
    "title": "Velocity Clearing bolsters Global Markets leadership",
-   "src": "Securities Finance Times",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbXpDZ2ZBVEpJakdfYjczV01TellRakh1SVlRM3Zxbi1MVVdZVUhydTVwSnBuOHJ2Q08wVjJPcU9ZbWJhS1k3NmRGdjRYcFVLMHZWcFpDVGlsem9idG9fT1VXMU9KeDdIUGtYdDgtektuNTZTZmZ3dTdjcWtqM05XTmNETG8xZzV3S1ZYVVczQ3dhRkt3bnlidlc2RTNOcHMzQTNv?oc=5",
+   "src": "Asset Servicing Times",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTlhUTGludHAxMHFINVNGTGJGbzMwTzlma1VLVTZLdVgzMEt3ZHg3QkRwYTVneE1ENTVmOWM2RGp4N3Qwd1lOYmMwenBYdWxxU2RsSTlzdnRqaVc4Z19seHJQZVJHVmREdXBUR1JjT0stMWtaa1lVWnlTXzlDdjRlUnJza3JBb29Wd2FtWV9aUGJuTDNtbUU3Zg?oc=5",
    "lang": "en"
   },
   {
@@ -1115,15 +1122,8 @@
    "src": "FX News Group",
    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQb1ZpVFl5U3o3RTVZTlFaZFlrSm1Gc1NEcWNSaFhUbWdUX2IxZTJybWo3RmF6M0w0dXVVQ1JEWXBuaFhYUjhabndHRUpqblFULWtGOWkwWHpNalRRM1lTYmlhYkxXczdLQXBEdEtLSnhvamgtVFFaZmR1akN1TVFJRHo3eWMxSVFvSUpPclBnaWpJbDRzVGxBY0Z4UF9GNTcyZjhUTkJUV3ktRmEzb19QMmp5YzhJVUNmb0VOYVhNaEI4ZVdEU1ZieUNGcU9JaTVGWkhNaXRfRDZrUTlFeTVjdHZGcDRfTGtTMTZZcjRGRDhTOWcz?oc=5",
    "lang": "en"
-  },
-  {
-   "date": "2025-09-23",
-   "title": "Avenue Securities and Velocity Clearing Partner to Deliver UCITS ETF Execution, Clearing, and Custody for Retail Investors",
-   "src": "Business Wire",
-   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQX3Q1bDlJS2g4QXN6ZE9ZOHhwVmV1SEpld0c2MWZYZ2RvNEVYSlgtSENNazd3MGpJRFVnem5GdWFDM1dwbU1yc3BoS3F1OG9NS0xGZGpuV2Y5b0FPWnBnNUpkWjdtRDZseXJsblVnNUNzYmJweU1mZVQ2Y3BBRzFkY2ItUzQtQlVtWHd1TEh2SkRfaDlCQ3hNWWRRZzdwLXhabC1WMTFSWERDWGFvYkJNRnlJaEpCRTQ1c2dkb0hNWGhURldvblJUWDVROG9rN281MGNvQ1RLM0t2VWdvX2lmenM0WXJXUEFzb0U5OWZJckU0aGlndm9ZNmhXc3I0OVBDcm1IQTZlTWE?oc=5",
-   "lang": "en"
   }
  ],
- "news_checked": "2026-11-19",
+ "news_checked": "2026-11-20",
  "errors": []
 }

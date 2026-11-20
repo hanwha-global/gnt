@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T03:13:31+00:00",
+ "updated": "2026-11-20T03:00:18+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,7 +127,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-17",
@@ -156,7 +156,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-09",
@@ -197,11 +197,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-12",
@@ -254,7 +254,7 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-16",
@@ -265,11 +265,11 @@
    ]
   },
   "GB": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-17",
@@ -280,23 +280,47 @@
    ]
   },
   "MN": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
-     "date": "2026-11-17",
-     "title": "Curacao Gaming Licensing Requirements: Comprehensive Overview to Internet Gaming Regulations",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRjlQTi1mU1JaSkJwMGl5d3U1TGk1cVJOVGUwMWUwaDVOREF0WnFSV0dOa2tjcGVtMEptTzZyTm9scERtci1Mc1RiOGdQOVRGZWJLdmFidDREd2lsNUZXZXNMb3pQNFNLNVhkSnFmSDI5czJwWFRKYmhiSU9WMXh2WXpnVHdpZnRiTDRVUDFvM3RYNzhmcXpuV0FfMU1SY2RzM0RKTmt5NnZPRHhISFZGU3RQUjZkRDloRzFGTXp4THhDWDFzNFE?oc=5",
-     "src": "Prefeitura de Prado"
+     "date": "2026-11-20",
+     "title": "ARIZONA MASSAGE THERAPY LICENSE REQUIREMENTS",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQUxyTzBYTDJlM1Jac21zRkdUNTQzNWZCcGsyYnljR3BCUFR4aGRQTGdWcVJkMno3Y212M0hrTzU2VnhjQUNWRnlBdVRybFc2V0UyelJCS3lMc0FvM01RRHVTU1VBWGVtNTJ0Qlh1N3pFTHFyRjVocGRwSk44UkRWWHdDbTdNQTFNUXhmck1DdkhUeVRRamRsaUxnMA?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-19",
+     "title": "MICHIGAN MOPED LICENSE STUDY GUIDE",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVjdoZkJaLUxtWWRZbUVCVEpWXzh3TUlXcWg2RjRDT1ZnUGJJZm50RTV0NzNIQlY0cmFEODBRcTBvZGZzbEYtcnBQRFhQbkxvZHRyNE9UOGhZcWdaWW41UkFUczdEcVVfZUZKMnVidWlVMXpFLURNbXJZUk9rRkcyWHl6cXQ?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-19",
+     "title": "MASS 2 A HOISTING LICENSE PRACTICE TEST",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdExCYms2WU1qYXVtY1VyaVlDT3pmVVdYb1doeDkxbU9QY3NWcVVVSjBCVk9IS3ZrVDJtZUZVaWxNWkRFVnVYdDNGcnYzME9ZRlBncU9YV2ZIelpYZ0ZSWlgzLS1SaDdhY01tNW5WTGpxLVJaX1F0c0ZaaTh3NUo2WXBQdFUwVE52OU1SWQ?oc=5",
+     "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-19",
+     "title": "HOW TO START A BUSINESS BROKERAGE FIRM",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTTNoRjJHS0dxTGVvc1Y3U21hM2R4RGV1cVlMbkpVeXVWcjlIeHlzdXMzbXBMaWQzTkE3TGNjOGc1Vi1VZjJzTnowMVB4VlJudkZXZkl6UU05LXg3b2tyOWpSOGxLRTJaZE1vdkE2M29FQ3o0RGVfRGo2YzU5RVRqQmJMVUJ5STVDX25v?oc=5",
+     "src": "10anos.cdes.gov.br"
     },
     {
      "date": "2026-11-17",
      "title": "DO YOU NEED A LICENSE TO PRACTICE ACUPRESSURE",
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWVdDcF80OGIwQnZhT0xGVFZ2YUIyQ29OMThadW9KS1pDWTlmSU16UDhpckNxaS03dDF5S3A3bHZGTEU3bjFkbG9UaW11VFo5OTB2YTE1cmhOVENyWVFmeHphVUEwTUxEeXNtQmVGd3JvdVA4R1FUZmR6RWFuaXhQV1d6YnJRSHV6OW5zWUs1THFFZEVGRlFtN253?oc=5",
      "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-17",
+     "title": "Curacao Gaming Licensing Requirements: Comprehensive Overview to Internet Gaming Regulations",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRjlQTi1mU1JaSkJwMGl5d3U1TGk1cVJOVGUwMWUwaDVOREF0WnFSV0dOa2tjcGVtMEptTzZyTm9scERtci1Mc1RiOGdQOVRGZWJLdmFidDREd2lsNUZXZXNMb3pQNFNLNVhkSnFmSDI5czJwWFRKYmhiSU9WMXh2WXpnVHdpZnRiTDRVUDFvM3RYNzhmcXpuV0FfMU1SY2RzM0RKTmt5NnZPRHhISFZGU3RQUjZkRDloRzFGTXp4THhDWDFzNFE?oc=5",
+     "src": "Prefeitura de Prado"
     },
     {
      "date": "2026-11-11",
@@ -457,7 +481,7 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": [
     {
      "date": "2026-11-15",
@@ -468,7 +492,7 @@
    ]
   },
   "KH": {
-   "auto_checked": "2026-11-19",
+   "auto_checked": "2026-11-20",
    "items": []
   }
  }
