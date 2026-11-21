@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T02:05+09:00",
+ "updated_at": "2026-11-21T11:44+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-21",
+     "time": "05:00",
+     "title": "\"11월 한국 증시는 끝났다…12월 FOMC 이후에 증시 돌아설 것\"",
+     "src": "뉴시스",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1nWFNTajVYMm1NOXQ4bHlhcEZKanRNUnhPVk1jdGtUdnlvVDdyVWFURllBRkQ1OHlxbGtSNGk5UHlpbWdMZWNua3ZqRktJbzRUOGNWS2o5SV9rRVAyX1pzeNIBeEFVX3lxTFB3UkpXOWVuem9TWldHNllwRzJLSXJ4bFppR0Y0T3hGYWJfTG1BVTkwdjhFYU9VTl91eFBrTWR4QXJyX0R1VG5HN1BDZHlqV2hQUl9WU3I2WFMxZG9yTk1wdEc5c1Q2SEJZWTZyVzNLSWpFampXUDNaaQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-21",
+     "time": "02:19",
+     "title": "Fed's Cook says rate hikes needed to lower high inflation",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNV0pwMURCc1diYXRGTmtCaC0tNnZac3RIMEtTT1BCMGxpZ093OTRFdVJpRGx4TW5YRENNTWxpN0dYLTZpQ0ZXOC1sby1jNUtYbVNseHFWN2J3MGFuQjNwa3lOR2F4S1JicENRMzQ1ZWlDMkRyRzk5eG5IcVFpQXkyS0kzYU15a1RCWXNwWERBVFRmbUFZbE80WHhKUmVoejA?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-20",
      "time": "19:21",
-     "title": "Treasury yields are sharply lower as investors flee to safe havens",
+     "title": "Treasury yields move sharply lower as investors flee to safe havens",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE56cmNjcGpHN0dNOXd4NmdpWVJ2Z1R6NUhmRDlXUExPNnVTcU12MnNlSUF4c2FFWmcyRkh3a0k1b0lsZWpIbTM0NzhfOHhpMkhNaWVnSGJ3eTlpVElJNWxzei15VFAycmFfdjVtTTROSDNsUi1aNGtZ0gF8QVVfeXFMTVB4bFI5cDFDUEJCM1RXQnU0UUpxZmh3cHN2ZVY5Rkx6X3dwTjltTy1tR1puQm5kOGF0bzdxMUNqUXd2ZVRQc1VJbkNsVURINk1LXzY4VGQyZmJFSjZuVldEVDlWZlpkZ2RpZGJ5ZE5QUzY5Sm0yeXRBNWNMOQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-20",
-     "time": "07:01",
-     "title": "연준, 추가 금리인상 공감대…물가 압박에 긴축 필요 강조",
-     "src": "애틀랜타 중앙일보",
-     "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkYTF0SERrZ3hvX2FndEpMTjNwZlRxeWN4b0p6VHJmV2c2WWV1ck95RGRnQlZINnVocmZXWE05WTZWQXc5ak9WMUNIQXZYVVk?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-20",
-     "time": "00:00",
-     "title": "[김대호 진단] 빅스텝 금리인상... FOMC 저승사자 \"폴 볼커 역사의 교훈\"",
-     "src": "글로벌이코노믹",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVVJBTzJ2ZlgzNWx6SEZKazBPMDE2V2twZ1Jpd1o4TzFXYktPQWFSNV9ldDNvRzhOdFRhNktJcnQyb1N5dk4zRHM4TnpZQmZ6YndBS1RUOGRlRy1LaVNNSG9MVXdkX19xTXJLY1daWTFEUGdpNmR4eEZGRF9Wb2tBWVNHcFY?oc=5",
      "priority": false
     }
    ]
@@ -151,6 +151,14 @@
    "label": "중국·홍콩",
    "items": [
     {
+     "date": "2026-11-21",
+     "time": "08:15",
+     "title": "Editorial | Hong Kong’s dim sum bond index will sustain global yuan momentum",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSEhjS0ZRa2hhblRaWUJCMlpZWmVDN0NoVXhzQjQ4bmx6OEkwUEhSZWhGWDQ5elQ0Y2R2RTcxVXJ4VjREbHg5T3ZrZ2lTcTFSMzU2aHdJbThfamZ3ZmhPZjh4WEJTV0I4dTBoNVlFb2JLemlKLVU4RlBaaVhNTHNHbkljSm51eEs3RjBZR0NuX1o0R3Z4RjZ3YWdfSFdicmhsUGFuYnVyZ3hWVVlFbnRhbTZoWVlUMlXSAbcBQVVfeXFMUFNCYVZyY0xiN256dVBZVVZyWkpJNUwySnRYVk90WTd3UU9SZV85MzM2S05uQm9nXzNuVElDanpuSEJyMDBwZjctUnhNdjMtcWVqMHdrZTIzcjcxcElteXZuQ0dVeTNLWFNKR1RQX3hkSzNDUHgzdDJvWWhVY1pmQ0lnVTUxOU1IZjlqbndlVmFwZTJBa1c2aW41d0NFaUtwVUQ3dmExMUhCd0IxRlg1RjR0WWlSendr?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-20",
      "time": "17:24",
      "title": "Hong Kong Stocks Fall 20% From 2026 High as AI Selloff Spreads",
@@ -164,14 +172,6 @@
      "title": "Hong Kong stocks fall near 19-month as AI jitters persist",
      "src": "South China Morning Post",
      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZ3RUTUZWNlBTSDVVYTNpTlJOUTY0amg4Y2k1V1ZqVk1zSksweFo1Tzg4VDN2T1JIaTVGSGVUTjRTQVNHT2s4NzEzQ1pHaWxOdW12aFhnbXdMcHdyV3EtaWRjNnRaLUhDWHF4NFpreXJiVWRianFGWlN3VFNUbTBDVHBCTllSUFFPeG1mT3YzaXFOc3lxQ1RWd2FiU3VnZS05dUdNV2Iwa04xemR6azJMNW56OVBUT2R0bWNqMjJiTWtsY1ExMEhmMGw4WHhkcElaNzFwM0lrOA?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-20",
-     "time": "08:00",
-     "title": "CATL, Innolight May Join Hong Kong Tech Index in Major AI Revamp",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUXhzSGVqVW9FRE1lNk8yRWloZWxweDkzQXdnYVRNdmNPdUhSTnZLdGpWVHJWbThKMGxwaDk2NnFIY1dGVnlmQWdGYlNjZXdDV0FJa0p4VWNPWVlteUtwXy0zemVDczhIV1lzVDU5MnZVcDltRHZ1bU5YOFZORW5FcFdtUWJhRkhUTk5iS3pNNU9CWURVOWVjUDdKRnpvdXBERmhkVHVwa0VpSHY1UGJENkVzY2k?oc=5",
      "priority": false
     }
    ]
