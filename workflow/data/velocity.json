@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T03:00:30+00:00",
+ "updated_at": "2026-11-21T03:07:44+00:00",
  "brokercheck": {
   "crd": "126588",
   "name": "VELOCITY CLEARING, LLC",
@@ -60,7 +60,7 @@
     "position": "CO PRESIDENT"
    }
   ],
-  "checked": "2026-11-20",
+  "checked": "2026-11-21",
   "sros": [
    {
     "name": "FINRA",
@@ -280,7 +280,7 @@
     "auto": false
    }
   ],
-  "checked": "2026-11-20",
+  "checked": "2026-11-21",
   "former_names": [
    {
     "name": "QUANTEX CLEARING, LLC",
@@ -309,7 +309,7 @@
   "excess": 114879691.0,
   "required": 10352954.0,
   "audited": false,
-  "checked": "2026-11-20"
+  "checked": "2026-11-21"
  },
  "peers": {
   "date": "2026-06-30",
@@ -715,11 +715,11 @@
     "ok": true
    }
   ],
-  "checked": "2026-11-14"
+  "checked": "2026-11-21"
  },
  "dart": {
   "corp_code": "00113058",
-  "checked": "2026-11-20",
+  "checked": "2026-11-21",
   "unit": "백만원",
   "periods": [
    {
@@ -1124,6 +1124,6 @@
    "lang": "en"
   }
  ],
- "news_checked": "2026-11-20",
+ "news_checked": "2026-11-21",
  "errors": []
 }
