@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T02:57:15+00:00",
+ "updated": "2026-11-22T01:51:43+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": [
     {
      "date": "2026-11-18",
@@ -91,6 +91,15 @@
      "title": "과기정통부 팀 코리아 로 , ‘ ’ 블록체인 아시아 시장 진출 지원 K-",
      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1QWmxCaU5ZVVVSUDhfTTZ2QWl1amJaV1c1bWxsbW9EZHVpQlZrYldxSXRVUVFNOEZOdlFZVVlYQ0tHeUQ2ZGs0YXFFWk92OFFWdXdhc3QzOXFlWFg1bl90Z0RQN3JNZWx0UU9XZkhlVkpUVE9hY1E?oc=5",
      "src": "대한민국 정책브리핑",
+     "topics": [
+      "general"
+     ]
+    },
+    {
+     "date": "2026-11-13",
+     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSGUxRkl0VlVVbm1PcFBuc0tVTkhzMHBfLUJEYnU0QTl6T05pc3lOaHpFZFBmZ3FwTnl5dlFpMUZMUjRmeWpMa2tUS2szQ3VVSjc0Q1RRR1RVNjRiNF9KZkxEU0ZiUDVmZk1OeG9aTzVLdzNqRXVPZk5KTmxyLU9HTjRESnRFSzVreUt3NmxoYkNVSHZaR1AwTkJ6ZlpRZ0pJTF9vMlNR?oc=5",
+     "src": "금융위원회",
      "topics": [
       "general"
      ]
@@ -176,15 +185,6 @@
      "topics": [
       "vasp",
       "tax"
-     ]
-    },
-    {
-     "date": "2026-11-03",
-     "title": "26년 제1차 ｢가상자산위원회｣ 개최",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVg5VWRhcElqbnBWV2cxUFNja2l3Y2VHVlhBZHU2N0FaN3dpZkxjcE5vYVhGTDNxRnJOTVdVYmE3WGJjdHQ2UzgwYlJEblc4YUJ1c1ZOd21qbDBPT1BNalh2Y1RVay10OWJBZ2Y3LXI2aldpeVlOYTRmUjFKYUdVV2FZd1JFc2lWQkhUaVFqdzF3eFFESUJHLUEwVHA1d0p6MFNZ?oc=5",
-     "src": "금융위원회",
-     "topics": [
-      "general"
      ]
     },
     {
@@ -390,7 +390,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": [
     {
      "date": "2026-11-19",
@@ -403,8 +403,8 @@
     },
     {
      "date": "2026-11-19",
-     "title": "Advisor WeChat Capital, Tech Brokerage Asset Alliance Ltd., HB Wealth Advisors, IdeaCrypto Exchange LLC, Convergent Wealth Advisors Inc., RealSimple Crypto Exchange Inc., Associated Wealth Advisors Ltd., and Essential Crypto Exchange",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBjeFBYakJ5bGo1czZKeTJkSjNFYmtxSjYweXkzSlpvWG94QXZsa0tib0stNTBDdnFsalNscVVrMURpb1ltV1c5a012ZHBUdjRpdlFIOEJTZEh5cEJKM3ZvbHBnUkptZWtrd1N3SXVuRTYwejYzZ0QzRG11cw?oc=5",
+     "title": "Advisor WeChat Capital, Tech Brokerage Asset Alliance Ltd., HB Wealth Advisors, IdeaCrypto Exchange LLC, Convergent Wealth Advis",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1tSV9VWG0zNFBxeTRqWWV2Zm1rdWZYa0V6RWl2ZFF1dFdwUHVRV2Z4QUJYUzBoT3NreVhaTzFrN05uNC1JcDZKVEZyOHBBLVNZQ3JkSjZLNzNiN0ZaY1ZUbHNlZmpNU0ZQdnpNNnBGLUNqdXk2TjF2VTBzMWQ?oc=5",
      "src": "SEC.gov",
      "topics": [
       "vasp",
@@ -412,18 +412,18 @@
      ]
     },
     {
-     "date": "2026-11-02",
-     "title": "Frequently Asked Questions on the Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM2NoRHZrWjgtb3BHRzVNMV8tWXd6Y1FTZ1M2ODVITmVlQldXY2FuMUJ3Nnk4R2pydzczS2xySndoOHhHZFBBYmFVTG5wdFdGV0VwY3ZWSzRVSVh0R3k4OHVBdWJ4OGxfN1I1Q0JHOFJCSEszdU1XMkw3Ui01UVVmd1cyeERFSnBmNnNWOW5LOGxnSTgwNHc?oc=5",
+     "date": "2026-11-09",
+     "title": "Crypto Task Force Written Input",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTnVrNWozNmVJNDZFamNyQlctVG9zQkJHWkg2ejNpMmxVLW9YREtNcnZSb0dZZjZpYXk0NDFETnlYR1RuWjFmZG9UT0tZZ2VQcUlGRDNYWjF4bUNNZHBxdl81QUpaTXVHdEJ4Y3JMd0IyQVJCMXlhd0pYdXVKM0ZsWkJqck5rN0w2ZHpnVm1B?oc=5",
      "src": "SEC.gov",
      "topics": [
       "general"
      ]
     },
     {
-     "date": "2026-10-29",
-     "title": "Crypto Task Force Written Input",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTnVrNWozNmVJNDZFamNyQlctVG9zQkJHWkg2ejNpMmxVLW9YREtNcnZSb0dZZjZpYXk0NDFETnlYR1RuWjFmZG9UT0tZZ2VQcUlGRDNYWjF4bUNNZHBxdl81QUpaTXVHdEJ4Y3JMd0IyQVJCMXlhd0pYdXVKM0ZsWkJqck5rN0w2ZHpnVm1B?oc=5",
+     "date": "2026-11-02",
+     "title": "Frequently Asked Questions on the Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM2NoRHZrWjgtb3BHRzVNMV8tWXd6Y1FTZ1M2ODVITmVlQldXY2FuMUJ3Nnk4R2pydzczS2xySndoOHhHZFBBYmFVTG5wdFdGV0VwY3ZWSzRVSVh0R3k4OHVBdWJ4OGxfN1I1Q0JHOFJCSEszdU1XMkw3Ui01UVVmd1cyeERFSnBmNnNWOW5LOGxnSTgwNHc?oc=5",
      "src": "SEC.gov",
      "topics": [
       "general"
@@ -477,15 +477,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": [
     {
      "date": "2026-11-19",
@@ -526,7 +526,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": [
     {
      "date": "2026-11-12",
@@ -540,7 +540,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": [
     {
      "date": "2026-10-28",
@@ -554,7 +554,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": [
     {
      "date": "2026-11-09",
@@ -658,12 +658,21 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": [
+    {
+     "date": "2026-11-18",
+     "title": "The Financial Services and Markets Act 2000 (Cryptoassets) (Miscellaneous Amendments) Regulations 2026",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hbkpSYngtSmVnWGwxMFdmYi1peERkUVg4YTFYTVF3TXVvYWtQM0c0TDZCbW1ObmJvcDRDdUhJRnE0dXc0ZWx5dXFJZXdiTmhfWnF1YUhwMVVLOGc4d0k3UXVkNmdINm43VDBScDA2UGxTUjVsZUk2X3NDbw?oc=5",
+     "src": "Legislation.gov.uk",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-11-12",
      "title": "Crypto Custodian Assistant",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpTnFLZVUyTjNqX042bjZpUUZQd3Zia0tjTGN3NE11bmpQMkFzbXZuZG5CdEd3T3E1NjBpWkhoRzdwRFZ5Qmx0eEM0Y3U5N2dJNHliMU5haVc4TXdZT3pWXzhvOF9lNEFPdFV0TUdZWEpDR2dDbUp4cFpn?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNkszeWQ4TGxMb2xYa0o3TnRlaEZOWGNwWEJkRTE1V1ZuT05BLU5RR3NEbUdoSDFZU2ZKanRyTjVBVm16d0VuUlpQTG1RWXd1cGp6RjV4WlhpLVpZZ3lWbWx0QTJEMG43Y3VYMDVMcWZwUlc4VkhhOFhvWXlqN09hcGNXaw?oc=5",
      "src": "Civil Service Jobs",
      "topics": [
       "broker"
@@ -728,15 +737,6 @@
      "title": "OAuth2 Graph Token",
      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rSjhNWGJMWV9FUHJ4MGFaSldnX2tLUXg4VmtHNlVWNGJVTV96al9LQl8xYjEzVVhiWFpXRGZXdE12Mmc1SzNSYzRVTmRtVU4wZGRhcFFSY0s1ZlFLNWJ0UzJmWjlMQjVaM3RWMXBJck9LSU4yYWpHb05oQWtQQQ?oc=5",
      "src": "Broads Authority",
-     "topics": [
-      "general"
-     ]
-    },
-    {
-     "date": "2026-11-03",
-     "title": "The Financial Services and Markets Act 2000 (Cryptoassets) (Miscellaneous Amendments) Regulations 2026",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9waUlUMHZCOXZ2ZUpORERRVTlIOFRXMDIxOGpsdmRWdWdXZWFaX1JyMV9PTGdlalYtSjB5YUdidk9xS1M3eEliS2haWGNJZWJreEZJd1BZRWJ2MkpIOHNPV1NVcWNtTHJxZ2JWSXpqd2FmQmY5aHh3?oc=5",
-     "src": "Legislation.gov.uk",
      "topics": [
       "general"
      ]
@@ -825,7 +825,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-21",
+   "auto_checked": "2026-11-22",
    "items": [
     {
      "date": "2026-11-20",
