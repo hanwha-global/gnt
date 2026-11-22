@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T11:44+09:00",
+ "updated_at": "2026-11-22T10:31+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -646,6 +646,17 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
+   "title": "미래에셋, 산코증권 인수 임박…日 리테일 공략 나선다",
+   "src": "글로벌이코노믹",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZmN6SGZDWWdJQkI1WmVWVV8taGpONDdxc2JNNVM3Zm8wNEg2eUVtZzdGcEdCWTBoa3NuVnFiTVZ4RUNrUTZYc2dCSHVEejFUSzJEX3NOM3RzODQzaXUyTjZWaHF1SllaNUNBbDBLM24yRTZ6V05QYkZRNWxXdXhYOGVZbzVTNnFf?oc=5",
+   "site": "www.g-enews.com",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
    "title": "Mirae Asset buys Japanese brokerage to break into retail market",
    "src": "The Korea Herald",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51WXN6UElkRXVyUmRFRHBmb3diMGlpMEs5ZGRVb0NNeldrVW1renVkWG9jOUU3Nm43VVB0c1ktQTlIT2NmTHQ1RUV4M3dpcE51M1hDcS1hQQ?oc=5",
@@ -765,17 +776,6 @@
    "src": "데일리안",
    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VWkdud0l0VFplRVRTSUt2Mm9haTY3bXVUSG5HWkM5VnJqU3JDUjVTNHFhWHhwS1c3akg3YzVra1B6Wk5fQWZOYVBMdWM2YTEycWxqUA?oc=5",
    "site": "m.dailian.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "09:25",
-   "title": "미래에셋, 산코증권 인수 임박…日 리테일 공략 나선다",
-   "src": "글로벌이코노믹",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZmN6SGZDWWdJQkI1WmVWVV8taGpONDdxc2JNNVM3Zm8wNEg2eUVtZzdGcEdCWTBoa3NuVnFiTVZ4RUNrUTZYc2dCSHVEejFUSzJEX3NOM3RzODQzaXUyTjZWaHF1SllaNUNBbDBLM24yRTZ6V05QYkZRNWxXdXhYOGVZbzVTNnFf?oc=5",
-   "site": "www.g-enews.com",
    "firms": [
     "미래에셋증권"
    ]

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T11:42+09:00",
+ "updated_at": "2026-11-22T10:29+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,10 +8,10 @@
   "KB증권|베트남": [
    {
     "date": "2026-11-17",
-    "title": "KB증권 베트남법인 계좌서 '비정상 출금' 사고…현지 당국 조사",
-    "src": "연합인포맥스",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjVmdLbzVrcGtCczBERkw0eTgzSjBabTRzUVhOUm5vRmROYWwyRktGMnNLcnVoRTdjVE5iYTVTM2R1NFVHRlJwU2I2NmlJc0tQZHNEY1ZnOHJBbW9odzdaRFM4MnB2dGxFZ2FKcEZHVk8?oc=5",
-    "site": "news.einfomax.co.kr"
+    "title": "KB증권 베트남법인 계좌서 비정상 출금 발생‥현지 당국 조사 중",
+    "src": "MBC 뉴스",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9nNUpadWtPSVRSck85S2xlV3BXcnVRZmVBelZTSnl1RmJXRXduWWJaTENLbFpUUzdMZjZMNVc1bTdYcXRnXy1UZTBTOG5rUmNqcDZMbkVSU042cm5uMVFLS05uX09mdkJrdlFMZTNxd3ljaldS0gF0QVVfeXFMUG1VN3cyRl9TZTZRVmhHejRscmVBZTNXekFaX0dZSTBtTFdYQS1YNXZ1Z3NEc1YzUlpUSjZwVE9lN285Ylh2ZXBoeGxoQjJMN3RJaXFfUTZJSDlITkhmOFo0TWRtZHU0LTVYdVc2ZDdMY2tQRFU?oc=5",
+    "site": "imnews.imbc.com"
    },
    {
     "date": "2026-10-23",
@@ -524,9 +524,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
     "site": "keuangan.kontan.co.id",
-    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요",
     "foreign": true,
-    "lang": "id"
+    "lang": "id",
+    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요"
    }
   ],
   "토스증권|미국": [
@@ -590,9 +590,9 @@
     "src": "Thời báo Tài chính Việt Nam",
     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR29vMHZvUlNBR2RhTzJHaDJVbGt5anFVdnlNcTZOd2hpdEJBVWZGcnR2dHFiMjRYOTN4N3AyQ201MEJoMXc2UmhLcGxBR2RKZGQtM0JaNFZacVdBV3RFVVZ2Nkd0RzRnM3hISzBGQ18xX0tCazNYRG1rOXo3aGxtcTRSc19mR3J4ckNUMkd2dDltVGs3MnBPMUFfSTBMN1ZrOWxtQkZGZXluelZOOENwMlBwUQ?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
-    "title_ko": "BIDV 증권(BSC): 3분기 매출은 19% 증가했으며, IB 부문이 크게 기여했습니다",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "BIDV 증권(BSC): 3분기 매출은 19% 증가했으며, IB 부문이 크게 기여했습니다"
    },
    {
     "date": "2026-07-21",
