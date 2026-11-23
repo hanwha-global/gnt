@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T10:29+09:00",
+ "updated_at": "2026-11-23T10:54+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,10 +8,10 @@
   "KB증권|베트남": [
    {
     "date": "2026-11-17",
-    "title": "KB증권 베트남법인 계좌서 비정상 출금 발생‥현지 당국 조사 중",
-    "src": "MBC 뉴스",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9nNUpadWtPSVRSck85S2xlV3BXcnVRZmVBelZTSnl1RmJXRXduWWJaTENLbFpUUzdMZjZMNVc1bTdYcXRnXy1UZTBTOG5rUmNqcDZMbkVSU042cm5uMVFLS05uX09mdkJrdlFMZTNxd3ljaldS0gF0QVVfeXFMUG1VN3cyRl9TZTZRVmhHejRscmVBZTNXekFaX0dZSTBtTFdYQS1YNXZ1Z3NEc1YzUlpUSjZwVE9lN285Ylh2ZXBoeGxoQjJMN3RJaXFfUTZJSDlITkhmOFo0TWRtZHU0LTVYdVc2ZDdMY2tQRFU?oc=5",
-    "site": "imnews.imbc.com"
+    "title": "KB증권 베트남법인 계좌서 '비정상 출금' 사고…현지 당국 조사",
+    "src": "연합인포맥스",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjVmdLbzVrcGtCczBERkw0eTgzSjBabTRzUVhOUm5vRmROYWwyRktGMnNLcnVoRTdjVE5iYTVTM2R1NFVHRlJwU2I2NmlJc0tQZHNEY1ZnOHJBbW9odzdaRFM4MnB2dGxFZ2FKcEZHVk8?oc=5",
+    "site": "news.einfomax.co.kr"
    },
    {
     "date": "2026-10-23",
@@ -29,9 +29,9 @@
     "src": "Báo VietNamNet",
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTldja0JLeXoyNTdTWEtKQk02RU1pOG5jMWd0bTZwOHN1ak95eG1FRHdrLWh4TTI2N09nX0ZVLXk1ODBWVkZLYjIyVDV4YWhpcFB4MDFzc3RsSmJraFpBTldWNlpFTUt4all0LVVucUJSTnJ3dmtKTWtNdm02U1RoNVEwM29SOUpNSDU0MTJUUHZya3dWdU9TZXQxWWJTVS0xQTJ5ckJPN0FfTXp6?oc=5",
     "site": "vietnamnet.vn",
+    "title_ko": "KBSV와 5년간의 '베트남과 함께 올라가기'의 여정이 APEA에서 기념되었습니다",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "KBSV와 5년간의 '베트남과 함께 올라가기'의 여정이 APEA에서 기념되었습니다"
+    "lang": "vi"
    },
    {
     "date": "2026-10-19",
@@ -365,9 +365,9 @@
    {
     "date": "2026-10-30",
     "title": "[단독]미래에셋 홍콩법인 \"내달초 MAPS에 RWA 거래기능 탑재\"",
-    "src": "이데일리",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVWlwS09OaWg0S3ZpazZLU3hMQk44SFN2U29MQUFYNFpaX1BGNjBYZGNFWFB2N1pfQmt6VGFhZHFBQUkzdFhPVXBvSTZ2ZEx1Tjl5eGY5R2R4MllvTGtnYldWQTktMVY3RG9iMHY4eTdRN01XaHJKSlVNX0VXeFhBeA?oc=5",
-    "site": "www.edaily.co.kr"
+    "src": "이데일리TV",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBIQXZYQ29RejM5WEp3bktyaFFsQkpyZzJOUDhXUFZxWFNwT0RIVmx6OUh1ZDF4ZTM4X2pVOG0yWFFkMWFOeGhRZnJkVDR5ZkdxcXc4NXZhUTVVM1k4R0l6T2Z3bjhSb3ltQ0NvRUk4bExfcUdfYkNGS3ZUQQ?oc=5",
+    "site": "tv.edaily.co.kr"
    },
    {
     "date": "2026-10-28",
@@ -540,10 +540,10 @@
    },
    {
     "date": "2024-07-30",
-    "title": "Toss Securities to launch US subsidiary this year",
-    "src": "The Korea Herald",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96ZzF2TmZna2MwMldLT1JETGdpYl9PNVJCdUZWRk1udW5qMU1jYkUzSEpqZ1pEY1Z1dlNodDdUSGw4MXFhTkdNZl9sdVpTX1lDZzY2aFlB?oc=5",
-    "site": "www.koreaherald.com",
+    "title": "'토스증권의 첫 해외진출' 미국법인 설립…지휘봉은 CFO에",
+    "src": "연합인포맥스",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQRmNRNUpna29hSV9ROF9YWWxfOVdmWDVBc19XQkFjM0tpVWpXWURBcDkwd1B4b01FU3A5eGZtN2k3cmdqTXVXNHl6WXZoNGNoVVd2TE9zYlJzY01hci1JcDJFR3duamVLYWdmWUI1SVA?oc=5",
+    "site": "news.einfomax.co.kr",
     "old": true
    }
   ],
@@ -678,9 +678,9 @@
     "src": "CafeF",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcmlyTUVmRUtFcnBzSU1BcFlpeXY0ZV9LUDhxOUZBdHdDNFBsY3Fydk91a1RhQ2s1UDlEWU94MFJ4YmRwRFFJR3RuRE5MOHdfR2pXXzFvSHdRYmpKbDFnWjhuNVk5aWRWWm1ad3JuUkZPNlF3SXNkRlp3bUR0YTQtckJmamk1ZFFEV1ROM3l2cUlDblJO?oc=5",
     "site": "cafef.vn",
+    "title_ko": "KIS 베트남, 마진 K+, 대출 이자율 연간 5.5%에서 시작하다",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "KIS 베트남, 마진 K+, 대출 이자율 연간 5.5%에서 시작하다"
+    "lang": "vi"
    },
    {
     "date": "2025-12-26",

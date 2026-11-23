@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T10:31+09:00",
+ "updated_at": "2026-11-23T10:56+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -614,9 +614,9 @@
    "date": "2026-10-29",
    "time": "16:00",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
-   "site": "www.mk.co.kr",
+   "src": "매일경제 마켓",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
+   "site": "stock.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -677,10 +677,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
-   "src": "연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
-   "site": "www.yna.co.kr",
+   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
+   "src": "서울경제TV",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
+   "site": "www.sentv.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -688,10 +688,21 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
-   "src": "서울경제TV",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
-   "site": "www.sentv.co.kr",
+   "title": "미래에셋, 日산코증권 인수…日주식거래시장 첫 진출",
+   "src": "SBS Biz",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QSnJGN2Z6eUc2M0hzenNHV3lMS1k4SjV4c3dONWpQSldpdlhpUlh3UnZKekd3bGQwSE0zd3pQWHk2N0JTR0xLX3NVYnRveTNsSFg40gFYQVVfeXFMTkJsbFJrVnF1eUVjczJVSDh0V1B4Zy1OcWtGVE5XakdUTjJvSnBqQTltckp5Ymp5amlrSzZPRlJwbm82UG5yQ0VDR2ctRERjc0V1aGhyMHlINw?oc=5",
+   "site": "biz.sbs.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "日언론 \"미래에셋, 日산코증권 인수…日주식거래시장 첫 진출\"",
+   "src": "연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
+   "site": "www.yna.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -725,17 +736,6 @@
    "src": "서울경제",
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WSEdkdU5adEFOZWlRbklxT3plT01RY3VkcS1KU1ducXhoOEZCQ19TdE1iYTVmZFJKQVo2WTR6Z1pFMVhrRWh1ZVB6MFJ3ZXZsUVHSAVNBVV95cUxPVi1KNGdWeDJZLTFtODdsYTBmR0xkU20xY3ZxQXgxdjdLWmwtbU43UVg1alAwV0dnbGJqMmN5V1JwUTRUUEJEQkwydVFGLW1NRmhnWQ?oc=5",
    "site": "www.sedaily.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
-   "title": "미래에셋, 日산코증권 인수…日주식거래시장 첫 진출",
-   "src": "SBS Biz",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QSnJGN2Z6eUc2M0hzenNHV3lMS1k4SjV4c3dONWpQSldpdlhpUlh3UnZKekd3bGQwSE0zd3pQWHk2N0JTR0xLX3NVYnRveTNsSFg40gFYQVVfeXFMTkJsbFJrVnF1eUVjczJVSDh0V1B4Zy1OcWtGVE5XakdUTjJvSnBqQTltckp5Ymp5amlrSzZPRlJwbm82UG5yQ0VDR2ctRERjc0V1aGhyMHlINw?oc=5",
-   "site": "biz.sbs.co.kr",
    "firms": [
     "미래에셋증권"
    ]
