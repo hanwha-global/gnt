@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T22:20+09:00",
+ "updated_at": "2026-11-24T05:26+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -37,6 +37,14 @@
     {
      "date": "2026-11-23",
      "time": "19:15",
+     "title": "2-year Treasury yield jumps as stocks rebound, investors await New York Fed President Williams speech",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QemJ4Zi1KUVFXdk1NTDJLQWtnQmpPSnBiZTY3ZFV3SmRwZmFFay1kLTZoNk1MclNIZW5SVzh4MzlfRHBZTWR5N003aU9udHVCczNUd3R5SWxmMnIzb3QyS0R6akhuUzFJMlkyT2ZUd9IBdEFVX3lxTE1EVlVKZHJ6WUhjRGtoM2RrSjMtT0ZaanpZeThYZXNkdHRyY2FtNFc3SGJiREt5Rm5fc29DWWtMZ0FKVzNES09RMHBOVjVMY0Y4R0xHdW5ybW9fVW9CenRxWGtwYnRnVUZJQlNJR1RpUk9lbzNU?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-23",
+     "time": "19:15",
      "title": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QemJ4Zi1KUVFXdk1NTDJLQWtnQmpPSnBiZTY3ZFV3SmRwZmFFay1kLTZoNk1MclNIZW5SVzh4MzlfRHBZTWR5N003aU9udHVCczNUd3R5SWxmMnIzb3QyS0R6akhuUzFJMlkyT2ZUd9IBdEFVX3lxTE1EVlVKZHJ6WUhjRGtoM2RrSjMtT0ZaanpZeThYZXNkdHRyY2FtNFc3SGJiREt5Rm5fc29DWWtMZ0FKVzNES09RMHBOVjVMY0Y4R0xHdW5ybW9fVW9CenRxWGtwYnRnVUZJQlNJR1RpUk9lbzNU?oc=5",
@@ -48,14 +56,6 @@
      "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVy1Pa3puQ1RUS0xLT3pTdTBrdUc0Q0J4TkFqMW81cXpOdUpQSU9LV2wtNlJIS19wOG9uMEVEUlZkZUNIQXJBcXdNeWdaV0JiXzF4WGluNWtSaVU4T09reFVtYkc0dXJOZkFLXzFMUGNzOVl1SHRVaG5PR3dvVnpwR3VTbGJibEloRHVzcjQxYWc5UWxZdWR5OWdmdGE5UTh0c1NSRF9vc09YUk1aVHNFNmFVZw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-21",
-     "time": "14:23",
-     "title": "US Treasury yields drop for day and week; AI trade concern spurs safe-haven bid",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOX2NVUzh6dmczN2tWV3I2UkpOS3l0QWtLWXoyM0ZfYXgtSGNGMGR1eGl3NnRVMXY2Vndnb296LUY4VHNZNWd4RFJDeXlpbml2RERoQzk4TnlTSXE5bDdjNDZLaVdabk5FQktRd25OR2RsQ2ZrN3NaVEV4SjBESGxtcjhfMzBNTnVPT3lNRDZ4RnFTODI2dXVXSjhvYUpndDZYdjV2UG9qNS01RjdOMVpmcGNyNXRzd0dpci1vUFBXLWM0MVNkN0M4UW9oQmhxZTZ1bnE2NnhvYjdNWFp5R3hv0gHkAUFVX3lxTE8zbWJaM0JHYUJJa25ZcUIwVDZmMlFfNU1tdzFFYXdISlRWNGRuOTZrUTZuSEd3OEtZbXExTTVkd3FvNHhGZnpWY2Q1OGk3aDQ5VjZTazRPVFZ6cXNLQ1BqZmExZE15Nm93Z1BFRk1ZRnVMbkpTaU0xX0dQWVVzWWZxbzdld3cxMThUTmpvMThGTDNpTnlsd05DQ1Z3SVhfMlljTVFhRWh1RGdrTEZ0cEdlNWRGLWVreFNwNlhHZWpvQ3RGRFhhNms5bzNSWGNYQ0l1QzFnQWFBeTNoYnliaThxSTN5cg?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-23",
-     "time": "19:15",
-     "title": "India Inc rushes to raise $2.7 billion debt ahead of expected RBI rate hike",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMVBOV1JkUG5VWHhvOE9VZEFvalhOUmExSjg4X1Y1SnVSUGt2S21aMUtVcWlsVFlmRFE5bW1veGxJc2NaenlkSk1MLUhOUVoxbzktUUptakFodGpHWm15YTZLQnpxNS1LU3F5M21WOTlLaWd4NlZnd01udUxHRUM2N0huV0l1cHgzUkFnOEVIRjRVaTlmTzJLWlJCWDBOLUg1eGNCTEJkUExiZmZxU0RXaUtwOHhodw?oc=5",
+     "date": "2026-11-24",
+     "time": "03:24",
+     "title": "S&P sees India growing 7% in FY27 and FY28, flags El Nino inflation risk",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNVWJTdHQzZjlBUEFubmQwVXhRWC1QLS1UeDVjaFZXOVY5YmdQUG4wTDB3Ui1FM3BFdzhEc2c1N2tlSWgxOUl6RHNrRmQ0MzNvSEpFVkNiQ2VRZjQ1SUtYUEczREttWVZtM28xZ0tScXVHMWF0YUFEODZGdTM5UkdxM3l4UXVwQmxWNTRCZFpXQi1oNVFtcFExZ1lJQXM2TDh2LVZwOE9kMk1BMG5oQVhZTENxUjVIM0JNVEFnNzBLZk5iV0VvVVZBZHExSW5TYm1CQWo0TkM0X1hybzFsSHRCRdIB5gFBVV95cUxPN2hwenBfRE93eGwzSXJEeWdSZlJWTHlFMXlJX0Z2ZURQRXc1N2hTZ1FVc1NTdXNEeGZuWW1ReHJwM2tjMndrbTRRLU1EbncwT2s3ZlgyZkt1NlNnc21faDYwUGlQaFBQa0JWQzFQMUVTa1NOTmFhenFmZ3ZGTTJwU0UtanNHcEo5VW51THhucnE1VjlPRnpIU3FWR1pnWW9Qdk04RUwxc2dvS3d2Qjk3TzUyTVppRVNtYjF4ZzNXYnd6Y3pxQ3hmNlVrQ3MyNXFWOFkyUl9GVnM1QnBCVGlxQkRsLXF2QQ?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-23",
-     "time": "13:02",
-     "title": "Nifty, Sensex within striking distance of record highs. Will FIIs keep buying after ₹1.3 lakh crore inflow",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNOV9HaWZVZ1lDVFhpT2NDR2RnM0F2TE5KNlJEOGsyZVA5NWxHY2lvcVcwY21Iamc1RlVEYnp6S1VoVmxTU2hyWFIxYnkyZ19JS1RPOXFnbEc0a09lWGhMczQ0aUQ1R0N3dExaeDhnQTA4N1BUbkVYNFdDcDlQdVU2WE5SaWM3Z1VhMHlMdWtSRUctcFVjWEhselhYZUMzRFpjRTl4SlBNcnVXOUlTMVk1OVloaVVSNzhFMS1GZXNTVVZ4dFpsWXo0Wnh1R0hQd1R4WFcwc1hRdjZKYktTQUQ2NVEwbXVXMy1qM25Vek9zN3N6MVB1OElIR1dwWlhzRUQ3T21WTjIyRk5zQdIBjwJBVV95cUxQdnlxTkR5Qk50SzN1dC0yTDRBdmt0Zkw2TDZzRl8xZ0VCaFZOVVJWeE9wRjVtOHpVS05PaUFyRVVZUTNBUjllNUZqOGZSQTM0TUYzaTgzbTN4U1hyUzJ3MDJFZk0wTU94am9SeXBqQ0oycFB1eEtBLWtJRE5DVU56V2p4N08yRC1NYU5BRVNZNlVxaWNmZ2pkNFZtSXczTW94cG1tTmlFaGM0TnJPXzRSbVA3Mnp0YjhyT0VDcThwNXdWbDNJRVRjczJHaG1iVjYtSHpUajRzUUMwRXhGRmdEVVRmdm85ZG1HQjgzY3B0RlB6YmUzdEEwWVhPd2pGNlBZX1dnc0lUY2pWOUtFdVQ4?oc=5",
+     "time": "22:44",
+     "title": "India Inc rushes to raise $2.7 billion debt ahead of expected RBI rate hike",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMVBOV1JkUG5VWHhvOE9VZEFvalhOUmExSjg4X1Y1SnVSUGt2S21aMUtVcWlsVFlmRFE5bW1veGxJc2NaenlkSk1MLUhOUVoxbzktUUptakFodGpHWm15YTZLQnpxNS1LU3F5M21WOTlLaWd4NlZnd01udUxHRUM2N0huV0l1cHgzUkFnOEVIRjRVaTlmTzJLWlJCWDBOLUg1eGNCTEJkUExiZmZxU0RXaUtwOHhodw?oc=5",
      "priority": false
     }
    ]
@@ -254,8 +254,8 @@
      "priority": true
     },
     {
-     "date": "2026-11-17",
-     "time": "10:20",
+     "date": "2026-11-23",
+     "time": "14:57",
      "title": "Beximco Pharma, LafargeHolcim, 4 banks from Bangladesh added to MSCI Frontier Markets Index",
      "src": "The Business Standard",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQnIwUFZzSHVkWUc2SjZMZjY1Wm9aR0U3VzJrNFRIRmxhMXFob2J0c1pRVGZGN1lqSU9NOFNrU21mOVVEdzZELVFGRXJlR1VURDZmbExmeTROMkx2blZIcC1CUTF2X21mN1hFRk5fNTlHcnVxcWFTY1UwVHktU2tCVG1CazVzOFhIYkh6RU5pLXU0RmRmSnBNUkc5d0tsVGVBRHdoSE1WM19JTU92LXY3Sg?oc=5",
