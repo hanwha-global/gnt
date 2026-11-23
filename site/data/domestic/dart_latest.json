@@ -1,23 +1,23 @@
 {
- "updated_at": "2026-11-16T03:52:02+00:00",
+ "updated_at": "2026-11-23T04:47:18+00:00",
  "source": "DART OpenAPI (정기보고서 주요재무·타법인출자현황, 공시목록)",
  "firms": {
   "미래에셋증권": {
    "corp_code": "00111722",
    "financials": {
     "fs_div": "연결",
-    "assets": 195605130,
-    "liabilities": 179355277,
-    "equity": 16249853,
-    "net_income": 2907159,
-    "op_income": 3864913
+    "assets": 165187095,
+    "liabilities": 150539560,
+    "equity": 14647535,
+    "net_income": 2501564,
+    "op_income": 3362657
    },
    "financials_report": {
     "bsns_year": "2026",
-    "reprt_code": "11012",
-    "label": "2026 반기보고서",
-    "rcept_no": "20260814004118",
-    "rcept_dt": "20260814"
+    "reprt_code": "11014",
+    "label": "2026 3분기보고서",
+    "rcept_no": "20261116002051",
+    "rcept_dt": "20261116"
    },
    "financials_annual": {
     "fs_div": "연결",
@@ -587,8 +587,8 @@
     "bsns_year": "2026",
     "reprt_code": "11012",
     "label": "2026 반기보고서",
-    "rcept_no": "20260814002836",
-    "rcept_dt": "20260814"
+    "rcept_no": "20261119000345",
+    "rcept_dt": "20261119"
    },
    "financials_annual": {
     "fs_div": "연결",
@@ -1274,18 +1274,18 @@
    "corp_code": "00164876",
    "financials": {
     "fs_div": "연결",
-    "assets": 102806124,
-    "liabilities": 94585757,
-    "equity": 8220367,
-    "net_income": 801004,
-    "op_income": 1053723
+    "assets": 87710981,
+    "liabilities": 78646908,
+    "equity": 9064073,
+    "net_income": 741866,
+    "op_income": 1434718
    },
    "financials_report": {
     "bsns_year": "2026",
-    "reprt_code": "11012",
-    "label": "2026 반기보고서",
-    "rcept_no": "20260814003716",
-    "rcept_dt": "20260814"
+    "reprt_code": "11014",
+    "label": "2026 3분기보고서",
+    "rcept_no": "20261116001123",
+    "rcept_dt": "20261116"
    },
    "financials_annual": {
     "fs_div": "연결",
@@ -1475,18 +1475,18 @@
    "corp_code": "00138321",
    "financials": {
     "fs_div": "연결",
-    "assets": 72169041,
-    "liabilities": 66124602,
-    "equity": 6044439,
-    "net_income": 577649,
-    "op_income": 748372
+    "assets": 57641603,
+    "liabilities": 51588980,
+    "equity": 6052623,
+    "net_income": 642940,
+    "op_income": 831735
    },
    "financials_report": {
     "bsns_year": "2026",
-    "reprt_code": "11012",
-    "label": "2026 반기보고서",
-    "rcept_no": "20260814001157",
-    "rcept_dt": "20260814"
+    "reprt_code": "11014",
+    "label": "2026 3분기보고서",
+    "rcept_no": "20261116000557",
+    "rcept_dt": "20261116"
    },
    "financials_annual": {
     "fs_div": "연결",
@@ -2081,6 +2081,12 @@
  },
  "feed": [
   {
+   "firm": "한국투자증권",
+   "date": "20261118",
+   "title": "주요사항보고서(유상증자결정)",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000233"
+  },
+  {
    "firm": "삼성증권",
    "date": "20261111",
    "title": "[기재정정]특수관계인에대한출자",
@@ -2097,66 +2103,51 @@
    "date": "20261022",
    "title": "특수관계인에대한출자",
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000501"
-  },
-  {
-   "firm": "키움증권",
-   "date": "20261016",
-   "title": "타법인주식및출자증권취득결정",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800887"
   }
  ],
  "errors": [],
  "diff": {
-  "prev_at": "2026-11-09T03:46:08+00:00",
+  "prev_at": "2026-11-16T03:52:02+00:00",
   "entities_added": [],
   "entities_removed": [],
   "candidates_added": [],
   "rank_moves": [
    {
-    "firm": "키움증권",
+    "firm": "KB증권",
     "from": 6,
+    "to": 4
+   },
+   {
+    "firm": "삼성증권",
+    "from": 4,
     "to": 5
    },
    {
-    "firm": "KB증권",
+    "firm": "키움증권",
     "from": 5,
     "to": 6
    }
   ],
   "new_reports": [
    {
-    "firm": "한국투자증권",
+    "firm": "미래에셋증권",
     "label": "2026 3분기보고서"
    },
    {
-    "firm": "키움증권",
+    "firm": "KB증권",
     "label": "2026 3분기보고서"
    },
    {
-    "firm": "NH투자증권",
-    "label": "2026 3분기보고서"
-   },
-   {
-    "firm": "하나증권",
-    "label": "2026 3분기보고서"
-   },
-   {
-    "firm": "한화투자증권",
+    "firm": "신한투자증권",
     "label": "2026 3분기보고서"
    }
   ],
   "new_filings": [
    {
-    "firm": "삼성증권",
-    "date": "20261111",
-    "title": "[기재정정]특수관계인에대한출자",
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111000291"
-   },
-   {
-    "firm": "삼성증권",
-    "date": "20261111",
-    "title": "[기재정정]특수관계인에대한출자",
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111000279"
+    "firm": "한국투자증권",
+    "date": "20261118",
+    "title": "주요사항보고서(유상증자결정)",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000233"
    }
   ]
  }

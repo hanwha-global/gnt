@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T10:54+09:00",
+ "updated_at": "2026-11-23T13:51+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -8,10 +8,10 @@
   "KB증권|베트남": [
    {
     "date": "2026-11-17",
-    "title": "KB증권 베트남법인 계좌서 '비정상 출금' 사고…현지 당국 조사",
-    "src": "연합인포맥스",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjVmdLbzVrcGtCczBERkw0eTgzSjBabTRzUVhOUm5vRmROYWwyRktGMnNLcnVoRTdjVE5iYTVTM2R1NFVHRlJwU2I2NmlJc0tQZHNEY1ZnOHJBbW9odzdaRFM4MnB2dGxFZ2FKcEZHVk8?oc=5",
-    "site": "news.einfomax.co.kr"
+    "title": "KB증권 베트남법인 계좌서 비정상 출금 발생‥현지 당국 조사 중",
+    "src": "MBC 뉴스",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9nNUpadWtPSVRSck85S2xlV3BXcnVRZmVBelZTSnl1RmJXRXduWWJaTENLbFpUUzdMZjZMNVc1bTdYcXRnXy1UZTBTOG5rUmNqcDZMbkVSU042cm5uMVFLS05uX09mdkJrdlFMZTNxd3ljaldS0gF0QVVfeXFMUG1VN3cyRl9TZTZRVmhHejRscmVBZTNXekFaX0dZSTBtTFdYQS1YNXZ1Z3NEc1YzUlpUSjZwVE9lN285Ylh2ZXBoeGxoQjJMN3RJaXFfUTZJSDlITkhmOFo0TWRtZHU0LTVYdVc2ZDdMY2tQRFU?oc=5",
+    "site": "imnews.imbc.com"
    },
    {
     "date": "2026-10-23",
@@ -337,9 +337,9 @@
     "src": "investor.id",
     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZUtTT3dud2hQNGw1NWYtcHdoNlBJbWlTbUZDMDZFSkl3WnZWeEJ6dm0yMk9kYml5U2hCdmkwdV9QaHVKY1czM1ZMT3F0OXRhVzM5RkUxYk5UdHNyLWpSeFEtcnN0c3pBeUc2TVFRZmlLWFp2RUJaQWdaam1kRm42YnNsT2VFeTFyUUVZTGJyT3JBaUw5TE5DNU05ZE16QklsRFk2dE52UEp6NzhWNGdtd3FjWkE5dzZ2VUpreTRsNzc?oc=5",
     "site": "investor.id",
+    "title_ko": "투자자 요구가 복잡해지고 있으며, 미래에셋증권 자산 관리 서비스 강화",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "투자자 요구가 복잡해지고 있으며, 미래에셋증권 자산 관리 서비스 강화"
+    "lang": "id"
    },
    {
     "date": "2026-08-18",

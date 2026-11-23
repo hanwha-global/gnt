@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T10:56+09:00",
+ "updated_at": "2026-11-23T13:53+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,6 +35,14 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-23",
+     "time": "11:19",
+     "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVy1Pa3puQ1RUS0xLT3pTdTBrdUc0Q0J4TkFqMW81cXpOdUpQSU9LV2wtNlJIS19wOG9uMEVEUlZkZUNIQXJBcXdNeWdaV0JiXzF4WGluNWtSaVU4T09reFVtYkc0dXJOZkFLXzFMUGNzOVl1SHRVaG5PR3dvVnpwR3VTbGJibEloRHVzcjQxYWc5UWxZdWR5OWdmdGE5UTh0c1NSRF9vc09YUk1aVHNFNmFVZw?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-21",
      "time": "14:23",
      "title": "US Treasury yields drop for day and week; AI trade concern spurs safe-haven bid",
@@ -49,14 +57,6 @@
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORTBuejlwS3Nua0szT1dTbnYtSElZYjI2RUg0NnRsVHNlOW1SMTBlUFIxdmtVcnB2TFd0N19aU1RlbzVWREhqYnZmWF9HRG5odm55UUxLMnJzckZpWjh6UHdrZGtZNlBIMVh3cU1QcUNIQlZRNXJMTW54TjdkaVdGbE9yVQ?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-11-21",
-     "time": "06:57",
-     "title": "US Bond market: Why is benchmark 10-year Treasury yield witnessing biggest weekly drop since early April 2",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxOLTZOc2Y1ckZkbFZCY1ByZFFLNFdvV2JfOV9QZDdGT2pTajRwUTROWkNWNUt0TmtPWEZCZVdsWEhJVG82b1FTOHRNV1o4UjF0d0gtZzJQVFhrRC1QYTJqZjFQWFU1VWloSWo2cWp0MDVNRjQ4cTFvUjlpWUxINDZHOWN5UjNKcW5BTWoyRGxtWVJMbUh5VFV0clVWX1A4M1BJV016U3JaajUxWml6eG5aT0RabFhyRmdsdFVqV1pBRVFnVkRhQ2l0SUJUZURaN21MbXZYTGNwQlZaNmdtaUcybkdUVHY5ZkRNcktPNzR4bUQxa3ZLLXhWdzk2V3pzQ053N3JCUzkwVkNCT29qb1VEck5TYjhoUE5IQkxHOU1Vb0JNZDVLVnFFSEpOZ3ZQNkdxMWxZd9IBugJBVV95cUxPR0NDRkpxeHFXdkRJeVRLWVFIWlJIRGZXVTdteDJoeEZQRFRVVDl2WlFJbmUtMXZ6bU52cU1Ya1R3VXFleFVkOFhDUW1QX1l1VzlRLWxpbHBhTXo1a3h5VktEM0Rvc21MU3ZOcWoybDF6djNIZEVxazdCMG1fQ1luenNGMUQ5Q3FpTzA4Mk1tWldWNTdzR3NnZnNyLVpuM01QTlJmV0M0NzNlTWlQcnhpejZic3VCN3AxY0tQT2lyNjA5bnNobXRSVFRGRERDV21uSUdsTVVXaUlkTEVFVVltSzdRRl9jOTBUVXBOeWFualpST3RYbjFGb0J2Snp0XzRqbVpfc3BsWEtXeUNMNmFWdlpUeklic21LTmVUWktuWFoxNGdkdkJmMVdYVnRWOW95NWZpRUE2a2hUZw?oc=5",
-     "priority": false
     }
    ]
   },
@@ -64,27 +64,27 @@
    "label": "인도네시아",
    "items": [
     {
+     "date": "2026-11-23",
+     "time": "12:36",
+     "title": "MSCI discussed avoiding Indonesia downgrade with Prabowo, Dalio, Bloomberg News reports",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWTV0cGJnSHE5ZkxDSVhUQ1Z1S09hLUp4SmxHZ1YzWEZ5TjBxTHlNQ1NSc3JtcDZ5MzlUUzNZYTFIdmZCVXFheGM1cTg4djBhb01kLVlOUVZUekFSLWgxMjIzSnMzZ1pORjZDUDhXZFM4U2JmLXJkblY3QWdIN1QxallRdEduVlo5QUQzcExQVlNPaDNzVmhGTlJLNVRaYU9nUHN5aUJWUlFoRUhqSHotSEpTdGZZVER4OXFn?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-11-23",
+     "time": "11:27",
+     "title": "MSCI Discussed Avoiding Indonesia Downgrade With Prabowo, Dalio",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOekV2LTFaTUdYNFlwX3NsN3hmTkwzVWczRU9HR2F3c2Q4enNxQk5IbnJRcC1oY2IzUUhJdnpud0tDc0hNMWdXOW9qa282RHR5U2IxZE1XbzBHNmhNMnVNWXB5VENXQTN1c1p5djBfdlhXVno5OXh5YlVwTFhNUUh4YU9EMERQSVRwcHk4aHVTVDNGN1FzOVZuZGpzUGw5YVJnYU5CNlMwZDk0RGpMNzdlMURoNA?oc=5",
+     "priority": true
+    },
+    {
      "date": "2026-11-17",
      "time": "13:44",
      "title": "Indonesia on a 'slippery slope' as political tumult adds to MSCI-led market angst",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd0xCd1pZMjZLRGo4TEMxemFQd0hsdDZsNTFCNUpYVDRPeXEwcnhFNE1XbHZsY0xWWTRtYTFIMk9jSWpKUnFhemdCQnRNZVVTU2FPOGw2MWdzVTFlZ3U4S2hqVmU1VU9xUlhYbzc4aWFiNHNaY3lVQUdVMHRNNnFySmpPejN6UWx6Ni1yVllLZ2N5aGJxR0YyYkVoODktRkdJbTlGd1E4NDB1MXdKdG1VS2p1RVZYTV9JdGww?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-16",
-     "time": "14:26",
-     "title": "FTSE Russell excludes 14 Indonesian stocks, maintains emerging market status - Markets",
-     "src": "The Jakarta Post",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObTJYSmZpeGNUdzBmUnBEaGtyLXQwX2VhajVKWjE0cGphdlptWl9LUVZKd3lVU0ZwRVFHNHlhd0NkWW9rdHBSYXVGM3E4dzZYVWtrMUV3d0puX3dKZkJOTG1jYnk5X0hCR3BGUjczNF9uS0k2V00wNHI5d3I1YzVhMlg4ZFJIT1c2RWJKT1hkWmI1ZFkwdFJkNUlFSnIxZEJXa1JJTk5yd204cW1aVHJQbUtubjc5YXJEYjZneUV6aUJsUlFk?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-13",
-     "time": "17:05",
-     "title": "MSCI downgrade threat exposes Indonesia's patronage problem",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVk1nZXdyMjAyQTRCTmZnNUVKWUlJUlk2X3VWR3h4R2plTC1TTE0yVXJJM0hmVVBTdXhaVjFlaW9Mdm9rbUhFMnRrM0s5SEhmcTVOMDVpLW83V0hmUURyN0Zqa2h5UFpicElTMGRGeEJ2N2ZESWxrNndHb0pNb1lPZjZZZ3daLXZid1V1dWZaU0lIRXVtYXc?oc=5",
      "priority": true
     }
    ]
@@ -151,6 +151,14 @@
    "label": "중국·홍콩",
    "items": [
     {
+     "date": "2026-11-23",
+     "time": "13:20",
+     "title": "New 19-month low: Hong Kong stocks plunge as AI sell-off spreads to Asia",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZy1Id01iUmRZQ2taWXpENDc3SjB2aHg5d3V3VlhhUHZHQm1jYTRsMktDaXNmNUo3Z3Nmcks2MVpVengwSU10T3hScDBobk13TTA0RzIzbm9oOFUzVjdGS0lxZ0NhRVNBYk5fdlNYTTRzUFpiMWJJekwwdGpTLVdnSFFyeGdDR0lmV2tOLTVCcWUxd05nZVlFWWlwMjBBYm5OQnJJRlJFa3YxZlRLVWRtcTViaFpHZWdYZlcteV9HTVJMd2FHb2taamVjMkhCbTVPSkJKakNVUENfdXZIaURnSUwzQnQ?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-21",
      "time": "08:15",
      "title": "Editorial | Hong Kong’s dim sum bond index will sustain global yuan momentum",
@@ -164,14 +172,6 @@
      "title": "CATL, Luxshare to Join Hong Kong Tech Index in Major Revamp",
      "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYWZoMlpnOFkwd2tQNURJLXNBVHFidTNiRzhLRktySTE3OTFSM1FFVnVtUVQ1TXlrQUlmeTBONWNaeGtwREdMSVNKU2pqZEZtTGNPUHFhNWZHOEFPeVFIU2tReHJWeGRTN1BEY2tfQTdSZ3R5dWRnSXN3TVFja0p0SHlHTDB5bkhHUDVUWnRxSTRTSGk0LUJOTU93ZUhpNzJMU3p1YU9FSlVJaDZxZHc?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-20",
-     "time": "17:24",
-     "title": "Hong Kong Stocks Fall 20% From 2026 High as AI Selloff Spreads",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbThIazd1YWxmaDlBTURHZmxKVzJPcWpOLXY3eVZGWXlua3ZwMlJxWDItMTJPTGhwakh4aEJSZFNVNE15LXhZazJveTVJQzVKUDZjUmJhNlVqd2FxWHQyQ3c5Zjl0d2FiM2ZMZl9MSXEwMXh5a0xtQXJxSUJIUGJfVmNBbW15XzNiQ211c3NwbXFwS2h5eW85YlJzTlAyNzh4X3JRWEptQ2pYODV4aVhQck45aXI?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-11-23",
-     "time": "09:18",
-     "title": "Bond market signals softer RBI tightening as crude prices retreat",
+     "time": "13:02",
+     "title": "Nifty, Sensex within striking distance of record highs. Will FIIs keep buying after ₹1.3 lakh crore inflow",
      "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSnJlVWx4QzhKckZHVGNoRHRRa1BDb2EzX1lZWXNUN2dfX2hMU2ZPVDQxX200Q0NIaDJLQ3FZRElkV0NHVTQ2S1ZZT0pabEtmZHc4REIycUZaOTd5bXE2dEJtV3dCOTE5MjgxSmFtdndFeHlhMENJZF9tZm1pSTNOMlR4MkxfQUd5MFJqSGM4czdCSFlIS2hZQ1hpdWpaUkluLUh0ZDVUMEtGMkFqd1dzZUozYjFhdVctdWlTUjNELTM2b2FWYlhxYXVGMDVDRTDSAdQBQVVfeXFMT2NnRkZDZDlyYkxJMnhfdFFoa01aZlN5WlJFT2dGd3lyU2tFd3gxY0xRUG8xcUxvMUVjV1pJQUwwbG9wbC1rYnNXZUFRSzBObUtlN2Zzc1U2dHB5WVRqV0Y2NXdvQnkyTFgzejQ2ekdqVnVLNVNEdWVrQVlfa3FlTDh2UGlkTHdvQ1F6Z255TGR6eVJkaHdrRm1ZcldMOTVDRl94b3o5amRudzZ3T1R2OWlUcWtidjJZalZoRXQ0b29kenR0Uk5sdm1peXh5ODVfZGJmR1c?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNOV9HaWZVZ1lDVFhpT2NDR2RnM0F2TE5KNlJEOGsyZVA5NWxHY2lvcVcwY21Iamc1RlVEYnp6S1VoVmxTU2hyWFIxYnkyZ19JS1RPOXFnbEc0a09lWGhMczQ0aUQ1R0N3dExaeDhnQTA4N1BUbkVYNFdDcDlQdVU2WE5SaWM3Z1VhMHlMdWtSRUctcFVjWEhselhYZUMzRFpjRTl4SlBNcnVXOUlTMVk1OVloaVVSNzhFMS1GZXNTVVZ4dFpsWXo0Wnh1R0hQd1R4WFcwc1hRdjZKYktTQUQ2NVEwbXVXMy1qM25Vek9zN3N6MVB1OElIR1dwWlhzRUQ3T21WTjIyRk5zQdIBjwJBVV95cUxQdnlxTkR5Qk50SzN1dC0yTDRBdmt0Zkw2TDZzRl8xZ0VCaFZOVVJWeE9wRjVtOHpVS05PaUFyRVVZUTNBUjllNUZqOGZSQTM0TUYzaTgzbTN4U1hyUzJ3MDJFZk0wTU94am9SeXBqQ0oycFB1eEtBLWtJRE5DVU56V2p4N08yRC1NYU5BRVNZNlVxaWNmZ2pkNFZtSXczTW94cG1tTmlFaGM0TnJPXzRSbVA3Mnp0YjhyT0VDcThwNXdWbDNJRVRjczJHaG1iVjYtSHpUajRzUUMwRXhGRmdEVVRmdm85ZG1HQjgzY3B0RlB6YmUzdEEwWVhPd2pGNlBZX1dnc0lUY2pWOUtFdVQ4?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-21",
-     "time": "16:03",
-     "title": "'Look at India': Trump cites 7% growth to criticise US Fed's rate policy",
-     "src": "Business Standard",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdnBiS2NEM1czV1J6NW9KTHVqcjZUNjNDOUw2RmlWM1hZMWNTWlk2ZExDdTVSSG9KMUZWZTU4bFZQbU9md2xwcWtnOEljV3pCbklyc3JwdXBHdE5IYS1PSF9uTDRZTkszOWFCb0k4b3ZiNzh3OVF2RzBwY2diZ3RTUlhPSUpzOXZaMkRCdGlRMVpFTXJGVDJJX3pRZHZZUDJ3MDY1UlZPTnhXZEpJYkQwaHc0dXBsZ21OV3g2M2JHbmNNRWZwcWx6S3NYQ1ZYUdIB0wFBVV95cUxOZHFTa1RZQU9MWE1pOVNOaHpNMUlJOG1vaF9lZ1F0Y3hvcVpKUXAtX1VsXzdNdG5ncWhRVXRxZkZuY3lPV3dudnpmUXhGZVBEX1YtZmVRcGlMZXNadWlnbzFVd0J3Rk9ka2otMUZETHpNSVNWMjhxMm9CV2hYQlNVNWFNbm00X2FmV0w4NG81dVRBTzltNEFFNTlTSjBkQzU1dmY0LXVrRlFKQVJ3cVdZanFqdldPOXd3ZGRVdG4xaWtOeUhPVGY2MjVpU0tvWTdIYWU4?oc=5",
+     "date": "2026-11-23",
+     "time": "11:37",
+     "title": "Indian shares open higher on foreign inflows as AI trade reversal continues",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdDVfby1VRHZ6aGZYVDB2dU9SSjlQRGlJcUUxQm5Gdk9vWkU4UG15RFdHeTZxVjZQUzVNLXRmX3FjVndPRFJQQzdoNWNsUlRMeEQzdWVxWE1RVWp3TUM2WnJRc2lqamVnM1Vlek5LdU1rZjVRNEdVOUNkMVpoNTRLQlMxRFlfUXZzd1JOQ2J2QUI2S0wzMTRUWnN5aVhrTG5qSmk0Mzc0NFEwU1owcEpPNlljaw?oc=5",
      "priority": false
     }
    ]
