@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T02:05:55+00:00",
+ "updated": "2026-11-23T02:32:40+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,7 +127,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-17",
@@ -156,12 +156,18 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-09",
      "title": "Broker-Dealer Firms We Regulate",
      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUDZiZ0hkYkhEcUZLVjNuNjhWdzhtSi1oZ1ZvWFlYTnZQZWZZZzNacUFyc01WZ0ZhNXlqZVR3VGdnaXNhWjhwN1FmUnFjQjNYbmpwLXUyYUVNTzVmLUliaDBLSzVjeDVodFdsUVFNNk50bGxacFdKcHZabnJEM3had21rbUVuTW8?oc=5",
+     "src": "FINRA"
+    },
+    {
+     "date": "2026-11-09",
+     "title": "Broker Dealer Firms We Regulate - C",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtcUdsd25tWUhFcU53ZUZIWnVLX3ktb3lSYWV0dW1NY1BJaklxQ3VyZWo3V0NORXhWNTV6bU9FT0dzcFF0bEoxaDVKb2R4aTNsLTJPbnN1Vk5mbkxDSS1pNDZLTzFaWjcwM05Wc3lXVi10YW8?oc=5",
      "src": "FINRA"
     },
     {
@@ -174,12 +180,6 @@
      "date": "2026-11-09",
      "title": "Broker-Dealer Firms We Regulate - C",
      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa3dJVy05aDRrSkh0UXpGSVZXYmlkTVBpb01XdlQ0SGN2c0ZZMjN4T3otZG1aOEtDVWtlVmUydmdMYktaMVIxXzhhU19USUZiLWV0Q3dUNjRaajhNYnp6aU1VRWdKbnl1YjBKNjczYi1GQ3VRQ0JFMXFTRE9oSUliWDVPVXBIeDV6RUE?oc=5",
-     "src": "FINRA"
-    },
-    {
-     "date": "2026-11-09",
-     "title": "Broker Dealer Firms We Regulate - C",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtcUdsd25tWUhFcU53ZUZIWnVLX3ktb3lSYWV0dW1NY1BJaklxQ3VyZWo3V0NORXhWNTV6bU9FT0dzcFF0bEoxaDVKb2R4aTNsLTJPbnN1Vk5mbkxDSS1pNDZLTzFaWjcwM05Wc3lXVi10YW8?oc=5",
      "src": "FINRA"
     },
     {
@@ -197,12 +197,18 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
+    {
+     "date": "2026-11-20",
+     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism United Nations Sanctions (Central African Republic) Regulation 2020 (Amendment) Regulation",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZllwNHZvekZFYmw5MXNLRV9nRDB6Wk9GekxaUTB6NnJhTDVfeHJVODJYNU9ublV5OUtZc21MbF9OQXJrVk1WSWFjcUhsZlFGQWpDMzFGeVpkNFNCclpMNWFRbnFaNXJpNXhQRW1nV3BrYXRKVmVuWjBZMmZUcUlUYUJQdw?oc=5",
+     "src": "Securities & Futures Commission of Hong Kong"
+    },
     {
      "date": "2026-11-20",
      "title": "Circular to Licensed Corporations",
@@ -210,16 +216,10 @@
      "src": "Securities & Futures Commission of Hong Kong"
     },
     {
-     "date": "2026-11-12",
+     "date": "2026-11-19",
      "title": "Liquor Licensing Board to meet on Tuesday",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1IdkFNdUYxeDNJWDFjbUE3dlRIcGJJZkx2U1lWdlBkTW9KU3lhMWlnZ0dpcFVmSGszSUVhaVY2T3FjUWZVTFo1ZlRtb3dsTEJhUlU0MFZqUXJLaXJ0UF8yUGJFem53VVBhdktlMzBWVUhBQQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8xSXctclhuMkNXVzlyQmFzdEtTblAyc3lkUGFocnZCMVZpM0NNU3Rtdlk0emJsTjNsRzVqZFJqQmVkazNuRk55cjItZHpMSFJtMnpiTEFyV0JpdzB2RFRCRi1iV0dOX1FaS2c3WWpFaGlMdw?oc=5",
      "src": "www.info.gov.hk"
-    },
-    {
-     "date": "2026-11-02",
-     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism Early Alert on United Nations Sanctions",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSGVuY3lqYTgtY2RXZmlrREZLV3UzZ0NVZlhjdW5SajNJV2dhNFZlTVFWWkNmRXRsdDNKM2FNc3dZc1dwcjNUNkt4alFBOVQwRFd4eEtSOEJ1Yy1LY0h6YzFkVnZ2UWZteVgwWUNOdUlpYlM2SHkwZ0RhVXdSdllmRGdzZw?oc=5",
-     "src": "Securities & Futures Commission of Hong Kong"
     },
     {
      "date": "2026-10-31",
@@ -254,7 +254,7 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-16",
@@ -265,11 +265,11 @@
    ]
   },
   "GB": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-17",
@@ -280,12 +280,24 @@
    ]
   },
   "MN": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
+    {
+     "date": "2026-11-21",
+     "title": "Cost of Rhino Software: Quick Pricing & Licensing Guide - portal",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSk5SeDNQZHdjenVYZEpNczZtWGhwZHkwVmNOSTJncFI2THhMSC1JN3lJUmtEd0E3REJpWmhQdV9QZlNtNldTSmRrRXp5WkJjaEpZdWs4ejI2X3l2WTNTaDZXRF90ZlpfbUk1bllhVDhqazRJdW42WDFpbG84X1pwempB?oc=5",
+     "src": "INMET"
+    },
+    {
+     "date": "2026-11-20",
+     "title": "DFS License Renewal NY: Fast & Secure Daily Fantasy Renewal - portal",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZGZ5RU5FYVNtZHpqSWlIZzBtOXRjV1h2XzNNaFRaNk1qbFlYMGRIZVBHeVByaEtVOThLM09QU015UnFYaGhnQjJ2ZExkWWNiN3lWbkl2cmpQX2o0VDJtWTliUklTeTd1T241WUVFR2ZrSkY5OW9HWVBqOFRLMFNtVGN3?oc=5",
+     "src": "INMET"
+    },
     {
      "date": "2026-11-20",
      "title": "ARIZONA MASSAGE THERAPY LICENSE REQUIREMENTS",
@@ -481,7 +493,7 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-15",
@@ -492,7 +504,7 @@
    ]
   },
   "KH": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": []
   }
  }
