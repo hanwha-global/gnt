@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T01:51:43+00:00",
+ "updated": "2026-11-23T02:08:25+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-18",
@@ -390,7 +390,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-19",
@@ -477,20 +477,29 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-19",
      "title": "Guardian Tokenised Collateral Framework",
      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPd3hqT0NJNEVQX1RqZWM4TVdaYU9wQ2VMRWFEdnRsRlFDT1pUMEpjX3NSRUlLVEJhT0FfaTk1OWljaGVDY2s2eFFXRmx5TEkxbFZ0MFJVT0w4Z3NVY3pLNnRkRjdLRzRnMi15U3BRWmdXSFFZd2gyMkE5YzRxWVhCNS1CUDRLWHJQSEhqVGQ0TkZ4cHJjZWkyRVpacmlyc1ZhZF9qRnNxWC1MNWl4cDRHYVpMODNnR0pjTXNKYS1YSEpHekVWX0hWZ01va2Z4TUM0d3QxRHVVY0J2TGZDUW1laHhBaDQ1RzI2WENoTTl4UGJpLTBPTUpzdXc0UDJMUklZcktydQ?oc=5",
+     "src": "Monetary Authority of Singapore",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "title": "MAS Announces Successful Issuance of Tokenised MAS Bills on the Singapore Dollar Test Network Using Wholesale Central Bank Digital Currency",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNS2NUWDhybmJsckRRMUc3STljbUVjM19KelNoLVVhVXI3TlpFeWNPd053cy01VzBES0t2Uk5vME00WFFfbkFjT1BWbF9BZXRvOGoxMHhJdmczcEhMdHFIWlRuZmx1Z3Y5SjUzRFlJM1NoRENDeG5lbHhNS29PdklqakZzZTdjMllOWWVmTVpCQjhOYzF2Mk81LTNkak9JQnBPM3Mxb0o3RGxzbEFCdHkxYldfWXlaRXVBZUdxZGNTOW1ONXRwV1kxaFgtOGRhUVFZSktRSUxKaVQ?oc=5",
      "src": "Monetary Authority of Singapore",
      "topics": [
       "sto"
@@ -526,7 +535,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-12",
@@ -540,7 +549,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-10-28",
@@ -554,7 +563,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-09",
@@ -658,12 +667,12 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-22",
      "title": "The Financial Services and Markets Act 2000 (Cryptoassets) (Miscellaneous Amendments) Regulations 2026",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hbkpSYngtSmVnWGwxMFdmYi1peERkUVg4YTFYTVF3TXVvYWtQM0c0TDZCbW1ObmJvcDRDdUhJRnE0dXc0ZWx5dXFJZXdiTmhfWnF1YUhwMVVLOGc4d0k3UXVkNmdINm43VDBScDA2UGxTUjVsZUk2X3NDbw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9URi0yMnl0SjBmUzc4dTlzUDRNMEZmTGFhTk1ESzZyR28tZk0zWno4Q0d3ck9oUEszMF9kUDZSWE5TTFZ5eVJ1X0FFSGR0ZTMyWXJiNl84c2ZRODFRd3VJMXNEbkllOUoy?oc=5",
      "src": "Legislation.gov.uk",
      "topics": [
       "general"
@@ -672,7 +681,7 @@
     {
      "date": "2026-11-12",
      "title": "Crypto Custodian Assistant",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNkszeWQ4TGxMb2xYa0o3TnRlaEZOWGNwWEJkRTE1V1ZuT05BLU5RR3NEbUdoSDFZU2ZKanRyTjVBVm16d0VuUlpQTG1RWXd1cGp6RjV4WlhpLVpZZ3lWbWx0QTJEMG43Y3VYMDVMcWZwUlc4VkhhOFhvWXlqN09hcGNXaw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpTnFLZVUyTjNqX042bjZpUUZQd3Zia0tjTGN3NE11bmpQMkFzbXZuZG5CdEd3T3E1NjBpWkhoRzdwRFZ5Qmx0eEM0Y3U5N2dJNHliMU5haVc4TXdZT3pWXzhvOF9lNEFPdFV0TUdZWEpDR2dDbUp4cFpn?oc=5",
      "src": "Civil Service Jobs",
      "topics": [
       "broker"
@@ -825,7 +834,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-22",
+   "auto_checked": "2026-11-23",
    "items": [
     {
      "date": "2026-11-20",
