@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T13:53+09:00",
+ "updated_at": "2026-11-23T22:20+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,6 +36,14 @@
    "items": [
     {
      "date": "2026-11-23",
+     "time": "19:15",
+     "title": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QemJ4Zi1KUVFXdk1NTDJLQWtnQmpPSnBiZTY3ZFV3SmRwZmFFay1kLTZoNk1MclNIZW5SVzh4MzlfRHBZTWR5N003aU9udHVCczNUd3R5SWxmMnIzb3QyS0R6akhuUzFJMlkyT2ZUd9IBdEFVX3lxTE1EVlVKZHJ6WUhjRGtoM2RrSjMtT0ZaanpZeThYZXNkdHRyY2FtNFc3SGJiREt5Rm5fc29DWWtMZ0FKVzNES09RMHBOVjVMY0Y4R0xHdW5ybW9fVW9CenRxWGtwYnRnVUZJQlNJR1RpUk9lbzNU?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-23",
      "time": "11:19",
      "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
      "src": "Bloomberg.com",
@@ -49,14 +57,6 @@
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOX2NVUzh6dmczN2tWV3I2UkpOS3l0QWtLWXoyM0ZfYXgtSGNGMGR1eGl3NnRVMXY2Vndnb296LUY4VHNZNWd4RFJDeXlpbml2RERoQzk4TnlTSXE5bDdjNDZLaVdabk5FQktRd25OR2RsQ2ZrN3NaVEV4SjBESGxtcjhfMzBNTnVPT3lNRDZ4RnFTODI2dXVXSjhvYUpndDZYdjV2UG9qNS01RjdOMVpmcGNyNXRzd0dpci1vUFBXLWM0MVNkN0M4UW9oQmhxZTZ1bnE2NnhvYjdNWFp5R3hv0gHkAUFVX3lxTE8zbWJaM0JHYUJJa25ZcUIwVDZmMlFfNU1tdzFFYXdISlRWNGRuOTZrUTZuSEd3OEtZbXExTTVkd3FvNHhGZnpWY2Q1OGk3aDQ5VjZTazRPVFZ6cXNLQ1BqZmExZE15Nm93Z1BFRk1ZRnVMbkpTaU0xX0dQWVVzWWZxbzdld3cxMThUTmpvMThGTDNpTnlsd05DQ1Z3SVhfMlljTVFhRWh1RGdrTEZ0cEdlNWRGLWVreFNwNlhHZWpvQ3RGRFhhNms5bzNSWGNYQ0l1QzFnQWFBeTNoYnliaThxSTN5cg?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-11-21",
-     "time": "08:02",
-     "title": "Tech leads global stocks rout, Treasury yields fall",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORTBuejlwS3Nua0szT1dTbnYtSElZYjI2RUg0NnRsVHNlOW1SMTBlUFIxdmtVcnB2TFd0N19aU1RlbzVWREhqYnZmWF9HRG5odm55UUxLMnJzckZpWjh6UHdrZGtZNlBIMVh3cU1QcUNIQlZRNXJMTW54TjdkaVdGbE9yVQ?oc=5",
-     "priority": false
     }
    ]
   },
@@ -65,26 +65,26 @@
    "items": [
     {
      "date": "2026-11-23",
-     "time": "12:36",
-     "title": "MSCI discussed avoiding Indonesia downgrade with Prabowo, Dalio, Bloomberg News reports",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWTV0cGJnSHE5ZkxDSVhUQ1Z1S09hLUp4SmxHZ1YzWEZ5TjBxTHlNQ1NSc3JtcDZ5MzlUUzNZYTFIdmZCVXFheGM1cTg4djBhb01kLVlOUVZUekFSLWgxMjIzSnMzZ1pORjZDUDhXZFM4U2JmLXJkblY3QWdIN1QxallRdEduVlo5QUQzcExQVlNPaDNzVmhGTlJLNVRaYU9nUHN5aUJWUlFoRUhqSHotSEpTdGZZVER4OXFn?oc=5",
+     "time": "18:26",
+     "title": "MSCI 수장 \"인니 신흥시장 강등 대신 대안 검토\"",
+     "src": "뉴시스",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9aTnVRYlJmNEFkVW56QUIxM2RIQnotQWowVDRFa3Z0anJ3WXdkUmpoT2xBN3hkY2ZEal9rU2ZlVm1lWXVLVDhxT1MxTVdoYWtNdXRiRWVxSnVGYmFHOUsxNHMyNFgxWjZUUWo3U3g4R1Y1MHdCOGpaRtIBeEFVX3lxTE9aTnVRYlJmNEFkVW56QUIxM2RIQnotQWowVDRFa3Z0anJ3WXdkUmpoT2xBN3hkY2ZEal9rU2ZlVm1lWXVLVDhxT1MxTVdoYWtNdXRiRWVxSnVGYmFHOUsxNHMyNFgxWjZUUWo3U3g4R1Y1MHdCOGpaRg?oc=5",
      "priority": true
     },
     {
      "date": "2026-11-23",
-     "time": "11:27",
-     "title": "MSCI Discussed Avoiding Indonesia Downgrade With Prabowo, Dalio",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOekV2LTFaTUdYNFlwX3NsN3hmTkwzVWczRU9HR2F3c2Q4enNxQk5IbnJRcC1oY2IzUUhJdnpud0tDc0hNMWdXOW9qa282RHR5U2IxZE1XbzBHNmhNMnVNWXB5VENXQTN1c1p5djBfdlhXVno5OXh5YlVwTFhNUUh4YU9EMERQSVRwcHk4aHVTVDNGN1FzOVZuZGpzUGw5YVJnYU5CNlMwZDk0RGpMNzdlMURoNA?oc=5",
+     "time": "18:21",
+     "title": "Indonesian Stocks Rally 1.35% as Prabowo Holds Talks With MSCI CEO",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRFlTMjg1M3RfRTY4aGlhWEJlWjdocUVRdUtSZkVxUlhoZmE1LXpYbWxyR0RTdnpnX2duX05IV210Wm50dEo5QjNoSXNGbFJLRTRtTklaZk1KSGEyTHpWem5ROVk3Tk5EYWtNLXNLZlBZNE1MUjViZUNseW5YbGlpSGxFb0N5U1B6MXZVa1E3U2d2THZsaldCVDh1RUhaZw?oc=5",
      "priority": true
     },
     {
-     "date": "2026-11-17",
-     "time": "13:44",
-     "title": "Indonesia on a 'slippery slope' as political tumult adds to MSCI-led market angst",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd0xCd1pZMjZLRGo4TEMxemFQd0hsdDZsNTFCNUpYVDRPeXEwcnhFNE1XbHZsY0xWWTRtYTFIMk9jSWpKUnFhemdCQnRNZVVTU2FPOGw2MWdzVTFlZ3U4S2hqVmU1VU9xUlhYbzc4aWFiNHNaY3lVQUdVMHRNNnFySmpPejN6UWx6Ni1yVllLZ2N5aGJxR0YyYkVoODktRkdJbTlGd1E4NDB1MXdKdG1VS2p1RVZYTV9JdGww?oc=5",
+     "date": "2026-11-23",
+     "time": "16:58",
+     "title": "MSCI 회장 인니 증시 등급 2단계 하향 대신 대안 고려할 수도",
+     "src": "SBS Biz",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9MZkZxZ1BZSHR2WUdOZi1vMEVtNDg3SjNkS2pkNEdwSWJWWUVjbzMzVWdRd1hBOU0tWnNEZGxGZ1ZfTEZNLVNzcVczdFVSSzdNMExr0gFYQVVfeXFMUDRobG1EZ1ZleEtQRDZVM3lqb1hwM2tiTDQtQWRaLV9udlNDM2RONENBWFNoTHpQM0wzMnRLYUdlNzZWUzA1SzY2SE5IYVZsNzlZUDhqOU5GZQ?oc=5",
      "priority": true
     }
    ]
@@ -153,6 +153,14 @@
     {
      "date": "2026-11-23",
      "time": "13:20",
+     "title": "Hong Kong stocks rebound to pare steep losses following US tech rout",
+     "src": "South China Morning Post",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMmR0TXdKQ21IYS1mVVVLMXo5SG92Tm50WG4wSXAwUURmMlNBQWh6OTVucDVzQmZhNGhHWGlEc0xoOXhPZnk4SVZ0OGh6b293dVBnNFdPaEhKS2E2OG1HdWlubDdLTl9vOEFJYnlra1Z3QzZlOW85Z1lndXdWSnE4dXZtOFFlQTJ5bmpPby1MSGk2enRCV2l1VExNS2haSlY4Z0gwMGxRdUdFeTdocnljeEc1aHRjUQ?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-23",
+     "time": "13:20",
      "title": "New 19-month low: Hong Kong stocks plunge as AI sell-off spreads to Asia",
      "src": "South China Morning Post",
      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZy1Id01iUmRZQ2taWXpENDc3SjB2aHg5d3V3VlhhUHZHQm1jYTRsMktDaXNmNUo3Z3Nmcks2MVpVengwSU10T3hScDBobk13TTA0RzIzbm9oOFUzVjdGS0lxZ0NhRVNBYk5fdlNYTTRzUFpiMWJJekwwdGpTLVdnSFFyeGdDR0lmV2tOLTVCcWUxd05nZVlFWWlwMjBBYm5OQnJJRlJFa3YxZlRLVWRtcTViaFpHZWdYZlcteV9HTVJMd2FHb2taamVjMkhCbTVPSkJKakNVUENfdXZIaURnSUwzQnQ?oc=5",
@@ -165,14 +173,6 @@
      "src": "South China Morning Post",
      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSEhjS0ZRa2hhblRaWUJCMlpZWmVDN0NoVXhzQjQ4bmx6OEkwUEhSZWhGWDQ5elQ0Y2R2RTcxVXJ4VjREbHg5T3ZrZ2lTcTFSMzU2aHdJbThfamZ3ZmhPZjh4WEJTV0I4dTBoNVlFb2JLemlKLVU4RlBaaVhNTHNHbkljSm51eEs3RjBZR0NuX1o0R3Z4RjZ3YWdfSFdicmhsUGFuYnVyZ3hWVVlFbnRhbTZoWVlUMlXSAbcBQVVfeXFMUFNCYVZyY0xiN256dVBZVVZyWkpJNUwySnRYVk90WTd3UU9SZV85MzM2S05uQm9nXzNuVElDanpuSEJyMDBwZjctUnhNdjMtcWVqMHdrZTIzcjcxcElteXZuQ0dVeTNLWFNKR1RQX3hkSzNDUHgzdDJvWWhVY1pmQ0lnVTUxOU1IZjlqbndlVmFwZTJBa1c2aW41d0NFaUtwVUQ3dmExMUhCd0IxRlg1RjR0WWlSendr?oc=5",
      "priority": false
-    },
-    {
-     "date": "2026-11-20",
-     "time": "19:36",
-     "title": "CATL, Luxshare to Join Hong Kong Tech Index in Major Revamp",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYWZoMlpnOFkwd2tQNURJLXNBVHFidTNiRzhLRktySTE3OTFSM1FFVnVtUVQ1TXlrQUlmeTBONWNaeGtwREdMSVNKU2pqZEZtTGNPUHFhNWZHOEFPeVFIU2tReHJWeGRTN1BEY2tfQTdSZ3R5dWRnSXN3TVFja0p0SHlHTDB5bkhHUDVUWnRxSTRTSGk0LUJOTU93ZUhpNzJMU3p1YU9FSlVJaDZxZHc?oc=5",
-     "priority": false
     }
    ]
   },
@@ -180,27 +180,27 @@
    "label": "싱가포르",
    "items": [
     {
+     "date": "2026-11-23",
+     "time": "20:20",
+     "title": "MAS likely to keep monetary policy unchanged in January even as Q1 core inflation set to rise: economists",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOeF91ZDl6bFE0SkhVaXNtS05DN0JGR1dpS0ZfdVhQd0tnWS03VUcycHY2UldGbFYzMllOUHpBZnMzYnRYU3dUNklyR0NGTlZUS1B6eUh3MzE1cnA2MUkyNWttRzluZGdJWGxia2tZUktfZnBGd2lzdkhtNm52cFhCLUNrUDNmZlZISVd5YTdpWkpidDc1VU1ZRWpzRlBMS212a3psMWY5UjloZXZ6M00ybzh4RWh5U19FUjBfYVdELTBCLW1qZmszN0ZoMTRKOG9m?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-23",
+     "time": "19:23",
+     "title": "Singapore shares extend decline alongside regional indices; STI down 0.4%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUUNGUExXTlJUTTBXbjFiTklkcFZ3Qlp5dXkwT1lfV1MwZ3V2UG42Wml6NVF6RFhhLVlveTZTaENlTmNLM3I2MFRiOTRqT2lIeHBtWVZYZDJmTVJsN2R4eWNCczJQb0ltelI5SjlOMkFFOF8tb1BhY3l4SGhUbk9Vc3ZnMHg0RUFST0ZHVlZYWWhBdU5UaUJrOUdiSGZvSi1CVzVXc012TE9Pc3RDcUhHT056dVZFcjVFYVpicjEzNA?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-21",
      "time": "06:38",
      "title": "What makes a vintage watch worth collecting? This Singapore watch dealer shares his insights",
      "src": "CNA Luxury",
      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVWZ5b211NklqdWVIZ2tpRHd5OEJxMVRsM1V5eEk1amYtbVlrS3poNTZzU2V3VlZQZld3T0NzekptY0lVUG5mMUlnRThnVWE4b0RfX2o1QlprUzN4WnJGWFI5Ymw2RnppVHpQcVdWdFRSSFZUXzBtNHlFaThHa0lkcU9sWTZhb3ltdnp3d3FMajZ2NmtWMkJuTWNmREQ2Yk5CQ1NHdkFVbEUwN3EyVWhB?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-20",
-     "time": "19:41",
-     "title": "Singapore stocks fall in tandem with regional downturn; STI down 2.1%",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQlNqZkFPYjdYNGZwd0cyWU5UUl9CVVRZb3ZaZ2pzMDVuMnJBYnRRc0Q0VU9CSUdXOW5WcngtT3liY212SzBoU0d6dHBIWl82YXh0VDJmdThvV0o5TkM1amdzNFdUVlQweE5BUXQ0ZEtnNzRYTDQ2MzJzMzdZNlZJcXdfQlFTdmJvQkZVcWJJQjNsQkJxN0hnREdpYnhyLVF4c196cg?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-19",
-     "time": "19:32",
-     "title": "Singtel takes the lead as Singapore shares rise; STI up 0.5%",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUEs1ckV2a2hBYzJjRVk3eHZwcDZpXzMtbGR1ZnN3N2lwRUNMdWFtV2tmNmkya3FIa1N2bVVyT3RLX3JRTk54TG9hak5abExCSVFubkJwdEV3SWpYc1Zfak9LTXNfNG81RjhaOUpFYVZrQUJKNktoOVV4aFo1cWhGSExBaDdFU3c0RzJZektqM0lEQkpYMG13NVdHSWFraVFh?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-11-23",
-     "time": "13:02",
-     "title": "Nifty, Sensex within striking distance of record highs. Will FIIs keep buying after ₹1.3 lakh crore inflow",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNOV9HaWZVZ1lDVFhpT2NDR2RnM0F2TE5KNlJEOGsyZVA5NWxHY2lvcVcwY21Iamc1RlVEYnp6S1VoVmxTU2hyWFIxYnkyZ19JS1RPOXFnbEc0a09lWGhMczQ0aUQ1R0N3dExaeDhnQTA4N1BUbkVYNFdDcDlQdVU2WE5SaWM3Z1VhMHlMdWtSRUctcFVjWEhselhYZUMzRFpjRTl4SlBNcnVXOUlTMVk1OVloaVVSNzhFMS1GZXNTVVZ4dFpsWXo0Wnh1R0hQd1R4WFcwc1hRdjZKYktTQUQ2NVEwbXVXMy1qM25Vek9zN3N6MVB1OElIR1dwWlhzRUQ3T21WTjIyRk5zQdIBjwJBVV95cUxQdnlxTkR5Qk50SzN1dC0yTDRBdmt0Zkw2TDZzRl8xZ0VCaFZOVVJWeE9wRjVtOHpVS05PaUFyRVVZUTNBUjllNUZqOGZSQTM0TUYzaTgzbTN4U1hyUzJ3MDJFZk0wTU94am9SeXBqQ0oycFB1eEtBLWtJRE5DVU56V2p4N08yRC1NYU5BRVNZNlVxaWNmZ2pkNFZtSXczTW94cG1tTmlFaGM0TnJPXzRSbVA3Mnp0YjhyT0VDcThwNXdWbDNJRVRjczJHaG1iVjYtSHpUajRzUUMwRXhGRmdEVVRmdm85ZG1HQjgzY3B0RlB6YmUzdEEwWVhPd2pGNlBZX1dnc0lUY2pWOUtFdVQ4?oc=5",
+     "time": "19:15",
+     "title": "India Inc rushes to raise $2.7 billion debt ahead of expected RBI rate hike",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMVBOV1JkUG5VWHhvOE9VZEFvalhOUmExSjg4X1Y1SnVSUGt2S21aMUtVcWlsVFlmRFE5bW1veGxJc2NaenlkSk1MLUhOUVoxbzktUUptakFodGpHWm15YTZLQnpxNS1LU3F5M21WOTlLaWd4NlZnd01udUxHRUM2N0huV0l1cHgzUkFnOEVIRjRVaTlmTzJLWlJCWDBOLUg1eGNCTEJkUExiZmZxU0RXaUtwOHhodw?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-23",
-     "time": "11:37",
-     "title": "Indian shares open higher on foreign inflows as AI trade reversal continues",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdDVfby1VRHZ6aGZYVDB2dU9SSjlQRGlJcUUxQm5Gdk9vWkU4UG15RFdHeTZxVjZQUzVNLXRmX3FjVndPRFJQQzdoNWNsUlRMeEQzdWVxWE1RVWp3TUM2WnJRc2lqamVnM1Vlek5LdU1rZjVRNEdVOUNkMVpoNTRLQlMxRFlfUXZzd1JOQ2J2QUI2S0wzMTRUWnN5aVhrTG5qSmk0Mzc0NFEwU1owcEpPNlljaw?oc=5",
+     "time": "13:02",
+     "title": "Nifty, Sensex within striking distance of record highs. Will FIIs keep buying after ₹1.3 lakh crore inflow",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNOV9HaWZVZ1lDVFhpT2NDR2RnM0F2TE5KNlJEOGsyZVA5NWxHY2lvcVcwY21Iamc1RlVEYnp6S1VoVmxTU2hyWFIxYnkyZ19JS1RPOXFnbEc0a09lWGhMczQ0aUQ1R0N3dExaeDhnQTA4N1BUbkVYNFdDcDlQdVU2WE5SaWM3Z1VhMHlMdWtSRUctcFVjWEhselhYZUMzRFpjRTl4SlBNcnVXOUlTMVk1OVloaVVSNzhFMS1GZXNTVVZ4dFpsWXo0Wnh1R0hQd1R4WFcwc1hRdjZKYktTQUQ2NVEwbXVXMy1qM25Vek9zN3N6MVB1OElIR1dwWlhzRUQ3T21WTjIyRk5zQdIBjwJBVV95cUxQdnlxTkR5Qk50SzN1dC0yTDRBdmt0Zkw2TDZzRl8xZ0VCaFZOVVJWeE9wRjVtOHpVS05PaUFyRVVZUTNBUjllNUZqOGZSQTM0TUYzaTgzbTN4U1hyUzJ3MDJFZk0wTU94am9SeXBqQ0oycFB1eEtBLWtJRE5DVU56V2p4N08yRC1NYU5BRVNZNlVxaWNmZ2pkNFZtSXczTW94cG1tTmlFaGM0TnJPXzRSbVA3Mnp0YjhyT0VDcThwNXdWbDNJRVRjczJHaG1iVjYtSHpUajRzUUMwRXhGRmdEVVRmdm85ZG1HQjgzY3B0RlB6YmUzdEEwWVhPd2pGNlBZX1dnc0lUY2pWOUtFdVQ4?oc=5",
      "priority": false
     }
    ]
@@ -238,27 +238,27 @@
    "label": "글로벌",
    "items": [
     {
+     "date": "2026-11-23",
+     "time": "18:21",
+     "title": "Indonesian Stocks Rally 1.35% as Prabowo Holds Talks With MSCI CEO",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRFlTMjg1M3RfRTY4aGlhWEJlWjdocUVRdUtSZkVxUlhoZmE1LXpYbWxyR0RTdnpnX2duX05IV210Wm50dEo5QjNoSXNGbFJLRTRtTklaZk1KSGEyTHpWem5ROVk3Tk5EYWtNLXNLZlBZNE1MUjViZUNseW5YbGlpSGxFb0N5U1B6MXZVa1E3U2d2THZsaldCVDh1RUhaZw?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-11-23",
+     "time": "16:06",
+     "title": "Prabowo Holds Talks With MSCI Chief as Indonesia Seeks to Avoid Market Downgrade",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVFN1SFFrN2V2YllCTkRiZUhqdmZhX0Ntd3FHOEd4SnpKaXRYUUItUXlVbEFSNGFaUDRJbzhYSUlCNS1MMmJRN0h3d0ozZXpELWlxRl84RHlrQnhMNmc1akVENEFkb2RVZFdlbWptU1NPNUlwMzhfVE1LcF91TldXek55dnNGUDlnV3VGR2NYX3JiU0VraVB6OVlXUzRWUWE0WWFEMTNaNXYxUEs3dFNBSmYtYw?oc=5",
+     "priority": true
+    },
+    {
      "date": "2026-11-17",
      "time": "10:20",
      "title": "Beximco Pharma, LafargeHolcim, 4 banks from Bangladesh added to MSCI Frontier Markets Index",
      "src": "The Business Standard",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQnIwUFZzSHVkWUc2SjZMZjY1Wm9aR0U3VzJrNFRIRmxhMXFob2J0c1pRVGZGN1lqSU9NOFNrU21mOVVEdzZELVFGRXJlR1VURDZmbExmeTROMkx2blZIcC1CUTF2X21mN1hFRk5fNTlHcnVxcWFTY1UwVHktU2tCVG1CazVzOFhIYkh6RU5pLXU0RmRmSnBNUkc5d0tsVGVBRHdoSE1WM19JTU92LXY3Sg?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-14",
-     "time": "15:00",
-     "title": "JCI Soars 5.8% as Political Calm, MSCI Review Lift Market Sentiment",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON0tpYjd3cW1DZ3p3Q0Q4VnJHbUZRcDZHWUhXc256TklpZkxCLW1DcmFjdUNVNGZRQnZrNHpmMVNmS1F2Zk1jRFFBVGxfN1l5ZHZ2UHMySzRRdXhBaFpteHpBakNwQVFZUThTV0pFY3d3bW9kMGRGeUFaUUUxUWZkd0pUZGJnaWpkMmFfMlJzYk1yU0NtdmkxTzV4dDN5QQ?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-12",
-     "time": "19:12",
-     "title": "Rupiah Hits New Low as Gibran Exit, MSCI Fears Rattle Markets",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQ01OenM2MHBGN3JTa2xjb2hST2VjSVh2MC1xNEI0X29ld1VGZUxRTHFyQ3NyRHhrcFhSWlNlaVZ5QnFlY2RkWXRJWTlwOXE3LVQ5YXV3UDlXVXZ0WnFCZXgtMW9Ha2F4eWI4Qm9RbHExZGFhMTJIdXhnaW4xTm9XMTU0V1dqM0U3UkFfdlFraDg5a1c3S0VFbg?oc=5",
      "priority": true
     }
    ]
