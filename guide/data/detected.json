@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:32:40+00:00",
+ "updated": "2026-11-24T05:55:14+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,7 +127,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-17",
@@ -156,7 +156,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-09",
@@ -197,22 +197,22 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
-    {
-     "date": "2026-11-20",
-     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism United Nations Sanctions (Central African Republic) Regulation 2020 (Amendment) Regulation",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZllwNHZvekZFYmw5MXNLRV9nRDB6Wk9GekxaUTB6NnJhTDVfeHJVODJYNU9ublV5OUtZc21MbF9OQXJrVk1WSWFjcUhsZlFGQWpDMzFGeVpkNFNCclpMNWFRbnFaNXJpNXhQRW1nV3BrYXRKVmVuWjBZMmZUcUlUYUJQdw?oc=5",
-     "src": "Securities & Futures Commission of Hong Kong"
-    },
     {
      "date": "2026-11-20",
      "title": "Circular to Licensed Corporations",
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSDB4VzBVNjhlZXZ6U09rb3loVjc2X2dleTRUWEx1WkFHQU5SSkdrbUxoSlpLNkFtT1daWEhfY1ctbFhTbERyZzRrYWRBOS1DbUdzY1NwZV9HX2JCYl85emluOHlraFUtQUtDeG9BbmQ3Q3A3cFhFV3k3NHRKYUVoRGdSVQ?oc=5",
+     "src": "Securities & Futures Commission of Hong Kong"
+    },
+    {
+     "date": "2026-11-20",
+     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism United Nations Sanctions (Central African Republic) Regulation 2020 (Amendment) Regulation",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZllwNHZvekZFYmw5MXNLRV9nRDB6Wk9GekxaUTB6NnJhTDVfeHJVODJYNU9ublV5OUtZc21MbF9OQXJrVk1WSWFjcUhsZlFGQWpDMzFGeVpkNFNCclpMNWFRbnFaNXJpNXhQRW1nV3BrYXRKVmVuWjBZMmZUcUlUYUJQdw?oc=5",
      "src": "Securities & Futures Commission of Hong Kong"
     },
     {
@@ -254,7 +254,7 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-16",
@@ -265,11 +265,11 @@
    ]
   },
   "GB": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-17",
@@ -280,16 +280,22 @@
    ]
   },
   "MN": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-21",
      "title": "Cost of Rhino Software: Quick Pricing & Licensing Guide - portal",
      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSk5SeDNQZHdjenVYZEpNczZtWGhwZHkwVmNOSTJncFI2THhMSC1JN3lJUmtEd0E3REJpWmhQdV9QZlNtNldTSmRrRXp5WkJjaEpZdWs4ejI2X3l2WTNTaDZXRF90ZlpfbUk1bllhVDhqazRJdW42WDFpbG84X1pwempB?oc=5",
+     "src": "INMET"
+    },
+    {
+     "date": "2026-11-21",
+     "title": "Casino License Requirements: Your Guide to Compliance - portal",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZUY3NHdXMkk5WmdBRzU5cl9fWWhyRVNKUEdybG1EenVJdDVGbkZ6MFhFN3l2NUw5cFpvWlJKaVJYSEM4dWFyX1lOc1JuTzFuWDQ1WjU4VFVxZ1ZLWExZcVlYQmdkbGFtLUpuT1JaRks2Vm14SHg3V2FPZUIyWU1FOG96cGs5eldX?oc=5",
      "src": "INMET"
     },
     {
@@ -321,6 +327,18 @@
      "title": "HOW TO START A BUSINESS BROKERAGE FIRM",
      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTTNoRjJHS0dxTGVvc1Y3U21hM2R4RGV1cVlMbkpVeXVWcjlIeHlzdXMzbXBMaWQzTkE3TGNjOGc1Vi1VZjJzTnowMVB4VlJudkZXZkl6UU05LXg3b2tyOWpSOGxLRTJaZE1vdkE2M29FQ3o0RGVfRGo2YzU5RVRqQmJMVUJ5STVDX25v?oc=5",
      "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-18",
+     "title": "Online Gambling Platforms Hub: Find Licensed Sites - portal",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVHdHRVhxZnZwU2VxSGtOd2hocEFlcGhESlI4TkVhMjhYaFdZdjhhc0hLWDZ3NzZaREQ3NUZiT3lYbm1fcFdSYUQxWUVVTlAycmN3R3ktdlg4OUpfTkktTFhfczQtb0lVVzJXVEJHOUo1RDRib2c0WEYzRnRjX1dWNHJPbFpQQQ?oc=5",
+     "src": "INMET"
+    },
+    {
+     "date": "2026-11-18",
+     "title": "What's a State License: Your Guide - portal",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeVpPUEozakhfV3dWMlpaTEhad2tuODN4eEltdDN2WkhMRTJaNHlFYkhFd0pVQ1B0ZFNycTZQOE5uWDdrZ0hxOXJQNGJqeUxCQ2dZZFpWUHBpTUhNd3hPTVV5dTRHWmVUYzJlb1FHb1hRSUN6RXlYdm0zSWdsR1JJRkFR?oc=5",
+     "src": "INMET"
     },
     {
      "date": "2026-11-17",
@@ -493,7 +511,7 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-15",
@@ -504,7 +522,7 @@
    ]
   },
   "KH": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": []
   }
  }
