@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T23:00+09:00",
+ "updated_at": "2026-11-25T04:37+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -37,6 +37,14 @@
     {
      "date": "2026-11-24",
      "time": "19:04",
+     "title": "Treasury yields tick lower after inflation warning from New York Fed's Williams, investors await 5-year auction",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kVk10NWJKZmMxSHlDRjExaTRUbnMtRmhRTGFta21UaHg4NGNSZndMYTRxczhZSmg5TllvWi1LekdUcGc2c2hfcnVrQnhPR0NTSjI0QU0yZHpFZldCSndPWENKaXNKV0VubXYtTW9ndVllY3hRek1B0gF8QVVfeXFMUGg3N2J0czVpMHZ6dzNPbjdfb2dmYk9NQUw2ZmVQUG00UWlJeDdEaUkzSjJQMU5DOVVXQXg4YzBkYlJldkV0aFRjNXZJM2hKckRRR3lYc2xhemdhMk9rLTk4Q2Uxc3k0Xy1yOE9QZWVpM095amUwdk1BLXlHXw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-24",
+     "time": "19:04",
      "title": "Treasury yields steady after inflation warning from New York Fed's Williams, investors await 5-year auction",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kVk10NWJKZmMxSHlDRjExaTRUbnMtRmhRTGFta21UaHg4NGNSZndMYTRxczhZSmg5TllvWi1LekdUcGc2c2hfcnVrQnhPR0NTSjI0QU0yZHpFZldCSndPWENKaXNKV0VubXYtTW9ndVllY3hRek1B0gF8QVVfeXFMUGg3N2J0czVpMHZ6dzNPbjdfb2dmYk9NQUw2ZmVQUG00UWlJeDdEaUkzSjJQMU5DOVVXQXg4YzBkYlJldkV0aFRjNXZJM2hKckRRR3lYc2xhemdhMk9rLTk4Q2Uxc3k0Xy1yOE9QZWVpM095amUwdk1BLXlHXw?oc=5",
@@ -48,14 +56,6 @@
      "title": "보먼 연준 부의장, 금리 동결 직후 월가 만찬…감찰 조사",
      "src": "이데일리",
      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR0lkdzdjNDFLSkh2Uy1UZWtIN3UyeVE0cExsOGJMQjRqNkxqamM1eGt2OGp5aEt5WXdxRWhyd3Q0ckVKcnM3bmtIM202TUdsZHdWLWRvc1BrcmZRVjFVTHNvQS0xSm9GR3JIZUx5WnlmME9hZG1nRW50ZHRJWXd1VQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-24",
-     "time": "07:00",
-     "title": "Nvidia, Jensen Huang impact on US Bond market: Benchmark 10-year treasury note rises, 2-year treasury yiel",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNaG9FOXNJUGY5bG82QmFxbnZPM0loaGg2cFdzZmNxcTMzTEVPTVBENFJQS21fREFvTjdqSFNrNi1IYm9neXZ4SjR2S0Q0dzdxLUJUb1d2cEJXNVBMcWw2bVRIcnY1QTl3UUYzaFc4Sno5bU9mbE5wWGFhelRDb2c4Y1UyLWtnNFJmbGVlNWI1ejFMU2puNnVvTENQUV9hc0wwdkpPa1RCSEJOajktYkdaM3RpcFBZWkkzbGp2a3pMTTZPbWNOUUp3b25vTTJGVTZYaTROOHVlSzQ0U0dyNnlyWmIxLXJpTmF3djF4cWUyaFUzZmVwSUpWS0xHdHZuR0ExcjdyRFJ2d1phUURhRmp2a2RuMmZqLTIwY2FMQ01kSUpXUjhU0gGqAkFVX3lxTE5GMUdpbHBYYzRjaDQyNThpNGEwNXoxOE02THR5ZE5nNHVjRlJHS2dvdWhXNm5qb1NDTjk1QzU4eGN6QU1pWXZBNGlZUl8yRXN0dVFNT0NkeG1oWDd6cWFCT0E3RzNzNlBUZG12RFpZbGhXbGd0NkhqMi11ak5RQU9nM0VZYVd2ZXFodENnMW1VR0g4TGVkRm9Xbm91TXplWnBSTW5kRHFndjJZOU9VLTg1WjNOZ2NsWlJ4ajh4Snhjcy1BWG5Jd3cwa1lBcjhVS3dBSnBtSUxOVlVaYWNJOE5BOXFrakdTbXVQbS1jMG9Zd29qNzl3Z0xpSW1saF9jclFnWC1TUnRoM2lBYnZoaE1KdEsxMzZ0ck92dXpRQ3VWc000X25CRVNmTlE?oc=5",
      "priority": false
     }
    ]
