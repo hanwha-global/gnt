@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T14:29+09:00",
+ "updated_at": "2026-11-24T23:00+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
-     "date": "2026-11-23",
-     "time": "19:15",
-     "title": "2-year Treasury yield jumps as stocks rebound, investors await New York Fed President Williams speech",
+     "date": "2026-11-24",
+     "time": "19:04",
+     "title": "Treasury yields steady after inflation warning from New York Fed's Williams, investors await 5-year auction",
      "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QemJ4Zi1KUVFXdk1NTDJLQWtnQmpPSnBiZTY3ZFV3SmRwZmFFay1kLTZoNk1MclNIZW5SVzh4MzlfRHBZTWR5N003aU9udHVCczNUd3R5SWxmMnIzb3QyS0R6akhuUzFJMlkyT2ZUd9IBdEFVX3lxTE1EVlVKZHJ6WUhjRGtoM2RrSjMtT0ZaanpZeThYZXNkdHRyY2FtNFc3SGJiREt5Rm5fc29DWWtMZ0FKVzNES09RMHBOVjVMY0Y4R0xHdW5ybW9fVW9CenRxWGtwYnRnVUZJQlNJR1RpUk9lbzNU?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kVk10NWJKZmMxSHlDRjExaTRUbnMtRmhRTGFta21UaHg4NGNSZndMYTRxczhZSmg5TllvWi1LekdUcGc2c2hfcnVrQnhPR0NTSjI0QU0yZHpFZldCSndPWENKaXNKV0VubXYtTW9ndVllY3hRek1B0gF8QVVfeXFMUGg3N2J0czVpMHZ6dzNPbjdfb2dmYk9NQUw2ZmVQUG00UWlJeDdEaUkzSjJQMU5DOVVXQXg4YzBkYlJldkV0aFRjNXZJM2hKckRRR3lYc2xhemdhMk9rLTk4Q2Uxc3k0Xy1yOE9QZWVpM095amUwdk1BLXlHXw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-23",
-     "time": "19:15",
-     "title": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QemJ4Zi1KUVFXdk1NTDJLQWtnQmpPSnBiZTY3ZFV3SmRwZmFFay1kLTZoNk1MclNIZW5SVzh4MzlfRHBZTWR5N003aU9udHVCczNUd3R5SWxmMnIzb3QyS0R6akhuUzFJMlkyT2ZUd9IBdEFVX3lxTE1EVlVKZHJ6WUhjRGtoM2RrSjMtT0ZaanpZeThYZXNkdHRyY2FtNFc3SGJiREt5Rm5fc29DWWtMZ0FKVzNES09RMHBOVjVMY0Y4R0xHdW5ybW9fVW9CenRxWGtwYnRnVUZJQlNJR1RpUk9lbzNU?oc=5",
+     "date": "2026-11-24",
+     "time": "15:13",
+     "title": "보먼 연준 부의장, 금리 동결 직후 월가 만찬…감찰 조사",
+     "src": "이데일리",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR0lkdzdjNDFLSkh2Uy1UZWtIN3UyeVE0cExsOGJMQjRqNkxqamM1eGt2OGp5aEt5WXdxRWhyd3Q0ckVKcnM3bmtIM202TUdsZHdWLWRvc1BrcmZRVjFVTHNvQS0xSm9GR3JIZUx5WnlmME9hZG1nRW50ZHRJWXd1VQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-23",
-     "time": "11:19",
-     "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVy1Pa3puQ1RUS0xLT3pTdTBrdUc0Q0J4TkFqMW81cXpOdUpQSU9LV2wtNlJIS19wOG9uMEVEUlZkZUNIQXJBcXdNeWdaV0JiXzF4WGluNWtSaVU4T09reFVtYkc0dXJOZkFLXzFMUGNzOVl1SHRVaG5PR3dvVnpwR3VTbGJibEloRHVzcjQxYWc5UWxZdWR5OWdmdGE5UTh0c1NSRF9vc09YUk1aVHNFNmFVZw?oc=5",
+     "date": "2026-11-24",
+     "time": "07:00",
+     "title": "Nvidia, Jensen Huang impact on US Bond market: Benchmark 10-year treasury note rises, 2-year treasury yiel",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNaG9FOXNJUGY5bG82QmFxbnZPM0loaGg2cFdzZmNxcTMzTEVPTVBENFJQS21fREFvTjdqSFNrNi1IYm9neXZ4SjR2S0Q0dzdxLUJUb1d2cEJXNVBMcWw2bVRIcnY1QTl3UUYzaFc4Sno5bU9mbE5wWGFhelRDb2c4Y1UyLWtnNFJmbGVlNWI1ejFMU2puNnVvTENQUV9hc0wwdkpPa1RCSEJOajktYkdaM3RpcFBZWkkzbGp2a3pMTTZPbWNOUUp3b25vTTJGVTZYaTROOHVlSzQ0U0dyNnlyWmIxLXJpTmF3djF4cWUyaFUzZmVwSUpWS0xHdHZuR0ExcjdyRFJ2d1phUURhRmp2a2RuMmZqLTIwY2FMQ01kSUpXUjhU0gGqAkFVX3lxTE5GMUdpbHBYYzRjaDQyNThpNGEwNXoxOE02THR5ZE5nNHVjRlJHS2dvdWhXNm5qb1NDTjk1QzU4eGN6QU1pWXZBNGlZUl8yRXN0dVFNT0NkeG1oWDd6cWFCT0E3RzNzNlBUZG12RFpZbGhXbGd0NkhqMi11ak5RQU9nM0VZYVd2ZXFodENnMW1VR0g4TGVkRm9Xbm91TXplWnBSTW5kRHFndjJZOU9VLTg1WjNOZ2NsWlJ4ajh4Snhjcy1BWG5Jd3cwa1lBcjhVS3dBSnBtSUxOVlVaYWNJOE5BOXFrakdTbXVQbS1jMG9Zd29qNzl3Z0xpSW1saF9jclFnWC1TUnRoM2lBYnZoaE1KdEsxMzZ0ck92dXpRQ3VWc000X25CRVNmTlE?oc=5",
      "priority": false
     }
    ]
@@ -63,6 +63,14 @@
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-11-24",
+     "time": "18:32",
+     "title": "MSCI Says No Change in Indonesia Market Consultation Process",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR0dPR0hpTVloNDNNejNWZEpNd1RiakRqQnRMVV9mTE5PMUxsdnNVZGdZU1JQOFhibXRKSEFuR0xMODY1d042NlRoTW1kOVgwZ2xKNTNIYk9wQXR2SUowa2lILU9CcFNrRlUweFJvSXVxc2RZV0dwX012Snl2ampQWmpMTTg4MVl1SU5tcTh3NVVVQW5jcld2OEtfUC1qTENwSU51YnIyZjlLOWZIT0paVA?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-24",
      "time": "13:58",
@@ -77,14 +85,6 @@
      "title": "MSCI denies assurances to Indonesia over market downgrade, says review remains unchanged",
      "src": "The Straits Times",
      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYmwtSE1OYVNYRHh1OXo5Nk1kZHVINFRFcUpERzBja1R6ZmJvWk01U0lORGdhejNzcGktdDFRVVJzR3RwU2pNcUpsTjlOZEI2ZDFoS3Nrb1RWdm9Ib1hObThVbVJFbzVrakJhc2ppVVlBTGgyMTg1OV8wU0I2YTZqalRtaFRETUdzeTI0T1Ftazk1RXZwelN0aFFwWmI5c1gwVVBUTmZ2WWF0RFZNOG9CU0tLV2dkOVkwUXdEQkI0VG5EMFFmcnBCdQ?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-24",
-     "time": "13:13",
-     "title": "MSCI Says No Change in Indonesia Market Consultation Process",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR0dPR0hpTVloNDNNejNWZEpNd1RiakRqQnRMVV9mTE5PMUxsdnNVZGdZU1JQOFhibXRKSEFuR0xMODY1d042NlRoTW1kOVgwZ2xKNTNIYk9wQXR2SUowa2lILU9CcFNrRlUweFJvSXVxc2RZV0dwX012Snl2ampQWmpMTTg4MVl1SU5tcTh3NVVVQW5jcld2OEtfUC1qTENwSU51YnIyZjlLOWZIT0paVA?oc=5",
      "priority": true
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-24",
-     "time": "11:55",
-     "title": "Jensen Huang’s Nvidia return buoys South Korea, Japan stocks",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNHNBQjZRaXJ0NWxIS211Y0JLWTRzOUV3aFp1TTJiSGQteEItY0pFWjE5d205d0taT215eXAzM25QMk9BM25RNDV1S2JRR0JidWY0Qnk5WFZZdDJmVTZIQzNUemdKVk5HQW5QbEFMal9qZ0RZTDZUVG9YM2QxVkJPeWliSFNQNTd6Y3Z3QjJCb25jdjNjMzQ0SWFtX0VxR2l3emVMbGVBdHdFMFQ1c01mM0tTd3JCUQ?oc=5",
+     "time": "21:00",
+     "title": "Bank of Japan to continue rate normalisation in 2027",
+     "src": "Financial Times",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yOEZrR0hUR29xeDN2LXRRWU1GQms2eHFNN3NENTlhZmxJenE5VHpmallmb0JYbTFfS21rQTNnRkVOZXpBU2VaRFFPQV8zVi1LT3hZWm5UR2I1eFRsQ09TcFpCMnpJRlhpSnJhWkdJSjA?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-20",
-     "time": "16:55",
-     "title": "Japan Tobacco shares fall 10%; Russia seizure hits 900,000 investors",
-     "src": "Nikkei Asia",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxON2ZpMmF5V3BnU0ZKREt1MWY5NVg5ZU1hYW4xcHRyZEFfN1VmVzZXSGpJMXlyNmJtVTZuazh0cm5CeFdKWW02aHd5bEdnaDZxNk1XbkYxWVNkT2RaU1lHY19JSXBLYVhDUHNqX1IwRkk1UVB1NV9hWVI2bVB5MzNHUnFzX3VENlB6SmV3WllRQ3pNNkQ5SndwSmVKRVhmd3NJOWg3UEo3NGt2OU91TFFSeHNQWm9TcW8?oc=5",
+     "date": "2026-11-24",
+     "time": "17:06",
+     "title": "BOJ to keep hiking rates but soft spending muddies path, ex-central bank policymaker says",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYzlueXpqVVlWYTlueDVZdnk2S3JtZE5wYnVJUDdQbmNEVWh4U2RDTkxNNTdId3E1LVNvSnFJS3VoMVhZNjc3NGxzQ1NObTRISEdDVWJCMFZjdWFrVkIzbXJFbzdoVnpJZF9ZRkxxS0ZuemkzeDJUUnJVLTA1MWExcUFkcWRFOFlKVlFnUDJCWlZsMklFQ0pBNzMxakhPNjBLclZzWEExWFZmZUNqRzB6LXlZTF9WUDBmS2ZUZ0ln?oc=5",
      "priority": false
     }
    ]
@@ -153,25 +153,25 @@
     {
      "date": "2026-11-24",
      "time": "10:45",
-     "title": "Hong Kong stocks climb as Jensen Huang’s surprising comeback revives AI trade",
+     "title": "Hong Kong stocks erase gains as Jensen Huang’s comeback offset by AI jitters",
      "src": "South China Morning Post",
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOVhDenptTFg3SWQ1ZTdaNkJkZ25BQTh2WHZFMnltOFl4QW1nZ0VGdHZiVElaam54QVVzbG9kRE1UWmM4THFCUThTWVhuZ0hGa25VQWl3VG1lVmZlXzI3eHdBVUxTSWdOUXJ4bDRxMngtSEFuVkd4SUcwYVJtUVB4QlZIZmZncmUwMEZpemVfdW9PV1FKWEJCY1k1SG54cjJHMlJRTzVYQXZta2JWa0JMN3lJdzY2ZHV6YmJmM1dnaTFZZHZfQS1GRkVKX1FDTUE?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-23",
-     "time": "13:20",
-     "title": "Hong Kong stocks rebound to pare steep losses following US tech rout",
+     "date": "2026-11-24",
+     "time": "10:45",
+     "title": "Hong Kong stocks surge as Jensen Huang’s surprising comeback revives AI trade",
      "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMmR0TXdKQ21IYS1mVVVLMXo5SG92Tm50WG4wSXAwUURmMlNBQWh6OTVucDVzQmZhNGhHWGlEc0xoOXhPZnk4SVZ0OGh6b293dVBnNFdPaEhKS2E2OG1HdWlubDdLTl9vOEFJYnlra1Z3QzZlOW85Z1lndXdWSnE4dXZtOFFlQTJ5bmpPby1MSGk2enRCV2l1VExNS2haSlY4Z0gwMGxRdUdFeTdocnljeEc1aHRjUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNdkFsRE51bnk3RzB6U25SWWVyZ05HbUhtU3ljamh6QUpwSnJRZmM0TXNMenhuLXVVQnZFMWtESFJMUFVBdG1FUHdYSTBRZjdvRlRxUlJrZGFhMFdickJETmRVTUY4Z0dSOGdpR0FJcndVbkpmTUFCS2dPX2l2YVFjVmgzNlduTS1wSU5zSm1Sd3dKNWJCTUhaa1RtY0JVeUxfWTc5YjNGSklMbGtwNENFRjlFc0FLcmsya25CR1pveUFqSlFTaE1EV096cVZZUzFmUzNMdEthMlZJcEtGR281RzhSUE1PeVdiQWtkTm9QQjBMeS1LNG9od3hReVBWdw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-23",
-     "time": "13:20",
-     "title": "New 19-month low: Hong Kong stocks plunge as AI sell-off spreads to Asia",
+     "date": "2026-11-24",
+     "time": "10:45",
+     "title": "Hong Kong stocks climb as Jensen Huang’s surprising comeback revives AI trade",
      "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZy1Id01iUmRZQ2taWXpENDc3SjB2aHg5d3V3VlhhUHZHQm1jYTRsMktDaXNmNUo3Z3Nmcks2MVpVengwSU10T3hScDBobk13TTA0RzIzbm9oOFUzVjdGS0lxZ0NhRVNBYk5fdlNYTTRzUFpiMWJJekwwdGpTLVdnSFFyeGdDR0lmV2tOLTVCcWUxd05nZVlFWWlwMjBBYm5OQnJJRlJFa3YxZlRLVWRtcTViaFpHZWdYZlcteV9HTVJMd2FHb2taamVjMkhCbTVPSkJKakNVUENfdXZIaURnSUwzQnQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOVhDenptTFg3SWQ1ZTdaNkJkZ25BQTh2WHZFMnltOFl4QW1nZ0VGdHZiVElaam54QVVzbG9kRE1UWmM4THFCUThTWVhuZ0hGa25VQWl3VG1lVmZlXzI3eHdBVUxTSWdOUXJ4bDRxMngtSEFuVkd4SUcwYVJtUVB4QlZIZmZncmUwMEZpemVfdW9PV1FKWEJCY1k1SG54cjJHMlJRTzVYQXZta2JWa0JMN3lJdzY2ZHV6YmJmM1dnaTFZZHZfQS1GRkVKX1FDTUE?oc=5",
      "priority": false
     }
    ]
@@ -179,6 +179,14 @@
   "SG": {
    "label": "싱가포르",
    "items": [
+    {
+     "date": "2026-11-24",
+     "time": "19:11",
+     "title": "Singapore shares claw back losses on Nvidia-led rally; STI up 0.1%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOUx3UkZIX2FCYjlka1VPeENka2VRa1huOFc0c3MyaEpxNDNabkxlSTV3S2VVOGZTNVFwemg5ZnNVaWZaOF9VYkNLRFhXSFU0b3E5eGFkOWRNTDlKbkJIS2hERkFPMzBIajNpWTNvSTZ1WEtMMjNob0NQQXF0WVRMWmI5d1Q5NjlUdkZfeVVseEc0YkJpM0pGcHlPT09mck85ZzlOS0FoQ1JNSjJvd1E?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-24",
      "time": "14:00",
@@ -193,14 +201,6 @@
      "title": "MAS likely to keep monetary policy unchanged in January even as Q1 core inflation set to rise: economists",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOeF91ZDl6bFE0SkhVaXNtS05DN0JGR1dpS0ZfdVhQd0tnWS03VUcycHY2UldGbFYzMllOUHpBZnMzYnRYU3dUNklyR0NGTlZUS1B6eUh3MzE1cnA2MUkyNWttRzluZGdJWGxia2tZUktfZnBGd2lzdkhtNm52cFhCLUNrUDNmZlZISVd5YTdpWkpidDc1VU1ZRWpzRlBMS212a3psMWY5UjloZXZ6M00ybzh4RWh5U19FUjBfYVdELTBCLW1qZmszN0ZoMTRKOG9m?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-23",
-     "time": "19:23",
-     "title": "Singapore shares extend decline alongside regional indices; STI down 0.4%",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUUNGUExXTlJUTTBXbjFiTklkcFZ3Qlp5dXkwT1lfV1MwZ3V2UG42Wml6NVF6RFhhLVlveTZTaENlTmNLM3I2MFRiOTRqT2lIeHBtWVZYZDJmTVJsN2R4eWNCczJQb0ltelI5SjlOMkFFOF8tb1BhY3l4SGhUbk9Vc3ZnMHg0RUFST0ZHVlZYWWhBdU5UaUJrOUdiSGZvSi1CVzVXc012TE9Pc3RDcUhHT056dVZFcjVFYVpicjEzNA?oc=5",
      "priority": false
     }
    ]
@@ -242,7 +242,15 @@
      "time": "13:58",
      "title": "MSCI says Indonesia downgrade proposal remains unchanged",
      "src": "DealStreetAsia",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWmxvV3FvUjhJMFlZcEVzMlZwQVhrcFdfcmtJU1FJa2prbzFaNW53R0RMc0duTjgzZjZ6UlNHTVhqS0JLVHFmVHZLbzYxN1ZJcHI4a1VTZkdadUlWZmhjREh4MHhXRmZHNWVlT0NfMG9tNi1KamlyeGM3ZDlXQXFjcGlWZVZRMWhhbGg4eVhxbW1Ec0dndlFpa0ZBLVJDTWd2dUNYWVJn?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWNuME0xQ252OWloUU1yZnYtYkZZbUNrUk1XcXlQcVpodEJMa3lobEF0SmFSeUhRbWx2NlJSampJNzhCdmpzOWlWWW1HRm5oa2dBOFd3OUhxanM1TERDV3llNkp3clhrb3BIMjZPMGU1bzlQdk1qT3p1Z1R4TEQ0cGswUXlsM3B3NEV1SG5sS2NPLUhzUEtuQXJjbDYyRVFlcTdCMQ?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-11-24",
+     "time": "12:51",
+     "title": "MSCI denies softer stance on Indonesia's market status, review ongoing",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTTJUZ0F2WXl0N0pfQ1RMYlVSTURkS3UxeHVudGRQb25nZUF5dmdvU2ZvNWZOM3dGSnlCajRIM2tOT051UnF2ekZGT2JqQU1Ta0pwbS1vVF9tQ2V5REpkbm81RndwQmJJb3FWeGcyeEFqVmhYQVhJaE9TcjlnUUJQb0dXS2E4YWRaR2p2RlE0NEdzWkp6UVdLU29BM2ZiY0xOS3g5UFFzMDBpMVI4V2pHaFBqZC1OZVFv?oc=5",
      "priority": true
     },
     {
@@ -251,14 +259,6 @@
      "title": "Indonesian Stocks Rally 1.35% as Prabowo Holds Talks With MSCI CEO",
      "src": "Jakarta Globe",
      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRFlTMjg1M3RfRTY4aGlhWEJlWjdocUVRdUtSZkVxUlhoZmE1LXpYbWxyR0RTdnpnX2duX05IV210Wm50dEo5QjNoSXNGbFJLRTRtTklaZk1KSGEyTHpWem5ROVk3Tk5EYWtNLXNLZlBZNE1MUjViZUNseW5YbGlpSGxFb0N5U1B6MXZVa1E3U2d2THZsaldCVDh1RUhaZw?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-23",
-     "time": "16:06",
-     "title": "Prabowo Holds Talks With MSCI Chief as Indonesia Seeks to Avoid Market Downgrade",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVFN1SFFrN2V2YllCTkRiZUhqdmZhX0Ntd3FHOEd4SnpKaXRYUUItUXlVbEFSNGFaUDRJbzhYSUlCNS1MMmJRN0h3d0ozZXpELWlxRl84RHlrQnhMNmc1akVENEFkb2RVZFdlbWptU1NPNUlwMzhfVE1LcF91TldXek55dnNGUDlnV3VGR2NYX3JiU0VraVB6OVlXUzRWUWE0WWFEMTNaNXYxUEs3dFNBSmYtYw?oc=5",
      "priority": true
     }
    ]
