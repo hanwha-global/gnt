@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:08:25+00:00",
+ "updated": "2026-11-24T05:42:35+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,21 +66,21 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
-     "date": "2026-11-18",
-     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdmxkYzlFbDJOdjRFZXJfZUl2bW54c1FqY29kUlRoZXpGWGFOcTJLWXdzWkwyZWF5c2lNMFVPQmdFYzBOMHJsOHlJYjNTbS1wckVPQVN2d3ktQ2ZEZ0pUZGNkVEEtT0h4TnZUaC1xTFhTbGxCS3BUdHl6SEZjNWRRLTBhNXZ5dGZsNVo1WERKZFF2Vk10cFpVYmdlWWlKWVF5VGpYbzljcw?oc=5",
-     "src": "대한민국 정책브리핑",
+     "date": "2026-11-23",
+     "title": "개정 특금법에 따른 기존 가상자산사업자 신고접수 결과 및 향후 심사절차 안내",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSU9GR3FFdEZlOFB0eFlXSG9RS1VFa29NV3ZKNTZSZVpQdENOOTdLcmZ5NGdib3FVQVY2OEhmWWRDVUROUUZjWDNEWGpVTUEyLWtSWEZuUzgwTDhnX1JheUlXdTQwMVl6cmFzam43cFFPTklOZ0E0X0tMQUFMeTBRamZNWjdmWTNZMjkwTjdB?oc=5",
+     "src": "금융위원회",
      "topics": [
       "vasp"
      ]
     },
     {
-     "date": "2026-11-17",
-     "title": "가상자산사업자에 최고 수준의 보안 강화 주문 - 전체 | 카드/한컷 | 멀티미디어",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nakhSbUlCVDdYMGFfRTVpdXhfYWx6OTdUQzd2NE9KVndhejl4SXBzaHpBVkNiaWZKbWhnNlI2cm5rVWhPRklkZGJ4TU80Z0lVdGx0R1RmTGRqWFVnTVFhaDBfb2J5LUNVNEFQZG5R?oc=5",
+     "date": "2026-11-18",
+     "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자) 인터넷 사이트 국내 접속이 차단됩니다. - 구글·애플 앱에 이어 인터넷 사이트도 국내 접속차단",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdmxkYzlFbDJOdjRFZXJfZUl2bW54c1FqY29kUlRoZXpGWGFOcTJLWXdzWkwyZWF5c2lNMFVPQmdFYzBOMHJsOHlJYjNTbS1wckVPQVN2d3ktQ2ZEZ0pUZGNkVEEtT0h4TnZUaC1xTFhTbGxCS3BUdHl6SEZjNWRRLTBhNXZ5dGZsNVo1WERKZFF2Vk10cFpVYmdlWWlKWVF5VGpYbzljcw?oc=5",
      "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
@@ -96,6 +96,15 @@
      ]
     },
     {
+     "date": "2026-11-17",
+     "title": "가상자산사업자에 최고 수준의 보안 강화 주문 - 전체 | 카드/한컷 | 멀티미디어",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nakhSbUlCVDdYMGFfRTVpdXhfYWx6OTdUQzd2NE9KVndhejl4SXBzaHpBVkNiaWZKbWhnNlI2cm5rVWhPRklkZGJ4TU80Z0lVdGx0R1RmTGRqWFVnTVFhaDBfb2J5LUNVNEFQZG5R?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "vasp"
+     ]
+    },
+    {
      "date": "2026-11-13",
      "title": "26년 제1차 ｢가상자산위원회｣ 개최",
      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSGUxRkl0VlVVbm1PcFBuc0tVTkhzMHBfLUJEYnU0QTl6T05pc3lOaHpFZFBmZ3FwTnl5dlFpMUZMUjRmeWpMa2tUS2szQ3VVSjc0Q1RRR1RVNjRiNF9KZkxEU0ZiUDVmZk1OeG9aTzVLdzNqRXVPZk5KTmxyLU9HTjRESnRFSzVreUt3NmxoYkNVSHZaR1AwTkJ6ZlpRZ0pJTF9vMlNR?oc=5",
@@ -108,7 +117,7 @@
      "date": "2026-11-12",
      "title": "가상자산사업자에 대한 최고 수준의 보안 강화 조치를 통해 이용자의 자산과 정보를 철저히 지",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOWluUEphTUtPY1FYTldfalpVSjJhQmp2UHBkZnBYR2Y5ekd1QU9pdWQ4NFhuTU84RkpMdlN0N1VvWnNreXNaSUw1UzI4M2NUa1dMVjJiMHNnZXJvVGhyQVBuMzRGVzl0RDZReG1Ed0N3VWh4NUhuS242TjhEVDNoR01vMGY0MUVSZnIxc0p3?oc=5",
-     "src": "금융위원회",
+     "src": "KDI 경제교육·정보센터",
      "topics": [
       "vasp"
      ]
@@ -390,8 +399,17 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
+    {
+     "date": "2026-11-23",
+     "title": "CFTC Staff Issues Advisory Concerning the Use of Crypto Assets to Satisfy Financial Resources Requirements",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9GekFGaXZySW5GUEM5dnAybFVJLWE0Z2lLUUZpWW9YdERzNFN0VTVqQklneVRUVEN5dDFuTGZQQ3dKbDFHRlc3Y0U1RXhHWFRfTzFkTkNaUkVxWTY5dnlNVHFR?oc=5",
+     "src": "Commodity Futures Trading Commission | CFTC (.gov)",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-11-19",
      "title": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
@@ -477,15 +495,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-19",
@@ -535,7 +553,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-12",
@@ -549,7 +567,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-10-28",
@@ -563,7 +581,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-09",
@@ -667,7 +685,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-22",
@@ -834,7 +852,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-23",
+   "auto_checked": "2026-11-24",
    "items": [
     {
      "date": "2026-11-20",
