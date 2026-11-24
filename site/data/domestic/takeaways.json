@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-23T10:56+09:00",
+ "checked_at": "2026-11-24T14:29+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -197,44 +197,24 @@
    "regime": "NEG",
    "bullets": [
     {
-     "rule": "R13",
-     "variant": "",
-     "category": "구조조정·비용",
-     "text": "인도네시아 증권(CSA)·인도네시아 운용(CAM) 백오피스·IT·준법 통합으로 중복 고정비 축소 검토",
-     "evidence": [
-      "3Q26 두 법인 순손실 9.7억원, 비용 117.9억원 vs 매출 108.3억원(DART 2026.09 분기보고서)",
-      "인도네시아 증권(CSA) FY2025 순이익 27.2억원에서 적자 전환",
-      "IDX 2026-10 일평균 거래대금 연초 이후 평균 대비 -19%(IDX 회원사 집계)"
-     ],
-     "links": [],
-     "bucket": [
-      2,
-      -2
-     ],
-     "keys": [
-      "CSA",
-      "CAM"
-     ]
-    },
-    {
      "rule": "R08",
      "variant": "NEG",
      "category": "리스크·규제",
      "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
      "evidence": [
-      "Reuters 11/17 보도 등 부정 구조 뉴스 8건(최근 30일)",
-      "IDX 1개월 +2.3%, 연초 대비 -38.6%(11/17)"
+      "DealStreetAsia 11/24 'MSCI 강등 검토' 등 부정 구조 뉴스 7건(최근 30일)",
+      "IDX 1개월 -4.1%, 연초 대비 -39.7%(11/23)"
      ],
      "links": [
+      {
+       "label": "MSCI 강등 검토",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWNuME0xQ252OWloUU1yZnYtYkZZbUNrUk1XcXlQcVpodEJMa3lobEF0SmFSeUhRbWx2NlJSampJNzhCdmpzOWlWWW1HRm5oa2dBOFd3OUhxanM1TERDV3llNkp3clhrb3BIMjZPMGU1bzlQdk1qT3p1Z1R4TEQ0cGswUXlsM3B3NEV1SG5sS2NPLUhzUEtuQXJjbDYyRVFlcTdCMQ?oc=5",
+       "title": "MSCI says Indonesia downgrade proposal remains unchanged"
+      },
       {
        "label": "Reuters",
        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd0xCd1pZMjZLRGo4TEMxemFQd0hsdDZsNTFCNUpYVDRPeXEwcnhFNE1XbHZsY0xWWTRtYTFIMk9jSWpKUnFhemdCQnRNZVVTU2FPOGw2MWdzVTFlZ3U4S2hqVmU1VU9xUlhYbzc4aWFiNHNaY3lVQUdVMHRNNnFySmpPejN6UWx6Ni1yVllLZ2N5aGJxR0YyYkVoODktRkdJbTlGd1E4NDB1MXdKdG1VS2p1RVZYTV9JdGww?oc=5",
        "title": "Indonesia on a 'slippery slope' as political tumult adds to MSCI-led market angst"
-      },
-      {
-       "label": "MSCI 강등 검토",
-       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVk1nZXdyMjAyQTRCTmZnNUVKWUlJUlk2X3VWR3h4R2plTC1TTE0yVXJJM0hmVVBTdXhaVjFlaW9Mdm9rbUhFMnRrM0s5SEhmcTVOMDVpLW83V0hmUURyN0Zqa2h5UFpicElTMGRGeEJ2N2ZESWxrNndHb0pNb1lPZjZZZ3daLXZid1V1dWZaU0lIRXVtYXc?oc=5",
-       "title": "MSCI downgrade threat exposes Indonesia's patronage problem"
       }
      ],
      "bucket": [
@@ -247,12 +227,32 @@
      ]
     },
     {
+     "rule": "R13",
+     "variant": "",
+     "category": "구조조정·비용",
+     "text": "인도네시아 증권(CSA)·인도네시아 운용(CAM) 백오피스·IT·준법 통합으로 중복 고정비 축소 검토",
+     "evidence": [
+      "3Q26 두 법인 순손실 9.7억원, 비용 117.9억원 vs 매출 108.3억원(DART 2026.09 분기보고서)",
+      "인도네시아 증권(CSA) FY2025 순이익 27.2억원에서 적자 전환",
+      "IDX 2026-10 일평균 거래대금 연초 이후 평균 대비 -18%(IDX 회원사 집계)"
+     ],
+     "links": [],
+     "bucket": [
+      2,
+      -2
+     ],
+     "keys": [
+      "CSA",
+      "CAM"
+     ]
+    },
+    {
      "rule": "R04",
      "variant": "gated",
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용 하락에도 MSCI 결정과 손익 회복 이후로 보류, 후보 검토만 선행",
      "evidence": [
-      "IDX 5,305(11/17), 최근 1년 고점(2025-12 월말) 대비 -38.7% · 루피아 원화 대비 연초 이후 -14.9%(ECOS 11/16) · 원화 환산 지수 연초 대비 -47.8%"
+      "IDX 5,216(11/23), 최근 1년 고점(2025-12 월말) 대비 -39.7% · 루피아 원화 대비 연초 이후 -15.0%(ECOS 11/23) · 원화 환산 지수 연초 대비 -48.7%"
      ],
      "links": [],
      "bucket": [
@@ -269,7 +269,7 @@
      "category": "상품·제휴",
      "text": "BI 고금리 국면에 맞춰 인도네시아 운용(CAM) 채권형·MMF의 인도네시아 증권(CSA) 고객 교차판매 검토",
      "evidence": [
-      "BI 기준금리 5.75%(2026-10 기준, 1년 +100bp, 다음 결정 11/18)",
+      "BI 기준금리 5.75%(2026-10 기준, 1년 +100bp, 다음 결정 12/17)",
       "인도네시아 운용(CAM) 3Q26 매출 12.0억원·순손실 6.7억원(DART)"
      ],
      "links": [],
@@ -282,10 +282,11 @@
      ]
     }
    ],
-   "changed_at": "2026-11-18",
+   "changed_at": "2026-11-24",
    "reason": [
-    "새 뉴스: Reuters 보도"
+    "새 뉴스: MSCI 강등 검토"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "MKT",
@@ -497,9 +498,21 @@
      "reason": [
       "새 뉴스: Reuters 보도"
      ]
+    },
+    {
+     "date": "2026-11-24",
+     "fp": "c97d83264f8e",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "R06"
+     ],
+     "reason": [
+      "새 뉴스: MSCI 강등 검토"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -642,5 +655,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-11-19"
+ "updated_at": "2026-11-24"
 }

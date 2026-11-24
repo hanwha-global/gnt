@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T05:26+09:00",
+ "updated_at": "2026-11-24T14:29+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -401,15 +401,6 @@
   {
    "date": "2026-11-02",
    "time": "17:00",
-   "title": "Korean financial firms are buying into Japan's brokerage market",
-   "src": "The Korea Times",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVdjT01aeVpjUTJ5cmFlVnlpN3JydjdLVHpQNzl4RnNaOFBSNC1DYWJpa3AzR1Y3UDJaaWd2cmZDSzQ3eEdMZElQRk01UjI2SXhBU0xRY1BGa3EyMTNzbDhGdm9QVl95TWNLWE80S0lod2VVcHZpbFhvMHU4Yk54R0k3RnBrclE5dUdmeEdSQ05VU2JhSUZtX19DM2d4ODRTSV8wVkRuZVFDc0pGeE9yWnJoaFptY21raDNyX1RNYmoyQkXSAcgBQVVfeXFMT0FSYkpqQk9taEI1QUdERFBEWExnMy1Sd19GTmhyeUw5QXF2MHJaUmc1bkI4elo3WjhCMTZ0YmNOdUZjVjFzVEY3U01Oa3ZTNjJ5MHlhTTJ3N0Vvb2lKM2ZXS05vUDRDN3E5ZUplSGVHYzdHM19ITW1URzNUX1pJSmlValdPeWE2emh1clRMVnhSLWhiYjZHX2h3VHNQeFBTMnNDR0lVRUx4Z0thZzNFQmE5SWdxb0pxVzVpTVJpaG04OGtOSFJlQ0M?oc=5",
-   "site": "www.koreatimes.co.kr",
-   "firms": []
-  },
-  {
-   "date": "2026-11-02",
-   "time": "17:00",
    "title": "미래에셋·토스, 日 시장 정조준…해외 리테일 경쟁 '후끈'",
    "src": "글로벌이코노믹",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeWhCeUlxdUxuR2Z5czNLX3d2TnQxUm1WM1hNWmZEQTExRlRTNW1pOWQtaXZzbk9UaFhhLTZRTUlVWExyblIzWnV2dHE1d0dkYmpyakNHTjNZb0pDQ2NHZDJuRmxERmRIT0xfQjVsX1R2V2pldXZIc1V4SnRVaDNINHhBRGVLekg1?oc=5",
@@ -417,6 +408,15 @@
    "firms": [
     "미래에셋증권"
    ]
+  },
+  {
+   "date": "2026-11-02",
+   "time": "17:00",
+   "title": "Korean financial firms are buying into Japan's brokerage market",
+   "src": "The Korea Times",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVdjT01aeVpjUTJ5cmFlVnlpN3JydjdLVHpQNzl4RnNaOFBSNC1DYWJpa3AzR1Y3UDJaaWd2cmZDSzQ3eEdMZElQRk01UjI2SXhBU0xRY1BGa3EyMTNzbDhGdm9QVl95TWNLWE80S0lod2VVcHZpbFhvMHU4Yk54R0k3RnBrclE5dUdmeEdSQ05VU2JhSUZtX19DM2d4ODRTSV8wVkRuZVFDc0pGeE9yWnJoaFptY21raDNyX1RNYmoyQkXSAcgBQVVfeXFMT0FSYkpqQk9taEI1QUdERFBEWExnMy1Sd19GTmhyeUw5QXF2MHJaUmc1bkI4elo3WjhCMTZ0YmNOdUZjVjFzVEY3U01Oa3ZTNjJ5MHlhTTJ3N0Vvb2lKM2ZXS05vUDRDN3E5ZUplSGVHYzdHM19ITW1URzNUX1pJSmlValdPeWE2emh1clRMVnhSLWhiYjZHX2h3VHNQeFBTMnNDR0lVRUx4Z0thZzNFQmE5SWdxb0pxVzVpTVJpaG04OGtOSFJlQ0M?oc=5",
+   "site": "www.koreatimes.co.kr",
+   "firms": []
   },
   {
    "date": "2026-11-01",
@@ -451,6 +451,17 @@
   },
   {
    "date": "2026-10-31",
+   "time": "16:00",
+   "title": "[MD포커스] 박현주가 낙점한 日 증권사는 ‘산코’…미래에셋 “현지 리테일 진출”",
+   "src": "마이데일리",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5XM2RCNk1TdC1IaG42SlhkUjdVanRWWEV0OGdwMk5hVVhpZmVrRnA4M01BdjRHRkYzLTlHZkxVMTNLT043aTZmMDdqck10UzVPR0xqbElCM3JXNE13eUlnOQ?oc=5",
+   "site": "mydaily.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-31",
    "time": "11:16",
    "title": "BSC - Hana Securities Cooperation: Imprint in connecting the Vietnam - Korea capital market",
    "src": "Laodong.vn",
@@ -460,17 +471,6 @@
     "하나증권"
    ],
    "foreign": true
-  },
-  {
-   "date": "2026-10-31",
-   "time": "07:19",
-   "title": "[MD포커스] 박현주가 낙점한 日 증권사는 ‘산코’…미래에셋 “현지 리테일 진출”",
-   "src": "마이데일리",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5XM2RCNk1TdC1IaG42SlhkUjdVanRWWEV0OGdwMk5hVVhpZmVrRnA4M01BdjRHRkYzLTlHZkxVMTNLT043aTZmMDdqck10UzVPR0xqbElCM3JXNE13eUlnOQ?oc=5",
-   "site": "mydaily.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
   },
   {
    "date": "2026-10-30",
@@ -623,9 +623,9 @@
    "date": "2026-10-29",
    "time": "16:00",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
-   "src": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81WTAtaGw4MC05U0UzdTRubVpYLWhhdEFYYXVocEFTSmxrNFZ5c0pqZ2ltMzZDNl96QXhnZG8yTGxXSGZDMVhVU0JMdjNNdmdhY0E?oc=5",
-   "site": "stock.mk.co.kr",
+   "src": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
+   "site": "www.mk.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -675,13 +675,11 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "Mirae Asset Securities to fully acquire Japanese brokerage Sanko Securities",
-   "src": "Korea JoongAng Daily",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
-   "site": "www.koreajoongangdaily.com",
-   "firms": [
-    "미래에셋증권"
-   ]
+   "title": "(LEAD) Mirae Asset to acquire Japanese brokerage Sanko",
+   "src": "Yonhap News Agency",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ISEpyU08zOUtua3ZkYVpxbmRLOW1hUHRLZERhMjNhRGQtZjNacWREMVUzamdjb3NWdC1RdndCZC1LVWhlSU1KU2pXMjd5ZzUzS0RMVmg4U081QQ?oc=5",
+   "site": "en.yna.co.kr",
+   "firms": []
   },
   {
    "date": "2026-10-29",
@@ -690,6 +688,17 @@
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53eC0zdzdfMkFKN2lqdk1SVVJTS2VTemZ6aGp5U2stb3ZiTmpNd2VkaDJKMUF0a2wyakUtZTF1TEJNZWc4QlVXSERlb2NwZWZ0SDk2SS1fbkROTUXSAWBBVV95cUxNbXBUSTF0SVlIcnNrZlY4bnM5UjZ0YTE1eDNNUUx5aFVjWG04TkdZenlVR2F0Rk53RE9tRkZQaWZud3ZhMFRsT1ExTXFOMjRiTzJxOG1ZbjF0Z0xIbE1nb3A?oc=5",
    "site": "www.yna.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "Mirae Asset Securities to fully acquire Japanese brokerage Sanko Securities",
+   "src": "Korea JoongAng Daily",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
+   "site": "www.koreajoongangdaily.com",
    "firms": [
     "미래에셋증권"
    ]
@@ -767,15 +776,6 @@
    "src": "The Korea Times",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQc056enJGaGllNFNQMnQ4MWF1YzUtLU43QTFCbTVmSXlIUmlZcDB1VThsMVFlM2ZPaTdMX1Nzb1VmYVdINnpCUXNBaE9hYm1fYkpINzR5MktrWEhpS0tCTWt0R19TN2V4SmM5VnRXLTMzcTdnR3dXb3FnS0tBdXVBZWk2cUJ3cTRQZjR2ZFc3TWZmaW9IMF9DNGxDRWduY0I3cVBVS0FxQVE0V1BV0gGsAUFVX3lxTFBzTnp6ckZoaWU0U1AydDgxYXVjNS0tTjdBMUJtNWZJeUhSaVlwMHVVOGwxUWUzZk9pN0xfU3NvVWZhV0g2ekJRc0FoT2FibV9iSkg3NHkyS2tYSGlLS0JNa3RHX1M3ZXhKYzlWdFctMzNxN2dHd1dvcWdLS0F1dUFlaTZxQndxNFBmNHZkVzdNZmZpb0gwX0M0bENFZ25jQjdxUFVLQXFBUTRXUFU?oc=5",
    "site": "www.koreatimes.co.kr",
-   "firms": []
-  },
-  {
-   "date": "2026-10-29",
-   "time": "11:15",
-   "title": "(LEAD) Mirae Asset to acquire Japanese brokerage Sanko",
-   "src": "Yonhap News Agency",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ISEpyU08zOUtua3ZkYVpxbmRLOW1hUHRLZERhMjNhRGQtZjNacWREMVUzamdjb3NWdC1RdndCZC1LVWhlSU1KU2pXMjd5ZzUzS0RMVmg4U081QQ?oc=5",
-   "site": "en.yna.co.kr",
    "firms": []
   },
   {
