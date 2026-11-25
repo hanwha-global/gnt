@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-24T14:29+09:00",
+ "checked_at": "2026-11-25T13:32+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -286,7 +286,6 @@
    "reason": [
     "새 뉴스: MSCI 강등 검토"
    ],
-   "last_check": "갱신",
    "candidates": [
     {
      "rule": "MKT",
@@ -512,7 +511,8 @@
       "새 뉴스: MSCI 강등 검토"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   },
   "SG": {
    "country": "싱가포르",

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T04:37+09:00",
+ "updated_at": "2026-11-25T13:32+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
-     "date": "2026-11-24",
-     "time": "19:04",
-     "title": "Treasury yields tick lower after inflation warning from New York Fed's Williams, investors await 5-year auction",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kVk10NWJKZmMxSHlDRjExaTRUbnMtRmhRTGFta21UaHg4NGNSZndMYTRxczhZSmg5TllvWi1LekdUcGc2c2hfcnVrQnhPR0NTSjI0QU0yZHpFZldCSndPWENKaXNKV0VubXYtTW9ndVllY3hRek1B0gF8QVVfeXFMUGg3N2J0czVpMHZ6dzNPbjdfb2dmYk9NQUw2ZmVQUG00UWlJeDdEaUkzSjJQMU5DOVVXQXg4YzBkYlJldkV0aFRjNXZJM2hKckRRR3lYc2xhemdhMk9rLTk4Q2Uxc3k0Xy1yOE9QZWVpM095amUwdk1BLXlHXw?oc=5",
+     "date": "2026-11-25",
+     "time": "10:32",
+     "title": "BNP파리바 \"연준, 12월부터 세 차례 연속 금리 인상 전망\"",
+     "src": "연합인포맥스",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE84a3JlM2NXd2ludmg5dmlNYWJ5cnA2V2ZwTWE3QzNKakp4NTR3QnZRUXR1Wjg3SHVnVkxjdHlrOGptcVVzMUM5MUdaT1gzclFUM211U2dfX0hVRWV1S2RyVlZ1ZFR0dFFIQTNYdTA5Rl8?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-25",
+     "time": "08:09",
+     "title": "미국 연은 3분의 2가 10월 회의 때 금리인상 지지",
+     "src": "연합뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9rYkhOSmdqaTROR2ZMc3JDNDBvUUR1Tnhqcm9ldTFsc0FmQU1qMGdxRTJLLTZKY1o5LWlTZ0xNT2IyeVZJUmZ0TExfUmZYVXBpUzdmODR4a3BGVjNGaVlETtIBYEFVX3lxTE9rYkhOSmdqaTROR2ZMc3JDNDBvUUR1Tnhqcm9ldTFsc0FmQU1qMGdxRTJLLTZKY1o5LWlTZ0xNT2IyeVZJUmZ0TExfUmZYVXBpUzdmODR4a3BGVjNGaVlETg?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-24",
      "time": "19:04",
-     "title": "Treasury yields steady after inflation warning from New York Fed's Williams, investors await 5-year auction",
+     "title": "Treasury yields are steady as investors await more economic data",
      "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kVk10NWJKZmMxSHlDRjExaTRUbnMtRmhRTGFta21UaHg4NGNSZndMYTRxczhZSmg5TllvWi1LekdUcGc2c2hfcnVrQnhPR0NTSjI0QU0yZHpFZldCSndPWENKaXNKV0VubXYtTW9ndVllY3hRek1B0gF8QVVfeXFMUGg3N2J0czVpMHZ6dzNPbjdfb2dmYk9NQUw2ZmVQUG00UWlJeDdEaUkzSjJQMU5DOVVXQXg4YzBkYlJldkV0aFRjNXZJM2hKckRRR3lYc2xhemdhMk9rLTk4Q2Uxc3k0Xy1yOE9QZWVpM095amUwdk1BLXlHXw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-24",
-     "time": "15:13",
-     "title": "보먼 연준 부의장, 금리 동결 직후 월가 만찬…감찰 조사",
-     "src": "이데일리",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR0lkdzdjNDFLSkh2Uy1UZWtIN3UyeVE0cExsOGJMQjRqNkxqamM1eGt2OGp5aEt5WXdxRWhyd3Q0ckVKcnM3bmtIM202TUdsZHdWLWRvc1BrcmZRVjFVTHNvQS0xSm9GR3JIZUx5WnlmME9hZG1nRW50ZHRJWXd1VQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kVk10NWJKZmMxSHlDRjExaTRUbnMtRmhRTGFta21UaHg4NGNSZndMYTRxczhZSmg5TllvWi1LekdUcGc2c2hfcnVrQnhPR0NTSjI0QU0yZHpFZldCSndPWENKaXNKV0VubXYtTW9ndVllY3hRek1B?oc=5",
      "priority": false
     }
    ]
@@ -63,6 +63,14 @@
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-11-25",
+     "time": "11:20",
+     "title": "MSCI \"인도네시아 증시 등급 2단계 하향 여전히 검토 중\"",
+     "src": "연합뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zRk04VU5uOHBXV18xdWtLVG4tMjhZSV9sVzJ3d2xBc25OYVA5cENKM2JXZm1lUnBLQ2ltelA2anJZZkVGOVNjSzI4bWRYTU5jMVMyRDVMUUphY05ueUJFSdIBYEFVX3lxTE9zRk04VU5uOHBXV18xdWtLVG4tMjhZSV9sVzJ3d2xBc25OYVA5cENKM2JXZm1lUnBLQ2ltelA2anJZZkVGOVNjSzI4bWRYTU5jMVMyRDVMUUphY05ueUJFSQ?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-24",
      "time": "18:32",
@@ -77,14 +85,6 @@
      "title": "MSCI says Indonesia downgrade proposal remains unchanged",
      "src": "DealStreetAsia",
      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWNuME0xQ252OWloUU1yZnYtYkZZbUNrUk1XcXlQcVpodEJMa3lobEF0SmFSeUhRbWx2NlJSampJNzhCdmpzOWlWWW1HRm5oa2dBOFd3OUhxanM1TERDV3llNkp3clhrb3BIMjZPMGU1bzlQdk1qT3p1Z1R4TEQ0cGswUXlsM3B3NEV1SG5sS2NPLUhzUEtuQXJjbDYyRVFlcTdCMQ?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-24",
-     "time": "13:43",
-     "title": "MSCI denies assurances to Indonesia over market downgrade, says review remains unchanged",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYmwtSE1OYVNYRHh1OXo5Nk1kZHVINFRFcUpERzBja1R6ZmJvWk01U0lORGdhejNzcGktdDFRVVJzR3RwU2pNcUpsTjlOZEI2ZDFoS3Nrb1RWdm9Ib1hObThVbVJFbzVrakJhc2ppVVlBTGgyMTg1OV8wU0I2YTZqalRtaFRETUdzeTI0T1Ftazk1RXZwelN0aFFwWmI5c1gwVVBUTmZ2WWF0RFZNOG9CU0tLV2dkOVkwUXdEQkI0VG5EMFFmcnBCdQ?oc=5",
      "priority": true
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-24",
-     "time": "21:00",
-     "title": "Bank of Japan to continue rate normalisation in 2027",
-     "src": "Financial Times",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yOEZrR0hUR29xeDN2LXRRWU1GQms2eHFNN3NENTlhZmxJenE5VHpmallmb0JYbTFfS21rQTNnRkVOZXpBU2VaRFFPQV8zVi1LT3hZWm5UR2I1eFRsQ09TcFpCMnpJRlhpSnJhWkdJSjA?oc=5",
+     "date": "2026-11-25",
+     "time": "12:59",
+     "title": "Japan's Nikkei falls over 3% as AI stocks extend selloff, drugmakers cushion losses",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPWVBQOEpjQ25QZUpMZHAxbk1MN3VYWWU5cDFoSXllYjBrNkxpd1pQaFJUeUVMWjVST3RxQzFEaEZwTFU4MDJzcUVDUFlBcngzcklGcFBpRWxGeERvb1hLeVVXeW1ueUZYNWloMVg0SG1xbWNoeU9GV2NzNDhBdmQwWHNGX3lYMWRMM3JTYnZaTDF1dTN0UVcwS1hHYi1BZWFkVnltRW10cHZxMU1pMGtnODRIWmU5TXpvejRuWGlIaFpFemlMNk12dmFac0ZCc25Kd3NwdDZXc0JqcGxwV201R3ZYOWx5WC1FMkZjMlZR0gHzAUFVX3lxTE4zbGlHOUgtZUFwel9jb2hnZUVwT3RqY0RHSXRORmRMbS1IR3NFZlJPZjBNaEozVjIzSXRyUGhldmdzem1OV0VObHBmZ000MlJ3cUdNdjdRY0c2ekl3RWI4VlVaYmFRbEhrcjUxa08tWUNBUFRTa3VkVWpIQzVGd3R2MUhTYmxIMjhfX04yQlA2QXJNT0lkOWtyUkltUXdlTjhtODg5M1M1bjRFendqeGtLMEhHa2VJUkpENWlxdm9OQkVnTi0xOHI1RS1VaVVPRHFNdkFpNXVZZXRfdnlSUXlza0FlU3NvWDI0Q2h2bTI0WmlBcw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-24",
-     "time": "17:06",
-     "title": "BOJ to keep hiking rates but soft spending muddies path, ex-central bank policymaker says",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYzlueXpqVVlWYTlueDVZdnk2S3JtZE5wYnVJUDdQbmNEVWh4U2RDTkxNNTdId3E1LVNvSnFJS3VoMVhZNjc3NGxzQ1NObTRISEdDVWJCMFZjdWFrVkIzbXJFbzdoVnpJZF9ZRkxxS0ZuemkzeDJUUnJVLTA1MWExcUFkcWRFOFlKVlFnUDJCWlZsMklFQ0pBNzMxakhPNjBLclZzWEExWFZmZUNqRzB6LXlZTF9WUDBmS2ZUZ0ln?oc=5",
+     "date": "2026-11-25",
+     "time": "11:20",
+     "title": "Japan’s key services inflation gauge hits 36-year high",
+     "src": "The Straits Times",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTXlpWTRUVlF0OWg1Qy1xVXBmbGRiZ05zQVdnS003N3RmdGltSWRpRXc3QUdndVlkUTFXeF9pLWp0bExpOUZ6WWxjV3RxVkplT19KYnhnRzR3V1p3aG9KbjdRcmdHV3lidXF1eEVrTnhPaW8wS25sSmpQYk1XZU5IZXlHSkpsSHYwWmhxbmszWlp4U01Ob0E?oc=5",
      "priority": false
     }
    ]
