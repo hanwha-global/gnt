@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T05:42:35+00:00",
+ "updated": "2026-11-25T04:45:02+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,13 +66,22 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
+    {
+     "date": "2026-11-24",
+     "title": "스테이블코인, 은행 과반 지분 컨소시엄부터 발행 허용 추진",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE05NmZPZWVpdGdBc2FNVjZXOUdpbUY3QXNOeEF0anltcXJGUW5YdXFzU2tWSlhYSDd0YkhKME00dlFyM3Y4T21vQmJjd2hNV1JkcnBpMzROUGE5TGhQN0lIUTExWG1VaUpLNEwySQ?oc=5",
+     "src": "대한민국 정책브리핑",
+     "topics": [
+      "stable"
+     ]
+    },
     {
      "date": "2026-11-23",
      "title": "개정 특금법에 따른 기존 가상자산사업자 신고접수 결과 및 향후 심사절차 안내",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSU9GR3FFdEZlOFB0eFlXSG9RS1VFa29NV3ZKNTZSZVpQdENOOTdLcmZ5NGdib3FVQVY2OEhmWWRDVUROUUZjWDNEWGpVTUEyLWtSWEZuUzgwTDhnX1JheUlXdTQwMVl6cmFzam43cFFPTklOZ0E0X0tMQUFMeTBRamZNWjdmWTNZMjkwTjdB?oc=5",
-     "src": "금융위원회",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8yUm10ejNhLU5fTVljRWVnOEdpXzJLMDNpT3AyR3lTbVA4NldOb3hiZEN1TS1kVi1zVWVvUG15Y0N0VkFsN0Z4VVp1azk1Ry1fQ3ZiNWdxR3ktQXIyeDZPbHZFczN0VW1WYzRONm1JWW9aSHd4?oc=5",
+     "src": "대한민국 정책브리핑",
      "topics": [
       "vasp"
      ]
@@ -399,7 +408,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-23",
@@ -495,15 +504,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-19",
@@ -553,7 +562,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-12",
@@ -567,7 +576,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-10-28",
@@ -581,8 +590,17 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
+    {
+     "date": "2026-11-24",
+     "title": "Introduction to the ECB Token Reference Model - a framework for standardisation discussions",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVnhkV1BRYnotT2ZGbGJmdWgwQ2J1ejhBUEpPel9vWUhESU11eFBtX0RqZEx3MXk1M2xFbEhsaUEzRzlnMEUtOGVzQnhyak0tSUhGbzlhWXpoRUd1c1R5UEtZQnFkd2FpeVJTNHBOc2ZGZmVGVmIyUkpoRWlIVnoyUkdQekdoSEVVcjZlSC1mcXNXSm5GcnExenVKSzY3QS1OVlRPTVdPUQ?oc=5",
+     "src": "European Central Bank",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-11-09",
      "title": "EU seeks nominations for stakeholder group on tokenisation standards in finance",
@@ -685,7 +703,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-22",
@@ -699,7 +717,7 @@
     {
      "date": "2026-11-12",
      "title": "Crypto Custodian Assistant",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpTnFLZVUyTjNqX042bjZpUUZQd3Zia0tjTGN3NE11bmpQMkFzbXZuZG5CdEd3T3E1NjBpWkhoRzdwRFZ5Qmx0eEM0Y3U5N2dJNHliMU5haVc4TXdZT3pWXzhvOF9lNEFPdFV0TUdZWEpDR2dDbUp4cFpn?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNkszeWQ4TGxMb2xYa0o3TnRlaEZOWGNwWEJkRTE1V1ZuT05BLU5RR3NEbUdoSDFZU2ZKanRyTjVBVm16d0VuUlpQTG1RWXd1cGp6RjV4WlhpLVpZZ3lWbWx0QTJEMG43Y3VYMDVMcWZwUlc4VkhhOFhvWXlqN09hcGNXaw?oc=5",
      "src": "Civil Service Jobs",
      "topics": [
       "broker"
@@ -852,7 +870,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-20",
@@ -877,6 +895,15 @@
      "title": "HKMA and SFC co-host seminar to advance tokenisation in Hong Kong and promote collaborative opportunities within Project Ensemble",
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOLWg1SUtIamhGa0RacGFLTW4yV2ZJeEhfSUw1Q2hQQVFlZ1JNUFU1QVVuejFxNWFFMjJwRTd5XzQyMmZ0SzIwdW9XSVFyTzc5ZUFwUnB1bEJUU0hWVnhGWS10cVdCVWpyOFhMRVBfN1ZNQ1ltTlJwczU1M1BncVZNYjU3WQ?oc=5",
      "src": "Hong Kong Monetary Authority",
+     "topics": [
+      "sto"
+     ]
+    },
+    {
+     "date": "2026-11-12",
+     "title": "SFC and HKMA hosted industry seminar on opportunities in Hong Kong’s fast-evolving tokenisation ecosystem",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSTh2U3h1bVljMjZXaTdQR3hJS1BRaUI4RVNCYk1PcV9nYnRmYTJqbkFIdnI3S2dibURVN1VfMnFIYTNaOS1tcTVZT205MHY3R0JSNmxiMDlLYUFrdXZ1cnpFM0dmOUpMdU9yTl9XYlduT1FENVduOUNwYkFQQTItMHR0c3htSW96Mk8yS203ankzWXI5MFczSg?oc=5",
+     "src": "Securities & Futures Commission of Hong Kong",
      "topics": [
       "sto"
      ]
