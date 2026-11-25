@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T22:14+09:00",
+ "updated_at": "2026-11-26T03:44+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -37,6 +37,14 @@
     {
      "date": "2026-11-25",
      "time": "16:44",
+     "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5FRFlwZF9FMHIyY3J2Y25STC10T25DTG9zTWFKcVNYOXdtM21rLVNZTXRoTWVqYUVWUEE5RFpURWVUd1kyanJHNWJzaXRmTkJHMFZGTWV0U3RSdVpyc0h5NGEyQkEtS1RlZ2NUQWtHbFBVTUtucjJJ0gF8QVVfeXFMTThoU0xMTXQ1NFpvaUc1WHhNV3ExRTFFV05BWUUtTzk3SzBtUjZxSXJLeXhOZDB6aDJHMzlDQ0gzT0RETnJDRlpEeW1SNFl1MEk1dXhBYllVdWNTOTVzbF9IaHFGNzhJZ0l6WVVDLWxPQjhSMkozQm1JNWxRbw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-25",
+     "time": "16:44",
      "title": "Treasury yields fall as investors await key inflation signal",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5FRFlwZF9FMHIyY3J2Y25STC10T25DTG9zTWFKcVNYOXdtM21rLVNZTXRoTWVqYUVWUEE5RFpURWVUd1kyanJHNWJzaXRmTkJHMFZGTWV0U3RSdVpyc0h5NGEyQkEtS1RlZ2NUQWtHbFBVTUtucjJJ0gF8QVVfeXFMTThoU0xMTXQ1NFpvaUc1WHhNV3ExRTFFV05BWUUtTzk3SzBtUjZxSXJLeXhOZDB6aDJHMzlDQ0gzT0RETnJDRlpEeW1SNFl1MEk1dXhBYllVdWNTOTVzbF9IaHFGNzhJZ0l6WVVDLWxPQjhSMkozQm1JNWxRbw?oc=5",
@@ -48,14 +56,6 @@
      "title": "BNP파리바 \"연준, 12월부터 세 차례 연속 금리 인상 전망\"",
      "src": "연합인포맥스",
      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE84a3JlM2NXd2ludmg5dmlNYWJ5cnA2V2ZwTWE3QzNKakp4NTR3QnZRUXR1Wjg3SHVnVkxjdHlrOGptcVVzMUM5MUdaT1gzclFUM211U2dfX0hVRWV1S2RyVlZ1ZFR0dFFIQTNYdTA5Rl8?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-25",
-     "time": "08:09",
-     "title": "미국 연은 3분의 2가 10월 회의 때 금리인상 지지",
-     "src": "연합뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9rYkhOSmdqaTROR2ZMc3JDNDBvUUR1Tnhqcm9ldTFsc0FmQU1qMGdxRTJLLTZKY1o5LWlTZ0xNT2IyeVZJUmZ0TExfUmZYVXBpUzdmODR4a3BGVjNGaVlETtIBYEFVX3lxTE9rYkhOSmdqaTROR2ZMc3JDNDBvUUR1Tnhqcm9ldTFsc0FmQU1qMGdxRTJLLTZKY1o5LWlTZ0xNT2IyeVZJUmZ0TExfUmZYVXBpUzdmODR4a3BGVjNGaVlETg?oc=5",
      "priority": false
     }
    ]
@@ -133,16 +133,16 @@
      "date": "2026-11-25",
      "time": "16:12",
      "title": "BOJ’s Faster Inflation Indicator Backs Case for Another Hike",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNekFRcTFoc0xnQlcwVUxvNGpJd0hJdW1ZZ214Q1BHWGJNNzVtYWQtejhzUFB2TmVFSEo0Q1BVX082UTdYWTA4QzVtcGw3VERfYzVHUzRPQ0VQNkRoRDhqWjBPYW1HVzVsTXRpRUZ2UTJTNE4weVM4ODNJRGxZbmZqSGJBZnhzMjZUcU04STA4TXNfNUMwMnB6WGhGcmpzUGFYZXVhcUI1bnNQM2ZUT0otVA?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-25",
-     "time": "14:16",
-     "title": "Japan's Nikkei Index Plunges 3.3%; Jensen Huang Rally 'Evaporates' in Just One Day",
-     "src": "news.sbs.co.kr",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5NS3BTNGIwUWNqY2Z0dkJPbndaR1RUT2FUOFFNM1d6eUw3WGpXMHpBTGFwNUt0UmZXUFlVY2pRd1RVNUxIeE1kaVRUMXRRUmplUHllbGdLOHIxSUNsWFhUQ1hQemw2UQ?oc=5",
+     "time": "16:06",
+     "title": "Japan bond yield curve steepens as markets reassess BOJ rate hike path",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcTlTeUszcDlyWGlpM0I3dHlVUkc0amRITkhQX1NRS04tYUZuM0t3VHNJY0FMV00ySEE4ZThLV3JSQ0JLcE5PXzM2MXFDSTUzNEtEdG1MOXhwYzNJVDVxdi0yQmFZVmpfVVMxVHZDYmhKaUhYWnM4OVFhem5vOE9CdldKQkhaOGhRX3ZRWlk4ck9EVENiWkdFMFdXWDR1dFJXN1pDYUZsdXY1X3hWWDFhaUZkN1c3NWxtVzF6S25kTjhvUDFFWGRKODZNcHVjN3BfeFBOTENpcEM4a3ZLd3lsSdIB5gFBVV95cUxNZEdtcWRSSU9OS3E2WWNJanJjX0pBaXRYbmJ4bXBOUXR1WGFyaTNnTU5lYzZYNHFXdU9WSmlNaG5qU2xNSGtQR09yVEtIVWxFUXFjdmJYZEE1U04xWGcyY0dHRThSZGxXajBlTVJXdkNQek5lN0lyUS1nN3RNaW51Tkp4akw5WTlud1JzSFhra1V6azRLQWR6R3diY0kyNWNSVUEyeDN1QTlPOE90M2UxRFJ2anZ2UnY1MDFlTXRiZzk4SGJmWVEwNjFLUGtRMlBmUnlxV2xwYzFrNkFOZUNiUlRmaWhEUQ?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-11-25",
+     "time": "22:58",
+     "title": "India's RBI sees broad food inflation pressures; was net dollar buyer in Sept, bulletin shows",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPU0hxckhBM1hYZ2wzV2hyRFZ2cF9Ud3Nja0VJcjRMbWJibVZfWDM0OHQwcFpTVWE4TWxwV2swbExTeHRab3hzZHJGc1p6ZnEyLVFJLTdSWVU2RWNmSHFHeXBzTEpDQzBUUktOTk5FZXhpa3NHaEZXS2pMTk41T0ktaUxLLVR1RDZieTBYZWl4a21ITm9oS0VyZWQ0c2xTYkZhbllfV2YxLUpZckRWZ1NUdHlaOWJ6NEZYc1d0N1h2SzNjZGdEaGVV?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-25",
      "time": "15:27",
      "title": "Allianz turns tactically positive on Indian rupee, sees less need for RBI rate defence",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcC1vMm9ITzBnS1kxajl3TzU4VzZhUjNyVU9kckNLeUhsaWNNaDhPMWFETFdKZnNxSmVPUXdLaEZndGFBZjBGWDFVUWV5Wk1PSnJFR1lDNm1ZV3huN25wWUxMTFFPZERiUjBZbmZVbnJNbnZFck14dmJtWUpJbS1kRmJwOGZ5Y3FvbzVlUTNiNkN3dkVnaW56azVCbEZnakN4S093c1FrZWczQnNfWnBLb2VNUEhLMTZITEFXUnQ0aG9lTGUt?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-24",
-     "time": "11:52",
-     "title": "SGB 2021-22 Series I premature redemption: Investors gain up to 167%; check RBI-fixed price, exit date and interest rate",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQWGJzRjlzWVkwc01yZmVSWFU5QmhQTDdkamIxX1YtSVdYXzJ4a0hxVjRzeFBjZGRyQlBOMlFrdUdMY2NoaklHMktjZm5taUo2SXE0TFNpXzdTVHFsWHZKY2tnb1hYcXBDU3VKRzY3T2NxclM0LXNEdnFmTWJLbi1UOFBXa0tacVpfclhJYUlsUHZDMElfVEUtbGpqaFBYRjhLcExrMVZuMDNhRnpuY09UNEtXT3dXM3pnV0ktT2hsT2ZMS29qTWVDdXQ1R0RfLUVaT3BwNFZfRk15ci1XdDJOZkFZOEx1cFpPNnFyamJrZFliTzVldEx5QnY1UUxGZTVuc3VlbVhxMml3eWY0MnhwclpB0gGXAkFVX3lxTE5aRnpyVHdkcngzLXppYTBPb0gtVzl3OFNLR3B4WjBXUjNyOGZabDFBenI0SFcyZ29QM2dRLVFmcVR1VWJFWV9EQUZrejZuYmxvcmdnUmUxNGNudG54ajhkal9aQVF6azlIc2I5ZmlaNXNtSFdUV1RleFA3SHhHaE9ycW56MklxZzBTeTdQX1JyNHNua1pJLWVLZTN2S1JGdEZBeVEtUHV0QXEtaHpmaE9fWTlqOWJmZGJKRWpqYjlITTNaNzVLWXZGWUV3M2p2MmZQTmQzbUJ5T2trUWxjak8tbXJYc1FjLXFZZ2lFOE5jOG1xak5ZdFdaVXFDSGhUTVQ5X3A1Y3lCcDE4dEpZSDdHNFlEcERBYw?oc=5",
      "priority": false
     }
    ]
