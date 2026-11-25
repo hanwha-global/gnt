@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T05:55:14+00:00",
+ "updated": "2026-11-25T04:51:35+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,12 +127,12 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
-     "date": "2026-11-17",
+     "date": "2026-11-23",
      "title": "Licensed Companies | Open Data | Capital Market Authority",
-     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5WRkhCcGljSFRxbE52QWFhUUlfVHJnZXdrM0Z1TDY1bW9yc3ZsMGlRT1FNbkY4U2ZRcWJMQXFqNnRtRmJ6TnNRUHBFM2doM002OEV6U21aaHQyTVVzSXFRWWkwVm5fRy1LMDRuU3ZPb2JaZWI1TVJFZDBoXy0?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sZ0c0ekdkbElXVjIyT1llXzFSbFNJVXdUQkRSMDdxb09HYm9tRkVPT1NnRkNFb1B0ekhSSUNkdGh4R3ItU09oNGw2Z21xelZraUo1YUJxTmNRc2lWOUQ5WEVucjA1WGZIdlRR?oc=5",
      "src": "sca.gov.ae"
     },
     {
@@ -156,8 +156,14 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
+    {
+     "date": "2026-11-11",
+     "title": "FIDELITY BROKERAGE SERVICES LLC",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1lMGlqTU9IaFdDM1VhdlZlaXhoTlFXNHRVYkVUMjBvQmNOb01TMDZVTEYtYUVtWVZyT2RZejNicmxUbFNackxZOWZWeVJ0U0RQM3M4Njh2cmFFa1Z0WXhCZmVsYlA?oc=5",
+     "src": "FINRA"
+    },
     {
      "date": "2026-11-09",
      "title": "Broker-Dealer Firms We Regulate",
@@ -187,21 +193,15 @@
      "title": "Jason R. Anderson; Blox Lending, LLC; Digital Licensing, Inc.; Schad Brannon; Roydon Nelson; and Business Funding Solutions, LLC, Relief Defendant.",
      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBmUklvVkdtREdKMWZ4TWtBVTF3Yzd4Y0pCT2toaW9pUVhmLUt6c0ZJb3FDdThRUkRTdExwRmM4d0hEckxEbEdhNTU2YS1rdktiZGFPZHdFZGJOdGFVaUNRUUxWUzJlT1p6TWxXLUNLLWVIaXVnNDA2NG42TQ?oc=5",
      "src": "SEC.gov"
-    },
-    {
-     "date": "2026-10-21",
-     "title": "FIDELITY BROKERAGE SERVICES LLC",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1lMGlqTU9IaFdDM1VhdlZlaXhoTlFXNHRVYkVUMjBvQmNOb01TMDZVTEYtYUVtWVZyT2RZejNicmxUbFNackxZOWZWeVJ0U0RQM3M4Njh2cmFFa1Z0WXhCZmVsYlA?oc=5",
-     "src": "FINRA"
     }
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-20",
@@ -254,7 +254,7 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-16",
@@ -265,11 +265,11 @@
    ]
   },
   "GB": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-17",
@@ -280,12 +280,18 @@
    ]
   },
   "MN": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
+    {
+     "date": "2026-11-23",
+     "title": "Bookmaker EU Review: Your Trusted Guide to Licensed Platforms - portal",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB4Tl9jVHE3ZTN0dEh0TEF0ZGVNSjRuVHZKbEdlR1JJSFdzQjZCX3BHQ3dRX1NnUGxOQnpMREtiNlE5V0F0cHlKekN5ekFJdHFYckNHRlNqcmszeXVQeG5RRk45TDg2VFJJa20zMGJOc1JvaEs2WnEyUlhva3p1UQ?oc=5",
+     "src": "INMET"
+    },
     {
      "date": "2026-11-21",
      "title": "Cost of Rhino Software: Quick Pricing & Licensing Guide - portal",
@@ -309,6 +315,12 @@
      "title": "ARIZONA MASSAGE THERAPY LICENSE REQUIREMENTS",
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQUxyTzBYTDJlM1Jac21zRkdUNTQzNWZCcGsyYnljR3BCUFR4aGRQTGdWcVJkMno3Y212M0hrTzU2VnhjQUNWRnlBdVRybFc2V0UyelJCS3lMc0FvM01RRHVTU1VBWGVtNTJ0Qlh1N3pFTHFyRjVocGRwSk44UkRWWHdDbTdNQTFNUXhmck1DdkhUeVRRamRsaUxnMA?oc=5",
      "src": "10anos.cdes.gov.br"
+    },
+    {
+     "date": "2026-11-19",
+     "title": "How to Get a Slot Machine License: Your Complete Guide - portal",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUTZ0eEVlSGllWXNtSkx2RWkweWlGS1JWWlljbnk2OXh0QWIxSlZVNFdTcnB4UTFUeEFfbGN0R3F2bnF3RjZFc1h3YUR2eEtjbDUtcDN2S3NDQlpzd3ozTzd2TzJLYWVaV0FWSEZXS2FDTXdGRWJNQWZCSHc5bklFQ1hnTlpTS0dZTmtRSUxjVFY?oc=5",
+     "src": "INMET"
     },
     {
      "date": "2026-11-19",
@@ -338,6 +350,24 @@
      "date": "2026-11-18",
      "title": "What's a State License: Your Guide - portal",
      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeVpPUEozakhfV3dWMlpaTEhad2tuODN4eEltdDN2WkhMRTJaNHlFYkhFd0pVQ1B0ZFNycTZQOE5uWDdrZ0hxOXJQNGJqeUxCQ2dZZFpWUHBpTUhNd3hPTVV5dTRHWmVUYzJlb1FHb1hRSUN6RXlYdm0zSWdsR1JJRkFR?oc=5",
+     "src": "INMET"
+    },
+    {
+     "date": "2026-11-17",
+     "title": "Restriction on License Meaning: Understand License Limitations Clearly - portal",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNd28zcko1VXk1SFNwcDRyeG5FcnpJVkZwR20zSkJmMHgzRURXeVFHRU00aEh0bWZrenJfaDF5SHBHNnJNWFY2Tlg0TFBQRWNhNGZqSzJ4MEpvVHlBMFVXZEllZi1fdURrQjZmcTMwVlprMGxVcTJmb1lPamxiUHEwWnFxQmxNVkl6RlViMw?oc=5",
+     "src": "INMET"
+    },
+    {
+     "date": "2026-11-17",
+     "title": "Empire Casino License – Your Guide to Licensed Gaming - gad",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1NX0lLS3h5Z0c3b2Q0RjdCVWp2VUxIZDQ1ZGU2Qnc2a0NRQ3RWR0JZa0tpUDlsNnFYYnc1azBIY2l6bWpFRXBoX29IeXRMcXdzbWJVc3N4LVZqNFZIdDhtTTFMZjNhQUVzR3QtT0N1eUxwdnkxR2JMN1pSNA?oc=5",
+     "src": "Conselho de Arquitetura e Urbanismo | CAU/BR"
+    },
+    {
+     "date": "2026-11-17",
+     "title": "Gambling License Colorado: Your Guide to Compliance - portal",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcVV5M3lCc2pyZGdpQU1ZMEVpQVM3NXdLcXkyZE9sN1pnb1B5a25XUmdGVzI4NkpHX29xYlJPa0dGV0tkZGp3UzlyYnR1R0RUUUFXMFVHSFd5OUhOVEtkSHRhQ3p0amdjT052MVNEOU9TUzI4NkU4LS01WmxwaUpGSEFfX3BEQQ?oc=5",
      "src": "INMET"
     },
     {
@@ -511,7 +541,7 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": [
     {
      "date": "2026-11-15",
@@ -522,7 +552,7 @@
    ]
   },
   "KH": {
-   "auto_checked": "2026-11-24",
+   "auto_checked": "2026-11-25",
    "items": []
   }
  }
