@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T12:45+09:00",
+ "updated_at": "2026-11-26T21:55+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -36,26 +36,26 @@
    "items": [
     {
      "date": "2026-11-26",
-     "time": "04:40",
-     "title": "Fed releases beige book ahead of December rate decision",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdnpZcThuSEVDT016ZVhtVUdxSVQzTFRCaUVjVHlQRzhRZGNzclEyeUg4WFJjeWtGVkEwakQtY2N2NE5Wa203RDlSOVpMWmluRTFscGFVQVhqS2dDbnBzcGllcm9oNExJUlB6c0I0UTIxUmxxVVc5SFdOQndGVjdsd2ZtalNBSDcycUNWYmtkX0RFa3RYYnB6Y1I0Z2NQOVU?oc=5",
+     "time": "14:35",
+     "title": "Korean treasury yields fall across the board ahead of BOK rate decision",
+     "src": "매일경제",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41WklRZlJUUmJFdmN1SUZNSjhsLWEyeEplaGNqOXdNQ0lYTXdUOGdLZ2l3UGVTSXNTUngtLXhtVWhibDdObmswbHRtNnAxR1F0dnc?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-25",
-     "time": "16:44",
-     "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5FRFlwZF9FMHIyY3J2Y25STC10T25DTG9zTWFKcVNYOXdtM21rLVNZTXRoTWVqYUVWUEE5RFpURWVUd1kyanJHNWJzaXRmTkJHMFZGTWV0U3RSdVpyc0h5NGEyQkEtS1RlZ2NUQWtHbFBVTUtucjJJ0gF8QVVfeXFMTThoU0xMTXQ1NFpvaUc1WHhNV3ExRTFFV05BWUUtTzk3SzBtUjZxSXJLeXhOZDB6aDJHMzlDQ0gzT0RETnJDRlpEeW1SNFl1MEk1dXhBYllVdWNTOTVzbF9IaHFGNzhJZ0l6WVVDLWxPQjhSMkozQm1JNWxRbw?oc=5",
+     "date": "2026-11-26",
+     "time": "10:45",
+     "title": "美연준 “물가 압력 지속ㆍ임금 상승세 확대”⋯12월 금리인상 힘 실려",
+     "src": "이투데이",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFByNW0xMlIyLTJ3WndBMFVXQ0RyNExDM0ZJVHpablV4bHlYMld1NUpBRnE1VzQ2bEZMVjhHc3dSNGNhRGNhTk1LV3ZmODMxX3RYZW9XRg?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-25",
-     "time": "16:44",
-     "title": "Treasury yields fall as investors await key inflation signal",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5FRFlwZF9FMHIyY3J2Y25STC10T25DTG9zTWFKcVNYOXdtM21rLVNZTXRoTWVqYUVWUEE5RFpURWVUd1kyanJHNWJzaXRmTkJHMFZGTWV0U3RSdVpyc0h5NGEyQkEtS1RlZ2NUQWtHbFBVTUtucjJJ0gF8QVVfeXFMTThoU0xMTXQ1NFpvaUc1WHhNV3ExRTFFV05BWUUtTzk3SzBtUjZxSXJLeXhOZDB6aDJHMzlDQ0gzT0RETnJDRlpEeW1SNFl1MEk1dXhBYllVdWNTOTVzbF9IaHFGNzhJZ0l6WVVDLWxPQjhSMkozQm1JNWxRbw?oc=5",
+     "date": "2026-11-26",
+     "time": "08:01",
+     "title": "미국 연준 ‘물가 압력’ 경고…12월 금리 인상 무게",
+     "src": "KBS 뉴스",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1USjhrLUtnOC1Ob2xiY2dGdGd5VlpldGRjTVdzMEdrYlVaSktUVzVNc0hOYnlUcTJ3dWx5M1Vpa0RjX1F1aTFoZFJ2Y1RiSVpCeEtnVkcxcnRHNnc?oc=5",
      "priority": false
     }
    ]
@@ -63,6 +63,14 @@
   "ID": {
    "label": "인도네시아",
    "items": [
+    {
+     "date": "2026-11-26",
+     "time": "17:36",
+     "title": "Rupiah Sinks to Record Low of Rp 18,400 Amid MSCI Concerns",
+     "src": "Jakarta Globe",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ0FPQW55TjIyYXhpV1h6aUJXbS02c0NCTXZnbzR1b3V3TVgzX000YU1iQUpobFNVeFMtYmpFUnNWR21OaWRPVlRjbE1CTWdnd2RrbXVPTUZaLW9OMXJNT3RvQXNiYVNlUFpLRFVOaHlZd3VxS0JCRmREM0R6RWU4b2ZZQk9GWkx6OVAwWlc1MmlyU3lz?oc=5",
+     "priority": true
+    },
     {
      "date": "2026-11-25",
      "time": "21:27",
@@ -77,14 +85,6 @@
      "title": "Indonesian Stocks Fall as MSCI Uncertainty, US Tariff Threats Rattle Investors",
      "src": "Jakarta Globe",
      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdHJYODQwYWpDMnVxMEg0WlZvSm95dk5uVGoxM05wWW9YMjdHQ21EQUxYVzA4QTRZX3BUc2M1Z05oaUhnZmY2THE5RkE4U1J4bGlHeEpWYzNZNF8yY3QzOEU4TW9PbVRGRUxCUVBqdFlJbnotc3Q1aFVuODFTMldnNmVvSVZ4MWZHOUZrLVN5dlY1S0NFMnhvaXkxeWFVeER2X013R05yMG1yMnhLRDhR?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-25",
-     "time": "11:20",
-     "title": "MSCI \"인도네시아 증시 등급 2단계 하향 여전히 검토 중\"",
-     "src": "연합뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zRk04VU5uOHBXV18xdWtLVG4tMjhZSV9sVzJ3d2xBc25OYVA5cENKM2JXZm1lUnBLQ2ltelA2anJZZkVGOVNjSzI4bWRYTU5jMVMyRDVMUUphY05ueUJFSdIBYEFVX3lxTE9zRk04VU5uOHBXV18xdWtLVG4tMjhZSV9sVzJ3d2xBc25OYVA5cENKM2JXZm1lUnBLQ2ltelA2anJZZkVGOVNjSzI4bWRYTU5jMVMyRDVMUUphY05ueUJFSQ?oc=5",
      "priority": true
     }
    ]
@@ -131,16 +131,16 @@
     },
     {
      "date": "2026-11-26",
-     "time": "11:28",
+     "time": "15:41",
      "title": "Hawkish Bank of Japan Member Seeks Quick Rate Hikes On Inflation",
-     "src": "Bloomberg",
+     "src": "Bloomberg.com",
      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZ0FVN1RFanhlMEZqZV8xTUp2SHljUzhfMF9WZW5VaW51dkViU1FJTW9wdTRaSVNFRk5VLUMzZ3JXajd1VzRPZ2F2OXVxRHFSakwzOGZsd3JsRmMxbWx5UktVWC1OZ3lYdmx0WlBiRVREUXdoUWFRbG5xVDRuRWpnTXdRQW9RUEV5bk9yMy1zX2Vyb1VzclBWbTVrUVRyNTlmVHFIR1ZZT0c5UEhHWXNXNlBrcnU3UQ?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-26",
      "time": "10:15",
-     "title": "BOJ's Tamura signals chance of faster-pace interest rate hikes",
+     "title": "BOJ policymaker signals chance of faster-paced interest rate hikes",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSzdDZ1dodDgxM0NfQ1dITzJmdGxGVWhwUzRfY0ZhczRfZXFxRkhzZWZxS3JGdWhvU3BuRXhYRV9Halg4MjM0RnUwSklfdklwWWRSakNUdm9KV3JHSEJpR01HS2J0QUpKZFYwOThYRDMyVVc1cm9neWRYaFdyV000bENreEN1Y0g0Wk95bEdNZ2MyVmxTQlB4QWhYS1hUTkFZNENqbXh4STc?oc=5",
      "priority": false
@@ -180,27 +180,27 @@
    "label": "싱가포르",
    "items": [
     {
+     "date": "2026-11-26",
+     "time": "19:05",
+     "title": "Singapore shares rise, shaking off new US tariffs; STI up 0.6%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYk9YTENuQUhiN3lPUzVCQVFQU01wV2phWUhQM281d1pIeXB1RDZMbEJjUDNSSFBid0JWUE40bWgwdkc4RlJaRUFFMjJrbWtTa3dsSG16OU5BMXVRdzJvN0ZVYTdFOVlzdllPa2tBRVhHZW45djhXalRRZ2FKeTV0YXpfbW5YekNHTEFxb2YtVlBvWEtKUXVZd29JVG1YVjNsRzJ1d3Nn?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-26",
+     "time": "17:33",
+     "title": "HSBC eyes Asean stocks with new EQDP fund as it scales its Singapore asset management business",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPS1VMYlJ3bGRUdEl1SVQwYUZvVGFsc1owaW1IS0ZXODNUMXRBelIzZ0RoVi1BbzBLQjZIeDNHUVJwM0hQYzZVTmhfWW9wZm9BMElvVzVlYVg0aEF5TGpNY0xSZlZhX2xkSG1fcFlIS0E4OGFUOGp6ZmpVUUpDbk0tdjRwM0hBS3BGQWUwWGZ0OWszSkFSeHFqOWxjbmxpbFZiLUViNHlsakEwd2JJaFR0Q3hPaVdhQ1NlLUFxYTZSRFFqd3JNZTYxSU5VX2RPMi1Sa3ZF?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-25",
      "time": "19:07",
      "title": "Singapore shares reverse gains to close lower on Wednesday; STI down 0.6%",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYmlKZldqc3V2U3NxOTV3OFA1Vkp5S0lnVHFINUcyZjJnTk5oYzQ3OGRDVEhPWXE5REFsTWFGN1dZTFNiQ19xMHRIY3I0TkEzYVNYMWdzYmtWT245MHB5b1RhQnU2Qm1zekR1VHRWcUY4VVhlQU8yQVg5M29aNVVmVlNfWXNwMEl4MTBFNExydDFnN0kwUUxxckhlWWw1WmgxcDg0ZmhKVm5hcTdOZXZBSTZWUE1jYUE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-25",
-     "time": "10:40",
-     "title": "Seatrium shares extend decline, closing 4.2% lower a day after announcing Singapore layoffs",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQUxOa0U1eGJzRlRfWVYtWlNfR2RPVWUwUUpxTzZKVGlyTmZXYXE5eDhIN3kxNU5KX3NqOWVHTGwyaW1KZEhkVHlXWmVrSGd1cGhRX24zUE9TQzUzNFY4UE5SakwxLU1wNmN2S0FUdFJaV0ZIYXVqeDJrY1RveGZHSGhaOHcwZ3R0RmoyUzBZbXZobTZRRW1pRTRJZF9BSTJpOGZhdEZRTHhXdGI3dTZNbG1fVWNPQnhBV291UnNGcmU1eEFtdzdhVDJnT1ZsQWM1TmFlVA?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-24",
-     "time": "19:11",
-     "title": "Singapore shares claw back losses on Nvidia-led rally; STI up 0.1%",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOUx3UkZIX2FCYjlka1VPeENka2VRa1huOFc0c3MyaEpxNDNabkxlSTV3S2VVOGZTNVFwemg5ZnNVaWZaOF9VYkNLRFhXSFU0b3E5eGFkOWRNTDlKbkJIS2hERkFPMzBIajNpWTNvSTZ1WEtMMjNob0NQQXF0WVRMWmI5d1Q5NjlUdkZfeVVseEc0YkJpM0pGcHlPT09mck85ZzlOS0FoQ1JNSjJvd1E?oc=5",
      "priority": false
     }
    ]
@@ -218,18 +218,18 @@
     },
     {
      "date": "2026-11-26",
-     "time": "05:06",
-     "title": "Inflation pressures broaden across India, raising rate-hike risks ahead of RBI's December review",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOSEtiRGFMN3Q2NmJ5ZVdfaVUwMy1QZkJQUTlNaXR3QVA3OW9mUUJMRmUtWVlZc2FISEhFMlp0SjNEXzVZOGtyeld2bTB6RmhadU1CSVA4LWpOWHg5Q0ducWRyQnFIWU5WSzhIQWpWLVY4Z3ZKMHBmSl9xZTNlTWR3b1BrZ3VOZUw4TXh1OERJZWFPenVYSE9pSU1JSEpBWDNKdXFSeVQxaEw4NlQzZ1hXempOVmE0ODNUU0FkUGxYQUxyaEVkajlaN2ppVHNjcEFIRjRpWThaTXVibGlDRTJSNHY0ZW9sWTBnR0JqSGttN0dVUmdJbGdNV3QzNjgzRnB2a1pDTzNXZFHSAYICQVVfeXFMTVhFR0JUcVhBTUp6aHVZY1N0ZmM2TUs4LTF1enFvQW1pa1FOVWlfbDZhOGVCcS1QUGxLODRpOTFLV3BvY3NvbWpLSHoxMGhkdTctSnpKaHBDQ0IwYVlTNVo4MXo2TWVVXzhnVXNUVUZmU05vSzhUS2owY3pWZUlYUHVTVVdBX2VkVE1iRFBSUi03MU4wUkJaNXRWMzJORHctdjNNYW1JblgxYVVTUWNLaUh1Z2pVbEtoWTRySFlfT2hTYjh2X0FVRXE5aDV1dHFyZGJ1WFJETWhTZWx3UndjYVVHWmp6YXJwYnVRRThST3VHWnpQYjEtZnNLVXluMXg5MEZ3?oc=5",
+     "time": "19:21",
+     "title": "India swaps, treasury bills signal possibility of outsized RBI rate hike next week",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTURLc0UwZjNUdy05dVdJMVFLLUpDNUQwN19INXh3cVcwdW5fM2k3eDV2bnY4ZkZkMDVzSjN4N3Yzcm9CQ1MtT1hmaVJzMmY5VkpMUzgxQzVrQm1zZzU2OERSak1TeU84dDlTOVk0aEZSNXFGcUNzaFo2bVlXN2wwYjRScUxtVE9GeXFFRjBFdWdlZ2tjOEpnQ19UTmVJVnlBQ0ZVclBQdHhieTd0SDJlVEU3c0ZTaFZFazB6cVAtbWpqMmU2?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-25",
-     "time": "22:58",
-     "title": "India's RBI sees broad food inflation pressures; was net dollar buyer in Sept, bulletin shows",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPU0hxckhBM1hYZ2wzV2hyRFZ2cF9Ud3Nja0VJcjRMbWJibVZfWDM0OHQwcFpTVWE4TWxwV2swbExTeHRab3hzZHJGc1p6ZnEyLVFJLTdSWVU2RWNmSHFHeXBzTEpDQzBUUktOTk5FZXhpa3NHaEZXS2pMTk41T0ktaUxLLVR1RDZieTBYZWl4a21ITm9oS0VyZWQ0c2xTYkZhbllfV2YxLUpZckRWZ1NUdHlaOWJ6NEZYc1d0N1h2SzNjZGdEaGVV?oc=5",
+     "date": "2026-11-26",
+     "time": "05:06",
+     "title": "Inflation pressures broaden across India, raising rate-hike risks ahead of RBI's December review",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPelR4dGdmUlBWMWZZUDVsRjVTSWtJd1BQWVJ2SVNZSGRYRTg4RE50allTZ1JVeHJsdUpmb3hGbzBUTWs1QlVDSUVkOV9sR2I1c0pVaHZLbk5Sc1NjR0tuYXExeTFvUEVTeGotTmQwcmRBdjNjTnlqeUlhQmhKaHZZaUhaNGtlMkp5YlBEVlRSZmthNkhYY1VtNE1aMDR5bWhHWlBjbHdSOWdPLTV5c0hzR2lZb0xGb3Fpbk5fV2otZndOV1REWWhQV0hTWTh2WGh5M3VfbHFQakV2Z0ZaZmVGajdpRXEyYUdBdmx4Si1Salc2QUVFMW5UeHo4VGrSAYICQVVfeXFMTVhFR0JUcVhBTUp6aHVZY1N0ZmM2TUs4LTF1enFvQW1pa1FOVWlfbDZhOGVCcS1QUGxLODRpOTFLV3BvY3NvbWpLSHoxMGhkdTctSnpKaHBDQ0IwYVlTNVo4MXo2TWVVXzhnVXNUVUZmU05vSzhUS2owY3pWZUlYUHVTVVdBX2VkVE1iRFBSUi03MU4wUkJaNXRWMzJORHctdjNNYW1JblgxYVVTUWNLaUh1Z2pVbEtoWTRySFlfT2hTYjh2X0FVRXE5aDV1dHFyZGJ1WFJETWhTZWx3UndjYVVHWmp6YXJwYnVRRThST3VHWnpQYjEtZnNLVXluMXg5MEZ3?oc=5",
      "priority": false
     }
    ]
