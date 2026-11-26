@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T04:51:35+00:00",
+ "updated": "2026-11-26T04:05:33+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,7 +127,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-23",
@@ -156,7 +156,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-11",
@@ -197,11 +197,11 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-20",
@@ -254,7 +254,7 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-16",
@@ -265,11 +265,11 @@
    ]
   },
   "GB": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-17",
@@ -280,11 +280,11 @@
    ]
   },
   "MN": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-23",
@@ -541,7 +541,7 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-15",
@@ -552,7 +552,7 @@
    ]
   },
   "KH": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": []
   }
  }
