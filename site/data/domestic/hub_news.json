@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T13:30+09:00",
+ "updated_at": "2026-11-26T12:42+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -10,7 +10,7 @@
     "date": "2026-11-17",
     "title": "KB증권 베트남법인 계좌서 ’비정상적 출금’ 사고",
     "src": "연합뉴스TV",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0eUxGa2JnRWJ6R2MxeTRVZm4tYlNmZWw2c203LTJFZEtwek1Va0ozckFmb09NSXVVOGNjWFJDWEFjeFMxc3RVVEFFb1VQdU5MUW1sVV9tU3V3c00zTnJ0MGRHRldMRWc?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1vMFRvYnAzR0tFcU14UXhyaXJUUEZZTmxCSmNwOXNZQW5JSmpNWDdKeEhkSDBHTzVhVEJWdUFManhsd3U3cTdyMklHMjYyMkRxX195ZUlkT2ZSQm4tRFJXd0tWeVg0bmc?oc=5",
     "site": "www.yonhapnewstv.co.kr"
    },
    {
@@ -338,9 +338,9 @@
     "src": "CNBC Indonesia",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOak9SZERyVmNxWFdhY3VZVV94MEhBeFlGN1RPSUVLbDM4MmlOX2NuNXQ1SUl5OThpRnF2NGlLTnlCRHFzOTJaMWN2Z3JUenZPdk0yYUt6ZVNoc1p5ZC1KLWtyZjI0b2ctNldtX3BqT2s5U202NnA5NUhSaVJYbnVKbmx4Wjd4TGhwZmJKdU1VU2RHbWxuai1tTFY2QVhEQS1qeGVONWI1OVZBMy13UVlOb2JJUWNNNUdfVGNlOGxyMTlTYW9ua3fSAcsBQVVfeXFMTm9wUS01MEFVX1VUY2FKZm5oT3hFWXA2b1ZtRTZIejFNQVJXRURLbGIxZGFqUlJxOGRveGpQYTBoYVpmZGJDc3NUWGV6dXpvaElrNkFIUHJCRTZSVlVWOWRVMDJJaXhuTmgyamFUVEtTanNCXzJJUFNIWmdpRDFFVF9mYnBWRktjUnY2U2JfZGItVGdzWHNRT1RlT19oWTQ0TmlGQTNsUFFUT1A5VEp5NTBKT3JhRXg5TzJ0ZnhqbGNjXy14LUlOc1dvajQ?oc=5",
     "site": "www.cnbcindonesia.com",
+    "title_ko": "혁신 강화, 미래에셋증권 인도네시아가 이 상을 수상했습니다!",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "혁신 강화, 미래에셋증권 인도네시아가 이 상을 수상했습니다!"
+    "lang": "id"
    },
    {
     "date": "2026-08-27",
@@ -358,9 +358,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTVCUnhWN19uaktvemhCellWTDRfWUc1Y1JqOUZYSkwxclBuVDlnd05mTVRZOXFYQTgwZVRRRW0yXzN2NzBydXFkTWh3SGVDd0RQcUwxSTVCQkRKNERDa19IY3psR0dnUVJsVjJ2cVJwVVRESkt0Ukk2NmpUYUFpczZUcGp4c3ZrLWZWd1Q3NmNxdjRKcEU2Rm1wcWxYdVVGT3E5Qk43TzhwYXJfY3pDYdIBqAFBVV95cUxPbWF1Q3JMT2UyclFfbXRpanFDTDMyNlhFSkp0a2ZUV3liOEN5WDBLQkxSQm9nQ2tUZ0VUNnZQNDlNQ1c0d1NfZW1HTjZEOFh4NDRySnJmSDBCVFk3dGxBekRISTg1S1Rob3J5aUtMLWZkN0pQcUJiOXR2MGlHWDBqTDNoLVYwWmRpTXp2SW1RaThmWkQ5MG1VaWNORTRja0hYLTNCR24zUkQ?oc=5",
     "site": "investasi.kontan.co.id",
+    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "점점 더 선택적인 시장, 미래에셋증권 자산 관리 서비스 증대"
+    "lang": "id"
    }
   ],
   "미래에셋증권|중국": [
@@ -382,10 +382,10 @@
    },
    {
     "date": "2026-10-28",
-    "title": "미래에셋증권 홍콩법인, 자체 기술로 '달러화 디지털 채권' 발행",
-    "src": "연합뉴스",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPeFN1OEpEdUIwSm5EODlvX2xlVFpTQ05xZjNZVmZyTXI4X2ZVeEVFeEVKMUdjZndoaTN0ZElBTFFmLUZHdDZkd1FYRXczcDNNS1RiTDQ5bmpwUUnSAWBBVV95cUxNY3JWdS11ZnpYM2tra1lmVjRXOHVxZmFUOVZPUnlLRVlaR0hHWENnajFKWlFWWnJEa2J6Vlc4NFpkMnRIV3ctVW1ESGhOM1lHckEybkZxcUxQMEJNTThZSWs?oc=5",
-    "site": "www.yna.co.kr"
+    "title": "미래에셋증권 홍콩법인, 국내 금융사 해외법인 최초 美 달러 디지털 채권 발행",
+    "src": "매일경제 마켓",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMeWhvVnE1QW9tM0ZMb3J6Z3dyRHFVZzNLWkhldXVjcHkwVkpLNVFvRzJ0ZUJnNExDV0NlRGtJSGVTaXFGYnppNkxLRno3anNSaUE?oc=5",
+    "site": "stock.mk.co.kr"
    },
    {
     "date": "2026-04-16",
@@ -427,9 +427,9 @@
     "src": "Vietstock",
     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSlNNcXNCOVZ5cWVMTjkyZTlNZHNWR0ZLcC1iYkJITW1qTFFSUVFQdm9CUVdMUkFJdlhzMnZoQWNLbHN6UFVYRGlLa2hUay04M0NxZDdNQVY2cWNBb1RTUFBBRDlhVjg5cGJ5TkxFTTVwRWtHZEc3Z1JfNWV6OWVBWUlrR0tDQkpHdTFVN2dkMnU0VUJQVFNtZnBpOENlcEZFbzlvU2hZMVgtLXh5V2VtYmdSRVpoc3VYdExMVzNoc3Fob3NaSlFGVm1EVHNlZw?oc=5",
     "site": "vietstock.vn",
+    "title_ko": "신한증권 VINASTALK - 올인원 증권 투자 및 정보 플랫폼 출시",
     "foreign": true,
-    "lang": "vi",
-    "title_ko": "신한증권 VINASTALK - 올인원 증권 투자 및 정보 플랫폼 출시"
+    "lang": "vi"
    },
    {
     "date": "2025-12-25",
@@ -537,9 +537,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNLXJmbXFCSFJLcG9lMHZtalQ3a1RXNUZLRnNqRmZEdlhua1R5MXFhSHRaalN4VVRJTmZvZlp2TnRZRmZsSkY4b21QemxfN0lIa05hVnN6WHVyMVJiTXpjeWgyVTlMS0ZvX1VGczd2WUNKcXhEWURhSVYzYmppTFQ0LURqUXlaRm5KYkZsMHZQdWpBX19yOF82dUx2QjlSRnNN0gGYAUFVX3lxTE5IRVpQS3pQbWpEMjhFOFJRMW5QS0hadFpjU0VieEJ3OHltZVZjZ0N1V0RfR29zWm1YM3hjd21lb1ZiZ0lWZHB3UnlDMElNd2ZSZkRWbjFrT0hYUDdjRjN0TWxkZTZScjFBQVl4TGJKT1hfSGtJdGV2a0JtRDdZRUtSaURhQk9sVlNqNjF6ZGlyX1FEMkJfQloz?oc=5",
     "site": "investasi.kontan.co.id",
+    "title_ko": "부진한 IPO, 키움증권 채권과 비즈니스 자문에 의존",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "부진한 IPO, 키움증권 채권과 비즈니스 자문에 의존"
+    "lang": "id"
    },
    {
     "date": "2026-08-11",
@@ -547,9 +547,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
     "site": "keuangan.kontan.co.id",
+    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요"
+    "lang": "id"
    }
   ],
   "토스증권|미국": [

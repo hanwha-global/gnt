@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-25T13:32+09:00",
+ "checked_at": "2026-11-26T12:45+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -202,14 +202,14 @@
      "category": "리스크·규제",
      "text": "MSCI 결정 전까지 인도네시아 증권(CSA) 신용공여 한도·담보 비율 보수적 점검",
      "evidence": [
-      "DealStreetAsia 11/24 'MSCI 강등 검토' 등 부정 구조 뉴스 7건(최근 30일)",
-      "IDX 1개월 -4.1%, 연초 대비 -39.7%(11/23)"
+      "The Business Times 11/25 'MSCI 강등 검토' 등 부정 구조 뉴스 6건(최근 30일)",
+      "IDX 1개월 -4.4%, 연초 대비 -39.9%(11/25)"
      ],
      "links": [
       {
        "label": "MSCI 강등 검토",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWNuME0xQ252OWloUU1yZnYtYkZZbUNrUk1XcXlQcVpodEJMa3lobEF0SmFSeUhRbWx2NlJSampJNzhCdmpzOWlWWW1HRm5oa2dBOFd3OUhxanM1TERDV3llNkp3clhrb3BIMjZPMGU1bzlQdk1qT3p1Z1R4TEQ0cGswUXlsM3B3NEV1SG5sS2NPLUhzUEtuQXJjbDYyRVFlcTdCMQ?oc=5",
-       "title": "MSCI says Indonesia downgrade proposal remains unchanged"
+       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUmlUUzd4WHUzSzNMNzFzYXlNVGhHWXNja1hwQzR3WkZhc1B4ajRYNVFoUmRlWTBTTUJGaGhKaTNJQXhQd21sWGIyQ1ZyNHhCZjVFYkE1aC0wN2lyZDNrcENyMUh6M1phbEg2NkdfUXdTNFJIZDlDQ0VzemFET2FTYW80Q1d2cnF3TG9qZXZGMC1jSW16WXM3QUNhdVEzU2ZFblRxRE83LU9vMWNfbUIxQ2t0Sk5QTEIxeDM5N1JBQUQ?oc=5",
+       "title": "Indonesia races to reform US$500 billion stock market to avert MSCI downgrade"
       },
       {
        "label": "Reuters",
@@ -252,7 +252,7 @@
      "category": "M&A·지분",
      "text": "인도네시아 현지 증권사 인수는 원화 비용 하락에도 MSCI 결정과 손익 회복 이후로 보류, 후보 검토만 선행",
      "evidence": [
-      "IDX 5,216(11/23), 최근 1년 고점(2025-12 월말) 대비 -39.7% · 루피아 원화 대비 연초 이후 -15.0%(ECOS 11/23) · 원화 환산 지수 연초 대비 -48.7%"
+      "IDX 5,198(11/25), 최근 1년 고점(2025-12 월말) 대비 -39.9% · 루피아 원화 대비 연초 이후 -15.0%(ECOS 11/23) · 원화 환산 지수 연초 대비 -48.9%"
      ],
      "links": [],
      "bucket": [
@@ -282,19 +282,15 @@
      ]
     }
    ],
-   "changed_at": "2026-11-24",
+   "changed_at": "2026-11-26",
    "reason": [
     "새 뉴스: MSCI 강등 검토"
    ],
+   "last_check": "갱신",
    "candidates": [
     {
      "rule": "MKT",
      "variant": "reallocate",
-     "why_not": "4개 마감"
-    },
-    {
-     "rule": "R10",
-     "variant": "고객 대상 사기 증가",
      "why_not": "4개 마감"
     },
     {
@@ -510,9 +506,21 @@
      "reason": [
       "새 뉴스: MSCI 강등 검토"
      ]
+    },
+    {
+     "date": "2026-11-26",
+     "fp": "c97d83264f8e",
+     "rules": [
+      "R08",
+      "R13",
+      "R04",
+      "R06"
+     ],
+     "reason": [
+      "새 뉴스: MSCI 강등 검토"
+     ]
     }
-   ],
-   "last_check": "큰 변화 없음"
+   ]
   },
   "SG": {
    "country": "싱가포르",
@@ -655,5 +663,5 @@
   }
  },
  "errors": [],
- "updated_at": "2026-11-24"
+ "updated_at": "2026-11-26"
 }

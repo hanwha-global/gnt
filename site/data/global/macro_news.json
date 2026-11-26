@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T03:44+09:00",
+ "updated_at": "2026-11-26T12:45+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,6 +35,14 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-26",
+     "time": "04:40",
+     "title": "Fed releases beige book ahead of December rate decision",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdnpZcThuSEVDT016ZVhtVUdxSVQzTFRCaUVjVHlQRzhRZGNzclEyeUg4WFJjeWtGVkEwakQtY2N2NE5Wa203RDlSOVpMWmluRTFscGFVQVhqS2dDbnBzcGllcm9oNExJUlB6c0I0UTIxUmxxVVc5SFdOQndGVjdsd2ZtalNBSDcycUNWYmtkX0RFa3RYYnB6Y1I0Z2NQOVU?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-25",
      "time": "16:44",
      "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
@@ -48,14 +56,6 @@
      "title": "Treasury yields fall as investors await key inflation signal",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5FRFlwZF9FMHIyY3J2Y25STC10T25DTG9zTWFKcVNYOXdtM21rLVNZTXRoTWVqYUVWUEE5RFpURWVUd1kyanJHNWJzaXRmTkJHMFZGTWV0U3RSdVpyc0h5NGEyQkEtS1RlZ2NUQWtHbFBVTUtucjJJ0gF8QVVfeXFMTThoU0xMTXQ1NFpvaUc1WHhNV3ExRTFFV05BWUUtTzk3SzBtUjZxSXJLeXhOZDB6aDJHMzlDQ0gzT0RETnJDRlpEeW1SNFl1MEk1dXhBYllVdWNTOTVzbF9IaHFGNzhJZ0l6WVVDLWxPQjhSMkozQm1JNWxRbw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-25",
-     "time": "10:32",
-     "title": "BNP파리바 \"연준, 12월부터 세 차례 연속 금리 인상 전망\"",
-     "src": "연합인포맥스",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE84a3JlM2NXd2ludmg5dmlNYWJ5cnA2V2ZwTWE3QzNKakp4NTR3QnZRUXR1Wjg3SHVnVkxjdHlrOGptcVVzMUM5MUdaT1gzclFUM211U2dfX0hVRWV1S2RyVlZ1ZFR0dFFIQTNYdTA5Rl8?oc=5",
      "priority": false
     }
    ]
@@ -130,19 +130,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-25",
-     "time": "16:12",
-     "title": "BOJ’s Faster Inflation Indicator Backs Case for Another Hike",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNekFRcTFoc0xnQlcwVUxvNGpJd0hJdW1ZZ214Q1BHWGJNNzVtYWQtejhzUFB2TmVFSEo0Q1BVX082UTdYWTA4QzVtcGw3VERfYzVHUzRPQ0VQNkRoRDhqWjBPYW1HVzVsTXRpRUZ2UTJTNE4weVM4ODNJRGxZbmZqSGJBZnhzMjZUcU04STA4TXNfNUMwMnB6WGhGcmpzUGFYZXVhcUI1bnNQM2ZUT0otVA?oc=5",
+     "date": "2026-11-26",
+     "time": "11:28",
+     "title": "Hawkish Bank of Japan Member Seeks Quick Rate Hikes On Inflation",
+     "src": "Bloomberg",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZ0FVN1RFanhlMEZqZV8xTUp2SHljUzhfMF9WZW5VaW51dkViU1FJTW9wdTRaSVNFRk5VLUMzZ3JXajd1VzRPZ2F2OXVxRHFSakwzOGZsd3JsRmMxbWx5UktVWC1OZ3lYdmx0WlBiRVREUXdoUWFRbG5xVDRuRWpnTXdRQW9RUEV5bk9yMy1zX2Vyb1VzclBWbTVrUVRyNTlmVHFIR1ZZT0c5UEhHWXNXNlBrcnU3UQ?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-25",
-     "time": "16:06",
-     "title": "Japan bond yield curve steepens as markets reassess BOJ rate hike path",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcTlTeUszcDlyWGlpM0I3dHlVUkc0amRITkhQX1NRS04tYUZuM0t3VHNJY0FMV00ySEE4ZThLV3JSQ0JLcE5PXzM2MXFDSTUzNEtEdG1MOXhwYzNJVDVxdi0yQmFZVmpfVVMxVHZDYmhKaUhYWnM4OVFhem5vOE9CdldKQkhaOGhRX3ZRWlk4ck9EVENiWkdFMFdXWDR1dFJXN1pDYUZsdXY1X3hWWDFhaUZkN1c3NWxtVzF6S25kTjhvUDFFWGRKODZNcHVjN3BfeFBOTENpcEM4a3ZLd3lsSdIB5gFBVV95cUxNZEdtcWRSSU9OS3E2WWNJanJjX0pBaXRYbmJ4bXBOUXR1WGFyaTNnTU5lYzZYNHFXdU9WSmlNaG5qU2xNSGtQR09yVEtIVWxFUXFjdmJYZEE1U04xWGcyY0dHRThSZGxXajBlTVJXdkNQek5lN0lyUS1nN3RNaW51Tkp4akw5WTlud1JzSFhra1V6azRLQWR6R3diY0kyNWNSVUEyeDN1QTlPOE90M2UxRFJ2anZ2UnY1MDFlTXRiZzk4SGJmWVEwNjFLUGtRMlBmUnlxV2xwYzFrNkFOZUNiUlRmaWhEUQ?oc=5",
+     "date": "2026-11-26",
+     "time": "10:15",
+     "title": "BOJ's Tamura signals chance of faster-pace interest rate hikes",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSzdDZ1dodDgxM0NfQ1dITzJmdGxGVWhwUzRfY0ZhczRfZXFxRkhzZWZxS3JGdWhvU3BuRXhYRV9Halg4MjM0RnUwSklfdklwWWRSakNUdm9KV3JHSEJpR01HS2J0QUpKZFYwOThYRDMyVVc1cm9neWRYaFdyV000bENreEN1Y0g0Wk95bEdNZ2MyVmxTQlB4QWhYS1hUTkFZNENqbXh4STc?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-11-25",
+     "time": "12:44",
+     "title": "China faces rising pressure for stimulus: Julius Baer",
+     "src": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWmlDQmJ3bnBkQ0R5eUNGOFdGZFVrZTMtbkFhdmVrSmZaQkg3cXdJNl80ODBfQ0oxNW1UcFRkUHBRUGNzZmNVSGgxVXJVN3VZWnZGaVp1MXdIVDZJV2NGV2tDNjJCODVpQmZsdkRwWjFBeHg1RTBudHZlaXdOZ2EwUm95bHZoZXh6ZXp6M1ExXzgxbEF0ZFlkb1Nocw?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-24",
      "time": "17:37",
@@ -164,14 +172,6 @@
      "title": "Hong Kong stocks erase gains as Jensen Huang’s comeback offset by AI jitters",
      "src": "South China Morning Post",
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOVhDenptTFg3SWQ1ZTdaNkJkZ25BQTh2WHZFMnltOFl4QW1nZ0VGdHZiVElaam54QVVzbG9kRE1UWmM4THFCUThTWVhuZ0hGa25VQWl3VG1lVmZlXzI3eHdBVUxTSWdOUXJ4bDRxMngtSEFuVkd4SUcwYVJtUVB4QlZIZmZncmUwMEZpemVfdW9PV1FKWEJCY1k1SG54cjJHMlJRTzVYQXZta2JWa0JMN3lJdzY2ZHV6YmJmM1dnaTFZZHZfQS1GRkVKX1FDTUE?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-24",
-     "time": "10:45",
-     "title": "Hong Kong stocks surge as Jensen Huang’s surprising comeback revives AI trade",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNdkFsRE51bnk3RzB6U25SWWVyZ05HbUhtU3ljamh6QUpwSnJRZmM0TXNMenhuLXVVQnZFMWtESFJMUFVBdG1FUHdYSTBRZjdvRlRxUlJrZGFhMFdickJETmRVTUY4Z0dSOGdpR0FJcndVbkpmTUFCS2dPX2l2YVFjVmgzNlduTS1wSU5zSm1Sd3dKNWJCTUhaa1RtY0JVeUxfWTc5YjNGSklMbGtwNENFRjlFc0FLcmsya25CR1pveUFqSlFTaE1EV096cVZZUzFmUzNMdEthMlZJcEtGR281RzhSUE1PeVdiQWtkTm9QQjBMeS1LNG9od3hReVBWdw?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-26",
+     "time": "05:06",
+     "title": "Inflation pressures broaden across India, raising rate-hike risks ahead of RBI's December review",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOSEtiRGFMN3Q2NmJ5ZVdfaVUwMy1QZkJQUTlNaXR3QVA3OW9mUUJMRmUtWVlZc2FISEhFMlp0SjNEXzVZOGtyeld2bTB6RmhadU1CSVA4LWpOWHg5Q0ducWRyQnFIWU5WSzhIQWpWLVY4Z3ZKMHBmSl9xZTNlTWR3b1BrZ3VOZUw4TXh1OERJZWFPenVYSE9pSU1JSEpBWDNKdXFSeVQxaEw4NlQzZ1hXempOVmE0ODNUU0FkUGxYQUxyaEVkajlaN2ppVHNjcEFIRjRpWThaTXVibGlDRTJSNHY0ZW9sWTBnR0JqSGttN0dVUmdJbGdNV3QzNjgzRnB2a1pDTzNXZFHSAYICQVVfeXFMTVhFR0JUcVhBTUp6aHVZY1N0ZmM2TUs4LTF1enFvQW1pa1FOVWlfbDZhOGVCcS1QUGxLODRpOTFLV3BvY3NvbWpLSHoxMGhkdTctSnpKaHBDQ0IwYVlTNVo4MXo2TWVVXzhnVXNUVUZmU05vSzhUS2owY3pWZUlYUHVTVVdBX2VkVE1iRFBSUi03MU4wUkJaNXRWMzJORHctdjNNYW1JblgxYVVTUWNLaUh1Z2pVbEtoWTRySFlfT2hTYjh2X0FVRXE5aDV1dHFyZGJ1WFJETWhTZWx3UndjYVVHWmp6YXJwYnVRRThST3VHWnpQYjEtZnNLVXluMXg5MEZ3?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-25",
      "time": "22:58",
      "title": "India's RBI sees broad food inflation pressures; was net dollar buyer in Sept, bulletin shows",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPU0hxckhBM1hYZ2wzV2hyRFZ2cF9Ud3Nja0VJcjRMbWJibVZfWDM0OHQwcFpTVWE4TWxwV2swbExTeHRab3hzZHJGc1p6ZnEyLVFJLTdSWVU2RWNmSHFHeXBzTEpDQzBUUktOTk5FZXhpa3NHaEZXS2pMTk41T0ktaUxLLVR1RDZieTBYZWl4a21ITm9oS0VyZWQ0c2xTYkZhbllfV2YxLUpZckRWZ1NUdHlaOWJ6NEZYc1d0N1h2SzNjZGdEaGVV?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-25",
-     "time": "15:27",
-     "title": "Allianz turns tactically positive on Indian rupee, sees less need for RBI rate defence",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcC1vMm9ITzBnS1kxajl3TzU4VzZhUjNyVU9kckNLeUhsaWNNaDhPMWFETFdKZnNxSmVPUXdLaEZndGFBZjBGWDFVUWV5Wk1PSnJFR1lDNm1ZV3huN25wWUxMTFFPZERiUjBZbmZVbnJNbnZFck14dmJtWUpJbS1kRmJwOGZ5Y3FvbzVlUTNiNkN3dkVnaW56azVCbEZnakN4S093c1FrZWczQnNfWnBLb2VNUEhLMTZITEFXUnQ0aG9lTGUt?oc=5",
      "priority": false
     }
    ]
