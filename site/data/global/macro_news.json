@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T21:55+09:00",
+ "updated_at": "2026-11-27T03:32+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -65,6 +65,14 @@
    "items": [
     {
      "date": "2026-11-26",
+     "time": "18:23",
+     "title": "Rupiah hits new low as dollar strengthens, MSCI fears mount",
+     "src": "The Jakarta Post",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbmlkekhNR1hLc2ZwUThpelFxRHNJOXdvc1N0NmJFRm8yV0hkUzZHR0gwS1hGUUc5ZTczaFFhMHByR3ViRC1VY2MzSWstckVBNmZPV18wQmhLZ0dZU0hMS3AyTDhGSDBKVTFQM09OZW5kcS1Wd2QzUGJTdTh1dDF6bHBjTS1FdmhpZFZiamZobnBkZ1dMUWdBeVVoNldYNE1DaWZGNUJiQUw5MnFJU3c?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-11-26",
      "time": "17:36",
      "title": "Rupiah Sinks to Record Low of Rp 18,400 Amid MSCI Concerns",
      "src": "Jakarta Globe",
@@ -77,14 +85,6 @@
      "title": "Indonesia races to reform US$500 billion stock market to avert MSCI downgrade",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUmlUUzd4WHUzSzNMNzFzYXlNVGhHWXNja1hwQzR3WkZhc1B4ajRYNVFoUmRlWTBTTUJGaGhKaTNJQXhQd21sWGIyQ1ZyNHhCZjVFYkE1aC0wN2lyZDNrcENyMUh6M1phbEg2NkdfUXdTNFJIZDlDQ0VzemFET2FTYW80Q1d2cnF3TG9qZXZGMC1jSW16WXM3QUNhdVEzU2ZFblRxRE83LU9vMWNfbUIxQ2t0Sk5QTEIxeDM5N1JBQUQ?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-25",
-     "time": "18:47",
-     "title": "Indonesian Stocks Fall as MSCI Uncertainty, US Tariff Threats Rattle Investors",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdHJYODQwYWpDMnVxMEg0WlZvSm95dk5uVGoxM05wWW9YMjdHQ21EQUxYVzA4QTRZX3BUc2M1Z05oaUhnZmY2THE5RkE4U1J4bGlHeEpWYzNZNF8yY3QzOEU4TW9PbVRGRUxCUVBqdFlJbnotc3Q1aFVuODFTMldnNmVvSVZ4MWZHOUZrLVN5dlY1S0NFMnhvaXkxeWFVeER2X013R05yMG1yMnhLRDhR?oc=5",
      "priority": true
     }
    ]
@@ -133,16 +133,16 @@
      "date": "2026-11-26",
      "time": "15:41",
      "title": "Hawkish Bank of Japan Member Seeks Quick Rate Hikes On Inflation",
-     "src": "Bloomberg.com",
+     "src": "Bloomberg",
      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZ0FVN1RFanhlMEZqZV8xTUp2SHljUzhfMF9WZW5VaW51dkViU1FJTW9wdTRaSVNFRk5VLUMzZ3JXajd1VzRPZ2F2OXVxRHFSakwzOGZsd3JsRmMxbWx5UktVWC1OZ3lYdmx0WlBiRVREUXdoUWFRbG5xVDRuRWpnTXdRQW9RUEV5bk9yMy1zX2Vyb1VzclBWbTVrUVRyNTlmVHFIR1ZZT0c5UEhHWXNXNlBrcnU3UQ?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-26",
-     "time": "10:15",
-     "title": "BOJ policymaker signals chance of faster-paced interest rate hikes",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSzdDZ1dodDgxM0NfQ1dITzJmdGxGVWhwUzRfY0ZhczRfZXFxRkhzZWZxS3JGdWhvU3BuRXhYRV9Halg4MjM0RnUwSklfdklwWWRSakNUdm9KV3JHSEJpR01HS2J0QUpKZFYwOThYRDMyVVc1cm9neWRYaFdyV000bENreEN1Y0g0Wk95bEdNZ2MyVmxTQlB4QWhYS1hUTkFZNENqbXh4STc?oc=5",
+     "time": "12:48",
+     "title": "Japan's Nikkei rebounds over 1% as investors snap up beaten-down AI stocks",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZDZyZUVJdVQwcFVUN2pHcmFTSTJfM28wWncxZ1lrWFBtTnBRdjZFTEdLOVI5X0E4Yk5uaHJCMWRhTWVvdnFUSFd2dmd3cHRfOFF4elg4eW9mdExXQ01xMGFPbTdHa2ZPQjQ3dFZoN2NLd25UekIwcWxXNmhRU2FfbUktdDFKRjY2VU82ZndxRi13TV9WSlJBODhRNmJtck1LSnpFcWVpdjF6T2Y2S2F2LXRDWEp1WS1jQkQtdGxldm9oWG1tWTBvSlU3eHpxWm55Uk1YUHpLa0pfaWpmRG8tRGc5Y9IB6AFBVV95cUxOaXdMa3YyZFBPM3V2NTNMaUJmbzVVR0hkX3MtMWk3QnFWYWFFeVdVdmdzYTlSU0ZZeC1fdHROek5HbXBadHpGYUR1QmhYR0hteGVoSWJKUHI4ZlQ2NkJqNFk3ZUoxSlRuRmgtR0Q5azBsOFNrb21jYklPSlExLXhKRi12ZGYwM1VRRDh4anJ6QmcyOFMxTllmVk1xeVdpckdhUFRucGVndUxlMm1sa1FyMWRBX012ZVdKU2lWWEt2RkhaTmY5SVdZdkxRd0Z5cjNGa29PcUJvSDBIR0E4YUo3cHBQMEdVVXBw?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-11-26",
+     "time": "13:51",
+     "title": "China, Hong Kong stocks rebound as investors shrug off Trump tariff proposal",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMjBNQkRUd3dOcDU1dGsyUnRSbzdSV0YxRzVmM3FkRlkyaW5aLVRsR2dwVDhYdDMyb214ZTFYY25uZ21oczZobWt3eTVpOE5yRHM2WTZqd2gybEQ2dXVfQ1Nla1FEWEdENHRROFhLQ3dXaTNqNXdrakFndVg2UEtkcWNnckFNNERQMVZVZWhYTk9iQjFkNkNjT2lKekZ2eHJ6VHZqNmlIU1dldURQd2JhTGROYktmR29xTVpjS0RuY19YUm1LdnNCTmlqNERMN3c1WUlwTUtQYlZzVC0xVFA3azZWT1c5ZmvSAewBQVVfeXFMTUVhMGpvcWRUNlJnd0V3RUVJNmdrSHFGMkNKeGkzYUdjUXJOazhCdGNkSUFKREVpTGt6Y0RHSjk3dVd0MThCbC1qLUtvVVNydkNTaDFlMktYMU5ScGdhNG5IRE9zNk5BOTNDc2F3alpvUHc5cXE1M0pSdWJ2VlcyUS1pbERjMVRuWVpZV3N1SGdrbEhpRzdOOE5NbHJ5UENJb2xFV2piSTlKdXNxcWcxcENuTGlUeUZwS2d4UlhraExhVVkteFNKeFA4blFqX2RGMFU0dVZZWVV4R25sc0xGYXNGM2RmZlBNRTJ4VDU?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-25",
      "time": "12:44",
@@ -164,14 +172,6 @@
      "title": "China wanted families to put savings in shares not homes — then markets fell",
      "src": "Financial Times",
      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPa0hjaURGMW5BTlZHUS1iS1RsTC1uZExaQWhjbXpEdVBJdjc5VFVBcFBTeU1JenJoQ3A1dmdpSHFCVlRia2s2amptaTFCbGZEeldVVDI0MmRCd2FqVTBLLUtmem5FYlFTWC1BejdHUXZLa09qY0xDeklEeTQ3UnBxblE5ODc?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-24",
-     "time": "10:45",
-     "title": "Hong Kong stocks erase gains as Jensen Huang’s comeback offset by AI jitters",
-     "src": "South China Morning Post",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOVhDenptTFg3SWQ1ZTdaNkJkZ25BQTh2WHZFMnltOFl4QW1nZ0VGdHZiVElaam54QVVzbG9kRE1UWmM4THFCUThTWVhuZ0hGa25VQWl3VG1lVmZlXzI3eHdBVUxTSWdOUXJ4bDRxMngtSEFuVkd4SUcwYVJtUVB4QlZIZmZncmUwMEZpemVfdW9PV1FKWEJCY1k1SG54cjJHMlJRTzVYQXZta2JWa0JMN3lJdzY2ZHV6YmJmM1dnaTFZZHZfQS1GRkVKX1FDTUE?oc=5",
      "priority": false
     }
    ]
