@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T04:45:02+00:00",
+ "updated": "2026-11-26T03:54:12+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,10 +66,10 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "title": "스테이블코인, 은행 과반 지분 컨소시엄부터 발행 허용 추진",
      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE05NmZPZWVpdGdBc2FNVjZXOUdpbUY3QXNOeEF0anltcXJGUW5YdXFzU2tWSlhYSDd0YkhKME00dlFyM3Y4T21vQmJjd2hNV1JkcnBpMzROUGE5TGhQN0lIUTExWG1VaUpLNEwySQ?oc=5",
      "src": "대한민국 정책브리핑",
@@ -408,7 +408,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-23",
@@ -504,15 +504,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-19",
@@ -562,7 +562,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-12",
@@ -576,7 +576,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-10-28",
@@ -590,12 +590,12 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-24",
      "title": "Introduction to the ECB Token Reference Model - a framework for standardisation discussions",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVnhkV1BRYnotT2ZGbGJmdWgwQ2J1ejhBUEpPel9vWUhESU11eFBtX0RqZEx3MXk1M2xFbEhsaUEzRzlnMEUtOGVzQnhyak0tSUhGbzlhWXpoRUd1c1R5UEtZQnFkd2FpeVJTNHBOc2ZGZmVGVmIyUkpoRWlIVnoyUkdQekdoSEVVcjZlSC1mcXNXSm5GcnExenVKSzY3QS1OVlRPTVdPUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBQU3R0aHdiRTJnOEJMNEJqaGEza1F6ZHQ1am5ZaXRVZXRTaEF2NHc5a1BlZmktaDNod1J4bklqUlhhM0pGaFZCSlhNNXBuVGVTdWZqbnJZUHQ4YzFaYi01c0JrOVFDb3o5YWRrTGVRNTBCX1NIU3ZRVUNjYw?oc=5",
      "src": "European Central Bank",
      "topics": [
       "general"
@@ -703,7 +703,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
     {
      "date": "2026-11-22",
@@ -870,8 +870,17 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-25",
+   "auto_checked": "2026-11-26",
    "items": [
+    {
+     "date": "2026-11-25",
+     "title": "Launch of CMU Digital Asset Platform",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuLU1GcWJEMnhvbUVDeXJhc0c3RXF5aHB0VFRGYy1Id29NYy1hSVRNTE1ld05VRkhrWjJmZU1najdpMzR2NVdqY2tZVDJJallnN0lzcHlIUUIyekhPTC1DczJ6MjZZVUpaSDlNX2xyOWRfUQ?oc=5",
+     "src": "www.info.gov.hk",
+     "topics": [
+      "general"
+     ]
+    },
     {
      "date": "2026-11-20",
      "title": "Virtual Asset Services Legislation (Amendment) Bill 2026 gazetted",
