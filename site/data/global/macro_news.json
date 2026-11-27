@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T12:46+09:00",
+ "updated_at": "2026-11-27T21:51+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -64,6 +64,14 @@
    "label": "인도네시아",
    "items": [
     {
+     "date": "2026-11-27",
+     "time": "15:59",
+     "title": "Indonesia Arrests Three Over Trades in Stock Scrutinized by MSCI",
+     "src": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUl9XaERjZ1Z6MmVhQUhoYWdyUjNfN2RsdGRGbFVXX0dpOUxnM1lwb3pLQmFlSExtLVE4SVFQSnlTclV6Nm5rNEpLWS1tdGp1eHM5cVBUbGw2dm5MM1hrS3FoTTZjMFU0RDlnTi05dHFtWDFkbldHRXFKVUVUWi1MSW9ZN2pJV3JtaWhHeHBlV3p2dmh1b3ZaMmVXaDl2czEwOThlbENIOUVFR19qMFlVZXlNVU1YUQ?oc=5",
+     "priority": true
+    },
+    {
      "date": "2026-11-26",
      "time": "18:23",
      "title": "Rupiah hits new low as dollar strengthens, MSCI fears mount",
@@ -77,14 +85,6 @@
      "title": "Rupiah Sinks to Record Low of Rp 18,400 Amid MSCI Concerns",
      "src": "Jakarta Globe",
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ0FPQW55TjIyYXhpV1h6aUJXbS02c0NCTXZnbzR1b3V3TVgzX000YU1iQUpobFNVeFMtYmpFUnNWR21OaWRPVlRjbE1CTWdnd2RrbXVPTUZaLW9OMXJNT3RvQXNiYVNlUFpLRFVOaHlZd3VxS0JCRmREM0R6RWU4b2ZZQk9GWkx6OVAwWlc1MmlyU3lz?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-25",
-     "time": "21:27",
-     "title": "Indonesia races to reform US$500 billion stock market to avert MSCI downgrade",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUmlUUzd4WHUzSzNMNzFzYXlNVGhHWXNja1hwQzR3WkZhc1B4ajRYNVFoUmRlWTBTTUJGaGhKaTNJQXhQd21sWGIyQ1ZyNHhCZjVFYkE1aC0wN2lyZDNrcENyMUh6M1phbEg2NkdfUXdTNFJIZDlDQ0VzemFET2FTYW80Q1d2cnF3TG9qZXZGMC1jSW16WXM3QUNhdVEzU2ZFblRxRE83LU9vMWNfbUIxQ2t0Sk5QTEIxeDM5N1JBQUQ?oc=5",
      "priority": true
     }
    ]
@@ -131,18 +131,18 @@
     },
     {
      "date": "2026-11-27",
-     "time": "11:10",
-     "title": "Tokyo’s faster pace of inflation backs case for Bank of Japan rate hike",
-     "src": "The Straits Times",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTlJMSWZnYjhwT1VBb0JIZ3IyS0VuOS1yUHNTdGJrSVlra2ZHQ1R0Tmx1WXhtdWoyV3RZN3B0bkY4cmlRc2RIRnVaRDRxUjRtZmpGNnhQbXVPUlVBampVTGFYOXRMd2Fja3A3aE1iYjIta2gtRXFXQjJXMVZ4S280TFhiYWdrNmg1ekZCMzZuOFY5VUdhX3c3TTZkU2FCdGlUN2w4MDhwLTd6VEtO?oc=5",
+     "time": "13:18",
+     "title": "Japan’s Nikkei rises, set for weekly gains as AI stocks rebound",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZlRJYkdWanR1WWN3SUV2cnFDMDMyUXhhajNtMG9HdUFrM2lPM1luYXBsUEN1bkd2R0poUU9Cc3VyNFZhVm5STnM5VG5ETGpoSF82clFkVXdTbzh3Yl9QWmt5TVNIVktBcERBMkU4elY2THFWcG5MOVhtWEhnSFVsdjh2LUdjWEdyczdsVnlkWms3VE9aVlFtVUhreVY2eEQ2VU4zRS1GcThWQXUxM3M3aEJfRndINTQ5Ym5PRGItVjA5Zms0cG9jRjQ4c21SZ2dTNEM3SdIB2gFBVV95cUxNUVdsVk95TE5rTEJhX2poZDIxX3NBY0ZWWTlHenlYa2tuUE9NTU1KZXVCbmFNN2Y3WXB0UEhESld5SWs5SHZSeTJVdlRLcWc1TGJjZmlERHJLSWR0bnFoajM2MGJTTDFXblM5ZDk4S0RvQXZORlkxSk5VeldkOVhSbGZjOGlub2tuek9WaVdacGNVUlFHU09NRnNwRUVSVm0wam1IR2VBUEZKcFM1X3h6eVZxM2pJQkNrTG84bEdiemxSMUFhMTl5REx1b2I5Rjd2dDZZWU1oUFNDQQ?oc=5",
      "priority": false
     },
     {
      "date": "2026-11-27",
-     "time": "09:55",
-     "title": "Tokyo’s Faster Pace of Inflation Backs Case for BOJ Rate Hike",
-     "src": "Bloomberg.com",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcC1BOTk5RDl4MEhDRXl4a1J6VktNMlVWWWx4WnZoMzdEdHRfM1hoS2RmZWdfUFNzMk9JVlBJYTAxMzRMdzlPMXE5WHZUaHg5TVhYUWlhTlI4blpWazdfTG9nTjhnbGVrM3FWMjF2YjhhZG56SWtid0Z6YmFWMkJlejNwdzU1cnVJTl9jZm1aV2g3M0lXVnRtWENUVDJZLVdQNThfRDZTdE1VSmtWd29ibC1TZw?oc=5",
+     "time": "11:10",
+     "title": "Tokyo’s faster pace of inflation backs case for Bank of Japan rate hike",
+     "src": "The Straits Times",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTlJMSWZnYjhwT1VBb0JIZ3IyS0VuOS1yUHNTdGJrSVlra2ZHQ1R0Tmx1WXhtdWoyV3RZN3B0bkY4cmlRc2RIRnVaRDRxUjRtZmpGNnhQbXVPUlVBampVTGFYOXRMd2Fja3A3aE1iYjIta2gtRXFXQjJXMVZ4S280TFhiYWdrNmg1ekZCMzZuOFY5VUdhX3c3TTZkU2FCdGlUN2w4MDhwLTd6VEtO?oc=5",
      "priority": false
     }
    ]
@@ -150,6 +150,14 @@
   "CN": {
    "label": "중국·홍콩",
    "items": [
+    {
+     "date": "2026-11-27",
+     "time": "15:24",
+     "title": "China stocks surge most in two years as Beijing vows stronger market support",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLWxqTUV2X2RZam8zVGVSY2ZFTzRLQkxKYjdBUVJvR1dIOVlaczllTWRmay1FM3pMOHk5SlBjYkhxaDZ4YmJXbWM3NFpSRDBuWWs3T05QS2hZU2FoVzluTzJTMVFjQmhVS3B3a3ZQSXlOc0JKLV92RHZiNFZoNUlXUW5MMk1ncnpDXzVsMnhpTGx4OWpOVnpCNjlWRlJCa1Bp?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-26",
      "time": "13:51",
@@ -164,14 +172,6 @@
      "title": "China faces rising pressure for stimulus: Julius Baer",
      "src": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWmlDQmJ3bnBkQ0R5eUNGOFdGZFVrZTMtbkFhdmVrSmZaQkg3cXdJNl80ODBfQ0oxNW1UcFRkUHBRUGNzZmNVSGgxVXJVN3VZWnZGaVp1MXdIVDZJV2NGV2tDNjJCODVpQmZsdkRwWjFBeHg1RTBudHZlaXdOZ2EwUm95bHZoZXh6ZXp6M1ExXzgxbEF0ZFlkb1Nocw?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-24",
-     "time": "17:37",
-     "title": "China wanted families to put savings in shares not homes — then markets fell",
-     "src": "Financial Times",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPa0hjaURGMW5BTlZHUS1iS1RsTC1uZExaQWhjbXpEdVBJdjc5VFVBcFBTeU1JenJoQ3A1dmdpSHFCVlRia2s2amptaTFCbGZEeldVVDI0MmRCd2FqVTBLLUtmem5FYlFTWC1BejdHUXZLa09qY0xDeklEeTQ3UnBxblE5ODc?oc=5",
      "priority": false
     }
    ]
@@ -217,19 +217,19 @@
      "priority": true
     },
     {
-     "date": "2026-11-26",
-     "time": "19:21",
-     "title": "India swaps, treasury bills signal possibility of outsized RBI rate hike next week",
-     "src": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTURLc0UwZjNUdy05dVdJMVFLLUpDNUQwN19INXh3cVcwdW5fM2k3eDV2bnY4ZkZkMDVzSjN4N3Yzcm9CQ1MtT1hmaVJzMmY5VkpMUzgxQzVrQm1zZzU2OERSak1TeU84dDlTOVk0aEZSNXFGcUNzaFo2bVlXN2wwYjRScUxtVE9GeXFFRjBFdWdlZ2tjOEpnQ19UTmVJVnlBQ0ZVclBQdHhieTd0SDJlVEU3c0ZTaFZFazB6cVAtbWpqMmU2?oc=5",
+     "date": "2026-11-27",
+     "time": "20:54",
+     "title": "India bonds slump as oil spike adds to RBI hike bets",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTmtodFliU0VMVFZKNGNnSTJrTHVvZkNzRjlqVGRhbzhnZ2ZLa3pFNkhVTC0yMDd4MTctRnNhOHdEZC1DMFl4QzFfbGVwX0FVWkp0TmhsOUpmVkE5SVRsWWlVVnoxbG1kOHM1TVZNdXNFUjhtWkhGazUtOUtQc1pJcHprTHJybmU4SWdYb2tuejRUX3picXc5RUNuck54azhKNjVjRndLellvNTVBYzFrRHNoZDJtc3cwQ2t1bdIBwgFBVV95cUxPU19tcXdOWHdGaDZxR2ZKbG9feEhTYi1QQnoyNnl5ZWpTYUNHV2l3ZHRlOU1jWVlxQkRSLWRNLTVxcjBCREZqZzNkNDVQQzdZTWpaMTdHREx2X2dPeXg0eVpNVnJlUExheG9kVk9SR2pSTnI0S1ZuTElXMHRHUElaS0NUOGp3T2J5ZkdpYU5vdzkwRGU3M1ZSV3NmZUR6UDVIU0dvSXBEMldQOXk1eEplN1hQYVpzbnhsTVRMOFJyUkVLZw?oc=5",
      "priority": false
     },
     {
-     "date": "2026-11-26",
-     "time": "05:06",
-     "title": "Inflation pressures broaden across India, raising rate-hike risks ahead of RBI's December review",
-     "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOSEtiRGFMN3Q2NmJ5ZVdfaVUwMy1QZkJQUTlNaXR3QVA3OW9mUUJMRmUtWVlZc2FISEhFMlp0SjNEXzVZOGtyeld2bTB6RmhadU1CSVA4LWpOWHg5Q0ducWRyQnFIWU5WSzhIQWpWLVY4Z3ZKMHBmSl9xZTNlTWR3b1BrZ3VOZUw4TXh1OERJZWFPenVYSE9pSU1JSEpBWDNKdXFSeVQxaEw4NlQzZ1hXempOVmE0ODNUU0FkUGxYQUxyaEVkajlaN2ppVHNjcEFIRjRpWThaTXVibGlDRTJSNHY0ZW9sWTBnR0JqSGttN0dVUmdJbGdNV3QzNjgzRnB2a1pDTzNXZFHSAYICQVVfeXFMTVhFR0JUcVhBTUp6aHVZY1N0ZmM2TUs4LTF1enFvQW1pa1FOVWlfbDZhOGVCcS1QUGxLODRpOTFLV3BvY3NvbWpLSHoxMGhkdTctSnpKaHBDQ0IwYVlTNVo4MXo2TWVVXzhnVXNUVUZmU05vSzhUS2owY3pWZUlYUHVTVVdBX2VkVE1iRFBSUi03MU4wUkJaNXRWMzJORHctdjNNYW1JblgxYVVTUWNLaUh1Z2pVbEtoWTRySFlfT2hTYjh2X0FVRXE5aDV1dHFyZGJ1WFJETWhTZWx3UndjYVVHWmp6YXJwYnVRRThST3VHWnpQYjEtZnNLVXluMXg5MEZ3?oc=5",
+     "date": "2026-11-27",
+     "time": "20:20",
+     "title": "Nomura raises December RBI rate hike call to 50 bps, BoB sticks to 25 bps",
+     "src": "Business Standard",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZnZZbG5SYmZfSEM5TGt1Um5YTEVBU1p2SXQxQ0xsc0NLeTVsOTV0YzAtRFFvdlc4R0hxdmVqUVlTVHpRbU1lRmtPeXNpcmZCZzB3eG1iSndzWjZHbVg5c08tWjVyZTNvbFBkVEk5dnI3SFVzSTl2RG5udTVxeC1UWklRMWJ3cElQMVhCbjMwWXlva2lIanhxY3Q5VEp0NWM1V20zQ1FRdnhma0NfNGRnNFJsOEstaWd1VEpQbl9DZW94elhrY0hVZ1I3NWJYV0hUWDlvSnZR0gHbAUFVX3lxTE9SeG9HdVotdnBDMm9WN2Z1MVpSV1VSckJfMlJ6eXJUUUdHZEdGYUY2cTlCVEt6VHc4THEybUgxakswbU1udVdUZGN4cVFoQ1VZb2VoRW41cUVqa2RZaUZLZ0ZBakxncFJmLW1FSF9XX094UFc4bjh5WWdzZ1VBai1DemtIMHF5dGlwQjZ0a3I5RkU3NWtFS2hNQjBmaU1TTUczOGphTWNYSHJxVW8tazlVSEpCOWFQUTJBQUVEMmRXb2tOM1FWUTNMeklMUUoxVGVTNElyc19hX0dtZw?oc=5",
      "priority": false
     }
    ]
