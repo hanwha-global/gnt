@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T21:51+09:00",
+ "updated_at": "2026-11-28T03:20+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -35,27 +35,27 @@
    "label": "미국",
    "items": [
     {
+     "date": "2026-11-27",
+     "time": "17:13",
+     "title": "Gold price forecast: Fed rate hike in December may limit recovery to ₹1.30 lakh per 10 grams by 2026-end, says expert",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNSS1wSFJjclpDQzhXOXBYY2R0UTMxLTNVemdRRlAxaF9SME9weWNvQks3a0dhTER3Y1dMd25XX1AxMXlkOWZscV9HQlctUFV0bjJubzNvTDIwX1JjaG4wOFk0aDNQRDMwQVNzSXVvU0xNZDBrYlZqUlhyeHB4SzJoLXAxakc2dDg4MEFlX0RsUkhTWFhha21fUkZJdUNNZGpuUWptVFpQUHdxb19Nd3ZWdl9Sb2VvQUZBWk5jY2xVbVhQRDBqSlhXNHVFZkdydDNJTEZldkstWUtWSGN5Skl6RGlkR0NNV2Q2MzE5Z1hONnhRM0hfX28wSEJMTmFDczlsakJFRzdTc21TX3FxRERN0gGUAkFVX3lxTE1FVVNONG9GZlJqSVBzaEJWcXo2bFhBSFc4WEUyLWszZlhSeS1YSTlTYm9WUEZrbEtXVTlxcnVNOUtXd2lab2ZLdm1RTGxDWkNCX1RpMWFGeGp5ejlXRjJ3VV9yS1VJcmlvdlRjSVc1S0c3MVdDYnByNW11WFhDdlNfZVlMbHpGVU9sajJOdkZUWXRiLUotd3llMF9QNDhmNTRfYWpBTGxSYXBjT3U5endNTlFBeERELTlmcjg5TFUybWdjZjJyZE1sbmJtd1J5WUFzSFIyYk9wLWVBZU43dWpCeEJoTEo0M0U0V0U5SXFKSmxhRGJ6M3l0cXhrN2dpWjM5X3ZGZi1DVndaUUZVQV9YeXZxYw?oc=5",
+     "priority": false
+    },
+    {
+     "date": "2026-11-27",
+     "time": "05:03",
+     "title": "연준, 내년 '금리 결정' FOMC는 7번만",
+     "src": "미주조선일보",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ObWdvT3JocXRQak1qOWJMb092WjNkbm5reE1ONENCT2RXTHhBYVJtRXlqMWFyR29uSncxYVRxQi1jOVpEd0JaQXprTDQwemtjd2RFeGt0UVFtWnhuRFRiNFpzQVlWbGg4UW9pb2g5UlhYeENhdXc?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-26",
      "time": "14:35",
      "title": "Korean treasury yields fall across the board ahead of BOK rate decision",
      "src": "매일경제",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41WklRZlJUUmJFdmN1SUZNSjhsLWEyeEplaGNqOXdNQ0lYTXdUOGdLZ2l3UGVTSXNTUngtLXhtVWhibDdObmswbHRtNnAxR1F0dnc?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-26",
-     "time": "10:45",
-     "title": "美연준 “물가 압력 지속ㆍ임금 상승세 확대”⋯12월 금리인상 힘 실려",
-     "src": "이투데이",
-     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFByNW0xMlIyLTJ3WndBMFVXQ0RyNExDM0ZJVHpablV4bHlYMld1NUpBRnE1VzQ2bEZMVjhHc3dSNGNhRGNhTk1LV3ZmODMxX3RYZW9XRg?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-26",
-     "time": "08:01",
-     "title": "미국 연준 ‘물가 압력’ 경고…12월 금리 인상 무게",
-     "src": "KBS 뉴스",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1USjhrLUtnOC1Ob2xiY2dGdGd5VlpldGRjTVdzMEdrYlVaSktUVzVNc0hOYnlUcTJ3dWx5M1Vpa0RjX1F1aTFoZFJ2Y1RiSVpCeEtnVkcxcnRHNnc?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jT2piN2YzQ3doTUdEckRfQmptb1c2Ym5pLWNjVXFqTWY5VVMyckt4SndYT1RUVEtBN1lXSzRMa3BCOVJRSjMyWHg1MTdkZnBhTU4yUXA3Yw?oc=5",
      "priority": false
     }
    ]
@@ -101,20 +101,20 @@
      "priority": true
     },
     {
-     "date": "2026-10-28",
-     "time": "16:00",
-     "title": "Vietnam's stock market upgrade puts focus on corporate governance",
-     "src": "Vietnam Investment Review - VIR",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYWZZdFY0SHFSLXEyMThKcUlpMkQzUzFLZnhnbjlVWU9UUlVaVHlsLXE0Mlc3ZWVvX2NGX1Ywa1BJSGJnZmh3QWJBVUxnSU95UlQ3WjNoU0ZMQmFpY2FwaEZpQU1PTU92U1hxV2NzV3otNF9UOGpvLUNkbGY4RjlQbzJBbldqdUtKSWdVeEw3anpuMFF1bEJ4OHRrVQ?oc=5",
-     "priority": true
+     "date": "2026-11-27",
+     "time": "07:45",
+     "title": "NH투자증권 “베트남 증시 관세 우려 과도…무역협상 진전 시 반등 기대”",
+     "src": "이투데이",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZdlA0aUVsZ3B0RGRrdzVPOC1XcHBfZEhCMldYOFlLUm9LRzhaY3FocFhmU2Z6ckhpYzhCOGgtdUdkcG0tcGdXUE9RVHFvM2VldXJfWQ?oc=5",
+     "priority": false
     },
     {
-     "date": "2026-10-28",
-     "time": "16:00",
-     "title": "Transparency and disclosure key to sustaining Vietnam's market upgrade",
-     "src": "Vietnam Investment Review - VIR",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSUhYaVNFWmNlWmcxR28yWGg4WmdLZS1yRzJxTDBpTk9uS3lydy1hOC00ZHJCSU5BYlpFcm85S3FaVzlvV1JuXzFuX3YzblJ0M1dreDJZUXdPNFQzNkVLdWw2dVR2OW04cmVQc3NhbG80YnhFNkFrWmF4dkxvb01OOWVmeU5SVmFNODFGMlFEY09rSUVPWUhNa1EzSkFZTHg4RWc?oc=5",
-     "priority": true
+     "date": "2026-11-26",
+     "time": "09:31",
+     "title": "India overtakes Vietnam to reclaim top spot among emerging markets in October",
+     "src": "Livemint",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYlk0cnRYUzgzLU5HVUxGU0ZmODhQdTh1a2x3WTlVbXhfRWRoMHFpd1hEa1lZNHgzZXk3NkUtSUg2OWRtaUk4MXNFVVJEMkJBd2YwTENsMVJHUWJHSC0wQm84b1ZkVEVnUTNRYy1zblhqVnZHZG1MUTNpSzYzVTE5My14Mlc0akhxWDR5RDNZQVk1T3dUVmFieGtwbmVhbm1WdGxRX2dSbGZHdWNWSWhTcDYyWDFWZTdRak02ZTRkUnlDeWdhOXfSAcsBQVVfeXFMT3FXYlZNbnhrYjZETi1xcXZnMElUZ21reldEbGVTbEFKeHpoUFVOTjBONHJiRVoxdHJ6S0t5N1hqREhGY09MYS1abUsxelhxeVgxMHFDRzBiaEdjRF9SUGJ1V29mTXdMeHkxT2lUeG90a2czeWNUdVRIalVCdVJETmZqck5DTF9VTEVvSWs5RHNudDB1aGFwcmo2M21vc212UGtxZFZUWmZJVnRvR1VPcC14ZFZSV1JfN0hOSVVQWnc5bUQ1eWlQc1k5UE0?oc=5",
+     "priority": false
     }
    ]
   },
@@ -159,19 +159,19 @@
      "priority": false
     },
     {
+     "date": "2026-11-27",
+     "time": "14:35",
+     "title": "China, Hong Kong stocks rise as AI and chip shares lead gains",
+     "src": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPb2NyeUpKMGdlU1pFbkZXTGJWZENNMWRKNlphaS1VSHY1NU80cnVDMzdsdU9udm5pRG1ROXpxQW1JQ3JvSUtqZmRfYkZFMEVqTDc5MXF2UllXd0ZqMkJubXVDMktPTm03WjI3R1NXd0ZJV3p2ckFsMW9TZmZ4XzhxZHJYR3k0YjRQeXFVbkNPWlpGbEZYenZNWlphRldwRE1KTWpTbGpTUE1zbTJVZDg2dmMxbHVqTFlDVFd3ZkFZOFhUZmNCMWpvMDlwSWYzNXV1Z29F0gHYAUFVX3lxTE41Ym9EZkVXMUdwY3VSOE54VDNHVjVSd3ZJUWhBd1BPbU42b2ROQzZqSVJXLWQyOVQ3M3pUTm9aUmhPVjREWnduWV8tWGtLX3htWXZ0aHI5TkY1MGtETHA3X19DMFY5ZnpKVHdjLUJzMU1qdmFoV2xCamlkRHl4TF85MGRiUmFYc2M2OVpjVV9VSXJTcy14cW5laEpSLTJYejN0NXNlVWdRS21Jc00zbDBMWGg4dVA5TE4wMURWaXF3TVU3aGZFR2lFT0NYb3dZUW9feEgxRGtzRQ?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-26",
      "time": "13:51",
      "title": "China, Hong Kong stocks rebound as investors shrug off Trump tariff proposal",
      "src": "The Economic Times",
      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMjBNQkRUd3dOcDU1dGsyUnRSbzdSV0YxRzVmM3FkRlkyaW5aLVRsR2dwVDhYdDMyb214ZTFYY25uZ21oczZobWt3eTVpOE5yRHM2WTZqd2gybEQ2dXVfQ1Nla1FEWEdENHRROFhLQ3dXaTNqNXdrakFndVg2UEtkcWNnckFNNERQMVZVZWhYTk9iQjFkNkNjT2lKekZ2eHJ6VHZqNmlIU1dldURQd2JhTGROYktmR29xTVpjS0RuY19YUm1LdnNCTmlqNERMN3c1WUlwTUtQYlZzVC0xVFA3azZWT1c5ZmvSAewBQVVfeXFMTUVhMGpvcWRUNlJnd0V3RUVJNmdrSHFGMkNKeGkzYUdjUXJOazhCdGNkSUFKREVpTGt6Y0RHSjk3dVd0MThCbC1qLUtvVVNydkNTaDFlMktYMU5ScGdhNG5IRE9zNk5BOTNDc2F3alpvUHc5cXE1M0pSdWJ2VlcyUS1pbERjMVRuWVpZV3N1SGdrbEhpRzdOOE5NbHJ5UENJb2xFV2piSTlKdXNxcWcxcENuTGlUeUZwS2d4UlhraExhVVkteFNKeFA4blFqX2RGMFU0dVZZWVV4R25sc0xGYXNGM2RmZlBNRTJ4VDU?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-25",
-     "time": "12:44",
-     "title": "China faces rising pressure for stimulus: Julius Baer",
-     "src": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWmlDQmJ3bnBkQ0R5eUNGOFdGZFVrZTMtbkFhdmVrSmZaQkg3cXdJNl80ODBfQ0oxNW1UcFRkUHBRUGNzZmNVSGgxVXJVN3VZWnZGaVp1MXdIVDZJV2NGV2tDNjJCODVpQmZsdkRwWjFBeHg1RTBudHZlaXdOZ2EwUm95bHZoZXh6ZXp6M1ExXzgxbEF0ZFlkb1Nocw?oc=5",
      "priority": false
     }
    ]
@@ -179,6 +179,14 @@
   "SG": {
    "label": "싱가포르",
    "items": [
+    {
+     "date": "2026-11-27",
+     "time": "18:51",
+     "title": "Singapore shares continue gains from Thursday; STI up 0.7%",
+     "src": "The Business Times",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUFRWUndXY213Z0hxUGdpVnNFYXFyWnZnNFZGM01fUk9pUHFHZmZrMGQwV0dmTlhHdW83NXZablBkMUczUmtmekxXMy04emZxdFJlYXFldUhqNXpKbUZvVk0wdF9ldGpVVTQ4TXhVUlJFb3ljeG1aa251NllqeElUV0ZJOUxDcW9UdVFHbFF1Z2tGaFBSM2ZZRUpvUDZON0pF?oc=5",
+     "priority": false
+    },
     {
      "date": "2026-11-26",
      "time": "19:05",
@@ -193,14 +201,6 @@
      "title": "HSBC eyes Asean stocks with new EQDP fund as it scales its Singapore asset management business",
      "src": "The Business Times",
      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPS1VMYlJ3bGRUdEl1SVQwYUZvVGFsc1owaW1IS0ZXODNUMXRBelIzZ0RoVi1BbzBLQjZIeDNHUVJwM0hQYzZVTmhfWW9wZm9BMElvVzVlYVg0aEF5TGpNY0xSZlZhX2xkSG1fcFlIS0E4OGFUOGp6ZmpVUUpDbk0tdjRwM0hBS3BGQWUwWGZ0OWszSkFSeHFqOWxjbmxpbFZiLUViNHlsakEwd2JJaFR0Q3hPaVdhQ1NlLUFxYTZSRFFqd3JNZTYxSU5VX2RPMi1Sa3ZF?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-25",
-     "time": "19:07",
-     "title": "Singapore shares reverse gains to close lower on Wednesday; STI down 0.6%",
-     "src": "The Business Times",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYmlKZldqc3V2U3NxOTV3OFA1Vkp5S0lnVHFINUcyZjJnTk5oYzQ3OGRDVEhPWXE5REFsTWFGN1dZTFNiQ19xMHRIY3I0TkEzYVNYMWdzYmtWT245MHB5b1RhQnU2Qm1zekR1VHRWcUY4VVhlQU8yQVg5M29aNVVmVlNfWXNwMEl4MTBFNExydDFnN0kwUUxxckhlWWw1WmgxcDg0ZmhKVm5hcTdOZXZBSTZWUE1jYUE?oc=5",
      "priority": false
     }
    ]
@@ -221,7 +221,7 @@
      "time": "20:54",
      "title": "India bonds slump as oil spike adds to RBI hike bets",
      "src": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTmtodFliU0VMVFZKNGNnSTJrTHVvZkNzRjlqVGRhbzhnZ2ZLa3pFNkhVTC0yMDd4MTctRnNhOHdEZC1DMFl4QzFfbGVwX0FVWkp0TmhsOUpmVkE5SVRsWWlVVnoxbG1kOHM1TVZNdXNFUjhtWkhGazUtOUtQc1pJcHprTHJybmU4SWdYb2tuejRUX3picXc5RUNuck54azhKNjVjRndLellvNTVBYzFrRHNoZDJtc3cwQ2t1bdIBwgFBVV95cUxPU19tcXdOWHdGaDZxR2ZKbG9feEhTYi1QQnoyNnl5ZWpTYUNHV2l3ZHRlOU1jWVlxQkRSLWRNLTVxcjBCREZqZzNkNDVQQzdZTWpaMTdHREx2X2dPeXg0eVpNVnJlUExheG9kVk9SR2pSTnI0S1ZuTElXMHRHUElaS0NUOGp3T2J5ZkdpYU5vdzkwRGU3M1ZSV3NmZUR6UDVIU0dvSXBEMldQOXk1eEplN1hQYVpzbnhsTVRMOFJyUkVLZw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVml4aE42alZNUlplVVdBTU9LRm5NelBvd1lQMjI4eEZwaU5oWGR2N21WSWdPV3gzN29qWDktMjF0UTZuZkVDSjFpcnVldGRZSzRqekRqb3NIeVVSUmpPa21YbmtXUWgxcUNhTENiM1lnR1ZVVzhUMXRaWDdNTUlYa3ZYem9XOVExVDdhRlFLRlZMd3Nsa0VJak9acDNMLUZqVVBUU1BCVHU4TGxKUzNHZmJ6QXFVMDJXYjdWT2FIQ1ZfX0ZPSEdnMtIBwgFBVV95cUxPU19tcXdOWHdGaDZxR2ZKbG9feEhTYi1QQnoyNnl5ZWpTYUNHV2l3ZHRlOU1jWVlxQkRSLWRNLTVxcjBCREZqZzNkNDVQQzdZTWpaMTdHREx2X2dPeXg0eVpNVnJlUExheG9kVk9SR2pSTnI0S1ZuTElXMHRHUElaS0NUOGp3T2J5ZkdpYU5vdzkwRGU3M1ZSV3NmZUR6UDVIU0dvSXBEMldQOXk1eEplN1hQYVpzbnhsTVRMOFJyUkVLZw?oc=5",
      "priority": false
     },
     {
@@ -247,18 +247,18 @@
     },
     {
      "date": "2026-11-24",
+     "time": "13:24",
+     "title": "MSCI denies reports of possible downgrade reprieve for Indonesia - Markets",
+     "src": "The Jakarta Post",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONDJSWkdvMTJOX2ZLRE56UjRyS216NEZYRWYybjVJVEdZOGJwdTNPSngxd002WFZpX2l2bVM1OXJRZjlyRGJLYkhlQk1nOTZwX2ZCZjg2WVBfakwxT0hpMkdOUWtReDI2cmctNGFIazhTSDdjSWhkby1zX2FfcVh5TTBvQktfWE1nOXU2WjdxWTVVU0J6dWpQUHB2STBJSGVYeV81V3ZvNWZUMEJKRVQ2M3otdnMzUQ?oc=5",
+     "priority": true
+    },
+    {
+     "date": "2026-11-24",
      "time": "12:51",
      "title": "MSCI denies softer stance on Indonesia's market status, review ongoing",
      "src": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTTJUZ0F2WXl0N0pfQ1RMYlVSTURkS3UxeHVudGRQb25nZUF5dmdvU2ZvNWZOM3dGSnlCajRIM2tOT051UnF2ekZGT2JqQU1Ta0pwbS1vVF9tQ2V5REpkbm81RndwQmJJb3FWeGcyeEFqVmhYQVhJaE9TcjlnUUJQb0dXS2E4YWRaR2p2RlE0NEdzWkp6UVdLU29BM2ZiY0xOS3g5UFFzMDBpMVI4V2pHaFBqZC1OZVFv?oc=5",
-     "priority": true
-    },
-    {
-     "date": "2026-11-23",
-     "time": "18:21",
-     "title": "Indonesian Stocks Rally 1.35% as Prabowo Holds Talks With MSCI CEO",
-     "src": "Jakarta Globe",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRFlTMjg1M3RfRTY4aGlhWEJlWjdocUVRdUtSZkVxUlhoZmE1LXpYbWxyR0RTdnpnX2duX05IV210Wm50dEo5QjNoSXNGbFJLRTRtTklaZk1KSGEyTHpWem5ROVk3Tk5EYWtNLXNLZlBZNE1MUjViZUNseW5YbGlpSGxFb0N5U1B6MXZVa1E3U2d2THZsaldCVDh1RUhaZw?oc=5",
      "priority": true
     }
    ]
