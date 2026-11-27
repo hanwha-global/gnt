@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T03:54:12+00:00",
+ "updated": "2026-11-27T03:54:23+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -66,7 +66,7 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-25",
@@ -408,7 +408,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-23",
@@ -504,15 +504,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-19",
@@ -562,7 +562,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-12",
@@ -576,7 +576,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-10-28",
@@ -590,8 +590,17 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
+    {
+     "date": "2026-11-26",
+     "title": "Expert roundtable on tokenisation of financial markets",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQV3A5eFFGWldhMDNBeDZPaUpZcGduOXJmeVQtVjk0ZlNMOHp1VVJ2dUJRRE1DNFVkSDhKZ0U0Qk1sNWZPZ2l1cjZZa0diYjRSb001NHBOUUtuaEc4TFBXZW9XcjZVb0Zxal8yZ0w2ZEdtRzVBUEhzbUM2TGkzVmdZay10WUt6MkdWaTNFRDhtUzR0enJkT204b3lOZElIdDg?oc=5",
+     "src": "finance.ec.europa.eu",
+     "topics": [
+      "sto"
+     ]
+    },
     {
      "date": "2026-11-24",
      "title": "Introduction to the ECB Token Reference Model - a framework for standardisation discussions",
@@ -602,19 +611,19 @@
      ]
     },
     {
+     "date": "2026-11-22",
+     "title": "REPORT ON THE USE OF EMTS AND OTHER SELECTED STABLECOINS IN DECENTRALISED FINANCE",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNcHVWR08xVGlKSTI4QWYzemU3dGNJYTlmQUZRZ1hqODNqcmlScEFjbFMyaGxmMkRqZ2J4NVpsbkFVTjE1VlNxemtmX1hrank5Y28tQ2xCb3VNR1o2UU8xQ0dSVmU2MjFUeEZNblB6bjd3S016bjhoWEF2UVFUU0hsaG41dzRjcEp3dUZwanp1Z1FKMjNKUHhoM3JTaDU0a2dvWGsxS0xhekNNeHRNeFlNbEpJQXIwRjFwaWVsRlNtOHpadExySV9wYlN6MWw2VkVCQXVrWTdnQkh6NDhFOS1MTjg0N040THZtOEhFU3p3S1pJMS1QYUNiaF84YzhIZ1dmVmFQVS1qRWlmM1J2SVNrSg?oc=5",
+     "src": "European Banking Authority",
+     "topics": [
+      "stable"
+     ]
+    },
+    {
      "date": "2026-11-09",
      "title": "EU seeks nominations for stakeholder group on tokenisation standards in finance",
      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOC1PeHR4Skw5azFtTncwc3NJa1MxcFBkMzFQYkhKb18wWHhjbE1LVnVpbkk1NGJXS3dydTltUS1iRzdxMEZwS09RSk8yeTU2UUV1UnBEZ3p2cTlWd1hnUm9lcllfZkZYZ0RkcUljZ2Vod1I0MmpObEF5RFdIUjFydlB5UWdic2pDSWlNV0pUSHJqZWdBdF8wcmhxTXVMUUNab2xWaG5sVlA2dkF2dlVFTEQxOTR3c0ky?oc=5",
      "src": "| European Securities and Markets Authority",
-     "topics": [
-      "sto"
-     ]
-    },
-    {
-     "date": "2026-11-05",
-     "title": "Expert roundtable on tokenisation of financial markets",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQV3A5eFFGWldhMDNBeDZPaUpZcGduOXJmeVQtVjk0ZlNMOHp1VVJ2dUJRRE1DNFVkSDhKZ0U0Qk1sNWZPZ2l1cjZZa0diYjRSb001NHBOUUtuaEc4TFBXZW9XcjZVb0Zxal8yZ0w2ZEdtRzVBUEhzbUM2TGkzVmdZay10WUt6MkdWaTNFRDhtUzR0enJkT204b3lOZElIdDg?oc=5",
-     "src": "finance.ec.europa.eu",
      "topics": [
       "sto"
      ]
@@ -703,7 +712,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-22",
@@ -870,12 +879,12 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
-     "date": "2026-11-25",
+     "date": "2026-11-26",
      "title": "Launch of CMU Digital Asset Platform",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuLU1GcWJEMnhvbUVDeXJhc0c3RXF5aHB0VFRGYy1Id29NYy1hSVRNTE1ld05VRkhrWjJmZU1najdpMzR2NVdqY2tZVDJJallnN0lzcHlIUUIyekhPTC1DczJ6MjZZVUpaSDlNX2xyOWRfUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5RRm5ObXFmczhjbWQ1MF9jN0c3OUpMUGUwLUx5QjFTdFJ5eU9pQWtpRzJucmNmZkF2bU5idTg1Mzl5VVFQZTB5ZEFoampTZGJHZGZuRGc5dlAtdW91YWJibHZWek5QNGd2cjdXd2FyRFZEWTA?oc=5",
      "src": "www.info.gov.hk",
      "topics": [
       "general"
