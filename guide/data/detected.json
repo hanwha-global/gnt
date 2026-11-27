@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T04:05:33+00:00",
+ "updated": "2026-11-27T04:07:41+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,7 +127,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-23",
@@ -156,7 +156,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-11",
@@ -197,22 +197,22 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
-     "date": "2026-11-20",
-     "title": "Circular to Licensed Corporations",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSDB4VzBVNjhlZXZ6U09rb3loVjc2X2dleTRUWEx1WkFHQU5SSkdrbUxoSlpLNkFtT1daWEhfY1ctbFhTbERyZzRrYWRBOS1DbUdzY1NwZV9HX2JCYl85emluOHlraFUtQUtDeG9BbmQ3Q3A3cFhFV3k3NHRKYUVoRGdSVQ?oc=5",
+     "date": "2026-11-26",
+     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism United Nations Sanctions (Libya) Regulation 2019",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4xdEYxa2MyOU1aQTJrVENYX01IUXRrei1oS1gwdHc4OGQ0MFRWdkdUaUtjZ0xIdS0zVjVURWd6emhBNFl4NG16MHFTQUpmYVFheFdtNnZFbGFXaU1NOW5XSE5aVGZMakJjXzhUSHpsR2l4SWpWdUpDZm5NV19XUQ?oc=5",
      "src": "Securities & Futures Commission of Hong Kong"
     },
     {
      "date": "2026-11-20",
-     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism United Nations Sanctions (Central African Republic) Regulation 2020 (Amendment) Regulation",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZllwNHZvekZFYmw5MXNLRV9nRDB6Wk9GekxaUTB6NnJhTDVfeHJVODJYNU9ublV5OUtZc21MbF9OQXJrVk1WSWFjcUhsZlFGQWpDMzFGeVpkNFNCclpMNWFRbnFaNXJpNXhQRW1nV3BrYXRKVmVuWjBZMmZUcUlUYUJQdw?oc=5",
+     "title": "Circular to Licensed Corporations",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSDB4VzBVNjhlZXZ6U09rb3loVjc2X2dleTRUWEx1WkFHQU5SSkdrbUxoSlpLNkFtT1daWEhfY1ctbFhTbERyZzRrYWRBOS1DbUdzY1NwZV9HX2JCYl85emluOHlraFUtQUtDeG9BbmQ3Q3A3cFhFV3k3NHRKYUVoRGdSVQ?oc=5",
      "src": "Securities & Futures Commission of Hong Kong"
     },
     {
@@ -254,7 +254,7 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-16",
@@ -265,11 +265,11 @@
    ]
   },
   "GB": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-17",
@@ -280,11 +280,11 @@
    ]
   },
   "MN": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-23",
@@ -541,7 +541,7 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": [
     {
      "date": "2026-11-15",
@@ -552,7 +552,7 @@
    ]
   },
   "KH": {
-   "auto_checked": "2026-11-26",
+   "auto_checked": "2026-11-27",
    "items": []
   }
  }
