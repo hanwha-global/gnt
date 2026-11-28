@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T04:07:41+00:00",
+ "updated": "2026-11-28T03:50:42+00:00",
  "keep_days": 180,
  "official_domains": {
   "KR": [
@@ -66,11 +66,11 @@
  "errors": [],
  "markets": {
   "KR": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-05",
@@ -87,7 +87,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-12",
@@ -110,7 +110,7 @@
    ]
   },
   "SG": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-10-20",
@@ -127,7 +127,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-23",
@@ -156,7 +156,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-11",
@@ -197,12 +197,18 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": []
   },
   "HK": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
+    {
+     "date": "2026-11-27",
+     "title": "WikiFX – Best SFC Regulated Forex Brokers",
+     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1hNzVSNFR0V2pfZzQ1TUhhX2c2Q0d2eERzLVdLemZWNE1vWjczR3R5NENXc196c3loNlBPN2JDNFpSel9NM0xUTUJDcmJHdw?oc=5",
+     "src": "Securities & Futures Commission of Hong Kong"
+    },
     {
      "date": "2026-11-26",
      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism United Nations Sanctions (Libya) Regulation 2019",
@@ -254,7 +260,7 @@
    ]
   },
   "CN": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-16",
@@ -265,11 +271,11 @@
    ]
   },
   "GB": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": []
   },
   "IN": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-17",
@@ -280,12 +286,18 @@
    ]
   },
   "MN": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": []
   },
   "BR": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
+    {
+     "date": "2026-11-24",
+     "title": "Eligibility for Gaming License: Check Your Qualifications - portal",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVWxNTDBaZHlmMFVwZEJwMWQ0dGxkOERpWDdkMFFMMXB3VnFPQm55ZEJUU1g1aU9VRzYxdWUxbGU1ck5XNUwybTBEZllwVEdqWDVuU05ZcV8wWWJNN2Z2Qjd4cUwyaUl3RDhoZXBodl9FMHk1Xy1sZkZHckFjMUF6NmJfWk5UU2FINzdLSA?oc=5",
+     "src": "INMET"
+    },
     {
      "date": "2026-11-23",
      "title": "Bookmaker EU Review: Your Trusted Guide to Licensed Platforms - portal",
@@ -302,6 +314,12 @@
      "date": "2026-11-21",
      "title": "Casino License Requirements: Your Guide to Compliance - portal",
      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZUY3NHdXMkk5WmdBRzU5cl9fWWhyRVNKUEdybG1EenVJdDVGbkZ6MFhFN3l2NUw5cFpvWlJKaVJYSEM4dWFyX1lOc1JuTzFuWDQ1WjU4VFVxZ1ZLWExZcVlYQmdkbGFtLUpuT1JaRks2Vm14SHg3V2FPZUIyWU1FOG96cGs5eldX?oc=5",
+     "src": "INMET"
+    },
+    {
+     "date": "2026-11-21",
+     "title": "casino license requirements: Your Guide to Legal Gaming - portal",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOG5seUFSM0JJTklZSXhDQTY5MWpBNk1CMU9tZXRYQ2t4c2Q4X1hVUWRJN05pVzRLNnVXeDR4aGN0cWJSclNPd1dHbm9TNmVxaGcyQzN1a3pvenNSMWFJWHBxMFJkcmRkcU5jUW0zZENiVDRkVm9ETnhzc2szX21lMkNidTI2N3c4?oc=5",
      "src": "INMET"
     },
     {
@@ -541,7 +559,7 @@
    ]
   },
   "TH": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-15",
@@ -552,7 +570,7 @@
    ]
   },
   "KH": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": []
   }
  }
