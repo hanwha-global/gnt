@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T03:54:23+00:00",
+ "updated": "2026-11-28T03:41:14+00:00",
  "keep_days": 120,
  "official_domains": {
   "KR": [
@@ -63,7 +63,9 @@
    "info.gov.hk"
   ]
  },
- "errors": [],
+ "errors": [
+  "KR: HTTP Error 429: Too Many Requests"
+ ],
  "markets": {
   "KR": {
    "auto_checked": "2026-11-27",
@@ -408,7 +410,7 @@
    ]
   },
   "US": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-23",
@@ -504,15 +506,15 @@
    ]
   },
   "JP": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": []
   },
   "VN": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": []
   },
   "SG": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-19",
@@ -562,7 +564,7 @@
    ]
   },
   "ID": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-12",
@@ -576,7 +578,7 @@
    ]
   },
   "AE": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-10-28",
@@ -590,7 +592,7 @@
    ]
   },
   "EU": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-26",
@@ -599,6 +601,15 @@
      "src": "finance.ec.europa.eu",
      "topics": [
       "sto"
+     ]
+    },
+    {
+     "date": "2026-11-25",
+     "title": "The EBA examines the use stablecoins, including EMTs, in decentralised finance",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOT2dRZ251ZHVvY3prS013bVpYV21RNEZkQjdCV2FhLVBEWFFVRUx3RlprdTVwc25mM1RfUlp6TFU2TEhpelFpYTdxTTNKTGNhaEVMMFhMSTQwbWdDWTE2ZHdLcHZsRGRyVjZ2S19xcVZUakZ1ZVBlbmZKRGM1YmJJNGFxdkRhSnJrTEV4a2REb29EbnZhTTUxdGpiQlUxSmdfMXFPaExTa2V5VEdGS2h1UEVwRWhLdzVGdTBXSVk4akQ0aTdDTXJBYQ?oc=5",
+     "src": "European Banking Authority",
+     "topics": [
+      "stable"
      ]
     },
     {
@@ -712,7 +723,7 @@
    ]
   },
   "UK": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-22",
@@ -879,7 +890,7 @@
    ]
   },
   "HK": {
-   "auto_checked": "2026-11-27",
+   "auto_checked": "2026-11-28",
    "items": [
     {
      "date": "2026-11-26",
