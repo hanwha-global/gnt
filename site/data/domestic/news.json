@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T03:20+09:00",
+ "updated_at": "2026-11-28T12:29+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "sources": [
   "연합뉴스",
@@ -434,6 +434,15 @@
   {
    "date": "2026-11-02",
    "time": "17:00",
+   "title": "Korean financial firms are buying into Japan's brokerage market",
+   "src": "The Korea Times",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVdjT01aeVpjUTJ5cmFlVnlpN3JydjdLVHpQNzl4RnNaOFBSNC1DYWJpa3AzR1Y3UDJaaWd2cmZDSzQ3eEdMZElQRk01UjI2SXhBU0xRY1BGa3EyMTNzbDhGdm9QVl95TWNLWE80S0lod2VVcHZpbFhvMHU4Yk54R0k3RnBrclE5dUdmeEdSQ05VU2JhSUZtX19DM2d4ODRTSV8wVkRuZVFDc0pGeE9yWnJoaFptY21raDNyX1RNYmoyQkXSAcgBQVVfeXFMT0FSYkpqQk9taEI1QUdERFBEWExnMy1Sd19GTmhyeUw5QXF2MHJaUmc1bkI4elo3WjhCMTZ0YmNOdUZjVjFzVEY3U01Oa3ZTNjJ5MHlhTTJ3N0Vvb2lKM2ZXS05vUDRDN3E5ZUplSGVHYzdHM19ITW1URzNUX1pJSmlValdPeWE2emh1clRMVnhSLWhiYjZHX2h3VHNQeFBTMnNDR0lVRUx4Z0thZzNFQmE5SWdxb0pxVzVpTVJpaG04OGtOSFJlQ0M?oc=5",
+   "site": "www.koreatimes.co.kr",
+   "firms": []
+  },
+  {
+   "date": "2026-11-02",
+   "time": "17:00",
    "title": "미래에셋·토스, 日 시장 정조준…해외 리테일 경쟁 '후끈'",
    "src": "글로벌이코노믹",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeWhCeUlxdUxuR2Z5czNLX3d2TnQxUm1WM1hNWmZEQTExRlRTNW1pOWQtaXZzbk9UaFhhLTZRTUlVWExyblIzWnV2dHE1d0dkYmpyakNHTjNZb0pDQ2NHZDJuRmxERmRIT0xfQjVsX1R2V2pldXZIc1V4SnRVaDNINHhBRGVLekg1?oc=5",
@@ -441,15 +450,6 @@
    "firms": [
     "미래에셋증권"
    ]
-  },
-  {
-   "date": "2026-11-02",
-   "time": "17:00",
-   "title": "Korean financial firms are buying into Japan's brokerage market",
-   "src": "The Korea Times",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVdjT01aeVpjUTJ5cmFlVnlpN3JydjdLVHpQNzl4RnNaOFBSNC1DYWJpa3AzR1Y3UDJaaWd2cmZDSzQ3eEdMZElQRk01UjI2SXhBU0xRY1BGa3EyMTNzbDhGdm9QVl95TWNLWE80S0lod2VVcHZpbFhvMHU4Yk54R0k3RnBrclE5dUdmeEdSQ05VU2JhSUZtX19DM2d4ODRTSV8wVkRuZVFDc0pGeE9yWnJoaFptY21raDNyX1RNYmoyQkXSAcgBQVVfeXFMT0FSYkpqQk9taEI1QUdERFBEWExnMy1Sd19GTmhyeUw5QXF2MHJaUmc1bkI4elo3WjhCMTZ0YmNOdUZjVjFzVEY3U01Oa3ZTNjJ5MHlhTTJ3N0Vvb2lKM2ZXS05vUDRDN3E5ZUplSGVHYzdHM19ITW1URzNUX1pJSmlValdPeWE2emh1clRMVnhSLWhiYjZHX2h3VHNQeFBTMnNDR0lVRUx4Z0thZzNFQmE5SWdxb0pxVzVpTVJpaG04OGtOSFJlQ0M?oc=5",
-   "site": "www.koreatimes.co.kr",
-   "firms": []
   },
   {
    "date": "2026-11-01",
@@ -528,23 +528,12 @@
   {
    "date": "2026-10-30",
    "time": "16:00",
-   "title": "日 'NISA 머니무브' 정조준한 미래에셋증권, 산코證 품고 해외 12개국 깃발 꽂았다 [국경 넘는 K증권]",
-   "src": "이투데이",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBazQtTnR6V2luVFRia2cxQ1JkcUprT2dJVFhybFA0ZXNJYm5lMlVhenFXR3RSWEE0a0ZaZWRBYTRIZFdsRUpiSTU4MHQtU014c0J4MQ?oc=5",
-   "site": "www.etoday.co.kr",
+   "title": "[아주증시포커스] 미래에셋증권, 日 산코증권 지분 100% 취득…인수·사업확장 1006억원 투입 外",
+   "src": "아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wOXhTaWkwOGRqalp6cDZ5WGlhd2hrQXhpTzc3bUhrV3VZM1FDRXYtalZqR0JwSHJuTFlEa1hROTIwNHhFSF83X2o3blRpMno0enFGX2p3RlpuUdIBWEFVX3lxTFB5VkpCdHpyNHphOWZ5eElyeUNTbEUwTTNBQ0dlbWwxU05hYnRKWlpQakktRXdtUHVnY0I5bXpIeHVlX2piVkxENDJLVHhPblhxWnRJRHF6YzI?oc=5",
+   "site": "www.ajunews.com",
    "firms": [
     "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-30",
-   "time": "16:00",
-   "title": "키움증권 \"KT&G 올해 배당성향 65% 전망, 해외 담배 사업 수익성 개선 주목\"",
-   "src": "비즈니스포스트",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1mV3BNQXliUTFVWl80bDZ4Uks4NlZjdHFtOFd0bExSWWN3VFZzRFRQeER5YzhxeDRVcC1yWFhZWVN0RlVoamFzdzg2cmhxejNQOXZlMmIzcFVPNldibVFsU1dGOEh5dG1JTFFXUEFOTGFubDQ?oc=5",
-   "site": "www.businesspost.co.kr",
-   "firms": [
-    "키움증권"
    ]
   },
   {
@@ -569,12 +558,23 @@
   {
    "date": "2026-10-30",
    "time": "16:00",
-   "title": "[아주증시포커스] 미래에셋증권, 日 산코증권 지분 100% 취득…인수·사업확장 1006억원 투입 外",
-   "src": "아주경제",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wOXhTaWkwOGRqalp6cDZ5WGlhd2hrQXhpTzc3bUhrV3VZM1FDRXYtalZqR0JwSHJuTFlEa1hROTIwNHhFSF83X2o3blRpMno0enFGX2p3RlpuUdIBWEFVX3lxTFB5VkpCdHpyNHphOWZ5eElyeUNTbEUwTTNBQ0dlbWwxU05hYnRKWlpQakktRXdtUHVnY0I5bXpIeHVlX2piVkxENDJLVHhPblhxWnRJRHF6YzI?oc=5",
-   "site": "www.ajunews.com",
+   "title": "日 'NISA 머니무브' 정조준한 미래에셋증권, 산코證 품고 해외 12개국 깃발 꽂았다 [국경 넘는 K증권]",
+   "src": "이투데이",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBazQtTnR6V2luVFRia2cxQ1JkcUprT2dJVFhybFA0ZXNJYm5lMlVhenFXR3RSWEE0a0ZaZWRBYTRIZFdsRUpiSTU4MHQtU014c0J4MQ?oc=5",
+   "site": "www.etoday.co.kr",
    "firms": [
     "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "time": "16:00",
+   "title": "키움증권 \"KT&G 올해 배당성향 65% 전망, 해외 담배 사업 수익성 개선 주목\"",
+   "src": "비즈니스포스트",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1mV3BNQXliUTFVWl80bDZ4Uks4NlZjdHFtOFd0bExSWWN3VFZzRFRQeER5YzhxeDRVcC1yWFhZWVN0RlVoamFzdzg2cmhxejNQOXZlMmIzcFVPNldibVFsU1dGOEh5dG1JTFFXUEFOTGFubDQ?oc=5",
+   "site": "www.businesspost.co.kr",
+   "firms": [
+    "키움증권"
    ]
   },
   {
@@ -677,17 +677,6 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "미래에셋, 日산코증권 인수…현지 시장 공략 본격화",
-   "src": "데일리안",
-   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxONXRXbjE2RVBSS0kyNXk0VTNCX21oanp6SlFTZ1ctSDVQdExyTm1za2twY1FIRUpfZVdsVzBUTUx1NnRkOHR0aG95NnRLR3BOY3ljNlU2S2JSbWlHOUEzSGV2N2hyMThtRlU5T3NxeXVMXzdjdGlHWWYzbGtzYkExTElFOXhpdTNZbU45bE1aVW9lT29LMUVRUm9JNjd6ZUVfb01qRENNYnhWczdmODQyeUExVXBySF9meWdaSUpvYjhFQkdVVDkycWdjaFJtYjBOZWh6SG5EVlBJOElBWVd3RlNTazQ2VTFVNFRLTmdwdE82RmExNXFteWJuRW12bDE4Q2lNSERRaVVQZXMwOXRaME5wY2liQzRYR210Uy1CVjd6dE0?oc=5",
-   "site": "www.dailian.co.kr",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
    "title": "미래에셋, 日 산코증권 인수…현지 리테일 시장 진출",
    "src": "매일경제",
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qWVh6ckZteDhDZGp6SEFDUzBDakR6RDBPLTIyM1VWS24wdktPd0lnSTRPWlJheUJ2Q2Q5RzZQX1pmdGhtcDlmS3Y5UXdrTmNhaEE?oc=5",
@@ -721,6 +710,46 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
+   "title": "Mirae Asset buys Japanese brokerage to break into retail market",
+   "src": "The Korea Herald",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51WXN6UElkRXVyUmRFRHBmb3diMGlpMEs5ZGRVb0NNeldrVW1renVkWG9jOUU3Nm43VVB0c1ktQTlIT2NmTHQ1RUV4M3dpcE51M1hDcS1hQQ?oc=5",
+   "site": "www.koreaherald.com",
+   "firms": []
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "(LEAD) Mirae Asset to acquire Japanese brokerage Sanko",
+   "src": "Yonhap News Agency",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ISEpyU08zOUtua3ZkYVpxbmRLOW1hUHRLZERhMjNhRGQtZjNacWREMVUzamdjb3NWdC1RdndCZC1LVWhlSU1KU2pXMjd5ZzUzS0RMVmg4U081QQ?oc=5",
+   "site": "en.yna.co.kr",
+   "firms": []
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
+   "src": "서울경제TV",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
+   "site": "www.sentv.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
+   "title": "미래에셋, 日산코증권 인수…현지 시장 공략 본격화",
+   "src": "데일리안",
+   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxONXRXbjE2RVBSS0kyNXk0VTNCX21oanp6SlFTZ1ctSDVQdExyTm1za2twY1FIRUpfZVdsVzBUTUx1NnRkOHR0aG95NnRLR3BOY3ljNlU2S2JSbWlHOUEzSGV2N2hyMThtRlU5T3NxeXVMXzdjdGlHWWYzbGtzYkExTElFOXhpdTNZbU45bE1aVW9lT29LMUVRUm9JNjd6ZUVfb01qRENNYnhWczdmODQyeUExVXBySF9meWdaSUpvYjhFQkdVVDkycWdjaFJtYjBOZWh6SG5EVlBJOElBWVd3RlNTazQ2VTFVNFRLTmdwdE82RmExNXFteWJuRW12bDE4Q2lNSERRaVVQZXMwOXRaME5wY2liQzRYR210Uy1CVjd6dE0?oc=5",
+   "site": "www.dailian.co.kr",
+   "firms": [
+    "미래에셋증권"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "16:00",
    "title": "미래에셋, 日 산코증권 품는다…글로벌 시장 영토 확장(종합)",
    "src": "연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBNcFJkQ1lqWTFMbTUwbjhEZkF5dHFQbEwzOGUycklMNktvVTBhd2lDX016V1hPdlUwc2ZwemJlQTFfdW9NRDI2WmNPWUhaWDNyUnZneWRoS1RvXzDSAWBBVV95cUxPckFxUXAzN2RLUVhKSllGX1oyOThLVWl4ZDY0eEo4U2Q4OTJxakJPeXpYb1lSNnktbTd2MlFqWGR1UDhMS1R3ZGk5amNZaGc1VXJ5dFBaaEdRWEwwRmxOUHc?oc=5",
@@ -743,30 +772,10 @@
   {
    "date": "2026-10-29",
    "time": "16:00",
-   "title": "Mirae Asset buys Japanese brokerage to break into retail market",
-   "src": "The Korea Herald",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51WXN6UElkRXVyUmRFRHBmb3diMGlpMEs5ZGRVb0NNeldrVW1renVkWG9jOUU3Nm43VVB0c1ktQTlIT2NmTHQ1RUV4M3dpcE51M1hDcS1hQQ?oc=5",
-   "site": "www.koreaherald.com",
-   "firms": []
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
    "title": "Mirae Asset Securities to fully acquire Japanese brokerage Sanko Securities",
    "src": "Korea JoongAng Daily",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEdUNmMxVEFkeEhsancyNnpqYlhBU0JoUGplbEN5WmZhTDhjNU9zb2VvaDBBVHR3eUZaZFA2eE5vcTktZ0lYLUpkYTNSUFNDWXlBbEFuZC1BdGlZZWt2aHpMS2NtMzF5eS0zNEpVcGl1cjBmRXZkNllZX2k5NGx5aU5MbnVjN285TWp4VmNicHF5YndkS21mME5yT2lsbXNSNzdhQ0g1cnh6bEVmVjg2TTVBMW5JR1VXT3NXSUs3dnpsVFZmWUZv?oc=5",
    "site": "www.koreajoongangdaily.com",
-   "firms": [
-    "미래에셋증권"
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
-   "title": "미래에셋증권, 日 산코증권 품는다…일본 증권업 직접 진출",
-   "src": "서울경제TV",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pQ1JkazdmV0J3NmlwUl9EelJfSHBINEJKNERsWXZyaHd3LWQxQnZkTjh3ZzNCX0tpWU5GVHk2eFF3SXZwd1JvSEJET0hJU2JUYUlCbWUyVXVtaVhZdTI1OXAwVFI?oc=5",
-   "site": "www.sentv.co.kr",
    "firms": [
     "미래에셋증권"
    ]
@@ -781,15 +790,6 @@
    "firms": [
     "미래에셋증권"
    ]
-  },
-  {
-   "date": "2026-10-29",
-   "time": "16:00",
-   "title": "(LEAD) Mirae Asset to acquire Japanese brokerage Sanko",
-   "src": "Yonhap News Agency",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ISEpyU08zOUtua3ZkYVpxbmRLOW1hUHRLZERhMjNhRGQtZjNacWREMVUzamdjb3NWdC1RdndCZC1LVWhlSU1KU2pXMjd5ZzUzS0RMVmg4U081QQ?oc=5",
-   "site": "en.yna.co.kr",
-   "firms": []
   }
  ],
  "errors": []

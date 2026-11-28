@@ -1,6 +1,6 @@
 {
  "spec_version": 3,
- "checked_at": "2026-11-27T12:46+09:00",
+ "checked_at": "2026-11-28T12:29+09:00",
  "countries": {
   "VN": {
    "country": "베트남",
@@ -604,7 +604,6 @@
    "reason": [
     "정기 갱신(14일)"
    ],
-   "last_check": "갱신",
    "candidates": [],
    "history": [
     {
@@ -672,7 +671,8 @@
       "정기 갱신(14일)"
      ]
     }
-   ]
+   ],
+   "last_check": "큰 변화 없음"
   }
  },
  "errors": [],

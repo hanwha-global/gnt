@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T12:44+09:00",
+ "updated_at": "2026-11-28T12:27+09:00",
  "source": "Google News RSS · 국내 주요 언론 + 해외 매체·기관",
  "keep_days": 365,
  "fallback_days": 1825,
@@ -69,10 +69,10 @@
     "src": "IDX Channel",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNS01iZEdLWDJSWWhyNDBhVmN1ZV9rLTJaRFFpZ0dEMFU3b011eGNzNnV6WVZCbF85Mm1Lb1JIZTFCOVV0bENWLVB5aDYxQ3FPZ1lpQmJkeGxLVGJKUElTRFZRWUxHaHpkcXAtajZjRHNWQ0ZJT0RITG1aSng5U2hKeWpqdV9VLVdGaHFmU0o0dExQbEhCd1RDMXRNUmVLTTN3aEEwc1FpUHlJRWFtQ2JUcUp5bWlmcUdla3dkSU1NUktJdkVQ0gHKAUFVX3lxTE5Nb3NlUk8zTFNHSVRxVzM3OUlHUVJCelRjVC01M1FiU194NVBZbmJKSGl2cmZoeld6cm1mQ0Mta0FnRnRoR1JVdV9Jd2ppMkJpZjBHRGVDNEVwa1l4bGEySmxnSk1SWTFudHlvSmlZZ2J6aFlNaEtEaGhkNmxXN3ItNzFPTlJMNXNHdTBrMkJYV0VDc1dqeE5EcGplNkp1YWFkV0k4SWNhNUl6ZTJVTzBkbkpQSURJbUVjNl95TnVaNU9lVEdyTGhTX0E?oc=5",
     "site": "www.idxchannel.com",
+    "title_ko": "KB 발버리 증권-다국적 자산운용, 뮤추얼 펀드 상품 마케팅을 위한 협력에 합의함",
     "foreign": true,
     "lang": "id",
-    "old": true,
-    "title_ko": "KB 발버리 증권-다국적 자산운용, 뮤추얼 펀드 상품 마케팅을 위한 협력에 합의함"
+    "old": true
    }
   ],
   "NH투자증권|미국": [
@@ -537,9 +537,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNLXJmbXFCSFJLcG9lMHZtalQ3a1RXNUZLRnNqRmZEdlhua1R5MXFhSHRaalN4VVRJTmZvZlp2TnRZRmZsSkY4b21QemxfN0lIa05hVnN6WHVyMVJiTXpjeWgyVTlMS0ZvX1VGczd2WUNKcXhEWURhSVYzYmppTFQ0LURqUXlaRm5KYkZsMHZQdWpBX19yOF82dUx2QjlSRnNN0gGYAUFVX3lxTE5IRVpQS3pQbWpEMjhFOFJRMW5QS0hadFpjU0VieEJ3OHltZVZjZ0N1V0RfR29zWm1YM3hjd21lb1ZiZ0lWZHB3UnlDMElNd2ZSZkRWbjFrT0hYUDdjRjN0TWxkZTZScjFBQVl4TGJKT1hfSGtJdGV2a0JtRDdZRUtSaURhQk9sVlNqNjF6ZGlyX1FEMkJfQloz?oc=5",
     "site": "investasi.kontan.co.id",
+    "title_ko": "부진한 IPO, 키움증권 채권과 비즈니스 자문에 의존",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "부진한 IPO, 키움증권 채권과 비즈니스 자문에 의존"
+    "lang": "id"
    },
    {
     "date": "2026-08-11",
@@ -547,9 +547,9 @@
     "src": "kontan.co.id",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlFaZEpMR1NOX1kxX3VhZ1hHcmN0TnlveW5qRkxieVU4dER6dE1WRzA3N2luZHY0UUt3MnhjNG9TM2hBMzRuV1NkRDBHV2IteE5mdkI4aDBlOGF1SVRmVVMwcUZPS0t2SUhVeWJaWm5USjhVZ3hnX090SHV0YmUwb19yQktZd1oxLUpOb2gxM0p0bmpEdDQtbFZ0djNjZktVcDVGamVwZDdEcEZlZUZuSC1EWmhaRzDSAbABQVVfeXFMTWpMRDUxeFhMZXBqcWxuWWxVbTZpVjA2TmNodFljcjFxeV9WM0V1UGNKazJRalM1Zm9ha21WVzVvQVRWS3pUQzlTTVQtVEktRzg2T0VDVHlWR0Z5Z2RUSURUV0hIZGRuMHVuTDlZMG1feXBzb2VXSnlSWEh5QmlJMzdtLW5xcXVFbUt5ZG5wdmFCTmo1ckxPUkUyRUhtZDk4RC1VMkQ3OEdoU3RxVno0cHM?oc=5",
     "site": "keuangan.kontan.co.id",
+    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요",
     "foreign": true,
-    "lang": "id",
-    "title_ko": "개인 투자자들이 주식 거래의 51.1%를 통제하며, 키움증권 활성 고객에게 집중하세요"
+    "lang": "id"
    }
   ],
   "토스증권|미국": [
@@ -613,9 +613,9 @@
     "src": "Thời báo Tài chính Việt Nam",
     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR29vMHZvUlNBR2RhTzJHaDJVbGt5anFVdnlNcTZOd2hpdEJBVWZGcnR2dHFiMjRYOTN4N3AyQ201MEJoMXc2UmhLcGxBR2RKZGQtM0JaNFZacVdBV3RFVVZ2Nkd0RzRnM3hISzBGQ18xX0tCazNYRG1rOXo3aGxtcTRSc19mR3J4ckNUMkd2dDltVGs3MnBPMUFfSTBMN1ZrOWxtQkZGZXluelZOOENwMlBwUQ?oc=5",
     "site": "thoibaotaichinhvietnam.vn",
-    "title_ko": "BIDV 증권(BSC): 3분기 매출은 19% 증가했으며, IB 부문이 크게 기여했습니다",
     "foreign": true,
-    "lang": "vi"
+    "lang": "vi",
+    "title_ko": "BIDV 증권(BSC): 3분기 매출은 19% 증가했으며, IB 부문이 크게 기여했습니다"
    },
    {
     "date": "2026-07-21",

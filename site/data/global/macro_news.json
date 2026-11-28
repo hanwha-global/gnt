@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T03:20+09:00",
+ "updated_at": "2026-11-28T12:29+09:00",
  "source": "Google News RSS · 매체 화이트리스트",
  "countries": {
   "KR": {
@@ -101,19 +101,19 @@
      "priority": true
     },
     {
+     "date": "2026-11-28",
+     "time": "08:41",
+     "title": "베트남 증시 2030년 시총 GDP 120% 육성…자본시장 대전환",
+     "src": "글로벌이코노믹",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPangyYlRnU0hHYzVMczBXQjdhZVdCNThfOFVEWVRHMFNLQUlsREdoVWRPQmtIRnRDYk5kcXA1ek1SUlZucFhDM2xNR2RFR3VuREE5d2RId0VEVE8yX0I4UTczZnBXdENxbVpmb3pQTXhKQnR0NVBzVUM4U3g3ZG1MM2NpTDA0S24x?oc=5",
+     "priority": false
+    },
+    {
      "date": "2026-11-27",
      "time": "07:45",
      "title": "NH투자증권 “베트남 증시 관세 우려 과도…무역협상 진전 시 반등 기대”",
      "src": "이투데이",
      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZdlA0aUVsZ3B0RGRrdzVPOC1XcHBfZEhCMldYOFlLUm9LRzhaY3FocFhmU2Z6ckhpYzhCOGgtdUdkcG0tcGdXUE9RVHFvM2VldXJfWQ?oc=5",
-     "priority": false
-    },
-    {
-     "date": "2026-11-26",
-     "time": "09:31",
-     "title": "India overtakes Vietnam to reclaim top spot among emerging markets in October",
-     "src": "Livemint",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYlk0cnRYUzgzLU5HVUxGU0ZmODhQdTh1a2x3WTlVbXhfRWRoMHFpd1hEa1lZNHgzZXk3NkUtSUg2OWRtaUk4MXNFVVJEMkJBd2YwTENsMVJHUWJHSC0wQm84b1ZkVEVnUTNRYy1zblhqVnZHZG1MUTNpSzYzVTE5My14Mlc0akhxWDR5RDNZQVk1T3dUVmFieGtwbmVhbm1WdGxRX2dSbGZHdWNWSWhTcDYyWDFWZTdRak02ZTRkUnlDeWdhOXfSAcsBQVVfeXFMT3FXYlZNbnhrYjZETi1xcXZnMElUZ21reldEbGVTbEFKeHpoUFVOTjBONHJiRVoxdHJ6S0t5N1hqREhGY09MYS1abUsxelhxeVgxMHFDRzBiaEdjRF9SUGJ1V29mTXdMeHkxT2lUeG90a2czeWNUdVRIalVCdVJETmZqck5DTF9VTEVvSWs5RHNudDB1aGFwcmo2M21vc212UGtxZFZUWmZJVnRvR1VPcC14ZFZSV1JfN0hOSVVQWnc5bUQ1eWlQc1k5UE0?oc=5",
      "priority": false
     }
    ]
